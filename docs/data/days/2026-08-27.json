@@ -1,0 +1,335 @@
+{
+  "date": "2026-08-27",
+  "count": 7,
+  "report": {
+    "date": "2026-08-27",
+    "count": 7,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 6,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 5,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "safety",
+        "count": 3,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      }
+    ],
+    "en": {
+      "headline": "7 new agent benchmarks",
+      "summary": "On August 27, 2026, arXiv listed 7 new agent benchmarks. Work clustered around Tool use (6), Planning / reasoning (5), Safety (3), and Multi-agent (1).",
+      "highlights": [
+        {
+          "id": "2608.27021",
+          "title": "FaulT-Bench: Towards Benchmarking Network Troubleshooting LLM Agents under Unreliable User Tickets",
+          "blurb": "LLM-based agents are increasingly proposed for network fault diagnosis, but existing benchmarks evaluate them only on accurate tickets and always assume a fault is present, conditions rarely met in practice."
+        },
+        {
+          "id": "2608.26867",
+          "title": "BekchiAI: Measuring, Observing, and Controlling LLM Agents in One Click",
+          "blurb": "Large language model agents reason, call tools, and act autonomously over many steps, but their agentic skills-correctly sequencing tools, planning under dependencies, judging untrusted inputs, and grounding generated ar…"
+        },
+        {
+          "id": "2608.26623",
+          "title": "AgentJudgeBench: A Multi-Difficulty Benchmark for Evaluating LLM Judges on Agentic Tool-Calling",
+          "blurb": "LLM judges are widely used to evaluate agentic tool-calling systems, yet their reliability on structured, dependency-driven workflows remains largely unexamined."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 7 篇 Agent Benchmark",
+      "summary": "2026年8月27日，arXiv 新增 7 篇 Agent Benchmark。当日主题集中在工具使用（6）、规划 / 推理（5）、安全（3）、多智能体（1）。",
+      "highlights": [
+        {
+          "id": "2608.27021",
+          "title": "FaulT-Bench: Towards Benchmarking Network Troubleshooting LLM Agents under Unreliable User Tickets",
+          "blurb": "LLM-based agents are increasingly proposed for network fault diagnosis, but existing benchmarks evaluate them only on accurate tickets and always assume a fault is present, conditions rarely met in practice."
+        },
+        {
+          "id": "2608.26867",
+          "title": "BekchiAI: Measuring, Observing, and Controlling LLM Agents in One Click",
+          "blurb": "Large language model agents reason, call tools, and act autonomously over many steps, but their agentic skills-correctly sequencing tools, planning under dependencies, judging untrusted inputs, and grounding generated ar…"
+        },
+        {
+          "id": "2608.26623",
+          "title": "AgentJudgeBench: A Multi-Difficulty Benchmark for Evaluating LLM Judges on Agentic Tool-Calling",
+          "blurb": "LLM judges are widely used to evaluate agentic tool-calling systems, yet their reliability on structured, dependency-driven workflows remains largely unexamined."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.27334",
+      "title": "BTS-AgentBench: A Deterministic, Replayable Pipeline from Read-Only Telemetry Logs to Agent Benchmarks",
+      "abstract": "Industrial sites contain large volumes of read-only telemetry, but few benchmarks specify how to compile these records into executable multi-turn agent tasks. We present a telemetry-to-episode construction method instantiated as BTS-AgentBench. The pipeline normalizes BTS metadata and raw histories into a read-only tool store, compiles static tasks with tool-derived gold answers and evidence, and lifts retained tasks into typed, bounded operator-facing episodes. The 532-row release adds clarification, goal revision, timestamp policy, quality-gated reporting, and evidence attribution while preserving the source computation and split. Coded contract preflight reports zero findings, and the construction-exclusion controller completes 0/532 rows. Two independent raw-to-episode builds match all 11 logical tool-store exports and reproduce the released 356/87/89 train/dev/test artifact exactly. Applying the shared construction path to XAI4HEAT produces 204 episodes; on its 41-row held-out test split, the controller completes 0 rows and the retained GPT-5.5 execution completes all 41. Code, artifacts, and replay reports are available at https://github.com/kjy7567/BTS-AgentBench.",
+      "authors": [
+        "Jeong-Yoon Kim"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-08-27T16:35:52Z",
+      "updated": "2026-08-27T16:35:52Z",
+      "announced_date": "2026-08-27",
+      "first_seen": "2026-08-27",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.27334v1",
+        "pdf": "https://arxiv.org/pdf/2608.27334v1",
+        "html": "https://arxiv.org/html/2608.27334"
+      },
+      "score": 15,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2608.27219",
+      "title": "BALMS: Benchmarking Agentic LLMs for Longitudinal Mental Health Sensing",
+      "abstract": "Mental health assessment relies on episodic self-report scales, which convert subjective states such as stress into numerical scores but provide only sparse snapshots of wellbeing. Wearable devices offer longitudinal behavioral and physiological signals for continuous, low-burden monitoring. Recent LLM-driven personal-health agents enable natural language queries over wearable signals, but mainly handle short-term, retrieval-based lookups (e.g., highest step count over a week). They do not evaluate whether agents can reason over long-term signals to predict wellbeing scores paired with evidence-grounded rationales. To address this gap, we introduce BALMS, the first systematic benchmark of LLM-based agentic systems for longitudinal mental health sensing. BALMS spans 3 real-world longitudinal datasets, 2 task families (closed-form wellbeing-score prediction and rationale generation auto-graded by an LLM-as-Judge), 3 agentic paradigms evaluated across 5 open- and closed-source LLM backbones. We find that zero-shot agents rarely outperform a simple mean baseline, except with stronger backbones or compact, semantically meaningful features. Chain-of-thought prompting improves reasoning-oriented backbones, but does not guarantee temporal grounding or numerical correctness. Together with more analysis on efficiency and temporal scaling, BALMS highlights the need for longitudinal mental health agents that selectively retrieve history, ground temporal evidence, and reason over interpretable behavioral features.",
+      "authors": [
+        "Yu Yvonne Wu",
+        "Arvind Pillai",
+        "Yuliang Chen",
+        "Yuwei Zhang",
+        "Sudarshan Regmi",
+        "Tess Z. Griffin",
+        "Michael V. Heinz",
+        "Lisa A. Marsch",
+        "Nicholas C. Jacobson",
+        "Andrew Campbell"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-08-27T15:00:17Z",
+      "updated": "2026-08-27T15:00:17Z",
+      "announced_date": "2026-08-27",
+      "first_seen": "2026-08-27",
+      "comment": "Accepted to EMNLP 2026 Main Conference",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.27219v1",
+        "pdf": "https://arxiv.org/pdf/2608.27219v1",
+        "html": "https://arxiv.org/html/2608.27219"
+      },
+      "score": 13,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2608.27142",
+      "title": "GRAIN: Bridging Name and Narrative Shifts in Real-World Graph Reasoning through Invariance-Rewarded Agentic RL",
+      "abstract": "Despite their potential in standardized graph tasks, Large Language Models (LLMs) remain brittle to real-world shifts in node identifiers and task formulation. While deterministic graph tools are invariant to such shifts, extracting topological structures from noisy text is highly fragile for LLMs, which often overfit to surface patterns. Moreover, mitigating these parsing failures via multi-agent systems incurs prohibitive latency. To address this, we propose GRAIN, a single-agent framework optimized via reinforcement learning. GRAIN models reasoning as a semantic parsing and tool-execution pipeline, guided by a Structure Invariance Reward. By validating extracted intermediate graphs against ground-truth topologies, this reward forces the LLM to learn robust text-to-structure mappings rather than memorizing linguistic artifacts. We also introduce GRIT, a benchmark evaluating sensitivity to such linguistic shifts. GRAIN outperforms multi-agent baselines by 16.45\\% in accuracy with approximately 24\\% lower latency. Furthermore, it demonstrates superior structural generalization, halving the out-of-distribution (OOD) gap of SFT models (from 15.77\\% to 7.80\\%) and maintaining robustness on large-scale graphs beyond the training distribution.",
+      "authors": [
+        "Zike Yuan",
+        "Han Zhang",
+        "Jianzhi Yan",
+        "Le Liu",
+        "Cai Ke",
+        "Huozhi Zhou",
+        "Jian Xie",
+        "Jiran Yin",
+        "Yukun Cao",
+        "Yue Yu",
+        "Hui Wang",
+        "Ming Liu",
+        "Bing Qin"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-27T13:53:52Z",
+      "updated": "2026-08-27T13:53:52Z",
+      "announced_date": "2026-08-27",
+      "first_seen": "2026-08-27",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.27142v1",
+        "pdf": "https://arxiv.org/pdf/2608.27142v1",
+        "html": "https://arxiv.org/html/2608.27142"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "multi-agent",
+        "safety",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2608.27021",
+      "title": "FaulT-Bench: Towards Benchmarking Network Troubleshooting LLM Agents under Unreliable User Tickets",
+      "abstract": "LLM-based agents are increasingly proposed for network fault diagnosis, but existing benchmarks evaluate them only on accurate tickets and always assume a fault is present, conditions rarely met in practice. We present FaulT-Bench, a benchmark of 200 troubleshooting scenarios across eight network topologies, five reimplemented from public practitioner labs, spanning genuine faults, false fault reports, incorrect device attribution, and incorrect root-cause claims. To isolate how ticket wording affects diagnosis, we further rewrite 72 false-premise tickets into five reporter personas that vary reporter confidence and verifiable detail one factor at a time, holding the network state fixed. Our automated harness deploys each scenario in Kathará, lets agents interact through the NIKA tool interface, and scores free-text diagnoses with an LLM judge across outcome, fix, and reasoning quality. Evaluating SADE, ReAct, and Claude Code, we find all three are near-saturated on accurate tickets and robust to misdirection, yet degrade sharply when the network is healthy and the ticket is wrong, probing until a benign condition can be promoted to a root cause rather than concluding nothing is wrong. Persona rewrites show that how a ticket is written matters more than what it claims: a confidently wrong report is handled about as well as an accurate one, while a vague, underspecified report degrades performance sharply. The three agents also fail differently, from constant over-diagnosis to unanswered runs, at very different cost. These results position FaulT-Bench as a benchmark for developing agentic systems that can reason reliably over the noisy, unreliable tickets of real-world network troubleshooting.",
+      "authors": [
+        "Kuan-Hao Tseng",
+        "Niruth Bogahawatta",
+        "Yasod Ginige",
+        "Kunjan Patel",
+        "Kosta Dakic",
+        "Suranga Seneviratne"
+      ],
+      "categories": [
+        "cs.NI",
+        "cs.AI"
+      ],
+      "primary_category": "cs.NI",
+      "published": "2026-08-27T12:07:10Z",
+      "updated": "2026-08-27T12:07:10Z",
+      "announced_date": "2026-08-27",
+      "first_seen": "2026-08-27",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.27021v1",
+        "pdf": "https://arxiv.org/pdf/2608.27021v1",
+        "html": "https://arxiv.org/html/2608.27021"
+      },
+      "score": 24,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2608.26867",
+      "title": "BekchiAI: Measuring, Observing, and Controlling LLM Agents in One Click",
+      "abstract": "Large language model agents reason, call tools, and act autonomously over many steps, but their agentic skills-correctly sequencing tools, planning under dependencies, judging untrusted inputs, and grounding generated arguments-are hard to measure with accuracy-only leaderboards. We present BekchiAI, which addresses both sides: a benchmark for measuring agentic skill and a platform for observing and controlling live agents. The BekchiAI-Benchmark, a suite of 13 tool-using ReAct agents across 7 task categories (arithmetic, structured/SQL, security detection, URL grounding, planning, orchestration, and tool-policy), totalling 2,057 deterministic, committed test tasks. Every task is verifier-checkable gold answers are computed by running canonical SQL against a real database, computing the exact schedule of a directed acyclic graph (DAG), or evaluating closed-form lambdas including adversarial security samples paired with deliberately imperfect signature scanners so a score reflects the model's own judgment, not the copying of an oracle. We define a small set of behavioral metrics beyond accuracy-tool-call adherence, URL hallucination and source-match, and per-model token cost and report a four-model comparison (Qwen3.7-Max, gemma-4-31B-it, gemma4:26b, gpt-oss-120b) whose story is in the per-family spread, not the aggregate. The benchmark runs are executed using the provided evaluation scripts. BekchiAI-Platform is a complementary web-based observability and control layer for deployed agents, providing full token and latency telemetry as well as remote run termination. The benchmark, evaluation tools, and platform are publicly released.",
+      "authors": [
+        "Mesut Toruk"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-27T09:30:08Z",
+      "updated": "2026-08-27T09:30:08Z",
+      "announced_date": "2026-08-27",
+      "first_seen": "2026-08-27",
+      "comment": "8 pages, 1 Figure, 6 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.26867v1",
+        "pdf": "https://arxiv.org/pdf/2608.26867v1",
+        "html": "https://arxiv.org/html/2608.26867"
+      },
+      "score": 17,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2608.26623",
+      "title": "AgentJudgeBench: A Multi-Difficulty Benchmark for Evaluating LLM Judges on Agentic Tool-Calling",
+      "abstract": "LLM judges are widely used to evaluate agentic tool-calling systems, yet their reliability on structured, dependency-driven workflows remains largely unexamined. We present AgentJudgeBench, the first benchmark to systematically study LLM-as-a-judge reliability for agentic tool-calling over workflow DAGs, as distinct from the broader LLM-as-a-judge task of open-ended text or preference evaluation. The benchmark comprises 3,808 instances spanning six DAG topologies and three difficulty tiers, evaluated with five generators (3B-70B open-weight models and GPT-5.4) and six judges (20B to frontier scale) under paired with- and without-ground-truth conditions. Judge alignment degrades monotonically with task difficulty, 1.5x faster without ground truth, and on hard queries without ground truth all six judges converge to a narrow 77-82% band regardless of scale, revealing a structural ceiling driven primarily by task difficulty, though its height is partly prompt-dependent for weaker generators, that model capacity alone cannot overcome. Ground-truth exposure is not uniformly beneficial: it reduces alignment for GPT-5.4 (1.5 pp) and Gemini-2.5-Pro (3.9 pp), consistent with over-anchoring. Among mitigation strategies, chain-of-thought reasoning and judge temperature both have negligible effect, while structured evaluation rubrics improve alignment by up to 6.5 pp but do not generalize uniformly across judge-generator pairs. With ground truth, QwQ-32B best matches the programmatic reference, while a human validation study identifies GPT-OSS-120B as the most human-aligned judge; without it, frontier judges lead only marginally within the shared ceiling. These results expose fundamental limitations of current LLM judges and yield practical guidelines for reliable evaluation in agentic systems.",
+      "authors": [
+        "Abhigya Verma",
+        "Amit Kumar Saha",
+        "Seganrasan Subramanian",
+        "Sai Harshitha Aluru"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-27T05:20:22Z",
+      "updated": "2026-08-27T05:20:22Z",
+      "announced_date": "2026-08-27",
+      "first_seen": "2026-08-27",
+      "comment": "31 Pages, 9 Figures, 31 Tables, Accepted as a main conference paper at EMNLP 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.26623v1",
+        "pdf": "https://arxiv.org/pdf/2608.26623v1",
+        "html": "https://arxiv.org/html/2608.26623"
+      },
+      "score": 16,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2608.26546",
+      "title": "DuMateBench: Evaluating Autonomous Agents in Complex Real-World Workflows",
+      "abstract": "Autonomous agents are increasingly adopted to complete complex, multi-tool workflows in real-world settings. However, existing benchmarks typically separate tasks by application or capability and evaluate agents in environments that are cleaner and more stable than those encountered in practice. We introduce DuMateBench, a real-session benchmark reconstructed from anonymized and privacy-screened user sessions collected from a large-scale production agent platform. Each task preserves the relevant pre-solution interaction history, persistent configurations, and workspace state, and is then validated through human verification. The resulting benchmark comprises 200 tasks spanning 8 broad scenarios and 17 fine-grained capability categories, with most tasks requiring multiple capability coordination. We execute these tasks in isolated Docker containers injected with three forms of real-world environmental complexity: Insufficient, Unstable, and Noisy, and assess performance using a hybrid deterministic and LLM-as-Judge evaluation protocol. Experiments across five representative autonomous-agent frameworks paired with four state-of-the-art LLMs reveal substantial gaps in strict task completion. Complementary robustness, efficiency, and diagnostic analyses further show that performance under environmental perturbations is jointly shaped by the capabilities of the LLM and the surrounding agent framework. The code and data are publicly available at https://dumatebench.com/.",
+      "authors": [
+        "Zechun Niu",
+        "Yukun Zhao",
+        "Jiaxin Zhang",
+        "Xu Shen",
+        "Jinhua Si",
+        "Han Tian",
+        "Can Xu",
+        "Yunfan Song",
+        "Jiaxin Mao",
+        "Yansong Gao",
+        "Yuchen Li",
+        "Jianmin Wu",
+        "Lingyong Yan",
+        "Shuaiqiang Wang",
+        "Dawei Yin"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-27T02:36:23Z",
+      "updated": "2026-08-27T02:36:23Z",
+      "announced_date": "2026-08-27",
+      "first_seen": "2026-08-27",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.26546v1",
+        "pdf": "https://arxiv.org/pdf/2608.26546v1",
+        "html": "https://arxiv.org/html/2608.26546"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    }
+  ]
+}

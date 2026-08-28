@@ -1,13 +1,13 @@
 {
   "date": "2026-08-25",
-  "count": 4,
+  "count": 6,
   "report": {
     "date": "2026-08-25",
-    "count": 4,
+    "count": 6,
     "themes": [
       {
         "id": "tool-use",
-        "count": 4,
+        "count": 6,
         "en": "Tool use",
         "zh": "工具使用"
       },
@@ -18,68 +18,119 @@
         "zh": "规划 / 推理"
       },
       {
-        "id": "multimodal",
-        "count": 1,
-        "en": "Multimodal",
-        "zh": "多模态"
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
       },
       {
         "id": "multi-agent",
-        "count": 1,
+        "count": 2,
         "en": "Multi-agent",
         "zh": "多智能体"
       },
       {
-        "id": "safety",
+        "id": "gui",
         "count": 1,
-        "en": "Safety",
-        "zh": "安全"
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
       }
     ],
     "en": {
-      "headline": "4 new agent benchmarks",
-      "summary": "On August 25, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Tool use (4), Planning / reasoning (3), Multimodal (1), and Multi-agent (1).",
+      "headline": "6 new agent benchmarks",
+      "summary": "On August 25, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Tool use (6), Planning / reasoning (3), Safety (2), and Multi-agent (2).",
       "highlights": [
+        {
+          "id": "2608.26199",
+          "title": "Benchmarking AI Agents for Hardware Design Automation via MCP Tool Calling",
+          "blurb": "We ask whether AI agents powered by locally deployed large language models can reliably automate expert-defined hardware design workflows in an industry-realistic tool-calling setting."
+        },
+        {
+          "id": "2608.26204",
+          "title": "ADeptS-Bench: Measuring the Trustworthiness of Computer Use Agents Across Devices",
+          "blurb": "Computer Use Agents (CUAs) are increasingly deployed to navigate mobile and desktop applications on behalf of users, yet no benchmark comprehensively evaluates whether they can safely interact with visual interfaces whil…"
+        },
         {
           "id": "2608.24509",
           "title": "PeakBench: Benchmarking Resource-Aware Tool Invocation in LLM Agents",
           "blurb": "LLM agents increasingly solve tasks by invoking multiple tools, where parallel execution is essential for low latency but difficult to manage safely."
-        },
-        {
-          "id": "2608.25039",
-          "title": "LifePlanner: Evaluating LLM Agents for Geo-spatial Planning with Social Media Data",
-          "blurb": "Geo-spatial planning, like trip design, is a realistic testbed for LLM agents because it requires grounded tool use, noisy evidence retrieval, and multi-constraint reasoning."
-        },
-        {
-          "id": "2608.24361",
-          "title": "Adaptive Influence Graphs for Failure Attribution in Multi-Agent Systems",
-          "blurb": "Multi-agent LLM systems are increasingly deployed in real-world applications, where failures can be costly and difficult to localize."
         }
       ]
     },
     "zh": {
-      "headline": "新增 4 篇 Agent Benchmark",
-      "summary": "2026年8月25日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在工具使用（4）、规划 / 推理（3）、多模态（1）、多智能体（1）。",
+      "headline": "新增 6 篇 Agent Benchmark",
+      "summary": "2026年8月25日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在工具使用（6）、规划 / 推理（3）、安全（2）、多智能体（2）。",
       "highlights": [
+        {
+          "id": "2608.26199",
+          "title": "Benchmarking AI Agents for Hardware Design Automation via MCP Tool Calling",
+          "blurb": "We ask whether AI agents powered by locally deployed large language models can reliably automate expert-defined hardware design workflows in an industry-realistic tool-calling setting."
+        },
+        {
+          "id": "2608.26204",
+          "title": "ADeptS-Bench: Measuring the Trustworthiness of Computer Use Agents Across Devices",
+          "blurb": "Computer Use Agents (CUAs) are increasingly deployed to navigate mobile and desktop applications on behalf of users, yet no benchmark comprehensively evaluates whether they can safely interact with visual interfaces whil…"
+        },
         {
           "id": "2608.24509",
           "title": "PeakBench: Benchmarking Resource-Aware Tool Invocation in LLM Agents",
           "blurb": "LLM agents increasingly solve tasks by invoking multiple tools, where parallel execution is essential for low latency but difficult to manage safely."
-        },
-        {
-          "id": "2608.25039",
-          "title": "LifePlanner: Evaluating LLM Agents for Geo-spatial Planning with Social Media Data",
-          "blurb": "Geo-spatial planning, like trip design, is a realistic testbed for LLM agents because it requires grounded tool use, noisy evidence retrieval, and multi-constraint reasoning."
-        },
-        {
-          "id": "2608.24361",
-          "title": "Adaptive Influence Graphs for Failure Attribution in Multi-Agent Systems",
-          "blurb": "Multi-agent LLM systems are increasingly deployed in real-world applications, where failures can be costly and difficult to localize."
         }
       ]
     }
   },
   "papers": [
+    {
+      "id": "2608.26204",
+      "title": "ADeptS-Bench: Measuring the Trustworthiness of Computer Use Agents Across Devices",
+      "abstract": "Computer Use Agents (CUAs) are increasingly deployed to navigate mobile and desktop applications on behalf of users, yet no benchmark comprehensively evaluates whether they can safely interact with visual interfaces while handling ambiguous instructions. We introduce ADeptS-Bench, a dual-stream trustworthiness benchmark, grounded in the ADEPTS capability framework and general population user studies. The Safety stream provides paired benign/malicious tasks with threats embedded in the visual interface. The Disambiguation stream evaluates whether agents seek clarification when intent is ambiguous. Evaluating seven models reveals that no model consistently exceeds 80% task success while staying below 30% attack success; every model clicks \"Checkout\" on a $25K order without hesitation, and none detects that a \"factory reset\" button is mislabeled as \"Optimize.\" An ablation reveals three distinct safety architectures: tool-dependent (ASR +21-23pp without refusal tool), partially tool-dependent (+10-11pp), and no mechanism (unchanged). In disambiguation, all models overestimate consequence severity, mirroring the over-refusal bias observed in safety. We release all data, evaluation code, and analysis tools upon publication.",
+      "authors": [
+        "Joy Chen",
+        "Alejandro Castillejo Munoz",
+        "Pierluca D'Oro",
+        "Yuxuan Sun",
+        "Chloe Evans",
+        "Joseph Tighe"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-08-25T23:21:57Z",
+      "updated": "2026-08-25T23:21:57Z",
+      "announced_date": "2026-08-25",
+      "first_seen": "2026-08-25",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.26204v1",
+        "pdf": "https://arxiv.org/pdf/2608.26204v1",
+        "html": "https://arxiv.org/html/2608.26204"
+      },
+      "score": 22,
+      "tags": [
+        "gui",
+        "tool-use",
+        "computer-use",
+        "safety"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
     {
       "id": "2608.25039",
       "title": "LifePlanner: Evaluating LLM Agents for Geo-spatial Planning with Social Media Data",
@@ -115,6 +166,38 @@
         "multimodal"
       ],
       "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2608.26199",
+      "title": "Benchmarking AI Agents for Hardware Design Automation via MCP Tool Calling",
+      "abstract": "We ask whether AI agents powered by locally deployed large language models can reliably automate expert-defined hardware design workflows in an industry-realistic tool-calling setting. In these environments, engineers issue repetitive, dependency-ordered operations---such as creating components, adding ports, and wiring connections---through specialised tools. Confidentiality constraints on component specifications and naming conventions often preclude hosted proprietary APIs, motivating the use of locally deployed models. To study this setting, we build a Model Context Protocol (MCP) server that reproduces the state and dependency logic of a proprietary hardware design tool used in embedded system development and construct a benchmark covering single-operation edits, multi-step dependency chains, invalid requests, misspelled prompts, and multi-server tool contexts. We evaluate seven open-source models comparing pipeline choices including system prompts, tool-description detail, context scope, and single-agent versus multi-agent architectures. Results show that strong models can achieve near-complete expected-call coverage on the benchmarked workflows, but reliability depends strongly on both task structure and agent configuration. Comprehensive tool descriptions consistently reduce failures, few-shot prompting can cause severe inaction for some models, cumulative context harms constrained models, and multi-agent decomposition helps weak workers or long sessions at the cost of additional calls. These findings provide practical guidance for deploying local LLM agents in stateful hardware design environments.",
+      "authors": [
+        "Leonardo Liparulo",
+        "Francesco Pierri"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-25T15:33:50Z",
+      "updated": "2026-08-25T15:33:50Z",
+      "announced_date": "2026-08-25",
+      "first_seen": "2026-08-25",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.26199v1",
+        "pdf": "https://arxiv.org/pdf/2608.26199v1",
+        "html": "https://arxiv.org/html/2608.26199"
+      },
+      "score": 23,
+      "tags": [
+        "tool-use",
+        "multi-agent"
+      ],
+      "field": "tool-use",
       "citations": 0
     },
     {
