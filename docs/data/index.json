@@ -1,8 +1,78 @@
 {
-  "generated_at": "2026-08-28T15:34:56Z",
+  "generated_at": "2026-08-31T05:37:56Z",
   "source": "arxiv",
-  "total": 1065,
+  "total": 1067,
   "days": [
+    {
+      "date": "2026-08-28",
+      "count": 2,
+      "report": {
+        "date": "2026-08-28",
+        "count": 2,
+        "themes": [
+          {
+            "id": "planning",
+            "count": 2,
+            "en": "Planning / reasoning",
+            "zh": "规划 / 推理"
+          },
+          {
+            "id": "multi-agent",
+            "count": 1,
+            "en": "Multi-agent",
+            "zh": "多智能体"
+          },
+          {
+            "id": "embodied",
+            "count": 1,
+            "en": "Embodied / robotics",
+            "zh": "具身 / 机器人"
+          },
+          {
+            "id": "multimodal",
+            "count": 1,
+            "en": "Multimodal",
+            "zh": "多模态"
+          }
+        ],
+        "en": {
+          "headline": "2 new agent benchmarks",
+          "summary": "On August 28, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Planning / reasoning (2), Multi-agent (1), Embodied / robotics (1), and Multimodal (1).",
+          "highlights": [
+            {
+              "id": "2608.28266",
+              "title": "CoCoBench: A Cooperative Coordination Benchmark for Embodied Multi-Agent Task Planning",
+              "blurb": "Agent systems powered by multimodal large language models (MLLMs) have advanced rapidly in recent years, yet existing embodied-agent benchmarks still lack fine-grained diagnostics for multi-agent coordination."
+            },
+            {
+              "id": "2608.28182",
+              "title": "Benchmarking large language model agent societies against human behavioural distributions",
+              "blurb": "Populations of large language model agents are increasingly used as experimental societies."
+            }
+          ]
+        },
+        "zh": {
+          "headline": "新增 2 篇 Agent Benchmark",
+          "summary": "2026年8月28日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在规划 / 推理（2）、多智能体（1）、具身 / 机器人（1）、多模态（1）。",
+          "highlights": [
+            {
+              "id": "2608.28266",
+              "title": "CoCoBench: A Cooperative Coordination Benchmark for Embodied Multi-Agent Task Planning",
+              "blurb": "Agent systems powered by multimodal large language models (MLLMs) have advanced rapidly in recent years, yet existing embodied-agent benchmarks still lack fine-grained diagnostics for multi-agent coordination."
+            },
+            {
+              "id": "2608.28182",
+              "title": "Benchmarking large language model agent societies against human behavioural distributions",
+              "blurb": "Populations of large language model agents are increasingly used as experimental societies."
+            }
+          ]
+        }
+      },
+      "paper_ids": [
+        "2608.28266",
+        "2608.28182"
+      ]
+    },
     {
       "date": "2026-08-27",
       "count": 7,
@@ -19627,6 +19697,78 @@
     }
   ],
   "papers": [
+    {
+      "id": "2608.28266",
+      "title": "CoCoBench: A Cooperative Coordination Benchmark for Embodied Multi-Agent Task Planning",
+      "abstract": "Agent systems powered by multimodal large language models (MLLMs) have advanced rapidly in recent years, yet existing embodied-agent benchmarks still lack fine-grained diagnostics for multi-agent coordination. Most benchmarks either focus on single-agent task completion or summarize multi-agent behavior with overall task success rates, which can obscure coordination failures such as duplicated work, violations of ordering constraints, resource contention, and desynchronized handoffs. In this paper, we introduce CoCoBench, a construct-level benchmark for evaluating multi-agent embodied coordination in executable household tasks. CoCoBench contains 897 oracle-validated instances organized around four recurring coordination constructs: task allocation, sequential ordering, mutual exclusion, and handoff coordination. In addition to task success rate, CoCoBench provides construct-level scores that measure whether agents coordinate effectively. We evaluate 11 leading MLLMs across different coordination modes, observation inputs, and numbers of agents. The results show that coordination ability is highly construct-specific: strong overall performance does not imply balanced competence across different coordination types. These findings point to new directions for designing targeted model architectures and improving multi-agent coordination ability.",
+      "authors": [
+        "Yang Chen",
+        "Ye-Xin Xie",
+        "Lirong Che",
+        "Danyang Peng",
+        "Yuzhe Yang",
+        "Peiwen Lin",
+        "Xu Cao",
+        "Chuang Wang",
+        "Lei Yuan",
+        "Jian Su",
+        "Lan-Zhe Guo"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-08-28T12:29:23Z",
+      "updated": "2026-08-28T12:29:23Z",
+      "announced_date": "2026-08-28",
+      "first_seen": "2026-08-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.28266v1",
+        "pdf": "https://arxiv.org/pdf/2608.28266v1",
+        "html": "https://arxiv.org/html/2608.28266"
+      },
+      "score": 18,
+      "tags": [
+        "multi-agent",
+        "embodied",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2608.28182",
+      "title": "Benchmarking large language model agent societies against human behavioural distributions",
+      "abstract": "Populations of large language model agents are increasingly used as experimental societies. Three doubts shadow every such result: whether the agents behave like the humans they stand in for, whether a finding survives changes to the apparatus that leave the rules untouched, and whether apparent social dynamics are interaction at all rather than the reproduction of experiments the models have read. This article introduces SILICA, an open instrument that tests all three. Five environments carry published human anchors, each paired with perturbations that re-render the same rules and with variants whose payoffs point away from the memorised result. Twelve open-weight models were run through it on a single consumer graphics card. Agreement with human data is confined to starting points: first-round public-goods contributions fall inside the equivalence margin for eight of eleven models, while no model matches end-state contributions or the human corridor of cooperation. Merely swapping the order in which two actions are listed costs one model 58 points of cooperation. Presenting responders with a fixed schedule of offers shows that only one model, the sole reasoning-trained one, places its acceptance threshold where the incentive requires; two move theirs part of the way, two move them the wrong way, and three never acquire one. Conventions form through a shared prior over the names rather than through negotiation, though negotiation reappears once that prior is disrupted. On the certification ladder defined here, current silicon societies support exploratory claims and no more.",
+      "authors": [
+        "Raad Bin Tareaf"
+      ],
+      "categories": [
+        "physics.soc-ph",
+        "cs.CL"
+      ],
+      "primary_category": "physics.soc-ph",
+      "published": "2026-08-28T10:50:32Z",
+      "updated": "2026-08-28T10:50:32Z",
+      "announced_date": "2026-08-28",
+      "first_seen": "2026-08-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.28182v1",
+        "pdf": "https://arxiv.org/pdf/2608.28182v1",
+        "html": "https://arxiv.org/html/2608.28182"
+      },
+      "score": 5,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
     {
       "id": "2608.27334",
       "title": "BTS-AgentBench: A Deterministic, Replayable Pipeline from Read-Only Telemetry Logs to Agent Benchmarks",
