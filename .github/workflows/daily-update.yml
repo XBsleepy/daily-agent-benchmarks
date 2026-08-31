@@ -4,12 +4,13 @@ on:
   schedule:
     # arXiv announces new papers Sun–Thu at 20:00 US Eastern.
     # EDT → 00:00 UTC; EST → 01:00 UTC. The API often lags a few minutes.
-    # Two slots cover DST and give a second pass if the first run is early.
+    # GitHub often delays or skips cron on quiet repos, so keep later catch-ups.
     # Cron days 1–5 (Mon–Fri UTC) = the night of Sun–Thu ET announcements.
     - cron: "25 0 * * 1-5"
     - cron: "25 1 * * 1-5"
-    # Catch-up if export.arxiv.org was overloaded right after the drop.
     - cron: "30 3 * * 1-5"
+    - cron: "0 8 * * 1-5"
+    - cron: "0 14 * * 1-5"
   workflow_dispatch:
   push:
     branches: [main, master]
