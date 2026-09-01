@@ -1,0 +1,204 @@
+{
+  "date": "2026-08-30",
+  "count": 3,
+  "report": {
+    "date": "2026-08-30",
+    "count": 3,
+    "themes": [
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      }
+    ],
+    "en": {
+      "headline": "3 new agent benchmarks",
+      "summary": "On August 30, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Coding agents (1), Tool use (1), Multi-agent (1), and Memory (1).",
+      "highlights": [
+        {
+          "id": "2608.29834",
+          "title": "You Know What I Mean: A Benchmark for Agentic Conversational Reference Grounding",
+          "blurb": "Collaborative conversations frequently contain references whose targets are indirect rather than named: resolving \"this looks like the fix discussed yesterday\" requires combining conversational context with evidence from…"
+        },
+        {
+          "id": "2608.29528",
+          "title": "MedCache: Efficient and Temporally Valid Memory for Longitudinal Clinical Agents",
+          "blurb": "Longitudinal clinical agents must maintain an evolving patient state from evidence distributed across visits, time points, and specialties."
+        },
+        {
+          "id": "2608.29481",
+          "title": "SIC-Agents: Benchmarking and Building an Adaptive Simulator for Pediatric Serious Illness Communication Training",
+          "blurb": "Pediatric serious illness communication (SIC) is critically important, yet scalable communication training for clinicians remains limited."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年8月30日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在代码智能体（1）、工具使用（1）、多智能体（1）、记忆（1）。",
+      "highlights": [
+        {
+          "id": "2608.29834",
+          "title": "You Know What I Mean: A Benchmark for Agentic Conversational Reference Grounding",
+          "blurb": "Collaborative conversations frequently contain references whose targets are indirect rather than named: resolving \"this looks like the fix discussed yesterday\" requires combining conversational context with evidence from…"
+        },
+        {
+          "id": "2608.29528",
+          "title": "MedCache: Efficient and Temporally Valid Memory for Longitudinal Clinical Agents",
+          "blurb": "Longitudinal clinical agents must maintain an evolving patient state from evidence distributed across visits, time points, and specialties."
+        },
+        {
+          "id": "2608.29481",
+          "title": "SIC-Agents: Benchmarking and Building an Adaptive Simulator for Pediatric Serious Illness Communication Training",
+          "blurb": "Pediatric serious illness communication (SIC) is critically important, yet scalable communication training for clinicians remains limited."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.29834",
+      "title": "You Know What I Mean: A Benchmark for Agentic Conversational Reference Grounding",
+      "abstract": "Collaborative conversations frequently contain references whose targets are indirect rather than named: resolving \"this looks like the fix discussed yesterday\" requires combining conversational context with evidence from the surrounding workspace which is accessible through APIs or user interfaces. We formalize this problem as Conversational Reference Grounding (CoRG): using a given set of tools to resolve a reference in conversation to the unique external item intended by the speaker. CoRG is challenging because it combines lexical, semantic, and temporal cues distributed across the conversation and the external workspace. Agents must translate these heterogeneous signals into effective tool use: formulating strategies, discovering plausible candidates, inspecting their metadata and content, and ruling out close alternatives. We study CoRG through RepoRef, a benchmark of 400 developer-chat segments grounded in GitHub issues, pull requests, and commits across 92 repositories. Unlike single-shot retrieval tasks, RepoRef often requires multi-step tool use. Our results show that CoRG remains challenging for current agents, even the best agent reaches only 67.0% success rate, leaving one third of references unresolved. These findings position CoRG as a concrete benchmark for studying how agents search, inspect, and verify information in realistic multi-tool environments.",
+      "authors": [
+        "Karen Fuchs",
+        "Uri Katz",
+        "Yoav Goldberg"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.IR"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-08-30T15:06:51Z",
+      "updated": "2026-08-30T15:06:51Z",
+      "announced_date": "2026-08-30",
+      "first_seen": "2026-08-30",
+      "comment": "23 pages, 6 figures, Accepted to EMNLP 2026 Main Conference",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.29834v1",
+        "pdf": "https://arxiv.org/pdf/2608.29834v1",
+        "html": "https://arxiv.org/html/2608.29834"
+      },
+      "score": 18,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2608.29528",
+      "title": "MedCache: Efficient and Temporally Valid Memory for Longitudinal Clinical Agents",
+      "abstract": "Longitudinal clinical agents must maintain an evolving patient state from evidence distributed across visits, time points, and specialties. However, how agent memory should be designed for this setting remains unclear. We introduce a benchmark of multi-visit, multi-specialty patient records that evaluates long-context evidence retrieval, cross-time evidence aggregation, and cross-specialty clinical reasoning. Using this benchmark, we systematically study four memory design choices: curation, organization, retrieval, and memory-augmented reasoning. We find that temporal validity is more important than simply retaining more history; specialty-factorized memory reduces context but can hide shared evidence; and multiple agents help when specialists must reason together, not merely when evidence comes from multiple memories. Guided by these findings, we propose \\textit{MedCache}, a hybrid framework that constructs temporally valid patient memory, organizes evidence into overlapping specialty views, routes each query to relevant memories, and adaptively invokes one or multiple specialists. Experiments show that MedCache improves reasoning accuracy and memory efficiency over strong single-agent and multi-agent baselines, while generalizing across model backbones and external datasets.",
+      "authors": [
+        "Hei Ting",
+        "Chan",
+        "Chenwei Wu",
+        "Xueshen Liu",
+        "Boyuan Zheng",
+        "Liyue Shen",
+        "Jiasi Chen",
+        "Z. Morley Mao"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DC",
+        "cs.MA"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-08-30T03:28:56Z",
+      "updated": "2026-08-30T03:28:56Z",
+      "announced_date": "2026-08-30",
+      "first_seen": "2026-08-30",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.29528v1",
+        "pdf": "https://arxiv.org/pdf/2608.29528v1",
+        "html": "https://arxiv.org/html/2608.29528"
+      },
+      "score": 8,
+      "tags": [
+        "multi-agent",
+        "memory",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2608.29481",
+      "title": "SIC-Agents: Benchmarking and Building an Adaptive Simulator for Pediatric Serious Illness Communication Training",
+      "abstract": "Pediatric serious illness communication (SIC) is critically important, yet scalable communication training for clinicians remains limited. Compared with other dialogue simulation settings, pediatric SIC poses additional challenges, including multi-party interactions, response to parental distress and strong dependence on feedback dynamics. Existing LLM-based simulators optimize generic dialogue quality rather than curriculum-contingent behavior required for effective SIC training. In collaboration with educators and pediatric clinicians, we introduce the first benchmark suite and simulation framework tailored to pediatric SIC training. Our benchmarks, PitfallBench and DialogueBench, evaluate simulators both at the turn-level and across full dialogues. We further propose SIC-Agents, a self-improving framework that generates a clinician-editable skill document to guide simulator behavior. Our experiments show that SIC-Agents outperforms static expert prompting. To support future research, we release our benchmarks for parent simulation in pediatric SIC at https://github.com/Beikewzh/sic-benchmarks",
+      "authors": [
+        "Zihan Wang",
+        "Anita Marie Slominska",
+        "Rennie Bimman",
+        "Elizabeth Di Flumeri",
+        "Amanda Mayappo-Neeposh",
+        "Conall Francoeur",
+        "Tamara Ellen Carver",
+        "Xiao-Wen Chang",
+        "Doina Precup",
+        "Esin Darici Haritaoglu",
+        "Ismail Haritaoglu",
+        "Akshatha Arodi",
+        "Naomi Goloff"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-08-30T00:19:44Z",
+      "updated": "2026-08-30T00:19:44Z",
+      "announced_date": "2026-08-30",
+      "first_seen": "2026-08-30",
+      "comment": "Accepted to EMNLP 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.29481v1",
+        "pdf": "https://arxiv.org/pdf/2608.29481v1",
+        "html": "https://arxiv.org/html/2608.29481"
+      },
+      "score": 7,
+      "tags": [
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 0
+    }
+  ]
+}

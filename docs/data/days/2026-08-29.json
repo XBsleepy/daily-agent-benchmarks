@@ -1,0 +1,123 @@
+{
+  "date": "2026-08-29",
+  "count": 2,
+  "report": {
+    "date": "2026-08-29",
+    "count": 2,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On August 29, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Tool use (2), and Planning / reasoning (1).",
+      "highlights": [
+        {
+          "id": "2608.29397",
+          "title": "AlgoWorlds: Benchmarking Tool Use for Global Optimization in Algorithmic Worlds",
+          "blurb": "Tool-use benchmarks generally evaluate whether an agent completes a workflow using appropriate tools and valid arguments."
+        },
+        {
+          "id": "2608.29128",
+          "title": "APIFlow-Bench: Measuring Whether Agents Survive Long, Dependent API Workflows",
+          "blurb": "Tool-using agents are commonly evaluated by a single bit: whether an end-to-end workflow completed."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年8月29日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在工具使用（2）、规划 / 推理（1）。",
+      "highlights": [
+        {
+          "id": "2608.29397",
+          "title": "AlgoWorlds: Benchmarking Tool Use for Global Optimization in Algorithmic Worlds",
+          "blurb": "Tool-use benchmarks generally evaluate whether an agent completes a workflow using appropriate tools and valid arguments."
+        },
+        {
+          "id": "2608.29128",
+          "title": "APIFlow-Bench: Measuring Whether Agents Survive Long, Dependent API Workflows",
+          "blurb": "Tool-using agents are commonly evaluated by a single bit: whether an end-to-end workflow completed."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2608.29397",
+      "title": "AlgoWorlds: Benchmarking Tool Use for Global Optimization in Algorithmic Worlds",
+      "abstract": "Tool-use benchmarks generally evaluate whether an agent completes a workflow using appropriate tools and valid arguments. However, feasibility alone is insufficient in real-world decision settings such as route planning and fleet dispatch. Individual choices interact through shared constraints and costs, so a feasible solution may still be substantially suboptimal. This raises a harder question: can an agent turn information gathered through tools into a globally optimal decision? We introduce AlgoWorlds, a benchmark that transforms formally specified combinatorial optimization problems into partially observed decision environments with verifiable global optima. Each environment contains a hidden instance observed only through task-specific information tools, after which the agent commits to one structured decision evaluated for feasibility and optimality. AlgoWorlds contains 240 environments covering ten combinatorial optimization families and four workload levels. Family-specific deterministic programs generate the instances, exact algorithms certify their optima and determine workload levels, and two structurally different tool interfaces present each underlying instance. We evaluate seven leading LLMs, including Claude Opus 4.8 and GPT-5.6 Sol. Achieving global optimality remains highly challenging: although leading models produce feasible decisions in most cases, the best-performing model reaches exact optimality in only 38.61% of cases. Even when agents collect sufficient information to reconstruct the hidden instance, most failures end in feasible but suboptimal decisions. The challenge therefore extends beyond information acquisition to information integration, global constraint reasoning, and decision verification. The project homepage is available at https://xzx34.github.io/AlgoWorlds/, and the code is available at https://github.com/xzx34/AlgoWorlds.",
+      "authors": [
+        "Zixiang Xu",
+        "Jiaan Wang",
+        "Fandong Meng"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-08-29T18:37:41Z",
+      "updated": "2026-08-29T18:37:41Z",
+      "announced_date": "2026-08-29",
+      "first_seen": "2026-08-29",
+      "comment": "Homepage: https://xzx34.github.io/AlgoWorlds/ Code: https://github.com/xzx34/AlgoWorlds",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.29397v1",
+        "pdf": "https://arxiv.org/pdf/2608.29397v1",
+        "html": "https://arxiv.org/html/2608.29397"
+      },
+      "score": 14,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2608.29128",
+      "title": "APIFlow-Bench: Measuring Whether Agents Survive Long, Dependent API Workflows",
+      "abstract": "Tool-using agents are commonly evaluated by a single bit: whether an end-to-end workflow completed. This metric fails to distinguish failures that matter in production, such as expired credentials, malformed payloads, or correct execution followed by incorrect final delivery. We introduce APIFlow-Bench, a fully auditable benchmark for long-horizon, dependent REST-API workflows that decomposes performance into seven engineering capabilities and requires agents to produce answers supported by the actual call path. We generate synthetic API worlds forward, subtask by subtask; each subtask is admitted only after a zero-LLM self-test triad verifies its grader and an oracle establishes solvability, and an adversarial audit identified and fixed six grader exploits. Grading is deterministic and provenance-sensitive: a state check traces a mock-minted canary through the API data flow to the response the answer must originate from, and a typed answer card is verified field by field. We release all answer keys and 44,362 unredacted execution transcripts. Across 19 frontier and open-weight models under one neutral scaffold, we find: (1) longer dependency chains degrade success, from 93% on individual subtasks to 74% on clean 20-subtask chains and 61% when including the 8% of chain trials that a model-consensus screen flags as passed by no model; (2) reliability separates models more than best-case capability, with best-of-five spanning seven points but all-five-of-five reliability spanning 44 points; (3) the independent-error account of compounding failure does not fit the data: pass rates on 20-subtask chains are 33 percentage points above the product of subtask-level rates, and on the clean slice 77% of failing runs reached the correct final state and failed only at delivery.",
+      "authors": [
+        "Zelin Wan",
+        "Arash Nourian",
+        "Xiaoxiao Li",
+        "Nihar Nandan",
+        "Kamalakannan Nandagopal"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-29T08:12:11Z",
+      "updated": "2026-08-29T08:12:11Z",
+      "announced_date": "2026-08-29",
+      "first_seen": "2026-08-29",
+      "comment": "15 pages, 8 figures. Under review at the NeurIPS 2026 Workshop on Evaluation of Interactive Agents (IAEval). Harness, frozen task bank, and 44,362 execution transcripts: https://github.com/postmanlabs/APIFlow-Bench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2608.29128v1",
+        "pdf": "https://arxiv.org/pdf/2608.29128v1",
+        "html": "https://arxiv.org/html/2608.29128"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    }
+  ]
+}
