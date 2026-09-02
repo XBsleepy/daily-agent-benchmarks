@@ -1,15 +1,45 @@
 {
   "date": "2026-08-31",
-  "count": 5,
+  "count": 8,
   "report": {
     "date": "2026-08-31",
-    "count": 5,
+    "count": 8,
     "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multi-agent",
+        "count": 2,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
       {
         "id": "safety",
         "count": 2,
         "en": "Safety",
         "zh": "安全"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
       },
       {
         "id": "memory",
@@ -18,68 +48,124 @@
         "zh": "记忆"
       },
       {
-        "id": "multimodal",
+        "id": "web",
         "count": 1,
-        "en": "Multimodal",
-        "zh": "多模态"
-      },
-      {
-        "id": "multi-agent",
-        "count": 1,
-        "en": "Multi-agent",
-        "zh": "多智能体"
-      },
-      {
-        "id": "planning",
-        "count": 1,
-        "en": "Planning / reasoning",
-        "zh": "规划 / 推理"
+        "en": "Web agents",
+        "zh": "网页智能体"
       }
     ],
     "en": {
-      "headline": "5 new agent benchmarks",
-      "summary": "On August 31, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Safety (2), Memory (1), Multimodal (1), and Multi-agent (1).",
+      "headline": "8 new agent benchmarks",
+      "summary": "On August 31, 2026, arXiv listed 8 new agent benchmarks. Work clustered around Tool use (2), Multi-agent (2), Planning / reasoning (2), and Multimodal (2).",
       "highlights": [
+        {
+          "id": "2609.00384",
+          "title": "RestoreBench: Can AI Agents Restore Power Flow Convergence?",
+          "blurb": "Large Language Model (LLM) agents increasingly automate multi-step engineering workflows through tool use, interpretation of intermediate results, and iterative planning."
+        },
+        {
+          "id": "2609.00081",
+          "title": "Framework and Benchmark for Code-Driven Agentic Testing in Web Development",
+          "blurb": "End-to-end GUI testing is essential for verifying web applications, yet existing evaluations rely on predefined checklists and are confined to the data and frameworks of web generation benchmarks, leaving the bug-discove…"
+        },
         {
           "id": "2608.30730",
           "title": "E-Commerce Bench: Evaluating LLM Agents on Long-Horizon Autonomous Business Operation",
           "blurb": "Long-horizon agentic tasks go beyond chaining short tasks over more interaction turns."
-        },
-        {
-          "id": "2608.30724",
-          "title": "BAITBENCH: Measuring Agent Reward Hacking with Optional Shortcuts Planted in ML Tasks",
-          "blurb": "LLM agents are increasingly used to run autonomous ML experiments, iterating on target metrics with little human oversight."
-        },
-        {
-          "id": "2608.31022",
-          "title": "MNIST-PRO: MNIST is Back as a Partially Observable World for AI Agents",
-          "blurb": "AI agents in partially observable environments need to coordinate active sensing with working memory to maintain an evolving perceptual state."
         }
       ]
     },
     "zh": {
-      "headline": "新增 5 篇 Agent Benchmark",
-      "summary": "2026年8月31日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在安全（2）、记忆（1）、多模态（1）、多智能体（1）。",
+      "headline": "新增 8 篇 Agent Benchmark",
+      "summary": "2026年8月31日，arXiv 新增 8 篇 Agent Benchmark。当日主题集中在工具使用（2）、多智能体（2）、规划 / 推理（2）、多模态（2）。",
       "highlights": [
+        {
+          "id": "2609.00384",
+          "title": "RestoreBench: Can AI Agents Restore Power Flow Convergence?",
+          "blurb": "Large Language Model (LLM) agents increasingly automate multi-step engineering workflows through tool use, interpretation of intermediate results, and iterative planning."
+        },
+        {
+          "id": "2609.00081",
+          "title": "Framework and Benchmark for Code-Driven Agentic Testing in Web Development",
+          "blurb": "End-to-end GUI testing is essential for verifying web applications, yet existing evaluations rely on predefined checklists and are confined to the data and frameworks of web generation benchmarks, leaving the bug-discove…"
+        },
         {
           "id": "2608.30730",
           "title": "E-Commerce Bench: Evaluating LLM Agents on Long-Horizon Autonomous Business Operation",
           "blurb": "Long-horizon agentic tasks go beyond chaining short tasks over more interaction turns."
-        },
-        {
-          "id": "2608.30724",
-          "title": "BAITBENCH: Measuring Agent Reward Hacking with Optional Shortcuts Planted in ML Tasks",
-          "blurb": "LLM agents are increasingly used to run autonomous ML experiments, iterating on target metrics with little human oversight."
-        },
-        {
-          "id": "2608.31022",
-          "title": "MNIST-PRO: MNIST is Back as a Partially Observable World for AI Agents",
-          "blurb": "AI agents in partially observable environments need to coordinate active sensing with working memory to maintain an evolving perceptual state."
         }
       ]
     }
   },
   "papers": [
+    {
+      "id": "2609.00384",
+      "title": "RestoreBench: Can AI Agents Restore Power Flow Convergence?",
+      "abstract": "Large Language Model (LLM) agents increasingly automate multi-step engineering workflows through tool use, interpretation of intermediate results, and iterative planning. Diagnosing and resolving non-convergent power flow cases is a promising yet largely unexplored application, as it requires engineering judgment, experimentation, and decision-making within constrained action spaces. We introduce a benchmark that evaluates these capabilities across multiple LLMs and three architectures: \\emph{chatbot}, \\emph{single agent}, and \\emph{multi-agent} systems. The evaluation covers two power grids and 46 cases per grid, each requiring one or more corrective actions to restore convergence. The benchmark defines the simulation environment, observation and action spaces, and evaluation metrics, providing a reproducible foundation for developing agentic AI systems for power system planning and operation. The code is available at https://github.com/Mansutti081/RestoreBench",
+      "authors": [
+        "Riccardo Mansutti",
+        "Andrea Pomarico",
+        "Robert Jakob",
+        "Qian Zhang",
+        "Alberto Berizzi",
+        "Kevin O'Sullivan"
+      ],
+      "categories": [
+        "cs.AI",
+        "eess.SY"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-08-31T21:15:19Z",
+      "updated": "2026-08-31T21:15:19Z",
+      "announced_date": "2026-08-31",
+      "first_seen": "2026-08-31",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.00384v1",
+        "pdf": "https://arxiv.org/pdf/2609.00384v1",
+        "html": "https://arxiv.org/html/2609.00384"
+      },
+      "score": 21,
+      "tags": [
+        "tool-use",
+        "multi-agent",
+        "embodied",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2609.00296",
+      "title": "Toward Workflow-Aware Benchmarking for Healthcare NLP Agents",
+      "abstract": "Large language model (LLM) agents are increasingly proposed for healthcare tasks such as clinical documentation, evidence retrieval, patient messaging, and care coordination. Yet many evaluations remain limited to static medical question answering or one-shot generation, under-representing longitudinal state, interruptions, and human handoffs. We introduce an episode-level evaluation protocol for healthcare NLP agents. The protocol separates evidence across model, agent, and simulated-workflow behavior; specifies a five-field episode schema; and defines annotation and scoring for state continuity, evidence traceability, and escalation decisions. It is instantiated as four task templates: documentation update, evidence retrieval, patient messaging, and triage handoff. The protocol does not claim to measure clinical outcomes or deployment value. Instead, it supplies a reproducible intermediate evaluation layer between static benchmarks and prospective workflow studies, with an explicit cost-sensitive treatment of missed versus unnecessary escalation.",
+      "authors": [
+        "Junyi Yao",
+        "Baichuan Li",
+        "Zihao Zheng",
+        "Jiayu Long"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-08-31T19:41:58Z",
+      "updated": "2026-08-31T19:41:58Z",
+      "announced_date": "2026-08-31",
+      "first_seen": "2026-08-31",
+      "comment": "4 pages, 3 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.00296v1",
+        "pdf": "https://arxiv.org/pdf/2609.00296v1",
+        "html": "https://arxiv.org/html/2609.00296"
+      },
+      "score": 8,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
     {
       "id": "2608.31022",
       "title": "MNIST-PRO: MNIST is Back as a Partially Observable World for AI Agents",
@@ -219,6 +305,43 @@
         "multi-agent"
       ],
       "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2609.00081",
+      "title": "Framework and Benchmark for Code-Driven Agentic Testing in Web Development",
+      "abstract": "End-to-end GUI testing is essential for verifying web applications, yet existing evaluations rely on predefined checklists and are confined to the data and frameworks of web generation benchmarks, leaving the bug-discovery ability of vision-language models (VLMs) systematically untested. We introduce \\textbf{C}ode-driven \\textbf{A}gentic \\textbf{T}esting (CAT), a paradigm in which the agent writes Playwright code to drive the browser, gathers feedback, and autonomously explores web applications to uncover bugs. We instantiate CAT with CATJudge, an agentic framework that unifies Browser-Use and Computer-Use tools within a single environment and CATTest, a benchmark of 102 AI-generated web applications with carefully annotated bugs, built through close human-AI collaboration to feature complex interactions and subtle defects. Experiments with mainstream VLMs show that all evaluated models perform poorly, revealing a clear gap between current VLM capabilities and the demands of real-world testing in AI web development. We release our code and data at https://github.com/SleepyWithoutCoffee/CATJudge.",
+      "authors": [
+        "Bin Hong",
+        "Zhenchao Zhang",
+        "Jiyuan He",
+        "Kai Zhang",
+        "Zhenya Huang"
+      ],
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-08-31T10:07:51Z",
+      "updated": "2026-08-31T10:07:51Z",
+      "announced_date": "2026-08-31",
+      "first_seen": "2026-08-31",
+      "comment": "30 pages, 20 figures, EMNLP'26 Main Conference",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.00081v1",
+        "pdf": "https://arxiv.org/pdf/2609.00081v1",
+        "html": "https://arxiv.org/html/2609.00081"
+      },
+      "score": 15,
+      "tags": [
+        "web",
+        "gui",
+        "tool-use",
+        "computer-use",
+        "multimodal"
+      ],
+      "field": "web",
       "citations": 0
     },
     {

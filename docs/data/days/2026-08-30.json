@@ -1,9 +1,9 @@
 {
   "date": "2026-08-30",
-  "count": 3,
+  "count": 4,
   "report": {
     "date": "2026-08-30",
-    "count": 3,
+    "count": 4,
     "themes": [
       {
         "id": "coding",
@@ -16,6 +16,12 @@
         "count": 1,
         "en": "Tool use",
         "zh": "工具使用"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
       },
       {
         "id": "multi-agent",
@@ -43,8 +49,8 @@
       }
     ],
     "en": {
-      "headline": "3 new agent benchmarks",
-      "summary": "On August 30, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Coding agents (1), Tool use (1), Multi-agent (1), and Memory (1).",
+      "headline": "4 new agent benchmarks",
+      "summary": "On August 30, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Coding agents (1), Tool use (1), GUI agents (1), and Multi-agent (1).",
       "highlights": [
         {
           "id": "2608.29834",
@@ -52,20 +58,20 @@
           "blurb": "Collaborative conversations frequently contain references whose targets are indirect rather than named: resolving \"this looks like the fix discussed yesterday\" requires combining conversational context with evidence from…"
         },
         {
+          "id": "2609.00048",
+          "title": "GUI-CC: Benchmarking Contextual Consistency of GUI World Models as Agent Environments",
+          "blurb": "GUI world models are increasingly evaluated as one-step next-screen predictors, yet their intended use is often as multi-step environments for GUI agents."
+        },
+        {
           "id": "2608.29528",
           "title": "MedCache: Efficient and Temporally Valid Memory for Longitudinal Clinical Agents",
           "blurb": "Longitudinal clinical agents must maintain an evolving patient state from evidence distributed across visits, time points, and specialties."
-        },
-        {
-          "id": "2608.29481",
-          "title": "SIC-Agents: Benchmarking and Building an Adaptive Simulator for Pediatric Serious Illness Communication Training",
-          "blurb": "Pediatric serious illness communication (SIC) is critically important, yet scalable communication training for clinicians remains limited."
         }
       ]
     },
     "zh": {
-      "headline": "新增 3 篇 Agent Benchmark",
-      "summary": "2026年8月30日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在代码智能体（1）、工具使用（1）、多智能体（1）、记忆（1）。",
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年8月30日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在代码智能体（1）、工具使用（1）、GUI 智能体（1）、多智能体（1）。",
       "highlights": [
         {
           "id": "2608.29834",
@@ -73,14 +79,14 @@
           "blurb": "Collaborative conversations frequently contain references whose targets are indirect rather than named: resolving \"this looks like the fix discussed yesterday\" requires combining conversational context with evidence from…"
         },
         {
+          "id": "2609.00048",
+          "title": "GUI-CC: Benchmarking Contextual Consistency of GUI World Models as Agent Environments",
+          "blurb": "GUI world models are increasingly evaluated as one-step next-screen predictors, yet their intended use is often as multi-step environments for GUI agents."
+        },
+        {
           "id": "2608.29528",
           "title": "MedCache: Efficient and Temporally Valid Memory for Longitudinal Clinical Agents",
           "blurb": "Longitudinal clinical agents must maintain an evolving patient state from evidence distributed across visits, time points, and specialties."
-        },
-        {
-          "id": "2608.29481",
-          "title": "SIC-Agents: Benchmarking and Building an Adaptive Simulator for Pediatric Serious Illness Communication Training",
-          "blurb": "Pediatric serious illness communication (SIC) is critically important, yet scalable communication training for clinicians remains limited."
         }
       ]
     }
@@ -117,6 +123,43 @@
         "tool-use"
       ],
       "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2609.00048",
+      "title": "GUI-CC: Benchmarking Contextual Consistency of GUI World Models as Agent Environments",
+      "abstract": "GUI world models are increasingly evaluated as one-step next-screen predictors, yet their intended use is often as multi-step environments for GUI agents. This mismatch leaves a key requirement under-tested: generated states must remain contextually consistent when they are repeatedly reused for future interaction. We introduce GUI-CC, a benchmark that evaluates contextual consistency of GUI world models as agent environments rather than isolated next-screen predictors. GUI-CC contains two complementary tracks: an offline reference-action track that rolls models along real mobile GUI trajectories, and an online agent-loop track that lets fixed probing agents interact with model-generated UIs. We construct 500 offline trajectory tasks from GUIOdyssey and 200 emulator-verified online tasks across 30 mobile apps. GUI-CC evaluates transition fidelity, transition plausibility, contextual consistency, and task progress. Experiments show that plausible single-step generation does not guarantee reliable environment simulation: current models often produce usable-looking screens while failing to preserve task-relevant context or support executable multi-step rollouts.",
+      "authors": [
+        "Lin Fu",
+        "Zheyuan Yang",
+        "Tianhui Zhang",
+        "Jinbiao Wei",
+        "Guo Gan",
+        "Boxu Liu",
+        "Yilun Zhao",
+        "Yu Rong"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-08-30T05:19:43Z",
+      "updated": "2026-08-30T05:19:43Z",
+      "announced_date": "2026-08-30",
+      "first_seen": "2026-08-30",
+      "comment": "EMNLP 26 Findings",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.00048v1",
+        "pdf": "https://arxiv.org/pdf/2609.00048v1",
+        "html": "https://arxiv.org/html/2609.00048"
+      },
+      "score": 11,
+      "tags": [
+        "gui"
+      ],
+      "field": "computer-use",
       "citations": 0
     },
     {
