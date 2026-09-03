@@ -84,12 +84,20 @@
     const title = query ? BM25.highlight(paper.title, query) : BM25.escapeHtml(paper.title);
     const absUrl = paper.links?.abs || `https://arxiv.org/abs/${paper.id}`;
     const cites = Number(paper.citations || 0);
+    const rawAbs = paper.abstract || "";
+    const absText = query ? BM25.highlight(rawAbs, query) : BM25.escapeHtml(rawAbs);
     const badge =
       matchKind === "exact"
         ? `<span class="chip chip--exact">${t(state.lang, "matchExact")}</span>`
         : matchKind === "cover"
           ? `<span class="chip chip--cover">${t(state.lang, "matchCover")}</span>`
           : "";
+    const abstract = rawAbs
+      ? `<div class="abstract" data-collapsed="true">
+          <p>${absText}</p>
+          <button type="button" data-abs aria-expanded="false">${t(state.lang, "expand")}</button>
+        </div>`
+      : "";
     return `
       <article class="row">
         <div class="row__main">
@@ -100,6 +108,7 @@
             · ${BM25.escapeHtml(authorLine(paper))}
             ${badge}
           </div>
+          ${abstract}
         </div>
         <div class="row__side">
           <span class="cite${cites ? "" : " cite--zero"}">
@@ -285,6 +294,19 @@
       if (more) {
         state.shown += PAGE;
         render();
+        return;
+      }
+      const absBtn = ev.target.closest("[data-abs]");
+      const collapsedAbs = ev.target.closest(".abstract[data-collapsed='true']");
+      if (absBtn || collapsedAbs) {
+        const box = (absBtn || collapsedAbs).closest(".abstract");
+        const open = box.getAttribute("data-collapsed") !== "true";
+        box.setAttribute("data-collapsed", open ? "true" : "false");
+        const btn = box.querySelector("[data-abs]");
+        if (btn) {
+          btn.setAttribute("aria-expanded", String(!open));
+          btn.textContent = t(state.lang, open ? "expand" : "collapse");
+        }
         return;
       }
       const sortBtn = ev.target.closest("[data-sort]");
