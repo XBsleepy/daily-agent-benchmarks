@@ -1,8 +1,116 @@
 {
-  "generated_at": "2026-09-03T17:43:56Z",
+  "generated_at": "2026-09-04T04:48:42Z",
   "source": "arxiv",
-  "total": 1088,
+  "total": 1094,
   "days": [
+    {
+      "date": "2026-09-03",
+      "count": 6,
+      "report": {
+        "date": "2026-09-03",
+        "count": 6,
+        "themes": [
+          {
+            "id": "coding",
+            "count": 2,
+            "en": "Coding agents",
+            "zh": "代码智能体"
+          },
+          {
+            "id": "planning",
+            "count": 2,
+            "en": "Planning / reasoning",
+            "zh": "规划 / 推理"
+          },
+          {
+            "id": "tool-use",
+            "count": 1,
+            "en": "Tool use",
+            "zh": "工具使用"
+          },
+          {
+            "id": "memory",
+            "count": 1,
+            "en": "Memory",
+            "zh": "记忆"
+          },
+          {
+            "id": "conversation",
+            "count": 1,
+            "en": "Dialogue / customer",
+            "zh": "对话 / 客服"
+          },
+          {
+            "id": "gui",
+            "count": 1,
+            "en": "GUI agents",
+            "zh": "GUI 智能体"
+          },
+          {
+            "id": "multimodal",
+            "count": 1,
+            "en": "Multimodal",
+            "zh": "多模态"
+          },
+          {
+            "id": "safety",
+            "count": 1,
+            "en": "Safety",
+            "zh": "安全"
+          }
+        ],
+        "en": {
+          "headline": "6 new agent benchmarks",
+          "summary": "On September 3, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Coding agents (2), Planning / reasoning (2), Tool use (1), and Memory (1).",
+          "highlights": [
+            {
+              "id": "2609.03588",
+              "title": "KC-Bench: A Dynamic Interactive Benchmark for Evaluating Knowledge Conflicts in LLM Agents",
+              "blurb": "As LLMs increasingly act through tools, they must reconcile user instructions, parametric knowledge, and dynamic environmental observations before taking actions."
+            },
+            {
+              "id": "2609.04075",
+              "title": "PatchBench: Evaluating AI Agents for Vulnerability Patching",
+              "blurb": "AI agents have recently demonstrated strong performance in automated vulnerability patching."
+            },
+            {
+              "id": "2609.03438",
+              "title": "Do GUI Agents Know When Not to Act? Enabling Conflict-Aware Termination for Multimodal GUI Agents",
+              "blurb": "Graphical user interface (GUI) agents are increasingly used to execute natural-language instructions on user interfaces, yet real users may issue infeasible instructions due to benign mistakes."
+            }
+          ]
+        },
+        "zh": {
+          "headline": "新增 6 篇 Agent Benchmark",
+          "summary": "2026年9月3日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在代码智能体（2）、规划 / 推理（2）、工具使用（1）、记忆（1）。",
+          "highlights": [
+            {
+              "id": "2609.03588",
+              "title": "KC-Bench: A Dynamic Interactive Benchmark for Evaluating Knowledge Conflicts in LLM Agents",
+              "blurb": "As LLMs increasingly act through tools, they must reconcile user instructions, parametric knowledge, and dynamic environmental observations before taking actions."
+            },
+            {
+              "id": "2609.04075",
+              "title": "PatchBench: Evaluating AI Agents for Vulnerability Patching",
+              "blurb": "AI agents have recently demonstrated strong performance in automated vulnerability patching."
+            },
+            {
+              "id": "2609.03438",
+              "title": "Do GUI Agents Know When Not to Act? Enabling Conflict-Aware Termination for Multimodal GUI Agents",
+              "blurb": "Graphical user interface (GUI) agents are increasingly used to execute natural-language instructions on user interfaces, yet real users may issue infeasible instructions due to benign mistakes."
+            }
+          ]
+        }
+      },
+      "paper_ids": [
+        "2609.04167",
+        "2609.04075",
+        "2609.03588",
+        "2609.03467",
+        "2609.03438",
+        "2609.03423"
+      ]
+    },
     {
       "date": "2026-09-02",
       "count": 1,
@@ -20102,6 +20210,213 @@
     }
   ],
   "papers": [
+    {
+      "id": "2609.04167",
+      "title": "SWE-Gate: Passing Functional Tests Is Not Enough for Software Engineering Agents",
+      "abstract": "Repository-level software engineering benchmarks have significantly advanced the evaluation of coding agents, but existing benchmarks primarily measure whether generated patches pass functional tests and overlook review-derived acceptance constraints (review constraints) that often influence whether a patch is acceptable in real-world software development. We introduce SWE-Gate, a repository-level benchmark for software engineering agents that explicitly evaluates review constraint compliance alongside functional correctness. SWE-Gate derives review constraints from real pull request review comments and synthesizes repository-level repair instances around these constraints. Each instance provides separate functional and constraint tests, together with non-compliant and gold patches, enabling explicit separation between issue resolution capability and review constraint compliance. We construct SWE-Gate with 303 repository-level repair instances spanning 75 open-source Python repositories across diverse software domains. Experiments with four LLM backends spanning different capability levels under a common coding-agent scaffold reveal a substantial gap between functional success and success under the complete repair specification: among 644 repairs that pass the functional tests, 221 fail to satisfy the provided review constraints. These findings show that functional-only evaluation overestimates agents' ability to satisfy the full requirements of repository-level repair tasks. The replication package including code, data, and experimental results is available at https://github.com/DeepSoftwareAnalytics/SWE-Gate.",
+      "authors": [
+        "Xin He",
+        "Yanlin Wang",
+        "Mingwei Liu",
+        "Jiachi Chen",
+        "Hongyu Zhang",
+        "Guanbin Li"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-09-03T17:53:34Z",
+      "updated": "2026-09-03T17:53:34Z",
+      "announced_date": "2026-09-03",
+      "first_seen": "2026-09-03",
+      "comment": "11 pages, 2 figures, 5 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.04167v1",
+        "pdf": "https://arxiv.org/pdf/2609.04167v1",
+        "html": "https://arxiv.org/html/2609.04167"
+      },
+      "score": 8,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2609.04075",
+      "title": "PatchBench: Evaluating AI Agents for Vulnerability Patching",
+      "abstract": "AI agents have recently demonstrated strong performance in automated vulnerability patching. However, existing evaluations often validate a patch only by testing whether the provided Proof-of-Concept (PoC) input still triggers a crash. This leaves two key threats to validity: agents may reproduce memorized historical developer patches, or they may generate surface-level fixes that only suppress the reported crash. We study these concerns for C/C++ vulnerability patching. We introduce a patch similarity metric to detect memorized patches. On average, 25% of the agent patches exhibit substantial similarity to historical developer patches, indicating that patch memorization is a real threat to the validity of vulnerability patching evaluations. Meanwhile, agents also frequently exploit benchmark structures to pass patch validation by patching on the crash stack trace to suppress the crash, rather than localizing and fixing the root cause of the vulnerabilities. To handle these issues, we propose PatchBench, a new benchmark for evaluating AI agents on realistic vulnerability patching tasks. PatchBench selects vulnerabilities whose ground-truth fixes lie outside the crash stack and uses vulnerability transplant and code mutations to migrate historical vulnerabilities into new repository contexts, reducing the risks of surface-level fixes and patch memorization. We develop new patch validation methods that thoroughly evaluate both security and semantic correctness of agent patches. Across 11 state-of-the-art agents, including the top three AIxCC agents, the original PoC-only validation inflates the patching task solve rate of agents by 1.83$\\times$ on average. Our results reveal key limitations of current patching agents and point to future research directions for more reliable vulnerability repair.",
+      "authors": [
+        "Chihao Shen",
+        "Jiacheng Li",
+        "Aastha Mahajan",
+        "Jeffery Siyuan Tian",
+        "Yonghwi Kwon",
+        "Yizheng Chen"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-09-03T16:44:22Z",
+      "updated": "2026-09-03T16:44:22Z",
+      "announced_date": "2026-09-03",
+      "first_seen": "2026-09-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.04075v1",
+        "pdf": "https://arxiv.org/pdf/2609.04075v1",
+        "html": "https://arxiv.org/html/2609.04075"
+      },
+      "score": 17,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2609.03588",
+      "title": "KC-Bench: A Dynamic Interactive Benchmark for Evaluating Knowledge Conflicts in LLM Agents",
+      "abstract": "As LLMs increasingly act through tools, they must reconcile user instructions, parametric knowledge, and dynamic environmental observations before taking actions. We introduce KC-Bench, a controlled multi-turn benchmark for measuring this capability across world-knowledge conflicts, input inconsistencies, and multi-source temporal conflicts. Its 238 tasks are manually screened from more than 1,000 generated candidates and combine a user simulator, stateful tools, deterministic environment assertions, an open-source natural-language evaluator, and human trajectory verification. Evaluation of nine models, including DeepSeek-V4-Flash, GLM-5.2, and MiniMax-M3, shows substantial cross-domain variation: no model handles factual correction, identity consistency checking, and temporal conflict resolution reliably across all settings. In the simulated environments, missed conflicts can propagate to tool calls or synthetic protected-data flows. KC-Bench isolates this model-level behavior rather than ranking complete agent frameworks, and provides a reproducible diagnostic for developing conflict-aware reasoning and execution safeguards.",
+      "authors": [
+        "Yaxing Lyu",
+        "Shengjie Zhou",
+        "Binbin Toh",
+        "Pengyu Zhu",
+        "Lijun Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-03T09:35:14Z",
+      "updated": "2026-09-03T09:35:14Z",
+      "announced_date": "2026-09-03",
+      "first_seen": "2026-09-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.03588v1",
+        "pdf": "https://arxiv.org/pdf/2609.03588v1",
+        "html": "https://arxiv.org/html/2609.03588"
+      },
+      "score": 21,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2609.03467",
+      "title": "When Users Don't Ask: Benchmarking Context-Driven Memory Retrieval in Conversational Agents",
+      "abstract": "Large language models (LLMs) are increas- ingly deployed as long-horizon conversational agents, motivating growing interest in mem- ory systems. However, existing benchmarks primarily evaluate memory through QA-style probing rather than in-situ conversational usage. We introduce LOCOMO-CONV, a conversa- tional memory benchmark derived from Lo- CoMo with four query styles: dialog, implicit, counterfactual, and composed. Across five rep- resentative memory systems, we evaluate both retrieval recall and end-to-end response qual- ity. Our experiments show that conversational framing exposes substantial retrieval gaps over- looked by QA benchmarks, especially on im- plicit and composed queries, which multi-facet query rewriting narrows for raw-turn mem- ory but not abstractive memory. We further find that strong retrieval does not fully trans- late into response quality, and that implicit queries exhibit silent grounding, where mem- ory improves contextual grounding without ex- plicitly surfacing the gold fact. These results point to reasoning-based memory elaboration as a promising direction, and we release aux- iliary supportive_memory annotations captur- ing conversationally useful context beyond the original gold evidence.",
+      "authors": [
+        "Wen-Yu Chang",
+        "Yun-Nung Chen"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-09-03T07:24:33Z",
+      "updated": "2026-09-03T07:24:33Z",
+      "announced_date": "2026-09-03",
+      "first_seen": "2026-09-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.03467v1",
+        "pdf": "https://arxiv.org/pdf/2609.03467v1",
+        "html": "https://arxiv.org/html/2609.03467"
+      },
+      "score": 7,
+      "tags": [
+        "memory",
+        "planning",
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 0
+    },
+    {
+      "id": "2609.03438",
+      "title": "Do GUI Agents Know When Not to Act? Enabling Conflict-Aware Termination for Multimodal GUI Agents",
+      "abstract": "Graphical user interface (GUI) agents are increasingly used to execute natural-language instructions on user interfaces, yet real users may issue infeasible instructions due to benign mistakes. A reliable agent should not only know how to act, but also when not to act. In this work, we introduce CONFLICTGUI, a benchmark covering instruction-internal conflicts and instruction-GUI context conflicts to study conflict-aware termination. Our evaluation reveals severe execution-biased overcompliance: agents that perform well on feasible tasks often continue to execute blindly under conflicting instructions. To mitigate this behavior, we propose CONFLICTGUARD, an inference-time framework that aligns an agent's feasibility awareness with its action generation. CONFLICTGUARD contains two coupled components: a feasibility verification protocol that guides the agent to assess instruction logic and GUI-side evidence before acting, and a conditional action modulation mechanism that steers agents from over-compliant execution into termination-oriented behavior. Experiments across five widely-used agents demonstrate that CONFLICTGUARD improves average conflict task success rate significantly, while preserving normal GUI-task performance. These results validate that a lightweight inference-time intervention can substantially boost GUI Agent's competence to identify inappropriate execution scenarios and refrain from unnecessary actions.",
+      "authors": [
+        "Zhaoyuan Huang",
+        "Tianjie Ju",
+        "Pengzhou Cheng",
+        "Zheng Wu",
+        "Yansi Li",
+        "Chuanbiao Song",
+        "Jun Lan",
+        "Huijia Zhu",
+        "Weiqiang Wang",
+        "Zhuosheng Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-03T06:48:41Z",
+      "updated": "2026-09-03T06:48:41Z",
+      "announced_date": "2026-09-03",
+      "first_seen": "2026-09-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.03438v1",
+        "pdf": "https://arxiv.org/pdf/2609.03438v1",
+        "html": "https://arxiv.org/html/2609.03438"
+      },
+      "score": 11,
+      "tags": [
+        "gui",
+        "multimodal"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2609.03423",
+      "title": "DuplexSpeechBench-IFEval: Evaluating Implicit Instruction Following in Full-Duplex Voice Agents",
+      "abstract": "Full-duplex voice agents must continuously decide when to listen, backchannel, interrupt, handle speech overlaps, take the floor, and yield. Existing benchmarks largely test these behaviors through explicit turn-management instructions, while deployed agents are often configured through roles or personas from which the appropriate conversational behavior must be inferred. We introduce DuplexSpeechBench-IFEval (DSB-IFEval) for evaluating implicit instruction-following in real-time spoken interaction. (DSB-IFEval) comprises 1,038 test cases spanning eight diverse assistant roles and evaluates five conditioning protocols for instruction-following: default behavior, explicit behavioral instructions, persona-implied behavior, combined persona--rule conditioning, and instruction conflict. We measure real-time floor management using a deterministic Instruction Adherence Score (IAS) and persona-consistent content using LLM-judged Persona Adherence Score (PAS). Across six real-time speech systems, we find architecture-dependent trade-offs. Full duplex models like F-Actor and PersonaPlex are more sensitive to whether conversational behavior is stated explicitly or must be inferred from a persona, with adherence dropping by 9.7% and 4.5%, respectively, under persona-only conditioning. In contrast, GPT-Realtime, MiniCPM-o, and Fun-Audio-Chat strongly adhere to persona-consistent content, but their floor behavior does not adapt across explicit and persona-only instructions and remains constrained on several proactive actions. We further find that even if systems reliably follow conflicting directives to their prescribed persona, they still struggle to override them under safety conflict. These results show that inferring the behavior implied by a role, executing it at the appropriate conversational moment, and resolving competing instructions remain distinct challenges for full-duplex voice agents.",
+      "authors": [
+        "Puneet Mathur",
+        "Dinesh Manocha"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-03T06:28:02Z",
+      "updated": "2026-09-03T06:28:02Z",
+      "announced_date": "2026-09-03",
+      "first_seen": "2026-09-03",
+      "comment": "Under Submission",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.03423v1",
+        "pdf": "https://arxiv.org/pdf/2609.03423v1",
+        "html": "https://arxiv.org/html/2609.03423"
+      },
+      "score": 7,
+      "tags": [
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
     {
       "id": "2609.02459",
       "title": "CivBench: A Long-Horizon Benchmark for Tool-Mediated Agents in Civilization VI",
