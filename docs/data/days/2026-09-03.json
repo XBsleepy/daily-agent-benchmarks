@@ -1,10 +1,34 @@
 {
   "date": "2026-09-03",
-  "count": 6,
+  "count": 9,
   "report": {
     "date": "2026-09-03",
-    "count": 6,
+    "count": 9,
     "themes": [
+      {
+        "id": "planning",
+        "count": 4,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "memory",
+        "count": 3,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
       {
         "id": "coding",
         "count": 2,
@@ -12,22 +36,10 @@
         "zh": "代码智能体"
       },
       {
-        "id": "planning",
-        "count": 2,
-        "en": "Planning / reasoning",
-        "zh": "规划 / 推理"
-      },
-      {
         "id": "tool-use",
-        "count": 1,
+        "count": 2,
         "en": "Tool use",
         "zh": "工具使用"
-      },
-      {
-        "id": "memory",
-        "count": 1,
-        "en": "Memory",
-        "zh": "记忆"
       },
       {
         "id": "conversation",
@@ -40,23 +52,11 @@
         "count": 1,
         "en": "GUI agents",
         "zh": "GUI 智能体"
-      },
-      {
-        "id": "multimodal",
-        "count": 1,
-        "en": "Multimodal",
-        "zh": "多模态"
-      },
-      {
-        "id": "safety",
-        "count": 1,
-        "en": "Safety",
-        "zh": "安全"
       }
     ],
     "en": {
-      "headline": "6 new agent benchmarks",
-      "summary": "On September 3, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Coding agents (2), Planning / reasoning (2), Tool use (1), and Memory (1).",
+      "headline": "9 new agent benchmarks",
+      "summary": "On September 3, 2026, arXiv listed 9 new agent benchmarks. Work clustered around Planning / reasoning (4), Memory (3), Safety (2), and Multimodal (2).",
       "highlights": [
         {
           "id": "2609.03588",
@@ -69,15 +69,15 @@
           "blurb": "AI agents have recently demonstrated strong performance in automated vulnerability patching."
         },
         {
-          "id": "2609.03438",
-          "title": "Do GUI Agents Know When Not to Act? Enabling Conflict-Aware Termination for Multimodal GUI Agents",
-          "blurb": "Graphical user interface (GUI) agents are increasingly used to execute natural-language instructions on user interfaces, yet real users may issue infeasible instructions due to benign mistakes."
+          "id": "2609.04280",
+          "title": "EVOHARNESSBENCH: Can Your Agents Keep Pace with an Evolving Harness?",
+          "blurb": "Modern LLM-based agents operate through a harness of tools, reusable skills, and specialist agents that shapes what they observe and what they can do."
         }
       ]
     },
     "zh": {
-      "headline": "新增 6 篇 Agent Benchmark",
-      "summary": "2026年9月3日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在代码智能体（2）、规划 / 推理（2）、工具使用（1）、记忆（1）。",
+      "headline": "新增 9 篇 Agent Benchmark",
+      "summary": "2026年9月3日，arXiv 新增 9 篇 Agent Benchmark。当日主题集中在规划 / 推理（4）、记忆（3）、安全（2）、多模态（2）。",
       "highlights": [
         {
           "id": "2609.03588",
@@ -90,14 +90,85 @@
           "blurb": "AI agents have recently demonstrated strong performance in automated vulnerability patching."
         },
         {
-          "id": "2609.03438",
-          "title": "Do GUI Agents Know When Not to Act? Enabling Conflict-Aware Termination for Multimodal GUI Agents",
-          "blurb": "Graphical user interface (GUI) agents are increasingly used to execute natural-language instructions on user interfaces, yet real users may issue infeasible instructions due to benign mistakes."
+          "id": "2609.04280",
+          "title": "EVOHARNESSBENCH: Can Your Agents Keep Pace with an Evolving Harness?",
+          "blurb": "Modern LLM-based agents operate through a harness of tools, reusable skills, and specialist agents that shapes what they observe and what they can do."
         }
       ]
     }
   },
   "papers": [
+    {
+      "id": "2609.04444",
+      "title": "HarvestBench: Measuring Whether LLM Agents Will Pay to Avoid Killing Animals",
+      "abstract": "Benchmarks for the side effects an agent causes on the way to a goal already exist, but HarvestBench is the first to put a price on avoiding the side effect and to name that side effect as a living creature. It is a farm simulation: LLM sub-agents drive a crew of two tractors through a cooperative corn harvest, with animals in the field. The environment is a reinforcement learning gridworld, every decision is made without memory, and the harm is never named in the goal. When an animal blocks a tractor's route the autopilot stops and asks the model whether to drive on, at no fuel cost, or swerve around it for a posted fuel price. Kills are compared against two controls: rocks, which damage the tractor and are hit under 1% of the time by every model, and hay bales, which are harmless and not alive. Models can also take crops from the neighbor's field instead of their own, a second test of what they treat as moral. Across nine models and 7,201 priced decisions, 3,951 involved an animal rather than a hay bale or a rock. Kill rates range from 0.4% to 98.8%, with Terra and Sol the most merciful and GPT-4o-mini the most cruel, and they are not ordered by capability. Four of six models were sensitive to price at the 5% level, with elasticities from 0.09 to 1.69. All nine drove over wild animals more often than farmed animals on the default map, and the direction held at every map geometry in every model with room to move. The briefing mattered most: under the morality briefing the kill rate was under 6% in five of six reasoning models, and removing it raised the kill rate above 84% in all six. HarvestBench uses no LLM grader. The scorer counts events in the game log, so it is fully reproducible, and it measures what a model will pay to avoid harm rather than what it says about harm.",
+      "authors": [
+        "Jasmine Brazilek",
+        "Miles Tidmarsh",
+        "Matthias Endres",
+        "Anshuman Singh",
+        "Jeremiah Miller"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-03T20:05:38Z",
+      "updated": "2026-09-03T20:05:38Z",
+      "announced_date": "2026-09-03",
+      "first_seen": "2026-09-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.04444v1",
+        "pdf": "https://arxiv.org/pdf/2609.04444v1",
+        "html": "https://arxiv.org/html/2609.04444"
+      },
+      "score": 12,
+      "tags": [
+        "safety",
+        "memory",
+        "planning"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2609.04438",
+      "title": "ICM-Bench: Person-Level Identity Reasoning in Multimodal Agents with Long-Term Memory",
+      "abstract": "Long-horizon multimodal agents should remember not only what happened but also who participated. This capability depends on linking recurring faces, voices, names, person-associated objects, events, and social relations to consistent identities over time. Existing long-video and multimodal-agent benchmarks measure broad memory question answering, but they do not isolate the ability to maintain recurring person identities and reason over their cross-time relations. We introduce ICM-Bench (Identity-Centric Memory Benchmark), which, to the best of our knowledge, is the first benchmark specifically designed to evaluate identity-centric reasoning over long video memories in multimodal agents. The benchmark contains 839 synthetic clips spanning 141 minutes and 1,217 open-ended questions about six recurring adults in a one-year life album. A theme-configurable pipeline generates the video collection and associates each question with its target identities and traceable supporting evidence. We compare direct caption-memory baselines, memory-augmented agents, and graph-retrieval systems. Gemini 3.1 Pro achieves the highest overall accuracy of 74.0%, yet its score falls to 60.3% on questions that require long-term identity profiles. The results show that current systems recover many event-level memories but remain less reliable when evidence must be accumulated around a stable person.",
+      "authors": [
+        "Shidu Ren",
+        "Yunze Liu",
+        "Xing Liu",
+        "Chi-Hao Wu",
+        "Enmin Zhou",
+        "Junxiao Shen"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-09-03T19:58:51Z",
+      "updated": "2026-09-03T19:58:51Z",
+      "announced_date": "2026-09-03",
+      "first_seen": "2026-09-03",
+      "comment": "20 pages, 6 figures, and 7 tables. Code: https://github.com/Shidu-Ren/ICM-Bench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.04438v1",
+        "pdf": "https://arxiv.org/pdf/2609.04438v1",
+        "html": "https://arxiv.org/html/2609.04438"
+      },
+      "score": 11,
+      "tags": [
+        "memory",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
     {
       "id": "2609.04167",
       "title": "SWE-Gate: Passing Functional Tests Is Not Enough for Software Engineering Agents",
@@ -303,6 +374,47 @@
         "safety"
       ],
       "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2609.04280",
+      "title": "EVOHARNESSBENCH: Can Your Agents Keep Pace with an Evolving Harness?",
+      "abstract": "Modern LLM-based agents operate through a harness of tools, reusable skills, and specialist agents that shapes what they observe and what they can do. In practice, this harness continually evolves as new capabilities are added. We introduce EVOHARNESSBENCH, a benchmark for evaluating agents under controlled harness evolution across three axes (tools, skills, and agents). Unlike existing continual-learning benchmarks for agents, which typically place non-stationarity (i.e., what changes over time) in the task stream while keeping the harness fixed, EVOHARNESSBENCH places non-stationarity in the externally supplied harness itself. It contains 17 multi-stage harness streams constructed deterministically from verifier-based benchmarks, comprising 802 tasks, 520 tools, 42 skills, and 62 agents. We evaluate two complementary settings corresponding to the central challenges of harness evolution: deployment evaluation, which isolates retention of previously accessible competence as the harness expands, and self-evolving adaptation evaluation, which tests whether accumulated experience remains useful as new capabilities are introduced. Our results reveal three persistent gaps. First, harness expansion alone can degrade performance on previously solved tasks, producing harness-induced forgetting. Second, gains from self-evolving adaptation remain inconsistent across stages of harness evolution, capability axes, and environments. Third, retention and adaptation can pull in different directions: preserving earlier competence does not necessarily improve adaptation to newly introduced capabilities, and vice versa. These results establish harness evolution as a distinct challenge for building agents that can keep pace with an evolving harness while preserving previously effective behavior.",
+      "authors": [
+        "Zixuan Ke",
+        "Vaidehi Patil",
+        "Haizhou Shi",
+        "Yang Li",
+        "Ye Liu",
+        "Sarath Shekkizhar",
+        "Anurag Koul",
+        "Jiayu Wang",
+        "Xuan Phi Nguyen",
+        "Semih Yavuz",
+        "Mohit Bansal",
+        "Shafiq Joty"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.CL"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-09-03T03:24:02Z",
+      "updated": "2026-09-03T03:24:02Z",
+      "announced_date": "2026-09-03",
+      "first_seen": "2026-09-03",
+      "comment": "https://mas-orchestra.salesforceresearch.ai/evoharness/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.04280v1",
+        "pdf": "https://arxiv.org/pdf/2609.04280v1",
+        "html": "https://arxiv.org/html/2609.04280"
+      },
+      "score": 14,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
       "citations": 0
     }
   ]
