@@ -1,15 +1,39 @@
 {
   "date": "2026-09-08",
-  "count": 5,
+  "count": 8,
   "report": {
     "date": "2026-09-08",
-    "count": 5,
+    "count": 8,
     "themes": [
       {
         "id": "tool-use",
-        "count": 2,
+        "count": 5,
         "en": "Tool use",
         "zh": "工具使用"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "mobile",
+        "count": 1,
+        "en": "Mobile agents",
+        "zh": "移动智能体"
       },
       {
         "id": "rsi",
@@ -28,29 +52,11 @@
         "count": 1,
         "en": "Science lab",
         "zh": "科学实验"
-      },
-      {
-        "id": "coding",
-        "count": 1,
-        "en": "Coding agents",
-        "zh": "代码智能体"
-      },
-      {
-        "id": "safety",
-        "count": 1,
-        "en": "Safety",
-        "zh": "安全"
-      },
-      {
-        "id": "planning",
-        "count": 1,
-        "en": "Planning / reasoning",
-        "zh": "规划 / 推理"
       }
     ],
     "en": {
-      "headline": "5 new agent benchmarks",
-      "summary": "On September 8, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Tool use (2), RSI / AI4AI (1), Multi-agent (1), and Science lab (1).",
+      "headline": "8 new agent benchmarks",
+      "summary": "On September 8, 2026, arXiv listed 8 new agent benchmarks. Work clustered around Tool use (5), Coding agents (2), Planning / reasoning (2), and Memory (1).",
       "highlights": [
         {
           "id": "2609.08149",
@@ -58,20 +64,20 @@
           "blurb": "SWE-Bench Pro has emerged as a standard benchmark for evaluating software engineering agents on challenging repository-level tasks."
         },
         {
+          "id": "2609.09526",
+          "title": "Benchmarking Agentic HLS Design Tasks With HLS-Eval",
+          "blurb": "Large language models (LLMs) and AI agents are increasingly explored for hardware design, including high-level digital design."
+        },
+        {
           "id": "2609.08887",
           "title": "Q2D-Web: A Large-Scale Benchmark for Retrieval in Agentic RAG Systems",
           "blurb": "Evaluating first-stage retrievers in large-scale production RAG requires a benchmark that pairs a large-scale corpus with a large set of agent-reformulated search queries based on real user queries and their conversation…"
-        },
-        {
-          "id": "2609.09113",
-          "title": "SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research?",
-          "blurb": "While research on recursive self-improvement (RSI) has predominantly automated model training pipelines, reliable autonomous development demands a missing pillar: post-hoc monitoring and auditing to understand what model…"
         }
       ]
     },
     "zh": {
-      "headline": "新增 5 篇 Agent Benchmark",
-      "summary": "2026年9月8日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在工具使用（2）、RSI / AI4AI（1）、多智能体（1）、科学实验（1）。",
+      "headline": "新增 8 篇 Agent Benchmark",
+      "summary": "2026年9月8日，arXiv 新增 8 篇 Agent Benchmark。当日主题集中在工具使用（5）、代码智能体（2）、规划 / 推理（2）、记忆（1）。",
       "highlights": [
         {
           "id": "2609.08149",
@@ -79,19 +85,126 @@
           "blurb": "SWE-Bench Pro has emerged as a standard benchmark for evaluating software engineering agents on challenging repository-level tasks."
         },
         {
+          "id": "2609.09526",
+          "title": "Benchmarking Agentic HLS Design Tasks With HLS-Eval",
+          "blurb": "Large language models (LLMs) and AI agents are increasingly explored for hardware design, including high-level digital design."
+        },
+        {
           "id": "2609.08887",
           "title": "Q2D-Web: A Large-Scale Benchmark for Retrieval in Agentic RAG Systems",
           "blurb": "Evaluating first-stage retrievers in large-scale production RAG requires a benchmark that pairs a large-scale corpus with a large set of agent-reformulated search queries based on real user queries and their conversation…"
-        },
-        {
-          "id": "2609.09113",
-          "title": "SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research?",
-          "blurb": "While research on recursive self-improvement (RSI) has predominantly automated model training pipelines, reliable autonomous development demands a missing pillar: post-hoc monitoring and auditing to understand what model…"
         }
       ]
     }
   },
   "papers": [
+    {
+      "id": "2609.09526",
+      "title": "Benchmarking Agentic HLS Design Tasks With HLS-Eval",
+      "abstract": "Large language models (LLMs) and AI agents are increasingly explored for hardware design, including high-level digital design. While most work targets code generation and editing for hardware description languages (HDLs), our prior work introduced HLS-Eval, an open-source benchmark for evaluating LLMs on high-level synthesis (HLS) design tasks. Those evaluations, however, focused on zero-shot generation and editing, leaving open how agents achieve HLS design tasks. We therefore extend HLS-Eval with an agentic evaluation flow built on the open-source mini-swe-agent framework. The flow lets HLS design agents use file-editing tools, invoke a C++ compiler for self-verification, and iteratively refine designs during inference, while logging agent traces for analysis of cost, token usage, and iteration count. We present initial results on the existing HLS-Eval benchmarks. In our initial evaluation, we find open-source LLMs paired with an agentic harness solve every simple HLS code generation task in our evaluation, underscoring the need to expand benchmark difficulty as model capabilities advance. Analyzing traces from passing and failing runs, we show how model size, token usage, and trajectory length relate to design pass rates. These results establish a foundation for agentic HLS design and motivate harder benchmarks and new agentic tooling as model capabilities progress.",
+      "authors": [
+        "Stefan Abi-Karam",
+        "Callie Hao"
+      ],
+      "categories": [
+        "cs.AR"
+      ],
+      "primary_category": "cs.AR",
+      "published": "2026-09-08T23:12:36Z",
+      "updated": "2026-09-08T23:12:36Z",
+      "announced_date": "2026-09-08",
+      "first_seen": "2026-09-08",
+      "comment": "Presented at the Architecture 2.0 workshop at ISCA 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.09526v1",
+        "pdf": "https://arxiv.org/pdf/2609.09526v1",
+        "html": "https://arxiv.org/html/2609.09526"
+      },
+      "score": 16,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2609.09476",
+      "title": "From Fixed Keys to Readable Schemas: Small Language Models for Vehicle Agent Function Calls",
+      "abstract": "In-vehicle assistants must translate natural-language requests into accurate vehicle function calls under strict memory and latency constraints, making small language models (SLMs) attractive for on-device deployment. For such models, a key design choice is how the available function surface is presented. Two approaches are to represent each function with a dedicated Functional Token (FT) or provide function schemas directly in the prompt. FTs enable compact inference but are restricted to functions learned during training, whereas Schema-in-Prompt (SIP) can generalize to unseen functions at the cost of longer prompts and higher inference overhead. We introduce a benchmark of 9,822 single-turn examples spanning 79 vehicle functions derived from Android Automotive, including held-out functions and requests requiring refusal. We compare both approaches under matched fine-tuning across four SLMs from 270M to 1.7B parameters. On functions seen during training, scaling provides limited benefit: the 270M model can match the 1.7B model, while the strongest overall performance occurs at 0.6B. On held-out functions, FT achieves zero accuracy by construction, whereas SIP generalizes and improves substantially with scale. On out-of-scope requests, FT can invoke an unavailable function it was trained to emit, while SIP more reliably refuses based on the functions offered. This flexibility comes with higher memory use and latency. Our theoretical analysis explains how SIP enables generalization and why longer schema contexts increase inference cost. Overall, function-surface representation, rather than model scale alone, determines the capabilities and failure modes of SLM-based vehicle function calling.",
+      "authors": [
+        "Hamed Jafarzadeh Asl",
+        "Yuanhao Yu",
+        "Vahid Partovi Nia"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-09-08T21:46:35Z",
+      "updated": "2026-09-08T21:46:35Z",
+      "announced_date": "2026-09-08",
+      "first_seen": "2026-09-08",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.09476v1",
+        "pdf": "https://arxiv.org/pdf/2609.09476v1",
+        "html": "https://arxiv.org/html/2609.09476"
+      },
+      "score": 7,
+      "tags": [
+        "tool-use",
+        "memory",
+        "mobile"
+      ],
+      "field": "mobile",
+      "citations": 0
+    },
+    {
+      "id": "2609.09410",
+      "title": "Benchmarking Hybrid Deep Research Across Database Querying and Web Search",
+      "abstract": "While autonomous agents have made significant strides in \"deep research\" by iteratively navigating the open web to synthesize information, real-world problem-solving is rarely confined to a single environment. Complex analytical tasks inherently require agents to weave together evidence from both ambiguous unstructured text (e.g., the open web) and highly precise structured data (e.g., relational databases). However, existing benchmarks evaluate these modalities in isolation, failing to capture the critical \"handoff\" - the ability to preserve constraints when moving evidence between systems. We introduce HybridDeepResearch, to our knowledge the first deep-research benchmark that requires both web search and SQL to form a complete, verifiable answer. The benchmark contains 380 tool-dependent tasks grounded in LiveSQLBench-Base-Lite databases and public web corpora, validated through automated checks and human review, and covering three reasoning patterns: SQL2S, S2SQL, and Parallel. Evaluations across proprietary and open-weight models under various agentic scaffolds reveal that even state-of-the-art models like GLM-5.2, Claude-Sonnet-4.6 and GPT-5 achieve only about 50-54% Pass@8 on the hard subset. Notably, results show that directional reasoning is substantially more difficult than parallel intersection, highlighting that bridging structured and unstructured information spaces without losing constraints remains a major open challenge for agentic systems. Code and datasets are publicly available at GitHub (https://github.com/Snowflake-AI-Research/HybridDeepResearch) and Hugging Face (https://huggingface.co/datasets/Snowflake/HybridDeepResearch).",
+      "authors": [
+        "Ruofan Wu",
+        "Peiran Xu",
+        "Xiaolong Li",
+        "Fan Shu",
+        "Soyoung Yoon",
+        "Yite Wang",
+        "Xiaodong Yu",
+        "Boyi Liu",
+        "Feng Yan",
+        "Debiao Li",
+        "Yuxiong He",
+        "Zhewei Yao"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-09-08T20:05:09Z",
+      "updated": "2026-09-08T20:05:09Z",
+      "announced_date": "2026-09-08",
+      "first_seen": "2026-09-08",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.09410v1",
+        "pdf": "https://arxiv.org/pdf/2609.09410v1",
+        "html": "https://arxiv.org/html/2609.09410"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
     {
       "id": "2609.09113",
       "title": "SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research?",

@@ -1,0 +1,193 @@
+{
+  "date": "2026-09-09",
+  "count": 3,
+  "report": {
+    "date": "2026-09-09",
+    "count": 3,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "3 new agent benchmarks",
+      "summary": "On September 9, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Tool use (3), Planning / reasoning (2), Multi-agent (1), and Multimodal (1).",
+      "highlights": [
+        {
+          "id": "2609.09947",
+          "title": "SpeechAnnotator: A Context-Aware Multi-Agent Framework and Benchmark for Multidimensional Speech Annotation",
+          "blurb": "Recent controllable speech generation requires training data with fine-grained annotations of speaker traits, prosody, emotion, paralinguistic cues, acoustic scenes, and context."
+        },
+        {
+          "id": "2609.09853",
+          "title": "The Era by Eon Benchmark: A Generated Enterprise Estate with Exact Ground Truth for Benchmarking LLM Agents",
+          "blurb": "LLM agents for enterprise systems of record cannot be evaluated on customer production data, and no existing substitute provides ground truth."
+        },
+        {
+          "id": "2609.09754",
+          "title": "LexAgentHallu: A Hierarchical Benchmark for Profiling Hallucinations in Legal Agents",
+          "blurb": "As large language models are increasingly deployed as tool-augmented legal agents, they introduce agentic hallucinations where tool-call and reasoning errors cascade into fabricated holdings and miscited authority."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年9月9日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在工具使用（3）、规划 / 推理（2）、多智能体（1）、多模态（1）。",
+      "highlights": [
+        {
+          "id": "2609.09947",
+          "title": "SpeechAnnotator: A Context-Aware Multi-Agent Framework and Benchmark for Multidimensional Speech Annotation",
+          "blurb": "Recent controllable speech generation requires training data with fine-grained annotations of speaker traits, prosody, emotion, paralinguistic cues, acoustic scenes, and context."
+        },
+        {
+          "id": "2609.09853",
+          "title": "The Era by Eon Benchmark: A Generated Enterprise Estate with Exact Ground Truth for Benchmarking LLM Agents",
+          "blurb": "LLM agents for enterprise systems of record cannot be evaluated on customer production data, and no existing substitute provides ground truth."
+        },
+        {
+          "id": "2609.09754",
+          "title": "LexAgentHallu: A Hierarchical Benchmark for Profiling Hallucinations in Legal Agents",
+          "blurb": "As large language models are increasingly deployed as tool-augmented legal agents, they introduce agentic hallucinations where tool-call and reasoning errors cascade into fabricated holdings and miscited authority."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2609.09947",
+      "title": "SpeechAnnotator: A Context-Aware Multi-Agent Framework and Benchmark for Multidimensional Speech Annotation",
+      "abstract": "Recent controllable speech generation requires training data with fine-grained annotations of speaker traits, prosody, emotion, paralinguistic cues, acoustic scenes, and context. Existing workflows often rely on manual correction, paid hosted multimodal services, or fixed processing chains, which limits large-scale data processing through annotation cost, external-service dependence, or weak cross-stage recovery. We introduce SpeechAnnotator, a locally deployable, context-aware multi-agent framework built entirely from open-source models and tools. Supporting frontend modules first obtain speaker-aware segments and final segment transcripts, while prior evidence extractors attach heterogeneous segment-level cues. Three specialist agents then collaborate through shared state: the Planning Agent converts local audio evidence, speaker history, neighboring segments, and recording-level context into field-specific contracts; the Labeling Agent performs contract-guided multimodal prediction for directly observable attributes; and the Review Agent runs a bounded review loop that checks evidence support and cross-segment consistency, triggering relabeling only for unsupported or inconsistent fields. To address the fragmentation of existing evaluation resources across isolated tasks and narrow-domain test sets, we introduce SpeechAnnotator-Bench (SA-Bench), containing 8.87 hours of human-annotated audio across nine source formats, together with SpeechAnnotator-Eval (SA-Eval), which separates Timeline-Eval for speaker-aware timeline recovery, Closed-Eval for finite-set attributes, and Open-Eval for open-ended attributes. Experiments and ablations show that SpeechAnnotator provides a locally deployable alternative to commercial audio-capable systems, while the bounded review loop improves multidimensional annotation through evidence- and context-aware field-level recovery.",
+      "authors": [
+        "Qirui Zhan",
+        "Shuiyuan Wang",
+        "Jingbin Hu",
+        "Haoyu Zhang",
+        "Xiaming Ren",
+        "Jinrui Liang",
+        "Chaoren Yu",
+        "Bengu Wu",
+        "Yunxiang Chen",
+        "Houdun Liu",
+        "Su Feng",
+        "Liumeng Xue",
+        "Lei Xie"
+      ],
+      "categories": [
+        "eess.AS",
+        "cs.SD"
+      ],
+      "primary_category": "eess.AS",
+      "published": "2026-09-09T09:37:29Z",
+      "updated": "2026-09-09T09:37:29Z",
+      "announced_date": "2026-09-09",
+      "first_seen": "2026-09-09",
+      "comment": "15 pages, 3 figures, to be published in NCMMSC 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.09947v1",
+        "pdf": "https://arxiv.org/pdf/2609.09947v1",
+        "html": "https://arxiv.org/html/2609.09947"
+      },
+      "score": 14,
+      "tags": [
+        "tool-use",
+        "multi-agent",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2609.09853",
+      "title": "The Era by Eon Benchmark: A Generated Enterprise Estate with Exact Ground Truth for Benchmarking LLM Agents",
+      "abstract": "LLM agents for enterprise systems of record cannot be evaluated on customer production data, and no existing substitute provides ground truth. We present the Era by Eon Benchmark for evaluating LLM agents that use enterprise tools. The benchmark is built around a complete fictional company. It includes product simulators, company-specific internal databases, benchmark questions, and computed answer keys. Industry, company size, business model, application portfolio, and a seed define each company. One seeded entity graph supplies shared company data to simulators of Salesforce, Zendesk, Slack, Gong, and other products. A questionconditioned generator creates the schemas and records for internal databases. It takes shared entities, keys, and values from the same graph before generating database-specific facts. Both mechanisms therefore describe one consistent enterprise estate. Every expected answer is computed from the final records, so grading is exact. Design and answer-key checks validate the internal databases. A realism scorecard and adversarial detector validate the entity graph. Across 23 generated companies, the mean realism score rose from 61.8 to 97.0, with zero records flagged as synthetic. In the reported simulator-track comparison, nine models answered the same 33 questions three times each. Accuracy estimates ranged from 42.4% to 76.8%, and three of 36 pairwise differences remained supported after correction.",
+      "authors": [
+        "Benjamin Gruenbaum",
+        "Doron Porat",
+        "Assaf Natanzon",
+        "Roy Zavida",
+        "Chen Dinachi",
+        "Or Itzahary"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-09T08:06:46Z",
+      "updated": "2026-09-09T08:06:46Z",
+      "announced_date": "2026-09-09",
+      "first_seen": "2026-09-09",
+      "comment": "12 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.09853v1",
+        "pdf": "https://arxiv.org/pdf/2609.09853v1",
+        "html": "https://arxiv.org/html/2609.09853"
+      },
+      "score": 14,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2609.09754",
+      "title": "LexAgentHallu: A Hierarchical Benchmark for Profiling Hallucinations in Legal Agents",
+      "abstract": "As large language models are increasingly deployed as tool-augmented legal agents, they introduce agentic hallucinations where tool-call and reasoning errors cascade into fabricated holdings and miscited authority. However, existing legal benchmarks evaluate only single-turn QA with outcome-level metrics, while agentic hallucination benchmarks lack legal-specific diagnostic capability. Neither answers to what extent and how a legal agent hallucinates along its trajectory. To address these limitations, we introduce LexAgentHallu, a legal agentic hallucination benchmark designed to evaluate to what extent and how legal agents fail along multi-step trajectories. Built through a four-stage expert-in-the-loop pipeline, LexAgentHallu contains 3414 instances across 17 legal categories and 6 task types. Each instance is annotated under a dual-layer hallucination taxonomy of 7 high-level categories and 27 fine-grained subclasses, covering both substantive errors and agent-procedural failures. We further design fine-grained metrics that quantify to what extent and localize how each failure occurs along an agent's execution path. Our evaluation across 18 proprietary and open-source agents uncovers a Right-Answer-Wrong-Reason effect and reveals that hallucination subclasses cluster rather than scatter, forming distinct agentic framework, legal task, and category profiles. These findings, invisible to outcome-level evaluation, validate the diagnostic power of LexAgentHallu for evaluating agentic hallucination in law.",
+      "authors": [
+        "Yujin Zhou",
+        "Mingxuan Zheng",
+        "Chuxue Cao",
+        "Huang Yidan",
+        "Jiale Chen",
+        "Yike Guo",
+        "Sirui Han"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-09T05:52:53Z",
+      "updated": "2026-09-09T05:52:53Z",
+      "announced_date": "2026-09-09",
+      "first_seen": "2026-09-09",
+      "comment": "EMNLP 2026 Main",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.09754v1",
+        "pdf": "https://arxiv.org/pdf/2609.09754v1",
+        "html": "https://arxiv.org/html/2609.09754"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    }
+  ]
+}
