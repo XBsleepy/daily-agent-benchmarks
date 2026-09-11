@@ -1,0 +1,368 @@
+{
+  "date": "2026-09-10",
+  "count": 7,
+  "report": {
+    "date": "2026-09-10",
+    "count": 7,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 5,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "research",
+        "count": 2,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "science",
+        "count": 2,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      }
+    ],
+    "en": {
+      "headline": "7 new agent benchmarks",
+      "summary": "On September 10, 2026, arXiv listed 7 new agent benchmarks. Work clustered around Planning / reasoning (5), Tool use (3), Research agents (2), and Multimodal (2).",
+      "highlights": [
+        {
+          "id": "2609.11318",
+          "title": "Mr.LHDR: A Benchmark for Multimodal Real-World Long-Horizon Deep Research Agents",
+          "blurb": "Deep research agents are increasingly capable of web search, tool use, multimodal evidence analysis, and information synthesis."
+        },
+        {
+          "id": "2609.11515",
+          "title": "ChurnBench: A Drift-Aware Benchmark Demonstrating That Refresh Scheduling, Not Cache Age, Governs Staleness in Agentic AI",
+          "blurb": "In production, agentic systems answer questions over data that lives in several places and keeps changing: licenses are reassigned, users offboarded, prices changed, contracts renewed."
+        },
+        {
+          "id": "2609.11115",
+          "title": "Benchmark Radar: A Living Database and Search Engine for AI Benchmarks and Evaluation",
+          "blurb": "Benchmark researchers and developers of large language models (LLMs) and other AI systems need to find relevant evaluations, locate their benchmark datasets and code, and understand the settings behind reported scores."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 7 篇 Agent Benchmark",
+      "summary": "2026年9月10日，arXiv 新增 7 篇 Agent Benchmark。当日主题集中在规划 / 推理（5）、工具使用（3）、科研智能体（2）、多模态（2）。",
+      "highlights": [
+        {
+          "id": "2609.11318",
+          "title": "Mr.LHDR: A Benchmark for Multimodal Real-World Long-Horizon Deep Research Agents",
+          "blurb": "Deep research agents are increasingly capable of web search, tool use, multimodal evidence analysis, and information synthesis."
+        },
+        {
+          "id": "2609.11515",
+          "title": "ChurnBench: A Drift-Aware Benchmark Demonstrating That Refresh Scheduling, Not Cache Age, Governs Staleness in Agentic AI",
+          "blurb": "In production, agentic systems answer questions over data that lives in several places and keeps changing: licenses are reassigned, users offboarded, prices changed, contracts renewed."
+        },
+        {
+          "id": "2609.11115",
+          "title": "Benchmark Radar: A Living Database and Search Engine for AI Benchmarks and Evaluation",
+          "blurb": "Benchmark researchers and developers of large language models (LLMs) and other AI systems need to find relevant evaluations, locate their benchmark datasets and code, and understand the settings behind reported scores."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2609.11515",
+      "title": "ChurnBench: A Drift-Aware Benchmark Demonstrating That Refresh Scheduling, Not Cache Age, Governs Staleness in Agentic AI",
+      "abstract": "In production, agentic systems answer questions over data that lives in several places and keeps changing: licenses are reassigned, users offboarded, prices changed, contracts renewed. Existing retrieval benchmarks freeze the data, so they cannot ask whether an agent's answer is still true, only whether it found the right passage. We present ChurnBench, an open-source benchmark that generates a four-source enterprise data fabric as a timeline rather than a snapshot. Every change is written to an append-only ground-truth ledger, and gold answers are computed from that ledger, never from the live stores. An answer that was correct when its data was retrieved but wrong when evaluated is therefore detected and labeled a freshness error, distinct from a reasoning error; we validate this by resolving ground truth at both timestamps for every case reported. Using the instrument, we find that when a system refreshes on a schedule, cache age does not predict staleness. Across cache ages of 1, 14, and 28 days, freshness errors were 7, 4, and 4, because scheduled refresh bounds staleness by time-to-live, and no TTL lapse was observed in any window. A controlled ablation confirms the mechanism: disabling tiered refresh raises freshness errors from 4 to 45 at 28 days and leaves them identical at one day. The variable a drift benchmark should sweep is therefore TTL configuration against each entity's rate of change, not drift-window length. ChurnBench, the evaluation harness, and all per-error data are released open source.",
+      "authors": [
+        "Vivek Kumar Singh",
+        "Preeti Priyam"
+      ],
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-09-10T13:19:29Z",
+      "updated": "2026-09-10T13:19:29Z",
+      "announced_date": "2026-09-10",
+      "first_seen": "2026-09-10",
+      "comment": "8 pages, 2 figures, 5 tables. Code, data, and evaluation harness: https://github.com/vsingh45/churnbench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.11515v1",
+        "pdf": "https://arxiv.org/pdf/2609.11515v1",
+        "html": "https://arxiv.org/html/2609.11515"
+      },
+      "score": 13,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2609.11318",
+      "title": "Mr.LHDR: A Benchmark for Multimodal Real-World Long-Horizon Deep Research Agents",
+      "abstract": "Deep research agents are increasingly capable of web search, tool use, multimodal evidence analysis, and information synthesis. However, existing benchmarks mainly evaluate medium-horizon exploration and rarely test whether agents can sustain long, dependency-heavy research processes. We introduce Mr.LHDR (Multimodal real-world Long-Horizon Deep Research), a benchmark for evaluating real-world deep research over long, irreducible chains of interdependent evidence across eight categories. Each question is constructed from a hidden Node-Relation graph and requires an average of 12.1 necessary intermediate conclusions with a mean dependency depth of 10.4 before reaching a short, unique, and verifiable answer. Questions incorporate multimodal evidence, including images, maps, PDFs, logos, charts, tables, and video frames, with at least one non-text element that changes the reasoning state. Mr.LHDR evaluates both final answers and the correctness of intermediate conclusions under annotated dependencies. We evaluate general models, deep research systems, and agent frameworks using Overall Accuracy (OA), Strict Accuracy (SA), Checklist Score (CS), and Dependency-Aware Checklist Score (DACS). Results show that even the strongest system achieves only 43.1% OA and 34.3% SA, indicating that final-answer accuracy substantially overestimates complete research success. Removing images reduces DACS by 12.6 points, demonstrating the importance of multimodal evidence, while SA consistently declines as reasoning chains become longer. These findings reveal sustained, dependency-consistent evidence integration, rather than isolated fact retrieval, as a key bottleneck for current deep research agents.",
+      "authors": [
+        "Minghao Guo",
+        "Meng Cao",
+        "Sui Zhao",
+        "Siyu Ning",
+        "Xin Wang",
+        "Haoze Zhao",
+        "Jiaxuan Yang",
+        "Haihong Hao",
+        "Mingfei Han",
+        "Shunlin Rong",
+        "Haijun Wu",
+        "Xiaodan Liang",
+        "Xiaojun Chang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-10T09:47:44Z",
+      "updated": "2026-09-10T09:47:44Z",
+      "announced_date": "2026-09-10",
+      "first_seen": "2026-09-10",
+      "comment": "Code and data are available at https://github.com/minghaoguo20/Mr-LHDR-eval",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.11318v1",
+        "pdf": "https://arxiv.org/pdf/2609.11318v1",
+        "html": "https://arxiv.org/html/2609.11318"
+      },
+      "score": 20,
+      "tags": [
+        "tool-use",
+        "planning",
+        "research",
+        "multimodal"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2609.11243",
+      "title": "Sci-MMR: Benchmarking Multi-Step Evidence-Grounded Scientific Reasoning in Multimodal Agents",
+      "abstract": "Autonomous research agents are increasingly expected to search the literature, analyze experimental evidence, and generate scientific hypotheses. These capabilities require multi-step evidence grounded reasoning that progressively acquires, integrates, and verifies evidence before reaching a conclusion. Existing multimodal benchmarks, however, largely evaluate final-answer accuracy, leaving open whether predictions are actually supported by traceable scientific evidence. We introduce Sci-MMR, a benchmark for multi-step evidence-grounded scientific reasoning built on structured argument graphs linking scientific claims, citation-grounded knowledge, visual evidence, and supporting regions. Sci-MMR comprises 235 multi-hop reasoning tasks spanning four scientific disciplines, with an average of nine figure panels per task. Evaluating eight frontier multimodal models, we find that answer accuracy consistently exceeds complete-evidence recovery rate by more than 20%, revealing a substantial gap that answer-only evaluation is structurally unable to capture. Through controlled interventions, we identify two fundamental bottlenecks. First, evidence acquisition: models struggle to extract complete structured evidence from scientific figures, accounting for 57.2% of failures. While cropping tools yield modest gains (+4.5 points), providing gold evidence improves accuracy by up to 37.0 points, indicating difficulty in assembling complete multi-region evidence. Second, evidence integration: models struggle to translate available evidence into correct conclusions, accounting for 31.8% of failures, while even with gold evidence the strongest model achieves only 69.1% accuracy on the hardest tasks. These findings indicate that current answer-centric benchmarks substantially overestimate the evidence-grounded reasoning capabilities of multimodal research agents",
+      "authors": [
+        "Jiaqiang Li",
+        "Yajie Yang",
+        "Zhiheng Xi",
+        "Jiadong Chen",
+        "Enyu Zhou",
+        "Senjie Jin",
+        "Yang Nan",
+        "Jiazheng Zhang",
+        "Han Wang",
+        "Yanxin Li",
+        "Dingwei Zhu",
+        "Bicheng Deng",
+        "Yuhui Wang",
+        "Xiang Zheng",
+        "Qi Zhang",
+        "Lei Bai",
+        "Xingjun Ma",
+        "Tao Gui"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-10T08:41:07Z",
+      "updated": "2026-09-10T08:41:07Z",
+      "announced_date": "2026-09-10",
+      "first_seen": "2026-09-10",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.11243v1",
+        "pdf": "https://arxiv.org/pdf/2609.11243v1",
+        "html": "https://arxiv.org/html/2609.11243"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "planning",
+        "research",
+        "multimodal",
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2609.11141",
+      "title": "Can LLMs Normalize Databases? A Benchmark and Multi-Agent Framework for Schema Normalization",
+      "abstract": "Large Language Models (LLMs) are increasingly used to generate structured outputs, but their reliability remains unclear when those outputs must satisfy database-level constraints. We study this issue through database normalization, involving reasoning about functional dependencies, lossless join decompositions, and inter-table constraints. We introduce a Database Normalization Benchmark (DNBENCH), comprising 3,275 samples for evaluating LLM-driven database normalization from 1NF to BCNF. DNBENCH uses a three-axis protocol to measure semantic equivalence, structural accuracy, and logical validity. Across Single, Complex, and Real World levels, DNBENCH uncovers recurring failures in dependency inference, schema decomposition, and inter-table constraint reconstruction. We further propose Multi-Agent Reasoning for Schemas (MARS), which separates evidence extraction, violation diagnosis, and decomposition planning from schema generation and verification. MARS improves the DNB-SCORE by 82.0% over the single-prompt baseline. All artifacts will be released upon acceptance.",
+      "authors": [
+        "Dong-Jae Koh",
+        "Huisu Kim",
+        "SeongHwan Yoon",
+        "Lasse M. Jantsch",
+        "Chun-Hee Lee",
+        "Seonghyeon Lee",
+        "Young-Kyoon Suh"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-09-10T06:34:35Z",
+      "updated": "2026-09-10T06:34:35Z",
+      "announced_date": "2026-09-10",
+      "first_seen": "2026-09-10",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.11141v1",
+        "pdf": "https://arxiv.org/pdf/2609.11141v1",
+        "html": "https://arxiv.org/html/2609.11141"
+      },
+      "score": 12,
+      "tags": [
+        "multi-agent",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2609.11117",
+      "title": "Overview of the NLPCC 2026 Shared Task 11: Agent-Based Experiment Reproduction from Scientific Papers",
+      "abstract": "Reproducibility is essential to scientific progress, yet the growing volume and complexity of scientific publications make exhaustive manual verification increasingly impractical. Although recent advances in large language model (LLM) agents enable automated experiment reproduction, existing evaluations largely focus on final repositories and are typically limited to machine learning (ML). We introduce AgentActionBench, a process-oriented benchmark for evaluating agent-based experiment reproduction across ML and AI4Science domains. Our framework uses an MCP-based Action Recorder to capture agents' behaviour throughout the reproduction process and evaluates the resulting traces with paper-specific rubrics. AgentActionBench contains 150 papers, including 120 ML papers and 30 AI4Science papers. A human-annotated subset covering 10% of the benchmark provides validation data, while model-assisted augmentation expands the full benchmark to more than 10,000 rubric items. Experimental results show that current systems remain limited, with execution as the primary bottleneck. Meanwhile, the strong Pearson and Spearman correlations between model-generated and human-annotated rubrics validate the reliability of our scalable rubric-generation approach.",
+      "authors": [
+        "Hanhua Hong",
+        "Yizhi Li",
+        "Luu Gia Huy",
+        "Jian Yang",
+        "Ming Zhou",
+        "Chenghua Lin"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-09-10T05:50:24Z",
+      "updated": "2026-09-10T05:50:24Z",
+      "announced_date": "2026-09-10",
+      "first_seen": "2026-09-10",
+      "comment": "NLPCC Shared Task",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.11117v1",
+        "pdf": "https://arxiv.org/pdf/2609.11117v1",
+        "html": "https://arxiv.org/html/2609.11117"
+      },
+      "score": 6,
+      "tags": [
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2609.11115",
+      "title": "Benchmark Radar: A Living Database and Search Engine for AI Benchmarks and Evaluation",
+      "abstract": "Benchmark researchers and developers of large language models (LLMs) and other AI systems need to find relevant evaluations, locate their benchmark datasets and code, and understand the settings behind reported scores. We present Benchmark Radar, a living database and search engine for retrieval and discovery of AI benchmarks, covering LLM evaluation, agentic and tool-use benchmarks, coding, reasoning, safety, and domain-specific evaluations. The system combines daily discovery of benchmark papers, repositories, datasets, and releases with a searchable benchmark catalog, mentions in model cards and technical reports, and score histories. It retains source identities and citations so readers can inspect candidate benchmarks and their evaluation evidence. Daily discovery draws on 37 sources: 13 direct connectors and 24 first-party research and engineering feeds. The catalog contains 1,283 source records drawn from 4 benchmark catalogs and 12,916 numeric observations on 790 records. We describe collection and retrieval, audit the full catalog, and examine benchmark saturation, adoption trends, and the limits of score comparisons. A worked example walks through a complete prior-art search, showing how to query the catalog and inspect benchmark evidence when designing a new evaluation. We release the web dashboard with a benchmark leaderboard, a Pareto frontier view of score against measured use, saturation and trend views, daily feeds, downloadable evidence, a command-line interface (CLI) for offline queries, and reproducible analysis.",
+      "authors": [
+        "Koutian Wu",
+        "Junjie Zhou",
+        "Ergan Shang",
+        "Jiayu Wang",
+        "Pengqian Han",
+        "Junkai Wang",
+        "Wanghan Xu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.IR"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-10T05:47:22Z",
+      "updated": "2026-09-10T05:47:22Z",
+      "announced_date": "2026-09-10",
+      "first_seen": "2026-09-10",
+      "comment": "Project site: https://benchmark-radar.org/ Code: https://github.com/ktwu01/benchmark-radar",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.11115v1",
+        "pdf": "https://arxiv.org/pdf/2609.11115v1",
+        "html": "https://arxiv.org/html/2609.11115"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2609.11101",
+      "title": "ProMediConv: Benchmarking Proactive Conversational Agents in Legal Dispute Mediation",
+      "abstract": "Dispute mediation is essential for maintaining social harmony and resilience, yet developing skilled mediators is costly and time-consuming. Existing LLM-based mediation research remains limited by unrealistic task formulations, low-fidelity datasets, and coarse evaluation metrics that obscure turn-by-turn dynamics. To address these gaps, we introduce ProMediConv, a novel benchmarking framework that models mediation as a proactive, multi-stage, and party-aware dialogue process incorporating 11 mediation strategies and four party behavior pattern (BP) states. Using 972 complete real-world cases, we construct a high-fidelity mediation dataset with utterance-level annotations of strategies and BP states. Furthermore, to better assess agent impact, we propose MAD (Mean Attribute Difference), a fine-grained metric that captures BP shifts throughout the dialogue. Leveraging this framework, we establish a comprehensive benchmark by evaluating diverse models alongside our tailored baseline ProMediAgent. Extensive empirical analyses reveal critical behavioral phenomena and underscore the persistent challenges current models face in dynamic, multi-party mediation. Ultimately, ProMediConv provides a rigorous foundation and a vital quantitative standard for advancing AI-assisted conflict resolution. Our dataset and codebase are accessible at https://github.com/ZsWei66/ProMediConv_repo.",
+      "authors": [
+        "Zesheng Wei",
+        "Mengfan Li",
+        "Wenhao Liu",
+        "Yixin Zhang",
+        "Zilei Wang",
+        "Yang Deng"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-09-10T05:26:40Z",
+      "updated": "2026-09-10T05:26:40Z",
+      "announced_date": "2026-09-10",
+      "first_seen": "2026-09-10",
+      "comment": "Accepted to Findings of EMNLP2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.11101v1",
+        "pdf": "https://arxiv.org/pdf/2609.11101v1",
+        "html": "https://arxiv.org/html/2609.11101"
+      },
+      "score": 9,
+      "tags": [
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 0
+    }
+  ]
+}
