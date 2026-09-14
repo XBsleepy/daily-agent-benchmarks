@@ -1,13 +1,13 @@
 {
   "date": "2026-09-10",
-  "count": 7,
+  "count": 8,
   "report": {
     "date": "2026-09-10",
-    "count": 7,
+    "count": 8,
     "themes": [
       {
         "id": "planning",
-        "count": 5,
+        "count": 6,
         "en": "Planning / reasoning",
         "zh": "规划 / 推理"
       },
@@ -36,6 +36,12 @@
         "zh": "科学实验"
       },
       {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
         "id": "multi-agent",
         "count": 1,
         "en": "Multi-agent",
@@ -46,17 +52,11 @@
         "count": 1,
         "en": "Safety",
         "zh": "安全"
-      },
-      {
-        "id": "conversation",
-        "count": 1,
-        "en": "Dialogue / customer",
-        "zh": "对话 / 客服"
       }
     ],
     "en": {
-      "headline": "7 new agent benchmarks",
-      "summary": "On September 10, 2026, arXiv listed 7 new agent benchmarks. Work clustered around Planning / reasoning (5), Tool use (3), Research agents (2), and Multimodal (2).",
+      "headline": "8 new agent benchmarks",
+      "summary": "On September 10, 2026, arXiv listed 8 new agent benchmarks. Work clustered around Planning / reasoning (6), Tool use (3), Research agents (2), and Multimodal (2).",
       "highlights": [
         {
           "id": "2609.11318",
@@ -76,8 +76,8 @@
       ]
     },
     "zh": {
-      "headline": "新增 7 篇 Agent Benchmark",
-      "summary": "2026年9月10日，arXiv 新增 7 篇 Agent Benchmark。当日主题集中在规划 / 推理（5）、工具使用（3）、科研智能体（2）、多模态（2）。",
+      "headline": "新增 8 篇 Agent Benchmark",
+      "summary": "2026年9月10日，arXiv 新增 8 篇 Agent Benchmark。当日主题集中在规划 / 推理（6）、工具使用（3）、科研智能体（2）、多模态（2）。",
       "highlights": [
         {
           "id": "2609.11318",
@@ -98,6 +98,44 @@
     }
   },
   "papers": [
+    {
+      "id": "2609.12265",
+      "title": "GTA: Graph Theory Agent and Benchmark for Algorithmic Graph Reasoning with LLMs",
+      "abstract": "Large Language Models (LLMs) are increasingly asked to reason over structured data such as graphs, yet how reliably they can carry out multi-step graph algorithms in language remains unclear. Existing evaluations tend to use simple tasks on small graphs, to score code generation rather than reasoning over the graph itself, or to fix a single input format. We introduce Graph Theory Bench (GT Bench), a benchmark covering 24 classical graph problems in 44 task-structure settings, with over 100,000 examples across four representations: natural language, structured language, adjacency list, and adjacency matrix. Evaluating eight LLMs on GT Bench shows that accuracy is strongly tied to the input representation, that the best representation shifts with graph density, size, and topology as well as with the model, and that this sensitivity persists, attenuated, in the strongest reasoning models. Building on these observations, we propose the Graph Theory Agent (GTA), which pairs a preference-trained representation selector with plan-and-decompose scaffolding around a frozen executor LLM. GTA lifts Phi-4 from 53.5% to 69.1% on the benchmark's easy split and from 33.0% to 41.5% on its hard split, outperforming eight prompting and agent baselines, and transfers without retraining to GraCoRe and NLGraph. Code for benchmark generation and evaluation: https://github.com/xzx34/GTA. The project homepage is available at https://xzx34.github.io/gta/.",
+      "authors": [
+        "Zixiang Xu",
+        "Yanbo Wang",
+        "Chenxi Wang",
+        "Lang Gao",
+        "Zirui Song",
+        "Yue Huang",
+        "Zhaorun Chen",
+        "Xiangliang Zhang",
+        "Xiuying Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-10T22:50:10Z",
+      "updated": "2026-09-10T22:50:10Z",
+      "announced_date": "2026-09-10",
+      "first_seen": "2026-09-10",
+      "comment": "49 pages, 11 figures, including references and appendix",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.12265v1",
+        "pdf": "https://arxiv.org/pdf/2609.12265v1",
+        "html": "https://arxiv.org/html/2609.12265"
+      },
+      "score": 10,
+      "tags": [
+        "coding",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 2
+    },
     {
       "id": "2609.11515",
       "title": "ChurnBench: A Drift-Aware Benchmark Demonstrating That Refresh Scheduling, Not Cache Age, Governs Staleness in Agentic AI",
@@ -131,7 +169,7 @@
     {
       "id": "2609.11318",
       "title": "Mr.LHDR: A Benchmark for Multimodal Real-World Long-Horizon Deep Research Agents",
-      "abstract": "Deep research agents are increasingly capable of web search, tool use, multimodal evidence analysis, and information synthesis. However, existing benchmarks mainly evaluate medium-horizon exploration and rarely test whether agents can sustain long, dependency-heavy research processes. We introduce Mr.LHDR (Multimodal real-world Long-Horizon Deep Research), a benchmark for evaluating real-world deep research over long, irreducible chains of interdependent evidence across eight categories. Each question is constructed from a hidden Node-Relation graph and requires an average of 12.1 necessary intermediate conclusions with a mean dependency depth of 10.4 before reaching a short, unique, and verifiable answer. Questions incorporate multimodal evidence, including images, maps, PDFs, logos, charts, tables, and video frames, with at least one non-text element that changes the reasoning state. Mr.LHDR evaluates both final answers and the correctness of intermediate conclusions under annotated dependencies. We evaluate general models, deep research systems, and agent frameworks using Overall Accuracy (OA), Strict Accuracy (SA), Checklist Score (CS), and Dependency-Aware Checklist Score (DACS). Results show that even the strongest system achieves only 43.1% OA and 34.3% SA, indicating that final-answer accuracy substantially overestimates complete research success. Removing images reduces DACS by 12.6 points, demonstrating the importance of multimodal evidence, while SA consistently declines as reasoning chains become longer. These findings reveal sustained, dependency-consistent evidence integration, rather than isolated fact retrieval, as a key bottleneck for current deep research agents.",
+      "abstract": "Deep research agents are increasingly capable of web search, tool use, multimodal evidence analysis, and information synthesis. However, existing benchmarks mainly evaluate medium-horizon exploration and rarely test whether agents can sustain long, dependency-heavy research processes. We introduce Mr. LHDR (Multimodal real-world Long-Horizon Deep Research), a benchmark for evaluating real-world deep research over long, irreducible chains of interdependent evidence across eight categories. Each question is constructed from a hidden Node-Relation graph and requires an average of 12.1 necessary intermediate conclusions with a mean dependency depth of 10.4 before reaching a short, unique, and verifiable answer. Questions incorporate multimodal evidence, including images, maps, PDFs, logos, charts, tables, and video frames, with at least one non-text element that changes the reasoning state. Mr. LHDR evaluates both final answers and the correctness of intermediate conclusions under annotated dependencies. We evaluate general models, deep research systems, and agent frameworks using Overall Accuracy (OA), Strict Accuracy (SA), Checklist Score (CS), and Dependency-Aware Checklist Score (DACS). Results show that even the strongest system achieves only 43.1% OA and 34.3% SA, indicating that final-answer accuracy substantially overestimates complete research success. Removing images reduces DACS by 12.6 points, demonstrating the importance of multimodal evidence, while SA consistently declines as reasoning chains become longer. These findings reveal sustained, dependency-consistent evidence integration, rather than isolated fact retrieval, as a key bottleneck for current deep research agents.",
       "authors": [
         "Minghao Guo",
         "Meng Cao",
@@ -152,14 +190,14 @@
       ],
       "primary_category": "cs.AI",
       "published": "2026-09-10T09:47:44Z",
-      "updated": "2026-09-10T09:47:44Z",
+      "updated": "2026-09-11T08:39:34Z",
       "announced_date": "2026-09-10",
       "first_seen": "2026-09-10",
-      "comment": "Code and data are available at https://github.com/minghaoguo20/Mr-LHDR-eval",
+      "comment": "Code and data are available at https://github.com/minghaoguo20/Mr-LHDR",
       "doi": "",
       "links": {
-        "abs": "https://arxiv.org/abs/2609.11318v1",
-        "pdf": "https://arxiv.org/pdf/2609.11318v1",
+        "abs": "https://arxiv.org/abs/2609.11318v2",
+        "pdf": "https://arxiv.org/pdf/2609.11318v2",
         "html": "https://arxiv.org/html/2609.11318"
       },
       "score": 20,
