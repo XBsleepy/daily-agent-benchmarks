@@ -2,10 +2,10 @@
 
 from __future__ import annotations
 
+import email.utils
 import http.client
 import re
 import time
-import email.utils
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -17,6 +17,9 @@ from config import (
     ARXIV_API,
     MAX_PAGES,
     PAGE_SIZE,
+    QUERY_GAP_S,
+    RATE_LIMIT_FLOOR_S,
+    RATE_LIMIT_MAX_S,
     REQUEST_GAP_S,
     REQUEST_RETRIES,
     REQUEST_TIMEOUT_S,
@@ -118,6 +121,13 @@ def _in_window(paper: dict[str, Any], date_from: str, date_to: str) -> bool:
     return bool(day) and date_from <= day <= date_to
 
 
+def _submitted_date_clause(date_from: str, date_to: str) -> str:
+    """Limit API search to the local date window so we don't hit huge result sets."""
+    start = date_from.replace("-", "") + "0000"
+    end = date_to.replace("-", "") + "2359"
+    return f"submittedDate:[{start} TO {end}]"
+
+
 _RETRYABLE = (
     TimeoutError,
     ConnectionResetError,
@@ -128,7 +138,9 @@ _RETRYABLE = (
 )
 
 
-def _backoff_s(attempt: int) -> float:
+def _backoff_s(attempt: int, rate_limited: bool = False) -> float:
+    if rate_limited:
+        return min(RATE_LIMIT_MAX_S, RATE_LIMIT_FLOOR_S * (2**attempt))
     return min(60.0, REQUEST_GAP_S * (2**attempt))
 
 
@@ -152,6 +164,7 @@ def _request(url: str, retries: int = REQUEST_RETRIES) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     last_err: Exception | None = None
     for attempt in range(retries):
+        rate_limited = False
         wait = _backoff_s(attempt)
         try:
             with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT_S) as resp:
@@ -161,12 +174,18 @@ def _request(url: str, retries: int = REQUEST_RETRIES) -> bytes:
             if exc.code not in {429, 500, 502, 503, 504} or attempt + 1 >= retries:
                 raise
             if exc.code == 429:
+                rate_limited = True
+                wait = _backoff_s(attempt, rate_limited=True)
                 retry_after = _retry_after_s(exc)
-                wait = max(wait, retry_after if retry_after is not None else 60.0)
+                if retry_after is not None:
+                    wait = max(wait, min(RATE_LIMIT_MAX_S, retry_after + 5.0))
+                else:
+                    wait = max(wait, RATE_LIMIT_FLOOR_S)
         except _RETRYABLE as exc:
             last_err = exc
             if attempt + 1 >= retries:
                 raise
+            wait = _backoff_s(attempt)
         print(f"  retry {attempt + 1}/{retries} in {wait:.0f}s ({last_err})", flush=True)
         time.sleep(wait)
     raise RuntimeError(f"arXiv request failed: {last_err}")
@@ -177,10 +196,11 @@ def _fetch_query(query: str, date_from: str, date_to: str, seen: set[str]) -> li
     start = 0
     total = None
     reached_old = False
+    windowed = f"({query}) AND {_submitted_date_clause(date_from, date_to)}"
 
     for page in range(MAX_PAGES):
         params = {
-            "search_query": query,
+            "search_query": windowed,
             "start": start,
             "max_results": PAGE_SIZE,
             "sortBy": "submittedDate",
@@ -189,7 +209,7 @@ def _fetch_query(query: str, date_from: str, date_to: str, seen: set[str]) -> li
         url = ARXIV_API + "?" + urllib.parse.urlencode(params)
         if start:
             time.sleep(REQUEST_GAP_S)
-        print(f"  GET start={start} {query[:80]}", flush=True)
+        print(f"  GET start={start} {windowed[:90]}", flush=True)
         xml_bytes = _request(url)
         root = ET.fromstring(xml_bytes)
         if total is None:
@@ -239,7 +259,7 @@ def fetch_window(date_from: str, date_to: str) -> list[dict[str, Any]]:
     papers: list[dict[str, Any]] = []
     for i, query in enumerate(SEARCH_QUERIES):
         if i:
-            time.sleep(REQUEST_GAP_S)
+            time.sleep(QUERY_GAP_S)
         print(f"Query {i + 1}/{len(SEARCH_QUERIES)}", flush=True)
         papers.extend(_fetch_query(query, date_from, date_to, seen))
     papers.sort(key=lambda p: (p.get("published") or "", p.get("id") or ""), reverse=True)

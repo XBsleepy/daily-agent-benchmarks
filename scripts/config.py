@@ -5,7 +5,7 @@ from __future__ import annotations
 ARXIV_API = "https://export.arxiv.org/api/query"
 USER_AGENT = (
     "daily-agent-benchmarks/1.0 "
-    "(https://github.com/daily-agent-benchmarks; arxiv tracker; polite bot)"
+    "(https://github.com/XBsleepy/daily-agent-benchmarks; arxiv tracker; polite bot)"
 )
 
 # Computer-science categories where agent benchmarks actually appear.
@@ -33,8 +33,12 @@ SEARCH_QUERIES = (
 )
 
 REQUEST_TIMEOUT_S = 60
-REQUEST_RETRIES = 6
-REQUEST_GAP_S = 3.1
+REQUEST_RETRIES = 8
+REQUEST_GAP_S = 5.0
+# arXiv rate-limits shared GitHub Actions IPs hard; wait longer than the usual gap.
+RATE_LIMIT_FLOOR_S = 90.0
+RATE_LIMIT_MAX_S = 300.0
+QUERY_GAP_S = 8.0
 PAGE_SIZE = 100
 MAX_PAGES = 30
 ARCHIVE_START = "2026-01-01"

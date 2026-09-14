@@ -3,13 +3,10 @@ name: Daily arXiv update
 on:
   schedule:
     # arXiv announces new papers Sun–Thu at 20:00 US Eastern.
-    # EDT → 00:00 UTC; EST → 01:00 UTC. The API often lags a few minutes.
-    # GitHub often delays or skips cron on quiet repos, so keep later catch-ups.
+    # Keep fewer slots so GitHub-hosted runners don't stampede export.arxiv.org.
     # Cron days 1–5 (Mon–Fri UTC) = the night of Sun–Thu ET announcements.
-    - cron: "25 0 * * 1-5"
-    - cron: "25 1 * * 1-5"
+    - cron: "40 0 * * 1-5"
     - cron: "30 3 * * 1-5"
-    - cron: "0 8 * * 1-5"
     - cron: "0 14 * * 1-5"
   workflow_dispatch:
   push:
@@ -23,7 +20,7 @@ permissions:
 
 concurrency:
   group: daily-arxiv-update
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   update:
@@ -47,7 +44,8 @@ jobs:
             fi
             echo "update failed (attempt $i/3)"
             if [ "$i" -lt 3 ]; then
-              sleep $((i * 45))
+              # Give arXiv rate limits time to cool off before retrying the whole run.
+              sleep $((i * 180))
             fi
           done
           exit 1
