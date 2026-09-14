@@ -5,6 +5,7 @@ from __future__ import annotations
 import http.client
 import re
 import time
+import email.utils
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -131,10 +132,27 @@ def _backoff_s(attempt: int) -> float:
     return min(60.0, REQUEST_GAP_S * (2**attempt))
 
 
+def _retry_after_s(exc: urllib.error.HTTPError) -> float | None:
+    value = exc.headers.get("Retry-After")
+    if not value:
+        return None
+    value = value.strip()
+    if value.isdigit():
+        return float(value)
+    try:
+        when = email.utils.parsedate_to_datetime(value)
+    except (TypeError, ValueError):
+        return None
+    if when.tzinfo is None:
+        when = when.replace(tzinfo=timezone.utc)
+    return max(0.0, (when - datetime.now(timezone.utc)).total_seconds())
+
+
 def _request(url: str, retries: int = REQUEST_RETRIES) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     last_err: Exception | None = None
     for attempt in range(retries):
+        wait = _backoff_s(attempt)
         try:
             with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT_S) as resp:
                 return resp.read()
@@ -142,11 +160,13 @@ def _request(url: str, retries: int = REQUEST_RETRIES) -> bytes:
             last_err = exc
             if exc.code not in {429, 500, 502, 503, 504} or attempt + 1 >= retries:
                 raise
+            if exc.code == 429:
+                retry_after = _retry_after_s(exc)
+                wait = max(wait, retry_after if retry_after is not None else 60.0)
         except _RETRYABLE as exc:
             last_err = exc
             if attempt + 1 >= retries:
                 raise
-        wait = _backoff_s(attempt)
         print(f"  retry {attempt + 1}/{retries} in {wait:.0f}s ({last_err})", flush=True)
         time.sleep(wait)
     raise RuntimeError(f"arXiv request failed: {last_err}")
