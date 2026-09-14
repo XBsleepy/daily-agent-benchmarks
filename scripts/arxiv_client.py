@@ -257,10 +257,28 @@ def fetch_by_ids(arxiv_ids: list[str]) -> list[dict[str, Any]]:
 def fetch_window(date_from: str, date_to: str) -> list[dict[str, Any]]:
     seen: set[str] = set()
     papers: list[dict[str, Any]] = []
+    failures = 0
     for i, query in enumerate(SEARCH_QUERIES):
         if i:
             time.sleep(QUERY_GAP_S)
         print(f"Query {i + 1}/{len(SEARCH_QUERIES)}", flush=True)
-        papers.extend(_fetch_query(query, date_from, date_to, seen))
+        try:
+            papers.extend(_fetch_query(query, date_from, date_to, seen))
+        except urllib.error.HTTPError as exc:
+            failures += 1
+            print(f"  query {i + 1} failed ({exc}); continuing with remaining queries", flush=True)
+            if exc.code == 429:
+                cool = min(RATE_LIMIT_MAX_S, RATE_LIMIT_FLOOR_S * 2)
+                print(f"  cooling down {cool:.0f}s after rate limit", flush=True)
+                time.sleep(cool)
+            continue
+        except (TimeoutError, urllib.error.URLError, RuntimeError) as exc:
+            failures += 1
+            print(f"  query {i + 1} failed ({exc}); continuing with remaining queries", flush=True)
+            continue
+    if not papers and failures:
+        raise RuntimeError(f"arXiv fetch returned no papers after {failures} failed quer{'y' if failures == 1 else 'ies'}")
+    if failures:
+        print(f"Completed with partial results: {len(papers)} papers, {failures} failed quer{'y' if failures == 1 else 'ies'}", flush=True)
     papers.sort(key=lambda p: (p.get("published") or "", p.get("id") or ""), reverse=True)
     return papers

@@ -38,14 +38,15 @@ jobs:
 
       - name: Fetch and classify new agent benchmarks
         run: |
-          for i in 1 2 3; do
+          # Brief pause so we don't pile onto export.arxiv.org right after another job.
+          sleep 20
+          for i in 1 2; do
             if python scripts/update.py --days 4; then
               exit 0
             fi
-            echo "update failed (attempt $i/3)"
-            if [ "$i" -lt 3 ]; then
-              # Give arXiv rate limits time to cool off before retrying the whole run.
-              sleep $((i * 180))
+            echo "update failed (attempt $i/2)"
+            if [ "$i" -lt 2 ]; then
+              sleep 300
             fi
           done
           exit 1
