@@ -3,6 +3,11 @@
 from __future__ import annotations
 
 ARXIV_API = "https://export.arxiv.org/api/query"
+# RSS stays available when export.arxiv.org API rate-limits GitHub Actions IPs.
+ARXIV_RSS = (
+    "https://rss.arxiv.org/rss/"
+    + "+".join(("cs.AI", "cs.CL", "cs.LG", "cs.MA", "cs.SE", "cs.HC", "cs.RO", "cs.CV", "cs.IR", "cs.CR"))
+)
 USER_AGENT = (
     "daily-agent-benchmarks/1.0 "
     "(https://github.com/XBsleepy/daily-agent-benchmarks; arxiv tracker; polite bot)"
@@ -33,11 +38,11 @@ SEARCH_QUERIES = (
 )
 
 REQUEST_TIMEOUT_S = 60
-REQUEST_RETRIES = 8
+REQUEST_RETRIES = 4
 REQUEST_GAP_S = 5.0
 # arXiv rate-limits shared GitHub Actions IPs hard; wait longer than the usual gap.
-RATE_LIMIT_FLOOR_S = 90.0
-RATE_LIMIT_MAX_S = 300.0
+RATE_LIMIT_FLOOR_S = 45.0
+RATE_LIMIT_MAX_S = 120.0
 QUERY_GAP_S = 8.0
 PAGE_SIZE = 100
 MAX_PAGES = 30

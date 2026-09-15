@@ -15,6 +15,7 @@ from typing import Any
 
 from config import (
     ARXIV_API,
+    ARXIV_RSS,
     MAX_PAGES,
     PAGE_SIZE,
     QUERY_GAP_S,
@@ -174,6 +175,9 @@ def _request(url: str, retries: int = REQUEST_RETRIES) -> bytes:
             if exc.code not in {429, 500, 502, 503, 504} or attempt + 1 >= retries:
                 raise
             if exc.code == 429:
+                # Fail fast so callers can switch to RSS instead of burning minutes.
+                if attempt >= 1:
+                    raise
                 rate_limited = True
                 wait = _backoff_s(attempt, rate_limited=True)
                 retry_after = _retry_after_s(exc)
@@ -181,6 +185,7 @@ def _request(url: str, retries: int = REQUEST_RETRIES) -> bytes:
                     wait = max(wait, min(RATE_LIMIT_MAX_S, retry_after + 5.0))
                 else:
                     wait = max(wait, RATE_LIMIT_FLOOR_S)
+                wait = min(wait, 60.0)
         except _RETRYABLE as exc:
             last_err = exc
             if attempt + 1 >= retries:
@@ -254,11 +259,102 @@ def fetch_by_ids(arxiv_ids: list[str]) -> list[dict[str, Any]]:
     return papers
 
 
+_DC = "{http://purl.org/dc/elements/1.1/}"
+_ARXIV_RSS = "{http://arxiv.org/schemas/atom}"
+_ABS_RE = re.compile(r"Abstract:\s*(.*)", re.IGNORECASE | re.DOTALL)
+_ID_LINE_RE = re.compile(r"arXiv:([0-9]+\.[0-9]+)(?:v\d+)?", re.IGNORECASE)
+
+
+def _rss_item_to_paper(item: ET.Element) -> dict[str, Any] | None:
+    link = _text(item.find("link"))
+    desc = (item.findtext("description") or "").strip()
+    arxiv_id = ""
+    if link:
+        arxiv_id = parse_arxiv_id(link)
+    if not arxiv_id:
+        m = _ID_LINE_RE.search(desc)
+        if m:
+            arxiv_id = m.group(1)
+    if not arxiv_id:
+        return None
+
+    announce = _text(item.find(f"{_ARXIV_RSS}announce_type")).lower()
+    if not announce:
+        m = re.search(r"Announce Type:\s*(\w+)", desc, re.IGNORECASE)
+        announce = (m.group(1) if m else "new").lower()
+    # Skip replacements / withdrawals; keep new + cross-list announcements.
+    if announce not in {"new", "cross", "crosslist", "cross-list"}:
+        return None
+
+    abstract = ""
+    m = _ABS_RE.search(desc)
+    if m:
+        abstract = re.sub(r"\s+", " ", m.group(1)).strip()
+
+    authors = [_text(el) for el in item.findall(f"{_DC}creator") if _text(el)]
+    categories = [_text(el) for el in item.findall("category") if _text(el)]
+    pub = _text(item.find("pubDate"))
+    announced = ""
+    published = ""
+    if pub:
+        try:
+            when = email.utils.parsedate_to_datetime(pub)
+            if when.tzinfo is None:
+                when = when.replace(tzinfo=timezone.utc)
+            when = when.astimezone(timezone.utc)
+            published = when.strftime("%Y-%m-%dT%H:%M:%SZ")
+            announced = when.strftime("%Y-%m-%d")
+        except (TypeError, ValueError):
+            pass
+
+    return {
+        "id": arxiv_id,
+        "title": _text(item.find("title")),
+        "abstract": abstract,
+        "authors": authors,
+        "categories": categories,
+        "primary_category": categories[0] if categories else "",
+        "published": published,
+        "updated": published,
+        "announced_date": announced,
+        "comment": "",
+        "doi": "",
+        "links": {
+            "abs": f"https://arxiv.org/abs/{arxiv_id}",
+            "pdf": f"https://arxiv.org/pdf/{arxiv_id}",
+            "html": f"https://arxiv.org/html/{arxiv_id}",
+        },
+    }
+
+
+def fetch_rss_window(date_from: str, date_to: str, seen: set[str] | None = None) -> list[dict[str, Any]]:
+    """Fallback when the Atom API is rate-limited; RSS usually still works."""
+    seen = seen if seen is not None else set()
+    print(f"RSS fallback GET {ARXIV_RSS}", flush=True)
+    req = urllib.request.Request(ARXIV_RSS, headers={"User-Agent": USER_AGENT})
+    with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT_S) as resp:
+        root = ET.fromstring(resp.read())
+    papers: list[dict[str, Any]] = []
+    for item in root.findall("channel/item"):
+        paper = _rss_item_to_paper(item)
+        if paper is None:
+            continue
+        if paper["id"] in seen or not _in_window(paper, date_from, date_to):
+            continue
+        seen.add(paper["id"])
+        papers.append(paper)
+    print(f"RSS kept {len(papers)} papers in {date_from}..{date_to}", flush=True)
+    return papers
+
+
 def fetch_window(date_from: str, date_to: str) -> list[dict[str, Any]]:
     seen: set[str] = set()
     papers: list[dict[str, Any]] = []
     failures = 0
+    rate_limited = False
     for i, query in enumerate(SEARCH_QUERIES):
+        if rate_limited:
+            break
         if i:
             time.sleep(QUERY_GAP_S)
         print(f"Query {i + 1}/{len(SEARCH_QUERIES)}", flush=True)
@@ -268,17 +364,25 @@ def fetch_window(date_from: str, date_to: str) -> list[dict[str, Any]]:
             failures += 1
             print(f"  query {i + 1} failed ({exc}); continuing with remaining queries", flush=True)
             if exc.code == 429:
-                cool = min(RATE_LIMIT_MAX_S, RATE_LIMIT_FLOOR_S * 2)
-                print(f"  cooling down {cool:.0f}s after rate limit", flush=True)
-                time.sleep(cool)
+                rate_limited = True
+                print("  API rate-limited; switching to RSS fallback", flush=True)
             continue
         except (TimeoutError, urllib.error.URLError, RuntimeError) as exc:
             failures += 1
             print(f"  query {i + 1} failed ({exc}); continuing with remaining queries", flush=True)
             continue
+
+    if rate_limited or not papers:
+        try:
+            papers.extend(fetch_rss_window(date_from, date_to, seen))
+        except Exception as exc:  # noqa: BLE001
+            print(f"  RSS fallback failed: {exc}", flush=True)
+            if not papers:
+                raise RuntimeError(f"arXiv API and RSS both failed ({exc})") from exc
+
     if not papers and failures:
         raise RuntimeError(f"arXiv fetch returned no papers after {failures} failed quer{'y' if failures == 1 else 'ies'}")
     if failures:
-        print(f"Completed with partial results: {len(papers)} papers, {failures} failed quer{'y' if failures == 1 else 'ies'}", flush=True)
+        print(f"Completed with partial/API+RSS results: {len(papers)} papers, {failures} failed API quer{'y' if failures == 1 else 'ies'}", flush=True)
     papers.sort(key=lambda p: (p.get("published") or "", p.get("id") or ""), reverse=True)
     return papers
