@@ -1,0 +1,122 @@
+{
+  "date": "2026-09-16",
+  "count": 2,
+  "report": {
+    "date": "2026-09-16",
+    "count": 2,
+    "themes": [
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On September 16, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Coding agents (1), GUI agents (1), and Computer use (1).",
+      "highlights": [
+        {
+          "id": "2609.17394",
+          "title": "Coding Agents Have Converged: Why the SWE-bench Leaderboard Can No Longer Order Its Top Entries, and What to Measure Instead",
+          "blurb": "Small differences on coding-agent leaderboards are often read as an ordering of systems."
+        },
+        {
+          "id": "2609.16251",
+          "title": "CADWorld: Computer-Use Benchmark for Long-Horizon Computer-Aided Design",
+          "blurb": "Computer-use agents are increasingly evaluated in realistic desktop environments, but existing benchmarks provide limited coverage of professional engineering workflows whose outputs are persistent, structured artifacts."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年9月16日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在代码智能体（1）、GUI 智能体（1）、计算机使用（1）。",
+      "highlights": [
+        {
+          "id": "2609.17394",
+          "title": "Coding Agents Have Converged: Why the SWE-bench Leaderboard Can No Longer Order Its Top Entries, and What to Measure Instead",
+          "blurb": "Small differences on coding-agent leaderboards are often read as an ordering of systems."
+        },
+        {
+          "id": "2609.16251",
+          "title": "CADWorld: Computer-Use Benchmark for Long-Horizon Computer-Aided Design",
+          "blurb": "Computer-use agents are increasingly evaluated in realistic desktop environments, but existing benchmarks provide limited coverage of professional engineering workflows whose outputs are persistent, structured artifacts."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2609.17394",
+      "title": "Coding Agents Have Converged: Why the SWE-bench Leaderboard Can No Longer Order Its Top Entries, and What to Measure Instead",
+      "abstract": "Small differences on coding-agent leaderboards are often read as an ordering of systems. We audit whether the published verdicts support this reading, using 254 SWE-bench submissions across four splits without running models. On Verified, the leading two entries each resolve 396 of 500 instances. The top ten share 285 successes and 51 failures, leaving 164 instances that distinguish their outcomes. Frontier solution sets have median nesting 0.935 against a score-implied baseline of 0.774, indicating strongly shared successes. Scores also depend on the evaluated model-scaffold pair: observed within-model scaffold ranges reach 29.8 percentage points, compared with the 8.8-point spread of the top thirty. Six of nine cell-mean interaction tests remain significant after Holm correction, although this observational design does not identify causal scaffold effects. Exact paired McNemar tests separate none of the 29 adjacent Verified top-thirty pairs at alpha=0.05, while the larger Test split separates 14 of 23. A stated leader-based rule yields three descriptive tiers, or two after Holm correction; non-rejection does not establish equivalence. We release the partition and a five-step audit protocol that profiles shared outcomes, tests paired differences, reports grouping sensitivity, and estimates the instance budget needed for resolution. The results motivate reporting comparison-set-specific resolution and model-scaffold provenance instead of interpreting small aggregate gaps as established rank differences.",
+      "authors": [
+        "Fengshuo Liu, Ying Liu, Ruize Sun, Lie Luo, Siyuan Guo"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-09-16T04:00:00Z",
+      "updated": "2026-09-16T04:00:00Z",
+      "announced_date": "2026-09-16",
+      "first_seen": "2026-09-15",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.17394",
+        "pdf": "https://arxiv.org/pdf/2609.17394",
+        "html": "https://arxiv.org/html/2609.17394"
+      },
+      "score": 24,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2609.16251",
+      "title": "CADWorld: Computer-Use Benchmark for Long-Horizon Computer-Aided Design",
+      "abstract": "Computer-use agents are increasingly evaluated in realistic desktop environments, but existing benchmarks provide limited coverage of professional engineering workflows whose outputs are persistent, structured artifacts. Mechanical computer-aided design (CAD) is a particularly demanding setting: an agent must manipulate geometry and constraints over long interaction horizons while producing a native project whose dimensions, construction structure, and downstream engineering state remain valid. We introduce \\textbf{CADWorld}, a benchmark for long-horizon computer use in FreeCAD. CADWorld contains 200 tasks spanning 11 mechanical-CAD workflow categories, including sketching, part modeling, assembly, CAM, FEM, measurement, mesh processing, and technical drawing. Agents operate through screenshots and GUI actions, while success is determined by task-specific executable checks over saved FreeCAD artifacts and auxiliary outputs, covering geometric properties, parametric structure, constraints, manufacturing state, and simulation results. Across seven current agents on the full benchmark, the strongest agent achieves 17.5\\% success, compared with an 87.0\\% expert reference pass. We find that weaker agents often fail before producing a valid artifact, whereas stronger agents increasingly fail on structural, geometric, and construction-process requirements. CADWorld therefore exposes a gap between general GUI competence and reliable execution of persistent, verifiable engineering workflows. Project accessible at https://cad-world.github.io.",
+      "authors": [
+        "Zihan Dong, Yuanzhe Liu, Zhiyuan Ma, Qishi Zhan, Dehan Kong, Guohao Li, Kaixin Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-16T04:00:00Z",
+      "updated": "2026-09-16T04:00:00Z",
+      "announced_date": "2026-09-16",
+      "first_seen": "2026-09-14",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.16251",
+        "pdf": "https://arxiv.org/pdf/2609.16251",
+        "html": "https://arxiv.org/html/2609.16251"
+      },
+      "score": 14,
+      "tags": [
+        "gui",
+        "computer-use"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    }
+  ]
+}

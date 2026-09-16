@@ -1,16 +1,10 @@
 {
   "date": "2026-09-15",
-  "count": 10,
+  "count": 9,
   "report": {
     "date": "2026-09-15",
-    "count": 10,
+    "count": 9,
     "themes": [
-      {
-        "id": "coding",
-        "count": 3,
-        "en": "Coding agents",
-        "zh": "代码智能体"
-      },
       {
         "id": "memory",
         "count": 3,
@@ -36,6 +30,12 @@
         "zh": "规划 / 推理"
       },
       {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
         "id": "tool-use",
         "count": 2,
         "en": "Tool use",
@@ -55,14 +55,9 @@
       }
     ],
     "en": {
-      "headline": "10 new agent benchmarks",
-      "summary": "On September 15, 2026, arXiv listed 10 new agent benchmarks. Work clustered around Coding agents (3), Memory (3), Multimodal (3), and Safety (3).",
+      "headline": "9 new agent benchmarks",
+      "summary": "On September 15, 2026, arXiv listed 9 new agent benchmarks. Work clustered around Memory (3), Multimodal (3), Safety (3), and Planning / reasoning (2).",
       "highlights": [
-        {
-          "id": "2609.17394",
-          "title": "Coding Agents Have Converged: Why the SWE-bench Leaderboard Can No Longer Order Its Top Entries, and What to Measure Instead",
-          "blurb": "Small differences on coding-agent leaderboards are often read as an ordering of systems."
-        },
         {
           "id": "2609.14239",
           "title": "CoArena: Evaluating Computer-Use and Multi-Agent Systems in Real Time",
@@ -72,18 +67,18 @@
           "id": "2609.13637",
           "title": "Identity Is More Than Recall: A Benchmark for Persistent Identity in Deployed AI Agents",
           "blurb": "Persistent agents need evaluations that distinguish identity facts they can recall from those they express and enact."
+        },
+        {
+          "id": "2609.14992",
+          "title": "MTAC-IFBench: Benchmarking Instruction-Following in Multi-Turn Agentic Coding",
+          "blurb": "Recently, the rapid development of large language models (LLMs) has reshaped software engineering by enabling autonomous code agents that plan, execute, and utilize external tools iteratively to tackle complex tasks."
         }
       ]
     },
     "zh": {
-      "headline": "新增 10 篇 Agent Benchmark",
-      "summary": "2026年9月15日，arXiv 新增 10 篇 Agent Benchmark。当日主题集中在代码智能体（3）、记忆（3）、多模态（3）、安全（3）。",
+      "headline": "新增 9 篇 Agent Benchmark",
+      "summary": "2026年9月15日，arXiv 新增 9 篇 Agent Benchmark。当日主题集中在记忆（3）、多模态（3）、安全（3）、规划 / 推理（2）。",
       "highlights": [
-        {
-          "id": "2609.17394",
-          "title": "Coding Agents Have Converged: Why the SWE-bench Leaderboard Can No Longer Order Its Top Entries, and What to Measure Instead",
-          "blurb": "Small differences on coding-agent leaderboards are often read as an ordering of systems."
-        },
         {
           "id": "2609.14239",
           "title": "CoArena: Evaluating Computer-Use and Multi-Agent Systems in Real Time",
@@ -93,45 +88,16 @@
           "id": "2609.13637",
           "title": "Identity Is More Than Recall: A Benchmark for Persistent Identity in Deployed AI Agents",
           "blurb": "Persistent agents need evaluations that distinguish identity facts they can recall from those they express and enact."
+        },
+        {
+          "id": "2609.14992",
+          "title": "MTAC-IFBench: Benchmarking Instruction-Following in Multi-Turn Agentic Coding",
+          "blurb": "Recently, the rapid development of large language models (LLMs) has reshaped software engineering by enabling autonomous code agents that plan, execute, and utilize external tools iteratively to tackle complex tasks."
         }
       ]
     }
   },
   "papers": [
-    {
-      "id": "2609.17394",
-      "title": "Coding Agents Have Converged: Why the SWE-bench Leaderboard Can No Longer Order Its Top Entries, and What to Measure Instead",
-      "abstract": "Small differences on coding-agent leaderboards are often read as an ordering of systems. We audit whether the published verdicts support this reading, using 254 SWE-bench submissions across four splits without running models. On Verified, the leading two entries each resolve 396 of 500 instances. The top ten share 285 successes and 51 failures, leaving 164 instances that distinguish their outcomes. Frontier solution sets have median nesting 0.935 against a score-implied baseline of 0.774, indicating strongly shared successes. Scores also depend on the evaluated model-scaffold pair: observed within-model scaffold ranges reach 29.8 percentage points, compared with the 8.8-point spread of the top thirty. Six of nine cell-mean interaction tests remain significant after Holm correction, although this observational design does not identify causal scaffold effects. Exact paired McNemar tests separate none of the 29 adjacent Verified top-thirty pairs at alpha=0.05, while the larger Test split separates 14 of 23. A stated leader-based rule yields three descriptive tiers, or two after Holm correction; non-rejection does not establish equivalence. We release the partition and a five-step audit protocol that profiles shared outcomes, tests paired differences, reports grouping sensitivity, and estimates the instance budget needed for resolution. The results motivate reporting comparison-set-specific resolution and model-scaffold provenance instead of interpreting small aggregate gaps as established rank differences.",
-      "authors": [
-        "Fengshuo Liu",
-        "Ying Liu",
-        "Ruize Sun",
-        "Lie Luo",
-        "Siyuan Guo"
-      ],
-      "categories": [
-        "cs.SE",
-        "cs.AI"
-      ],
-      "primary_category": "cs.SE",
-      "published": "2026-09-15T16:29:12Z",
-      "updated": "2026-09-15T16:29:12Z",
-      "announced_date": "2026-09-15",
-      "first_seen": "2026-09-15",
-      "comment": "Accepted at ADMA 2026 (International Conference on Advanced Data Mining and Applications), Special Session on Responsible Data Intelligence. Camera-ready version, 15 pages, 4 figures",
-      "doi": "",
-      "links": {
-        "abs": "https://arxiv.org/abs/2609.17394v1",
-        "pdf": "https://arxiv.org/pdf/2609.17394v1",
-        "html": "https://arxiv.org/html/2609.17394"
-      },
-      "score": 24,
-      "tags": [
-        "coding"
-      ],
-      "field": "coding",
-      "citations": 0
-    },
     {
       "id": "2609.15683",
       "title": "V-ICAL Bench: Evaluating Video In-Context Learning for Multimodal Agents in Interactive Environments",
