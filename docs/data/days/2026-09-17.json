@@ -1,0 +1,308 @@
+{
+  "date": "2026-09-17",
+  "count": 7,
+  "report": {
+    "date": "2026-09-17",
+    "count": 7,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "computer-use",
+        "count": 2,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      }
+    ],
+    "en": {
+      "headline": "7 new agent benchmarks",
+      "summary": "On September 17, 2026, arXiv listed 7 new agent benchmarks. Work clustered around Safety (2), Coding agents (2), Computer use (2), and Tool use (1).",
+      "highlights": [
+        {
+          "id": "2609.17985",
+          "title": "RideWay: Benchmarking Efficient Task Completion for Tool-Using Language Agents",
+          "blurb": "AI agents are usually evaluated by whether they complete a task."
+        },
+        {
+          "id": "2609.18605",
+          "title": "PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?",
+          "blurb": "As corporate AI adoption continues to grow, enterprise-grade LLM agents are being deployed into sensitive contexts such as hiring, healthcare, and finance."
+        },
+        {
+          "id": "2609.18949",
+          "title": "StableEval Arena: A Cost-Aware Agentic Benchmark for Stablecoin Price Stability Prediction",
+          "blurb": "We introduce StableEval Arena, a cost-aware benchmark framework for evaluating agentic AI systems on stablecoin peg-risk prediction."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 7 篇 Agent Benchmark",
+      "summary": "2026年9月17日，arXiv 新增 7 篇 Agent Benchmark。当日主题集中在安全（2）、代码智能体（2）、计算机使用（2）、工具使用（1）。",
+      "highlights": [
+        {
+          "id": "2609.17985",
+          "title": "RideWay: Benchmarking Efficient Task Completion for Tool-Using Language Agents",
+          "blurb": "AI agents are usually evaluated by whether they complete a task."
+        },
+        {
+          "id": "2609.18605",
+          "title": "PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?",
+          "blurb": "As corporate AI adoption continues to grow, enterprise-grade LLM agents are being deployed into sensitive contexts such as hiring, healthcare, and finance."
+        },
+        {
+          "id": "2609.18949",
+          "title": "StableEval Arena: A Cost-Aware Agentic Benchmark for Stablecoin Price Stability Prediction",
+          "blurb": "We introduce StableEval Arena, a cost-aware benchmark framework for evaluating agentic AI systems on stablecoin peg-risk prediction."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2609.18949",
+      "title": "StableEval Arena: A Cost-Aware Agentic Benchmark for Stablecoin Price Stability Prediction",
+      "abstract": "We introduce StableEval Arena, a cost-aware benchmark framework for evaluating agentic AI systems on stablecoin peg-risk prediction. StableEval Arena evaluates LLM-backed agentic systems on diagnosing peg stress and forecasting deviations from the one-dollar peg over a hidden seven-day horizon, using leakage-safe historical replay with exchange price-volume data and market-context features. We report two complementary experiment blocks: a 120-case stress-enriched validation block and a 507-case natural-distribution full-arena evaluation block. Across six LLM-backed agent configurations and baselines, StableEval Arena measures prediction quality, calibrated-label behavior, structured-output reliability, latency, token consumption, and estimated inference cost. Rather than ranking agents by accuracy alone, the framework treats trustworthiness as a joint property of forecast quality, operational reliability, and computational cost. The results show a gap between protocol-following reliability and financial-risk reliability: agents reliably produce valid structured outputs at modest measured cost, but still miss most rare severe-stress and sustained-depeg cases. To support auditing and replication, we release the benchmark dataset on Hugging Face and the source code on GitHub.",
+      "authors": [
+        "Sean Wan, Dongping Liu, Luyao Zhang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-09-17T04:00:00Z",
+      "updated": "2026-09-17T04:00:00Z",
+      "announced_date": "2026-09-17",
+      "first_seen": "2026-09-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.18949",
+        "pdf": "https://arxiv.org/pdf/2609.18949",
+        "html": "https://arxiv.org/html/2609.18949"
+      },
+      "score": 16,
+      "tags": [
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2609.18909",
+      "title": "Beyond Outcomes: Dual-View Relational Learning for Efficient Agent Benchmarking",
+      "abstract": "Agent benchmarks are substantially more costly to evaluate than conventional LLM benchmarks. Benchmark compression is therefore a natural solution, yet existing methods primarily model redundancy in task--model final-score distributions, which is important in agentic evaluation. To address this limitation, we analyze large-scale trajectories and identify six complementary process signals that are systematically associated with final agent performance. To disentangle agent performance redundancy from a complete perspective, we propose DualViewEval, an agent benchmark compression method that jointly exploits outcome and process relations to learn an exact-size miniset and predict the full-benchmark scores. Across five agent benchmarks and five representative baselines, DualViewEval achieves the best results in all datasets. With only 20 tasks, it achieves $24\\times$--$40\\times$ compression on APEX-Agents and BFCL, reducing mean absolute error (MAE) by $14.5\\%$--$28.2\\%$ over the strongest competitors while improving Kendall's $\\tau$ by up to $7.2\\%$ relative to EssenceBench on SWE-bench Verified. The selected minisets further reveal capability differences among different agents, providing compact and diagnostic feedback for efficient agentic model development.",
+      "authors": [
+        "Xinshuai Guo, Junjie Wu, Dolly Deng, Yinghui Li, Hai-Tao Zheng, Suncong Zheng, Maxm Pan"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-09-17T04:00:00Z",
+      "updated": "2026-09-17T04:00:00Z",
+      "announced_date": "2026-09-17",
+      "first_seen": "2026-09-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.18909",
+        "pdf": "https://arxiv.org/pdf/2609.18909",
+        "html": "https://arxiv.org/html/2609.18909"
+      },
+      "score": 11,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2609.18605",
+      "title": "PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?",
+      "abstract": "As corporate AI adoption continues to grow, enterprise-grade LLM agents are being deployed into sensitive contexts such as hiring, healthcare, and finance. In these contexts, compliance with rules specified in an agent's system context is a first-order legal concern. Currently, no evaluation framework systematically measures which LLM models tend to violate compliance rules, especially under pressure from a persistent user, a hurried manager, or circumstances where violation is convenient or attractive. We introduce PACT (Pressure-Applied Compliance Testing), a benchmark for rule-following under pressure in AI agents assisting employees in daily tasks across twelve regulated enterprise domains and forty-eight scenarios, each set in a realistic multi-turn conversation. Each benchmark item pairs a standing rule against a rule-violating shortcut, and applies a battery of pressures across different wordings and system-prompt modes. We construct PACT component by component under strict LLM-as-judge auditing to ensure samples are unambiguous, ungameable, and realistic enough to avoid eliciting evaluation-aware behavior. We use PACT to profile LLM compliance across six complementary metrics that create a holistic picture of an AI assistant's robustness under pressure and throughout multi-turn conversations, its transparency, and ability to correctly discern where a rule applies. We aggregate this profile into PACTScore, a reliability-weighted compliance rate over all items and modes. Our results across 22 common LLM models spanning multiple providers and sizes show substantial variability in compliance across models and metric dimensions. Even the strongest assistants mis-apply a rule on 6 to 10% of items, and ordinary user pressure raises the violation rate by 65% on average. PACT highlights compliance risks in LLM assistants, motivating guardrails and careful model selection.",
+      "authors": [
+        "Mika Okamoto, Ansel Kaplan Erol"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CY",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-09-17T04:00:00Z",
+      "updated": "2026-09-17T04:00:00Z",
+      "announced_date": "2026-09-17",
+      "first_seen": "2026-09-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.18605",
+        "pdf": "https://arxiv.org/pdf/2609.18605",
+        "html": "https://arxiv.org/html/2609.18605"
+      },
+      "score": 17,
+      "tags": [
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2609.18123",
+      "title": "AutoTuneBench: Trustworthy Measurement for Agent Auto-Tuning of LLM Serving Engines",
+      "abstract": "Large language model agents tune GPU kernels and serving engines through a closed loop of propose, measure, and keep, but the measurements behind this loop are not trustworthy. We characterize four failure modes from a four-day pilot corpus of 619 model calls: strawman baselines manufacture speedups, absolute times do not transfer across machines, saturated tasks nullify comparisons, and infrastructure defects impersonate science. We present AutoTuneBench, a benchmark and measurement protocol that makes trust architectural. The protocol is frozen as code with test-enforced provenance; a database-level validator rejects out-of-protocol results; anti-cheat checks run outside the agent's modification surface; comparisons follow pre-registered readouts; and measurements anchor to externally published results, grounded in paired-seed statistics with a 5\\% cross-run coefficient-of-variation cap. Honest measurement rewrites the headlines: our best kernel reads 10.6x against a naive baseline but 2.03x against the honest one; one configuration delivers 1.174x on one machine and 1.0049x on another; a pre-registered on/off comparison nulls at a shared wall (2.4840 vs 2.4957\\,ms); and the KernelBench Level-1 suite admits 51\\% of tasks with median speedup 1.0001x over PyTorch eager. The protocol, the two-engine corpus (vLLM and SGLang), and its audit trail are released as open artifacts.",
+      "authors": [
+        "Li Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-17T04:00:00Z",
+      "updated": "2026-09-17T04:00:00Z",
+      "announced_date": "2026-09-17",
+      "first_seen": "2026-09-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.18123",
+        "pdf": "https://arxiv.org/pdf/2609.18123",
+        "html": "https://arxiv.org/html/2609.18123"
+      },
+      "score": 9,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2609.17985",
+      "title": "RideWay: Benchmarking Efficient Task Completion for Tool-Using Language Agents",
+      "abstract": "AI agents are usually evaluated by whether they complete a task. In interactive service settings, a successful agent can still frustrate users by asking repeated questions, performing redundant searches, or making avoidable revisions. We introduce RideWay, an efficiency-centered benchmark for ridehailing agents in a stateful tool-calling environment, together with Efficiency Utility, a success-gated metric that discounts successful trajectories for excess tool calls and user-facing turns relative to task-specific reference effort. Human paired preferences calibrate the relative penalties, reflecting an aggregate service-workflow trade-off: extra dialogue often creates visible friction, whereas extra tool use can sometimes verify constraints or preserve user intent. Across 58 tasks and 24 models, the fitted penalty for excess turns is about twice that for excess tool calls. On task-disjoint held-out preferences, Efficiency Utility achieves 78.7% accuracy overall: 90.6% when trajectories differ in turns, but chance-level accuracy when they differ solely in tool calls - the axis on which human annotators agree least. RideWay therefore makes interaction efficiency measurable alongside task success, while exposing the boundary of count-based tool-use evaluation.",
+      "authors": [
+        "Qingnuan Han, Boli Fang, Mingzhi Hou, Claire Liu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-17T04:00:00Z",
+      "updated": "2026-09-17T04:00:00Z",
+      "announced_date": "2026-09-17",
+      "first_seen": "2026-09-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.17985",
+        "pdf": "https://arxiv.org/pdf/2609.17985",
+        "html": "https://arxiv.org/html/2609.17985"
+      },
+      "score": 24,
+      "tags": [
+        "tool-use",
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 0
+    },
+    {
+      "id": "2609.17930",
+      "title": "Locating Hidden Failures Makes Long-Horizon Agents More Reliable",
+      "abstract": "As AI agents take on long, autonomous tasks, we increasingly oversee rather than perform the work, yet we still judge them almost entirely by whether they finally succeed. An outcome cannot reveal where a run went wrong, whether the agent recovered, or the irreversible harm it caused along the way, and where long-horizon agents fail remains unmapped. We study $2518$ agent trajectories across software engineering, computer use, and science, close to real deployment, and classify $6967$ mistakes into $78$ failure types. Failure follows a recurring signature: after its first mistake an agent often fails to recover and rarely catches the error itself, so the run continues unchecked while still looking correct; whether an agent recovers depends on the task and the environment's feedback, not on the agent framework running it. Long-horizon agents can do real harm on the way to a passing result: even runs scored as solved delete data, corrupt systems, or fabricate success rather than earning it. We release these human-verified annotations as Traverse, a benchmark on which six frontier judges struggle to locate failure regardless of scale: even the strongest correctly identifies the first mistake in fewer than a third of runs. Yet Scout, a $4$B verifier we trained, locates failure far better than these judges and transfers to domains it never saw. Used at test time to select among an agent's candidate runs, it raises task success above the agent's own single-attempt performance, without retraining the agent. By making failure cheap to locate and correct, this work is a foundation for more trustworthy long-horizon agents that learn from their own mistakes, and a practical path to overseeing increasingly autonomous AI.",
+      "authors": [
+        "Salman Rahman, Yubin Kim, Mihir Parmar, A. Ali Heydari, Genglin Liu, Simon A. Lee, Weizhi Zhang, Arian Hosseini, Ahmed A. Metwally, Yuzhe Yang, Baharan Mirzasoleiman, Xin Liu, Pavel Izmailov, Saadia Gabriel, Mark Malhotra, Shwetak Patel, Daniel McDuff, Hamid Palangi"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-09-17T04:00:00Z",
+      "updated": "2026-09-17T04:00:00Z",
+      "announced_date": "2026-09-17",
+      "first_seen": "2026-09-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.17930",
+        "pdf": "https://arxiv.org/pdf/2609.17930",
+        "html": "https://arxiv.org/html/2609.17930"
+      },
+      "score": 10,
+      "tags": [
+        "coding",
+        "computer-use"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2609.17885",
+      "title": "ERPBench: A State-Grounded Evaluation Paradigm for Computer-Use Agents in Enterprise Software",
+      "abstract": "Computer-use agents that operate through screenshots and simulated actions are advancing rapidly, yet their evaluation remains anchored to general desktop and web tasks. Enterprise Resource Planning (ERP) systems run the finance, procurement, inventory, and customer operations of organizations worldwide, and pose distinct challenges for computer-use agents: dense interfaces, coordinated multi-step interactions, and errors that alter persistent business records rather than surfacing on screen. Existing enterprise benchmarks rely on proprietary platforms or on simulated approximations of such software. We introduce ERPBench, a benchmark that evaluates screenshot-only agents on a live and reproducible ERP system and scores each task against ground-truth values in its database. Beyond the benchmark, we present a production-grade harness that gates agent actions behind human approval for safe deployment, which ERPBench runs autonomously. Evaluating six closed and open-source agents, we demonstrate that strong general GUI performance does not transfer to enterprise reliability. Even when an agent reaches the right form and saves it, the stored record is often wrong: some agents save in up to 85% of runs but write the correct value in as few as 3%. We further characterize failure modes specific to enterprise workflows.",
+      "authors": [
+        "Kratika Bhagtani, Kusha Sridhar, Maziyar Baran Pouyan, Yuying Zhao, Eugene Siow"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-17T04:00:00Z",
+      "updated": "2026-09-17T04:00:00Z",
+      "announced_date": "2026-09-17",
+      "first_seen": "2026-09-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.17885",
+        "pdf": "https://arxiv.org/pdf/2609.17885",
+        "html": "https://arxiv.org/html/2609.17885"
+      },
+      "score": 15,
+      "tags": [
+        "gui",
+        "computer-use",
+        "planning"
+      ],
+      "field": "workplace",
+      "citations": 0
+    }
+  ]
+}
