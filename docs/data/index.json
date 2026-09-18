@@ -1,8 +1,66 @@
 {
-  "generated_at": "2026-09-17T18:04:50Z",
+  "generated_at": "2026-09-18T05:09:04Z",
   "source": "arxiv",
-  "total": 1155,
+  "total": 1157,
   "days": [
+    {
+      "date": "2026-09-18",
+      "count": 2,
+      "report": {
+        "date": "2026-09-18",
+        "count": 2,
+        "themes": [
+          {
+            "id": "tool-use",
+            "count": 1,
+            "en": "Tool use",
+            "zh": "工具使用"
+          },
+          {
+            "id": "safety",
+            "count": 1,
+            "en": "Safety",
+            "zh": "安全"
+          }
+        ],
+        "en": {
+          "headline": "2 new agent benchmarks",
+          "summary": "On September 18, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Tool use (1), and Safety (1).",
+          "highlights": [
+            {
+              "id": "2609.20152",
+              "title": "MTVA-Bench: Evaluating the Language Model Inside Cascaded Voice Agents",
+              "blurb": "Generally, most voice agents are cascaded systems, i.e., an ASR model transcribes the caller's audio, a language model reads the transcript and decides what to say and which backend tools to call, and a TTS model speaks…"
+            },
+            {
+              "id": "2609.19892",
+              "title": "ClashBench: Conflicts Leading Agents to Seize and Harm",
+              "blurb": "As agent systems become more widely used, multiple agent sessions increasingly run alongside pre-existing user tasks in the same environment, sharing resources with limited capacity or mutually exclusive states."
+            }
+          ]
+        },
+        "zh": {
+          "headline": "新增 2 篇 Agent Benchmark",
+          "summary": "2026年9月18日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在工具使用（1）、安全（1）。",
+          "highlights": [
+            {
+              "id": "2609.20152",
+              "title": "MTVA-Bench: Evaluating the Language Model Inside Cascaded Voice Agents",
+              "blurb": "Generally, most voice agents are cascaded systems, i.e., an ASR model transcribes the caller's audio, a language model reads the transcript and decides what to say and which backend tools to call, and a TTS model speaks…"
+            },
+            {
+              "id": "2609.19892",
+              "title": "ClashBench: Conflicts Leading Agents to Seize and Harm",
+              "blurb": "As agent systems become more widely used, multiple agent sessions increasingly run alongside pre-existing user tasks in the same environment, sharing resources with limited capacity or mutually exclusive states."
+            }
+          ]
+        }
+      },
+      "paper_ids": [
+        "2609.20152",
+        "2609.19892"
+      ]
+    },
     {
       "date": "2026-09-17",
       "count": 7,
@@ -21207,6 +21265,65 @@
     }
   ],
   "papers": [
+    {
+      "id": "2609.20152",
+      "title": "MTVA-Bench: Evaluating the Language Model Inside Cascaded Voice Agents",
+      "abstract": "Generally, most voice agents are cascaded systems, i.e., an ASR model transcribes the caller's audio, a language model reads the transcript and decides what to say and which backend tools to call, and a TTS model speaks the reply. Nearly all of the decision making happens in the language model, but existing evaluations measure it either too broadly or too narrowly. End-to-end voice benchmarks score the full pipeline, so recognition errors and model errors mix into a single number. LLM benchmarks isolate the model but they do not evaluate what makes real phone calls hard, such as transcription issues, caller's voice being split across messages and the requirement that replies follow the language and script specified. We introduce the Multi-Turn Voice Agent Benchmark (MTVA-Bench), which evaluates the language model on the same conditions it faces inside a cascaded system. The caller is played by an LLM following a set of rubrics and tool calls are answered by a mock backend which responds to the arguments the model actually sent. The benchmark contains 49 agents working across 490 reviewed scenarios and supports 7 languages. Scoring is a combination of deterministic checks on tool calls with two LLM judges, one that scores scenario specific rules and one that grades conversation quality without access to the task. Both judges must cite specific messages from the transcript. Task and conversation scores are weighted equally, since a call can complete its task and still go badly for the caller. In a seven-model study, six of the models select the correct tool within 6.4 points of one another, but their overall scores span 24.4 points. Most of the gap comes from argument values, action ordering, rule compliance, and what the model says around its tool calls.",
+      "authors": [
+        "Pritish Mishra, Ishaan Kumar, Akshat Mandoli, Sudarshan Kamath"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-18T04:00:00Z",
+      "updated": "2026-09-18T04:00:00Z",
+      "announced_date": "2026-09-18",
+      "first_seen": "2026-09-18",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.20152",
+        "pdf": "https://arxiv.org/pdf/2609.20152",
+        "html": "https://arxiv.org/html/2609.20152"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2609.19892",
+      "title": "ClashBench: Conflicts Leading Agents to Seize and Harm",
+      "abstract": "As agent systems become more widely used, multiple agent sessions increasingly run alongside pre-existing user tasks in the same environment, sharing resources with limited capacity or mutually exclusive states. This creates a safety risk: when granted sufficient privileges, an agent may resolve a resource conflict by terminating or otherwise disrupting an existing task rather than reporting it. In this work, we identify and formalize this failure mode, which we term destructive resource preemption: obtaining the resources required for a requested task by terminating, overwriting, evicting, or degrading an incumbent task. To systematically study this risk, we introduce ClashBench, an executable benchmark comprising 268 validated conflict cases across 55 resource types, and evaluate 17 models through Codex, Claude Code, and OpenCode. We observe destructive preemption in 44.5% of trajectories, where the agent completes the requested task while causing the incumbent task to fail its health check. We also show that prompt-based safeguards are insufficient: an instruction to avoid affecting existing tasks reduces but does not eliminate preemption, while an instruction explicitly authorizing the agent to stop local processes increases it. More concerningly, in 31.9% of successful destructive-preemption cases, the final response mentions neither the resource conflict nor the action taken to resolve it, raising concerns about possible concealment. These findings establish destructive resource preemption as a broad safety risk in privileged agent systems and motivate stronger privilege controls, task isolation, and conflict-aware safeguards.",
+      "authors": [
+        "Yuejin Xie, Yu Li, Dadi Guo, Qingyu Liu, Yuqian Fu, Yanwei Fu, Yujiu Yang, Xia Hu, Dongrui Liu"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-09-18T04:00:00Z",
+      "updated": "2026-09-18T04:00:00Z",
+      "announced_date": "2026-09-18",
+      "first_seen": "2026-09-18",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.19892",
+        "pdf": "https://arxiv.org/pdf/2609.19892",
+        "html": "https://arxiv.org/html/2609.19892"
+      },
+      "score": 7,
+      "tags": [
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
     {
       "id": "2609.18949",
       "title": "StableEval Arena: A Cost-Aware Agentic Benchmark for Stablecoin Price Stability Prediction",
