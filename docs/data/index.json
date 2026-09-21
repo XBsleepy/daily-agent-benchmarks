@@ -1,8 +1,105 @@
 {
-  "generated_at": "2026-09-18T17:36:49Z",
+  "generated_at": "2026-09-21T05:25:34Z",
   "source": "arxiv",
-  "total": 1157,
+  "total": 1164,
   "days": [
+    {
+      "date": "2026-09-21",
+      "count": 7,
+      "report": {
+        "date": "2026-09-21",
+        "count": 7,
+        "themes": [
+          {
+            "id": "tool-use",
+            "count": 3,
+            "en": "Tool use",
+            "zh": "工具使用"
+          },
+          {
+            "id": "multimodal",
+            "count": 2,
+            "en": "Multimodal",
+            "zh": "多模态"
+          },
+          {
+            "id": "planning",
+            "count": 2,
+            "en": "Planning / reasoning",
+            "zh": "规划 / 推理"
+          },
+          {
+            "id": "coding",
+            "count": 1,
+            "en": "Coding agents",
+            "zh": "代码智能体"
+          },
+          {
+            "id": "multi-agent",
+            "count": 1,
+            "en": "Multi-agent",
+            "zh": "多智能体"
+          },
+          {
+            "id": "conversation",
+            "count": 1,
+            "en": "Dialogue / customer",
+            "zh": "对话 / 客服"
+          }
+        ],
+        "en": {
+          "headline": "7 new agent benchmarks",
+          "summary": "On September 21, 2026, arXiv listed 7 new agent benchmarks. Work clustered around Tool use (3), Multimodal (2), Planning / reasoning (2), and Coding agents (1).",
+          "highlights": [
+            {
+              "id": "2609.21386",
+              "title": "AgentVidBench: A Multi-Hop Video Question Answering Benchmark for Evaluating MLLM Agents",
+              "blurb": "Comprehensive video understanding is crucial for advancing artificial intelligence toward the intricate dynamics of the physical world."
+            },
+            {
+              "id": "2609.22076",
+              "title": "APort Vault: Benchmarking AI Agent Payment Authorization with the Open Agent Passport",
+              "blurb": "APort Vault is a benchmark for payment authorization in tool-using AI agents."
+            },
+            {
+              "id": "2609.21527",
+              "title": "OpenMAS-GCom. A Diagnostic Benchmark for Graph-enhanced Multi-Agent Systems",
+              "blurb": "Graph-enhanced multi-agent systems (G-MAS) coordinate large language model agents through communication graphs and role assignments, which determine how agents exchange information and divide responsibilities."
+            }
+          ]
+        },
+        "zh": {
+          "headline": "新增 7 篇 Agent Benchmark",
+          "summary": "2026年9月21日，arXiv 新增 7 篇 Agent Benchmark。当日主题集中在工具使用（3）、多模态（2）、规划 / 推理（2）、代码智能体（1）。",
+          "highlights": [
+            {
+              "id": "2609.21386",
+              "title": "AgentVidBench: A Multi-Hop Video Question Answering Benchmark for Evaluating MLLM Agents",
+              "blurb": "Comprehensive video understanding is crucial for advancing artificial intelligence toward the intricate dynamics of the physical world."
+            },
+            {
+              "id": "2609.22076",
+              "title": "APort Vault: Benchmarking AI Agent Payment Authorization with the Open Agent Passport",
+              "blurb": "APort Vault is a benchmark for payment authorization in tool-using AI agents."
+            },
+            {
+              "id": "2609.21527",
+              "title": "OpenMAS-GCom. A Diagnostic Benchmark for Graph-enhanced Multi-Agent Systems",
+              "blurb": "Graph-enhanced multi-agent systems (G-MAS) coordinate large language model agents through communication graphs and role assignments, which determine how agents exchange information and divide responsibilities."
+            }
+          ]
+        }
+      },
+      "paper_ids": [
+        "2609.22076",
+        "2609.21562",
+        "2609.21527",
+        "2609.21392",
+        "2609.21386",
+        "2609.21267",
+        "2609.20886"
+      ]
+    },
     {
       "date": "2026-09-18",
       "count": 2,
@@ -21265,6 +21362,221 @@
     }
   ],
   "papers": [
+    {
+      "id": "2609.22076",
+      "title": "APort Vault: Benchmarking AI Agent Payment Authorization with the Open Agent Passport",
+      "abstract": "APort Vault is a benchmark for payment authorization in tool-using AI agents. It replays 4,371 attacks written by humans against a live payment agent during a public capture-the-flag event, across 14 models from 8 labs, five policy configurations and two replay tracks, with and without a deterministic pre-action check implementing the Open Agent Passport (OAP) specification. 225,964 evaluations completed. We report five distinct events per evaluation, because collapsing them is how an agent benchmark produces a number that does not survive review. Requests are common and their rate differs far more across configurations than across models, though each attack exists at exactly one configuration so policy and attack cohort vary together: 10.9% of model-alone evaluations at Level 1, 3.0% at Level 2, 0.1% at Level 3, 79.4% at Level 4. On the 1,293 Level 4 prompts, each evaluated on every model, request rates run from 71.2% to 84.3%, and 809 prompts (62.6%) elicited a request from all fourteen models, each ending in a successful payment to the level's allowlisted recipient. The authorization boundary is where the conditions diverge. At Levels 2 to 4, transfers to recipients the passport did not permit number 140 of 76,842 with the model alone and 0 of 69,297 behind the layer, and 105 against 0 on 68,970 matched model, prompt and track triples. The zero spans 790 source sessions, giving a per-session upper bound of 0.38%. It was not obtained by refusing payments: 25,370 payments executed behind the layer, while the policy denied 187 of the 25,640 transfer calls it evaluated, 148 of them for a forbidden recipient. We release the 225,964 evaluations, the level passports, the scoring code and the analysis script at huggingface.co/datasets/aporthq/vault-benchmark-v1 .",
+      "authors": [
+        "Uchi Uchibeke"
+      ],
+      "categories": [
+        "cs.CR"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-09-21T04:00:00Z",
+      "updated": "2026-09-21T04:00:00Z",
+      "announced_date": "2026-09-21",
+      "first_seen": "2026-09-21",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.22076",
+        "pdf": "https://arxiv.org/pdf/2609.22076",
+        "html": "https://arxiv.org/html/2609.22076"
+      },
+      "score": 16,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2609.21562",
+      "title": "GameLogicBench: Evaluating Coding Agents on Runtime Game Logic with Tick-Level State Assertions",
+      "abstract": "Coding agents can modify and test code across large software projects. Game development is a domain where agents must implement gameplay rules. A game can end in a valid state even after violating its rules during the run. Current game-development benchmarks replay fixed examples, score videos, or ask another model to judge the result. However, no existing benchmark checks game rules throughout execution across varied evaluator-selected scenarios while ensuring exactly reproducible verdicts. We introduce GameLogicBench, a benchmark of 72 gameplay-logic tasks in Godot projects. An automated evaluator checks each game's rules at every simulation tick. Across 403 hand-designed scenarios, seeded parameter variations produce 1,451 test cases. To ensure that the evaluator measures behavior rather than implementation choice, it must accept different correct implementations for each task while rejecting mutants, implementations with one required capability removed. The tasks span isolated mechanics, multi-system interactions, and repository-scale features. Across 20 combinations of language models and scaffolds, the best observed run solves 52.78% of tasks. Under Claude Code, all twelve models solve fewer tasks as task scope expands from isolated mechanics, through interacting systems, to repository-scale features. Agents inspect code more often and make more tool calls on repository-scale tasks than on isolated-mechanic tasks. Most unsuccessful submissions are runnable, but implement some required game behavior incorrectly. We compared versions of our benchmark evaluator built with and without validation using mutants. Without this validation, incorrect agent submissions passed. A separate analysis finds agents copying code from public repositories when network access is open. Reliable evaluation thus depends both on what the tests reject and on what external code agents can access.",
+      "authors": [
+        "Xinyu Che, Yunfei Ge, Shihao Li, Yanchen Liu, Hang Yan, Xinping Lei, Yanghai Wang, Zixuan Dong, Yifan Yao, Qianqian Xie, Letian Zhu, Jiaheng Liu"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-09-21T04:00:00Z",
+      "updated": "2026-09-21T04:00:00Z",
+      "announced_date": "2026-09-21",
+      "first_seen": "2026-09-21",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.21562",
+        "pdf": "https://arxiv.org/pdf/2609.21562",
+        "html": "https://arxiv.org/html/2609.21562"
+      },
+      "score": 15,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2609.21527",
+      "title": "OpenMAS-GCom. A Diagnostic Benchmark for Graph-enhanced Multi-Agent Systems",
+      "abstract": "Graph-enhanced multi-agent systems (G-MAS) coordinate large language model agents through communication graphs and role assignments, which determine how agents exchange information and divide responsibilities. However, final-score comparisons across systems combine differences in models, communication patterns, roles, and computation costs, making performance differences difficult to attribute to specific communication structures, role assignments, and information flows. To address this evaluation attribution problem, we introduce OpenMAS-GCom, a benchmark for diagnosing how these components affect G-MAS performance through controlled interventions. We represent systems through collaboration units, communication links, shared intermediate information, and execution rules. OpenMAS-GCom compares original systems with versions modified by changing one component while keeping tasks, models, prompts, and budget limits fixed. We rewire communication edges, remove specialist or critic agents, replace intermediate messages with incorrect content, and disable workers during execution. The benchmark evaluates 17 single-agent, ordinary multi-agent, and graph-enhanced configurations on 29 datasets across six domains. We add 400 G-MAS-Complex tasks requiring agents to combine information from multiple documents, resolve conflicting records, and return specified values with source identifiers. Experiments show larger mean losses after specialist removal than after critic removal, different performance degradation under incorrect messages and worker failures despite similar original scores, and different configurations achieving the highest accuracy and accuracy per token on G-MAS-Complex.",
+      "authors": [
+        "Kairui Yang, Xunkai Li, Kaixiang Zhang, Minghao An, Zekai Chen, Yuxuan Ba, Rong-Hua Li"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-09-21T04:00:00Z",
+      "updated": "2026-09-21T04:00:00Z",
+      "announced_date": "2026-09-21",
+      "first_seen": "2026-09-21",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.21527",
+        "pdf": "https://arxiv.org/pdf/2609.21527",
+        "html": "https://arxiv.org/html/2609.21527"
+      },
+      "score": 16,
+      "tags": [
+        "multi-agent"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2609.21392",
+      "title": "Omni Demand Understanding: A Benchmark for Contextual User-Intent Inference in Multimodal Interaction",
+      "abstract": "Natural audio-visual interaction is emerging as an important interface for AI assistants, allowing users to communicate through speech and vision rather than carefully composed text prompts. However, existing benchmarks of interactive capabilities still focus primarily on response quality, leaving a more fundamental question underexplored: can a model correctly infer the user's underlying demand from complex multimodal interaction? Real-world user demands are often underspecified in speech and must be inferred from multimodal cues and dialogue history. This inference is further complicated by ambiguous or disfluent expression and noisy acoustic environments. Conversely, request-like speech may not constitute a demand to the assistant, leading to false triggers. We establish Omni Demand Understanding (ODU) as a distinct multimodal contextual inference problem: given an interaction stream, a model must detect whether a user demand is present and infer intent from multimodal and conversational context. ODU evaluates this capability along five dimensions, covering both single-turn and multi-turn interactions. We construct ODU-Bench using a challenge-driven taxonomy, taxonomy-guided agentic video generation, and human-recorded interactions, followed by media-grounded annotation and human verification. We evaluate 14 native MLLMs. Even the strongest, Gemini 3.1 Pro, recovers only 44.7% of key information that must be inferred from visual, acoustic, or conversational context. Moreover, 11 of the 14 models exhibit false-trigger rates above 50% on non-demand scenarios. These results reveal a systematic capability gap in current MLLMs' ability to infer contextual user demands. We hope ODU can establish the evaluation of a previously underexplored yet essential capability in multimodal interaction: correctly understanding user demands before generating an appropriate response.",
+      "authors": [
+        "Qi Chen, Yunfei Chu, Haolin He, Yifan Yang, Zihan Liu, Yuxuan Wang, Ziyang Ma, Ruiyang Xu, Meng Gao, Yinsong Yan, Ling Wang, Hui Wang, Wen Huang, Yiheng Chen, Guanrou Yang, Qiuqiang Kong, Jin Xu, Xie Chen"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CV",
+        "cs.MM",
+        "cs.SD"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-09-21T04:00:00Z",
+      "updated": "2026-09-21T04:00:00Z",
+      "announced_date": "2026-09-21",
+      "first_seen": "2026-09-21",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.21392",
+        "pdf": "https://arxiv.org/pdf/2609.21392",
+        "html": "https://arxiv.org/html/2609.21392"
+      },
+      "score": 15,
+      "tags": [
+        "conversation",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2609.21386",
+      "title": "AgentVidBench: A Multi-Hop Video Question Answering Benchmark for Evaluating MLLM Agents",
+      "abstract": "Comprehensive video understanding is crucial for advancing artificial intelligence toward the intricate dynamics of the physical world. While recent advances in Multimodal Large Language Models (MLLMs) have demonstrated remarkable capabilities in video understanding, existing benchmarks remain confined to simple scene-level queries or global summaries that require only single-step inference. Real-world video understanding involves more challenging tasks that require multi-hop multimodal reasoning, and there is a critical absence of video benchmarks equipped to rigorously evaluate these agentic capabilities. To bridge this gap, we introduce AgentVidBench, a multi-hop video question answering benchmark focused on evaluating the spatial, temporal, and causal reasoning capabilities of MLLM agents. Beyond standard question-answer pairs, AgentVidBench provides step-by-step solution traces to support trajectory evaluation that assesses whether agents explicitly acquire the evidence needed to justify their answers. Experiments with 12 proprietary and open-source MLLMs show that single-turn performance remains limited on AgentVidBench, while integrating these models into state-of-the-art agentic workflows generally improves performance with respect to both accuracy and trajectory scores. We further present a simple yet effective agentic strategy that serves as a competitive baseline on AgentVidBench, establishing our benchmark as a holistic testbed for future research on agentic video understanding. Code and datasets are available at https://github.com/krafton-ai/agentvidbench and https://huggingface.co/datasets/agentvidbench/agentvidbench.",
+      "authors": [
+        "Seoyeon An, Hyeonseo Jang, Minsu Kim, Chanho Lee, Younghan Park, Kangwook Lee"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-09-21T04:00:00Z",
+      "updated": "2026-09-21T04:00:00Z",
+      "announced_date": "2026-09-21",
+      "first_seen": "2026-09-21",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.21386",
+        "pdf": "https://arxiv.org/pdf/2609.21386",
+        "html": "https://arxiv.org/html/2609.21386"
+      },
+      "score": 17,
+      "tags": [
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2609.21267",
+      "title": "Efficient Benchmarking in Production: A Study of an Evolving LLM Agent",
+      "abstract": "Production LLM agents are evaluated repeatedly as they evolve, but full agent benchmarks are costly to rerun. We study efficient recurring evaluation for a production analytics agent serving tens of thousands of monthly active users and report first-hand deployment experience. Using 574 historical runs of the production benchmark, split chronologically into calibration and held-out periods, we compare random sampling, historical caching, fixed representative subsets, and IRT-based adaptive testing. The results show that multidimensional 2PL adaptive testing achieves the best overall score fidelity: executing 200 questions, 38.5% of a full run, yields 1.03 pp of MAE. We nevertheless deployed difficulty-stratified fixed subsets because of their operational simplicity, and show they transfer without recalibration to five other agent families and remain stable across calibration windows as short as one day. Drawing on this deployment experience, we report practical recommendations for recurring production-agent evaluation.",
+      "authors": [
+        "Yining She, Lei Lin"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-21T04:00:00Z",
+      "updated": "2026-09-21T04:00:00Z",
+      "announced_date": "2026-09-21",
+      "first_seen": "2026-09-21",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.21267",
+        "pdf": "https://arxiv.org/pdf/2609.21267",
+        "html": "https://arxiv.org/html/2609.21267"
+      },
+      "score": 13,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2609.20886",
+      "title": "BI-Agent and BI-Bench: Towards Automating End-to-End Business Intelligence",
+      "abstract": "Business intelligence (BI) is a cornerstone of enterprise decision-making and is widely used by enterprise users in software such as Power BI and Tableau. In traditional BI workflows, users need to prepare data by (1) identifying relevant tables, (2) performing data transformations, and (3) building join relationships, before they can (4) answer their business questions. These steps can be complex and time-consuming, making BI challenging. Given the strong capabilities of large language models (LLMs) in working with data, we study their ability to answer BI questions end-to-end, without requiring users to manually perform the tedious preparation steps. To do this, we harvest a large collection of real-world BI projects from public sources, and manually extract pairs of (questions, ground-truth answers) from real user dashboards. The resulting benchmark, BI-Bench, is the first benchmark to systematically study LLMs' ability on end-to-end BI. We find that even frontier LLMs perform poorly on BI-Bench, with less than 50% accuracy. To address their limitations, we design a tool-augmented BI-Agent that decomposes BI workflows into subtasks on structured data, such as search, join, and transform, and orchestrates specialized data management methods across BI stages. Furthermore, we develop a post-training framework that synthesizes training trajectories from real BI projects, enabling BI-Agent to be further post-trained using both supervised fine-tuning (SFT) and reinforcement learning (RL). BI-Agent achieves substantial accuracy gains of up to 40 percentage points with vanilla LLMs, and post-trained BI-Agent yields gains of up to 30 points. Our results highlight the importance of combining tool-augmented reasoning with domain-specific post-training in complex BI workflows, and point to promising directions for future research.",
+      "authors": [
+        "Chuxuan Hu, Yeye He, Penny Zhou, Wee Hyong Tok, Daniel Kang, Surajit Chaudhuri"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "cs.DB"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-09-21T04:00:00Z",
+      "updated": "2026-09-21T04:00:00Z",
+      "announced_date": "2026-09-21",
+      "first_seen": "2026-09-21",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.20886",
+        "pdf": "https://arxiv.org/pdf/2609.20886",
+        "html": "https://arxiv.org/html/2609.20886"
+      },
+      "score": 11,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
     {
       "id": "2609.20152",
       "title": "MTVA-Bench: Evaluating the Language Model Inside Cascaded Voice Agents",
