@@ -1,8 +1,97 @@
 {
-  "generated_at": "2026-09-23T18:20:34Z",
+  "generated_at": "2026-09-24T05:20:21Z",
   "source": "arxiv",
-  "total": 1187,
+  "total": 1192,
   "days": [
+    {
+      "date": "2026-09-24",
+      "count": 5,
+      "report": {
+        "date": "2026-09-24",
+        "count": 5,
+        "themes": [
+          {
+            "id": "safety",
+            "count": 2,
+            "en": "Safety",
+            "zh": "安全"
+          },
+          {
+            "id": "coding",
+            "count": 1,
+            "en": "Coding agents",
+            "zh": "代码智能体"
+          },
+          {
+            "id": "planning",
+            "count": 1,
+            "en": "Planning / reasoning",
+            "zh": "规划 / 推理"
+          },
+          {
+            "id": "tool-use",
+            "count": 1,
+            "en": "Tool use",
+            "zh": "工具使用"
+          },
+          {
+            "id": "research",
+            "count": 1,
+            "en": "Research agents",
+            "zh": "科研智能体"
+          }
+        ],
+        "en": {
+          "headline": "5 new agent benchmarks",
+          "summary": "On September 24, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Safety (2), Coding agents (1), Planning / reasoning (1), and Tool use (1).",
+          "highlights": [
+            {
+              "id": "2609.27891",
+              "title": "Schr\\\"odinger's Code Repository: Have LLMs Learned SWE-bench or Memorized It?",
+              "blurb": "Repository-level coding benchmarks have become the standard for evaluating coding agents, yet they inherently suffer from data leakage because they are built upon popular open-source repositories repeatedly used for trai…"
+            },
+            {
+              "id": "2609.27490",
+              "title": "WhatWorkedBench: Benchmarking Experimental Understanding in AI Agents",
+              "blurb": "AI research agents need reliable knowledge of how their experiments change outcomes."
+            },
+            {
+              "id": "2609.26826",
+              "title": "What Makes a Terminal-Bench Task Hard? Separating Genuine Hardness from Fake-Hardness on an Adjudicated Agentic Corpus",
+              "blurb": "Frontier benchmarks need tasks that current models cannot solve."
+            }
+          ]
+        },
+        "zh": {
+          "headline": "新增 5 篇 Agent Benchmark",
+          "summary": "2026年9月24日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在安全（2）、代码智能体（1）、规划 / 推理（1）、工具使用（1）。",
+          "highlights": [
+            {
+              "id": "2609.27891",
+              "title": "Schr\\\"odinger's Code Repository: Have LLMs Learned SWE-bench or Memorized It?",
+              "blurb": "Repository-level coding benchmarks have become the standard for evaluating coding agents, yet they inherently suffer from data leakage because they are built upon popular open-source repositories repeatedly used for trai…"
+            },
+            {
+              "id": "2609.27490",
+              "title": "WhatWorkedBench: Benchmarking Experimental Understanding in AI Agents",
+              "blurb": "AI research agents need reliable knowledge of how their experiments change outcomes."
+            },
+            {
+              "id": "2609.26826",
+              "title": "What Makes a Terminal-Bench Task Hard? Separating Genuine Hardness from Fake-Hardness on an Adjudicated Agentic Corpus",
+              "blurb": "Frontier benchmarks need tasks that current models cannot solve."
+            }
+          ]
+        }
+      },
+      "paper_ids": [
+        "2609.28197",
+        "2609.27891",
+        "2609.27571",
+        "2609.27490",
+        "2609.26826"
+      ]
+    },
     {
       "date": "2026-09-23",
       "count": 5,
@@ -21553,6 +21642,156 @@
     }
   ],
   "papers": [
+    {
+      "id": "2609.28197",
+      "title": "PASTABench: Proactive Assessment of Sequential Trajectories for Agent Safety",
+      "abstract": "As Large Language Models (LLMs) evolve into autonomous agents that alter real-world states, ensuring operational safety across multi-step workflows has become a critical challenge. While recent work has moved beyond single-turn evaluation toward multi-turn paradigms, key limitations persist: step-level methods treat actions in isolation, missing how risks accumulate, while trajectory-level evaluations operate post-hoc, offering no opportunity for timely intervention. To address these limitations, we formalize Decoupled Proactive Safety Monitoring along three dimensions: whether to intervene, when to intervene, and what the risk is. We introduce PASTABench, a benchmark of 1,139 multi-turn trajectories spanning 5 risk categories and 13 subcategories. We further propose the Optimal Intervention Window (OIW), anchored by annotated Earliest-Signal and Trigger turns, to quantify intervention timeliness. Evaluation of 16 LLMs reveals that proactive intervention remains largely unsolved, with the best model achieving only 40.74% optimal-timing interventions. Fine-grained diagnosis further uncovers pervasive lexical overfitting: competitive safety scores of smaller models mask keyword hypersensitivity rather than genuine risk comprehension, as their proactive capability largely collapses once hazard vocabulary is neutralized.",
+      "authors": [
+        "Jiapeng Sun, Yujin Zhou, Han Zhu, Pengcheng Wen, Jiayi Zhou, Sirui Han, Yike Guo"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-24T04:00:00Z",
+      "updated": "2026-09-24T04:00:00Z",
+      "announced_date": "2026-09-24",
+      "first_seen": "2026-09-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.28197",
+        "pdf": "https://arxiv.org/pdf/2609.28197",
+        "html": "https://arxiv.org/html/2609.28197"
+      },
+      "score": 12,
+      "tags": [
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2609.27891",
+      "title": "Schr\\\"odinger's Code Repository: Have LLMs Learned SWE-bench or Memorized It?",
+      "abstract": "Repository-level coding benchmarks have become the standard for evaluating coding agents, yet they inherently suffer from data leakage because they are built upon popular open-source repositories repeatedly used for training. Consequently, strong performance may reflect memorization of canonical repository cues rather than robust repository reasoning. We propose SchrodingerRepo (Schr\\\"odinger's Repository), an evaluation framework for testing coding agents under dynamically instantiated repository representations. Instead of repeatedly using a static representation of the test repository, SchrodingerRepo treats the test repository as an evaluation-time latent variable that is dynamically instantiated only when the agent enters the evaluation environment. The instantiated repository preserves the original executable behavior while eroding familiar cues such as naming conventions, file layouts, and implementation patterns through four transformation levels: problem statement reconstruction, namespace remapping, intra-file layout reordering, and functionality-preserving code rewriting. We evaluate popular LLMs on SWE-bench Verified and SWE-QA. Results show that removing familiar repository cues consistently degrades agent performance and substantially increases interaction costs across models. Further analysis reveals that the additional cost is primarily caused by increased difficulty in repository exploration and localization. These findings suggest that current coding agents may partially rely on memorized repository-side cues, highlighting the need for evaluation under dynamically instantiated repository representations.",
+      "authors": [
+        "Silin Chen, Yufei Yang, Xiaodong Gu, Yuling Shi, Chengcheng Wan, Haibing Guan"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-09-24T04:00:00Z",
+      "updated": "2026-09-24T04:00:00Z",
+      "announced_date": "2026-09-24",
+      "first_seen": "2026-09-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.27891",
+        "pdf": "https://arxiv.org/pdf/2609.27891",
+        "html": "https://arxiv.org/html/2609.27891"
+      },
+      "score": 18,
+      "tags": [
+        "coding",
+        "safety",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2609.27571",
+      "title": "FDE-Bench: Evaluating LLM Agents for Deployment Environment Configuration",
+      "abstract": "Deployment requires an agent to turn application code into a running system whose services connect, become ready, and remain observable. FDE-Bench evaluates this capability with 136 deployment-configuration tasks spanning Docker images, multi-service Compose stacks, and Kubernetes, in greenfield and diagnose-and-repair modes. Agents submit declarative artifacts that are collected, rebuilt, and redeployed in a pristine environment. Four gated binary check layers measure build, readiness, behavior, and conformance to the deployment specification, using programmatic checks without an LLM judge. A four-arm release gate requires a resolving reference solution and rejects tasks solved by do-nothing, specification-transcription, or generic-stub submissions. The released check annotations expose the link between 2,145 checks and their specifications, including seven documented gaps. Three additional adversarial strategies test shortcuts in the grading signals; none resolves any of the 135 tasks they cover, while a vacuous health probe passes readiness and exposes the need for downstream checks. On the 136-task evaluation grid, seven language models from four providers use the same four-tool scaffold and resolve 52.9-75.0 percent of tasks. The three zero-intelligence floors resolve none and reach a mean Deployment Score of at most 0.44. Readiness is the largest failure stage, accounting for 110 of 313 unresolved episodes. Mean resolution rate is 30.7 percentage points higher on the repair task group than on the disjoint greenfield group, with a positive gap for every model; ten tasks resist all seven. In a 25-task case study, one practicing engineer directing Claude-Sonnet-5 resolves 92 percent against 72 percent for the autonomous baseline. FDE-Bench links deployment success and failure to artifacts that can be inspected and replayed.",
+      "authors": [
+        "Weihang Ding, Junfei Zhan, Yueting Li, Qirong Guo"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-09-24T04:00:00Z",
+      "updated": "2026-09-24T04:00:00Z",
+      "announced_date": "2026-09-24",
+      "first_seen": "2026-09-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.27571",
+        "pdf": "https://arxiv.org/pdf/2609.27571",
+        "html": "https://arxiv.org/html/2609.27571"
+      },
+      "score": 15,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2609.27490",
+      "title": "WhatWorkedBench: Benchmarking Experimental Understanding in AI Agents",
+      "abstract": "AI research agents need reliable knowledge of how their experiments change outcomes. We introduce WhatWorkedBench to measure experimental understanding, the accuracy of predictions about component changes after budgeted experimentation. Agents inspect code, select measurements, and submit a response surface, a table predicting scores for every configuration of component settings. Exhaustive CPU execution supplies reference effects for changing each component while holding the others fixed. These effects capture combinations of changes across 36 tasks from 30 data sources and 8 workflow types, with 1248 configuration records. Core evaluation combines 4,206 numerical-control records across all eight families and 108 agent episodes across the original six. At eight new measurements, pair-effect ridge selects an optimum on 15 of 22 sources and limits every effect error to 10% of score range on three. Fitting a Gaussian process (GP) to the same agent observations raises effect recovery, accuracy relative to true effect magnitude, from 0.632 to 0.698 in the original Flash cohort and from 0.621 to 0.720 in an additional cohort. On six completed beat-detection and graph submissions, the same-observation GP raises family-macro recovery from 0.303 to 0.455. On six workflows with six binary options at 20 new measurements, encoding code equivalences, configurations with identical behavior, raises GP recovery from 0.248 to 0.462. WhatWorkedBench supports research on experimental agents, adaptive experimental design, numerical inference, and use of program structure.",
+      "authors": [
+        "Jingjie Ning, Xueqi Li, Yibo Kong, Dongting Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-24T04:00:00Z",
+      "updated": "2026-09-24T04:00:00Z",
+      "announced_date": "2026-09-24",
+      "first_seen": "2026-09-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.27490",
+        "pdf": "https://arxiv.org/pdf/2609.27490",
+        "html": "https://arxiv.org/html/2609.27490"
+      },
+      "score": 17,
+      "tags": [
+        "research"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2609.26826",
+      "title": "What Makes a Terminal-Bench Task Hard? Separating Genuine Hardness from Fake-Hardness on an Adjudicated Agentic Corpus",
+      "abstract": "Frontier benchmarks need tasks that current models cannot solve. But a task that no model solves is not automatically a hard task. The same zero pass rate can come from a real capability gap, but it can also come from missing context, a broken reference solution, infrastructure failure, or a verifier that can be bypassed. In this paper, we study this issue using a frozen Terminal-Bench 3 / Frontier-Bench 0.1 production record with 1,081 pull requests, 639 scored tasks, 28,801 trials, and $105,933 in logged agent spend. We ask what an all-fail task actually certifies. For the 125 tasks with no honest pass, we combine task artifacts, reference-solution runs, empty-solution controls, adversarial trials, trajectories, telemetry, and review records, and apply an ordered validity screen. Only 78 of the 125 tasks survive as certified-unsolved candidates. The remaining tasks include 14 with broken oracles, 8 dominated by infrastructure failures, 4 that are only passable through verifier bypasses, and 21 whose solvability is not certified by the available evidence. Thus, lack of saturation and genuine difficulty are not the same thing. The certified-unsolved label is also narrow: it means that the authored route passed, infrastructure did not dominate, no strict bypass was observed, and all evaluated agents failed. It does not prove intrinsic hardness, verifier completeness, or failure at the intended capability. We further analyze rejected submissions and passing tasks to show that pass rate alone cannot explain why a task is difficult. Overall, our results suggest that frontier benchmarks should report the evidence behind their all-fail tasks before using them as capability claims.",
+      "authors": [
+        "Edward Lue Chee Lip, Boden Moraski, Tim Knappe, Lang Xiong, Sarvesh Gharat, Antonio Mari, Ivan Bercovich"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-09-24T04:00:00Z",
+      "updated": "2026-09-24T04:00:00Z",
+      "announced_date": "2026-09-24",
+      "first_seen": "2026-09-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.26826",
+        "pdf": "https://arxiv.org/pdf/2609.26826",
+        "html": "https://arxiv.org/html/2609.26826"
+      },
+      "score": 16,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
     {
       "id": "2609.26777",
       "title": "SWE-Serve: Benchmarking Agentic Engineering For Production Inference Serving",
