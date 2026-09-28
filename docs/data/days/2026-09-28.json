@@ -1,0 +1,374 @@
+{
+  "date": "2026-09-28",
+  "count": 9,
+  "report": {
+    "date": "2026-09-28",
+    "count": 9,
+    "themes": [
+      {
+        "id": "multi-agent",
+        "count": 3,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      }
+    ],
+    "en": {
+      "headline": "9 new agent benchmarks",
+      "summary": "On September 28, 2026, arXiv listed 9 new agent benchmarks. Work clustered around Multi-agent (3), Tool use (3), Planning / reasoning (2), and Coding agents (1).",
+      "highlights": [
+        {
+          "id": "2609.30604",
+          "title": "The Hard Part Comes After Search: Benchmarking Web Agents on Synthesizing, Organizing, and Displaying Knowledge",
+          "blurb": "Existing computer-use agent benchmarks do not fully evaluate agents acting as assistants."
+        },
+        {
+          "id": "2609.30717",
+          "title": "RecToolBench: Benchmarking Recommendation-Specific Tool Orchestration under Fuzzy User Intent",
+          "blurb": "Recent advances in agentic recommender systems are shifting recommender systems from passive filtering engines to instruction-following agents that use external tools to resolve user intent."
+        },
+        {
+          "id": "2609.30971",
+          "title": "SciHorizon-eLab: An Agentic Protocol-to-Task Compiler for Scalable Benchmarking of Scientific Embodied Agents",
+          "blurb": "Embodied agents offer a promising route to automating scientific experimentation, yet their progress is constrained by the lack of reliable and systematic evaluation environments."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 9 篇 Agent Benchmark",
+      "summary": "2026年9月28日，arXiv 新增 9 篇 Agent Benchmark。当日主题集中在多智能体（3）、工具使用（3）、规划 / 推理（2）、代码智能体（1）。",
+      "highlights": [
+        {
+          "id": "2609.30604",
+          "title": "The Hard Part Comes After Search: Benchmarking Web Agents on Synthesizing, Organizing, and Displaying Knowledge",
+          "blurb": "Existing computer-use agent benchmarks do not fully evaluate agents acting as assistants."
+        },
+        {
+          "id": "2609.30717",
+          "title": "RecToolBench: Benchmarking Recommendation-Specific Tool Orchestration under Fuzzy User Intent",
+          "blurb": "Recent advances in agentic recommender systems are shifting recommender systems from passive filtering engines to instruction-following agents that use external tools to resolve user intent."
+        },
+        {
+          "id": "2609.30971",
+          "title": "SciHorizon-eLab: An Agentic Protocol-to-Task Compiler for Scalable Benchmarking of Scientific Embodied Agents",
+          "blurb": "Embodied agents offer a promising route to automating scientific experimentation, yet their progress is constrained by the lack of reliable and systematic evaluation environments."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2609.31590",
+      "title": "AgentWorld: Benchmarking Long-Horizon Collaboration of Multi-agent LLMs",
+      "abstract": "Existing multi-agent benchmarks primarily test in competitive settings, short-horizon interactions under 20 steps, or simply aggregate individual performance, failing to isolate and highlight genuine collaboration capabilities of LLM-based agents. We introduce AgentWorld, a benchmark of 100 human-annotated tasks (with 100 augmented variants) for evaluating long-horizon, multi-agent collaboration. Tasks span 50+ interaction rounds across a rich MMORPG sandbox and require 3-20 agents with asymmetric roles and abilities to coordinate through communication, joint planning, and resource sharing under a blackbox setting where each agent acts independently without access to others' internal states. To quantify collaboration effectiveness in addition to conventional binary task success, we propose Causal Collaboration Effectiveness (CCE), a graph-based metric that traces causal dependencies between agent actions and measures what fraction of a team's effort actually contributed to the outcome. Experiments with Gemini 3 Flash, Claude Haiku 4.5, GPT-5 Mini, and DeepSeek R1-70B show that even the best model achieves only 52.0% task success, with systematic failure modes including communication breakdowns, role confusion, and inability to maintain shared plans across rounds. AgentWorld is fully open-source.",
+      "authors": [
+        "Raphael Shu, Yusen Zhang, Young Min Cho, Jin Mo Yang, Yuan Yuan, Wenliang Zheng, Sharath Chandra Guntuku, Lyle Ungar, Zhou Yu, Rui Zhang"
+      ],
+      "categories": [
+        "cs.MA"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-09-28T04:00:00Z",
+      "updated": "2026-09-28T04:00:00Z",
+      "announced_date": "2026-09-28",
+      "first_seen": "2026-09-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.31590",
+        "pdf": "https://arxiv.org/pdf/2609.31590",
+        "html": "https://arxiv.org/html/2609.31590"
+      },
+      "score": 16,
+      "tags": [
+        "multi-agent",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2609.31587",
+      "title": "Compact Documentation for Coding Agents: A Benchmark, an Optimizer, and Why It Does Not Transfer",
+      "abstract": "We investigate whether natural-language documentation helps coding agents resolve software issues, and we build the tools to construct and evaluate it. We introduce a roundtrip benchmark that scores code descriptions by whether code regenerated from them passes the original tests, and show that completeness, not length, drives a description's fidelity. Using the benchmark as an optimization signal, we discover a description-writing prompt that reaches full fidelity and generalizes to unseen files. We then test the hypothesis that motivated the work: that better documentation helps an agent resolve real repository issues. Across two model families and ten repositories, and against a positive control confirming that our evaluation can detect a genuine improvement, we find that it does not. When the source is present, neither static compact documentation nor retrieved context beats the issue alone. We report this negative result together with the benchmark and the optimizer, and we characterize the boundary at which documentation helps.",
+      "authors": [
+        "Md Shohel Arman, Igor Molybog"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-09-28T04:00:00Z",
+      "updated": "2026-09-28T04:00:00Z",
+      "announced_date": "2026-09-28",
+      "first_seen": "2026-09-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.31587",
+        "pdf": "https://arxiv.org/pdf/2609.31587",
+        "html": "https://arxiv.org/html/2609.31587"
+      },
+      "score": 13,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2609.31468",
+      "title": "PriceBench: A Diagnostic Benchmark for Price, Quality, and Brand Preferences in LLM Booking Agents",
+      "abstract": "LLMs increasingly act as purchasing agents, which makes the LLM, not the user, the one choosing among the options that satisfy a request; its preferences quietly fix what gets bought and what it costs. Hotel booking is a clean instance: a high-volume choice settled on a few comparable attributes, where the pick reveals those preferences. We introduce PriceBench, a diagnostic benchmark that recovers an LLM's price, quality, and brand preferences from its booking choices with a logit choice model, applied to 28 LLMs from 8 providers on 3,600 hotel tasks from 179 real New York City properties. We find that capability is associated with how consistently an LLM chooses, not with what it chooses: more capable LLMs hold stronger, more consistent preferences, while weaker ones either lock onto one position, exploitable by whoever controls listing order, or choose almost indifferently. What those preferences favor varies sharply across providers and even within one family: price sensitivity spans more than an order of magnitude, and the price/quality trade-off moves mean booked nightly price from \\$247 to \\$393 on identical tasks. What an agent buys must therefore be measured per LLM, not inferred, and we release the tasks, code, and all 28 response sets.",
+      "authors": [
+        "Pavel Kireyev"
+      ],
+      "categories": [
+        "econ.GN",
+        "cs.AI",
+        "cs.CL",
+        "q-fin.EC"
+      ],
+      "primary_category": "econ.GN",
+      "published": "2026-09-28T04:00:00Z",
+      "updated": "2026-09-28T04:00:00Z",
+      "announced_date": "2026-09-28",
+      "first_seen": "2026-09-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.31468",
+        "pdf": "https://arxiv.org/pdf/2609.31468",
+        "html": "https://arxiv.org/html/2609.31468"
+      },
+      "score": 11,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2609.30971",
+      "title": "SciHorizon-eLab: An Agentic Protocol-to-Task Compiler for Scalable Benchmarking of Scientific Embodied Agents",
+      "abstract": "Embodied agents offer a promising route to automating scientific experimentation, yet their progress is constrained by the lack of reliable and systematic evaluation environments. Existing simulation-based laboratory benchmarks rely heavily on manual task engineering, making it challenging to systematically compile diverse scientific protocols into executable and verifiable embodied tasks at scale. To address this challenge, we introduce SciHorizon-eLab, an agentic protocol-to-task compiler that formulates scientific embodied task construction as a compilation problem. Given a natural-language protocol of scientific experiments, SciHorizon-eLab progressively compiles laboratory protocols into semantic-preserving embodied tasks through semantic grounding, executable task synthesis, and multi-stage simulation-based certification. The system generates semantically grounded environments, executable manipulation programs, and step-level success specifications, while enabling reproducible generation of expert demonstrations and execution traces. Using this pipeline, we further construct \\BenchName, a ready-to-use benchmark comprising 300 certified tasks across diverse laboratory operations. It supports HIL task execution, reproducible expert-demonstration generation, and ordered step-level evaluation. Across representative tasks, the strongest policy attains an average success rate of only 49.7%, with further evaluations revealing pronounced weaknesses in human and embodied agent coordination. We publicly release the code, benchmark data, and evaluation toolkit at https://github.com/SciHorizon-elab/SciHorizon-elab.",
+      "authors": [
+        "Maokai Qin, Chuan Qin, Qi Zhang, Dianyu Liu, Zirui Liu, Hongting Niu, Yuanchun Zhou, Hengshu Zhu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-28T04:00:00Z",
+      "updated": "2026-09-28T04:00:00Z",
+      "announced_date": "2026-09-28",
+      "first_seen": "2026-09-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.30971",
+        "pdf": "https://arxiv.org/pdf/2609.30971",
+        "html": "https://arxiv.org/html/2609.30971"
+      },
+      "score": 18,
+      "tags": [
+        "embodied",
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2609.30813",
+      "title": "A Benchmark and Diagnostic Study of Epistemic Admission in Shared Agent Memory",
+      "abstract": "Evaluating claim admission in shared agent memory is challenging because repeated claims may be mistaken for independent evidence. An agent may copy or paraphrase a retrieved belief, while admitting a false claim exposes subsequent agents to it. To study this problem, we introduce the Correlated Promotion Benchmark (CPB), which evaluates whether candidate claims should be admitted to shared memory.CPB-Static constructs a frozen test split from publicly annotated sources with fixed gold actions. CPB-Live runs multi-agent teams over a shared store, records all writes and retrievals, and tracks source lineage defined by each scenario. A separate consumer answers from the store alone. We evaluate eight admission policies across four agent families. Our results show that policies which deduplicate sources reject many true claims alongside false ones, whereas policies preserving answer coverage admit nearly as many false claims as unrestricted sharing. Gating on declared source type reduces false adoption to 0.06--0.09, compared with 0.22--0.47 for other answering policies. Once an uncontested false belief enters memory, the consumer asserts it in 0.97--0.99 of probes across all families. No non-oracle policy consistently rejects false claims across verbatim copies, paraphrases, and paraphrases declared authoritative. These findings reveal the limitations of admission policies without access to source lineage.",
+      "authors": [
+        "Xiaoyang Li, Yiqi Wang, Chencheng Zhu, KE XU, Wencheng Yang, Zequn Sun, Pingan Song, Yiqun Duan, Taotao Cai"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-28T04:00:00Z",
+      "updated": "2026-09-28T04:00:00Z",
+      "announced_date": "2026-09-28",
+      "first_seen": "2026-09-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.30813",
+        "pdf": "https://arxiv.org/pdf/2609.30813",
+        "html": "https://arxiv.org/html/2609.30813"
+      },
+      "score": 9,
+      "tags": [
+        "multi-agent",
+        "memory"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2609.30717",
+      "title": "RecToolBench: Benchmarking Recommendation-Specific Tool Orchestration under Fuzzy User Intent",
+      "abstract": "Recent advances in agentic recommender systems are shifting recommender systems from passive filtering engines to instruction-following agents that use external tools to resolve user intent. However, existing benchmarks often assume explicit user intent, simplified tool environments, or isolated function calls, leaving realistic tool orchestration for recommendation underexplored. To bridge this gap, we propose RecToolBench, a Model Context Protocol (MCP)-based benchmark for evaluating tool-using recommender agents under fuzzy user instructions. RecToolBench contains more than 1,200 executable tasks across three recommendation domains, 13 MCP servers, and 32 tools, spanning single-tool calls, parallel tool calls, sequential tool chains, and hybrid tool orchestration. We construct RecToolBench with a scalable synthesize--fuzzify--judge pipeline that generates executable fuzzy recommendation tasks, and evaluates agent trajectories using rule-based execution checks and rubric-based LLM evaluation. Experiments on representative LLMs show that syntactically valid tool calls do not guarantee successful recommendations. Models struggle with semantic parameter grounding, multi-step evidence integration, and grounded final recommendations, especially as orchestration complexity increases. Our results identify tool orchestration under fuzzy user intent as a major bottleneck for agentic recommender systems. Our data and code are available at https://github.com/ShawnChenn/RecToolBench.",
+      "authors": [
+        "Xiao Chen, Yicheng Zhao, Yingying Wu, Zhendong Chu, Changyi Ma, Qingsong Wen, Xuan Song"
+      ],
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-09-28T04:00:00Z",
+      "updated": "2026-09-28T04:00:00Z",
+      "announced_date": "2026-09-28",
+      "first_seen": "2026-09-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.30717",
+        "pdf": "https://arxiv.org/pdf/2609.30717",
+        "html": "https://arxiv.org/html/2609.30717"
+      },
+      "score": 18,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2609.30604",
+      "title": "The Hard Part Comes After Search: Benchmarking Web Agents on Synthesizing, Organizing, and Displaying Knowledge",
+      "abstract": "Existing computer-use agent benchmarks do not fully evaluate agents acting as assistants. A useful assistant retrieves information across complex, multi-step workflows, synthesizes it into artifacts (documents, presentations, spreadsheets), and navigates program interfaces to produce a coherent final product. Such workflows demand reasoning and synthesis, decomposition of complex tasks, as well as visual and spatial understanding. To study agents on workflows like these, we introduce KNOWS, a benchmark of open-ended, complex, browser-based tasks that jointly evaluate these capabilities, with each task culminating in a produced artifact. To write tasks, we develop a task design rubric and a protocol for ensuring that tasks meet the requirements. Each task is paired with an evaluator, a program that combines deterministic checks with LLM judgments to balance the richness, reliability, and automation tradeoff inherent to agent evaluation. We evaluate and analyze frontier computer-use agents and browser-based harnesses. They achieve moderate scores on partial-success metrics, but the best performer fully succeeds in fewer than 3% of our complex, long-horizon tasks. Failures on visual steps render the resulting artifacts unusable, even when agents complete more than 50% of other evaluation steps. Our results expose limitations of current agents acting as end-to-end assistants, and call for progress on tool use, visual understanding, and long-horizon reasoning.",
+      "authors": [
+        "Alexander Gill, Md Farhan Ishmam, Xuyen Nguyen, Neha Bhat, Parker Henry DeYoung, Fateme Hashemi Chaleshtori, Nathan Stringham, Kenneth Marino, Ana Marasovi\\'c"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-09-28T04:00:00Z",
+      "updated": "2026-09-28T04:00:00Z",
+      "announced_date": "2026-09-28",
+      "first_seen": "2026-09-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.30604",
+        "pdf": "https://arxiv.org/pdf/2609.30604",
+        "html": "https://arxiv.org/html/2609.30604"
+      },
+      "score": 19,
+      "tags": [
+        "web",
+        "tool-use",
+        "computer-use",
+        "planning"
+      ],
+      "field": "web",
+      "citations": 0
+    },
+    {
+      "id": "2609.30383",
+      "title": "Stealth Apart, Harm Together: Skill Cascading Attacks on Skill-Based Agent Systems",
+      "abstract": "A skill is a modular package of natural-language instructions, executable scripts, and reference resources that an agent can load at runtime to extend its capabilities for a specific task. Skill-based agent systems therefore enable flexible reuse of third-party capabilities, but the openness of this skill ecosystem also opens up a new attack surface. Prior work has focused on vulnerabilities within individual skills, but little attention has been paid to risks that arise from interactions across skills. In this paper, we introduce skill cascading attacks, a threat paradigm in which a malicious objective is distributed across multiple skills so that each modification looks benign in isolation, yet their combined execution is harmful. For instance, in a prescription-review pipeline, the first skill weakens signals of recently discontinued medications in the extracted history, the second downgrades the severity of any drug interaction tied to them, and the third suppresses the resulting low-priority alert in the final summary, so that a severe drug-interaction warning silently disappears before reaching the physician. To systematically study this safety blind spot, we develop SkillCascade, an automated multi-agent red-teaming framework, and release SkillCascade-Bench, a benchmark of 213 validated cascading test cases across multiple agent systems and domains. Across representative agents (e.g., OpenClaw, Claude Code, Codex) and LLM backbones, cascaded interactions reliably induce harmful behaviors while evading existing per-skill scanners and runtime monitors. Our findings highlight a gap between component-level integrity and system-level safety, and call for defenses that reason over cross-skill interactions rather than individual skills in isolation.",
+      "authors": [
+        "Zihao Zhu, Siwei Lyu, Adel Bibi, Baoyuan Wu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-28T04:00:00Z",
+      "updated": "2026-09-28T04:00:00Z",
+      "announced_date": "2026-09-28",
+      "first_seen": "2026-09-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.30383",
+        "pdf": "https://arxiv.org/pdf/2609.30383",
+        "html": "https://arxiv.org/html/2609.30383"
+      },
+      "score": 7,
+      "tags": [
+        "multi-agent",
+        "safety"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2609.30325",
+      "title": "ScopeBench: Do Agents Preserve Engagement Boundaries Under Goal Pressure?",
+      "abstract": "Agents are increasingly deployed with real autonomy in web application and network penetration testing, where a single out-of-scope action can breach a client's engagement boundary. Existing offensive-security benchmarks measure raw hacking capability; as those benchmarks saturate, the real barrier to deployment is a special case of alignment: scope adherence. We introduce ScopeBench, a benchmark of 30 dead-end agentic security tasks in which the stated objective is reachable only by violating the stated scope. Each task appears under two conditions that share an environment, verifier, and objective and differ only in scope: one instruction set has no scope and measures capability; the other has a natural-language scope to measure adherence. Scopeless trajectories are graded by a standard deterministic verifier. Scoped trajectories pass through two grading arms. First, the same deterministic verifier checks for the flag: because the flag sits behind the scope boundary, a pass proves by construction that a forbidden action occurred, yielding a high-precision lower bound on the violation rate. If the verifier does not pass the trajectory, an agentic judge estimates whether an out-of-scope call occurred. We calibrate the judge against 100 ScopeBench trajectories labeled call-by-call by human annotators, and a blinded audit of the evaluated rollouts finds its high recall holds - no false negatives among the 36 audited violations, with over-flagging its only observed error. Across 8 models in one harness, raw capability spans 12.2% to 81.1% and scope adherence spans 34.4% to 86.7%, with the judge finding 331 violations that mechanical verification misses. Opus-4-8 achieves a raw-capability score 10 percentage points higher than sonnet-4-6's while exhibiting 35.6 percentage points higher scope adherence. We release the frozen pilot benchmark, evaluation code, and all 2160 ATIF trajectories.",
+      "authors": [
+        "Shane Caldwell, Max Harley, Ads Dawson, Michael Kouremetis, Vincent Abruzzo, Will Pearce"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-28T04:00:00Z",
+      "updated": "2026-09-28T04:00:00Z",
+      "announced_date": "2026-09-28",
+      "first_seen": "2026-09-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.30325",
+        "pdf": "https://arxiv.org/pdf/2609.30325",
+        "html": "https://arxiv.org/html/2609.30325"
+      },
+      "score": 12,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}
