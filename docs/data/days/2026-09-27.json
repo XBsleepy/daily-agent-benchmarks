@@ -1,0 +1,369 @@
+{
+  "date": "2026-09-27",
+  "count": 8,
+  "report": {
+    "date": "2026-09-27",
+    "count": 8,
+    "themes": [
+      {
+        "id": "coding",
+        "count": 3,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multimodal",
+        "count": 3,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      }
+    ],
+    "en": {
+      "headline": "8 new agent benchmarks",
+      "summary": "On September 27, 2026, arXiv listed 8 new agent benchmarks. Work clustered around Coding agents (3), Planning / reasoning (3), Multimodal (3), and Memory (2).",
+      "highlights": [
+        {
+          "id": "2609.33980",
+          "title": "DynGraphAgentBench: A Benchmark for Agentic Lifecycle Control in Dynamic Graph Anomaly Detection",
+          "blurb": "Dynamic graph anomaly detection requires repeated decisions as graph structure and class prevalence drift, yet detector benchmarks usually score a fixed pipeline after current labels are known."
+        },
+        {
+          "id": "2609.33807",
+          "title": "CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation",
+          "blurb": "How well can general-purpose multimodal models turn visual understanding and reasoning into embodied manipulation via executable code?"
+        },
+        {
+          "id": "2609.33356",
+          "title": "Long-Horizon Analog Design Bench: Benchmarking Agents on Hours-Long Analog and Mixed-Signal Circuit Design Tasks",
+          "blurb": "Coding agents now sustain hours-long, tool-driven loops, yet their ability to carry long-horizon analog and mixed-signal circuits to electrical specification remains unmeasured."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 8 篇 Agent Benchmark",
+      "summary": "2026年9月27日，arXiv 新增 8 篇 Agent Benchmark。当日主题集中在代码智能体（3）、规划 / 推理（3）、多模态（3）、记忆（2）。",
+      "highlights": [
+        {
+          "id": "2609.33980",
+          "title": "DynGraphAgentBench: A Benchmark for Agentic Lifecycle Control in Dynamic Graph Anomaly Detection",
+          "blurb": "Dynamic graph anomaly detection requires repeated decisions as graph structure and class prevalence drift, yet detector benchmarks usually score a fixed pipeline after current labels are known."
+        },
+        {
+          "id": "2609.33807",
+          "title": "CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation",
+          "blurb": "How well can general-purpose multimodal models turn visual understanding and reasoning into embodied manipulation via executable code?"
+        },
+        {
+          "id": "2609.33356",
+          "title": "Long-Horizon Analog Design Bench: Benchmarking Agents on Hours-Long Analog and Mixed-Signal Circuit Design Tasks",
+          "blurb": "Coding agents now sustain hours-long, tool-driven loops, yet their ability to carry long-horizon analog and mixed-signal circuits to electrical specification remains unmeasured."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2609.33980",
+      "title": "DynGraphAgentBench: A Benchmark for Agentic Lifecycle Control in Dynamic Graph Anomaly Detection",
+      "abstract": "Dynamic graph anomaly detection requires repeated decisions as graph structure and class prevalence drift, yet detector benchmarks usually score a fixed pipeline after current labels are known. We introduce DynGraphAgentBench, an executable benchmark for agentic lifecycle control under delayed feedback. It comprises seven temporal graph datasets with node- and edge-level anomaly tasks, eleven selectable detectors, and eight chronological deployment windows per dataset. In each window, a controller sees only time-causal aggregate context, registered model cards, and its own matured history. It must choose a detector before current-window training or candidate scores exist. A sandboxed executor trains the chosen architecture on mature data, scores a hidden deployment window, and releases the outcome after a one-window delay. A deterministic verifier checks decision timing, leakage guards, legal actions, training scope, and persisted artifacts. We measure detection utility with average precision and capture at fixed review depth, and characterize adaptation through model switches and compute. Complete eight-window trajectories from two primary controllers and a no-memory reference on four datasets, together with three additional controllers on three datasets, expose useful, costly, and ineffective reactions to delayed evidence without granting an exhaustive current-window oracle.",
+      "authors": [
+        "Yuwei Han",
+        "Lingwei Wei",
+        "Wooseong Yang",
+        "Liangjie Huang",
+        "Liancheng Fang",
+        "Huanhuan Ma",
+        "Philip S. Yu"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-09-27T22:20:55Z",
+      "updated": "2026-09-27T22:20:55Z",
+      "announced_date": "2026-09-27",
+      "first_seen": "2026-09-27",
+      "comment": "16 pages, 2 figures, 5 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.33980v1",
+        "pdf": "https://arxiv.org/pdf/2609.33980v1",
+        "html": "https://arxiv.org/html/2609.33980"
+      },
+      "score": 20,
+      "tags": [
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2609.33812",
+      "title": "Identical Runs, Different Results: Benchmarking AI Coding Agents on Open-Weight Models",
+      "abstract": "Repeated runs of the same coding agent are known to give different benchmark scores. We ask what that variation means for a team running an agent on its own task, by intensive replication on one machine-learning task: an agent improves the training code of an XGBoost classifier for airline delays, and a holdout it never sees scores the result. Across 584 runs, we compare six agents on six open-weight model endpoints, run six agent-model pairings 52 times each under fixed settings, and repeat three of them on a larger model from the same family. Identical runs of one pairing varied more than the pairings differed from one another, so comparisons of a few runs ranked them unreliably; resolving the agent differences we observed would take tens to more than a hundred runs of each. Runs on the larger model scored clearly higher, but by less than one run-to-run standard deviation, and the gap was more than twice as large with one agent as with the others. Fewer than one run in twenty broke the task's data rules, but those runs held the highest scores. Rejecting those runs first and keeping the best compliant result among a few attempts reliably improved the delivered model, even though a few runs could not rank the agents. On flights from a later year, the delivered models kept only a third of their gain over the starting code. At list prices, cost differed more than twentyfold between two agents on the same model, mostly through the prompt cache. Agents and models should be evaluated as pairings, over repeated attempts, with compliance reported beside quality. Data, code and every delivered program: https://github.com/earino/identical-runs-different-results",
+      "authors": [
+        "Eduardo Ariño de la Rubia",
+        "Szilard Pafka"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.LG"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-09-27T18:05:02Z",
+      "updated": "2026-09-27T18:05:02Z",
+      "announced_date": "2026-09-27",
+      "first_seen": "2026-09-27",
+      "comment": "22 pages, 6 figures, 18 tables. Data and code: https://github.com/earino/identical-runs-different-results",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.33812v1",
+        "pdf": "https://arxiv.org/pdf/2609.33812v1",
+        "html": "https://arxiv.org/html/2609.33812"
+      },
+      "score": 12,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2609.33807",
+      "title": "CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation",
+      "abstract": "How well can general-purpose multimodal models turn visual understanding and reasoning into embodied manipulation via executable code? We introduce CodeActionBench, a benchmark of 25 manipulation tasks that evaluates this capability through agentic Code-as-Policy. Without task-specific fine-tuning, demonstrations, external specialist perception or grasp modules, privileged scene state, or predefined task policies, agents should select visual evidence, form task-relevant 3D estimates, construct manipulation targets, and iteratively execute and revise their policies. A shared robot API provides RGB observations, calibrated geometric operations, robot feedback, and bounded motion, leaving task-dependent decisions to the evaluated agent. Fixed task instances, resource budgets, and a hidden physical-outcome verifier support controlled comparisons across models and harness configurations. Extensive evaluations across nine configurations and 675 attempts achieve success rates ranging from 2.7% to 73.3%. The strongest configuration, GPT-6 Astra with Codex CLI, solves 22 of 25 tasks at least once in three attempts, demonstrating the best performance while still leaving substantial room for improvement. Trajectory analyses reveal difficulties in spatial alignment, object retention, and completion judgment, including task failures despite successfully completed motions. CodeActionBench provides a controlled testbed for measuring how general-purpose models translate their capabilities into manipulation behavior and for examining typical failure scenarios in that process.",
+      "authors": [
+        "Yiheng Lyu",
+        "Xueying Jiang",
+        "Wenhao Li",
+        "Shijian Lu",
+        "Gongjie Zhang"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-09-27T17:59:31Z",
+      "updated": "2026-09-27T17:59:31Z",
+      "announced_date": "2026-09-27",
+      "first_seen": "2026-09-27",
+      "comment": "28 pages including references and appendices, 10 figures. Project website: https://codeactionbench.org",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.33807v1",
+        "pdf": "https://arxiv.org/pdf/2609.33807v1",
+        "html": "https://arxiv.org/html/2609.33807"
+      },
+      "score": 17,
+      "tags": [
+        "embodied",
+        "planning",
+        "multimodal"
+      ],
+      "field": "embodied",
+      "citations": 0
+    },
+    {
+      "id": "2609.33689",
+      "title": "Type-Safe Decision Frameworks for Agentic 5G Control: A Theory-Driven Testbed Characterization of Where They Can Be Applied",
+      "abstract": "This paper presents a theory-driven characterization of type-safe decision frameworks for the agentic control of 5G networks, where every decision must be an element of a declared option set rather than free text. Three design points are evaluated on an Open5GS/UERANSIM testbed with a closed core-policy loop, namely a hosted typed model (Jev), an open fine-tunable typed encoder (Laya), and a zero-label retrofit of a general language model (AnyJev). The proposed theoretical framework turns timeliness, type conformance, certification cost and cardinality into checkable applicability predicates, supported by an optimal act/escalate/abstain gate, an escalation-feasibility floor, a co-location stability condition, per-type conformal risk control with a certification label floor, and a type-mismatch bound. Measuring every predicate yields an applicability map from framework to 5G decision class. Type safety removes format failures but not the question: the fine-tuned typed encoder returned its training answer for 98-99.5% of changed questions, and its calibrated gate then acted wrongly on up to 80% of them, whereas the question-reading frameworks acted wrongly on at most 0.143 (Jev) and 0.137 (AnyJev) of any changed question, but were either hosted and 11-29 times slower (Jev) or reliant on an 8B language model (AnyJev).",
+      "authors": [
+        "Michail-Alexandros Kourtis",
+        "George Xilouris"
+      ],
+      "categories": [
+        "cs.NI"
+      ],
+      "primary_category": "cs.NI",
+      "published": "2026-09-27T15:51:26Z",
+      "updated": "2026-09-27T15:51:26Z",
+      "announced_date": "2026-09-27",
+      "first_seen": "2026-09-27",
+      "comment": "12 pages, 6 figures, 6 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.33689v1",
+        "pdf": "https://arxiv.org/pdf/2609.33689v1",
+        "html": "https://arxiv.org/html/2609.33689"
+      },
+      "score": 11,
+      "tags": [
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2609.33678",
+      "title": "SWE-Game: Can Coding Agents Build the Games We Want?",
+      "abstract": "We introduce SWE-Game, a benchmark of 247 tasks grounded in 41 executable reference Godot games spanning 13 gameplay categories in 2D and 3D. Five task types cover development from a brief, implementation from a game design document, skeleton completion, repair of 83 injected-fault cases, and Godot-to-Unity porting. Reference materials specify the intended gameplay, while a shared instrumentation interface lets evaluator-owned drivers and probes execute actions and observe independently implemented games. Evaluation combines engine-state checks, certified reference-input replay, and agent-authored feature demonstrations to assess mechanic correctness, demonstrated playability, and behavioral restoration and preservation after repairs. Game-specific vision-language rubrics separately assess presentation. Across six models, Opus5 achieves the highest overall score in all five task types. Best overall scores remain below 60 out of 100 across the three construction tasks, with Brief-to-Game reaching 50.38. Analysis of reviewed submissions identifies requirement omissions and gameplay logic errors as predominant implementation problems. On human-labeled behaviors from 100 agent-built games, executable checks achieve 92.59% balanced accuracy, compared with 78.41% for a video-based VLM judge. Rubric-based visual scores reach a Spearman correlation of 0.829 with human ratings of 200 gameplay clips. Together, these results characterize current agent capabilities across game-development activities and support combining runtime evidence with visual assessment.",
+      "authors": [
+        "Xiaoyu Chen",
+        "Lai Wei",
+        "Jin Wang",
+        "Xiangyu Zou",
+        "Ruochen Fan",
+        "Enze Luo",
+        "Mingzhe Yao",
+        "Jiahui Zhu",
+        "Yuhua Wen",
+        "Linghe Kong",
+        "Weiran Huang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-27T15:38:20Z",
+      "updated": "2026-09-27T15:38:20Z",
+      "announced_date": "2026-09-27",
+      "first_seen": "2026-09-27",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.33678v1",
+        "pdf": "https://arxiv.org/pdf/2609.33678v1",
+        "html": "https://arxiv.org/html/2609.33678"
+      },
+      "score": 11,
+      "tags": [
+        "coding",
+        "multimodal"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2609.33627",
+      "title": "StoryEngine: A State-Grounded Agentic Framework for Video Storytelling",
+      "abstract": "Despite recent progress in agentic multi-shot video generation, producing coherent and consistent long-form stories remains challenging. Existing agentic pipelines typically rely on textual shot plans or previously generated pixels, yet lack an explicit mechanism for propagating the consequences of story events and maintaining the video world state across shots. As a result, missing visual details may be reconstructed inaccurately, while visual drift may propagate across subsequent shots, undermining both narrative coherence and visual consistency. To address these challenges, we propose StoryEngine, a state-grounded agentic framework for video storytelling. StoryEngine establishes a separation between authoritative semantic plans and unreliable visual observations. Specifically, StoryEngine maintains a structured representation of entity placement and story-relevant states, and propagates event-induced changes to define the intended start and end states of each shot. To visually realize these states, StoryEngine constructs canonical references for recurring entities and environments, and compiles state and visual constraints into executable render plans. Meanwhile, to realize these states correctly, a bounded evaluation-guided repair loop further corrects local state inconsistencies. Together, these mechanisms preserve causal story progression and prevent local visual errors from propagating across shots. To comprehensively evaluate long-form storytelling, we construct a benchmark across diverse scenarios and visual styles, with metrics assessing storytelling quality, narrative coherence, and visual consistency. Experimental results demonstrate that StoryEngine consistently outperforms state-of-the-art methods across all evaluation dimensions, validating its effectiveness for coherent and consistent video storytelling.",
+      "authors": [
+        "Yingrui Wang",
+        "Zeqing Wang",
+        "Yeying Jin"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-09-27T14:42:16Z",
+      "updated": "2026-09-27T14:42:16Z",
+      "announced_date": "2026-09-27",
+      "first_seen": "2026-09-27",
+      "comment": "23 pages, 4 figures, submit to ICLR",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.33627v1",
+        "pdf": "https://arxiv.org/pdf/2609.33627v1",
+        "html": "https://arxiv.org/html/2609.33627"
+      },
+      "score": 10,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2609.33356",
+      "title": "Long-Horizon Analog Design Bench: Benchmarking Agents on Hours-Long Analog and Mixed-Signal Circuit Design Tasks",
+      "abstract": "Coding agents now sustain hours-long, tool-driven loops, yet their ability to carry long-horizon analog and mixed-signal circuits to electrical specification remains unmeasured. We introduce Analog Design Bench, a long-horizon agentic benchmark of 50 transistor-level design tasks contributed by 17 chip designers. Agents work with an open-source simulator, while an isolated verifier evaluates the submitted circuit using specification-based electrical tests. We evaluate 15 agent configurations across 2,250 two-hour attempts and observe full-specification pass rates from 8.0% to 78.0%. Coding-benchmark performance correlates with analog results but leaves much of the performance spread unexplained. Our failure analysis shows that most unsuccessful submissions have no recorded legality rejection but fail electrical acceptance, identifying electrical closure as the dominant endpoint challenge. We test time, reasoning effort, agent harness, and supplied design knowledge as interventions. Longer budgets and higher reasoning effort improve performance, while general skill documents provide little benefit and sometimes reduce performance. Supplying a task-matched reference topology, an idealized form of circuit-IP retrieval, raises DeepSeek V4 Pro by 18.7 percentage points and mainly accelerates GPT-5.6 Sol.",
+      "authors": [
+        "Analog Design Bench Team"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-27T08:28:40Z",
+      "updated": "2026-09-27T08:28:40Z",
+      "announced_date": "2026-09-27",
+      "first_seen": "2026-09-27",
+      "comment": "25 pages, 10 figures, 6 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.33356v1",
+        "pdf": "https://arxiv.org/pdf/2609.33356v1",
+        "html": "https://arxiv.org/html/2609.33356"
+      },
+      "score": 16,
+      "tags": [
+        "coding",
+        "tool-use",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2609.33117",
+      "title": "ECG-Scroll: A Long-Horizon, Streaming Benchmark and Agent Environment for Interpretation of Ambulatory Electrocardiograms",
+      "abstract": "Multimodal large language models (MLLMs) can now interpret a standard ten-second, twelve-lead electrocardiogram (ECG) with clinically grounded, reward-verified reasoning. Real cardiac monitoring is different. Ambulatory (Holter) and telemetry recordings span hours to days and are read as they stream in, and their clinically decisive findings are paroxysmal, brief episodes buried in an otherwise unremarkable trace. Such a recording cannot be held in one context at diagnostic resolution, and its future has not yet happened, so a reader must work online, deciding what to measure now, committing evidence to memory as it passes, and reporting events as they occur. We recast long-duration ECG interpretation as a long-horizon, online (streaming, causal) sequential decision process and introduce ECG-Scroll. As a benchmark, long ambulatory recordings are streamed to an agent chunk by chunk, and it must localize, quantify, and promptly flag paroxysmal events without access to future signal; because the underlying signal is retained, every answer is checkable against objective ground truth, giving rule-based rather than judge-based rewards, and the streaming formulation adds a metric batch evaluation cannot express, the detection latency between an event's onset and the moment the agent records it. As an agent environment, it is a fixed, gym-style interaction layer that exercises three competencies single-glance ECG models never touch: Memory, Tool use through signal-grounded measurement rather than reading pixels, and Planning of what to measure now and when to commit. We release 390 whole-recording instances spanning 2,536 hours of two-lead ambulatory ECG and evaluate a signal-threshold rule agent alongside off-the-shelf LLM agents online, characterizing how they use memory, tools, and planning and where the benchmark's head-room lies.",
+      "authors": [
+        "Haitao Li",
+        "Chenglin Li",
+        "Zhengyao Ding",
+        "Ziyu Li",
+        "Yiheng Mao",
+        "Zhengxing Huang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "eess.SP"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-09-27T02:38:13Z",
+      "updated": "2026-09-27T02:38:13Z",
+      "announced_date": "2026-09-27",
+      "first_seen": "2026-09-27",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.33117v1",
+        "pdf": "https://arxiv.org/pdf/2609.33117v1",
+        "html": "https://arxiv.org/html/2609.33117"
+      },
+      "score": 10,
+      "tags": [
+        "tool-use",
+        "memory",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    }
+  ]
+}

@@ -1,21 +1,39 @@
 {
   "date": "2026-09-25",
-  "count": 6,
+  "count": 9,
   "report": {
     "date": "2026-09-25",
-    "count": 6,
+    "count": 9,
     "themes": [
       {
+        "id": "planning",
+        "count": 4,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
         "id": "tool-use",
-        "count": 3,
+        "count": 4,
         "en": "Tool use",
         "zh": "工具使用"
       },
       {
-        "id": "planning",
+        "id": "safety",
         "count": 2,
-        "en": "Planning / reasoning",
-        "zh": "规划 / 推理"
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
       },
       {
         "id": "coding",
@@ -34,24 +52,17 @@
         "count": 1,
         "en": "Work / office",
         "zh": "职场 / 办公"
-      },
-      {
-        "id": "multi-agent",
-        "count": 1,
-        "en": "Multi-agent",
-        "zh": "多智能体"
-      },
-      {
-        "id": "safety",
-        "count": 1,
-        "en": "Safety",
-        "zh": "安全"
       }
     ],
     "en": {
-      "headline": "6 new agent benchmarks",
-      "summary": "On September 25, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Tool use (3), Planning / reasoning (2), Coding agents (1), and Science lab (1).",
+      "headline": "9 new agent benchmarks",
+      "summary": "On September 25, 2026, arXiv listed 9 new agent benchmarks. Work clustered around Planning / reasoning (4), Tool use (4), Safety (2), and GUI agents (1).",
       "highlights": [
+        {
+          "id": "2609.31906",
+          "title": "EmailBench: A Benchmark for Evaluating LLM Agents on Enterprise Email and Productivity Tasks",
+          "blurb": "Enterprise email agents must combine information retrieval, structured state changes, temporal reasoning, and multi-step coordination."
+        },
         {
           "id": "2609.29509",
           "title": "Delay-of-Gratification as a Multi-Agent Survival Micro-benchmark for Long-Horizon LLMs: Social Exposure, Personas, and Tool Use Budgets",
@@ -61,18 +72,18 @@
           "id": "2609.29718",
           "title": "PPTBench: Can Coding Agents Reconstruct the Visual World through Structured, Editable Slides",
           "blurb": "Coding agents are beginning to act in the visual world."
-        },
-        {
-          "id": "2609.29578",
-          "title": "PartHackBench: Certified Equal-Progress Stress Tests for Partial-Credit Tool-Agent Evaluation",
-          "blurb": "Long-horizon tool agents often make useful progress without reaching terminal success, motivating partial-credit evaluation."
         }
       ]
     },
     "zh": {
-      "headline": "新增 6 篇 Agent Benchmark",
-      "summary": "2026年9月25日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在工具使用（3）、规划 / 推理（2）、代码智能体（1）、科学实验（1）。",
+      "headline": "新增 9 篇 Agent Benchmark",
+      "summary": "2026年9月25日，arXiv 新增 9 篇 Agent Benchmark。当日主题集中在规划 / 推理（4）、工具使用（4）、安全（2）、GUI 智能体（1）。",
       "highlights": [
+        {
+          "id": "2609.31906",
+          "title": "EmailBench: A Benchmark for Evaluating LLM Agents on Enterprise Email and Productivity Tasks",
+          "blurb": "Enterprise email agents must combine information retrieval, structured state changes, temporal reasoning, and multi-step coordination."
+        },
         {
           "id": "2609.29509",
           "title": "Delay-of-Gratification as a Multi-Agent Survival Micro-benchmark for Long-Horizon LLMs: Social Exposure, Personas, and Tool Use Budgets",
@@ -82,16 +93,131 @@
           "id": "2609.29718",
           "title": "PPTBench: Can Coding Agents Reconstruct the Visual World through Structured, Editable Slides",
           "blurb": "Coding agents are beginning to act in the visual world."
-        },
-        {
-          "id": "2609.29578",
-          "title": "PartHackBench: Certified Equal-Progress Stress Tests for Partial-Credit Tool-Agent Evaluation",
-          "blurb": "Long-horizon tool agents often make useful progress without reaching terminal success, motivating partial-credit evaluation."
         }
       ]
     }
   },
   "papers": [
+    {
+      "id": "2609.31967",
+      "title": "IndicFDB: Benchmarking Full-Duplex Voice Agents across Indian Languages",
+      "abstract": "Full-duplex voice agents must handle pauses, take turns, backchannel, and respond to user interruptions in real time. Full-Duplex-Bench evaluates these behaviors, but its English-only corpus and reliance on word-timestamped ASR and an English-prompted LLM judge make it difficult to extend to Indian languages. We introduce IndicFDB, which extends it to ten languages spoken in India with 12,350 samples, nearly 17 times as many as the original. We address three challenges: finding conversational events in multilingual speech, evaluating their timing without reliable word-level alignment, and judging responses across languages. We mine pause handling, turn taking, and backchanneling samples from roughly 50,000 hours of channel-separated conversations using voice activity detection (VAD), and construct human-validated synthetic user interruption samples. Language-independent VAD heuristics evaluate timing, while an open-weight transcription and translation pipeline converts responses to English for LLM ratings of relevance and quality. Across seven voice agents, commercial APIs show unexpectedly consistent behavior across languages but are either fast or robust to pauses, never both, while monolingual open full-duplex models expose further tradeoffs among backchanneling, response quality, and latency.",
+      "authors": [
+        "Rajarshi Roy",
+        "Shobhit Banga",
+        "Jonathan Raiman",
+        "Supriya Paul",
+        "Bhaskar Singh",
+        "Manmeet Kaur",
+        "Sagar Jain",
+        "Hanuman Sidh",
+        "Pranav Sharma",
+        "Aditya Singh",
+        "Aaditya Pareek",
+        "Manas Dhir",
+        "Adi Margolin",
+        "Niket Agarwal",
+        "Bryan Catanzaro"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-09-25T20:11:18Z",
+      "updated": "2026-09-25T20:11:18Z",
+      "announced_date": "2026-09-25",
+      "first_seen": "2026-09-25",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.31967v1",
+        "pdf": "https://arxiv.org/pdf/2609.31967v1",
+        "html": "https://arxiv.org/html/2609.31967"
+      },
+      "score": 5,
+      "tags": [
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 1
+    },
+    {
+      "id": "2609.31957",
+      "title": "CaptchaArena: A Large-Scale, Fine-Grained Dataset for Training Computer-Use Agents on Interactive CAPTCHAs",
+      "abstract": "Interactive CAPTCHAs remain challenging for computer-use agents, while existing datasets face trade-offs among type coverage, interaction fidelity, and trajectory supervision. To address these gaps, we present CaptchaArena, the first large-scale, fine-grained training dataset for interactive CAPTCHA solving. It contains 50K puzzles across 20 CAPTCHA types and 5 interaction modes, with every solution verified through execution. CaptchaArena provides 50K screenshot-action trajectories, including 46K with step-by-step reasoning annotations. It also includes fine-grained pixel-mask annotations for irregular targets. Using CaptchaArena, we train CaptchaAgent, a single 9B policy for all 20 CAPTCHA types, with supervised fine-tuning followed by reinforcement learning. The environment verifier directly provides the RL reward. Supervised fine-tuning reaches 70.5 Pass@1, and reinforcement learning further improves it to 71.7, while also improving performance on two external benchmarks. These results demonstrate the value of large-scale, fine-grained computer-use supervision for training interactive CAPTCHA agents. We release CaptchaArena and CaptchaAgent at https://github.com/X0X0X00/CaptchaArena.",
+      "authors": [
+        "Zhenhao Zhang",
+        "Zhaoyu Fan",
+        "Haohan Ying",
+        "Jingwen Hu",
+        "Hancen Fan",
+        "Junhao Zhou",
+        "Zitian Chen",
+        "Linchao Zhu"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-09-25T20:04:24Z",
+      "updated": "2026-09-25T20:04:24Z",
+      "announced_date": "2026-09-25",
+      "first_seen": "2026-09-25",
+      "comment": "30 pages, 4 figures, 16 tables. Code and data: https://github.com/X0X0X00/CaptchaArena",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.31957v1",
+        "pdf": "https://arxiv.org/pdf/2609.31957v1",
+        "html": "https://arxiv.org/html/2609.31957"
+      },
+      "score": 13,
+      "tags": [
+        "gui",
+        "computer-use",
+        "planning"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2609.31906",
+      "title": "EmailBench: A Benchmark for Evaluating LLM Agents on Enterprise Email and Productivity Tasks",
+      "abstract": "Enterprise email agents must combine information retrieval, structured state changes, temporal reasoning, and multi-step coordination. Recent agent benchmarks include productivity tasks, but few center on typed email workflows in a self-contained environment. We introduce EmailBench, a benchmark of 206 email and productivity scenarios across 16 task categories. The benchmark couples a typed email API specification with provider-neutral naming, a deterministic synthetic Enron-inspired corpus, and a scenario suite whose topic selection was informed by aggregate task-intent telemetry from an interactive prototype. Its hybrid evaluation protocol combines 258 executable static assertions with 211 LLM rubrics. We evaluate eight LM configurations on a fixed single-user corpus. The best-performing configuration passes only 33.5% of scenarios despite 99.7% of its tool calls completing without an observed API failure, with pass rates varying substantially across task categories. This gap shows that valid tool execution is not equivalent to task completion. EmailBench provides a self-contained environment for end-to-end email-agent evaluation, with broader tool coverage, multi-persona testing, and repeated-run evaluation as future work areas.",
+      "authors": [
+        "Mukul Singh",
+        "Mansi Uniyal",
+        "Devin Devlin",
+        "Wen Xie",
+        "Big Thadawasin",
+        "Ritam Dutt",
+        "Vivian Lai",
+        "Hyeonsu B. Kang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-25T18:49:33Z",
+      "updated": "2026-09-25T18:49:33Z",
+      "announced_date": "2026-09-25",
+      "first_seen": "2026-09-25",
+      "comment": "32 pages, including references and appendices",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.31906v1",
+        "pdf": "https://arxiv.org/pdf/2609.31906v1",
+        "html": "https://arxiv.org/html/2609.31906"
+      },
+      "score": 25,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
     {
       "id": "2609.30055",
       "title": "Era by Eon: Benchmarking Enterprise Agents on Hidden Knowledge",

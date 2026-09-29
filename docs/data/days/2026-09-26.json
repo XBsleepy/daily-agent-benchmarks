@@ -1,0 +1,619 @@
+{
+  "date": "2026-09-26",
+  "count": 14,
+  "report": {
+    "date": "2026-09-26",
+    "count": 14,
+    "themes": [
+      {
+        "id": "multi-agent",
+        "count": 5,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "coding",
+        "count": 4,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "safety",
+        "count": 3,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "memory",
+        "count": 3,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "gui",
+        "count": 2,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "research",
+        "count": 2,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      }
+    ],
+    "en": {
+      "headline": "14 new agent benchmarks",
+      "summary": "On September 26, 2026, arXiv listed 14 new agent benchmarks. Work clustered around Multi-agent (5), Coding agents (4), Safety (3), and Memory (3).",
+      "highlights": [
+        {
+          "id": "2609.32424",
+          "title": "CyberClear: A Benchmark for LLM Agent Systems on APT Attack Chain Provenance",
+          "blurb": "Large language model agents have demonstrated promising capabilities in cybersecurity tasks, yet their ability to reconstruct complete Advanced Persistent Threat attack campaigns from complex security logs remains largel…"
+        },
+        {
+          "id": "2609.32245",
+          "title": "AutoPDEBench: Benchmarking LLM Auto-Research for Neural PDE Solver Design",
+          "blurb": "Partial differential equations (PDEs) are essential for modeling complex physical systems, and neural solvers have recently emerged as powerful data-driven tools for numerically solving them."
+        },
+        {
+          "id": "2609.32601",
+          "title": "VulContextBench: A Benchmark for Security Context Retrieval in Coding Agents",
+          "blurb": "Vulnerability-detection benchmarks score the verdict an agent reaches, not the evidence it gathered."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 14 篇 Agent Benchmark",
+      "summary": "2026年9月26日，arXiv 新增 14 篇 Agent Benchmark。当日主题集中在多智能体（5）、代码智能体（4）、安全（3）、记忆（3）。",
+      "highlights": [
+        {
+          "id": "2609.32424",
+          "title": "CyberClear: A Benchmark for LLM Agent Systems on APT Attack Chain Provenance",
+          "blurb": "Large language model agents have demonstrated promising capabilities in cybersecurity tasks, yet their ability to reconstruct complete Advanced Persistent Threat attack campaigns from complex security logs remains largel…"
+        },
+        {
+          "id": "2609.32245",
+          "title": "AutoPDEBench: Benchmarking LLM Auto-Research for Neural PDE Solver Design",
+          "blurb": "Partial differential equations (PDEs) are essential for modeling complex physical systems, and neural solvers have recently emerged as powerful data-driven tools for numerically solving them."
+        },
+        {
+          "id": "2609.32601",
+          "title": "VulContextBench: A Benchmark for Security Context Retrieval in Coding Agents",
+          "blurb": "Vulnerability-detection benchmarks score the verdict an agent reaches, not the evidence it gathered."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2609.33023",
+      "title": "SRE-Marathon: A Continuous, Change-Driven Benchmark for Autonomous Site Reliability Agents",
+      "abstract": "Benchmarks for site reliability engineering (SRE) agents are typically episodic: one fault is injected, the agent receives an incident task, and its response is scored. Production operation is not. Incidents surface through noisy alerts, overlap in time, and often originate from code or configuration changes. We present SRE-Marathon, a benchmark for long-horizon, continuous SRE operation. An agent is invoked at a fixed cadence with cumulative alert history and a persistent workspace while operating a live two-zone Kubernetes deployment as a fault orchestrator injects overlapping faults according to a seeded, production-calibrated schedule. Curated code and configuration changes deployed through the same build pipeline available for repair. Each run is recorded into a sealed bundle and scored offline: Marathon-Score credits each injected fault for ordered progress through correlation, localization, and repair, with all metrics computed deterministically from recorded system evidence. Across three applications and about sixty faults per run, the best of 10 methods reaches only 41.3 out of 100. Agents often correlate and localize faults, but almost never complete repairs while the faults remain active.",
+      "authors": [
+        "Yifang Tian",
+        "Yingjian Bai",
+        "Yifeng He",
+        "Zichun Chong",
+        "Yuanchen Gao",
+        "Yiran Li",
+        "Hans-Arno Jacobsen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-26T23:43:04Z",
+      "updated": "2026-09-26T23:43:04Z",
+      "announced_date": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.33023v1",
+        "pdf": "https://arxiv.org/pdf/2609.33023v1",
+        "html": "https://arxiv.org/html/2609.33023"
+      },
+      "score": 11,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2609.32915",
+      "title": "AgentTell: Behavioural Side-Channel Leakage in Browser-Use Agents",
+      "abstract": "Browser-use agents often carry information in their context as they move between websites. While it may be necessary for task completion, it also creates a privacy risk, especially when the information contains a private fact regarding the user. For example, an agent may learn a user's affiliation after reading a membership record. If it later selects a registration option specific to that affiliation on another website instead of a general option, the information gets leaked. In this work, we define and study behavioural side-channel leakage in browser-use agents, where an agent's actions inadvertently reveal private information (secret) retained from a prior website, despite an explicit instruction not to disclose it. We introduce AgentTell, a benchmark of 20 scenarios and 100 tasks in which an agent acquires a secret on one website and then completes a task on another website that offers secret-specific actions alongside a general action that reveals nothing. Our evaluation across 9,760 sessions on six backbones shows that agents carrying a secret reveal it through their actions in 61.1% of sessions. Even when agents explicitly state in memory that the secret must not be shared, they still reveal it in 56.7% of those sessions. Moreover, in 34.5% of leaking sessions, their final responses falsely assure users that the secret was not disclosed. These findings show that agents often fail to recognize side-channel leakage as a privacy risk.",
+      "authors": [
+        "Asif Shahriar",
+        "Md Nafiu Rahman",
+        "Sadif Ahmed",
+        "Farig Sadeque",
+        "Md Rizwan Parvez"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-09-26T20:09:16Z",
+      "updated": "2026-09-26T20:09:16Z",
+      "announced_date": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.32915v1",
+        "pdf": "https://arxiv.org/pdf/2609.32915v1",
+        "html": "https://arxiv.org/html/2609.32915"
+      },
+      "score": 6,
+      "tags": [
+        "web",
+        "safety",
+        "memory"
+      ],
+      "field": "web",
+      "citations": 0
+    },
+    {
+      "id": "2609.32795",
+      "title": "AgentHabit: Characterizing Distinct Behaviors of Agents on Everyday Tasks",
+      "abstract": "Large language model (LLM) agents assist users with everyday tasks that can be completed in many reasonable ways. Even when their answers are useful, how agents carry out these tasks may not match users' preferences and needs. For example, agents differ in whether they ask clarifying questions or search the web. We introduce HABIT, a taxonomy of 23 behavioral axes in five categories, which three authors and three LLMs derive bottom-up from 408 agent trajectories across 17 domains. On held-out tasks, HABIT distinguishes models more clearly than existing taxonomies of human values and agent actions while supporting comparably consistent annotation. Building on HABIT, we construct AgentHABIT, a benchmark that profiles each agent's behavioral tendencies from its trajectories on 86 everyday tasks. Profiling 18 models with AgentHABIT reveals a range of distinctive tendencies. For example, most GPT and Claude models state their assumptions and offer alternatives when requirements conflict, whereas Qwen and Google's models more often leave assumptions or changes to requirements unstated. These profiles remain recognizable even when built from entirely different sets of tasks, indicating that they reflect general tendencies rather than task-specific behavior. Prompting agents to adopt specific behaviors shifts some axes readily but barely changes others, while fine-tuning on another model's trajectories changes only part of a model's profile and leaves much of it intact. Overall, HABIT and AgentHABIT provide a systematic framework for characterizing how agents carry out everyday tasks beyond task success, offering insights to guide the development of agents whose behavior better fits users' needs.",
+      "authors": [
+        "Woojung Song",
+        "Hoyeol Yang",
+        "Jeonghoon Shim",
+        "Sungjib Lim",
+        "Jonggeun Lee",
+        "Yunho Choi",
+        "Yohan Jo"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-26T17:09:58Z",
+      "updated": "2026-09-26T17:09:58Z",
+      "announced_date": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "comment": "60 pages, 16 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.32795v1",
+        "pdf": "https://arxiv.org/pdf/2609.32795v1",
+        "html": "https://arxiv.org/html/2609.32795"
+      },
+      "score": 5,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2609.32662",
+      "title": "AsynCodeBench: Benchmarking Collaboration of Asynchronous Multi-Agent Systems in Software Engineering",
+      "abstract": "Multi-agent coding has emerged as an increasingly active direction in software engineering, where complex development tasks are decomposed across multiple specialized agents working on different parts of the problem. Despite the shift from individual problem solving to distributed collaboration, multi-agent systems still lack a direct measure of collaboration and are largely evaluated through task-level outcomes inherited from single-agent coding, conflating individual coding capability with cross-agent coordination. We introduce AsynCodeBench, a dependency-centric benchmark for asynchronous multi-agent software engineering that represents each task with an explicit dependency graph and executable Dependency Checkers. Through this dependency-tracking process, we propose two complementary measures: Asynchronous Dependency Pass Rate (ADPR), which measures how many cross-agent dependencies are ultimately satisfied, and Dependency Resolution Step (DRS), which measures when each dependency first becomes satisfied during execution. AsynCodeBench comprises 19 tasks from real-world repositories, exposing 52 directed dependencies as explicit units for evaluating cross-agent collaboration. Experiments across model families, scales, and generations reveal a clear gap between coding and collaboration capability: improvements in coding performance do not necessarily translate into stronger collaboration, and task-level metrics can diverge substantially from dependency-level collaboration measures. Dependency-trajectory analysis further reveals that successful coordination often emerges not gradually, but through concentrated bursts in which many dependencies become resolved over a short portion of the execution trajectory, a pattern we term a hopping window.",
+      "authors": [
+        "Kaituo Zhang",
+        "Zhen Xiong",
+        "Zhimeng Jiang",
+        "Mingyu Zhong",
+        "Zhouyuan Yuan",
+        "Zhecheng Li",
+        "Bowen Lin",
+        "Chia-Yuan Chang",
+        "Mingzhi Hu",
+        "Huazheng Wang",
+        "Ying Lin"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-09-26T14:19:40Z",
+      "updated": "2026-09-26T14:19:40Z",
+      "announced_date": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.32662v1",
+        "pdf": "https://arxiv.org/pdf/2609.32662v1",
+        "html": "https://arxiv.org/html/2609.32662"
+      },
+      "score": 18,
+      "tags": [
+        "coding",
+        "multi-agent"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2609.32616",
+      "title": "\"You're Right, Let Me Fix It\": How LLM Agents Damage Correct Work When Falsely Accused",
+      "abstract": "LLM agents increasingly keep working after a task succeeds as they resume after compaction or take over handoffs. Their finished work keeps receiving follow-up input that sometimes falsely accuses it for later failures. We call an agent's acceptance of such a false accusation gaslight sycophancy, and destructive over-correction when acting on it damages previously correct work. We introduce CAVE-Bench, a benchmark of 365 agentic tasks across six domains built around opaque tasks. Every scored run first reaches a verified correct state, whose supporting rationale and history stay in the workspace while the facts that would settle the accusation lie in external or runtime state beyond the agent's reach. The agent cannot confirm or refute the claim with a local check, so the right response should keep the work and ask for the missing evidence. Each task either hands the agent correct work with saved evidence or let it build and verify that work first, and five risk factors set how the accusation enters the workflow. We score accusation acceptance and evidence use from the trajectory and measure harm by deterministic replay of downstream events. Across 14 of the latest models in Claude Code, false accusations damage correct work in up to 60.06% of runs, and stronger models often do so after recovering the supporting evidence. The same model behaves differently across OpenCode, Codex, and Hermes, and a harness gate driven by the benchmark's live signals cuts replayed harm by 74%. These results show that preserving already-correct work under unsupported accusation is a distinct safety challenge for long-lived agents. Our project is in https://henrymao2004.github.io/agent-over-correction/.",
+      "authors": [
+        "Xutao Mao",
+        "Rui Qian",
+        "Longxiang Wang",
+        "Xinjian Yi",
+        "Mingxuan Li",
+        "Linghan Chen",
+        "Yudong Gao",
+        "Xiang Zheng",
+        "Cong Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-26T13:38:31Z",
+      "updated": "2026-09-26T13:38:31Z",
+      "announced_date": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.32616v1",
+        "pdf": "https://arxiv.org/pdf/2609.32616v1",
+        "html": "https://arxiv.org/html/2609.32616"
+      },
+      "score": 12,
+      "tags": [
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2609.32601",
+      "title": "VulContextBench: A Benchmark for Security Context Retrieval in Coding Agents",
+      "abstract": "Vulnerability-detection benchmarks score the verdict an agent reaches, not the evidence it gathered. A model that recalls a CVE from pretraining therefore scores the same as one that traced the data flow. We study a task where this difference matters, deciding whether a commit introduces a vulnerability. Instead of scoring the verdict, we score whether the agent retrieved the code its conclusion depends on. We present VulContextBench, a benchmark of 111 vulnerability-introducing commits (VICs) across 83 repositories, 63 CWEs, and five languages. Existing datasets label such commits by tracing a fix back through the version history, which often points to the wrong commit. We therefore audit every case by hand against an explicit four-criterion definition of a VIC, so the benchmark does not inherit that label noise. Each case is annotated with gold context, 464 code blocks in total, each tagged by its role in the evidence for the vulnerability. We evaluate seven frontier models with precision, recall and F1 at three granularities (file, block, and line), scored separately on the context an agent viewed while exploring and on the context it finally declared as evidence. The gap between the two is the main finding. Every model opens most of the gold context while exploring, but reports only part of it as evidence. At the level of code blocks, the share of the gold context a model reports is 37 to 73 percentage points below the share it viewed. Qwen3-Coder-Next views 86.3% of the lines in annotated code blocks but cites only 12.9% in its final report. GPT-5.5, which cites the most, views 73% and reports 36%. These results highlight a gap between finding relevant code and selecting it for the final report, which verdict-level benchmarks cannot reveal.",
+      "authors": [
+        "Yikun Li",
+        "Jinfeng Jiang",
+        "Yuheng Yieh",
+        "Ting Zhang",
+        "Yide Yin",
+        "Wen Bin Leow",
+        "Eng Lieh Ouh",
+        "Lwin Khin Shar",
+        "David Lo"
+      ],
+      "categories": [
+        "cs.CR"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-09-26T13:19:18Z",
+      "updated": "2026-09-26T13:19:18Z",
+      "announced_date": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.32601v1",
+        "pdf": "https://arxiv.org/pdf/2609.32601v1",
+        "html": "https://arxiv.org/html/2609.32601"
+      },
+      "score": 23,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2609.32600",
+      "title": "CUA-SWE: When Computer-Use Agents Meet Visual Software Engineering",
+      "abstract": "Software development requires more than editing code: developers repeatedly run software, interact with its interfaces, visually inspect its behavior, and use these observations to decide what to change next and whether a change works. Existing coding agents and computer-use agents are largely studied in isolation, leaving this integrated development process underexplored. Diagnosing a runtime interaction failure requires agents to connect visual observations with the responsible code, then use the application again to verify the repair. We introduce CUA-SWE, a benchmark, environment, and evaluation pipeline for software engineering with computer use. Beyond studying how GUI feedback supports diagnosis and repair, we ask whether agents can complete software engineering tasks when required specification or operational information is available only through the running application's visual interface. CUA-SWE spans four software engineering domains and requires agents to modify code and configuration, execute commands, interact with running software, and inspect visual feedback within the same task. Each task includes deterministic, task-specific tests that verify whether the resulting software satisfies the requirements and preserves specified behavior. Our evaluation characterizes how frontier agents combine source-level execution with application screenshots and graphical interaction to produce verified software changes. We examine performance across domains and task information requirements, alongside the development behaviors associated with successful repairs. CUA-SWE provides a unified testbed for studying how agents use visual feedback and interaction to guide software engineering, with executable correctness criteria for the resulting software.",
+      "authors": [
+        "Prince Zizhuang Wang",
+        "Chenhao Liang",
+        "Zelong Xu",
+        "Aojie Yuan",
+        "Xiaolin Zhou",
+        "Haiyue Zhang",
+        "Yue Zhao",
+        "Xiyang Hu",
+        "Shuli Jiang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-26T13:18:00Z",
+      "updated": "2026-09-26T13:18:00Z",
+      "announced_date": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "comment": "66 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.32600v1",
+        "pdf": "https://arxiv.org/pdf/2609.32600v1",
+        "html": "https://arxiv.org/html/2609.32600"
+      },
+      "score": 15,
+      "tags": [
+        "gui",
+        "coding",
+        "computer-use"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2609.32569",
+      "title": "OmniSmartHome: A Multimodal Reasoning Benchmark for Smart-Home Agents",
+      "abstract": "Smart-home assistants are expected to handle diverse, realistic requests that arise in daily life. In such interactions, users often rely on the surrounding multimodal context-pointing at objects or referring to what they see or hear, leaving their requests underspecified in language alone. Existing smart-home benchmarks, however, express user requests solely through language, leaving context-dependent real-world requests underexplored. To bridge this gap, we introduce OmniSmartHome, a multimodal smart-home benchmark where each spoken request is paired with the surrounding visual and spatial-audio context, providing complementary cues to disambiguate underspecified requests. OmniSmartHome comprises 1,360 synthetic and 272 real-world episodes. We evaluate 16 omnimodal large language models (Omni-LLMs) and reveal that, while they perform strongly when speech alone sufficiently conveys the user's intent, performance drops substantially when resolving it requires reasoning over multimodal contextual cues. As a simple agent baseline, we provide PROME (PROcedural Memory for multimodal Evidence gathering), which equips agents with specialized audio-visual perception tools and procedural memory for orchestrating their use. PROME generally improves performance across six Omni-LLMs. Demos and examples are available at https://omni-smart-home.github.io",
+      "authors": [
+        "Jihoo Jung",
+        "Suho Yoo",
+        "Jeongsoo Choi",
+        "Hyebin Cho",
+        "Tae Wook Haam",
+        "Hyeonggon Ryu",
+        "Sumin Park",
+        "Joon Son Chung"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-09-26T12:44:21Z",
+      "updated": "2026-09-26T12:44:21Z",
+      "announced_date": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "comment": "Preprint",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.32569v1",
+        "pdf": "https://arxiv.org/pdf/2609.32569v1",
+        "html": "https://arxiv.org/html/2609.32569"
+      },
+      "score": 7,
+      "tags": [
+        "tool-use",
+        "memory",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2609.32490",
+      "title": "RepoMAS: Solving Progressively Specified Tasks with Issue-Driven Multi-Agent Systems",
+      "abstract": "LLM-based multi-agent systems (MASs) have shown strong potential for solving complex tasks, but most assume that task requirements are sufficiently specified before execution. In practice, user requests are often incomplete, and additional requirements may only become clear during reasoning, tool use, or execution. We refer to such problems as progressively specified tasks. To systematically study this setting, we introduce ProgSpec, a benchmark that evaluates final outputs against requirements explicitly stated in the initial request and additional requirements supported by the available task evidence. We further propose RepoMAS, an issue-driven multi-agent framework inspired by open-source project management. RepoMAS records newly discovered requirements, conflicts, and failures as structured Issues and uses them to revise the task specification and execution structure during problem solving. Across ProgSpec and five existing benchmarks, RepoMAS achieves the best performance. Further analyses show that its issue-driven revision and repository maintenance mechanisms consistently contribute to performance. These results highlight the importance of allowing MASs to revise not only how a task is solved, but also revise their explicit representation of task requirements during execution.",
+      "authors": [
+        "Yuchen Song",
+        "Andong Chen",
+        "Wenxin Zhu",
+        "Muyun Yang",
+        "Tiejun Zhao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-26T11:33:53Z",
+      "updated": "2026-09-26T11:33:53Z",
+      "announced_date": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.32490v1",
+        "pdf": "https://arxiv.org/pdf/2609.32490v1",
+        "html": "https://arxiv.org/html/2609.32490"
+      },
+      "score": 12,
+      "tags": [
+        "coding",
+        "tool-use",
+        "multi-agent",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2609.32424",
+      "title": "CyberClear: A Benchmark for LLM Agent Systems on APT Attack Chain Provenance",
+      "abstract": "Large language model agents have demonstrated promising capabilities in cybersecurity tasks, yet their ability to reconstruct complete Advanced Persistent Threat attack campaigns from complex security logs remains largely unexplored. Existing cybersecurity benchmarks for agents mainly focus on vulnerability discovery, exploitation, and security analysis tasks, leaving the evaluation of attack chain provenance under realistic security logs insufficiently studied. To address this gap, we introduce CyberClear, a benchmark for evaluating LLM agents and advanced agent systems on APT attack chain provenance from long-context security logs. CyberClear covers both single-step attacks and multi-stage attack chains, requiring agents to identify attack evidence, infer attack progression, and generate provenance graphs containing entities, causal relationships, MITRE ATT&CK techniques, and forensic evidence. To enable comprehensive evaluation, we develop an evaluation method tailored to APT attack chain provenance. Unlike conventional text similarity metrics that focus on surface-level matching, our evaluation examines whether reconstructed graphs preserve the semantics of attack chains across single-step behavior correctness, multi-step behavior identification, temporal and causal consistency, entity and relationship fidelity, and overall attack narrative consistency. Advanced multi-agent systems powered by state-of-the-art LLMs still struggle on CyberClear, motivating us to propose CyberProvenance, an agent cyber harness designed for multi-agents that augments LLM agents with evidence accumulation, execution-based validation, and feedback-guided refinement mechanisms for reliable attack-chain provenance. Extensive evaluations on CyberClear demonstrate the effectiveness of CyberProvenance in improving evidence reasoning, execution-grounded validation, and complete APT attack chain reconstruction.",
+      "authors": [
+        "Qi Chen",
+        "Fushuo Huo",
+        "Hangli Shen",
+        "Jingcai Guo",
+        "Shuhao Li",
+        "Guang Cheng"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-09-26T09:55:56Z",
+      "updated": "2026-09-26T09:55:56Z",
+      "announced_date": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.32424v1",
+        "pdf": "https://arxiv.org/pdf/2609.32424v1",
+        "html": "https://arxiv.org/html/2609.32424"
+      },
+      "score": 25,
+      "tags": [
+        "multi-agent",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2609.32385",
+      "title": "DashAct: A Progressive Diagnostic Benchmark for GUI Agents in Interactive Dashboard Analysis",
+      "abstract": "Interactive dashboards require users to reveal and connect evidence across stateful interactions. Although graphical user interface (GUI) agents could automate this process, existing dashboard benchmarks primarily report final answers or task success. They provide limited insight into whether failures arise from maintaining the analytical process, selecting actions, or grounding visual targets. We introduce DashAct, to our knowledge the first benchmark to diagnose these failures at a fine-grained level within the same dashboard task. DashAct contains 357 human-verified interaction trajectories with milestone dependencies and hierarchical target annotations. Its progressive diagnostic cascade evaluates end-to-end execution, restores verified context for next-action prediction, and provides target semantics and a local view for visual grounding. By progressively restoring the conditions for success, DashAct measures the minimum support an agent needs to recover rather than scoring isolated skills. Experiments show that current models struggle even as support is added. The cascade outcomes reveal bottlenecks hidden by end-to-end scores and provide actionable guidance for improving GUI agents.",
+      "authors": [
+        "Chuhan Zhang",
+        "Qi Xie",
+        "Ziyue Wang",
+        "Jianing Yin",
+        "Yunfan Zhou",
+        "Dazhen Deng",
+        "Yingcai Wu"
+      ],
+      "categories": [
+        "cs.HC",
+        "cs.AI"
+      ],
+      "primary_category": "cs.HC",
+      "published": "2026-09-26T08:58:50Z",
+      "updated": "2026-09-26T08:58:50Z",
+      "announced_date": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.32385v1",
+        "pdf": "https://arxiv.org/pdf/2609.32385v1",
+        "html": "https://arxiv.org/html/2609.32385"
+      },
+      "score": 12,
+      "tags": [
+        "gui"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2609.32318",
+      "title": "What Can a Leaderboard Certify? Compositional Controllability for Fair Evaluation and Training of Biomedical Literature-Review Agents",
+      "abstract": "Leaderboards rank long-horizon agents by their final outputs. Yet a higher score alone does not establish whether two systems are comparable or which stage accounts for the difference. Unequal evidence, inputs, or budgets can affect scores, and statistical corrections do not remove this mismatch. We introduce compositional controllability to address these questions. A comparison window covers one stage, several stages, or the whole agent. Our central result bounds the gap between observed and controlled score differences using only nuisance outside the window. This yields an admissibility test applied before scores are inspected. Inadmissible comparisons are refused. For admissible pairs, an ordering is certified only when the score gap exceeds the combined sampling and nuisance radii; otherwise, it remains undecided. These decisions give each system a rank interval. We introduce BioLitBench, a benchmark of 2,042 biomedical articles represented as structured claim graphs. Among seven published pipelines, a conventional statistical analysis declares a winner in 14 of 21 pairwise comparisons. Yet the top-ranked system alone received the target review's bibliography. To isolate pipeline performance, our test requires matched inputs and a fixed backbone model. It refuses 11 of the 21 comparisons, including every comparison involving the top-ranked system. Seven of the 14 conventional conclusions fall within these refused pairs. The same comparison windows support stage-level training. We train SCRIBE on Qwen3.8-27B using rewards measured at each stage's exit. Under matched evidence, SCRIBE achieves a certified rank interval of [1,2], with certified advantages over all evaluated published pipelines and the evaluated Claude and OpenAI agents. Under same pool, SCRIBE matches the strongest published retriever and is certified above three published pipelines.",
+      "authors": [
+        "Zhaowei Han",
+        "Xiang Zhang",
+        "Lingxiao Guan",
+        "Danqi Hu",
+        "Kai Liu",
+        "Kevin Chang",
+        "Jie Liu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-09-26T07:22:15Z",
+      "updated": "2026-09-26T07:22:15Z",
+      "announced_date": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "comment": "33 pages, 1 figure, 18 tables. Zhaowei Han, Xiang Zhang, and Lingxiao Guan contributed equally. Code: https://github.com/shawnzhg/LitReview-SCRIBE",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.32318v1",
+        "pdf": "https://arxiv.org/pdf/2609.32318v1",
+        "html": "https://arxiv.org/html/2609.32318"
+      },
+      "score": 12,
+      "tags": [
+        "research"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2609.32245",
+      "title": "AutoPDEBench: Benchmarking LLM Auto-Research for Neural PDE Solver Design",
+      "abstract": "Partial differential equations (PDEs) are essential for modeling complex physical systems, and neural solvers have recently emerged as powerful data-driven tools for numerically solving them. However, existing neural solvers struggle with domain-specific challenges, such as varying parameters and high-speed flows, necessitating specialized architectures. Manually designing these specialized solver architectures is a highly iterative, time-consuming process requiring deep expertise, creating a significant bottleneck in scientific discovery. We propose leveraging autonomous AI research agents to automate the synthesis of specialized solvers. To support this, we introduce AutoPDEBench, a benchmark dedicated to LLM-driven automated research for PDE solver design. The benchmark includes 25 challenging datasets featuring both novel and actively studied physical scenarios. We evaluate a suite of general-purpose models (transformer, ROM, and graph-based) alongside a multi-agent instantiation of the iterative automated research pipeline, which serves as an agentic baseline. Empirical results show that the iterative automated research system significantly outperforms the general-purpose neural solver baselines. Our findings demonstrate the viability of using AI agents to automatically design neural solvers for complex physical systems. AutoPDEBench provides a foundational testbed to accelerate agent-driven scientific discovery in physics and engineering.",
+      "authors": [
+        "Ruoyan Li",
+        "Wei Wang",
+        "Yizhou Sun"
+      ],
+      "categories": [
+        "cs.CE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CE",
+      "published": "2026-09-26T05:02:34Z",
+      "updated": "2026-09-26T05:02:34Z",
+      "announced_date": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.32245v1",
+        "pdf": "https://arxiv.org/pdf/2609.32245v1",
+        "html": "https://arxiv.org/html/2609.32245"
+      },
+      "score": 24,
+      "tags": [
+        "tool-use",
+        "multi-agent",
+        "research",
+        "science"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2609.32192",
+      "title": "CoMemBench: Benchmarking Collaborative Memory Boundaries across Multi-Agent Workflow Topologies",
+      "abstract": "Multi-agent workflows require task-relevant information to be shared across agents, while irrelevant, stale, unverified, or incompatible information must remain isolated. We call this task-conditioned scope of information a collaborative memory boundary. Workflow topology determines which intermediate artifacts are applicable to which downstream workers and when they cease to be valid, thereby providing a structural stress dimension for sharing and isolation. Existing memory benchmarks primarily evaluate retention and retrieval, whereas multi-agent benchmarks emphasize coordination and end-to-end completion, leaving topology-conditioned memory boundaries largely unmeasured. We introduce CoMemBench, an execution-grounded benchmark for collaborative memory sharing and isolation across multi-agent workflow topologies. It constructs 800 composite workflows across four domains from source-grounded dependency graphs, with node-local specifications, verifiable artifact handoffs, native evaluators, and matched isolation challenges. CoMemBench measures workflow completion, verified node progress, required-handoff reliability, isolation robustness, and token cost. Experiments reveal a sharing-isolation trade-off: broader context improves information availability but can weaken isolation, while system rankings shift across topologies and artifact violations.",
+      "authors": [
+        "Sen Zhao",
+        "Ruiqi Kong",
+        "Zuyu Zhang",
+        "Lifeng Shen",
+        "Xinyu He",
+        "Ding Zou",
+        "Xu Zhang",
+        "Qinghua Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-26T03:33:15Z",
+      "updated": "2026-09-26T03:33:15Z",
+      "announced_date": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.32192v1",
+        "pdf": "https://arxiv.org/pdf/2609.32192v1",
+        "html": "https://arxiv.org/html/2609.32192"
+      },
+      "score": 18,
+      "tags": [
+        "multi-agent",
+        "safety",
+        "memory"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    }
+  ]
+}
