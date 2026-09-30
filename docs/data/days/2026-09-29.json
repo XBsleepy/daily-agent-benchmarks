@@ -1,0 +1,493 @@
+{
+  "date": "2026-09-29",
+  "count": 11,
+  "report": {
+    "date": "2026-09-29",
+    "count": 11,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 4,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "coding",
+        "count": 4,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "gui",
+        "count": 2,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "multi-agent",
+        "count": 2,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      }
+    ],
+    "en": {
+      "headline": "11 new agent benchmarks",
+      "summary": "On September 29, 2026, arXiv listed 11 new agent benchmarks. Work clustered around Safety (4), Coding agents (4), Tool use (3), and Planning / reasoning (2).",
+      "highlights": [
+        {
+          "id": "2609.36488",
+          "title": "AdaptArena: Evaluating Test-Time Personalization of Web Agents",
+          "blurb": "Large language model (LLM) agents have demonstrated strong performance on complex web navigation tasks, yet they remain brittle in real-world settings where user intentions are underspecified and preferences are heteroge…"
+        },
+        {
+          "id": "2609.37658",
+          "title": "EnterpriseBench: Benchmarking LLM Agents on Enterprise-Level Strategic Reasoning and Decision-Making",
+          "blurb": "LLM agents are increasingly expected to support enterprise workflows, where tasks often involve missing information, uncertainty, feedback, and long-term trade-offs."
+        },
+        {
+          "id": "2609.37053",
+          "title": "MatToolBench: Benchmarking Multimodal Agents in Real-World Materials Science Workflows",
+          "blurb": "Multimodal GUI agents have achieved impressive results on general software benchmarks, yet their ability to operate professional scientific software remains largely unexplored."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 11 篇 Agent Benchmark",
+      "summary": "2026年9月29日，arXiv 新增 11 篇 Agent Benchmark。当日主题集中在安全（4）、代码智能体（4）、工具使用（3）、规划 / 推理（2）。",
+      "highlights": [
+        {
+          "id": "2609.36488",
+          "title": "AdaptArena: Evaluating Test-Time Personalization of Web Agents",
+          "blurb": "Large language model (LLM) agents have demonstrated strong performance on complex web navigation tasks, yet they remain brittle in real-world settings where user intentions are underspecified and preferences are heteroge…"
+        },
+        {
+          "id": "2609.37658",
+          "title": "EnterpriseBench: Benchmarking LLM Agents on Enterprise-Level Strategic Reasoning and Decision-Making",
+          "blurb": "LLM agents are increasingly expected to support enterprise workflows, where tasks often involve missing information, uncertainty, feedback, and long-term trade-offs."
+        },
+        {
+          "id": "2609.37053",
+          "title": "MatToolBench: Benchmarking Multimodal Agents in Real-World Materials Science Workflows",
+          "blurb": "Multimodal GUI agents have achieved impressive results on general software benchmarks, yet their ability to operate professional scientific software remains largely unexplored."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2609.38043",
+      "title": "UserProxyBench: Evaluating LLM User Simulators for Agent Benchmarks and Training",
+      "abstract": "Interactive agent benchmarks and multi-turn reinforcement learning increasingly place a second language model in the role of the user. This simulated user controls what information the agent receives and when, yet current benchmarks score only the agent and do not directly measure whether the user correctly executed its assigned role. We introduce UserProxyBench, an evaluation layer over the tau-bench family, and the User Fidelity Score (UFS), which measures adherence to the benchmark's private user instructions using task-grounded rubric criteria scored independently of agent success. Holding the agent fixed at GPT-5.5 and varying only the user proxy across 375 enterprise tasks changes mean task reward by 15.2 points, while 24.4% of successful episodes contain a user-specification violation. The dominant failure is premature disclosure: users provide information before it is requested. This behavior has little effect on task reward, yet among successful episodes it causes the agent to make 1.06 fewer tool calls on average, changing the interaction being evaluated while preserving the reward. Finally, across seven proxies we identify an empirical cost-fidelity frontier, enabling practitioners to select the least expensive simulator that satisfies a required fidelity level.",
+      "authors": [
+        "Ashish Jain",
+        "Armaan Sandhu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-29T17:17:24Z",
+      "updated": "2026-09-29T17:17:24Z",
+      "announced_date": "2026-09-29",
+      "first_seen": "2026-09-29",
+      "comment": "8 pages, 4 figures. Accepted to the Agentic AI Benchmarks and Applications for Enterprise Tasks Workshop (AABA4ET) at NeurIPS 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.38043v1",
+        "pdf": "https://arxiv.org/pdf/2609.38043v1",
+        "html": "https://arxiv.org/html/2609.38043"
+      },
+      "score": 14,
+      "tags": [
+        "tool-use",
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 0
+    },
+    {
+      "id": "2609.37658",
+      "title": "EnterpriseBench: Benchmarking LLM Agents on Enterprise-Level Strategic Reasoning and Decision-Making",
+      "abstract": "LLM agents are increasingly expected to support enterprise workflows, where tasks often involve missing information, uncertainty, feedback, and long-term trade-offs. However, existing enterprise and financial benchmarks mainly test static capabilities such as information extraction, numerical calculation, domain knowledge, and financial QA, leaving interactive and long-horizon decision-making underexplored. To bridge this gap, we introduce EnterpriseBench, a benchmark that evaluates LLM agents across this spectrum, from static question answering to dynamic decision-making. Specifically, EnterpriseBench reorganizes existing enterprise and financial QA datasets into a unified foundational suite annotated by capability and difficulty, and introduces three professional interactive settings: Consulting, based on management-consulting-style business cases for client problem diagnosis through multi-turn information seeking; the Beer Game, adapted from a classic supply-chain management simulation for inventory control under delayed feedback; and Enterprise Digital Twin, a project-based business simulator for workforce, risk, and project planning. Experiments with nine agent methods under four backbone models show that current agents have not yet achieved stable, comprehensive, and cross-task reliability in enterprise scenarios. These results show that EnterpriseBench provides a practical benchmark for evaluating LLM agents in realistic enterprise strategic reasoning and decision-making.",
+      "authors": [
+        "Min Yang",
+        "Yichen Pan",
+        "Jinghua Piao",
+        "Dandan Song",
+        "Yongshun Gong",
+        "Yong Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-29T14:20:18Z",
+      "updated": "2026-09-29T14:20:18Z",
+      "announced_date": "2026-09-29",
+      "first_seen": "2026-09-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.37658v1",
+        "pdf": "https://arxiv.org/pdf/2609.37658v1",
+        "html": "https://arxiv.org/html/2609.37658"
+      },
+      "score": 19,
+      "tags": [
+        "safety",
+        "planning"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2609.37315",
+      "title": "Do Agent Benchmarks Do What They Say? An Executable-Contract Audit of Tool-Using Agent Environments",
+      "abstract": "Tool-using agents are entering settings where a wrong action carries real cost, and the benchmarks certifying them grade what each simulated tool call reports having done, assuming the tool did what its interface advertises. The audit taxonomies we survey publish no category for that assumption, and a defect beneath a score is present on every rerun. We treat a tool's advertised surfaces as an executable contract, check the implementation against it, and trace each score's provenance through the task files and evaluator code to the verdicts that derive from state a defective tool should have written. Across 34 audited mutating tools in four benchmarks we confirm seven tool defects and one evaluator property at pinned commits. On injected defects the checker raised no false positive in 25 flags, flagged 2 of 5 negative controls, and missed most: in 29 of 33 scored misses a clause covered the defect but no probe revealed it. The checker's own static half, run alone, flags 14 of 17 confirmed sites, so on these findings the dynamic half confirms and traces rather than discovers. Twelve further AgentDojo tools, with six held-out tools and the seven audited first, complete its 25-tool mutating surface, on which at least 5 tools diverge from their advertised surface as our contracts read it, a rate for AgentDojo alone. No gold trajectory reaches either tau2-bench defect; on 1,120 paths built to isolate the telecom defect, a number fixed by construction, the evaluator rewards a refuel of a suspended line and fails the repaired tool. The clearest case is a clinical benchmark whose tool tells the agent each write executed under a documented no-write design its interface does not disclose; its grader takes that message as evidence, so its action success rate records whether a request carried the expected payload, not whether any record changed.",
+      "authors": [
+        "Rohith Reddy Bellibatlu",
+        "Zichong Wang",
+        "Wenbin Zhang"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-09-29T11:50:55Z",
+      "updated": "2026-09-29T11:50:55Z",
+      "announced_date": "2026-09-29",
+      "first_seen": "2026-09-29",
+      "comment": "10 pages. Submitted to IEEE BigData 2026, Intelligent Data Mining special session. Code, contracts and data: https://github.com/rohithreddybc/tool-contract-conformance",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.37315v1",
+        "pdf": "https://arxiv.org/pdf/2609.37315v1",
+        "html": "https://arxiv.org/html/2609.37315"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2609.37143",
+      "title": "LoLBench: Evaluating Coding Agents with Long-Horizon Proposals on Large Software Systems",
+      "abstract": "Modern coding agents can deliver increasingly large repository-level changes, and recent benchmarks reflect this by emphasizing long-horizon tasks with large reference implementations. Many benchmarks evaluate coding agents' implementation capability to produce correct code edits from detailed specifications. However, practical modular development tasks also require the perception capability of grounding user intent and high-level design to derive a specification. We introduce LoLBench to evaluate both capabilities through the entire proposal-to-implementation process on large software systems. It is a multilingual benchmark of 100 tasks across 29 software systems in five domains. Each task provides a human-written enhancement proposal with user intent and high-level design. On average, proposals contain about 5,000 words, software systems contain 2.4 million source lines of code (LoC), and implementation pull requests (PRs) change approximately 5,500 LoC. Across 28 agents we evaluated, the best agent resolves only 14% of tasks and achieves a 52.7% Fail-to-Pass (F2P) pass rate. Failure analysis identifies incomplete code localization as a major bottleneck, while providing reference-derived file trees alongside API specifications improves resolved rates by 16--22 percentage points (2.4--17$\\times$), reaching at most 34%. These results show that both perception and implementation remain central challenges for coding agents in practical modular development on large software systems. LoLBench is available at https://huggingface.co/datasets/lolbench26/LoLBench.",
+      "authors": [
+        "Yun Peng",
+        "Zihan Wu",
+        "Zeyang Zhuang",
+        "Xin Zhou",
+        "Rui Shu",
+        "Xu Han",
+        "Chun Yong Chong",
+        "Yuan Wang",
+        "Jiakun Liu"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-09-29T09:41:33Z",
+      "updated": "2026-09-29T09:41:33Z",
+      "announced_date": "2026-09-29",
+      "first_seen": "2026-09-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.37143v1",
+        "pdf": "https://arxiv.org/pdf/2609.37143v1",
+        "html": "https://arxiv.org/html/2609.37143"
+      },
+      "score": 13,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2609.37053",
+      "title": "MatToolBench: Benchmarking Multimodal Agents in Real-World Materials Science Workflows",
+      "abstract": "Multimodal GUI agents have achieved impressive results on general software benchmarks, yet their ability to operate professional scientific software remains largely unexplored. In materials science, sparse domain-specific web data, specialized interfaces, and tacit workflow conventions create blind spots that general-purpose pretraining cannot readily bridge. We present MatToolBench, the first real-environment benchmark for evaluating multimodal GUI agents on professional materials science software, comprising 204 tasks across 10 tools in three modalities: GUI operation, OriginPro scripting, and code-based database queries, all executed inside a Windows 11 VM. Each task is decomposed into fine-grained sub-criteria by domain experts, enabling interpretable partial-credit scoring; the GUI component of our multi-level evaluation pipeline achieves an average F1 of 0.98. For OriginPro figure-generation tasks, we further conduct a human-LLM agreement study to validate the use of a multimodal judge for secondary aesthetic assessment. Our experiments show that strong performance on general benchmarks does not transfer to professional scientific workflows, and that this gap is not a visual-grounding problem alone: failures arise from domain-specific operational knowledge, sparse pretraining coverage of scientific software, weak cross-tool artifact handoff, and critical states exposed only visually. Even the best model reaches only 25% success rate on GUI tasks and 45% on code tasks. MatToolBench therefore serves as a challenging diagnostic benchmark and real-environment testbed for data-scarce, knowledge-intensive scientific workflows.",
+      "authors": [
+        "Mei Wu",
+        "Rui Xie",
+        "Runyu Zhang",
+        "Yuqiang Li",
+        "Tianfan Fu",
+        "Bo Chen",
+        "Kai Yu",
+        "Xin Chen",
+        "Lu Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-29T08:58:51Z",
+      "updated": "2026-09-29T08:58:51Z",
+      "announced_date": "2026-09-29",
+      "first_seen": "2026-09-29",
+      "comment": "25 pages, 15 figures. Mei Wu and Rui Xie contributed equally. Bo Chen and Lu Chen are corresponding authors. Project page: https://mattoolbench.github.io/ ; code: https://github.com/meiwu5/MatToolBench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.37053v1",
+        "pdf": "https://arxiv.org/pdf/2609.37053v1",
+        "html": "https://arxiv.org/html/2609.37053"
+      },
+      "score": 18,
+      "tags": [
+        "gui",
+        "tool-use",
+        "multimodal",
+        "science"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2609.36923",
+      "title": "PrecogUI: Proactive GUI Agents via Pre-cognitive Simulation and Experience Retrieval",
+      "abstract": "Existing reactive Graphical User Interface (GUI) agents often fail in long-horizon, dynamic scenarios, where unexpected disturbances trigger attention-diverting and cascading failures. To address this, we propose PrecogUI, a pre-cognitive architecture that shifts the paradigm from reactive execution to proactive decision-making. Specifically, we design a Proactive Experience Pool (PEP), which caches recurring anomaly and success patterns as \"state-action-result\" tuples in a dual-memory repository. Furthermore, we introduce a Proactive Simulation Executor (PSE) that learns to forecast the next symbolic UI layout given a candidate action, enabling early anomaly avoidance and ranking candidate actions by predicted reliability. Finally, a Pre-cognitive Execution Controller (PEC) fuses these priors and predictions, prioritizes handling of foreseen anomalies, and ensures execution robustness through a closed-loop error correction mechanism. For robust evaluation, we develop AutoTraj, an automatic data-generation engine, to construct InterfereBench, a benchmark for long-horizon tasks with strong disturbances. Experiments demonstrate that PrecogUI surpasses state-of-the-art methods on InterfereBench while maintaining competitive performance on public benchmarks. The code will be publicly available.",
+      "authors": [
+        "Bin Kang",
+        "Jiarui Ouyang",
+        "Li Jiang",
+        "Bin Chen",
+        "Zhuotao Tian"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-29T07:41:34Z",
+      "updated": "2026-09-29T07:41:34Z",
+      "announced_date": "2026-09-29",
+      "first_seen": "2026-09-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.36923v1",
+        "pdf": "https://arxiv.org/pdf/2609.36923v1",
+        "html": "https://arxiv.org/html/2609.36923"
+      },
+      "score": 11,
+      "tags": [
+        "gui",
+        "coding",
+        "safety",
+        "memory"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2609.36777",
+      "title": "Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes",
+      "abstract": "Frontier coding agents can now write and execute code that authors 3D environments, but whether they reliably understand 3D structure and precisely control scene state remains unclear. The generated 3D scene is a persistent, executable artifact: a convincing render can hide incorrect spatial relations, intersecting objects, or unintended modifications. We introduce Code4Scene, a benchmark of 190 Unreal Engine cases built from human-assembled scenes that evaluates coding agents on two complementary settings under a shared execution interface. Construction tests scene-level spatial reasoning from open-ended language specifications, where many realizations are valid; editing tests precise control of scene state, where the agent must recover the target scene from reference images while preserving everything else. Rather than scoring code or rendered views, Code4Scene evaluates the generated engine-native scene for task fulfillment, artifact integrity, and static physical validity, with edits additionally compared against withheld ground truth. Across 14 coding-agent configurations on the 95-case public set, construction and editing performance are strongly correlated but not interchangeable (Spearman $ρ= 0.78$): Claude Fable 5.1 leads construction, Gemini 3.8 Flash leads editing, and GPT-6 Astra narrowly leads overall. Spatial Composition is the weakest construction category for every agent, while editing remains imprecise: the best Repair F1 is only 0.527, and 35.8% of edits that fully recover the target still introduce unintended changes elsewhere in the scene. These results expose a gap between plausible 3D generation and reliable spatial reasoning and state control.",
+      "authors": [
+        "Xiaokang Ye",
+        "Siddhant Hitesh Mantri",
+        "Zimeng Chen",
+        "Edward Zhang",
+        "Zhaoxu Zheng",
+        "Yuanheng Li",
+        "Yizhao Chen",
+        "Tianyang Huang",
+        "Lianhui Qin"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-29T05:49:37Z",
+      "updated": "2026-09-29T05:49:37Z",
+      "announced_date": "2026-09-29",
+      "first_seen": "2026-09-29",
+      "comment": "44 pages, including appendices",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.36777v1",
+        "pdf": "https://arxiv.org/pdf/2609.36777v1",
+        "html": "https://arxiv.org/html/2609.36777"
+      },
+      "score": 14,
+      "tags": [
+        "coding",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2609.36739",
+      "title": "Frontier Autolab: Organizational Memory, Adversarial Dissent and Temporal Leakage in Multi-Agent LLM Firms Across Fifty Years of Technological Change",
+      "abstract": "Multi-agent LLM systems are increasingly structured like organizations, with roles, critics and shared memory, yet they are evaluated on tasks that last minutes. We ask how such an organization behaves when the ground it stands on keeps moving. Frontier Autolab is a long-horizon testbed in which one simulated firm, voiced by sixteen role personas and a dedicated Red Team, must re-found itself in nine technology eras from 1990 to 2040. Each era is temporally gated: the firm decides from a dated briefing, a historian-judge then reveals what happened and scores the decision on a five-dimension rubric, and lessons enter a persistent Playbook. Six eras are scored against history, one against the live market and two are open forecasts. Across four trajectories (36 era decisions, 180 subscores) we find a consistent foresight-commitment gap: in all 24 historically scored eras the judge rated the firm's recognition of the coming shift above its choice of where to build (mean gap 1.9 points on a 10-point scale), because boards chose the layer their existing assets could reach. Organizational design shaped long-run character. A Red Team armed with numeric kill gates produced fifty years of gated pilots and no product, and the rubric rated this firm highest; firms whose memory stored market-structure lessons pivoted every era, while a firm whose memory stored only validation procedure kept one method throughout. We also show why such results are hard to trust. Scores rise across eras in every run while the judge's own hindsight subscore falls (within-run r = -0.58), so apparent learning is confounded with recall of history, and we trace further distortions to self-judging, briefing selection and score aggregation. We release all records and an API harness, and specify fictional and post-cutoff eras that would turn the testbed into a benchmark.",
+      "authors": [
+        "Bravish Ghosh"
+      ],
+      "categories": [
+        "cs.CE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CE",
+      "published": "2026-09-29T05:12:12Z",
+      "updated": "2026-09-29T05:12:12Z",
+      "announced_date": "2026-09-29",
+      "first_seen": "2026-09-29",
+      "comment": "17 pages, 6 figures, 9 tables. Code and data: https://github.com/LoopGlitch26/Frontier-Autolab",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.36739v1",
+        "pdf": "https://arxiv.org/pdf/2609.36739v1",
+        "html": "https://arxiv.org/html/2609.36739"
+      },
+      "score": 12,
+      "tags": [
+        "multi-agent",
+        "memory"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2609.36635",
+      "title": "WitnessGym: Benchmarking Coding Agents on the Construction of Bug Witnesses",
+      "abstract": "Bug validation asks a coding agent to produce an executable witness for a reported bug. The witness combines a concrete input with a testing harness and exposes faulty behavior during execution. Such evidence makes audit findings actionable, yet benchmark evaluation is difficult when cases reuse public historical bugs and witnesses or require manual construction. We present WitnessGym, an automated framework for constructing bug-validation benchmarks through bug injection. It injects bugs into test-reached paths of real projects, rebuilds each project, and retains cases exposed by a construction-time witness. Bug specifications and execution adapters allow extension to additional bug types and languages. Bug-preserving transformations vary the surrounding structure while preserving the witness behavior. Based on real-world Java projects with test suites, WitnessGym automatically constructs 1,300 benchmark cases. The injected patches resemble historical bug patches and are difficult for the two evaluated models to distinguish in blinded comparisons. We evaluate four coding agent frameworks in six framework/model pairings across bug types, execution contexts, and transformation depths. Witness construction remains difficult even when the bug pattern is known. Our framework, benchmark cases, and evaluation scripts are available.",
+      "authors": [
+        "Haomin Qi",
+        "Xiangzhe Xu",
+        "Yiming Huang",
+        "Jingbo Shang",
+        "Chengpeng Wang"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-09-29T03:43:13Z",
+      "updated": "2026-09-29T03:43:13Z",
+      "announced_date": "2026-09-29",
+      "first_seen": "2026-09-29",
+      "comment": "30 pages, 8 figures, and 12 tables, including appendices",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.36635v1",
+        "pdf": "https://arxiv.org/pdf/2609.36635v1",
+        "html": "https://arxiv.org/html/2609.36635"
+      },
+      "score": 13,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2609.36556",
+      "title": "MAADBench: The Refreshable Paradigm for Anomaly Detection in Multi-Agent Systems",
+      "abstract": "Recent studies report that LLM-based multi-agent systems (MAS) fail at rates of 41%-87%, yet to our knowledge, no benchmark to date supports systematic anomaly detection (AD) for them. Building MAS AD benchmarks is hard because they must remain fresh as LLM systems evolve: tasks may leak into training data and thus be memorized by LLMs, traces and anomaly patterns expire as backbones evolve, and labels must be provided reliably for each refresh. To address these challenges, we present MAADBench (MA: multi-agent; AD: anomaly detection), the first refreshable MAS AD benchmark designed for diverse, evolving LLM backbones underlying the agents. MAADBench combines (1) sampled-and-coupled generative tasks over an approximately 10^37-task space to mitigate task leakage, (2) refreshable trace generation under configurable LLM backbones, and (3) automated provision of cost-free, deterministic step-level labels for fine-grained AD evaluation. Beyond offering the paradigm itself, we run MAADBench with five state-of-the-art LLM backbones and release the MAADBench-Full dataset with 5,200 step-labeled traces. Benchmarking 25 AD methods on the MAADBench dataset reveals substantial limitations in current approaches: they rely heavily on supervision, struggle with subtle MAS-specific anomalies, and lack robustness across LLM backbones. These gaps point to a rich research agenda for MAS-specific anomaly detection, with MAADBench providing a systematic and refreshable testbed for method development and evaluation. We open-source MAADBench-Full at https://huggingface.co/datasets/hww123/MAADBench-full.",
+      "authors": [
+        "Lei Ma",
+        "Dennis Hofmann",
+        "Haowen Xu",
+        "Joshua DeOliveira",
+        "Peter VanNostrand",
+        "Lei Cao",
+        "Elke Rundensteiner"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-29T02:42:00Z",
+      "updated": "2026-09-29T02:42:00Z",
+      "announced_date": "2026-09-29",
+      "first_seen": "2026-09-29",
+      "comment": "pre-print",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.36556v1",
+        "pdf": "https://arxiv.org/pdf/2609.36556v1",
+        "html": "https://arxiv.org/html/2609.36556"
+      },
+      "score": 16,
+      "tags": [
+        "multi-agent",
+        "safety"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2609.36488",
+      "title": "AdaptArena: Evaluating Test-Time Personalization of Web Agents",
+      "abstract": "Large language model (LLM) agents have demonstrated strong performance on complex web navigation tasks, yet they remain brittle in real-world settings where user intentions are underspecified and preferences are heterogeneous. In practice, users rarely provide explicit profiles, requiring agents to infer latent preferences from implicit signals. Despite its importance for deployment, this problem setting is largely underexplored in existing benchmarks. To address this gap, we introduce AdaptArena, a benchmark for evaluating test-time personalization of web agents via implicit preference inference. AdaptArena consists of 480 tasks, featuring both single-preference and double-preference scenarios. Each evaluation task must be solved by retrieving and leveraging the most relevant historical user trajectory that implicitly encodes the target preference. In addition, we introduce AdaptiveAgent, a retrieval-based framework for standardized evaluation of implicit preference inference. Experiments reveal a substantial performance gap: while oracle agents with access to ground-truth preferences achieve an 82.92% success rate, the evaluated LLM agents using our framework reach at most 15.62%. Furthermore, we find that correctly inferring user preferences is necessary but not sufficient for task success, as execution failures in downstream web interactions remain a significant bottleneck even when agents align with the target preference. These findings highlight implicit preference inference and robust action grounding as key challenges for deploying reliable, user-facing web agents. We release our code: https://github.com/McGill-NLP/web-agents-test-time-adaptations",
+      "authors": [
+        "Dongchan Shin",
+        "Xing Han Lù",
+        "Jiaqi Deng",
+        "Jay Gala",
+        "Tomás Vergara Browne",
+        "Jaewon Moon",
+        "Fengyuan Liu",
+        "Alexandre Drouin",
+        "Siva Reddy",
+        "Alexandre Lacoste"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-09-29T01:46:48Z",
+      "updated": "2026-09-29T01:46:48Z",
+      "announced_date": "2026-09-29",
+      "first_seen": "2026-09-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.36488v1",
+        "pdf": "https://arxiv.org/pdf/2609.36488v1",
+        "html": "https://arxiv.org/html/2609.36488"
+      },
+      "score": 22,
+      "tags": [
+        "web",
+        "safety"
+      ],
+      "field": "web",
+      "citations": 0
+    }
+  ]
+}

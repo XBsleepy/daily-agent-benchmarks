@@ -1,21 +1,21 @@
 {
   "date": "2026-09-27",
-  "count": 8,
+  "count": 9,
   "report": {
     "date": "2026-09-27",
-    "count": 8,
+    "count": 9,
     "themes": [
+      {
+        "id": "planning",
+        "count": 4,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
       {
         "id": "coding",
         "count": 3,
         "en": "Coding agents",
         "zh": "代码智能体"
-      },
-      {
-        "id": "planning",
-        "count": 3,
-        "en": "Planning / reasoning",
-        "zh": "规划 / 推理"
       },
       {
         "id": "multimodal",
@@ -30,6 +30,12 @@
         "zh": "记忆"
       },
       {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
         "id": "tool-use",
         "count": 2,
         "en": "Tool use",
@@ -40,17 +46,11 @@
         "count": 1,
         "en": "Embodied / robotics",
         "zh": "具身 / 机器人"
-      },
-      {
-        "id": "safety",
-        "count": 1,
-        "en": "Safety",
-        "zh": "安全"
       }
     ],
     "en": {
-      "headline": "8 new agent benchmarks",
-      "summary": "On September 27, 2026, arXiv listed 8 new agent benchmarks. Work clustered around Coding agents (3), Planning / reasoning (3), Multimodal (3), and Memory (2).",
+      "headline": "9 new agent benchmarks",
+      "summary": "On September 27, 2026, arXiv listed 9 new agent benchmarks. Work clustered around Planning / reasoning (4), Coding agents (3), Multimodal (3), and Memory (2).",
       "highlights": [
         {
           "id": "2609.33980",
@@ -70,8 +70,8 @@
       ]
     },
     "zh": {
-      "headline": "新增 8 篇 Agent Benchmark",
-      "summary": "2026年9月27日，arXiv 新增 8 篇 Agent Benchmark。当日主题集中在代码智能体（3）、规划 / 推理（3）、多模态（3）、记忆（2）。",
+      "headline": "新增 9 篇 Agent Benchmark",
+      "summary": "2026年9月27日，arXiv 新增 9 篇 Agent Benchmark。当日主题集中在规划 / 推理（4）、代码智能体（3）、多模态（3）、记忆（2）。",
       "highlights": [
         {
           "id": "2609.33980",
@@ -363,6 +363,39 @@
         "multimodal"
       ],
       "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2609.35886",
+      "title": "Agentic Commerce Bench: Measuring Fraud Detection for Agents That Spend Money",
+      "abstract": "AI agents now hold spend authority and settle payments without per-action human confirmation. The resulting loss is often not a security failure: a counterparty with the correct domain, the correct settlement address and a genuinely delivered service can charge more than it should, and no check keyed on identity will see it. We present three artefacts for measuring and reducing that loss. First, a taxonomy of agentic commerce fraud that separates five observation levels (agent reasoning, wire, settlement rail, counterparty, principal) from the request-level and history-level evidence available at each, and records which levels can observe which attacks. Second, Agentic Commerce Bench (ACB), a benchmark of twenty fraud classes generated from production aggregates, 1,647 catalogued service operations and 1,068 settlements, of which six involve a counterparty that is exactly who it claims to be. Third, gordonguard, an open-source detector stack and offline harness with which an operator can audit an agent configuration, replay hostile counterparties without an account, and run the same detectors inline. Calibrating to a stated false-positive budget on clean training traffic gives a 6.5% clean flag rate, replicated across three independent generations, and leaves eight of twenty classes no better than chance. On the four classes a reasoning layer can observe, a widely used agent security scanner run over its jailbreak-detection panel scores zero on all four, while correctly scoring 1.0 on a jailbreak supplied as a control. A measured median payment of $0.007 places a hard constraint on deployment: one human review costs 143 times the value of the payment it examines.",
+      "authors": [
+        "Ankit Srivastava",
+        "Debjyoti Paul"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-09-27T00:58:39Z",
+      "updated": "2026-09-27T00:58:39Z",
+      "announced_date": "2026-09-27",
+      "first_seen": "2026-09-27",
+      "comment": "12 pages, 4 figures. Code and data: https://github.com/BuildWithGordonAI/agentcommercebench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.35886v1",
+        "pdf": "https://arxiv.org/pdf/2609.35886v1",
+        "html": "https://arxiv.org/html/2609.35886"
+      },
+      "score": 14,
+      "tags": [
+        "safety",
+        "planning"
+      ],
+      "field": "safety",
       "citations": 0
     }
   ]

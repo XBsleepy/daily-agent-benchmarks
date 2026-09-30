@@ -1,13 +1,13 @@
 {
   "date": "2026-09-28",
-  "count": 32,
+  "count": 35,
   "report": {
     "date": "2026-09-28",
-    "count": 32,
+    "count": 35,
     "themes": [
       {
         "id": "tool-use",
-        "count": 13,
+        "count": 14,
         "en": "Tool use",
         "zh": "工具使用"
       },
@@ -25,9 +25,15 @@
       },
       {
         "id": "multi-agent",
-        "count": 6,
+        "count": 7,
         "en": "Multi-agent",
         "zh": "多智能体"
+      },
+      {
+        "id": "coding",
+        "count": 5,
+        "en": "Coding agents",
+        "zh": "代码智能体"
       },
       {
         "id": "safety",
@@ -42,21 +48,15 @@
         "zh": "科学实验"
       },
       {
-        "id": "coding",
+        "id": "embodied",
         "count": 4,
-        "en": "Coding agents",
-        "zh": "代码智能体"
-      },
-      {
-        "id": "conversation",
-        "count": 3,
-        "en": "Dialogue / customer",
-        "zh": "对话 / 客服"
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
       }
     ],
     "en": {
-      "headline": "32 new agent benchmarks",
-      "summary": "On September 28, 2026, arXiv listed 32 new agent benchmarks. Work clustered around Tool use (13), Planning / reasoning (10), Memory (7), and Multi-agent (6).",
+      "headline": "35 new agent benchmarks",
+      "summary": "On September 28, 2026, arXiv listed 35 new agent benchmarks. Work clustered around Tool use (14), Planning / reasoning (10), Memory (7), and Multi-agent (7).",
       "highlights": [
         {
           "id": "2609.34683",
@@ -76,8 +76,8 @@
       ]
     },
     "zh": {
-      "headline": "新增 32 篇 Agent Benchmark",
-      "summary": "2026年9月28日，arXiv 新增 32 篇 Agent Benchmark。当日主题集中在工具使用（13）、规划 / 推理（10）、记忆（7）、多智能体（6）。",
+      "headline": "新增 35 篇 Agent Benchmark",
+      "summary": "2026年9月28日，arXiv 新增 35 篇 Agent Benchmark。当日主题集中在工具使用（14）、规划 / 推理（10）、记忆（7）、多智能体（7）。",
       "highlights": [
         {
           "id": "2609.34683",
@@ -98,6 +98,81 @@
     }
   },
   "papers": [
+    {
+      "id": "2609.36308",
+      "title": "CheatBench: Measuring Reward Gaming in AI Agents",
+      "abstract": "Reinforcement learning has helped AI agents solve increasingly difficult tasks, but high rewards do not always reflect the work users intended. In recent incidents and controlled evaluations across the AI industry, agents trained to maximize reward have accessed unauthorized information, attempted to evade monitoring systems, and even breached sandbox protections to attack external systems. As agents become more capable, this behavior could pose increasingly serious risks. To measure this problem, we introduce CheatBench, a benchmark of cheating in AI agents across mathematical research, knowledge work, coding, visual tasks, and other domains. Its environments combine challenging assignments with opportunities to cheat, allowing researchers to study how agents pursue a goal when honest work is difficult. CheatBench supports comparisons across models and task categories, providing a testbed for measuring and reducing cheating as agents take on more consequential responsibilities. We publicly release CheatBench at https://cheatbench.ai",
+      "authors": [
+        "Long Phan",
+        "Stephen K. Yang",
+        "Jason J. Lim",
+        "Mantas Mazeika",
+        "Wenyu Zhang",
+        "Zheyuan Liu",
+        "Richard Ren",
+        "Jingxiang Meng",
+        "Yaoteng Tan",
+        "Weiliang Zhao",
+        "Addison Wu",
+        "Matei Anghel",
+        "Dan Hendrycks"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-28T21:42:57Z",
+      "updated": "2026-09-28T21:42:57Z",
+      "announced_date": "2026-09-28",
+      "first_seen": "2026-09-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.36308v1",
+        "pdf": "https://arxiv.org/pdf/2609.36308v1",
+        "html": "https://arxiv.org/html/2609.36308"
+      },
+      "score": 17,
+      "tags": [
+        "workplace"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2609.36161",
+      "title": "From Dead Code and Static Requirements to Working Engines: Software Revival with Coding Agents",
+      "abstract": "Can coding agents restore software that no longer runs while preserving its underlying methods, and reconstruct industrial software engines from open specifications? Here we introduce ReviveBench, a benchmark with two task families evaluated by hidden verifiers calibrated against native execution environments, established engineering tools, or purpose-built reference implementations. The revival family comprises ten tasks involving dependency incompatibilities, deleted core modules, legacy builds, and a GPU-based foundation model. Every starting workspace fails verification, and the strongest evaluated model passes all ten tasks in at least one run each. In contamination-control experiments, identifier obfuscation reduces line similarity to the original implementations from 0.51--0.96 to 0.03--0.44 without reducing the observed pass rate of any evaluated model. On repositories created after the stated knowledge cutoffs, the strongest model passes eight of nine runs. The reconstruction family comprises thirteen tasks spanning numerical, geometric, hardware, and transactional systems (e.g. CAD and CRM). Two models meet the benchmark's pass criteria on all thirteen, although our audit shows that the CFD task cannot establish numerical-solver capability. Benchmark construction and auditing uncover 28 verifier defects, including 24 false negatives and two false positives. These findings show that executable verification can itself introduce substantial measurement error. We present three practical checks: test whether prescribed methods can reach the grading thresholds, investigate agreement among independently generated candidates, and recompute diagnostics from submitted artifacts. ReviveBench thus provides both an evaluation of software revival and engine reconstruction, and cases in validating the verifiers used to measure coding agents for software design.",
+      "authors": [
+        "Tianyu Liu",
+        "Dingyuan Dai",
+        "Yufan Du",
+        "Zhen Yang"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-09-28T19:30:12Z",
+      "updated": "2026-09-28T19:30:12Z",
+      "announced_date": "2026-09-28",
+      "first_seen": "2026-09-28",
+      "comment": "14 pages, 3 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.36161v1",
+        "pdf": "https://arxiv.org/pdf/2609.36161v1",
+        "html": "https://arxiv.org/html/2609.36161"
+      },
+      "score": 11,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
     {
       "id": "2609.35732",
       "title": "Failure-Transparent Agents: Benchmarking Post-Failure Reporting in Tool-Using Language Models",
@@ -510,14 +585,14 @@
       ],
       "primary_category": "cs.CR",
       "published": "2026-09-28T10:00:05Z",
-      "updated": "2026-09-28T10:00:05Z",
+      "updated": "2026-09-29T04:44:54Z",
       "announced_date": "2026-09-28",
       "first_seen": "2026-09-28",
       "comment": "",
       "doi": "",
       "links": {
-        "abs": "https://arxiv.org/abs/2609.34790v1",
-        "pdf": "https://arxiv.org/pdf/2609.34790v1",
+        "abs": "https://arxiv.org/abs/2609.34790v2",
+        "pdf": "https://arxiv.org/pdf/2609.34790v2",
         "html": "https://arxiv.org/html/2609.34790"
       },
       "score": 12,
@@ -565,6 +640,44 @@
         "planning"
       ],
       "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2609.35916",
+      "title": "VehicleArena: A Realistic Urban Environment for Multi-Agent Driving",
+      "abstract": "Real-world embodied agents often pursue independent objectives within a shared physical environment, where their actions can alter the conditions faced by others. Existing benchmarks, however, typically assume shared goals or explicitly prescribed interaction protocols, leaving such emergent physical coupling underexplored. We introduce VehicleArena, a 3D urban-driving benchmark for studying independently operating agents in a dynamic shared world. In VehicleArena, LLM-controlled agents must fulfill evolving passenger requests while navigating complex traffic, and each agent's driving decisions can reshape traffic flow, delays, risks, and subsequent observations for surrounding agents. The benchmark provides 112 evaluation tasks spanning single-agent and multi-agent driving. Across nine evaluated models, the highest arrival rates reach only 65.0% on single-agent tasks and 65.6% on multi-agent tasks, while strong passenger-request or cabin scores do not reliably translate into successful trip completion. Moreover, in matched multi-agent runs, every tested focal policy reduces the arrival rate of surrounding vehicles relative to the simulator's native traffic controller, revealing measurable externalities beyond the focal vehicle itself.",
+      "authors": [
+        "Jie Yang",
+        "Jiajun Chen",
+        "Jiazheng Zhou",
+        "Mianqiu Huang",
+        "Yining Zheng",
+        "Yuxin Wang",
+        "Xipeng Qiu"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-09-28T09:48:11Z",
+      "updated": "2026-09-28T09:48:11Z",
+      "announced_date": "2026-09-28",
+      "first_seen": "2026-09-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.35916v1",
+        "pdf": "https://arxiv.org/pdf/2609.35916v1",
+        "html": "https://arxiv.org/html/2609.35916"
+      },
+      "score": 17,
+      "tags": [
+        "multi-agent",
+        "embodied"
+      ],
+      "field": "multi-agent",
       "citations": 0
     },
     {
@@ -1129,22 +1242,22 @@
         "Haitong Ma",
         "Chenxiao Gao",
         "Rushi Qiang",
-        "Na Li",
-        "Bo Dai"
+        "Bo Dai",
+        "Na Li"
       ],
       "categories": [
         "cs.RO"
       ],
       "primary_category": "cs.RO",
       "published": "2026-09-28T03:16:09Z",
-      "updated": "2026-09-28T03:16:09Z",
+      "updated": "2026-09-29T05:16:26Z",
       "announced_date": "2026-09-28",
       "first_seen": "2026-09-28",
       "comment": "28 pages, 17 figures. Project website: https://rle-bench.github.io/",
       "doi": "",
       "links": {
-        "abs": "https://arxiv.org/abs/2609.34210v1",
-        "pdf": "https://arxiv.org/pdf/2609.34210v1",
+        "abs": "https://arxiv.org/abs/2609.34210v2",
+        "pdf": "https://arxiv.org/pdf/2609.34210v2",
         "html": "https://arxiv.org/html/2609.34210"
       },
       "score": 18,
