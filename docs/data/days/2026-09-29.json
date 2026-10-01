@@ -1,33 +1,33 @@
 {
   "date": "2026-09-29",
-  "count": 11,
+  "count": 16,
   "report": {
     "date": "2026-09-29",
-    "count": 11,
+    "count": 16,
     "themes": [
       {
-        "id": "safety",
-        "count": 4,
-        "en": "Safety",
-        "zh": "安全"
-      },
-      {
         "id": "coding",
-        "count": 4,
+        "count": 6,
         "en": "Coding agents",
         "zh": "代码智能体"
       },
       {
         "id": "tool-use",
-        "count": 3,
+        "count": 5,
         "en": "Tool use",
         "zh": "工具使用"
       },
       {
         "id": "planning",
-        "count": 2,
+        "count": 4,
         "en": "Planning / reasoning",
         "zh": "规划 / 推理"
+      },
+      {
+        "id": "safety",
+        "count": 4,
+        "en": "Safety",
+        "zh": "安全"
       },
       {
         "id": "gui",
@@ -55,8 +55,8 @@
       }
     ],
     "en": {
-      "headline": "11 new agent benchmarks",
-      "summary": "On September 29, 2026, arXiv listed 11 new agent benchmarks. Work clustered around Safety (4), Coding agents (4), Tool use (3), and Planning / reasoning (2).",
+      "headline": "16 new agent benchmarks",
+      "summary": "On September 29, 2026, arXiv listed 16 new agent benchmarks. Work clustered around Coding agents (6), Tool use (5), Planning / reasoning (4), and Safety (4).",
       "highlights": [
         {
           "id": "2609.36488",
@@ -64,20 +64,20 @@
           "blurb": "Large language model (LLM) agents have demonstrated strong performance on complex web navigation tasks, yet they remain brittle in real-world settings where user intentions are underspecified and preferences are heteroge…"
         },
         {
+          "id": "2609.38652",
+          "title": "AgBench: Agentic AI Benchmarks for Personal AI Devices",
+          "blurb": "Agentic AI systems increasingly rely on cloud-hosted large language models for planning, tool use, and iterative execution, raising concerns about API cost and data exposure."
+        },
+        {
           "id": "2609.37658",
           "title": "EnterpriseBench: Benchmarking LLM Agents on Enterprise-Level Strategic Reasoning and Decision-Making",
           "blurb": "LLM agents are increasingly expected to support enterprise workflows, where tasks often involve missing information, uncertainty, feedback, and long-term trade-offs."
-        },
-        {
-          "id": "2609.37053",
-          "title": "MatToolBench: Benchmarking Multimodal Agents in Real-World Materials Science Workflows",
-          "blurb": "Multimodal GUI agents have achieved impressive results on general software benchmarks, yet their ability to operate professional scientific software remains largely unexplored."
         }
       ]
     },
     "zh": {
-      "headline": "新增 11 篇 Agent Benchmark",
-      "summary": "2026年9月29日，arXiv 新增 11 篇 Agent Benchmark。当日主题集中在安全（4）、代码智能体（4）、工具使用（3）、规划 / 推理（2）。",
+      "headline": "新增 16 篇 Agent Benchmark",
+      "summary": "2026年9月29日，arXiv 新增 16 篇 Agent Benchmark。当日主题集中在代码智能体（6）、工具使用（5）、规划 / 推理（4）、安全（4）。",
       "highlights": [
         {
           "id": "2609.36488",
@@ -85,19 +85,154 @@
           "blurb": "Large language model (LLM) agents have demonstrated strong performance on complex web navigation tasks, yet they remain brittle in real-world settings where user intentions are underspecified and preferences are heteroge…"
         },
         {
+          "id": "2609.38652",
+          "title": "AgBench: Agentic AI Benchmarks for Personal AI Devices",
+          "blurb": "Agentic AI systems increasingly rely on cloud-hosted large language models for planning, tool use, and iterative execution, raising concerns about API cost and data exposure."
+        },
+        {
           "id": "2609.37658",
           "title": "EnterpriseBench: Benchmarking LLM Agents on Enterprise-Level Strategic Reasoning and Decision-Making",
           "blurb": "LLM agents are increasingly expected to support enterprise workflows, where tasks often involve missing information, uncertainty, feedback, and long-term trade-offs."
-        },
-        {
-          "id": "2609.37053",
-          "title": "MatToolBench: Benchmarking Multimodal Agents in Real-World Materials Science Workflows",
-          "blurb": "Multimodal GUI agents have achieved impressive results on general software benchmarks, yet their ability to operate professional scientific software remains largely unexplored."
         }
       ]
     }
   },
   "papers": [
+    {
+      "id": "2609.38652",
+      "title": "AgBench: Agentic AI Benchmarks for Personal AI Devices",
+      "abstract": "Agentic AI systems increasingly rely on cloud-hosted large language models for planning, tool use, and iterative execution, raising concerns about API cost and data exposure. Advances in personal AI devices enable agents to execute locally, but limited resources on device may affect task success and performance. Existing benchmarks are inadequate for systematically characterizing these trade-offs across devices, workloads, and deployment architectures. We present AgBench, a benchmark suite and open artifacts for reproducible evaluation of agentic AI on personal devices. Using AgBench, we evaluate local, hybrid, and cloud execution across agentic workloads, examining task success, latency, cloud API cost, and data exposure. Our results, drawn from over 162.07 million data points, show that personal AI devices can complete many agent tasks locally, but local-only execution generally has lower task success and longer completion times than cloud-only execution, especially as concurrency increases. Local-only execution eliminates cloud model API costs and sensitive-information exposure to cloud agents. Hybrid execution can improve task success, but its cloud cost and data exposure depend on how agents divide work and share information. No single architecture performs best across task success, goodput, cloud cost, and data exposure; deployment choices should reflect the intended workload and device capabilities. AgBench is available at https://anonymous.4open.science/r/AgBench-2777.",
+      "authors": [
+        "Yizhou Han",
+        "Di Wu",
+        "Dhananjay Saikumar",
+        "Blesson Varghese"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.PF"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-29T23:18:37Z",
+      "updated": "2026-09-29T23:18:37Z",
+      "announced_date": "2026-09-29",
+      "first_seen": "2026-09-29",
+      "comment": "15 pages, 12 figures, including supplementary material",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.38652v1",
+        "pdf": "https://arxiv.org/pdf/2609.38652v1",
+        "html": "https://arxiv.org/html/2609.38652"
+      },
+      "score": 21,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2609.38512",
+      "title": "VAmoS Part Deux: Harder, More Realistic Voice-Agent Simulation",
+      "abstract": "Voice agents in production must handle several requests, background speech, and customers who lose patience. We introduce VAmoS Energy, a benchmark that combines these challenges in 100 calls about utility billing and payment assistance. Each caller makes two to four requests. The agent has sixteen tools backed by a stateful Stripe billing twin and the Apache Fineract loan engine, with account access blocked until caller verification succeeds. The tasks use public household electricity data and a policy based on Pennsylvania's residential billing rules. An LLM-as-a-verifier checks the agent's actions and spoken figures against explicit requirements. On a calibration run, it agrees with a code verifier on 99.1% of checks. Across fourteen voice stacks and three repeats per task, completion ranges from 17.3% to 44.7%. Grok Voice leads, and Gemini 3.8 Live and GPT-Live follow at about the same cost per call. Background television reduces pooled completion from 38.7% to 8.6%. The simulated caller often accepts an incorrect result because it hears the agent's words but cannot inspect its actions. These findings show why voice agents need evaluation across the whole call, including what they say, what they change, and how they handle competing speech.",
+      "authors": [
+        "Joshua Meyer",
+        "Sahar Shayegan",
+        "Ritiz Tambi",
+        "Ali Khan",
+        "Sun Kim",
+        "Victor Shih",
+        "Mehdi Jamei",
+        "Andi Partovi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-29T20:33:57Z",
+      "updated": "2026-09-29T20:33:57Z",
+      "announced_date": "2026-09-29",
+      "first_seen": "2026-09-29",
+      "comment": "13 pages, 3 figures, 7 tables. Agent implementations: https://github.com/veris-ai/rory-agent",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.38512v1",
+        "pdf": "https://arxiv.org/pdf/2609.38512v1",
+        "html": "https://arxiv.org/html/2609.38512"
+      },
+      "score": 6,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2609.38460",
+      "title": "NAQD Env: A benchmark for selective withdrawal in language agents",
+      "abstract": "Language agents must revise planned actions when evidence changes, permission is revoked, or a stop instruction arrives. A useful response is selective: suspend affected actions, preserve unaffected work, and resume only after sufficient repair. We introduce NAQD-Env, a synthetic environment that evaluates these decisions against a deterministic reference policy over explicit evidence, authorization, and constraint dependencies. Eleven dependency families support evaluation on development structures, held-out families, and held-out combinations of structures. Metrics distinguish attempted violations from violations permitted by a simulated execution gate and jointly report policy agreement, task value, withdrawal, resumption, and event reporting. We evaluate three open-weight instruction-tuned models from two families under three prompt conditions on 350 frozen scenarios, yielding 3,150 model-prompt episodes before gate replay. Across the reported conditions, withdrawal recall is at most 0.06, no valid resumption is observed at eligible opportunities, and only one episode matches the complete reference policy. Under the NAQD prompt, Qwen2.5-7B has fewer unsafe-attempt episodes than Qwen2.5-3B and Llama-3.1-8B, but also completes less useful work and preserves unaffected actions less accurately. Exploratory supervised fine-tuning probes increase Qwen2.5-3B decision accuracy from 0.45-0.54 to 0.83-0.92; separate diagnostics reveal inappropriate withdrawal after curriculum omissions and a loss of event reporting. These results motivate evaluating selective withdrawal as a distinct component of agent reliability. The setting measures policy application with trusted structured inputs and does not establish real-world containment or source-verification ability.",
+      "authors": [
+        "Mohamed Abouzahra"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-29T19:48:41Z",
+      "updated": "2026-09-29T19:48:41Z",
+      "announced_date": "2026-09-29",
+      "first_seen": "2026-09-29",
+      "comment": "16 pages. Code and evaluation artifacts: https://github.com/abouzamm/naqd",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.38460v1",
+        "pdf": "https://arxiv.org/pdf/2609.38460v1",
+        "html": "https://arxiv.org/html/2609.38460"
+      },
+      "score": 17,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2609.38335",
+      "title": "E2E-SWE: Benchmarking LLMs on Building Working Codebases from Scratch",
+      "abstract": "Coding agents powered by large language models (LLMs) are evolving from making localized code changes to developing complete software repositories. However, evaluating repository-scale generation remains challenging: tasks must demand system-level reasoning while ensuring that all evaluated behaviors are precisely specified and independent of any particular implementation. We introduce E2E-SWE, a benchmark for evaluating whether coding agents can build complete, functional software repositories end to end. E2E-SWE contains 186 whole-repository generation tasks spanning 11 programming languages. Given only a natural-language specification and an empty workspace, an agent must implement a complete, installable project that satisfies a comprehensive suite of hidden tests. Each task is constructed by a software engineer in collaboration with an LLM; together, they develop the test suite and a corresponding implementation-independent specification. To ensure that tasks are well specified and practically solvable, we further subject them to an iterative verification process in which autonomous agents audit and repair task defects using static inspection and failures observed from real model rollouts. Evaluating 13 frontier models, we find substantial variation in end-to-end repository generation ability, with pass@1 ranging from 11.7% to 67.7%, providing strong model differentiation while leaving considerable headroom for future progress. Analysis of agent trajectories further reveals long, front-loaded reasoning patterns, highlighting the planning and system-level reasoning required to construct working codebases from scratch.",
+      "authors": [
+        "Hantian Ding",
+        "Chloe Bi",
+        "Jiacheng Zhu",
+        "John Yang",
+        "Matt Deitke",
+        "Pengcheng Yin",
+        "Zijian Wang",
+        "Rui Hou"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-09-29T18:02:25Z",
+      "updated": "2026-09-29T18:02:25Z",
+      "announced_date": "2026-09-29",
+      "first_seen": "2026-09-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.38335v1",
+        "pdf": "https://arxiv.org/pdf/2609.38335v1",
+        "html": "https://arxiv.org/html/2609.38335"
+      },
+      "score": 17,
+      "tags": [
+        "coding",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
     {
       "id": "2609.38043",
       "title": "UserProxyBench: Evaluating LLM User Simulators for Agent Benchmarks and Training",
@@ -162,6 +297,60 @@
         "planning"
       ],
       "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2609.38269",
+      "title": "Zero2Repo: Can Coding Agents Build Repositories from Scratch?",
+      "abstract": "Coding agents are increasingly asked to build software rather than patch it, yet benchmarks for from-scratch repository construction are mostly limited to a single language and depend on manually curated tasks. We introduce Zero2Repo, a benchmark in which an agent receives a product requirements document, an interface contract, and an empty workspace, and must deliver a complete repository in the project's native ecosystem. Tasks are produced by a language-agnostic authoring pipeline that converts real, version-pinned open-source projects into behavioral specifications, reproducible environments, and hidden acceptance tests. Each task is validated by execution: a reference implementation derived from the upstream project must pass, and adversarial validation must show that the tests reject incorrect implementations. Evaluation runs production coding agents in isolated containers, withholds the acceptance tests until an explicit submission, and assigns a binary reward only when every test passes, with no LLM judge. The pipeline and harness make no language-specific assumptions and apply to mainstream programming ecosystems; the current release contains Python, TypeScript, Go, and C++ tasks. Even on 11 tasks drawn from repositories that frontier models have very likely seen during training, the strongest agent solves only 10, and every failing submission passes 90-99% of the hidden tests; for the two strongest agents, 67-100% of failed tests trace to a single omission or a low-frequency rule stated in the specification rather than to a missing subsystem, so each failure is a concrete target for improvement.",
+      "authors": [
+        "Pei Yang",
+        "Tianyu Shi",
+        "Yuhang Yao",
+        "Wanyi Chen",
+        "Tongyun Yang",
+        "Dun Pei",
+        "Haonan Wang",
+        "Pengbin Feng",
+        "Guanxu Yu",
+        "Jingchun Huang",
+        "Zeyu Zhang",
+        "Shuhan Sun",
+        "Hao Li",
+        "Xiang Li",
+        "Jie Xiao",
+        "Xinyu Wang",
+        "Hanxin Chen",
+        "Daqi Li",
+        "Qi Jia",
+        "Hongshan Lin",
+        "Zhizhou Gu",
+        "Zijun Tian",
+        "Weizhi Du",
+        "Lynn Ai",
+        "Eric Yang"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-09-29T14:10:23Z",
+      "updated": "2026-09-29T14:10:23Z",
+      "announced_date": "2026-09-29",
+      "first_seen": "2026-09-29",
+      "comment": "19 pages, 4 figures, 8 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2609.38269v1",
+        "pdf": "https://arxiv.org/pdf/2609.38269v1",
+        "html": "https://arxiv.org/html/2609.38269"
+      },
+      "score": 11,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
       "citations": 0
     },
     {
