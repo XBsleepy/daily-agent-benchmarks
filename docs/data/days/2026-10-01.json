@@ -1,0 +1,213 @@
+{
+  "date": "2026-10-01",
+  "count": 4,
+  "report": {
+    "date": "2026-10-01",
+    "count": 4,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      }
+    ],
+    "en": {
+      "headline": "4 new agent benchmarks",
+      "summary": "On October 1, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Tool use (1), Planning / reasoning (1), Research agents (1), and Multi-agent (1).",
+      "highlights": [
+        {
+          "id": "2610.02206",
+          "title": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
+          "blurb": "LLMs are increasingly applied to cybersecurity workflows, where they are expected to translate analysts' intent into tool invocations."
+        },
+        {
+          "id": "2610.00954",
+          "title": "Beyond Leaderboards: Tokenomics of Agentic Small Language Model Ensembles",
+          "blurb": "As large language models (LLMs) move from standalone assistants into agentic workflows, evaluation must extend beyond scalar leaderboard accuracy to account for operational reliability, cost, latency, and token efficienc…"
+        },
+        {
+          "id": "2610.02122",
+          "title": "Argo-Bench: Evaluating Data Agents on Enterprise-Scale Workflows",
+          "blurb": "Real-world enterprise data science and analytics workflows require reasoning across dozens of tables, performing statistical analyses, and acting on the results."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年10月1日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在工具使用（1）、规划 / 推理（1）、科研智能体（1）、多智能体（1）。",
+      "highlights": [
+        {
+          "id": "2610.02206",
+          "title": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
+          "blurb": "LLMs are increasingly applied to cybersecurity workflows, where they are expected to translate analysts' intent into tool invocations."
+        },
+        {
+          "id": "2610.00954",
+          "title": "Beyond Leaderboards: Tokenomics of Agentic Small Language Model Ensembles",
+          "blurb": "As large language models (LLMs) move from standalone assistants into agentic workflows, evaluation must extend beyond scalar leaderboard accuracy to account for operational reliability, cost, latency, and token efficienc…"
+        },
+        {
+          "id": "2610.02122",
+          "title": "Argo-Bench: Evaluating Data Agents on Enterprise-Scale Workflows",
+          "blurb": "Real-world enterprise data science and analytics workflows require reasoning across dozens of tables, performing statistical analyses, and acting on the results."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2610.02206",
+      "title": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
+      "abstract": "LLMs are increasingly applied to cybersecurity workflows, where they are expected to translate analysts' intent into tool invocations. However, existing evaluations focus on knowledge-based assessments or end-to-end agentic tasks, and do not directly measure LLMs' ability to generate executable commands for real-world cybersecurity tools. This gap is critical because cybersecurity operations rely on strict command-line interfaces (CLIs), where minor syntax errors, incorrect flag--value bindings, or argument misordering can invalidate execution. We introduce KaliBench, a fine-grained benchmark and dataset for natural-language--to--CLI translation on Kali Linux, comprising 8,504 query--command pairs spanning 1,642 tools across 23 capability dimensions and 5 security phases. KaliBench is constructed via a manuscript-grounded pipeline with deterministic canonicalization and alias-aware evaluation, enabling precise and reproducible assessment of tool selection and argument construction. To ensure both semantic correctness and practical executability, we develop a multi-stage verification pipeline that combines LLM-based validation, sandboxed terminal execution, and human-in-the-loop refinement. Building on these fine-grained, deterministic signals, KaliBench further enables runtime-free verifiable rewards for training. Across three evaluation modes and 24 configurations of general-purpose and security-focused open-weight models, no open-weight model exceeds 42% exact-command accuracy in the unrestricted setting, highlighting the difficulty of accurate CLI-based cybersecurity tool use without explicit tool hints. We further show that supervised fine-tuning and reinforcement learning with verifiable rewards derived from KaliBench significantly improve an 8B model and achieve performance comparable to a 685B MoE model.",
+      "authors": [
+        "Pengfei Li",
+        "Naufal Suryanto",
+        "Sicheng Zhang",
+        "Muzammal Naseer"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-10-01T17:59:55Z",
+      "updated": "2026-10-01T17:59:55Z",
+      "announced_date": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "comment": "Accepted at NeurIPS 2026 Evaluations and Datasets Track. Project page: https://risys-lab.github.io/KaliBench/ | Github: https://github.com/RISys-Lab/KaliBench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.02206v1",
+        "pdf": "https://arxiv.org/pdf/2610.02206v1",
+        "html": "https://arxiv.org/html/2610.02206"
+      },
+      "score": 19,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.02122",
+      "title": "Argo-Bench: Evaluating Data Agents on Enterprise-Scale Workflows",
+      "abstract": "Real-world enterprise data science and analytics workflows require reasoning across dozens of tables, performing statistical analyses, and acting on the results. Established text-to-SQL benchmarks evaluate query generation alone, and audits have found their answer keys frequently wrong. Because real enterprise warehouses are too sensitive to release, these benchmarks are built on public datasets where a business event fits in a single table. We introduce Argo-Bench, an evaluation framework comprising 210 data science and analytics tasks. Drawing on public data, peer-reviewed industry literature, and regulatory filings, we simulate a food delivery platform in New York City at true scale, with 81 million orders in 2024, grounded economics, fraud patterns, and marketplace incentives. We export this world to an ERP warehouse of 235 tables and 7.5 billion rows, modeled on the Oracle E-Business Suite schema. The simulator's ground-truth state is withheld from the warehouse the agent sees, so tasks require reconstructing facts by navigating the warehouse before acting on them. Argo-Bench goes beyond text-to-SQL: the agent files actions such as banning fraudulent accounts, allocating courier incentive budgets, or issuing back pay, and the grader scores each by its consequences in the simulator. Every task has an executable reference solution that demonstrates solvability using only the warehouse. The strongest of 14 frontier and open-weight models scores 95 or higher on only 34.8% of tasks and averages 59.5 points. We hope Argo-Bench drives progress toward agents that understand, navigate, and act within real data environments.",
+      "authors": [
+        "Gabriel Tomitsuka",
+        "Arman Raayatsanati",
+        "Emma Xing",
+        "Duke Gand",
+        "Joseph J Ma"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.DB"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-10-01T17:35:44Z",
+      "updated": "2026-10-01T17:35:44Z",
+      "announced_date": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "comment": "41 pages, 4 figures, 18 tables. Code: https://github.com/TextQLLabs/Argo-Bench. Data: https://huggingface.co/datasets/textql/Argo-Bench. Website: https://argo-bench.com",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.02122v1",
+        "pdf": "https://arxiv.org/pdf/2610.02122v1",
+        "html": "https://arxiv.org/html/2610.02122"
+      },
+      "score": 13,
+      "tags": [
+        "planning",
+        "research"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2610.01017",
+      "title": "Pay for the Fault, Not the Flow: Label-Free In-Flow Multi-Agent Workflow Optimization",
+      "abstract": "Large language models (LLMs) increasingly construct multi-agent workflows that decompose a complex task and assign specialist agents from a pool. However, building such a workflow well remains challenging: how finely to divide the task, which agent to trust with each subtask, and when to create a new specialist are all critical decisions a workflow constructor needs to settle up front. Thus, whether each subtask succeeds remains unknown until the workflow runs. Yet, improving a workflow is costly. Locating a fault usually requires a reference answer, a graded outcome, or a trained assessor, and the fix is applied to the whole workflow through re-execution, re-search, or retraining. We propose InFlowOp, which prices every decision in one label-free cost that weighs how well an agent's competence meets what a subtask demands against how much that agent takes to run. Before execution, InFlowOp bidirectionally determines the granularity of task decomposition and agent assignment following from the cost rather than from a fixed template. During execution, InFlowOp corrects a fault with the cheapest move via the same cost that serves the workflow both as it is built and as it runs. Facing the workflow-level evaluation challenge, we introduce Braid, a benchmark whose tasks require multi-agent coordination beyond single-agent capability. Across various domains and backbones, InFlowOp outperforms single agent baselines by up to $+11.97\\%$, achieving $+9.64\\%$ with in-flow optimization. Our project page: https://xhguo7.github.io/InFlowOp/.",
+      "authors": [
+        "Xuehang Guo",
+        "Haoyu Wang",
+        "Shengyu Chen",
+        "Zach Chen",
+        "Wei Cheng",
+        "Qingyun Wang",
+        "Haifeng Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-01T04:01:23Z",
+      "updated": "2026-10-01T04:01:23Z",
+      "announced_date": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.01017v1",
+        "pdf": "https://arxiv.org/pdf/2610.01017v1",
+        "html": "https://arxiv.org/html/2610.01017"
+      },
+      "score": 11,
+      "tags": [
+        "multi-agent"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2610.00954",
+      "title": "Beyond Leaderboards: Tokenomics of Agentic Small Language Model Ensembles",
+      "abstract": "As large language models (LLMs) move from standalone assistants into agentic workflows, evaluation must extend beyond scalar leaderboard accuracy to account for operational reliability, cost, latency, and token efficiency. We use an agentic ensemble of small language models (SLMs) with an SLM-judge-mediated feedback loop as a case study for such beyond-leaderboard evaluation. On the 541-prompt IFEval benchmark, the best ensemble achieves 97.34% strict prompt accuracy, exceeding the strongest standalone LLM baseline, gpt-5.4, by 5.81 percentage points while operating in a lower-cost regime. We then analyze the tokenomics and operational behavior behind this gain, including cost per sample, token composition, useful-output goodput, feedback-loop recovery, latency decomposition, and performance across instruction categories and constraint counts. Our results show that agentic SLM ensembles can trade additional test-time tokens and orchestration overhead for improved instruction-following fidelity, motivating multi-dimensional evaluation protocols for future agentic AI systems.",
+      "authors": [
+        "Alexei N. Skurikhin",
+        "Emily M. Taylor",
+        "Nathan A. DeBardeleben"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-10-01T02:37:56Z",
+      "updated": "2026-10-01T02:37:56Z",
+      "announced_date": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "comment": "8 pages, 9 figures, Presented at ACM CAIS 2026 Workshop RLEval: Methods and Reinforcement Learning Environments for Evaluating AI Agents. Resubmission of permitted appeal, Ticket #MOD-104177",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.00954v1",
+        "pdf": "https://arxiv.org/pdf/2610.00954v1",
+        "html": "https://arxiv.org/html/2610.00954"
+      },
+      "score": 15,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

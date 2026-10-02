@@ -1,15 +1,27 @@
 {
   "date": "2026-09-30",
-  "count": 11,
+  "count": 16,
   "report": {
     "date": "2026-09-30",
-    "count": 11,
+    "count": 16,
     "themes": [
       {
         "id": "planning",
-        "count": 7,
+        "count": 8,
         "en": "Planning / reasoning",
         "zh": "规划 / 推理"
+      },
+      {
+        "id": "coding",
+        "count": 4,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "science",
+        "count": 3,
+        "en": "Science lab",
+        "zh": "科学实验"
       },
       {
         "id": "computer-use",
@@ -18,10 +30,10 @@
         "zh": "计算机使用"
       },
       {
-        "id": "coding",
-        "count": 3,
-        "en": "Coding agents",
-        "zh": "代码智能体"
+        "id": "research",
+        "count": 2,
+        "en": "Research agents",
+        "zh": "科研智能体"
       },
       {
         "id": "gui",
@@ -40,23 +52,11 @@
         "count": 2,
         "en": "Safety",
         "zh": "安全"
-      },
-      {
-        "id": "multimodal",
-        "count": 1,
-        "en": "Multimodal",
-        "zh": "多模态"
-      },
-      {
-        "id": "science",
-        "count": 1,
-        "en": "Science lab",
-        "zh": "科学实验"
       }
     ],
     "en": {
-      "headline": "11 new agent benchmarks",
-      "summary": "On September 30, 2026, arXiv listed 11 new agent benchmarks. Work clustered around Planning / reasoning (7), Computer use (3), Coding agents (3), and GUI agents (2).",
+      "headline": "16 new agent benchmarks",
+      "summary": "On September 30, 2026, arXiv listed 16 new agent benchmarks. Work clustered around Planning / reasoning (8), Coding agents (4), Science lab (3), and Computer use (3).",
       "highlights": [
         {
           "id": "2609.39903",
@@ -69,15 +69,15 @@
           "blurb": "Delegating complete application development to coding agents requires preserving the intended design rather than simply producing plausible outputs through naive prompting."
         },
         {
-          "id": "2609.39146",
-          "title": "MADBench: Benchmarking the Security of Multi-Agent Debate",
-          "blurb": "Multi-agent debate (MAD) can improve large language model (LLM) reasoning by allowing multiple agents to exchange and critique their answers to the same task."
+          "id": "2610.00636",
+          "title": "CompMat-Bench: Benchmarking AI Agents for Computational Materials Science",
+          "blurb": "Evaluating AI agents on scientific research tasks is constrained by the time and resources required for the underlying experiments or calculations."
         }
       ]
     },
     "zh": {
-      "headline": "新增 11 篇 Agent Benchmark",
-      "summary": "2026年9月30日，arXiv 新增 11 篇 Agent Benchmark。当日主题集中在规划 / 推理（7）、计算机使用（3）、代码智能体（3）、GUI 智能体（2）。",
+      "headline": "新增 16 篇 Agent Benchmark",
+      "summary": "2026年9月30日，arXiv 新增 16 篇 Agent Benchmark。当日主题集中在规划 / 推理（8）、代码智能体（4）、科学实验（3）、计算机使用（3）。",
       "highlights": [
         {
           "id": "2609.39903",
@@ -90,14 +90,203 @@
           "blurb": "Delegating complete application development to coding agents requires preserving the intended design rather than simply producing plausible outputs through naive prompting."
         },
         {
-          "id": "2609.39146",
-          "title": "MADBench: Benchmarking the Security of Multi-Agent Debate",
-          "blurb": "Multi-agent debate (MAD) can improve large language model (LLM) reasoning by allowing multiple agents to exchange and critique their answers to the same task."
+          "id": "2610.00636",
+          "title": "CompMat-Bench: Benchmarking AI Agents for Computational Materials Science",
+          "blurb": "Evaluating AI agents on scientific research tasks is constrained by the time and resources required for the underlying experiments or calculations."
         }
       ]
     }
   },
   "papers": [
+    {
+      "id": "2610.00651",
+      "title": "Agent Evaluation Reliability: More Tasks Won't (Always) Fix An Agent Leaderboard",
+      "abstract": "Agent evaluations are increasingly used to compare LLMs and inform deployment decisions, yet ranks can reflect not only the model but also the effects of the evaluation conditions such as the scaffolds or tasks. This makes reliability claim-dependent: an evaluation that reliably ranks deployed systems may not reliably rank underlying models. We ask which conclusions current agent evaluations reliably support and what additional evaluation would improve them. We develop a Bayesian variance-decomposition framework for sparse, imbalanced agent leaderboards and apply it to 22 benchmarks from the Holistic Agent Leaderboard and Harbor Index. The framework separates signal, performance differences relevant to the intended claim, from noise, irrelevant variation that can still change rankings. We find: (1) Reliability depends on the measurement goal. Fixed model-scaffold systems are ranked reliably (0.935-0.994), while underlying-model reliability is substantially lower (0.148-0.841). (2) Scaffold choice can change conclusions. Inter-scaffold reliability measures whether scaffolds preserve model rankings, showing that scaffold effects vary substantially across evaluations. (3) More tasks cannot resolve all uncertainty. Even infinitely many similarly constructed tasks improve model-ranking reliability of a benchmark by at most 0.097 when uncertainty is dominated by limited scaffold coverage. (4) Pooling diverse benchmarks can improve cross-task rankings at lower cost. For rankings across diverse agentic tasks, pooling benchmarks raises projected reliability from 0.44 to 0.75 at the same task budget and can reduce projected cost by up to 83\\%. Evaluation design should follow the intended claim: identify what a score or ranking should mean, diagnose what limits its reliability, and spend evaluation budget on the sources of uncertainty that matter.",
+      "authors": [
+        "Michael Hardy",
+        "Ruhana Azam",
+        "Anka Reuel",
+        "Mykel Kochenderfer",
+        "Sanmi Koyejo"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "stat.AP"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-30T19:52:09Z",
+      "updated": "2026-09-30T19:52:09Z",
+      "announced_date": "2026-09-30",
+      "first_seen": "2026-09-30",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.00651v1",
+        "pdf": "https://arxiv.org/pdf/2610.00651v1",
+        "html": "https://arxiv.org/html/2610.00651"
+      },
+      "score": 12,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.00648",
+      "title": "Incident-Arena: Getting agents to the last nine of reliability",
+      "abstract": "AI coding agents are ubiquitous in engineering workflows amongst industry and academia. Yet, despite their use in app coding, relatively less attention has been paid to their ability to execute on production incident response. This emerging field, termed agentic site-reliability-engineering (SRE) contains benchmarks limited by (1) unrealistic environments, typically toy repositories (2) non-standard framework implementations and (3) simple static verifiers. We introduce Incident-Arena, a human-built benchmark of 20 carefully selected tasks grounded in real-world deployed open source software. Each task deploys a production application to an ephemeral Kubernetes cluster, injecting a fault from the config layer through underlying images, and a sustained load profile given the task requirements. We also present a novel verification method, going beyond static checks to functional verifiers, holding systems level metrics stable, while ensuring repairs are done safely. Agent trials run an average of 2.81M tokens and 41 turns, going beyond existing benchmarks, demonstrating agentic long horizon reasoning. Across 20 tasks and 3 application substrates, frontier models score below 64.3%, with failures extending from diagnosis/localization errors, through incomplete repairs and unsafe regressions.",
+      "authors": [
+        "Andre Fu",
+        "Malik Drabla",
+        "Leon Liu",
+        "Meji Abidoye",
+        "Marek Suppa",
+        "Lata Mishra",
+        "Adnan El Assadi",
+        "Yiyuan Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-30T19:50:42Z",
+      "updated": "2026-09-30T19:50:42Z",
+      "announced_date": "2026-09-30",
+      "first_seen": "2026-09-30",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.00648v1",
+        "pdf": "https://arxiv.org/pdf/2610.00648v1",
+        "html": "https://arxiv.org/html/2610.00648"
+      },
+      "score": 13,
+      "tags": [
+        "coding",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.00636",
+      "title": "CompMat-Bench: Benchmarking AI Agents for Computational Materials Science",
+      "abstract": "Evaluating AI agents on scientific research tasks is constrained by the time and resources required for the underlying experiments or calculations. In computational materials research, repeating the same expensive simulations across agents and trials can make evaluation impractical. We introduce CompMat-Bench, a benchmark of 94 tasks derived from recently published computational materials studies, each asking agents to complete a step toward achieving the study's scientific goal. We reproduce the research steps in advance and assess agents on preparing inputs and analyzing outputs for expensive simulations, so expensive simulations can be avoided during evaluation. The reproduced inputs and results serve as ground truth for grading agents with fixed rules, without an LLM judge. The benchmark supports four evaluation conditions: single tasks and workflows composed of related tasks, each with full or reduced methodological guidance. With full guidance on single tasks, agents based on three LLMs demonstrate the ability to complete individual materials research steps, with pass rates of 66.0-90.4% across 94 tasks. Both longer workflows and reduced guidance can limit agent performance, but in different ways for different agents: they lower the pass rates of the weaker agents, whereas the strongest agent falls only when a long workflow is combined with reduced guidance. Failure analysis attributes most failures to scientific errors rather than to errors in software usage. CompMat-Bench provides a basis for comparing agents on the steps of real materials research and for analyzing agent failure modes.",
+      "authors": [
+        "Chenmu Zhang",
+        "Levi Felix",
+        "Jun-Jie Zhang",
+        "Xingfu Li",
+        "Xuelian Jiang",
+        "Tao Jiang",
+        "Subhendu Mishra",
+        "Xixi Qin",
+        "Boris Yakobson"
+      ],
+      "categories": [
+        "cs.AI",
+        "cond-mat.mtrl-sci",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-30T19:37:09Z",
+      "updated": "2026-09-30T19:37:09Z",
+      "announced_date": "2026-09-30",
+      "first_seen": "2026-09-30",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.00636v1",
+        "pdf": "https://arxiv.org/pdf/2610.00636v1",
+        "html": "https://arxiv.org/html/2610.00636"
+      },
+      "score": 23,
+      "tags": [
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2610.00609",
+      "title": "Legal Research Bench: Measuring End-to-End Reliability in Long-Horizon Legal Research Agents",
+      "abstract": "Legal research is a core and time-consuming legal workflow. Lawyers must identify controlling authority, verify that it remains valid, reconcile statutes and cases, and synthesize a grounded answer. Language model agents are a natural fit for this retrieval-intensive workflow, and automating even part of it would be valuable. But that value depends on reliability: a single missing authority, stale citation, or wrong legal conclusion can make an otherwise plausible answer unusable. We introduce \\textbf{Legal Research Bench} (LRB), a benchmark of 413 open-ended U.S. legal research questions written by experts, each paired with a gold answer, supporting authorities, and a binary grading rubric. We evaluate thirteen frontier models in a harness with web search, case-law search, page parsing, and retrieval tools. We score agent responses through all-pass grading with source verification, where a response is correct only if every required criterion is satisfied and its cited authorities verify. We also validate the LLM judge against expert attorneys ensuring that benchmark scores track attorney judgment. Agents remain far from reliable: among the models we tested, the strongest, Claude Opus 4.8, is fully correct on 42.9\\% of questions. Performance also varies substantially by task setting: all-pass rates differ across areas of law and are lower on questions requiring reconciliation of conflicting authorities. Across models, more turns, tool calls, and inference cost do not predict higher accuracy.",
+      "authors": [
+        "Katrina Drozdov",
+        "Oliver Chen",
+        "Langston Nashold",
+        "Rayan Krishnan"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CY"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-09-30T19:13:16Z",
+      "updated": "2026-09-30T19:13:16Z",
+      "announced_date": "2026-09-30",
+      "first_seen": "2026-09-30",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.00609v1",
+        "pdf": "https://arxiv.org/pdf/2610.00609v1",
+        "html": "https://arxiv.org/html/2610.00609"
+      },
+      "score": 14,
+      "tags": [
+        "tool-use",
+        "research"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2610.00492",
+      "title": "EurekaBench: Measuring Agentic Ability to Discover New Scientific Insights",
+      "abstract": "When Isaac Newton discovered the law of gravitation, he did so through an iterative process of analyzing observed data such as planetary patterns, finding the underlying mechanisms by describing patterns in mathematical equations, and refining his theory against the Moon's orbit, revealing the startling insight that the same force governs both falling apples and orbiting planets. Would it be possible for AI agents to make similar discoveries? To measure this ability, we introduce EurekaBench, a cross-domain benchmark that tests AI agents' ability to conduct long-horizon experiments and discover mechanisms that explain observations. We evaluate these mechanisms by the scientific insights that can be derived from them. EurekaBench contains an expert-verified set of 26 long-horizon tasks across neuroscience, computer science, chemistry, astrophysics, geophysics, and plasma physics, with a total of 306 scientific insights that the discovered mechanisms are expected to support. Our evaluation framework tests three axes of scientific discovery: agents' ability to follow known scientific constraints, the predictive accuracy of the discovered mechanisms, and whether these mechanisms yield scientific insights or inform future research. Our results show that current AI agents often overly fixate on predictive accuracy optimization, surpassing human scientists, while falling substantially short in deriving scientific insights.",
+      "authors": [
+        "Jiayi Geng",
+        "Zhengxuan Wu",
+        "Kevin S. Chen",
+        "Seungone Kim",
+        "Joseph Janssen",
+        "Zora Zhiruo Wang",
+        "Bhupalee Kalita",
+        "Runtian Gao",
+        "Aaron Ho",
+        "Andrew Oakleigh Nelson",
+        "Olexandr Isayev",
+        "Francisco Villaescusa-Navarro",
+        "Ching-Yao Lai",
+        "Howard Chen",
+        "Graham Neubig"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-09-30T18:00:51Z",
+      "updated": "2026-09-30T18:00:51Z",
+      "announced_date": "2026-09-30",
+      "first_seen": "2026-09-30",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.00492v1",
+        "pdf": "https://arxiv.org/pdf/2610.00492v1",
+        "html": "https://arxiv.org/html/2610.00492"
+      },
+      "score": 15,
+      "tags": [
+        "research",
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    },
     {
       "id": "2609.40325",
       "title": "WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents",
@@ -316,7 +505,8 @@
         "Dongmin Park"
       ],
       "categories": [
-        "cs.AI"
+        "cs.AI",
+        "cs.CV"
       ],
       "primary_category": "cs.AI",
       "published": "2026-09-30T12:00:50Z",
