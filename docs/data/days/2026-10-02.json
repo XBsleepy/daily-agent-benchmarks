@@ -1,15 +1,21 @@
 {
   "date": "2026-10-02",
-  "count": 13,
+  "count": 19,
   "report": {
     "date": "2026-10-02",
-    "count": 13,
+    "count": 19,
     "themes": [
       {
         "id": "tool-use",
-        "count": 3,
+        "count": 7,
         "en": "Tool use",
         "zh": "工具使用"
+      },
+      {
+        "id": "coding",
+        "count": 4,
+        "en": "Coding agents",
+        "zh": "代码智能体"
       },
       {
         "id": "research",
@@ -18,16 +24,22 @@
         "zh": "科研智能体"
       },
       {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
         "id": "planning",
         "count": 2,
         "en": "Planning / reasoning",
         "zh": "规划 / 推理"
       },
       {
-        "id": "coding",
+        "id": "web",
         "count": 2,
-        "en": "Coding agents",
-        "zh": "代码智能体"
+        "en": "Web agents",
+        "zh": "网页智能体"
       },
       {
         "id": "science",
@@ -36,27 +48,15 @@
         "zh": "科学实验"
       },
       {
-        "id": "embodied",
+        "id": "safety",
         "count": 1,
-        "en": "Embodied / robotics",
-        "zh": "具身 / 机器人"
-      },
-      {
-        "id": "web",
-        "count": 1,
-        "en": "Web agents",
-        "zh": "网页智能体"
-      },
-      {
-        "id": "memory",
-        "count": 1,
-        "en": "Memory",
-        "zh": "记忆"
+        "en": "Safety",
+        "zh": "安全"
       }
     ],
     "en": {
-      "headline": "13 new agent benchmarks",
-      "summary": "On October 2, 2026, arXiv listed 13 new agent benchmarks. Work clustered around Tool use (3), Research agents (3), Planning / reasoning (2), and Coding agents (2).",
+      "headline": "19 new agent benchmarks",
+      "summary": "On October 2, 2026, arXiv listed 19 new agent benchmarks. Work clustered around Tool use (7), Coding agents (4), Research agents (3), and Memory (2).",
       "highlights": [
         {
           "id": "2609.39564",
@@ -76,8 +76,8 @@
       ]
     },
     "zh": {
-      "headline": "新增 13 篇 Agent Benchmark",
-      "summary": "2026年10月2日，arXiv 新增 13 篇 Agent Benchmark。当日主题集中在工具使用（3）、科研智能体（3）、规划 / 推理（2）、代码智能体（2）。",
+      "headline": "新增 19 篇 Agent Benchmark",
+      "summary": "2026年10月2日，arXiv 新增 19 篇 Agent Benchmark。当日主题集中在工具使用（7）、代码智能体（4）、科研智能体（3）、记忆（2）。",
       "highlights": [
         {
           "id": "2609.39564",
@@ -98,6 +98,198 @@
     }
   },
   "papers": [
+    {
+      "id": "2610.03715",
+      "title": "4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes",
+      "abstract": "We introduce 4DCodeBench, a benchmark for 4D inverse graphics through code generation, in which agents reconstruct dynamic scenes from video as executable graphics programs. To accomplish this, agents must translate visual observations into compact representations of scene structure and dynamics, by implementing abstractions such as physical simulations to reproduce complex behavior. To evaluate this capability, we curate a set of real-world videos and construct synthetic scenes spanning diverse physical phenomena, including deformation, fluid flow, and fracture. We perform extensive benchmarking of frontier models, finding that strong static reconstruction capabilities do not yet translate into reliable reconstruction of complex dynamics. 4DCodeBench provides a testbed for tracking progress toward agents that can interpret the dynamics of the world through code. Our benchmark is available at https://github.com/4DCodeBench/4DCodeBench",
+      "authors": [
+        "Ruihong Shen",
+        "Žiga Kovačič",
+        "Peter Kulits",
+        "Xingrui Wang",
+        "Zizhang Li",
+        "Joshua B. Tenenbaum",
+        "Alan Yuille",
+        "Jieneng Chen",
+        "Jiajun Wu"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.GR"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-10-02T17:58:49Z",
+      "updated": "2026-10-02T17:58:49Z",
+      "announced_date": "2026-10-02",
+      "first_seen": "2026-10-02",
+      "comment": "https://4dcodebench.com/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.03715v1",
+        "pdf": "https://arxiv.org/pdf/2610.03715v1",
+        "html": "https://arxiv.org/html/2610.03715"
+      },
+      "score": 13,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.03356",
+      "title": "ReFract: Benchmarking Perspective Awareness in Language Model Agents with Text World Models",
+      "abstract": "Large Language Model (LLM) agents are increasingly deployed in high-stakes settings such as industrial maintenance and equipment fault troubleshooting, where workers occupy a variety of roles. A capable agent must therefore act in a way that is calibrated to user's role: taking actions and providing information that respect the role's knowledge and capability boundaries. Unlike coding, where mistakes are usually recoverable, agent responses in these settings are enacted on physical equipment, and can therefore cause irreversible equipment damage, production loss, or personnel harm. Existing benchmarks, however, largely overlook the need for agents to infer what a role intends and acting only through tools that role may legitimately use, a capability which we term Perspective Awareness. To this end, we introduce ReFract, a benchmark of 150 expert-validated entries in which an agent must act differently in response to the same query depending on user's role. Entries of ReFract are grounded in anonymized queries from domain support conversations, against which we construct Text World Models that simulate the agent's operating environments and assemble perspective-aware action trajectories. State-of-the-art LLMs solve at most 69% of the tasks with more than 50% of their trajectories contain attempts of taking perspective-violating actions. ReFract exposes perspective awareness as a distinct, largely unsolved axis of agent evaluation and motivates agents that calibrate not just how to act, but for whom.",
+      "authors": [
+        "Hainiu Xu",
+        "Vítor N. Lourenço",
+        "Mohnish Dubey",
+        "Yunfei Bai",
+        "Yulan He",
+        "Caroline Catmur",
+        "Aline Paes",
+        "Marco Caserta",
+        "Akash Chandrayan",
+        "Luca D'Angelo"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-02T14:21:26Z",
+      "updated": "2026-10-02T14:21:26Z",
+      "announced_date": "2026-10-02",
+      "first_seen": "2026-10-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.03356v1",
+        "pdf": "https://arxiv.org/pdf/2610.03356v1",
+        "html": "https://arxiv.org/html/2610.03356"
+      },
+      "score": 10,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.03226",
+      "title": "D2K-Bench: Can LLM Agents Turn Expert Designs into Efficient GPU Kernels?",
+      "abstract": "GPU kernels generated by large language model (LLM) agents can remain less efficient than expert implementations, but runtime alone does not reveal how the gap relates to design discovery and implementation. We introduce D2K-Bench, a diagnostic benchmark of 26 tasks and 85 workloads that measures how effectively agents translate expert design guidance into efficient GPU kernels. The guidance covers L1: high-level algorithmic insights, L2: dataflow design, and L3: low-level optimization tricks, including dependencies among these levels. Pairwise runs with and without guidance share task descriptions, workloads, tools, hardware, and a 350-turn budget. Complementary assessments examine independently proposed designs and the design properties implemented in generated code. Across five models on NVIDIA B200 GPUs, guidance raises correctness over 130 model-task pairs from 93.1% to 98.5% and increases the Performance Score over all 26 tasks from 1.46 to 1.95. For the three frontier models with correct submissions on all 26 tasks in both runs (GPT-6-Astra, Claude-Opus-4.8, and GPT-5.6-Sol), geometric mean speedup increases from $1.69\\times$ to $2.49\\times$. Across all five models, the mean combined implementation score increases from 57 to 70 out of 100. These results show the value of expert design guidance while identifying design properties that remain unimplemented.",
+      "authors": [
+        "Daifeng Li",
+        "Huiqiang Jiang",
+        "Chengruidong Zhang",
+        "Wei Wu",
+        "Xudong Guo",
+        "Jianhong Tu",
+        "Jianwei Zhang",
+        "Binhang Yuan",
+        "Dayiheng Liu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.DC"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-10-02T12:42:12Z",
+      "updated": "2026-10-02T12:42:12Z",
+      "announced_date": "2026-10-02",
+      "first_seen": "2026-10-02",
+      "comment": "30 pages, 4 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.03226v1",
+        "pdf": "https://arxiv.org/pdf/2610.03226v1",
+        "html": "https://arxiv.org/html/2610.03226"
+      },
+      "score": 16,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.03153",
+      "title": "EvoRiskBench: An Evolving Benchmark for Runtime Security Risks in Workspace Agents",
+      "abstract": "Workspace agents combine large language models with execution harnesses to perform stateful, multi-step tasks that access or modify external resources. Existing benchmarks leave gaps in executable coverage of their runtime security risks, while evolving model capabilities, harnesses, tools, and threats motivate benchmark evolution. We introduce EvoRiskBench, an evolving benchmark organized around the EP-Path-EF framework, which links an initial risk entry point to a one-hop technical effect through an agent-mediated risk path. The framework defines nine entry-point categories and five effect categories; a 20-participant study supports their interpretability and classification consistency on representative cases. Guided by this framework, an automated end-to-end workflow constructs and executes risk cases in isolated environments and independently verifies outcomes using runtime traces and environment states. The benchmark provides a reproducible dataset of 450 adversarial tasks across six scenarios. We evaluate nine model-harness configurations spanning three models (GPT-5.6 Sol, DeepSeek-V4-Pro-0813, and Claude Opus 5) and three harnesses (Claude Code, Codex, and OpenClaw). Our results reveal substantial vulnerabilities across systems. The most vulnerable configuration, Codex with DeepSeek-V4-Pro-0813, reaches a 68.44% attack success rate (ASR), indicating that configuration of workspace agent is insufficient to ensure secure autonomous execution. ASR varies more across models than harnesses, and harness differences depend on the model. The benchmark cases and evaluation platform will be released after completion of artifact safety and reproducibility checks.",
+      "authors": [
+        "Shiyi Kuang",
+        "Xuemei Luo",
+        "Kun Liu",
+        "Junhai Li",
+        "Rui Tian",
+        "Feng Shi",
+        "Bo Shen",
+        "Nianyu Li",
+        "Dehui Li",
+        "Ping Chen"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-10-02T11:22:36Z",
+      "updated": "2026-10-02T11:22:36Z",
+      "announced_date": "2026-10-02",
+      "first_seen": "2026-10-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.03153v1",
+        "pdf": "https://arxiv.org/pdf/2610.03153v1",
+        "html": "https://arxiv.org/html/2610.03153"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2610.03020",
+      "title": "DyadMem: A Long-Term Memory Benchmark of How Agents Work with Users",
+      "abstract": "Long-term agents must remember not only what is true about a user, but also how a particular agent should work with that user as their shared history evolves. Existing benchmarks primarily supervise user facts and preferences or experience reusable across users, leaving this relationship-specific agent memory implicit. Additionally, most prior works measure the model solely with final-answer QA over long interaction histories, making the assessment still incomplete and unreliable. To this end, we introduce DyadMem with the proposed new definition User-conditioned Relational Agent Memory (URAM). DyadMem jointly annotates user-side memory and URAM along the same multi-session trajectories, resulting in 6 memory categories. To summarize, it includes 3,065 episodes, 50,961 sessions, and 61,210 QA instances, with extensive session-level Capture and Update gold annotations, query-level Recall support, and two QA settings: Gold-Memory and Full-Pipeline. Across 16 open-weight and 4 proprietary models, Gold-Memory QA is consistently strong, yet Full-Pipeline QA drops sharply. Such a gap explicitly supports our fine-grained evaluation design. Additionally, several quantitative results further reveal low Capture recall, incomplete Recall, and unsafe-deletion issues arising from even the frontier LLMs. We further conduct a rigorous experiment to validate the effectiveness of our URAM and observe the positive effects for all 20 models. In summary, DyadMem is a dual-domain, full-pipeline memory benchmark with extensive annotation efforts for advancing the domain's development.",
+      "authors": [
+        "Yifei Tao",
+        "Xinyu Zhong",
+        "Henry Hengyuan Zhao",
+        "Fanyi Wang",
+        "Tengda Guo",
+        "Wentao Qiu",
+        "Ying Wang",
+        "Liujian Tang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-02T08:57:43Z",
+      "updated": "2026-10-02T08:57:43Z",
+      "announced_date": "2026-10-02",
+      "first_seen": "2026-10-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.03020v1",
+        "pdf": "https://arxiv.org/pdf/2610.03020v1",
+        "html": "https://arxiv.org/html/2610.03020"
+      },
+      "score": 8,
+      "tags": [
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    },
     {
       "id": "2610.02206",
       "title": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
@@ -488,6 +680,43 @@
       "score": 24,
       "tags": [
         "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.02617",
+      "title": "WebUIProof: Benchmarking WebUI Code Generators with UI-Agent Execution Harness",
+      "abstract": "Evaluating WebUI code generation at scale is difficult: outputs may compile and look plausible yet fail under user interaction, and prior benchmarks largely rely on free-form prompts with static checks (build success, screenshots) that miss functional correctness. We introduce WebUIProof, an execution-oriented benchmark that provides structured specifications and dense, executable interaction tests for WebUI generation across two task families: general WebUIs (e.g., dashboards, game, interactive tools) and 3D interactive simulation (e.g., particle/galaxy systems, physics dynamics). WebUIProof includes a UI-agent harness that runs executable interaction tests in a headless browser using an iterative plan--act--observe loop: it locates DOM elements, performs actions, observes resulting UI/DOM changes, and checks the specified assertions. We evaluate across eight commercial LLMs and observe frequent failures on interaction-based requirements even when pages render successfully, especially on 3D simulation interfaces. Finally, we show the UI-agent harness can provide outcome-level training signals. Training compact models (e.g., Qwen2.5 14B and MIMO 7B) with RL rewards derived from executable interaction tests improves functional completion while reducing build failures.",
+      "authors": [
+        "Yun-Yun Tsai",
+        "Yuning Mao",
+        "Shiqi Wang",
+        "Junfeng Yang",
+        "Sinong Wang"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-02T00:17:11Z",
+      "updated": "2026-10-02T00:17:11Z",
+      "announced_date": "2026-10-02",
+      "first_seen": "2026-10-02",
+      "comment": "43 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.02617v1",
+        "pdf": "https://arxiv.org/pdf/2610.02617v1",
+        "html": "https://arxiv.org/html/2610.02617"
+      },
+      "score": 7,
+      "tags": [
+        "web",
+        "coding",
+        "tool-use"
       ],
       "field": "coding",
       "citations": 0

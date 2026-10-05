@@ -1,0 +1,277 @@
+{
+  "date": "2026-10-01",
+  "count": 6,
+  "report": {
+    "date": "2026-10-01",
+    "count": 6,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      }
+    ],
+    "en": {
+      "headline": "6 new agent benchmarks",
+      "summary": "On October 1, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Tool use (1), Multimodal (1), and Safety (1).",
+      "highlights": [
+        {
+          "id": "2610.02563",
+          "title": "OpenGameEval: Benchmarking Agentic Programming and Exploration in a Stateful Game Engine",
+          "blurb": "We present OpenGameEval, a benchmark and evaluation framework for agentic game development inside Roblox Studio."
+        },
+        {
+          "id": "2610.02425",
+          "title": "Finding the Move Is Not Winning the Game: XiangqiBench for Closed-Loop Evaluation of LLM Agents",
+          "blurb": "Static evaluations credit a language model for naming the right move, but an agent must carry a plan through to a verified outcome while an opponent responds."
+        },
+        {
+          "id": "2610.02588",
+          "title": "Open-Endedness Bench: Measuring Epistemic Process from Agent Records",
+          "blurb": "Agents are increasingly given open-ended research tasks: discovering an empirical law from self-designed experiments, improving a heuristic whose optimum nobody knows, or beating a standing record."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 6 篇 Agent Benchmark",
+      "summary": "2026年10月1日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在工具使用（1）、多模态（1）、安全（1）。",
+      "highlights": [
+        {
+          "id": "2610.02563",
+          "title": "OpenGameEval: Benchmarking Agentic Programming and Exploration in a Stateful Game Engine",
+          "blurb": "We present OpenGameEval, a benchmark and evaluation framework for agentic game development inside Roblox Studio."
+        },
+        {
+          "id": "2610.02425",
+          "title": "Finding the Move Is Not Winning the Game: XiangqiBench for Closed-Loop Evaluation of LLM Agents",
+          "blurb": "Static evaluations credit a language model for naming the right move, but an agent must carry a plan through to a verified outcome while an opponent responds."
+        },
+        {
+          "id": "2610.02588",
+          "title": "Open-Endedness Bench: Measuring Epistemic Process from Agent Records",
+          "blurb": "Agents are increasingly given open-ended research tasks: discovering an empirical law from self-designed experiments, improving a heuristic whose optimum nobody knows, or beating a standing record."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2610.02588",
+      "title": "Open-Endedness Bench: Measuring Epistemic Process from Agent Records",
+      "abstract": "Agents are increasingly given open-ended research tasks: discovering an empirical law from self-designed experiments, improving a heuristic whose optimum nobody knows, or beating a standing record. Their execution logs record every step of this research, yet the runs are still judged by their outcome score. That score alone does not establish whether an agent's claims follow from executed experiments, and a reference answer may be unavailable. We evaluate the agent's epistemic process: how it forms hypotheses, tests them, and revises them in response to evidence. We introduce OEB (Open-Endedness Bench), a benchmark-agnostic methodology that reads only the agent's execution record and never a reference answer or an outcome score. OEB compiles the record into a unified epistemic event graph whose edges connect the propositions the agent states to the executed actions that test them; each node carries an exact excerpt that code verifies against the record. One principle governs scoring: prose can state a proposition, but only evidence returned by an executed action can support or refute it, so OEB checks what the agent writes against what it actually ran. From the graph, OEB scores four competence axes (evidence, experiment, revision, and no reward hacking), mostly as the share of opportunities for sound research that the agent took, and profiles six subjective persona traits that describe the agent's research habits. We score 119 existing runs over 12 tasks from three benchmarks: LLM post-training, chip design, and a training-speed record. Against logged results, only 16-29% of the improvements agents claim are real. On 9 of 10 tasks, the best run tries more new ideas in its second half than the worst run. The persona readings follow the model: for every trait, the model that ran explains more of its variance across runs than the task (a median of 43% against 7%).",
+      "authors": [
+        "Chengyang Shi",
+        "Xianglin Ji",
+        "Jintao Huang",
+        "Jicheng Wang",
+        "Yifeng He",
+        "Jiachen Liu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-01T23:34:37Z",
+      "updated": "2026-10-01T23:34:37Z",
+      "announced_date": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "comment": "18 pages, 7 figures. Code: https://github.com/ARA-Labs/oeb . Data: https://huggingface.co/datasets/AgentNativeResearchLab/oeb-scored-runs",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.02588v1",
+        "pdf": "https://arxiv.org/pdf/2610.02588v1",
+        "html": "https://arxiv.org/html/2610.02588"
+      },
+      "score": 9,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.02563",
+      "title": "OpenGameEval: Benchmarking Agentic Programming and Exploration in a Stateful Game Engine",
+      "abstract": "We present OpenGameEval, a benchmark and evaluation framework for agentic game development inside Roblox Studio. It runs language models as agents in reproducible, stateful game-engine sessions and scores each run with executable checks, both on the edited scene and in a simulated play session. Most agentic coding benchmarks require exploration but score only final task success. OpenGameEval separates observation tools from editing tools in its eight-tool action space, so exploration can be measured directly. We measure the pass rates and exploration behavior of 13 frontier models on 84 human-curated core tasks, with 16 attempts per task. The tasks are hard for current models. The best model solves 51.7% of tasks on a single attempt and 39.4% five times out of five, and no tested model solves six of the tasks. Models at the frontier reach similar pass rates by solving different tasks: splitting tasks by the kind of work they require spreads the top five by 5.0pp on script-authoring tasks and 12.5pp on scene-change tasks. Exploration behavior predicts whether a run succeeds. Holding task and model fixed, a run that inspects every object a reference solution touches before acting on it passes 13.4pp more often than a run that inspects none of them on scene-only tasks, and 9.8pp more often on script-only tasks. We release the task suite, its place files, the per-task annotations, a plugin that runs the tasks inside Roblox Studio, and an updated leaderboard under the MIT license at https://github.com/Roblox/open-game-eval.",
+      "authors": [
+        "Eray Turkel",
+        "Mengsha Sun",
+        "Kartik Ayyar",
+        "Sean Dunigan",
+        "Jack Lu",
+        "Vlad Shcherban",
+        "Hsiang-Shun Shih",
+        "Xin Wang",
+        "Tiantian Zhang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-10-01T22:56:10Z",
+      "updated": "2026-10-01T22:56:10Z",
+      "announced_date": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "comment": "A shorter version appears at the NeurIPS 2026 Workshop on Evaluation of Interactive Agents",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.02563v1",
+        "pdf": "https://arxiv.org/pdf/2610.02563v1",
+        "html": "https://arxiv.org/html/2610.02563"
+      },
+      "score": 18,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.02425",
+      "title": "Finding the Move Is Not Winning the Game: XiangqiBench for Closed-Loop Evaluation of LLM Agents",
+      "abstract": "Static evaluations credit a language model for naming the right move, but an agent must carry a plan through to a verified outcome while an opponent responds. We introduce XiangqiBench, an executable benchmark that measures this difference in Chinese chess: starting from 119 tactical endgames with forced mates supported by engine or checks-only search, an LLM agent must deliver checkmate against an engine defender. An interactive REPL interface separates real moves, state queries, and forward simulation, and we record 8,568 multi-turn trajectories from 12 frontier LLMs under two observation protocols. Three signals that look like competence each overstate closed-loop success. (i) The Conversion Gap: models play the stored reference first move in 26.1\\% of Sighted trials, yet only 13.9\\% of these trials end in a win. (ii) The Consistency Gap: the leading model reaches 38.7\\% pass@3 but only 5.9\\% pass^3, winning all three trials on 7 of the 46 positions it ever wins. (iii) The Simulation Gap: 32.3\\% of accepted simulation calls stop on an illegal move, and in 49.3\\% of comparable cases the real defender replies differently from the line the agent simulated; self-authored rollouts check legality but cannot anticipate the opponent. Finding the move is not winning the game: agent evaluations should score closed-loop outcomes and report reliability alongside coverage.",
+      "authors": [
+        "Yekun Chai",
+        "Qiwei Peng",
+        "Haoyi Xiong"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-10-01T19:48:08Z",
+      "updated": "2026-10-01T19:48:08Z",
+      "announced_date": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.02425v1",
+        "pdf": "https://arxiv.org/pdf/2610.02425v1",
+        "html": "https://arxiv.org/html/2610.02425"
+      },
+      "score": 13,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.02399",
+      "title": "VisAudit: Evaluating Multimodal Agents for Visual Diagnosis and Repair",
+      "abstract": "Multimodal agents are increasingly used for data visualization tasks but remain limited in autonomous review. Unlike humans, they may fail to recognize when a visualization is incorrect, determine what to change, repair it without disrupting correct content, and verify whether the intervention succeeded. Existing benchmarks largely evaluate predefined individual capabilities such as chart generation, instruction-guided editing, or defect detection, and therefore do not capture this gap in autonomous review. We introduce VisAudit, a benchmark for evaluating visualization diagnosis, repair, and verification. Given a rendered chart and configurable auxiliary evidence, including its source data table, intended text summary, and visualization code, an agent iteratively diagnoses potential defects, modifies and executes visualization code, inspects execution and visual feedback, and determines when no further intervention is needed. VisAudit defines three tracks spanning diagnosed repair, autonomous repair, and open-world verification, and contains 1,900 flawed instances across 21 chart types and 10 flaw categories, together with 300 initially correct charts. We construct the benchmark through controlled perturbations of validated source visualizations, with systematic verification and human-aligned quality control to ensure that injected defects are well-defined and recoverable from the available evidence. Experiments with leading multimodal models reveal a substantial gap from reliable autonomous review: the strongest evaluated model fully recovers only $47.4\\%$ of flawed charts in the autonomous-repair setting.",
+      "authors": [
+        "Shicheng Liu",
+        "Adam Kahirov",
+        "Qi Zhang",
+        "Zhimin Hu",
+        "Song Wang",
+        "Junhong Lin",
+        "Julian Shun",
+        "Yada Zhu"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-10-01T19:26:35Z",
+      "updated": "2026-10-01T19:26:35Z",
+      "announced_date": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.02399v1",
+        "pdf": "https://arxiv.org/pdf/2610.02399v1",
+        "html": "https://arxiv.org/html/2610.02399"
+      },
+      "score": 5,
+      "tags": [
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2610.02363",
+      "title": "ArrivalBench: Agent-Generated Data Pipelines Are Correct Once and Wrong Under Time",
+      "abstract": "Benchmarks for agent-generated data work grade a pipeline by running it once against a fixed snapshot. ArrivalBench instead re-executes the pipeline an agent leaves behind under adversarial but replayable delivery schedules (late, duplicated, out-of-order and retried records) and requires its final state to equal a batch recomputation of the complete log. Because the oracle recomputes rather than classifies, a wrong table and a crash are distinct verdicts: a crash is visible to monitoring a team already runs, and a wrong table is not. On 40 tasks we built, our reimplementation of single-execution grading certifies 86-100% of the pipelines eleven models produce; re-executing the same artifacts finds 7.0-79.2% of the certified ones silently wrong. The gap is not produced by the repair loop: within the same model and task, pipelines repaired against the snapshot test fail replay about as often as those that passed it first time. In every model, idempotency hazards fail more often than ordering hazards. Separating a wrong answer from a crash also changes how interventions read: a hazard warning cuts one model's silent failure from 48.2% to 10.5% while raising its crash rate from 9.0% to 37.0%, so all-in failure moves only from 51.0% to 44.0%. All eleven arms were independently re-run, and rates moved by at most 5.9 points.",
+      "authors": [
+        "Pranay Kothari"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DB"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-10-01T18:39:06Z",
+      "updated": "2026-10-01T18:39:06Z",
+      "announced_date": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "comment": "Accepted as a poster at the NeurIPS 2026 Workshop \"Who Verifies the Agents?\". 20 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.02363v1",
+        "pdf": "https://arxiv.org/pdf/2610.02363v1",
+        "html": "https://arxiv.org/html/2610.02363"
+      },
+      "score": 7,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.02304",
+      "title": "SimuVerity: Benchmarking Agents for Engineering-Grade Simulink Model Generation",
+      "abstract": "Existing Simulink benchmarks mainly evaluate whether generated models compile, execute, or resemble a reference model. These criteria do not establish whether a model satisfies its engineering requirements. We introduce SimuVerity, a benchmark of 101 text-to-executable Simulink model-generation tasks across ten engineering domains. For each task, executable-system profiles ground the engineering specification and four families of native simulation scenarios. A hierarchical evaluator first checks artifact delivery, native executability, and engineering qualification, then scores qualified models across six dimensions covering accuracy, output quality, mechanistic fidelity, control and causal integrity, operating-domain robustness, and dynamic response. We evaluate six agent systems with SimuVerity. The best system achieves an overall score of only 42.86. The results show that structural similarity is a poor proxy for engineering performance: capability bottlenecks arise both in producing qualified implementations and in satisfying multidimensional requirements after qualification. Meanwhile, some high-scoring models still exhibit severe visual-layout disorder. SimuVerity provides a systematic basis for assessing agents' engineering capabilities and diagnosing failures in executable Simulink model generation.",
+      "authors": [
+        "Ruiqi Zhang",
+        "Jiahao Wang",
+        "Mingxuan Li",
+        "Haichen Luo",
+        "Chaoting Wang",
+        "Guoyu Mou",
+        "Keyu Lai",
+        "Hanchao Lv",
+        "Jiaxu Wang",
+        "Yibo Zheng",
+        "Aijun Yang",
+        "Xiaohua Wang"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-01T17:58:03Z",
+      "updated": "2026-10-01T17:58:03Z",
+      "announced_date": "2026-10-01",
+      "first_seen": "2026-10-01",
+      "comment": "26 pages, 12 figures. Code and data are available at https://github.com/SimuVerity/SimuVerity",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.02304v1",
+        "pdf": "https://arxiv.org/pdf/2610.02304v1",
+        "html": "https://arxiv.org/html/2610.02304"
+      },
+      "score": 9,
+      "tags": [
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    }
+  ]
+}
