@@ -1,0 +1,276 @@
+{
+  "date": "2026-10-04",
+  "count": 5,
+  "report": {
+    "date": "2026-10-04",
+    "count": 5,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "rsi",
+        "count": 1,
+        "en": "RSI / AI4AI",
+        "zh": "RSI / AI4AI"
+      }
+    ],
+    "en": {
+      "headline": "5 new agent benchmarks",
+      "summary": "On October 4, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Planning / reasoning (3), Tool use (2), Safety (1), and Science lab (1).",
+      "highlights": [
+        {
+          "id": "2610.05622",
+          "title": "UndoBench: Separating Task Competence from Recovery Capability in Tool-Using AI Agents",
+          "blurb": "Tool-using AI agents are increasingly deployed across enterprise software systems, yet widely used benchmarks primarily evaluate nominal task completion, conflating baseline planning competence with operational fault rec…"
+        },
+        {
+          "id": "2610.05532",
+          "title": "DelegationBench: Measuring When AI Agents Should Ask Before Acting",
+          "blurb": "AI agents that send emails, edit files, and make purchases must decide when to act on their own and when to check with the user first."
+        },
+        {
+          "id": "2610.04927",
+          "title": "Assembling Insights for Agentic Machine Learning Engineering Systems",
+          "blurb": "Agentic machine learning engineering (MLE) is an emerging AI4SE application for complex ML tasks and a step toward recursive self-improvement of AI systems."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 5 篇 Agent Benchmark",
+      "summary": "2026年10月4日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在规划 / 推理（3）、工具使用（2）、安全（1）、科学实验（1）。",
+      "highlights": [
+        {
+          "id": "2610.05622",
+          "title": "UndoBench: Separating Task Competence from Recovery Capability in Tool-Using AI Agents",
+          "blurb": "Tool-using AI agents are increasingly deployed across enterprise software systems, yet widely used benchmarks primarily evaluate nominal task completion, conflating baseline planning competence with operational fault rec…"
+        },
+        {
+          "id": "2610.05532",
+          "title": "DelegationBench: Measuring When AI Agents Should Ask Before Acting",
+          "blurb": "AI agents that send emails, edit files, and make purchases must decide when to act on their own and when to check with the user first."
+        },
+        {
+          "id": "2610.04927",
+          "title": "Assembling Insights for Agentic Machine Learning Engineering Systems",
+          "blurb": "Agentic machine learning engineering (MLE) is an emerging AI4SE application for complex ML tasks and a step toward recursive self-improvement of AI systems."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2610.05622",
+      "title": "UndoBench: Separating Task Competence from Recovery Capability in Tool-Using AI Agents",
+      "abstract": "Tool-using AI agents are increasingly deployed across enterprise software systems, yet widely used benchmarks primarily evaluate nominal task completion, conflating baseline planning competence with operational fault recovery. We introduce UndoBench, a benchmark spanning 36 base workflows and 36 fault scenarios across 8 enterprise domains, decoupling task competence from recovery capability via counterfactual paired trials under identical seeds alongside wire-level effect-history and environment-state oracles. On 12 held-out TEST workflows across two open-weight models, two frameworks, and three recovery paradigms (5,760 executions / 2,880 paired trials) in the frozen lost-acknowledgment study, nominal competence reached 83.54% while conditional recovery success rate (CRSR) fell to 46.72%, with naive retry producing duplicate external effects in 53.33% of trials. Extensions to commercial API models reproduced this competence-recovery separation. Evaluations across complementary execution boundaries show that recovery is phase-dependent: before mutation, methods perform similarly without duplicate effects among capable trials; during partial mutation, naive retry, per-call idempotency, and zero-privilege journaling collapse on the evaluated composite workflows; after commit but before acknowledgment, verification and server-side idempotency substantially improve safety. These findings demonstrate that evaluating nominal completion alone masks critical, phase-dependent recovery vulnerabilities in autonomous agents.",
+      "authors": [
+        "Dolly Sah",
+        "Tanmay Sah",
+        "Harshul Jain",
+        "Tanya Sah"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-04T23:36:11Z",
+      "updated": "2026-10-04T23:36:11Z",
+      "announced_date": "2026-10-04",
+      "first_seen": "2026-10-04",
+      "comment": "18 pages, 6 figures. Code and benchmark available at https://github.com/tradertanmay/undobench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.05622v1",
+        "pdf": "https://arxiv.org/pdf/2610.05622v1",
+        "html": "https://arxiv.org/html/2610.05622"
+      },
+      "score": 22,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2610.05532",
+      "title": "DelegationBench: Measuring When AI Agents Should Ask Before Acting",
+      "abstract": "AI agents that send emails, edit files, and make purchases must decide when to act on their own and when to check with the user first. This decision is usually evaluated by showing a model a proposed action, asking whether it should proceed, and scoring agreement with human labels. We introduce DelegationBench to test whether such scores can be trusted. It has 156 scenarios with four possible responses (act, ask for permission, ask for missing information, refuse), and most scenarios come in matched pairs that change a single feature: whether the action was requested, what is at stake, whether it can be undone, or who will see it. Across ten models from five families, agreement scores mislead in three ways. A simple keyword rule, which we wrote after seeing the benchmark, agrees with our annotators more often than eight of the models, yet its decision changes in only 9 of 48 matched pairs. Equivalent ways of asking the same question change how often a model acts by up to 52.5 percentage points. And every model stops to ask the user less often when it must carry out the task with tools than when it judges a proposed action. When rules are stated explicitly, the same models follow them almost perfectly, so the gaps are not explained by a general inability to follow rules. We release the benchmark and evaluation tools and recommend reporting these properties separately rather than as one score.",
+      "authors": [
+        "Shiva Pochampally"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.HC",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-04T20:54:35Z",
+      "updated": "2026-10-04T20:54:35Z",
+      "announced_date": "2026-10-04",
+      "first_seen": "2026-10-04",
+      "comment": "35 pages, 7 figures. Code and data: https://github.com/PieLord757/delegation-bench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.05532v1",
+        "pdf": "https://arxiv.org/pdf/2610.05532v1",
+        "html": "https://arxiv.org/html/2610.05532"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.05140",
+      "title": "AutoSciBench: Autonomous Benchmark Generation for Evaluating Scientific Agents",
+      "abstract": "As agents rapidly evolve, existing benchmarks can become saturated, limiting their ability to distinguish capabilities and reveal remaining failure modes. Particularly in scientific domains, constructing and updating benchmarks requires substantial time, labor, and domain expertise, making it difficult to keep evaluation aligned with advances in agent capabilities. We address this challenge by investigating whether scientific-agent benchmarks can be automatically generated and iteratively adapted as agent capabilities evolve. We introduce AutoSciBench, a framework that represents each task as a high-level concept specifying the scientific domain, data modality, and required reasoning approach, together with a low-level recipe specifying how the question, environment, and ground-truth answer are constructed and verified. Agents attempt to solve each task, producing solver trajectories and corresponding judge feedback which AutoSciBench uses to revise the recipe or concept, closing observed shortcuts and shifting tasks toward raw-data re-examination, interpretation of intermediate results, and evidence integration. Experience distilled from completed refinement trajectories further guides new concept generation, allowing lessons from earlier task refinement to inform subsequent benchmark construction. Starting from existing benchmarks, we evaluate AutoSciBench across computational biology, materials science, and clinical imaging. Generated benchmarks reduce average solver accuracy by 22.4 and 25.5 percentage points relative to the human-curated benchmarks in computational biology and materials science, respectively, while generated tasks receive higher average quality ratings across all three domains, suggesting that scientific-agent evaluation can adapt as agent capabilities advance.",
+      "authors": [
+        "Dongki Kim",
+        "Namkyeong Lee",
+        "Surag Nair",
+        "Carl Edwards",
+        "Xiner Li",
+        "Edward De Brouwer",
+        "Jenna Lynn Collier",
+        "Sung Ju Hwang",
+        "Gabriele Scalia",
+        "Ehsan Hajiramezanali"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-04T11:40:11Z",
+      "updated": "2026-10-04T11:40:11Z",
+      "announced_date": "2026-10-04",
+      "first_seen": "2026-10-04",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.05140v1",
+        "pdf": "https://arxiv.org/pdf/2610.05140v1",
+        "html": "https://arxiv.org/html/2610.05140"
+      },
+      "score": 8,
+      "tags": [
+        "planning",
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2610.05107",
+      "title": "SearchJev: A Fast and Calibrated System-1 Model for Search Agents",
+      "abstract": "Search agents repeatedly make short decisions about relevance, evidence sufficiency, and search actions. Using generative language models for these decisions introduces latency and unreliable confidence. We present SearchJev, a fast and calibrated System-1 model that separates search decisions from System-2 reasoning and generation. Given a search state and a decision schema, SearchJev directly scores legal options without autoregressive output generation. We propose Soft-Label Learning for Calibrated Decisions (SLCD) to learn decision probabilities from uncertain supervision and calibrate their confidence. In a dual-system search agent, SearchJev handles short decisions and delegates uncertain judgments to System 2, which retains planning, query generation, and answer composition. We also introduce SearchDecision-Bench, a benchmark unifying six types of search decisions for training and evaluation. On SearchDecision-Bench, SEARCHJEV improves decision quality over same-size Qwen3.5 autoregressive models, achieves 5.2-5.3 times faster decisions, and reduces average expected calibration error by 41-74%. On BrowseComp-Plus, the dual-system agents achieve a 3.7-4.7 times speedup in active search time while improving answer accuracy from 45% to up to 54%.",
+      "authors": [
+        "Congfeng Cao",
+        "Lipeng Zuo",
+        "Konstantinos Papakostas",
+        "Qiwei Xu",
+        "Songwei Xu",
+        "Lun Zhou",
+        "Zhaochun Ren",
+        "Yougang Lyu",
+        "Xiaohui Yan"
+      ],
+      "categories": [
+        "cs.IR",
+        "cs.CL"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-10-04T10:30:40Z",
+      "updated": "2026-10-04T10:30:40Z",
+      "announced_date": "2026-10-04",
+      "first_seen": "2026-10-04",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.05107v1",
+        "pdf": "https://arxiv.org/pdf/2610.05107v1",
+        "html": "https://arxiv.org/html/2610.05107"
+      },
+      "score": 6,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.04927",
+      "title": "Assembling Insights for Agentic Machine Learning Engineering Systems",
+      "abstract": "Agentic machine learning engineering (MLE) is an emerging AI4SE application for complex ML tasks and a step toward recursive self-improvement of AI systems. Recent agentic MLE systems show the value of leveraging insights from related MLE tasks: some systems condition code generation on expert domain knowledge, which is implicitly curated from peer MLE tasks; some systems have a loop of solving an MLE task, gathering memory to benefit future tasks. However, insight collection and injection remain ad hoc, and existing evaluations often do not control insight sources, making data leakage a threat to validity. To close these gaps, we systematically study how insights from related MLE tasks affect agentic MLE systems, and how their impact depends on insight type and injection method. We introduce MLE-InsightBench, a benchmark of 160 Kaggle competitions across 12 domains. To prevent leakage, one competition per domain is held out as the target, while the remaining 148 serve as sources only when they cannot have been influenced by the target task, such as through later editions or reused solutions. We also develop MLE-InsightForge, an insight assembly agent that explores source competitions, top human solutions, and writeups to construct three insight types: 12 domain insights summarizing best practices, 148 competition insights describing winning solutions, and 16 improvement insights capturing generic debugging and optimization strategies. These insights are injected either as on-demand skills or as an upfront playbook. In our evaluation, the extracted insights improve the normalized private-test score by 123.9% over a no-insight baseline. Controlled experiments further show that the three insight types are complementary; the better injection mode (skill vs. playbook) varies by tasks, with skills more cost-effective overall; and the gains generalize across backend LLMs.",
+      "authors": [
+        "Bihui Jin",
+        "Yinxi Li",
+        "Kaiyuan Wang",
+        "Pengyu Nie"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-04T04:10:28Z",
+      "updated": "2026-10-04T04:10:28Z",
+      "announced_date": "2026-10-04",
+      "first_seen": "2026-10-04",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.04927v1",
+        "pdf": "https://arxiv.org/pdf/2610.04927v1",
+        "html": "https://arxiv.org/html/2610.04927"
+      },
+      "score": 11,
+      "tags": [
+        "coding",
+        "memory",
+        "rsi"
+      ],
+      "field": "rsi",
+      "citations": 0
+    }
+  ]
+}
