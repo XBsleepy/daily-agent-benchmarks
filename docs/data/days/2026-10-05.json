@@ -1,10 +1,28 @@
 {
   "date": "2026-10-05",
-  "count": 7,
+  "count": 8,
   "report": {
     "date": "2026-10-05",
-    "count": 7,
+    "count": 8,
     "themes": [
+      {
+        "id": "coding",
+        "count": 3,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
       {
         "id": "safety",
         "count": 3,
@@ -12,22 +30,10 @@
         "zh": "安全"
       },
       {
-        "id": "tool-use",
-        "count": 2,
-        "en": "Tool use",
-        "zh": "工具使用"
-      },
-      {
-        "id": "planning",
-        "count": 2,
-        "en": "Planning / reasoning",
-        "zh": "规划 / 推理"
-      },
-      {
-        "id": "coding",
-        "count": 2,
-        "en": "Coding agents",
-        "zh": "代码智能体"
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
       },
       {
         "id": "science",
@@ -49,9 +55,14 @@
       }
     ],
     "en": {
-      "headline": "7 new agent benchmarks",
-      "summary": "On October 5, 2026, arXiv listed 7 new agent benchmarks. Work clustered around Safety (3), Tool use (2), Planning / reasoning (2), and Coding agents (2).",
+      "headline": "8 new agent benchmarks",
+      "summary": "On October 5, 2026, arXiv listed 8 new agent benchmarks. Work clustered around Coding agents (3), Tool use (3), Planning / reasoning (3), and Safety (3).",
       "highlights": [
+        {
+          "id": "2610.07261",
+          "title": "Verifying Coordination in Parallel Coding Agents: NP-Bench and a Scheduling Planner",
+          "blurb": "A team of coding agents can look fine agent by agent yet fail as a team: each passes its own tests while the merged result is broken, and single-agent evaluation never catches it."
+        },
         {
           "id": "2610.06454",
           "title": "AgentPrivArena: Evaluating and Auditing Real-world AI Agent Privacy",
@@ -61,18 +72,18 @@
           "id": "2610.06748",
           "title": "BazaarBench: Delegation Safety in Decentralized C2C Marketplaces Run by LLM Agents",
           "blurb": "In decentralized consumer-to-consumer (C2C) marketplaces, people list goods, negotiate with strangers, and rate one another, so trust rests on reputation."
-        },
-        {
-          "id": "2610.06193",
-          "title": "Correct Code, Broken Contributions? SWE-CC: Benchmarking Repository Policy Compliance for Coding Agents",
-          "blurb": "Autonomous coding agents now resolve a substantial share of real-world GitHub issues."
         }
       ]
     },
     "zh": {
-      "headline": "新增 7 篇 Agent Benchmark",
-      "summary": "2026年10月5日，arXiv 新增 7 篇 Agent Benchmark。当日主题集中在安全（3）、工具使用（2）、规划 / 推理（2）、代码智能体（2）。",
+      "headline": "新增 8 篇 Agent Benchmark",
+      "summary": "2026年10月5日，arXiv 新增 8 篇 Agent Benchmark。当日主题集中在代码智能体（3）、工具使用（3）、规划 / 推理（3）、安全（3）。",
       "highlights": [
+        {
+          "id": "2610.07261",
+          "title": "Verifying Coordination in Parallel Coding Agents: NP-Bench and a Scheduling Planner",
+          "blurb": "A team of coding agents can look fine agent by agent yet fail as a team: each passes its own tests while the merged result is broken, and single-agent evaluation never catches it."
+        },
         {
           "id": "2610.06454",
           "title": "AgentPrivArena: Evaluating and Auditing Real-world AI Agent Privacy",
@@ -82,16 +93,43 @@
           "id": "2610.06748",
           "title": "BazaarBench: Delegation Safety in Decentralized C2C Marketplaces Run by LLM Agents",
           "blurb": "In decentralized consumer-to-consumer (C2C) marketplaces, people list goods, negotiate with strangers, and rate one another, so trust rests on reputation."
-        },
-        {
-          "id": "2610.06193",
-          "title": "Correct Code, Broken Contributions? SWE-CC: Benchmarking Repository Policy Compliance for Coding Agents",
-          "blurb": "Autonomous coding agents now resolve a substantial share of real-world GitHub issues."
         }
       ]
     }
   },
   "papers": [
+    {
+      "id": "2610.07261",
+      "title": "Verifying Coordination in Parallel Coding Agents: NP-Bench and a Scheduling Planner",
+      "abstract": "A team of coding agents can look fine agent by agent yet fail as a team: each passes its own tests while the merged result is broken, and single-agent evaluation never catches it. As teams run several LLM coding agents in parallel on one codebase, the agents collide: two rewrite the same function, one codes against a contract a teammate just changed, and integration fails after the work is done. Most coordination tools react (watch for a conflict, then warn), but at agent speed the warning arrives after the wasted edit. We recast the problem as scheduling: take each work item's declared scope, partition the work into disjoint scopes, and order merges along the producer->consumer graph, all up front. We build this planner into Nerveplane and evaluate it with NP-Bench, an environment-grounded three-arm benchmark (no coordination; reactive detection; proactive planning) that verifies integration off a real git merge, both in a deterministic simulation and with live agents. The planner lifts clean-integration from 1/9 to 9/9 scenarios and cuts merge conflicts from 13 to 0, with a gap that grows in the number of agents. On a live breaking contract change it rescues an outcome both baselines miss on every seed: the clean-integration rate rises from 0 (no coordination and reactive detection) to 1.0 on a frontier model and 0.6 on a small one, while agents respect assigned scopes (0/5 leakage). A cross-session memory drops the repeated-mistake rate from 1.00 to 0.00 on strong and weak models alike. We also report a negative result: routing facts to agents does not rescue long-context accuracy at window-fitting scales; its value is cost and capacity, not attention. Across two capability tiers and two vendors, the benefit did not shrink as models got stronger, because it comes from how work is allocated, not model reasoning.",
+      "authors": [
+        "Sumanyu Muku"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-05T19:02:27Z",
+      "updated": "2026-10-05T19:02:27Z",
+      "announced_date": "2026-10-05",
+      "first_seen": "2026-10-05",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.07261v1",
+        "pdf": "https://arxiv.org/pdf/2610.07261v1",
+        "html": "https://arxiv.org/html/2610.07261"
+      },
+      "score": 17,
+      "tags": [
+        "coding",
+        "tool-use",
+        "memory",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
     {
       "id": "2610.06748",
       "title": "BazaarBench: Delegation Safety in Decentralized C2C Marketplaces Run by LLM Agents",
