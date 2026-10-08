@@ -1,15 +1,21 @@
 {
   "date": "2026-10-06",
-  "count": 17,
+  "count": 19,
   "report": {
     "date": "2026-10-06",
-    "count": 17,
+    "count": 19,
     "themes": [
       {
         "id": "coding",
         "count": 5,
         "en": "Coding agents",
         "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 4,
+        "en": "Tool use",
+        "zh": "工具使用"
       },
       {
         "id": "planning",
@@ -22,12 +28,6 @@
         "count": 3,
         "en": "Science lab",
         "zh": "科学实验"
-      },
-      {
-        "id": "tool-use",
-        "count": 3,
-        "en": "Tool use",
-        "zh": "工具使用"
       },
       {
         "id": "safety",
@@ -55,8 +55,8 @@
       }
     ],
     "en": {
-      "headline": "17 new agent benchmarks",
-      "summary": "On October 6, 2026, arXiv listed 17 new agent benchmarks. Work clustered around Coding agents (5), Planning / reasoning (3), Science lab (3), and Tool use (3).",
+      "headline": "19 new agent benchmarks",
+      "summary": "On October 6, 2026, arXiv listed 19 new agent benchmarks. Work clustered around Coding agents (5), Tool use (4), Planning / reasoning (3), and Science lab (3).",
       "highlights": [
         {
           "id": "2610.07763",
@@ -76,8 +76,8 @@
       ]
     },
     "zh": {
-      "headline": "新增 17 篇 Agent Benchmark",
-      "summary": "2026年10月6日，arXiv 新增 17 篇 Agent Benchmark。当日主题集中在代码智能体（5）、规划 / 推理（3）、科学实验（3）、工具使用（3）。",
+      "headline": "新增 19 篇 Agent Benchmark",
+      "summary": "2026年10月6日，arXiv 新增 19 篇 Agent Benchmark。当日主题集中在代码智能体（5）、工具使用（4）、规划 / 推理（3）、科学实验（3）。",
       "highlights": [
         {
           "id": "2610.07763",
@@ -98,6 +98,40 @@
     }
   },
   "papers": [
+    {
+      "id": "2610.09112",
+      "title": "GeoNatureAgent (GNA): A Framework and Benchmark for Pre-Production Evaluation of Tool-Using Agents on Geospatial and Environmental Tasks",
+      "abstract": "Before tool-using LLM agents are deployed in environmental and geospatial workflows, teams need evidence that an agent reliably selects the right operations against real APIs. We introduce GeoNatureAgent (GNA), a framework for pre-production evaluation of tool-using agents: a fixed sixteen-tool geospatial interface published as a Model Context Protocol (MCP) server, so the agent under test is the only variable, scored against an identical tool layer, task suite, and deterministic scorer. Its flagship instance is a 103-task benchmark (a 93-task main suite across 18 categories plus a ten-task comparison expansion) evaluated against an open, self-hostable geospatial API serving three environmental indicators across Spain and Portugal. We evaluate nine LLMs under three temperature-1.0 seeds, reporting capability and per-case cost as orthogonal axes. (1) Claude Sonnet 4 achieves the highest capability (61.7% +/- 0.7% on all 103 tasks; 60.8% on the main suite), followed closely by DeepSeek V3.2 (57.9%), while no other model exceeds 53%; (2) the cost-accuracy Pareto frontier is mostly open-weight, with DeepSeek V3.2 offering 93% of Claude's capability at 11.3x lower list-price cost; (3) under strict all-checks scoring the best model sits 24-36 points below the 85-97% reported on general-purpose GIS benchmarks, whereas per-check partial credit for the top four models (86-90%) is comparable, so much of that gap reflects scoring strictness rather than task difficulty alone. The MCP server, evaluation harness, benchmark, and API are publicly available; swapping the tool executors and task suite instantiates an equivalent benchmark for any geospatial domain.",
+      "authors": [
+        "Gabriel Diaz-Ireland",
+        "Diego Prieto-Herráez",
+        "Mario García Peces",
+        "Javier Velázquez",
+        "Benjamin Zaitchik",
+        "Devika Jain"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-06T21:03:04Z",
+      "updated": "2026-10-06T21:03:04Z",
+      "announced_date": "2026-10-06",
+      "first_seen": "2026-10-06",
+      "comment": "10 pages, 4 figures. Extended version of arXiv:2606.12821 (ACM SIGSPATIAL 2026 poster paper). Published at GeoIndustry '26 (ACM SIGSPATIAL Workshop)",
+      "doi": "10.1145/3849727.3856786",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.09112v1",
+        "pdf": "https://arxiv.org/pdf/2610.09112v1",
+        "html": "https://arxiv.org/html/2610.09112"
+      },
+      "score": 15,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
     {
       "id": "2610.08775",
       "title": "Agent in a Bottle: Can LLM Agents Turn Their Capabilities Into Cheap, Scalable Artifacts?",
@@ -488,6 +522,37 @@
       "score": 11,
       "tags": [],
       "field": "rsi",
+      "citations": 0
+    },
+    {
+      "id": "2610.08871",
+      "title": "CredLeakBench: Evaluating Credential Leakage and Recovery in LLM Agents",
+      "abstract": "Language model agents are increasingly deployed to automate everyday digital chores from managing emails and social media to handling banking and bills allowing users to step away from supervision. However, this capability also exposes sensitive information to phishing. Safe execution requires distinguishing malicious requests from genuine ones without simply refusing to act. Despite its practical importance, this problem remains underexplored and it is unclear whether current agents or existing defenses can achieve it. To study this problem, we first propose CredLeak-Bench, a comprehensive benchmark designed to evaluate how effectively and securely agents automate human workflows when confronted with phishing and identity verification. The benchmark covers both user-directed authentication and autonomous inbox monitoring, where agents are not explicitly instructed to log in. It systematically varies deceptive cues and pairs phishing scenarios with legitimate counterparts, enabling joint evaluation of information leakage and utility on genuine tasks. Within a sandboxed environment, leakage is measured through actual submissions of information rather than agents' self-reported behavior. Our evaluation reveals that all tested models are vulnerable to leakage. Agents also disclose sensitive information during autonomous inbox monitoring, demonstrating that phishing can induce disclosure without a user request to authenticate. Furthermore, most evaluated mitigations that reduce leakage also impair performance on genuine tasks, exposing a security utility trade off in existing defenses. These findings show why reducing leakage alone is insufficient: effective defenses must prevent unauthorized disclosure while preserving legitimate task completion. CredLeak-Bench provides a controlled framework for measuring both objectives and evaluating progress toward secure, useful agents.",
+      "authors": [
+        "Rafid Ahmed",
+        "Joseph Fioresi",
+        "Mubarak Shah",
+        "Yuzhang Shang"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-10-06T05:07:33Z",
+      "updated": "2026-10-06T05:07:33Z",
+      "announced_date": "2026-10-06",
+      "first_seen": "2026-10-06",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.08871v1",
+        "pdf": "https://arxiv.org/pdf/2610.08871v1",
+        "html": "https://arxiv.org/html/2610.08871"
+      },
+      "score": 15,
+      "tags": [],
+      "field": "other",
       "citations": 0
     },
     {
