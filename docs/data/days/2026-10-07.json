@@ -1,10 +1,22 @@
 {
   "date": "2026-10-07",
-  "count": 7,
+  "count": 9,
   "report": {
     "date": "2026-10-07",
-    "count": 7,
+    "count": 9,
     "themes": [
+      {
+        "id": "planning",
+        "count": 4,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
       {
         "id": "embodied",
         "count": 3,
@@ -18,20 +30,8 @@
         "zh": "多模态"
       },
       {
-        "id": "planning",
-        "count": 3,
-        "en": "Planning / reasoning",
-        "zh": "规划 / 推理"
-      },
-      {
-        "id": "tool-use",
-        "count": 2,
-        "en": "Tool use",
-        "zh": "工具使用"
-      },
-      {
         "id": "multi-agent",
-        "count": 1,
+        "count": 2,
         "en": "Multi-agent",
         "zh": "多智能体"
       },
@@ -55,8 +55,8 @@
       }
     ],
     "en": {
-      "headline": "7 new agent benchmarks",
-      "summary": "On October 7, 2026, arXiv listed 7 new agent benchmarks. Work clustered around Embodied / robotics (3), Multimodal (3), Planning / reasoning (3), and Tool use (2).",
+      "headline": "9 new agent benchmarks",
+      "summary": "On October 7, 2026, arXiv listed 9 new agent benchmarks. Work clustered around Planning / reasoning (4), Tool use (3), Embodied / robotics (3), and Multimodal (3).",
       "highlights": [
         {
           "id": "2610.09374",
@@ -64,20 +64,20 @@
           "blurb": "Urban diagnosis integrates heterogeneous observations to identify urban problems, localize affected areas, and investigate contributing factors, informing evidence-based urban planning and management."
         },
         {
+          "id": "2610.10628",
+          "title": "Agent4RE: A Self-Refining Multi-agent Framework for End-to-End Software Requirements Engineering and Benchmarking",
+          "blurb": "Existing LLM-based approaches for software Requirements Engineering (RE) typically rely on basic prompting strategies or rudimentary agent collaboration, under-utilizing the full potential of multi-agent systems."
+        },
+        {
           "id": "2610.09944",
           "title": "AgentTime: Can Agents Estimate and Control Their Own Runtime?",
           "blurb": "An essential control of AI agents is their ability to manage runtime."
-        },
-        {
-          "id": "2610.09294",
-          "title": "RT-Safe: Benchmarking Agent Safety in Real-Time Embodied Environment",
-          "blurb": "Rapid progress in AI agents has brought growing attention to agent safety, with extensive evaluation focused on digital environments."
         }
       ]
     },
     "zh": {
-      "headline": "新增 7 篇 Agent Benchmark",
-      "summary": "2026年10月7日，arXiv 新增 7 篇 Agent Benchmark。当日主题集中在具身 / 机器人（3）、多模态（3）、规划 / 推理（3）、工具使用（2）。",
+      "headline": "新增 9 篇 Agent Benchmark",
+      "summary": "2026年10月7日，arXiv 新增 9 篇 Agent Benchmark。当日主题集中在规划 / 推理（4）、工具使用（3）、具身 / 机器人（3）、多模态（3）。",
       "highlights": [
         {
           "id": "2610.09374",
@@ -85,19 +85,53 @@
           "blurb": "Urban diagnosis integrates heterogeneous observations to identify urban problems, localize affected areas, and investigate contributing factors, informing evidence-based urban planning and management."
         },
         {
+          "id": "2610.10628",
+          "title": "Agent4RE: A Self-Refining Multi-agent Framework for End-to-End Software Requirements Engineering and Benchmarking",
+          "blurb": "Existing LLM-based approaches for software Requirements Engineering (RE) typically rely on basic prompting strategies or rudimentary agent collaboration, under-utilizing the full potential of multi-agent systems."
+        },
+        {
           "id": "2610.09944",
           "title": "AgentTime: Can Agents Estimate and Control Their Own Runtime?",
           "blurb": "An essential control of AI agents is their ability to manage runtime."
-        },
-        {
-          "id": "2610.09294",
-          "title": "RT-Safe: Benchmarking Agent Safety in Real-Time Embodied Environment",
-          "blurb": "Rapid progress in AI agents has brought growing attention to agent safety, with extensive evaluation focused on digital environments."
         }
       ]
     }
   },
   "papers": [
+    {
+      "id": "2610.10942",
+      "title": "StoreBench: A Live-Commerce Environment for Evaluating and Training Autonomous Operator Agents",
+      "abstract": "Reinforcement learning environments are now a primary lever for improving large language model (LLM) capabilities in post-training, yet most agentic benchmarks remain static: the world moves only when the agent acts, the reward is a terminal verdict, and the pass bar is set arbitrarily. We introduce StoreBench, a live-commerce environment in which an agent runs a mid-size online apparel store on a production-grade commerce backend, testing long-horizon planning and economic judgment under uncertainty. Customers order around the clock, suppliers reprice and fail, and market shocks arrive with partial or no warning. The agent acts through the same 29 merchant tools a human operator would use, under a windowed operation budget that makes simulated time a function of actions taken, so model latency cannot influence simulated time. Pass thresholds are calibrated against scripted anchor policies, the reward is hardened against a catalogue of reward hacks, and every episode replays identically given a sequence of actions. We evaluate seven frontier LLMs on 11 scenarios of 30 to 45 days and a full simulated year, over three world seeds at matched reasoning effort. No model matches the scripted smart-triage policy on average: the best, DeepSeek-V4-Pro, passes 49% of task-seed cells against the heuristic's 97%. Human experts working through the same tools and budgets outscore every model (mean composite 0.708 vs. 0.700). Over a full simulated year under the Claude Code harness, most models show dramatic performance improvement. In a GRPO post-training run, Qwen3.5-27B trained on only five disjoint tasks raises its mean composite on the held-out evaluation tasks from 0.136 to 0.373. We release five example training-split tasks, ten sample trajectories, and the scoring and verification tooling; the full environment and evaluation suite are withheld to keep the benchmark uncontaminated.",
+      "authors": [
+        "Daksh Raghuvanshi",
+        "Ved Vedere",
+        "Yifan Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-07T21:46:10Z",
+      "updated": "2026-10-07T21:46:10Z",
+      "announced_date": "2026-10-07",
+      "first_seen": "2026-10-07",
+      "comment": "22 pages, 4 figures, 8 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.10942v1",
+        "pdf": "https://arxiv.org/pdf/2610.10942v1",
+        "html": "https://arxiv.org/html/2610.10942"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
     {
       "id": "2610.10409",
       "title": "RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments",
@@ -244,14 +278,14 @@
       ],
       "primary_category": "cs.AI",
       "published": "2026-10-07T12:26:24Z",
-      "updated": "2026-10-07T12:26:24Z",
+      "updated": "2026-10-08T09:06:36Z",
       "announced_date": "2026-10-07",
       "first_seen": "2026-10-07",
       "comment": "Website: https://agenttimebench.com Code: https://github.com/michaelofengenden/agenttimebench",
       "doi": "",
       "links": {
-        "abs": "https://arxiv.org/abs/2610.09944v1",
-        "pdf": "https://arxiv.org/pdf/2610.09944v1",
+        "abs": "https://arxiv.org/abs/2610.09944v2",
+        "pdf": "https://arxiv.org/pdf/2610.09944v2",
         "html": "https://arxiv.org/html/2610.09944"
       },
       "score": 14,
@@ -259,6 +293,38 @@
         "computer-use"
       ],
       "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.10628",
+      "title": "Agent4RE: A Self-Refining Multi-agent Framework for End-to-End Software Requirements Engineering and Benchmarking",
+      "abstract": "Existing LLM-based approaches for software Requirements Engineering (RE) typically rely on basic prompting strategies or rudimentary agent collaboration, under-utilizing the full potential of multi-agent systems. Meanwhile, available datasets focus on isolated subtasks, such as requirements extraction, classification, and completeness detection, leaving the absence of an end-to-end RE benchmark that spans from requirements elicitation to generation. We present Agent4RE - a self-refining multi-agent RE system that orchestrates specialized agents and incorporates two iterative improvement loops. To support evaluation, we construct RE-E2E - a real-world dataset built from human-written requirement specifications, enabling end-to-end assessment of RE workflows. Building on this foundation, we further propose two enhanced Agent4RE versions that incorporate either autonomous self-refinement or structured human feedback, and analyze their strengths and limitations across different scenarios. Evaluation on 8 Large Language Models (LLMs) demonstrates that all three Agent4RE variants consistently outperform a domain-context-augmented prompting baseline by average 8% in text-based metrics. The two enhanced variants achieve the highest LLM-as-a-judge and human ratings, surpassing two RE baselines by approximately 0.8 points on a four-point scale. This consistent performance establishes Agent4RE as a practical end-to-end RE solution for industrial environments.",
+      "authors": [
+        "Yongjian Tang",
+        "Linhan Li",
+        "Thomas Runkler"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-07T11:23:11Z",
+      "updated": "2026-10-07T11:23:11Z",
+      "announced_date": "2026-10-07",
+      "first_seen": "2026-10-07",
+      "comment": "Accepted to the ASE@POVC track; The E2E requirements engineering benchmark is available https://zenodo.org/records/22815961",
+      "doi": "10.1145/3843779.3844634",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.10628v1",
+        "pdf": "https://arxiv.org/pdf/2610.10628v1",
+        "html": "https://arxiv.org/html/2610.10628"
+      },
+      "score": 14,
+      "tags": [
+        "multi-agent"
+      ],
+      "field": "multi-agent",
       "citations": 0
     },
     {
