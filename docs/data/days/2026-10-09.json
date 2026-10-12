@@ -1,0 +1,498 @@
+{
+  "date": "2026-10-09",
+  "count": 11,
+  "report": {
+    "date": "2026-10-09",
+    "count": 11,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 4,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 4,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "embodied",
+        "count": 3,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "science",
+        "count": 2,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "rsi",
+        "count": 1,
+        "en": "RSI / AI4AI",
+        "zh": "RSI / AI4AI"
+      }
+    ],
+    "en": {
+      "headline": "11 new agent benchmarks",
+      "summary": "On October 9, 2026, arXiv listed 11 new agent benchmarks. Work clustered around Tool use (4), Safety (4), Embodied / robotics (3), and Coding agents (2).",
+      "highlights": [
+        {
+          "id": "2610.13116",
+          "title": "DRYLAB-Bench: Benchmarking the Biosecurity Risk of Agentic LLM Mutation Design",
+          "blurb": "As large language models (LLMs) acquire advanced biological design capabilities, they offer substantial research benefits but simultaneously introduce severe dual-use risks, such as engineering enhanced pathogens or drug…"
+        },
+        {
+          "id": "2610.13534",
+          "title": "MAGMA-Bench: Evaluating Long-Horizon Embodied Agents under Dynamic Tasks and Execution Failures",
+          "blurb": "Long-horizon embodied agents must maintain task-relevant information, coordinate heterogeneous robots, and adapt their decisions as execution unfolds."
+        },
+        {
+          "id": "2610.13021",
+          "title": "EmbodiedCLBench: Evaluating Continual Learning for Self-Evolving Embodied Agents",
+          "blurb": "Continual learning requires models to accumulate past experience and transfer it to new tasks."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 11 篇 Agent Benchmark",
+      "summary": "2026年10月9日，arXiv 新增 11 篇 Agent Benchmark。当日主题集中在工具使用（4）、安全（4）、具身 / 机器人（3）、代码智能体（2）。",
+      "highlights": [
+        {
+          "id": "2610.13116",
+          "title": "DRYLAB-Bench: Benchmarking the Biosecurity Risk of Agentic LLM Mutation Design",
+          "blurb": "As large language models (LLMs) acquire advanced biological design capabilities, they offer substantial research benefits but simultaneously introduce severe dual-use risks, such as engineering enhanced pathogens or drug…"
+        },
+        {
+          "id": "2610.13534",
+          "title": "MAGMA-Bench: Evaluating Long-Horizon Embodied Agents under Dynamic Tasks and Execution Failures",
+          "blurb": "Long-horizon embodied agents must maintain task-relevant information, coordinate heterogeneous robots, and adapt their decisions as execution unfolds."
+        },
+        {
+          "id": "2610.13021",
+          "title": "EmbodiedCLBench: Evaluating Continual Learning for Self-Evolving Embodied Agents",
+          "blurb": "Continual learning requires models to accumulate past experience and transfer it to new tasks."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2610.13889",
+      "title": "RATED: Reliability-Aware AI Agent Tool Retrieval via Execution Dynamics",
+      "abstract": "As AI agents increasingly rely on external tools, accurate retrieval is essential for reliable behavior. Existing methods optimize semantic relevance but largely ignore tool availability during execution. To address this gap, we propose RATED (Reliability-Aware Tool Retrieval via Execution Dynamics), a retrieval framework that combines robust semantic matching with dynamic reliability adaptation. RATED employs a frozen dual-encoder with contrastive fine-tuning for semantic matching, and a lightweight contextual bandit module that re-ranks candidates based on real-time execution feedback. This design enables rapid adaptation to runtime tool failures without expensive model retraining. We introduce EcoAgent, a benchmark of 5,172 real-world tools and over 210,000 query-tool pairs for offline retrieval and dynamic reliability evaluation. Experimental results demonstrate that RATED achieves a 52.2% relative MRR improvement over the ToolLLM API retriever on real-world queries, and reduces fault selection rate from 86.2% to 2.9% under severe API outage scenarios with a 30% failure rate, while incurring negligible latency overhead of less than 1 ms over encode-only inference. The code and dataset are available at https://github.com/Elliotes/EcoAgent.",
+      "authors": [
+        "Weiliang Chen",
+        "Song Liao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.IR"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-09T17:38:11Z",
+      "updated": "2026-10-09T17:38:11Z",
+      "announced_date": "2026-10-09",
+      "first_seen": "2026-10-09",
+      "comment": "Accepted at CIKM 2026",
+      "doi": "10.1145/3799682.3839887",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.13889v1",
+        "pdf": "https://arxiv.org/pdf/2610.13889v1",
+        "html": "https://arxiv.org/html/2610.13889"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2610.13829",
+      "title": "MC-EvoBench: Auditing Experience-Driven Self-Improvement in Minecraft Agents",
+      "abstract": "A central challenge in embodied recursive self-improvement is enabling agents to convert interaction history into capabilities that persist beyond one world and transfer to later tasks. A saved memory or successful final action does not by itself establish that a reusable capability was acquired; evaluation must separate capability change from carried-over resources, unequal source exposure, and early execution failures. We construct MC-EvoBench as a controlled Minecraft benchmark with a fixed catalog of 19 registered evolution chains, including 12 primary evaluation chains and seven calibration or probe chains, together with three graph-aligned paired probe families for transfer. The benchmark represents each task as a task-state graph, defines stage-level environment verifiers, assigns matched source and target roles, resets the target world, and permits only a declared agent artifact to cross the source-target boundary. For each probe, no-prior, related, unrelated, and shuffled source conditions are evaluated under matched environment-step budgets and five seeds; we report TSR, WGP, and VMP and retain provenance records. The benchmark reveals a consistent direct-capability gap between controller and planner-backed variants, while related experience yields no stable transfer: it does not improve either tool probe, its small wood-species gain hinges on one seed, and all intervals include zero. Stage audits further show that early wood-collection and crafting bottlenecks often leave later capabilities unobserved. MC-EvoBench thus offers a controlled testbed for durable, transferable embodied capabilities. Code and data are available at https://github.com/xzw-ustc/mc-bench-open-source",
+      "authors": [
+        "Jingwei Song",
+        "Zhisheng Chen",
+        "Bingfan Zeng",
+        "Jing Tang",
+        "Yubo Hou",
+        "Jinhao Jing",
+        "Zhengwei Xie",
+        "Linfeng Zhang"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-09T16:37:39Z",
+      "updated": "2026-10-09T16:37:39Z",
+      "announced_date": "2026-10-09",
+      "first_seen": "2026-10-09",
+      "comment": "39 pages, 6 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.13829v1",
+        "pdf": "https://arxiv.org/pdf/2610.13829v1",
+        "html": "https://arxiv.org/html/2610.13829"
+      },
+      "score": 10,
+      "tags": [
+        "tool-use",
+        "embodied",
+        "memory",
+        "rsi"
+      ],
+      "field": "rsi",
+      "citations": 0
+    },
+    {
+      "id": "2610.13668",
+      "title": "(When) Should a Software Factory be Lights-off? Benchmarking Code Review Agents on Bug Detection",
+      "abstract": "With the advances of coding agents, software developers are spending more time reviewing code than writing code. As human review velocity falls behind agentic code generation, it is tempting to build automated review agents towards a future of \"lights-off\" software factory with little to no human supervision. To assess the practicality of such a fully autonomous software factory, we construct CRBugBench, a new benchmark that evaluates whether review agents detect human-verified bugs. We build a data pipeline that mines bugs from repository history, and pair each bug with its introducing PR to form a review task. CRBugBench consists of 1,000 review tasks across 98 open-source GitHub repositories, and 800 additional tasks from proprietary industry repositories at one large company. We then use the benchmark to study agent review quality: We found that SOTA review agents do well: the best (claude-opus-5 with copilot-cli) catches 71.9% of bugs within its top-5 comments, up from 47.7% (opus-4.6) in five months of model evolution. Yet agents remain less effective on complex changes and bugs requiring non-local reasoning, with sharp performance drops on proprietary industry repositories where project context is more often needed. To improve bug detection, we found scaling compute helps most through prompt changes: exploration-nudging prompts gain up to 5.8% performance at 10% higher cost. From these findings, we derive concrete guidance for developers to adopt review agents - scaling review effort to PR complexity, steering agents by project priorities, supplying repository knowledge, dispatching models by PR characteristics, and monitoring quality as models evolve.",
+      "authors": [
+        "Chenyang Yang",
+        "Hao He",
+        "Ti-Chung Cheng",
+        "Jenna Butler",
+        "Emerson Murphy-Hill",
+        "Carmen Badea",
+        "Christian Bird"
+      ],
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-09T14:37:15Z",
+      "updated": "2026-10-09T14:37:15Z",
+      "announced_date": "2026-10-09",
+      "first_seen": "2026-10-09",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.13668v1",
+        "pdf": "https://arxiv.org/pdf/2610.13668v1",
+        "html": "https://arxiv.org/html/2610.13668"
+      },
+      "score": 13,
+      "tags": [
+        "coding",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.13623",
+      "title": "APEX-Harm: Evaluating Agent Safety in Shared Professional Workspaces",
+      "abstract": "Professional agents increasingly work through command-line interfaces and multiple tools over shared workspaces containing files, messages, and business applications. These environments create safety risks that are difficult to capture with attacks placed at a single, known read location. We introduce APEX-Harm, a benchmark for evaluating prompt and script injection against long-horizon agents performing finance, consulting, and legal tasks in large workspaces. Each task contains 115 to 328 files, together with email, calendar, chat, document, spreadsheet, PDF, and code-execution tools exposed through MCP servers. The benchmark includes six attack categories covering static and dynamic injections, task-specific script replacement, and attacker-provided generic scripts, and evaluates attack success, exposure, and task performance. We evaluate 12 frontier models on 180 task instances per model. Opus 5 and Sonnet 5 have the lowest overall attack success rates (8% and 20%), while task-specific script replacement and attacker-provided generic script attacks remain substantially more effective, averaging 81-84% and 73% attack success, respectively. Gemini 3.8 Flash achieves the highest mean task score (0.877) while still exhibiting a 33% attack success rate. These results show that completing the requested task is not sufficient evidence of safe behavior: an agent can produce a correct deliverable while also performing an unauthorized action in the workspace.",
+      "authors": [
+        "Ziyi Yang",
+        "Adel Bibi",
+        "Guohao Li",
+        "Bernard Ghanem",
+        "Carlos Hinojosa"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-10-09T14:05:47Z",
+      "updated": "2026-10-09T14:05:47Z",
+      "announced_date": "2026-10-09",
+      "first_seen": "2026-10-09",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.13623v1",
+        "pdf": "https://arxiv.org/pdf/2610.13623v1",
+        "html": "https://arxiv.org/html/2610.13623"
+      },
+      "score": 7,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2610.13534",
+      "title": "MAGMA-Bench: Evaluating Long-Horizon Embodied Agents under Dynamic Tasks and Execution Failures",
+      "abstract": "Long-horizon embodied agents must maintain task-relevant information, coordinate heterogeneous robots, and adapt their decisions as execution unfolds. Existing benchmarks investigate dynamic task execution and embodied multi-agent coordination, but provide limited evaluation of their intersection. We introduce MAGMA-Bench, an architecture-agnostic benchmark for persistent task reasoning in dynamic multi-robot environments. MAGMA-Bench evaluates agents across increasing task horizons and controlled online perturbations, including execution failures, task interruptions, and mission updates, with scenarios requiring coordination across robots with heterogeneous capabilities. It uses a structured skill-level interface to separate task-level reasoning from perception and low-level control. We evaluate locally deployable open-weight planners, multi-agent state-tracking strategies, and frontier models. Even the strongest evaluated models fail on a substantial fraction of clean episodes, and their success rates decrease further under online perturbations. Supervised adaptation greatly improves a small model, but performance remains substantially lower on longer and multi-robot missions. We release the benchmark, 261,646 task-level training examples, and an architecture-agnostic expert-trace generation pipeline.",
+      "authors": [
+        "Loan Bernat",
+        "Matthieu Grard",
+        "Ariane Herbulot",
+        "Florent Lamiraux"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-09T12:54:11Z",
+      "updated": "2026-10-09T12:54:11Z",
+      "announced_date": "2026-10-09",
+      "first_seen": "2026-10-09",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.13534v1",
+        "pdf": "https://arxiv.org/pdf/2610.13534v1",
+        "html": "https://arxiv.org/html/2610.13534"
+      },
+      "score": 19,
+      "tags": [
+        "multi-agent",
+        "embodied",
+        "planning"
+      ],
+      "field": "embodied",
+      "citations": 0
+    },
+    {
+      "id": "2610.13361",
+      "title": "AgentSWE: Can Coding Agents Build the Agent You Actually Want?",
+      "abstract": "As the production of software passes into the hands of software itself, coding agents are increasingly commissioned to build agents fitted to their users' own workflows. This delegation carries a quiet assumption, that the delivered agent will faithfully serve the requirement it was built for, rather than merely appear to. No existing benchmark tests that assumption. We introduce AgentSWE, a benchmark for agent software engineering spanning three stages of the agent development lifecycle: Creation of a complete agent from a natural-language requirement, Editing of production agent codebases, and Optimization toward a measurable target. Each of its 25 tasks is framed as a commission rather than an exam: the builder iterates against a handful of illustrative cases, while acceptance exercises the frozen submission on held-out cases designed to span the full requirement, grading behavior against requirement-derived rubrics under hard pass/fail gates or, for Optimization, against the source benchmark's own objective. Evaluating a range of coding agents across models and harnesses, we find that none comes close to delivering what a requirement asks for: the gap between what a builder demonstrates and what it delivers is the norm, not the corner case. An accompanying empirical analysis of the failure trajectories identifies recurring failure modes, among them overfitting to the visible cases, hollow runtimes behind code that looks complete, and unsupported claims of completion, each a signal by which coding agents can learn to build the agents they are asked for.",
+      "authors": [
+        "Jiahao Wang",
+        "Hongjin Qian",
+        "Yuyang Hu",
+        "Jiajun Zhang",
+        "Zheng Liu"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-09T10:35:27Z",
+      "updated": "2026-10-09T10:35:27Z",
+      "announced_date": "2026-10-09",
+      "first_seen": "2026-10-09",
+      "comment": "Code: https://github.com/VectorSpaceLab/AgentSWE",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.13361v1",
+        "pdf": "https://arxiv.org/pdf/2610.13361v1",
+        "html": "https://arxiv.org/html/2610.13361"
+      },
+      "score": 12,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.13227",
+      "title": "Understanding and Mitigating Cross-Session Attacks via Persistent Artifacts in Agent Skill Composition",
+      "abstract": "Agent skills extend the capabilities of AI agents by bundling instructions, code, and resources into reusable packages. During skill execution, agents may produce or modify artifacts, such as files, configurations, and cached data, that are reused by other skills in later sessions. Since these artifacts can persist across sessions and later be accessed by other skills, they introduce a new attack surface that can be exploited to influence subsequent executions. However, the security risks arising from such cross-session skill interactions remain largely unexplored. In this work, we investigate cross-session composition attacks in skill-based AI agents and develop a runtime defense against them. Specifically, we characterize three attack mechanisms, namely Instruction Propagation (IP), Data Boundary Violation (DBV), and Evidence Poisoning (EP), through which malicious effects propagate across skill executions via persistent artifacts. To evaluate whether existing agents can resist these attacks while completing legitimate tasks, we construct SkillRelayBench, a benchmark of 270 adversarial cases drawn from 30 cross-session skill-composition scenarios across ten domains. Our evaluation of seven models across Codex CLI, Gemini CLI, and Claude Code reveals attack success rates (ASR) ranging from 46.7% to 77.4% and attack chain success rates (ACSR) ranging from 35.6% to 61.1%. Successful attack chains cover all five target security consequence categories, highlighting the broad impact of these attacks. To mitigate these risks, we propose SkillRelayGuard, which restores artifact provenance context and provides pre-execution advisory review while leaving the final execution decision to the agent. Evaluation across three agent settings shows that SkillRelayGuard reduces overall ASR from 69.5% to 10.9% and ACSR from 54.8% to 10.0%, while increasing legitimate task completion from 79.6% to 87.5%.",
+      "authors": [
+        "Dianshu Liao",
+        "Shidong Pan",
+        "Guangdong Bai",
+        "Zhenchang Xing",
+        "Xiaoyu Sun"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-10-09T08:45:27Z",
+      "updated": "2026-10-09T08:45:27Z",
+      "announced_date": "2026-10-09",
+      "first_seen": "2026-10-09",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.13227v1",
+        "pdf": "https://arxiv.org/pdf/2610.13227v1",
+        "html": "https://arxiv.org/html/2610.13227"
+      },
+      "score": 8,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.13116",
+      "title": "DRYLAB-Bench: Benchmarking the Biosecurity Risk of Agentic LLM Mutation Design",
+      "abstract": "As large language models (LLMs) acquire advanced biological design capabilities, they offer substantial research benefits but simultaneously introduce severe dual-use risks, such as engineering enhanced pathogens or drug-resistant bacteria. While biosecurity frameworks recognize these threats, the actual risk of LLMs executing dangerous biological modifications remains unquantified, particularly when augmented with specialized biological design tools (BDTs). Existing evaluations primarily assess hazardous knowledge possession rather than practical application, overlook risk amplification from BDTs, and rely on unreliable, expensive, or hazardous validation methods. To address these gaps, we introduce DRYLAB-Bench (Design Risk Yielded by LLM Agent in Biodesign), the first comprehensive benchmark evaluating the high-risk biological mutation design capabilities of LLM agents. Moving beyond basic question-answering, DRYLAB-Bench tasks agents with 30 genuinely hazardous mutation-design scenarios distilled from biosecurity guidelines. It evaluates models in a multi-round, tool-augmented environment where LLMs orchestrate BDTs to iteratively refine candidates. Crucially, it scores designs directly against 187,695 empirical wet-lab measurements from ProteinGym and ViroGym using our proposed Biosecurity Risk Score (BRS), quantifying risk-associated effects while enabling scalable and safe ground-truth verification. Evaluations of 15 frontier models reveal substantial baseline threats: without tools, 67.6% of one-shot designs exceed the average measured variant, and 21.4% reach the highest-risk decile. Equipping models with BDTs significantly amplifies this risk, raising the pooled risk by \\(ΔBRS=+0.116\\) and the top-decile share to 23.5%. Code: https://github.com/drylab-bio/DRYLAB-Bench",
+      "authors": [
+        "Yuzhen Wang",
+        "Chunxiao Li",
+        "Baichen Le",
+        "Lewen Yan",
+        "Jie Zhang",
+        "Yucheng T. Yang",
+        "Xing-Ming Zhao",
+        "Lijun Li",
+        "Jing Shao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-09T07:09:16Z",
+      "updated": "2026-10-09T07:09:16Z",
+      "announced_date": "2026-10-09",
+      "first_seen": "2026-10-09",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.13116v1",
+        "pdf": "https://arxiv.org/pdf/2610.13116v1",
+        "html": "https://arxiv.org/html/2610.13116"
+      },
+      "score": 23,
+      "tags": [
+        "tool-use",
+        "safety",
+        "science"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2610.13021",
+      "title": "EmbodiedCLBench: Evaluating Continual Learning for Self-Evolving Embodied Agents",
+      "abstract": "Continual learning requires models to accumulate past experience and transfer it to new tasks. Despite substantial research on continual learning, existing work remains largely confined to non-embodied settings, without extending to embodied environments. To address this gap, we introduce EmbodiedCLBench, the first benchmark in embodied simulation for evaluating the continual learning capability of self-evolving agents. With compositional generalization as the core evaluation principle, our benchmark evaluates whether agents can first learn from basic tasks and then recombine the acquired skills to solve complex, unseen advanced tasks. Based on EmbodiedCLBench, we conduct extensive experiments across multiple agent harnesses and learning methods, revealing consistent limitations and distinctive behaviors. Our results show that while advanced tasks can be hardly solved under zero-shot setting, the experience from basic tasks enables consistent improvement. Such benefit from the experience remains stable even if the task complexity increases. However, this improvement does not scale accordingly with the number of learning samples, and current agents cannot extract meaningful information from additional experience. Collectively, our findings highlight continual learning as a fundamental yet underexplored capability, and our benchmark offers valuable resources for designing effective self-evolving agents in embodied environments. Our code and dataset are available at https://pku-value-lab.github.io/EmbodiedCLBench-homepage.",
+      "authors": [
+        "Jie Huang",
+        "Yanan Chen",
+        "Ruixun Liu",
+        "Kaichen He",
+        "Xinyi He",
+        "Rui Huang",
+        "Zilong Zheng",
+        "Zhenliang Zhang",
+        "Yiwu Zhong"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-09T05:23:00Z",
+      "updated": "2026-10-09T05:23:00Z",
+      "announced_date": "2026-10-09",
+      "first_seen": "2026-10-09",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.13021v1",
+        "pdf": "https://arxiv.org/pdf/2610.13021v1",
+        "html": "https://arxiv.org/html/2610.13021"
+      },
+      "score": 14,
+      "tags": [
+        "embodied",
+        "science"
+      ],
+      "field": "embodied",
+      "citations": 0
+    },
+    {
+      "id": "2610.12975",
+      "title": "SmartSalesBench: A Resistance-Aware Multi-Turn Benchmark for Evaluating LLM Sales Agents",
+      "abstract": "We present SmartSalesBench, the first multi-turn conversational benchmark explicitly designed to evaluate large language model (LLM) sales agents against psychologically grounded, resistant buyer personas. Existing task-oriented dialogue benchmarks assume cooperative users and measure task completion; SmartSalesBench inverts this assumption, placing agents against personas programmed to resist and challenge across conversations of up to twenty turns. The benchmark includes five agent profiles, twelve buyer personas, fifteen smartphone products across six price tiers, and four controlled experiments with 3 iterations totaling 13,680 sessions. Both sales-agent and buyer persona generations are grounded through retrieval-augmented generation (RAG). We introduce nine evaluation metrics grouped into three tiers: primary outcome metrics (CR, BRS, RIR), secondary quality metrics (SMS, PFS, ETI), and exploratory metrics planned for future reporting (ITS, ARI, SPI). Our evaluation combines automated LLM-as-judge scoring with internal human assessment (n = 50, \\k{appa} = 0.71, Pearson r = 0.81 with BRS).",
+      "authors": [
+        "P N Bhargav Teja",
+        "Velpula Lokesh Reddy",
+        "Madhu Basumata",
+        "Susen Sarkar",
+        "Rajasekhara Reddy Duvvuru Muni"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-09T04:21:12Z",
+      "updated": "2026-10-09T04:21:12Z",
+      "announced_date": "2026-10-09",
+      "first_seen": "2026-10-09",
+      "comment": "Request for review",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.12975v1",
+        "pdf": "https://arxiv.org/pdf/2610.12975v1",
+        "html": "https://arxiv.org/html/2610.12975"
+      },
+      "score": 12,
+      "tags": [
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 0
+    },
+    {
+      "id": "2610.12823",
+      "title": "When Charts Deceive Web Agents: A Paired Benchmark for Misleading Visualization-Grounded Tasks",
+      "abstract": "Web agents increasingly browse, interpret, and act on web content on behalf of users. In many realistic workflows, however, the visual evidence they consume is not neutral: charts and dashboards can be misleading, shaping judgments without issuing any explicit malicious instruction. Unlike chart question answering, Web Agents treat charts as intermediate evidence whose misinterpretation can propagate into concrete downstream actions --- a reliability risk that remains underexplored. We introduce MisVisAgentBench, the first paired executable benchmark for evaluating how misleading visualizations affect Web Agent execution. It comprises 280 task instances in matched clean--misleading pairs that differ only in chart evidence. We further provide a diagnostic framework that isolates misleading-induced failures from baseline task difficulty (Zhu et al., 2025) and captures execution-level effects such as extra browsing steps and decision hesitation. Across thirteen vision-language Web Agents, replacing clean charts with misleading counterparts reduces the average task success rate by more than 34 percentage points. Moreover, these failures predominantly follow the targeted misleading action branch, suggesting that deceptive charts systematically redirect rather than randomly disrupt agent decisions. These results reveal that visualization robustness is a critical yet understudied dimension of Web Agent safety and reliability.",
+      "authors": [
+        "Yisheng Li",
+        "Dongming Han",
+        "Hongkun Pan",
+        "Bingcheng Mao",
+        "Zijian Wang",
+        "Yunlong Mao",
+        "Wei Tong",
+        "Sheng Zhong"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-10-09T00:03:13Z",
+      "updated": "2026-10-09T00:03:13Z",
+      "announced_date": "2026-10-09",
+      "first_seen": "2026-10-09",
+      "comment": "Accepted to EMNLP 2026. 19 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.12823v1",
+        "pdf": "https://arxiv.org/pdf/2610.12823v1",
+        "html": "https://arxiv.org/html/2610.12823"
+      },
+      "score": 14,
+      "tags": [
+        "web",
+        "safety",
+        "multimodal"
+      ],
+      "field": "web",
+      "citations": 0
+    }
+  ]
+}
