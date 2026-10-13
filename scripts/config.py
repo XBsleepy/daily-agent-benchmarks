@@ -8,6 +8,10 @@ ARXIV_RSS = (
     "https://rss.arxiv.org/rss/"
     + "+".join(("cs.AI", "cs.CL", "cs.LG", "cs.MA", "cs.SE", "cs.HC", "cs.RO", "cs.CV", "cs.IR", "cs.CR"))
 )
+# Public GitHub Pages root (trailing slash). Used for canonical URLs and the sitemap.
+SITE_URL = "https://xbsleepy.github.io/daily-agent-benchmarks/"
+REPO_URL = "https://github.com/XBsleepy/daily-agent-benchmarks"
+
 USER_AGENT = (
     "daily-agent-benchmarks/1.0 "
     "(https://github.com/XBsleepy/daily-agent-benchmarks; arxiv tracker; polite bot)"

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>CraftBench-UE: Deterministic Evaluation for Coding Agents in Unreal Engine | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Building gameplay features in a game engine requires more than code, as code that compiles and runs does not necessarily implement…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Tool use, agent benchmark, LLM agent, arXiv, 2609.23142" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.23142.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="CraftBench-UE: Deterministic Evaluation for Coding Agents in Unreal Engine" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Building gameplay features in a game engine requires more than code, as code that compiles and runs does not necessarily implement…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.23142.html" />
+    <meta property="article:published_time" content="2026-09-22T04:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="CraftBench-UE: Deterministic Evaluation for Coding Agents in Unreal Engine" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Building gameplay features in a game engine requires more than code, as code that compiles and runs does not necessarily implement…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,53 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "CraftBench-UE: Deterministic Evaluation for Coding Agents in Unreal Engine",
+  "name": "CraftBench-UE: Deterministic Evaluation for Coding Agents in Unreal Engine",
+  "abstract": "Building gameplay features in a game engine requires more than code, as code that compiles and runs does not necessarily implement the requested gameplay. We introduce CraftBenchUE, an evaluation harness that runs agents in an isolated Unreal Engine environment, reconstructs their saved submissions in fresh projects, and applies deterministic build, asset, and runtime checks without an LLM judge. Based on the harness, we built a benchmark consisting of 70 tasks spanning C++ source, Blueprint assets, and editor scripting. We evaluate seven models under two editor-tool configurations, with a file-and-shell baseline on C++ tasks. We further pair tasks that specify the same gameplay and use the same runtime tests, but require C++ and Blueprint as the deliverables. Across the 10 paired tasks, C++ completion rates exceed Blueprint by 30.0 and 42.9 percentage points in the two tool configurations. Among on-time Blueprint submissions in this paired set that pass asset checks, 42.2% and 50.0% fail explicit runtime assertions. These submissions satisfy asset requirements but fail the required gameplay tests. We will release the harness, task benchmark, and our trajectory findings with the report.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Shutong Wu, Kevin Calderone, Andy Tsen"
+    }
+  ],
+  "datePublished": "2026-09-22T04:00:00Z",
+  "dateModified": "2026-09-22T04:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.23142.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.23142.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.23142"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.23142"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.23142"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.23142"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +85,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>CraftBench-UE: Deterministic Evaluation for Coding Agents in Unreal Engine</h1>
+        <div class="meta">
+          Shutong Wu, Kevin Calderone, Andy Tsen
+          · 2609.23142
+          · <time datetime="2026-09-22">2026-09-22</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Building gameplay features in a game engine requires more than code, as code that compiles and runs does not necessarily implement the requested gameplay. We introduce CraftBenchUE, an evaluation harness that runs agents in an isolated Unreal Engine environment, reconstructs their saved submissions in fresh projects, and applies deterministic build, asset, and runtime checks without an LLM judge. Based on the harness, we built a benchmark consisting of 70 tasks spanning C++ source, Blueprint assets, and editor scripting. We evaluate seven models under two editor-tool configurations, with a file-and-shell baseline on C++ tasks. We further pair tasks that specify the same gameplay and use the same runtime tests, but require C++ and Blueprint as the deliverables. Across the 10 paired tasks, C++ completion rates exceed Blueprint by 30.0 and 42.9 percentage points in the two tool configurations. Among on-time Blueprint submissions in this paired set that pass asset checks, 42.2% and 50.0% fail explicit runtime assertions. These submissions satisfy asset requirements but fail the required gameplay tests. We will release the harness, task benchmark, and our trajectory findings with the report.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.23142" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.23142" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.23142" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.24025.html"><strong>Synthesizing Reactive Character Behaviors for Continuous Games via Programmatic Policy Search</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.23980.html"><strong>MobileCybench: Evaluating Agent Vulnerability Discovery via Executable Probes</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.23570.html"><strong>VibeMemBench: Evaluating Memory Systems for Coding Agents on Real Repository Coding Tasks</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.23363.html"><strong>TicTacBench: Benchmarking Timing Closure Capabilities of Coding Agents</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.21562.html"><strong>GameLogicBench: Evaluating Coding Agents on Runtime Game Logic with Tick-Level State Assertions</strong></a> <span>2026-09-21</span></li>
+          <li><a href="2609.18909.html"><strong>Beyond Outcomes: Dual-View Relational Learning for Efficient Agent Benchmarking</strong></a> <span>2026-09-17</span></li>
+          <li><a href="2609.17930.html"><strong>Locating Hidden Failures Makes Long-Horizon Agents More Reliable</strong></a> <span>2026-09-17</span></li>
+          <li><a href="2609.17394.html"><strong>Coding Agents Have Converged: Why the SWE-bench Leaderboard Can No Longer Order Its Top Entries, and What to Measure Instead</strong></a> <span>2026-09-16</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

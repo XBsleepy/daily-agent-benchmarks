@@ -8,8 +8,10 @@
     (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
 
   document.documentElement.dataset.theme = theme;
-  document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
+  // Keep the prerendered <title>; applyStaticI18n would reset it to the site title.
+  const staticTitle = document.title;
   applyStaticI18n(lang);
+  document.title = staticTitle;
 
   function paperId() {
     if (window.PAPER_ID) return window.PAPER_ID;
@@ -27,16 +29,21 @@
   async function init() {
     const id = paperId();
     const root = document.getElementById("main");
+    // Static pages already contain the paper; only show errors on the empty fallback page.
+    const prerendered = Boolean(root.querySelector("article"));
+    const fail = () => {
+      if (!prerendered) root.innerHTML = `<p class="status">${t(lang, "loadError")}</p>`;
+    };
     try {
       const res = await fetch(`${base}data/index.json`, { cache: "no-store" });
       if (!res.ok) throw new Error(String(res.status));
       const data = await res.json();
       const paper = (data.papers || []).find((item) => item.id === id);
       if (!paper) {
-        root.innerHTML = `<p class="status">${t(lang, "loadError")}</p>`;
+        fail();
         return;
       }
-      document.title = paper.title;
+      document.title = `${paper.title} | ${t("en", "docTitle")}`;
       const absUrl = paper.links?.abs || `https://arxiv.org/abs/${paper.id}`;
       const pdfUrl = paper.links?.pdf || `https://arxiv.org/pdf/${paper.id}`;
       const htmlUrl = paper.links?.html || `https://arxiv.org/html/${paper.id}`;
@@ -45,7 +52,7 @@
         .join("");
       const cites = Number(paper.citations || 0);
       root.innerHTML = `
-        <p class="crumb"><a href="${base}">${t(lang, "backHome")}</a></p>
+        <p class="crumb"><a href="${base}">${t(lang, "backHome")}</a> · <a href="${base}archive.html">${t(lang, "archive")}</a></p>
         <article class="paper paper--full">
           <h1>${BM25.escapeHtml(paper.title)}</h1>
           <div class="meta">
@@ -67,7 +74,7 @@
         </article>
       `;
     } catch (err) {
-      root.innerHTML = `<p class="status">${t(lang, "loadError")}</p>`;
+      fail();
       console.error(err);
     }
   }

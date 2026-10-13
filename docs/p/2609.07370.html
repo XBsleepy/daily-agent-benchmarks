@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Beyond Fluent Generation: A CPU Reliability Benchmark for MCP-Style Tool Calling in Sub-2B Small Language Models for Edge Deployment | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Resource constrained single-board computers including Raspberry Pi, NVIDIA Jetson Nano, Arduino UNO Q, Orange Pi, and LattePanda…" />
+    <meta name="keywords" content="Tool use, agent benchmark, LLM agent, arXiv, 2609.07370" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.07370.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Beyond Fluent Generation: A CPU Reliability Benchmark for MCP-Style Tool Calling in Sub-2B Small Language Models for Edge Deployment" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Resource constrained single-board computers including Raspberry Pi, NVIDIA Jetson Nano, Arduino UNO Q, Orange Pi, and LattePanda…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.07370.html" />
+    <meta property="article:published_time" content="2026-09-07T11:44:38Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Beyond Fluent Generation: A CPU Reliability Benchmark for MCP-Style Tool Calling in Sub-2B Small Language Models for Edge Deployment" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Resource constrained single-board computers including Raspberry Pi, NVIDIA Jetson Nano, Arduino UNO Q, Orange Pi, and LattePanda…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,51 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Beyond Fluent Generation: A CPU Reliability Benchmark for MCP-Style Tool Calling in Sub-2B Small Language Mode",
+  "name": "Beyond Fluent Generation: A CPU Reliability Benchmark for MCP-Style Tool Calling in Sub-2B Small Language Models for Edge Deployment",
+  "abstract": "Resource constrained single-board computers including Raspberry Pi, NVIDIA Jetson Nano, Arduino UNO Q, Orange Pi, and LattePanda motivate on-device small language model (SLM) agents that reduce cloud dependence, improve data locality, and tolerate intermittent connectivity. Model Context Protocol (MCP)-style tool invocation demands more than fluent generation: an agent must emit machine-readable JSON, select the correct tool, supply all required arguments, and avoid unintended actions. We establish a platform-agnostic CPU baseline by evaluating five open-weight models below two billion parameters Phi-1.5, Pythia-1.4B, TinyLlama-1.1B-Chat, Qwen2.5-0.5B, and Qwen2.5-1.5B on 100 prompts spanning weather retrieval, web search, calculation, email composition, and task creation, under greedy decoding and nucleus sampling. A recovery parser strips Markdown fences, extracts brace-delimited substrings, and scores parseability, tool-name correctness, argument completeness, and value agreement. Under this criterion, Qwen2.5-1.5B achieves 75% (greedy) and 79% (sampling); Qwen2.5-0.5B achieves 72% (greedy) but drops to 32% under sampling. Phi-1.5 scores 0%; Pythia and TinyLlama reach at most 7%. A strict post-hoc audit finds only 5 of 1,000 raw responses directly parseable as JSON, exposing near-total dependence on output recovery. A CPU resource probe shows Qwen2.5-1.5B requires 7,960 MiB and 30.782 s mean latency; Qwen2.5-0.5B uses 3,637 MiB and 10.627 s, revealing a reliability-resource trade-off for edge deployment. These results do not cover the named boards directly or a full MCP implementation. Safe deployment requires schema validation, constrained generation, least-privilege execution, and human escalation for consequential actions.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Abrar Shahriar Qurat-Ul-Ain Mastoi"
+    }
+  ],
+  "datePublished": "2026-09-07T11:44:38Z",
+  "dateModified": "2026-09-07T11:44:38Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.07370.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.07370.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.07370v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.07370"
+  },
+  "keywords": [
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.07370v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.07370"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +83,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Beyond Fluent Generation: A CPU Reliability Benchmark for MCP-Style Tool Calling in Sub-2B Small Language Models for Edge Deployment</h1>
+        <div class="meta">
+          Abrar Shahriar Qurat-Ul-Ain Mastoi
+          · 2609.07370
+          · <time datetime="2026-09-07">2026-09-07</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Resource constrained single-board computers including Raspberry Pi, NVIDIA Jetson Nano, Arduino UNO Q, Orange Pi, and LattePanda motivate on-device small language model (SLM) agents that reduce cloud dependence, improve data locality, and tolerate intermittent connectivity. Model Context Protocol (MCP)-style tool invocation demands more than fluent generation: an agent must emit machine-readable JSON, select the correct tool, supply all required arguments, and avoid unintended actions. We establish a platform-agnostic CPU baseline by evaluating five open-weight models below two billion parameters Phi-1.5, Pythia-1.4B, TinyLlama-1.1B-Chat, Qwen2.5-0.5B, and Qwen2.5-1.5B on 100 prompts spanning weather retrieval, web search, calculation, email composition, and task creation, under greedy decoding and nucleus sampling. A recovery parser strips Markdown fences, extracts brace-delimited substrings, and scores parseability, tool-name correctness, argument completeness, and value agreement. Under this criterion, Qwen2.5-1.5B achieves 75% (greedy) and 79% (sampling); Qwen2.5-0.5B achieves 72% (greedy) but drops to 32% under sampling. Phi-1.5 scores 0%; Pythia and TinyLlama reach at most 7%. A strict post-hoc audit finds only 5 of 1,000 raw responses directly parseable as JSON, exposing near-total dependence on output recovery. A CPU resource probe shows Qwen2.5-1.5B requires 7,960 MiB and 30.782 s mean latency; Qwen2.5-0.5B uses 3,637 MiB and 10.627 s, revealing a reliability-resource trade-off for edge deployment. These results do not cover the named boards directly or a full MCP implementation. Safe deployment requires schema validation, constrained generation, least-privilege execution, and human escalation for consequential actions.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.07370v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.07370v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.07370" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.12345.html"><strong>ParaRecover: A Process-Level Benchmark for Error Localization and Recovery in Parallel Tool-Use Agents</strong></a> <span>2026-09-11</span></li>
+          <li><a href="2609.09853.html"><strong>The Era by Eon Benchmark: A Generated Enterprise Estate with Exact Ground Truth for Benchmarking LLM Agents</strong></a> <span>2026-09-09</span></li>
+          <li><a href="2609.09754.html"><strong>LexAgentHallu: A Hierarchical Benchmark for Profiling Hallucinations in Legal Agents</strong></a> <span>2026-09-09</span></li>
+          <li><a href="2609.09410.html"><strong>Benchmarking Hybrid Deep Research Across Database Querying and Web Search</strong></a> <span>2026-09-08</span></li>
+          <li><a href="2609.06972.html"><strong>AgentDrift: A Step-Labeled Benchmark of Injection-Hijacked LLM Agent Trajectories</strong></a> <span>2026-09-07</span></li>
+          <li><a href="2609.05818.html"><strong>Agentic BAIM-LLM Evaluation (ABLE): Benchmarking LLM Use of Protein Design Tools</strong></a> <span>2026-09-05</span></li>
+          <li><a href="2609.04280.html"><strong>EVOHARNESSBENCH: Can Your Agents Keep Pace with an Evolving Harness?</strong></a> <span>2026-09-03</span></li>
+          <li><a href="2609.03588.html"><strong>KC-Bench: A Dynamic Interactive Benchmark for Evaluating Knowledge Conflicts in LLM Agents</strong></a> <span>2026-09-03</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

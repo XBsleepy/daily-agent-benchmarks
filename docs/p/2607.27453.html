@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>VAmoS Bench: Voice Agent Simulation Bench | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Production voice agents span cascaded, speech-to-speech, and hybrid architectures. Voice-agent benchmarks typically measure component…" />
+    <meta name="keywords" content="General, Tool use, agent benchmark, LLM agent, arXiv, 2607.27453" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.27453.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="VAmoS Bench: Voice Agent Simulation Bench" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Production voice agents span cascaded, speech-to-speech, and hybrid architectures. Voice-agent benchmarks typically measure component…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.27453.html" />
+    <meta property="article:published_time" content="2026-07-29T20:42:38Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="VAmoS Bench: Voice Agent Simulation Bench" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Production voice agents span cascaded, speech-to-speech, and hybrid architectures. Voice-agent benchmarks typically measure component…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,80 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "VAmoS Bench: Voice Agent Simulation Bench",
+  "name": "VAmoS Bench: Voice Agent Simulation Bench",
+  "abstract": "Production voice agents span cascaded, speech-to-speech, and hybrid architectures. Voice-agent benchmarks typically measure component quality and conversational properties such as word error rate, latency, naturalness, and turn-taking. Fewer measure whether the agent handled a phone call correctly on its own. Contact centers refer to this as ``containment'': the share of phone calls the automated system resolves without handing off to a human. On some phone calls the right outcome is refusal or a redirect. To address this gap, we introduce VAmoS Bench, the Voice Agent Simulation Bench. It measures complete voice-agent systems end to end in a stateful customer-support task. The agent is Riley, a credit-card support representative for a fictional bank who can freeze, cancel, replace, or activate a card. Each of 100 scenarios supplies a simulated caller with a private goal and a seeded PostgreSQL backend. The platform uses each scenario to populate and activate an isolated simulation in which the caller reaches Riley over audio; roughly one-third apply adversarial pressure. The agent can use five tools that execute real SQL against the backend. Each scenario also defines binary assertions. A grader evaluates them against the complete trace of what the caller and agent said and what the agent did, including tool invocations, arguments, and returned rows. This catches an agent that claims to have changed a card without updating the database, as well as one that makes the right database change while disclosing protected information. This first benchmark version focuses on financial services. Its evaluation protocol supports an evolving leaderboard: additional voice agents can be evaluated on the same version, while later versions can expand the tasks and scenarios.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Joshua Meyer"
+    },
+    {
+      "@type": "Person",
+      "name": "Sahar Shayegan"
+    },
+    {
+      "@type": "Person",
+      "name": "Ritiz Tambi"
+    },
+    {
+      "@type": "Person",
+      "name": "Ali Khan"
+    },
+    {
+      "@type": "Person",
+      "name": "Sun Kim"
+    },
+    {
+      "@type": "Person",
+      "name": "Victor Shih"
+    },
+    {
+      "@type": "Person",
+      "name": "Mehdi Jamei"
+    },
+    {
+      "@type": "Person",
+      "name": "Andi Partovi"
+    }
+  ],
+  "datePublished": "2026-07-29T20:42:38Z",
+  "dateModified": "2026-07-29T20:42:38Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.27453.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.27453.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.27453v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.27453"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.27453v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.27453"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +112,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>VAmoS Bench: Voice Agent Simulation Bench</h1>
+        <div class="meta">
+          Joshua Meyer, Sahar Shayegan, Ritiz Tambi, Ali Khan, Sun Kim, Victor Shih, Mehdi Jamei, Andi Partovi
+          · 2607.27453
+          · <time datetime="2026-07-29">2026-07-29</time>
+          · General · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Production voice agents span cascaded, speech-to-speech, and hybrid architectures. Voice-agent benchmarks typically measure component quality and conversational properties such as word error rate, latency, naturalness, and turn-taking. Fewer measure whether the agent handled a phone call correctly on its own. Contact centers refer to this as ``containment&#x27;&#x27;: the share of phone calls the automated system resolves without handing off to a human. On some phone calls the right outcome is refusal or a redirect. To address this gap, we introduce VAmoS Bench, the Voice Agent Simulation Bench. It measures complete voice-agent systems end to end in a stateful customer-support task. The agent is Riley, a credit-card support representative for a fictional bank who can freeze, cancel, replace, or activate a card. Each of 100 scenarios supplies a simulated caller with a private goal and a seeded PostgreSQL backend. The platform uses each scenario to populate and activate an isolated simulation in which the caller reaches Riley over audio; roughly one-third apply adversarial pressure. The agent can use five tools that execute real SQL against the backend. Each scenario also defines binary assertions. A grader evaluates them against the complete trace of what the caller and agent said and what the agent did, including tool invocations, arguments, and returned rows. This catches an agent that claims to have changed a card without updating the database, as well as one that makes the right database change while disclosing protected information. This first benchmark version focuses on financial services. Its evaluation protocol supports an evolving leaderboard: additional voice agents can be evaluated on the same version, while later versions can expand the tasks and scenarios.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.27453v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.27453v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.27453" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.28956.html"><strong>MerchantBench: Benchmarking LLM Agents for Long-Term Coherence in E-Commerce Operations</strong></a> <span>2026-07-31</span></li>
+          <li><a href="2608.00102.html"><strong>Can LLM Agents Price Competitively? A Dynamic Multi-Attribute Auction Benchmark for Agentic Commerce</strong></a> <span>2026-07-30</span></li>
+          <li><a href="2607.28146.html"><strong>Can Agents Deceive? Evaluating Reasoning and Deception in ParliamentBench using a Social Deduction Game</strong></a> <span>2026-07-30</span></li>
+          <li><a href="2607.28033.html"><strong>DataClawEval: A Benchmark for Data Engineering Agents in Real Industrial Harness</strong></a> <span>2026-07-30</span></li>
+          <li><a href="2607.27353.html"><strong>LayerRAG-Bench: A Cross-Layer Reliability Benchmark for Agentic Retrieval-Augmented Generation</strong></a> <span>2026-07-29</span></li>
+          <li><a href="2607.27294.html"><strong>AgentS4D: Benchmarking Runtime Risks across the Execution Lifecycle of LLM-Based Workspace Agents</strong></a> <span>2026-07-29</span></li>
+          <li><a href="2607.27056.html"><strong>Setoka: A Benchmark for Hierarchical User Understanding in Personalized Agents over Heterogeneous Data</strong></a> <span>2026-07-29</span></li>
+          <li><a href="2607.26977.html"><strong>TREK: A Travel Reasoning and Evaluation Kit for LLM Agents in Complex Trip Planning</strong></a> <span>2026-07-29</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

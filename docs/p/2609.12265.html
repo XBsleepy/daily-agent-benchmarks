@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>GTA: Graph Theory Agent and Benchmark for Algorithmic Graph Reasoning with LLMs | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large Language Models (LLMs) are increasingly asked to reason over structured data such as graphs, yet how reliably they can carry…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2609.12265" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.12265.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="GTA: Graph Theory Agent and Benchmark for Algorithmic Graph Reasoning with LLMs" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large Language Models (LLMs) are increasingly asked to reason over structured data such as graphs, yet how reliably they can carry…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.12265.html" />
+    <meta property="article:published_time" content="2026-09-10T22:50:10Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="GTA: Graph Theory Agent and Benchmark for Algorithmic Graph Reasoning with LLMs" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large Language Models (LLMs) are increasingly asked to reason over structured data such as graphs, yet how reliably they can carry…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,85 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "GTA: Graph Theory Agent and Benchmark for Algorithmic Graph Reasoning with LLMs",
+  "name": "GTA: Graph Theory Agent and Benchmark for Algorithmic Graph Reasoning with LLMs",
+  "abstract": "Large Language Models (LLMs) are increasingly asked to reason over structured data such as graphs, yet how reliably they can carry out multi-step graph algorithms in language remains unclear. Existing evaluations tend to use simple tasks on small graphs, to score code generation rather than reasoning over the graph itself, or to fix a single input format. We introduce Graph Theory Bench (GT Bench), a benchmark covering 24 classical graph problems in 44 task-structure settings, with over 100,000 examples across four representations: natural language, structured language, adjacency list, and adjacency matrix. Evaluating eight LLMs on GT Bench shows that accuracy is strongly tied to the input representation, that the best representation shifts with graph density, size, and topology as well as with the model, and that this sensitivity persists, attenuated, in the strongest reasoning models. Building on these observations, we propose the Graph Theory Agent (GTA), which pairs a preference-trained representation selector with plan-and-decompose scaffolding around a frozen executor LLM. GTA lifts Phi-4 from 53.5% to 69.1% on the benchmark's easy split and from 33.0% to 41.5% on its hard split, outperforming eight prompting and agent baselines, and transfers without retraining to GraCoRe and NLGraph. Code for benchmark generation and evaluation: https://github.com/xzx34/GTA. The project homepage is available at https://xzx34.github.io/gta/.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Zixiang Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yanbo Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chenxi Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Lang Gao"
+    },
+    {
+      "@type": "Person",
+      "name": "Zirui Song"
+    },
+    {
+      "@type": "Person",
+      "name": "Yue Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhaorun Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiangliang Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiuying Chen"
+    }
+  ],
+  "datePublished": "2026-09-10T22:50:10Z",
+  "dateModified": "2026-09-10T22:50:10Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.12265.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.12265.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.12265v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.12265"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.12265v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.12265"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +117,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>GTA: Graph Theory Agent and Benchmark for Algorithmic Graph Reasoning with LLMs</h1>
+        <div class="meta">
+          Zixiang Xu, Yanbo Wang, Chenxi Wang, Lang Gao, Zirui Song, Yue Huang, Zhaorun Chen, Xiangliang Zhang, Xiuying Chen
+          · 2609.12265
+          · <time datetime="2026-09-10">2026-09-10</time>
+          · Coding / SWE · 2 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large Language Models (LLMs) are increasingly asked to reason over structured data such as graphs, yet how reliably they can carry out multi-step graph algorithms in language remains unclear. Existing evaluations tend to use simple tasks on small graphs, to score code generation rather than reasoning over the graph itself, or to fix a single input format. We introduce Graph Theory Bench (GT Bench), a benchmark covering 24 classical graph problems in 44 task-structure settings, with over 100,000 examples across four representations: natural language, structured language, adjacency list, and adjacency matrix. Evaluating eight LLMs on GT Bench shows that accuracy is strongly tied to the input representation, that the best representation shifts with graph density, size, and topology as well as with the model, and that this sensitivity persists, attenuated, in the strongest reasoning models. Building on these observations, we propose the Graph Theory Agent (GTA), which pairs a preference-trained representation selector with plan-and-decompose scaffolding around a frozen executor LLM. GTA lifts Phi-4 from 53.5% to 69.1% on the benchmark&#x27;s easy split and from 33.0% to 41.5% on its hard split, outperforming eight prompting and agent baselines, and transfers without retraining to GraCoRe and NLGraph. Code for benchmark generation and evaluation: https://github.com/xzx34/GTA. The project homepage is available at https://xzx34.github.io/gta/.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.12265v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.12265v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.12265" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.17930.html"><strong>Locating Hidden Failures Makes Long-Horizon Agents More Reliable</strong></a> <span>2026-09-17</span></li>
+          <li><a href="2609.17394.html"><strong>Coding Agents Have Converged: Why the SWE-bench Leaderboard Can No Longer Order Its Top Entries, and What to Measure Instead</strong></a> <span>2026-09-16</span></li>
+          <li><a href="2609.14992.html"><strong>MTAC-IFBench: Benchmarking Instruction-Following in Multi-Turn Agentic Coding</strong></a> <span>2026-09-15</span></li>
+          <li><a href="2609.13149.html"><strong>BudgetBench: A Budget-Tiered Protocol and Pilot Harness for Memory Strategy Evaluation in Local Large Language Model Agents</strong></a> <span>2026-09-15</span></li>
+          <li><a href="2609.09526.html"><strong>Benchmarking Agentic HLS Design Tasks With HLS-Eval</strong></a> <span>2026-09-08</span></li>
+          <li><a href="2609.08149.html"><strong>SWE-Bench Pro Verified: A Reliable Benchmark for Software Engineering Agents</strong></a> <span>2026-09-08</span></li>
+          <li><a href="2609.07785.html"><strong>What Does an LLM-Agent Leaderboard Rank Actually Compare?</strong></a> <span>2026-09-07</span></li>
+          <li><a href="2609.04611.html"><strong>$τ^τ$-Bench: An Environment for End-To-End, Realistic Agent Construction</strong></a> <span>2026-09-04</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

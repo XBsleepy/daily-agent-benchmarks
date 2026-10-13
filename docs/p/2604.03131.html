@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>A Systematic Security Evaluation of OpenClaw and Its Variants | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Tool-augmented AI agents substantially extend the practical capabilities of large language models, but they also introduce security…" />
+    <meta name="keywords" content="General, Tool use, Safety, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2604.03131" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.03131.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="A Systematic Security Evaluation of OpenClaw and Its Variants" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Tool-augmented AI agents substantially extend the practical capabilities of large language models, but they also introduce security…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.03131.html" />
+    <meta property="article:published_time" content="2026-04-03T15:52:36Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="A Systematic Security Evaluation of OpenClaw and Its Variants" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Tool-augmented AI agents substantially extend the practical capabilities of large language models, but they also introduce security…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,78 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "A Systematic Security Evaluation of OpenClaw and Its Variants",
+  "name": "A Systematic Security Evaluation of OpenClaw and Its Variants",
+  "abstract": "Tool-augmented AI agents substantially extend the practical capabilities of large language models, but they also introduce security risks that cannot be identified through model-only evaluation. In this paper, we present a systematic security assessment of six representative OpenClaw-series agent frameworks, namely OpenClaw, AutoClaw, QClaw, KimiClaw, MaxClaw, and ArkClaw, under multiple backbone models. To support this study, we construct a benchmark of 205 test cases covering representative attack behaviors across the full agent execution lifecycle, enabling unified evaluation of risk exposure at both the framework and model levels. Our results show that all evaluated agents exhibit substantial security vulnerabilities, and that agentized systems are significantly riskier than their underlying models used in isolation. In particular, reconnaissance and discovery behaviors emerge as the most common weaknesses, while different frameworks expose distinct high-risk profiles, including credential leakage, lateral movement, privilege escalation, and resource development. These findings indicate that the security of modern agent systems is shaped not only by the safety properties of the backbone model, but also by the coupling among model capability, tool use, multi-step planning, and runtime orchestration. We further show that once an agent is granted execution capability and persistent runtime context, weaknesses arising in early stages can be amplified into concrete system-level failures. Overall, our study highlights the need to move beyond prompt-level safeguards toward lifecycle-wide security governance for intelligent agent frameworks.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yuhang Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Haichang Gao"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhenxing Niu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhaoxiang Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenjing Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiang Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Shiguo Lian"
+    }
+  ],
+  "datePublished": "2026-04-03T15:52:36Z",
+  "dateModified": "2026-04-03T15:52:36Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.03131.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.03131.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.03131v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2604.03131"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Safety",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2604.03131v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2604.03131"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +110,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>A Systematic Security Evaluation of OpenClaw and Its Variants</h1>
+        <div class="meta">
+          Yuhang Wang, Haichang Gao, Zhenxing Niu, Zhaoxiang Liu, Wenjing Zhang, Xiang Wang, Shiguo Lian
+          · 2604.03131
+          · <time datetime="2026-04-03">2026-04-03</time>
+          · General · 10 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Tool-augmented AI agents substantially extend the practical capabilities of large language models, but they also introduce security risks that cannot be identified through model-only evaluation. In this paper, we present a systematic security assessment of six representative OpenClaw-series agent frameworks, namely OpenClaw, AutoClaw, QClaw, KimiClaw, MaxClaw, and ArkClaw, under multiple backbone models. To support this study, we construct a benchmark of 205 test cases covering representative attack behaviors across the full agent execution lifecycle, enabling unified evaluation of risk exposure at both the framework and model levels. Our results show that all evaluated agents exhibit substantial security vulnerabilities, and that agentized systems are significantly riskier than their underlying models used in isolation. In particular, reconnaissance and discovery behaviors emerge as the most common weaknesses, while different frameworks expose distinct high-risk profiles, including credential leakage, lateral movement, privilege escalation, and resource development. These findings indicate that the security of modern agent systems is shaped not only by the safety properties of the backbone model, but also by the coupling among model capability, tool use, multi-step planning, and runtime orchestration. We further show that once an agent is granted execution capability and persistent runtime context, weaknesses arising in early stages can be amplified into concrete system-level failures. Overall, our study highlights the need to move beyond prompt-level safeguards toward lifecycle-wide security governance for intelligent agent frameworks.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2604.03131v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2604.03131v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2604.03131" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2604.04220.html"><strong>TimeSeek: Temporal Reliability of Agentic Forecasters</strong></a> <span>2026-04-05</span></li>
+          <li><a href="2604.04211.html"><strong>LOCARD: An Agentic Framework for Blockchain Forensics</strong></a> <span>2026-04-05</span></li>
+          <li><a href="2604.04202.html"><strong>ClawArena: Benchmarking AI Agents in Evolving Information Environments</strong></a> <span>2026-04-05</span></li>
+          <li><a href="2604.09678.html"><strong>NetAgentBench: A State-Centric Benchmark for Evaluating Agentic Network Configuration</strong></a> <span>2026-04-03</span></li>
+          <li><a href="2604.02834.html"><strong>ESL-Bench: An Event-Driven Synthetic Longitudinal Benchmark for Health Agents</strong></a> <span>2026-04-03</span></li>
+          <li><a href="2604.21937.html"><strong>MolClaw: An Autonomous Agent with Hierarchical Skills for Drug Molecule Evaluation, Screening, and Optimization</strong></a> <span>2026-04-02</span></li>
+          <li><a href="2604.01508.html"><strong>ToolMisuseBench: An Offline Deterministic Benchmark for Tool Misuse and Recovery in Agentic Systems</strong></a> <span>2026-04-02</span></li>
+          <li><a href="2604.09666.html"><strong>Do We Still Need GraphRAG? Benchmarking RAG and GraphRAG for Agentic Search Systems</strong></a> <span>2026-04-01</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

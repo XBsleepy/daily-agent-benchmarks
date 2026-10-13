@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>TicTacBench: Benchmarking Timing Closure Capabilities of Coding Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Recent advances in large language models (LLMs) have led to the emergence of coding agents capable of performing complex engineering…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2609.23363" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.23363.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="TicTacBench: Benchmarking Timing Closure Capabilities of Coding Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Recent advances in large language models (LLMs) have led to the emergence of coding agents capable of performing complex engineering…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.23363.html" />
+    <meta property="article:published_time" content="2026-09-22T04:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="TicTacBench: Benchmarking Timing Closure Capabilities of Coding Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Recent advances in large language models (LLMs) have led to the emergence of coding agents capable of performing complex engineering…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,52 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "TicTacBench: Benchmarking Timing Closure Capabilities of Coding Agents",
+  "name": "TicTacBench: Benchmarking Timing Closure Capabilities of Coding Agents",
+  "abstract": "Recent advances in large language models (LLMs) have led to the emergence of coding agents capable of performing complex engineering tasks, including register-transfer level (RTL) design and optimization. Existing RTL benchmarks mainly evaluate functional correctness and performance, power, and area (PPA) of the generated RTL designs, leaving agents' ability for \\emph{timing closure} under-evaluated. We propose TicTacBench, a benchmark specifically designed to evaluate coding agents' capabilities for RTL-level timing closure under post-place-and-route (post-PnR) evaluation. TicTacBench contains 30 diverse tasks, each provided with a suboptimal RTL design, realistic timing constraints, functional equivalence verification, and timing reports. With over 300 runs of coding agents driven by 8 frontier LLMs, we find that even the best agent can only close 53.3\\% of tasks with 7.18\\% area-delay product (ADP) degradation and 8.83\\% energy-delay-squared product (EDDP) improvement on average. We identify common failure categories that explain why agents fail to close timing. Then we propose TicTacSkill, a new method that guides agents to follow standard timing-closure procedures and improves the Timing Closure Rate by 9\\%. These results suggest that while coding agents have made significant progress in RTL design, their timing-closure capability still has substantial room for improvement.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Bowei Wang, Zhigang Fang, Zhijie Yang, Renzhi Chen, Shanshan Li, Lei Wang"
+    }
+  ],
+  "datePublished": "2026-09-22T04:00:00Z",
+  "dateModified": "2026-09-22T04:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.23363.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.23363.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.23363"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.23363"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.23363"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.23363"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +84,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>TicTacBench: Benchmarking Timing Closure Capabilities of Coding Agents</h1>
+        <div class="meta">
+          Bowei Wang, Zhigang Fang, Zhijie Yang, Renzhi Chen, Shanshan Li, Lei Wang
+          · 2609.23363
+          · <time datetime="2026-09-22">2026-09-22</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Recent advances in large language models (LLMs) have led to the emergence of coding agents capable of performing complex engineering tasks, including register-transfer level (RTL) design and optimization. Existing RTL benchmarks mainly evaluate functional correctness and performance, power, and area (PPA) of the generated RTL designs, leaving agents&#x27; ability for \emph{timing closure} under-evaluated. We propose TicTacBench, a benchmark specifically designed to evaluate coding agents&#x27; capabilities for RTL-level timing closure under post-place-and-route (post-PnR) evaluation. TicTacBench contains 30 diverse tasks, each provided with a suboptimal RTL design, realistic timing constraints, functional equivalence verification, and timing reports. With over 300 runs of coding agents driven by 8 frontier LLMs, we find that even the best agent can only close 53.3\% of tasks with 7.18\% area-delay product (ADP) degradation and 8.83\% energy-delay-squared product (EDDP) improvement on average. We identify common failure categories that explain why agents fail to close timing. Then we propose TicTacSkill, a new method that guides agents to follow standard timing-closure procedures and improves the Timing Closure Rate by 9\%. These results suggest that while coding agents have made significant progress in RTL design, their timing-closure capability still has substantial room for improvement.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.23363" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.23363" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.23363" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.25396.html"><strong>Passes Alone, Fails Together: Benchmarking Semantic Coordination in Parallel LLM-Agent Development</strong></a> <span>2026-09-23</span></li>
+          <li><a href="2609.24025.html"><strong>Synthesizing Reactive Character Behaviors for Continuous Games via Programmatic Policy Search</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.23980.html"><strong>MobileCybench: Evaluating Agent Vulnerability Discovery via Executable Probes</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.23570.html"><strong>VibeMemBench: Evaluating Memory Systems for Coding Agents on Real Repository Coding Tasks</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.23142.html"><strong>CraftBench-UE: Deterministic Evaluation for Coding Agents in Unreal Engine</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.21562.html"><strong>GameLogicBench: Evaluating Coding Agents on Runtime Game Logic with Tick-Level State Assertions</strong></a> <span>2026-09-21</span></li>
+          <li><a href="2609.18909.html"><strong>Beyond Outcomes: Dual-View Relational Learning for Efficient Agent Benchmarking</strong></a> <span>2026-09-17</span></li>
+          <li><a href="2609.17930.html"><strong>Locating Hidden Failures Makes Long-Horizon Agents More Reliable</strong></a> <span>2026-09-17</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

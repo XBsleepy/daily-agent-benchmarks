@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Learning Agent Routing From Early Experience | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLM agents achieve strong performance on complex reasoning tasks but incur high latency and compute cost. In practice, many queries…" />
+    <meta name="keywords" content="General, Memory, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2605.07180" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.07180.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Learning Agent Routing From Early Experience" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLM agents achieve strong performance on complex reasoning tasks but incur high latency and compute cost. In practice, many queries…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.07180.html" />
+    <meta property="article:published_time" content="2026-05-08T03:18:40Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Learning Agent Routing From Early Experience" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLM agents achieve strong performance on complex reasoning tasks but incur high latency and compute cost. In practice, many queries…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,85 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Learning Agent Routing From Early Experience",
+  "name": "Learning Agent Routing From Early Experience",
+  "abstract": "LLM agents achieve strong performance on complex reasoning tasks but incur high latency and compute cost. In practice, many queries fall within the capability boundary of cutting-edge LLMs and do not require full agent execution, making effective routing between LLMs and agents a key challenge. We study the problem of routing queries between lightweight LLM inference and full agent execution under realistic cold-start settings. To address this, we propose BoundaryRouter, a training-free routing framework that uses early behavioral experience and rubric-guided reasoning to decide whether to answer a query with direct LLM inference or escalate to an agent. BoundaryRouter builds a compact experience memory by executing both systems on a shared seed set and retrieves similar cases at inference time to guide routing decisions. To evaluate this method, we introduce RouteBench, a benchmark covering in-domain, paraphrased, and out-of-domain route settings. Experiments show that BoundaryRouter reduces inference time by 60.6% compared to the agent while improving performance by 28.6% over direct LLM inference, outperforming prompt-based and retrieval-only routing by an average of 37.9% and 8.2%, respectively.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yimin Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiahao Qiu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xuan Qi"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinzhe Juan"
+    },
+    {
+      "@type": "Person",
+      "name": "Jingzhe Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Zelin Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Hongru Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Shilong Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Mengdi Wang"
+    }
+  ],
+  "datePublished": "2026-05-08T03:18:40Z",
+  "dateModified": "2026-05-08T03:18:40Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.07180.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.07180.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.07180v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.07180"
+  },
+  "keywords": [
+    "General",
+    "Memory",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.07180v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.07180"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +117,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Learning Agent Routing From Early Experience</h1>
+        <div class="meta">
+          Yimin Wang, Jiahao Qiu, Xuan Qi, Xinzhe Juan, Jingzhe Shi, Zelin Zhao, Hongru Wang, Shilong Liu, Mengdi Wang
+          · 2605.07180
+          · <time datetime="2026-05-08">2026-05-08</time>
+          · General · 2 citations
+        </div>
+        <div class="themes"><span class="chip">Memory</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLM agents achieve strong performance on complex reasoning tasks but incur high latency and compute cost. In practice, many queries fall within the capability boundary of cutting-edge LLMs and do not require full agent execution, making effective routing between LLMs and agents a key challenge. We study the problem of routing queries between lightweight LLM inference and full agent execution under realistic cold-start settings. To address this, we propose BoundaryRouter, a training-free routing framework that uses early behavioral experience and rubric-guided reasoning to decide whether to answer a query with direct LLM inference or escalate to an agent. BoundaryRouter builds a compact experience memory by executing both systems on a shared seed set and retrieves similar cases at inference time to guide routing decisions. To evaluate this method, we introduce RouteBench, a benchmark covering in-domain, paraphrased, and out-of-domain route settings. Experiments show that BoundaryRouter reduces inference time by 60.6% compared to the agent while improving performance by 28.6% over direct LLM inference, outperforming prompt-based and retrieval-only routing by an average of 37.9% and 8.2%, respectively.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.07180v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.07180v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.07180" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.10966.html"><strong>MMTB: Evaluating Terminal Agents on Multimedia-File Tasks</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.07926.html"><strong>AgentEscapeBench: Evaluating Out-of-Domain Tool-Grounded Reasoning in LLM Agents</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.07830.html"><strong>CyBiasBench: Benchmarking Bias in LLM Agents for Cyber-Attack Scenarios</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.07251.html"><strong>Can Agents Price a Reaction? Evaluating LLMs on Chemical Cost Reasoning</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.07161.html"><strong>SREGym: A Live Benchmark for AI SRE Agents with High-Fidelity Failure Scenarios</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.07073.html"><strong>TeamBench: Evaluating Agent Coordination under Enforced Role Separation</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.06527.html"><strong>STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?</strong></a> <span>2026-05-07</span></li>
+          <li><a href="2605.06490.html"><strong>Instrumental Choices: Measuring the Propensity of LLM Agents to Pursue Instrumental Behaviors</strong></a> <span>2026-05-07</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

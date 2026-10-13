@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Real-world LLM applications are moving beyond single-agent workflows toward orchestrated multi-agent systems, yet current models…" />
+    <meta name="keywords" content="Multi-agent, agent benchmark, LLM agent, arXiv, 2606.08878" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.08878.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Real-world LLM applications are moving beyond single-agent workflows toward orchestrated multi-agent systems, yet current models…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.08878.html" />
+    <meta property="article:published_time" content="2026-06-07T23:26:12Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Real-world LLM applications are moving beyond single-agent workflows toward orchestrated multi-agent systems, yet current models…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,67 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting",
+  "name": "PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting",
+  "abstract": "Real-world LLM applications are moving beyond single-agent workflows toward orchestrated multi-agent systems, yet current models still struggle to determine what each sub-agent needs to know. To measure this, we introduce PerspectiveGap, a benchmark for evaluating LLMs' ability to compose orchestration prompts for multi-agent systems. PerspectiveGap contains 110 scenarios, each evaluated through two distractor-mixed task formats: role-fragment assignment and free-form prompt writing. These scenarios are organized into 10 topologies, which are distilled from the authors' real-world engineering practice and framed by the Prompt Economy principle: building loop-centered orchestrations that maximize utility with minimal role and engineering overhead. In experiments with 33 commercial models from 10 companies, GPT-5.5 substantially outperforms all competitors, whereas Opus 4.8 shows a notable weakness in orchestration prompting despite its strong coding performance. Nevertheless, PerspectiveGap remains challenging: the evaluated models achieve an average combined pass rate of only 17.2\\% (GPT-5.5 62.0\\%) and an average overall leakage rate of 217.9\\% (a per-scenario information leak-event count, not a proportion; GPT-5.5 49.1\\%). These findings suggest that multi-agent orchestration prompting is a distinct and under-evaluated capability, and PerspectiveGap provides a foundation for measuring and improving it systematically.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Youran Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Xingyu Ren"
+    },
+    {
+      "@type": "Person",
+      "name": "Kejia Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinpeng Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiaxuan Guo"
+    }
+  ],
+  "datePublished": "2026-06-07T23:26:12Z",
+  "dateModified": "2026-07-12T03:03:28Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.08878.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.08878.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.08878v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.08878"
+  },
+  "keywords": [
+    "Multi-agent",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multi-agent"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.08878v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.08878"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +99,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting</h1>
+        <div class="meta">
+          Youran Sun, Xingyu Ren, Kejia Zhang, Xinpeng Liu, Jiaxuan Guo
+          · 2606.08878
+          · <time datetime="2026-06-07">2026-06-07</time>
+          · Multi-agent · 7 citations
+        </div>
+        <div class="themes"><span class="chip">Multi-agent</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Real-world LLM applications are moving beyond single-agent workflows toward orchestrated multi-agent systems, yet current models still struggle to determine what each sub-agent needs to know. To measure this, we introduce PerspectiveGap, a benchmark for evaluating LLMs&#x27; ability to compose orchestration prompts for multi-agent systems. PerspectiveGap contains 110 scenarios, each evaluated through two distractor-mixed task formats: role-fragment assignment and free-form prompt writing. These scenarios are organized into 10 topologies, which are distilled from the authors&#x27; real-world engineering practice and framed by the Prompt Economy principle: building loop-centered orchestrations that maximize utility with minimal role and engineering overhead. In experiments with 33 commercial models from 10 companies, GPT-5.5 substantially outperforms all competitors, whereas Opus 4.8 shows a notable weakness in orchestration prompting despite its strong coding performance. Nevertheless, PerspectiveGap remains challenging: the evaluated models achieve an average combined pass rate of only 17.2\% (GPT-5.5 62.0\%) and an average overall leakage rate of 217.9\% (a per-scenario information leak-event count, not a proportion; GPT-5.5 49.1\%). These findings suggest that multi-agent orchestration prompting is a distinct and under-evaluated capability, and PerspectiveGap provides a foundation for measuring and improving it systematically.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.08878v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.08878v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.08878" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multi-agent benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.17246.html"><strong>GeoDisaster: Benchmarking Orchestrated Agents for Operational Disaster Geo-Intelligence</strong></a> <span>2026-06-15</span></li>
+          <li><a href="2606.16723.html"><strong>AgentFairBench: Do LLM Agents Discriminate When They Act?</strong></a> <span>2026-06-15</span></li>
+          <li><a href="2606.16613.html"><strong>CoffeeBench: Benchmarking Long-Horizon LLM Agents in Heterogeneous Multi-Agent Economies</strong></a> <span>2026-06-15</span></li>
+          <li><a href="2606.15899.html"><strong>SkillVetBench: LLM-as-Judge for Multi-Dimensional Security Risk Evaluation in Open-Source LLM Agent Skills</strong></a> <span>2026-06-14</span></li>
+          <li><a href="2606.07805.html"><strong>Beyond Goodhart&#x27;s Law: A Dynamic Benchmark for Evaluating Compliance in Multi-Agent Systems</strong></a> <span>2026-06-05</span></li>
+          <li><a href="2606.04660.html"><strong>LifeSide: Benchmarking Agents as Lifelong Digital Companions</strong></a> <span>2026-06-03</span></li>
+          <li><a href="2606.02282.html"><strong>POIROT: Interrogating Agents for Failure Detection in Multi-Agent Systems</strong></a> <span>2026-06-01</span></li>
+          <li><a href="2606.01434.html"><strong>DrugClaw and DrugAudit: A Primary-Source-Grounded Agent and Authority-Aware Benchmark for Drug-Information Question Answering</strong></a> <span>2026-05-31</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

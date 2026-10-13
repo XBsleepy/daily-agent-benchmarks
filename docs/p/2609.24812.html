@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MSI-Bench: Evaluating Multi-Speaker Voice Interaction for Collaborative AI Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Voice provides a natural and immediate interface for AI agents. Many settings in which voice agents could be useful, including…" />
+    <meta name="keywords" content="Tool use, Memory, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2609.24812" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.24812.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MSI-Bench: Evaluating Multi-Speaker Voice Interaction for Collaborative AI Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Voice provides a natural and immediate interface for AI agents. Many settings in which voice agents could be useful, including…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.24812.html" />
+    <meta property="article:published_time" content="2026-09-22T04:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MSI-Bench: Evaluating Multi-Speaker Voice Interaction for Collaborative AI Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Voice provides a natural and immediate interface for AI agents. Many settings in which voice agents could be useful, including…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,53 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MSI-Bench: Evaluating Multi-Speaker Voice Interaction for Collaborative AI Agents",
+  "name": "MSI-Bench: Evaluating Multi-Speaker Voice Interaction for Collaborative AI Agents",
+  "abstract": "Voice provides a natural and immediate interface for AI agents. Many settings in which voice agents could be useful, including meetings, households, and collaborative work, are inherently multi-speaker. Supporting these settings introduces challenges that are largely absent from one-on-one interaction. We introduce the Multi-Speaker Interaction Benchmark (MSI-Bench) for evaluating multi-speaker voice interaction. Each test case is a short multi-party multi-turn audio scene with participant context, expected tool calls, and atomic rubrics. The benchmark targets three capability families: multi-speaker memory, multi-speaker instruction following, and multi-speaker reasoning. It comprises 1,152 test cases, evenly split between Mandarin Chinese and English (576 each). The strongest configuration on each split passes all rubrics on only 66.8% of English and 54.5% of Mandarin cases, and the strongest open-weight configuration on 34.0% and 19.3%. Failure analysis separates perception from reasoning: open-weight models are bottlenecked by the multi-speaker audio front-end, while frontier systems still fail speaker-scoped decision making on clean transcripts---and models across the board often respond when no one has addressed them. These results identify speaker-grounded perception, speaker-scoped decision making, and conversational restraint as concrete targets for future voice agents.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Chenxu Xiong, Dongming Shen, Yuzhi Tang, Wentao Ma, Mu Li, Alex Smola"
+    }
+  ],
+  "datePublished": "2026-09-22T04:00:00Z",
+  "dateModified": "2026-09-22T04:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.24812.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.24812.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.24812"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.24812"
+  },
+  "keywords": [
+    "Tool use",
+    "Memory",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.24812"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.24812"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +85,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MSI-Bench: Evaluating Multi-Speaker Voice Interaction for Collaborative AI Agents</h1>
+        <div class="meta">
+          Chenxu Xiong, Dongming Shen, Yuzhi Tang, Wentao Ma, Mu Li, Alex Smola
+          · 2609.24812
+          · <time datetime="2026-09-22">2026-09-22</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Memory</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Voice provides a natural and immediate interface for AI agents. Many settings in which voice agents could be useful, including meetings, households, and collaborative work, are inherently multi-speaker. Supporting these settings introduces challenges that are largely absent from one-on-one interaction. We introduce the Multi-Speaker Interaction Benchmark (MSI-Bench) for evaluating multi-speaker voice interaction. Each test case is a short multi-party multi-turn audio scene with participant context, expected tool calls, and atomic rubrics. The benchmark targets three capability families: multi-speaker memory, multi-speaker instruction following, and multi-speaker reasoning. It comprises 1,152 test cases, evenly split between Mandarin Chinese and English (576 each). The strongest configuration on each split passes all rubrics on only 66.8% of English and 54.5% of Mandarin cases, and the strongest open-weight configuration on 34.0% and 19.3%. Failure analysis separates perception from reasoning: open-weight models are bottlenecked by the multi-speaker audio front-end, while frontier systems still fail speaker-scoped decision making on clean transcripts---and models across the board often respond when no one has addressed them. These results identify speaker-grounded perception, speaker-scoped decision making, and conversational restraint as concrete targets for future voice agents.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.24812" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.24812" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.24812" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.28876.html"><strong>Forecast-Dojo: Replayable Environments for Benchmarking and Training LLM Forecasting Agents</strong></a> <span>2026-09-25</span></li>
+          <li><a href="2609.27571.html"><strong>FDE-Bench: Evaluating LLM Agents for Deployment Environment Configuration</strong></a> <span>2026-09-24</span></li>
+          <li><a href="2609.25192.html"><strong>FinFIRST: Benchmarking Search Agents for Financial Information Retrieval, Sourcing and Traceability</strong></a> <span>2026-09-23</span></li>
+          <li><a href="2609.24983.html"><strong>onPanda: Efficient Annotation of On-Policy Alignment Data for LLMs and Agents via Token-Level Correction</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.24663.html"><strong>Beyond Endpoint Performance: Process-Level Evaluation of Self-Evolving Agents</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.23490.html"><strong>BabelArena: A Large-Scale Multilingual Benchmark for LLM Agents</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.22076.html"><strong>APort Vault: Benchmarking AI Agent Payment Authorization with the Open Agent Passport</strong></a> <span>2026-09-21</span></li>
+          <li><a href="2609.20886.html"><strong>BI-Agent and BI-Bench: Towards Automating End-to-End Business Intelligence</strong></a> <span>2026-09-21</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

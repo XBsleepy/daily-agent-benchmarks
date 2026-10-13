@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>OccuBench: Evaluating AI Agents on Real-World Professional Tasks via Language Environment Simulation | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: AI agents are expected to perform professional work across hundreds of occupational domains (from emergency department triage to…" />
+    <meta name="keywords" content="Work / office, Tool use, Multi-agent, Safety, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2604.10866" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.10866.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="OccuBench: Evaluating AI Agents on Real-World Professional Tasks via Language Environment Simulation" />
+    <meta property="og:description" content="Daily Agent Benchmarks: AI agents are expected to perform professional work across hundreds of occupational domains (from emergency department triage to…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.10866.html" />
+    <meta property="article:published_time" content="2026-04-13T00:27:32Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="OccuBench: Evaluating AI Agents on Real-World Professional Tasks via Language Environment Simulation" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: AI agents are expected to perform professional work across hundreds of occupational domains (from emergency department triage to…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,91 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "OccuBench: Evaluating AI Agents on Real-World Professional Tasks via Language Environment Simulation",
+  "name": "OccuBench: Evaluating AI Agents on Real-World Professional Tasks via Language Environment Simulation",
+  "abstract": "AI agents are expected to perform professional work across hundreds of occupational domains (from emergency department triage to nuclear reactor safety monitoring to customs import processing), yet existing benchmarks can only evaluate agents in the few domains where public environments exist. We introduce OccuBench, a benchmark covering 100 real-world professional task scenarios across 10 industry categories and 65 specialized domains, enabled by Language Environment Simulators (LESs) that simulate domain-specific environments through LLM-driven tool response generation. Our multi-agent synthesis pipeline automatically produces evaluation instances with guaranteed solvability, calibrated difficulty, and document-grounded diversity. OccuBench evaluates agents along two complementary dimensions: task completion across professional domains and environmental robustness under controlled fault injection (explicit errors, implicit data degradation, and mixed faults). We evaluate 15 frontier models across 8 model families and find that: (1) no single model dominates all industries, as each has a distinct occupational capability profile; (2) implicit faults (truncated data, missing fields) are harder than both explicit errors (timeouts, 500s) and mixed faults, because they lack overt error signals and require the agent to independently detect data degradation; (3) larger models, newer generations, and higher reasoning effort consistently improve performance. GPT-5.2 improves by 27.5 points from minimal to maximum reasoning effort; and (4) strong agents are not necessarily strong environment simulators. Simulator quality is critical for LES-based evaluation reliability. OccuBench provides the first systematic cross-industry evaluation of AI agents on professional occupational tasks.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Xiaomeng Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yinger Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Fei Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jianhong Tu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yang Su"
+    },
+    {
+      "@type": "Person",
+      "name": "Lianghao Deng"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuxuan Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yantao Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Dayiheng Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Tsung-Yi Ho"
+    }
+  ],
+  "datePublished": "2026-04-13T00:27:32Z",
+  "dateModified": "2026-04-16T16:00:33Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.10866.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.10866.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.10866v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2604.10866"
+  },
+  "keywords": [
+    "Work / office",
+    "Tool use",
+    "Multi-agent",
+    "Safety",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Work / office"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2604.10866v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2604.10866"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +123,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>OccuBench: Evaluating AI Agents on Real-World Professional Tasks via Language Environment Simulation</h1>
+        <div class="meta">
+          Xiaomeng Hu, Yinger Zhang, Fei Huang, Jianhong Tu, Yang Su, Lianghao Deng, Yuxuan Liu, Yantao Liu, Dayiheng Liu, Tsung-Yi Ho
+          · 2604.10866
+          · <time datetime="2026-04-13">2026-04-13</time>
+          · Work / office · 3 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Multi-agent</span><span class="chip">Safety</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>AI agents are expected to perform professional work across hundreds of occupational domains (from emergency department triage to nuclear reactor safety monitoring to customs import processing), yet existing benchmarks can only evaluate agents in the few domains where public environments exist. We introduce OccuBench, a benchmark covering 100 real-world professional task scenarios across 10 industry categories and 65 specialized domains, enabled by Language Environment Simulators (LESs) that simulate domain-specific environments through LLM-driven tool response generation. Our multi-agent synthesis pipeline automatically produces evaluation instances with guaranteed solvability, calibrated difficulty, and document-grounded diversity. OccuBench evaluates agents along two complementary dimensions: task completion across professional domains and environmental robustness under controlled fault injection (explicit errors, implicit data degradation, and mixed faults). We evaluate 15 frontier models across 8 model families and find that: (1) no single model dominates all industries, as each has a distinct occupational capability profile; (2) implicit faults (truncated data, missing fields) are harder than both explicit errors (timeouts, 500s) and mixed faults, because they lack overt error signals and require the agent to independently detect data degradation; (3) larger models, newer generations, and higher reasoning effort consistently improve performance. GPT-5.2 improves by 27.5 points from minimal to maximum reasoning effort; and (4) strong agents are not necessarily strong environment simulators. Simulator quality is critical for LES-based evaluation reliability. OccuBench provides the first systematic cross-industry evaluation of AI agents on professional occupational tasks.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2604.10866v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2604.10866v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2604.10866" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Work / office benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2604.25914.html"><strong>DV-World: Benchmarking Data Visualization Agents in Real-World Scenarios</strong></a> <span>2026-04-28</span></li>
+          <li><a href="2604.21308.html"><strong>CI-Work: Benchmarking Contextual Integrity in Enterprise LLM Agents</strong></a> <span>2026-04-23</span></li>
+          <li><a href="2604.13531.html"><strong>RiskWebWorld: A Realistic Interactive Benchmark for GUI Agents in E-commerce Risk Management</strong></a> <span>2026-04-15</span></li>
+          <li><a href="2604.11304.html"><strong>BankerToolBench: Evaluating AI Agents in End-to-End Investment Banking Workflows</strong></a> <span>2026-04-13</span></li>
+          <li><a href="2603.13594.html"><strong>EnterpriseOps-Gym: Environments and Evaluations for Stateful Agentic Planning and Tool Use in Enterprise Settings</strong></a> <span>2026-03-13</span></li>
+          <li><a href="2603.09827.html"><strong>MA-EgoQA: Question Answering over Egocentric Videos from Multiple Embodied Agents</strong></a> <span>2026-03-10</span></li>
+          <li><a href="2603.07980.html"><strong>\$OneMillion-Bench: How Far are Language Agents from Human Experts?</strong></a> <span>2026-03-09</span></li>
+          <li><a href="2602.16179.html"><strong>EnterpriseBench Corecraft: Training Generalizable Agents on High-Fidelity RL Environments</strong></a> <span>2026-02-18</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

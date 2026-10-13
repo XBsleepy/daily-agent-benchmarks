@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Your Agents Are Aging Too: Agent Lifespan Engineering for Deployed Systems | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Long-lived AI agents are increasingly deployed as persistent operational systems, yet they are still evaluated like freshly…" />
+    <meta name="keywords" content="General, Memory, agent benchmark, LLM agent, arXiv, 2605.26302" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.26302.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Your Agents Are Aging Too: Agent Lifespan Engineering for Deployed Systems" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Long-lived AI agents are increasingly deployed as persistent operational systems, yet they are still evaluated like freshly…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.26302.html" />
+    <meta property="article:published_time" content="2026-05-25T19:55:12Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Your Agents Are Aging Too: Agent Lifespan Engineering for Deployed Systems" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Long-lived AI agents are increasingly deployed as persistent operational systems, yet they are still evaluated like freshly…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,80 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Your Agents Are Aging Too: Agent Lifespan Engineering for Deployed Systems",
+  "name": "Your Agents Are Aging Too: Agent Lifespan Engineering for Deployed Systems",
+  "abstract": "Long-lived AI agents are increasingly deployed as persistent operational systems, yet they are still evaluated like freshly initialized models. Day-one benchmarks miss a basic systems question: how long does an agent remain reliable after deployment? Even when model weights are frozen, an agent's effective state keeps changing as it compresses interaction history, retrieves from a growing memory store, revises facts after updates, and undergoes routine maintenance. Reliability therefore becomes a lifespan property of the full agent harness, not only a snapshot property of the base model. We introduce AgingBench, a longitudinal reliability benchmark for agent lifespan engineering: measuring not only whether deployed agents degrade, but what form the degradation takes and where repair should target. AgingBench organizes agent aging into four mechanisms: compression aging, interference aging, revision aging, and maintenance aging. To diagnose these failures, AgingBench uses temporal dependency graphs and paired counterfactual probes that produce diagnostic profiles for the write, retrieval, and utilization stages of the memory pipeline. Across 7 scenarios, 14 models, multiple memory policies, and both runner-controlled and autonomous agents, over ~400 runs spanning 8 - 200 sessions show that agent aging is not one-dimensional: behavioral tests can remain clean while factual precision decays; derived-state tracking can collapse sharply within a single model; and the same wrong answer can require different repairs depending on what the diagnostic profile points to. These results suggest that reliable agent deployment requires lifespan evaluation, mechanism-level diagnosis, and stage-targeted repair, not only stronger day-one models.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jianing Zhu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yeonju Ro"
+    },
+    {
+      "@type": "Person",
+      "name": "John Robertson"
+    },
+    {
+      "@type": "Person",
+      "name": "Kevin Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Junbo Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Haris Vikalo"
+    },
+    {
+      "@type": "Person",
+      "name": "Aditya Akella"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhangyang Wang"
+    }
+  ],
+  "datePublished": "2026-05-25T19:55:12Z",
+  "dateModified": "2026-05-25T19:55:12Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.26302.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.26302.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.26302v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.26302"
+  },
+  "keywords": [
+    "General",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.26302v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.26302"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +112,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Your Agents Are Aging Too: Agent Lifespan Engineering for Deployed Systems</h1>
+        <div class="meta">
+          Jianing Zhu, Yeonju Ro, John Robertson, Kevin Wang, Junbo Li, Haris Vikalo, Aditya Akella, Zhangyang Wang
+          · 2605.26302
+          · <time datetime="2026-05-25">2026-05-25</time>
+          · General · 3 citations
+        </div>
+        <div class="themes"><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Long-lived AI agents are increasingly deployed as persistent operational systems, yet they are still evaluated like freshly initialized models. Day-one benchmarks miss a basic systems question: how long does an agent remain reliable after deployment? Even when model weights are frozen, an agent&#x27;s effective state keeps changing as it compresses interaction history, retrieves from a growing memory store, revises facts after updates, and undergoes routine maintenance. Reliability therefore becomes a lifespan property of the full agent harness, not only a snapshot property of the base model. We introduce AgingBench, a longitudinal reliability benchmark for agent lifespan engineering: measuring not only whether deployed agents degrade, but what form the degradation takes and where repair should target. AgingBench organizes agent aging into four mechanisms: compression aging, interference aging, revision aging, and maintenance aging. To diagnose these failures, AgingBench uses temporal dependency graphs and paired counterfactual probes that produce diagnostic profiles for the write, retrieval, and utilization stages of the memory pipeline. Across 7 scenarios, 14 models, multiple memory policies, and both runner-controlled and autonomous agents, over ~400 runs spanning 8 - 200 sessions show that agent aging is not one-dimensional: behavioral tests can remain clean while factual precision decays; derived-state tracking can collapse sharply within a single model; and the same wrong answer can require different repairs depending on what the diagnostic profile points to. These results suggest that reliable agent deployment requires lifespan evaluation, mechanism-level diagnosis, and stage-targeted repair, not only stronger day-one models.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.26302v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.26302v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.26302" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.27879.html"><strong>Towards Faithful Agentic XAI: A Verification Method and an Open-World Benchmark for Better Model Faithfulness</strong></a> <span>2026-05-27</span></li>
+          <li><a href="2605.27566.html"><strong>DynaSchedBench: Calibrated Dynamic Scheduling Benchmarks and Observability Paradox in LLM-based Scheduling Agents</strong></a> <span>2026-05-26</span></li>
+          <li><a href="2605.27240.html"><strong>ENPMR-Bench: Benchmarking Proactive Memory Retrieval for Emotional Support Agents</strong></a> <span>2026-05-26</span></li>
+          <li><a href="2605.27141.html"><strong>VitaBench 2.0: Evaluating Personalized and Proactive Agents in Long-Term User Interactions</strong></a> <span>2026-05-26</span></li>
+          <li><a href="2605.25535.html"><strong>Personalize-then-Store: Benchmarking and Learning Personalized Memory for Long-horizon Agents</strong></a> <span>2026-05-25</span></li>
+          <li><a href="2605.24279.html"><strong>ContextEcho: A Benchmark for Persona Drift in Long Agentic-Coding Sessions</strong></a> <span>2026-05-22</span></li>
+          <li><a href="2605.22664.html"><strong>MBABench: Evaluating LLM Agents on End-to-End Spreadsheet Tasks in Finance</strong></a> <span>2026-05-21</span></li>
+          <li><a href="2605.22568.html"><strong>Measuring Security Without Fooling Ourselves: Why Benchmarking Agents Is Hard</strong></a> <span>2026-05-21</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

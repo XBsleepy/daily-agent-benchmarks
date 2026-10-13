@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Coding Agents Have Converged: Why the SWE-bench Leaderboard Can No Longer Order Its Top Entries, and What to Measure Instead | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Small differences on coding-agent leaderboards are often read as an ordering of systems. We audit whether the published verdicts…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2609.17394" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.17394.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Coding Agents Have Converged: Why the SWE-bench Leaderboard Can No Longer Order Its Top Entries, and What to Measure Instead" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Small differences on coding-agent leaderboards are often read as an ordering of systems. We audit whether the published verdicts…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.17394.html" />
+    <meta property="article:published_time" content="2026-09-16T04:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Coding Agents Have Converged: Why the SWE-bench Leaderboard Can No Longer Order Its Top Entries, and What to Measure Instead" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Small differences on coding-agent leaderboards are often read as an ordering of systems. We audit whether the published verdicts…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,52 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Coding Agents Have Converged: Why the SWE-bench Leaderboard Can No Longer Order Its Top Entries, and What to M",
+  "name": "Coding Agents Have Converged: Why the SWE-bench Leaderboard Can No Longer Order Its Top Entries, and What to Measure Instead",
+  "abstract": "Small differences on coding-agent leaderboards are often read as an ordering of systems. We audit whether the published verdicts support this reading, using 254 SWE-bench submissions across four splits without running models. On Verified, the leading two entries each resolve 396 of 500 instances. The top ten share 285 successes and 51 failures, leaving 164 instances that distinguish their outcomes. Frontier solution sets have median nesting 0.935 against a score-implied baseline of 0.774, indicating strongly shared successes. Scores also depend on the evaluated model-scaffold pair: observed within-model scaffold ranges reach 29.8 percentage points, compared with the 8.8-point spread of the top thirty. Six of nine cell-mean interaction tests remain significant after Holm correction, although this observational design does not identify causal scaffold effects. Exact paired McNemar tests separate none of the 29 adjacent Verified top-thirty pairs at alpha=0.05, while the larger Test split separates 14 of 23. A stated leader-based rule yields three descriptive tiers, or two after Holm correction; non-rejection does not establish equivalence. We release the partition and a five-step audit protocol that profiles shared outcomes, tests paired differences, reports grouping sensitivity, and estimates the instance budget needed for resolution. The results motivate reporting comparison-set-specific resolution and model-scaffold provenance instead of interpreting small aggregate gaps as established rank differences.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Fengshuo Liu, Ying Liu, Ruize Sun, Lie Luo, Siyuan Guo"
+    }
+  ],
+  "datePublished": "2026-09-16T04:00:00Z",
+  "dateModified": "2026-09-16T04:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.17394.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.17394.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.17394"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.17394"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.17394"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.17394"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +84,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Coding Agents Have Converged: Why the SWE-bench Leaderboard Can No Longer Order Its Top Entries, and What to Measure Instead</h1>
+        <div class="meta">
+          Fengshuo Liu, Ying Liu, Ruize Sun, Lie Luo, Siyuan Guo
+          · 2609.17394
+          · <time datetime="2026-09-16">2026-09-16</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Small differences on coding-agent leaderboards are often read as an ordering of systems. We audit whether the published verdicts support this reading, using 254 SWE-bench submissions across four splits without running models. On Verified, the leading two entries each resolve 396 of 500 instances. The top ten share 285 successes and 51 failures, leaving 164 instances that distinguish their outcomes. Frontier solution sets have median nesting 0.935 against a score-implied baseline of 0.774, indicating strongly shared successes. Scores also depend on the evaluated model-scaffold pair: observed within-model scaffold ranges reach 29.8 percentage points, compared with the 8.8-point spread of the top thirty. Six of nine cell-mean interaction tests remain significant after Holm correction, although this observational design does not identify causal scaffold effects. Exact paired McNemar tests separate none of the 29 adjacent Verified top-thirty pairs at alpha=0.05, while the larger Test split separates 14 of 23. A stated leader-based rule yields three descriptive tiers, or two after Holm correction; non-rejection does not establish equivalence. We release the partition and a five-step audit protocol that profiles shared outcomes, tests paired differences, reports grouping sensitivity, and estimates the instance budget needed for resolution. The results motivate reporting comparison-set-specific resolution and model-scaffold provenance instead of interpreting small aggregate gaps as established rank differences.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.17394" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.17394" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.17394" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.23142.html"><strong>CraftBench-UE: Deterministic Evaluation for Coding Agents in Unreal Engine</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.21562.html"><strong>GameLogicBench: Evaluating Coding Agents on Runtime Game Logic with Tick-Level State Assertions</strong></a> <span>2026-09-21</span></li>
+          <li><a href="2609.18909.html"><strong>Beyond Outcomes: Dual-View Relational Learning for Efficient Agent Benchmarking</strong></a> <span>2026-09-17</span></li>
+          <li><a href="2609.17930.html"><strong>Locating Hidden Failures Makes Long-Horizon Agents More Reliable</strong></a> <span>2026-09-17</span></li>
+          <li><a href="2609.14992.html"><strong>MTAC-IFBench: Benchmarking Instruction-Following in Multi-Turn Agentic Coding</strong></a> <span>2026-09-15</span></li>
+          <li><a href="2609.13149.html"><strong>BudgetBench: A Budget-Tiered Protocol and Pilot Harness for Memory Strategy Evaluation in Local Large Language Model Agents</strong></a> <span>2026-09-15</span></li>
+          <li><a href="2609.12265.html"><strong>GTA: Graph Theory Agent and Benchmark for Algorithmic Graph Reasoning with LLMs</strong></a> <span>2026-09-10</span></li>
+          <li><a href="2609.09526.html"><strong>Benchmarking Agentic HLS Design Tasks With HLS-Eval</strong></a> <span>2026-09-08</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

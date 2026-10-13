@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Bittensor Agent Arenas as a Trajectory Primitive: Distilling a Shopping Agent from ShoppingBench Subnet Traces | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Small-model agentic post-training is bottlenecked less by the algorithm than by the trajectory substrate it consumes. Leading recipes…" />
+    <meta name="keywords" content="General, Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2606.10064" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.10064.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Bittensor Agent Arenas as a Trajectory Primitive: Distilling a Shopping Agent from ShoppingBench Subnet Traces" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Small-model agentic post-training is bottlenecked less by the algorithm than by the trajectory substrate it consumes. Leading recipes…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.10064.html" />
+    <meta property="article:published_time" content="2026-06-08T18:39:15Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Bittensor Agent Arenas as a Trajectory Primitive: Distilling a Shopping Agent from ShoppingBench Subnet Traces" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Small-model agentic post-training is bottlenecked less by the algorithm than by the trajectory substrate it consumes. Leading recipes…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,61 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Bittensor Agent Arenas as a Trajectory Primitive: Distilling a Shopping Agent from ShoppingBench Subnet Traces",
+  "name": "Bittensor Agent Arenas as a Trajectory Primitive: Distilling a Shopping Agent from ShoppingBench Subnet Traces",
+  "abstract": "Small-model agentic post-training is bottlenecked less by the algorithm than by the trajectory substrate it consumes. Leading recipes (RLVR, group-relative RL, rejection-sampled re-SFT) all need multi-turn traces carrying per-trajectory supervision, and the two existing sources fall short: frontier-synthesised data inherits the synthesizer's biases and collapses the long tail, while unfiltered production logs are unjudged and contaminated by shortcut behaviour. We argue that an incentive-aligned agent arena can be engineered to manufacture such trajectories, and demonstrate this on ORO Subnet 15 (SN15), a Bittensor deployment of the ShoppingBench agentic-commerce benchmark. SN15's race mechanism, LLM reasoning judge, and rotating leak-cluster-guarded problem suite yield a corpus with three properties: incentive-aligned diversity, per-trajectory judging, and anti-memorised held-out evaluation. We introduce a structural-quality filter that converts the raw firehose into a trainable corpus by keeping agentic trajectories (the model itself emits the tool calls) and rejecting sub-task trajectories (the model only classifies or narrates over a deterministic search loop), then post-train Qwen3-4B with a recipe matched to the published ShoppingBench SFT-then-GRPO pipeline. On a leak-cluster-guarded held-out partition scored production-strict, the model lifts from the published Qwen3-4B base of 18.0% ASR to 42.7%, within single-problem noise of the synthetic-data SFT-only baseline (43.6%), while training on a fraction of a single day of subnet output. The supervised stack leaves a large pass@8 to pass@1 gap (53.3% vs 34.8%); a per-step teacher-grounded Dr. GRPO reward converts that headroom into process improvement, and we identify the sub-task firehose as the primary lever for closing the gap to the 48.7% SFT+GRPO bar. We release the filter, the corpus splits, and the arena mechanics.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Shardul Bansal"
+    },
+    {
+      "@type": "Person",
+      "name": "Seth Schilbe"
+    },
+    {
+      "@type": "Person",
+      "name": "Jarrod Barnes"
+    }
+  ],
+  "datePublished": "2026-06-08T18:39:15Z",
+  "dateModified": "2026-06-08T18:39:15Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.10064.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.10064.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.10064v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.10064"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.10064v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.10064"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +93,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Bittensor Agent Arenas as a Trajectory Primitive: Distilling a Shopping Agent from ShoppingBench Subnet Traces</h1>
+        <div class="meta">
+          Shardul Bansal, Seth Schilbe, Jarrod Barnes
+          · 2606.10064
+          · <time datetime="2026-06-08">2026-06-08</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Small-model agentic post-training is bottlenecked less by the algorithm than by the trajectory substrate it consumes. Leading recipes (RLVR, group-relative RL, rejection-sampled re-SFT) all need multi-turn traces carrying per-trajectory supervision, and the two existing sources fall short: frontier-synthesised data inherits the synthesizer&#x27;s biases and collapses the long tail, while unfiltered production logs are unjudged and contaminated by shortcut behaviour. We argue that an incentive-aligned agent arena can be engineered to manufacture such trajectories, and demonstrate this on ORO Subnet 15 (SN15), a Bittensor deployment of the ShoppingBench agentic-commerce benchmark. SN15&#x27;s race mechanism, LLM reasoning judge, and rotating leak-cluster-guarded problem suite yield a corpus with three properties: incentive-aligned diversity, per-trajectory judging, and anti-memorised held-out evaluation. We introduce a structural-quality filter that converts the raw firehose into a trainable corpus by keeping agentic trajectories (the model itself emits the tool calls) and rejecting sub-task trajectories (the model only classifies or narrates over a deterministic search loop), then post-train Qwen3-4B with a recipe matched to the published ShoppingBench SFT-then-GRPO pipeline. On a leak-cluster-guarded held-out partition scored production-strict, the model lifts from the published Qwen3-4B base of 18.0% ASR to 42.7%, within single-problem noise of the synthetic-data SFT-only baseline (43.6%), while training on a fraction of a single day of subnet output. The supervised stack leaves a large pass@8 to pass@1 gap (53.3% vs 34.8%); a per-step teacher-grounded Dr. GRPO reward converts that headroom into process improvement, and we identify the sub-task firehose as the primary lever for closing the gap to the 48.7% SFT+GRPO bar. We release the filter, the corpus splits, and the arena mechanics.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.10064v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.10064v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.10064" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.11070.html"><strong>T1-Bench: Benchmarking Multi-Scenario Agents in Real-World Domains</strong></a> <span>2026-06-09</span></li>
+          <li><a href="2606.10813.html"><strong>RedAct: Redacting Agent Capability Traces for Procedural Skill Protection</strong></a> <span>2026-06-09</span></li>
+          <li><a href="2606.10394.html"><strong>STAGE-Claw: Automated State-based Agent Benchmarking for Realistic Scenarios</strong></a> <span>2026-06-09</span></li>
+          <li><a href="2606.10388.html"><strong>Right Family, Wrong Skill: Benchmarking Risk Exposure in Agent Skill Retrieval</strong></a> <span>2026-06-09</span></li>
+          <li><a href="2606.08960.html"><strong>Hardening Agent Benchmarks with Adversarial Hacker-Fixer Loops</strong></a> <span>2026-06-08</span></li>
+          <li><a href="2606.06960.html"><strong>FinEvolveBench: A Benchmark for Self-Evolving Agents on Low-Repetition Tasks with Implicit Rewards</strong></a> <span>2026-06-05</span></li>
+          <li><a href="2606.06055.html"><strong>HUSH-Bench: Measuring Memory-Use Boundaries for Sensitive History in Conversational Agents</strong></a> <span>2026-06-04</span></li>
+          <li><a href="2606.05806.html"><strong>When Tools Fail: Benchmarking Dynamic Replanning and Anomaly Recovery in LLM Agents</strong></a> <span>2026-06-04</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ActBench: Self-Evolving Benchmark of Behavioral Safety in Cowork Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Cowork agents may complete benign tasks while disclosing protected data, manipulating unauthorized state, invocate unauthorized API…" />
+    <meta name="keywords" content="Safety, agent benchmark, LLM agent, arXiv, 2608.09476" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.09476.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ActBench: Self-Evolving Benchmark of Behavioral Safety in Cowork Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Cowork agents may complete benign tasks while disclosing protected data, manipulating unauthorized state, invocate unauthorized API…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.09476.html" />
+    <meta property="article:published_time" content="2026-08-10T11:45:03Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ActBench: Self-Evolving Benchmark of Behavioral Safety in Cowork Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Cowork agents may complete benign tasks while disclosing protected data, manipulating unauthorized state, invocate unauthorized API…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,83 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ActBench: Self-Evolving Benchmark of Behavioral Safety in Cowork Agents",
+  "name": "ActBench: Self-Evolving Benchmark of Behavioral Safety in Cowork Agents",
+  "abstract": "Cowork agents may complete benign tasks while disclosing protected data, manipulating unauthorized state, invocate unauthorized API. We define behavioral safety and introduce ActBench, a self-evolving benchmark that evaluates such behavior risk from execution trajectories rather than final responses. Each case pairs a benign task with an adversarial variant that preserves its instruction, configuration, initial state, rating model, and trusted records while injecting a task-reachable payload. ActBench contains 600 cases from 213 scenarios, spanning 15 risk behaviors, six execution spaces, and 48 web-service APIs.To move beyond static payloads, we propose a reward-guided beam search method that jointly optimizes attack effectiveness and task utility, while reflection diagnoses failed execution checkpoint and guides payload revision. Besides, we propose a dual evidence verification mechanism that verifies agent execution safety and utility through log evidence and LLM-based trajectory evidence.We evaluate 15 LLMs and 6 open-source cowork agents over 24,000 trajectories. Under a fixed harness, attack success rates ranges from 10.1% to 94.4% across models, while under a fixed base model, they range from 73.7% to 94.4% across agents.These results show greater variation across models than agent harness, while attacks remain highly successful across all tested harnesses.Our benchmark is released at: https://github.com/zjuicsr/ActBench.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Hongwei Yao"
+    },
+    {
+      "@type": "Person",
+      "name": "Yiming Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Meihui Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Jieling Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Zikun Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Yiling He"
+    },
+    {
+      "@type": "Person",
+      "name": "Wangze Ni"
+    },
+    {
+      "@type": "Person",
+      "name": "Cong Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Kui Ren"
+    }
+  ],
+  "datePublished": "2026-08-10T11:45:03Z",
+  "dateModified": "2026-08-10T11:45:03Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.09476.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.09476.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.09476v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.09476"
+  },
+  "keywords": [
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Safety"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.09476v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.09476"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +115,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ActBench: Self-Evolving Benchmark of Behavioral Safety in Cowork Agents</h1>
+        <div class="meta">
+          Hongwei Yao, Yiming Liu, Meihui Chen, Jieling Chen, Zikun Chen, Yiling He, Wangze Ni, Cong Wang, Kui Ren
+          · 2608.09476
+          · <time datetime="2026-08-10">2026-08-10</time>
+          · Safety
+        </div>
+        <div class="themes"><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Cowork agents may complete benign tasks while disclosing protected data, manipulating unauthorized state, invocate unauthorized API. We define behavioral safety and introduce ActBench, a self-evolving benchmark that evaluates such behavior risk from execution trajectories rather than final responses. Each case pairs a benign task with an adversarial variant that preserves its instruction, configuration, initial state, rating model, and trusted records while injecting a task-reachable payload. ActBench contains 600 cases from 213 scenarios, spanning 15 risk behaviors, six execution spaces, and 48 web-service APIs.To move beyond static payloads, we propose a reward-guided beam search method that jointly optimizes attack effectiveness and task utility, while reflection diagnoses failed execution checkpoint and guides payload revision. Besides, we propose a dual evidence verification mechanism that verifies agent execution safety and utility through log evidence and LLM-based trajectory evidence.We evaluate 15 LLMs and 6 open-source cowork agents over 24,000 trajectories. Under a fixed harness, attack success rates ranges from 10.1% to 94.4% across models, while under a fixed base model, they range from 73.7% to 94.4% across agents.These results show greater variation across models than agent harness, while attacks remain highly successful across all tested harnesses.Our benchmark is released at: https://github.com/zjuicsr/ActBench.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.09476v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.09476v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.09476" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Safety benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.23179.html"><strong>NetConfArena: An Executable Benchmark for LLM Agents in Closed-Loop Network Configuration</strong></a> <span>2026-08-24</span></li>
+          <li><a href="2608.23635.html"><strong>ToolRobustBench: Stage-Wise Perturbation Evaluation and Failure Diagnosis for Tool-Calling Agents</strong></a> <span>2026-08-23</span></li>
+          <li><a href="2608.19901.html"><strong>MaliciousSkillBench: A Comprehensive Benchmark for Malicious Agent Skill Detection</strong></a> <span>2026-08-20</span></li>
+          <li><a href="2608.17597.html"><strong>HarnessRisk: A Lifecycle-Oriented Benchmark for Agent Harness Safety</strong></a> <span>2026-08-18</span></li>
+          <li><a href="2608.06984.html"><strong>HarnessSafe: Evaluating Safety Across Persistent Carriers in Agent Harnesses</strong></a> <span>2026-08-07</span></li>
+          <li><a href="2607.20121.html"><strong>OpenSkillRisk: Benchmarking Agent Safety When Using Real-World Risky Third-Party Skills</strong></a> <span>2026-07-22</span></li>
+          <li><a href="2607.18665.html"><strong>SciHazard: A Benchmark for Measuring Scientific Safety Risks with Decomposed Harm Scoring</strong></a> <span>2026-07-21</span></li>
+          <li><a href="2607.14543.html"><strong>SafeRelBench: A Spatial-Relation-Aware Benchmark for Process-Level Safety in VLM-Driven Embodied Agents</strong></a> <span>2026-07-16</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

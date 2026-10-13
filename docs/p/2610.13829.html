@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MC-EvoBench: Auditing Experience-Driven Self-Improvement in Minecraft Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: A central challenge in embodied recursive self-improvement is enabling agents to convert interaction history into capabilities that…" />
+    <meta name="keywords" content="RSI / AI4AI, Tool use, Embodied / robotics, Memory, agent benchmark, LLM agent, arXiv, 2610.13829" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.13829.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MC-EvoBench: Auditing Experience-Driven Self-Improvement in Minecraft Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: A central challenge in embodied recursive self-improvement is enabling agents to convert interaction history into capabilities that…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.13829.html" />
+    <meta property="article:published_time" content="2026-10-09T16:37:39Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MC-EvoBench: Auditing Experience-Driven Self-Improvement in Minecraft Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: A central challenge in embodied recursive self-improvement is enabling agents to convert interaction history into capabilities that…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,82 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MC-EvoBench: Auditing Experience-Driven Self-Improvement in Minecraft Agents",
+  "name": "MC-EvoBench: Auditing Experience-Driven Self-Improvement in Minecraft Agents",
+  "abstract": "A central challenge in embodied recursive self-improvement is enabling agents to convert interaction history into capabilities that persist beyond one world and transfer to later tasks. A saved memory or successful final action does not by itself establish that a reusable capability was acquired; evaluation must separate capability change from carried-over resources, unequal source exposure, and early execution failures. We construct MC-EvoBench as a controlled Minecraft benchmark with a fixed catalog of 19 registered evolution chains, including 12 primary evaluation chains and seven calibration or probe chains, together with three graph-aligned paired probe families for transfer. The benchmark represents each task as a task-state graph, defines stage-level environment verifiers, assigns matched source and target roles, resets the target world, and permits only a declared agent artifact to cross the source-target boundary. For each probe, no-prior, related, unrelated, and shuffled source conditions are evaluated under matched environment-step budgets and five seeds; we report TSR, WGP, and VMP and retain provenance records. The benchmark reveals a consistent direct-capability gap between controller and planner-backed variants, while related experience yields no stable transfer: it does not improve either tool probe, its small wood-species gain hinges on one seed, and all intervals include zero. Stage audits further show that early wood-collection and crafting bottlenecks often leave later capabilities unobserved. MC-EvoBench thus offers a controlled testbed for durable, transferable embodied capabilities. Code and data are available at https://github.com/xzw-ustc/mc-bench-open-source",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jingwei Song"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhisheng Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Bingfan Zeng"
+    },
+    {
+      "@type": "Person",
+      "name": "Jing Tang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yubo Hou"
+    },
+    {
+      "@type": "Person",
+      "name": "Jinhao Jing"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhengwei Xie"
+    },
+    {
+      "@type": "Person",
+      "name": "Linfeng Zhang"
+    }
+  ],
+  "datePublished": "2026-10-09T16:37:39Z",
+  "dateModified": "2026-10-09T16:37:39Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.13829.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.13829.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.13829v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.13829"
+  },
+  "keywords": [
+    "RSI / AI4AI",
+    "Tool use",
+    "Embodied / robotics",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "RSI / AI4AI"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.13829v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2610.13829"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +114,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MC-EvoBench: Auditing Experience-Driven Self-Improvement in Minecraft Agents</h1>
+        <div class="meta">
+          Jingwei Song, Zhisheng Chen, Bingfan Zeng, Jing Tang, Yubo Hou, Jinhao Jing, Zhengwei Xie, Linfeng Zhang
+          · 2610.13829
+          · <time datetime="2026-10-09">2026-10-09</time>
+          · RSI / AI4AI
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Embodied / robotics</span><span class="chip">Memory</span><span class="chip">RSI / AI4AI</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>A central challenge in embodied recursive self-improvement is enabling agents to convert interaction history into capabilities that persist beyond one world and transfer to later tasks. A saved memory or successful final action does not by itself establish that a reusable capability was acquired; evaluation must separate capability change from carried-over resources, unequal source exposure, and early execution failures. We construct MC-EvoBench as a controlled Minecraft benchmark with a fixed catalog of 19 registered evolution chains, including 12 primary evaluation chains and seven calibration or probe chains, together with three graph-aligned paired probe families for transfer. The benchmark represents each task as a task-state graph, defines stage-level environment verifiers, assigns matched source and target roles, resets the target world, and permits only a declared agent artifact to cross the source-target boundary. For each probe, no-prior, related, unrelated, and shuffled source conditions are evaluated under matched environment-step budgets and five seeds; we report TSR, WGP, and VMP and retain provenance records. The benchmark reveals a consistent direct-capability gap between controller and planner-backed variants, while related experience yields no stable transfer: it does not improve either tool probe, its small wood-species gain hinges on one seed, and all intervals include zero. Stage audits further show that early wood-collection and crafting bottlenecks often leave later capabilities unobserved. MC-EvoBench thus offers a controlled testbed for durable, transferable embodied capabilities. Code and data are available at https://github.com/xzw-ustc/mc-bench-open-source</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.13829v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.13829v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.13829" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More RSI / AI4AI benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.12190.html"><strong>DataSense-Bench: The First Step Toward an AI Scientist</strong></a> <span>2026-10-08</span></li>
+          <li><a href="2610.07792.html"><strong>ServeLearnBench: How Well Can Agents Self-Improve from Serving Experience?</strong></a> <span>2026-10-06</span></li>
+          <li><a href="2610.04927.html"><strong>Assembling Insights for Agentic Machine Learning Engineering Systems</strong></a> <span>2026-10-04</span></li>
+          <li><a href="2610.04184.html"><strong>EvalResearchBench: Can AI Agents Design Their Own Evaluations?</strong></a> <span>2026-10-03</span></li>
+          <li><a href="2609.35025.html"><strong>AutoDataBench: Can Agents Write the Data That Feeds the Self-Improvement Loop?</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.09113.html"><strong>SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research?</strong></a> <span>2026-09-08</span></li>
+          <li><a href="2608.20318.html"><strong>AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Design for Recursive Self-Improvement</strong></a> <span>2026-08-20</span></li>
+          <li><a href="2608.09128.html"><strong>Social Gym and SPaRTan: Benchmarking and Improving LLM Social Reasoning via Multi-Agent Game Tournaments</strong></a> <span>2026-08-10</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

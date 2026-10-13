@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>EvoMemBench: Benchmarking Agent Memory from a Self-Evolving Perspective | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Recent benchmarks for Large Language Model (LLM) agents mainly evaluate reasoning, planning, and execution. However, memory is also…" />
+    <meta name="keywords" content="General, Memory, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2605.18421" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.18421.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="EvoMemBench: Benchmarking Agent Memory from a Self-Evolving Perspective" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Recent benchmarks for Large Language Model (LLM) agents mainly evaluate reasoning, planning, and execution. However, memory is also…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.18421.html" />
+    <meta property="article:published_time" content="2026-05-18T13:54:38Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="EvoMemBench: Benchmarking Agent Memory from a Self-Evolving Perspective" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Recent benchmarks for Large Language Model (LLM) agents mainly evaluate reasoning, planning, and execution. However, memory is also…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,89 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "EvoMemBench: Benchmarking Agent Memory from a Self-Evolving Perspective",
+  "name": "EvoMemBench: Benchmarking Agent Memory from a Self-Evolving Perspective",
+  "abstract": "Recent benchmarks for Large Language Model (LLM) agents mainly evaluate reasoning, planning, and execution. However, memory is also essential for agents, as it enables them to store, update, and retrieve information over time. This ability remains under-evaluated, largely because existing benchmarks do not provide a systematic way to assess memory mechanisms. In this paper, we study agent memory from a self-evolving perspective and introduce EvoMemBench, a unified benchmark organized along two axes: memory scope (in-episode vs. cross-episode) and memory content (knowledge-oriented vs. execution-oriented). We compare 15 representative memory methods with strong long-context baselines under a standardized protocol. Results show that current memory systems are still far from a general solution: long-context baselines remain highly competitive, memory helps most when the current context is insufficient or tasks are difficult, and no single memory form works consistently across all settings. Retrieval-based methods remain strong for knowledge-intensive settings, whereas procedural and long-term memory methods are more effective for execution-oriented tasks when their stored experience matches the task structure. We hope EvoMemBench facilitates future research on more effective memory systems for LLM-based agents. Our code is available at https://github.com/DSAIL-Memory/EvoMemBench.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yuyao Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhongjian Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Mo Chi"
+    },
+    {
+      "@type": "Person",
+      "name": "Kaichi Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuhan Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Miao Peng"
+    },
+    {
+      "@type": "Person",
+      "name": "Bing Tong"
+    },
+    {
+      "@type": "Person",
+      "name": "Chen Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yan Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Jia Li"
+    }
+  ],
+  "datePublished": "2026-05-18T13:54:38Z",
+  "dateModified": "2026-06-15T07:27:08Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.18421.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.18421.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.18421v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.18421"
+  },
+  "keywords": [
+    "General",
+    "Memory",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.18421v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.18421"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +121,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>EvoMemBench: Benchmarking Agent Memory from a Self-Evolving Perspective</h1>
+        <div class="meta">
+          Yuyao Wang, Zhongjian Zhang, Mo Chi, Kaichi Yu, Yuhan Li, Miao Peng, Bing Tong, Chen Zhang, Yan Zhou, Jia Li
+          · 2605.18421
+          · <time datetime="2026-05-18">2026-05-18</time>
+          · General · 6 citations
+        </div>
+        <div class="themes"><span class="chip">Memory</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Recent benchmarks for Large Language Model (LLM) agents mainly evaluate reasoning, planning, and execution. However, memory is also essential for agents, as it enables them to store, update, and retrieve information over time. This ability remains under-evaluated, largely because existing benchmarks do not provide a systematic way to assess memory mechanisms. In this paper, we study agent memory from a self-evolving perspective and introduce EvoMemBench, a unified benchmark organized along two axes: memory scope (in-episode vs. cross-episode) and memory content (knowledge-oriented vs. execution-oriented). We compare 15 representative memory methods with strong long-context baselines under a standardized protocol. Results show that current memory systems are still far from a general solution: long-context baselines remain highly competitive, memory helps most when the current context is insufficient or tasks are difficult, and no single memory form works consistently across all settings. Retrieval-based methods remain strong for knowledge-intensive settings, whereas procedural and long-term memory methods are more effective for execution-oriented tasks when their stored experience matches the task structure. We hope EvoMemBench facilitates future research on more effective memory systems for LLM-based agents. Our code is available at https://github.com/DSAIL-Memory/EvoMemBench.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.18421v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.18421v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.18421" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.20530.html"><strong>AgentAtlas: Beyond Outcome Leaderboards for LLM Agents</strong></a> <span>2026-05-19</span></li>
+          <li><a href="2605.19717.html"><strong>Physics-in-the-Loop: A Hybrid Agentic Architecture for Validated CAD Engineering Design</strong></a> <span>2026-05-19</span></li>
+          <li><a href="2605.19127.html"><strong>POLAR-Bench: A Diagnostic Benchmark for Privacy-Utility Trade-offs in LLM Agents</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.18548.html"><strong>STT-Arena: A More Realistic Environment for Tool-Using with Spatio-Temporal Dynamics</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.18397.html"><strong>Duet instrumentation: An Agentic Approach to Improving Sensitivity in Cloud Service Benchmarking</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.17324.html"><strong>ASPI: Seeking Ambiguity Clarification Amplifies Prompt Injection Vulnerability in LLM Agents</strong></a> <span>2026-05-17</span></li>
+          <li><a href="2605.17281.html"><strong>ContractBench: Can LLM Agents Preserve Observation Contracts?</strong></a> <span>2026-05-17</span></li>
+          <li><a href="2607.18261.html"><strong>When JSON Is Not Enough: Semantic Reliability of Schema-Constrained LLM Ordering Agents</strong></a> <span>2026-05-16</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

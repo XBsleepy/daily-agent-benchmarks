@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Evaluating RL Explainability Methods by How Much They Help Fix Bugs in Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: This preliminary paper outlines a planned evaluation benchmark for Explainable Reinforcement Learning (XRL) methods. Current…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Science lab, agent benchmark, LLM agent, arXiv, 2608.17524" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.17524.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Evaluating RL Explainability Methods by How Much They Help Fix Bugs in Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: This preliminary paper outlines a planned evaluation benchmark for Explainable Reinforcement Learning (XRL) methods. Current…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.17524.html" />
+    <meta property="article:published_time" content="2026-08-18T08:46:26Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Evaluating RL Explainability Methods by How Much They Help Fix Bugs in Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: This preliminary paper outlines a planned evaluation benchmark for Explainable Reinforcement Learning (XRL) methods. Current…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,69 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Evaluating RL Explainability Methods by How Much They Help Fix Bugs in Agents",
+  "name": "Evaluating RL Explainability Methods by How Much They Help Fix Bugs in Agents",
+  "abstract": "This preliminary paper outlines a planned evaluation benchmark for Explainable Reinforcement Learning (XRL) methods. Current evaluations rely on functionally-grounded metrics like faithfulness and compactness, and on human-grounded proxies like subjective ratings or prediction accuracy. We suggest evaluating XRL methods by how effectively their generated explanations help to diagnose and fix malfunctioning reinforcement learning (RL) agents. We propose EvalXRL, a benchmark in which a Large Language Model (LLM) coding agent uses different XRL methods to diagnose a held-out malfunction in an RL agent, and then repair it. Our proposed benchmark iterates across (environment $\\times$ malfunction $\\times$ XRL method) tuples and uses the reward signal of the RL agents to form a final score for each XRL method. The coding agent may use the method interactively: invoke the XRL method, process its output, form new hypotheses on what is broken, and invoke the method again with parameters adjusted for testing these hypotheses. This closed-loop structure may be described as a simplified version of the scientific method. Some XRL methods provide self-evaluations that follow this pattern; we propose the first head-to-head comparison of multiple XRL methods in closed-loop usage.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Ram Rachum"
+    },
+    {
+      "@type": "Person",
+      "name": "Yotam Amitai"
+    },
+    {
+      "@type": "Person",
+      "name": "Bálint Gyevnár"
+    },
+    {
+      "@type": "Person",
+      "name": "Reuth Mirsky"
+    },
+    {
+      "@type": "Person",
+      "name": "Cameron Allen"
+    }
+  ],
+  "datePublished": "2026-08-18T08:46:26Z",
+  "dateModified": "2026-08-18T08:46:26Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.17524.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.17524.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.17524v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.17524"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.17524v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.17524"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +101,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Evaluating RL Explainability Methods by How Much They Help Fix Bugs in Agents</h1>
+        <div class="meta">
+          Ram Rachum, Yotam Amitai, Bálint Gyevnár, Reuth Mirsky, Cameron Allen
+          · 2608.17524
+          · <time datetime="2026-08-18">2026-08-18</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>This preliminary paper outlines a planned evaluation benchmark for Explainable Reinforcement Learning (XRL) methods. Current evaluations rely on functionally-grounded metrics like faithfulness and compactness, and on human-grounded proxies like subjective ratings or prediction accuracy. We suggest evaluating XRL methods by how effectively their generated explanations help to diagnose and fix malfunctioning reinforcement learning (RL) agents. We propose EvalXRL, a benchmark in which a Large Language Model (LLM) coding agent uses different XRL methods to diagnose a held-out malfunction in an RL agent, and then repair it. Our proposed benchmark iterates across (environment $\times$ malfunction $\times$ XRL method) tuples and uses the reward signal of the RL agents to form a final score for each XRL method. The coding agent may use the method interactively: invoke the XRL method, process its output, form new hypotheses on what is broken, and invoke the method again with parameters adjusted for testing these hypotheses. This closed-loop structure may be described as a simplified version of the scientific method. Some XRL methods provide self-evaluations that follow this pattern; we propose the first head-to-head comparison of multiple XRL methods in closed-loop usage.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.17524v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.17524v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.17524" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.21833.html"><strong>GameXpert-Bench: How Far Are Coding Agents from Expert Game Development?</strong></a> <span>2026-08-22</span></li>
+          <li><a href="2608.20851.html"><strong>BC-Bench: Evaluating Agentic Engineering in a Domain-Specific Language for ERP</strong></a> <span>2026-08-21</span></li>
+          <li><a href="2608.20664.html"><strong>DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents</strong></a> <span>2026-08-21</span></li>
+          <li><a href="2608.19799.html"><strong>SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?</strong></a> <span>2026-08-20</span></li>
+          <li><a href="2608.16022.html"><strong>OpenHarmony Bench: Evaluating LLMs and Coding Agents on OpenHarmony App Development</strong></a> <span>2026-08-17</span></li>
+          <li><a href="2608.09802.html"><strong>SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring</strong></a> <span>2026-08-10</span></li>
+          <li><a href="2608.09072.html"><strong>A Unified Issue Resolution Benchmark for Requirement Clarification, Planning, and Code Generation for Coding Agents</strong></a> <span>2026-08-10</span></li>
+          <li><a href="2608.06346.html"><strong>TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories</strong></a> <span>2026-08-06</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

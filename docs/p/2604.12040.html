@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>SIR-Bench: Evaluating Investigation Depth in Security Incident Response Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: We present SIR-Bench, a benchmark of 794 test cases for evaluating autonomous security incident response agents that distinguishes…" />
+    <meta name="keywords" content="General, Tool use, agent benchmark, LLM agent, arXiv, 2604.12040" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.12040.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SIR-Bench: Evaluating Investigation Depth in Security Incident Response Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: We present SIR-Bench, a benchmark of 794 test cases for evaluating autonomous security incident response agents that distinguishes…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.12040.html" />
+    <meta property="article:published_time" content="2026-04-13T20:32:03Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SIR-Bench: Evaluating Investigation Depth in Security Incident Response Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: We present SIR-Bench, a benchmark of 794 test cases for evaluating autonomous security incident response agents that distinguishes…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,68 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SIR-Bench: Evaluating Investigation Depth in Security Incident Response Agents",
+  "name": "SIR-Bench: Evaluating Investigation Depth in Security Incident Response Agents",
+  "abstract": "We present SIR-Bench, a benchmark of 794 test cases for evaluating autonomous security incident response agents that distinguishes genuine forensic investigation from alert parroting. Derived from 129 anonymized incident patterns with expert-validated ground truth, SIR-Bench measures not only whether agents reach correct triage decisions, but whether they discover novel evidence through active investigation. To construct SIR-Bench, we develop Once Upon A Threat (OUAT), a framework that replays real incident patterns in controlled cloud environments, producing authentic telemetry with measurable investigation outcomes. Our evaluation methodology introduces three complementary metrics: triage accuracy (M1), novel finding discovery (M2), and tool usage appropriateness (M3), assessed through an adversarial LLM-as-Judge that inverts the burden of proof -- requiring concrete forensic evidence to credit investigations. Evaluating our SIR agent on the benchmark demonstrates 97.1% true positive (TP) detection, 73.4% false positive (FP) rejection, and 5.67 novel key findings per case, establishing a baseline against which future investigation agents can be measured.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Daniel Begimher"
+    },
+    {
+      "@type": "Person",
+      "name": "Cristian Leo"
+    },
+    {
+      "@type": "Person",
+      "name": "Jack Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Pat Gaw"
+    },
+    {
+      "@type": "Person",
+      "name": "Bonan Zheng"
+    }
+  ],
+  "datePublished": "2026-04-13T20:32:03Z",
+  "dateModified": "2026-04-13T20:32:03Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.12040.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.12040.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.12040v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2604.12040"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2604.12040v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2604.12040"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +100,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SIR-Bench: Evaluating Investigation Depth in Security Incident Response Agents</h1>
+        <div class="meta">
+          Daniel Begimher, Cristian Leo, Jack Huang, Pat Gaw, Bonan Zheng
+          · 2604.12040
+          · <time datetime="2026-04-13">2026-04-13</time>
+          · General · 2 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>We present SIR-Bench, a benchmark of 794 test cases for evaluating autonomous security incident response agents that distinguishes genuine forensic investigation from alert parroting. Derived from 129 anonymized incident patterns with expert-validated ground truth, SIR-Bench measures not only whether agents reach correct triage decisions, but whether they discover novel evidence through active investigation. To construct SIR-Bench, we develop Once Upon A Threat (OUAT), a framework that replays real incident patterns in controlled cloud environments, producing authentic telemetry with measurable investigation outcomes. Our evaluation methodology introduces three complementary metrics: triage accuracy (M1), novel finding discovery (M2), and tool usage appropriateness (M3), assessed through an adversarial LLM-as-Judge that inverts the burden of proof -- requiring concrete forensic evidence to credit investigations. Evaluating our SIR agent on the benchmark demonstrates 97.1% true positive (TP) detection, 73.4% false positive (FP) rejection, and 5.67 novel key findings per case, establishing a baseline against which future investigation agents can be measured.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2604.12040v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2604.12040v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2604.12040" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2604.14448.html"><strong>MARCA: A Checklist-Based Benchmark for Multilingual Web Search</strong></a> <span>2026-04-15</span></li>
+          <li><a href="2604.13954.html"><strong>HINTBench: Horizon-agent Intrinsic Non-attack Trajectory Benchmark</strong></a> <span>2026-04-15</span></li>
+          <li><a href="2604.13593.html"><strong>AVID: A Benchmark for Omni-Modal Audio-Visual Inconsistency Understanding via Agent-Driven Construction</strong></a> <span>2026-04-15</span></li>
+          <li><a href="2604.12177.html"><strong>Policy-Invisible Violations in LLM-Based Agents</strong></a> <span>2026-04-14</span></li>
+          <li><a href="2604.11270.html"><strong>Evaluating LLM Agents on Automated Software Analysis Tasks</strong></a> <span>2026-04-13</span></li>
+          <li><a href="2604.10547.html"><strong>Agent^2 RL-Bench: Can LLM Agents Engineer Agentic RL Post-Training?</strong></a> <span>2026-04-12</span></li>
+          <li><a href="2604.10261.html"><strong>The Amazing Agent Race: Strong Tool Users, Weak Navigators</strong></a> <span>2026-04-11</span></li>
+          <li><a href="2604.08988.html"><strong>SEA-Eval: A Benchmark for Evaluating Self-Evolving Agents Beyond Episodic Assessment</strong></a> <span>2026-04-10</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

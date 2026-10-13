@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>DAREBench: Deployment-Aware and Reliable Evaluation of Models as Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: As large language models evolve from question-answering systems into general-purpose agents, evaluation must move beyond static…" />
+    <meta name="keywords" content="Multimodal, Tool use, agent benchmark, LLM agent, arXiv, 2609.06059" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.06059.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="DAREBench: Deployment-Aware and Reliable Evaluation of Models as Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: As large language models evolve from question-answering systems into general-purpose agents, evaluation must move beyond static…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.06059.html" />
+    <meta property="article:published_time" content="2026-09-05T12:36:59Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="DAREBench: Deployment-Aware and Reliable Evaluation of Models as Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: As large language models evolve from question-answering systems into general-purpose agents, evaluation must move beyond static…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,88 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "DAREBench: Deployment-Aware and Reliable Evaluation of Models as Agents",
+  "name": "DAREBench: Deployment-Aware and Reliable Evaluation of Models as Agents",
+  "abstract": "As large language models evolve from question-answering systems into general-purpose agents, evaluation must move beyond static answer correctness to assess multimodal perception, multi-step execution, tool use, and artifact delivery. However, existing benchmarks are often tied to specific task types, execution environments, or scoring protocols, limiting their comparability, interpretability, and reliability for deployment decisions. We introduce DAREBench (Deployment-Aware and Reliable Evaluation of Models as Agents), a benchmark designed to capture workload variation and support reliable agent evaluation. Built on a shared OpenClaw execution environment, DAREBench organizes 233 tasks selected and adapted from 22 source benchmarks into a $2\\times3$ workload matrix defined by input modality and execution form, and evaluates them under a unified contract-based protocol with evidence-based score auditing. We evaluate 23 commercial API models and 12 locally deployed open-weight models over 7,587 model--task runs, reporting accuracy and token consumption alongside reference costs for API models. Results show that no single model dominates all workload groups, text and multimodal tasks exhibit distinct accuracy--cost trade-offs, and local open-weight models are competitive in several groups but still trail frontier commercial models overall. These findings suggest that agent deployment and model selection should consider workload profiles, deployment mode, and accuracy--cost trade-offs rather than rely on a single aggregate score.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yu Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhilin Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhiwei Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Shaojie Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zheyuan Deng"
+    },
+    {
+      "@type": "Person",
+      "name": "Tingwei Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhenbo Luo"
+    },
+    {
+      "@type": "Person",
+      "name": "Lei Jiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yanbing Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Pei Fu"
+    }
+  ],
+  "datePublished": "2026-09-05T12:36:59Z",
+  "dateModified": "2026-09-05T12:36:59Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.06059.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.06059.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.06059v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.06059"
+  },
+  "keywords": [
+    "Multimodal",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multimodal"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.06059v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.06059"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +120,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>DAREBench: Deployment-Aware and Reliable Evaluation of Models as Agents</h1>
+        <div class="meta">
+          Yu Liu, Zhilin Liu, Zhiwei Yang, Shaojie Zhang, Zheyuan Deng, Tingwei Huang, Zhenbo Luo, Lei Jiang, Yanbing Liu, Pei Fu
+          · 2609.06059
+          · <time datetime="2026-09-05">2026-09-05</time>
+          · Multimodal
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>As large language models evolve from question-answering systems into general-purpose agents, evaluation must move beyond static answer correctness to assess multimodal perception, multi-step execution, tool use, and artifact delivery. However, existing benchmarks are often tied to specific task types, execution environments, or scoring protocols, limiting their comparability, interpretability, and reliability for deployment decisions. We introduce DAREBench (Deployment-Aware and Reliable Evaluation of Models as Agents), a benchmark designed to capture workload variation and support reliable agent evaluation. Built on a shared OpenClaw execution environment, DAREBench organizes 233 tasks selected and adapted from 22 source benchmarks into a $2\times3$ workload matrix defined by input modality and execution form, and evaluates them under a unified contract-based protocol with evidence-based score auditing. We evaluate 23 commercial API models and 12 locally deployed open-weight models over 7,587 model--task runs, reporting accuracy and token consumption alongside reference costs for API models. Results show that no single model dominates all workload groups, text and multimodal tasks exhibit distinct accuracy--cost trade-offs, and local open-weight models are competitive in several groups but still trail frontier commercial models overall. These findings suggest that agent deployment and model selection should consider workload profiles, deployment mode, and accuracy--cost trade-offs rather than rely on a single aggregate score.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.06059v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.06059v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.06059" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multimodal benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.21392.html"><strong>Omni Demand Understanding: A Benchmark for Contextual User-Intent Inference in Multimodal Interaction</strong></a> <span>2026-09-21</span></li>
+          <li><a href="2609.21386.html"><strong>AgentVidBench: A Multi-Hop Video Question Answering Benchmark for Evaluating MLLM Agents</strong></a> <span>2026-09-21</span></li>
+          <li><a href="2609.15683.html"><strong>V-ICAL Bench: Evaluating Video In-Context Learning for Multimodal Agents in Interactive Environments</strong></a> <span>2026-09-15</span></li>
+          <li><a href="2609.15478.html"><strong>BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender</strong></a> <span>2026-09-15</span></li>
+          <li><a href="2609.04438.html"><strong>ICM-Bench: Person-Level Identity Reasoning in Multimodal Agents with Long-Term Memory</strong></a> <span>2026-09-03</span></li>
+          <li><a href="2609.01404.html"><strong>Evaluating Multimodal LLMs as Generalist Vision-Language-Action Agents for Drone Control: Commanding, Approaching, Tracking and Searching</strong></a> <span>2026-09-01</span></li>
+          <li><a href="2609.01383.html"><strong>InSight: A Benchmark for Agentic Claim Verification in Interactive Visualizations</strong></a> <span>2026-09-01</span></li>
+          <li><a href="2608.31022.html"><strong>MNIST-PRO: MNIST is Back as a Partially Observable World for AI Agents</strong></a> <span>2026-08-31</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>SWE-Duel: Towards a Self-Scaling Arena for Coding Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Static coding benchmarks are fixed at release. Over time their tasks leak into training data, and stronger agents eventually saturate…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2610.12569" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.12569.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SWE-Duel: Towards a Self-Scaling Arena for Coding Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Static coding benchmarks are fixed at release. Over time their tasks leak into training data, and stronger agents eventually saturate…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.12569.html" />
+    <meta property="article:published_time" content="2026-10-08T18:01:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SWE-Duel: Towards a Self-Scaling Arena for Coding Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Static coding benchmarks are fixed at release. Over time their tasks leak into training data, and stronger agents eventually saturate…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,64 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SWE-Duel: Towards a Self-Scaling Arena for Coding Agents",
+  "name": "SWE-Duel: Towards a Self-Scaling Arena for Coding Agents",
+  "abstract": "Static coding benchmarks are fixed at release. Over time their tasks leak into training data, and stronger agents eventually saturate them. We argue that a benchmark should instead aim to be self-scaling: its tasks and oracles are created at evaluation time, so no content exists in advance to leak, and its difficulty is set by the participating agents rather than fixed at release. We introduce SWE-Duel, an arena in which two coding agents evaluate each other over mirrored Red-Blue turns. In each turn, the Red agent works on a real repository across three context-isolated sessions. It proposes and implements a new feature with feature tests, then embeds a subtle bug in that feature along with sealed bug-triggering tests. The resulting pull request is admitted only if (1) it passes the feature tests and the repository's existing tests while failing exactly the bug tests, and (2) a fresh session of the same agent can repair the bug blind, which rules out unsolvable tasks. The Blue agent then reviews the pull request without being told a bug exists. It wins only if its revision passes all three test suites, and then the two agents swap roles. We run a tournament among 11 model-harness participants on 15 repositories in five languages for 1,500 turns. The leaders win in different ways. GPT-5.5 with Codex CLI ranks first as the strongest solver, repairing 98.3% of the defects it reviews. Claude Opus 4.8 with mini-swe-agent ranks second as the strongest task author, with a 27.3% Red win rate. Finally, within one model family, tasks written by the newest version defeat a fixed-reference solver far more often than those of older versions (42.9% vs. 4.0%), giving preliminary evidence that task difficulty scales with task authoring capability.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Wei Minn"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhensu Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Lwin Khin Shar"
+    },
+    {
+      "@type": "Person",
+      "name": "David Lo"
+    }
+  ],
+  "datePublished": "2026-10-08T18:01:00Z",
+  "dateModified": "2026-10-08T18:01:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.12569.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.12569.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.12569v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.12569"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.12569v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2610.12569"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +96,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SWE-Duel: Towards a Self-Scaling Arena for Coding Agents</h1>
+        <div class="meta">
+          Wei Minn, Zhensu Sun, Lwin Khin Shar, David Lo
+          · 2610.12569
+          · <time datetime="2026-10-08">2026-10-08</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Static coding benchmarks are fixed at release. Over time their tasks leak into training data, and stronger agents eventually saturate them. We argue that a benchmark should instead aim to be self-scaling: its tasks and oracles are created at evaluation time, so no content exists in advance to leak, and its difficulty is set by the participating agents rather than fixed at release. We introduce SWE-Duel, an arena in which two coding agents evaluate each other over mirrored Red-Blue turns. In each turn, the Red agent works on a real repository across three context-isolated sessions. It proposes and implements a new feature with feature tests, then embeds a subtle bug in that feature along with sealed bug-triggering tests. The resulting pull request is admitted only if (1) it passes the feature tests and the repository&#x27;s existing tests while failing exactly the bug tests, and (2) a fresh session of the same agent can repair the bug blind, which rules out unsolvable tasks. The Blue agent then reviews the pull request without being told a bug exists. It wins only if its revision passes all three test suites, and then the two agents swap roles. We run a tournament among 11 model-harness participants on 15 repositories in five languages for 1,500 turns. The leaders win in different ways. GPT-5.5 with Codex CLI ranks first as the strongest solver, repairing 98.3% of the defects it reviews. Claude Opus 4.8 with mini-swe-agent ranks second as the strongest task author, with a 27.3% Red win rate. Finally, within one model family, tasks written by the newest version defeat a fixed-reference solver far more often than those of older versions (42.9% vs. 4.0%), giving preliminary evidence that task difficulty scales with task authoring capability.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.12569v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.12569v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.12569" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.13668.html"><strong>(When) Should a Software Factory be Lights-off? Benchmarking Code Review Agents on Bug Detection</strong></a> <span>2026-10-09</span></li>
+          <li><a href="2610.13361.html"><strong>AgentSWE: Can Coding Agents Build the Agent You Actually Want?</strong></a> <span>2026-10-09</span></li>
+          <li><a href="2610.12452.html"><strong>BrickBench: Evaluating Agentic Brick Design</strong></a> <span>2026-10-08</span></li>
+          <li><a href="2610.11482.html"><strong>Evaluating Local Language Model Agents for Reproducible Data Engineering: An Empirical Software Engineering Study of Mobility Workflows</strong></a> <span>2026-10-08</span></li>
+          <li><a href="2610.11447.html"><strong>Closed-loop evaluation of LLM agents for embedded software development</strong></a> <span>2026-10-08</span></li>
+          <li><a href="2610.09633.html"><strong>Coding-Agent Benchmarks Should Match Their Users&#x27; Task Flows</strong></a> <span>2026-10-07</span></li>
+          <li><a href="2610.08720.html"><strong>WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?</strong></a> <span>2026-10-06</span></li>
+          <li><a href="2610.08662.html"><strong>ParanoiaEval: Benchmarking Unnecessary Defensive Work in Agentic Coding</strong></a> <span>2026-10-06</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

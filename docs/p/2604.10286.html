@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>STARS: Skill-Triggered Audit for Request-Conditioned Invocation Safety in Agent Systems | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Autonomous language-model agents increasingly rely on installable skills and tools to complete user tasks. Static skill auditing can…" />
+    <meta name="keywords" content="Safety, Tool use, agent benchmark, LLM agent, arXiv, 2604.10286" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.10286.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="STARS: Skill-Triggered Audit for Request-Conditioned Invocation Safety in Agent Systems" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Autonomous language-model agents increasingly rely on installable skills and tools to complete user tasks. Static skill auditing can…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.10286.html" />
+    <meta property="article:published_time" content="2026-04-11T17:06:42Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="STARS: Skill-Triggered Audit for Request-Conditioned Invocation Safety in Agent Systems" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Autonomous language-model agents increasingly rely on installable skills and tools to complete user tasks. Static skill auditing can…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,64 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "STARS: Skill-Triggered Audit for Request-Conditioned Invocation Safety in Agent Systems",
+  "name": "STARS: Skill-Triggered Audit for Request-Conditioned Invocation Safety in Agent Systems",
+  "abstract": "Autonomous language-model agents increasingly rely on installable skills and tools to complete user tasks. Static skill auditing can expose capability surface before deployment, but it cannot determine whether a particular invocation is unsafe under the current user request and runtime context. We therefore study skill invocation auditing as a continuous-risk estimation problem: given a user request, candidate skill, and runtime context, predict a score that supports ranking and triage before a hard intervention is applied. We introduce STARS, which combines a static capability prior, a request-conditioned invocation risk model, and a calibrated risk-fusion policy. To evaluate this setting, we construct SIA-Bench, a benchmark of 3,000 invocation records with group-safe splits, lineage metadata, runtime context, canonical action labels, and derived continuous-risk targets. On a held-out split of indirect prompt injection attacks, calibrated fusion reaches 0.439 high-risk AUPRC, improving over 0.405 for the contextual scorer and 0.380 for the strongest static baseline, while the contextual scorer remains better calibrated with 0.289 expected calibration error. On the locked in-distribution test split, gains are smaller and static priors remain useful. The resulting claim is therefore narrower: request-conditioned auditing is most valuable as an invocation-time risk-scoring and triage layer rather than as a replacement for static screening. Code is available at https://github.com/123zgj123/STARS.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Guijia Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Shu Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xilin Gong"
+    },
+    {
+      "@type": "Person",
+      "name": "Di Wang"
+    }
+  ],
+  "datePublished": "2026-04-11T17:06:42Z",
+  "dateModified": "2026-04-11T17:06:42Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.10286.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.10286.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.10286v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2604.10286"
+  },
+  "keywords": [
+    "Safety",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Safety"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2604.10286v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2604.10286"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +96,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>STARS: Skill-Triggered Audit for Request-Conditioned Invocation Safety in Agent Systems</h1>
+        <div class="meta">
+          Guijia Zhang, Shu Yang, Xilin Gong, Di Wang
+          · 2604.10286
+          · <time datetime="2026-04-11">2026-04-11</time>
+          · Safety
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Autonomous language-model agents increasingly rely on installable skills and tools to complete user tasks. Static skill auditing can expose capability surface before deployment, but it cannot determine whether a particular invocation is unsafe under the current user request and runtime context. We therefore study skill invocation auditing as a continuous-risk estimation problem: given a user request, candidate skill, and runtime context, predict a score that supports ranking and triage before a hard intervention is applied. We introduce STARS, which combines a static capability prior, a request-conditioned invocation risk model, and a calibrated risk-fusion policy. To evaluate this setting, we construct SIA-Bench, a benchmark of 3,000 invocation records with group-safe splits, lineage metadata, runtime context, canonical action labels, and derived continuous-risk targets. On a held-out split of indirect prompt injection attacks, calibrated fusion reaches 0.439 high-risk AUPRC, improving over 0.405 for the contextual scorer and 0.380 for the strongest static baseline, while the contextual scorer remains better calibrated with 0.289 expected calibration error. On the locked in-distribution test split, gains are smaller and static priors remain useful. The resulting claim is therefore narrower: request-conditioned auditing is most valuable as an invocation-time risk-scoring and triage layer rather than as a replacement for static screening. Code is available at https://github.com/123zgj123/STARS.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2604.10286v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2604.10286v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2604.10286" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Safety benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.12015.html"><strong>SkillSafetyBench: Evaluating Agent Safety under Skill-Facing Attack Surfaces</strong></a> <span>2026-05-12</span></li>
+          <li><a href="2604.15774.html"><strong>MemEvoBench: Benchmarking Safety Risks from Memory Misevolution in LLM Agents</strong></a> <span>2026-04-17</span></li>
+          <li><a href="2604.11174.html"><strong>EmbodiedGovBench: A Benchmark for Governance, Recovery, and Upgrade Safety in Embodied Agent Systems</strong></a> <span>2026-04-13</span></li>
+          <li><a href="2605.16282.html"><strong>Taxonomy and Consistency Analysis of Safety Benchmarks for AI Agents</strong></a> <span>2026-04-11</span></li>
+          <li><a href="2604.08987.html"><strong>PilotBench: A Benchmark for General Aviation Agents with Safety Constraints</strong></a> <span>2026-04-10</span></li>
+          <li><a href="2604.05172.html"><strong>ClawsBench: Evaluating Capability and Safety of LLM Productivity Agents in Simulated Workspaces</strong></a> <span>2026-04-06</span></li>
+          <li><a href="2604.02022.html"><strong>ATBench: A Diverse and Realistic Agent Trajectory Benchmark for Safety Evaluation and Diagnosis</strong></a> <span>2026-04-02</span></li>
+          <li><a href="2602.13379.html"><strong>Unsafer in Many Turns: Benchmarking and Defending Multi-Turn Safety Risks in Tool-Using Agents</strong></a> <span>2026-02-13</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>UNIBROWSE: A Data-to-Agent Framework for Multimodal BrowseComp | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Multimodal BrowseComp tasks require agents to combine perception, tool use, and long-horizon reasoning over dynamic web content…" />
+    <meta name="keywords" content="Multimodal, Tool use, Safety, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2607.10557" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.10557.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="UNIBROWSE: A Data-to-Agent Framework for Multimodal BrowseComp" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Multimodal BrowseComp tasks require agents to combine perception, tool use, and long-horizon reasoning over dynamic web content…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.10557.html" />
+    <meta property="article:published_time" content="2026-07-12T04:13:27Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="UNIBROWSE: A Data-to-Agent Framework for Multimodal BrowseComp" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Multimodal BrowseComp tasks require agents to combine perception, tool use, and long-horizon reasoning over dynamic web content…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,66 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "UNIBROWSE: A Data-to-Agent Framework for Multimodal BrowseComp",
+  "name": "UNIBROWSE: A Data-to-Agent Framework for Multimodal BrowseComp",
+  "abstract": "Multimodal BrowseComp tasks require agents to combine perception, tool use, and long-horizon reasoning over dynamic web content, challenging their ability to handle compositional structure, open-world uncertainty, and multimodal integration across extended interactions. Crucially, real-world multimodal browsing involves three distinct information-flow patterns: text-only, image-to-text, and text-to-image, yet existing data construction methods cover only the text-only and image-to-text patterns, leaving text-to-image largely unaddressed and limiting agent generality and robustness. We introduce UNIBROWSE, a unified data pipeline that for the first time simultaneously generates training data covering all three patterns, augments curated knowledge graphs with live web retrieval for improved fidelity, and introduces a novel metric of exploration degree to filter low-signal instances for efficient reinforcement learning. Through this pipeline, we produce high-quality cold-start tool-use trajectories and exploration-rich QA pairs, and train a 35B-scale agent via supervised fine-tuning and exploration-aware RL.The resulting UNIBROWSE agent achieves state-of-the-art performance on multimodal BrowseComp benchmarks, attaining an average accuracy of 54.4 across five diverse benchmarks -- an improvement of 10.5 points over its base model Qwen3.5-35B-A3B -- and surpassing serveral closed-source agent workflows such as GPT-5 (42.9), Gemini-2.5 Pro (44.8), and Gemini-2.5 Flash (41.3).",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Xiyu Wei"
+    },
+    {
+      "@type": "Person",
+      "name": "Qingwei Zong"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhuocheng Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Sujian Li"
+    }
+  ],
+  "datePublished": "2026-07-12T04:13:27Z",
+  "dateModified": "2026-07-12T04:13:27Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.10557.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.10557.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.10557v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.10557"
+  },
+  "keywords": [
+    "Multimodal",
+    "Tool use",
+    "Safety",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multimodal"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.10557v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.10557"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +98,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>UNIBROWSE: A Data-to-Agent Framework for Multimodal BrowseComp</h1>
+        <div class="meta">
+          Xiyu Wei, Qingwei Zong, Zhuocheng Yu, Sujian Li
+          · 2607.10557
+          · <time datetime="2026-07-12">2026-07-12</time>
+          · Multimodal
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span><span class="chip">Planning / reasoning</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Multimodal BrowseComp tasks require agents to combine perception, tool use, and long-horizon reasoning over dynamic web content, challenging their ability to handle compositional structure, open-world uncertainty, and multimodal integration across extended interactions. Crucially, real-world multimodal browsing involves three distinct information-flow patterns: text-only, image-to-text, and text-to-image, yet existing data construction methods cover only the text-only and image-to-text patterns, leaving text-to-image largely unaddressed and limiting agent generality and robustness. We introduce UNIBROWSE, a unified data pipeline that for the first time simultaneously generates training data covering all three patterns, augments curated knowledge graphs with live web retrieval for improved fidelity, and introduces a novel metric of exploration degree to filter low-signal instances for efficient reinforcement learning. Through this pipeline, we produce high-quality cold-start tool-use trajectories and exploration-rich QA pairs, and train a 35B-scale agent via supervised fine-tuning and exploration-aware RL.The resulting UNIBROWSE agent achieves state-of-the-art performance on multimodal BrowseComp benchmarks, attaining an average accuracy of 54.4 across five diverse benchmarks -- an improvement of 10.5 points over its base model Qwen3.5-35B-A3B -- and surpassing serveral closed-source agent workflows such as GPT-5 (42.9), Gemini-2.5 Pro (44.8), and Gemini-2.5 Flash (41.3).</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.10557v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.10557v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.10557" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multimodal benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.22393.html"><strong>SceneActBench: Can Agents Act on the 3D Scenes They See?</strong></a> <span>2026-07-24</span></li>
+          <li><a href="2607.14896.html"><strong>StructureClaw: Traceable LLM Agents and an Executable Benchmark for Structural Engineering Workflows</strong></a> <span>2026-07-16</span></li>
+          <li><a href="2607.16311.html"><strong>Seeing What Is Actually There: PriVE-Bench and PriVE-Tools for Counterfactual Evaluation of Agentic Visual Evidence in VLMs</strong></a> <span>2026-07-14</span></li>
+          <li><a href="2607.12310.html"><strong>LakeQuest: A Three-Domain Benchmark for Grounded Question Answering across Data Lakes</strong></a> <span>2026-07-14</span></li>
+          <li><a href="2607.10079.html"><strong>MAG: A Web-Agent Benchmark and Harness for Multimodal Action and Guide Generation</strong></a> <span>2026-07-11</span></li>
+          <li><a href="2607.07189.html"><strong>Does AI Understand Imaging? A Systematic Benchmark of Agentic AI for Computational Imaging Tasks</strong></a> <span>2026-07-08</span></li>
+          <li><a href="2606.28514.html"><strong>GPTNT: Benchmarking Real-Time Collaboration Between Multimodal Agents on Keep Talking And Nobody Explodes</strong></a> <span>2026-06-26</span></li>
+          <li><a href="2606.27499.html"><strong>DMV-Bench: Diagnosing Long-Horizon Multimodal Agents&#x27; Visual Memory with Incidental Cue Injection</strong></a> <span>2026-06-25</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

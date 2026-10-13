@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ContractBench: Can LLM Agents Preserve Observation Contracts? | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Tool-augmented LLM agents call APIs whose intermediate outputs, such as presigned URLs, session tokens, and OAuth state parameters…" />
+    <meta name="keywords" content="General, Tool use, agent benchmark, LLM agent, arXiv, 2605.17281" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.17281.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ContractBench: Can LLM Agents Preserve Observation Contracts?" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Tool-augmented LLM agents call APIs whose intermediate outputs, such as presigned URLs, session tokens, and OAuth state parameters…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.17281.html" />
+    <meta property="article:published_time" content="2026-05-17T06:37:04Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ContractBench: Can LLM Agents Preserve Observation Contracts?" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Tool-augmented LLM agents call APIs whose intermediate outputs, such as presigned URLs, session tokens, and OAuth state parameters…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,72 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ContractBench: Can LLM Agents Preserve Observation Contracts?",
+  "name": "ContractBench: Can LLM Agents Preserve Observation Contracts?",
+  "abstract": "Tool-augmented LLM agents call APIs whose intermediate outputs, such as presigned URLs, session tokens, and OAuth state parameters, are observation contracts: artifacts whose later use is constrained by the external system that produced them. We show that observation contract compliance (preserving the temporal validity and byte-level integrity) is an emergent, regression-prone capability: it is neither guaranteed by general tool-use ability nor consistently improved by larger or newer models. To measure this, we introduce ContractBench, a benchmark of 33 dual-axis tasks that probe two orthogonal failure modes no existing benchmark evaluates: validity failures (using an artifact after expiry) and integrity failures (corrupting an artifact's bytes through the observation-to-action pipeline). Our evaluation is deterministic and programmatic, with a virtual clock controlling time and SHA-256 hashes verifying byte integrity. We assign each outcome a failure label drawn from real-world API specifications. We evaluate 38 models and report four findings: (i) no evaluated model clears 80%, with Claude-Opus-4.6 leading at 77.8%, revealing that current frontier models still fail to comply with observation contracts; (ii) a sharp within-family capability cliff in Qwen 3.5 between 4B (0%) and 9B (56.6%), smoothing to 70.7% at 397B-A17B: what emerges across the cliff is mid-trajectory restraint, not tool-call competence; (iii) non-monotonic scaling across the GPT-5 family: agentic post-training can erode compliance through sycophancy-driven regression; (iv) our failure taxonomy works as an actionable in-context reward signal, yielding +7.1 pp on 42 paired GPT-5.1 failures.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jicheng Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yifeng He"
+    },
+    {
+      "@type": "Person",
+      "name": "Zili Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Hanwen Xing"
+    },
+    {
+      "@type": "Person",
+      "name": "Arkaprava De"
+    },
+    {
+      "@type": "Person",
+      "name": "Hao Chen"
+    }
+  ],
+  "datePublished": "2026-05-17T06:37:04Z",
+  "dateModified": "2026-05-17T06:37:04Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.17281.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.17281.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.17281v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.17281"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.17281v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.17281"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +104,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ContractBench: Can LLM Agents Preserve Observation Contracts?</h1>
+        <div class="meta">
+          Jicheng Wang, Yifeng He, Zili Wang, Hanwen Xing, Arkaprava De, Hao Chen
+          · 2605.17281
+          · <time datetime="2026-05-17">2026-05-17</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Tool-augmented LLM agents call APIs whose intermediate outputs, such as presigned URLs, session tokens, and OAuth state parameters, are observation contracts: artifacts whose later use is constrained by the external system that produced them. We show that observation contract compliance (preserving the temporal validity and byte-level integrity) is an emergent, regression-prone capability: it is neither guaranteed by general tool-use ability nor consistently improved by larger or newer models. To measure this, we introduce ContractBench, a benchmark of 33 dual-axis tasks that probe two orthogonal failure modes no existing benchmark evaluates: validity failures (using an artifact after expiry) and integrity failures (corrupting an artifact&#x27;s bytes through the observation-to-action pipeline). Our evaluation is deterministic and programmatic, with a virtual clock controlling time and SHA-256 hashes verifying byte integrity. We assign each outcome a failure label drawn from real-world API specifications. We evaluate 38 models and report four findings: (i) no evaluated model clears 80%, with Claude-Opus-4.6 leading at 77.8%, revealing that current frontier models still fail to comply with observation contracts; (ii) a sharp within-family capability cliff in Qwen 3.5 between 4B (0%) and 9B (56.6%), smoothing to 70.7% at 397B-A17B: what emerges across the cliff is mid-trajectory restraint, not tool-call competence; (iii) non-monotonic scaling across the GPT-5 family: agentic post-training can erode compliance through sycophancy-driven regression; (iv) our failure taxonomy works as an actionable in-context reward signal, yielding +7.1 pp on 42 paired GPT-5.1 failures.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.17281v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.17281v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.17281" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.18548.html"><strong>STT-Arena: A More Realistic Environment for Tool-Using with Spatio-Temporal Dynamics</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.18421.html"><strong>EvoMemBench: Benchmarking Agent Memory from a Self-Evolving Perspective</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.18397.html"><strong>Duet instrumentation: An Agentic Approach to Improving Sensitivity in Cloud Service Benchmarking</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.17324.html"><strong>ASPI: Seeking Ambiguity Clarification Amplifies Prompt Injection Vulnerability in LLM Agents</strong></a> <span>2026-05-17</span></li>
+          <li><a href="2607.18261.html"><strong>When JSON Is Not Enough: Semantic Reliability of Schema-Constrained LLM Ordering Agents</strong></a> <span>2026-05-16</span></li>
+          <li><a href="2605.16679.html"><strong>CHI-Bench: Can AI Agents Automate End-to-End, Long-Horizon, Policy-Rich Healthcare Workflows?</strong></a> <span>2026-05-15</span></li>
+          <li><a href="2605.15766.html"><strong>BioXArena: Benchmarking LLM Agents on Multi-Modal Biomedical Machine Learning Tasks</strong></a> <span>2026-05-15</span></li>
+          <li><a href="2605.14678.html"><strong>$π$-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</strong></a> <span>2026-05-14</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

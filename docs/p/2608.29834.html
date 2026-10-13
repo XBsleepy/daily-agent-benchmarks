@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>You Know What I Mean: A Benchmark for Agentic Conversational Reference Grounding | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Collaborative conversations frequently contain references whose targets are indirect rather than named: resolving &quot;this looks like…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Tool use, agent benchmark, LLM agent, arXiv, 2608.29834" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.29834.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="You Know What I Mean: A Benchmark for Agentic Conversational Reference Grounding" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Collaborative conversations frequently contain references whose targets are indirect rather than named: resolving &quot;this looks like…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.29834.html" />
+    <meta property="article:published_time" content="2026-08-30T15:06:51Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="You Know What I Mean: A Benchmark for Agentic Conversational Reference Grounding" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Collaborative conversations frequently contain references whose targets are indirect rather than named: resolving &quot;this looks like…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,61 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "You Know What I Mean: A Benchmark for Agentic Conversational Reference Grounding",
+  "name": "You Know What I Mean: A Benchmark for Agentic Conversational Reference Grounding",
+  "abstract": "Collaborative conversations frequently contain references whose targets are indirect rather than named: resolving \"this looks like the fix discussed yesterday\" requires combining conversational context with evidence from the surrounding workspace which is accessible through APIs or user interfaces. We formalize this problem as Conversational Reference Grounding (CoRG): using a given set of tools to resolve a reference in conversation to the unique external item intended by the speaker. CoRG is challenging because it combines lexical, semantic, and temporal cues distributed across the conversation and the external workspace. Agents must translate these heterogeneous signals into effective tool use: formulating strategies, discovering plausible candidates, inspecting their metadata and content, and ruling out close alternatives. We study CoRG through RepoRef, a benchmark of 400 developer-chat segments grounded in GitHub issues, pull requests, and commits across 92 repositories. Unlike single-shot retrieval tasks, RepoRef often requires multi-step tool use. Our results show that CoRG remains challenging for current agents, even the best agent reaches only 67.0% success rate, leaving one third of references unresolved. These findings position CoRG as a concrete benchmark for studying how agents search, inspect, and verify information in realistic multi-tool environments.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Karen Fuchs"
+    },
+    {
+      "@type": "Person",
+      "name": "Uri Katz"
+    },
+    {
+      "@type": "Person",
+      "name": "Yoav Goldberg"
+    }
+  ],
+  "datePublished": "2026-08-30T15:06:51Z",
+  "dateModified": "2026-08-30T15:06:51Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.29834.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.29834.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.29834v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.29834"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.29834v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.29834"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +93,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>You Know What I Mean: A Benchmark for Agentic Conversational Reference Grounding</h1>
+        <div class="meta">
+          Karen Fuchs, Uri Katz, Yoav Goldberg
+          · 2608.29834
+          · <time datetime="2026-08-30">2026-08-30</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Collaborative conversations frequently contain references whose targets are indirect rather than named: resolving &quot;this looks like the fix discussed yesterday&quot; requires combining conversational context with evidence from the surrounding workspace which is accessible through APIs or user interfaces. We formalize this problem as Conversational Reference Grounding (CoRG): using a given set of tools to resolve a reference in conversation to the unique external item intended by the speaker. CoRG is challenging because it combines lexical, semantic, and temporal cues distributed across the conversation and the external workspace. Agents must translate these heterogeneous signals into effective tool use: formulating strategies, discovering plausible candidates, inspecting their metadata and content, and ruling out close alternatives. We study CoRG through RepoRef, a benchmark of 400 developer-chat segments grounded in GitHub issues, pull requests, and commits across 92 repositories. Unlike single-shot retrieval tasks, RepoRef often requires multi-step tool use. Our results show that CoRG remains challenging for current agents, even the best agent reaches only 67.0% success rate, leaving one third of references unresolved. These findings position CoRG as a concrete benchmark for studying how agents search, inspect, and verify information in realistic multi-tool environments.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.29834v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.29834v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.29834" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.04611.html"><strong>$τ^τ$-Bench: An Environment for End-To-End, Realistic Agent Construction</strong></a> <span>2026-09-04</span></li>
+          <li><a href="2609.04167.html"><strong>SWE-Gate: Passing Functional Tests Is Not Enough for Software Engineering Agents</strong></a> <span>2026-09-03</span></li>
+          <li><a href="2609.04075.html"><strong>PatchBench: Evaluating AI Agents for Vulnerability Patching</strong></a> <span>2026-09-03</span></li>
+          <li><a href="2609.01603.html"><strong>Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation</strong></a> <span>2026-09-01</span></li>
+          <li><a href="2608.23653.html"><strong>Beyond Executable Models: The Pufibara Agent Harness and the Modelica Agent Workflow Benchmark for Physical System Modeling</strong></a> <span>2026-08-24</span></li>
+          <li><a href="2608.23564.html"><strong>SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration?</strong></a> <span>2026-08-24</span></li>
+          <li><a href="2608.21833.html"><strong>GameXpert-Bench: How Far Are Coding Agents from Expert Game Development?</strong></a> <span>2026-08-22</span></li>
+          <li><a href="2608.20851.html"><strong>BC-Bench: Evaluating Agentic Engineering in a Domain-Specific Language for ERP</strong></a> <span>2026-08-21</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MemGym: a Long-Horizon Memory Environment for LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Memory is a central capability for LLM agents operating across long-horizon tasks. Existing memory benchmarks predominantly evaluate…" />
+    <meta name="keywords" content="Web &amp; browser, Web agents, Tool use, Computer use, Memory, Planning / reasoning, Dialogue / customer, agent benchmark, LLM agent, arXiv, 2605.20833" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.20833.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MemGym: a Long-Horizon Memory Environment for LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Memory is a central capability for LLM agents operating across long-horizon tasks. Existing memory benchmarks predominantly evaluate…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.20833.html" />
+    <meta property="article:published_time" content="2026-05-20T07:25:33Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MemGym: a Long-Horizon Memory Environment for LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Memory is a central capability for LLM agents operating across long-horizon tasks. Existing memory benchmarks predominantly evaluate…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,97 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MemGym: a Long-Horizon Memory Environment for LLM Agents",
+  "name": "MemGym: a Long-Horizon Memory Environment for LLM Agents",
+  "abstract": "Memory is a central capability for LLM agents operating across long-horizon tasks. Existing memory benchmarks predominantly evaluate retention of personalized information in multi-turn chat scenarios, overlooking the dynamic memory formation that occurs during extended agent execution. Consequently, the memory systems they produce transfer poorly to realistic agentic environments, such as coding and web navigation. We present MemGym, a benchmark for agentic memory that unifies existing agent gyms and in-house memory-grounded pipelines behind one memory-reasoning interface. MemGym spans five evaluation tracks grouped into four agentic regimes: tool-use dialogue (tau2-bench), multi-turn deep-research search (MEMGYM-DR), coding (SWE-Gym and MEMGYM-CODEQA), and computer use (WebArena-Infinity). MemGym reports memory-isolated scores that decouple memory performance from reasoning, retrieval, and tool-use ability, so memory strategies can be ranked without those confounders. Our synthetic pipelines for MEMGYM-CODEQA and MEMGYM-DR are length-controllable, ablation-verified at every stage, and tightly aligned with downstream scenarios. To make evaluation on coding environments academically tractable, we train MemRM, a lightweight reward model (Qwen3-1.7B fine-tuned with QLoRA) that scores compression quality as a fast scalar read in place of full Docker rollouts.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Wujiang Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yu Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Kai Mei"
+    },
+    {
+      "@type": "Person",
+      "name": "Kaiqu Liang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhenting Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Mingyu Jin"
+    },
+    {
+      "@type": "Person",
+      "name": "Han Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Shi-Xiong Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenyue Hua"
+    },
+    {
+      "@type": "Person",
+      "name": "Sambit Sahu"
+    },
+    {
+      "@type": "Person",
+      "name": "Dimitris N. Metaxas"
+    }
+  ],
+  "datePublished": "2026-05-20T07:25:33Z",
+  "dateModified": "2026-05-20T07:25:33Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.20833.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.20833.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.20833v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.20833"
+  },
+  "keywords": [
+    "Web & browser",
+    "Web agents",
+    "Tool use",
+    "Computer use",
+    "Memory",
+    "Planning / reasoning",
+    "Dialogue / customer",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Web & browser"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.20833v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.20833"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +129,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MemGym: a Long-Horizon Memory Environment for LLM Agents</h1>
+        <div class="meta">
+          Wujiang Xu, Yu Wang, Kai Mei, Kaiqu Liang, Zhenting Wang, Mingyu Jin, Han Zhang, Shi-Xiong Zhang, Wenyue Hua, Sambit Sahu, Dimitris N. Metaxas
+          · 2605.20833
+          · <time datetime="2026-05-20">2026-05-20</time>
+          · Web &amp; browser · 4 citations
+        </div>
+        <div class="themes"><span class="chip">Web agents</span><span class="chip">Tool use</span><span class="chip">Computer use</span><span class="chip">Memory</span><span class="chip">Planning / reasoning</span><span class="chip">Dialogue / customer</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Memory is a central capability for LLM agents operating across long-horizon tasks. Existing memory benchmarks predominantly evaluate retention of personalized information in multi-turn chat scenarios, overlooking the dynamic memory formation that occurs during extended agent execution. Consequently, the memory systems they produce transfer poorly to realistic agentic environments, such as coding and web navigation. We present MemGym, a benchmark for agentic memory that unifies existing agent gyms and in-house memory-grounded pipelines behind one memory-reasoning interface. MemGym spans five evaluation tracks grouped into four agentic regimes: tool-use dialogue (tau2-bench), multi-turn deep-research search (MEMGYM-DR), coding (SWE-Gym and MEMGYM-CODEQA), and computer use (WebArena-Infinity). MemGym reports memory-isolated scores that decouple memory performance from reasoning, retrieval, and tool-use ability, so memory strategies can be ranked without those confounders. Our synthetic pipelines for MEMGYM-CODEQA and MEMGYM-DR are length-controllable, ablation-verified at every stage, and tightly aligned with downstream scenarios. To make evaluation on coding environments academically tractable, we train MemRM, a lightweight reward model (Qwen3-1.7B fine-tuned with QLoRA) that scores compression quality as a fast scalar read in place of full Docker rollouts.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.20833v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.20833v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.20833" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Web &amp; browser benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.05342.html"><strong>SentinelBench: A Benchmark for Long-Running Monitoring Agents</strong></a> <span>2026-06-03</span></li>
+          <li><a href="2607.20482.html"><strong>PersonaTrail: Benchmarking Personalized Web Agents through Browsing Trails</strong></a> <span>2026-05-30</span></li>
+          <li><a href="2606.00497.html"><strong>&quot;I Strongly Suspect This Website Is a Scam&quot;: Benchmarking PII Leakage and Detection without Defense in Autonomous Web Agents</strong></a> <span>2026-05-30</span></li>
+          <li><a href="2605.22564.html"><strong>SynAE: A Framework for Measuring the Quality of Synthetic Data for Tool-Calling Agent Evaluations</strong></a> <span>2026-05-21</span></li>
+          <li><a href="2605.16116.html"><strong>ShopGym: An Integrated Framework for Realistic Simulation and Scalable Benchmarking of E-Commerce Web Agents</strong></a> <span>2026-05-15</span></li>
+          <li><a href="2605.09497.html"><strong>Don&#x27;t Click That: Teaching Web Agents to Resist Deceptive Interfaces</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2604.24964.html"><strong>Odysseys: Benchmarking Web Agents on Realistic Long Horizon Tasks</strong></a> <span>2026-04-27</span></li>
+          <li><a href="2606.13686.html"><strong>Benchmarking Web Agent Safety under E-commerce Deceptive Interfaces</strong></a> <span>2026-04-26</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

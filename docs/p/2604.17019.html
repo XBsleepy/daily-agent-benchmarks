@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Mini-BEHAVIOR-Gran: Revealing U-Shaped Effects of Instruction Granularity on Language-Guided Embodied Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Instruction granularity is an important yet poorly controlled variable in language-guided embodied AI. Existing benchmarks typically…" />
+    <meta name="keywords" content="Embodied / robotics, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2604.17019" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.17019.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Mini-BEHAVIOR-Gran: Revealing U-Shaped Effects of Instruction Granularity on Language-Guided Embodied Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Instruction granularity is an important yet poorly controlled variable in language-guided embodied AI. Existing benchmarks typically…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.17019.html" />
+    <meta property="article:published_time" content="2026-04-18T14:57:51Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Mini-BEHAVIOR-Gran: Revealing U-Shaped Effects of Instruction Granularity on Language-Guided Embodied Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Instruction granularity is an important yet poorly controlled variable in language-guided embodied AI. Existing benchmarks typically…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,76 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Mini-BEHAVIOR-Gran: Revealing U-Shaped Effects of Instruction Granularity on Language-Guided Embodied Agents",
+  "name": "Mini-BEHAVIOR-Gran: Revealing U-Shaped Effects of Instruction Granularity on Language-Guided Embodied Agents",
+  "abstract": "Instruction granularity is an important yet poorly controlled variable in language-guided embodied AI. Existing benchmarks typically pair each task with a single static instruction, making it difficult to study how agent behavior changes when the same task is described at different levels of detail. We introduce Mini-BEHAVIOR-Gran, a new benchmark for controlled studies of instruction granularity that extends Mini-BEHAVIOR with multiple instruction variants per task, ranging from high-level goal descriptions to step-by-step guidance. Using this benchmark, we compare four candidate metrics for cross-task granularity quantification: token count, entity count, action-verb count, and planning-width, and find that width correlates most consistently with agent performance. Using width to organize training and evaluation further reveals a non-monotonic U-shaped relationship between instruction granularity and performance, with peaks at both fine and coarse extremes. Further analysis suggests that the coarse-granularity performance rebound is associated with shallow grounding, where agents learn vision-dominant policies.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Sukai Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chenyuan Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Fucai Ke"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhixi Cai"
+    },
+    {
+      "@type": "Person",
+      "name": "Gholamreza Haffari"
+    },
+    {
+      "@type": "Person",
+      "name": "Lizhen Qu"
+    },
+    {
+      "@type": "Person",
+      "name": "Hamid Rezatofighi"
+    }
+  ],
+  "datePublished": "2026-04-18T14:57:51Z",
+  "dateModified": "2026-04-18T14:57:51Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.17019.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.17019.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.17019v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2604.17019"
+  },
+  "keywords": [
+    "Embodied / robotics",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Embodied / robotics"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2604.17019v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2604.17019"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +108,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Mini-BEHAVIOR-Gran: Revealing U-Shaped Effects of Instruction Granularity on Language-Guided Embodied Agents</h1>
+        <div class="meta">
+          Sukai Huang, Chenyuan Zhang, Fucai Ke, Zhixi Cai, Gholamreza Haffari, Lizhen Qu, Hamid Rezatofighi
+          · 2604.17019
+          · <time datetime="2026-04-18">2026-04-18</time>
+          · Embodied / robotics
+        </div>
+        <div class="themes"><span class="chip">Embodied / robotics</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Instruction granularity is an important yet poorly controlled variable in language-guided embodied AI. Existing benchmarks typically pair each task with a single static instruction, making it difficult to study how agent behavior changes when the same task is described at different levels of detail. We introduce Mini-BEHAVIOR-Gran, a new benchmark for controlled studies of instruction granularity that extends Mini-BEHAVIOR with multiple instruction variants per task, ranging from high-level goal descriptions to step-by-step guidance. Using this benchmark, we compare four candidate metrics for cross-task granularity quantification: token count, entity count, action-verb count, and planning-width, and find that width correlates most consistently with agent performance. Using width to organize training and evaluation further reveals a non-monotonic U-shaped relationship between instruction granularity and performance, with peaks at both fine and coarse extremes. Further analysis suggests that the coarse-granularity performance rebound is associated with shallow grounding, where agents learn vision-dominant policies.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2604.17019v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2604.17019v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2604.17019" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Embodied / robotics benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.14504.html"><strong>When Robots Do the Chores: A Benchmark and Agent for Long-Horizon Household Task Execution</strong></a> <span>2026-05-14</span></li>
+          <li><a href="2605.09874.html"><strong>EgoMemReason: A Memory-Driven Reasoning Benchmark for Long-Horizon Egocentric Video Understanding</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2605.09826.html"><strong>EnactToM: An Evolving Benchmark for Functional Theory of Mind in Embodied Agents</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2605.01371.html"><strong>ESARBench: A Benchmark for Agentic UAV Embodied Search and Rescue</strong></a> <span>2026-05-02</span></li>
+          <li><a href="2604.27445.html"><strong>Context as Prior: Bayesian-Inspired Intent Inference for Non-Speaking Agents with a Household Cat Testbed</strong></a> <span>2026-04-30</span></li>
+          <li><a href="2603.23840.html"><strong>VehicleMemBench: An Executable Benchmark for Multi-User Long-Term Memory in In-Vehicle Agents</strong></a> <span>2026-03-25</span></li>
+          <li><a href="2603.11975.html"><strong>HomeSafe-Bench: Evaluating Vision-Language Models on Unsafe Action Detection for Embodied Agents in Household Scenarios</strong></a> <span>2026-03-12</span></li>
+          <li><a href="2601.21570.html"><strong>From Digital to Physical: Digital Agents as Autonomous Coaches for Physical Intelligence</strong></a> <span>2026-01-29</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

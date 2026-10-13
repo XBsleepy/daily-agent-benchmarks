@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Confirming Correct, Missing the Rest: LLM Tutoring Agents Struggle Where Feedback Matters Most | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Effective tutoring requires distinguishing optimal, valid but suboptimal, and incorrect student solutions, a distinction central to…" />
+    <meta name="keywords" content="Dialogue, Planning / reasoning, Dialogue / customer, agent benchmark, LLM agent, arXiv, 2605.16207" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.16207.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Confirming Correct, Missing the Rest: LLM Tutoring Agents Struggle Where Feedback Matters Most" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Effective tutoring requires distinguishing optimal, valid but suboptimal, and incorrect student solutions, a distinction central to…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.16207.html" />
+    <meta property="article:published_time" content="2026-05-15T17:24:42Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Confirming Correct, Missing the Rest: LLM Tutoring Agents Struggle Where Feedback Matters Most" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Effective tutoring requires distinguishing optimal, valid but suboptimal, and incorrect student solutions, a distinction central to…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,73 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Confirming Correct, Missing the Rest: LLM Tutoring Agents Struggle Where Feedback Matters Most",
+  "name": "Confirming Correct, Missing the Rest: LLM Tutoring Agents Struggle Where Feedback Matters Most",
+  "abstract": "Effective tutoring requires distinguishing optimal, valid but suboptimal, and incorrect student solutions, a distinction central to intelligent tutoring systems (ITS) but untested for LLM-based tutors. As LLMs are increasingly explored as conversational complements to ITS, evaluating their diagnostic precision is essential. We present a benchmark of seven LLM feedback agents in propositional logic using knowledge-graph-derived ground truth across 10,836 solution--feedback pairs and three feedback conditions. Models achieved near-ceiling performance on optimal steps but systematically over-rejected valid but suboptimal reasoning and over-validated incorrect solutions, precisely where adaptive tutoring matters most. These failures persisted across models regardless of solution context, suggesting architectural rather than informational limits. Moreover, accurate diagnosis did not reliably produce pedagogically actionable feedback, revealing a gap between diagnostic judgment and instructional effectiveness. Our findings suggest that LLMs are better suited for hybrid architectures where KG-grounded models handle diagnosis while LLMs support open-ended scaffolding and dialogue.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Tahreem Yasir"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenbo Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Sam Gilson"
+    },
+    {
+      "@type": "Person",
+      "name": "Sutapa Dey Tithi"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaoyi Tian"
+    },
+    {
+      "@type": "Person",
+      "name": "Tiffany Barnes"
+    }
+  ],
+  "datePublished": "2026-05-15T17:24:42Z",
+  "dateModified": "2026-05-15T17:24:42Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.16207.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.16207.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.16207v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.16207"
+  },
+  "keywords": [
+    "Dialogue",
+    "Planning / reasoning",
+    "Dialogue / customer",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Dialogue"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.16207v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.16207"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +105,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Confirming Correct, Missing the Rest: LLM Tutoring Agents Struggle Where Feedback Matters Most</h1>
+        <div class="meta">
+          Tahreem Yasir, Wenbo Li, Sam Gilson, Sutapa Dey Tithi, Xiaoyi Tian, Tiffany Barnes
+          · 2605.16207
+          · <time datetime="2026-05-15">2026-05-15</time>
+          · Dialogue
+        </div>
+        <div class="themes"><span class="chip">Planning / reasoning</span><span class="chip">Dialogue / customer</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Effective tutoring requires distinguishing optimal, valid but suboptimal, and incorrect student solutions, a distinction central to intelligent tutoring systems (ITS) but untested for LLM-based tutors. As LLMs are increasingly explored as conversational complements to ITS, evaluating their diagnostic precision is essential. We present a benchmark of seven LLM feedback agents in propositional logic using knowledge-graph-derived ground truth across 10,836 solution--feedback pairs and three feedback conditions. Models achieved near-ceiling performance on optimal steps but systematically over-rejected valid but suboptimal reasoning and over-validated incorrect solutions, precisely where adaptive tutoring matters most. These failures persisted across models regardless of solution context, suggesting architectural rather than informational limits. Moreover, accurate diagnosis did not reliably produce pedagogically actionable feedback, revealing a gap between diagnostic judgment and instructional effectiveness. Our findings suggest that LLMs are better suited for hybrid architectures where KG-grounded models handle diagnosis while LLMs support open-ended scaffolding and dialogue.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.16207v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.16207v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.16207" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Dialogue benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.25200.html"><strong>GroupTravelBench: Benchmarking LLM Agents on Multi-Person Travel Planning</strong></a> <span>2026-05-24</span></li>
+          <li><a href="2608.02613.html"><strong>MemArena: An Ego-Centric Benchmark for On-Device Agentic Personal Memory Assistants at Scale</strong></a> <span>2026-05-20</span></li>
+          <li><a href="2605.19099.html"><strong>DecisionBench: A Benchmark for Emergent Delegation in Long-Horizon Agentic Workflows</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.18565.html"><strong>MINTEval: Evaluating Memory under Multi-Target Interference in Long-Horizon Agent Systems</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2604.18356.html"><strong>ComPASS: Towards Personalized Agentic Social Support via Tool-Augmented Companionship</strong></a> <span>2026-04-20</span></li>
+          <li><a href="2604.01576.html"><strong>Care-Conditioned Neuromodulation for Autonomy-Preserving Supportive Dialogue Agents</strong></a> <span>2026-04-02</span></li>
+          <li><a href="2603.28569.html"><strong>CirrusBench: Evaluating LLM-based Agents Beyond Correctness in Real-World Cloud Service Environments</strong></a> <span>2026-03-30</span></li>
+          <li><a href="2603.25821.html"><strong>Doctorina MedBench: A Dialogue-Based Benchmark and Evaluation Framework for Agent-Based Medical AI</strong></a> <span>2026-03-26</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

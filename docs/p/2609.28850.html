@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>RECLAIM: Can Agents Reproduce the Claims of Machine Learning Papers? | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Reproducing a machine learning paper involves most research steps, from installing software and debugging to running experiments…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2609.28850" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.28850.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="RECLAIM: Can Agents Reproduce the Claims of Machine Learning Papers?" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Reproducing a machine learning paper involves most research steps, from installing software and debugging to running experiments…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.28850.html" />
+    <meta property="article:published_time" content="2026-09-25T04:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="RECLAIM: Can Agents Reproduce the Claims of Machine Learning Papers?" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Reproducing a machine learning paper involves most research steps, from installing software and debugging to running experiments…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,51 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "RECLAIM: Can Agents Reproduce the Claims of Machine Learning Papers?",
+  "name": "RECLAIM: Can Agents Reproduce the Claims of Machine Learning Papers?",
+  "abstract": "Reproducing a machine learning paper involves most research steps, from installing software and debugging to running experiments, work that AI agents increasingly do. We introduce RECLAIM, a benchmark of 100 NeurIPS 2025 papers that can be rebuilt yearly from new conferences. For each paper we fix in advance the result to reproduce, what counts as a successful reproduction, and a GPU-hour budget. An agent must reproduce that result using the paper and whatever its authors released. What the authors released decides the difficulty tier. Run-tier releases include code, data, and weights; Retrain-tier releases lack weights, so the agent trains the model; Reimplement-tier releases lack code, so the agent writes it. A separate language model grades runs from logs and outputs rather than agents' reports. We run four agents once per paper; the best agent in each tier reproduces only 41% of Run-tier papers, 27% at Retrain, and 15% at Reimplement, where every agent does worst. Failed attempts use on average 29% of their budget, so most stop with budget left. The most common agent error is writing the method without checking any part against the paper's numbers, in 63 of 400 runs.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Mithil Salunkhe, Haochen Ding, Samridhi Verma, Volodymyr Kindratenko"
+    }
+  ],
+  "datePublished": "2026-09-25T04:00:00Z",
+  "dateModified": "2026-09-25T04:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.28850.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.28850.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.28850"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.28850"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.28850"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.28850"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +83,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>RECLAIM: Can Agents Reproduce the Claims of Machine Learning Papers?</h1>
+        <div class="meta">
+          Mithil Salunkhe, Haochen Ding, Samridhi Verma, Volodymyr Kindratenko
+          · 2609.28850
+          · <time datetime="2026-09-25">2026-09-25</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Reproducing a machine learning paper involves most research steps, from installing software and debugging to running experiments, work that AI agents increasingly do. We introduce RECLAIM, a benchmark of 100 NeurIPS 2025 papers that can be rebuilt yearly from new conferences. For each paper we fix in advance the result to reproduce, what counts as a successful reproduction, and a GPU-hour budget. An agent must reproduce that result using the paper and whatever its authors released. What the authors released decides the difficulty tier. Run-tier releases include code, data, and weights; Retrain-tier releases lack weights, so the agent trains the model; Reimplement-tier releases lack code, so the agent writes it. A separate language model grades runs from logs and outputs rather than agents&#x27; reports. We run four agents once per paper; the best agent in each tier reproduces only 41% of Run-tier papers, 27% at Retrain, and 15% at Reimplement, where every agent does worst. Failed attempts use on average 29% of their budget, so most stop with budget left. The most common agent error is writing the method without checking any part against the paper&#x27;s numbers, in 63 of 400 runs.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.28850" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.28850" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.28850" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.33980.html"><strong>DynGraphAgentBench: A Benchmark for Agentic Lifecycle Control in Dynamic Graph Anomaly Detection</strong></a> <span>2026-09-27</span></li>
+          <li><a href="2609.33627.html"><strong>StoryEngine: A State-Grounded Agentic Framework for Video Storytelling</strong></a> <span>2026-09-27</span></li>
+          <li><a href="2609.33023.html"><strong>SRE-Marathon: A Continuous, Change-Driven Benchmark for Autonomous Site Reliability Agents</strong></a> <span>2026-09-26</span></li>
+          <li><a href="2609.32795.html"><strong>AgentHabit: Characterizing Distinct Behaviors of Agents on Everyday Tasks</strong></a> <span>2026-09-26</span></li>
+          <li><a href="2609.26826.html"><strong>What Makes a Terminal-Bench Task Hard? Separating Genuine Hardness from Fake-Hardness on an Adjudicated Agentic Corpus</strong></a> <span>2026-09-24</span></li>
+          <li><a href="2609.25237.html"><strong>Trains but Doesn&#x27;t Learn: A Post-Training Delivery Benchmark for LLM Agents as Forward-Deployed Engineers</strong></a> <span>2026-09-23</span></li>
+          <li><a href="2609.24971.html"><strong>DolphinBench: Mapping the Pareto Frontier of Agent Memory</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.23989.html"><strong>ACLArena: Agent Continue Learning in Multi-stage Post-training</strong></a> <span>2026-09-22</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

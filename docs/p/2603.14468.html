@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>LongVidSearch: An Agentic Benchmark for Multi-hop Evidence Retrieval Planning in Long Videos | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Long video question answering (Long-Video QA) increasingly relies on agentic tool use to retrieve evidence from long videos. In…" />
+    <meta name="keywords" content="General, Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2603.14468" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.14468.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="LongVidSearch: An Agentic Benchmark for Multi-hop Evidence Retrieval Planning in Long Videos" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Long video question answering (Long-Video QA) increasingly relies on agentic tool use to retrieve evidence from long videos. In…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.14468.html" />
+    <meta property="article:published_time" content="2026-03-15T16:20:23Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="LongVidSearch: An Agentic Benchmark for Multi-hop Evidence Retrieval Planning in Long Videos" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Long video question answering (Long-Video QA) increasingly relies on agentic tool use to retrieve evidence from long videos. In…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,61 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "LongVidSearch: An Agentic Benchmark for Multi-hop Evidence Retrieval Planning in Long Videos",
+  "name": "LongVidSearch: An Agentic Benchmark for Multi-hop Evidence Retrieval Planning in Long Videos",
+  "abstract": "Long video question answering (Long-Video QA) increasingly relies on agentic tool use to retrieve evidence from long videos. In realistic settings, this process often requires multi-hop retrieval, where agents must iteratively gather multiple discontinuous evidence clips. However, existing long-video benchmarks are largely static: they rarely enforce strict multi-hop retrieval and typically lack a standardized evidence-access interface, making it difficult to separate failures in retrieval planning from those in answer generation. To address this gap, we introduce LongVidSearch, a benchmark for evaluating agentic multi-hop evidence retrieval planning in long videos under standardized access constraints. LongVidSearch enforces retrieval necessity: a Hop-k question requires exactly k necessary evidence clips, and removing any single clip renders the question unsolvable. The benchmark contains 3,000 questions over 447 long videos (average length 26 minutes), covering four reasoning categories: State Mutation, Causal Inference, Global Summary, and Visual Tracking, with 2-hop, 3-hop, and 4-hop evidence requirements. To ensure fair and controlled evaluation, all agents interact with LongVidSearch through a unified tool interface, which fixes the retrieval backend and isolates the agent's ability to formulate queries and plan iterative retrieval. In addition to answer accuracy, we measure tool-call cost to analyze the accuracy-efficiency trade-off under identical access conditions. We evaluate VideoAgent-style QA agents with multiple backbone LLMs using three-judge majority voting. GPT-5 achieves the highest accuracy (42.43), outperforming Gemini 3 Pro (30.97) and GPT-4o (19.20), yet remaining below 50 %, highlighting the difficulty of multi-hop retrieval planning. With gold evidence clips, performance becomes near-perfect, confirming retrieval planning as the primary bottleneck.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Rongyi Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Chenyuan Duan"
+    },
+    {
+      "@type": "Person",
+      "name": "Wentao Zhang"
+    }
+  ],
+  "datePublished": "2026-03-15T16:20:23Z",
+  "dateModified": "2026-03-15T16:20:23Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.14468.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.14468.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2603.14468v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2603.14468"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2603.14468v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2603.14468"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +93,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>LongVidSearch: An Agentic Benchmark for Multi-hop Evidence Retrieval Planning in Long Videos</h1>
+        <div class="meta">
+          Rongyi Yu, Chenyuan Duan, Wentao Zhang
+          · 2603.14468
+          · <time datetime="2026-03-15">2026-03-15</time>
+          · General · 3 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Long video question answering (Long-Video QA) increasingly relies on agentic tool use to retrieve evidence from long videos. In realistic settings, this process often requires multi-hop retrieval, where agents must iteratively gather multiple discontinuous evidence clips. However, existing long-video benchmarks are largely static: they rarely enforce strict multi-hop retrieval and typically lack a standardized evidence-access interface, making it difficult to separate failures in retrieval planning from those in answer generation. To address this gap, we introduce LongVidSearch, a benchmark for evaluating agentic multi-hop evidence retrieval planning in long videos under standardized access constraints. LongVidSearch enforces retrieval necessity: a Hop-k question requires exactly k necessary evidence clips, and removing any single clip renders the question unsolvable. The benchmark contains 3,000 questions over 447 long videos (average length 26 minutes), covering four reasoning categories: State Mutation, Causal Inference, Global Summary, and Visual Tracking, with 2-hop, 3-hop, and 4-hop evidence requirements. To ensure fair and controlled evaluation, all agents interact with LongVidSearch through a unified tool interface, which fixes the retrieval backend and isolates the agent&#x27;s ability to formulate queries and plan iterative retrieval. In addition to answer accuracy, we measure tool-call cost to analyze the accuracy-efficiency trade-off under identical access conditions. We evaluate VideoAgent-style QA agents with multiple backbone LLMs using three-judge majority voting. GPT-5 achieves the highest accuracy (42.43), outperforming Gemini 3 Pro (30.97) and GPT-4o (19.20), yet remaining below 50 %, highlighting the difficulty of multi-hop retrieval planning. With gold evidence clips, performance becomes near-perfect, confirming retrieval planning as the primary bottleneck.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2603.14468v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2603.14468v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2603.14468" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2603.16453.html"><strong>RetailBench: Evaluating Long-Horizon Autonomous Decision-Making and Strategy Stability of LLM Agents in Realistic Retail Environments</strong></a> <span>2026-03-17</span></li>
+          <li><a href="2604.06209.html"><strong>TelcoAgent-Bench: A Multilingual Benchmark for Telecom AI Agents</strong></a> <span>2026-03-16</span></li>
+          <li><a href="2603.15798.html"><strong>CUBE: A Standard for Unifying Agent Benchmarks</strong></a> <span>2026-03-16</span></li>
+          <li><a href="2603.14864.html"><strong>Shopping Companion: Benchmarking and Training LLM Agents for Long-Horizon Preference-Grounded E-Commerce Tasks</strong></a> <span>2026-03-16</span></li>
+          <li><a href="2603.14465.html"><strong>AgentProcessBench: Diagnosing Step-Level Process Quality in Tool-Using Agents</strong></a> <span>2026-03-15</span></li>
+          <li><a href="2603.13686.html"><strong>$τ$-Voice: Benchmarking Full-Duplex Voice Agents on Real-World Domains</strong></a> <span>2026-03-14</span></li>
+          <li><a href="2603.13517.html"><strong>CTI-REALM: Benchmark to Evaluate Agent Performance on Security Detection Rule Generation Capabilities</strong></a> <span>2026-03-13</span></li>
+          <li><a href="2603.11721.html"><strong>When OpenClaw Meets Hospital: Toward an Agentic Operating System for Dynamic Clinical Workflows</strong></a> <span>2026-03-12</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

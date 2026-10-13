@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ACLArena: Agent Continue Learning in Multi-stage Post-training | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Building general-purpose agents for industrial deployment requires integrating multiple capabilities, each typically acquired at a…" />
+    <meta name="keywords" content="General, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2609.23989" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.23989.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ACLArena: Agent Continue Learning in Multi-stage Post-training" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Building general-purpose agents for industrial deployment requires integrating multiple capabilities, each typically acquired at a…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.23989.html" />
+    <meta property="article:published_time" content="2026-09-22T04:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ACLArena: Agent Continue Learning in Multi-stage Post-training" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Building general-purpose agents for industrial deployment requires integrating multiple capabilities, each typically acquired at a…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,52 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ACLArena: Agent Continue Learning in Multi-stage Post-training",
+  "name": "ACLArena: Agent Continue Learning in Multi-stage Post-training",
+  "abstract": "Building general-purpose agents for industrial deployment requires integrating multiple capabilities, each typically acquired at a distinct stage of training. Yet there is currently no well-established recipe for Agent Continual Learning (ACL), with little understanding of the trade-offs among existing integration paradigms. To address this gap, we introduce ACLArena, a framework for comprehensively studying, analyzing, and evaluating ACL. We first build a sequential training pipeline and conduct an in-depth analysis that explains the mechanisms of forgetting and generalization from two complementary perspectives, the model level and the token level. Guided by these analyses, we systematically compare multi-teacher on-policy distillation, self-distilled fine-tuning, and model merging to assess their ability to recover previously learned capabilities while preserving newly acquired ones. Through extensive experiments, we develop a detailed understanding of how capabilities transfer across stages. Finally, we propose a new ACL recipe that combines offline replay over high-quality trajectories with a routed network of multiple LoRA experts each specialized via RL, substantially improving the agent's ability to learn across multiple domains. Comprehensive experiments on four reasoning and agentic tasks, evaluated under both in-domain and out-of-domain settings, demonstrate the value of our analysis and the effectiveness of our approach.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Haixin Wang, Xiaoxuan Wang, Junkai Zhang, Han Zhang, Renliang Sun, Alexander K Taylor, Yidan Shi, Haoran Deng, Chenguang Wang, Jason Cong, Yizhou Sun, Wei Wang"
+    }
+  ],
+  "datePublished": "2026-09-22T04:00:00Z",
+  "dateModified": "2026-09-22T04:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.23989.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.23989.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.23989"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.23989"
+  },
+  "keywords": [
+    "General",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.23989"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.23989"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +84,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ACLArena: Agent Continue Learning in Multi-stage Post-training</h1>
+        <div class="meta">
+          Haixin Wang, Xiaoxuan Wang, Junkai Zhang, Han Zhang, Renliang Sun, Alexander K Taylor, Yidan Shi, Haoran Deng, Chenguang Wang, Jason Cong, Yizhou Sun, Wei Wang
+          · 2609.23989
+          · <time datetime="2026-09-22">2026-09-22</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Building general-purpose agents for industrial deployment requires integrating multiple capabilities, each typically acquired at a distinct stage of training. Yet there is currently no well-established recipe for Agent Continual Learning (ACL), with little understanding of the trade-offs among existing integration paradigms. To address this gap, we introduce ACLArena, a framework for comprehensively studying, analyzing, and evaluating ACL. We first build a sequential training pipeline and conduct an in-depth analysis that explains the mechanisms of forgetting and generalization from two complementary perspectives, the model level and the token level. Guided by these analyses, we systematically compare multi-teacher on-policy distillation, self-distilled fine-tuning, and model merging to assess their ability to recover previously learned capabilities while preserving newly acquired ones. Through extensive experiments, we develop a detailed understanding of how capabilities transfer across stages. Finally, we propose a new ACL recipe that combines offline replay over high-quality trajectories with a routed network of multiple LoRA experts each specialized via RL, substantially improving the agent&#x27;s ability to learn across multiple domains. Comprehensive experiments on four reasoning and agentic tasks, evaluated under both in-domain and out-of-domain settings, demonstrate the value of our analysis and the effectiveness of our approach.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.23989" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.23989" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.23989" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.28850.html"><strong>RECLAIM: Can Agents Reproduce the Claims of Machine Learning Papers?</strong></a> <span>2026-09-25</span></li>
+          <li><a href="2609.26826.html"><strong>What Makes a Terminal-Bench Task Hard? Separating Genuine Hardness from Fake-Hardness on an Adjudicated Agentic Corpus</strong></a> <span>2026-09-24</span></li>
+          <li><a href="2609.25237.html"><strong>Trains but Doesn&#x27;t Learn: A Post-Training Delivery Benchmark for LLM Agents as Forward-Deployed Engineers</strong></a> <span>2026-09-23</span></li>
+          <li><a href="2609.24971.html"><strong>DolphinBench: Mapping the Pareto Frontier of Agent Memory</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.21267.html"><strong>Efficient Benchmarking in Production: A Study of an Evolving LLM Agent</strong></a> <span>2026-09-21</span></li>
+          <li><a href="2609.18123.html"><strong>AutoTuneBench: Trustworthy Measurement for Agent Auto-Tuning of LLM Serving Engines</strong></a> <span>2026-09-17</span></li>
+          <li><a href="2609.13637.html"><strong>Identity Is More Than Recall: A Benchmark for Persistent Identity in Deployed AI Agents</strong></a> <span>2026-09-15</span></li>
+          <li><a href="2609.13076.html"><strong>MP-Bench: Evaluating Voice Agents as a Multiparty Conversation Participant</strong></a> <span>2026-09-11</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

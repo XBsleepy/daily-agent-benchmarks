@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ClawArena-Team: Benchmarking Subagent Orchestration and Dynamic Workflows in Language-Model Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Production large language-model (LLM) agents are increasingly deployed not as lone problem-solvers but as managers: a main model…" />
+    <meta name="keywords" content="Multi-agent, Multimodal, Science lab, agent benchmark, LLM agent, arXiv, 2606.31174" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.31174.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ClawArena-Team: Benchmarking Subagent Orchestration and Dynamic Workflows in Language-Model Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Production large language-model (LLM) agents are increasingly deployed not as lone problem-solvers but as managers: a main model…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.31174.html" />
+    <meta property="article:published_time" content="2026-06-30T06:06:08Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ClawArena-Team: Benchmarking Subagent Orchestration and Dynamic Workflows in Language-Model Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Production large language-model (LLM) agents are increasingly deployed not as lone problem-solvers but as managers: a main model…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,77 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ClawArena-Team: Benchmarking Subagent Orchestration and Dynamic Workflows in Language-Model Agents",
+  "name": "ClawArena-Team: Benchmarking Subagent Orchestration and Dynamic Workflows in Language-Model Agents",
+  "abstract": "Production large language-model (LLM) agents are increasingly deployed not as lone problem-solvers but as managers: a main model creates specialized subagents, delegates work, and orchestrates their parallel, asynchronous returns through dynamic workflows. Whether one model can actually run such a team is largely unmeasured: existing benchmarks score a policy's own task-solving or a fixed multi-agent system's emergent behavior, but none isolate the management ability of the single LLM acting as leader. We introduce ClawArena-Team, a benchmark of 41 multi-turn, multimodal, multi-directory scenarios spanning 258 evaluation rounds and 72 staged updates that measures this management ability. The main agent is deliberately constrained: it natively perceives only text and directly accesses only part of the workspace. It commands a fixed, locally served subagent pool, so score differences reflect management skill, not raw capability. All scoring is execution-based with no LLM judge: an overall score -- the Subagent-Management Score (SMS) -- multiplies task correctness by a least-privilege and modality-routing factor. Across twelve proprietary, community-hosted, and self-hosted models, experiments show that the management bottleneck is privilege granting rather than perception (no model exceeds 50% workspace-permission precision); that cost and management quality are decoupled (API cost spans over 100 times while the overall score spans under 4 times, with the cheapest open models on the Pareto frontier); and that most leaderboard scores cluster within a 9.9-point band while orchestration behaviors diverge by more than an order of magnitude. Code is available at https://github.com/aiming-lab/ClawArena.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Kaiwen Xiong"
+    },
+    {
+      "@type": "Person",
+      "name": "Haonian Ji"
+    },
+    {
+      "@type": "Person",
+      "name": "Shi Qiu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zeyu Zheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Cihang Xie"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinyu Ye"
+    },
+    {
+      "@type": "Person",
+      "name": "Huaxiu Yao"
+    }
+  ],
+  "datePublished": "2026-06-30T06:06:08Z",
+  "dateModified": "2026-07-02T07:39:52Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.31174.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.31174.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.31174v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.31174"
+  },
+  "keywords": [
+    "Multi-agent",
+    "Multimodal",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multi-agent"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.31174v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.31174"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +109,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ClawArena-Team: Benchmarking Subagent Orchestration and Dynamic Workflows in Language-Model Agents</h1>
+        <div class="meta">
+          Kaiwen Xiong, Haonian Ji, Shi Qiu, Zeyu Zheng, Cihang Xie, Xinyu Ye, Huaxiu Yao
+          · 2606.31174
+          · <time datetime="2026-06-30">2026-06-30</time>
+          · Multi-agent
+        </div>
+        <div class="themes"><span class="chip">Multi-agent</span><span class="chip">Multimodal</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Production large language-model (LLM) agents are increasingly deployed not as lone problem-solvers but as managers: a main model creates specialized subagents, delegates work, and orchestrates their parallel, asynchronous returns through dynamic workflows. Whether one model can actually run such a team is largely unmeasured: existing benchmarks score a policy&#x27;s own task-solving or a fixed multi-agent system&#x27;s emergent behavior, but none isolate the management ability of the single LLM acting as leader. We introduce ClawArena-Team, a benchmark of 41 multi-turn, multimodal, multi-directory scenarios spanning 258 evaluation rounds and 72 staged updates that measures this management ability. The main agent is deliberately constrained: it natively perceives only text and directly accesses only part of the workspace. It commands a fixed, locally served subagent pool, so score differences reflect management skill, not raw capability. All scoring is execution-based with no LLM judge: an overall score -- the Subagent-Management Score (SMS) -- multiplies task correctness by a least-privilege and modality-routing factor. Across twelve proprietary, community-hosted, and self-hosted models, experiments show that the management bottleneck is privilege granting rather than perception (no model exceeds 50% workspace-permission precision); that cost and management quality are decoupled (API cost spans over 100 times while the overall score spans under 4 times, with the cheapest open models on the Pareto frontier); and that most leaderboard scores cluster within a 9.9-point band while orchestration behaviors diverge by more than an order of magnitude. Code is available at https://github.com/aiming-lab/ClawArena.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.31174v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.31174v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.31174" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multi-agent benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.25656.html"><strong>OrchBench: Evaluating Multi-Agent Orchestration Plans in Isolation via Deterministic Simulation</strong></a> <span>2026-07-28</span></li>
+          <li><a href="2607.15434.html"><strong>Coercion and Deception in AI-to-AI Management: An Agentic Benchmark of Unprompted Escalation</strong></a> <span>2026-07-16</span></li>
+          <li><a href="2607.01766.html"><strong>SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation</strong></a> <span>2026-07-02</span></li>
+          <li><a href="2607.00547.html"><strong>EgoGapBench: Benchmarking Egocentric Action Selection in Multi-Agent Scenes</strong></a> <span>2026-07-01</span></li>
+          <li><a href="2608.20381.html"><strong>EditPPT: Faithful Long-Deck Slide Editing via Structured Tool-Using Multi-Agent with Dual-Modal Validators</strong></a> <span>2026-06-29</span></li>
+          <li><a href="2606.28757.html"><strong>A Physics-Grounded Benchmark for Multi-Agent Dynamics in World Models</strong></a> <span>2026-06-27</span></li>
+          <li><a href="2606.23664.html"><strong>MAS-PromptBench: When Does Prompt Optimization Improve Multi-Agent LLM Systems?</strong></a> <span>2026-06-22</span></li>
+          <li><a href="2606.18648.html"><strong>Deep Research in Physical Sciences: A Multi-Agent Framework and Comprehensive Benchmark</strong></a> <span>2026-06-17</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

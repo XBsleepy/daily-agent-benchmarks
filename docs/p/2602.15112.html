@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ResearchGym: Evaluating Language Model Agents on Real-World AI Research | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: We introduce ResearchGym, a benchmark and execution environment for evaluating AI agents on end-to-end research. To instantiate this…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2602.15112" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.15112.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ResearchGym: Evaluating Language Model Agents on Real-World AI Research" />
+    <meta property="og:description" content="Daily Agent Benchmarks: We introduce ResearchGym, a benchmark and execution environment for evaluating AI agents on end-to-end research. To instantiate this…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.15112.html" />
+    <meta property="article:published_time" content="2026-02-16T19:00:03Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ResearchGym: Evaluating Language Model Agents on Real-World AI Research" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: We introduce ResearchGym, a benchmark and execution environment for evaluating AI agents on end-to-end research. To instantiate this…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,60 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ResearchGym: Evaluating Language Model Agents on Real-World AI Research",
+  "name": "ResearchGym: Evaluating Language Model Agents on Real-World AI Research",
+  "abstract": "We introduce ResearchGym, a benchmark and execution environment for evaluating AI agents on end-to-end research. To instantiate this, we repurpose five oral and spotlight papers from ICML, ICLR, and ACL. From each paper's repository, we preserve the datasets, evaluation harness, and baseline implementations but withhold the paper's proposed method. This results in five containerized task environments comprising 39 sub-tasks in total. Within each environment, agents must propose novel hypotheses, run experiments, and attempt to surpass strong human baselines on the paper's metrics. In a controlled evaluation of an agent powered by GPT-5, we observe a sharp capability--reliability gap. The agent improves over the provided baselines from the repository in just 1 of 15 evaluations (6.7%) by 11.5%, and completes only 26.5% of sub-tasks on average. We identify recurring long-horizon failure modes, including impatience, poor time and resource management, overconfidence in weak hypotheses, difficulty coordinating parallel experiments, and hard limits from context length. Yet in a single run, the agent surpasses the solution of an ICML 2025 Spotlight task, indicating that frontier agents can occasionally reach state-of-the-art performance, but do so unreliably. We additionally evaluate proprietary agent scaffolds including Claude Code (Opus-4.5) and Codex (GPT-5.2) which display a similar gap. ResearchGym provides infrastructure for systematic evaluation and analysis of autonomous agents on closed-loop research.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Aniketh Garikaparthi"
+    },
+    {
+      "@type": "Person",
+      "name": "Manasi Patwardhan"
+    },
+    {
+      "@type": "Person",
+      "name": "Arman Cohan"
+    }
+  ],
+  "datePublished": "2026-02-16T19:00:03Z",
+  "dateModified": "2026-03-11T22:07:26Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.15112.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.15112.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2602.15112v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2602.15112"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2602.15112v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2602.15112"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +92,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ResearchGym: Evaluating Language Model Agents on Real-World AI Research</h1>
+        <div class="meta">
+          Aniketh Garikaparthi, Manasi Patwardhan, Arman Cohan
+          · 2602.15112
+          · <time datetime="2026-02-16">2026-02-16</time>
+          · Coding / SWE · 9 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>We introduce ResearchGym, a benchmark and execution environment for evaluating AI agents on end-to-end research. To instantiate this, we repurpose five oral and spotlight papers from ICML, ICLR, and ACL. From each paper&#x27;s repository, we preserve the datasets, evaluation harness, and baseline implementations but withhold the paper&#x27;s proposed method. This results in five containerized task environments comprising 39 sub-tasks in total. Within each environment, agents must propose novel hypotheses, run experiments, and attempt to surpass strong human baselines on the paper&#x27;s metrics. In a controlled evaluation of an agent powered by GPT-5, we observe a sharp capability--reliability gap. The agent improves over the provided baselines from the repository in just 1 of 15 evaluations (6.7%) by 11.5%, and completes only 26.5% of sub-tasks on average. We identify recurring long-horizon failure modes, including impatience, poor time and resource management, overconfidence in weak hypotheses, difficulty coordinating parallel experiments, and hard limits from context length. Yet in a single run, the agent surpasses the solution of an ICML 2025 Spotlight task, indicating that frontier agents can occasionally reach state-of-the-art performance, but do so unreliably. We additionally evaluate proprietary agent scaffolds including Claude Code (Opus-4.5) and Codex (GPT-5.2) which display a similar gap. ResearchGym provides infrastructure for systematic evaluation and analysis of autonomous agents on closed-loop research.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2602.15112v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2602.15112v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2602.15112" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2603.02176.html"><strong>Organizing, Orchestrating, and Benchmarking Agent Skills at Ecosystem Scale</strong></a> <span>2026-03-02</span></li>
+          <li><a href="2603.00601.html"><strong>Theory of Code Space: Do Code Agents Understand Software Architecture?</strong></a> <span>2026-02-28</span></li>
+          <li><a href="2603.00187.html"><strong>ClarEval: A Benchmark for Evaluating Clarification Skills of Code Agents under Ambiguous Instructions</strong></a> <span>2026-02-27</span></li>
+          <li><a href="2602.19594.html"><strong>ISO-Bench: Can Coding Agents Optimize Real-World Inference Workloads?</strong></a> <span>2026-02-23</span></li>
+          <li><a href="2602.14337.html"><strong>LongCLI-Bench: A Preliminary Benchmark and Study for Long-horizon Agentic Programming in Command-Line Interfaces</strong></a> <span>2026-02-15</span></li>
+          <li><a href="2602.10975.html"><strong>FeatureBench: Benchmarking Agentic Coding for Complex Feature Development</strong></a> <span>2026-02-11</span></li>
+          <li><a href="2603.08721.html"><strong>KernelCraft: Benchmarking for Agentic Close-to-Metal Kernel Generation on Emerging Hardware</strong></a> <span>2026-02-10</span></li>
+          <li><a href="2602.09540.html"><strong>SWE-Bench Mobile: Can Large Language Model Agents Develop Industry-Level Mobile Applications?</strong></a> <span>2026-02-10</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

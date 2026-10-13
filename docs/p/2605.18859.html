@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>TwinRouterBench: Fast Static and Live Dynamic Evaluation for Realistic Agentic LLM Routing | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLM routing matters most in long-horizon applications such as coding agents, deep research systems, and computer-use agents, where a…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Computer use, agent benchmark, LLM agent, arXiv, 2605.18859" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.18859.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="TwinRouterBench: Fast Static and Live Dynamic Evaluation for Realistic Agentic LLM Routing" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLM routing matters most in long-horizon applications such as coding agents, deep research systems, and computer-use agents, where a…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.18859.html" />
+    <meta property="article:published_time" content="2026-05-14T08:58:59Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="TwinRouterBench: Fast Static and Live Dynamic Evaluation for Realistic Agentic LLM Routing" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLM routing matters most in long-horizon applications such as coding agents, deep research systems, and computer-use agents, where a…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,117 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "TwinRouterBench: Fast Static and Live Dynamic Evaluation for Realistic Agentic LLM Routing",
+  "name": "TwinRouterBench: Fast Static and Live Dynamic Evaluation for Realistic Agentic LLM Routing",
+  "abstract": "LLM routing matters most in long-horizon applications such as coding agents, deep research systems, and computer-use agents, where a single user request triggers many model calls. Routing each call to the cheapest sufficient model can cut costs without sacrificing quality, yet existing router benchmarks evaluate routers only on one-shot prompts. They never expose the router-visible prefix at an intermediate agent step, never test whether a cheaper replacement preserves downstream task success, and often rely on online LLM judges at evaluation time. We introduce TwinRouterBench, a step-level routing benchmark with two tracks. The static track provides 970 router-visible prefixes from 520 instances across SWE-bench, BFCL, mtRAG, QMSum, and PinchBench, each paired with an execution-verified target tier estimated under a released downgrade-and-cascade protocol; scoring is deterministic arithmetic over tier labels, trajectory membership, and token costs, with no online evaluator-side LLM judge. The dynamic track supplies a harness that runs routers on the full 500-case SWE-bench Verified suite; in this paper we report a 100-case held-out evaluation disjoint from the static SWE supervision split. At each LLM call the router selects a concrete model from a locked pool, and success is measured by official task resolution and realized API spend. The two tracks support fast offline iteration followed by end-to-end validation under live agent execution. Code and data are available at https://github.com/CommonstackAI/TwinRouterBench.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Pei Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Wanyi Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Tongyun Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Pengbin Feng"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiarong Xing"
+    },
+    {
+      "@type": "Person",
+      "name": "Wentao Guo"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuhang Yao"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuhang Han"
+    },
+    {
+      "@type": "Person",
+      "name": "Hanchen Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Xu Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zeyu Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jie Xiao"
+    },
+    {
+      "@type": "Person",
+      "name": "Anjie Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Liang Tian"
+    },
+    {
+      "@type": "Person",
+      "name": "Lynn Ai"
+    },
+    {
+      "@type": "Person",
+      "name": "Eric Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Tianyu Shi"
+    }
+  ],
+  "datePublished": "2026-05-14T08:58:59Z",
+  "dateModified": "2026-05-22T02:55:33Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.18859.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.18859.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.18859v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.18859"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Computer use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.18859v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.18859"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +149,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>TwinRouterBench: Fast Static and Live Dynamic Evaluation for Realistic Agentic LLM Routing</h1>
+        <div class="meta">
+          Pei Yang, Wanyi Chen, Tongyun Yang, Pengbin Feng, Jiarong Xing, Wentao Guo, Yuhang Yao, Yuhang Han, Hanchen Li, Xu Wang, Zeyu Wang, Jie Xiao, Anjie Yang, Liang Tian, Lynn Ai, Eric Yang, Tianyu Shi
+          · 2605.18859
+          · <time datetime="2026-05-14">2026-05-14</time>
+          · Coding / SWE · 3 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Computer use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLM routing matters most in long-horizon applications such as coding agents, deep research systems, and computer-use agents, where a single user request triggers many model calls. Routing each call to the cheapest sufficient model can cut costs without sacrificing quality, yet existing router benchmarks evaluate routers only on one-shot prompts. They never expose the router-visible prefix at an intermediate agent step, never test whether a cheaper replacement preserves downstream task success, and often rely on online LLM judges at evaluation time. We introduce TwinRouterBench, a step-level routing benchmark with two tracks. The static track provides 970 router-visible prefixes from 520 instances across SWE-bench, BFCL, mtRAG, QMSum, and PinchBench, each paired with an execution-verified target tier estimated under a released downgrade-and-cascade protocol; scoring is deterministic arithmetic over tier labels, trajectory membership, and token costs, with no online evaluator-side LLM judge. The dynamic track supplies a harness that runs routers on the full 500-case SWE-bench Verified suite; in this paper we report a 100-case held-out evaluation disjoint from the static SWE supervision split. At each LLM call the router selects a concrete model from a locked pool, and success is measured by official task resolution and realized API spend. The two tracks support fast offline iteration followed by end-to-end validation under live agent execution. Code and data are available at https://github.com/CommonstackAI/TwinRouterBench.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.18859v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.18859v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.18859" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.16819.html"><strong>AgentKernelArena: Generalization-Aware Benchmarking of GPU Kernel Optimization Agents</strong></a> <span>2026-05-16</span></li>
+          <li><a href="2605.16626.html"><strong>SLEIGHT-Bench: A Benchmark of Evasion Attacks Against Agent Monitors</strong></a> <span>2026-05-15</span></li>
+          <li><a href="2605.15846.html"><strong>RoadmapBench: Evaluating Long-Horizon Agentic Software Development Across Version Upgrades</strong></a> <span>2026-05-15</span></li>
+          <li><a href="2605.15669.html"><strong>Rule2DRC: Benchmarking LLM Agents for DRC Script Synthesis with Execution-Guided Test Generation</strong></a> <span>2026-05-15</span></li>
+          <li><a href="2605.14415.html"><strong>SWE-Chain: Benchmarking Coding Agents on Chained Release-Level Package Upgrades</strong></a> <span>2026-05-14</span></li>
+          <li><a href="2606.20585.html"><strong>Turning Intent into Specifications: A Benchmark and an Interactive User-Assistant Agent</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.15226.html"><strong>Is Agentic AI Ready for Real-World Hardware Engineering? A Deep Dive with Phoenix-bench</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.13950.html"><strong>Collider-Bench: Benchmarking AI Agents with Particle Physics Analysis Reproduction</strong></a> <span>2026-05-13</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

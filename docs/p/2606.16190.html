@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Embedded Arena: Iterative Optimization via Hardware Feedback | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Embedded devices from wildlife monitoring stations to clinical wearables require local AI inference due to latency, communication, or…" />
+    <meta name="keywords" content="General, Memory, agent benchmark, LLM agent, arXiv, 2606.16190" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.16190.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Embedded Arena: Iterative Optimization via Hardware Feedback" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Embedded devices from wildlife monitoring stations to clinical wearables require local AI inference due to latency, communication, or…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.16190.html" />
+    <meta property="article:published_time" content="2026-06-15T04:04:23Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Embedded Arena: Iterative Optimization via Hardware Feedback" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Embedded devices from wildlife monitoring stations to clinical wearables require local AI inference due to latency, communication, or…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,100 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Embedded Arena: Iterative Optimization via Hardware Feedback",
+  "name": "Embedded Arena: Iterative Optimization via Hardware Feedback",
+  "abstract": "Embedded devices from wildlife monitoring stations to clinical wearables require local AI inference due to latency, communication, or privacy constraints. Optimizing models for heterogeneous microcontrollers (MCUs) requires simultaneously satisfying hard physical constraints on memory, power, and temperature while preserving accuracy, a multidimensional optimization that is today performed manually by experts. We ask whether an LLM agent can autonomously navigate this complex, multi-turn pipeline guided by real hardware feedback, and introduce a hardware-in-the-loop agent arena in which the agent iteratively refines both model and firmware -- compiling, flashing, and measuring on real hardware -- to enable closed-loop optimization. Frontier models, including Claude Opus 4.7 and Gemini 3.1 Pro, fail entirely without hardware feedback (0% deployment success), whereas our hardware-in-the-loop formulation achieves the first successful deployment within three iterations and can surpass human expert results within seven. This agentic co-optimization achieves 250x compression for vision models with <3.3% accuracy loss and 400x for audio with <6% Feature Error Rate loss, enabling battery-free operation on a commercial MCU via solar harvesting. We demonstrate practical impact in two real-world systems: an elk-detection camera trap (96.7% accuracy) and a phonetic-transcription wearable (8.44% FER) for child development research.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Zhihan Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Alexander Le Metzger"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiuyang Lyu"
+    },
+    {
+      "@type": "Person",
+      "name": "Chun-Cheng Chang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiayi Shao"
+    },
+    {
+      "@type": "Person",
+      "name": "Yujia Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Emmanuel Azuh Mensah"
+    },
+    {
+      "@type": "Person",
+      "name": "Edward Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Kurtis Heimerl"
+    },
+    {
+      "@type": "Person",
+      "name": "Gregory D. Abowd"
+    },
+    {
+      "@type": "Person",
+      "name": "Shwetak Patel"
+    },
+    {
+      "@type": "Person",
+      "name": "Natasha Jaques"
+    },
+    {
+      "@type": "Person",
+      "name": "Vikram Iyer"
+    }
+  ],
+  "datePublished": "2026-06-15T04:04:23Z",
+  "dateModified": "2026-06-15T04:04:23Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.16190.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.16190.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.16190v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.16190"
+  },
+  "keywords": [
+    "General",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.16190v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.16190"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +132,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Embedded Arena: Iterative Optimization via Hardware Feedback</h1>
+        <div class="meta">
+          Zhihan Zhang, Alexander Le Metzger, Jiuyang Lyu, Chun-Cheng Chang, Jiayi Shao, Yujia Liu, Emmanuel Azuh Mensah, Edward Wang, Kurtis Heimerl, Gregory D. Abowd, Shwetak Patel, Natasha Jaques, Vikram Iyer
+          · 2606.16190
+          · <time datetime="2026-06-15">2026-06-15</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Embedded devices from wildlife monitoring stations to clinical wearables require local AI inference due to latency, communication, or privacy constraints. Optimizing models for heterogeneous microcontrollers (MCUs) requires simultaneously satisfying hard physical constraints on memory, power, and temperature while preserving accuracy, a multidimensional optimization that is today performed manually by experts. We ask whether an LLM agent can autonomously navigate this complex, multi-turn pipeline guided by real hardware feedback, and introduce a hardware-in-the-loop agent arena in which the agent iteratively refines both model and firmware -- compiling, flashing, and measuring on real hardware -- to enable closed-loop optimization. Frontier models, including Claude Opus 4.7 and Gemini 3.1 Pro, fail entirely without hardware feedback (0% deployment success), whereas our hardware-in-the-loop formulation achieves the first successful deployment within three iterations and can surpass human expert results within seven. This agentic co-optimization achieves 250x compression for vision models with &lt;3.3% accuracy loss and 400x for audio with &lt;6% Feature Error Rate loss, enabling battery-free operation on a commercial MCU via solar harvesting. We demonstrate practical impact in two real-world systems: an elk-detection camera trap (96.7% accuracy) and a phonetic-transcription wearable (8.44% FER) for child development research.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.16190v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.16190v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.16190" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.18051.html"><strong>Compositional Skill Routing for LLM Agents: Decompose, Retrieve, and Compose</strong></a> <span>2026-06-16</span></li>
+          <li><a href="2606.17698.html"><strong>EComAgentBench: Benchmarking Shopping Agents on Long-Horizon Tasks with Distributed Hidden Intent</strong></a> <span>2026-06-16</span></li>
+          <li><a href="2606.17041.html"><strong>MetaSyn: A Benchmark for LLM Agents on Meta-Analysis Articles from Nature Portfolio</strong></a> <span>2026-06-15</span></li>
+          <li><a href="2606.16562.html"><strong>MIRAGE: Auditing Anti-Muslim Bias in Frontier LLMs Across Reasoning, Agentic, and Time-Coupled Conditions</strong></a> <span>2026-06-15</span></li>
+          <li><a href="2607.22610.html"><strong>Tokengeist: Multi-Turn Attribution Tracing in Agentic Conversations</strong></a> <span>2026-06-14</span></li>
+          <li><a href="2606.15862.html"><strong>RetailBench: Benchmarking long horizon reasoning and coherent decision making of LLM agents in realistic retail environments</strong></a> <span>2026-06-14</span></li>
+          <li><a href="2606.15508.html"><strong>ToolMenuBench: Benchmarking Tool-Menu Filtering Strategies for Reliable and Efficient LLM Agents</strong></a> <span>2026-06-13</span></li>
+          <li><a href="2606.15345.html"><strong>Beyond Monolingual Deep Research: Evaluating Agents and Retrievers with Cross-Lingual BrowseComp-Plus</strong></a> <span>2026-06-13</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

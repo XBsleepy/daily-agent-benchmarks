@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>SpeechAnnotator: A Context-Aware Multi-Agent Framework and Benchmark for Multidimensional Speech Annotation | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Recent controllable speech generation requires training data with fine-grained annotations of speaker traits, prosody, emotion…" />
+    <meta name="keywords" content="Multi-agent, Tool use, Planning / reasoning, Multimodal, agent benchmark, LLM agent, arXiv, 2609.09947" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.09947.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SpeechAnnotator: A Context-Aware Multi-Agent Framework and Benchmark for Multidimensional Speech Annotation" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Recent controllable speech generation requires training data with fine-grained annotations of speaker traits, prosody, emotion…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.09947.html" />
+    <meta property="article:published_time" content="2026-09-09T09:37:29Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SpeechAnnotator: A Context-Aware Multi-Agent Framework and Benchmark for Multidimensional Speech Annotation" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Recent controllable speech generation requires training data with fine-grained annotations of speaker traits, prosody, emotion…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,102 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SpeechAnnotator: A Context-Aware Multi-Agent Framework and Benchmark for Multidimensional Speech Annotation",
+  "name": "SpeechAnnotator: A Context-Aware Multi-Agent Framework and Benchmark for Multidimensional Speech Annotation",
+  "abstract": "Recent controllable speech generation requires training data with fine-grained annotations of speaker traits, prosody, emotion, paralinguistic cues, acoustic scenes, and context. Existing workflows often rely on manual correction, paid hosted multimodal services, or fixed processing chains, which limits large-scale data processing through annotation cost, external-service dependence, or weak cross-stage recovery. We introduce SpeechAnnotator, a locally deployable, context-aware multi-agent framework built entirely from open-source models and tools. Supporting frontend modules first obtain speaker-aware segments and final segment transcripts, while prior evidence extractors attach heterogeneous segment-level cues. Three specialist agents then collaborate through shared state: the Planning Agent converts local audio evidence, speaker history, neighboring segments, and recording-level context into field-specific contracts; the Labeling Agent performs contract-guided multimodal prediction for directly observable attributes; and the Review Agent runs a bounded review loop that checks evidence support and cross-segment consistency, triggering relabeling only for unsupported or inconsistent fields. To address the fragmentation of existing evaluation resources across isolated tasks and narrow-domain test sets, we introduce SpeechAnnotator-Bench (SA-Bench), containing 8.87 hours of human-annotated audio across nine source formats, together with SpeechAnnotator-Eval (SA-Eval), which separates Timeline-Eval for speaker-aware timeline recovery, Closed-Eval for finite-set attributes, and Open-Eval for open-ended attributes. Experiments and ablations show that SpeechAnnotator provides a locally deployable alternative to commercial audio-capable systems, while the bounded review loop improves multidimensional annotation through evidence- and context-aware field-level recovery.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Qirui Zhan"
+    },
+    {
+      "@type": "Person",
+      "name": "Shuiyuan Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jingbin Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Haoyu Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaming Ren"
+    },
+    {
+      "@type": "Person",
+      "name": "Jinrui Liang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chaoren Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Bengu Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yunxiang Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Houdun Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Su Feng"
+    },
+    {
+      "@type": "Person",
+      "name": "Liumeng Xue"
+    },
+    {
+      "@type": "Person",
+      "name": "Lei Xie"
+    }
+  ],
+  "datePublished": "2026-09-09T09:37:29Z",
+  "dateModified": "2026-09-09T09:37:29Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.09947.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.09947.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.09947v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.09947"
+  },
+  "keywords": [
+    "Multi-agent",
+    "Tool use",
+    "Planning / reasoning",
+    "Multimodal",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multi-agent"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.09947v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.09947"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +134,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SpeechAnnotator: A Context-Aware Multi-Agent Framework and Benchmark for Multidimensional Speech Annotation</h1>
+        <div class="meta">
+          Qirui Zhan, Shuiyuan Wang, Jingbin Hu, Haoyu Zhang, Xiaming Ren, Jinrui Liang, Chaoren Yu, Bengu Wu, Yunxiang Chen, Houdun Liu, Su Feng, Liumeng Xue, Lei Xie
+          · 2609.09947
+          · <time datetime="2026-09-09">2026-09-09</time>
+          · Multi-agent
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Multi-agent</span><span class="chip">Planning / reasoning</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Recent controllable speech generation requires training data with fine-grained annotations of speaker traits, prosody, emotion, paralinguistic cues, acoustic scenes, and context. Existing workflows often rely on manual correction, paid hosted multimodal services, or fixed processing chains, which limits large-scale data processing through annotation cost, external-service dependence, or weak cross-stage recovery. We introduce SpeechAnnotator, a locally deployable, context-aware multi-agent framework built entirely from open-source models and tools. Supporting frontend modules first obtain speaker-aware segments and final segment transcripts, while prior evidence extractors attach heterogeneous segment-level cues. Three specialist agents then collaborate through shared state: the Planning Agent converts local audio evidence, speaker history, neighboring segments, and recording-level context into field-specific contracts; the Labeling Agent performs contract-guided multimodal prediction for directly observable attributes; and the Review Agent runs a bounded review loop that checks evidence support and cross-segment consistency, triggering relabeling only for unsupported or inconsistent fields. To address the fragmentation of existing evaluation resources across isolated tasks and narrow-domain test sets, we introduce SpeechAnnotator-Bench (SA-Bench), containing 8.87 hours of human-annotated audio across nine source formats, together with SpeechAnnotator-Eval (SA-Eval), which separates Timeline-Eval for speaker-aware timeline recovery, Closed-Eval for finite-set attributes, and Open-Eval for open-ended attributes. Experiments and ablations show that SpeechAnnotator provides a locally deployable alternative to commercial audio-capable systems, while the bounded review loop improves multidimensional annotation through evidence- and context-aware field-level recovery.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.09947v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.09947v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.09947" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multi-agent benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.29509.html"><strong>Delay-of-Gratification as a Multi-Agent Survival Micro-benchmark for Long-Horizon LLMs: Social Exposure, Personas, and Tool Use Budgets</strong></a> <span>2026-09-25</span></li>
+          <li><a href="2609.24662.html"><strong>DUMA-Bench: A Dual-Control Multi-Agent Benchmark for Evaluating LLM Agent Security</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.21527.html"><strong>OpenMAS-GCom. A Diagnostic Benchmark for Graph-enhanced Multi-Agent Systems</strong></a> <span>2026-09-21</span></li>
+          <li><a href="2609.11141.html"><strong>Can LLMs Normalize Databases? A Benchmark and Multi-Agent Framework for Schema Normalization</strong></a> <span>2026-09-10</span></li>
+          <li><a href="2609.08696.html"><strong>MorphoOrgaAgent: A Foundation-Model-Based Multi-Agent System for Autonomous Organoid Analysis</strong></a> <span>2026-09-08</span></li>
+          <li><a href="2609.00384.html"><strong>RestoreBench: Can AI Agents Restore Power Flow Convergence?</strong></a> <span>2026-08-31</span></li>
+          <li><a href="2608.30661.html"><strong>SwarmBench: Can Large Language Models Act as Agent Swarm Orchestrators?</strong></a> <span>2026-08-31</span></li>
+          <li><a href="2608.29528.html"><strong>MedCache: Efficient and Temporally Valid Memory for Longitudinal Clinical Agents</strong></a> <span>2026-08-30</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

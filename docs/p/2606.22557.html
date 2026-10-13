@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MacAgentBench: Benchmarking AI Agents on Real-World macOS Desktop | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Computer use agents (CUAs) have advanced rapidly in desktop automation, and a growing number of users deploy CUAs such as OpenClaw on…" />
+    <meta name="keywords" content="GUI / computer use, GUI agents, Computer use, agent benchmark, LLM agent, arXiv, 2606.22557" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.22557.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MacAgentBench: Benchmarking AI Agents on Real-World macOS Desktop" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Computer use agents (CUAs) have advanced rapidly in desktop automation, and a growing number of users deploy CUAs such as OpenClaw on…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.22557.html" />
+    <meta property="article:published_time" content="2026-06-21T15:32:57Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MacAgentBench: Benchmarking AI Agents on Real-World macOS Desktop" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Computer use agents (CUAs) have advanced rapidly in desktop automation, and a growing number of users deploy CUAs such as OpenClaw on…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,101 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MacAgentBench: Benchmarking AI Agents on Real-World macOS Desktop",
+  "name": "MacAgentBench: Benchmarking AI Agents on Real-World macOS Desktop",
+  "abstract": "Computer use agents (CUAs) have advanced rapidly in desktop automation, and a growing number of users deploy CUAs such as OpenClaw on Mac Mini for always-on automation. However, existing benchmarks, including those for macOS, evaluate agents without framework augmentation and rely on binary evaluation. As a result, they fail to capture both the framework capabilities leveraged by modern CUAs and the partial progress on long-horizon, multi-application tasks. We present MacAgentBench, a comprehensive macOS agent benchmark comprising 676 tasks across 25 applications, with nearly 60% involving both GUI and CLI interaction. The benchmark adopts deterministic rule-based evaluation and introduces fine-grained multi-checkpoint scoring with capability annotations for multi-application tasks. Experiments across three frameworks and 16 models show that the best configuration, Claude Opus 4.6 on OpenClaw, attains 73.7% Pass@1, while this advantage is primarily driven by the skill library rather than by framework design. Fine-grained metrics further reveal that models with similar Pass@1 can differ substantially in sub-goal completion. Our code and data are publicly available at https://github.com/JetAstra/MacAgentBench.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yikun Fu"
+    },
+    {
+      "@type": "Person",
+      "name": "Bowen Fu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhenyu Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Shuang Cheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaowei Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Bowen Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zehao Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Yibo Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Zichen Ding"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhoumianze Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Shijie Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Biqing Qi"
+    },
+    {
+      "@type": "Person",
+      "name": "Bowen Zhou"
+    }
+  ],
+  "datePublished": "2026-06-21T15:32:57Z",
+  "dateModified": "2026-06-21T15:32:57Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.22557.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.22557.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.22557v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.22557"
+  },
+  "keywords": [
+    "GUI / computer use",
+    "GUI agents",
+    "Computer use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "GUI / computer use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.22557v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.22557"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +133,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MacAgentBench: Benchmarking AI Agents on Real-World macOS Desktop</h1>
+        <div class="meta">
+          Yikun Fu, Bowen Fu, Zhenyu Wu, Shuang Cheng, Xiaowei Sun, Bowen Yang, Zehao Li, Yibo Zhao, Zichen Ding, Zhoumianze Liu, Shijie Wang, Biqing Qi, Bowen Zhou
+          · 2606.22557
+          · <time datetime="2026-06-21">2026-06-21</time>
+          · GUI / computer use · 1 citations
+        </div>
+        <div class="themes"><span class="chip">GUI agents</span><span class="chip">Computer use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Computer use agents (CUAs) have advanced rapidly in desktop automation, and a growing number of users deploy CUAs such as OpenClaw on Mac Mini for always-on automation. However, existing benchmarks, including those for macOS, evaluate agents without framework augmentation and rely on binary evaluation. As a result, they fail to capture both the framework capabilities leveraged by modern CUAs and the partial progress on long-horizon, multi-application tasks. We present MacAgentBench, a comprehensive macOS agent benchmark comprising 676 tasks across 25 applications, with nearly 60% involving both GUI and CLI interaction. The benchmark adopts deterministic rule-based evaluation and introduces fine-grained multi-checkpoint scoring with capability annotations for multi-application tasks. Experiments across three frameworks and 16 models show that the best configuration, Claude Opus 4.6 on OpenClaw, attains 73.7% Pass@1, while this advantage is primarily driven by the skill library rather than by framework design. Fine-grained metrics further reveal that models with similar Pass@1 can differ substantially in sub-goal completion. Our code and data are publicly available at https://github.com/JetAstra/MacAgentBench.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.22557v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.22557v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.22557" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More GUI / computer use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.31154.html"><strong>PPT-Eval: A Benchmark for Computer-Use Agents on PowerPoint Tasks</strong></a> <span>2026-06-30</span></li>
+          <li><a href="2606.29445.html"><strong>Bridging VideoQA and Video-Guided Agentic Tasks via Generalized Keyframe Extraction</strong></a> <span>2026-06-28</span></li>
+          <li><a href="2606.28480.html"><strong>TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents</strong></a> <span>2026-06-26</span></li>
+          <li><a href="2606.25760.html"><strong>Uncertainty Quantification for Computer-Use Agents: A Benchmark across Vision-Language Models and GUI Grounding Datasets</strong></a> <span>2026-06-24</span></li>
+          <li><a href="2606.16802.html"><strong>LabOSBench: Benchmarking Computer Use Agents for Scientific Instrument Control</strong></a> <span>2026-06-15</span></li>
+          <li><a href="2606.16748.html"><strong>MyPCBench: A Benchmark for Personally Intelligent Computer-Use Agents</strong></a> <span>2026-06-15</span></li>
+          <li><a href="2606.15034.html"><strong>OSGuard: A Benchmark for Safety in Computer-Use Agents</strong></a> <span>2026-06-13</span></li>
+          <li><a href="2606.09426.html"><strong>WeaveBench: A Long-Horizon, Real-World Benchmark for Computer-Use Agents with Hybrid Interfaces</strong></a> <span>2026-06-08</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

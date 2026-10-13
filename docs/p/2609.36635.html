@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>WitnessGym: Benchmarking Coding Agents on the Construction of Bug Witnesses | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Bug validation asks a coding agent to produce an executable witness for a reported bug. The witness combines a concrete input with a…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2609.36635" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.36635.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="WitnessGym: Benchmarking Coding Agents on the Construction of Bug Witnesses" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Bug validation asks a coding agent to produce an executable witness for a reported bug. The witness combines a concrete input with a…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.36635.html" />
+    <meta property="article:published_time" content="2026-09-29T03:43:13Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="WitnessGym: Benchmarking Coding Agents on the Construction of Bug Witnesses" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Bug validation asks a coding agent to produce an executable witness for a reported bug. The witness combines a concrete input with a…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,68 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "WitnessGym: Benchmarking Coding Agents on the Construction of Bug Witnesses",
+  "name": "WitnessGym: Benchmarking Coding Agents on the Construction of Bug Witnesses",
+  "abstract": "Bug validation asks a coding agent to produce an executable witness for a reported bug. The witness combines a concrete input with a testing harness and exposes faulty behavior during execution. Such evidence makes audit findings actionable, yet benchmark evaluation is difficult when cases reuse public historical bugs and witnesses or require manual construction. We present WitnessGym, an automated framework for constructing bug-validation benchmarks through bug injection. It injects bugs into test-reached paths of real projects, rebuilds each project, and retains cases exposed by a construction-time witness. Bug specifications and execution adapters allow extension to additional bug types and languages. Bug-preserving transformations vary the surrounding structure while preserving the witness behavior. Based on real-world Java projects with test suites, WitnessGym automatically constructs 1,300 benchmark cases. The injected patches resemble historical bug patches and are difficult for the two evaluated models to distinguish in blinded comparisons. We evaluate four coding agent frameworks in six framework/model pairings across bug types, execution contexts, and transformation depths. Witness construction remains difficult even when the bug pattern is known. Our framework, benchmark cases, and evaluation scripts are available.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Haomin Qi"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiangzhe Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yiming Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jingbo Shang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chengpeng Wang"
+    }
+  ],
+  "datePublished": "2026-09-29T03:43:13Z",
+  "dateModified": "2026-09-29T03:43:13Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.36635.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.36635.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.36635v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.36635"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.36635v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.36635"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +100,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>WitnessGym: Benchmarking Coding Agents on the Construction of Bug Witnesses</h1>
+        <div class="meta">
+          Haomin Qi, Xiangzhe Xu, Yiming Huang, Jingbo Shang, Chengpeng Wang
+          · 2609.36635
+          · <time datetime="2026-09-29">2026-09-29</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Bug validation asks a coding agent to produce an executable witness for a reported bug. The witness combines a concrete input with a testing harness and exposes faulty behavior during execution. Such evidence makes audit findings actionable, yet benchmark evaluation is difficult when cases reuse public historical bugs and witnesses or require manual construction. We present WitnessGym, an automated framework for constructing bug-validation benchmarks through bug injection. It injects bugs into test-reached paths of real projects, rebuilds each project, and retains cases exposed by a construction-time witness. Bug specifications and execution adapters allow extension to additional bug types and languages. Bug-preserving transformations vary the surrounding structure while preserving the witness behavior. Based on real-world Java projects with test suites, WitnessGym automatically constructs 1,300 benchmark cases. The injected patches resemble historical bug patches and are difficult for the two evaluated models to distinguish in blinded comparisons. We evaluate four coding agent frameworks in six framework/model pairings across bug types, execution contexts, and transformation depths. Witness construction remains difficult even when the bug pattern is known. Our framework, benchmark cases, and evaluation scripts are available.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.36635v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.36635v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.36635" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.38335.html"><strong>E2E-SWE: Benchmarking LLMs on Building Working Codebases from Scratch</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.38269.html"><strong>Zero2Repo: Can Coding Agents Build Repositories from Scratch?</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.37143.html"><strong>LoLBench: Evaluating Coding Agents with Long-Horizon Proposals on Large Software Systems</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.36777.html"><strong>Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.36161.html"><strong>From Dead Code and Static Requirements to Working Engines: Software Revival with Coding Agents</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.35639.html"><strong>GPUPhysBench: Benchmarking Coding Agents for Correct and Efficient GPU Physics Simulation</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34683.html"><strong>AgentPerfBench: A Benchmarking and Evaluation Suite for Inference Performance of Agentic LLMs</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34210.html"><strong>RLE-Bench: A Qualifying Exam for Coding Agents as Robot Learning Engineers</strong></a> <span>2026-09-28</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

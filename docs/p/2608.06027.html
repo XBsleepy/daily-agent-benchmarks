@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>FormBharo: Designing and Evaluating a Voice Agent for Conversational Form Filling in Rural India | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: In India, almost every social benefit starts with a form, yet the people who need these benefits most are often unable to read or…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2608.06027" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.06027.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="FormBharo: Designing and Evaluating a Voice Agent for Conversational Form Filling in Rural India" />
+    <meta property="og:description" content="Daily Agent Benchmarks: In India, almost every social benefit starts with a form, yet the people who need these benefits most are often unable to read or…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.06027.html" />
+    <meta property="article:published_time" content="2026-08-06T13:34:22Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="FormBharo: Designing and Evaluating a Voice Agent for Conversational Form Filling in Rural India" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: In India, almost every social benefit starts with a form, yet the people who need these benefits most are often unable to read or…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,59 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "FormBharo: Designing and Evaluating a Voice Agent for Conversational Form Filling in Rural India",
+  "name": "FormBharo: Designing and Evaluating a Voice Agent for Conversational Form Filling in Rural India",
+  "abstract": "In India, almost every social benefit starts with a form, yet the people who need these benefits most are often unable to read or write. Reaching them requires a spoken conversation. Today that work falls to frontline health workers who enroll beneficiaries one at a time, a poor use of stretched capacity. We built FormBharo (\"fill the form\" in Hindi), a voice agent that fills a structured form over a phone call under tight latency and cost budgets by pairing Large Language Models (LLMs) with deterministic, rule-based validation and flow control. It is being piloted with ARMMAN, an NGO running large-scale maternal and child mobile-health programs in India, to enroll low-income, Hindi-speaking mothers in antenatal and postnatal care. To our knowledge, it is the first voice agent piloted to fill an enrollment form for this population. We openly release FormVoiceAgentBench, a benchmark pairing human-recorded Hindi audio with 3,760 multi-turn conversation tests across 960 simulated calls, to evaluate our agent's components (transcription, extraction, reply generation) and end-to-end form completion under real acoustic variations. Form completion drops by up to ~41 points when LLMs receive error-prone real-speech transcripts instead of reference ones. The rule-based controls recover many turn-level extraction errors, helping smaller, cheaper models match or surpass frontier models on form completion. Component performance does not predict end-to-end performance: GPT-5.5 leads turn-level extraction accuracy on reference transcripts (99.8%) but ranks lower on form completion. Since errors both propagate and cancel across the pipeline, the optimal model choice of models emerges only through end-to-end evaluation. Finally, no single model is best across accuracy, cost, and latency at once, so we use a Pareto-based weighted-sum scalarization to select a deployable configuration balancing the three.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Aman Dalmia"
+    },
+    {
+      "@type": "Person",
+      "name": "Sanskriti Midha"
+    },
+    {
+      "@type": "Person",
+      "name": "Jigar Doshi"
+    }
+  ],
+  "datePublished": "2026-08-06T13:34:22Z",
+  "dateModified": "2026-08-06T13:34:22Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.06027.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.06027.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.06027v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.06027"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.06027v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.06027"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +91,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>FormBharo: Designing and Evaluating a Voice Agent for Conversational Form Filling in Rural India</h1>
+        <div class="meta">
+          Aman Dalmia, Sanskriti Midha, Jigar Doshi
+          · 2608.06027
+          · <time datetime="2026-08-06">2026-08-06</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>In India, almost every social benefit starts with a form, yet the people who need these benefits most are often unable to read or write. Reaching them requires a spoken conversation. Today that work falls to frontline health workers who enroll beneficiaries one at a time, a poor use of stretched capacity. We built FormBharo (&quot;fill the form&quot; in Hindi), a voice agent that fills a structured form over a phone call under tight latency and cost budgets by pairing Large Language Models (LLMs) with deterministic, rule-based validation and flow control. It is being piloted with ARMMAN, an NGO running large-scale maternal and child mobile-health programs in India, to enroll low-income, Hindi-speaking mothers in antenatal and postnatal care. To our knowledge, it is the first voice agent piloted to fill an enrollment form for this population. We openly release FormVoiceAgentBench, a benchmark pairing human-recorded Hindi audio with 3,760 multi-turn conversation tests across 960 simulated calls, to evaluate our agent&#x27;s components (transcription, extraction, reply generation) and end-to-end form completion under real acoustic variations. Form completion drops by up to ~41 points when LLMs receive error-prone real-speech transcripts instead of reference ones. The rule-based controls recover many turn-level extraction errors, helping smaller, cheaper models match or surpass frontier models on form completion. Component performance does not predict end-to-end performance: GPT-5.5 leads turn-level extraction accuracy on reference transcripts (99.8%) but ranks lower on form completion. Since errors both propagate and cancel across the pipeline, the optimal model choice of models emerges only through end-to-end evaluation. Finally, no single model is best across accuracy, cost, and latency at once, so we use a Pareto-based weighted-sum scalarization to select a deployable configuration balancing the three.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.06027v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.06027v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.06027" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.08160.html"><strong>Can LLM Agents Stick to the Script? A Benchmark for Long-Horizon Consistency in Interactive Narratives</strong></a> <span>2026-08-08</span></li>
+          <li><a href="2608.07899.html"><strong>TelemetrySuffBench: Is Agent Telemetry Sufficient for Failure-Origin Diagnosis?</strong></a> <span>2026-08-08</span></li>
+          <li><a href="2608.06909.html"><strong>Long-Horizon Agent Trajectory Attribution: A Unified Benchmark and Fine-Grained Annotation Framework</strong></a> <span>2026-08-07</span></li>
+          <li><a href="2608.06329.html"><strong>Benchmarking the Benchmarks: Evaluating Benchmarks for Conversational Agents</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2608.05573.html"><strong>SkillTV-Bench: Benchmarking How Well Judges Perform on Skill-Augmented Agentic Execution</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2608.05519.html"><strong>EcoAgent-Bench: Evaluating Economic Decision-Making in Budget-Constrained LLM Agents</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2608.05212.html"><strong>SearchAuditor: Auditing and Attributing Failures in Long-Horizon Search Agents</strong></a> <span>2026-08-05</span></li>
+          <li><a href="2608.04828.html"><strong>Skill-Use: Can LLMs Actually Use Skills in Agentic Harnesses?</strong></a> <span>2026-08-05</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

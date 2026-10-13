@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Agent-ValueBench: A Comprehensive Benchmark for Evaluating Agent Values | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Autonomous agents have rapidly matured as task executors and seen widespread deployment via harnesses such as OpenClaw. Safety…" />
+    <meta name="keywords" content="General, Safety, agent benchmark, LLM agent, arXiv, 2605.10365" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.10365.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Agent-ValueBench: A Comprehensive Benchmark for Evaluating Agent Values" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Autonomous agents have rapidly matured as task executors and seen widespread deployment via harnesses such as OpenClaw. Safety…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.10365.html" />
+    <meta property="article:published_time" content="2026-05-11T11:09:04Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Agent-ValueBench: A Comprehensive Benchmark for Evaluating Agent Values" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Autonomous agents have rapidly matured as task executors and seen widespread deployment via harnesses such as OpenClaw. Safety…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,72 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Agent-ValueBench: A Comprehensive Benchmark for Evaluating Agent Values",
+  "name": "Agent-ValueBench: A Comprehensive Benchmark for Evaluating Agent Values",
+  "abstract": "Autonomous agents have rapidly matured as task executors and seen widespread deployment via harnesses such as OpenClaw. Safety concerns have rightly drawn growing research attention, and beneath them lie the values silently steering agent behavior. Existing value benchmarks, however, remain confined to LLMs, leaving agent values largely uncharted. From intuitive, empirical, and theoretical vantage points, we show that an agent's values diverge from those of its underlying LLM, and the agentic modality further introduces dataset-, evaluation-, and system-level challenges absent from text-only protocols. We close this gap with Agent-ValueBench, the first benchmark dedicated to agent values. It features 394 executable environments across 16 domains, offering 4,335 value-conflict tasks that cover 28 value systems and 332 dimensions. Every instance is co-synthesized through our purpose-built end-to-end pipeline and curated per-instance by professional psychologists. Each task ships with two pole-aligned golden trajectories whose checkpoints anchor a trajectory-level rubric-based judge. Benchmarking 14 frontier proprietary and open-weights models across 4 mainstream harnesses, we uncover three concerted findings. Agent values first manifest as a Value Tide of cross-model homogeneity beneath interpretable counter-currents. This tide bends non-additively under harness pull, and yet more decisively under deliberate steering via embedded skills. Together these results signal that the agent-alignment lever is shifting from classical model alignment and prompt steering toward harness alignment and skill steering.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Haonan Dong"
+    },
+    {
+      "@type": "Person",
+      "name": "Qiguan Feng"
+    },
+    {
+      "@type": "Person",
+      "name": "Kehan Jiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Haoran Ye"
+    },
+    {
+      "@type": "Person",
+      "name": "Xin Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Guojie Song"
+    }
+  ],
+  "datePublished": "2026-05-11T11:09:04Z",
+  "dateModified": "2026-05-11T11:09:04Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.10365.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.10365.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.10365v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.10365"
+  },
+  "keywords": [
+    "General",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.10365v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.10365"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +104,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Agent-ValueBench: A Comprehensive Benchmark for Evaluating Agent Values</h1>
+        <div class="meta">
+          Haonan Dong, Qiguan Feng, Kehan Jiang, Haoran Ye, Xin Zhang, Guojie Song
+          · 2605.10365
+          · <time datetime="2026-05-11">2026-05-11</time>
+          · General · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Autonomous agents have rapidly matured as task executors and seen widespread deployment via harnesses such as OpenClaw. Safety concerns have rightly drawn growing research attention, and beneath them lie the values silently steering agent behavior. Existing value benchmarks, however, remain confined to LLMs, leaving agent values largely uncharted. From intuitive, empirical, and theoretical vantage points, we show that an agent&#x27;s values diverge from those of its underlying LLM, and the agentic modality further introduces dataset-, evaluation-, and system-level challenges absent from text-only protocols. We close this gap with Agent-ValueBench, the first benchmark dedicated to agent values. It features 394 executable environments across 16 domains, offering 4,335 value-conflict tasks that cover 28 value systems and 332 dimensions. Every instance is co-synthesized through our purpose-built end-to-end pipeline and curated per-instance by professional psychologists. Each task ships with two pole-aligned golden trajectories whose checkpoints anchor a trajectory-level rubric-based judge. Benchmarking 14 frontier proprietary and open-weights models across 4 mainstream harnesses, we uncover three concerted findings. Agent values first manifest as a Value Tide of cross-model homogeneity beneath interpretable counter-currents. This tide bends non-additively under harness pull, and yet more decisively under deliberate steering via embedded skills. Together these results signal that the agent-alignment lever is shifting from classical model alignment and prompt steering toward harness alignment and skill steering.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.10365v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.10365v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.10365" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.10876.html"><strong>AssayBench: An Assay-Level Virtual Cell Benchmark for LLMs and Agents</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2605.10787.html"><strong>ComplexMCP: Evaluation of LLM Agents in Dynamic, Interdependent, and Large-Scale Tool Sandbox</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2605.10448.html"><strong>Can Agent Benchmarks Support Their Scores? Evidence-Supported Bounds for Interactive-Agent Evaluation</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2605.10384.html"><strong>Agentic Performance at the Edge: Insights from Benchmarking</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2606.14715.html"><strong>MiroBench: Benchmarking Realism in Agentic Simulation of Real-world Discussions</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.09698.html"><strong>Ambig-DS: A Benchmark for Task-Framing Ambiguity in Data-Science Agents</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.09252.html"><strong>LLM Agents Already Know When to Call Tools -- Even Without Reasoning</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.09163.html"><strong>FORTIS: Benchmarking Over-Privilege in Agent Skills</strong></a> <span>2026-05-09</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

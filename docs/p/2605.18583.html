@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Overeager Coding Agents: Measuring Out-of-Scope Actions on Benign Tasks | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Coding agents now run autonomously with shell, file, and network privileges. When a user issues a benign request, the agent sometimes…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Tool use, agent benchmark, LLM agent, arXiv, 2605.18583" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.18583.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Overeager Coding Agents: Measuring Out-of-Scope Actions on Benign Tasks" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Coding agents now run autonomously with shell, file, and network privileges. When a user issues a benign request, the agent sometimes…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.18583.html" />
+    <meta property="article:published_time" content="2026-05-18T16:00:41Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Overeager Coding Agents: Measuring Out-of-Scope Actions on Benign Tasks" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Coding agents now run autonomously with shell, file, and network privileges. When a user issues a benign request, the agent sometimes…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,77 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Overeager Coding Agents: Measuring Out-of-Scope Actions on Benign Tasks",
+  "name": "Overeager Coding Agents: Measuring Out-of-Scope Actions on Benign Tasks",
+  "abstract": "Coding agents now run autonomously with shell, file, and network privileges. When a user issues a benign request, the agent sometimes does more than asked: it deletes unrelated files, wipes a stale credentials backup, or rewrites configuration the user never mentioned. We call these scope expansions overeager actions, an authorization problem distinct from capability failures, prompt injection, or sandbox escapes. We present OverEager-Gen, a benchmark dedicated to overeager behavior on benign tasks. Building it surfaces a measurement-validity issue: if a benchmark spells out the authorized scope inside the prompt, the agent stops inferring boundaries and starts pattern-matching declaration text. On Claude Code, stripping the consent declaration alone raises the overeager rate from 0.0% to 17.1% on paired scenarios (McNemar exact p = 2.4 x 10^-4). OverEager-Gen therefore certifies each scenario's discriminative power before admission via a behavioral-gradient validator, audits internal tool calls through a dual-channel stack (PATH-injected shim plus per-agent event streams), and ships byte-identical consent_kept and consent_stripped variants. OverEager-Bench contains 500 validated scenarios and ~7,500 runs across four agent products (Claude Code, OpenHands, Codex CLI, Gemini CLI) and six base models; a 50-sample re-annotation gives Cohen's kappa = 0.73 and rule-judge recall = 1.00. Stripping consent multiplies the overeager rate on every shared base model (Delta in [11.9, 17.2] pp). The framework axis dominates effect size: a permissive cluster (Claude Code, Codex CLI, Gemini CLI) runs at 5.4-27.7% while the ask-to-continue framework (OpenHands) sits at 0.2-4.5% (Fisher p <= 10^-5). Within-framework base-model variance reaches 15.9 pp, indicating that model-layer alignment does not fully propagate through permissive permission gating.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yubin Qu"
+    },
+    {
+      "@type": "Person",
+      "name": "Ying Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yanjun Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Gelei Deng"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuekang Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Leo Yu Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yi Liu"
+    }
+  ],
+  "datePublished": "2026-05-18T16:00:41Z",
+  "dateModified": "2026-05-18T16:00:41Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.18583.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.18583.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.18583v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.18583"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.18583v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.18583"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +109,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Overeager Coding Agents: Measuring Out-of-Scope Actions on Benign Tasks</h1>
+        <div class="meta">
+          Yubin Qu, Ying Zhang, Yanjun Zhang, Gelei Deng, Yuekang Li, Leo Yu Zhang, Yi Liu
+          · 2605.18583
+          · <time datetime="2026-05-18">2026-05-18</time>
+          · Coding / SWE · 6 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Coding agents now run autonomously with shell, file, and network privileges. When a user issues a benign request, the agent sometimes does more than asked: it deletes unrelated files, wipes a stale credentials backup, or rewrites configuration the user never mentioned. We call these scope expansions overeager actions, an authorization problem distinct from capability failures, prompt injection, or sandbox escapes. We present OverEager-Gen, a benchmark dedicated to overeager behavior on benign tasks. Building it surfaces a measurement-validity issue: if a benchmark spells out the authorized scope inside the prompt, the agent stops inferring boundaries and starts pattern-matching declaration text. On Claude Code, stripping the consent declaration alone raises the overeager rate from 0.0% to 17.1% on paired scenarios (McNemar exact p = 2.4 x 10^-4). OverEager-Gen therefore certifies each scenario&#x27;s discriminative power before admission via a behavioral-gradient validator, audits internal tool calls through a dual-channel stack (PATH-injected shim plus per-agent event streams), and ships byte-identical consent_kept and consent_stripped variants. OverEager-Bench contains 500 validated scenarios and ~7,500 runs across four agent products (Claude Code, OpenHands, Codex CLI, Gemini CLI) and six base models; a 50-sample re-annotation gives Cohen&#x27;s kappa = 0.73 and rule-judge recall = 1.00. Stripping consent multiplies the overeager rate on every shared base model (Delta in [11.9, 17.2] pp). The framework axis dominates effect size: a permissive cluster (Claude Code, Codex CLI, Gemini CLI) runs at 5.4-27.7% while the ask-to-continue framework (OpenHands) sits at 0.2-4.5% (Fisher p &lt;= 10^-5). Within-framework base-model variance reaches 15.9 pp, indicating that model-layer alignment does not fully propagate through permissive permission gating.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.18583v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.18583v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.18583" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.21384.html"><strong>SpecBench: Measuring Reward Hacking in Long-Horizon Coding Agents</strong></a> <span>2026-05-20</span></li>
+          <li><a href="2605.19399.html"><strong>HSCO-Bench: An Agent-Driven End-to-End Hardware-Software Co-design Benchmark for Systems-on-Chip</strong></a> <span>2026-05-19</span></li>
+          <li><a href="2605.20251.html"><strong>ProcCtrlBench: Evaluating Process-Level Defects and Control Preservation in LLM Coding Agents</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.18693.html"><strong>SkillGenBench: Benchmarking Skill Generation Pipelines for LLM Agents</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.17986.html"><strong>LivePI: More Realistic Benchmarking of Agents Against Indirect Prompt Injection</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.17937.html"><strong>BacktestBench: Benchmarking Large Language Models for Automated Quantitative Strategy Backtesting</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.17637.html"><strong>WebGameBench: Requirement-to-Application Evaluation for Coding Agents via Browser-Native Games</strong></a> <span>2026-05-17</span></li>
+          <li><a href="2605.17526.html"><strong>SaaSBench: Exploring the Boundaries of Coding Agents in Long-Horizon Enterprise SaaS Engineering</strong></a> <span>2026-05-17</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

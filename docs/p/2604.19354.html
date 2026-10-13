@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Do Agents Dream of Root Shells? Partial-Credit Evaluation of LLM Agents in Capture the Flag Challenges | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large Language Model (LLM) agents are increasingly proposed for autonomous cybersecurity tasks, but their capabilities in realistic…" />
+    <meta name="keywords" content="General, Tool use, agent benchmark, LLM agent, arXiv, 2604.19354" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.19354.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Do Agents Dream of Root Shells? Partial-Credit Evaluation of LLM Agents in Capture the Flag Challenges" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large Language Model (LLM) agents are increasingly proposed for autonomous cybersecurity tasks, but their capabilities in realistic…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.19354.html" />
+    <meta property="article:published_time" content="2026-04-21T11:35:33Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Do Agents Dream of Root Shells? Partial-Credit Evaluation of LLM Agents in Capture the Flag Challenges" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large Language Model (LLM) agents are increasingly proposed for autonomous cybersecurity tasks, but their capabilities in realistic…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,72 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Do Agents Dream of Root Shells? Partial-Credit Evaluation of LLM Agents in Capture the Flag Challenges",
+  "name": "Do Agents Dream of Root Shells? Partial-Credit Evaluation of LLM Agents in Capture the Flag Challenges",
+  "abstract": "Large Language Model (LLM) agents are increasingly proposed for autonomous cybersecurity tasks, but their capabilities in realistic offensive settings remain poorly understood. We present DeepRed, an open-source benchmark for evaluating LLM-based agents on realistic Capture The Flag (CTF) challenges in isolated virtualized environments. DeepRed places an agent in a Kali attacker environment with terminal tools and optional web search, connected over a private network to a target challenge, and records full execution traces for analysis. To move beyond binary solved/unsolved outcomes, we introduce a partial-credit scoring method based on challenge-specific checkpoints derived from public writeups, together with an automated summarise-then-judge labelling pipeline for assigning checkpoint completion from logs. Using DeepRed, we benchmark ten commercially accessible LLMs on ten VM-based CTF challenges spanning different challenge categories. The results indicate that current agents remain limited: the best model achieves only 35% average checkpoint completion, performing strongest on common challenge types and weakest on tasks requiring non-standard discovery and longer-horizon adaptation.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Ali Al-Kaswan"
+    },
+    {
+      "@type": "Person",
+      "name": "Maksim Plotnikov"
+    },
+    {
+      "@type": "Person",
+      "name": "Maxim Hájek"
+    },
+    {
+      "@type": "Person",
+      "name": "Roland Vízner"
+    },
+    {
+      "@type": "Person",
+      "name": "Arie van Deursen"
+    },
+    {
+      "@type": "Person",
+      "name": "Maliheh Izadi"
+    }
+  ],
+  "datePublished": "2026-04-21T11:35:33Z",
+  "dateModified": "2026-05-06T12:08:31Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.19354.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.19354.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.19354v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2604.19354"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2604.19354v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2604.19354"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +104,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Do Agents Dream of Root Shells? Partial-Credit Evaluation of LLM Agents in Capture the Flag Challenges</h1>
+        <div class="meta">
+          Ali Al-Kaswan, Maksim Plotnikov, Maxim Hájek, Roland Vízner, Arie van Deursen, Maliheh Izadi
+          · 2604.19354
+          · <time datetime="2026-04-21">2026-04-21</time>
+          · General · 2 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large Language Model (LLM) agents are increasingly proposed for autonomous cybersecurity tasks, but their capabilities in realistic offensive settings remain poorly understood. We present DeepRed, an open-source benchmark for evaluating LLM-based agents on realistic Capture The Flag (CTF) challenges in isolated virtualized environments. DeepRed places an agent in a Kali attacker environment with terminal tools and optional web search, connected over a private network to a target challenge, and records full execution traces for analysis. To move beyond binary solved/unsolved outcomes, we introduce a partial-credit scoring method based on challenge-specific checkpoints derived from public writeups, together with an automated summarise-then-judge labelling pipeline for assigning checkpoint completion from logs. Using DeepRed, we benchmark ten commercially accessible LLMs on ten VM-based CTF challenges spanning different challenge categories. The results indicate that current agents remain limited: the best model achieves only 35% average checkpoint completion, performing strongest on common challenge types and weakest on tasks requiring non-standard discovery and longer-horizon adaptation.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2604.19354v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2604.19354v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2604.19354" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2604.22861.html"><strong>IntrAgent: An LLM Agent for Content-Grounded Information Retrieval through Literature Review</strong></a> <span>2026-04-23</span></li>
+          <li><a href="2604.20087.html"><strong>SkillLearnBench: Benchmarking Continual Learning Methods for Agent Skill Generation on Real-World Tasks</strong></a> <span>2026-04-22</span></li>
+          <li><a href="2604.20006.html"><strong>From Recall to Forgetting: Benchmarking Long-Term Memory for Personalized Agents</strong></a> <span>2026-04-21</span></li>
+          <li><a href="2604.19533.html"><strong>Cyber Defense Benchmark: Agentic Threat Hunting Evaluation for LLMs in SecOps</strong></a> <span>2026-04-21</span></li>
+          <li><a href="2604.18934.html"><strong>AutomationBench</strong></a> <span>2026-04-21</span></li>
+          <li><a href="2604.18543.html"><strong>ClawEnvKit: Automatic Environment Generation for Claw-Like Agents</strong></a> <span>2026-04-20</span></li>
+          <li><a href="2604.18292.html"><strong>Agent-World: Scaling Real-World Environment Synthesis for Evolving General Agent Intelligence</strong></a> <span>2026-04-20</span></li>
+          <li><a href="2604.18240.html"><strong>AJ-Bench: Benchmarking Agent-as-a-Judge for Environment-Aware Evaluation</strong></a> <span>2026-04-20</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

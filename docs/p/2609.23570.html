@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>VibeMemBench: Evaluating Memory Systems for Coding Agents on Real Repository Coding Tasks | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Coding agents operate on real repository coding tasks, and persistent memory systems promise to reuse experience across tasks. Yet…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Memory, agent benchmark, LLM agent, arXiv, 2609.23570" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.23570.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="VibeMemBench: Evaluating Memory Systems for Coding Agents on Real Repository Coding Tasks" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Coding agents operate on real repository coding tasks, and persistent memory systems promise to reuse experience across tasks. Yet…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.23570.html" />
+    <meta property="article:published_time" content="2026-09-22T04:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="VibeMemBench: Evaluating Memory Systems for Coding Agents on Real Repository Coding Tasks" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Coding agents operate on real repository coding tasks, and persistent memory systems promise to reuse experience across tasks. Yet…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,53 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "VibeMemBench: Evaluating Memory Systems for Coding Agents on Real Repository Coding Tasks",
+  "name": "VibeMemBench: Evaluating Memory Systems for Coding Agents on Real Repository Coding Tasks",
+  "abstract": "Coding agents operate on real repository coding tasks, and persistent memory systems promise to reuse experience across tasks. Yet existing evaluations do not show whether those systems improve executable repository work. Repository benchmarks test code changes but do not isolate memory, while memory benchmarks score recall without measuring downstream coding outcomes. We introduce VibeMemBench, a benchmark for evaluating memory systems on 111 coding targets from 90 SWE-rebench V2 repositories and 3,634 history trajectories from the target repositories. The targets follow the SWE benchmark style and cover bug fixes, feature requests, interface changes, and configuration work. An agent edits each target codebase under a declared memory condition. Executable tests decide task resolution. Each target is retained only when injected history experience improves its executable outcome in a reference setting, so every target carries a prior experience whose usefulness is verified by execution in that setting. The frozen verified experience is then transferred to five held-out solvers. Direct injection raises observed task resolution on four of them by 1.1 to 4.5 percentage points while lowering agent steps on all five. Yet when four existing memory systems must construct and retrieve experience from the same history, eleven of twelve solver and system pairings fail to exceed the matched memory-off baseline. VibeMemBench exposes the gap between the useful experience that repository history holds and the experience existing memory systems deliver for repository coding tasks.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Liyang Fan, Yingcheng Shi, Yongbin Li, Chenghao Sun, Xin Chen, Xander Xu, Hu Wei, Shiwen Ni, Min Yang, Jieping Ye"
+    }
+  ],
+  "datePublished": "2026-09-22T04:00:00Z",
+  "dateModified": "2026-09-22T04:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.23570.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.23570.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.23570"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.23570"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.23570"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.23570"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +85,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>VibeMemBench: Evaluating Memory Systems for Coding Agents on Real Repository Coding Tasks</h1>
+        <div class="meta">
+          Liyang Fan, Yingcheng Shi, Yongbin Li, Chenghao Sun, Xin Chen, Xander Xu, Hu Wei, Shiwen Ni, Min Yang, Jieping Ye
+          · 2609.23570
+          · <time datetime="2026-09-22">2026-09-22</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Coding agents operate on real repository coding tasks, and persistent memory systems promise to reuse experience across tasks. Yet existing evaluations do not show whether those systems improve executable repository work. Repository benchmarks test code changes but do not isolate memory, while memory benchmarks score recall without measuring downstream coding outcomes. We introduce VibeMemBench, a benchmark for evaluating memory systems on 111 coding targets from 90 SWE-rebench V2 repositories and 3,634 history trajectories from the target repositories. The targets follow the SWE benchmark style and cover bug fixes, feature requests, interface changes, and configuration work. An agent edits each target codebase under a declared memory condition. Executable tests decide task resolution. Each target is retained only when injected history experience improves its executable outcome in a reference setting, so every target carries a prior experience whose usefulness is verified by execution in that setting. The frozen verified experience is then transferred to five held-out solvers. Direct injection raises observed task resolution on four of them by 1.1 to 4.5 percentage points while lowering agent steps on all five. Yet when four existing memory systems must construct and retrieve experience from the same history, eleven of twelve solver and system pairings fail to exceed the matched memory-off baseline. VibeMemBench exposes the gap between the useful experience that repository history holds and the experience existing memory systems deliver for repository coding tasks.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.23570" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.23570" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.23570" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.25591.html"><strong>Evaluating Coding Agents on Kernel Exploit Generation</strong></a> <span>2026-09-23</span></li>
+          <li><a href="2609.25396.html"><strong>Passes Alone, Fails Together: Benchmarking Semantic Coordination in Parallel LLM-Agent Development</strong></a> <span>2026-09-23</span></li>
+          <li><a href="2609.24025.html"><strong>Synthesizing Reactive Character Behaviors for Continuous Games via Programmatic Policy Search</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.23980.html"><strong>MobileCybench: Evaluating Agent Vulnerability Discovery via Executable Probes</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.23363.html"><strong>TicTacBench: Benchmarking Timing Closure Capabilities of Coding Agents</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.23142.html"><strong>CraftBench-UE: Deterministic Evaluation for Coding Agents in Unreal Engine</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.21562.html"><strong>GameLogicBench: Evaluating Coding Agents on Runtime Game Logic with Tick-Level State Assertions</strong></a> <span>2026-09-21</span></li>
+          <li><a href="2609.18909.html"><strong>Beyond Outcomes: Dual-View Relational Learning for Efficient Agent Benchmarking</strong></a> <span>2026-09-17</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

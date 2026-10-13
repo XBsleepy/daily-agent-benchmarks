@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MobileCybench: Evaluating Agent Vulnerability Discovery via Executable Probes | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: AI agents now report vulnerabilities faster than maintainers can review them. Reports often depend on security properties specific to…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Mobile agents, agent benchmark, LLM agent, arXiv, 2609.23980" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.23980.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MobileCybench: Evaluating Agent Vulnerability Discovery via Executable Probes" />
+    <meta property="og:description" content="Daily Agent Benchmarks: AI agents now report vulnerabilities faster than maintainers can review them. Reports often depend on security properties specific to…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.23980.html" />
+    <meta property="article:published_time" content="2026-09-22T04:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MobileCybench: Evaluating Agent Vulnerability Discovery via Executable Probes" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: AI agents now report vulnerabilities faster than maintainers can review them. Reports often depend on security properties specific to…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,53 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MobileCybench: Evaluating Agent Vulnerability Discovery via Executable Probes",
+  "name": "MobileCybench: Evaluating Agent Vulnerability Discovery via Executable Probes",
+  "abstract": "AI agents now report vulnerabilities faster than maintainers can review them. Reports often depend on security properties specific to the application, and require considerable human labor to process. To mitigate this, we introduce a framework for evaluating vulnerability reports via probes, executable checks of security properties. A reported exploit is evaluated by replaying it against the application and running the probes: a triggered probe indicates both that the exploit succeeded and which security property it violated. As a probe encodes a security property rather than a known vulnerability, it can detect vulnerabilities that were not known when the probe was written. We instantiate the framework as MobileCybench, a benchmark for vulnerability discovery by AI agents in 13 Android applications, with 495 probes written and reviewed by the authors. We evaluate 5 coding agents (OpenCode with GPT-5.5, GPT-5.6-Sol, and GLM-5.2; Claude Code with Opus 4.8 and Opus 5) under 4 settings: as a malicious app on the victim's device or as a remote attacker with a low-privilege account, each with either only an obfuscated APK or access to the application's source code. Given only the obfuscated APK, the top agent, OpenCode with GPT-5.6-Sol, triggers probes in 53.8% of applications in the malicious-app setting and 16.7% in the remote-attacker setting. With source code, the trigger rate across all agents and both attack settings increases from 28.8% to 32.8%. Building and running the benchmark surfaced 23 previously unreported vulnerabilities, the majority of which have been confirmed by maintainers.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Andy K. Zhang, Ava Huang, Joey Ji, Wai Han, Thomas Qin, Nardos Demilew, Michael Tian-Yue Liu, Brian Song, Riya Dulepet, Brian Wang, Kyleen Liao, Cuiyuanxiu Chen, Nishka Kacheria, Andrew Wu, Pratham Rangwala, Xinjie Wang, Laura Gomezjurado Gonzalez, Anita Ding, Benjamin Yi, Daniel E. Ho, Dan Boneh, Dawn Song, Ion Stoica, Percy Liang"
+    }
+  ],
+  "datePublished": "2026-09-22T04:00:00Z",
+  "dateModified": "2026-09-22T04:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.23980.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.23980.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.23980"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.23980"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Mobile agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.23980"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.23980"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +85,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MobileCybench: Evaluating Agent Vulnerability Discovery via Executable Probes</h1>
+        <div class="meta">
+          Andy K. Zhang, Ava Huang, Joey Ji, Wai Han, Thomas Qin, Nardos Demilew, Michael Tian-Yue Liu, Brian Song, Riya Dulepet, Brian Wang, Kyleen Liao, Cuiyuanxiu Chen, Nishka Kacheria, Andrew Wu, Pratham Rangwala, Xinjie Wang, Laura Gomezjurado Gonzalez, Anita Ding, Benjamin Yi, Daniel E. Ho, Dan Boneh, Dawn Song, Ion Stoica, Percy Liang
+          · 2609.23980
+          · <time datetime="2026-09-22">2026-09-22</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Mobile agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>AI agents now report vulnerabilities faster than maintainers can review them. Reports often depend on security properties specific to the application, and require considerable human labor to process. To mitigate this, we introduce a framework for evaluating vulnerability reports via probes, executable checks of security properties. A reported exploit is evaluated by replaying it against the application and running the probes: a triggered probe indicates both that the exploit succeeded and which security property it violated. As a probe encodes a security property rather than a known vulnerability, it can detect vulnerabilities that were not known when the probe was written. We instantiate the framework as MobileCybench, a benchmark for vulnerability discovery by AI agents in 13 Android applications, with 495 probes written and reviewed by the authors. We evaluate 5 coding agents (OpenCode with GPT-5.5, GPT-5.6-Sol, and GLM-5.2; Claude Code with Opus 4.8 and Opus 5) under 4 settings: as a malicious app on the victim&#x27;s device or as a remote attacker with a low-privilege account, each with either only an obfuscated APK or access to the application&#x27;s source code. Given only the obfuscated APK, the top agent, OpenCode with GPT-5.6-Sol, triggers probes in 53.8% of applications in the malicious-app setting and 16.7% in the remote-attacker setting. With source code, the trigger rate across all agents and both attack settings increases from 28.8% to 32.8%. Building and running the benchmark surfaced 23 previously unreported vulnerabilities, the majority of which have been confirmed by maintainers.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.23980" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.23980" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.23980" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.26777.html"><strong>SWE-Serve: Benchmarking Agentic Engineering For Production Inference Serving</strong></a> <span>2026-09-23</span></li>
+          <li><a href="2609.25591.html"><strong>Evaluating Coding Agents on Kernel Exploit Generation</strong></a> <span>2026-09-23</span></li>
+          <li><a href="2609.25396.html"><strong>Passes Alone, Fails Together: Benchmarking Semantic Coordination in Parallel LLM-Agent Development</strong></a> <span>2026-09-23</span></li>
+          <li><a href="2609.24025.html"><strong>Synthesizing Reactive Character Behaviors for Continuous Games via Programmatic Policy Search</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.23570.html"><strong>VibeMemBench: Evaluating Memory Systems for Coding Agents on Real Repository Coding Tasks</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.23363.html"><strong>TicTacBench: Benchmarking Timing Closure Capabilities of Coding Agents</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.23142.html"><strong>CraftBench-UE: Deterministic Evaluation for Coding Agents in Unreal Engine</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.21562.html"><strong>GameLogicBench: Evaluating Coding Agents on Runtime Game Logic with Tick-Level State Assertions</strong></a> <span>2026-09-21</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

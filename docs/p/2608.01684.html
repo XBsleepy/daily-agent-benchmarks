@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>GABench: A Comprehensive Benchmark for Evaluating LLM Agents on Graph Analysis Tasks | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language model (LLM) agents are increasingly capable of planning, using tools, and interacting with external environments. They…" />
+    <meta name="keywords" content="General, Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2608.01684" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.01684.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="GABench: A Comprehensive Benchmark for Evaluating LLM Agents on Graph Analysis Tasks" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language model (LLM) agents are increasingly capable of planning, using tools, and interacting with external environments. They…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.01684.html" />
+    <meta property="article:published_time" content="2026-08-03T04:18:31Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="GABench: A Comprehensive Benchmark for Evaluating LLM Agents on Graph Analysis Tasks" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language model (LLM) agents are increasingly capable of planning, using tools, and interacting with external environments. They…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,81 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "GABench: A Comprehensive Benchmark for Evaluating LLM Agents on Graph Analysis Tasks",
+  "name": "GABench: A Comprehensive Benchmark for Evaluating LLM Agents on Graph Analysis Tasks",
+  "abstract": "Large language model (LLM) agents are increasingly capable of planning, using tools, and interacting with external environments. They are typically supported by harnesses, which manage state and coordinate multi-step execution. Graph analysis provides a promising setting for evaluating their agentic capabilities, because it requires agents to access data and execute operations in a graph environment. However, existing graph benchmarks for LLMs provide limited coverage of graph tasks and graph types, making it difficult to comprehensively evaluate LLM agents. Moreover, they typically formulate graph analysis as text-based question answering, where graph information is directly provided in the prompt, limiting the evaluation of end-to-end agentic capabilities. To address these limitations, we introduce GABench, a comprehensive benchmark for agentic graph analysis. GABench spans three graph types and covers four graph analysis task categories: graph retrieval, graph theory, graph machine learning, and graph open-ended question answering. GABench also provides 84 executable tools for accessing graph data and performing diverse graph operations. Building on these tools, we develop an agentic graph analysis task generation pipeline and construct 10,400 tasks with verifiable ground truth.Using GABench, we evaluate a range of frontier LLMs and agent harnesses. Our experiments reveal three key findings: (1) Existing LLM agents still struggle with complex graph analysis tasks. (2) Harness choice significantly affects performance, yet existing harnesses remain limited on complex graph tasks. (3) Graph analysis depends more on tool-call quality than quantity. Our findings provide practical insights into the development and evaluation of LLM agents for graph analysis.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jiarui Tan"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhongjian Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "YaBo Guo"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiawei Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yujie Xing"
+    },
+    {
+      "@type": "Person",
+      "name": "Muhan Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Cheng Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chuan Shi"
+    }
+  ],
+  "datePublished": "2026-08-03T04:18:31Z",
+  "dateModified": "2026-08-03T04:18:31Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.01684.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.01684.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.01684v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.01684"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.01684v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.01684"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +113,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>GABench: A Comprehensive Benchmark for Evaluating LLM Agents on Graph Analysis Tasks</h1>
+        <div class="meta">
+          Jiarui Tan, Zhongjian Zhang, YaBo Guo, Jiawei Liu, Yujie Xing, Muhan Zhang, Cheng Yang, Chuan Shi
+          · 2608.01684
+          · <time datetime="2026-08-03">2026-08-03</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large language model (LLM) agents are increasingly capable of planning, using tools, and interacting with external environments. They are typically supported by harnesses, which manage state and coordinate multi-step execution. Graph analysis provides a promising setting for evaluating their agentic capabilities, because it requires agents to access data and execute operations in a graph environment. However, existing graph benchmarks for LLMs provide limited coverage of graph tasks and graph types, making it difficult to comprehensively evaluate LLM agents. Moreover, they typically formulate graph analysis as text-based question answering, where graph information is directly provided in the prompt, limiting the evaluation of end-to-end agentic capabilities. To address these limitations, we introduce GABench, a comprehensive benchmark for agentic graph analysis. GABench spans three graph types and covers four graph analysis task categories: graph retrieval, graph theory, graph machine learning, and graph open-ended question answering. GABench also provides 84 executable tools for accessing graph data and performing diverse graph operations. Building on these tools, we develop an agentic graph analysis task generation pipeline and construct 10,400 tasks with verifiable ground truth.Using GABench, we evaluate a range of frontier LLMs and agent harnesses. Our experiments reveal three key findings: (1) Existing LLM agents still struggle with complex graph analysis tasks. (2) Harness choice significantly affects performance, yet existing harnesses remain limited on complex graph tasks. (3) Graph analysis depends more on tool-call quality than quantity. Our findings provide practical insights into the development and evaluation of LLM agents for graph analysis.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.01684v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.01684v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.01684" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.03206.html"><strong>EduClaw-Bench: A Long-Horizon Benchmark for Pedagogical LLM Agents with Simulated Learners</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.03018.html"><strong>UrbanAgent: A Tool-Augmented Agent for Cross-System Urban Tasks</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.02358.html"><strong>ScrambleToolBench: Agents Search Exhaustively Even When Their Own Map Points to the Next Step</strong></a> <span>2026-08-03</span></li>
+          <li><a href="2608.02171.html"><strong>From Profiling to Synthesis: Benchmarking Implicit Behavioral Alignment in Personalized LLM Agents</strong></a> <span>2026-08-03</span></li>
+          <li><a href="2608.01358.html"><strong>HopRefusalBench: Diagnosing Refusal Failures in Search-Augmented Agents for Multi-Hop Reasoning</strong></a> <span>2026-08-02</span></li>
+          <li><a href="2608.00677.html"><strong>OpenART: Scaling Agent Red Teaming via Open-Ended Environment Evolution</strong></a> <span>2026-08-01</span></li>
+          <li><a href="2608.11234.html"><strong>InfraBench: Evaluating Infrastructure Agents Across Layers, Lifecycle, and Risk</strong></a> <span>2026-07-31</span></li>
+          <li><a href="2608.00107.html"><strong>MetaRoute-Bench: Evaluating Meta-Decision Policies for Agentic Workflow Routing</strong></a> <span>2026-07-31</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

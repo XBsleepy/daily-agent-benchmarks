@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>KC-Bench: A Dynamic Interactive Benchmark for Evaluating Knowledge Conflicts in LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: As LLMs increasingly act through tools, they must reconcile user instructions, parametric knowledge, and dynamic environmental…" />
+    <meta name="keywords" content="Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2609.03588" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.03588.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="KC-Bench: A Dynamic Interactive Benchmark for Evaluating Knowledge Conflicts in LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: As LLMs increasingly act through tools, they must reconcile user instructions, parametric knowledge, and dynamic environmental…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.03588.html" />
+    <meta property="article:published_time" content="2026-09-03T09:35:14Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="KC-Bench: A Dynamic Interactive Benchmark for Evaluating Knowledge Conflicts in LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: As LLMs increasingly act through tools, they must reconcile user instructions, parametric knowledge, and dynamic environmental…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,68 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "KC-Bench: A Dynamic Interactive Benchmark for Evaluating Knowledge Conflicts in LLM Agents",
+  "name": "KC-Bench: A Dynamic Interactive Benchmark for Evaluating Knowledge Conflicts in LLM Agents",
+  "abstract": "As LLMs increasingly act through tools, they must reconcile user instructions, parametric knowledge, and dynamic environmental observations before taking actions. We introduce KC-Bench, a controlled multi-turn benchmark for measuring this capability across world-knowledge conflicts, input inconsistencies, and multi-source temporal conflicts. Its 238 tasks are manually screened from more than 1,000 generated candidates and combine a user simulator, stateful tools, deterministic environment assertions, an open-source natural-language evaluator, and human trajectory verification. Evaluation of nine models, including DeepSeek-V4-Flash, GLM-5.2, and MiniMax-M3, shows substantial cross-domain variation: no model handles factual correction, identity consistency checking, and temporal conflict resolution reliably across all settings. In the simulated environments, missed conflicts can propagate to tool calls or synthetic protected-data flows. KC-Bench isolates this model-level behavior rather than ranking complete agent frameworks, and provides a reproducible diagnostic for developing conflict-aware reasoning and execution safeguards.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yaxing Lyu"
+    },
+    {
+      "@type": "Person",
+      "name": "Shengjie Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Binbin Toh"
+    },
+    {
+      "@type": "Person",
+      "name": "Pengyu Zhu"
+    },
+    {
+      "@type": "Person",
+      "name": "Lijun Li"
+    }
+  ],
+  "datePublished": "2026-09-03T09:35:14Z",
+  "dateModified": "2026-09-03T09:35:14Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.03588.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.03588.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.03588v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.03588"
+  },
+  "keywords": [
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.03588v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.03588"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +100,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>KC-Bench: A Dynamic Interactive Benchmark for Evaluating Knowledge Conflicts in LLM Agents</h1>
+        <div class="meta">
+          Yaxing Lyu, Shengjie Zhou, Binbin Toh, Pengyu Zhu, Lijun Li
+          · 2609.03588
+          · <time datetime="2026-09-03">2026-09-03</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>As LLMs increasingly act through tools, they must reconcile user instructions, parametric knowledge, and dynamic environmental observations before taking actions. We introduce KC-Bench, a controlled multi-turn benchmark for measuring this capability across world-knowledge conflicts, input inconsistencies, and multi-source temporal conflicts. Its 238 tasks are manually screened from more than 1,000 generated candidates and combine a user simulator, stateful tools, deterministic environment assertions, an open-source natural-language evaluator, and human trajectory verification. Evaluation of nine models, including DeepSeek-V4-Flash, GLM-5.2, and MiniMax-M3, shows substantial cross-domain variation: no model handles factual correction, identity consistency checking, and temporal conflict resolution reliably across all settings. In the simulated environments, missed conflicts can propagate to tool calls or synthetic protected-data flows. KC-Bench isolates this model-level behavior rather than ranking complete agent frameworks, and provides a reproducible diagnostic for developing conflict-aware reasoning and execution safeguards.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.03588v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.03588v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.03588" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.07370.html"><strong>Beyond Fluent Generation: A CPU Reliability Benchmark for MCP-Style Tool Calling in Sub-2B Small Language Models for Edge Deployment</strong></a> <span>2026-09-07</span></li>
+          <li><a href="2609.06972.html"><strong>AgentDrift: A Step-Labeled Benchmark of Injection-Hijacked LLM Agent Trajectories</strong></a> <span>2026-09-07</span></li>
+          <li><a href="2609.05818.html"><strong>Agentic BAIM-LLM Evaluation (ABLE): Benchmarking LLM Use of Protein Design Tools</strong></a> <span>2026-09-05</span></li>
+          <li><a href="2609.04280.html"><strong>EVOHARNESSBENCH: Can Your Agents Keep Pace with an Evolving Harness?</strong></a> <span>2026-09-03</span></li>
+          <li><a href="2609.02459.html"><strong>CivBench: A Long-Horizon Benchmark for Tool-Mediated Agents in Civilization VI</strong></a> <span>2026-09-02</span></li>
+          <li><a href="2609.01437.html"><strong>HarnessDev: Can LLMs Create and Evolve Their Own Agent Harness?</strong></a> <span>2026-09-01</span></li>
+          <li><a href="2608.29397.html"><strong>AlgoWorlds: Benchmarking Tool Use for Global Optimization in Algorithmic Worlds</strong></a> <span>2026-08-29</span></li>
+          <li><a href="2608.29128.html"><strong>APIFlow-Bench: Measuring Whether Agents Survive Long, Dependent API Workflows</strong></a> <span>2026-08-29</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>LongRCA Bench: Diagnosing Responsible Roles and Root Causes in Long-Horizon Agent Failures | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: When a long-horizon agent execution fails, outcome-level evaluation reveals the unsuccessful result but not where the decisive error…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2608.15242" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.15242.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="LongRCA Bench: Diagnosing Responsible Roles and Root Causes in Long-Horizon Agent Failures" />
+    <meta property="og:description" content="Daily Agent Benchmarks: When a long-horizon agent execution fails, outcome-level evaluation reveals the unsuccessful result but not where the decisive error…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.15242.html" />
+    <meta property="article:published_time" content="2026-08-15T14:06:02Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="LongRCA Bench: Diagnosing Responsible Roles and Root Causes in Long-Horizon Agent Failures" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: When a long-horizon agent execution fails, outcome-level evaluation reveals the unsuccessful result but not where the decisive error…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,115 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "LongRCA Bench: Diagnosing Responsible Roles and Root Causes in Long-Horizon Agent Failures",
+  "name": "LongRCA Bench: Diagnosing Responsible Roles and Root Causes in Long-Horizon Agent Failures",
+  "abstract": "When a long-horizon agent execution fails, outcome-level evaluation reveals the unsuccessful result but not where the decisive error entered the trajectory. Developers must then inspect the full execution to identify the responsible role and localize the earliest decisive root-cause step. Existing failure-attribution benchmarks largely focus on shorter traces, leaving diagnosis across hundreds of recorded steps underexplored. We introduce LongRCA Bench, comprising 1,140 failed trajectories across five domains without injected errors. It provides independently scored human labels for the responsible role and earliest decisive root-cause step. The median trajectory contains 145 steps, and the strongest baseline reaches only 13.2% exact root-step accuracy. We further present Root-Cause Trajectory Attribution (RCTA), a training-free method that retrieves candidate error steps from segment summaries and traces them to available earlier handoff instructions. Using the same backbone, benchmark instances, and scoring protocol, RCTA reaches 51.1% responsible-role accuracy and 24.1% exact root-step accuracy. These results highlight the need to evaluate responsible-role attribution and exact root-step localization as separate targets in long-trajectory failure diagnosis.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yunfei Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Boyu Feng"
+    },
+    {
+      "@type": "Person",
+      "name": "Changhua Pei"
+    },
+    {
+      "@type": "Person",
+      "name": "Zexin Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhihuang Peng"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinlong Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Hengyue Jiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Difeng Ma"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiayi Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yongzhou Yao"
+    },
+    {
+      "@type": "Person",
+      "name": "Yanan Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Fei Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Yintong Huo"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhaoyang Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jingjing Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Gaogang Xie"
+    },
+    {
+      "@type": "Person",
+      "name": "Dan Pei"
+    }
+  ],
+  "datePublished": "2026-08-15T14:06:02Z",
+  "dateModified": "2026-08-21T12:55:49Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.15242.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.15242.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.15242v3"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.15242"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.15242v3"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.15242"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +147,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>LongRCA Bench: Diagnosing Responsible Roles and Root Causes in Long-Horizon Agent Failures</h1>
+        <div class="meta">
+          Yunfei Zhang, Boyu Feng, Changhua Pei, Zexin Wang, Zhihuang Peng, Xinlong Liu, Hengyue Jiang, Difeng Ma, Jiayi Zhang, Yongzhou Yao, Yanan Zhao, Fei Sun, Yintong Huo, Zhaoyang Liu, Jingjing Li, Gaogang Xie, Dan Pei
+          · 2608.15242
+          · <time datetime="2026-08-15">2026-08-15</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>When a long-horizon agent execution fails, outcome-level evaluation reveals the unsuccessful result but not where the decisive error entered the trajectory. Developers must then inspect the full execution to identify the responsible role and localize the earliest decisive root-cause step. Existing failure-attribution benchmarks largely focus on shorter traces, leaving diagnosis across hundreds of recorded steps underexplored. We introduce LongRCA Bench, comprising 1,140 failed trajectories across five domains without injected errors. It provides independently scored human labels for the responsible role and earliest decisive root-cause step. The median trajectory contains 145 steps, and the strongest baseline reaches only 13.2% exact root-step accuracy. We further present Root-Cause Trajectory Attribution (RCTA), a training-free method that retrieves candidate error steps from segment summaries and traces them to available earlier handoff instructions. Using the same backbone, benchmark instances, and scoring protocol, RCTA reaches 51.1% responsible-role accuracy and 24.1% exact root-step accuracy. These results highlight the need to evaluate responsible-role attribution and exact root-step localization as separate targets in long-trajectory failure diagnosis.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.15242v3" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.15242v3" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.15242" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.16637.html"><strong>PDDLCoder: Agentic PDDL Generation for LLM-Assisted Symbolic Planning</strong></a> <span>2026-08-17</span></li>
+          <li><a href="2608.16349.html"><strong>AeroCopilotBench: A Two-Tier Benchmark for Evaluating LLM Agents as Aviation Copilots in an Interactive Virtual Cockpit Environment</strong></a> <span>2026-08-17</span></li>
+          <li><a href="2608.16055.html"><strong>Governance at the Boundary: How Agent Decomposition Degrades Policy Compliance</strong></a> <span>2026-08-17</span></li>
+          <li><a href="2608.15654.html"><strong>When Stories Evolve: Benchmarking LLM Storytelling Across Agent Architectures in Open-Ended World Simulations</strong></a> <span>2026-08-16</span></li>
+          <li><a href="2608.15127.html"><strong>From LLM Inference to Agentic Workloads: Characterization and Implications for Serving Systems</strong></a> <span>2026-08-15</span></li>
+          <li><a href="2608.14380.html"><strong>AgentRewind: Recoverable Execution for Long-Horizon LLM Agents</strong></a> <span>2026-08-14</span></li>
+          <li><a href="2608.14270.html"><strong>TimeSage-EV: A Live Benchmark for Agentic Time Series Analysis in Evolving Environments</strong></a> <span>2026-08-14</span></li>
+          <li><a href="2608.13883.html"><strong>MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends</strong></a> <span>2026-08-14</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

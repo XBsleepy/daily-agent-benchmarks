@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>SkillMutator: Benchmarking and Defending Language-and-Code Cross-modal Attacks on LLM Agent Skills | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language model (LLM) agents increasingly extend their capabilities at runtime by loading Agent Skills, which pair…" />
+    <meta name="keywords" content="General, Safety, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2606.14154" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.14154.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SkillMutator: Benchmarking and Defending Language-and-Code Cross-modal Attacks on LLM Agent Skills" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language model (LLM) agents increasingly extend their capabilities at runtime by loading Agent Skills, which pair…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.14154.html" />
+    <meta property="article:published_time" content="2026-06-12T06:27:12Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SkillMutator: Benchmarking and Defending Language-and-Code Cross-modal Attacks on LLM Agent Skills" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language model (LLM) agents increasingly extend their capabilities at runtime by loading Agent Skills, which pair…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,61 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SkillMutator: Benchmarking and Defending Language-and-Code Cross-modal Attacks on LLM Agent Skills",
+  "name": "SkillMutator: Benchmarking and Defending Language-and-Code Cross-modal Attacks on LLM Agent Skills",
+  "abstract": "Large language model (LLM) agents increasingly extend their capabilities at runtime by loading Agent Skills, which pair natural-language specifications (SKILL.md) with executable scripts and resources. Because a skill's behavior relies on both natural-language instructions and executable code, assessing its safety requires cross-modal reasoning, creating a new language-and-code attack surface. Attackers can present a benign workflow in SKILL.md while embedding implicit directives that steer the agent to exfiltrate sensitive files, even if the scripts appear harmless. This attack surface remains understudied; prior work treats skills merely as prompt-injection vectors or static code artifacts, leaving attacks emerging from cross-modal interactions largely unmeasured. In our evaluation, open-source and commercial skill scanners detect only 2%-8% and 9%-17% of such attacks, respectively. To address this gap, we introduce SkillMutator, the first benchmark for install-time detection of language-and-code cross-modal attacks on Agent Skills. It emulates an adversarial mutation process across 13 attack categories, iteratively refining malicious skills using scanner feedback to make injected behaviors indistinguishable from legitimate workflows. We further propose a four-phase reasoning-trajectory distillation framework to distill frontier-teacher traces into smaller open-weight models. This produces a locally deployable scanner avoiding third-party data exposure and excessive API costs. On the strongest SkillMutator subset (n=76), our distilled model (Qwen2.5-Coder-7B-Instruct) improves detection from 17.1% to 88.2%, surpassing GPT-4o-mini (23.7%) and GPT-5.4-mini (79.0%), and reaching frontier-level GPT-5.4 (86.8%). These results show practical defense against cross-modal attacks is feasible without relying on costly frontier models.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Youngduk Kim"
+    },
+    {
+      "@type": "Person",
+      "name": "Minkyoo Song"
+    },
+    {
+      "@type": "Person",
+      "name": "Seungwon Shin"
+    }
+  ],
+  "datePublished": "2026-06-12T06:27:12Z",
+  "dateModified": "2026-06-12T06:27:12Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.14154.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.14154.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.14154v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.14154"
+  },
+  "keywords": [
+    "General",
+    "Safety",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.14154v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.14154"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +93,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SkillMutator: Benchmarking and Defending Language-and-Code Cross-modal Attacks on LLM Agent Skills</h1>
+        <div class="meta">
+          Youngduk Kim, Minkyoo Song, Seungwon Shin
+          · 2606.14154
+          · <time datetime="2026-06-12">2026-06-12</time>
+          · General · 4 citations
+        </div>
+        <div class="themes"><span class="chip">Safety</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large language model (LLM) agents increasingly extend their capabilities at runtime by loading Agent Skills, which pair natural-language specifications (SKILL.md) with executable scripts and resources. Because a skill&#x27;s behavior relies on both natural-language instructions and executable code, assessing its safety requires cross-modal reasoning, creating a new language-and-code attack surface. Attackers can present a benign workflow in SKILL.md while embedding implicit directives that steer the agent to exfiltrate sensitive files, even if the scripts appear harmless. This attack surface remains understudied; prior work treats skills merely as prompt-injection vectors or static code artifacts, leaving attacks emerging from cross-modal interactions largely unmeasured. In our evaluation, open-source and commercial skill scanners detect only 2%-8% and 9%-17% of such attacks, respectively. To address this gap, we introduce SkillMutator, the first benchmark for install-time detection of language-and-code cross-modal attacks on Agent Skills. It emulates an adversarial mutation process across 13 attack categories, iteratively refining malicious skills using scanner feedback to make injected behaviors indistinguishable from legitimate workflows. We further propose a four-phase reasoning-trajectory distillation framework to distill frontier-teacher traces into smaller open-weight models. This produces a locally deployable scanner avoiding third-party data exposure and excessive API costs. On the strongest SkillMutator subset (n=76), our distilled model (Qwen2.5-Coder-7B-Instruct) improves detection from 17.1% to 88.2%, surpassing GPT-4o-mini (23.7%) and GPT-5.4-mini (79.0%), and reaching frontier-level GPT-5.4 (86.8%). These results show practical defense against cross-modal attacks is feasible without relying on costly frontier models.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.14154v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.14154v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.14154" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.15300.html"><strong>CODA-BENCH: Can Code Agents Handle Data-Intensive Tasks?</strong></a> <span>2026-06-13</span></li>
+          <li><a href="2606.15107.html"><strong>Towards Verifiable Agentic Data Science: Solving Irregular TSQA Via Tool-Grounded Reasoning</strong></a> <span>2026-06-13</span></li>
+          <li><a href="2607.13041.html"><strong>LessonBench-V1: A Benchmark Dataset for Evaluating AI Lesson Generation Agents</strong></a> <span>2026-06-12</span></li>
+          <li><a href="2606.14397.html"><strong>Running the Gauntlet: Re-evaluating the Capabilities of Agents Beyond Familiar Environments</strong></a> <span>2026-06-12</span></li>
+          <li><a href="2606.13757.html"><strong>SEVRA-BENCH: Social Engineering of Vulnerabilities in Review Agents</strong></a> <span>2026-06-11</span></li>
+          <li><a href="2606.13681.html"><strong>EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments</strong></a> <span>2026-06-11</span></li>
+          <li><a href="2606.13602.html"><strong>EpiBench: Verifiable Evaluation of AI Agents on Epigenomics Analysis</strong></a> <span>2026-06-11</span></li>
+          <li><a href="2606.13148.html"><strong>TerraBench: Can Agents Reason Over Heterogeneous Earth-System Data?</strong></a> <span>2026-06-11</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

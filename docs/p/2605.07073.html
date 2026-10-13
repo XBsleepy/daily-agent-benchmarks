@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>TeamBench: Evaluating Agent Coordination under Enforced Role Separation | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Agent systems often decompose a task across multiple roles, but these roles are typically specified by prompts rather than enforced…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2605.07073" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.07073.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="TeamBench: Evaluating Agent Coordination under Enforced Role Separation" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Agent systems often decompose a task across multiple roles, but these roles are typically specified by prompts rather than enforced…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.07073.html" />
+    <meta property="article:published_time" content="2026-05-08T00:48:45Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="TeamBench: Evaluating Agent Coordination under Enforced Role Separation" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Agent systems often decompose a task across multiple roles, but these roles are typically specified by prompts rather than enforced…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,95 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "TeamBench: Evaluating Agent Coordination under Enforced Role Separation",
+  "name": "TeamBench: Evaluating Agent Coordination under Enforced Role Separation",
+  "abstract": "Agent systems often decompose a task across multiple roles, but these roles are typically specified by prompts rather than enforced by access controls. Without enforcement, a team pass rate can mask whether agents actually coordinated or whether one role effectively did another role's work. We present TeamBench, a benchmark with 851 task templates and 931 seeded instances for evaluating agent coordination under operating system-enforced role separation. TeamBench separates specification access, workspace editing, and final certification across Planner, Executor, and Verifier roles, so that no role can read the full requirements, modify the workspace, and certify the final answer. Prompt-only and sandbox-enforced teams reach statistically indistinguishable pass rates, but prompt-only runs produce 3.6 times more cases where the verifier attempts to edit the executor's code. Verifiers approve 49% of submissions that fail the deterministic grader, and removing the verifier improves mean partial score in the ablation. Team value is also conditional. Teams benefit when single agents struggle, but hurt when single agents already perform well. A 40-session human study under the same role separation shows that our benchmark exposes interaction patterns that pass rate misses. Solo participants work through the task directly, human participants paired with agents often collapse into quick approval, and human teams spend more effort coordinating missing information across roles.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yubin Kim"
+    },
+    {
+      "@type": "Person",
+      "name": "Chanwoo Park"
+    },
+    {
+      "@type": "Person",
+      "name": "Taehan Kim"
+    },
+    {
+      "@type": "Person",
+      "name": "Eugene Park"
+    },
+    {
+      "@type": "Person",
+      "name": "Samuel Schmidgall"
+    },
+    {
+      "@type": "Person",
+      "name": "Salman Rahman"
+    },
+    {
+      "@type": "Person",
+      "name": "Chunjong Park"
+    },
+    {
+      "@type": "Person",
+      "name": "Cynthia Breazeal"
+    },
+    {
+      "@type": "Person",
+      "name": "Xin Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Hamid Palangi"
+    },
+    {
+      "@type": "Person",
+      "name": "Hae Won Park"
+    },
+    {
+      "@type": "Person",
+      "name": "Daniel McDuff"
+    }
+  ],
+  "datePublished": "2026-05-08T00:48:45Z",
+  "dateModified": "2026-05-08T00:48:45Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.07073.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.07073.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.07073v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.07073"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.07073v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.07073"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +127,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>TeamBench: Evaluating Agent Coordination under Enforced Role Separation</h1>
+        <div class="meta">
+          Yubin Kim, Chanwoo Park, Taehan Kim, Eugene Park, Samuel Schmidgall, Salman Rahman, Chunjong Park, Cynthia Breazeal, Xin Liu, Hamid Palangi, Hae Won Park, Daniel McDuff
+          · 2605.07073
+          · <time datetime="2026-05-08">2026-05-08</time>
+          · General · 2 citations
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Agent systems often decompose a task across multiple roles, but these roles are typically specified by prompts rather than enforced by access controls. Without enforcement, a team pass rate can mask whether agents actually coordinated or whether one role effectively did another role&#x27;s work. We present TeamBench, a benchmark with 851 task templates and 931 seeded instances for evaluating agent coordination under operating system-enforced role separation. TeamBench separates specification access, workspace editing, and final certification across Planner, Executor, and Verifier roles, so that no role can read the full requirements, modify the workspace, and certify the final answer. Prompt-only and sandbox-enforced teams reach statistically indistinguishable pass rates, but prompt-only runs produce 3.6 times more cases where the verifier attempts to edit the executor&#x27;s code. Verifiers approve 49% of submissions that fail the deterministic grader, and removing the verifier improves mean partial score in the ablation. Team value is also conditional. Teams benefit when single agents struggle, but hurt when single agents already perform well. A 40-session human study under the same role separation shows that our benchmark exposes interaction patterns that pass rate misses. Solo participants work through the task directly, human participants paired with agents often collapse into quick approval, and human teams spend more effort coordinating missing information across roles.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.07073v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.07073v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.07073" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.07830.html"><strong>CyBiasBench: Benchmarking Bias in LLM Agents for Cyber-Attack Scenarios</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.07251.html"><strong>Can Agents Price a Reaction? Evaluating LLMs on Chemical Cost Reasoning</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.07180.html"><strong>Learning Agent Routing From Early Experience</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.07161.html"><strong>SREGym: A Live Benchmark for AI SRE Agents with High-Fidelity Failure Scenarios</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.06527.html"><strong>STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?</strong></a> <span>2026-05-07</span></li>
+          <li><a href="2605.06490.html"><strong>Instrumental Choices: Measuring the Propensity of LLM Agents to Pursue Instrumental Behaviors</strong></a> <span>2026-05-07</span></li>
+          <li><a href="2605.06334.html"><strong>MANTRA: Synthesizing SMT-Validated Compliance Benchmarks for Tool-Using LLM Agents</strong></a> <span>2026-05-07</span></li>
+          <li><a href="2605.05726.html"><strong>SkillRet: A Large-Scale Benchmark for Skill Retrieval in LLM Agents</strong></a> <span>2026-05-07</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

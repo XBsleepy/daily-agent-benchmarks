@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MTAC-IFBench: Benchmarking Instruction-Following in Multi-Turn Agentic Coding | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Recently, the rapid development of large language models (LLMs) has reshaped software engineering by enabling autonomous code agents…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Tool use, agent benchmark, LLM agent, arXiv, 2609.14992" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.14992.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MTAC-IFBench: Benchmarking Instruction-Following in Multi-Turn Agentic Coding" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Recently, the rapid development of large language models (LLMs) has reshaped software engineering by enabling autonomous code agents…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.14992.html" />
+    <meta property="article:published_time" content="2026-09-15T04:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MTAC-IFBench: Benchmarking Instruction-Following in Multi-Turn Agentic Coding" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Recently, the rapid development of large language models (LLMs) has reshaped software engineering by enabling autonomous code agents…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,53 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MTAC-IFBench: Benchmarking Instruction-Following in Multi-Turn Agentic Coding",
+  "name": "MTAC-IFBench: Benchmarking Instruction-Following in Multi-Turn Agentic Coding",
+  "abstract": "Recently, the rapid development of large language models (LLMs) has reshaped software engineering by enabling autonomous code agents that plan, execute, and utilize external tools iteratively to tackle complex tasks. Beyond achieving functional correctness, these agents must faithfully follow process instructions and constraints throughout the development lifecycle. However, existing benchmarks typically focus on final functional correctness or confine instruction-following evaluation to single-turn, general chat or simple code generation scenarios, leaving instruction-following in multi-turn agentic coding underexplored. To bridge this gap, we propose MTAC-IFBench, a comprehensive benchmark for this critical capability. It features multi-turn progressive software development instructions with diverse constraints spanning 6 primary and 18 secondary categories. With an average of 7.04 turns and 91.33 constraints per instance, it poses a rigorous challenge to current LLMs. To make the evaluation reliable, we construct a checklist for each constraint and functional requirement, and integrate verification scripts and judge agents to verify each checklist item. MTAC-IFBench identifies significant deficiencies in existing code agents in multi-turn instruction-following, with their performance degrading rapidly as the interaction session grows longer.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Bosi Wen, Cunxiang Wang, Jiayi Gui, Haoke Zhang, Yilin Niu, Pei Ke, Dayong Yang, Hongning Wang, Minlie Huang"
+    }
+  ],
+  "datePublished": "2026-09-15T04:00:00Z",
+  "dateModified": "2026-09-15T04:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.14992.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.14992.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.14992"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.14992"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.14992"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.14992"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +85,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MTAC-IFBench: Benchmarking Instruction-Following in Multi-Turn Agentic Coding</h1>
+        <div class="meta">
+          Bosi Wen, Cunxiang Wang, Jiayi Gui, Haoke Zhang, Yilin Niu, Pei Ke, Dayong Yang, Hongning Wang, Minlie Huang
+          · 2609.14992
+          · <time datetime="2026-09-15">2026-09-15</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Recently, the rapid development of large language models (LLMs) has reshaped software engineering by enabling autonomous code agents that plan, execute, and utilize external tools iteratively to tackle complex tasks. Beyond achieving functional correctness, these agents must faithfully follow process instructions and constraints throughout the development lifecycle. However, existing benchmarks typically focus on final functional correctness or confine instruction-following evaluation to single-turn, general chat or simple code generation scenarios, leaving instruction-following in multi-turn agentic coding underexplored. To bridge this gap, we propose MTAC-IFBench, a comprehensive benchmark for this critical capability. It features multi-turn progressive software development instructions with diverse constraints spanning 6 primary and 18 secondary categories. With an average of 7.04 turns and 91.33 constraints per instance, it poses a rigorous challenge to current LLMs. To make the evaluation reliable, we construct a checklist for each constraint and functional requirement, and integrate verification scripts and judge agents to verify each checklist item. MTAC-IFBench identifies significant deficiencies in existing code agents in multi-turn instruction-following, with their performance degrading rapidly as the interaction session grows longer.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.14992" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.14992" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.14992" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.21562.html"><strong>GameLogicBench: Evaluating Coding Agents on Runtime Game Logic with Tick-Level State Assertions</strong></a> <span>2026-09-21</span></li>
+          <li><a href="2609.18909.html"><strong>Beyond Outcomes: Dual-View Relational Learning for Efficient Agent Benchmarking</strong></a> <span>2026-09-17</span></li>
+          <li><a href="2609.17930.html"><strong>Locating Hidden Failures Makes Long-Horizon Agents More Reliable</strong></a> <span>2026-09-17</span></li>
+          <li><a href="2609.17394.html"><strong>Coding Agents Have Converged: Why the SWE-bench Leaderboard Can No Longer Order Its Top Entries, and What to Measure Instead</strong></a> <span>2026-09-16</span></li>
+          <li><a href="2609.13149.html"><strong>BudgetBench: A Budget-Tiered Protocol and Pilot Harness for Memory Strategy Evaluation in Local Large Language Model Agents</strong></a> <span>2026-09-15</span></li>
+          <li><a href="2609.12265.html"><strong>GTA: Graph Theory Agent and Benchmark for Algorithmic Graph Reasoning with LLMs</strong></a> <span>2026-09-10</span></li>
+          <li><a href="2609.09526.html"><strong>Benchmarking Agentic HLS Design Tasks With HLS-Eval</strong></a> <span>2026-09-08</span></li>
+          <li><a href="2609.08149.html"><strong>SWE-Bench Pro Verified: A Reliable Benchmark for Software Engineering Agents</strong></a> <span>2026-09-08</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

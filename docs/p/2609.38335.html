@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>E2E-SWE: Benchmarking LLMs on Building Working Codebases from Scratch | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Coding agents powered by large language models (LLMs) are evolving from making localized code changes to developing complete software…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2609.38335" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.38335.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="E2E-SWE: Benchmarking LLMs on Building Working Codebases from Scratch" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Coding agents powered by large language models (LLMs) are evolving from making localized code changes to developing complete software…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.38335.html" />
+    <meta property="article:published_time" content="2026-09-29T18:02:25Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="E2E-SWE: Benchmarking LLMs on Building Working Codebases from Scratch" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Coding agents powered by large language models (LLMs) are evolving from making localized code changes to developing complete software…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,81 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "E2E-SWE: Benchmarking LLMs on Building Working Codebases from Scratch",
+  "name": "E2E-SWE: Benchmarking LLMs on Building Working Codebases from Scratch",
+  "abstract": "Coding agents powered by large language models (LLMs) are evolving from making localized code changes to developing complete software repositories. However, evaluating repository-scale generation remains challenging: tasks must demand system-level reasoning while ensuring that all evaluated behaviors are precisely specified and independent of any particular implementation. We introduce E2E-SWE, a benchmark for evaluating whether coding agents can build complete, functional software repositories end to end. E2E-SWE contains 186 whole-repository generation tasks spanning 11 programming languages. Given only a natural-language specification and an empty workspace, an agent must implement a complete, installable project that satisfies a comprehensive suite of hidden tests. Each task is constructed by a software engineer in collaboration with an LLM; together, they develop the test suite and a corresponding implementation-independent specification. To ensure that tasks are well specified and practically solvable, we further subject them to an iterative verification process in which autonomous agents audit and repair task defects using static inspection and failures observed from real model rollouts. Evaluating 13 frontier models, we find substantial variation in end-to-end repository generation ability, with pass@1 ranging from 11.7% to 67.7%, providing strong model differentiation while leaving considerable headroom for future progress. Analysis of agent trajectories further reveals long, front-loaded reasoning patterns, highlighting the planning and system-level reasoning required to construct working codebases from scratch.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Hantian Ding"
+    },
+    {
+      "@type": "Person",
+      "name": "Chloe Bi"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiacheng Zhu"
+    },
+    {
+      "@type": "Person",
+      "name": "John Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Matt Deitke"
+    },
+    {
+      "@type": "Person",
+      "name": "Pengcheng Yin"
+    },
+    {
+      "@type": "Person",
+      "name": "Zijian Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Rui Hou"
+    }
+  ],
+  "datePublished": "2026-09-29T18:02:25Z",
+  "dateModified": "2026-09-29T18:02:25Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.38335.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.38335.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.38335v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.38335"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.38335v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.38335"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +113,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>E2E-SWE: Benchmarking LLMs on Building Working Codebases from Scratch</h1>
+        <div class="meta">
+          Hantian Ding, Chloe Bi, Jiacheng Zhu, John Yang, Matt Deitke, Pengcheng Yin, Zijian Wang, Rui Hou
+          · 2609.38335
+          · <time datetime="2026-09-29">2026-09-29</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Coding agents powered by large language models (LLMs) are evolving from making localized code changes to developing complete software repositories. However, evaluating repository-scale generation remains challenging: tasks must demand system-level reasoning while ensuring that all evaluated behaviors are precisely specified and independent of any particular implementation. We introduce E2E-SWE, a benchmark for evaluating whether coding agents can build complete, functional software repositories end to end. E2E-SWE contains 186 whole-repository generation tasks spanning 11 programming languages. Given only a natural-language specification and an empty workspace, an agent must implement a complete, installable project that satisfies a comprehensive suite of hidden tests. Each task is constructed by a software engineer in collaboration with an LLM; together, they develop the test suite and a corresponding implementation-independent specification. To ensure that tasks are well specified and practically solvable, we further subject them to an iterative verification process in which autonomous agents audit and repair task defects using static inspection and failures observed from real model rollouts. Evaluating 13 frontier models, we find substantial variation in end-to-end repository generation ability, with pass@1 ranging from 11.7% to 67.7%, providing strong model differentiation while leaving considerable headroom for future progress. Analysis of agent trajectories further reveals long, front-loaded reasoning patterns, highlighting the planning and system-level reasoning required to construct working codebases from scratch.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.38335v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.38335v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.38335" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.00648.html"><strong>Incident-Arena: Getting agents to the last nine of reliability</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2609.39564.html"><strong>A2Z GameSpec-Bench: How Faithfully Can Coding Agents Generate Games from Game Design Specifications?</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2609.39909.html"><strong>DoGBench: Can Agents Meet Expert Standards for User-Facing Documentation?</strong></a> <span>2026-09-30</span></li>
+          <li><a href="2609.39086.html"><strong>Trustworthy Runtime Error Healing in Real-World Repositories: A Benchmark and Guardrail</strong></a> <span>2026-09-30</span></li>
+          <li><a href="2609.38269.html"><strong>Zero2Repo: Can Coding Agents Build Repositories from Scratch?</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.37143.html"><strong>LoLBench: Evaluating Coding Agents with Long-Horizon Proposals on Large Software Systems</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.36777.html"><strong>Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.36635.html"><strong>WitnessGym: Benchmarking Coding Agents on the Construction of Bug Witnesses</strong></a> <span>2026-09-29</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

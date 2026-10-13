@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: As LLM-based agents operate over sequential multi-step reasoning, hallucinations arising at intermediate steps risk propagating along…" />
+    <meta name="keywords" content="General, Tool use, Safety, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2601.06818" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.06818.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: As LLM-based agents operate over sequential multi-step reasoning, hallucinations arising at intermediate steps risk propagating along…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.06818.html" />
+    <meta property="article:published_time" content="2026-01-11T09:04:26Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: As LLM-based agents operate over sequential multi-step reasoning, hallucinations arising at intermediate steps risk propagating along…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,70 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents",
+  "name": "AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents",
+  "abstract": "As LLM-based agents operate over sequential multi-step reasoning, hallucinations arising at intermediate steps risk propagating along the trajectory, thus degrading overall reliability. Unlike hallucination detection in single-turn responses, diagnosing hallucinations in multi-step workflows requires identifying which step causes the initial divergence. To fill this gap, we propose a new research task, automated hallucination attribution of LLM-based agents, aiming to identify the step responsible for the hallucination and explain why. To support this task, we introduce AgentHallu, a comprehensive benchmark with: (1) 693 high-quality trajectories spanning 7 agent frameworks and 5 domains, (2) a hallucination taxonomy organized into 5 categories (Planning, Retrieval, Reasoning, Human-Interaction, and Tool-Use) and 14 sub-categories, and (3) multi-level annotations curated by humans, covering binary labels, hallucination-responsible steps, and causal explanations. We evaluate 13 leading models, and results show the task is challenging even for top-tier models (like GPT-5, Gemini-2.5-Pro). The best-performing model achieves only 41.1\\% step localization accuracy, where tool-use hallucinations are the most challenging at just 11.6\\%. We believe AgentHallu will catalyze future research into developing robust, transparent, and reliable agentic systems.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Xuannan Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiao Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zekun Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Peipei Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Ran He"
+    }
+  ],
+  "datePublished": "2026-01-11T09:04:26Z",
+  "dateModified": "2026-01-11T09:04:26Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.06818.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.06818.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2601.06818v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2601.06818"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Safety",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2601.06818v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2601.06818"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +102,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents</h1>
+        <div class="meta">
+          Xuannan Liu, Xiao Yang, Zekun Li, Peipei Li, Ran He
+          · 2601.06818
+          · <time datetime="2026-01-11">2026-01-11</time>
+          · General · 13 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>As LLM-based agents operate over sequential multi-step reasoning, hallucinations arising at intermediate steps risk propagating along the trajectory, thus degrading overall reliability. Unlike hallucination detection in single-turn responses, diagnosing hallucinations in multi-step workflows requires identifying which step causes the initial divergence. To fill this gap, we propose a new research task, automated hallucination attribution of LLM-based agents, aiming to identify the step responsible for the hallucination and explain why. To support this task, we introduce AgentHallu, a comprehensive benchmark with: (1) 693 high-quality trajectories spanning 7 agent frameworks and 5 domains, (2) a hallucination taxonomy organized into 5 categories (Planning, Retrieval, Reasoning, Human-Interaction, and Tool-Use) and 14 sub-categories, and (3) multi-level annotations curated by humans, covering binary labels, hallucination-responsible steps, and causal explanations. We evaluate 13 leading models, and results show the task is challenging even for top-tier models (like GPT-5, Gemini-2.5-Pro). The best-performing model achieves only 41.1\% step localization accuracy, where tool-use hallucinations are the most challenging at just 11.6\%. We believe AgentHallu will catalyze future research into developing robust, transparent, and reliable agentic systems.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2601.06818v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2601.06818v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2601.06818" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2601.08196.html"><strong>Evaluating Implicit Regulatory Compliance in LLM Tool Invocation via Logic-Guided Synthesis</strong></a> <span>2026-01-13</span></li>
+          <li><a href="2601.08118.html"><strong>MirrorBench: A Benchmark to Evaluate Conversational User-Proxy Agents for Human-Likeness</strong></a> <span>2026-01-13</span></li>
+          <li><a href="2601.07367.html"><strong>FOCAL: A Novel Benchmarking Technique for Multi-modal Agents</strong></a> <span>2026-01-12</span></li>
+          <li><a href="2601.07880.html"><strong>Sola-Visibility-ISPM: Benchmarking Agentic AI for Identity Security Posture Management Visibility</strong></a> <span>2026-01-11</span></li>
+          <li><a href="2601.05101.html"><strong>Arabic Prompts with English Tools: A Benchmark</strong></a> <span>2026-01-08</span></li>
+          <li><a href="2601.03540.html"><strong>DeepSynth-Eval: Objectively Evaluating Information Consolidation in Deep Survey Writing</strong></a> <span>2026-01-07</span></li>
+          <li><a href="2601.02941.html"><strong>SastBench: A Benchmark for Testing Agentic SAST Triage</strong></a> <span>2026-01-06</span></li>
+          <li><a href="2601.02598.html"><strong>LongDA: Benchmarking LLM Agents for Long-Document Data Analysis</strong></a> <span>2026-01-05</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

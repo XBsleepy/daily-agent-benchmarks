@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>EnergyAgentBench: Benchmarking LLM Agents on Live Energy Infrastructure Data | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Selecting the right electricity market region for a hyperscale AI datacenter requires reasoning across live electricity prices, grid…" />
+    <meta name="keywords" content="General, Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2605.15230" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.15230.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="EnergyAgentBench: Benchmarking LLM Agents on Live Energy Infrastructure Data" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Selecting the right electricity market region for a hyperscale AI datacenter requires reasoning across live electricity prices, grid…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.15230.html" />
+    <meta property="article:published_time" content="2026-05-13T18:03:51Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="EnergyAgentBench: Benchmarking LLM Agents on Live Energy Infrastructure Data" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Selecting the right electricity market region for a hyperscale AI datacenter requires reasoning across live electricity prices, grid…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,53 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "EnergyAgentBench: Benchmarking LLM Agents on Live Energy Infrastructure Data",
+  "name": "EnergyAgentBench: Benchmarking LLM Agents on Live Energy Infrastructure Data",
+  "abstract": "Selecting the right electricity market region for a hyperscale AI datacenter requires reasoning across live electricity prices, grid carbon intensity, technology cost trajectories, and causal grid dynamics -- a multi-step, multi-source analytical task that static knowledge benchmarks cannot evaluate. We introduce EnergyAgentBench, the first agentic benchmark grounded in live electricity market data for this problem class. The benchmark comprises 70 task variants across five families: datacenter siting under cost-carbon trade-offs (F1), long-horizon portfolio siting (F1-LH), lifetime LCOE ranking over multi-decade cost trajectories (F2), 30-year portfolio optimization (F2-LH), and causal grid diagnosis (F3). Tasks require 3 to 48 sequential tool calls against live endpoints from the QuarluxAI infrastructure platform, the U.S. Energy Information Administration (EIA), and the National Renewable Energy Laboratory (NREL) with ground truth derived from trained XGBoost cost-surface models (R^2 0.967--0.995) and the NREL Annual Technology Baseline 2024. We evaluate nine models across Anthropic, OpenAI, and HuggingFace over 1,414 runs at three random seeds. Claude Sonnet 4.6 achieves the highest overall score (0.900) at one-quarter the cost of Claude Opus 4.7 (0.889). Claude Haiku 4.5 leads on long-horizon procedural siting (0.986), outperforming all frontier models including those costing 16x more per run. F3 Causal is the most discriminating family, with a 30.7-point spread between Sonnet (0.793) and Llama 3.3 70B (0.486), versus a 6.6-point spread on F1 Siting. A failure taxonomy of 135 coded failures identifies null-value integration in NREL ATB trajectories as the dominant failure mode (70%), followed by premature commitment on causal tasks (20%) and adversarial injection blindness (6%). Benchmark code, run trajectories, and the failure taxonomy dataset are publicly released.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Eliseo Curcio"
+    }
+  ],
+  "datePublished": "2026-05-13T18:03:51Z",
+  "dateModified": "2026-08-03T14:38:56Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.15230.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.15230.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.15230v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.15230"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.15230v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.15230"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +85,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>EnergyAgentBench: Benchmarking LLM Agents on Live Energy Infrastructure Data</h1>
+        <div class="meta">
+          Eliseo Curcio
+          · 2605.15230
+          · <time datetime="2026-05-13">2026-05-13</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Selecting the right electricity market region for a hyperscale AI datacenter requires reasoning across live electricity prices, grid carbon intensity, technology cost trajectories, and causal grid dynamics -- a multi-step, multi-source analytical task that static knowledge benchmarks cannot evaluate. We introduce EnergyAgentBench, the first agentic benchmark grounded in live electricity market data for this problem class. The benchmark comprises 70 task variants across five families: datacenter siting under cost-carbon trade-offs (F1), long-horizon portfolio siting (F1-LH), lifetime LCOE ranking over multi-decade cost trajectories (F2), 30-year portfolio optimization (F2-LH), and causal grid diagnosis (F3). Tasks require 3 to 48 sequential tool calls against live endpoints from the QuarluxAI infrastructure platform, the U.S. Energy Information Administration (EIA), and the National Renewable Energy Laboratory (NREL) with ground truth derived from trained XGBoost cost-surface models (R^2 0.967--0.995) and the NREL Annual Technology Baseline 2024. We evaluate nine models across Anthropic, OpenAI, and HuggingFace over 1,414 runs at three random seeds. Claude Sonnet 4.6 achieves the highest overall score (0.900) at one-quarter the cost of Claude Opus 4.7 (0.889). Claude Haiku 4.5 leads on long-horizon procedural siting (0.986), outperforming all frontier models including those costing 16x more per run. F3 Causal is the most discriminating family, with a 30.7-point spread between Sonnet (0.793) and Llama 3.3 70B (0.486), versus a 6.6-point spread on F1 Siting. A failure taxonomy of 135 coded failures identifies null-value integration in NREL ATB trajectories as the dominant failure mode (70%), followed by premature commitment on causal tasks (20%) and adversarial injection blindness (6%). Benchmark code, run trajectories, and the failure taxonomy dataset are publicly released.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.15230v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.15230v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.15230" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.16679.html"><strong>CHI-Bench: Can AI Agents Automate End-to-End, Long-Horizon, Policy-Rich Healthcare Workflows?</strong></a> <span>2026-05-15</span></li>
+          <li><a href="2605.15766.html"><strong>BioXArena: Benchmarking LLM Agents on Multi-Modal Biomedical Machine Learning Tasks</strong></a> <span>2026-05-15</span></li>
+          <li><a href="2605.14678.html"><strong>$π$-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</strong></a> <span>2026-05-14</span></li>
+          <li><a href="2605.14355.html"><strong>Herculean: An Agentic Benchmark for Financial Intelligence</strong></a> <span>2026-05-14</span></li>
+          <li><a href="2605.15229.html"><strong>PBT-Bench: Benchmarking AI Agents on Property-Based Testing</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.14153.html"><strong>ExploitBench: A Capability Ladder Benchmark for LLM Cybersecurity Agents</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.14133.html"><strong>ClawForge: Generating Executable Interactive Benchmarks for Command-Line Agents</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.13940.html"><strong>AgentTrap: Measuring Runtime Trust Failures in Third-Party Agent Skills</strong></a> <span>2026-05-13</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>DeepTumorVQA: A Hierarchical 3D CT Benchmark for Stage-Wise Evaluation of Medical VLMs and Tool-Augmented Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Medical vision-language models (VLMs) and AI agents have made significant progress in learning to analyze and reason about clinical…" />
+    <meta name="keywords" content="Multimodal, Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2605.09679" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.09679.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="DeepTumorVQA: A Hierarchical 3D CT Benchmark for Stage-Wise Evaluation of Medical VLMs and Tool-Augmented Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Medical vision-language models (VLMs) and AI agents have made significant progress in learning to analyze and reason about clinical…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.09679.html" />
+    <meta property="article:published_time" content="2026-05-10T17:57:57Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="DeepTumorVQA: A Hierarchical 3D CT Benchmark for Stage-Wise Evaluation of Medical VLMs and Tool-Augmented Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Medical vision-language models (VLMs) and AI agents have made significant progress in learning to analyze and reason about clinical…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,89 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "DeepTumorVQA: A Hierarchical 3D CT Benchmark for Stage-Wise Evaluation of Medical VLMs and Tool-Augmented Agen",
+  "name": "DeepTumorVQA: A Hierarchical 3D CT Benchmark for Stage-Wise Evaluation of Medical VLMs and Tool-Augmented Agents",
+  "abstract": "Medical vision-language models (VLMs) and AI agents have made significant progress in learning to analyze and reason about clinical images. However, existing medical visual question answering (VQA) benchmarks collapse model capabilities into a single accuracy score, obscuring where and why models fail. We propose DeepTumorVQA, a hierarchical benchmark that follows the multi-stage evidence chain in tumor diagnosis and decomposes 3D CT reasoning into four stages: recognition, measurement, visual reasoning, and medical reasoning. Higher-level questions remain independently scorable, while their ground-truth evidence chains are defined over lower-level primitives. The benchmark contains 476K questions across 42 clinical subtypes on 9,262 3D CT volumes. In addition to a direct reasoning mode for VLMs, DeepTumorVQA provides tool-interaction environments for agent evaluation, where a model can call external tools, including segmentation models, measurement programs, and medical knowledge modules, before answering the question. Evaluating over 30 model configurations, we find that reliable quantitative measurement is the primary bottleneck, making later-stage visual and medical reasoning harder for VLMs, while tool augmentation substantially mitigates this issue. When tools are available, leveraging medical knowledge and tools to reason about medical images becomes a new challenge. We further show that ground-truth step-by-step tool-use traces from DeepTumorVQA can supervise agents and reduce tool-use and reasoning failures. This stage-wise progression from recognition to measurement to visual and medical reasoning provides a concrete roadmap for future medical VLM and AI agent studies. All data and code are released at https://github.com/Schuture/DeepTumorVQA.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yixiong Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenjie Xiao"
+    },
+    {
+      "@type": "Person",
+      "name": "Pedro R. A. S. Bassi"
+    },
+    {
+      "@type": "Person",
+      "name": "Boyan Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Liang He"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinze Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Sezgin Er"
+    },
+    {
+      "@type": "Person",
+      "name": "Ibrahim Ethem Hamamci"
+    },
+    {
+      "@type": "Person",
+      "name": "Zongwei Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Alan Yuille"
+    }
+  ],
+  "datePublished": "2026-05-10T17:57:57Z",
+  "dateModified": "2026-05-10T17:57:57Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.09679.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.09679.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.09679v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.09679"
+  },
+  "keywords": [
+    "Multimodal",
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multimodal"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.09679v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.09679"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +121,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>DeepTumorVQA: A Hierarchical 3D CT Benchmark for Stage-Wise Evaluation of Medical VLMs and Tool-Augmented Agents</h1>
+        <div class="meta">
+          Yixiong Chen, Wenjie Xiao, Pedro R. A. S. Bassi, Boyan Wang, Liang He, Xinze Zhou, Sezgin Er, Ibrahim Ethem Hamamci, Zongwei Zhou, Alan Yuille
+          · 2605.09679
+          · <time datetime="2026-05-10">2026-05-10</time>
+          · Multimodal · 2 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Medical vision-language models (VLMs) and AI agents have made significant progress in learning to analyze and reason about clinical images. However, existing medical visual question answering (VQA) benchmarks collapse model capabilities into a single accuracy score, obscuring where and why models fail. We propose DeepTumorVQA, a hierarchical benchmark that follows the multi-stage evidence chain in tumor diagnosis and decomposes 3D CT reasoning into four stages: recognition, measurement, visual reasoning, and medical reasoning. Higher-level questions remain independently scorable, while their ground-truth evidence chains are defined over lower-level primitives. The benchmark contains 476K questions across 42 clinical subtypes on 9,262 3D CT volumes. In addition to a direct reasoning mode for VLMs, DeepTumorVQA provides tool-interaction environments for agent evaluation, where a model can call external tools, including segmentation models, measurement programs, and medical knowledge modules, before answering the question. Evaluating over 30 model configurations, we find that reliable quantitative measurement is the primary bottleneck, making later-stage visual and medical reasoning harder for VLMs, while tool augmentation substantially mitigates this issue. When tools are available, leveraging medical knowledge and tools to reason about medical images becomes a new challenge. We further show that ground-truth step-by-step tool-use traces from DeepTumorVQA can supervise agents and reduce tool-use and reasoning failures. This stage-wise progression from recognition to measurement to visual and medical reasoning provides a concrete roadmap for future medical VLM and AI agent studies. All data and code are released at https://github.com/Schuture/DeepTumorVQA.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.09679v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.09679v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.09679" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multimodal benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.15128.html"><strong>MemEye: A Visual-Centric Evaluation Framework for Multimodal Agent Memory</strong></a> <span>2026-05-14</span></li>
+          <li><a href="2605.10912.html"><strong>WildClawBench: A Benchmark for Real-World, Long-Horizon Agent Evaluation</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2605.10286.html"><strong>AgentRx: A Benchmark Study of LLM Agents for Multimodal Clinical Prediction Tasks</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2605.09934.html"><strong>TRACER: Verifiable Generative Provenance for Multimodal Tool-Using Agents</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2605.08445.html"><strong>Measuring What Matters: Benchmarking Generative, Multimodal, and Agentic AI in Healthcare</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.07510.html"><strong>InterLV-Search: Benchmarking Interleaved Multimodal Agentic Search</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.01250.html"><strong>EO-Gym: A Multimodal, Interactive Environment for Earth Observation Agents</strong></a> <span>2026-05-02</span></li>
+          <li><a href="2604.23781.html"><strong>ClawMark: A Living-World Benchmark for Multi-Turn, Multi-Day, Multimodal Coworker Agents</strong></a> <span>2026-04-26</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Benchmarking AI Agents for Hardware Design Automation via MCP Tool Calling | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: We ask whether AI agents powered by locally deployed large language models can reliably automate expert-defined hardware design…" />
+    <meta name="keywords" content="Tool use, Multi-agent, agent benchmark, LLM agent, arXiv, 2608.26199" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.26199.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Benchmarking AI Agents for Hardware Design Automation via MCP Tool Calling" />
+    <meta property="og:description" content="Daily Agent Benchmarks: We ask whether AI agents powered by locally deployed large language models can reliably automate expert-defined hardware design…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.26199.html" />
+    <meta property="article:published_time" content="2026-08-25T15:33:50Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Benchmarking AI Agents for Hardware Design Automation via MCP Tool Calling" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: We ask whether AI agents powered by locally deployed large language models can reliably automate expert-defined hardware design…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,56 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Benchmarking AI Agents for Hardware Design Automation via MCP Tool Calling",
+  "name": "Benchmarking AI Agents for Hardware Design Automation via MCP Tool Calling",
+  "abstract": "We ask whether AI agents powered by locally deployed large language models can reliably automate expert-defined hardware design workflows in an industry-realistic tool-calling setting. In these environments, engineers issue repetitive, dependency-ordered operations---such as creating components, adding ports, and wiring connections---through specialised tools. Confidentiality constraints on component specifications and naming conventions often preclude hosted proprietary APIs, motivating the use of locally deployed models. To study this setting, we build a Model Context Protocol (MCP) server that reproduces the state and dependency logic of a proprietary hardware design tool used in embedded system development and construct a benchmark covering single-operation edits, multi-step dependency chains, invalid requests, misspelled prompts, and multi-server tool contexts. We evaluate seven open-source models comparing pipeline choices including system prompts, tool-description detail, context scope, and single-agent versus multi-agent architectures. Results show that strong models can achieve near-complete expected-call coverage on the benchmarked workflows, but reliability depends strongly on both task structure and agent configuration. Comprehensive tool descriptions consistently reduce failures, few-shot prompting can cause severe inaction for some models, cumulative context harms constrained models, and multi-agent decomposition helps weak workers or long sessions at the cost of additional calls. These findings provide practical guidance for deploying local LLM agents in stateful hardware design environments.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Leonardo Liparulo"
+    },
+    {
+      "@type": "Person",
+      "name": "Francesco Pierri"
+    }
+  ],
+  "datePublished": "2026-08-25T15:33:50Z",
+  "dateModified": "2026-08-25T15:33:50Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.26199.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.26199.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.26199v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.26199"
+  },
+  "keywords": [
+    "Tool use",
+    "Multi-agent",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.26199v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.26199"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +88,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Benchmarking AI Agents for Hardware Design Automation via MCP Tool Calling</h1>
+        <div class="meta">
+          Leonardo Liparulo, Francesco Pierri
+          · 2608.26199
+          · <time datetime="2026-08-25">2026-08-25</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Multi-agent</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>We ask whether AI agents powered by locally deployed large language models can reliably automate expert-defined hardware design workflows in an industry-realistic tool-calling setting. In these environments, engineers issue repetitive, dependency-ordered operations---such as creating components, adding ports, and wiring connections---through specialised tools. Confidentiality constraints on component specifications and naming conventions often preclude hosted proprietary APIs, motivating the use of locally deployed models. To study this setting, we build a Model Context Protocol (MCP) server that reproduces the state and dependency logic of a proprietary hardware design tool used in embedded system development and construct a benchmark covering single-operation edits, multi-step dependency chains, invalid requests, misspelled prompts, and multi-server tool contexts. We evaluate seven open-source models comparing pipeline choices including system prompts, tool-description detail, context scope, and single-agent versus multi-agent architectures. Results show that strong models can achieve near-complete expected-call coverage on the benchmarked workflows, but reliability depends strongly on both task structure and agent configuration. Comprehensive tool descriptions consistently reduce failures, few-shot prompting can cause severe inaction for some models, cumulative context harms constrained models, and multi-agent decomposition helps weak workers or long sessions at the cost of additional calls. These findings provide practical guidance for deploying local LLM agents in stateful hardware design environments.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.26199v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.26199v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.26199" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.29128.html"><strong>APIFlow-Bench: Measuring Whether Agents Survive Long, Dependent API Workflows</strong></a> <span>2026-08-29</span></li>
+          <li><a href="2608.27334.html"><strong>BTS-AgentBench: A Deterministic, Replayable Pipeline from Read-Only Telemetry Logs to Agent Benchmarks</strong></a> <span>2026-08-27</span></li>
+          <li><a href="2608.26867.html"><strong>BekchiAI: Measuring, Observing, and Controlling LLM Agents in One Click</strong></a> <span>2026-08-27</span></li>
+          <li><a href="2608.26623.html"><strong>AgentJudgeBench: A Multi-Difficulty Benchmark for Evaluating LLM Judges on Agentic Tool-Calling</strong></a> <span>2026-08-27</span></li>
+          <li><a href="2608.24509.html"><strong>PeakBench: Benchmarking Resource-Aware Tool Invocation in LLM Agents</strong></a> <span>2026-08-25</span></li>
+          <li><a href="2608.23067.html"><strong>Signal or Noise? A Benchmark Study of Agent Skills in Web Development</strong></a> <span>2026-08-24</span></li>
+          <li><a href="2608.22331.html"><strong>Noise Floor Audit for Agent Benchmarks</strong></a> <span>2026-08-23</span></li>
+          <li><a href="2608.08700.html"><strong>PluginEval: A Diagnostic Benchmark for Fine-Grained Error Attribution in Function Calling</strong></a> <span>2026-08-09</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

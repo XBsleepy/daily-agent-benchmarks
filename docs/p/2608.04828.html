@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Skill-Use: Can LLMs Actually Use Skills in Agentic Harnesses? | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language model (LLM) agents increasingly rely on skills, structured documents that specify when to act, which procedure to…" />
+    <meta name="keywords" content="General, Tool use, agent benchmark, LLM agent, arXiv, 2608.04828" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.04828.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Skill-Use: Can LLMs Actually Use Skills in Agentic Harnesses?" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language model (LLM) agents increasingly rely on skills, structured documents that specify when to act, which procedure to…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.04828.html" />
+    <meta property="article:published_time" content="2026-08-05T13:29:16Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Skill-Use: Can LLMs Actually Use Skills in Agentic Harnesses?" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language model (LLM) agents increasingly rely on skills, structured documents that specify when to act, which procedure to…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,84 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Skill-Use: Can LLMs Actually Use Skills in Agentic Harnesses?",
+  "name": "Skill-Use: Can LLMs Actually Use Skills in Agentic Harnesses?",
+  "abstract": "Large language model (LLM) agents increasingly rely on skills, structured documents that specify when to act, which procedure to follow, and which tools are allowed. Existing evaluations mostly judge the quality of a skill or its contribution to task success, leaving unexamined whether an agent can recognize a relevant skill and apply it on its own. We introduce Skill-Use, a benchmark that evaluates skill use under progressive disclosure, where an agent sees only a skill's name and short description and must retrieve the full procedure before following it. Skill-Use separates three facets of skill use. Trigger measures whether the agent invokes the relevant skill, Compliance measures how faithfully it follows the prescribed procedure, and Boundary measures whether it avoids forbidden operations. A Skill-Use (SU) score combines the three and credits execution only after the skill is triggered. Skill-Use pairs 79 real skills with 177 executable tasks across nine domains, each grounded in real files, run in an isolated Docker sandbox, and scored by a trajectory-based rubric. Evaluating eight LLMs under two agent harnesses, we find that reliable skill use remains out of reach, as the strongest configuration reaches an SU of only 0.613. Triggering and procedural compliance fail as independent bottlenecks, and both scores and model rankings shift with the harness, so skill use behaves as a capability conditioned on the harness rather than a fixed property of the model.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jinyi Han"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuanjian Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Ying Liao"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinyi Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zishang Jiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zixiang Di"
+    },
+    {
+      "@type": "Person",
+      "name": "Fanyang Lu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhichao Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yanghua Xiao"
+    }
+  ],
+  "datePublished": "2026-08-05T13:29:16Z",
+  "dateModified": "2026-08-05T13:29:16Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.04828.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.04828.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.04828v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.04828"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.04828v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.04828"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +116,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Skill-Use: Can LLMs Actually Use Skills in Agentic Harnesses?</h1>
+        <div class="meta">
+          Jinyi Han, Yuanjian Xu, Ying Liao, Xinyi Wang, Zishang Jiang, Zixiang Di, Fanyang Lu, Zhichao Hu, Yanghua Xiao
+          · 2608.04828
+          · <time datetime="2026-08-05">2026-08-05</time>
+          · General · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large language model (LLM) agents increasingly rely on skills, structured documents that specify when to act, which procedure to follow, and which tools are allowed. Existing evaluations mostly judge the quality of a skill or its contribution to task success, leaving unexamined whether an agent can recognize a relevant skill and apply it on its own. We introduce Skill-Use, a benchmark that evaluates skill use under progressive disclosure, where an agent sees only a skill&#x27;s name and short description and must retrieve the full procedure before following it. Skill-Use separates three facets of skill use. Trigger measures whether the agent invokes the relevant skill, Compliance measures how faithfully it follows the prescribed procedure, and Boundary measures whether it avoids forbidden operations. A Skill-Use (SU) score combines the three and credits execution only after the skill is triggered. Skill-Use pairs 79 real skills with 177 executable tasks across nine domains, each grounded in real files, run in an isolated Docker sandbox, and scored by a trajectory-based rubric. Evaluating eight LLMs under two agent harnesses, we find that reliable skill use remains out of reach, as the strongest configuration reaches an SU of only 0.613. Triggering and procedural compliance fail as independent bottlenecks, and both scores and model rankings shift with the harness, so skill use behaves as a capability conditioned on the harness rather than a fixed property of the model.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.04828v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.04828v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.04828" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.06027.html"><strong>FormBharo: Designing and Evaluating a Voice Agent for Conversational Form Filling in Rural India</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2608.05573.html"><strong>SkillTV-Bench: Benchmarking How Well Judges Perform on Skill-Augmented Agentic Execution</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2608.05519.html"><strong>EcoAgent-Bench: Evaluating Economic Decision-Making in Budget-Constrained LLM Agents</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2608.05212.html"><strong>SearchAuditor: Auditing and Attributing Failures in Long-Horizon Search Agents</strong></a> <span>2026-08-05</span></li>
+          <li><a href="2608.04746.html"><strong>Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems</strong></a> <span>2026-08-05</span></li>
+          <li><a href="2608.14680.html"><strong>When Agentic Executions Fail: Detecting and Localizing Runtime Faults from Telemetry</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.04095.html"><strong>FinPerMA: A Theory-Informed, Event-Grounded Personalized-Memory Benchmark for LLM Agents</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.04077.html"><strong>FinProBench: Evaluating Financial AI Agents with Role-Grounded Rubrics Derived from Professional Deliverables</strong></a> <span>2026-08-04</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

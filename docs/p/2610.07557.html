@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>CheckerBench: Can Long-Horizon Agents Synthesize Static-Analysis Checkers? | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Static-analysis checker synthesis requires agents to interpret a defect specification, inspect a repository, implement…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Tool use, agent benchmark, LLM agent, arXiv, 2610.07557" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.07557.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="CheckerBench: Can Long-Horizon Agents Synthesize Static-Analysis Checkers?" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Static-analysis checker synthesis requires agents to interpret a defect specification, inspect a repository, implement…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.07557.html" />
+    <meta property="article:published_time" content="2026-10-06T00:42:45Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="CheckerBench: Can Long-Horizon Agents Synthesize Static-Analysis Checkers?" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Static-analysis checker synthesis requires agents to interpret a defect specification, inspect a repository, implement…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,97 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "CheckerBench: Can Long-Horizon Agents Synthesize Static-Analysis Checkers?",
+  "name": "CheckerBench: Can Long-Horizon Agents Synthesize Static-Analysis Checkers?",
+  "abstract": "Static-analysis checker synthesis requires agents to interpret a defect specification, inspect a repository, implement analyzer-specific logic, and refine the checker through repeated compilation and analysis feedback. Existing coding-agent benchmarks focus on tasks such as patch generation or vulnerability detection and rarely assess whether an agent can develop a working checker in a repository from start to finish. We introduce CheckerBench, an executable benchmark of 300 tasks derived from 297 CVEs across 167 repositories, 85 CWEs, and five language ecosystems. Each task includes vulnerable and fixed revisions, a pinned analysis environment, and a checker scaffold. We further introduce CheckerLab, a common evaluation framework that independently rebuilds submitted checkers and measures vulnerable-fixed diagnostic contrast, patch localization, false positives, and tool use. Across 21 model-harness configurations and three independent repeats per configuration, mean Pass@1 is 32.30%, while the best reaches 45.33%. These results show that reliable, reusable checker development remains challenging for current coding agents.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Hang He"
+    },
+    {
+      "@type": "Person",
+      "name": "Li Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Hao Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuchen Shao"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuling Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Lisheng Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Peiyang Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Goose Lin"
+    },
+    {
+      "@type": "Person",
+      "name": "Zaiyuan Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Haiying Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Ting Su"
+    },
+    {
+      "@type": "Person",
+      "name": "Chengcheng Wan"
+    }
+  ],
+  "datePublished": "2026-10-06T00:42:45Z",
+  "dateModified": "2026-10-06T00:42:45Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.07557.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.07557.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.07557v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.07557"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.07557v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2610.07557"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +129,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>CheckerBench: Can Long-Horizon Agents Synthesize Static-Analysis Checkers?</h1>
+        <div class="meta">
+          Hang He, Li Wang, Hao Chen, Yuchen Shao, Yuling Shi, Lisheng Wang, Peiyang Liu, Goose Lin, Zaiyuan Wang, Haiying Sun, Ting Su, Chengcheng Wan
+          · 2610.07557
+          · <time datetime="2026-10-06">2026-10-06</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Static-analysis checker synthesis requires agents to interpret a defect specification, inspect a repository, implement analyzer-specific logic, and refine the checker through repeated compilation and analysis feedback. Existing coding-agent benchmarks focus on tasks such as patch generation or vulnerability detection and rarely assess whether an agent can develop a working checker in a repository from start to finish. We introduce CheckerBench, an executable benchmark of 300 tasks derived from 297 CVEs across 167 repositories, 85 CWEs, and five language ecosystems. Each task includes vulnerable and fixed revisions, a pinned analysis environment, and a checker scaffold. We further introduce CheckerLab, a common evaluation framework that independently rebuilds submitted checkers and measures vulnerable-fixed diagnostic contrast, patch localization, false positives, and tool use. Across 21 model-harness configurations and three independent repeats per configuration, mean Pass@1 is 32.30%, while the best reaches 45.33%. These results show that reliable, reusable checker development remains challenging for current coding agents.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.07557v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.07557v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.07557" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.08720.html"><strong>WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?</strong></a> <span>2026-10-06</span></li>
+          <li><a href="2610.08662.html"><strong>ParanoiaEval: Benchmarking Unnecessary Defensive Work in Agentic Coding</strong></a> <span>2026-10-06</span></li>
+          <li><a href="2610.07639.html"><strong>HarnessSecurity-Bench: Do Security Mechanisms Really Protect Coding Agent Harnesses?</strong></a> <span>2026-10-06</span></li>
+          <li><a href="2610.07594.html"><strong>BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation</strong></a> <span>2026-10-06</span></li>
+          <li><a href="2610.07261.html"><strong>Verifying Coordination in Parallel Coding Agents: NP-Bench and a Scheduling Planner</strong></a> <span>2026-10-05</span></li>
+          <li><a href="2610.06193.html"><strong>Correct Code, Broken Contributions? SWE-CC: Benchmarking Repository Policy Compliance for Coding Agents</strong></a> <span>2026-10-05</span></li>
+          <li><a href="2610.05830.html"><strong>Measurement-First Auditing of Agentic Leaderboards: Contamination Susceptibility, Matched-Control Re-evaluation, and Scorer Validation</strong></a> <span>2026-10-05</span></li>
+          <li><a href="2610.04432.html"><strong>Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos</strong></a> <span>2026-10-03</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

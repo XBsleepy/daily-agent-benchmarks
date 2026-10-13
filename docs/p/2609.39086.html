@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Trustworthy Runtime Error Healing in Real-World Repositories: A Benchmark and Guardrail | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Runtime error healing lets a crashed program continue by generating code that repairs its live runtime state. Recent work shows that…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Safety, agent benchmark, LLM agent, arXiv, 2609.39086" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.39086.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Trustworthy Runtime Error Healing in Real-World Repositories: A Benchmark and Guardrail" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Runtime error healing lets a crashed program continue by generating code that repairs its live runtime state. Recent work shows that…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.39086.html" />
+    <meta property="article:published_time" content="2026-09-30T06:26:07Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Trustworthy Runtime Error Healing in Real-World Repositories: A Benchmark and Guardrail" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Runtime error healing lets a crashed program continue by generating code that repairs its live runtime state. Recent work shows that…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,97 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Trustworthy Runtime Error Healing in Real-World Repositories: A Benchmark and Guardrail",
+  "name": "Trustworthy Runtime Error Healing in Real-World Repositories: A Benchmark and Guardrail",
+  "abstract": "Runtime error healing lets a crashed program continue by generating code that repairs its live runtime state. Recent work shows that LLMs can generate such healing code, but it is evaluated only on small competition programs, and executing LLM-generated code inside a live process raises safety concerns that remain unaddressed. In this paper, we take LLM-based runtime healing toward practical use in real-world repositories. We first build HealBench, a benchmark of 265 runtime errors from 18 real-world repositories, each paired with a reference execution on the patched version. HealBench also provides a unified framework that lets LLM agents heal with cross-file context and live runtime state. We then design HealGuard, which requires healing code to be written in HealCore, an analyzable subset of Python, and uses static and dynamic taint analysis to check whether state changed by healing reaches operations protected by developers. We evaluate a dedicated healing method and three general coding agents with three backbone LLMs. The best setting resumes execution in 38.11% of instances and passes the target test in 28.68%, showing that existing agents can already heal a meaningful share of real repository-level crashes. However, among executions that pass, HealGuard flags 17.4% whose healing-changed state may reach a protected operation. On 684 controlled cases, HealGuard detects all unsafe cases, at the cost of a 68.42% false positive rate.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Gou Tan"
+    },
+    {
+      "@type": "Person",
+      "name": "Pengfei Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhensu Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Jieke Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Junkai Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Ting Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Weifeng Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Junda He"
+    },
+    {
+      "@type": "Person",
+      "name": "Shuai Liang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chuanfu Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Lwin Khin Shar"
+    },
+    {
+      "@type": "Person",
+      "name": "David Lo"
+    }
+  ],
+  "datePublished": "2026-09-30T06:26:07Z",
+  "dateModified": "2026-09-30T06:26:07Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.39086.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.39086.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.39086v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.39086"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.39086v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.39086"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +129,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Trustworthy Runtime Error Healing in Real-World Repositories: A Benchmark and Guardrail</h1>
+        <div class="meta">
+          Gou Tan, Pengfei Chen, Zhensu Sun, Jieke Shi, Junkai Chen, Ting Zhang, Weifeng Sun, Junda He, Shuai Liang, Chuanfu Zhang, Lwin Khin Shar, David Lo
+          · 2609.39086
+          · <time datetime="2026-09-30">2026-09-30</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Runtime error healing lets a crashed program continue by generating code that repairs its live runtime state. Recent work shows that LLMs can generate such healing code, but it is evaluated only on small competition programs, and executing LLM-generated code inside a live process raises safety concerns that remain unaddressed. In this paper, we take LLM-based runtime healing toward practical use in real-world repositories. We first build HealBench, a benchmark of 265 runtime errors from 18 real-world repositories, each paired with a reference execution on the patched version. HealBench also provides a unified framework that lets LLM agents heal with cross-file context and live runtime state. We then design HealGuard, which requires healing code to be written in HealCore, an analyzable subset of Python, and uses static and dynamic taint analysis to check whether state changed by healing reaches operations protected by developers. We evaluate a dedicated healing method and three general coding agents with three backbone LLMs. The best setting resumes execution in 38.11% of instances and passes the target test in 28.68%, showing that existing agents can already heal a meaningful share of real repository-level crashes. However, among executions that pass, HealGuard flags 17.4% whose healing-changed state may reach a protected operation. On 684 controlled cases, HealGuard detects all unsafe cases, at the cost of a 68.42% false positive rate.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.39086v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.39086v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.39086" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.02617.html"><strong>WebUIProof: Benchmarking WebUI Code Generators with UI-Agent Execution Harness</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.00648.html"><strong>Incident-Arena: Getting agents to the last nine of reliability</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2609.39564.html"><strong>A2Z GameSpec-Bench: How Faithfully Can Coding Agents Generate Games from Game Design Specifications?</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2609.39909.html"><strong>DoGBench: Can Agents Meet Expert Standards for User-Facing Documentation?</strong></a> <span>2026-09-30</span></li>
+          <li><a href="2609.38335.html"><strong>E2E-SWE: Benchmarking LLMs on Building Working Codebases from Scratch</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.38269.html"><strong>Zero2Repo: Can Coding Agents Build Repositories from Scratch?</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.37143.html"><strong>LoLBench: Evaluating Coding Agents with Long-Horizon Proposals on Large Software Systems</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.36777.html"><strong>Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes</strong></a> <span>2026-09-29</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

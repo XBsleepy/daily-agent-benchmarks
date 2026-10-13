@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MedImageOSWorld: Benchmarking GUI Agents for Medical Image Consoles | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Graphical consoles offer a practical interface for medical acquisition assistance, allowing agents to work through the controls and…" />
+    <meta name="keywords" content="GUI / computer use, GUI agents, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2610.04800" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.04800.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MedImageOSWorld: Benchmarking GUI Agents for Medical Image Consoles" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Graphical consoles offer a practical interface for medical acquisition assistance, allowing agents to work through the controls and…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.04800.html" />
+    <meta property="article:published_time" content="2026-10-03T22:56:09Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MedImageOSWorld: Benchmarking GUI Agents for Medical Image Consoles" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Graphical consoles offer a practical interface for medical acquisition assistance, allowing agents to work through the controls and…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,65 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MedImageOSWorld: Benchmarking GUI Agents for Medical Image Consoles",
+  "name": "MedImageOSWorld: Benchmarking GUI Agents for Medical Image Consoles",
+  "abstract": "Graphical consoles offer a practical interface for medical acquisition assistance, allowing agents to work through the controls and visual feedback used by human operators. Reliable assistance requires linking on-screen anatomy to acquisition decisions that determine what image evidence becomes available next. We introduce MedImageOSWorld, a benchmark for evaluating this capability in simulated CT, MR, and ultrasound consoles. Using screenshots and mouse-and-keyboard actions, agents configure protocols, plan acquisitions, inspect the resulting images, and make corrective adjustments across seven capability levels, from console operation to feedback-driven control. Evaluation combines task-specific workflow checks with hidden anatomical ground truth to assess procedural completion and acquisition outcomes separately. A common evaluation protocol specifies episode conditions and interaction budgets, while recorded trajectories support analysis of how agents observe, act, and respond to acquisition feedback. Across eleven open-weight agents, success rates range from 3.0 to 25.0 on a 0-100 scale while workflow-progress rates reach 21.5-74.5: agents complete much of the console workflow but rarely acquire the intended anatomy. Success collapses between perception and planning, from 79-90% at the lowest three levels for the best agent to at most 12% for millimetre-level planning and 0% for closed-loop control among open-weight agents. Two proprietary agents reach success rates of about 34 and exceed the best open-weight agent mainly in acquisition quality (61 versus 42). MedImageOSWorld provides a controlled setting for studying whether general-purpose GUI agents can translate visual observations into effective medical acquisition decisions.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Ziyang Long"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinqi Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Lujing Xing"
+    },
+    {
+      "@type": "Person",
+      "name": "Hsin-Jung Yang"
+    }
+  ],
+  "datePublished": "2026-10-03T22:56:09Z",
+  "dateModified": "2026-10-03T22:56:09Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.04800.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.04800.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.04800v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.04800"
+  },
+  "keywords": [
+    "GUI / computer use",
+    "GUI agents",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "GUI / computer use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.04800v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2610.04800"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +97,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MedImageOSWorld: Benchmarking GUI Agents for Medical Image Consoles</h1>
+        <div class="meta">
+          Ziyang Long, Xinqi Li, Lujing Xing, Hsin-Jung Yang
+          · 2610.04800
+          · <time datetime="2026-10-03">2026-10-03</time>
+          · GUI / computer use
+        </div>
+        <div class="themes"><span class="chip">GUI agents</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Graphical consoles offer a practical interface for medical acquisition assistance, allowing agents to work through the controls and visual feedback used by human operators. Reliable assistance requires linking on-screen anatomy to acquisition decisions that determine what image evidence becomes available next. We introduce MedImageOSWorld, a benchmark for evaluating this capability in simulated CT, MR, and ultrasound consoles. Using screenshots and mouse-and-keyboard actions, agents configure protocols, plan acquisitions, inspect the resulting images, and make corrective adjustments across seven capability levels, from console operation to feedback-driven control. Evaluation combines task-specific workflow checks with hidden anatomical ground truth to assess procedural completion and acquisition outcomes separately. A common evaluation protocol specifies episode conditions and interaction budgets, while recorded trajectories support analysis of how agents observe, act, and respond to acquisition feedback. Across eleven open-weight agents, success rates range from 3.0 to 25.0 on a 0-100 scale while workflow-progress rates reach 21.5-74.5: agents complete much of the console workflow but rarely acquire the intended anatomy. Success collapses between perception and planning, from 79-90% at the lowest three levels for the best agent to at most 12% for millimetre-level planning and 0% for closed-loop control among open-weight agents. Two proprietary agents reach success rates of about 34 and exceed the best open-weight agent mainly in acquisition quality (61 versus 42). MedImageOSWorld provides a controlled setting for studying whether general-purpose GUI agents can translate visual observations into effective medical acquisition decisions.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.04800v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.04800v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.04800" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More GUI / computer use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.11050.html"><strong>AgentHorizon: Evaluating Agentic Judges for Long-Horizon Computer-Use Tasks</strong></a> <span>2026-10-08</span></li>
+          <li><a href="2610.09944.html"><strong>AgentTime: Can Agents Estimate and Control Their Own Runtime?</strong></a> <span>2026-10-07</span></li>
+          <li><a href="2609.40284.html"><strong>cua-speedrun: Standardized Benchmarking of the Speed of Computer-Use Agents</strong></a> <span>2026-09-30</span></li>
+          <li><a href="2609.39903.html"><strong>OSWorld-Science: A Benchmark of Computer Use Agents for Learning and Using Scientific Software</strong></a> <span>2026-09-30</span></li>
+          <li><a href="2609.38867.html"><strong>Talk2Agent: Benchmarking Voice Interfaces for Text Agents</strong></a> <span>2026-09-30</span></li>
+          <li><a href="2609.36923.html"><strong>PrecogUI: Proactive GUI Agents via Pre-cognitive Simulation and Experience Retrieval</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.34769.html"><strong>LongPuzzleBench: Evaluating GUI Agents on Long-Horizon Visual Puzzles</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.32600.html"><strong>CUA-SWE: When Computer-Use Agents Meet Visual Software Engineering</strong></a> <span>2026-09-26</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

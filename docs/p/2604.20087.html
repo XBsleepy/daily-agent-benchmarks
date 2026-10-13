@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>SkillLearnBench: Benchmarking Continual Learning Methods for Agent Skill Generation on Real-World Tasks | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Skills have become the de facto way to enable LLM agents to perform complex real-world tasks with customized instructions, workflows…" />
+    <meta name="keywords" content="General, Tool use, agent benchmark, LLM agent, arXiv, 2604.20087" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.20087.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SkillLearnBench: Benchmarking Continual Learning Methods for Agent Skill Generation on Real-World Tasks" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Skills have become the de facto way to enable LLM agents to perform complex real-world tasks with customized instructions, workflows…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.20087.html" />
+    <meta property="article:published_time" content="2026-04-22T01:07:37Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SkillLearnBench: Benchmarking Continual Learning Methods for Agent Skill Generation on Real-World Tasks" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Skills have become the de facto way to enable LLM agents to perform complex real-world tasks with customized instructions, workflows…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,88 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SkillLearnBench: Benchmarking Continual Learning Methods for Agent Skill Generation on Real-World Tasks",
+  "name": "SkillLearnBench: Benchmarking Continual Learning Methods for Agent Skill Generation on Real-World Tasks",
+  "abstract": "Skills have become the de facto way to enable LLM agents to perform complex real-world tasks with customized instructions, workflows, and tools, but how to learn them automatically and effectively remains unclear. We introduce SkillLearnBench, the first benchmark for evaluating continual skill learning methods, comprising 20 verified, skill-dependent tasks across 15 sub-domains derived from a real-world skill taxonomy , evaluated at three levels: skill quality, execution trajectory, and task outcome. Using this benchmark, we evaluate recent continual learning techniques, those leveraging one-shot, self/teacher feedback, and skill creator to generate skills from agent experiences. We find that all continual learning methods improve over the no-skill baseline, yet consistent gains remain elusive: no method leads across all tasks and LLMs, and scaling to stronger LLMs does not reliably help. Continual learning improves tasks with clear, reusable workflows but struggles on open-ended tasks, and using stronger LLM backbones does not consistently produce better skills. Our analysis also revealed that multiple iterations in continual learning facilitate genuine improvement via external feedback, whereas self-feedback alone induces recursive drift. Our data and code are open-source at https://github.com/cxcscmu/SkillLearnBench to enable further studies of automatic skill generation and continual learning techniques.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Shanshan Zhong"
+    },
+    {
+      "@type": "Person",
+      "name": "Yi Lu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jingjie Ning"
+    },
+    {
+      "@type": "Person",
+      "name": "Yibing Wan"
+    },
+    {
+      "@type": "Person",
+      "name": "Lihan Feng"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuyi Ao"
+    },
+    {
+      "@type": "Person",
+      "name": "Leonardo F. R. Ribeiro"
+    },
+    {
+      "@type": "Person",
+      "name": "Markus Dreyer"
+    },
+    {
+      "@type": "Person",
+      "name": "Sean Ammirati"
+    },
+    {
+      "@type": "Person",
+      "name": "Chenyan Xiong"
+    }
+  ],
+  "datePublished": "2026-04-22T01:07:37Z",
+  "dateModified": "2026-04-22T01:07:37Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.20087.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.20087.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.20087v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2604.20087"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2604.20087v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2604.20087"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +120,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SkillLearnBench: Benchmarking Continual Learning Methods for Agent Skill Generation on Real-World Tasks</h1>
+        <div class="meta">
+          Shanshan Zhong, Yi Lu, Jingjie Ning, Yibing Wan, Lihan Feng, Yuyi Ao, Leonardo F. R. Ribeiro, Markus Dreyer, Sean Ammirati, Chenyan Xiong
+          · 2604.20087
+          · <time datetime="2026-04-22">2026-04-22</time>
+          · General · 33 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Skills have become the de facto way to enable LLM agents to perform complex real-world tasks with customized instructions, workflows, and tools, but how to learn them automatically and effectively remains unclear. We introduce SkillLearnBench, the first benchmark for evaluating continual skill learning methods, comprising 20 verified, skill-dependent tasks across 15 sub-domains derived from a real-world skill taxonomy , evaluated at three levels: skill quality, execution trajectory, and task outcome. Using this benchmark, we evaluate recent continual learning techniques, those leveraging one-shot, self/teacher feedback, and skill creator to generate skills from agent experiences. We find that all continual learning methods improve over the no-skill baseline, yet consistent gains remain elusive: no method leads across all tasks and LLMs, and scaling to stronger LLMs does not reliably help. Continual learning improves tasks with clear, reusable workflows but struggles on open-ended tasks, and using stronger LLM backbones does not consistently produce better skills. Our analysis also revealed that multiple iterations in continual learning facilitate genuine improvement via external feedback, whereas self-feedback alone induces recursive drift. Our data and code are open-source at https://github.com/cxcscmu/SkillLearnBench to enable further studies of automatic skill generation and continual learning techniques.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2604.20087v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2604.20087v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2604.20087" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2604.24955.html"><strong>BenchGuard: Who Guards the Benchmarks? Automated Auditing of LLM Agent Benchmarks</strong></a> <span>2026-04-27</span></li>
+          <li><a href="2604.24929.html"><strong>GAIA-v2-LILT: Multilingual Adaptation of Agent Benchmark beyond Translation</strong></a> <span>2026-04-27</span></li>
+          <li><a href="2604.22436.html"><strong>AgentSearchBench: A Benchmark for AI Agent Search in the Wild</strong></a> <span>2026-04-24</span></li>
+          <li><a href="2604.22861.html"><strong>IntrAgent: An LLM Agent for Content-Grounded Information Retrieval through Literature Review</strong></a> <span>2026-04-23</span></li>
+          <li><a href="2604.20006.html"><strong>From Recall to Forgetting: Benchmarking Long-Term Memory for Personalized Agents</strong></a> <span>2026-04-21</span></li>
+          <li><a href="2604.19533.html"><strong>Cyber Defense Benchmark: Agentic Threat Hunting Evaluation for LLMs in SecOps</strong></a> <span>2026-04-21</span></li>
+          <li><a href="2604.19354.html"><strong>Do Agents Dream of Root Shells? Partial-Credit Evaluation of LLM Agents in Capture the Flag Challenges</strong></a> <span>2026-04-21</span></li>
+          <li><a href="2604.18934.html"><strong>AutomationBench</strong></a> <span>2026-04-21</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

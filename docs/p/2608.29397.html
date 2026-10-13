@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>AlgoWorlds: Benchmarking Tool Use for Global Optimization in Algorithmic Worlds | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Tool-use benchmarks generally evaluate whether an agent completes a workflow using appropriate tools and valid arguments. However…" />
+    <meta name="keywords" content="Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2608.29397" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.29397.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AlgoWorlds: Benchmarking Tool Use for Global Optimization in Algorithmic Worlds" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Tool-use benchmarks generally evaluate whether an agent completes a workflow using appropriate tools and valid arguments. However…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.29397.html" />
+    <meta property="article:published_time" content="2026-08-29T18:37:41Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AlgoWorlds: Benchmarking Tool Use for Global Optimization in Algorithmic Worlds" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Tool-use benchmarks generally evaluate whether an agent completes a workflow using appropriate tools and valid arguments. However…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,60 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AlgoWorlds: Benchmarking Tool Use for Global Optimization in Algorithmic Worlds",
+  "name": "AlgoWorlds: Benchmarking Tool Use for Global Optimization in Algorithmic Worlds",
+  "abstract": "Tool-use benchmarks generally evaluate whether an agent completes a workflow using appropriate tools and valid arguments. However, feasibility alone is insufficient in real-world decision settings such as route planning and fleet dispatch. Individual choices interact through shared constraints and costs, so a feasible solution may still be substantially suboptimal. This raises a harder question: can an agent turn information gathered through tools into a globally optimal decision? We introduce AlgoWorlds, a benchmark that transforms formally specified combinatorial optimization problems into partially observed decision environments with verifiable global optima. Each environment contains a hidden instance observed only through task-specific information tools, after which the agent commits to one structured decision evaluated for feasibility and optimality. AlgoWorlds contains 240 environments covering ten combinatorial optimization families and four workload levels. Family-specific deterministic programs generate the instances, exact algorithms certify their optima and determine workload levels, and two structurally different tool interfaces present each underlying instance. We evaluate seven leading LLMs, including Claude Opus 4.8 and GPT-5.6 Sol. Achieving global optimality remains highly challenging: although leading models produce feasible decisions in most cases, the best-performing model reaches exact optimality in only 38.61% of cases. Even when agents collect sufficient information to reconstruct the hidden instance, most failures end in feasible but suboptimal decisions. The challenge therefore extends beyond information acquisition to information integration, global constraint reasoning, and decision verification. The project homepage is available at https://xzx34.github.io/AlgoWorlds/, and the code is available at https://github.com/xzx34/AlgoWorlds.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Zixiang Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiaan Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Fandong Meng"
+    }
+  ],
+  "datePublished": "2026-08-29T18:37:41Z",
+  "dateModified": "2026-08-29T18:37:41Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.29397.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.29397.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.29397v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.29397"
+  },
+  "keywords": [
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.29397v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.29397"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +92,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AlgoWorlds: Benchmarking Tool Use for Global Optimization in Algorithmic Worlds</h1>
+        <div class="meta">
+          Zixiang Xu, Jiaan Wang, Fandong Meng
+          · 2608.29397
+          · <time datetime="2026-08-29">2026-08-29</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Tool-use benchmarks generally evaluate whether an agent completes a workflow using appropriate tools and valid arguments. However, feasibility alone is insufficient in real-world decision settings such as route planning and fleet dispatch. Individual choices interact through shared constraints and costs, so a feasible solution may still be substantially suboptimal. This raises a harder question: can an agent turn information gathered through tools into a globally optimal decision? We introduce AlgoWorlds, a benchmark that transforms formally specified combinatorial optimization problems into partially observed decision environments with verifiable global optima. Each environment contains a hidden instance observed only through task-specific information tools, after which the agent commits to one structured decision evaluated for feasibility and optimality. AlgoWorlds contains 240 environments covering ten combinatorial optimization families and four workload levels. Family-specific deterministic programs generate the instances, exact algorithms certify their optima and determine workload levels, and two structurally different tool interfaces present each underlying instance. We evaluate seven leading LLMs, including Claude Opus 4.8 and GPT-5.6 Sol. Achieving global optimality remains highly challenging: although leading models produce feasible decisions in most cases, the best-performing model reaches exact optimality in only 38.61% of cases. Even when agents collect sufficient information to reconstruct the hidden instance, most failures end in feasible but suboptimal decisions. The challenge therefore extends beyond information acquisition to information integration, global constraint reasoning, and decision verification. The project homepage is available at https://xzx34.github.io/AlgoWorlds/, and the code is available at https://github.com/xzx34/AlgoWorlds.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.29397v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.29397v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.29397" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.04280.html"><strong>EVOHARNESSBENCH: Can Your Agents Keep Pace with an Evolving Harness?</strong></a> <span>2026-09-03</span></li>
+          <li><a href="2609.03588.html"><strong>KC-Bench: A Dynamic Interactive Benchmark for Evaluating Knowledge Conflicts in LLM Agents</strong></a> <span>2026-09-03</span></li>
+          <li><a href="2609.02459.html"><strong>CivBench: A Long-Horizon Benchmark for Tool-Mediated Agents in Civilization VI</strong></a> <span>2026-09-02</span></li>
+          <li><a href="2609.01437.html"><strong>HarnessDev: Can LLMs Create and Evolve Their Own Agent Harness?</strong></a> <span>2026-09-01</span></li>
+          <li><a href="2608.29128.html"><strong>APIFlow-Bench: Measuring Whether Agents Survive Long, Dependent API Workflows</strong></a> <span>2026-08-29</span></li>
+          <li><a href="2608.27334.html"><strong>BTS-AgentBench: A Deterministic, Replayable Pipeline from Read-Only Telemetry Logs to Agent Benchmarks</strong></a> <span>2026-08-27</span></li>
+          <li><a href="2608.26867.html"><strong>BekchiAI: Measuring, Observing, and Controlling LLM Agents in One Click</strong></a> <span>2026-08-27</span></li>
+          <li><a href="2608.26623.html"><strong>AgentJudgeBench: A Multi-Difficulty Benchmark for Evaluating LLM Judges on Agentic Tool-Calling</strong></a> <span>2026-08-27</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

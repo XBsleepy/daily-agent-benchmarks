@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MemEye: A Visual-Centric Evaluation Framework for Multimodal Agent Memory | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Long-term agent memory is increasingly multimodal, yet existing evaluations rarely test whether agents preserve the visual evidence…" />
+    <meta name="keywords" content="Multimodal, Memory, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2605.15128" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.15128.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MemEye: A Visual-Centric Evaluation Framework for Multimodal Agent Memory" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Long-term agent memory is increasingly multimodal, yet existing evaluations rarely test whether agents preserve the visual evidence…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.15128.html" />
+    <meta property="article:published_time" content="2026-05-14T17:37:52Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MemEye: A Visual-Centric Evaluation Framework for Multimodal Agent Memory" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Long-term agent memory is increasingly multimodal, yet existing evaluations rarely test whether agents preserve the visual evidence…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,117 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MemEye: A Visual-Centric Evaluation Framework for Multimodal Agent Memory",
+  "name": "MemEye: A Visual-Centric Evaluation Framework for Multimodal Agent Memory",
+  "abstract": "Long-term agent memory is increasingly multimodal, yet existing evaluations rarely test whether agents preserve the visual evidence needed for later reasoning. In prior work, many visually grounded questions can be answered using only captions or textual traces, allowing answers to be inferred without preserving the fine-grained visual evidence. Meanwhile, harder cases that require reasoning over changing visual states are largely absent. Therefore, we introduce MemEye, a framework that evaluates memory capabilities from two dimensions: one measures the granularity of decisive visual evidence (from scene-level to pixel-level evidence), and the other measures how retrieved evidence must be used (from single evidence to evolutionary synthesis). Under this framework, we construct a new benchmark across 8 life-scenario tasks, with ablation-driven validation gates for assessing answerability, shortcut resistance, visual necessity, and reasoning structure. By evaluating 13 memory methods across 4 VLM backbones, we show that current architectures still struggle to preserve fine-grained visual details and reason about state changes over time. Our findings show that long-term multimodal memory depends on evidence routing, temporal tracking, and detail extraction.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Minghao Guo"
+    },
+    {
+      "@type": "Person",
+      "name": "Qingyue Jiao"
+    },
+    {
+      "@type": "Person",
+      "name": "Zeru Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Yihao Quan"
+    },
+    {
+      "@type": "Person",
+      "name": "Boxuan Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Danrui Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Liwei Che"
+    },
+    {
+      "@type": "Person",
+      "name": "Wujiang Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Shilong Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zirui Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Mubbasir Kapadia"
+    },
+    {
+      "@type": "Person",
+      "name": "Vladimir Pavlovic"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiang Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Mengdi Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yiyu Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Dimitris N. Metaxas"
+    },
+    {
+      "@type": "Person",
+      "name": "Ruixiang Tang"
+    }
+  ],
+  "datePublished": "2026-05-14T17:37:52Z",
+  "dateModified": "2026-05-14T17:37:52Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.15128.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.15128.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.15128v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.15128"
+  },
+  "keywords": [
+    "Multimodal",
+    "Memory",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multimodal"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.15128v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.15128"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +149,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MemEye: A Visual-Centric Evaluation Framework for Multimodal Agent Memory</h1>
+        <div class="meta">
+          Minghao Guo, Qingyue Jiao, Zeru Shi, Yihao Quan, Boxuan Zhang, Danrui Li, Liwei Che, Wujiang Xu, Shilong Liu, Zirui Liu, Mubbasir Kapadia, Vladimir Pavlovic, Jiang Liu, Mengdi Wang, Yiyu Shi, Dimitris N. Metaxas, Ruixiang Tang
+          · 2605.15128
+          · <time datetime="2026-05-14">2026-05-14</time>
+          · Multimodal · 8 citations
+        </div>
+        <div class="themes"><span class="chip">Memory</span><span class="chip">Planning / reasoning</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Long-term agent memory is increasingly multimodal, yet existing evaluations rarely test whether agents preserve the visual evidence needed for later reasoning. In prior work, many visually grounded questions can be answered using only captions or textual traces, allowing answers to be inferred without preserving the fine-grained visual evidence. Meanwhile, harder cases that require reasoning over changing visual states are largely absent. Therefore, we introduce MemEye, a framework that evaluates memory capabilities from two dimensions: one measures the granularity of decisive visual evidence (from scene-level to pixel-level evidence), and the other measures how retrieved evidence must be used (from single evidence to evolutionary synthesis). Under this framework, we construct a new benchmark across 8 life-scenario tasks, with ablation-driven validation gates for assessing answerability, shortcut resistance, visual necessity, and reasoning structure. By evaluating 13 memory methods across 4 VLM backbones, we show that current architectures still struggle to preserve fine-grained visual details and reason about state changes over time. Our findings show that long-term multimodal memory depends on evidence routing, temporal tracking, and detail extraction.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.15128v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.15128v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.15128" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multimodal benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.20306.html"><strong>WildRoadBench: A Wild Aerial Road-Damage Grounding Benchmark for Vision-Language Models and Autonomous Agents</strong></a> <span>2026-05-19</span></li>
+          <li><a href="2605.17946.html"><strong>SVFSearch: A Multimodal Knowledge-Intensive Benchmark for Short-Video Frame Search in the Gaming Vertical Domain</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.17894.html"><strong>Evaluating Cognitive Age Alignment in Interactive AI Agents</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.15710.html"><strong>SMMBench: A Benchmark for Source-Distributed Multimodal Agent Memory</strong></a> <span>2026-05-15</span></li>
+          <li><a href="2605.10912.html"><strong>WildClawBench: A Benchmark for Real-World, Long-Horizon Agent Evaluation</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2605.10286.html"><strong>AgentRx: A Benchmark Study of LLM Agents for Multimodal Clinical Prediction Tasks</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2605.09934.html"><strong>TRACER: Verifiable Generative Provenance for Multimodal Tool-Using Agents</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2605.09679.html"><strong>DeepTumorVQA: A Hierarchical 3D CT Benchmark for Stage-Wise Evaluation of Medical VLMs and Tool-Augmented Agents</strong></a> <span>2026-05-10</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>InferenceBench: A Benchmark for Open-Ended LLM Inference Optimization by AI Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: AI agents are increasingly used to automate research and development tasks, yet existing benchmarks typically evaluate them on…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2607.20468" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.20468.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="InferenceBench: A Benchmark for Open-Ended LLM Inference Optimization by AI Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: AI agents are increasingly used to automate research and development tasks, yet existing benchmarks typically evaluate them on…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.20468.html" />
+    <meta property="article:published_time" content="2026-05-20T15:55:21Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="InferenceBench: A Benchmark for Open-Ended LLM Inference Optimization by AI Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: AI agents are increasingly used to automate research and development tasks, yet existing benchmarks typically evaluate them on…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,59 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "InferenceBench: A Benchmark for Open-Ended LLM Inference Optimization by AI Agents",
+  "name": "InferenceBench: A Benchmark for Open-Ended LLM Inference Optimization by AI Agents",
+  "abstract": "AI agents are increasingly used to automate research and development tasks, yet existing benchmarks typically evaluate them on prescribed workflows or narrow action spaces. Even nominally open-ended tasks can often be solved by retrieving a well-known recipe and tuning a few hyperparameters, making it unclear whether strong results reflect genuine optimization or memorized solutions. We introduce InferenceBench, where an agent must deploy an OpenAI-compatible inference server and optimize the speed of LLM inference. Each agent receives a target LLM, one H100 GPU, an optimization scenario, and a wall-clock time budget of two hours. Three optimization scenarios isolate distinct bottlenecks of inference (prefill latency, decode latency, and concurrent request throughput) and a fourth balances all three at the same time. Across 15 frontier agent configurations, agents reliably improve over a naive PyTorch baseline (up to $8.08\\times$) and often match or exceed serving engines with default settings ($4.05\\times$ for vLLM), but still fall below a simple hyperparameter search under the same time budget (up to $11.53\\times$). Qualitative analysis of agent trajectories shows that although agents enumerate many relevant optimization techniques, they overwhelmingly converge on a single inference framework. They test only a few distinct configurations and spend the remaining budget re-measuring, repairing, or optimizing hyperparameters rather than exploring substantially different strategies. This suggests the bottleneck is not domain knowledge, but the ability to propose diverse configurations, evaluate them systematically, and submit the best identified solution. Overall, InferenceBench reflects the ability of agents to operate in an open-ended AI engineering setting, where memorized solutions lead to limited improvements.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jehyeok Yeon"
+    },
+    {
+      "@type": "Person",
+      "name": "Ben Rank"
+    },
+    {
+      "@type": "Person",
+      "name": "Maksym Andriushchenko"
+    }
+  ],
+  "datePublished": "2026-05-20T15:55:21Z",
+  "dateModified": "2026-05-20T15:55:21Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.20468.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.20468.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.20468v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.20468"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.20468v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.20468"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +91,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>InferenceBench: A Benchmark for Open-Ended LLM Inference Optimization by AI Agents</h1>
+        <div class="meta">
+          Jehyeok Yeon, Ben Rank, Maksym Andriushchenko
+          · 2607.20468
+          · <time datetime="2026-05-20">2026-05-20</time>
+          · General · 2 citations
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>AI agents are increasingly used to automate research and development tasks, yet existing benchmarks typically evaluate them on prescribed workflows or narrow action spaces. Even nominally open-ended tasks can often be solved by retrieving a well-known recipe and tuning a few hyperparameters, making it unclear whether strong results reflect genuine optimization or memorized solutions. We introduce InferenceBench, where an agent must deploy an OpenAI-compatible inference server and optimize the speed of LLM inference. Each agent receives a target LLM, one H100 GPU, an optimization scenario, and a wall-clock time budget of two hours. Three optimization scenarios isolate distinct bottlenecks of inference (prefill latency, decode latency, and concurrent request throughput) and a fourth balances all three at the same time. Across 15 frontier agent configurations, agents reliably improve over a naive PyTorch baseline (up to $8.08\times$) and often match or exceed serving engines with default settings ($4.05\times$ for vLLM), but still fall below a simple hyperparameter search under the same time budget (up to $11.53\times$). Qualitative analysis of agent trajectories shows that although agents enumerate many relevant optimization techniques, they overwhelmingly converge on a single inference framework. They test only a few distinct configurations and spend the remaining budget re-measuring, repairing, or optimizing hyperparameters rather than exploring substantially different strategies. This suggests the bottleneck is not domain knowledge, but the ability to propose diverse configurations, evaluate them systematically, and submit the best identified solution. Overall, InferenceBench reflects the ability of agents to operate in an open-ended AI engineering setting, where memorized solutions lead to limited improvements.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.20468v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.20468v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.20468" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.22664.html"><strong>MBABench: Evaluating LLM Agents on End-to-End Spreadsheet Tasks in Finance</strong></a> <span>2026-05-21</span></li>
+          <li><a href="2605.22568.html"><strong>Measuring Security Without Fooling Ourselves: Why Benchmarking Agents Is Hard</strong></a> <span>2026-05-21</span></li>
+          <li><a href="2605.22535.html"><strong>TerminalWorld: Benchmarking Agents on Real-World Terminal Tasks</strong></a> <span>2026-05-21</span></li>
+          <li><a href="2605.22219.html"><strong>SGR-Bench: Benchmarking Search Agents on State-Gated Retrieval</strong></a> <span>2026-05-21</span></li>
+          <li><a href="2605.21740.html"><strong>SMDD-Bench: Can LLMs Solve Real-World Small Molecule Drug Design Tasks?</strong></a> <span>2026-05-20</span></li>
+          <li><a href="2605.21404.html"><strong>What Twelve LLM Agent Benchmark Papers Disclose About Themselves: A Pilot Audit and an Open Scoring Schema</strong></a> <span>2026-05-20</span></li>
+          <li><a href="2605.22855.html"><strong>PrefBench: Evaluating Zero-Shot LLM Agents in Hidden-Preference Personalized Pricing Negotiations</strong></a> <span>2026-05-19</span></li>
+          <li><a href="2605.20530.html"><strong>AgentAtlas: Beyond Outcome Leaderboards for LLM Agents</strong></a> <span>2026-05-19</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

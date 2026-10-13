@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>REAP: Automatic Curation of Coding Agent Benchmarks from Interactive Production Usage | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Production deployment of AI coding agents requires fast, reproducible evaluation signals. Existing industrial practices trade off…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2604.01527" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.01527.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="REAP: Automatic Curation of Coding Agent Benchmarks from Interactive Production Usage" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Production deployment of AI coding agents requires fast, reproducible evaluation signals. Existing industrial practices trade off…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.01527.html" />
+    <meta property="article:published_time" content="2026-04-02T01:52:55Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="REAP: Automatic Curation of Coding Agent Benchmarks from Interactive Production Usage" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Production deployment of AI coding agents requires fast, reproducible evaluation signals. Existing industrial practices trade off…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,72 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "REAP: Automatic Curation of Coding Agent Benchmarks from Interactive Production Usage",
+  "name": "REAP: Automatic Curation of Coding Agent Benchmarks from Interactive Production Usage",
+  "abstract": "Production deployment of AI coding agents requires fast, reproducible evaluation signals. Existing industrial practices trade off speed and fidelity: online A/B testing takes weeks and risks user experience, shadow deployment yields signals that are not reproducible across runs, and public benchmarks diverge from production workloads in language distribution, prompt style, and codebase structure. This paper presents REAP (Relevance and Execution-Audited Pipeline), an automated curation pipeline that constructs production-derived benchmarks from real developer-agent sessions without manual labeling. Such curation, while in-distribution to production usage, runs into several challenges. Untestable prompts, misaligned tests, and test flakiness all compromise evaluation reliability. While tasks can be manually audited to ensure only high-quality tasks remain in the benchmark, this approach is infeasible in the monorepo setting: the build infrastructure state is often ephemeral in large monorepos and requires the benchmark to be continuously re-curated against the current codebase. As manual verification cannot be sustained at this cadence, REAP adds an automated verification layer using LLM-based task classification, agentic test-relevance validation, and multi-run stability checks to ensure the executable benchmark yields trustworthy signals. We use REAP to curate Harvest, a benchmark where each task feeds the coding agent a real developer prompt and verifies the resulting code change against fail-to-pass tests retrieved from production. Harvest's distribution spans more than four programming languages with a majority of tasks drawn from Hack. Model and harness evaluations reveal that solve rates range from 42.9% to 58.2% across five frontier models, surfacing capability differences that inform concrete deployment decisions.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Smriti Jha"
+    },
+    {
+      "@type": "Person",
+      "name": "Matteo Paltenghi"
+    },
+    {
+      "@type": "Person",
+      "name": "Chandra Maddila"
+    },
+    {
+      "@type": "Person",
+      "name": "Vijayaraghavan Murali"
+    },
+    {
+      "@type": "Person",
+      "name": "Shubham Ugare"
+    },
+    {
+      "@type": "Person",
+      "name": "Satish Chandra"
+    }
+  ],
+  "datePublished": "2026-04-02T01:52:55Z",
+  "dateModified": "2026-07-28T19:05:21Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.01527.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.01527.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.01527v4"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2604.01527"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2604.01527v4"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2604.01527"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +104,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>REAP: Automatic Curation of Coding Agent Benchmarks from Interactive Production Usage</h1>
+        <div class="meta">
+          Smriti Jha, Matteo Paltenghi, Chandra Maddila, Vijayaraghavan Murali, Shubham Ugare, Satish Chandra
+          · 2604.01527
+          · <time datetime="2026-04-02">2026-04-02</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Production deployment of AI coding agents requires fast, reproducible evaluation signals. Existing industrial practices trade off speed and fidelity: online A/B testing takes weeks and risks user experience, shadow deployment yields signals that are not reproducible across runs, and public benchmarks diverge from production workloads in language distribution, prompt style, and codebase structure. This paper presents REAP (Relevance and Execution-Audited Pipeline), an automated curation pipeline that constructs production-derived benchmarks from real developer-agent sessions without manual labeling. Such curation, while in-distribution to production usage, runs into several challenges. Untestable prompts, misaligned tests, and test flakiness all compromise evaluation reliability. While tasks can be manually audited to ensure only high-quality tasks remain in the benchmark, this approach is infeasible in the monorepo setting: the build infrastructure state is often ephemeral in large monorepos and requires the benchmark to be continuously re-curated against the current codebase. As manual verification cannot be sustained at this cadence, REAP adds an automated verification layer using LLM-based task classification, agentic test-relevance validation, and multi-run stability checks to ensure the executable benchmark yields trustworthy signals. We use REAP to curate Harvest, a benchmark where each task feeds the coding agent a real developer prompt and verifies the resulting code change against fail-to-pass tests retrieved from production. Harvest&#x27;s distribution spans more than four programming languages with a majority of tasks drawn from Hack. Model and harness evaluations reveal that solve rates range from 42.9% to 58.2% across five frontier models, surfacing capability differences that inform concrete deployment decisions.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2604.01527v4" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2604.01527v4" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2604.01527" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2604.09408.html"><strong>HiL-Bench (Human-in-Loop Benchmark): Do Agents Know When to Ask for Help?</strong></a> <span>2026-04-10</span></li>
+          <li><a href="2604.04226.html"><strong>SW-$A^2$-Bench: Benchmarking Autonomous Software Agent Generation for Agentic Web</strong></a> <span>2026-04-05</span></li>
+          <li><a href="2604.04979.html"><strong>Squeez: Task-Conditioned Tool-Output Pruning for Coding Agents</strong></a> <span>2026-04-04</span></li>
+          <li><a href="2604.02648.html"><strong>GBQA: A Game Benchmark for Evaluating LLMs as Quality Assurance Engineers</strong></a> <span>2026-04-03</span></li>
+          <li><a href="2604.01438.html"><strong>ClawSafety: &quot;Safe&quot; LLMs, Unsafe Agents</strong></a> <span>2026-04-01</span></li>
+          <li><a href="2603.27646.html"><strong>PRBench: End-to-end Paper Reproduction in Physics Research</strong></a> <span>2026-03-29</span></li>
+          <li><a href="2603.26648.html"><strong>Vision2Web: A Hierarchical Benchmark for Visual Website Development with Agent Verification</strong></a> <span>2026-03-27</span></li>
+          <li><a href="2603.26337.html"><strong>RACE-Bench: A Reasoning-Augmented Benchmark for Repository-Level Code Agents on Feature Addition</strong></a> <span>2026-03-27</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

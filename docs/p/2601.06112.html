@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ReliabilityBench: Evaluating LLM Agent Reliability Under Production-Like Stress Conditions | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Existing benchmarks for tool-using LLM agents primarily report single-run success rates and miss reliability properties required in…" />
+    <meta name="keywords" content="General, Tool use, Safety, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2601.06112" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.06112.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ReliabilityBench: Evaluating LLM Agent Reliability Under Production-Like Stress Conditions" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Existing benchmarks for tool-using LLM agents primarily report single-run success rates and miss reliability properties required in…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.06112.html" />
+    <meta property="article:published_time" content="2026-01-03T13:41:33Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ReliabilityBench: Evaluating LLM Agent Reliability Under Production-Like Stress Conditions" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Existing benchmarks for tool-using LLM agents primarily report single-run success rates and miss reliability properties required in…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,54 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ReliabilityBench: Evaluating LLM Agent Reliability Under Production-Like Stress Conditions",
+  "name": "ReliabilityBench: Evaluating LLM Agent Reliability Under Production-Like Stress Conditions",
+  "abstract": "Existing benchmarks for tool-using LLM agents primarily report single-run success rates and miss reliability properties required in production. We introduce \\textbf{ReliabilityBench}, a benchmark for evaluating agent reliability across three dimensions: (i) consistency under repeated execution using $\\mathrm{pass}^k$, (ii) robustness to semantically equivalent task perturbations at intensity $ε$, and (iii) fault tolerance under controlled tool/API failures at intensity $λ$. ReliabilityBench contributes a unified reliability surface $R(k,ε,λ)$, \\textit{action metamorphic relations} that define correctness via end-state equivalence rather than text similarity, and a chaos-engineering-style fault injection framework (timeouts, rate limits, partial responses, schema drift). We evaluate two models (Gemini 2.0 Flash, GPT-4o) and two agent architectures (ReAct, Reflexion) across four domains (scheduling, travel, customer support, e-commerce) over 1,280 episodes. Perturbations alone reduce success from 96.9% at $ε=0$ to 88.1% at $ε=0.2$. Rate limiting is the most damaging fault in ablations. ReAct is more robust than Reflexion under combined stress, and Gemini 2.0 Flash achieves comparable reliability to GPT-4o at much lower cost. ReliabilityBench provides a systematic framework for assessing production readiness of LLM agents.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Aayush Gupta"
+    }
+  ],
+  "datePublished": "2026-01-03T13:41:33Z",
+  "dateModified": "2026-01-03T13:41:33Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.06112.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.06112.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2601.06112v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2601.06112"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Safety",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2601.06112v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2601.06112"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +86,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ReliabilityBench: Evaluating LLM Agent Reliability Under Production-Like Stress Conditions</h1>
+        <div class="meta">
+          Aayush Gupta
+          · 2601.06112
+          · <time datetime="2026-01-03">2026-01-03</time>
+          · General · 26 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Existing benchmarks for tool-using LLM agents primarily report single-run success rates and miss reliability properties required in production. We introduce \textbf{ReliabilityBench}, a benchmark for evaluating agent reliability across three dimensions: (i) consistency under repeated execution using $\mathrm{pass}^k$, (ii) robustness to semantically equivalent task perturbations at intensity $ε$, and (iii) fault tolerance under controlled tool/API failures at intensity $λ$. ReliabilityBench contributes a unified reliability surface $R(k,ε,λ)$, \textit{action metamorphic relations} that define correctness via end-state equivalence rather than text similarity, and a chaos-engineering-style fault injection framework (timeouts, rate limits, partial responses, schema drift). We evaluate two models (Gemini 2.0 Flash, GPT-4o) and two agent architectures (ReAct, Reflexion) across four domains (scheduling, travel, customer support, e-commerce) over 1,280 episodes. Perturbations alone reduce success from 96.9% at $ε=0$ to 88.1% at $ε=0.2$. Rate limiting is the most damaging fault in ablations. ReAct is more robust than Reflexion under combined stress, and Gemini 2.0 Flash achieves comparable reliability to GPT-4o at much lower cost. ReliabilityBench provides a systematic framework for assessing production readiness of LLM agents.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2601.06112v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2601.06112v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2601.06112" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2601.06818.html"><strong>AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents</strong></a> <span>2026-01-11</span></li>
+          <li><a href="2601.05101.html"><strong>Arabic Prompts with English Tools: A Benchmark</strong></a> <span>2026-01-08</span></li>
+          <li><a href="2601.03540.html"><strong>DeepSynth-Eval: Objectively Evaluating Information Consolidation in Deep Survey Writing</strong></a> <span>2026-01-07</span></li>
+          <li><a href="2601.02941.html"><strong>SastBench: A Benchmark for Testing Agentic SAST Triage</strong></a> <span>2026-01-06</span></li>
+          <li><a href="2601.02598.html"><strong>LongDA: Benchmarking LLM Agents for Long-Document Data Analysis</strong></a> <span>2026-01-05</span></li>
+          <li><a href="2601.02314.html"><strong>Project Ariadne: A Structural Causal Framework for Auditing Faithfulness in LLM Agents</strong></a> <span>2026-01-05</span></li>
+          <li><a href="2603.04403.html"><strong>FinRetrieval: A Benchmark for Financial Data Retrieval by AI Agents</strong></a> <span>2026-01-02</span></li>
+          <li><a href="2601.00227.html"><strong>FlashInfer-Bench: Building the Virtuous Cycle for AI-driven LLM Systems</strong></a> <span>2026-01-01</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

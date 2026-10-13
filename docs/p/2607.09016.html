@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>SLBench: Evaluating How LLM Agents Follow Logical Relations in Skills | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Agent skills extend LLM agents with reusable procedures, tools, and domain-specific workflows, but their safety depends on resolving…" />
+    <meta name="keywords" content="General, Tool use, Safety, agent benchmark, LLM agent, arXiv, 2607.09016" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.09016.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SLBench: Evaluating How LLM Agents Follow Logical Relations in Skills" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Agent skills extend LLM agents with reusable procedures, tools, and domain-specific workflows, but their safety depends on resolving…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.09016.html" />
+    <meta property="article:published_time" content="2026-07-10T00:48:30Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SLBench: Evaluating How LLM Agents Follow Logical Relations in Skills" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Agent skills extend LLM agents with reusable procedures, tools, and domain-specific workflows, but their safety depends on resolving…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,65 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SLBench: Evaluating How LLM Agents Follow Logical Relations in Skills",
+  "name": "SLBench: Evaluating How LLM Agents Follow Logical Relations in Skills",
+  "abstract": "Agent skills extend LLM agents with reusable procedures, tools, and domain-specific workflows, but their safety depends on resolving dependencies among interacting instructions. We introduce SkillLogic, a framework for analyzing logical relations in skill files and constructing executable tests from them. Our taxonomy covers eight relation types, including preconditions that gate valid actions, constraints that limit how allowed actions may be performed, and fallbacks that specify recovery behavior after failure. Using SkillLogic, we scan over 5000 public skills and find that 70% contain at least one logical relation. We then construct SLBench, an 86-case executable benchmark from high-confidence, high-impact, and locally testable relations. Evaluating Codex and Claude Code across six LLM backbones shows unsafe rates up to 70%, with violations leading to privacy leaks, unsafe configuration changes, and incomplete cleanup. The human audit attributes failures to both agent capability gaps and low-salience skill text. We further show that SLGuard, a lightweight inference-time scaffold, reduces violations by 63% on targeted cases. Our results establish logical-relation following as a distinct reliability challenge for skill-guided agents.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Xuan Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Chengpeng Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Lu Yan"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiangyu Zhang"
+    }
+  ],
+  "datePublished": "2026-07-10T00:48:30Z",
+  "dateModified": "2026-07-10T00:48:30Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.09016.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.09016.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.09016v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.09016"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.09016v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.09016"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +97,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SLBench: Evaluating How LLM Agents Follow Logical Relations in Skills</h1>
+        <div class="meta">
+          Xuan Chen, Chengpeng Wang, Lu Yan, Xiangyu Zhang
+          · 2607.09016
+          · <time datetime="2026-07-10">2026-07-10</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Agent skills extend LLM agents with reusable procedures, tools, and domain-specific workflows, but their safety depends on resolving dependencies among interacting instructions. We introduce SkillLogic, a framework for analyzing logical relations in skill files and constructing executable tests from them. Our taxonomy covers eight relation types, including preconditions that gate valid actions, constraints that limit how allowed actions may be performed, and fallbacks that specify recovery behavior after failure. Using SkillLogic, we scan over 5000 public skills and find that 70% contain at least one logical relation. We then construct SLBench, an 86-case executable benchmark from high-confidence, high-impact, and locally testable relations. Evaluating Codex and Claude Code across six LLM backbones shows unsafe rates up to 70%, with violations leading to privacy leaks, unsafe configuration changes, and incomplete cleanup. The human audit attributes failures to both agent capability gaps and low-salience skill text. We further show that SLGuard, a lightweight inference-time scaffold, reduces violations by 63% on targeted cases. Our results establish logical-relation following as a distinct reliability challenge for skill-guided agents.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.09016v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.09016v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.09016" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.10526.html"><strong>Agents Don&#x27;t Just Agree, They Remember: Benchmarking Persistent Sycophancy in Stateful Personal Agents</strong></a> <span>2026-07-12</span></li>
+          <li><a href="2607.19409.html"><strong>FORCE-Bench: A Benchmark, Dataset, and Evaluation Harness for Agentic AI in Enterprise Finance</strong></a> <span>2026-07-11</span></li>
+          <li><a href="2607.10490.html"><strong>NetInjectBench: Benchmarking Indirect Prompt Injection in Tool-Using Large Language Model Agents for Network Operations</strong></a> <span>2026-07-11</span></li>
+          <li><a href="2607.09322.html"><strong>LongMedBench: Benchmarking Medical Agents for Long-Horizon Clinical Decision-Making</strong></a> <span>2026-07-10</span></li>
+          <li><a href="2607.08093.html"><strong>CausalDS: Benchmarking Causal Reasoning in Data-Science Agents</strong></a> <span>2026-07-09</span></li>
+          <li><a href="2607.05915.html"><strong>PCBWorld: A Benchmark Environment for Engine-Grounded PCB Design Automation</strong></a> <span>2026-07-07</span></li>
+          <li><a href="2607.09762.html"><strong>BatteryLake: Agentic, Physics-Grounded Curation of Heterogeneous Battery Aging Data and Benchmarking</strong></a> <span>2026-07-06</span></li>
+          <li><a href="2607.05462.html"><strong>BioSecBench-Refusal: A paired metric for performance and alignment in agentic biosecurity risk assessment</strong></a> <span>2026-07-06</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

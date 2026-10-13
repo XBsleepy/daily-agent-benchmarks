@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Claw-SWE-Bench: A Benchmark for Evaluating OpenClaw-style Agent Harnesses on Coding Tasks | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: General-purpose agents such as OpenClaw are increasingly used as autonomous tool users, but their coding ability is difficult to…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Tool use, agent benchmark, LLM agent, arXiv, 2606.12344" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.12344.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Claw-SWE-Bench: A Benchmark for Evaluating OpenClaw-style Agent Harnesses on Coding Tasks" />
+    <meta property="og:description" content="Daily Agent Benchmarks: General-purpose agents such as OpenClaw are increasingly used as autonomous tool users, but their coding ability is difficult to…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.12344.html" />
+    <meta property="article:published_time" content="2026-06-10T17:16:23Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Claw-SWE-Bench: A Benchmark for Evaluating OpenClaw-style Agent Harnesses on Coding Tasks" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: General-purpose agents such as OpenClaw are increasingly used as autonomous tool users, but their coding ability is difficult to…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,113 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Claw-SWE-Bench: A Benchmark for Evaluating OpenClaw-style Agent Harnesses on Coding Tasks",
+  "name": "Claw-SWE-Bench: A Benchmark for Evaluating OpenClaw-style Agent Harnesses on Coding Tasks",
+  "abstract": "General-purpose agents such as OpenClaw are increasingly used as autonomous tool users, but their coding ability is difficult to measure under SWE-bench: a generic agent does not by itself satisfy the clean Docker workspace, patch, and prediction contract required for scoring. We introduce Claw-SWE-Bench, a multilingual SWE-bench-style benchmark and adapter protocol that makes heterogeneous agent harnesses, or claws, comparable under fair settings including a fixed prompt, runtime budget, workspace contract, patch extraction procedure, and evaluator. The full benchmark contains 350 GitHub issue-resolution instances across 8 languages and 43 repositories, drawn from SWE-bench-Multilingual and SWE-bench-Verified-Mini after future-commit cleanup. We also release Claw-SWE-Bench Lite for faster validation, which is an 80-instance subset selected by a cost-aware, rank-aware procedure over 17 calibration columns. On the full benchmark, OpenClaw with a minimal direct-diff adapter scores only $19.1\\%$ Pass@1, whereas the full adapter reaches $73.4\\%$ with the same GLM 5.1 backbone, showing that adapter design is essential for enabling OpenClaw-style harnesses to perform coding tasks effectively. Across an OpenClaw $\\times$ nine-model sweep and a five-claw $\\times$ two-model sweep, model choice changes Pass@1 by $29.4$ pp and harness choice by $27.4$ pp under fixed models; systems with similar accuracy can differ substantially in total API cost. Claw-SWE-Bench therefore treats harness and cost accounting as first-class axes of SWE-style coding-agent evaluation, providing both a full benchmark and a low-cost reference set for reproducible comparison. The data is available at https://github.com/opensquilla/claw-swe-bench and https://huggingface.co/datasets/TokenRhythm/Claw-SWE-Bench.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Mengyu Zheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Kai Han"
+    },
+    {
+      "@type": "Person",
+      "name": "Boxun Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Haiyang Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuchuan Tian"
+    },
+    {
+      "@type": "Person",
+      "name": "Wei He"
+    },
+    {
+      "@type": "Person",
+      "name": "Hang Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Jianyuan Guo"
+    },
+    {
+      "@type": "Person",
+      "name": "Hailin Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Lin Ma"
+    },
+    {
+      "@type": "Person",
+      "name": "Chao Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Guohao Dai"
+    },
+    {
+      "@type": "Person",
+      "name": "Lixue Xia"
+    },
+    {
+      "@type": "Person",
+      "name": "Yunchao Wei"
+    },
+    {
+      "@type": "Person",
+      "name": "Yunhe Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yu Wang"
+    }
+  ],
+  "datePublished": "2026-06-10T17:16:23Z",
+  "dateModified": "2026-06-10T17:16:23Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.12344.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.12344.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.12344v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.12344"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.12344v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.12344"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +145,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Claw-SWE-Bench: A Benchmark for Evaluating OpenClaw-style Agent Harnesses on Coding Tasks</h1>
+        <div class="meta">
+          Mengyu Zheng, Kai Han, Boxun Li, Haiyang Xu, Yuchuan Tian, Wei He, Hang Zhou, Jianyuan Guo, Hailin Hu, Lin Ma, Chao Xu, Guohao Dai, Lixue Xia, Yunchao Wei, Yunhe Wang, Yu Wang
+          · 2606.12344
+          · <time datetime="2026-06-10">2026-06-10</time>
+          · Coding / SWE · 3 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>General-purpose agents such as OpenClaw are increasingly used as autonomous tool users, but their coding ability is difficult to measure under SWE-bench: a generic agent does not by itself satisfy the clean Docker workspace, patch, and prediction contract required for scoring. We introduce Claw-SWE-Bench, a multilingual SWE-bench-style benchmark and adapter protocol that makes heterogeneous agent harnesses, or claws, comparable under fair settings including a fixed prompt, runtime budget, workspace contract, patch extraction procedure, and evaluator. The full benchmark contains 350 GitHub issue-resolution instances across 8 languages and 43 repositories, drawn from SWE-bench-Multilingual and SWE-bench-Verified-Mini after future-commit cleanup. We also release Claw-SWE-Bench Lite for faster validation, which is an 80-instance subset selected by a cost-aware, rank-aware procedure over 17 calibration columns. On the full benchmark, OpenClaw with a minimal direct-diff adapter scores only $19.1\%$ Pass@1, whereas the full adapter reaches $73.4\%$ with the same GLM 5.1 backbone, showing that adapter design is essential for enabling OpenClaw-style harnesses to perform coding tasks effectively. Across an OpenClaw $\times$ nine-model sweep and a five-claw $\times$ two-model sweep, model choice changes Pass@1 by $29.4$ pp and harness choice by $27.4$ pp under fixed models; systems with similar accuracy can differ substantially in total API cost. Claw-SWE-Bench therefore treats harness and cost accounting as first-class axes of SWE-style coding-agent evaluation, providing both a full benchmark and a low-cost reference set for reproducible comparison. The data is available at https://github.com/opensquilla/claw-swe-bench and https://huggingface.co/datasets/TokenRhythm/Claw-SWE-Bench.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.12344v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.12344v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.12344" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.19613.html"><strong>StaminaBench: Stress-Testing Coding Agents over 100 Interaction Turns</strong></a> <span>2026-06-17</span></li>
+          <li><a href="2606.18543.html"><strong>CEO-Bench: Can Agents Play the Long Game?</strong></a> <span>2026-06-16</span></li>
+          <li><a href="2606.17861.html"><strong>GameCraft-Bench: Can Agents Build Playable Games End-to-End in a Real Game Engine?</strong></a> <span>2026-06-16</span></li>
+          <li><a href="2606.13995.html"><strong>Dialogue SWE-Bench: A Benchmark for Dialogue-Driven Coding Agents</strong></a> <span>2026-06-12</span></li>
+          <li><a href="2606.11864.html"><strong>CORE-Bench: A Comprehensive Benchmark for Code Retrieval in the Era of Agentic Coding</strong></a> <span>2026-06-10</span></li>
+          <li><a href="2606.11447.html"><strong>AI Coding Agents Can Reproduce Social Science Findings</strong></a> <span>2026-06-09</span></li>
+          <li><a href="2606.07682.html"><strong>SWE-Marathon: Can Agents Autonomously Complete Ultra-Long-Horizon Software Work?</strong></a> <span>2026-06-05</span></li>
+          <li><a href="2606.07314.html"><strong>QBugLM: An Agentic Benchmarking Framework for LLM-based Quantum Software Debugging</strong></a> <span>2026-06-05</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

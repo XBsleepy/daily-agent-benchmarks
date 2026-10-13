@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLM agents that persist across sessions accumulate stored memories whose validity varies enormously by content type, yet existing…" />
+    <meta name="keywords" content="General, Memory, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2608.04746" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.04746.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLM agents that persist across sessions accumulate stored memories whose validity varies enormously by content type, yet existing…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.04746.html" />
+    <meta property="article:published_time" content="2026-08-05T12:12:44Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLM agents that persist across sessions accumulate stored memories whose validity varies enormously by content type, yet existing…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,65 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems",
+  "name": "Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems",
+  "abstract": "LLM agents that persist across sessions accumulate stored memories whose validity varies enormously by content type, yet existing memory architectures treat all memories as equally persistent and systematically contaminate retrieved context with outdated facts. We show that per-memory, type-conditioned temporal decay, a property of western scrub jay episodic memory, can be operationalized as an auto-classified coefficient $π_i$ in an external LLM-agent memory store, yielding ScrubJay-MEM: each memory is encoded as a jointly-bound What--Where--When tuple with an estimated perishability $π_i$ and utility horizon $τ_i$, retrieved by query-adaptive scoring, and revised retroactively at $O(1)$ LLM calls per update. We introduce the Temporal Generalization Test (TGT), a benchmark with held-out retention intervals and a Generalization Gap (GenGap) metric. On TGT, ScrubJay-MEM is the only retrieval-based system with substantially positive GenGap ($+0.108$); on MemoryAgentBench EventQA-64k it improves F1 by $+2.66$ over Mem0 and $+3.09$ over Qwen3-Embedding-4B under a llm backbone. A decay ablation collapses GenGap by $5.7\\times$, establishing type-conditioned decay as necessary for the result. Gains narrow under stronger backbones and reverse on fact-consolidation tasks, scoping the contribution to temporal reasoning over perishable facts.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Kartikey Singh Bhandari"
+    },
+    {
+      "@type": "Person",
+      "name": "Aarya Wadhwani"
+    },
+    {
+      "@type": "Person",
+      "name": "Dhruv Kumar"
+    },
+    {
+      "@type": "Person",
+      "name": "Pratik Narang"
+    }
+  ],
+  "datePublished": "2026-08-05T12:12:44Z",
+  "dateModified": "2026-08-05T12:12:44Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.04746.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.04746.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.04746v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.04746"
+  },
+  "keywords": [
+    "General",
+    "Memory",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.04746v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.04746"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +97,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems</h1>
+        <div class="meta">
+          Kartikey Singh Bhandari, Aarya Wadhwani, Dhruv Kumar, Pratik Narang
+          · 2608.04746
+          · <time datetime="2026-08-05">2026-08-05</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Memory</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLM agents that persist across sessions accumulate stored memories whose validity varies enormously by content type, yet existing memory architectures treat all memories as equally persistent and systematically contaminate retrieved context with outdated facts. We show that per-memory, type-conditioned temporal decay, a property of western scrub jay episodic memory, can be operationalized as an auto-classified coefficient $π_i$ in an external LLM-agent memory store, yielding ScrubJay-MEM: each memory is encoded as a jointly-bound What--Where--When tuple with an estimated perishability $π_i$ and utility horizon $τ_i$, retrieved by query-adaptive scoring, and revised retroactively at $O(1)$ LLM calls per update. We introduce the Temporal Generalization Test (TGT), a benchmark with held-out retention intervals and a Generalization Gap (GenGap) metric. On TGT, ScrubJay-MEM is the only retrieval-based system with substantially positive GenGap ($+0.108$); on MemoryAgentBench EventQA-64k it improves F1 by $+2.66$ over Mem0 and $+3.09$ over Qwen3-Embedding-4B under a llm backbone. A decay ablation collapses GenGap by $5.7\times$, establishing type-conditioned decay as necessary for the result. Gains narrow under stronger backbones and reverse on fact-consolidation tasks, scoping the contribution to temporal reasoning over perishable facts.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.04746v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.04746v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.04746" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.05573.html"><strong>SkillTV-Bench: Benchmarking How Well Judges Perform on Skill-Augmented Agentic Execution</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2608.05519.html"><strong>EcoAgent-Bench: Evaluating Economic Decision-Making in Budget-Constrained LLM Agents</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2608.05212.html"><strong>SearchAuditor: Auditing and Attributing Failures in Long-Horizon Search Agents</strong></a> <span>2026-08-05</span></li>
+          <li><a href="2608.04828.html"><strong>Skill-Use: Can LLMs Actually Use Skills in Agentic Harnesses?</strong></a> <span>2026-08-05</span></li>
+          <li><a href="2608.14680.html"><strong>When Agentic Executions Fail: Detecting and Localizing Runtime Faults from Telemetry</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.04095.html"><strong>FinPerMA: A Theory-Informed, Event-Grounded Personalized-Memory Benchmark for LLM Agents</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.04077.html"><strong>FinProBench: Evaluating Financial AI Agents with Role-Grounded Rubrics Derived from Professional Deliverables</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.03882.html"><strong>MultiGlobeQA: A Multilingual and Globally Diverse Benchmark for Geospatial Reasoning</strong></a> <span>2026-08-04</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

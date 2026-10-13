@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ChurnBench: A Drift-Aware Benchmark Demonstrating That Refresh Scheduling, Not Cache Age, Governs Staleness in Agentic AI | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: In production, agentic systems answer questions over data that lives in several places and keeps changing: licenses are reassigned…" />
+    <meta name="keywords" content="General, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2609.11515" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.11515.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ChurnBench: A Drift-Aware Benchmark Demonstrating That Refresh Scheduling, Not Cache Age, Governs Staleness in Agentic AI" />
+    <meta property="og:description" content="Daily Agent Benchmarks: In production, agentic systems answer questions over data that lives in several places and keeps changing: licenses are reassigned…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.11515.html" />
+    <meta property="article:published_time" content="2026-09-10T13:19:29Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ChurnBench: A Drift-Aware Benchmark Demonstrating That Refresh Scheduling, Not Cache Age, Governs Staleness in Agentic AI" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: In production, agentic systems answer questions over data that lives in several places and keeps changing: licenses are reassigned…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,56 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ChurnBench: A Drift-Aware Benchmark Demonstrating That Refresh Scheduling, Not Cache Age, Governs Staleness in",
+  "name": "ChurnBench: A Drift-Aware Benchmark Demonstrating That Refresh Scheduling, Not Cache Age, Governs Staleness in Agentic AI",
+  "abstract": "In production, agentic systems answer questions over data that lives in several places and keeps changing: licenses are reassigned, users offboarded, prices changed, contracts renewed. Existing retrieval benchmarks freeze the data, so they cannot ask whether an agent's answer is still true, only whether it found the right passage. We present ChurnBench, an open-source benchmark that generates a four-source enterprise data fabric as a timeline rather than a snapshot. Every change is written to an append-only ground-truth ledger, and gold answers are computed from that ledger, never from the live stores. An answer that was correct when its data was retrieved but wrong when evaluated is therefore detected and labeled a freshness error, distinct from a reasoning error; we validate this by resolving ground truth at both timestamps for every case reported. Using the instrument, we find that when a system refreshes on a schedule, cache age does not predict staleness. Across cache ages of 1, 14, and 28 days, freshness errors were 7, 4, and 4, because scheduled refresh bounds staleness by time-to-live, and no TTL lapse was observed in any window. A controlled ablation confirms the mechanism: disabling tiered refresh raises freshness errors from 4 to 45 at 28 days and leaves them identical at one day. The variable a drift benchmark should sweep is therefore TTL configuration against each entity's rate of change, not drift-window length. ChurnBench, the evaluation harness, and all per-error data are released open source.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Vivek Kumar Singh"
+    },
+    {
+      "@type": "Person",
+      "name": "Preeti Priyam"
+    }
+  ],
+  "datePublished": "2026-09-10T13:19:29Z",
+  "dateModified": "2026-09-10T13:19:29Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.11515.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.11515.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.11515v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.11515"
+  },
+  "keywords": [
+    "General",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.11515v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.11515"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +88,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ChurnBench: A Drift-Aware Benchmark Demonstrating That Refresh Scheduling, Not Cache Age, Governs Staleness in Agentic AI</h1>
+        <div class="meta">
+          Vivek Kumar Singh, Preeti Priyam
+          · 2609.11515
+          · <time datetime="2026-09-10">2026-09-10</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>In production, agentic systems answer questions over data that lives in several places and keeps changing: licenses are reassigned, users offboarded, prices changed, contracts renewed. Existing retrieval benchmarks freeze the data, so they cannot ask whether an agent&#x27;s answer is still true, only whether it found the right passage. We present ChurnBench, an open-source benchmark that generates a four-source enterprise data fabric as a timeline rather than a snapshot. Every change is written to an append-only ground-truth ledger, and gold answers are computed from that ledger, never from the live stores. An answer that was correct when its data was retrieved but wrong when evaluated is therefore detected and labeled a freshness error, distinct from a reasoning error; we validate this by resolving ground truth at both timestamps for every case reported. Using the instrument, we find that when a system refreshes on a schedule, cache age does not predict staleness. Across cache ages of 1, 14, and 28 days, freshness errors were 7, 4, and 4, because scheduled refresh bounds staleness by time-to-live, and no TTL lapse was observed in any window. A controlled ablation confirms the mechanism: disabling tiered refresh raises freshness errors from 4 to 45 at 28 days and leaves them identical at one day. The variable a drift benchmark should sweep is therefore TTL configuration against each entity&#x27;s rate of change, not drift-window length. ChurnBench, the evaluation harness, and all per-error data are released open source.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.11515v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.11515v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.11515" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.18123.html"><strong>AutoTuneBench: Trustworthy Measurement for Agent Auto-Tuning of LLM Serving Engines</strong></a> <span>2026-09-17</span></li>
+          <li><a href="2609.13637.html"><strong>Identity Is More Than Recall: A Benchmark for Persistent Identity in Deployed AI Agents</strong></a> <span>2026-09-15</span></li>
+          <li><a href="2609.13076.html"><strong>MP-Bench: Evaluating Voice Agents as a Multiparty Conversation Participant</strong></a> <span>2026-09-11</span></li>
+          <li><a href="2609.12404.html"><strong>VRL-Bench: Benchmarking agents on computer control tasks under finite trial budgets</strong></a> <span>2026-09-11</span></li>
+          <li><a href="2609.08887.html"><strong>Q2D-Web: A Large-Scale Benchmark for Retrieval in Agentic RAG Systems</strong></a> <span>2026-09-08</span></li>
+          <li><a href="2609.08040.html"><strong>VEX-Bench: Benchmarking LLM Agents for Assessing Exploitability of Software Supply Chain Vulnerabilities</strong></a> <span>2026-09-07</span></li>
+          <li><a href="2609.06027.html"><strong>Evaluating Deep-Search Agents under Hierarchical Web Evidence Poisoning</strong></a> <span>2026-09-05</span></li>
+          <li><a href="2609.04706.html"><strong>FinalityBench: An Effect-Level Benchmark for Agent Decisions Under Delayed and Conflicting Financial Finality</strong></a> <span>2026-09-04</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

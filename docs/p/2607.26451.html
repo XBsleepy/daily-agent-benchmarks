@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ExplainBench: Evaluating Code Explanations from Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large Language Model (LLM) agents have seen rapid adoption in software engineering. As agents take a greater role in the actual…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2607.26451" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.26451.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ExplainBench: Evaluating Code Explanations from Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large Language Model (LLM) agents have seen rapid adoption in software engineering. As agents take a greater role in the actual…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.26451.html" />
+    <meta property="article:published_time" content="2026-07-29T04:04:54Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ExplainBench: Evaluating Code Explanations from Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large Language Model (LLM) agents have seen rapid adoption in software engineering. As agents take a greater role in the actual…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,64 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ExplainBench: Evaluating Code Explanations from Agents",
+  "name": "ExplainBench: Evaluating Code Explanations from Agents",
+  "abstract": "Large Language Model (LLM) agents have seen rapid adoption in software engineering. As agents take a greater role in the actual generation of code, they are making larger changes, spanning tens to hundreds of lines. This makes manual review of agent results increasingly infeasible, leading developers to turn to explanations to understand enacted changes. Despite this, there are no benchmarks that evaluate the trustworthiness of agent-generated explanations. To bridge this gap, we propose ExplainBench, a benchmark to automatically evaluate explanations from coding agents. ExplainBench is based on the intuition that informative explanations should enable an LLM to correctly answer questions, allowing quantitative comparison of explanation quality between agents. With this observation, we construct a suite of questions that evaluates whether explanations accurately describe (1) the intended behavior of buggy code and (2) the effect of applying the agent patch itself. Experiments first reveal that explanation quality is a distinct axis of agent evaluation: ExplainBench ranks agents differently from the widely-used SWE-bench Verified benchmark. A deeper breakdown of explanation quality in agents shows frequent problems in explanations, such that explanations often claim that a patch is correct when it is not. Based on this insight, we implement and evaluate an explanation audit agent which runs additional tests to validate and refine explanations. This agent improved the explanations of all evaluated agents, demonstrating agent explanations can be automatically made more trustworthy.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Zhiyuan Pan"
+    },
+    {
+      "@type": "Person",
+      "name": "Sungmin Kang"
+    },
+    {
+      "@type": "Person",
+      "name": "Imam Nur Bani Yusuf"
+    },
+    {
+      "@type": "Person",
+      "name": "Abhik Roychoudhury"
+    }
+  ],
+  "datePublished": "2026-07-29T04:04:54Z",
+  "dateModified": "2026-07-29T04:04:54Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.26451.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.26451.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.26451v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.26451"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.26451v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.26451"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +96,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ExplainBench: Evaluating Code Explanations from Agents</h1>
+        <div class="meta">
+          Zhiyuan Pan, Sungmin Kang, Imam Nur Bani Yusuf, Abhik Roychoudhury
+          · 2607.26451
+          · <time datetime="2026-07-29">2026-07-29</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large Language Model (LLM) agents have seen rapid adoption in software engineering. As agents take a greater role in the actual generation of code, they are making larger changes, spanning tens to hundreds of lines. This makes manual review of agent results increasingly infeasible, leading developers to turn to explanations to understand enacted changes. Despite this, there are no benchmarks that evaluate the trustworthiness of agent-generated explanations. To bridge this gap, we propose ExplainBench, a benchmark to automatically evaluate explanations from coding agents. ExplainBench is based on the intuition that informative explanations should enable an LLM to correctly answer questions, allowing quantitative comparison of explanation quality between agents. With this observation, we construct a suite of questions that evaluates whether explanations accurately describe (1) the intended behavior of buggy code and (2) the effect of applying the agent patch itself. Experiments first reveal that explanation quality is a distinct axis of agent evaluation: ExplainBench ranks agents differently from the widely-used SWE-bench Verified benchmark. A deeper breakdown of explanation quality in agents shows frequent problems in explanations, such that explanations often claim that a patch is correct when it is not. Based on this insight, we implement and evaluate an explanation audit agent which runs additional tests to validate and refine explanations. This agent improved the explanations of all evaluated agents, demonstrating agent explanations can be automatically made more trustworthy.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.26451v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.26451v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.26451" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.29626.html"><strong>AgentHPOBench: A Benchmark For Evaluating LLM Agents as Sequential Hyperparameter Optimizers</strong></a> <span>2026-07-31</span></li>
+          <li><a href="2607.28587.html"><strong>PAIChecker: Uncovering and Checking PR-Issue Misalignment in SWE-Bench-Like Benchmarks</strong></a> <span>2026-07-30</span></li>
+          <li><a href="2607.28545.html"><strong>ORCA-bench: How Ready Are Language Model Agents for Oncall?</strong></a> <span>2026-07-30</span></li>
+          <li><a href="2607.27409.html"><strong>SWE-NFI: Studying and Benchmarking Coding Agents for Non-Functional Improvements</strong></a> <span>2026-07-29</span></li>
+          <li><a href="2607.26155.html"><strong>ClinLens: Towards Long-Horizon Coding Agents for Longitudinal Multimodal Clinical Data Science</strong></a> <span>2026-07-28</span></li>
+          <li><a href="2607.24882.html"><strong>Agent Retrieval Bench: Evaluating Repository Context Retrieval for Coding Agents</strong></a> <span>2026-07-27</span></li>
+          <li><a href="2607.22368.html"><strong>Do Agent Benchmarks Measure Capability? Protocol Validity in the Age of Agentic AI</strong></a> <span>2026-07-24</span></li>
+          <li><a href="2607.20911.html"><strong>Tencent WorkBuddy Bench: A Multi-Domain Coding-Agent Benchmark with Contamination-Resistant Task Construction</strong></a> <span>2026-07-23</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

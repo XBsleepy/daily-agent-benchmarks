@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>SLEIGHT-Bench: A Benchmark of Evasion Attacks Against Agent Monitors | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Since autonomous coding agents generate complex behaviors at high-volume, we may want to use other LLMs to monitor actions to reduce…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Safety, agent benchmark, LLM agent, arXiv, 2605.16626" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.16626.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SLEIGHT-Bench: A Benchmark of Evasion Attacks Against Agent Monitors" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Since autonomous coding agents generate complex behaviors at high-volume, we may want to use other LLMs to monitor actions to reduce…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.16626.html" />
+    <meta property="article:published_time" content="2026-05-15T20:46:46Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SLEIGHT-Bench: A Benchmark of Evasion Attacks Against Agent Monitors" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Since autonomous coding agents generate complex behaviors at high-volume, we may want to use other LLMs to monitor actions to reduce…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,69 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SLEIGHT-Bench: A Benchmark of Evasion Attacks Against Agent Monitors",
+  "name": "SLEIGHT-Bench: A Benchmark of Evasion Attacks Against Agent Monitors",
+  "abstract": "Since autonomous coding agents generate complex behaviors at high-volume, we may want to use other LLMs to monitor actions to reduce the risk from dangerous misaligned behavior. To better understand the limitations of such monitors against the diverse attack strategies that a coding agent could use, we present SLEIGHT-Bench (Subtle Low-itEration Insight-Guided Harmful Transcripts), a benchmark of synthetic transcripts containing 40 attacks across 11 categories, each showing a coding agent covertly pursuing a harmful objective (e.g. weight exfiltration, credential theft, unmonitored rogue deployment). We find that 20 of 40 attacks are never caught by an Opus 4.6 monitor with extended thinking across 10 trials at a 1% false-positive rate, while the overall catch rate is 32%. We identify several evasion strategies such as exploiting model priors, user instruction ambiguity, and state manipulation, which facilitate creating attacks that evade frontier monitors. We also elicit stronger monitor performance using coding agents as monitors versus regular prompted monitors, and for some evasion strategies show improved catch rates with targeted monitor prompts. Our dataset and evaluation framework are available at https://github.com/safety-research/sleight-bench and https://huggingface.co/datasets/sleightbench/SLEIGHT-Bench.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Elle Najt"
+    },
+    {
+      "@type": "Person",
+      "name": "Colin Toft"
+    },
+    {
+      "@type": "Person",
+      "name": "Tyler Tracy"
+    },
+    {
+      "@type": "Person",
+      "name": "Fabien Roger"
+    },
+    {
+      "@type": "Person",
+      "name": "Joe Benton"
+    }
+  ],
+  "datePublished": "2026-05-15T20:46:46Z",
+  "dateModified": "2026-05-19T00:46:42Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.16626.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.16626.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.16626v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.16626"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.16626v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.16626"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +101,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SLEIGHT-Bench: A Benchmark of Evasion Attacks Against Agent Monitors</h1>
+        <div class="meta">
+          Elle Najt, Colin Toft, Tyler Tracy, Fabien Roger, Joe Benton
+          · 2605.16626
+          · <time datetime="2026-05-15">2026-05-15</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Since autonomous coding agents generate complex behaviors at high-volume, we may want to use other LLMs to monitor actions to reduce the risk from dangerous misaligned behavior. To better understand the limitations of such monitors against the diverse attack strategies that a coding agent could use, we present SLEIGHT-Bench (Subtle Low-itEration Insight-Guided Harmful Transcripts), a benchmark of synthetic transcripts containing 40 attacks across 11 categories, each showing a coding agent covertly pursuing a harmful objective (e.g. weight exfiltration, credential theft, unmonitored rogue deployment). We find that 20 of 40 attacks are never caught by an Opus 4.6 monitor with extended thinking across 10 trials at a 1% false-positive rate, while the overall catch rate is 32%. We identify several evasion strategies such as exploiting model priors, user instruction ambiguity, and state manipulation, which facilitate creating attacks that evade frontier monitors. We also elicit stronger monitor performance using coding agents as monitors versus regular prompted monitors, and for some evasion strategies show improved catch rates with targeted monitor prompts. Our dataset and evaluation framework are available at https://github.com/safety-research/sleight-bench and https://huggingface.co/datasets/sleightbench/SLEIGHT-Bench.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.16626v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.16626v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.16626" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.17637.html"><strong>WebGameBench: Requirement-to-Application Evaluation for Coding Agents via Browser-Native Games</strong></a> <span>2026-05-17</span></li>
+          <li><a href="2605.17526.html"><strong>SaaSBench: Exploring the Boundaries of Coding Agents in Long-Horizon Enterprise SaaS Engineering</strong></a> <span>2026-05-17</span></li>
+          <li><a href="2605.17046.html"><strong>1GC-7RC: One Graphic Card -- Seven Research Challenges! How Good Are AI Agents at Doing Your Job?</strong></a> <span>2026-05-16</span></li>
+          <li><a href="2605.16819.html"><strong>AgentKernelArena: Generalization-Aware Benchmarking of GPU Kernel Optimization Agents</strong></a> <span>2026-05-16</span></li>
+          <li><a href="2605.15846.html"><strong>RoadmapBench: Evaluating Long-Horizon Agentic Software Development Across Version Upgrades</strong></a> <span>2026-05-15</span></li>
+          <li><a href="2605.15669.html"><strong>Rule2DRC: Benchmarking LLM Agents for DRC Script Synthesis with Execution-Guided Test Generation</strong></a> <span>2026-05-15</span></li>
+          <li><a href="2605.18859.html"><strong>TwinRouterBench: Fast Static and Live Dynamic Evaluation for Realistic Agentic LLM Routing</strong></a> <span>2026-05-14</span></li>
+          <li><a href="2605.14415.html"><strong>SWE-Chain: Benchmarking Coding Agents on Chained Release-Level Package Upgrades</strong></a> <span>2026-05-14</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

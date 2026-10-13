@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ContextEcho: A Benchmark for Persona Drift in Long Agentic-Coding Sessions | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: A frontier language model&#x27;s acknowledged &quot;helpful programming assistant&quot; persona does not survive long agentic-coding sessions in the…" />
+    <meta name="keywords" content="General, Tool use, agent benchmark, LLM agent, arXiv, 2605.24279" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.24279.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ContextEcho: A Benchmark for Persona Drift in Long Agentic-Coding Sessions" />
+    <meta property="og:description" content="Daily Agent Benchmarks: A frontier language model&#x27;s acknowledged &quot;helpful programming assistant&quot; persona does not survive long agentic-coding sessions in the…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.24279.html" />
+    <meta property="article:published_time" content="2026-05-22T23:13:21Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ContextEcho: A Benchmark for Persona Drift in Long Agentic-Coding Sessions" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: A frontier language model&#x27;s acknowledged &quot;helpful programming assistant&quot; persona does not survive long agentic-coding sessions in the…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,64 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ContextEcho: A Benchmark for Persona Drift in Long Agentic-Coding Sessions",
+  "name": "ContextEcho: A Benchmark for Persona Drift in Long Agentic-Coding Sessions",
+  "abstract": "A frontier language model's acknowledged \"helpful programming assistant\" persona does not survive long agentic-coding sessions in the deployment regime that production products actually run. After hours of tool-using debugging, a model that initially hedges preferences (\"I don't have preferences\") may begin asserting them (\"Python - the feedback loop is instant...\"), revealing user-visible drift that deployer evaluations may miss. Existing persona-stability studies focus on short dialogues and report little shift, leaving real-world code-generation regimes - thousands of tool-using turns, compaction, and hours-long sessions - largely uncharacterized. We introduce ContextEcho, a benchmark and reusable harness for measuring persona drift at deployment scale. It combines a 25-probe identity suite, a snapshot-then-probe protocol that forks conversation state without perturbing the main session, complementary judged and judge-free measurement surfaces, and three anonymized Claude Code sessions spanning 3,746-9,716 turns. Across 23 frontier models, ContextEcho shows that persona drift is general across organizations rather than family-specific, that in-session compaction does not reliably reset it, and that a single-shot anchor restores the trained register across measured targets. It also reveals mode-dependent downstream effects: while drift can facilitate tool-using continuation, in tool-free chat it breaks formatting contracts and inflates output length. Overall, ContextEcho provides researchers and deployers an open-source framework to audit whether the persona a model ships with is the persona users encounter at session end, across chat-completions API targets and without retraining.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Xianzhong Ding"
+    },
+    {
+      "@type": "Person",
+      "name": "Yangyang Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Changwei Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Bill Zhao"
+    }
+  ],
+  "datePublished": "2026-05-22T23:13:21Z",
+  "dateModified": "2026-05-22T23:13:21Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.24279.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.24279.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.24279v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.24279"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.24279v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.24279"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +96,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ContextEcho: A Benchmark for Persona Drift in Long Agentic-Coding Sessions</h1>
+        <div class="meta">
+          Xianzhong Ding, Yangyang Yu, Changwei Liu, Bill Zhao
+          · 2605.24279
+          · <time datetime="2026-05-22">2026-05-22</time>
+          · General · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>A frontier language model&#x27;s acknowledged &quot;helpful programming assistant&quot; persona does not survive long agentic-coding sessions in the deployment regime that production products actually run. After hours of tool-using debugging, a model that initially hedges preferences (&quot;I don&#x27;t have preferences&quot;) may begin asserting them (&quot;Python - the feedback loop is instant...&quot;), revealing user-visible drift that deployer evaluations may miss. Existing persona-stability studies focus on short dialogues and report little shift, leaving real-world code-generation regimes - thousands of tool-using turns, compaction, and hours-long sessions - largely uncharacterized. We introduce ContextEcho, a benchmark and reusable harness for measuring persona drift at deployment scale. It combines a 25-probe identity suite, a snapshot-then-probe protocol that forks conversation state without perturbing the main session, complementary judged and judge-free measurement surfaces, and three anonymized Claude Code sessions spanning 3,746-9,716 turns. Across 23 frontier models, ContextEcho shows that persona drift is general across organizations rather than family-specific, that in-session compaction does not reliably reset it, and that a single-shot anchor restores the trained register across measured targets. It also reveals mode-dependent downstream effects: while drift can facilitate tool-using continuation, in tool-free chat it breaks formatting contracts and inflates output length. Overall, ContextEcho provides researchers and deployers an open-source framework to audit whether the persona a model ships with is the persona users encounter at session end, across chat-completions API targets and without retraining.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.24279v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.24279v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.24279" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.27240.html"><strong>ENPMR-Bench: Benchmarking Proactive Memory Retrieval for Emotional Support Agents</strong></a> <span>2026-05-26</span></li>
+          <li><a href="2605.27141.html"><strong>VitaBench 2.0: Evaluating Personalized and Proactive Agents in Long-Term User Interactions</strong></a> <span>2026-05-26</span></li>
+          <li><a href="2605.26302.html"><strong>Your Agents Are Aging Too: Agent Lifespan Engineering for Deployed Systems</strong></a> <span>2026-05-25</span></li>
+          <li><a href="2605.25535.html"><strong>Personalize-then-Store: Benchmarking and Learning Personalized Memory for Long-horizon Agents</strong></a> <span>2026-05-25</span></li>
+          <li><a href="2605.22664.html"><strong>MBABench: Evaluating LLM Agents on End-to-End Spreadsheet Tasks in Finance</strong></a> <span>2026-05-21</span></li>
+          <li><a href="2605.22568.html"><strong>Measuring Security Without Fooling Ourselves: Why Benchmarking Agents Is Hard</strong></a> <span>2026-05-21</span></li>
+          <li><a href="2605.22535.html"><strong>TerminalWorld: Benchmarking Agents on Real-World Terminal Tasks</strong></a> <span>2026-05-21</span></li>
+          <li><a href="2605.22219.html"><strong>SGR-Bench: Benchmarking Search Agents on State-Gated Retrieval</strong></a> <span>2026-05-21</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

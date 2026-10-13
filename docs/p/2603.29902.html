@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ATP-Bench: Towards Agentic Tool Planning for MLLM Interleaved Generation | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Interleaved text-and-image generation represents a significant frontier for Multimodal Large Language Models (MLLMs), offering a more…" />
+    <meta name="keywords" content="Multi-agent, Tool use, Planning / reasoning, Multimodal, agent benchmark, LLM agent, arXiv, 2603.29902" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.29902.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ATP-Bench: Towards Agentic Tool Planning for MLLM Interleaved Generation" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Interleaved text-and-image generation represents a significant frontier for Multimodal Large Language Models (MLLMs), offering a more…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.29902.html" />
+    <meta property="article:published_time" content="2026-03-31T15:47:59Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ATP-Bench: Towards Agentic Tool Planning for MLLM Interleaved Generation" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Interleaved text-and-image generation represents a significant frontier for Multimodal Large Language Models (MLLMs), offering a more…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,90 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ATP-Bench: Towards Agentic Tool Planning for MLLM Interleaved Generation",
+  "name": "ATP-Bench: Towards Agentic Tool Planning for MLLM Interleaved Generation",
+  "abstract": "Interleaved text-and-image generation represents a significant frontier for Multimodal Large Language Models (MLLMs), offering a more intuitive way to convey complex information. Current paradigms rely on either image generation or retrieval augmentation, yet they typically treat the two as mutually exclusive paths, failing to unify factuality with creativity. We argue that the next milestone in this field is Agentic Tool Planning, where the model serves as a central controller that autonomously determines when, where, and which tools to invoke to produce interleaved responses for visual-critical queries. To systematically evaluate this paradigm, we introduce ATP-Bench, a novel benchmark comprising 7,702 QA pairs (including 1,592 VQA pairs) across eight categories and 25 visual-critical intents, featuring human-verified queries and ground truths. Furthermore, to evaluate agentic planning independent of end-to-end execution and changing tool backends, we propose a Multi-Agent MLLM-as-a-Judge (MAM) system. MAM evaluates tool-call precision, identifies missed opportunities for tool use, and assesses overall response quality without requiring ground-truth references. Our extensive experiments on 10 state-of-the-art MLLMs reveal that models struggle with coherent interleaved planning and exhibit significant variations in tool-use behavior, highlighting substantial room for improvement and providing actionable guidance for advancing interleaved generation. Dataset and code are available at https://github.com/Qwen-Applications/ATP-Bench.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yinuo Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zi Qian"
+    },
+    {
+      "@type": "Person",
+      "name": "Heng Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiahao Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yajie Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhihang Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Mengyu Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Erchao Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaoxi Jiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Guanjun Jiang"
+    }
+  ],
+  "datePublished": "2026-03-31T15:47:59Z",
+  "dateModified": "2026-08-22T08:28:51Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.29902.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.29902.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2603.29902v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2603.29902"
+  },
+  "keywords": [
+    "Multi-agent",
+    "Tool use",
+    "Planning / reasoning",
+    "Multimodal",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multi-agent"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2603.29902v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2603.29902"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +122,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ATP-Bench: Towards Agentic Tool Planning for MLLM Interleaved Generation</h1>
+        <div class="meta">
+          Yinuo Liu, Zi Qian, Heng Zhou, Jiahao Zhang, Yajie Zhang, Zhihang Li, Mengyu Zhou, Erchao Zhao, Xiaoxi Jiang, Guanjun Jiang
+          · 2603.29902
+          · <time datetime="2026-03-31">2026-03-31</time>
+          · Multi-agent
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Multi-agent</span><span class="chip">Planning / reasoning</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Interleaved text-and-image generation represents a significant frontier for Multimodal Large Language Models (MLLMs), offering a more intuitive way to convey complex information. Current paradigms rely on either image generation or retrieval augmentation, yet they typically treat the two as mutually exclusive paths, failing to unify factuality with creativity. We argue that the next milestone in this field is Agentic Tool Planning, where the model serves as a central controller that autonomously determines when, where, and which tools to invoke to produce interleaved responses for visual-critical queries. To systematically evaluate this paradigm, we introduce ATP-Bench, a novel benchmark comprising 7,702 QA pairs (including 1,592 VQA pairs) across eight categories and 25 visual-critical intents, featuring human-verified queries and ground truths. Furthermore, to evaluate agentic planning independent of end-to-end execution and changing tool backends, we propose a Multi-Agent MLLM-as-a-Judge (MAM) system. MAM evaluates tool-call precision, identifies missed opportunities for tool use, and assesses overall response quality without requiring ground-truth references. Our extensive experiments on 10 state-of-the-art MLLMs reveal that models struggle with coherent interleaved planning and exhibit significant variations in tool-use behavior, highlighting substantial room for improvement and providing actionable guidance for advancing interleaved generation. Dataset and code are available at https://github.com/Qwen-Applications/ATP-Bench.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2603.29902v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2603.29902v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2603.29902" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multi-agent benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2604.05523.html"><strong>Market-Bench: Benchmarking Large Language Models on Economic and Trade Competition</strong></a> <span>2026-04-07</span></li>
+          <li><a href="2604.05076.html"><strong>GLANCE: A Global-Local Coordination Multi-Agent Framework for Music-Grounded Non-Linear Video Editing</strong></a> <span>2026-04-06</span></li>
+          <li><a href="2604.01487.html"><strong>AgentSocialBench: Evaluating Privacy Risks in Human-Centered Agentic Social Networks</strong></a> <span>2026-04-01</span></li>
+          <li><a href="2604.01151.html"><strong>Detecting Multi-Agent Collusion Through Multi-Agent Interpretability</strong></a> <span>2026-04-01</span></li>
+          <li><a href="2603.28998.html"><strong>Design Principles for the Construction of a Benchmark Evaluating Security Operation Capabilities of Multi-agent AI Systems</strong></a> <span>2026-03-30</span></li>
+          <li><a href="2603.27991.html"><strong>ViviDoc: Generating Interactive Documents through Human-Agent Collaboration</strong></a> <span>2026-03-30</span></li>
+          <li><a href="2603.24329.html"><strong>GameplayQA: A Benchmarking Framework for Decision-Dense POV-Synced Multi-Video Understanding of 3D Virtual Agents</strong></a> <span>2026-03-25</span></li>
+          <li><a href="2603.22651.html"><strong>Benchmarking Multi-Agent LLM Architectures for Financial Document Processing: A Comparative Study of Orchestration Patterns, Cost-Accuracy Tradeoffs and Production Scaling Strategies</strong></a> <span>2026-03-24</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

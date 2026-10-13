@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>FDE-Bench: Evaluating LLM Agents for Deployment Environment Configuration | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Deployment requires an agent to turn application code into a running system whose services connect, become ready, and remain…" />
+    <meta name="keywords" content="Tool use, agent benchmark, LLM agent, arXiv, 2609.27571" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.27571.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="FDE-Bench: Evaluating LLM Agents for Deployment Environment Configuration" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Deployment requires an agent to turn application code into a running system whose services connect, become ready, and remain…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.27571.html" />
+    <meta property="article:published_time" content="2026-09-24T04:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="FDE-Bench: Evaluating LLM Agents for Deployment Environment Configuration" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Deployment requires an agent to turn application code into a running system whose services connect, become ready, and remain…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,51 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "FDE-Bench: Evaluating LLM Agents for Deployment Environment Configuration",
+  "name": "FDE-Bench: Evaluating LLM Agents for Deployment Environment Configuration",
+  "abstract": "Deployment requires an agent to turn application code into a running system whose services connect, become ready, and remain observable. FDE-Bench evaluates this capability with 136 deployment-configuration tasks spanning Docker images, multi-service Compose stacks, and Kubernetes, in greenfield and diagnose-and-repair modes. Agents submit declarative artifacts that are collected, rebuilt, and redeployed in a pristine environment. Four gated binary check layers measure build, readiness, behavior, and conformance to the deployment specification, using programmatic checks without an LLM judge. A four-arm release gate requires a resolving reference solution and rejects tasks solved by do-nothing, specification-transcription, or generic-stub submissions. The released check annotations expose the link between 2,145 checks and their specifications, including seven documented gaps. Three additional adversarial strategies test shortcuts in the grading signals; none resolves any of the 135 tasks they cover, while a vacuous health probe passes readiness and exposes the need for downstream checks. On the 136-task evaluation grid, seven language models from four providers use the same four-tool scaffold and resolve 52.9-75.0 percent of tasks. The three zero-intelligence floors resolve none and reach a mean Deployment Score of at most 0.44. Readiness is the largest failure stage, accounting for 110 of 313 unresolved episodes. Mean resolution rate is 30.7 percentage points higher on the repair task group than on the disjoint greenfield group, with a positive gap for every model; ten tasks resist all seven. In a 25-task case study, one practicing engineer directing Claude-Sonnet-5 resolves 92 percent against 72 percent for the autonomous baseline. FDE-Bench links deployment success and failure to artifacts that can be inspected and replayed.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Weihang Ding, Junfei Zhan, Yueting Li, Qirong Guo"
+    }
+  ],
+  "datePublished": "2026-09-24T04:00:00Z",
+  "dateModified": "2026-09-24T04:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.27571.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.27571.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.27571"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.27571"
+  },
+  "keywords": [
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.27571"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.27571"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +83,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>FDE-Bench: Evaluating LLM Agents for Deployment Environment Configuration</h1>
+        <div class="meta">
+          Weihang Ding, Junfei Zhan, Yueting Li, Qirong Guo
+          · 2609.27571
+          · <time datetime="2026-09-24">2026-09-24</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Deployment requires an agent to turn application code into a running system whose services connect, become ready, and remain observable. FDE-Bench evaluates this capability with 136 deployment-configuration tasks spanning Docker images, multi-service Compose stacks, and Kubernetes, in greenfield and diagnose-and-repair modes. Agents submit declarative artifacts that are collected, rebuilt, and redeployed in a pristine environment. Four gated binary check layers measure build, readiness, behavior, and conformance to the deployment specification, using programmatic checks without an LLM judge. A four-arm release gate requires a resolving reference solution and rejects tasks solved by do-nothing, specification-transcription, or generic-stub submissions. The released check annotations expose the link between 2,145 checks and their specifications, including seven documented gaps. Three additional adversarial strategies test shortcuts in the grading signals; none resolves any of the 135 tasks they cover, while a vacuous health probe passes readiness and exposes the need for downstream checks. On the 136-task evaluation grid, seven language models from four providers use the same four-tool scaffold and resolve 52.9-75.0 percent of tasks. The three zero-intelligence floors resolve none and reach a mean Deployment Score of at most 0.44. Readiness is the largest failure stage, accounting for 110 of 313 unresolved episodes. Mean resolution rate is 30.7 percentage points higher on the repair task group than on the disjoint greenfield group, with a positive gap for every model; ten tasks resist all seven. In a 25-task case study, one practicing engineer directing Claude-Sonnet-5 resolves 92 percent against 72 percent for the autonomous baseline. FDE-Bench links deployment success and failure to artifacts that can be inspected and replayed.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.27571" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.27571" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.27571" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.30717.html"><strong>RecToolBench: Benchmarking Recommendation-Specific Tool Orchestration under Fuzzy User Intent</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.31906.html"><strong>EmailBench: A Benchmark for Evaluating LLM Agents on Enterprise Email and Productivity Tasks</strong></a> <span>2026-09-25</span></li>
+          <li><a href="2609.29578.html"><strong>PartHackBench: Certified Equal-Progress Stress Tests for Partial-Credit Tool-Agent Evaluation</strong></a> <span>2026-09-25</span></li>
+          <li><a href="2609.28876.html"><strong>Forecast-Dojo: Replayable Environments for Benchmarking and Training LLM Forecasting Agents</strong></a> <span>2026-09-25</span></li>
+          <li><a href="2609.25192.html"><strong>FinFIRST: Benchmarking Search Agents for Financial Information Retrieval, Sourcing and Traceability</strong></a> <span>2026-09-23</span></li>
+          <li><a href="2609.24983.html"><strong>onPanda: Efficient Annotation of On-Policy Alignment Data for LLMs and Agents via Token-Level Correction</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.24812.html"><strong>MSI-Bench: Evaluating Multi-Speaker Voice Interaction for Collaborative AI Agents</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.24663.html"><strong>Beyond Endpoint Performance: Process-Level Evaluation of Self-Evolving Agents</strong></a> <span>2026-09-22</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

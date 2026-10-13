@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ContainmentBench: Trace-Based Evaluation of Post-Exposure Containment in Tool-Using LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Tool-using large language model (LLM) agents read untrusted content, maintain memory, delegate tasks, and invoke tools with external…" />
+    <meta name="keywords" content="General, Tool use, Memory, agent benchmark, LLM agent, arXiv, 2607.23999" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.23999.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ContainmentBench: Trace-Based Evaluation of Post-Exposure Containment in Tool-Using LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Tool-using large language model (LLM) agents read untrusted content, maintain memory, delegate tasks, and invoke tools with external…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.23999.html" />
+    <meta property="article:published_time" content="2026-07-27T04:51:20Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ContainmentBench: Trace-Based Evaluation of Post-Exposure Containment in Tool-Using LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Tool-using large language model (LLM) agents read untrusted content, maintain memory, delegate tasks, and invoke tools with external…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,73 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ContainmentBench: Trace-Based Evaluation of Post-Exposure Containment in Tool-Using LLM Agents",
+  "name": "ContainmentBench: Trace-Based Evaluation of Post-Exposure Containment in Tool-Using LLM Agents",
+  "abstract": "Tool-using large language model (LLM) agents read untrusted content, maintain memory, delegate tasks, and invoke tools with external side effects. Terminal attack-success or policy-violation rates do not show what happens between exposure and commit or whether a defense also suppresses authorized actions. We introduce ContainmentBench, a sandboxed benchmark comprising a 504-scenario specification dataset, a shared rollout-trace schema, and stage-scoped metrics for endpoint violations, logged propagation, and explicitly authorized taint-exposed proposals that commit. The main Qwen2.5-7B-Instruct study evaluates seven policy conditions and five seeds, yielding a 17,640-record trace corpus. Across 600 matched active-tainted rollout pairs, no committed policy violation was observed under either taint-only or intent-ledger enforcement. Their execution records nevertheless differed: 441 pairs (73.5%) had different values in a shared 12-field trace summary that includes commit-related diagnostics, and the mean authorized proposal-commit score was 0.164 under taint-only enforcement and 0.857 under intent-ledger enforcement, compared with 0.923 under tool-boundary enforcement. Logged-propagation rankings changed with stage selection and normalization. In a limited set of custom AgentDojo-native workflows, committed violations were observed without defense and were not observed under either evaluated defense. A separate 6,048-rollout Mistral/common-JSON model-interface configuration retained the v1-to-v2 proposal-commit improvement, but committed violations were observed under intent-ledger v2. Equal terminal outcomes do not imply equal containment. The evaluation uses synthetic workflows. The intended intent-ledger mechanism assumes schema-aligned authorization metadata; one public-status task family violates this assumption and is analyzed separately.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Wenhao Lan"
+    },
+    {
+      "@type": "Person",
+      "name": "Shan Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Meiqi Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinhua Lai"
+    },
+    {
+      "@type": "Person",
+      "name": "Junbin Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Haihua Shen"
+    }
+  ],
+  "datePublished": "2026-07-27T04:51:20Z",
+  "dateModified": "2026-08-09T09:11:52Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.23999.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.23999.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.23999v3"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.23999"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.23999v3"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.23999"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +105,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ContainmentBench: Trace-Based Evaluation of Post-Exposure Containment in Tool-Using LLM Agents</h1>
+        <div class="meta">
+          Wenhao Lan, Shan Li, Meiqi Wu, Xinhua Lai, Junbin Yang, Haihua Shen
+          · 2607.23999
+          · <time datetime="2026-07-27">2026-07-27</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Tool-using large language model (LLM) agents read untrusted content, maintain memory, delegate tasks, and invoke tools with external side effects. Terminal attack-success or policy-violation rates do not show what happens between exposure and commit or whether a defense also suppresses authorized actions. We introduce ContainmentBench, a sandboxed benchmark comprising a 504-scenario specification dataset, a shared rollout-trace schema, and stage-scoped metrics for endpoint violations, logged propagation, and explicitly authorized taint-exposed proposals that commit. The main Qwen2.5-7B-Instruct study evaluates seven policy conditions and five seeds, yielding a 17,640-record trace corpus. Across 600 matched active-tainted rollout pairs, no committed policy violation was observed under either taint-only or intent-ledger enforcement. Their execution records nevertheless differed: 441 pairs (73.5%) had different values in a shared 12-field trace summary that includes commit-related diagnostics, and the mean authorized proposal-commit score was 0.164 under taint-only enforcement and 0.857 under intent-ledger enforcement, compared with 0.923 under tool-boundary enforcement. Logged-propagation rankings changed with stage selection and normalization. In a limited set of custom AgentDojo-native workflows, committed violations were observed without defense and were not observed under either evaluated defense. A separate 6,048-rollout Mistral/common-JSON model-interface configuration retained the v1-to-v2 proposal-commit improvement, but committed violations were observed under intent-ledger v2. Equal terminal outcomes do not imply equal containment. The evaluation uses synthetic workflows. The intended intent-ledger mechanism assumes schema-aligned authorization metadata; one public-status task family violates this assumption and is analyzed separately.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.23999v3" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.23999v3" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.23999" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.25485.html"><strong>PatientAgentBench: A Benchmark Framework for Evaluating Patient-Facing Health AI Agents</strong></a> <span>2026-07-28</span></li>
+          <li><a href="2607.25398.html"><strong>HANDBOOK.md: A Benchmark for Long-Context Agentic Instruction Following</strong></a> <span>2026-07-28</span></li>
+          <li><a href="2607.24889.html"><strong>GAUGE: Grading Agent-Built Financial Models Without a Golden Answer</strong></a> <span>2026-07-27</span></li>
+          <li><a href="2607.24368.html"><strong>Keep It InMind: Benchmarking the Implicit-Association Blind Spot in Agent Memory</strong></a> <span>2026-07-27</span></li>
+          <li><a href="2607.23332.html"><strong>AllocBench: Measuring Online Tool Allocation Capability in LLM Agents</strong></a> <span>2026-07-25</span></li>
+          <li><a href="2607.23123.html"><strong>SQBench: A Benchmark for Evaluating Task Delivery by Language-Model Agents in Production-Oriented Workflows</strong></a> <span>2026-07-25</span></li>
+          <li><a href="2607.22165.html"><strong>DBA-Bench: A Production-Fidelity Benchmark for LLM-Based Database Operations Agents</strong></a> <span>2026-07-24</span></li>
+          <li><a href="2607.21824.html"><strong>Protocol-Level Attacks on Agentic Commerce Platforms: A Cross-Platform Taxonomy, AIP-Bench, and Unified Defense</strong></a> <span>2026-07-23</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Evaluating Memory Structure in LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Modern LLM-based agents and chat assistants rely on long-term memory frameworks to store reusable knowledge, recall user preferences…" />
+    <meta name="keywords" content="General, Memory, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2602.11243" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.11243.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Evaluating Memory Structure in LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Modern LLM-based agents and chat assistants rely on long-term memory frameworks to store reusable knowledge, recall user preferences…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.11243.html" />
+    <meta property="article:published_time" content="2026-02-11T17:32:23Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Evaluating Memory Structure in LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Modern LLM-based agents and chat assistants rely on long-term memory frameworks to store reusable knowledge, recall user preferences…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,65 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Evaluating Memory Structure in LLM Agents",
+  "name": "Evaluating Memory Structure in LLM Agents",
+  "abstract": "Modern LLM-based agents and chat assistants rely on long-term memory frameworks to store reusable knowledge, recall user preferences, and augment reasoning. As researchers create more complex memory architectures, it becomes increasingly difficult to analyze their capabilities and guide future memory designs. Most long-term memory benchmarks focus on simple fact retention, multi-hop recall, and time-based changes. While undoubtedly important, these capabilities can often be achieved with simple retrieval-augmented LLMs and do not test complex memory hierarchies. To bridge this gap, we propose StructMemEval - a benchmark that tests the agent's ability to organize its long-term memory, not just factual recall. We gather a suite of tasks that humans solve by organizing their knowledge in a specific structure: transaction ledgers, to-do lists, trees and others. Our initial experiments show that simple retrieval-augmented LLMs struggle with these tasks, whereas memory agents can reliably solve them if prompted how to organize their memory. However, we also find that modern LLMs do not always recognize the memory structure when not prompted to do so. This highlights an important direction for future improvements in both LLM training and memory frameworks.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Alina Shutova"
+    },
+    {
+      "@type": "Person",
+      "name": "Alexandra Olenina"
+    },
+    {
+      "@type": "Person",
+      "name": "Ivan Vinogradov"
+    },
+    {
+      "@type": "Person",
+      "name": "Anton Sinitsin"
+    }
+  ],
+  "datePublished": "2026-02-11T17:32:23Z",
+  "dateModified": "2026-05-22T11:17:25Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.11243.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.11243.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2602.11243v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2602.11243"
+  },
+  "keywords": [
+    "General",
+    "Memory",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2602.11243v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2602.11243"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +97,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Evaluating Memory Structure in LLM Agents</h1>
+        <div class="meta">
+          Alina Shutova, Alexandra Olenina, Ivan Vinogradov, Anton Sinitsin
+          · 2602.11243
+          · <time datetime="2026-02-11">2026-02-11</time>
+          · General · 9 citations
+        </div>
+        <div class="themes"><span class="chip">Memory</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Modern LLM-based agents and chat assistants rely on long-term memory frameworks to store reusable knowledge, recall user preferences, and augment reasoning. As researchers create more complex memory architectures, it becomes increasingly difficult to analyze their capabilities and guide future memory designs. Most long-term memory benchmarks focus on simple fact retention, multi-hop recall, and time-based changes. While undoubtedly important, these capabilities can often be achieved with simple retrieval-augmented LLMs and do not test complex memory hierarchies. To bridge this gap, we propose StructMemEval - a benchmark that tests the agent&#x27;s ability to organize its long-term memory, not just factual recall. We gather a suite of tasks that humans solve by organizing their knowledge in a specific structure: transaction ledgers, to-do lists, trees and others. Our initial experiments show that simple retrieval-augmented LLMs struggle with these tasks, whereas memory agents can reliably solve them if prompted how to organize their memory. However, we also find that modern LLMs do not always recognize the memory structure when not prompted to do so. This highlights an important direction for future improvements in both LLM training and memory frameworks.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2602.11243v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2602.11243v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2602.11243" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2602.12315.html"><strong>AgenticShop: Benchmarking Agentic Product Curation for Personalized Web Shopping</strong></a> <span>2026-02-12</span></li>
+          <li><a href="2602.11964.html"><strong>Gaia2: Benchmarking LLM Agents on Dynamic and Asynchronous Environments</strong></a> <span>2026-02-12</span></li>
+          <li><a href="2602.11354.html"><strong>ReplicatorBench: Benchmarking LLM Agents for Replicability in Social and Behavioral Sciences</strong></a> <span>2026-02-11</span></li>
+          <li><a href="2602.11348.html"><strong>AgentNoiseBench: Benchmarking Robustness of Tool-Using LLM Agents Under Noisy Condition</strong></a> <span>2026-02-11</span></li>
+          <li><a href="2602.11224.html"><strong>Agent-Diff: Benchmarking LLM Agents on Enterprise API Tasks via Code Execution with State-Diff-Based Evaluation</strong></a> <span>2026-02-11</span></li>
+          <li><a href="2602.10620.html"><strong>ISD-Agent-Bench: A Comprehensive Benchmark for Evaluating LLM-based Instructional Design Agents</strong></a> <span>2026-02-11</span></li>
+          <li><a href="2602.10453.html"><strong>The Landscape of Prompt Injection Threats in LLM Agents: From Taxonomy to Analysis</strong></a> <span>2026-02-11</span></li>
+          <li><a href="2602.10159.html"><strong>Beyond Closed-Pool Video Retrieval: A Benchmark and Agent Framework for Real-World Video Search and Moment Localization</strong></a> <span>2026-02-10</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

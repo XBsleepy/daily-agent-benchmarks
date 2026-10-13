@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MemCalib: Benchmarking and Optimizing Memory Use in LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: The effectiveness of agent memory ultimately depends on whether the underlying LLM gives each memory in context an appropriate degree…" />
+    <meta name="keywords" content="Safety, Memory, agent benchmark, LLM agent, arXiv, 2609.24259" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.24259.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MemCalib: Benchmarking and Optimizing Memory Use in LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: The effectiveness of agent memory ultimately depends on whether the underlying LLM gives each memory in context an appropriate degree…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.24259.html" />
+    <meta property="article:published_time" content="2026-09-22T04:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MemCalib: Benchmarking and Optimizing Memory Use in LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: The effectiveness of agent memory ultimately depends on whether the underlying LLM gives each memory in context an appropriate degree…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,52 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MemCalib: Benchmarking and Optimizing Memory Use in LLM Agents",
+  "name": "MemCalib: Benchmarking and Optimizing Memory Use in LLM Agents",
+  "abstract": "The effectiveness of agent memory ultimately depends on whether the underlying LLM gives each memory in context an appropriate degree of influence over its response. Yet this capability has remained largely overlooked. To assess this capability, we introduce MemCalib, a benchmark grounded in realistic memory-system scenarios for evaluating memory use and advancing optimization algorithms. Results on the MemCalib test set reveal that frontier open- and closed-source models struggle to use memory appropriately. They frequently over-use or under-use memory rather than matching each proposition's actual use to its target level, leading to biased, low-quality responses. Experiments with common post-training algorithms, including group relative policy optimization and on-policy self-distillation, further reveal a clear directional skew: trained models improve in one direction while deteriorating in the other. We therefore propose MemCalib-RL, an ordered bidirectional counterfactual credit-assignment algorithm that separates over- and under-use signals and localizes their credit to response tokens through exact atom ablation. Results across model families and scales (Qwen3-8B, Ministral-3-8B-Instruct, and Qwen3.5-35B-A3B) show that MemCalib-RL achieves the best overall performance while better balancing over-use and under-use, with gains generalizing beyond MemCalib in external benchmark evaluation. Further experiments support its design choices and robustness and provide insight into its training dynamics.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Ruike Cao, Fanyu Zhao, Fugen Yao, Liang Dong, Jian Xu, Guanjun Jiang, Yifei Zhao, Han Zhang, Li Xiao"
+    }
+  ],
+  "datePublished": "2026-09-22T04:00:00Z",
+  "dateModified": "2026-09-22T04:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.24259.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.24259.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.24259"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.24259"
+  },
+  "keywords": [
+    "Safety",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Safety"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.24259"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.24259"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +84,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MemCalib: Benchmarking and Optimizing Memory Use in LLM Agents</h1>
+        <div class="meta">
+          Ruike Cao, Fanyu Zhao, Fugen Yao, Liang Dong, Jian Xu, Guanjun Jiang, Yifei Zhao, Han Zhang, Li Xiao
+          · 2609.24259
+          · <time datetime="2026-09-22">2026-09-22</time>
+          · Safety
+        </div>
+        <div class="themes"><span class="chip">Safety</span><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>The effectiveness of agent memory ultimately depends on whether the underlying LLM gives each memory in context an appropriate degree of influence over its response. Yet this capability has remained largely overlooked. To assess this capability, we introduce MemCalib, a benchmark grounded in realistic memory-system scenarios for evaluating memory use and advancing optimization algorithms. Results on the MemCalib test set reveal that frontier open- and closed-source models struggle to use memory appropriately. They frequently over-use or under-use memory rather than matching each proposition&#x27;s actual use to its target level, leading to biased, low-quality responses. Experiments with common post-training algorithms, including group relative policy optimization and on-policy self-distillation, further reveal a clear directional skew: trained models improve in one direction while deteriorating in the other. We therefore propose MemCalib-RL, an ordered bidirectional counterfactual credit-assignment algorithm that separates over- and under-use signals and localizes their credit to response tokens through exact atom ablation. Results across model families and scales (Qwen3-8B, Ministral-3-8B-Instruct, and Qwen3.5-35B-A3B) show that MemCalib-RL achieves the best overall performance while better balancing over-use and under-use, with gains generalizing beyond MemCalib in external benchmark evaluation. Further experiments support its design choices and robustness and provide insight into its training dynamics.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.24259" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.24259" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.24259" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Safety benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.33689.html"><strong>Type-Safe Decision Frameworks for Agentic 5G Control: A Theory-Driven Testbed Characterization of Where They Can Be Applied</strong></a> <span>2026-09-27</span></li>
+          <li><a href="2609.32616.html"><strong>&quot;You&#x27;re Right, Let Me Fix It&quot;: How LLM Agents Damage Correct Work When Falsely Accused</strong></a> <span>2026-09-26</span></li>
+          <li><a href="2609.31967.html"><strong>IndicFDB: Benchmarking Full-Duplex Voice Agents across Indian Languages</strong></a> <span>2026-09-25</span></li>
+          <li><a href="2609.28197.html"><strong>PASTABench: Proactive Assessment of Sequential Trajectories for Agent Safety</strong></a> <span>2026-09-24</span></li>
+          <li><a href="2609.22090.html"><strong>Recognition, Simulation, and Refusal: A Contamination-Aware Study of Classic Psychological Effects in LLM Agents</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.19892.html"><strong>ClashBench: Conflicts Leading Agents to Seize and Harm</strong></a> <span>2026-09-18</span></li>
+          <li><a href="2609.18949.html"><strong>StableEval Arena: A Cost-Aware Agentic Benchmark for Stablecoin Price Stability Prediction</strong></a> <span>2026-09-17</span></li>
+          <li><a href="2609.18605.html"><strong>PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?</strong></a> <span>2026-09-17</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

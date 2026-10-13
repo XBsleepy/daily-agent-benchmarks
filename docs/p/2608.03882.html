@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MultiGlobeQA: A Multilingual and Globally Diverse Benchmark for Geospatial Reasoning | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Geospatial reasoning, i.e., computing distances, containment, and other spatial relations over real-world entities, is central to…" />
+    <meta name="keywords" content="General, Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2608.03882" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.03882.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MultiGlobeQA: A Multilingual and Globally Diverse Benchmark for Geospatial Reasoning" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Geospatial reasoning, i.e., computing distances, containment, and other spatial relations over real-world entities, is central to…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.03882.html" />
+    <meta property="article:published_time" content="2026-08-04T16:18:52Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MultiGlobeQA: A Multilingual and Globally Diverse Benchmark for Geospatial Reasoning" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Geospatial reasoning, i.e., computing distances, containment, and other spatial relations over real-world entities, is central to…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,65 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MultiGlobeQA: A Multilingual and Globally Diverse Benchmark for Geospatial Reasoning",
+  "name": "MultiGlobeQA: A Multilingual and Globally Diverse Benchmark for Geospatial Reasoning",
+  "abstract": "Geospatial reasoning, i.e., computing distances, containment, and other spatial relations over real-world entities, is central to navigation and logistics, yet large language models (LLMs) struggle with the required geometric and topological computation despite storing considerable geographic knowledge. Existing benchmarks localize these failures only partially: they are synthetic or smallscale, largely monolingual, and offer limited control over geographic coverage. We introduce MultiGlobeQA, a multilingual benchmark of 46,060 question-answer pairs spanning 14 spatial-function families and 15 answer formats, with execution-based ground truth over three knowledge graphs. It covers 201 countries and territories via income- and density-stratified sampling, with parallel questions in English and 16 additional high- and low-resource languages. Across parametric, reasoning, and agentic settings, LLMs collapse on tasks requiring grid indexing and shape computation, while topological relations and directions fare best. Retrieval and tool use yield considerable gains, yet performance plateaus below two thirds even when gold facts are supplied, indicating that computation, not access to knowledge, is the bottleneck. Models also underperform on low-income regions, a gap that gold facts widen rather than close.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Martin Böckling"
+    },
+    {
+      "@type": "Person",
+      "name": "Elizaveta Nosova"
+    },
+    {
+      "@type": "Person",
+      "name": "Heiko Paulheim"
+    },
+    {
+      "@type": "Person",
+      "name": "Andreea Iana"
+    }
+  ],
+  "datePublished": "2026-08-04T16:18:52Z",
+  "dateModified": "2026-08-04T16:18:52Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.03882.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.03882.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.03882v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.03882"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.03882v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.03882"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +97,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MultiGlobeQA: A Multilingual and Globally Diverse Benchmark for Geospatial Reasoning</h1>
+        <div class="meta">
+          Martin Böckling, Elizaveta Nosova, Heiko Paulheim, Andreea Iana
+          · 2608.03882
+          · <time datetime="2026-08-04">2026-08-04</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Geospatial reasoning, i.e., computing distances, containment, and other spatial relations over real-world entities, is central to navigation and logistics, yet large language models (LLMs) struggle with the required geometric and topological computation despite storing considerable geographic knowledge. Existing benchmarks localize these failures only partially: they are synthetic or smallscale, largely monolingual, and offer limited control over geographic coverage. We introduce MultiGlobeQA, a multilingual benchmark of 46,060 question-answer pairs spanning 14 spatial-function families and 15 answer formats, with execution-based ground truth over three knowledge graphs. It covers 201 countries and territories via income- and density-stratified sampling, with parallel questions in English and 16 additional high- and low-resource languages. Across parametric, reasoning, and agentic settings, LLMs collapse on tasks requiring grid indexing and shape computation, while topological relations and directions fare best. Retrieval and tool use yield considerable gains, yet performance plateaus below two thirds even when gold facts are supplied, indicating that computation, not access to knowledge, is the bottleneck. Models also underperform on low-income regions, a gap that gold facts widen rather than close.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.03882v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.03882v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.03882" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.04746.html"><strong>Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems</strong></a> <span>2026-08-05</span></li>
+          <li><a href="2608.14680.html"><strong>When Agentic Executions Fail: Detecting and Localizing Runtime Faults from Telemetry</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.04095.html"><strong>FinPerMA: A Theory-Informed, Event-Grounded Personalized-Memory Benchmark for LLM Agents</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.04077.html"><strong>FinProBench: Evaluating Financial AI Agents with Role-Grounded Rubrics Derived from Professional Deliverables</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.03699.html"><strong>TARL: Transaction-Aware Reliable Ledgers for Executable Memory Management in Long-Term Agents</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.03591.html"><strong>DiagChain: A Diagnostic Benchmark for Evaluating LLM Agents on Evidence-Grounded Attack Chain Reconstruction</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.03206.html"><strong>EduClaw-Bench: A Long-Horizon Benchmark for Pedagogical LLM Agents with Simulated Learners</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.03018.html"><strong>UrbanAgent: A Tool-Augmented Agent for Cross-System Urban Tasks</strong></a> <span>2026-08-04</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

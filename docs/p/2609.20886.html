@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>BI-Agent and BI-Bench: Towards Automating End-to-End Business Intelligence | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Business intelligence (BI) is a cornerstone of enterprise decision-making and is widely used by enterprise users in software such as…" />
+    <meta name="keywords" content="Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2609.20886" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.20886.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="BI-Agent and BI-Bench: Towards Automating End-to-End Business Intelligence" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Business intelligence (BI) is a cornerstone of enterprise decision-making and is widely used by enterprise users in software such as…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.20886.html" />
+    <meta property="article:published_time" content="2026-09-21T04:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="BI-Agent and BI-Bench: Towards Automating End-to-End Business Intelligence" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Business intelligence (BI) is a cornerstone of enterprise decision-making and is widely used by enterprise users in software such as…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,52 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "BI-Agent and BI-Bench: Towards Automating End-to-End Business Intelligence",
+  "name": "BI-Agent and BI-Bench: Towards Automating End-to-End Business Intelligence",
+  "abstract": "Business intelligence (BI) is a cornerstone of enterprise decision-making and is widely used by enterprise users in software such as Power BI and Tableau. In traditional BI workflows, users need to prepare data by (1) identifying relevant tables, (2) performing data transformations, and (3) building join relationships, before they can (4) answer their business questions. These steps can be complex and time-consuming, making BI challenging. Given the strong capabilities of large language models (LLMs) in working with data, we study their ability to answer BI questions end-to-end, without requiring users to manually perform the tedious preparation steps. To do this, we harvest a large collection of real-world BI projects from public sources, and manually extract pairs of (questions, ground-truth answers) from real user dashboards. The resulting benchmark, BI-Bench, is the first benchmark to systematically study LLMs' ability on end-to-end BI. We find that even frontier LLMs perform poorly on BI-Bench, with less than 50% accuracy. To address their limitations, we design a tool-augmented BI-Agent that decomposes BI workflows into subtasks on structured data, such as search, join, and transform, and orchestrates specialized data management methods across BI stages. Furthermore, we develop a post-training framework that synthesizes training trajectories from real BI projects, enabling BI-Agent to be further post-trained using both supervised fine-tuning (SFT) and reinforcement learning (RL). BI-Agent achieves substantial accuracy gains of up to 40 percentage points with vanilla LLMs, and post-trained BI-Agent yields gains of up to 30 points. Our results highlight the importance of combining tool-augmented reasoning with domain-specific post-training in complex BI workflows, and point to promising directions for future research.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Chuxuan Hu, Yeye He, Penny Zhou, Wee Hyong Tok, Daniel Kang, Surajit Chaudhuri"
+    }
+  ],
+  "datePublished": "2026-09-21T04:00:00Z",
+  "dateModified": "2026-09-21T04:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.20886.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.20886.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.20886"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.20886"
+  },
+  "keywords": [
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.20886"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.20886"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +84,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>BI-Agent and BI-Bench: Towards Automating End-to-End Business Intelligence</h1>
+        <div class="meta">
+          Chuxuan Hu, Yeye He, Penny Zhou, Wee Hyong Tok, Daniel Kang, Surajit Chaudhuri
+          · 2609.20886
+          · <time datetime="2026-09-21">2026-09-21</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Business intelligence (BI) is a cornerstone of enterprise decision-making and is widely used by enterprise users in software such as Power BI and Tableau. In traditional BI workflows, users need to prepare data by (1) identifying relevant tables, (2) performing data transformations, and (3) building join relationships, before they can (4) answer their business questions. These steps can be complex and time-consuming, making BI challenging. Given the strong capabilities of large language models (LLMs) in working with data, we study their ability to answer BI questions end-to-end, without requiring users to manually perform the tedious preparation steps. To do this, we harvest a large collection of real-world BI projects from public sources, and manually extract pairs of (questions, ground-truth answers) from real user dashboards. The resulting benchmark, BI-Bench, is the first benchmark to systematically study LLMs&#x27; ability on end-to-end BI. We find that even frontier LLMs perform poorly on BI-Bench, with less than 50% accuracy. To address their limitations, we design a tool-augmented BI-Agent that decomposes BI workflows into subtasks on structured data, such as search, join, and transform, and orchestrates specialized data management methods across BI stages. Furthermore, we develop a post-training framework that synthesizes training trajectories from real BI projects, enabling BI-Agent to be further post-trained using both supervised fine-tuning (SFT) and reinforcement learning (RL). BI-Agent achieves substantial accuracy gains of up to 40 percentage points with vanilla LLMs, and post-trained BI-Agent yields gains of up to 30 points. Our results highlight the importance of combining tool-augmented reasoning with domain-specific post-training in complex BI workflows, and point to promising directions for future research.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.20886" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.20886" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.20886" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.24812.html"><strong>MSI-Bench: Evaluating Multi-Speaker Voice Interaction for Collaborative AI Agents</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.24663.html"><strong>Beyond Endpoint Performance: Process-Level Evaluation of Self-Evolving Agents</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.23490.html"><strong>BabelArena: A Large-Scale Multilingual Benchmark for LLM Agents</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.22076.html"><strong>APort Vault: Benchmarking AI Agent Payment Authorization with the Open Agent Passport</strong></a> <span>2026-09-21</span></li>
+          <li><a href="2609.20152.html"><strong>MTVA-Bench: Evaluating the Language Model Inside Cascaded Voice Agents</strong></a> <span>2026-09-18</span></li>
+          <li><a href="2609.12808.html"><strong>K-Bench: A Benchmark for LLM Unlearning in Agentic Deployments</strong></a> <span>2026-09-11</span></li>
+          <li><a href="2609.12345.html"><strong>ParaRecover: A Process-Level Benchmark for Error Localization and Recovery in Parallel Tool-Use Agents</strong></a> <span>2026-09-11</span></li>
+          <li><a href="2609.09853.html"><strong>The Era by Eon Benchmark: A Generated Enterprise Estate with Exact Ground Truth for Benchmarking LLM Agents</strong></a> <span>2026-09-09</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

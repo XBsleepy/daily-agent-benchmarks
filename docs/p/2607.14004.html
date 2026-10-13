@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Do Agent Optimizers Compound? A Continual-Learning Evaluation on Terminal-Bench 2.0 | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Most reported gains from agent-optimization methods are one-shot: an agent is optimized against a fixed benchmark and the resulting…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2607.14004" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.14004.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Do Agent Optimizers Compound? A Continual-Learning Evaluation on Terminal-Bench 2.0" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Most reported gains from agent-optimization methods are one-shot: an agent is optimized against a fixed benchmark and the resulting…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.14004.html" />
+    <meta property="article:published_time" content="2026-07-15T16:36:04Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Do Agent Optimizers Compound? A Continual-Learning Evaluation on Terminal-Bench 2.0" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Most reported gains from agent-optimization methods are one-shot: an agent is optimized against a fixed benchmark and the resulting…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,59 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Do Agent Optimizers Compound? A Continual-Learning Evaluation on Terminal-Bench 2.0",
+  "name": "Do Agent Optimizers Compound? A Continual-Learning Evaluation on Terminal-Bench 2.0",
+  "abstract": "Most reported gains from agent-optimization methods are one-shot: an agent is optimized against a fixed benchmark and the resulting improvement is reported as if it were a stable property of the method. This does not test the setting that matters for deployed agents, where optimization is applied recursively as new failures and new tasks appear over time. The central question this raises is whether optimizer-driven gains compound: after an agent has been optimized once, can it be optimized again on newly arrived tasks without eroding the gains the first round produced? We study this question with a two-phase continual-learning evaluation built from hard tasks in Terminal-Bench 2.0, comparing three approaches to agent-harness optimization (GEPA, Meta Harness, and RELAI's Verifiable Continual Learning, RELAI-VCL) under identical optimization budgets. All three methods improve over the baseline agent in the conventional, static, single-phase setting. However, once new tasks are introduced, the methods diverge sharply: GEPA's optimized agent transfers below the unoptimized baseline, Meta Harness transfers well but fails to improve further once given a second optimization budget, and RELAI-VCL is the only method that both transfers positively to unseen tasks and continues improving after those tasks are folded into the optimization objective, reaching the highest pass rate at every evaluated stage and the highest lifelong average pass rate overall (76.4% vs. 66.0% for GEPA, 64.6% for Meta Harness, and 58.7% for the baseline). Our key observation was that optimization gains compounded only when regression control was built into the optimization loop, providing an inductive bias against shortcut solutions that fail to generalize.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Wenxiao Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Priyatham Kattakinda"
+    },
+    {
+      "@type": "Person",
+      "name": "Soheil Feizi"
+    }
+  ],
+  "datePublished": "2026-07-15T16:36:04Z",
+  "dateModified": "2026-07-15T16:36:04Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.14004.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.14004.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.14004v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.14004"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.14004v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.14004"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +91,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Do Agent Optimizers Compound? A Continual-Learning Evaluation on Terminal-Bench 2.0</h1>
+        <div class="meta">
+          Wenxiao Wang, Priyatham Kattakinda, Soheil Feizi
+          · 2607.14004
+          · <time datetime="2026-07-15">2026-07-15</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Most reported gains from agent-optimization methods are one-shot: an agent is optimized against a fixed benchmark and the resulting improvement is reported as if it were a stable property of the method. This does not test the setting that matters for deployed agents, where optimization is applied recursively as new failures and new tasks appear over time. The central question this raises is whether optimizer-driven gains compound: after an agent has been optimized once, can it be optimized again on newly arrived tasks without eroding the gains the first round produced? We study this question with a two-phase continual-learning evaluation built from hard tasks in Terminal-Bench 2.0, comparing three approaches to agent-harness optimization (GEPA, Meta Harness, and RELAI&#x27;s Verifiable Continual Learning, RELAI-VCL) under identical optimization budgets. All three methods improve over the baseline agent in the conventional, static, single-phase setting. However, once new tasks are introduced, the methods diverge sharply: GEPA&#x27;s optimized agent transfers below the unoptimized baseline, Meta Harness transfers well but fails to improve further once given a second optimization budget, and RELAI-VCL is the only method that both transfers positively to unseen tasks and continues improving after those tasks are folded into the optimization objective, reaching the highest pass rate at every evaluated stage and the highest lifelong average pass rate overall (76.4% vs. 66.0% for GEPA, 64.6% for Meta Harness, and 58.7% for the baseline). Our key observation was that optimization gains compounded only when regression control was built into the optimization loop, providing an inductive bias against shortcut solutions that fail to generalize.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.14004v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.14004v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.14004" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.17701.html"><strong>ProEvent: An Event-centric Benchmark for Proactive Agents</strong></a> <span>2026-07-20</span></li>
+          <li><a href="2607.16716.html"><strong>RECON: Benchmarking Agent Memory for Compositional Reasoning over Long Contexts</strong></a> <span>2026-07-18</span></li>
+          <li><a href="2607.16610.html"><strong>Just A Rather Very Intelligent Spoken Agent</strong></a> <span>2026-07-18</span></li>
+          <li><a href="2607.14989.html"><strong>OmniaBench: Benchmarking General AI Agents Across Diverse Scenarios</strong></a> <span>2026-07-16</span></li>
+          <li><a href="2607.12385.html"><strong>PM-Bench: Evaluating Prospective Memory in LLM Agents</strong></a> <span>2026-07-14</span></li>
+          <li><a href="2607.26072.html"><strong>IFCMemoryBench: Evaluating Long-Term Memory of LLM-Based Agents in BIM Information Retrieval</strong></a> <span>2026-07-13</span></li>
+          <li><a href="2607.12085.html"><strong>Operationalising Multi-Dimensional Evaluation for Conversational Agents: A Scalable, Governed Pipeline with Selective Re-evaluation and Model Benchmarking</strong></a> <span>2026-07-13</span></li>
+          <li><a href="2607.11818.html"><strong>MM-ToolSandBox: A Unified Framework for Evaluating Visual Tool-Calling Agents</strong></a> <span>2026-07-13</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MonitoringBench: Semi-Automated Red-Teaming for Agent Monitoring | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: We introduce a red-teaming methodology that exposes harder-to-catch attacks for coding-agent monitors, suggesting that current…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Tool use, agent benchmark, LLM agent, arXiv, 2605.09684" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.09684.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MonitoringBench: Semi-Automated Red-Teaming for Agent Monitoring" />
+    <meta property="og:description" content="Daily Agent Benchmarks: We introduce a red-teaming methodology that exposes harder-to-catch attacks for coding-agent monitors, suggesting that current…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.09684.html" />
+    <meta property="article:published_time" content="2026-05-10T18:04:31Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MonitoringBench: Semi-Automated Red-Teaming for Agent Monitoring" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: We introduce a red-teaming methodology that exposes harder-to-catch attacks for coding-agent monitors, suggesting that current…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,65 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MonitoringBench: Semi-Automated Red-Teaming for Agent Monitoring",
+  "name": "MonitoringBench: Semi-Automated Red-Teaming for Agent Monitoring",
+  "abstract": "We introduce a red-teaming methodology that exposes harder-to-catch attacks for coding-agent monitors, suggesting that current practices may under-elicit attacks and overstate monitor performance. We identify three challenges with current red-teaming. First, mode collapse in attack generation, which we reduce with a novel attack taxonomy for broader coverage. Second, a conceive-execute gap: frontier LLMs can propose strong attack ideas or execute them, but not all at once. We mitigate this by decomposing attack construction into strategy generation, execution, and post-hoc trajectory refinement. Third, manual elicitation is costly to scale, which we address with our semi-automated red-teaming pipeline. Applied to BashArena, an AI control setting for tool-using coding agents, this pipeline produces MonitoringBench, a benchmark of 2,644 attack trajectories for evaluating monitor capabilities and failure modes. Our pipeline produces more diverse and stronger attacks: Opus-4.5 monitor's catch rate falls from 94.9\\% on elicited-only Opus attacks to 60.3\\% on our best refined attacks, with larger drops for several mid-tier monitors. Attacks optimized against three development monitors generalize to ten held-out monitors, with catch rates generally increasing with monitor capability. Using this benchmark, we provide a snapshot of the current monitor capabilities and find that frontier monitors often detect suspicious actions but fall for persuasion or fail to calibrate suspiciousness scores appropriately, suggesting tractable paths for improvement. MonitoringBench provides both a static benchmark for current tool-use monitors and a reusable methodology for refreshing these evaluations as agents and monitors improve.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Monika Jotautaitė"
+    },
+    {
+      "@type": "Person",
+      "name": "Maria Angelica Martinez"
+    },
+    {
+      "@type": "Person",
+      "name": "Ollie Matthews"
+    },
+    {
+      "@type": "Person",
+      "name": "Tyler Tracy"
+    }
+  ],
+  "datePublished": "2026-05-10T18:04:31Z",
+  "dateModified": "2026-05-10T18:04:31Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.09684.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.09684.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.09684v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.09684"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.09684v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.09684"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +97,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MonitoringBench: Semi-Automated Red-Teaming for Agent Monitoring</h1>
+        <div class="meta">
+          Monika Jotautaitė, Maria Angelica Martinez, Ollie Matthews, Tyler Tracy
+          · 2605.09684
+          · <time datetime="2026-05-10">2026-05-10</time>
+          · Coding / SWE · 2 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>We introduce a red-teaming methodology that exposes harder-to-catch attacks for coding-agent monitors, suggesting that current practices may under-elicit attacks and overstate monitor performance. We identify three challenges with current red-teaming. First, mode collapse in attack generation, which we reduce with a novel attack taxonomy for broader coverage. Second, a conceive-execute gap: frontier LLMs can propose strong attack ideas or execute them, but not all at once. We mitigate this by decomposing attack construction into strategy generation, execution, and post-hoc trajectory refinement. Third, manual elicitation is costly to scale, which we address with our semi-automated red-teaming pipeline. Applied to BashArena, an AI control setting for tool-using coding agents, this pipeline produces MonitoringBench, a benchmark of 2,644 attack trajectories for evaluating monitor capabilities and failure modes. Our pipeline produces more diverse and stronger attacks: Opus-4.5 monitor&#x27;s catch rate falls from 94.9\% on elicited-only Opus attacks to 60.3\% on our best refined attacks, with larger drops for several mid-tier monitors. Attacks optimized against three development monitors generalize to ten held-out monitors, with catch rates generally increasing with monitor capability. Using this benchmark, we provide a snapshot of the current monitor capabilities and find that frontier monitors often detect suspicious actions but fall for persuasion or fail to calibrate suspiciousness scores appropriately, suggesting tractable paths for improvement. MonitoringBench provides both a static benchmark for current tool-use monitors and a reusable methodology for refreshing these evaluations as agents and monitors improve.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.09684v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.09684v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.09684" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.12673.html"><strong>Do Androids Dream of Breaking the Game? Systematically Auditing AI Agent Benchmarks with BenchJack</strong></a> <span>2026-05-12</span></li>
+          <li><a href="2605.12493.html"><strong>LongMemEval-V2: Evaluating Long-Term Agent Memory Toward Experienced Colleagues</strong></a> <span>2026-05-12</span></li>
+          <li><a href="2605.10597.html"><strong>CrackMeBench: Binary Reverse Engineering for Agents</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2605.11030.html"><strong>An Executable Benchmarking Suite for Tool-Using Agents</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.09675.html"><strong>CodeClinic: Evaluating Automation of Coding Skills for Clinical Reasoning Agents</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.08941.html"><strong>MDGYM: Benchmarking AI Agents on Molecular Simulations</strong></a> <span>2026-05-09</span></li>
+          <li><a href="2605.08647.html"><strong>AgentCollabBench: Diagnosing When Good Agents Make Bad Collaborators</strong></a> <span>2026-05-09</span></li>
+          <li><a href="2605.08366.html"><strong>SWE Atlas: Benchmarking Coding Agents Beyond Issue Resolution</strong></a> <span>2026-05-08</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

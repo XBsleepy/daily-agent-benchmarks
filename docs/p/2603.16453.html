@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>RetailBench: Evaluating Long-Horizon Autonomous Decision-Making and Strategy Stability of LLM Agents in Realistic Retail Environments | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language model (LLM) agents have made rapid progress on short-horizon, well-scoped tasks, yet their ability to sustain coherent…" />
+    <meta name="keywords" content="General, Tool use, agent benchmark, LLM agent, arXiv, 2603.16453" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.16453.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="RetailBench: Evaluating Long-Horizon Autonomous Decision-Making and Strategy Stability of LLM Agents in Realistic Retail Environments" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language model (LLM) agents have made rapid progress on short-horizon, well-scoped tasks, yet their ability to sustain coherent…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.16453.html" />
+    <meta property="article:published_time" content="2026-03-17T12:35:52Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="RetailBench: Evaluating Long-Horizon Autonomous Decision-Making and Strategy Stability of LLM Agents in Realistic Retail Environments" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language model (LLM) agents have made rapid progress on short-horizon, well-scoped tasks, yet their ability to sustain coherent…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,64 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "RetailBench: Evaluating Long-Horizon Autonomous Decision-Making and Strategy Stability of LLM Agents in Realis",
+  "name": "RetailBench: Evaluating Long-Horizon Autonomous Decision-Making and Strategy Stability of LLM Agents in Realistic Retail Environments",
+  "abstract": "Large language model (LLM) agents have made rapid progress on short-horizon, well-scoped tasks, yet their ability to sustain coherent decisions in dynamic long-horizon environments remains uncertain. We introduce RetailBench, a data-grounded simulation benchmark for evaluating tool-using LLM agents in single-store supermarket operation. RetailBench models retail management as a partially observable decision process and is designed to support thousand-day-scale simulations. In this environment, agents must manage pricing, replenishment, supplier selection, shelf assortment, inventory aging, customer feedback, external events, and cash-flow constraints. We evaluate seven contemporary LLMs under representative agent frameworks over a 180-day evaluation horizon and compare them with a privileged oracle policy. Results show substantial variation across models: only a small subset survives the full evaluation horizon, and even the strongest LLM runs remain substantially behind the oracle policy in final net worth and sales outcomes. Behavioral analysis attributes these gaps to incomplete evidence acquisition, surface-level decision making, and the lack of a consistent long-horizon policy. RetailBench provides a controlled testbed for studying reliable autonomy in economically grounded long-horizon decision-making.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Linghua Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jun Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jingtong Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhisong Zhang"
+    }
+  ],
+  "datePublished": "2026-03-17T12:35:52Z",
+  "dateModified": "2026-07-08T13:11:31Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.16453.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.16453.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2603.16453v3"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2603.16453"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2603.16453v3"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2603.16453"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +96,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>RetailBench: Evaluating Long-Horizon Autonomous Decision-Making and Strategy Stability of LLM Agents in Realistic Retail Environments</h1>
+        <div class="meta">
+          Linghua Zhang, Jun Wang, Jingtong Wu, Zhisong Zhang
+          · 2603.16453
+          · <time datetime="2026-03-17">2026-03-17</time>
+          · General · 6 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large language model (LLM) agents have made rapid progress on short-horizon, well-scoped tasks, yet their ability to sustain coherent decisions in dynamic long-horizon environments remains uncertain. We introduce RetailBench, a data-grounded simulation benchmark for evaluating tool-using LLM agents in single-store supermarket operation. RetailBench models retail management as a partially observable decision process and is designed to support thousand-day-scale simulations. In this environment, agents must manage pricing, replenishment, supplier selection, shelf assortment, inventory aging, customer feedback, external events, and cash-flow constraints. We evaluate seven contemporary LLMs under representative agent frameworks over a 180-day evaluation horizon and compare them with a privileged oracle policy. Results show substantial variation across models: only a small subset survives the full evaluation horizon, and even the strongest LLM runs remain substantially behind the oracle policy in final net worth and sales outcomes. Behavioral analysis attributes these gaps to incomplete evidence acquisition, surface-level decision making, and the lack of a consistent long-horizon policy. RetailBench provides a controlled testbed for studying reliable autonomy in economically grounded long-horizon decision-making.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2603.16453v3" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2603.16453v3" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2603.16453" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2603.21251.html"><strong>WirelessBench: A Tolerance-Aware LLM Agent Benchmark for Wireless Network Intelligence</strong></a> <span>2026-03-22</span></li>
+          <li><a href="2603.20576.html"><strong>Can AI Agents Answer Your Data Questions? A Benchmark for Data Agents</strong></a> <span>2026-03-21</span></li>
+          <li><a href="2604.13072.html"><strong>LiveClawBench: Benchmarking LLM Agents on Complex, Real-World Assistant Tasks</strong></a> <span>2026-03-20</span></li>
+          <li><a href="2603.19583.html"><strong>Skilled AI Agents for Embedded and IoT Systems Development</strong></a> <span>2026-03-20</span></li>
+          <li><a href="2604.06209.html"><strong>TelcoAgent-Bench: A Multilingual Benchmark for Telecom AI Agents</strong></a> <span>2026-03-16</span></li>
+          <li><a href="2603.15798.html"><strong>CUBE: A Standard for Unifying Agent Benchmarks</strong></a> <span>2026-03-16</span></li>
+          <li><a href="2603.14864.html"><strong>Shopping Companion: Benchmarking and Training LLM Agents for Long-Horizon Preference-Grounded E-Commerce Tasks</strong></a> <span>2026-03-16</span></li>
+          <li><a href="2603.14468.html"><strong>LongVidSearch: An Agentic Benchmark for Multi-hop Evidence Retrieval Planning in Long Videos</strong></a> <span>2026-03-15</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

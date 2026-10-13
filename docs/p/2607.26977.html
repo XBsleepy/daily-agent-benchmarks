@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>TREK: A Travel Reasoning and Evaluation Kit for LLM Agents in Complex Trip Planning | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Travel planning is a demanding stress test for tool-using LLM agents: a usable itinerary is a single artifact that must be right…" />
+    <meta name="keywords" content="General, Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2607.26977" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.26977.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="TREK: A Travel Reasoning and Evaluation Kit for LLM Agents in Complex Trip Planning" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Travel planning is a demanding stress test for tool-using LLM agents: a usable itinerary is a single artifact that must be right…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.26977.html" />
+    <meta property="article:published_time" content="2026-07-29T14:35:29Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="TREK: A Travel Reasoning and Evaluation Kit for LLM Agents in Complex Trip Planning" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Travel planning is a demanding stress test for tool-using LLM agents: a usable itinerary is a single artifact that must be right…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,77 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "TREK: A Travel Reasoning and Evaluation Kit for LLM Agents in Complex Trip Planning",
+  "name": "TREK: A Travel Reasoning and Evaluation Kit for LLM Agents in Complex Trip Planning",
+  "abstract": "Travel planning is a demanding stress test for tool-using LLM agents: a usable itinerary is a single artifact that must be right along many axes at once - every flight, hotel, and attraction must exist and be bookable, the days must be physically traversable, the total must clear a budget, and the plan must serve a traveler whose needs are only partly stated. Existing agent benchmarks reward these properties one at a time and grade the final output with soft or LLM-judged rubrics, which cannot certify that a returned plan is executable and are neither reproducible nor auditable. We introduce TREK (Travel Reasoning and Evaluation Kit), a benchmark for feasible itinerary synthesis: producing a single plan that is jointly constraint-correct, hallucination-free, spatio-temporally executable, budget-valid, and responsive to the traveler's unstated persona needs. TREK comprises 800 multi-constraint tasks - 533 feasible and 267 provably infeasible with typed route/entity/budget causes - over a synthetic, internally consistent knowledge base of 212,530 records across 375 cities and 13 personas, served through a production-style tool sandbox of validated RESTful APIs. Every task is scored by a fully deterministic, rule-based evaluator with no LLM judge and ships a human-verified gold reference that scores a perfect 1.0 under that same evaluator, so the ceiling is demonstrably achievable and every remaining gap is an agent limitation rather than scorer strictness. Evaluating 15 LLM agents across nine constraint dimensions, we find that even the strongest (GPT-5.6) produces a fully-feasible plan on only 46.2% of solvable tasks, with a median of 6.6% and a floor of 0.0%; satisfying travelers' unstated needs emerges as the universal bottleneck, unsolved even at the frontier. We release the dataset, tool sandbox, deterministic evaluator, and agent code as a fully reproducible benchmark.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jinhu Qi"
+    },
+    {
+      "@type": "Person",
+      "name": "Wentao Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Siu Man Ng"
+    },
+    {
+      "@type": "Person",
+      "name": "Feiyang Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yanyu Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Yaoman Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Irwin King"
+    }
+  ],
+  "datePublished": "2026-07-29T14:35:29Z",
+  "dateModified": "2026-08-10T02:07:10Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.26977.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.26977.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.26977v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.26977"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.26977v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.26977"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +109,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>TREK: A Travel Reasoning and Evaluation Kit for LLM Agents in Complex Trip Planning</h1>
+        <div class="meta">
+          Jinhu Qi, Wentao Zhang, Siu Man Ng, Feiyang Xu, Yanyu Chen, Yaoman Li, Irwin King
+          · 2607.26977
+          · <time datetime="2026-07-29">2026-07-29</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Travel planning is a demanding stress test for tool-using LLM agents: a usable itinerary is a single artifact that must be right along many axes at once - every flight, hotel, and attraction must exist and be bookable, the days must be physically traversable, the total must clear a budget, and the plan must serve a traveler whose needs are only partly stated. Existing agent benchmarks reward these properties one at a time and grade the final output with soft or LLM-judged rubrics, which cannot certify that a returned plan is executable and are neither reproducible nor auditable. We introduce TREK (Travel Reasoning and Evaluation Kit), a benchmark for feasible itinerary synthesis: producing a single plan that is jointly constraint-correct, hallucination-free, spatio-temporally executable, budget-valid, and responsive to the traveler&#x27;s unstated persona needs. TREK comprises 800 multi-constraint tasks - 533 feasible and 267 provably infeasible with typed route/entity/budget causes - over a synthetic, internally consistent knowledge base of 212,530 records across 375 cities and 13 personas, served through a production-style tool sandbox of validated RESTful APIs. Every task is scored by a fully deterministic, rule-based evaluator with no LLM judge and ships a human-verified gold reference that scores a perfect 1.0 under that same evaluator, so the ceiling is demonstrably achievable and every remaining gap is an agent limitation rather than scorer strictness. Evaluating 15 LLM agents across nine constraint dimensions, we find that even the strongest (GPT-5.6) produces a fully-feasible plan on only 46.2% of solvable tasks, with a median of 6.6% and a floor of 0.0%; satisfying travelers&#x27; unstated needs emerges as the universal bottleneck, unsolved even at the frontier. We release the dataset, tool sandbox, deterministic evaluator, and agent code as a fully reproducible benchmark.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.26977v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.26977v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.26977" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.27453.html"><strong>VAmoS Bench: Voice Agent Simulation Bench</strong></a> <span>2026-07-29</span></li>
+          <li><a href="2607.27353.html"><strong>LayerRAG-Bench: A Cross-Layer Reliability Benchmark for Agentic Retrieval-Augmented Generation</strong></a> <span>2026-07-29</span></li>
+          <li><a href="2607.27294.html"><strong>AgentS4D: Benchmarking Runtime Risks across the Execution Lifecycle of LLM-Based Workspace Agents</strong></a> <span>2026-07-29</span></li>
+          <li><a href="2607.27056.html"><strong>Setoka: A Benchmark for Hierarchical User Understanding in Personalized Agents over Heterogeneous Data</strong></a> <span>2026-07-29</span></li>
+          <li><a href="2607.26791.html"><strong>SecRespond: Benchmarking AI Agents for Real-World Post-Compromise Incident Response</strong></a> <span>2026-07-29</span></li>
+          <li><a href="2607.26367.html"><strong>Exploring Structures in Physics Problems: Can AI Agents Discover Statistical Mechanical Mappings?</strong></a> <span>2026-07-29</span></li>
+          <li><a href="2607.26314.html"><strong>StealthBench: Measuring Operational Stealth in Autonomous Offensive-Security Agents</strong></a> <span>2026-07-28</span></li>
+          <li><a href="2607.25485.html"><strong>PatientAgentBench: A Benchmark Framework for Evaluating Patient-Facing Health AI Agents</strong></a> <span>2026-07-28</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

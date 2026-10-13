@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ToolRobustBench: Stage-Wise Perturbation Evaluation and Failure Diagnosis for Tool-Calling Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language models (LLMs) rely on tool calling as a fundamental agent capability, enabling them to invoke external systems and…" />
+    <meta name="keywords" content="Safety, Tool use, agent benchmark, LLM agent, arXiv, 2608.23635" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.23635.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ToolRobustBench: Stage-Wise Perturbation Evaluation and Failure Diagnosis for Tool-Calling Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language models (LLMs) rely on tool calling as a fundamental agent capability, enabling them to invoke external systems and…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.23635.html" />
+    <meta property="article:published_time" content="2026-08-23T15:22:49Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ToolRobustBench: Stage-Wise Perturbation Evaluation and Failure Diagnosis for Tool-Calling Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language models (LLMs) rely on tool calling as a fundamental agent capability, enabling them to invoke external systems and…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,60 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ToolRobustBench: Stage-Wise Perturbation Evaluation and Failure Diagnosis for Tool-Calling Agents",
+  "name": "ToolRobustBench: Stage-Wise Perturbation Evaluation and Failure Diagnosis for Tool-Calling Agents",
+  "abstract": "Large language models (LLMs) rely on tool calling as a fundamental agent capability, enabling them to invoke external systems and complete tasks beyond text generation. However, clean end-to-end (E2E) success cannot identify where a tool-use failure originates or how it propagates through a call. We introduce ToolRobustBench, a stage-wise diagnostic benchmark for tool-calling agents, where a tool-calling agent is an LLM system that selects a tool, supplies structured arguments, and interprets its returned feedback. ToolRobustBench aligns four perturbation families with the tool-use pipeline: tool-interface, user-intent, tool-output/observation, and runtime-environment perturbations. It attributes failures to tool selection, schema grounding, argument binding, tool-output/runtime-feedback handling, and E2E task success. Experiments on 15,456 single-family instances across 7 models, 16 sampled local tools, 4 perturbation families, and 14 subtypes show high but non-uniform clean performance and substantial robustness degradation, with tool-output/observation perturbation the dominant bottleneck. Mixed-family experiments reveal non-additive failure patterns that are not explained by isolated single-family results. Thus, ToolRobustBench provides a deterministic and cascade-aware benchmark for diagnosing robustness beyond clean tool-calling accuracy;",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "YiShan Zheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuan Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yi Chang"
+    }
+  ],
+  "datePublished": "2026-08-23T15:22:49Z",
+  "dateModified": "2026-08-23T15:22:49Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.23635.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.23635.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.23635v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.23635"
+  },
+  "keywords": [
+    "Safety",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Safety"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.23635v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.23635"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +92,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ToolRobustBench: Stage-Wise Perturbation Evaluation and Failure Diagnosis for Tool-Calling Agents</h1>
+        <div class="meta">
+          YiShan Zheng, Yuan Wu, Yi Chang
+          · 2608.23635
+          · <time datetime="2026-08-23">2026-08-23</time>
+          · Safety
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large language models (LLMs) rely on tool calling as a fundamental agent capability, enabling them to invoke external systems and complete tasks beyond text generation. However, clean end-to-end (E2E) success cannot identify where a tool-use failure originates or how it propagates through a call. We introduce ToolRobustBench, a stage-wise diagnostic benchmark for tool-calling agents, where a tool-calling agent is an LLM system that selects a tool, supplies structured arguments, and interprets its returned feedback. ToolRobustBench aligns four perturbation families with the tool-use pipeline: tool-interface, user-intent, tool-output/observation, and runtime-environment perturbations. It attributes failures to tool selection, schema grounding, argument binding, tool-output/runtime-feedback handling, and E2E task success. Experiments on 15,456 single-family instances across 7 models, 16 sampled local tools, 4 perturbation families, and 14 subtypes show high but non-uniform clean performance and substantial robustness degradation, with tool-output/observation perturbation the dominant bottleneck. Mixed-family experiments reveal non-additive failure patterns that are not explained by isolated single-family results. Thus, ToolRobustBench provides a deterministic and cascade-aware benchmark for diagnosing robustness beyond clean tool-calling accuracy;</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.23635v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.23635v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.23635" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Safety benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.26546.html"><strong>DuMateBench: Evaluating Autonomous Agents in Complex Real-World Workflows</strong></a> <span>2026-08-27</span></li>
+          <li><a href="2608.25340.html"><strong>HRGuard: Gating Relationship Manipulation in Multi-Turn Agentic AI Conversations</strong></a> <span>2026-08-26</span></li>
+          <li><a href="2608.24314.html"><strong>Benchmarking LLM Judges for Voice-Agent Evaluation: Reliability, Calibration, and Human Oversight</strong></a> <span>2026-08-25</span></li>
+          <li><a href="2608.23179.html"><strong>NetConfArena: An Executable Benchmark for LLM Agents in Closed-Loop Network Configuration</strong></a> <span>2026-08-24</span></li>
+          <li><a href="2608.19901.html"><strong>MaliciousSkillBench: A Comprehensive Benchmark for Malicious Agent Skill Detection</strong></a> <span>2026-08-20</span></li>
+          <li><a href="2608.17597.html"><strong>HarnessRisk: A Lifecycle-Oriented Benchmark for Agent Harness Safety</strong></a> <span>2026-08-18</span></li>
+          <li><a href="2608.09476.html"><strong>ActBench: Self-Evolving Benchmark of Behavioral Safety in Cowork Agents</strong></a> <span>2026-08-10</span></li>
+          <li><a href="2608.06984.html"><strong>HarnessSafe: Evaluating Safety Across Persistent Carriers in Agent Harnesses</strong></a> <span>2026-08-07</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

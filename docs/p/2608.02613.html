@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MemArena: An Ego-Centric Benchmark for On-Device Agentic Personal Memory Assistants at Scale | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Edge-deployed personal memory assistants must handle private interpersonal conversations on-device with open-weight models. Yet…" />
+    <meta name="keywords" content="Dialogue, Memory, Planning / reasoning, Dialogue / customer, agent benchmark, LLM agent, arXiv, 2608.02613" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.02613.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MemArena: An Ego-Centric Benchmark for On-Device Agentic Personal Memory Assistants at Scale" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Edge-deployed personal memory assistants must handle private interpersonal conversations on-device with open-weight models. Yet…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.02613.html" />
+    <meta property="article:published_time" content="2026-05-20T17:07:32Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MemArena: An Ego-Centric Benchmark for On-Device Agentic Personal Memory Assistants at Scale" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Edge-deployed personal memory assistants must handle private interpersonal conversations on-device with open-weight models. Yet…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,58 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MemArena: An Ego-Centric Benchmark for On-Device Agentic Personal Memory Assistants at Scale",
+  "name": "MemArena: An Ego-Centric Benchmark for On-Device Agentic Personal Memory Assistants at Scale",
+  "abstract": "Edge-deployed personal memory assistants must handle private interpersonal conversations on-device with open-weight models. Yet, existing memory benchmarks often under-test the combination of activity-dense interaction, ego-centric perspective, and coherent multi-session worlds. MemArena fills these gaps with a single-world conversational benchmark built with its MASim agent simulator, for 50 agents over 15 days (10.3M dialog-text tokens, 24.1K text-only ego-observed tokens/agent/day). With the interaction history, it co-generates ground truth over six recall, reasoning, and trustworthiness evaluation dimensions. We evaluate five open-weight readers with Vanilla context, BM25-RAG, Oracle retrieval, Memobase, and MemSearch as memory backends. Three results stand out: (1) Memory-backend choice matters more for content accuracy: At Qwen3-0.6B, Memobase-to-MemSearch gains +32.5/+19.2 pp, exceeding MemSearch reader scaling (+10.6/+6.8 pp). (2) Permission-aware access fails universally, with Oracle leaking heavily and other backends too timid to disclose. (3) Search latency bites only at very small reader: on a Spark GB10 edge node, memory-search adds a moderate and fixed 87/7/48 ms (BM25-RAG/Memobase/MemSearch) that composes a small part of TTFT for most reader-backend combinations. Code, the MASim simulator, and the MemArena-L benchmark will be released upon acceptance.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jiadong Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaosong Ma"
+    }
+  ],
+  "datePublished": "2026-05-20T17:07:32Z",
+  "dateModified": "2026-05-20T17:07:32Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.02613.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.02613.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.02613v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.02613"
+  },
+  "keywords": [
+    "Dialogue",
+    "Memory",
+    "Planning / reasoning",
+    "Dialogue / customer",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Dialogue"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.02613v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.02613"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +90,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MemArena: An Ego-Centric Benchmark for On-Device Agentic Personal Memory Assistants at Scale</h1>
+        <div class="meta">
+          Jiadong Zhang, Xiaosong Ma
+          · 2608.02613
+          · <time datetime="2026-05-20">2026-05-20</time>
+          · Dialogue
+        </div>
+        <div class="themes"><span class="chip">Memory</span><span class="chip">Planning / reasoning</span><span class="chip">Dialogue / customer</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Edge-deployed personal memory assistants must handle private interpersonal conversations on-device with open-weight models. Yet, existing memory benchmarks often under-test the combination of activity-dense interaction, ego-centric perspective, and coherent multi-session worlds. MemArena fills these gaps with a single-world conversational benchmark built with its MASim agent simulator, for 50 agents over 15 days (10.3M dialog-text tokens, 24.1K text-only ego-observed tokens/agent/day). With the interaction history, it co-generates ground truth over six recall, reasoning, and trustworthiness evaluation dimensions. We evaluate five open-weight readers with Vanilla context, BM25-RAG, Oracle retrieval, Memobase, and MemSearch as memory backends. Three results stand out: (1) Memory-backend choice matters more for content accuracy: At Qwen3-0.6B, Memobase-to-MemSearch gains +32.5/+19.2 pp, exceeding MemSearch reader scaling (+10.6/+6.8 pp). (2) Permission-aware access fails universally, with Oracle leaking heavily and other backends too timid to disclose. (3) Search latency bites only at very small reader: on a Spark GB10 edge node, memory-search adds a moderate and fixed 87/7/48 ms (BM25-RAG/Memobase/MemSearch) that composes a small part of TTFT for most reader-backend combinations. Code, the MASim simulator, and the MemArena-L benchmark will be released upon acceptance.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.02613v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.02613v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.02613" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Dialogue benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.10156.html"><strong>$τ$-Rec: A Verifiable Benchmark for Agentic Recommender Systems</strong></a> <span>2026-06-08</span></li>
+          <li><a href="2606.02754.html"><strong>$Ψ$-Bench: Evaluating Persona-Sensitive Influencing in Persuasive Dialogues</strong></a> <span>2026-06-01</span></li>
+          <li><a href="2606.01498.html"><strong>TimeSage-MT: A Multi-Turn Benchmark for Evaluating Agentic Time Series Reasoning</strong></a> <span>2026-05-31</span></li>
+          <li><a href="2605.25200.html"><strong>GroupTravelBench: Benchmarking LLM Agents on Multi-Person Travel Planning</strong></a> <span>2026-05-24</span></li>
+          <li><a href="2605.19099.html"><strong>DecisionBench: A Benchmark for Emergent Delegation in Long-Horizon Agentic Workflows</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.18565.html"><strong>MINTEval: Evaluating Memory under Multi-Target Interference in Long-Horizon Agent Systems</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.16207.html"><strong>Confirming Correct, Missing the Rest: LLM Tutoring Agents Struggle Where Feedback Matters Most</strong></a> <span>2026-05-15</span></li>
+          <li><a href="2604.18356.html"><strong>ComPASS: Towards Personalized Agentic Social Support via Tool-Augmented Companionship</strong></a> <span>2026-04-20</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

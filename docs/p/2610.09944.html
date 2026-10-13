@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>AgentTime: Can Agents Estimate and Control Their Own Runtime? | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: An essential control of AI agents is their ability to manage runtime. This ability requires a sense of time-awareness, to predict and…" />
+    <meta name="keywords" content="GUI / computer use, Computer use, agent benchmark, LLM agent, arXiv, 2610.09944" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.09944.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AgentTime: Can Agents Estimate and Control Their Own Runtime?" />
+    <meta property="og:description" content="Daily Agent Benchmarks: An essential control of AI agents is their ability to manage runtime. This ability requires a sense of time-awareness, to predict and…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.09944.html" />
+    <meta property="article:published_time" content="2026-10-07T12:26:24Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AgentTime: Can Agents Estimate and Control Their Own Runtime?" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: An essential control of AI agents is their ability to manage runtime. This ability requires a sense of time-awareness, to predict and…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,56 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AgentTime: Can Agents Estimate and Control Their Own Runtime?",
+  "name": "AgentTime: Can Agents Estimate and Control Their Own Runtime?",
+  "abstract": "An essential control of AI agents is their ability to manage runtime. This ability requires a sense of time-awareness, to predict and estimate wall-clock time and to control their own actions. Prior work has focused on time-awareness, but duration-following and control in native agent harnesses remain unexplored. We present AgentTime, a benchmark for testing whether agents can work for a requested duration, predict their runtime, and estimate elapsed time afterward. It comprises 222 tasks from 18 sources spanning coding, computer use, agentic work, and automated research. Duration-following experiments append a single instruction specifying how long to work, with requests ranging from about a minute to multiple days. Accuracy on these instructions varies substantially: Fable 5.1 in Claude Code deviates from requested runtimes by a typical factor of 2.9$\\times$, compared with only 1.2$\\times$ for GPT-6 Astra in Codex. However, matching the requested runtime does not, by itself, establish continued work on the task. Among 158 reviewed Astra runs with classifiable transcripts, 14 explicitly slept after appearing to finish. In forecasting experiments, predictions tend to overestimate natural runtimes. In retrospective experiments, removing temporal information more than doubles deviation for Sol and Astra and nearly doubles it for Fable. An agent's ability to complete a task does not guarantee that it can control its own time or work for the whole requested duration. For agents to run reliably, safely, and autonomously over long horizons, we require the evaluation of both.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Michael Ofengenden"
+    },
+    {
+      "@type": "Person",
+      "name": "Maksym Andriushchenko"
+    }
+  ],
+  "datePublished": "2026-10-07T12:26:24Z",
+  "dateModified": "2026-10-08T09:06:36Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.09944.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.09944.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.09944v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.09944"
+  },
+  "keywords": [
+    "GUI / computer use",
+    "Computer use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "GUI / computer use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.09944v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2610.09944"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +88,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AgentTime: Can Agents Estimate and Control Their Own Runtime?</h1>
+        <div class="meta">
+          Michael Ofengenden, Maksym Andriushchenko
+          · 2610.09944
+          · <time datetime="2026-10-07">2026-10-07</time>
+          · GUI / computer use
+        </div>
+        <div class="themes"><span class="chip">Computer use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>An essential control of AI agents is their ability to manage runtime. This ability requires a sense of time-awareness, to predict and estimate wall-clock time and to control their own actions. Prior work has focused on time-awareness, but duration-following and control in native agent harnesses remain unexplored. We present AgentTime, a benchmark for testing whether agents can work for a requested duration, predict their runtime, and estimate elapsed time afterward. It comprises 222 tasks from 18 sources spanning coding, computer use, agentic work, and automated research. Duration-following experiments append a single instruction specifying how long to work, with requests ranging from about a minute to multiple days. Accuracy on these instructions varies substantially: Fable 5.1 in Claude Code deviates from requested runtimes by a typical factor of 2.9$\times$, compared with only 1.2$\times$ for GPT-6 Astra in Codex. However, matching the requested runtime does not, by itself, establish continued work on the task. Among 158 reviewed Astra runs with classifiable transcripts, 14 explicitly slept after appearing to finish. In forecasting experiments, predictions tend to overestimate natural runtimes. In retrospective experiments, removing temporal information more than doubles deviation for Sol and Astra and nearly doubles it for Fable. An agent&#x27;s ability to complete a task does not guarantee that it can control its own time or work for the whole requested duration. For agents to run reliably, safely, and autonomously over long horizons, we require the evaluation of both.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.09944v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.09944v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.09944" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More GUI / computer use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.11050.html"><strong>AgentHorizon: Evaluating Agentic Judges for Long-Horizon Computer-Use Tasks</strong></a> <span>2026-10-08</span></li>
+          <li><a href="2610.04800.html"><strong>MedImageOSWorld: Benchmarking GUI Agents for Medical Image Consoles</strong></a> <span>2026-10-03</span></li>
+          <li><a href="2609.40284.html"><strong>cua-speedrun: Standardized Benchmarking of the Speed of Computer-Use Agents</strong></a> <span>2026-09-30</span></li>
+          <li><a href="2609.39903.html"><strong>OSWorld-Science: A Benchmark of Computer Use Agents for Learning and Using Scientific Software</strong></a> <span>2026-09-30</span></li>
+          <li><a href="2609.38867.html"><strong>Talk2Agent: Benchmarking Voice Interfaces for Text Agents</strong></a> <span>2026-09-30</span></li>
+          <li><a href="2609.36923.html"><strong>PrecogUI: Proactive GUI Agents via Pre-cognitive Simulation and Experience Retrieval</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.34769.html"><strong>LongPuzzleBench: Evaluating GUI Agents on Long-Horizon Visual Puzzles</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.32600.html"><strong>CUA-SWE: When Computer-Use Agents Meet Visual Software Engineering</strong></a> <span>2026-09-26</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

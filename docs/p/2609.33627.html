@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>StoryEngine: A State-Grounded Agentic Framework for Video Storytelling | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Despite recent progress in agentic multi-shot video generation, producing coherent and consistent long-form stories remains…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2609.33627" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.33627.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="StoryEngine: A State-Grounded Agentic Framework for Video Storytelling" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Despite recent progress in agentic multi-shot video generation, producing coherent and consistent long-form stories remains…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.33627.html" />
+    <meta property="article:published_time" content="2026-09-27T14:42:16Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="StoryEngine: A State-Grounded Agentic Framework for Video Storytelling" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Despite recent progress in agentic multi-shot video generation, producing coherent and consistent long-form stories remains…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,59 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "StoryEngine: A State-Grounded Agentic Framework for Video Storytelling",
+  "name": "StoryEngine: A State-Grounded Agentic Framework for Video Storytelling",
+  "abstract": "Despite recent progress in agentic multi-shot video generation, producing coherent and consistent long-form stories remains challenging. Existing agentic pipelines typically rely on textual shot plans or previously generated pixels, yet lack an explicit mechanism for propagating the consequences of story events and maintaining the video world state across shots. As a result, missing visual details may be reconstructed inaccurately, while visual drift may propagate across subsequent shots, undermining both narrative coherence and visual consistency. To address these challenges, we propose StoryEngine, a state-grounded agentic framework for video storytelling. StoryEngine establishes a separation between authoritative semantic plans and unreliable visual observations. Specifically, StoryEngine maintains a structured representation of entity placement and story-relevant states, and propagates event-induced changes to define the intended start and end states of each shot. To visually realize these states, StoryEngine constructs canonical references for recurring entities and environments, and compiles state and visual constraints into executable render plans. Meanwhile, to realize these states correctly, a bounded evaluation-guided repair loop further corrects local state inconsistencies. Together, these mechanisms preserve causal story progression and prevent local visual errors from propagating across shots. To comprehensively evaluate long-form storytelling, we construct a benchmark across diverse scenarios and visual styles, with metrics assessing storytelling quality, narrative coherence, and visual consistency. Experimental results demonstrate that StoryEngine consistently outperforms state-of-the-art methods across all evaluation dimensions, validating its effectiveness for coherent and consistent video storytelling.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yingrui Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zeqing Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yeying Jin"
+    }
+  ],
+  "datePublished": "2026-09-27T14:42:16Z",
+  "dateModified": "2026-09-27T14:42:16Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.33627.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.33627.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.33627v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.33627"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.33627v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.33627"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +91,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>StoryEngine: A State-Grounded Agentic Framework for Video Storytelling</h1>
+        <div class="meta">
+          Yingrui Wang, Zeqing Wang, Yeying Jin
+          · 2609.33627
+          · <time datetime="2026-09-27">2026-09-27</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Despite recent progress in agentic multi-shot video generation, producing coherent and consistent long-form stories remains challenging. Existing agentic pipelines typically rely on textual shot plans or previously generated pixels, yet lack an explicit mechanism for propagating the consequences of story events and maintaining the video world state across shots. As a result, missing visual details may be reconstructed inaccurately, while visual drift may propagate across subsequent shots, undermining both narrative coherence and visual consistency. To address these challenges, we propose StoryEngine, a state-grounded agentic framework for video storytelling. StoryEngine establishes a separation between authoritative semantic plans and unreliable visual observations. Specifically, StoryEngine maintains a structured representation of entity placement and story-relevant states, and propagates event-induced changes to define the intended start and end states of each shot. To visually realize these states, StoryEngine constructs canonical references for recurring entities and environments, and compiles state and visual constraints into executable render plans. Meanwhile, to realize these states correctly, a bounded evaluation-guided repair loop further corrects local state inconsistencies. Together, these mechanisms preserve causal story progression and prevent local visual errors from propagating across shots. To comprehensively evaluate long-form storytelling, we construct a benchmark across diverse scenarios and visual styles, with metrics assessing storytelling quality, narrative coherence, and visual consistency. Experimental results demonstrate that StoryEngine consistently outperforms state-of-the-art methods across all evaluation dimensions, validating its effectiveness for coherent and consistent video storytelling.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.33627v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.33627v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.33627" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.34450.html"><strong>ReproBench: Benchmarking LLM Agents on Reproducing Vulnerability From Scratch</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.31468.html"><strong>PriceBench: A Diagnostic Benchmark for Price, Quality, and Brand Preferences in LLM Booking Agents</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.30325.html"><strong>ScopeBench: Do Agents Preserve Engagement Boundaries Under Goal Pressure?</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.33980.html"><strong>DynGraphAgentBench: A Benchmark for Agentic Lifecycle Control in Dynamic Graph Anomaly Detection</strong></a> <span>2026-09-27</span></li>
+          <li><a href="2609.33023.html"><strong>SRE-Marathon: A Continuous, Change-Driven Benchmark for Autonomous Site Reliability Agents</strong></a> <span>2026-09-26</span></li>
+          <li><a href="2609.32795.html"><strong>AgentHabit: Characterizing Distinct Behaviors of Agents on Everyday Tasks</strong></a> <span>2026-09-26</span></li>
+          <li><a href="2609.28850.html"><strong>RECLAIM: Can Agents Reproduce the Claims of Machine Learning Papers?</strong></a> <span>2026-09-25</span></li>
+          <li><a href="2609.26826.html"><strong>What Makes a Terminal-Bench Task Hard? Separating Genuine Hardness from Fake-Hardness on an Adjudicated Agentic Corpus</strong></a> <span>2026-09-24</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

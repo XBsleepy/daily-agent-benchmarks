@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>PCBWorld: A Benchmark Environment for Engine-Grounded PCB Design Automation | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: PCB routing is the task of connecting the nets of a board with copper traces under strict design rules, yet learning-based methods…" />
+    <meta name="keywords" content="General, Tool use, agent benchmark, LLM agent, arXiv, 2607.05915" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.05915.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="PCBWorld: A Benchmark Environment for Engine-Grounded PCB Design Automation" />
+    <meta property="og:description" content="Daily Agent Benchmarks: PCB routing is the task of connecting the nets of a board with copper traces under strict design rules, yet learning-based methods…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.05915.html" />
+    <meta property="article:published_time" content="2026-07-07T07:09:46Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PCBWorld: A Benchmark Environment for Engine-Grounded PCB Design Automation" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: PCB routing is the task of connecting the nets of a board with copper traces under strict design rules, yet learning-based methods…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,76 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "PCBWorld: A Benchmark Environment for Engine-Grounded PCB Design Automation",
+  "name": "PCBWorld: A Benchmark Environment for Engine-Grounded PCB Design Automation",
+  "abstract": "PCB routing is the task of connecting the nets of a board with copper traces under strict design rules, yet learning-based methods still lag behind rule-based routers. We introduce PCBWorld, an open-source engine-grounded PCB routing environment built on KiCad, an electronic design automation (EDA) engine. As a human engineer does, agents in PCBWorld interactively route a board through the engine's native operations, guided by its Design Rule Check (DRC) feedback. The environment supports both RL and tool-using LLM agents. Alongside the environment, PCBWorld-Bench provides three board datasets in the native .kicad_pcb format, two controllable synthetic generators and 679 real open-source boards. It scores any completed board with eight engine-checked evaluation metrics, regardless of the routing method. In our experiments, agents in PCBWorld consistently outperformed grid-action RL policies and open-loop LLM baselines, and an RL policy trained only on synthetic boards transferred zero-shot to real boards, approaching rule-based routers.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Hyungseok Song"
+    },
+    {
+      "@type": "Person",
+      "name": "Junseok Park"
+    },
+    {
+      "@type": "Person",
+      "name": "Won-Seok Choi"
+    },
+    {
+      "@type": "Person",
+      "name": "Seohui Bae"
+    },
+    {
+      "@type": "Person",
+      "name": "Han-Seul Jeong"
+    },
+    {
+      "@type": "Person",
+      "name": "Youngjoon Park"
+    },
+    {
+      "@type": "Person",
+      "name": "Soonyoung Lee"
+    }
+  ],
+  "datePublished": "2026-07-07T07:09:46Z",
+  "dateModified": "2026-08-03T09:30:57Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.05915.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.05915.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.05915v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.05915"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.05915v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.05915"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +108,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>PCBWorld: A Benchmark Environment for Engine-Grounded PCB Design Automation</h1>
+        <div class="meta">
+          Hyungseok Song, Junseok Park, Won-Seok Choi, Seohui Bae, Han-Seul Jeong, Youngjoon Park, Soonyoung Lee
+          · 2607.05915
+          · <time datetime="2026-07-07">2026-07-07</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>PCB routing is the task of connecting the nets of a board with copper traces under strict design rules, yet learning-based methods still lag behind rule-based routers. We introduce PCBWorld, an open-source engine-grounded PCB routing environment built on KiCad, an electronic design automation (EDA) engine. As a human engineer does, agents in PCBWorld interactively route a board through the engine&#x27;s native operations, guided by its Design Rule Check (DRC) feedback. The environment supports both RL and tool-using LLM agents. Alongside the environment, PCBWorld-Bench provides three board datasets in the native .kicad_pcb format, two controllable synthetic generators and 679 real open-source boards. It scores any completed board with eight engine-checked evaluation metrics, regardless of the routing method. In our experiments, agents in PCBWorld consistently outperformed grid-action RL policies and open-loop LLM baselines, and an RL policy trained only on synthetic boards transferred zero-shot to real boards, approaching rule-based routers.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.05915v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.05915v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.05915" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.10490.html"><strong>NetInjectBench: Benchmarking Indirect Prompt Injection in Tool-Using Large Language Model Agents for Network Operations</strong></a> <span>2026-07-11</span></li>
+          <li><a href="2607.09322.html"><strong>LongMedBench: Benchmarking Medical Agents for Long-Horizon Clinical Decision-Making</strong></a> <span>2026-07-10</span></li>
+          <li><a href="2607.09016.html"><strong>SLBench: Evaluating How LLM Agents Follow Logical Relations in Skills</strong></a> <span>2026-07-10</span></li>
+          <li><a href="2607.08093.html"><strong>CausalDS: Benchmarking Causal Reasoning in Data-Science Agents</strong></a> <span>2026-07-09</span></li>
+          <li><a href="2607.09762.html"><strong>BatteryLake: Agentic, Physics-Grounded Curation of Heterogeneous Battery Aging Data and Benchmarking</strong></a> <span>2026-07-06</span></li>
+          <li><a href="2607.05462.html"><strong>BioSecBench-Refusal: A paired metric for performance and alignment in agentic biosecurity risk assessment</strong></a> <span>2026-07-06</span></li>
+          <li><a href="2607.05318.html"><strong>PiSAs: Benchmarking Contextual Integrity in Multi-User Agentic Systems</strong></a> <span>2026-07-06</span></li>
+          <li><a href="2607.05174.html"><strong>AgentGym2: Benchmarking Large Language Model Agents in De-Idealized Real-World Environments</strong></a> <span>2026-07-06</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

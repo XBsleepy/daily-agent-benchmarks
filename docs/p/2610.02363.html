@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ArrivalBench: Agent-Generated Data Pipelines Are Correct Once and Wrong Under Time | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Benchmarks for agent-generated data work grade a pipeline by running it once against a fixed snapshot. ArrivalBench instead…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2610.02363" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.02363.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ArrivalBench: Agent-Generated Data Pipelines Are Correct Once and Wrong Under Time" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Benchmarks for agent-generated data work grade a pipeline by running it once against a fixed snapshot. ArrivalBench instead…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.02363.html" />
+    <meta property="article:published_time" content="2026-10-01T18:39:06Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ArrivalBench: Agent-Generated Data Pipelines Are Correct Once and Wrong Under Time" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Benchmarks for agent-generated data work grade a pipeline by running it once against a fixed snapshot. ArrivalBench instead…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,51 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ArrivalBench: Agent-Generated Data Pipelines Are Correct Once and Wrong Under Time",
+  "name": "ArrivalBench: Agent-Generated Data Pipelines Are Correct Once and Wrong Under Time",
+  "abstract": "Benchmarks for agent-generated data work grade a pipeline by running it once against a fixed snapshot. ArrivalBench instead re-executes the pipeline an agent leaves behind under adversarial but replayable delivery schedules (late, duplicated, out-of-order and retried records) and requires its final state to equal a batch recomputation of the complete log. Because the oracle recomputes rather than classifies, a wrong table and a crash are distinct verdicts: a crash is visible to monitoring a team already runs, and a wrong table is not. On 40 tasks we built, our reimplementation of single-execution grading certifies 86-100% of the pipelines eleven models produce; re-executing the same artifacts finds 7.0-79.2% of the certified ones silently wrong. The gap is not produced by the repair loop: within the same model and task, pipelines repaired against the snapshot test fail replay about as often as those that passed it first time. In every model, idempotency hazards fail more often than ordering hazards. Separating a wrong answer from a crash also changes how interventions read: a hazard warning cuts one model's silent failure from 48.2% to 10.5% while raising its crash rate from 9.0% to 37.0%, so all-in failure moves only from 51.0% to 44.0%. All eleven arms were independently re-run, and rates moved by at most 5.9 points.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Pranay Kothari"
+    }
+  ],
+  "datePublished": "2026-10-01T18:39:06Z",
+  "dateModified": "2026-10-01T18:39:06Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.02363.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.02363.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.02363v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.02363"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.02363v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2610.02363"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +83,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ArrivalBench: Agent-Generated Data Pipelines Are Correct Once and Wrong Under Time</h1>
+        <div class="meta">
+          Pranay Kothari
+          · 2610.02363
+          · <time datetime="2026-10-01">2026-10-01</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Benchmarks for agent-generated data work grade a pipeline by running it once against a fixed snapshot. ArrivalBench instead re-executes the pipeline an agent leaves behind under adversarial but replayable delivery schedules (late, duplicated, out-of-order and retried records) and requires its final state to equal a batch recomputation of the complete log. Because the oracle recomputes rather than classifies, a wrong table and a crash are distinct verdicts: a crash is visible to monitoring a team already runs, and a wrong table is not. On 40 tasks we built, our reimplementation of single-execution grading certifies 86-100% of the pipelines eleven models produce; re-executing the same artifacts finds 7.0-79.2% of the certified ones silently wrong. The gap is not produced by the repair loop: within the same model and task, pipelines repaired against the snapshot test fail replay about as often as those that passed it first time. In every model, idempotency hazards fail more often than ordering hazards. Separating a wrong answer from a crash also changes how interventions read: a hazard warning cuts one model&#x27;s silent failure from 48.2% to 10.5% while raising its crash rate from 9.0% to 37.0%, so all-in failure moves only from 51.0% to 44.0%. All eleven arms were independently re-run, and rates moved by at most 5.9 points.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.02363v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.02363v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.02363" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.00954.html"><strong>Beyond Leaderboards: Tokenomics of Agentic Small Language Model Ensembles</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.00651.html"><strong>Agent Evaluation Reliability: More Tasks Won&#x27;t (Always) Fix An Agent Leaderboard</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.02588.html"><strong>Open-Endedness Bench: Measuring Epistemic Process from Agent Records</strong></a> <span>2026-10-01</span></li>
+          <li><a href="2610.02425.html"><strong>Finding the Move Is Not Winning the Game: XiangqiBench for Closed-Loop Evaluation of LLM Agents</strong></a> <span>2026-10-01</span></li>
+          <li><a href="2609.38974.html"><strong>RealWorldShop: Benchmarking and Improving Conversational Shopping Agents in Real-World E-commerce</strong></a> <span>2026-09-30</span></li>
+          <li><a href="2609.38460.html"><strong>NAQD Env: A benchmark for selective withdrawal in language agents</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.34710.html"><strong>FromPitch2Board: Benchmarking LLM Agents in Long-Horizon Football Management</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34450.html"><strong>ReproBench: Benchmarking LLM Agents on Reproducing Vulnerability From Scratch</strong></a> <span>2026-09-28</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

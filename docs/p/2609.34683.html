@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>AgentPerfBench: A Benchmarking and Evaluation Suite for Inference Performance of Agentic LLMs | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: The optimization of LLM serving engines, such as vLLM and SGLang, is largely benchmark-driven: optimizations, scheduling policies…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Tool use, Memory, agent benchmark, LLM agent, arXiv, 2609.34683" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.34683.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AgentPerfBench: A Benchmarking and Evaluation Suite for Inference Performance of Agentic LLMs" />
+    <meta property="og:description" content="Daily Agent Benchmarks: The optimization of LLM serving engines, such as vLLM and SGLang, is largely benchmark-driven: optimizations, scheduling policies…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.34683.html" />
+    <meta property="article:published_time" content="2026-09-28T09:09:42Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AgentPerfBench: A Benchmarking and Evaluation Suite for Inference Performance of Agentic LLMs" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: The optimization of LLM serving engines, such as vLLM and SGLang, is largely benchmark-driven: optimizations, scheduling policies…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,86 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AgentPerfBench: A Benchmarking and Evaluation Suite for Inference Performance of Agentic LLMs",
+  "name": "AgentPerfBench: A Benchmarking and Evaluation Suite for Inference Performance of Agentic LLMs",
+  "abstract": "The optimization of LLM serving engines, such as vLLM and SGLang, is largely benchmark-driven: optimizations, scheduling policies, hardware and system designs are all selected based on representative workloads. However, a significant mismatch has emerged in the agentic era. Existing benchmarks primarily focus on simple single-turn chatbot workloads. LLM applications are increasingly agentic: coding agents, terminal execution systems, and tool-use agents issue multi-turn requests with growing context lengths. We introduce AgentPerfBench, a benchmark suite for agentic inference. It uses real traces from agentic benchmarks, such as SWE-Bench and TerminalBench, alongside standard chat baselines. This enables benchmarking of models on multi-turn tasks involving tool calling, skill utilization, and increasing context lengths. AgentPerfBench also samples from empirical distributions of input length, output length, and turn count derived from the real traces, generating representative synthetic profiles for cheap and accurate measurements on new hardware. In addition, we further find that several existing benchmarks fail to accurately reflect real hardware performance for two key reasons: 1) they do not account for realistic context-length growth, and 2) they measure inference performance without operating at hardware saturation. We discuss these issues in detail and provide rich kernel-level Nsight Compute (NCU) traces to construct a new multi-dimensional roofline model that captures hardware-system limitations in both memory bandwidth and memory capacity footprint. The benchmarking suite then includes automated scripts to identify potential bottleneck conditions on emerging hardware when evaluated with diverse agentic traces. Together, these contributions quantify the chat-to-agentic gap in current inference benchmarks and characterise per-kernel GPU resource utilisation via roofline analysis.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Cheuk Hang Lau"
+    },
+    {
+      "@type": "Person",
+      "name": "Zeyu Cao"
+    },
+    {
+      "@type": "Person",
+      "name": "Kevin Wong Cheuk Yin"
+    },
+    {
+      "@type": "Person",
+      "name": "Yao Lai"
+    },
+    {
+      "@type": "Person",
+      "name": "Haoran Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Nicholas D. Lane"
+    },
+    {
+      "@type": "Person",
+      "name": "Robert D. Mullins"
+    },
+    {
+      "@type": "Person",
+      "name": "Ilia Shumailov"
+    },
+    {
+      "@type": "Person",
+      "name": "Yiren Zhao"
+    }
+  ],
+  "datePublished": "2026-09-28T09:09:42Z",
+  "dateModified": "2026-09-28T09:09:42Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.34683.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.34683.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.34683v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.34683"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Tool use",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.34683v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.34683"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +118,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AgentPerfBench: A Benchmarking and Evaluation Suite for Inference Performance of Agentic LLMs</h1>
+        <div class="meta">
+          Cheuk Hang Lau, Zeyu Cao, Kevin Wong Cheuk Yin, Yao Lai, Haoran Wu, Nicholas D. Lane, Robert D. Mullins, Ilia Shumailov, Yiren Zhao
+          · 2609.34683
+          · <time datetime="2026-09-28">2026-09-28</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>The optimization of LLM serving engines, such as vLLM and SGLang, is largely benchmark-driven: optimizations, scheduling policies, hardware and system designs are all selected based on representative workloads. However, a significant mismatch has emerged in the agentic era. Existing benchmarks primarily focus on simple single-turn chatbot workloads. LLM applications are increasingly agentic: coding agents, terminal execution systems, and tool-use agents issue multi-turn requests with growing context lengths. We introduce AgentPerfBench, a benchmark suite for agentic inference. It uses real traces from agentic benchmarks, such as SWE-Bench and TerminalBench, alongside standard chat baselines. This enables benchmarking of models on multi-turn tasks involving tool calling, skill utilization, and increasing context lengths. AgentPerfBench also samples from empirical distributions of input length, output length, and turn count derived from the real traces, generating representative synthetic profiles for cheap and accurate measurements on new hardware. In addition, we further find that several existing benchmarks fail to accurately reflect real hardware performance for two key reasons: 1) they do not account for realistic context-length growth, and 2) they measure inference performance without operating at hardware saturation. We discuss these issues in detail and provide rich kernel-level Nsight Compute (NCU) traces to construct a new multi-dimensional roofline model that captures hardware-system limitations in both memory bandwidth and memory capacity footprint. The benchmarking suite then includes automated scripts to identify potential bottleneck conditions on emerging hardware when evaluated with diverse agentic traces. Together, these contributions quantify the chat-to-agentic gap in current inference benchmarks and characterise per-kernel GPU resource utilisation via roofline analysis.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.34683v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.34683v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.34683" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.36777.html"><strong>Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.36635.html"><strong>WitnessGym: Benchmarking Coding Agents on the Construction of Bug Witnesses</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.36161.html"><strong>From Dead Code and Static Requirements to Working Engines: Software Revival with Coding Agents</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.35639.html"><strong>GPUPhysBench: Benchmarking Coding Agents for Correct and Efficient GPU Physics Simulation</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34210.html"><strong>RLE-Bench: A Qualifying Exam for Coding Agents as Robot Learning Engineers</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.31587.html"><strong>Compact Documentation for Coding Agents: A Benchmark, an Optimizer, and Why It Does Not Transfer</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.33812.html"><strong>Identical Runs, Different Results: Benchmarking AI Coding Agents on Open-Weight Models</strong></a> <span>2026-09-27</span></li>
+          <li><a href="2609.33678.html"><strong>SWE-Game: Can Coding Agents Build the Games We Want?</strong></a> <span>2026-09-27</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

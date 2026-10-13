@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>NetConfArena: An Executable Benchmark for LLM Agents in Closed-Loop Network Configuration | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language model (LLM) agents are increasingly attractive for automating network configuration, yet their reliability and failure…" />
+    <meta name="keywords" content="Safety, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2608.23179" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.23179.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="NetConfArena: An Executable Benchmark for LLM Agents in Closed-Loop Network Configuration" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language model (LLM) agents are increasingly attractive for automating network configuration, yet their reliability and failure…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.23179.html" />
+    <meta property="article:published_time" content="2026-08-24T12:26:37Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="NetConfArena: An Executable Benchmark for LLM Agents in Closed-Loop Network Configuration" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language model (LLM) agents are increasingly attractive for automating network configuration, yet their reliability and failure…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,64 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "NetConfArena: An Executable Benchmark for LLM Agents in Closed-Loop Network Configuration",
+  "name": "NetConfArena: An Executable Benchmark for LLM Agents in Closed-Loop Network Configuration",
+  "abstract": "Large language model (LLM) agents are increasingly attractive for automating network configuration, yet their reliability and failure patterns are poorly understood. An essential prerequisite is to assess such agents in a realistic but risk-free environment. Existing benchmarks, however, fall short: they often treat configuration as static command generation or rely on overly simplified settings. Such evaluations understate the core challenges of network configuration, where correctness requires reasoning about protocol complexity and topology dependence. We present NetConfArena, an executable benchmark for evaluating LLM agents in closed-loop network configuration. NetConfArena places agents in emulated multi-device networks, provides a standardized and compact action interface for task execution, and evaluates the resulting network behavior with hidden task-specific executable test cases. The benchmark relies on an LLM-assisted, emulation-grounded pipeline, which converts human-oriented network materials into reusable parameterized task templates. We evaluate representative LLM agents on 480 task instances instantiated from 96 protocol-focused task templates, yielding 3840 execution trajectories, and show that failures are not limited to command errors. The failures also reveal gaps in task-specification adherence and robust planning and execution. These findings suggest two future directions: using validated trajectories as supervision signals to improve foundation models, and designing harness mechanisms that make agent execution more reliable and accountable.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Chang Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaohui Xie"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinyi Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Yong Cui"
+    }
+  ],
+  "datePublished": "2026-08-24T12:26:37Z",
+  "dateModified": "2026-08-24T12:26:37Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.23179.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.23179.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.23179v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.23179"
+  },
+  "keywords": [
+    "Safety",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Safety"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.23179v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.23179"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +96,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>NetConfArena: An Executable Benchmark for LLM Agents in Closed-Loop Network Configuration</h1>
+        <div class="meta">
+          Chang Liu, Xiaohui Xie, Xinyi Chen, Yong Cui
+          · 2608.23179
+          · <time datetime="2026-08-24">2026-08-24</time>
+          · Safety
+        </div>
+        <div class="themes"><span class="chip">Safety</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large language model (LLM) agents are increasingly attractive for automating network configuration, yet their reliability and failure patterns are poorly understood. An essential prerequisite is to assess such agents in a realistic but risk-free environment. Existing benchmarks, however, fall short: they often treat configuration as static command generation or rely on overly simplified settings. Such evaluations understate the core challenges of network configuration, where correctness requires reasoning about protocol complexity and topology dependence. We present NetConfArena, an executable benchmark for evaluating LLM agents in closed-loop network configuration. NetConfArena places agents in emulated multi-device networks, provides a standardized and compact action interface for task execution, and evaluates the resulting network behavior with hidden task-specific executable test cases. The benchmark relies on an LLM-assisted, emulation-grounded pipeline, which converts human-oriented network materials into reusable parameterized task templates. We evaluate representative LLM agents on 480 task instances instantiated from 96 protocol-focused task templates, yielding 3840 execution trajectories, and show that failures are not limited to command errors. The failures also reveal gaps in task-specification adherence and robust planning and execution. These findings suggest two future directions: using validated trajectories as supervision signals to improve foundation models, and designing harness mechanisms that make agent execution more reliable and accountable.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.23179v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.23179v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.23179" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Safety benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.27021.html"><strong>FaulT-Bench: Towards Benchmarking Network Troubleshooting LLM Agents under Unreliable User Tickets</strong></a> <span>2026-08-27</span></li>
+          <li><a href="2608.26546.html"><strong>DuMateBench: Evaluating Autonomous Agents in Complex Real-World Workflows</strong></a> <span>2026-08-27</span></li>
+          <li><a href="2608.25340.html"><strong>HRGuard: Gating Relationship Manipulation in Multi-Turn Agentic AI Conversations</strong></a> <span>2026-08-26</span></li>
+          <li><a href="2608.24314.html"><strong>Benchmarking LLM Judges for Voice-Agent Evaluation: Reliability, Calibration, and Human Oversight</strong></a> <span>2026-08-25</span></li>
+          <li><a href="2608.23635.html"><strong>ToolRobustBench: Stage-Wise Perturbation Evaluation and Failure Diagnosis for Tool-Calling Agents</strong></a> <span>2026-08-23</span></li>
+          <li><a href="2608.19901.html"><strong>MaliciousSkillBench: A Comprehensive Benchmark for Malicious Agent Skill Detection</strong></a> <span>2026-08-20</span></li>
+          <li><a href="2608.17597.html"><strong>HarnessRisk: A Lifecycle-Oriented Benchmark for Agent Harness Safety</strong></a> <span>2026-08-18</span></li>
+          <li><a href="2608.09476.html"><strong>ActBench: Self-Evolving Benchmark of Behavioral Safety in Cowork Agents</strong></a> <span>2026-08-10</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

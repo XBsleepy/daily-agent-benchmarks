@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Hidden in Plain Sight: Benchmarking Agent Safety Against Decomposition Attacks with DECOMPBENCH | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLM-based Agents are becoming increasingly capable and widely deployed, creating growing incentives for adversarial misuse in the…" />
+    <meta name="keywords" content="Safety, Tool use, agent benchmark, LLM agent, arXiv, 2606.13994" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.13994.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Hidden in Plain Sight: Benchmarking Agent Safety Against Decomposition Attacks with DECOMPBENCH" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLM-based Agents are becoming increasingly capable and widely deployed, creating growing incentives for adversarial misuse in the…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.13994.html" />
+    <meta property="article:published_time" content="2026-06-12T00:30:29Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Hidden in Plain Sight: Benchmarking Agent Safety Against Decomposition Attacks with DECOMPBENCH" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLM-based Agents are becoming increasingly capable and widely deployed, creating growing incentives for adversarial misuse in the…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,60 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Hidden in Plain Sight: Benchmarking Agent Safety Against Decomposition Attacks with DECOMPBENCH",
+  "name": "Hidden in Plain Sight: Benchmarking Agent Safety Against Decomposition Attacks with DECOMPBENCH",
+  "abstract": "LLM-based Agents are becoming increasingly capable and widely deployed, creating growing incentives for adversarial misuse in the real-world. A key emerging threat is Decomposition Attacks \\cite{glukhov2024breach, jones2024adversaries} in which a harmful task is broken into simpler, benign subtasks that evade safety mechanisms when executed separately but cumulatively fulfill the malicious intent. Although recent benchmarks assess agent safety in multi-turn and multi-tool-use settings, they do not explicitly capture this form of decompositional misuse and may not represent realistic adversarial execution flows. To this end, we introduce DeCompBench, a benchmark designed specifically to evaluate agentic safety under decomposition attacks. DeCompBench is created with a decomposition-by-design principle using a graphical framework and enables harmful task decomposition into individually benign and executable subtasks with realistic workflows. Our experiments using a custom decomposer show that state-of-the-art agents exhibit high refusal rates on monolithic harmful tasks, but significantly lower refusal rates on their decomposed variants, while often inadvertently fulfilling the adversarial objectives. These findings underscore the need for safety evaluations against decomposition attacks and corresponding defenses. Our dataset is publicly available and can be found at https://huggingface.co/datasets/decompositionbench/DeCompBench.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Vikhyath Kothamasu"
+    },
+    {
+      "@type": "Person",
+      "name": "Virginia Smith"
+    },
+    {
+      "@type": "Person",
+      "name": "Chhavi Yadav"
+    }
+  ],
+  "datePublished": "2026-06-12T00:30:29Z",
+  "dateModified": "2026-06-12T00:30:29Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.13994.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.13994.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.13994v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.13994"
+  },
+  "keywords": [
+    "Safety",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Safety"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.13994v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.13994"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +92,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Hidden in Plain Sight: Benchmarking Agent Safety Against Decomposition Attacks with DECOMPBENCH</h1>
+        <div class="meta">
+          Vikhyath Kothamasu, Virginia Smith, Chhavi Yadav
+          · 2606.13994
+          · <time datetime="2026-06-12">2026-06-12</time>
+          · Safety
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLM-based Agents are becoming increasingly capable and widely deployed, creating growing incentives for adversarial misuse in the real-world. A key emerging threat is Decomposition Attacks \cite{glukhov2024breach, jones2024adversaries} in which a harmful task is broken into simpler, benign subtasks that evade safety mechanisms when executed separately but cumulatively fulfill the malicious intent. Although recent benchmarks assess agent safety in multi-turn and multi-tool-use settings, they do not explicitly capture this form of decompositional misuse and may not represent realistic adversarial execution flows. To this end, we introduce DeCompBench, a benchmark designed specifically to evaluate agentic safety under decomposition attacks. DeCompBench is created with a decomposition-by-design principle using a graphical framework and enables harmful task decomposition into individually benign and executable subtasks with realistic workflows. Our experiments using a custom decomposer show that state-of-the-art agents exhibit high refusal rates on monolithic harmful tasks, but significantly lower refusal rates on their decomposed variants, while often inadvertently fulfilling the adversarial objectives. These findings underscore the need for safety evaluations against decomposition attacks and corresponding defenses. Our dataset is publicly available and can be found at https://huggingface.co/datasets/decompositionbench/DeCompBench.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.13994v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.13994v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.13994" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Safety benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.18665.html"><strong>SciHazard: A Benchmark for Measuring Scientific Safety Risks with Decomposed Harm Scoring</strong></a> <span>2026-07-21</span></li>
+          <li><a href="2607.14543.html"><strong>SafeRelBench: A Spatial-Relation-Aware Benchmark for Process-Level Safety in VLM-Driven Embodied Agents</strong></a> <span>2026-07-16</span></li>
+          <li><a href="2606.22528.html"><strong>Governance Decay: How Context Compaction Silently Erases Safety Constraints in Long-Horizon LLM Agents</strong></a> <span>2026-06-21</span></li>
+          <li><a href="2606.20408.html"><strong>NRT-Bench: Benchmarking Multi-Turn Red-Teaming of LLM Operator Agents in Safety-Critical Control Rooms</strong></a> <span>2026-06-18</span></li>
+          <li><a href="2606.07867.html"><strong>The Cold-Start Safety Gap in LLM Agents</strong></a> <span>2026-06-05</span></li>
+          <li><a href="2606.07131.html"><strong>MalSkillBench: A Runtime-Verified Benchmark of Malicious Agent Skills</strong></a> <span>2026-06-05</span></li>
+          <li><a href="2605.29224.html"><strong>Relevance as a Vulnerability: How Web Retrieval Degrades Safety Alignment in LLM Agents</strong></a> <span>2026-05-28</span></li>
+          <li><a href="2605.22643.html"><strong>Boiling the Frog: A Multi-Turn Benchmark for Agentic Safety</strong></a> <span>2026-05-21</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

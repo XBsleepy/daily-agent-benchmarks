@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLM agents are increasingly used to translate natural language into 3D scenes in a procedural way, but existing systems focus on…" />
+    <meta name="keywords" content="Multi-agent, Tool use, Embodied / robotics, agent benchmark, LLM agent, arXiv, 2607.01766" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.01766.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLM agents are increasingly used to translate natural language into 3D scenes in a procedural way, but existing systems focus on…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.01766.html" />
+    <meta property="article:published_time" content="2026-07-02T06:29:18Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLM agents are increasingly used to translate natural language into 3D scenes in a procedural way, but existing systems focus on…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,73 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation",
+  "name": "SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation",
+  "abstract": "LLM agents are increasingly used to translate natural language into 3D scenes in a procedural way, but existing systems focus on static output. Dynamic 4D scenes from text alone, in which liquids flow, particles emit, rigid bodies cascade, and articulated mechanisms move, remain largely unexplored despite their value as editable content and as physics-grounded training data for video generation and embodied AI. Two challenges set the dynamic case apart from static text-to-scene work: an agent must jointly coordinate spatial layout, multiple physics solvers, temporal sequencing, camera, and lighting in a single coherent scene, and verifying motion correctness from rendered video is fundamentally harder than judging a single image. We present SimWorlds: a multi-agent framework that produces dynamic, editable 4D scenes from text, with Blender-specific procedural knowledge, a planner-coder-reviewer workflow driving a fixed ordered sequence of construction stages, a layered scene protocol enforced by a deterministic verifier, and a runtime-state inspection tool suite that catches mechanism failures the rendered image cannot reveal. We also introduce 4DBuildBench, a benchmark for assessing both visual fidelity and physical consistency of the procedural dynamic 3D scenes generated from text prompts. Experiments show that SimWorlds outperforms prior dynamic Blender generation baselines.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Chunjiang Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaoyuan Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Haoyu Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Yizhou Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Ming-Hsuan Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "László A. Jeni"
+    }
+  ],
+  "datePublished": "2026-07-02T06:29:18Z",
+  "dateModified": "2026-07-02T06:29:18Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.01766.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.01766.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.01766v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.01766"
+  },
+  "keywords": [
+    "Multi-agent",
+    "Tool use",
+    "Embodied / robotics",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multi-agent"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.01766v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.01766"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +105,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation</h1>
+        <div class="meta">
+          Chunjiang Liu, Xiaoyuan Wang, Haoyu Chen, Yizhou Zhao, Ming-Hsuan Yang, László A. Jeni
+          · 2607.01766
+          · <time datetime="2026-07-02">2026-07-02</time>
+          · Multi-agent · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Multi-agent</span><span class="chip">Embodied / robotics</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLM agents are increasingly used to translate natural language into 3D scenes in a procedural way, but existing systems focus on static output. Dynamic 4D scenes from text alone, in which liquids flow, particles emit, rigid bodies cascade, and articulated mechanisms move, remain largely unexplored despite their value as editable content and as physics-grounded training data for video generation and embodied AI. Two challenges set the dynamic case apart from static text-to-scene work: an agent must jointly coordinate spatial layout, multiple physics solvers, temporal sequencing, camera, and lighting in a single coherent scene, and verifying motion correctness from rendered video is fundamentally harder than judging a single image. We present SimWorlds: a multi-agent framework that produces dynamic, editable 4D scenes from text, with Blender-specific procedural knowledge, a planner-coder-reviewer workflow driving a fixed ordered sequence of construction stages, a layered scene protocol enforced by a deterministic verifier, and a runtime-state inspection tool suite that catches mechanism failures the rendered image cannot reveal. We also introduce 4DBuildBench, a benchmark for assessing both visual fidelity and physical consistency of the procedural dynamic 3D scenes generated from text prompts. Experiments show that SimWorlds outperforms prior dynamic Blender generation baselines.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.01766v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.01766v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.01766" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multi-agent benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.07556.html"><strong>MasDrift: Benchmarking Authorization Preservation Across Multi-Agent Architectures</strong></a> <span>2026-08-02</span></li>
+          <li><a href="2608.00832.html"><strong>AdvPlan-Bench: Adversarial Evaluation of Structured Plan-Generation Agents</strong></a> <span>2026-08-01</span></li>
+          <li><a href="2607.25656.html"><strong>OrchBench: Evaluating Multi-Agent Orchestration Plans in Isolation via Deterministic Simulation</strong></a> <span>2026-07-28</span></li>
+          <li><a href="2607.15434.html"><strong>Coercion and Deception in AI-to-AI Management: An Agentic Benchmark of Unprompted Escalation</strong></a> <span>2026-07-16</span></li>
+          <li><a href="2607.00547.html"><strong>EgoGapBench: Benchmarking Egocentric Action Selection in Multi-Agent Scenes</strong></a> <span>2026-07-01</span></li>
+          <li><a href="2606.31174.html"><strong>ClawArena-Team: Benchmarking Subagent Orchestration and Dynamic Workflows in Language-Model Agents</strong></a> <span>2026-06-30</span></li>
+          <li><a href="2608.20381.html"><strong>EditPPT: Faithful Long-Deck Slide Editing via Structured Tool-Using Multi-Agent with Dual-Modal Validators</strong></a> <span>2026-06-29</span></li>
+          <li><a href="2606.28757.html"><strong>A Physics-Grounded Benchmark for Multi-Agent Dynamics in World Models</strong></a> <span>2026-06-27</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

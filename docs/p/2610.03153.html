@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>EvoRiskBench: An Evolving Benchmark for Runtime Security Risks in Workspace Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Workspace agents combine large language models with execution harnesses to perform stateful, multi-step tasks that access or modify…" />
+    <meta name="keywords" content="Safety, Tool use, agent benchmark, LLM agent, arXiv, 2610.03153" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.03153.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="EvoRiskBench: An Evolving Benchmark for Runtime Security Risks in Workspace Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Workspace agents combine large language models with execution harnesses to perform stateful, multi-step tasks that access or modify…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.03153.html" />
+    <meta property="article:published_time" content="2026-10-02T11:22:36Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="EvoRiskBench: An Evolving Benchmark for Runtime Security Risks in Workspace Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Workspace agents combine large language models with execution harnesses to perform stateful, multi-step tasks that access or modify…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,88 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "EvoRiskBench: An Evolving Benchmark for Runtime Security Risks in Workspace Agents",
+  "name": "EvoRiskBench: An Evolving Benchmark for Runtime Security Risks in Workspace Agents",
+  "abstract": "Workspace agents combine large language models with execution harnesses to perform stateful, multi-step tasks that access or modify external resources. Existing benchmarks leave gaps in executable coverage of their runtime security risks, while evolving model capabilities, harnesses, tools, and threats motivate benchmark evolution. We introduce EvoRiskBench, an evolving benchmark organized around the EP-Path-EF framework, which links an initial risk entry point to a one-hop technical effect through an agent-mediated risk path. The framework defines nine entry-point categories and five effect categories; a 20-participant study supports their interpretability and classification consistency on representative cases. Guided by this framework, an automated end-to-end workflow constructs and executes risk cases in isolated environments and independently verifies outcomes using runtime traces and environment states. The benchmark provides a reproducible dataset of 450 adversarial tasks across six scenarios. We evaluate nine model-harness configurations spanning three models (GPT-5.6 Sol, DeepSeek-V4-Pro-0813, and Claude Opus 5) and three harnesses (Claude Code, Codex, and OpenClaw). Our results reveal substantial vulnerabilities across systems. The most vulnerable configuration, Codex with DeepSeek-V4-Pro-0813, reaches a 68.44% attack success rate (ASR), indicating that configuration of workspace agent is insufficient to ensure secure autonomous execution. ASR varies more across models than harnesses, and harness differences depend on the model. The benchmark cases and evaluation platform will be released after completion of artifact safety and reproducibility checks.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Shiyi Kuang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xuemei Luo"
+    },
+    {
+      "@type": "Person",
+      "name": "Kun Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Junhai Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Rui Tian"
+    },
+    {
+      "@type": "Person",
+      "name": "Feng Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Bo Shen"
+    },
+    {
+      "@type": "Person",
+      "name": "Nianyu Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Dehui Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Ping Chen"
+    }
+  ],
+  "datePublished": "2026-10-02T11:22:36Z",
+  "dateModified": "2026-10-02T11:22:36Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.03153.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.03153.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.03153v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.03153"
+  },
+  "keywords": [
+    "Safety",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Safety"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.03153v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2610.03153"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +120,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>EvoRiskBench: An Evolving Benchmark for Runtime Security Risks in Workspace Agents</h1>
+        <div class="meta">
+          Shiyi Kuang, Xuemei Luo, Kun Liu, Junhai Li, Rui Tian, Feng Shi, Bo Shen, Nianyu Li, Dehui Li, Ping Chen
+          · 2610.03153
+          · <time datetime="2026-10-02">2026-10-02</time>
+          · Safety
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Workspace agents combine large language models with execution harnesses to perform stateful, multi-step tasks that access or modify external resources. Existing benchmarks leave gaps in executable coverage of their runtime security risks, while evolving model capabilities, harnesses, tools, and threats motivate benchmark evolution. We introduce EvoRiskBench, an evolving benchmark organized around the EP-Path-EF framework, which links an initial risk entry point to a one-hop technical effect through an agent-mediated risk path. The framework defines nine entry-point categories and five effect categories; a 20-participant study supports their interpretability and classification consistency on representative cases. Guided by this framework, an automated end-to-end workflow constructs and executes risk cases in isolated environments and independently verifies outcomes using runtime traces and environment states. The benchmark provides a reproducible dataset of 450 adversarial tasks across six scenarios. We evaluate nine model-harness configurations spanning three models (GPT-5.6 Sol, DeepSeek-V4-Pro-0813, and Claude Opus 5) and three harnesses (Claude Code, Codex, and OpenClaw). Our results reveal substantial vulnerabilities across systems. The most vulnerable configuration, Codex with DeepSeek-V4-Pro-0813, reaches a 68.44% attack success rate (ASR), indicating that configuration of workspace agent is insufficient to ensure secure autonomous execution. ASR varies more across models than harnesses, and harness differences depend on the model. The benchmark cases and evaluation platform will be released after completion of artifact safety and reproducibility checks.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.03153v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.03153v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.03153" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Safety benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.06748.html"><strong>BazaarBench: Delegation Safety in Decentralized C2C Marketplaces Run by LLM Agents</strong></a> <span>2026-10-05</span></li>
+          <li><a href="2610.06514.html"><strong>ANT: A Multi-Granularity Network Traffic Dataset and Benchmark for Agents Behavior Auditing</strong></a> <span>2026-10-05</span></li>
+          <li><a href="2610.06122.html"><strong>Benchmarking Jailbreak Guardrails for Embodied Agents</strong></a> <span>2026-10-05</span></li>
+          <li><a href="2610.05622.html"><strong>UndoBench: Separating Task Competence from Recovery Capability in Tool-Using AI Agents</strong></a> <span>2026-10-04</span></li>
+          <li><a href="2610.02304.html"><strong>SimuVerity: Benchmarking Agents for Engineering-Grade Simulink Model Generation</strong></a> <span>2026-10-01</span></li>
+          <li><a href="2609.39371.html"><strong>EHR-RobustGym: Benchmarking and Training Agents for Robust Clinical Reasoning</strong></a> <span>2026-09-30</span></li>
+          <li><a href="2609.35596.html"><strong>SEABench: Benchmarking Endogenous Misalignment In Self-Evolving Agents</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.35886.html"><strong>Agentic Commerce Bench: Measuring Fraud Detection for Agents That Spend Money</strong></a> <span>2026-09-27</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

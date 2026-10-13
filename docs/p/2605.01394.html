@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>LiveFMBench: Unveiling the Power and Limits of Agentic Workflows in Specification Generation | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Formal specification is essential for rigorous program verification, yet writing correct specifications remains costly and difficult…" />
+    <meta name="keywords" content="General, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2605.01394" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.01394.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="LiveFMBench: Unveiling the Power and Limits of Agentic Workflows in Specification Generation" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Formal specification is essential for rigorous program verification, yet writing correct specifications remains costly and difficult…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.01394.html" />
+    <meta property="article:published_time" content="2026-05-02T11:31:33Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="LiveFMBench: Unveiling the Power and Limits of Agentic Workflows in Specification Generation" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Formal specification is essential for rigorous program verification, yet writing correct specifications remains costly and difficult…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,96 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "LiveFMBench: Unveiling the Power and Limits of Agentic Workflows in Specification Generation",
+  "name": "LiveFMBench: Unveiling the Power and Limits of Agentic Workflows in Specification Generation",
+  "abstract": "Formal specification is essential for rigorous program verification, yet writing correct specifications remains costly and difficult to automate. Although large language models (LLMs) and agents have shown promising progress, their true capabilities and failure modes remain unclear. We present the first systematic and contamination-aware study of LLM- and agent-based formal specification generation for C programs. We introduce LiveFMBench, a continuously evolving benchmark of 630 ACSL (ANSI/ISO C Specification Language)-annotated C programs, including 360 newly collected cases designed to mitigate data leakage. Using this benchmark, we evaluate direct prompting with different sampling sizes, reasoning-enabled (thinking mode) inference, the agentic pipeline, and perform a fine-grained failure analysis. Experimental results reveal that naive evaluation substantially overestimates performance because models under direct prompting may exhibit unfaithful behaviors, such as deceiving automated provers or ignoring code-context constraints; after excluding such cases, the true specification generation accuracy drops by approximately 20\\%. We further find that both increased sampling and thinking mode significantly improve success rates, with smaller models benefiting more from thinking mode. Agentic pipelines are particularly effective under low sampling budgets and on harder datasets. Failure analysis further shows that incorrect loop invariants are the dominant error type, while agentic pipelines notably reduce assertion errors. These results expose fundamental limitations in current LLM-based approaches and suggest they remain far from replacing human-authored formal specifications. We release LiveFMBench at https://huggingface.co/datasets/fm-universe/Live-FM-Bench and all evaluation artifacts to support future research.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Dong Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jialun Cao"
+    },
+    {
+      "@type": "Person",
+      "name": "Guozhao Mo"
+    },
+    {
+      "@type": "Person",
+      "name": "Junjie Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Cheng Wen"
+    },
+    {
+      "@type": "Person",
+      "name": "Hongyu Lin"
+    },
+    {
+      "@type": "Person",
+      "name": "Xianpei Han"
+    },
+    {
+      "@type": "Person",
+      "name": "Shengchao Qin"
+    },
+    {
+      "@type": "Person",
+      "name": "Cong Tian"
+    },
+    {
+      "@type": "Person",
+      "name": "Shing-Chi Cheung"
+    },
+    {
+      "@type": "Person",
+      "name": "Le Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Yaojie Lu"
+    }
+  ],
+  "datePublished": "2026-05-02T11:31:33Z",
+  "dateModified": "2026-05-02T11:31:33Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.01394.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.01394.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.01394v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.01394"
+  },
+  "keywords": [
+    "General",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.01394v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.01394"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +128,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>LiveFMBench: Unveiling the Power and Limits of Agentic Workflows in Specification Generation</h1>
+        <div class="meta">
+          Dong Xu, Jialun Cao, Guozhao Mo, Junjie Hu, Cheng Wen, Hongyu Lin, Xianpei Han, Shengchao Qin, Cong Tian, Shing-Chi Cheung, Le Sun, Yaojie Lu
+          · 2605.01394
+          · <time datetime="2026-05-02">2026-05-02</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Formal specification is essential for rigorous program verification, yet writing correct specifications remains costly and difficult to automate. Although large language models (LLMs) and agents have shown promising progress, their true capabilities and failure modes remain unclear. We present the first systematic and contamination-aware study of LLM- and agent-based formal specification generation for C programs. We introduce LiveFMBench, a continuously evolving benchmark of 630 ACSL (ANSI/ISO C Specification Language)-annotated C programs, including 360 newly collected cases designed to mitigate data leakage. Using this benchmark, we evaluate direct prompting with different sampling sizes, reasoning-enabled (thinking mode) inference, the agentic pipeline, and perform a fine-grained failure analysis. Experimental results reveal that naive evaluation substantially overestimates performance because models under direct prompting may exhibit unfaithful behaviors, such as deceiving automated provers or ignoring code-context constraints; after excluding such cases, the true specification generation accuracy drops by approximately 20\%. We further find that both increased sampling and thinking mode significantly improve success rates, with smaller models benefiting more from thinking mode. Agentic pipelines are particularly effective under low sampling budgets and on harder datasets. Failure analysis further shows that incorrect loop invariants are the dominant error type, while agentic pipelines notably reduce assertion errors. These results expose fundamental limitations in current LLM-based approaches and suggest they remain far from replacing human-authored formal specifications. We release LiveFMBench at https://huggingface.co/datasets/fm-universe/Live-FM-Bench and all evaluation artifacts to support future research.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.01394v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.01394v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.01394" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.03596.html"><strong>Workspace-Bench 1.0: Benchmarking AI Agents on Workspace Tasks with Large-Scale File Dependencies</strong></a> <span>2026-05-05</span></li>
+          <li><a href="2605.02503.html"><strong>DataClawBench: An Agent Benchmark for Exploratory Real-World Financial Data Analysis</strong></a> <span>2026-05-04</span></li>
+          <li><a href="2605.02240.html"><strong>PhysicianBench: Evaluating LLM Agents in Real-World EHR Environments</strong></a> <span>2026-05-04</span></li>
+          <li><a href="2605.01847.html"><strong>NeuroState-Bench: A Human-Calibrated Benchmark for Commitment Integrity in LLM Agent Profiles</strong></a> <span>2026-05-03</span></li>
+          <li><a href="2605.00420.html"><strong>Foresight Arena: An On-Chain Benchmark for Evaluating AI Forecasting Agents</strong></a> <span>2026-05-01</span></li>
+          <li><a href="2604.28139.html"><strong>Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows</strong></a> <span>2026-04-30</span></li>
+          <li><a href="2604.28093.html"><strong>What Makes a Good Terminal-Agent Benchmark Task: A Guideline for Adversarial, Difficult, and Legible Evaluation Design</strong></a> <span>2026-04-30</span></li>
+          <li><a href="2604.26904.html"><strong>ClawGym: A Scalable Framework for Building Effective Claw Agents</strong></a> <span>2026-04-29</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

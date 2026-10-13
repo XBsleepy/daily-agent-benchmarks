@@ -3,6 +3,8 @@ const STRINGS = {
     title: "Agent Benchmarks",
     kicker: "arXiv daily",
     docTitle: "Daily Agent Benchmarks",
+    pageTitle: "Daily Agent Benchmarks — New LLM agent benchmarks on arXiv, updated daily",
+    archive: "Archive",
     searchLabel: "Search benchmarks",
     searchPlaceholder: "Search titles, abstracts, tags…",
     exactMatch: "Exact / cover match",
@@ -56,6 +58,8 @@ const STRINGS = {
     title: "Agent Benchmarks",
     kicker: "arXiv 每日",
     docTitle: "每日 Agent Benchmark",
+    pageTitle: "每日 Agent Benchmark — arXiv 最新 LLM 智能体评测基准，每日更新",
+    archive: "归档",
     searchLabel: "搜索基准",
     searchPlaceholder: "搜索标题、摘要、标签…",
     exactMatch: "精确 / 覆盖匹配",
@@ -192,7 +196,7 @@ function t(lang, key, ...args) {
 
 function applyStaticI18n(lang) {
   document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
-  document.title = t(lang, "docTitle");
+  document.title = t(lang, "pageTitle");
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     el.textContent = t(lang, el.getAttribute("data-i18n"));
   });

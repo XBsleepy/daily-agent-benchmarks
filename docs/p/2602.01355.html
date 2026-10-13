@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Aggregation Queries over Unstructured Text: Benchmark and Agentic Method | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Aggregation query over free text is a long-standing yet underexplored problem. Unlike ordinary question answering, aggregate queries…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2602.01355" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.01355.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Aggregation Queries over Unstructured Text: Benchmark and Agentic Method" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Aggregation query over free text is a long-standing yet underexplored problem. Unlike ordinary question answering, aggregate queries…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.01355.html" />
+    <meta property="article:published_time" content="2026-02-01T17:49:33Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Aggregation Queries over Unstructured Text: Benchmark and Agentic Method" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Aggregation query over free text is a long-standing yet underexplored problem. Unlike ordinary question answering, aggregate queries…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,75 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Aggregation Queries over Unstructured Text: Benchmark and Agentic Method",
+  "name": "Aggregation Queries over Unstructured Text: Benchmark and Agentic Method",
+  "abstract": "Aggregation query over free text is a long-standing yet underexplored problem. Unlike ordinary question answering, aggregate queries require exhaustive evidence collection and systems are required to \"find all,\" not merely \"find one.\" Existing paradigms such as Text-to-SQL and Retrieval-Augmented Generation fail to achieve this completeness. In this work, we formalize entity-level aggregation querying over text in a corpus-bounded setting with strict completeness requirement. To enable principled evaluation, we introduce AGGBench, a benchmark designed to evaluate completeness-oriented aggregation under realistic large-scale corpus. To accompany the benchmark, we propose DFA (Disambiguation--Filtering--Aggregation), a modular agentic baseline that decomposes aggregation querying into interpretable stages and exposes key failure modes related to ambiguity, filtering, and aggregation. Empirical results show that DFA consistently improves aggregation evidence coverage over strong RAG and agentic baselines. The data and code are available in \\href{https://anonymous.4open.science/r/DFA-A4C1}.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Haojia Zhu"
+    },
+    {
+      "@type": "Person",
+      "name": "Qinyuan Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Haoyu Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuxi Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Hanchen Qiu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiaoyan Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiahui Jin"
+    }
+  ],
+  "datePublished": "2026-02-01T17:49:33Z",
+  "dateModified": "2026-02-03T10:44:53Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.01355.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.01355.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2602.01355v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2602.01355"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2602.01355v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2602.01355"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +107,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Aggregation Queries over Unstructured Text: Benchmark and Agentic Method</h1>
+        <div class="meta">
+          Haojia Zhu, Qinyuan Xu, Haoyu Li, Yuxi Liu, Hanchen Qiu, Jiaoyan Chen, Jiahui Jin
+          · 2602.01355
+          · <time datetime="2026-02-01">2026-02-01</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Aggregation query over free text is a long-standing yet underexplored problem. Unlike ordinary question answering, aggregate queries require exhaustive evidence collection and systems are required to &quot;find all,&quot; not merely &quot;find one.&quot; Existing paradigms such as Text-to-SQL and Retrieval-Augmented Generation fail to achieve this completeness. In this work, we formalize entity-level aggregation querying over text in a corpus-bounded setting with strict completeness requirement. To enable principled evaluation, we introduce AGGBench, a benchmark designed to evaluate completeness-oriented aggregation under realistic large-scale corpus. To accompany the benchmark, we propose DFA (Disambiguation--Filtering--Aggregation), a modular agentic baseline that decomposes aggregation querying into interpretable stages and exposes key failure modes related to ambiguity, filtering, and aggregation. Empirical results show that DFA consistently improves aggregation evidence coverage over strong RAG and agentic baselines. The data and code are available in \href{https://anonymous.4open.science/r/DFA-A4C1}.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2602.01355v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2602.01355v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2602.01355" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2604.09554.html"><strong>LABBench2: An Improved Benchmark for AI Systems Performing Biology Research</strong></a> <span>2026-02-04</span></li>
+          <li><a href="2602.03224.html"><strong>TAME: A Trustworthy Test-Time Evolution of Agent Memory with Systematic Benchmarking</strong></a> <span>2026-02-03</span></li>
+          <li><a href="2602.02455.html"><strong>Drift-Bench: Diagnosing Cooperative Breakdowns in LLM Agents under Input Faults via Multi-Turn Interaction</strong></a> <span>2026-02-02</span></li>
+          <li><a href="2602.01675.html"><strong>TRIP-Bench: A Benchmark for Long-Horizon Interactive Agents in Real-World Scenarios</strong></a> <span>2026-02-02</span></li>
+          <li><a href="2602.00685.html"><strong>HumanStudy-Bench: Towards AI Agent Design for Participant Simulation</strong></a> <span>2026-01-31</span></li>
+          <li><a href="2602.00456.html"><strong>Benchmarking Agents in Insurance Underwriting Environments</strong></a> <span>2026-01-31</span></li>
+          <li><a href="2602.00352.html"><strong>DETOUR: An Interactive Benchmark for Dual-Agent Search and Reasoning</strong></a> <span>2026-01-30</span></li>
+          <li><a href="2601.21800.html"><strong>BioAgent Bench: An AI Agent Evaluation Suite for Bioinformatics</strong></a> <span>2026-01-29</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

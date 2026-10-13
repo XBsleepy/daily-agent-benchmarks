@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>AgentMemBench: A Systematic Benchmark for Evaluating Long-Term Memory Management Strategies in Conversational AI Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Long-term memory remains a critical bottleneck for conversational AI agents, whose finite context windows cannot support coherent…" />
+    <meta name="keywords" content="Dialogue, Memory, Dialogue / customer, agent benchmark, LLM agent, arXiv, 2608.00009" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.00009.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AgentMemBench: A Systematic Benchmark for Evaluating Long-Term Memory Management Strategies in Conversational AI Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Long-term memory remains a critical bottleneck for conversational AI agents, whose finite context windows cannot support coherent…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.00009.html" />
+    <meta property="article:published_time" content="2026-06-16T08:27:18Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AgentMemBench: A Systematic Benchmark for Evaluating Long-Term Memory Management Strategies in Conversational AI Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Long-term memory remains a critical bottleneck for conversational AI agents, whose finite context windows cannot support coherent…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,53 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AgentMemBench: A Systematic Benchmark for Evaluating Long-Term Memory Management Strategies in Conversational ",
+  "name": "AgentMemBench: A Systematic Benchmark for Evaluating Long-Term Memory Management Strategies in Conversational AI Agents",
+  "abstract": "Long-term memory remains a critical bottleneck for conversational AI agents, whose finite context windows cannot support coherent recall across thousands of turns. We present AgentMemBench, a unified, reproducible benchmark evaluating five memory management strategies under identical conditions: in-context windowing (ICW), external key-value store (EKV), graph-based episodic memory (GEM), compression-based summarisation (CBS), and web-augmented memory (WAM). All are assessed across three public datasets covering long-term multi-session dialogue (LoCoMo), task-oriented document grounding (MultiDoc2Dial), and persona-grounded multi-session chat (MSC), using Recall@k, MRR, nDCG@k, Answer F1, an LLM-judge Faithfulness score, Memory Footprint, and Latency over 491 annotated question turns. Generation and judging both use Qwen2.5-7B-Instruct (4-bit), with greedy decoding for determinism. Our results show that (1) EKV dominates on every quality axis (macro Recall@5 0.792, MRR 0.677, F1 0.156, Faithfulness 0.354); (2) long-range recall is decisive: on LoCoMo, where the gold turn lies many sessions back, ICW, WAM, GEM, and CBS retrieve almost nothing (Recall@5 <= 0.005) while EKV alone reaches 0.573, showing that recency windows, summaries, and entity graphs collapse at long horizons and only dense retrieval scales; (3) CBS is the runner-up on retrieval (0.556); (4) WAM equals ICW on in-corpus recall by construction, since external results carry no in-corpus provenance; and (5) EKV's recall advantage carries a footprint cost (~5,100 vs ~300 tokens for ICW/WAM), an explicit accuracy-efficiency trade-off. We additionally evaluate two published memory systems (MemGPT/Letta, HippoRAG) against the same harness, and release all code, environment, and result artefacts for full reproducibility.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Ahmed Cherif"
+    }
+  ],
+  "datePublished": "2026-06-16T08:27:18Z",
+  "dateModified": "2026-06-16T08:27:18Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.00009.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.00009.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.00009v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.00009"
+  },
+  "keywords": [
+    "Dialogue",
+    "Memory",
+    "Dialogue / customer",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Dialogue"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.00009v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.00009"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +85,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AgentMemBench: A Systematic Benchmark for Evaluating Long-Term Memory Management Strategies in Conversational AI Agents</h1>
+        <div class="meta">
+          Ahmed Cherif
+          · 2608.00009
+          · <time datetime="2026-06-16">2026-06-16</time>
+          · Dialogue
+        </div>
+        <div class="themes"><span class="chip">Memory</span><span class="chip">Dialogue / customer</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Long-term memory remains a critical bottleneck for conversational AI agents, whose finite context windows cannot support coherent recall across thousands of turns. We present AgentMemBench, a unified, reproducible benchmark evaluating five memory management strategies under identical conditions: in-context windowing (ICW), external key-value store (EKV), graph-based episodic memory (GEM), compression-based summarisation (CBS), and web-augmented memory (WAM). All are assessed across three public datasets covering long-term multi-session dialogue (LoCoMo), task-oriented document grounding (MultiDoc2Dial), and persona-grounded multi-session chat (MSC), using Recall@k, MRR, nDCG@k, Answer F1, an LLM-judge Faithfulness score, Memory Footprint, and Latency over 491 annotated question turns. Generation and judging both use Qwen2.5-7B-Instruct (4-bit), with greedy decoding for determinism. Our results show that (1) EKV dominates on every quality axis (macro Recall@5 0.792, MRR 0.677, F1 0.156, Faithfulness 0.354); (2) long-range recall is decisive: on LoCoMo, where the gold turn lies many sessions back, ICW, WAM, GEM, and CBS retrieve almost nothing (Recall@5 &lt;= 0.005) while EKV alone reaches 0.573, showing that recency windows, summaries, and entity graphs collapse at long horizons and only dense retrieval scales; (3) CBS is the runner-up on retrieval (0.556); (4) WAM equals ICW on in-corpus recall by construction, since external results carry no in-corpus provenance; and (5) EKV&#x27;s recall advantage carries a footprint cost (~5,100 vs ~300 tokens for ICW/WAM), an explicit accuracy-efficiency trade-off. We additionally evaluate two published memory systems (MemGPT/Letta, HippoRAG) against the same harness, and release all code, environment, and result artefacts for full reproducibility.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.00009v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.00009v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.00009" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Dialogue benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.06485.html"><strong>Do AI Personas Grow? Analyzing and Benchmarking Personality Evolution in LLM Agents After Life Events</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2608.03700.html"><strong>When Agents Learn to Be You: Benchmarking Privacy Leakage, Impersonation Risk, and Defenses in Persona Skills</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.18136.html"><strong>FraudBench: Stress-Testing Policy-Grounded Banking Agents Against Adaptive Fraud</strong></a> <span>2026-08-02</span></li>
+          <li><a href="2606.19595.html"><strong>IHBench: Evaluating Post-Interruption Recovery in Voice Agents with Structured Workflows</strong></a> <span>2026-06-17</span></li>
+          <li><a href="2606.14571.html"><strong>StreamMemBench: Streaming Evaluation of Agent Memory for Future-Oriented Assistance</strong></a> <span>2026-06-12</span></li>
+          <li><a href="2606.10156.html"><strong>$τ$-Rec: A Verifiable Benchmark for Agentic Recommender Systems</strong></a> <span>2026-06-08</span></li>
+          <li><a href="2606.02754.html"><strong>$Ψ$-Bench: Evaluating Persona-Sensitive Influencing in Persuasive Dialogues</strong></a> <span>2026-06-01</span></li>
+          <li><a href="2606.01498.html"><strong>TimeSage-MT: A Multi-Turn Benchmark for Evaluating Agentic Time Series Reasoning</strong></a> <span>2026-05-31</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

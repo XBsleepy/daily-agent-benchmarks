@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Foresight Arena: An On-Chain Benchmark for Evaluating AI Forecasting Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Evaluating the true forecasting ability of AI agents requires environments that are resistant to environments resistant to…" />
+    <meta name="keywords" content="General, Safety, Research agents, agent benchmark, LLM agent, arXiv, 2605.00420" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.00420.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Foresight Arena: An On-Chain Benchmark for Evaluating AI Forecasting Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Evaluating the true forecasting ability of AI agents requires environments that are resistant to environments resistant to…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.00420.html" />
+    <meta property="article:published_time" content="2026-05-01T05:33:10Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Foresight Arena: An On-Chain Benchmark for Evaluating AI Forecasting Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Evaluating the true forecasting ability of AI agents requires environments that are resistant to environments resistant to…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,57 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Foresight Arena: An On-Chain Benchmark for Evaluating AI Forecasting Agents",
+  "name": "Foresight Arena: An On-Chain Benchmark for Evaluating AI Forecasting Agents",
+  "abstract": "Evaluating the true forecasting ability of AI agents requires environments that are resistant to environments resistant to overfitting, free from centralized trust, and grounded in incentive-compatible scoring. Existing benchmarks either rely on static datasets vulnerable to training-data contamination, or measure trading PnL -- a metric conflating predictive accuracy with timing, sizing, and risk appetite. We introduce Foresight Arena, the first permissionless, on-chain benchmark for evaluating AI forecasting agents on real-world prediction markets. Agents submit probabilistic forecasts on binary Polymarket markets via a commit-reveal protocol enforced by Solidity smart contracts on Polygon PoS; outcomes are resolved trustlessly through the Gnosis Conditional Token Framework. Performance is measured by the Brier Score and a novel Alpha Score -- proper scoring rules that incentivize honest probability reporting and isolate predictive edge over market consensus. We provide a formal analysis: closed-form variance for per-market Alpha, the connection to Murphy's classical Brier decomposition, and a power analysis characterizing the number of rounds required to reliably distinguish agents of different skill levels. We show that detecting a true edge of $α^* = 0.02$ at 80% power requires approximately 350 resolved binary predictions (50 rounds of 7 markets), while $α^* = 0.01$ requires four times more. We complement these analytical results with a deterministic, seed-controlled simulation study calibrated to literature-reported Brier-score ranges, illustrating how Murphy decomposition distinguishes well-calibrated agents from market-tracking agents that fail through reduced resolution. Live results from the deployed benchmark will be reported in a future revision. All smart contracts and evaluation infrastructure are open-source.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Maksym Nechepurenko"
+    },
+    {
+      "@type": "Person",
+      "name": "Pavel Shuvalov"
+    }
+  ],
+  "datePublished": "2026-05-01T05:33:10Z",
+  "dateModified": "2026-05-04T07:21:37Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.00420.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.00420.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.00420v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.00420"
+  },
+  "keywords": [
+    "General",
+    "Safety",
+    "Research agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.00420v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.00420"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +89,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Foresight Arena: An On-Chain Benchmark for Evaluating AI Forecasting Agents</h1>
+        <div class="meta">
+          Maksym Nechepurenko, Pavel Shuvalov
+          · 2605.00420
+          · <time datetime="2026-05-01">2026-05-01</time>
+          · General · 3 citations
+        </div>
+        <div class="themes"><span class="chip">Safety</span><span class="chip">Research agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Evaluating the true forecasting ability of AI agents requires environments that are resistant to environments resistant to overfitting, free from centralized trust, and grounded in incentive-compatible scoring. Existing benchmarks either rely on static datasets vulnerable to training-data contamination, or measure trading PnL -- a metric conflating predictive accuracy with timing, sizing, and risk appetite. We introduce Foresight Arena, the first permissionless, on-chain benchmark for evaluating AI forecasting agents on real-world prediction markets. Agents submit probabilistic forecasts on binary Polymarket markets via a commit-reveal protocol enforced by Solidity smart contracts on Polygon PoS; outcomes are resolved trustlessly through the Gnosis Conditional Token Framework. Performance is measured by the Brier Score and a novel Alpha Score -- proper scoring rules that incentivize honest probability reporting and isolate predictive edge over market consensus. We provide a formal analysis: closed-form variance for per-market Alpha, the connection to Murphy&#x27;s classical Brier decomposition, and a power analysis characterizing the number of rounds required to reliably distinguish agents of different skill levels. We show that detecting a true edge of $α^* = 0.02$ at 80% power requires approximately 350 resolved binary predictions (50 rounds of 7 markets), while $α^* = 0.01$ requires four times more. We complement these analytical results with a deterministic, seed-controlled simulation study calibrated to literature-reported Brier-score ranges, illustrating how Murphy decomposition distinguishes well-calibrated agents from market-tracking agents that fail through reduced resolution. Live results from the deployed benchmark will be reported in a future revision. All smart contracts and evaluation infrastructure are open-source.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.00420v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.00420v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.00420" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.02503.html"><strong>DataClawBench: An Agent Benchmark for Exploratory Real-World Financial Data Analysis</strong></a> <span>2026-05-04</span></li>
+          <li><a href="2605.02240.html"><strong>PhysicianBench: Evaluating LLM Agents in Real-World EHR Environments</strong></a> <span>2026-05-04</span></li>
+          <li><a href="2605.01847.html"><strong>NeuroState-Bench: A Human-Calibrated Benchmark for Commitment Integrity in LLM Agent Profiles</strong></a> <span>2026-05-03</span></li>
+          <li><a href="2605.01394.html"><strong>LiveFMBench: Unveiling the Power and Limits of Agentic Workflows in Specification Generation</strong></a> <span>2026-05-02</span></li>
+          <li><a href="2604.28139.html"><strong>Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows</strong></a> <span>2026-04-30</span></li>
+          <li><a href="2604.28093.html"><strong>What Makes a Good Terminal-Agent Benchmark Task: A Guideline for Adversarial, Difficult, and Legible Evaluation Design</strong></a> <span>2026-04-30</span></li>
+          <li><a href="2604.26904.html"><strong>ClawGym: A Scalable Framework for Building Effective Claw Agents</strong></a> <span>2026-04-29</span></li>
+          <li><a href="2604.26235.html"><strong>LATTICE: Evaluating Decision Support Utility of Crypto Agents</strong></a> <span>2026-04-29</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

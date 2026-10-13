@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ComboShoppingBench: Evaluating LLM Agents for Budget-Constrained Basket Shopping with Coupons | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Real-world shopping often requires constructing a basket of complementary items rather than retrieving a single product. Such…" />
+    <meta name="keywords" content="General, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2608.09282" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.09282.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ComboShoppingBench: Evaluating LLM Agents for Budget-Constrained Basket Shopping with Coupons" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Real-world shopping often requires constructing a basket of complementary items rather than retrieving a single product. Such…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.09282.html" />
+    <meta property="article:published_time" content="2026-08-10T08:37:54Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ComboShoppingBench: Evaluating LLM Agents for Budget-Constrained Basket Shopping with Coupons" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Real-world shopping often requires constructing a basket of complementary items rather than retrieving a single product. Such…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,88 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ComboShoppingBench: Evaluating LLM Agents for Budget-Constrained Basket Shopping with Coupons",
+  "name": "ComboShoppingBench: Evaluating LLM Agents for Budget-Constrained Basket Shopping with Coupons",
+  "abstract": "Real-world shopping often requires constructing a basket of complementary items rather than retrieving a single product. Such combo-shopping tasks arise in device setup, meal preparation, event planning, and group takeout ordering, requiring joint reasoning about item compatibility, availability, store-level requirements, delivery fees, coupons, and budgets. Evaluation is challenging because multiple baskets may satisfy the same request, making exact-match metrics unsuitable, whereas semantic evaluation alone cannot detect infeasible orders, invalid coupon combinations, or incorrect payments. We introduce ComboShoppingBench, an agentic shopping benchmark for open-ended yet verifiable basket construction in a simulated commerce and takeout environment. During task synthesis, an exploration agent constructs a feasible and semantically coherent basket of purchasable products; this witness guides the generation of coupons, budget constraints, user queries, and aligned evaluation rubrics. During evaluation, LLM judges assess semantic satisfaction, response quality, and claim faithfulness, while deterministic validation checks product-ID validity, budget compliance, and coupon optimality. Experiments with diverse LLM agents demonstrate that even strong agents struggle on ComboShoppingBench, highlighting substantial room for improvement in reliable, constraint-aware combo shopping.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Adrian Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Kelong Mao"
+    },
+    {
+      "@type": "Person",
+      "name": "Yudong Guo"
+    },
+    {
+      "@type": "Person",
+      "name": "Heming Xia"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinwei Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Lirui Luo"
+    },
+    {
+      "@type": "Person",
+      "name": "Jace Wong"
+    },
+    {
+      "@type": "Person",
+      "name": "Pu Yao"
+    },
+    {
+      "@type": "Person",
+      "name": "Sulong Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Simiu Gu"
+    }
+  ],
+  "datePublished": "2026-08-10T08:37:54Z",
+  "dateModified": "2026-08-10T08:37:54Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.09282.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.09282.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.09282v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.09282"
+  },
+  "keywords": [
+    "General",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.09282v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.09282"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +120,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ComboShoppingBench: Evaluating LLM Agents for Budget-Constrained Basket Shopping with Coupons</h1>
+        <div class="meta">
+          Adrian Li, Kelong Mao, Yudong Guo, Heming Xia, Xinwei Yang, Lirui Luo, Jace Wong, Pu Yao, Sulong Xu, Simiu Gu
+          · 2608.09282
+          · <time datetime="2026-08-10">2026-08-10</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Real-world shopping often requires constructing a basket of complementary items rather than retrieving a single product. Such combo-shopping tasks arise in device setup, meal preparation, event planning, and group takeout ordering, requiring joint reasoning about item compatibility, availability, store-level requirements, delivery fees, coupons, and budgets. Evaluation is challenging because multiple baskets may satisfy the same request, making exact-match metrics unsuitable, whereas semantic evaluation alone cannot detect infeasible orders, invalid coupon combinations, or incorrect payments. We introduce ComboShoppingBench, an agentic shopping benchmark for open-ended yet verifiable basket construction in a simulated commerce and takeout environment. During task synthesis, an exploration agent constructs a feasible and semantically coherent basket of purchasable products; this witness guides the generation of coupons, budget constraints, user queries, and aligned evaluation rubrics. During evaluation, LLM judges assess semantic satisfaction, response quality, and claim faithfulness, while deterministic validation checks product-ID validity, budget compliance, and coupon optimality. Experiments with diverse LLM agents demonstrate that even strong agents struggle on ComboShoppingBench, highlighting substantial room for improvement in reliable, constraint-aware combo shopping.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.09282v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.09282v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.09282" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.11679.html"><strong>AgenticTwin: An Agentic LLM Framework Integrated with Digital Twin for Anomaly Detection</strong></a> <span>2026-08-12</span></li>
+          <li><a href="2608.10875.html"><strong>VibeLifeBench: Can Your Life Agent Be Proactive and Persistent in a Living World?</strong></a> <span>2026-08-11</span></li>
+          <li><a href="2608.10669.html"><strong>REDAgentBench: Executable Red Teaming and Faithful Measurement of LLM Agent Systems</strong></a> <span>2026-08-11</span></li>
+          <li><a href="2608.10366.html"><strong>DSAgentBench: Can Agents Automate End-to-End Data-Science Workflows in Real Computer Environments?</strong></a> <span>2026-08-11</span></li>
+          <li><a href="2608.08621.html"><strong>Business Arena: Benchmarking LLM Agents in a Realistic Marketplace</strong></a> <span>2026-08-09</span></li>
+          <li><a href="2608.08277.html"><strong>WirelessOpsAgent: A Benchmark and Agent Design for Action Assurance in Wireless Networks</strong></a> <span>2026-08-08</span></li>
+          <li><a href="2608.08160.html"><strong>Can LLM Agents Stick to the Script? A Benchmark for Long-Horizon Consistency in Interactive Narratives</strong></a> <span>2026-08-08</span></li>
+          <li><a href="2608.07899.html"><strong>TelemetrySuffBench: Is Agent Telemetry Sufficient for Failure-Origin Diagnosis?</strong></a> <span>2026-08-08</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

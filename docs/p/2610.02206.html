@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLMs are increasingly applied to cybersecurity workflows, where they are expected to translate analysts&#x27; intent into tool…" />
+    <meta name="keywords" content="Tool use, agent benchmark, LLM agent, arXiv, 2610.02206" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.02206.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLMs are increasingly applied to cybersecurity workflows, where they are expected to translate analysts&#x27; intent into tool…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.02206.html" />
+    <meta property="article:published_time" content="2026-10-02T04:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLMs are increasingly applied to cybersecurity workflows, where they are expected to translate analysts&#x27; intent into tool…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,51 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewa",
+  "name": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
+  "abstract": "LLMs are increasingly applied to cybersecurity workflows, where they are expected to translate analysts' intent into tool invocations. However, existing evaluations focus on knowledge-based assessments or end-to-end agentic tasks, and do not directly measure LLMs' ability to generate executable commands for real-world cybersecurity tools. This gap is critical because cybersecurity operations rely on strict command-line interfaces (CLIs), where minor syntax errors, incorrect flag--value bindings, or argument misordering can invalidate execution. We introduce KaliBench, a fine-grained benchmark and dataset for natural-language--to--CLI translation on Kali Linux, comprising 8,504 query--command pairs spanning 1,642 tools across 23 capability dimensions and 5 security phases. KaliBench is constructed via a manuscript-grounded pipeline with deterministic canonicalization and alias-aware evaluation, enabling precise and reproducible assessment of tool selection and argument construction. To ensure both semantic correctness and practical executability, we develop a multi-stage verification pipeline that combines LLM-based validation, sandboxed terminal execution, and human-in-the-loop refinement. Building on these fine-grained, deterministic signals, KaliBench further enables runtime-free verifiable rewards for training. Across three evaluation modes and 24 configurations of general-purpose and security-focused open-weight models, no open-weight model exceeds 42% exact-command accuracy in the unrestricted setting, highlighting the difficulty of accurate CLI-based cybersecurity tool use without explicit tool hints. We further show that supervised fine-tuning and reinforcement learning with verifiable rewards derived from KaliBench significantly improve an 8B model and achieve performance comparable to a 685B MoE model.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Pengfei Li, Naufal Suryanto, Sicheng Zhang, Muzammal Naseer"
+    }
+  ],
+  "datePublished": "2026-10-02T04:00:00Z",
+  "dateModified": "2026-10-02T04:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.02206.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.02206.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.02206"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.02206"
+  },
+  "keywords": [
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.02206"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2610.02206"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +83,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards</h1>
+        <div class="meta">
+          Pengfei Li, Naufal Suryanto, Sicheng Zhang, Muzammal Naseer
+          · 2610.02206
+          · <time datetime="2026-10-02">2026-10-02</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLMs are increasingly applied to cybersecurity workflows, where they are expected to translate analysts&#x27; intent into tool invocations. However, existing evaluations focus on knowledge-based assessments or end-to-end agentic tasks, and do not directly measure LLMs&#x27; ability to generate executable commands for real-world cybersecurity tools. This gap is critical because cybersecurity operations rely on strict command-line interfaces (CLIs), where minor syntax errors, incorrect flag--value bindings, or argument misordering can invalidate execution. We introduce KaliBench, a fine-grained benchmark and dataset for natural-language--to--CLI translation on Kali Linux, comprising 8,504 query--command pairs spanning 1,642 tools across 23 capability dimensions and 5 security phases. KaliBench is constructed via a manuscript-grounded pipeline with deterministic canonicalization and alias-aware evaluation, enabling precise and reproducible assessment of tool selection and argument construction. To ensure both semantic correctness and practical executability, we develop a multi-stage verification pipeline that combines LLM-based validation, sandboxed terminal execution, and human-in-the-loop refinement. Building on these fine-grained, deterministic signals, KaliBench further enables runtime-free verifiable rewards for training. Across three evaluation modes and 24 configurations of general-purpose and security-focused open-weight models, no open-weight model exceeds 42% exact-command accuracy in the unrestricted setting, highlighting the difficulty of accurate CLI-based cybersecurity tool use without explicit tool hints. We further show that supervised fine-tuning and reinforcement learning with verifiable rewards derived from KaliBench significantly improve an 8B model and achieve performance comparable to a 685B MoE model.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.02206" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.02206" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.02206" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.05532.html"><strong>DelegationBench: Measuring When AI Agents Should Ask Before Acting</strong></a> <span>2026-10-04</span></li>
+          <li><a href="2610.04292.html"><strong>LMBuild: Evaluating LLM Agents for Generating Buildable and Functional Structures</strong></a> <span>2026-10-03</span></li>
+          <li><a href="2610.03356.html"><strong>ReFract: Benchmarking Perspective Awareness in Language Model Agents with Text World Models</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.03226.html"><strong>D2K-Bench: Can LLM Agents Turn Expert Designs into Efficient GPU Kernels?</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.02089.html"><strong>HumanoidToolBench: Benchmarking Humanoid Tool Use from Selection to Mobile Execution</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.02563.html"><strong>OpenGameEval: Benchmarking Agentic Programming and Exploration in a Stateful Game Engine</strong></a> <span>2026-10-01</span></li>
+          <li><a href="2609.38652.html"><strong>AgBench: Agentic AI Benchmarks for Personal AI Devices</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.38512.html"><strong>VAmoS Part Deux: Harder, More Realistic Voice-Agent Simulation</strong></a> <span>2026-09-29</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

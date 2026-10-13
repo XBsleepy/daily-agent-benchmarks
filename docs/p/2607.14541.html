@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Are LLM-Generated GPU Kernels Production-Ready? A Trace-Driven Benchmark and Optimization Agent | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Existing GPU kernel generation benchmarks draw problems from synthetic or curated sources that diverge from deployed workloads. We…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Memory, agent benchmark, LLM agent, arXiv, 2607.14541" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.14541.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Are LLM-Generated GPU Kernels Production-Ready? A Trace-Driven Benchmark and Optimization Agent" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Existing GPU kernel generation benchmarks draw problems from synthetic or curated sources that diverge from deployed workloads. We…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.14541.html" />
+    <meta property="article:published_time" content="2026-07-16T03:49:50Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Are LLM-Generated GPU Kernels Production-Ready? A Trace-Driven Benchmark and Optimization Agent" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Existing GPU kernel generation benchmarks draw problems from synthetic or curated sources that diverge from deployed workloads. We…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,93 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Are LLM-Generated GPU Kernels Production-Ready? A Trace-Driven Benchmark and Optimization Agent",
+  "name": "Are LLM-Generated GPU Kernels Production-Ready? A Trace-Driven Benchmark and Optimization Agent",
+  "abstract": "Existing GPU kernel generation benchmarks draw problems from synthetic or curated sources that diverge from deployed workloads. We present Atrex-Bench, a benchmark whose 30 operators and 440 shapes are sampled directly from full-cluster production inference traces of compute-limited, memory-rich GPUs. Each problem carries an importance weight derived from its share of observed GPU time, weighted by application card-hours and computed separately for the serving phases in which it runs, together with a per-problem roofline ceiling, so the aggregate score emphasizes the kernels that consume the most serving time. Evaluating six frontier coding agents on Atrex-Bench shows that even the best vanilla model reaches only ${\\sim}10\\%$ of the hardware roofline on production operators; and correctness alone overstates capability, since much of the apparent pass rate comes from PyTorch fallbacks rather than kernels the model wrote. To close this gap, we co-release Atrex-Kernel-Agent (AKA), a profile-driven kernel-optimization agent that combines iterative measure-revise search, optimization dropout for escaping stalled search contexts, and a layered GPU-optimization knowledge base (298 reference-kernel files and 244 optimization-knowledge documents, plus external upstream reference projects for API/ISA lookup). In a controlled case study, the agent converts zero-FlyDSL fallbacks into real kernels that match or exceed hand-tuned production baselines.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Lingyun Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuxiao Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Shenghao Liang"
+    },
+    {
+      "@type": "Person",
+      "name": "Linfeng Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Daocheng Ying"
+    },
+    {
+      "@type": "Person",
+      "name": "Chunbo You"
+    },
+    {
+      "@type": "Person",
+      "name": "Rui Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Luping Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yinghao Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Guodong Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Liping Zhang"
+    }
+  ],
+  "datePublished": "2026-07-16T03:49:50Z",
+  "dateModified": "2026-07-16T03:49:50Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.14541.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.14541.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.14541v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.14541"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.14541v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.14541"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +125,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Are LLM-Generated GPU Kernels Production-Ready? A Trace-Driven Benchmark and Optimization Agent</h1>
+        <div class="meta">
+          Lingyun Yang, Yuxiao Wang, Shenghao Liang, Linfeng Yang, Daocheng Ying, Chunbo You, Rui Zhang, Luping Wang, Yinghao Yu, Guodong Yang, Liping Zhang
+          · 2607.14541
+          · <time datetime="2026-07-16">2026-07-16</time>
+          · Coding / SWE · 2 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Existing GPU kernel generation benchmarks draw problems from synthetic or curated sources that diverge from deployed workloads. We present Atrex-Bench, a benchmark whose 30 operators and 440 shapes are sampled directly from full-cluster production inference traces of compute-limited, memory-rich GPUs. Each problem carries an importance weight derived from its share of observed GPU time, weighted by application card-hours and computed separately for the serving phases in which it runs, together with a per-problem roofline ceiling, so the aggregate score emphasizes the kernels that consume the most serving time. Evaluating six frontier coding agents on Atrex-Bench shows that even the best vanilla model reaches only ${\sim}10\%$ of the hardware roofline on production operators; and correctness alone overstates capability, since much of the apparent pass rate comes from PyTorch fallbacks rather than kernels the model wrote. To close this gap, we co-release Atrex-Kernel-Agent (AKA), a profile-driven kernel-optimization agent that combines iterative measure-revise search, optimization dropout for escaping stalled search contexts, and a layered GPU-optimization knowledge base (298 reference-kernel files and 244 optimization-knowledge documents, plus external upstream reference projects for API/ISA lookup). In a controlled case study, the agent converts zero-FlyDSL fallbacks into real kernels that match or exceed hand-tuned production baselines.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.14541v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.14541v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.14541" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.20759.html"><strong>IssueTrojanBench: Benchmarking AI Coding Agents Against Malicious Issue Requests</strong></a> <span>2026-07-22</span></li>
+          <li><a href="2607.17528.html"><strong>Can AI Agents Really Complete RTL-to-GDS? Lessons from Benchmarking Tool-Interactive EDA Workflows</strong></a> <span>2026-07-20</span></li>
+          <li><a href="2607.16632.html"><strong>CLOSER-Bench: Evaluating Budgeted Cross-Stage Design Closure for Hardware Agents</strong></a> <span>2026-07-18</span></li>
+          <li><a href="2607.14573.html"><strong>Alipay-PIBench: A Realistic Payment Integration Benchmark for Coding Agents</strong></a> <span>2026-07-16</span></li>
+          <li><a href="2607.12338.html"><strong>How Many Tasks Are Enough for Agent Benchmark Decisions? A Replay Analysis of Public LLM Agent Benchmarks</strong></a> <span>2026-07-14</span></li>
+          <li><a href="2607.11042.html"><strong>BackendForge: Benchmarking Agentic End-to-End Code Generation with Backend Services</strong></a> <span>2026-07-13</span></li>
+          <li><a href="2607.10789.html"><strong>Imaging-101: Benchmarking LLM Coding Agents on Scientific Computational Imaging</strong></a> <span>2026-07-12</span></li>
+          <li><a href="2607.08964.html"><strong>Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading</strong></a> <span>2026-07-09</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

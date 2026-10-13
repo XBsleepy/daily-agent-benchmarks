@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses? | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Dynamic agent harnesses let language models change the software that shapes their own execution. This flexibility brings a new…" />
+    <meta name="keywords" content="General, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2609.01600" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.01600.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Dynamic agent harnesses let language models change the software that shapes their own execution. This flexibility brings a new…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.01600.html" />
+    <meta property="article:published_time" content="2026-09-01T17:59:13Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Dynamic agent harnesses let language models change the software that shapes their own execution. This flexibility brings a new…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,56 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?",
+  "name": "CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?",
+  "abstract": "Dynamic agent harnesses let language models change the software that shapes their own execution. This flexibility brings a new reasoning burden: a local plugin change can propagate through dependencies and cleanup. We introduce CordisBench, a 1,200-question benchmark of this lifecycle reasoning. It combines a controlled formal setting with programs executed against Cordis, a runtime that manages component dependencies and cleanup, and asks models to identify affected components, predict state after a specified teardown order, determine which conditions hold under all or some orders, and choose reconfigurations that succeed when executed. Across these tasks, we evaluate three efficiency-oriented models at low reasoning effort with 2, 4, 8, 16, 24, or 32 relevant interactions, using deterministic task-specific scoring. Models usually handle small systems well but grow less reliable as more interactions become relevant, especially when predicting final state and when reasoning across teardown orders. Additional inference effort recovers marked gains for some models. The cost is nontrivial: on our 16-interaction subset, GPT-5.6 Luna uses nearly 3,000 reasoning tokens per question at medium effort. For these controlled instances, that cost is avoidable: an independent finite reference semantics agrees with Cordis execution on every observation and action outcome used for scoring across all 528 executable questions.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Damien Sileo"
+    },
+    {
+      "@type": "Person",
+      "name": "Dimitri Kachler"
+    }
+  ],
+  "datePublished": "2026-09-01T17:59:13Z",
+  "dateModified": "2026-09-01T17:59:13Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.01600.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.01600.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.01600v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.01600"
+  },
+  "keywords": [
+    "General",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.01600v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.01600"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +88,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?</h1>
+        <div class="meta">
+          Damien Sileo, Dimitri Kachler
+          · 2609.01600
+          · <time datetime="2026-09-01">2026-09-01</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Dynamic agent harnesses let language models change the software that shapes their own execution. This flexibility brings a new reasoning burden: a local plugin change can propagate through dependencies and cleanup. We introduce CordisBench, a 1,200-question benchmark of this lifecycle reasoning. It combines a controlled formal setting with programs executed against Cordis, a runtime that manages component dependencies and cleanup, and asks models to identify affected components, predict state after a specified teardown order, determine which conditions hold under all or some orders, and choose reconfigurations that succeed when executed. Across these tasks, we evaluate three efficiency-oriented models at low reasoning effort with 2, 4, 8, 16, 24, or 32 relevant interactions, using deterministic task-specific scoring. Models usually handle small systems well but grow less reliable as more interactions become relevant, especially when predicting final state and when reasoning across teardown orders. Additional inference effort recovers marked gains for some models. The cost is nontrivial: on our 16-interaction subset, GPT-5.6 Luna uses nearly 3,000 reasoning tokens per question at medium effort. For these controlled instances, that cost is avoidable: an independent finite reference semantics agrees with Cordis execution on every observation and action outcome used for scoring across all 528 executable questions.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.01600v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.01600v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.01600" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.08040.html"><strong>VEX-Bench: Benchmarking LLM Agents for Assessing Exploitability of Software Supply Chain Vulnerabilities</strong></a> <span>2026-09-07</span></li>
+          <li><a href="2609.06027.html"><strong>Evaluating Deep-Search Agents under Hierarchical Web Evidence Poisoning</strong></a> <span>2026-09-05</span></li>
+          <li><a href="2609.04706.html"><strong>FinalityBench: An Effect-Level Benchmark for Agent Decisions Under Delayed and Conflicting Financial Finality</strong></a> <span>2026-09-04</span></li>
+          <li><a href="2609.04641.html"><strong>A Cost-Aware Agentic Architecture for NL-to-SQL over Nested Enterprise Schemas, with a New Benchmark</strong></a> <span>2026-09-04</span></li>
+          <li><a href="2609.01056.html"><strong>WorldBench: Culturally Grounded Benchmark for Multilingual Agents</strong></a> <span>2026-09-01</span></li>
+          <li><a href="2609.00296.html"><strong>Toward Workflow-Aware Benchmarking for Healthcare NLP Agents</strong></a> <span>2026-08-31</span></li>
+          <li><a href="2608.30730.html"><strong>E-Commerce Bench: Evaluating LLM Agents on Long-Horizon Autonomous Business Operation</strong></a> <span>2026-08-31</span></li>
+          <li><a href="2608.28182.html"><strong>Benchmarking large language model agent societies against human behavioural distributions</strong></a> <span>2026-08-28</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

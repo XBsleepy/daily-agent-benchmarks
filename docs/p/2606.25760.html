@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Uncertainty Quantification for Computer-Use Agents: A Benchmark across Vision-Language Models and GUI Grounding Datasets | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Computer-use agents turn vision-language model (VLM) predictions into executable GUI clicks, so reliable uncertainty estimates are…" />
+    <meta name="keywords" content="GUI / computer use, GUI agents, Computer use, Safety, Multimodal, agent benchmark, LLM agent, arXiv, 2606.25760" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.25760.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Uncertainty Quantification for Computer-Use Agents: A Benchmark across Vision-Language Models and GUI Grounding Datasets" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Computer-use agents turn vision-language model (VLM) predictions into executable GUI clicks, so reliable uncertainty estimates are…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.25760.html" />
+    <meta property="article:published_time" content="2026-06-24T12:34:28Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Uncertainty Quantification for Computer-Use Agents: A Benchmark across Vision-Language Models and GUI Grounding Datasets" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Computer-use agents turn vision-language model (VLM) predictions into executable GUI clicks, so reliable uncertainty estimates are…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,83 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Uncertainty Quantification for Computer-Use Agents: A Benchmark across Vision-Language Models and GUI Groundin",
+  "name": "Uncertainty Quantification for Computer-Use Agents: A Benchmark across Vision-Language Models and GUI Grounding Datasets",
+  "abstract": "Computer-use agents turn vision-language model (VLM) predictions into executable GUI clicks, so reliable uncertainty estimates are essential for rejection, calibration, miss-severity ranking, and spatial safety regions. Yet evidence on post-hoc uncertainty quantification (UQ) for these agents is fragmented across isolated model and dataset pairs, leaving it unclear whether UQ rankings stay stable when the agent, benchmark, or observable interface changes. We present Argus, a cross-regime benchmark for post-hoc UQ in single-step executable GUI grounding: a 27-method open-weight matrix over 4 VLM agents and 4 datasets, plus an 8-method closed-source matrix across 3 frontier vendors where logits, hidden states, and attention maps are unavailable. Evaluated methods span logit-based scores, sampling and consistency measures, hidden-state and density estimators (Mahalanobis, SAPLMA), attention-based scores, P(True) and verbalised-confidence prompting, and split-conformal prediction. The main finding is selective transfer: UQ rankings are stable across datasets for a fixed model, but degrade across model classes and observable interfaces. Hidden-state and density methods are the most stable open-weight family, while CoCoA-1MCA, Focus, sampling-based scores, and verbalised self-assessment win in specific regimes. Within-model ranking transfer is strong (Spearman rho up to 0.969), but cross-tier transfer to closed-source vendors averages only +0.08, so closed-source UQ should be reranked on the target rather than extrapolated. Conformal click regions show score-level discrimination is not enough for deployment: locally weighted disks shrink radii by 40-60% when the plug-in UQ is calibrated, but coverage degrades under calibration-test or interface mismatch. We release per-item records, calibration/test splits, UQ scores, and analysis scripts for regime-aware UQ selection in GUI agents.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Divake Kumar"
+    },
+    {
+      "@type": "Person",
+      "name": "Sina Tayebati"
+    },
+    {
+      "@type": "Person",
+      "name": "Devashri Naik"
+    },
+    {
+      "@type": "Person",
+      "name": "Amanda Sofie Rios"
+    },
+    {
+      "@type": "Person",
+      "name": "Nilesh Ahuja"
+    },
+    {
+      "@type": "Person",
+      "name": "Omesh Tickoo"
+    },
+    {
+      "@type": "Person",
+      "name": "Ranganath Krishnan"
+    },
+    {
+      "@type": "Person",
+      "name": "Amit Ranjan Trivedi"
+    }
+  ],
+  "datePublished": "2026-06-24T12:34:28Z",
+  "dateModified": "2026-06-24T12:34:28Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.25760.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.25760.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.25760v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.25760"
+  },
+  "keywords": [
+    "GUI / computer use",
+    "GUI agents",
+    "Computer use",
+    "Safety",
+    "Multimodal",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "GUI / computer use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.25760v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.25760"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +115,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Uncertainty Quantification for Computer-Use Agents: A Benchmark across Vision-Language Models and GUI Grounding Datasets</h1>
+        <div class="meta">
+          Divake Kumar, Sina Tayebati, Devashri Naik, Amanda Sofie Rios, Nilesh Ahuja, Omesh Tickoo, Ranganath Krishnan, Amit Ranjan Trivedi
+          · 2606.25760
+          · <time datetime="2026-06-24">2026-06-24</time>
+          · GUI / computer use
+        </div>
+        <div class="themes"><span class="chip">GUI agents</span><span class="chip">Computer use</span><span class="chip">Safety</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Computer-use agents turn vision-language model (VLM) predictions into executable GUI clicks, so reliable uncertainty estimates are essential for rejection, calibration, miss-severity ranking, and spatial safety regions. Yet evidence on post-hoc uncertainty quantification (UQ) for these agents is fragmented across isolated model and dataset pairs, leaving it unclear whether UQ rankings stay stable when the agent, benchmark, or observable interface changes. We present Argus, a cross-regime benchmark for post-hoc UQ in single-step executable GUI grounding: a 27-method open-weight matrix over 4 VLM agents and 4 datasets, plus an 8-method closed-source matrix across 3 frontier vendors where logits, hidden states, and attention maps are unavailable. Evaluated methods span logit-based scores, sampling and consistency measures, hidden-state and density estimators (Mahalanobis, SAPLMA), attention-based scores, P(True) and verbalised-confidence prompting, and split-conformal prediction. The main finding is selective transfer: UQ rankings are stable across datasets for a fixed model, but degrade across model classes and observable interfaces. Hidden-state and density methods are the most stable open-weight family, while CoCoA-1MCA, Focus, sampling-based scores, and verbalised self-assessment win in specific regimes. Within-model ranking transfer is strong (Spearman rho up to 0.969), but cross-tier transfer to closed-source vendors averages only +0.08, so closed-source UQ should be reranked on the target rather than extrapolated. Conformal click regions show score-level discrimination is not enough for deployment: locally weighted disks shrink radii by 40-60% when the plug-in UQ is calibrated, but coverage degrades under calibration-test or interface mismatch. We release per-item records, calibration/test splits, UQ scores, and analysis scripts for regime-aware UQ selection in GUI agents.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.25760v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.25760v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.25760" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More GUI / computer use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.05363.html"><strong>SovereignPA-Bench: Evaluating User-Owned Personal Agents under Evolving Intent, Platform Mediation, and Consent Constraints</strong></a> <span>2026-07-06</span></li>
+          <li><a href="2606.31154.html"><strong>PPT-Eval: A Benchmark for Computer-Use Agents on PowerPoint Tasks</strong></a> <span>2026-06-30</span></li>
+          <li><a href="2606.29445.html"><strong>Bridging VideoQA and Video-Guided Agentic Tasks via Generalized Keyframe Extraction</strong></a> <span>2026-06-28</span></li>
+          <li><a href="2606.28480.html"><strong>TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents</strong></a> <span>2026-06-26</span></li>
+          <li><a href="2606.22557.html"><strong>MacAgentBench: Benchmarking AI Agents on Real-World macOS Desktop</strong></a> <span>2026-06-21</span></li>
+          <li><a href="2606.16802.html"><strong>LabOSBench: Benchmarking Computer Use Agents for Scientific Instrument Control</strong></a> <span>2026-06-15</span></li>
+          <li><a href="2606.16748.html"><strong>MyPCBench: A Benchmark for Personally Intelligent Computer-Use Agents</strong></a> <span>2026-06-15</span></li>
+          <li><a href="2606.15034.html"><strong>OSGuard: A Benchmark for Safety in Computer-Use Agents</strong></a> <span>2026-06-13</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Ko-WideSearch: A Korean Breadth-Search Benchmark for Exhaustive Set Enumeration by Web Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Web-agent benchmarks overwhelmingly measure depth -- pinning one obscure answer behind a chain of constraints -- while breadth…" />
+    <meta name="keywords" content="Web &amp; browser, Web agents, agent benchmark, LLM agent, arXiv, 2606.27595" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.27595.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Ko-WideSearch: A Korean Breadth-Search Benchmark for Exhaustive Set Enumeration by Web Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Web-agent benchmarks overwhelmingly measure depth -- pinning one obscure answer behind a chain of constraints -- while breadth…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.27595.html" />
+    <meta property="article:published_time" content="2026-06-25T22:51:59Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Ko-WideSearch: A Korean Breadth-Search Benchmark for Exhaustive Set Enumeration by Web Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Web-agent benchmarks overwhelmingly measure depth -- pinning one obscure answer behind a chain of constraints -- while breadth…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,52 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Ko-WideSearch: A Korean Breadth-Search Benchmark for Exhaustive Set Enumeration by Web Agents",
+  "name": "Ko-WideSearch: A Korean Breadth-Search Benchmark for Exhaustive Set Enumeration by Web Agents",
+  "abstract": "Web-agent benchmarks overwhelmingly measure depth -- pinning one obscure answer behind a chain of constraints -- while breadth, exhaustively enumerating a closed set and filling each item's attributes, is barely evaluated, especially outside English. Breadth is also hard to build: certifying that a gold set is complete and every cell correct is far costlier than checking a single answer. I introduce \\textsc{Ko-WideSearch}, a Korean breadth-search benchmark built by an automated synthesize-and-verify pipeline. Each task names a set-parent entity -- a TV season, a dynasty, a league, an administrative region, an election -- and asks for its full membership plus a per-item attribute table, graded by Item-, Column-, and Row-F1. It spans 228 tables over 190 entities and sixteen categories across three difficulty tiers, set by two structural knobs I dial independently -- table width and a 2-D composite key -- so cross-product membership climbs from 0\\% to 100\\% across the tiers. A single normalization-aware comparator is shared between gold construction and grading, so stable date and count columns are not over-dropped on formatting alone. Across twenty web agents, the failure is consistent: agents recover the set but not the rows (e.g.\\ Item-F1 92.8 against Row-F1 53.7), accuracy falls steadily as the knobs harden, and neither more search nor more spend closes the gap. Broken down by cell, the hard part is finding the right value, not formatting it: open-ended free-text cells fail most, while cells with a standard answer such as a date or a name usually come out right.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Minbyul Jeong"
+    }
+  ],
+  "datePublished": "2026-06-25T22:51:59Z",
+  "dateModified": "2026-06-25T22:51:59Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.27595.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.27595.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.27595v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.27595"
+  },
+  "keywords": [
+    "Web & browser",
+    "Web agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Web & browser"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.27595v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.27595"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +84,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Ko-WideSearch: A Korean Breadth-Search Benchmark for Exhaustive Set Enumeration by Web Agents</h1>
+        <div class="meta">
+          Minbyul Jeong
+          · 2606.27595
+          · <time datetime="2026-06-25">2026-06-25</time>
+          · Web &amp; browser
+        </div>
+        <div class="themes"><span class="chip">Web agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Web-agent benchmarks overwhelmingly measure depth -- pinning one obscure answer behind a chain of constraints -- while breadth, exhaustively enumerating a closed set and filling each item&#x27;s attributes, is barely evaluated, especially outside English. Breadth is also hard to build: certifying that a gold set is complete and every cell correct is far costlier than checking a single answer. I introduce \textsc{Ko-WideSearch}, a Korean breadth-search benchmark built by an automated synthesize-and-verify pipeline. Each task names a set-parent entity -- a TV season, a dynasty, a league, an administrative region, an election -- and asks for its full membership plus a per-item attribute table, graded by Item-, Column-, and Row-F1. It spans 228 tables over 190 entities and sixteen categories across three difficulty tiers, set by two structural knobs I dial independently -- table width and a 2-D composite key -- so cross-product membership climbs from 0\% to 100\% across the tiers. A single normalization-aware comparator is shared between gold construction and grading, so stable date and count columns are not over-dropped on formatting alone. Across twenty web agents, the failure is consistent: agents recover the set but not the rows (e.g.\ Item-F1 92.8 against Row-F1 53.7), accuracy falls steadily as the knobs harden, and neither more search nor more spend closes the gap. Broken down by cell, the hard part is finding the right value, not formatting it: open-ended free-text cells fail most, while cells with a standard answer such as a date or a name usually come out right.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.27595v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.27595v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.27595" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Web &amp; browser benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.00081.html"><strong>Framework and Benchmark for Code-Driven Agentic Testing in Web Development</strong></a> <span>2026-08-31</span></li>
+          <li><a href="2608.08392.html"><strong>CAP: A Scalable Benchmark for Evaluating Cross-Site Browser Agents with Complex Actions and Perception</strong></a> <span>2026-08-09</span></li>
+          <li><a href="2607.06118.html"><strong>WebRetriever: A Large-Scale Comprehensive Benchmark for Efficient Web Agent Evaluation</strong></a> <span>2026-07-07</span></li>
+          <li><a href="2606.29193.html"><strong>A Multi-Dataset Benchmark for Evaluating LLM Agents in Microservice Failure Diagnosis</strong></a> <span>2026-06-28</span></li>
+          <li><a href="2606.22000.html"><strong>CFAgentBench: A Reproducible Environment and Benchmark for Autonomous Construction-Finance Agents</strong></a> <span>2026-06-20</span></li>
+          <li><a href="2606.16659.html"><strong>FraudSMSWalker: Benchmarking Agentic Large Language Models for SMS-to-Webpage Fraud Detection</strong></a> <span>2026-06-15</span></li>
+          <li><a href="2606.14027.html"><strong>Same-Origin Policy for Agentic Browsers</strong></a> <span>2026-06-12</span></li>
+          <li><a href="2606.13385.html"><strong>Who Pays the Price? Stakeholder-Centric Prompt Injection Benchmarking for Real-world Web Agents</strong></a> <span>2026-06-11</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

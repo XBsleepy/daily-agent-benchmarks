@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Project Ariadne: A Structural Causal Framework for Auditing Faithfulness in LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: As Large Language Model (LLM) agents are increasingly tasked with high-stakes autonomous decision-making, the transparency of their…" />
+    <meta name="keywords" content="General, Safety, Planning / reasoning, Science lab, agent benchmark, LLM agent, arXiv, 2601.02314" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.02314.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Project Ariadne: A Structural Causal Framework for Auditing Faithfulness in LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: As Large Language Model (LLM) agents are increasingly tasked with high-stakes autonomous decision-making, the transparency of their…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.02314.html" />
+    <meta property="article:published_time" content="2026-01-05T18:05:29Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Project Ariadne: A Structural Causal Framework for Auditing Faithfulness in LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: As Large Language Model (LLM) agents are increasingly tasked with high-stakes autonomous decision-making, the transparency of their…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,54 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Project Ariadne: A Structural Causal Framework for Auditing Faithfulness in LLM Agents",
+  "name": "Project Ariadne: A Structural Causal Framework for Auditing Faithfulness in LLM Agents",
+  "abstract": "As Large Language Model (LLM) agents are increasingly tasked with high-stakes autonomous decision-making, the transparency of their reasoning processes has become a critical safety concern. While \\textit{Chain-of-Thought} (CoT) prompting allows agents to generate human-readable reasoning traces, it remains unclear whether these traces are \\textbf{faithful} generative drivers of the model's output or merely \\textbf{post-hoc rationalizations}. We introduce \\textbf{Project Ariadne}, a novel XAI framework that utilizes Structural Causal Models (SCMs) and counterfactual logic to audit the causal integrity of agentic reasoning. Unlike existing interpretability methods that rely on surface-level textual similarity, Project Ariadne performs \\textbf{hard interventions} ($do$-calculus) on intermediate reasoning nodes -- systematically inverting logic, negating premises, and reversing factual claims -- to measure the \\textbf{Causal Sensitivity} ($φ$) of the terminal answer. Our empirical evaluation of state-of-the-art models reveals a persistent \\textit{Faithfulness Gap}. We define and detect a widespread failure mode termed \\textbf{Causal Decoupling}, where agents exhibit a violation density ($ρ$) of up to $0.77$ in factual and scientific domains. In these instances, agents arrive at identical conclusions despite contradictory internal logic, proving that their reasoning traces function as \"Reasoning Theater\" while decision-making is governed by latent parametric priors. Our findings suggest that current agentic architectures are inherently prone to unfaithful explanation, and we propose the Ariadne Score as a new benchmark for aligning stated logic with model action.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Sourena Khanzadeh"
+    }
+  ],
+  "datePublished": "2026-01-05T18:05:29Z",
+  "dateModified": "2026-01-05T18:05:29Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.02314.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.02314.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2601.02314v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2601.02314"
+  },
+  "keywords": [
+    "General",
+    "Safety",
+    "Planning / reasoning",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2601.02314v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2601.02314"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +86,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Project Ariadne: A Structural Causal Framework for Auditing Faithfulness in LLM Agents</h1>
+        <div class="meta">
+          Sourena Khanzadeh
+          · 2601.02314
+          · <time datetime="2026-01-05">2026-01-05</time>
+          · General · 2 citations
+        </div>
+        <div class="themes"><span class="chip">Safety</span><span class="chip">Planning / reasoning</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>As Large Language Model (LLM) agents are increasingly tasked with high-stakes autonomous decision-making, the transparency of their reasoning processes has become a critical safety concern. While \textit{Chain-of-Thought} (CoT) prompting allows agents to generate human-readable reasoning traces, it remains unclear whether these traces are \textbf{faithful} generative drivers of the model&#x27;s output or merely \textbf{post-hoc rationalizations}. We introduce \textbf{Project Ariadne}, a novel XAI framework that utilizes Structural Causal Models (SCMs) and counterfactual logic to audit the causal integrity of agentic reasoning. Unlike existing interpretability methods that rely on surface-level textual similarity, Project Ariadne performs \textbf{hard interventions} ($do$-calculus) on intermediate reasoning nodes -- systematically inverting logic, negating premises, and reversing factual claims -- to measure the \textbf{Causal Sensitivity} ($φ$) of the terminal answer. Our empirical evaluation of state-of-the-art models reveals a persistent \textit{Faithfulness Gap}. We define and detect a widespread failure mode termed \textbf{Causal Decoupling}, where agents exhibit a violation density ($ρ$) of up to $0.77$ in factual and scientific domains. In these instances, agents arrive at identical conclusions despite contradictory internal logic, proving that their reasoning traces function as &quot;Reasoning Theater&quot; while decision-making is governed by latent parametric priors. Our findings suggest that current agentic architectures are inherently prone to unfaithful explanation, and we propose the Ariadne Score as a new benchmark for aligning stated logic with model action.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2601.02314v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2601.02314v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2601.02314" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2601.06818.html"><strong>AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents</strong></a> <span>2026-01-11</span></li>
+          <li><a href="2601.05101.html"><strong>Arabic Prompts with English Tools: A Benchmark</strong></a> <span>2026-01-08</span></li>
+          <li><a href="2601.03540.html"><strong>DeepSynth-Eval: Objectively Evaluating Information Consolidation in Deep Survey Writing</strong></a> <span>2026-01-07</span></li>
+          <li><a href="2601.02941.html"><strong>SastBench: A Benchmark for Testing Agentic SAST Triage</strong></a> <span>2026-01-06</span></li>
+          <li><a href="2601.02598.html"><strong>LongDA: Benchmarking LLM Agents for Long-Document Data Analysis</strong></a> <span>2026-01-05</span></li>
+          <li><a href="2601.06112.html"><strong>ReliabilityBench: Evaluating LLM Agent Reliability Under Production-Like Stress Conditions</strong></a> <span>2026-01-03</span></li>
+          <li><a href="2603.04403.html"><strong>FinRetrieval: A Benchmark for Financial Data Retrieval by AI Agents</strong></a> <span>2026-01-02</span></li>
+          <li><a href="2601.00227.html"><strong>FlashInfer-Bench: Building the Virtuous Cycle for AI-driven LLM Systems</strong></a> <span>2026-01-01</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

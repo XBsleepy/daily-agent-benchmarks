@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Can Language Model Agents be Helpful Circuit Explainers in Mechanistic Interpretability? | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Mechanistic interpretability has made substantial progress in automatically localizing circuits, but explaining what localized…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2606.24026" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.24026.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Can Language Model Agents be Helpful Circuit Explainers in Mechanistic Interpretability?" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Mechanistic interpretability has made substantial progress in automatically localizing circuits, but explaining what localized…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.24026.html" />
+    <meta property="article:published_time" content="2026-06-23T00:04:31Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Can Language Model Agents be Helpful Circuit Explainers in Mechanistic Interpretability?" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Mechanistic interpretability has made substantial progress in automatically localizing circuits, but explaining what localized…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,67 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Can Language Model Agents be Helpful Circuit Explainers in Mechanistic Interpretability?",
+  "name": "Can Language Model Agents be Helpful Circuit Explainers in Mechanistic Interpretability?",
+  "abstract": "Mechanistic interpretability has made substantial progress in automatically localizing circuits, but explaining what localized components do remains labor-intensive and difficult to standardize. In this work, we study whether language model (LM) agents can assist with this explanation problem once a circuit has already been identified. We introduce AgenticInterpBench, a benchmark for circuit explanation built from 84 semi-synthetic transformer circuits with 163 component-level annotations. We propose HyVE (Hypothesize, Validate, Explain), an agentic explainer that analyzes each component through an iterative loop of observation, hypothesis generation, and causal validation, eventually producing a component-level explanation and a circuit-level task description. Across four LM backbones, HyVE recovers useful component- and task-level explanations, but no backbone is uniformly best. Our analysis shows that strong backbones usually form observation-grounded hypotheses, while failures more often arise later in the validation loop, through incomplete validation plans, code execution errors, or unresolved hypotheses. A case study on an arithmetic circuit in Llama-3-8B shows that the same formulation can extend beyond semi-synthetic benchmarks to naturally trained models. Overall, LM agents are promising circuit explainers, but reliable validation remains the key obstacle.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Ayan Antik Khan"
+    },
+    {
+      "@type": "Person",
+      "name": "Harsh Kohli"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuekun Yao"
+    },
+    {
+      "@type": "Person",
+      "name": "Huan Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Ziyu Yao"
+    }
+  ],
+  "datePublished": "2026-06-23T00:04:31Z",
+  "dateModified": "2026-06-23T00:04:31Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.24026.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.24026.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.24026v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.24026"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.24026v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.24026"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +99,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Can Language Model Agents be Helpful Circuit Explainers in Mechanistic Interpretability?</h1>
+        <div class="meta">
+          Ayan Antik Khan, Harsh Kohli, Yuekun Yao, Huan Sun, Ziyu Yao
+          · 2606.24026
+          · <time datetime="2026-06-23">2026-06-23</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Mechanistic interpretability has made substantial progress in automatically localizing circuits, but explaining what localized components do remains labor-intensive and difficult to standardize. In this work, we study whether language model (LM) agents can assist with this explanation problem once a circuit has already been identified. We introduce AgenticInterpBench, a benchmark for circuit explanation built from 84 semi-synthetic transformer circuits with 163 component-level annotations. We propose HyVE (Hypothesize, Validate, Explain), an agentic explainer that analyzes each component through an iterative loop of observation, hypothesis generation, and causal validation, eventually producing a component-level explanation and a circuit-level task description. Across four LM backbones, HyVE recovers useful component- and task-level explanations, but no backbone is uniformly best. Our analysis shows that strong backbones usually form observation-grounded hypotheses, while failures more often arise later in the validation loop, through incomplete validation plans, code execution errors, or unresolved hypotheses. A case study on an arithmetic circuit in Llama-3-8B shows that the same formulation can extend beyond semi-synthetic benchmarks to naturally trained models. Overall, LM agents are promising circuit explainers, but reliable validation remains the key obstacle.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.24026v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.24026v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.24026" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.27397.html"><strong>SidConArena: An Environment Evaluating Agents in Open-Ended,Positive-Sum Bargaining Game</strong></a> <span>2026-06-24</span></li>
+          <li><a href="2606.26216.html"><strong>CyberChainBench: Can AI Agents Secure Smart Contracts Against Real-World On-Chain Vulnerabilities?</strong></a> <span>2026-06-24</span></li>
+          <li><a href="2607.09711.html"><strong>EvoClawBench: Can Agents Learn Reusable Skills from Their Own Runs?</strong></a> <span>2026-06-23</span></li>
+          <li><a href="2606.25139.html"><strong>Buildrix: An Open Platform for Sharing and Benchmarking Agentic AI Skills in Building Engineering</strong></a> <span>2026-06-23</span></li>
+          <li><a href="2606.23927.html"><strong>RIFT-Bench: Dynamic Red-teaming For Agentic AI Systems</strong></a> <span>2026-06-22</span></li>
+          <li><a href="2606.23301.html"><strong>EHR-Complex: Benchmarking Medical Agents for Complex Clinical Reasoning</strong></a> <span>2026-06-22</span></li>
+          <li><a href="2606.23032.html"><strong>IPO Finance Agent: Benchmark of LLM Financial Analysts Beyond Finance Agent v2, with Automated Rubric Generation, on the SpaceX (SPCX) IPO</strong></a> <span>2026-06-22</span></li>
+          <li><a href="2608.20370.html"><strong>Benchmarking LLM Serving Systems for Agentic AI Workloads with XPerf</strong></a> <span>2026-06-19</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

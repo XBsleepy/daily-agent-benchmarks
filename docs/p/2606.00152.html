@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>PrivacyPeek: Auditing What LLM-Based Agents Acquire, Not Just What They Say | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLM-based agents are rapidly advancing, autonomously invoking external tools to complete multi-step tasks for users. However, agents…" />
+    <meta name="keywords" content="General, Tool use, agent benchmark, LLM agent, arXiv, 2606.00152" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.00152.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="PrivacyPeek: Auditing What LLM-Based Agents Acquire, Not Just What They Say" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLM-based agents are rapidly advancing, autonomously invoking external tools to complete multi-step tasks for users. However, agents…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.00152.html" />
+    <meta property="article:published_time" content="2026-05-29T04:55:12Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PrivacyPeek: Auditing What LLM-Based Agents Acquire, Not Just What They Say" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLM-based agents are rapidly advancing, autonomously invoking external tools to complete multi-step tasks for users. However, agents…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,80 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "PrivacyPeek: Auditing What LLM-Based Agents Acquire, Not Just What They Say",
+  "name": "PrivacyPeek: Auditing What LLM-Based Agents Acquire, Not Just What They Say",
+  "abstract": "LLM-based agents are rapidly advancing, autonomously invoking external tools to complete multi-step tasks for users. However, agents often acquire more sensitive information than the task requires. Existing privacy benchmarks audit what the agent's response or outgoing actions disclose, but overlook the acquisition stage where data first enters the agent's context. The over-acquired information is then one careless action or one attack away from an outright leak. To assess its prevalence, we introduce \\emph{PrivacyPeek}, a benchmark for evaluating acquisition-stage privacy leakage of LLM-based agents, with $1{,}182$ cases across $7$ acquisition behaviours and $16$ application domains. Specifically, \\emph{Acquisition Inspection} examines the agent's tool-call trajectory, both the tools it invokes and the data it receives, to detect when it acquires sensitive information beyond the task scope. \\emph{Probe Elicitation} then issues a follow-up probe and measures how readily an attacker could elicit sensitive information the agent acquired but did not disclose. Our experiments on $10$ LLM-based agents across $4$ model families show that the unnecessary acquisition of sensitive information is widespread. In addition, we observe a correlation between the task-completion capability and acquisition-stage leakage. Prompt-level defences reduce only a small fraction of acquisition-stage leakage, leaving the majority unmitigated. These results make auditing acquisition-stage privacy both urgent and necessary. Our dataset and code are available at https://github.com/Xuan269/PrivacyPeek-Resource.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Mingxuan Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiahui Han"
+    },
+    {
+      "@type": "Person",
+      "name": "Dadi Guo"
+    },
+    {
+      "@type": "Person",
+      "name": "Songze Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Guanchu Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Na Zou"
+    },
+    {
+      "@type": "Person",
+      "name": "Dongrui Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xia Hu"
+    }
+  ],
+  "datePublished": "2026-05-29T04:55:12Z",
+  "dateModified": "2026-08-06T13:29:02Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.00152.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.00152.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.00152v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.00152"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.00152v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.00152"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +112,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>PrivacyPeek: Auditing What LLM-Based Agents Acquire, Not Just What They Say</h1>
+        <div class="meta">
+          Mingxuan Zhang, Jiahui Han, Dadi Guo, Songze Li, Guanchu Wang, Na Zou, Dongrui Liu, Xia Hu
+          · 2606.00152
+          · <time datetime="2026-05-29">2026-05-29</time>
+          · General · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLM-based agents are rapidly advancing, autonomously invoking external tools to complete multi-step tasks for users. However, agents often acquire more sensitive information than the task requires. Existing privacy benchmarks audit what the agent&#x27;s response or outgoing actions disclose, but overlook the acquisition stage where data first enters the agent&#x27;s context. The over-acquired information is then one careless action or one attack away from an outright leak. To assess its prevalence, we introduce \emph{PrivacyPeek}, a benchmark for evaluating acquisition-stage privacy leakage of LLM-based agents, with $1{,}182$ cases across $7$ acquisition behaviours and $16$ application domains. Specifically, \emph{Acquisition Inspection} examines the agent&#x27;s tool-call trajectory, both the tools it invokes and the data it receives, to detect when it acquires sensitive information beyond the task scope. \emph{Probe Elicitation} then issues a follow-up probe and measures how readily an attacker could elicit sensitive information the agent acquired but did not disclose. Our experiments on $10$ LLM-based agents across $4$ model families show that the unnecessary acquisition of sensitive information is widespread. In addition, we observe a correlation between the task-completion capability and acquisition-stage leakage. Prompt-level defences reduce only a small fraction of acquisition-stage leakage, leaving the majority unmitigated. These results make auditing acquisition-stage privacy both urgent and necessary. Our dataset and code are available at https://github.com/Xuan269/PrivacyPeek-Resource.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.00152v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.00152v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.00152" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.00832.html"><strong>Momento: Evaluating Persistent Memory and Reasoning with Multi-Session Agentic Conversations</strong></a> <span>2026-05-30</span></li>
+          <li><a href="2606.00825.html"><strong>SuperMemory-VQA: An Egocentric Visual Question-Answering Benchmark for Long-Horizon Memory</strong></a> <span>2026-05-30</span></li>
+          <li><a href="2606.00644.html"><strong>ForeSci: Evaluating LLM Agents for Forward-Looking AI Research Judgment</strong></a> <span>2026-05-30</span></li>
+          <li><a href="2606.02624.html"><strong>TadA-Bench: A Million-Variant Benchmark for Future-Round Discovery Toward Agentic Protein Engineering</strong></a> <span>2026-05-29</span></li>
+          <li><a href="2605.30434.html"><strong>LongDS-Bench: On the Failure of Long-Horizon Agentic Data Analysis</strong></a> <span>2026-05-28</span></li>
+          <li><a href="2605.30058.html"><strong>HEART-Bench: Do LLM Agents Exhibit Human-like Psychology?</strong></a> <span>2026-05-28</span></li>
+          <li><a href="2605.29893.html"><strong>Redundant or Necessary? A Benchmark for Detecting Redundant Steps in Agent Trajectories</strong></a> <span>2026-05-28</span></li>
+          <li><a href="2605.29676.html"><strong>Notation Matters: A Benchmark Study of Token-Optimized Formats in Agentic AI Systems</strong></a> <span>2026-05-28</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

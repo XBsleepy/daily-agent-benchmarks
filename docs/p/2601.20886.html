@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>IDE-Bench: Evaluating Large Language Models as IDE Agents on Real-World Software Engineering Tasks | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: IDE-Bench is a comprehensive framework for evaluating AI IDE agents on real-world software engineering tasks through an IDE-native…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Tool use, agent benchmark, LLM agent, arXiv, 2601.20886" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.20886.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="IDE-Bench: Evaluating Large Language Models as IDE Agents on Real-World Software Engineering Tasks" />
+    <meta property="og:description" content="Daily Agent Benchmarks: IDE-Bench is a comprehensive framework for evaluating AI IDE agents on real-world software engineering tasks through an IDE-native…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.20886.html" />
+    <meta property="article:published_time" content="2026-01-28T02:06:37Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="IDE-Bench: Evaluating Large Language Models as IDE Agents on Real-World Software Engineering Tasks" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: IDE-Bench is a comprehensive framework for evaluating AI IDE agents on real-world software engineering tasks through an IDE-native…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,73 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "IDE-Bench: Evaluating Large Language Models as IDE Agents on Real-World Software Engineering Tasks",
+  "name": "IDE-Bench: Evaluating Large Language Models as IDE Agents on Real-World Software Engineering Tasks",
+  "abstract": "IDE-Bench is a comprehensive framework for evaluating AI IDE agents on real-world software engineering tasks through an IDE-native tool interface. We present a Dockerized test harness that goes beyond raw terminal execution, granting models a structured tool ecosystem that represents AI-native IDEs like Cursor and Windsurf. By providing high-level abstractions for codebase search, structured file editing, and tools for testing full-stack applications, IDE-Bench evaluates an agent's ability to act as a true engineering collaborator. For evaluation and to prevent training data contamination, we created 80 tasks across eight never-published repositories spanning C/C++, Java, and MERN stacks, representing modern tech stack production scenarios, including feature implementation, bug fixing, refactoring, and performance optimization that mirror daily developer workflows in private codebases. Our benchmark is the first to systematically correlate agent-reported intent with successful project-level modifications in a multi-language, full-stack environment on completely uncontaminated code. We release IDE-Bench and a public leaderboard at: https://ide-bench.com.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Spencer Mateega"
+    },
+    {
+      "@type": "Person",
+      "name": "Jeff Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Tiana Costello"
+    },
+    {
+      "@type": "Person",
+      "name": "Shaurya Jadhav"
+    },
+    {
+      "@type": "Person",
+      "name": "Nicole Tian"
+    },
+    {
+      "@type": "Person",
+      "name": "Agustin Garcinuño"
+    }
+  ],
+  "datePublished": "2026-01-28T02:06:37Z",
+  "dateModified": "2026-01-30T03:43:06Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.20886.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.20886.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2601.20886v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2601.20886"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2601.20886v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2601.20886"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +105,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>IDE-Bench: Evaluating Large Language Models as IDE Agents on Real-World Software Engineering Tasks</h1>
+        <div class="meta">
+          Spencer Mateega, Jeff Yang, Tiana Costello, Shaurya Jadhav, Nicole Tian, Agustin Garcinuño
+          · 2601.20886
+          · <time datetime="2026-01-28">2026-01-28</time>
+          · Coding / SWE · 2 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>IDE-Bench is a comprehensive framework for evaluating AI IDE agents on real-world software engineering tasks through an IDE-native tool interface. We present a Dockerized test harness that goes beyond raw terminal execution, granting models a structured tool ecosystem that represents AI-native IDEs like Cursor and Windsurf. By providing high-level abstractions for codebase search, structured file editing, and tools for testing full-stack applications, IDE-Bench evaluates an agent&#x27;s ability to act as a true engineering collaborator. For evaluation and to prevent training data contamination, we created 80 tasks across eight never-published repositories spanning C/C++, Java, and MERN stacks, representing modern tech stack production scenarios, including feature implementation, bug fixing, refactoring, and performance optimization that mirror daily developer workflows in private codebases. Our benchmark is the first to systematically correlate agent-reported intent with successful project-level modifications in a multi-language, full-stack environment on completely uncontaminated code. We release IDE-Bench and a public leaderboard at: https://ide-bench.com.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2601.20886v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2601.20886v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2601.20886" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2602.04449.html"><strong>What&#x27;s in a Benchmark? The Case of SWE-Bench in Automated Program Repair</strong></a> <span>2026-02-04</span></li>
+          <li><a href="2602.02262.html"><strong>OmniCode: A Benchmark for Evaluating Software Engineering Agents</strong></a> <span>2026-02-02</span></li>
+          <li><a href="2602.01655.html"><strong>ProjDevBench: Benchmarking AI Coding Agents on End-to-End Project Development</strong></a> <span>2026-02-02</span></li>
+          <li><a href="2602.00133.html"><strong>PredictionMarketBench: A SWE-bench-Style Framework for Backtesting Trading Agents on Prediction Markets</strong></a> <span>2026-01-28</span></li>
+          <li><a href="2601.20882.html"><strong>DevOps-Gym: Benchmarking AI Agents in Software DevOps Cycle</strong></a> <span>2026-01-27</span></li>
+          <li><a href="2601.13295.html"><strong>CooperBench: Why Coding Agents Cannot be Your Teammates Yet</strong></a> <span>2026-01-19</span></li>
+          <li><a href="2601.11077.html"><strong>ABC-Bench: Benchmarking Agentic Backend Coding in Real-World Development</strong></a> <span>2026-01-16</span></li>
+          <li><a href="2601.10343.html"><strong>OctoBench: Benchmarking Scaffold-Aware Instruction Following in Repository-Grounded Agentic Coding</strong></a> <span>2026-01-15</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

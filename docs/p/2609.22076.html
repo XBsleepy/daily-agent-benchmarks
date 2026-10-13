@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>APort Vault: Benchmarking AI Agent Payment Authorization with the Open Agent Passport | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: APort Vault is a benchmark for payment authorization in tool-using AI agents. It replays 4,371 attacks written by humans against a…" />
+    <meta name="keywords" content="Tool use, agent benchmark, LLM agent, arXiv, 2609.22076" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.22076.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="APort Vault: Benchmarking AI Agent Payment Authorization with the Open Agent Passport" />
+    <meta property="og:description" content="Daily Agent Benchmarks: APort Vault is a benchmark for payment authorization in tool-using AI agents. It replays 4,371 attacks written by humans against a…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.22076.html" />
+    <meta property="article:published_time" content="2026-09-21T04:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="APort Vault: Benchmarking AI Agent Payment Authorization with the Open Agent Passport" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: APort Vault is a benchmark for payment authorization in tool-using AI agents. It replays 4,371 attacks written by humans against a…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,51 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "APort Vault: Benchmarking AI Agent Payment Authorization with the Open Agent Passport",
+  "name": "APort Vault: Benchmarking AI Agent Payment Authorization with the Open Agent Passport",
+  "abstract": "APort Vault is a benchmark for payment authorization in tool-using AI agents. It replays 4,371 attacks written by humans against a live payment agent during a public capture-the-flag event, across 14 models from 8 labs, five policy configurations and two replay tracks, with and without a deterministic pre-action check implementing the Open Agent Passport (OAP) specification. 225,964 evaluations completed. We report five distinct events per evaluation, because collapsing them is how an agent benchmark produces a number that does not survive review. Requests are common and their rate differs far more across configurations than across models, though each attack exists at exactly one configuration so policy and attack cohort vary together: 10.9% of model-alone evaluations at Level 1, 3.0% at Level 2, 0.1% at Level 3, 79.4% at Level 4. On the 1,293 Level 4 prompts, each evaluated on every model, request rates run from 71.2% to 84.3%, and 809 prompts (62.6%) elicited a request from all fourteen models, each ending in a successful payment to the level's allowlisted recipient. The authorization boundary is where the conditions diverge. At Levels 2 to 4, transfers to recipients the passport did not permit number 140 of 76,842 with the model alone and 0 of 69,297 behind the layer, and 105 against 0 on 68,970 matched model, prompt and track triples. The zero spans 790 source sessions, giving a per-session upper bound of 0.38%. It was not obtained by refusing payments: 25,370 payments executed behind the layer, while the policy denied 187 of the 25,640 transfer calls it evaluated, 148 of them for a forbidden recipient. We release the 225,964 evaluations, the level passports, the scoring code and the analysis script at huggingface.co/datasets/aporthq/vault-benchmark-v1 .",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Uchi Uchibeke"
+    }
+  ],
+  "datePublished": "2026-09-21T04:00:00Z",
+  "dateModified": "2026-09-21T04:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.22076.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.22076.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.22076"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.22076"
+  },
+  "keywords": [
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.22076"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.22076"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +83,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>APort Vault: Benchmarking AI Agent Payment Authorization with the Open Agent Passport</h1>
+        <div class="meta">
+          Uchi Uchibeke
+          · 2609.22076
+          · <time datetime="2026-09-21">2026-09-21</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>APort Vault is a benchmark for payment authorization in tool-using AI agents. It replays 4,371 attacks written by humans against a live payment agent during a public capture-the-flag event, across 14 models from 8 labs, five policy configurations and two replay tracks, with and without a deterministic pre-action check implementing the Open Agent Passport (OAP) specification. 225,964 evaluations completed. We report five distinct events per evaluation, because collapsing them is how an agent benchmark produces a number that does not survive review. Requests are common and their rate differs far more across configurations than across models, though each attack exists at exactly one configuration so policy and attack cohort vary together: 10.9% of model-alone evaluations at Level 1, 3.0% at Level 2, 0.1% at Level 3, 79.4% at Level 4. On the 1,293 Level 4 prompts, each evaluated on every model, request rates run from 71.2% to 84.3%, and 809 prompts (62.6%) elicited a request from all fourteen models, each ending in a successful payment to the level&#x27;s allowlisted recipient. The authorization boundary is where the conditions diverge. At Levels 2 to 4, transfers to recipients the passport did not permit number 140 of 76,842 with the model alone and 0 of 69,297 behind the layer, and 105 against 0 on 68,970 matched model, prompt and track triples. The zero spans 790 source sessions, giving a per-session upper bound of 0.38%. It was not obtained by refusing payments: 25,370 payments executed behind the layer, while the policy denied 187 of the 25,640 transfer calls it evaluated, 148 of them for a forbidden recipient. We release the 225,964 evaluations, the level passports, the scoring code and the analysis script at huggingface.co/datasets/aporthq/vault-benchmark-v1 .</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.22076" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.22076" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.22076" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.24983.html"><strong>onPanda: Efficient Annotation of On-Policy Alignment Data for LLMs and Agents via Token-Level Correction</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.24812.html"><strong>MSI-Bench: Evaluating Multi-Speaker Voice Interaction for Collaborative AI Agents</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.24663.html"><strong>Beyond Endpoint Performance: Process-Level Evaluation of Self-Evolving Agents</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.23490.html"><strong>BabelArena: A Large-Scale Multilingual Benchmark for LLM Agents</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.20886.html"><strong>BI-Agent and BI-Bench: Towards Automating End-to-End Business Intelligence</strong></a> <span>2026-09-21</span></li>
+          <li><a href="2609.20152.html"><strong>MTVA-Bench: Evaluating the Language Model Inside Cascaded Voice Agents</strong></a> <span>2026-09-18</span></li>
+          <li><a href="2609.12808.html"><strong>K-Bench: A Benchmark for LLM Unlearning in Agentic Deployments</strong></a> <span>2026-09-11</span></li>
+          <li><a href="2609.12345.html"><strong>ParaRecover: A Process-Level Benchmark for Error Localization and Recovery in Parallel Tool-Use Agents</strong></a> <span>2026-09-11</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

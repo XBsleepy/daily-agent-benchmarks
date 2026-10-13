@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>AgBench: Agentic AI Benchmarks for Personal AI Devices | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Agentic AI systems increasingly rely on cloud-hosted large language models for planning, tool use, and iterative execution, raising…" />
+    <meta name="keywords" content="Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2609.38652" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.38652.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AgBench: Agentic AI Benchmarks for Personal AI Devices" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Agentic AI systems increasingly rely on cloud-hosted large language models for planning, tool use, and iterative execution, raising…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.38652.html" />
+    <meta property="article:published_time" content="2026-09-29T23:18:37Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AgBench: Agentic AI Benchmarks for Personal AI Devices" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Agentic AI systems increasingly rely on cloud-hosted large language models for planning, tool use, and iterative execution, raising…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,64 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AgBench: Agentic AI Benchmarks for Personal AI Devices",
+  "name": "AgBench: Agentic AI Benchmarks for Personal AI Devices",
+  "abstract": "Agentic AI systems increasingly rely on cloud-hosted large language models for planning, tool use, and iterative execution, raising concerns about API cost and data exposure. Advances in personal AI devices enable agents to execute locally, but limited resources on device may affect task success and performance. Existing benchmarks are inadequate for systematically characterizing these trade-offs across devices, workloads, and deployment architectures. We present AgBench, a benchmark suite and open artifacts for reproducible evaluation of agentic AI on personal devices. Using AgBench, we evaluate local, hybrid, and cloud execution across agentic workloads, examining task success, latency, cloud API cost, and data exposure. Our results, drawn from over 162.07 million data points, show that personal AI devices can complete many agent tasks locally, but local-only execution generally has lower task success and longer completion times than cloud-only execution, especially as concurrency increases. Local-only execution eliminates cloud model API costs and sensitive-information exposure to cloud agents. Hybrid execution can improve task success, but its cloud cost and data exposure depend on how agents divide work and share information. No single architecture performs best across task success, goodput, cloud cost, and data exposure; deployment choices should reflect the intended workload and device capabilities. AgBench is available at https://anonymous.4open.science/r/AgBench-2777.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yizhou Han"
+    },
+    {
+      "@type": "Person",
+      "name": "Di Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Dhananjay Saikumar"
+    },
+    {
+      "@type": "Person",
+      "name": "Blesson Varghese"
+    }
+  ],
+  "datePublished": "2026-09-29T23:18:37Z",
+  "dateModified": "2026-09-29T23:18:37Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.38652.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.38652.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.38652v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.38652"
+  },
+  "keywords": [
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.38652v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.38652"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +96,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AgBench: Agentic AI Benchmarks for Personal AI Devices</h1>
+        <div class="meta">
+          Yizhou Han, Di Wu, Dhananjay Saikumar, Blesson Varghese
+          · 2609.38652
+          · <time datetime="2026-09-29">2026-09-29</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Agentic AI systems increasingly rely on cloud-hosted large language models for planning, tool use, and iterative execution, raising concerns about API cost and data exposure. Advances in personal AI devices enable agents to execute locally, but limited resources on device may affect task success and performance. Existing benchmarks are inadequate for systematically characterizing these trade-offs across devices, workloads, and deployment architectures. We present AgBench, a benchmark suite and open artifacts for reproducible evaluation of agentic AI on personal devices. Using AgBench, we evaluate local, hybrid, and cloud execution across agentic workloads, examining task success, latency, cloud API cost, and data exposure. Our results, drawn from over 162.07 million data points, show that personal AI devices can complete many agent tasks locally, but local-only execution generally has lower task success and longer completion times than cloud-only execution, especially as concurrency increases. Local-only execution eliminates cloud model API costs and sensitive-information exposure to cloud agents. Hybrid execution can improve task success, but its cloud cost and data exposure depend on how agents divide work and share information. No single architecture performs best across task success, goodput, cloud cost, and data exposure; deployment choices should reflect the intended workload and device capabilities. AgBench is available at https://anonymous.4open.science/r/AgBench-2777.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.38652v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.38652v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.38652" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.03226.html"><strong>D2K-Bench: Can LLM Agents Turn Expert Designs into Efficient GPU Kernels?</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.02206.html"><strong>KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.02089.html"><strong>HumanoidToolBench: Benchmarking Humanoid Tool Use from Selection to Mobile Execution</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.02563.html"><strong>OpenGameEval: Benchmarking Agentic Programming and Exploration in a Stateful Game Engine</strong></a> <span>2026-10-01</span></li>
+          <li><a href="2609.38512.html"><strong>VAmoS Part Deux: Harder, More Realistic Voice-Agent Simulation</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.37315.html"><strong>Do Agent Benchmarks Do What They Say? An Executable-Contract Audit of Tool-Using Agent Environments</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.35732.html"><strong>Failure-Transparent Agents: Benchmarking Post-Failure Reporting in Tool-Using Language Models</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34930.html"><strong>PDEU-Bench: Benchmarking the Personalized Planning Lifecycle of Tool-Calling LLM Agents</strong></a> <span>2026-09-28</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

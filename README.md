@@ -1,5 +1,9 @@
 # Daily Agent Benchmarks
 
+**Live site: https://xbsleepy.github.io/daily-agent-benchmarks/** · [Archive](https://xbsleepy.github.io/daily-agent-benchmarks/archive.html) · [Atom feed](https://xbsleepy.github.io/daily-agent-benchmarks/feed.xml)
+
+A daily, searchable list of new **AI / LLM agent benchmarks** on arXiv — web agents, GUI & computer-use agents, coding / SWE agents, tool use, multi-agent, embodied, and agent safety evaluations. Each paper gets a page with authors, abstract, field, citation count, and arXiv PDF / HTML links. Updated automatically every day via GitHub Actions.
+
 每日从 [arXiv](https://arxiv.org) 收集 **Agent Benchmark** 论文，整理成可部署到 GitHub Pages 的静态站点。
 
 站点按投稿日期倒序展示：名称、作者、摘要、分类、PDF / HTML 链接；每一天有一份中英双语简报；浏览器内用 **BM25** 做排序搜索。
@@ -83,7 +87,7 @@ python -m http.server 8080 --directory docs
 
 ```
 scripts/          抓取、过滤、简报、写 JSON
-docs/             GitHub Pages 站点
+docs/             GitHub Pages 站点（index / archive / p/*.html / sitemap.xml / feed.xml / llms.txt 由脚本生成）
 docs/data/        索引与按日切片
 .github/workflows 每日定时更新
 ```

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>When Agents Overtrust Environmental Evidence: An Extensible Agentic Framework for Benchmarking Evidence-Grounding Defects in LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language model agents increasingly operate through environment-facing scaffolds that expose files, web pages, APIs, and logs…" />
+    <meta name="keywords" content="General, Tool use, Memory, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2605.08828" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.08828.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="When Agents Overtrust Environmental Evidence: An Extensible Agentic Framework for Benchmarking Evidence-Grounding Defects in LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language model agents increasingly operate through environment-facing scaffolds that expose files, web pages, APIs, and logs…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.08828.html" />
+    <meta property="article:published_time" content="2026-05-09T09:32:27Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="When Agents Overtrust Environmental Evidence: An Extensible Agentic Framework for Benchmarking Evidence-Grounding Defects in LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language model agents increasingly operate through environment-facing scaffolds that expose files, web pages, APIs, and logs…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,62 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "When Agents Overtrust Environmental Evidence: An Extensible Agentic Framework for Benchmarking Evidence-Ground",
+  "name": "When Agents Overtrust Environmental Evidence: An Extensible Agentic Framework for Benchmarking Evidence-Grounding Defects in LLM Agents",
+  "abstract": "Large language model agents increasingly operate through environment-facing scaffolds that expose files, web pages, APIs, and logs. These observations influence tool use, state tracking, and action sequencing, yet their reliability and authority are often uncertain. Environmental grounding is therefore a systems-level problem involving context admission, evidence provenance, freshness checking, verification policy, action gating, and model reasoning. Existing agent benchmarks mainly evaluate task capability or specific attacks such as prompt injection and memory poisoning, but they under-specify a fundamental reliability question: whether agents remain grounded in the true environment state when observations are stale, incorrect, or malicious. We introduce EnvTrustBench, an agentic framework for benchmarking this failure mode. We define an evidence-grounding defect (EGD) as a behavioral failure in which an agent treats an environment-facing claim as sufficient evidence for action without resolving it against available current evidence, leading to a task-incorrect false path under the true environment state. Given a task scenario, EnvTrustBench generates the workspace, environment, agent-facing objective, and validation oracle, executes the evaluated agent, records its action-observation trajectory and final state, and applies the oracle to produce a verdict. Using 6 LLM backbones and 5 widely used scaffolds, we evaluate 55 generated cases across 11 task scenarios, with each scenario expanded through five feedback-guided generation iterations. Results show that EGDs consistently emerge across operational workflows, highlighting environmental grounding as a core agent reliability problem with important security implications.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Strick Sheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Ziyue Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Liyi Zhou"
+    }
+  ],
+  "datePublished": "2026-05-09T09:32:27Z",
+  "dateModified": "2026-05-12T08:22:21Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.08828.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.08828.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.08828v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.08828"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Memory",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.08828v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.08828"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +94,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>When Agents Overtrust Environmental Evidence: An Extensible Agentic Framework for Benchmarking Evidence-Grounding Defects in LLM Agents</h1>
+        <div class="meta">
+          Strick Sheng, Ziyue Wang, Liyi Zhou
+          · 2605.08828
+          · <time datetime="2026-05-09">2026-05-09</time>
+          · General · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Memory</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large language model agents increasingly operate through environment-facing scaffolds that expose files, web pages, APIs, and logs. These observations influence tool use, state tracking, and action sequencing, yet their reliability and authority are often uncertain. Environmental grounding is therefore a systems-level problem involving context admission, evidence provenance, freshness checking, verification policy, action gating, and model reasoning. Existing agent benchmarks mainly evaluate task capability or specific attacks such as prompt injection and memory poisoning, but they under-specify a fundamental reliability question: whether agents remain grounded in the true environment state when observations are stale, incorrect, or malicious. We introduce EnvTrustBench, an agentic framework for benchmarking this failure mode. We define an evidence-grounding defect (EGD) as a behavioral failure in which an agent treats an environment-facing claim as sufficient evidence for action without resolving it against available current evidence, leading to a task-incorrect false path under the true environment state. Given a task scenario, EnvTrustBench generates the workspace, environment, agent-facing objective, and validation oracle, executes the evaluated agent, records its action-observation trajectory and final state, and applies the oracle to produce a verdict. Using 6 LLM backbones and 5 widely used scaffolds, we evaluate 55 generated cases across 11 task scenarios, with each scenario expanded through five feedback-guided generation iterations. Results show that EGDs consistently emerge across operational workflows, highlighting environmental grounding as a core agent reliability problem with important security implications.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.08828v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.08828v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.08828" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.09698.html"><strong>Ambig-DS: A Benchmark for Task-Framing Ambiguity in Data-Science Agents</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.09252.html"><strong>LLM Agents Already Know When to Call Tools -- Even Without Reasoning</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.09163.html"><strong>FORTIS: Benchmarking Over-Privilege in Agent Skills</strong></a> <span>2026-05-09</span></li>
+          <li><a href="2605.08904.html"><strong>OPT-BENCH: Evaluating the Iterative Self-Optimization of LLM Agents in Large-Scale Search Spaces</strong></a> <span>2026-05-09</span></li>
+          <li><a href="2605.10966.html"><strong>MMTB: Evaluating Terminal Agents on Multimedia-File Tasks</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.07926.html"><strong>AgentEscapeBench: Evaluating Out-of-Domain Tool-Grounded Reasoning in LLM Agents</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.07830.html"><strong>CyBiasBench: Benchmarking Bias in LLM Agents for Cyber-Attack Scenarios</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.07251.html"><strong>Can Agents Price a Reaction? Evaluating LLMs on Chemical Cost Reasoning</strong></a> <span>2026-05-08</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

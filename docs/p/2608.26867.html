@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>BekchiAI: Measuring, Observing, and Controlling LLM Agents in One Click | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language model agents reason, call tools, and act autonomously over many steps, but their agentic skills-correctly sequencing…" />
+    <meta name="keywords" content="Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2608.26867" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.26867.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="BekchiAI: Measuring, Observing, and Controlling LLM Agents in One Click" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language model agents reason, call tools, and act autonomously over many steps, but their agentic skills-correctly sequencing…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.26867.html" />
+    <meta property="article:published_time" content="2026-08-27T09:30:08Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="BekchiAI: Measuring, Observing, and Controlling LLM Agents in One Click" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language model agents reason, call tools, and act autonomously over many steps, but their agentic skills-correctly sequencing…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,52 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "BekchiAI: Measuring, Observing, and Controlling LLM Agents in One Click",
+  "name": "BekchiAI: Measuring, Observing, and Controlling LLM Agents in One Click",
+  "abstract": "Large language model agents reason, call tools, and act autonomously over many steps, but their agentic skills-correctly sequencing tools, planning under dependencies, judging untrusted inputs, and grounding generated arguments-are hard to measure with accuracy-only leaderboards. We present BekchiAI, which addresses both sides: a benchmark for measuring agentic skill and a platform for observing and controlling live agents. The BekchiAI-Benchmark, a suite of 13 tool-using ReAct agents across 7 task categories (arithmetic, structured/SQL, security detection, URL grounding, planning, orchestration, and tool-policy), totalling 2,057 deterministic, committed test tasks. Every task is verifier-checkable gold answers are computed by running canonical SQL against a real database, computing the exact schedule of a directed acyclic graph (DAG), or evaluating closed-form lambdas including adversarial security samples paired with deliberately imperfect signature scanners so a score reflects the model's own judgment, not the copying of an oracle. We define a small set of behavioral metrics beyond accuracy-tool-call adherence, URL hallucination and source-match, and per-model token cost and report a four-model comparison (Qwen3.7-Max, gemma-4-31B-it, gemma4:26b, gpt-oss-120b) whose story is in the per-family spread, not the aggregate. The benchmark runs are executed using the provided evaluation scripts. BekchiAI-Platform is a complementary web-based observability and control layer for deployed agents, providing full token and latency telemetry as well as remote run termination. The benchmark, evaluation tools, and platform are publicly released.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Mesut Toruk"
+    }
+  ],
+  "datePublished": "2026-08-27T09:30:08Z",
+  "dateModified": "2026-08-27T09:30:08Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.26867.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.26867.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.26867v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.26867"
+  },
+  "keywords": [
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.26867v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.26867"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +84,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>BekchiAI: Measuring, Observing, and Controlling LLM Agents in One Click</h1>
+        <div class="meta">
+          Mesut Toruk
+          · 2608.26867
+          · <time datetime="2026-08-27">2026-08-27</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large language model agents reason, call tools, and act autonomously over many steps, but their agentic skills-correctly sequencing tools, planning under dependencies, judging untrusted inputs, and grounding generated arguments-are hard to measure with accuracy-only leaderboards. We present BekchiAI, which addresses both sides: a benchmark for measuring agentic skill and a platform for observing and controlling live agents. The BekchiAI-Benchmark, a suite of 13 tool-using ReAct agents across 7 task categories (arithmetic, structured/SQL, security detection, URL grounding, planning, orchestration, and tool-policy), totalling 2,057 deterministic, committed test tasks. Every task is verifier-checkable gold answers are computed by running canonical SQL against a real database, computing the exact schedule of a directed acyclic graph (DAG), or evaluating closed-form lambdas including adversarial security samples paired with deliberately imperfect signature scanners so a score reflects the model&#x27;s own judgment, not the copying of an oracle. We define a small set of behavioral metrics beyond accuracy-tool-call adherence, URL hallucination and source-match, and per-model token cost and report a four-model comparison (Qwen3.7-Max, gemma-4-31B-it, gemma4:26b, gpt-oss-120b) whose story is in the per-family spread, not the aggregate. The benchmark runs are executed using the provided evaluation scripts. BekchiAI-Platform is a complementary web-based observability and control layer for deployed agents, providing full token and latency telemetry as well as remote run termination. The benchmark, evaluation tools, and platform are publicly released.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.26867v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.26867v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.26867" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.01437.html"><strong>HarnessDev: Can LLMs Create and Evolve Their Own Agent Harness?</strong></a> <span>2026-09-01</span></li>
+          <li><a href="2608.29397.html"><strong>AlgoWorlds: Benchmarking Tool Use for Global Optimization in Algorithmic Worlds</strong></a> <span>2026-08-29</span></li>
+          <li><a href="2608.29128.html"><strong>APIFlow-Bench: Measuring Whether Agents Survive Long, Dependent API Workflows</strong></a> <span>2026-08-29</span></li>
+          <li><a href="2608.27334.html"><strong>BTS-AgentBench: A Deterministic, Replayable Pipeline from Read-Only Telemetry Logs to Agent Benchmarks</strong></a> <span>2026-08-27</span></li>
+          <li><a href="2608.26623.html"><strong>AgentJudgeBench: A Multi-Difficulty Benchmark for Evaluating LLM Judges on Agentic Tool-Calling</strong></a> <span>2026-08-27</span></li>
+          <li><a href="2608.26199.html"><strong>Benchmarking AI Agents for Hardware Design Automation via MCP Tool Calling</strong></a> <span>2026-08-25</span></li>
+          <li><a href="2608.24509.html"><strong>PeakBench: Benchmarking Resource-Aware Tool Invocation in LLM Agents</strong></a> <span>2026-08-25</span></li>
+          <li><a href="2608.23067.html"><strong>Signal or Noise? A Benchmark Study of Agent Skills in Web Development</strong></a> <span>2026-08-24</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

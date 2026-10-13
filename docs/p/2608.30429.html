@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>EvoSkill Injection: Red-Teaming Autonomous Skill Generation and Evolution in Self-Evolving Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLM-based agent systems increasingly adopt skill-based architectures to reduce repetitive reasoning costs and improve stable…" />
+    <meta name="keywords" content="Safety, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2608.30429" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.30429.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="EvoSkill Injection: Red-Teaming Autonomous Skill Generation and Evolution in Self-Evolving Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLM-based agent systems increasingly adopt skill-based architectures to reduce repetitive reasoning costs and improve stable…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.30429.html" />
+    <meta property="article:published_time" content="2026-08-31T08:25:03Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="EvoSkill Injection: Red-Teaming Autonomous Skill Generation and Evolution in Self-Evolving Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLM-based agent systems increasingly adopt skill-based architectures to reduce repetitive reasoning costs and improve stable…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,68 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "EvoSkill Injection: Red-Teaming Autonomous Skill Generation and Evolution in Self-Evolving Agents",
+  "name": "EvoSkill Injection: Red-Teaming Autonomous Skill Generation and Evolution in Self-Evolving Agents",
+  "abstract": "LLM-based agent systems increasingly adopt skill-based architectures to reduce repetitive reasoning costs and improve stable, efficient task execution. Recent studies propose self-evolving agents that autonomously generate, refine, and reuse skills from past experiences to enable continuous capability evolution. However, autonomous skill evolution introduces a new attack surface in which malicious capabilities are generated, stored, and reused as legitimate skills. In this paper, we define EvoSkill Injection as a threat model targeting the autonomous skill generation and evolution pipeline of self-evolving agents. We further propose SARGE (Red-teaming Autonomous Skill Generation and Evolution in self-evolving agents), a red-teaming framework for evaluating this threat model through iterative generation, escalation, and reinforcement interactions. To support our framework, we construct EvoSkillBench, a benchmark dataset of malicious interaction trajectories for inducing malicious skill formation in self-evolving agents, and introduce EvoSkillSafetyBench, a post-attack benchmark for evaluating whether injected malicious skills are subsequently retrieved and activated as harmful behaviors. Our evaluation shows that SARGE induces malicious skill formation and that injected skills are persistently stored and repeatedly activated, highlighting the risk of persistent capability corruption.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Doyun Kim"
+    },
+    {
+      "@type": "Person",
+      "name": "Chanwoo Kim"
+    },
+    {
+      "@type": "Person",
+      "name": "Sugyeong Eo"
+    },
+    {
+      "@type": "Person",
+      "name": "Yeo-Chan Yoon"
+    },
+    {
+      "@type": "Person",
+      "name": "Chanjun Park"
+    }
+  ],
+  "datePublished": "2026-08-31T08:25:03Z",
+  "dateModified": "2026-08-31T08:25:03Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.30429.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.30429.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.30429v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.30429"
+  },
+  "keywords": [
+    "Safety",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Safety"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.30429v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.30429"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +100,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>EvoSkill Injection: Red-Teaming Autonomous Skill Generation and Evolution in Self-Evolving Agents</h1>
+        <div class="meta">
+          Doyun Kim, Chanwoo Kim, Sugyeong Eo, Yeo-Chan Yoon, Chanjun Park
+          · 2608.30429
+          · <time datetime="2026-08-31">2026-08-31</time>
+          · Safety
+        </div>
+        <div class="themes"><span class="chip">Safety</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLM-based agent systems increasingly adopt skill-based architectures to reduce repetitive reasoning costs and improve stable, efficient task execution. Recent studies propose self-evolving agents that autonomously generate, refine, and reuse skills from past experiences to enable continuous capability evolution. However, autonomous skill evolution introduces a new attack surface in which malicious capabilities are generated, stored, and reused as legitimate skills. In this paper, we define EvoSkill Injection as a threat model targeting the autonomous skill generation and evolution pipeline of self-evolving agents. We further propose SARGE (Red-teaming Autonomous Skill Generation and Evolution in self-evolving agents), a red-teaming framework for evaluating this threat model through iterative generation, escalation, and reinforcement interactions. To support our framework, we construct EvoSkillBench, a benchmark dataset of malicious interaction trajectories for inducing malicious skill formation in self-evolving agents, and introduce EvoSkillSafetyBench, a post-attack benchmark for evaluating whether injected malicious skills are subsequently retrieved and activated as harmful behaviors. Our evaluation shows that SARGE induces malicious skill formation and that injected skills are persistently stored and repeatedly activated, highlighting the risk of persistent capability corruption.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.30429v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.30429v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.30429" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Safety benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.09218.html"><strong>The Double Measurement Confound in Agent Benchmarks: De-Scaffolding, Ground-Truth Scoring, and Reliability Beyond the Mean</strong></a> <span>2026-09-06</span></li>
+          <li><a href="2609.04444.html"><strong>HarvestBench: Measuring Whether LLM Agents Will Pay to Avoid Killing Animals</strong></a> <span>2026-09-03</span></li>
+          <li><a href="2609.03423.html"><strong>DuplexSpeechBench-IFEval: Evaluating Implicit Instruction Following in Full-Duplex Voice Agents</strong></a> <span>2026-09-03</span></li>
+          <li><a href="2608.30724.html"><strong>BAITBENCH: Measuring Agent Reward Hacking with Optional Shortcuts Planted in ML Tasks</strong></a> <span>2026-08-31</span></li>
+          <li><a href="2608.27021.html"><strong>FaulT-Bench: Towards Benchmarking Network Troubleshooting LLM Agents under Unreliable User Tickets</strong></a> <span>2026-08-27</span></li>
+          <li><a href="2608.26546.html"><strong>DuMateBench: Evaluating Autonomous Agents in Complex Real-World Workflows</strong></a> <span>2026-08-27</span></li>
+          <li><a href="2608.25340.html"><strong>HRGuard: Gating Relationship Manipulation in Multi-Turn Agentic AI Conversations</strong></a> <span>2026-08-26</span></li>
+          <li><a href="2608.24314.html"><strong>Benchmarking LLM Judges for Voice-Agent Evaluation: Reliability, Calibration, and Human Oversight</strong></a> <span>2026-08-25</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

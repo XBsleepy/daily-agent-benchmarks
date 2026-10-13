@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Policy-Invisible Violations in LLM-Based Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLM-based agents can execute actions that are syntactically valid, user-sanctioned, and semantically appropriate, yet still violate…" />
+    <meta name="keywords" content="General, Tool use, agent benchmark, LLM agent, arXiv, 2604.12177" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.12177.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Policy-Invisible Violations in LLM-Based Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLM-based agents can execute actions that are syntactically valid, user-sanctioned, and semantically appropriate, yet still violate…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.12177.html" />
+    <meta property="article:published_time" content="2026-04-14T01:15:15Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Policy-Invisible Violations in LLM-Based Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLM-based agents can execute actions that are syntactically valid, user-sanctioned, and semantically appropriate, yet still violate…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,56 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Policy-Invisible Violations in LLM-Based Agents",
+  "name": "Policy-Invisible Violations in LLM-Based Agents",
+  "abstract": "LLM-based agents can execute actions that are syntactically valid, user-sanctioned, and semantically appropriate, yet still violate organizational policy because the facts needed for correct policy judgment are hidden at decision time. We call this failure mode policy-invisible violations: cases in which compliance depends on entity attributes, contextual state, or session history absent from the agent's visible context. We present PhantomPolicy, a benchmark spanning eight violation categories with balanced violation and safe-control cases, in which all tool responses contain clean business data without policy metadata. We manually review all 600 model traces produced by five frontier models and evaluate them using human-reviewed trace labels. Manual review changes 32 labels (5.3%) relative to the original case-level annotations, confirming the need for trace-level human review. To demonstrate what world-state-grounded enforcement can achieve under favorable conditions, we introduce Sentinel, an enforcement framework based on counterfactual graph simulation. Sentinel treats every agent action as a proposed mutation to an organizational knowledge graph, performs speculative execution to materialize the post-action world state, and verifies graph-structural invariants to decide Allow/Block/Clarify. Against human-reviewed trace labels, Sentinel substantially outperforms a content-only DLP baseline (68.8% vs. 93.0% accuracy) while maintaining high precision, though it still leaves room for improvement on certain violation categories. These results demonstrate what becomes achievable once policy-relevant world state is made available to the enforcement layer.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jie Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Ming Gong"
+    }
+  ],
+  "datePublished": "2026-04-14T01:15:15Z",
+  "dateModified": "2026-04-14T01:15:15Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.12177.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.12177.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.12177v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2604.12177"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2604.12177v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2604.12177"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +88,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Policy-Invisible Violations in LLM-Based Agents</h1>
+        <div class="meta">
+          Jie Wu, Ming Gong
+          · 2604.12177
+          · <time datetime="2026-04-14">2026-04-14</time>
+          · General · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLM-based agents can execute actions that are syntactically valid, user-sanctioned, and semantically appropriate, yet still violate organizational policy because the facts needed for correct policy judgment are hidden at decision time. We call this failure mode policy-invisible violations: cases in which compliance depends on entity attributes, contextual state, or session history absent from the agent&#x27;s visible context. We present PhantomPolicy, a benchmark spanning eight violation categories with balanced violation and safe-control cases, in which all tool responses contain clean business data without policy metadata. We manually review all 600 model traces produced by five frontier models and evaluate them using human-reviewed trace labels. Manual review changes 32 labels (5.3%) relative to the original case-level annotations, confirming the need for trace-level human review. To demonstrate what world-state-grounded enforcement can achieve under favorable conditions, we introduce Sentinel, an enforcement framework based on counterfactual graph simulation. Sentinel treats every agent action as a proposed mutation to an organizational knowledge graph, performs speculative execution to materialize the post-action world state, and verifies graph-structural invariants to decide Allow/Block/Clarify. Against human-reviewed trace labels, Sentinel substantially outperforms a content-only DLP baseline (68.8% vs. 93.0% accuracy) while maintaining high precision, though it still leaves room for improvement on certain violation categories. These results demonstrate what becomes achievable once policy-relevant world state is made available to the enforcement layer.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2604.12177v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2604.12177v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2604.12177" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2604.15267.html"><strong>CoopEval: Benchmarking Cooperation-Sustaining Mechanisms and LLM Agents in Social Dilemmas</strong></a> <span>2026-04-16</span></li>
+          <li><a href="2604.14448.html"><strong>MARCA: A Checklist-Based Benchmark for Multilingual Web Search</strong></a> <span>2026-04-15</span></li>
+          <li><a href="2604.13954.html"><strong>HINTBench: Horizon-agent Intrinsic Non-attack Trajectory Benchmark</strong></a> <span>2026-04-15</span></li>
+          <li><a href="2604.13593.html"><strong>AVID: A Benchmark for Omni-Modal Audio-Visual Inconsistency Understanding via Agent-Driven Construction</strong></a> <span>2026-04-15</span></li>
+          <li><a href="2604.12040.html"><strong>SIR-Bench: Evaluating Investigation Depth in Security Incident Response Agents</strong></a> <span>2026-04-13</span></li>
+          <li><a href="2604.11270.html"><strong>Evaluating LLM Agents on Automated Software Analysis Tasks</strong></a> <span>2026-04-13</span></li>
+          <li><a href="2604.10547.html"><strong>Agent^2 RL-Bench: Can LLM Agents Engineer Agentic RL Post-Training?</strong></a> <span>2026-04-12</span></li>
+          <li><a href="2604.10261.html"><strong>The Amazing Agent Race: Strong Tool Users, Weak Navigators</strong></a> <span>2026-04-11</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

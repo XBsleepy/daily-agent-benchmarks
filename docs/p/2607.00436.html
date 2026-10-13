@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>PHREEQC-MCQ-200: A Diagnostic Benchmark for Tool-Augmented Scientific Simulator Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language model agents are increasingly connected to scientific software, yet it remains unclear when tool access makes…" />
+    <meta name="keywords" content="Science &amp; research, Tool use, Science lab, agent benchmark, LLM agent, arXiv, 2607.00436" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.00436.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="PHREEQC-MCQ-200: A Diagnostic Benchmark for Tool-Augmented Scientific Simulator Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language model agents are increasingly connected to scientific software, yet it remains unclear when tool access makes…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.00436.html" />
+    <meta property="article:published_time" content="2026-07-01T04:51:37Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PHREEQC-MCQ-200: A Diagnostic Benchmark for Tool-Augmented Scientific Simulator Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language model agents are increasingly connected to scientific software, yet it remains unclear when tool access makes…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,65 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "PHREEQC-MCQ-200: A Diagnostic Benchmark for Tool-Augmented Scientific Simulator Agents",
+  "name": "PHREEQC-MCQ-200: A Diagnostic Benchmark for Tool-Augmented Scientific Simulator Agents",
+  "abstract": "Large language model agents are increasingly connected to scientific software, yet it remains unclear when tool access makes scientific computation more reliable rather than merely more complex. We introduce PHREEQC-MCQ-200, a benchmark for evaluating tool-augmented agents on deterministic aqueous-geochemistry simulations. The benchmark contains 200 multiple-choice questions derived from 21 validated PHREEQC scenarios, requiring agents to construct simulator inputs, execute PHREEQC, inspect structured outputs, and commit to final answers. Across multiple frontier and mid-tier model families, simulator access substantially improves aggregate accuracy, confirming that grounded execution is necessary for many scientific-computation tasks. However, the gains are not monotonic: tool-augmented agents also lose items they answered correctly without tools, revealing regressions that average accuracy alone hides. We further show that output-access protocol matters. A table-of-contents interface can reduce token cost while preserving or improving accuracy for stronger models, but it degrades performance for mid-tier models that cannot reliably navigate structured simulator outputs. PHREEQC-MCQ-200 therefore frames scientific tool use as an end-to-end diagnostic problem rather than a simple tool-calling capability. We argue that evaluations of scientific agents should report not only accuracy, but also item-level retention, output-access sensitivity, trajectory failures, and where the computation chain breaks.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Ke Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Sahchit Chundur"
+    },
+    {
+      "@type": "Person",
+      "name": "Mohammad Javad Qomi"
+    },
+    {
+      "@type": "Person",
+      "name": "Maziar Raissi"
+    }
+  ],
+  "datePublished": "2026-07-01T04:51:37Z",
+  "dateModified": "2026-07-01T04:51:37Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.00436.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.00436.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.00436v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.00436"
+  },
+  "keywords": [
+    "Science & research",
+    "Tool use",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Science & research"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.00436v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.00436"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +97,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>PHREEQC-MCQ-200: A Diagnostic Benchmark for Tool-Augmented Scientific Simulator Agents</h1>
+        <div class="meta">
+          Ke Zhang, Sahchit Chundur, Mohammad Javad Qomi, Maziar Raissi
+          · 2607.00436
+          · <time datetime="2026-07-01">2026-07-01</time>
+          · Science &amp; research
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large language model agents are increasingly connected to scientific software, yet it remains unclear when tool access makes scientific computation more reliable rather than merely more complex. We introduce PHREEQC-MCQ-200, a benchmark for evaluating tool-augmented agents on deterministic aqueous-geochemistry simulations. The benchmark contains 200 multiple-choice questions derived from 21 validated PHREEQC scenarios, requiring agents to construct simulator inputs, execute PHREEQC, inspect structured outputs, and commit to final answers. Across multiple frontier and mid-tier model families, simulator access substantially improves aggregate accuracy, confirming that grounded execution is necessary for many scientific-computation tasks. However, the gains are not monotonic: tool-augmented agents also lose items they answered correctly without tools, revealing regressions that average accuracy alone hides. We further show that output-access protocol matters. A table-of-contents interface can reduce token cost while preserving or improving accuracy for stronger models, but it degrades performance for mid-tier models that cannot reliably navigate structured simulator outputs. PHREEQC-MCQ-200 therefore frames scientific tool use as an end-to-end diagnostic problem rather than a simple tool-calling capability. We argue that evaluations of scientific agents should report not only accuracy, but also item-level retention, output-access sensitivity, trajectory failures, and where the computation chain breaks.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.00436v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.00436v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.00436" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Science &amp; research benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.18084.html"><strong>WorldCupArena: Fine-Grained Evaluation of Language Models and Deep-Research Agents on Football Forecasting</strong></a> <span>2026-07-20</span></li>
+          <li><a href="2607.17291.html"><strong>DRNOISE: Benchmarking Deep Research Agents in Misleading Evidence Environments</strong></a> <span>2026-07-19</span></li>
+          <li><a href="2607.16848.html"><strong>Beyond Memory Leaderboards: Evaluating Scientific Memory as Budgeted Context Restoration</strong></a> <span>2026-07-18</span></li>
+          <li><a href="2607.03105.html"><strong>ORBIT-Q: Dual-axis benchmarking of autonomous agents in scientific quantum programming</strong></a> <span>2026-07-03</span></li>
+          <li><a href="2606.12736.html"><strong>Benchmarking AI Agents for Addressing Scientific Challenges Across Scales</strong></a> <span>2026-06-10</span></li>
+          <li><a href="2606.03829.html"><strong>BigFinanceBench: A Workflow-Grounded Benchmark for Financial-Research Agents</strong></a> <span>2026-06-02</span></li>
+          <li><a href="2606.02320.html"><strong>TVIR: Building Deep Research Agents Towards Text-Visual Interleaved Report Generation</strong></a> <span>2026-06-01</span></li>
+          <li><a href="2606.00750.html"><strong>I-WebGenBench : Evaluating Interactivity in LLM-Generated Scientific Web Applications</strong></a> <span>2026-05-30</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

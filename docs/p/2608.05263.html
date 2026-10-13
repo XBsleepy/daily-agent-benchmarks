@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>OrchestraBench: Evaluating Multi-Agent Orchestration Failure Modes, Recovery, and Decomposition Quality | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Multi-agent orchestration frameworks are moving from demos to production, yet benchmarks typically report task accuracy without…" />
+    <meta name="keywords" content="Work / office, Tool use, Multi-agent, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2608.05263" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.05263.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="OrchestraBench: Evaluating Multi-Agent Orchestration Failure Modes, Recovery, and Decomposition Quality" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Multi-agent orchestration frameworks are moving from demos to production, yet benchmarks typically report task accuracy without…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.05263.html" />
+    <meta property="article:published_time" content="2026-08-05T17:27:15Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="OrchestraBench: Evaluating Multi-Agent Orchestration Failure Modes, Recovery, and Decomposition Quality" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Multi-agent orchestration frameworks are moving from demos to production, yet benchmarks typically report task accuracy without…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,70 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "OrchestraBench: Evaluating Multi-Agent Orchestration Failure Modes, Recovery, and Decomposition Quality",
+  "name": "OrchestraBench: Evaluating Multi-Agent Orchestration Failure Modes, Recovery, and Decomposition Quality",
+  "abstract": "Multi-agent orchestration frameworks are moving from demos to production, yet benchmarks typically report task accuracy without diagnosing why a pipeline failed, where a cascade began, or which routing decision caused the breakdown. OrchestraBench evaluates failure, recovery, and decomposition through a controlled, seed-reproducible failure-injection harness over templated enterprise workflows. It introduces cascade radius and per-failure-mode recovery as primary metrics and compares routing policies with bootstrap confidence intervals and paired tests. On a 26-case gold-labelled diagnostic, a keyword/flag router scored 0% on adversarial cases with misleading or missing surface flags, whereas an intent-reasoning model router scored 100%, matching the oracle. Controlled mechanism probes with a real Claude agent over a verifiable arithmetic dependency chain revealed three failure-handling tiers across five MAST modes: tool faults recovered fully (1.0), ambiguous delegation recovered partially (0.30), and three latent or semantic modes never recovered (0.0). This ordering persisted when the computation was reframed as a loan-approval workflow and across Sonnet, Opus, and Haiku, although absolute rates shifted with context. Blind retry reproduced latent faults and increased time to detection, indicating that detection and attribution are necessary for containment. Cascade radius increased with pipeline depth (mean 0.9 to 4.7 across depths 3-7). A trusted-state repair ablation showed that apparent containment gains primarily came from the trusted-state signal rather than autonomous detection. These results are controlled-chain mechanism probes, not domain-workload claims.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yidian Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Yingzi Gu"
+    },
+    {
+      "@type": "Person",
+      "name": "Natan Vidra"
+    },
+    {
+      "@type": "Person",
+      "name": "Spurthi Setty"
+    },
+    {
+      "@type": "Person",
+      "name": "Sharon Zheng"
+    }
+  ],
+  "datePublished": "2026-08-05T17:27:15Z",
+  "dateModified": "2026-08-05T17:27:15Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.05263.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.05263.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.05263v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.05263"
+  },
+  "keywords": [
+    "Work / office",
+    "Tool use",
+    "Multi-agent",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Work / office"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.05263v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.05263"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +102,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>OrchestraBench: Evaluating Multi-Agent Orchestration Failure Modes, Recovery, and Decomposition Quality</h1>
+        <div class="meta">
+          Yidian Chen, Yingzi Gu, Natan Vidra, Spurthi Setty, Sharon Zheng
+          · 2608.05263
+          · <time datetime="2026-08-05">2026-08-05</time>
+          · Work / office
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Multi-agent</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Multi-agent orchestration frameworks are moving from demos to production, yet benchmarks typically report task accuracy without diagnosing why a pipeline failed, where a cascade began, or which routing decision caused the breakdown. OrchestraBench evaluates failure, recovery, and decomposition through a controlled, seed-reproducible failure-injection harness over templated enterprise workflows. It introduces cascade radius and per-failure-mode recovery as primary metrics and compares routing policies with bootstrap confidence intervals and paired tests. On a 26-case gold-labelled diagnostic, a keyword/flag router scored 0% on adversarial cases with misleading or missing surface flags, whereas an intent-reasoning model router scored 100%, matching the oracle. Controlled mechanism probes with a real Claude agent over a verifiable arithmetic dependency chain revealed three failure-handling tiers across five MAST modes: tool faults recovered fully (1.0), ambiguous delegation recovered partially (0.30), and three latent or semantic modes never recovered (0.0). This ordering persisted when the computation was reframed as a loan-approval workflow and across Sonnet, Opus, and Haiku, although absolute rates shifted with context. Blind retry reproduced latent faults and increased time to detection, indicating that detection and attribution are necessary for containment. Cascade radius increased with pipeline depth (mean 0.9 to 4.7 across depths 3-7). A trusted-state repair ablation showed that apparent containment gains primarily came from the trusted-state signal rather than autonomous detection. These results are controlled-chain mechanism probes, not domain-workload claims.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.05263v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.05263v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.05263" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Work / office benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.12654.html"><strong>SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries</strong></a> <span>2026-08-12</span></li>
+          <li><a href="2608.11616.html"><strong>MBA: Multimodal Benchmark and Agents for Real-World Business Ideation</strong></a> <span>2026-08-12</span></li>
+          <li><a href="2608.09096.html"><strong>Evo-Bench: Can Language Models Improve Agent Harness?</strong></a> <span>2026-08-10</span></li>
+          <li><a href="2608.06144.html"><strong>FinEvo-Bench: A Longitudinal Benchmark for Self-Evolving Agents in Professional Financial Workflows</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2608.02758.html"><strong>Everyone Conforms, No One Believes: Pluralistic Ignorance in LLM Agent Populations</strong></a> <span>2026-08-03</span></li>
+          <li><a href="2607.29677.html"><strong>ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction</strong></a> <span>2026-07-31</span></li>
+          <li><a href="2607.27155.html"><strong>OmegaUse-OfficeVal: Benchmarking LLM Agents on Long-Horizon Office-Suite Tasks with Economic Grounding</strong></a> <span>2026-07-29</span></li>
+          <li><a href="2607.27080.html"><strong>MemSecBench: Tracking Agent Memory Poisoning from Persistence to Consequence and Repair</strong></a> <span>2026-07-29</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

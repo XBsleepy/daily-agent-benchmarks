@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>SWE-Chain: Benchmarking Coding Agents on Chained Release-Level Package Upgrades | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Coding agents powered by large language models are increasingly expected to perform realistic software maintenance tasks beyond…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2605.14415" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.14415.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SWE-Chain: Benchmarking Coding Agents on Chained Release-Level Package Upgrades" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Coding agents powered by large language models are increasingly expected to perform realistic software maintenance tasks beyond…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.14415.html" />
+    <meta property="article:published_time" content="2026-05-14T06:04:40Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SWE-Chain: Benchmarking Coding Agents on Chained Release-Level Package Upgrades" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Coding agents powered by large language models are increasingly expected to perform realistic software maintenance tasks beyond…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,80 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SWE-Chain: Benchmarking Coding Agents on Chained Release-Level Package Upgrades",
+  "name": "SWE-Chain: Benchmarking Coding Agents on Chained Release-Level Package Upgrades",
+  "abstract": "Coding agents powered by large language models are increasingly expected to perform realistic software maintenance tasks beyond isolated issue resolution. Existing benchmarks have shifted toward realistic software evolution, but they rarely capture continuous maintenance at the granularity of package releases, where changes are bundled, shipped, and inherited by subsequent versions. We present SWE-Chain, a benchmark for evaluating agents on chained release-level package upgrades, where each transition builds on the agent's prior codebase. To produce upgrade specifications, we design a divide-and-conquer synthesis pipeline that aligns release notes with code diffs for each version transition, ensuring the requirements are grounded in actual code changes, informative to agents, and feasible to implement. SWE-Chain contains 12 upgrade chains across 9 real Python packages, with 155 version transitions and 1,660 grounded upgrade requirements. Across nine frontier agent-model configurations, agents achieve an average of 44.8% resolving, 65.4% precision, and 50.2% F1 under the Build+Fix regime, with Claude-Opus-4.7 (Claude Code) leading at 60.8% resolving, 80.6% precision, and 68.5% F1. These results show that SWE-Chain is both feasible and discriminative, and reveal that current agents still struggle to make correct upgrades across chained package releases without breaking existing functionality.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Man Ho Lam"
+    },
+    {
+      "@type": "Person",
+      "name": "Chaozheng Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Hange Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jingyu Xiao"
+    },
+    {
+      "@type": "Person",
+      "name": "Haau-sing Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Jen-tse Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Terry Yue Zhuo"
+    },
+    {
+      "@type": "Person",
+      "name": "Michael R. Lyu"
+    }
+  ],
+  "datePublished": "2026-05-14T06:04:40Z",
+  "dateModified": "2026-05-14T06:04:40Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.14415.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.14415.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.14415v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.14415"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.14415v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.14415"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +112,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SWE-Chain: Benchmarking Coding Agents on Chained Release-Level Package Upgrades</h1>
+        <div class="meta">
+          Man Ho Lam, Chaozheng Wang, Hange Liu, Jingyu Xiao, Haau-sing Li, Jen-tse Huang, Terry Yue Zhuo, Michael R. Lyu
+          · 2605.14415
+          · <time datetime="2026-05-14">2026-05-14</time>
+          · Coding / SWE · 4 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Coding agents powered by large language models are increasingly expected to perform realistic software maintenance tasks beyond isolated issue resolution. Existing benchmarks have shifted toward realistic software evolution, but they rarely capture continuous maintenance at the granularity of package releases, where changes are bundled, shipped, and inherited by subsequent versions. We present SWE-Chain, a benchmark for evaluating agents on chained release-level package upgrades, where each transition builds on the agent&#x27;s prior codebase. To produce upgrade specifications, we design a divide-and-conquer synthesis pipeline that aligns release notes with code diffs for each version transition, ensuring the requirements are grounded in actual code changes, informative to agents, and feasible to implement. SWE-Chain contains 12 upgrade chains across 9 real Python packages, with 155 version transitions and 1,660 grounded upgrade requirements. Across nine frontier agent-model configurations, agents achieve an average of 44.8% resolving, 65.4% precision, and 50.2% F1 under the Build+Fix regime, with Claude-Opus-4.7 (Claude Code) leading at 60.8% resolving, 80.6% precision, and 68.5% F1. These results show that SWE-Chain is both feasible and discriminative, and reveal that current agents still struggle to make correct upgrades across chained package releases without breaking existing functionality.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.14415v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.14415v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.14415" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.16626.html"><strong>SLEIGHT-Bench: A Benchmark of Evasion Attacks Against Agent Monitors</strong></a> <span>2026-05-15</span></li>
+          <li><a href="2605.15846.html"><strong>RoadmapBench: Evaluating Long-Horizon Agentic Software Development Across Version Upgrades</strong></a> <span>2026-05-15</span></li>
+          <li><a href="2605.15669.html"><strong>Rule2DRC: Benchmarking LLM Agents for DRC Script Synthesis with Execution-Guided Test Generation</strong></a> <span>2026-05-15</span></li>
+          <li><a href="2605.18859.html"><strong>TwinRouterBench: Fast Static and Live Dynamic Evaluation for Realistic Agentic LLM Routing</strong></a> <span>2026-05-14</span></li>
+          <li><a href="2606.20585.html"><strong>Turning Intent into Specifications: A Benchmark and an Interactive User-Assistant Agent</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.15226.html"><strong>Is Agentic AI Ready for Real-World Hardware Engineering? A Deep Dive with Phoenix-bench</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.13950.html"><strong>Collider-Bench: Benchmarking AI Agents with Particle Physics Analysis Reproduction</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.13139.html"><strong>SWE-Cycle: Benchmarking Code Agents across the Complete Issue Resolution Cycle</strong></a> <span>2026-05-13</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

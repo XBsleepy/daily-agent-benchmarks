@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>SkillGenBench: Benchmarking Skill Generation Pipelines for LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: As LLM agents are increasingly built around reusable skills, a central challenge is no longer only whether agents can use provided…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2605.18693" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.18693.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SkillGenBench: Benchmarking Skill Generation Pipelines for LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: As LLM agents are increasingly built around reusable skills, a central challenge is no longer only whether agents can use provided…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.18693.html" />
+    <meta property="article:published_time" content="2026-05-18T17:28:36Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SkillGenBench: Benchmarking Skill Generation Pipelines for LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: As LLM agents are increasingly built around reusable skills, a central challenge is no longer only whether agents can use provided…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,92 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SkillGenBench: Benchmarking Skill Generation Pipelines for LLM Agents",
+  "name": "SkillGenBench: Benchmarking Skill Generation Pipelines for LLM Agents",
+  "abstract": "As LLM agents are increasingly built around reusable skills, a central challenge is no longer only whether agents can use provided skills, but whether they can generate correct, reusable, and executable skills from repositories and documents. Existing benchmarks primarily evaluate the efficacy of given skills or the ability of agents to solve downstream tasks from raw context, but they do not isolate skill generation itself as the object of study. We introduce SkillGenBench, a benchmark for evaluating skill generation pipelines under a unified and controlled protocol. In SkillGenBench, a generator receives raw corpora and produces standardized skill artifacts, which are then executed under fixed harnesses and assessed with unified evaluation procedures. The benchmark covers two generation regimes: task-conditioned generation, where a task-specific skill is synthesized after the task is revealed, and task-agnostic generation, where a reusable skill library must be distilled before downstream tasks are known. It also spans two complementary procedural sources: repository-grounded instances, where procedures are distributed across code, configuration, and scripts, and document-grounded instances, where procedures and constraints must be distilled from long-form text. We provide standardized task specifications, pinned environments, and evaluation protocols centered on deterministic execution-based checks, supplemented by auxiliary signals for diagnosis. Experiments across a range of skill-generation methods and backbones show substantial performance variation, highlight the difficulty of reusable skill distillation, and reveal distinct failure modes in skill generation from software repositories versus long-form documents. SkillGenBench establishes a reproducible testbed for studying skill generation as an independent research problem in agent systems.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yifan Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhentao Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Ziming Cheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Shuo Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Qizhen Lan"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhangquan Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhi Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "QianyuXu"
+    },
+    {
+      "@type": "Person",
+      "name": "Ronghao Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Huacan Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Sen Hu"
+    }
+  ],
+  "datePublished": "2026-05-18T17:28:36Z",
+  "dateModified": "2026-05-18T17:28:36Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.18693.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.18693.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.18693v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.18693"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.18693v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.18693"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +124,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SkillGenBench: Benchmarking Skill Generation Pipelines for LLM Agents</h1>
+        <div class="meta">
+          Yifan Zhou, Zhentao Zhang, Ziming Cheng, Shuo Zhang, Qizhen Lan, Zhangquan Chen, Zhi Yang, QianyuXu, Ronghao Chen, Huacan Wang, Sen Hu
+          · 2605.18693
+          · <time datetime="2026-05-18">2026-05-18</time>
+          · Coding / SWE · 13 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>As LLM agents are increasingly built around reusable skills, a central challenge is no longer only whether agents can use provided skills, but whether they can generate correct, reusable, and executable skills from repositories and documents. Existing benchmarks primarily evaluate the efficacy of given skills or the ability of agents to solve downstream tasks from raw context, but they do not isolate skill generation itself as the object of study. We introduce SkillGenBench, a benchmark for evaluating skill generation pipelines under a unified and controlled protocol. In SkillGenBench, a generator receives raw corpora and produces standardized skill artifacts, which are then executed under fixed harnesses and assessed with unified evaluation procedures. The benchmark covers two generation regimes: task-conditioned generation, where a task-specific skill is synthesized after the task is revealed, and task-agnostic generation, where a reusable skill library must be distilled before downstream tasks are known. It also spans two complementary procedural sources: repository-grounded instances, where procedures are distributed across code, configuration, and scripts, and document-grounded instances, where procedures and constraints must be distilled from long-form text. We provide standardized task specifications, pinned environments, and evaluation protocols centered on deterministic execution-based checks, supplemented by auxiliary signals for diagnosis. Experiments across a range of skill-generation methods and backbones show substantial performance variation, highlight the difficulty of reusable skill distillation, and reveal distinct failure modes in skill generation from software repositories versus long-form documents. SkillGenBench establishes a reproducible testbed for studying skill generation as an independent research problem in agent systems.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.18693v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.18693v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.18693" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.24110.html"><strong>EvoCode-Bench: Evaluating Coding Agents in Multi-Turn Iterative Interactions</strong></a> <span>2026-05-22</span></li>
+          <li><a href="2605.21384.html"><strong>SpecBench: Measuring Reward Hacking in Long-Horizon Coding Agents</strong></a> <span>2026-05-20</span></li>
+          <li><a href="2605.19399.html"><strong>HSCO-Bench: An Agent-Driven End-to-End Hardware-Software Co-design Benchmark for Systems-on-Chip</strong></a> <span>2026-05-19</span></li>
+          <li><a href="2605.20251.html"><strong>ProcCtrlBench: Evaluating Process-Level Defects and Control Preservation in LLM Coding Agents</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.18583.html"><strong>Overeager Coding Agents: Measuring Out-of-Scope Actions on Benign Tasks</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.17986.html"><strong>LivePI: More Realistic Benchmarking of Agents Against Indirect Prompt Injection</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.17937.html"><strong>BacktestBench: Benchmarking Large Language Models for Automated Quantitative Strategy Backtesting</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.17637.html"><strong>WebGameBench: Requirement-to-Application Evaluation for Coding Agents via Browser-Native Games</strong></a> <span>2026-05-17</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

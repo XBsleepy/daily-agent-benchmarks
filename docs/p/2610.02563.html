@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>OpenGameEval: Benchmarking Agentic Programming and Exploration in a Stateful Game Engine | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: We present OpenGameEval, a benchmark and evaluation framework for agentic game development inside Roblox Studio. It runs language…" />
+    <meta name="keywords" content="Tool use, agent benchmark, LLM agent, arXiv, 2610.02563" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.02563.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="OpenGameEval: Benchmarking Agentic Programming and Exploration in a Stateful Game Engine" />
+    <meta property="og:description" content="Daily Agent Benchmarks: We present OpenGameEval, a benchmark and evaluation framework for agentic game development inside Roblox Studio. It runs language…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.02563.html" />
+    <meta property="article:published_time" content="2026-10-01T22:56:10Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="OpenGameEval: Benchmarking Agentic Programming and Exploration in a Stateful Game Engine" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: We present OpenGameEval, a benchmark and evaluation framework for agentic game development inside Roblox Studio. It runs language…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,83 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "OpenGameEval: Benchmarking Agentic Programming and Exploration in a Stateful Game Engine",
+  "name": "OpenGameEval: Benchmarking Agentic Programming and Exploration in a Stateful Game Engine",
+  "abstract": "We present OpenGameEval, a benchmark and evaluation framework for agentic game development inside Roblox Studio. It runs language models as agents in reproducible, stateful game-engine sessions and scores each run with executable checks, both on the edited scene and in a simulated play session. Most agentic coding benchmarks require exploration but score only final task success. OpenGameEval separates observation tools from editing tools in its eight-tool action space, so exploration can be measured directly. We measure the pass rates and exploration behavior of 13 frontier models on 84 human-curated core tasks, with 16 attempts per task. The tasks are hard for current models. The best model solves 51.7% of tasks on a single attempt and 39.4% five times out of five, and no tested model solves six of the tasks. Models at the frontier reach similar pass rates by solving different tasks: splitting tasks by the kind of work they require spreads the top five by 5.0pp on script-authoring tasks and 12.5pp on scene-change tasks. Exploration behavior predicts whether a run succeeds. Holding task and model fixed, a run that inspects every object a reference solution touches before acting on it passes 13.4pp more often than a run that inspects none of them on scene-only tasks, and 9.8pp more often on script-only tasks. We release the task suite, its place files, the per-task annotations, a plugin that runs the tasks inside Roblox Studio, and an updated leaderboard under the MIT license at https://github.com/Roblox/open-game-eval.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Eray Turkel"
+    },
+    {
+      "@type": "Person",
+      "name": "Mengsha Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Kartik Ayyar"
+    },
+    {
+      "@type": "Person",
+      "name": "Sean Dunigan"
+    },
+    {
+      "@type": "Person",
+      "name": "Jack Lu"
+    },
+    {
+      "@type": "Person",
+      "name": "Vlad Shcherban"
+    },
+    {
+      "@type": "Person",
+      "name": "Hsiang-Shun Shih"
+    },
+    {
+      "@type": "Person",
+      "name": "Xin Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Tiantian Zhang"
+    }
+  ],
+  "datePublished": "2026-10-01T22:56:10Z",
+  "dateModified": "2026-10-01T22:56:10Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.02563.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.02563.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.02563v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.02563"
+  },
+  "keywords": [
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.02563v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2610.02563"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +115,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>OpenGameEval: Benchmarking Agentic Programming and Exploration in a Stateful Game Engine</h1>
+        <div class="meta">
+          Eray Turkel, Mengsha Sun, Kartik Ayyar, Sean Dunigan, Jack Lu, Vlad Shcherban, Hsiang-Shun Shih, Xin Wang, Tiantian Zhang
+          · 2610.02563
+          · <time datetime="2026-10-01">2026-10-01</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>We present OpenGameEval, a benchmark and evaluation framework for agentic game development inside Roblox Studio. It runs language models as agents in reproducible, stateful game-engine sessions and scores each run with executable checks, both on the edited scene and in a simulated play session. Most agentic coding benchmarks require exploration but score only final task success. OpenGameEval separates observation tools from editing tools in its eight-tool action space, so exploration can be measured directly. We measure the pass rates and exploration behavior of 13 frontier models on 84 human-curated core tasks, with 16 attempts per task. The tasks are hard for current models. The best model solves 51.7% of tasks on a single attempt and 39.4% five times out of five, and no tested model solves six of the tasks. Models at the frontier reach similar pass rates by solving different tasks: splitting tasks by the kind of work they require spreads the top five by 5.0pp on script-authoring tasks and 12.5pp on scene-change tasks. Exploration behavior predicts whether a run succeeds. Holding task and model fixed, a run that inspects every object a reference solution touches before acting on it passes 13.4pp more often than a run that inspects none of them on scene-only tasks, and 9.8pp more often on script-only tasks. We release the task suite, its place files, the per-task annotations, a plugin that runs the tasks inside Roblox Studio, and an updated leaderboard under the MIT license at https://github.com/Roblox/open-game-eval.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.02563v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.02563v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.02563" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.03356.html"><strong>ReFract: Benchmarking Perspective Awareness in Language Model Agents with Text World Models</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.03226.html"><strong>D2K-Bench: Can LLM Agents Turn Expert Designs into Efficient GPU Kernels?</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.02206.html"><strong>KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.02089.html"><strong>HumanoidToolBench: Benchmarking Humanoid Tool Use from Selection to Mobile Execution</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2609.38652.html"><strong>AgBench: Agentic AI Benchmarks for Personal AI Devices</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.38512.html"><strong>VAmoS Part Deux: Harder, More Realistic Voice-Agent Simulation</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.37315.html"><strong>Do Agent Benchmarks Do What They Say? An Executable-Contract Audit of Tool-Using Agent Environments</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.35732.html"><strong>Failure-Transparent Agents: Benchmarking Post-Failure Reporting in Tool-Using Language Models</strong></a> <span>2026-09-28</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

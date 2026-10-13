@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLM agents increasingly operate in large tool ecosystems, where real-world tasks require discovering relevant tools, inferring…" />
+    <meta name="keywords" content="Tool use, Safety, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2606.22388" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.22388.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLM agents increasingly operate in large tool ecosystems, where real-world tasks require discovering relevant tools, inferring…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.22388.html" />
+    <meta property="article:published_time" content="2026-06-21T08:29:12Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLM agents increasingly operate in large tool ecosystems, where real-world tasks require discovering relevant tools, inferring…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,93 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems",
+  "name": "PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems",
+  "abstract": "LLM agents increasingly operate in large tool ecosystems, where real-world tasks require discovering relevant tools, inferring implicit sub-goals, and adapting to dynamic environments over long horizons. However, existing benchmarks rarely evaluate planning under retrieval-limited tool visibility. To address this gap, we introduce PlanBench-XL, an interactive benchmark of 327 retail tasks over 1,665 tools that tests whether agents can iteratively retrieve usable tools, invoke them to uncover intermediate evidence for subsequent calls toward the final goal. PlanBench-XL further features an optional blocking mechanism that simulates real-world unpredictability through missing, failing, or distracting tool functions, forcing agents to detect disrupted paths and adapt at runtime. Experiments on ten leading LLMs show that massive-tool planning remains challenging: while GPT-5.4 achieves 51.90% accuracy in block-free settings, it collapses to 11.36% under the most severe blocking condition. Further analysis shows that agents are especially vulnerable when failures lack explicit error signals or when recovery requires longer alternative tool-use paths. These results establish PlanBench-XL as a testbed for diagnosing agentic planning failures and highlight the need for robust adaptive planning in long-horizon tasks with large, imperfect tool environments.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jiayu Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Qihan Lin"
+    },
+    {
+      "@type": "Person",
+      "name": "Cheng Qian"
+    },
+    {
+      "@type": "Person",
+      "name": "Rui Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Emre Can Acikgoz"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaocheng Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiateng Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhenhailong Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiusi Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Heng Ji"
+    },
+    {
+      "@type": "Person",
+      "name": "Dilek Hakkani-Tür"
+    }
+  ],
+  "datePublished": "2026-06-21T08:29:12Z",
+  "dateModified": "2026-06-21T08:29:12Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.22388.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.22388.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.22388v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.22388"
+  },
+  "keywords": [
+    "Tool use",
+    "Safety",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.22388v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.22388"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +125,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems</h1>
+        <div class="meta">
+          Jiayu Liu, Qihan Lin, Cheng Qian, Rui Wang, Emre Can Acikgoz, Xiaocheng Yang, Jiateng Liu, Zhenhailong Wang, Xiusi Chen, Heng Ji, Dilek Hakkani-Tür
+          · 2606.22388
+          · <time datetime="2026-06-21">2026-06-21</time>
+          · Tool use · 7 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLM agents increasingly operate in large tool ecosystems, where real-world tasks require discovering relevant tools, inferring implicit sub-goals, and adapting to dynamic environments over long horizons. However, existing benchmarks rarely evaluate planning under retrieval-limited tool visibility. To address this gap, we introduce PlanBench-XL, an interactive benchmark of 327 retail tasks over 1,665 tools that tests whether agents can iteratively retrieve usable tools, invoke them to uncover intermediate evidence for subsequent calls toward the final goal. PlanBench-XL further features an optional blocking mechanism that simulates real-world unpredictability through missing, failing, or distracting tool functions, forcing agents to detect disrupted paths and adapt at runtime. Experiments on ten leading LLMs show that massive-tool planning remains challenging: while GPT-5.4 achieves 51.90% accuracy in block-free settings, it collapses to 11.36% under the most severe blocking condition. Further analysis shows that agents are especially vulnerable when failures lack explicit error signals or when recovery requires longer alternative tool-use paths. These results establish PlanBench-XL as a testbed for diagnosing agentic planning failures and highlight the need for robust adaptive planning in long-horizon tasks with large, imperfect tool environments.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.22388v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.22388v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.22388" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.05775.html"><strong>Beyond the Leaderboard: A Synthesis of Tool-Use, Planning, and Reasoning Failures in Large Language Model Agents</strong></a> <span>2026-07-07</span></li>
+          <li><a href="2607.04686.html"><strong>ToolFailBench: Diagnosing Tool-Use Failures in LLM Agents</strong></a> <span>2026-07-06</span></li>
+          <li><a href="2606.29073.html"><strong>From Tool Connection to Execution Control: Benchmarking Security Invariants in MCP-Style Agent Runtimes</strong></a> <span>2026-06-27</span></li>
+          <li><a href="2606.25819.html"><strong>Beyond Function Calling: Benchmarking Tool-Using Agents under Tool-Environment Unreliability</strong></a> <span>2026-06-24</span></li>
+          <li><a href="2606.03657.html"><strong>Diagnosing Knowledge Gaps in LLM Tool Use: An Agentic Benchmark for Novel API Acquisition</strong></a> <span>2026-06-02</span></li>
+          <li><a href="2606.02470.html"><strong>MCP-Persona: Benchmarking LLM Agents on Real-World Personal Applications via Environment Simulation</strong></a> <span>2026-06-01</span></li>
+          <li><a href="2604.15715.html"><strong>GTA-2: Benchmarking General Tool Agents from Atomic Tool-Use to Open-Ended Workflows</strong></a> <span>2026-04-17</span></li>
+          <li><a href="2604.04847.html"><strong>Full-Duplex-Bench-v3: Benchmarking Tool Use for Full-Duplex Voice Agents Under Real-World Disfluency</strong></a> <span>2026-04-06</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>AMA-Bench: Evaluating Long-Horizon Memory for Agentic Applications | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large Language Models (LLMs) are increasingly used as autonomous agents in complex, long-horizon applications, where effective memory…" />
+    <meta name="keywords" content="Dialogue, Tool use, Memory, Dialogue / customer, agent benchmark, LLM agent, arXiv, 2602.22769" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.22769.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AMA-Bench: Evaluating Long-Horizon Memory for Agentic Applications" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large Language Models (LLMs) are increasingly used as autonomous agents in complex, long-horizon applications, where effective memory…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.22769.html" />
+    <meta property="article:published_time" content="2026-02-26T08:59:31Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AMA-Bench: Evaluating Long-Horizon Memory for Agentic Applications" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large Language Models (LLMs) are increasingly used as autonomous agents in complex, long-horizon applications, where effective memory…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,98 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AMA-Bench: Evaluating Long-Horizon Memory for Agentic Applications",
+  "name": "AMA-Bench: Evaluating Long-Horizon Memory for Agentic Applications",
+  "abstract": "Large Language Models (LLMs) are increasingly used as autonomous agents in complex, long-horizon applications, where effective memory is critical for sustained performance. Yet existing memory benchmarks are largely dialogue-centric, while real agent memory consists of continuous agent-environment interaction trajectories composed of states, actions, observations, and tool outputs. To address this gap, we introduce **AMA-Bench** (**A**gent **M**emory with **A**ny length), a benchmark for evaluating long-horizon memory in realistic agentic settings. AMA-Bench combines real-world agent trajectories from representative applications with expert-curated QA, as well as synthetic trajectories that scale to arbitrary horizons with rule-based QA. Our study shows that existing memory systems underperform because they fail to capture causal and objective information and rely heavily on lossy similarity-based retrieval. We further propose **AMA-Agent**, a memory system based on causality-graph construction and tool-augmented retrieval. AMA-Agent achieves **57.22%** accuracy on AMA-Bench, outperforming the strongest baseline by **11.16%**. Resources are available at: [https://ama-bench.github.io/](https://ama-bench.github.io/).",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yujie Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Boqin Yuan"
+    },
+    {
+      "@type": "Person",
+      "name": "Junbo Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Haocheng Yuan"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhongming Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Haozhou Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Lanxiang Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Abhilash Shankarampeta"
+    },
+    {
+      "@type": "Person",
+      "name": "Zimeng Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Wentao Ni"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuandong Tian"
+    },
+    {
+      "@type": "Person",
+      "name": "Jishen Zhao"
+    }
+  ],
+  "datePublished": "2026-02-26T08:59:31Z",
+  "dateModified": "2026-05-27T09:28:43Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.22769.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.22769.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2602.22769v4"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2602.22769"
+  },
+  "keywords": [
+    "Dialogue",
+    "Tool use",
+    "Memory",
+    "Dialogue / customer",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Dialogue"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2602.22769v4"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2602.22769"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +130,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AMA-Bench: Evaluating Long-Horizon Memory for Agentic Applications</h1>
+        <div class="meta">
+          Yujie Zhao, Boqin Yuan, Junbo Huang, Haocheng Yuan, Zhongming Yu, Haozhou Xu, Lanxiang Hu, Abhilash Shankarampeta, Zimeng Huang, Wentao Ni, Yuandong Tian, Jishen Zhao
+          · 2602.22769
+          · <time datetime="2026-02-26">2026-02-26</time>
+          · Dialogue · 41 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Memory</span><span class="chip">Dialogue / customer</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large Language Models (LLMs) are increasingly used as autonomous agents in complex, long-horizon applications, where effective memory is critical for sustained performance. Yet existing memory benchmarks are largely dialogue-centric, while real agent memory consists of continuous agent-environment interaction trajectories composed of states, actions, observations, and tool outputs. To address this gap, we introduce **AMA-Bench** (**A**gent **M**emory with **A**ny length), a benchmark for evaluating long-horizon memory in realistic agentic settings. AMA-Bench combines real-world agent trajectories from representative applications with expert-curated QA, as well as synthetic trajectories that scale to arbitrary horizons with rule-based QA. Our study shows that existing memory systems underperform because they fail to capture causal and objective information and rely heavily on lossy similarity-based retrieval. We further propose **AMA-Agent**, a memory system based on causality-graph construction and tool-augmented retrieval. AMA-Agent achieves **57.22%** accuracy on AMA-Bench, outperforming the strongest baseline by **11.16%**. Resources are available at: [https://ama-bench.github.io/](https://ama-bench.github.io/).</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2602.22769v4" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2602.22769v4" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2602.22769" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Dialogue benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2604.18356.html"><strong>ComPASS: Towards Personalized Agentic Social Support via Tool-Augmented Companionship</strong></a> <span>2026-04-20</span></li>
+          <li><a href="2604.01576.html"><strong>Care-Conditioned Neuromodulation for Autonomy-Preserving Supportive Dialogue Agents</strong></a> <span>2026-04-02</span></li>
+          <li><a href="2603.28569.html"><strong>CirrusBench: Evaluating LLM-based Agents Beyond Correctness in Real-World Cloud Service Environments</strong></a> <span>2026-03-30</span></li>
+          <li><a href="2603.25821.html"><strong>Doctorina MedBench: A Dialogue-Based Benchmark and Evaluation Framework for Agent-Based Medical AI</strong></a> <span>2026-03-26</span></li>
+          <li><a href="2602.10715.html"><strong>Locomo-Plus: Beyond-Factual Cognitive Memory Evaluation Framework for LLM Agents</strong></a> <span>2026-02-11</span></li>
+          <li><a href="2602.01885.html"><strong>ES-MemEval: Benchmarking Conversational Agents on Personalized Long-Term Emotional Support</strong></a> <span>2026-02-02</span></li>
+          <li><a href="2601.22027.html"><strong>CAR-bench: Evaluating the Consistency and Limit-Awareness of LLM Agents under Real-World Uncertainty</strong></a> <span>2026-01-29</span></li>
+          <li><a href="2601.20613.html"><strong>AgentIF-OneDay: A Task-level Instruction-Following Benchmark for General AI Agents in Daily Scenarios</strong></a> <span>2026-01-28</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

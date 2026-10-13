@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>STT-Arena: A More Realistic Environment for Tool-Using with Spatio-Temporal Dynamics | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language models (LLMs) deployed in real-world agentic applications must be capable of replanning and adapting when mid-task…" />
+    <meta name="keywords" content="General, Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2605.18548" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.18548.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="STT-Arena: A More Realistic Environment for Tool-Using with Spatio-Temporal Dynamics" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language models (LLMs) deployed in real-world agentic applications must be capable of replanning and adapting when mid-task…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.18548.html" />
+    <meta property="article:published_time" content="2026-05-18T15:27:52Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="STT-Arena: A More Realistic Environment for Tool-Using with Spatio-Temporal Dynamics" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language models (LLMs) deployed in real-world agentic applications must be capable of replanning and adapting when mid-task…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,81 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "STT-Arena: A More Realistic Environment for Tool-Using with Spatio-Temporal Dynamics",
+  "name": "STT-Arena: A More Realistic Environment for Tool-Using with Spatio-Temporal Dynamics",
+  "abstract": "Large language models (LLMs) deployed in real-world agentic applications must be capable of replanning and adapting when mid-task disruptions invalidate their prior decisions. Existing dynamic benchmarks primarily measure whether LLMs can detect temporal changes in a timely manner, leaving the complementary challenge of adaptive replanning under spatio-temporal dynamics largely unexplored. We introduce STT-Arena (Spatio-Temporal Tool-Use Arena), a benchmark of 227 high-quality interactive tasks spanning nine spatio-temporal conflict types and four solvability levels. Each task is grounded in a realistic, executable environment equipped with injected spatio-temporal triggers that can abruptly invalidate an ongoing plan, forcing the model to detect the state shift and construct a revised execution strategy. Extensive evaluation of frontier LLMs reveals that even the SOTA proprietary models, including Claude-4.6-Opus, achieves less than 40\\% overall accuracies, highlighting the fundamental difficulty of spatio-temporal dynamic reasoning. Systematic analysis of failure trajectories uncovers three recurring error modes of existing models: Stale-State Execution, Misdiagnosis of Dynamic Triggers, and Missing Post-Adaptation Verification. Guided by these findings, we propose an iterative trajectory refinement technique that eliminates these failure patterns from training data, and combine it with online RL to produce STT-Agent-4B which outperforms frontier LLMs on STT-Arena.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Tingfeng Hui"
+    },
+    {
+      "@type": "Person",
+      "name": "Hao Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Pengyu Zhu"
+    },
+    {
+      "@type": "Person",
+      "name": "Hongsheng Xin"
+    },
+    {
+      "@type": "Person",
+      "name": "Kun Zhan"
+    },
+    {
+      "@type": "Person",
+      "name": "Sen Su"
+    },
+    {
+      "@type": "Person",
+      "name": "Chunxiao Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Ning Miao"
+    }
+  ],
+  "datePublished": "2026-05-18T15:27:52Z",
+  "dateModified": "2026-05-18T15:27:52Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.18548.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.18548.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.18548v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.18548"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.18548v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.18548"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +113,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>STT-Arena: A More Realistic Environment for Tool-Using with Spatio-Temporal Dynamics</h1>
+        <div class="meta">
+          Tingfeng Hui, Hao Xu, Pengyu Zhu, Hongsheng Xin, Kun Zhan, Sen Su, Chunxiao Liu, Ning Miao
+          · 2605.18548
+          · <time datetime="2026-05-18">2026-05-18</time>
+          · General · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large language models (LLMs) deployed in real-world agentic applications must be capable of replanning and adapting when mid-task disruptions invalidate their prior decisions. Existing dynamic benchmarks primarily measure whether LLMs can detect temporal changes in a timely manner, leaving the complementary challenge of adaptive replanning under spatio-temporal dynamics largely unexplored. We introduce STT-Arena (Spatio-Temporal Tool-Use Arena), a benchmark of 227 high-quality interactive tasks spanning nine spatio-temporal conflict types and four solvability levels. Each task is grounded in a realistic, executable environment equipped with injected spatio-temporal triggers that can abruptly invalidate an ongoing plan, forcing the model to detect the state shift and construct a revised execution strategy. Extensive evaluation of frontier LLMs reveals that even the SOTA proprietary models, including Claude-4.6-Opus, achieves less than 40\% overall accuracies, highlighting the fundamental difficulty of spatio-temporal dynamic reasoning. Systematic analysis of failure trajectories uncovers three recurring error modes of existing models: Stale-State Execution, Misdiagnosis of Dynamic Triggers, and Missing Post-Adaptation Verification. Guided by these findings, we propose an iterative trajectory refinement technique that eliminates these failure patterns from training data, and combine it with online RL to produce STT-Agent-4B which outperforms frontier LLMs on STT-Arena.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.18548v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.18548v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.18548" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.22855.html"><strong>PrefBench: Evaluating Zero-Shot LLM Agents in Hidden-Preference Personalized Pricing Negotiations</strong></a> <span>2026-05-19</span></li>
+          <li><a href="2605.20530.html"><strong>AgentAtlas: Beyond Outcome Leaderboards for LLM Agents</strong></a> <span>2026-05-19</span></li>
+          <li><a href="2605.19717.html"><strong>Physics-in-the-Loop: A Hybrid Agentic Architecture for Validated CAD Engineering Design</strong></a> <span>2026-05-19</span></li>
+          <li><a href="2605.19127.html"><strong>POLAR-Bench: A Diagnostic Benchmark for Privacy-Utility Trade-offs in LLM Agents</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.18421.html"><strong>EvoMemBench: Benchmarking Agent Memory from a Self-Evolving Perspective</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.18397.html"><strong>Duet instrumentation: An Agentic Approach to Improving Sensitivity in Cloud Service Benchmarking</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.17324.html"><strong>ASPI: Seeking Ambiguity Clarification Amplifies Prompt Injection Vulnerability in LLM Agents</strong></a> <span>2026-05-17</span></li>
+          <li><a href="2605.17281.html"><strong>ContractBench: Can LLM Agents Preserve Observation Contracts?</strong></a> <span>2026-05-17</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

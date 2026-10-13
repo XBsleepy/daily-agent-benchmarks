@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Can Coding Agents Implement Missed Compiler Optimizations? Evaluating LLM Agents on LLVM Peephole Optimizations | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Coding agents built on large language models are now capable of patching sizable real-world codebases, yet whether they can develop…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2607.02684" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.02684.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Can Coding Agents Implement Missed Compiler Optimizations? Evaluating LLM Agents on LLVM Peephole Optimizations" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Coding agents built on large language models are now capable of patching sizable real-world codebases, yet whether they can develop…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.02684.html" />
+    <meta property="article:published_time" content="2026-07-02T18:25:29Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Can Coding Agents Implement Missed Compiler Optimizations? Evaluating LLM Agents on LLVM Peephole Optimizations" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Coding agents built on large language models are now capable of patching sizable real-world codebases, yet whether they can develop…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,65 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Can Coding Agents Implement Missed Compiler Optimizations? Evaluating LLM Agents on LLVM Peephole Optimization",
+  "name": "Can Coding Agents Implement Missed Compiler Optimizations? Evaluating LLM Agents on LLVM Peephole Optimizations",
+  "abstract": "Coding agents built on large language models are now capable of patching sizable real-world codebases, yet whether they can develop compiler optimizations remains an open question. To study this question, we introduce PeepholeBench, an evaluation framework whose tasks are constructed from real-world missed peephole optimizations reported against LLVM's InstCombine pass. Since missed peephole optimizations are typically fixed with small, localized patches, they offer a well-scoped but demanding testbed for coding agents: a correct fix demands rigorous reasoning about program semantics along with familiarity with optimizer-specific conventions. PeepholeBench derives its tasks from 21 resolved LLVM issues and 19 merged pull requests (PRs), supplies agents with only the issue context that existed before each fix, and assesses the resulting patches for both correctness and profitability. With PeepholeBench, we benchmark state-of-the-art coding agents on fixing missed peephole optimizations in LLVM's InstCombine pass, measuring their patches against the corresponding human-written fixes. We observe a tension between correctness and profitability, and no agent matches human developers on both dimensions at once. The dominant failure modes are overly narrow transformations and misuse of LLVM-specific mechanisms, errors that existing test suites rarely expose. Together, these results establish PeepholeBench as a realistic and challenging benchmark for coding agents, and suggest future directions for building agents that can more dependably assist compiler optimization development.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Hongxu Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Chunhao Liao"
+    },
+    {
+      "@type": "Person",
+      "name": "Xintong Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Chengnian Sun"
+    }
+  ],
+  "datePublished": "2026-07-02T18:25:29Z",
+  "dateModified": "2026-07-02T18:25:29Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.02684.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.02684.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.02684v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.02684"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.02684v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.02684"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +97,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Can Coding Agents Implement Missed Compiler Optimizations? Evaluating LLM Agents on LLVM Peephole Optimizations</h1>
+        <div class="meta">
+          Hongxu Xu, Chunhao Liao, Xintong Zhou, Chengnian Sun
+          · 2607.02684
+          · <time datetime="2026-07-02">2026-07-02</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Coding agents built on large language models are now capable of patching sizable real-world codebases, yet whether they can develop compiler optimizations remains an open question. To study this question, we introduce PeepholeBench, an evaluation framework whose tasks are constructed from real-world missed peephole optimizations reported against LLVM&#x27;s InstCombine pass. Since missed peephole optimizations are typically fixed with small, localized patches, they offer a well-scoped but demanding testbed for coding agents: a correct fix demands rigorous reasoning about program semantics along with familiarity with optimizer-specific conventions. PeepholeBench derives its tasks from 21 resolved LLVM issues and 19 merged pull requests (PRs), supplies agents with only the issue context that existed before each fix, and assesses the resulting patches for both correctness and profitability. With PeepholeBench, we benchmark state-of-the-art coding agents on fixing missed peephole optimizations in LLVM&#x27;s InstCombine pass, measuring their patches against the corresponding human-written fixes. We observe a tension between correctness and profitability, and no agent matches human developers on both dimensions at once. The dominant failure modes are overly narrow transformations and misuse of LLVM-specific mechanisms, errors that existing test suites rarely expose. Together, these results establish PeepholeBench as a realistic and challenging benchmark for coding agents, and suggest future directions for building agents that can more dependably assist compiler optimization development.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.02684v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.02684v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.02684" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.07744.html"><strong>PERFOPT-Bench: Evaluating Coding Agents on Software Performance Optimization</strong></a> <span>2026-07-08</span></li>
+          <li><a href="2607.06624.html"><strong>AgentLens: Production-Assessed Trajectory Reviews for Coding Agent Evaluation</strong></a> <span>2026-07-07</span></li>
+          <li><a href="2607.06411.html"><strong>RuBench: A Repository-Level Agentic Coding Benchmark with Natively Authored Russian Task Specifications</strong></a> <span>2026-07-07</span></li>
+          <li><a href="2607.03525.html"><strong>GameEngineBench: Evaluating Coding Agents on Real C++ Runtime Environments</strong></a> <span>2026-07-03</span></li>
+          <li><a href="2607.02370.html"><strong>Understanding Agent-Based Patching of Compiler Missed Optimizations</strong></a> <span>2026-07-02</span></li>
+          <li><a href="2607.02606.html"><strong>ChainSWE: Benchmarking Coding Agents on Multi-Bug Software Maintenance</strong></a> <span>2026-07-01</span></li>
+          <li><a href="2606.32007.html"><strong>AxDafny: Agentic Verified Code Generation in Dafny</strong></a> <span>2026-06-30</span></li>
+          <li><a href="2606.30573.html"><strong>SWE-INTERACT: Reimagining SWE Benchmarks as User-Driven Long-Horizon Coding Sessions</strong></a> <span>2026-06-29</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>HUSH-Bench: Measuring Memory-Use Boundaries for Sensitive History in Conversational Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Long-term memory helps conversational agents maintain continuity across sessions, while relevance and current-turn warrant remain…" />
+    <meta name="keywords" content="General, Memory, agent benchmark, LLM agent, arXiv, 2606.06055" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.06055.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="HUSH-Bench: Measuring Memory-Use Boundaries for Sensitive History in Conversational Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Long-term memory helps conversational agents maintain continuity across sessions, while relevance and current-turn warrant remain…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.06055.html" />
+    <meta property="article:published_time" content="2026-06-04T11:54:51Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="HUSH-Bench: Measuring Memory-Use Boundaries for Sensitive History in Conversational Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Long-term memory helps conversational agents maintain continuity across sessions, while relevance and current-turn warrant remain…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,64 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "HUSH-Bench: Measuring Memory-Use Boundaries for Sensitive History in Conversational Agents",
+  "name": "HUSH-Bench: Measuring Memory-Use Boundaries for Sensitive History in Conversational Agents",
+  "abstract": "Long-term memory helps conversational agents maintain continuity across sessions, while relevance and current-turn warrant remain distinct decisions. We study this boundary under a stated conservative policy in which sensitive history shapes a response when the current turn supplies a reason to use it. We introduce HUSH-Bench, a controlled benchmark of 2,400 benign prompts paired with histories containing one marked sensitive disclosure and matched no-memory references. HUSH-Bench measures unsolicited history integration with the Unsolicited History Integration Score (UIS; 0--100, higher is worse), records whether the marked disclosure reaches the generator, and includes paired prompts that differ only in whether the user asks the assistant to use earlier context. We evaluate four models under no-memory, full-context, and three retrieval-based memory settings. Memory access raises UIS from near zero to 8.9--26.6 for one model and 51.3--83.0 for the other three. Retrieval systems expose the marked disclosure in 23.0\\%--30.3\\% of cases, while related sensitive entries or summaries remain available and three models continue to show high UIS. Across four generators, an explicit invitation increases target-memory uptake scores by 27.0--41.3; measured helpfulness remains stable while mean over-scope rises. These results motivate treating memory storage, retrieval, warrant, and per-turn scope as separate design decisions.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Lingxiang Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiaoyun Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Min Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Ning An"
+    }
+  ],
+  "datePublished": "2026-06-04T11:54:51Z",
+  "dateModified": "2026-08-03T14:34:11Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.06055.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.06055.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.06055v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.06055"
+  },
+  "keywords": [
+    "General",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.06055v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.06055"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +96,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>HUSH-Bench: Measuring Memory-Use Boundaries for Sensitive History in Conversational Agents</h1>
+        <div class="meta">
+          Lingxiang Xu, Jiaoyun Yang, Min Hu, Ning An
+          · 2606.06055
+          · <time datetime="2026-06-04">2026-06-04</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Long-term memory helps conversational agents maintain continuity across sessions, while relevance and current-turn warrant remain distinct decisions. We study this boundary under a stated conservative policy in which sensitive history shapes a response when the current turn supplies a reason to use it. We introduce HUSH-Bench, a controlled benchmark of 2,400 benign prompts paired with histories containing one marked sensitive disclosure and matched no-memory references. HUSH-Bench measures unsolicited history integration with the Unsolicited History Integration Score (UIS; 0--100, higher is worse), records whether the marked disclosure reaches the generator, and includes paired prompts that differ only in whether the user asks the assistant to use earlier context. We evaluate four models under no-memory, full-context, and three retrieval-based memory settings. Memory access raises UIS from near zero to 8.9--26.6 for one model and 51.3--83.0 for the other three. Retrieval systems expose the marked disclosure in 23.0\%--30.3\% of cases, while related sensitive entries or summaries remain available and three models continue to show high UIS. Across four generators, an explicit invitation increases target-memory uptake scores by 27.0--41.3; measured helpfulness remains stable while mean over-scope rises. These results motivate treating memory storage, retrieval, warrant, and per-turn scope as separate design decisions.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.06055v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.06055v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.06055" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.10388.html"><strong>Right Family, Wrong Skill: Benchmarking Risk Exposure in Agent Skill Retrieval</strong></a> <span>2026-06-09</span></li>
+          <li><a href="2606.10064.html"><strong>Bittensor Agent Arenas as a Trajectory Primitive: Distilling a Shopping Agent from ShoppingBench Subnet Traces</strong></a> <span>2026-06-08</span></li>
+          <li><a href="2606.08960.html"><strong>Hardening Agent Benchmarks with Adversarial Hacker-Fixer Loops</strong></a> <span>2026-06-08</span></li>
+          <li><a href="2606.06960.html"><strong>FinEvolveBench: A Benchmark for Self-Evolving Agents on Low-Repetition Tasks with Implicit Rewards</strong></a> <span>2026-06-05</span></li>
+          <li><a href="2606.05806.html"><strong>When Tools Fail: Benchmarking Dynamic Replanning and Anomaly Recovery in LLM Agents</strong></a> <span>2026-06-04</span></li>
+          <li><a href="2606.05622.html"><strong>AdaPlanBench: Evaluating Adaptive Planning in Large Language Model Agents under World and User Constraints</strong></a> <span>2026-06-04</span></li>
+          <li><a href="2606.04460.html"><strong>CyberGym-E2E: Scalable Real-World Benchmark for AI Agents&#x27; End-to-End Cybersecurity Capabilities</strong></a> <span>2026-06-03</span></li>
+          <li><a href="2606.03918.html"><strong>Hedge-Bench: Benchmarking Agents on Hard, Realistic Tasks Pertaining to Financial Reasoning</strong></a> <span>2026-06-02</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

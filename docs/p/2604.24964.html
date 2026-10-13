@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Odysseys: Benchmarking Web Agents on Realistic Long Horizon Tasks | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Existing web agent benchmarks have largely converged on short, single-site tasks that frontier models are approaching saturation on…" />
+    <meta name="keywords" content="Web &amp; browser, Web agents, Computer use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2604.24964" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.24964.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Odysseys: Benchmarking Web Agents on Realistic Long Horizon Tasks" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Existing web agent benchmarks have largely converged on short, single-site tasks that frontier models are approaching saturation on…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.24964.html" />
+    <meta property="article:published_time" content="2026-04-27T20:05:41Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Odysseys: Benchmarking Web Agents on Realistic Long Horizon Tasks" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Existing web agent benchmarks have largely converged on short, single-site tasks that frontier models are approaching saturation on…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,66 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Odysseys: Benchmarking Web Agents on Realistic Long Horizon Tasks",
+  "name": "Odysseys: Benchmarking Web Agents on Realistic Long Horizon Tasks",
+  "abstract": "Existing web agent benchmarks have largely converged on short, single-site tasks that frontier models are approaching saturation on. However, real world web use consists of long-horizon, multi-site workflows. Common web navigation tasks, such as comparing products across different domains, planning trips across multiple services, or summarizing information from multiple search queries, require sustained context and cross-site reasoning over potentially hours of browsing. To capture and evaluate such behaviors, we introduce Odysseys: a benchmark of 200 long-horizon web tasks derived from real world browsing sessions evaluated on the live Internet. We find that binary pass/fail evaluation is inadequate for long-horizon settings and introduce a rubric-based evaluation, annotating each Odysseys task with an average of 6.1 graded rubrics. We demonstrate that this yields higher agreement with humans and provides a more fine-grained signal than commonly used trajectory-level LLM-as-a-judge evaluation metrics. We tested several leading frontier models and find that the strongest models achieve a success rate of 44.5%, which leaves substantial room for future improvements. Beyond task success, we argue that efficiency is a first-class concern for long-horizon agents. We introduce a Trajectory Efficiency metric (rubric score per step) and find that even frontier agents achieve only 1.15%, marking an evident need for agents that can succeed efficiently and not simply eventually. Odysseys isolates the critical evaluation of long-horizon proficiency in open-web environments, providing a realistic benchmark to measure progress towards computer-use agents that can potentially productively operate for hours. We release our tasks, evaluation scripts, and other results at https://odysseys-website.pages.dev",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Lawrence Keunho Jang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jing Yu Koh"
+    },
+    {
+      "@type": "Person",
+      "name": "Daniel Fried"
+    },
+    {
+      "@type": "Person",
+      "name": "Ruslan Salakhutdinov"
+    }
+  ],
+  "datePublished": "2026-04-27T20:05:41Z",
+  "dateModified": "2026-04-27T20:05:41Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.24964.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.24964.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.24964v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2604.24964"
+  },
+  "keywords": [
+    "Web & browser",
+    "Web agents",
+    "Computer use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Web & browser"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2604.24964v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2604.24964"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +98,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Odysseys: Benchmarking Web Agents on Realistic Long Horizon Tasks</h1>
+        <div class="meta">
+          Lawrence Keunho Jang, Jing Yu Koh, Daniel Fried, Ruslan Salakhutdinov
+          · 2604.24964
+          · <time datetime="2026-04-27">2026-04-27</time>
+          · Web &amp; browser · 12 citations
+        </div>
+        <div class="themes"><span class="chip">Web agents</span><span class="chip">Computer use</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Existing web agent benchmarks have largely converged on short, single-site tasks that frontier models are approaching saturation on. However, real world web use consists of long-horizon, multi-site workflows. Common web navigation tasks, such as comparing products across different domains, planning trips across multiple services, or summarizing information from multiple search queries, require sustained context and cross-site reasoning over potentially hours of browsing. To capture and evaluate such behaviors, we introduce Odysseys: a benchmark of 200 long-horizon web tasks derived from real world browsing sessions evaluated on the live Internet. We find that binary pass/fail evaluation is inadequate for long-horizon settings and introduce a rubric-based evaluation, annotating each Odysseys task with an average of 6.1 graded rubrics. We demonstrate that this yields higher agreement with humans and provides a more fine-grained signal than commonly used trajectory-level LLM-as-a-judge evaluation metrics. We tested several leading frontier models and find that the strongest models achieve a success rate of 44.5%, which leaves substantial room for future improvements. Beyond task success, we argue that efficiency is a first-class concern for long-horizon agents. We introduce a Trajectory Efficiency metric (rubric score per step) and find that even frontier agents achieve only 1.15%, marking an evident need for agents that can succeed efficiently and not simply eventually. Odysseys isolates the critical evaluation of long-horizon proficiency in open-web environments, providing a realistic benchmark to measure progress towards computer-use agents that can potentially productively operate for hours. We release our tasks, evaluation scripts, and other results at https://odysseys-website.pages.dev</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2604.24964v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2604.24964v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2604.24964" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Web &amp; browser benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.22564.html"><strong>SynAE: A Framework for Measuring the Quality of Synthetic Data for Tool-Calling Agent Evaluations</strong></a> <span>2026-05-21</span></li>
+          <li><a href="2605.20833.html"><strong>MemGym: a Long-Horizon Memory Environment for LLM Agents</strong></a> <span>2026-05-20</span></li>
+          <li><a href="2605.16116.html"><strong>ShopGym: An Integrated Framework for Realistic Simulation and Scalable Benchmarking of E-Commerce Web Agents</strong></a> <span>2026-05-15</span></li>
+          <li><a href="2605.09497.html"><strong>Don&#x27;t Click That: Teaching Web Agents to Resist Deceptive Interfaces</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2606.13686.html"><strong>Benchmarking Web Agent Safety under E-commerce Deceptive Interfaces</strong></a> <span>2026-04-26</span></li>
+          <li><a href="2604.23455.html"><strong>CUJBench: Benchmarking LLM-Agent on Cross-Modal Failure Diagnosis from Browser to Backend</strong></a> <span>2026-04-25</span></li>
+          <li><a href="2604.15309.html"><strong>MM-WebAgent: A Hierarchical Multimodal Web Agent for Webpage Generation</strong></a> <span>2026-04-16</span></li>
+          <li><a href="2604.10988.html"><strong>WebForge: Breaking the Realism-Reproducibility-Scalability Trilemma in Browser Agent Benchmark</strong></a> <span>2026-04-13</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

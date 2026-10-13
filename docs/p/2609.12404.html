@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>VRL-Bench: Benchmarking agents on computer control tasks under finite trial budgets | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Learning from trial and error is a promising way to improve language agents on complex tasks such as computer control. Reflexion…" />
+    <meta name="keywords" content="General, Memory, agent benchmark, LLM agent, arXiv, 2609.12404" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.12404.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="VRL-Bench: Benchmarking agents on computer control tasks under finite trial budgets" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Learning from trial and error is a promising way to improve language agents on complex tasks such as computer control. Reflexion…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.12404.html" />
+    <meta property="article:published_time" content="2026-09-11T03:54:02Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="VRL-Bench: Benchmarking agents on computer control tasks under finite trial budgets" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Learning from trial and error is a promising way to improve language agents on complex tasks such as computer control. Reflexion…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,92 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "VRL-Bench: Benchmarking agents on computer control tasks under finite trial budgets",
+  "name": "VRL-Bench: Benchmarking agents on computer control tasks under finite trial budgets",
+  "abstract": "Learning from trial and error is a promising way to improve language agents on complex tasks such as computer control. Reflexion introduced verbal reinforcement learning, which turns failed trials into text that guides later attempts without updating model parameters. We introduce VRL-Bench, a harness for fair evaluation of trial-and-error learning under finite trial budgets. Across three models on MiniWoB and WebShop, we evaluate updates from several prominent verbal-memory methods spanning Reflexion and later work: each improves observed success over memory-free retry in some settings but reduces it in others. Replay experiments show that using reflection can reduce success rates, revealing a trade-off between exploiting experience and continued exploration. We propose VEX$^2$, a verbal exploration--exploitation scheduler that uses a language model to jointly select policies and allocate the remaining trial budget. VEX$^2$ is the only evaluated update to achieve positive observed success-rate gains over retry in all six settings.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yu Bai"
+    },
+    {
+      "@type": "Person",
+      "name": "Yukai Miao"
+    },
+    {
+      "@type": "Person",
+      "name": "Dawei Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Li Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Yanyu Ren"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuqian Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Dan Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Ying Xiong"
+    },
+    {
+      "@type": "Person",
+      "name": "Chengqiu Tan"
+    },
+    {
+      "@type": "Person",
+      "name": "Run Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Li Li"
+    }
+  ],
+  "datePublished": "2026-09-11T03:54:02Z",
+  "dateModified": "2026-09-11T03:54:02Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.12404.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.12404.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.12404v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.12404"
+  },
+  "keywords": [
+    "General",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.12404v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.12404"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +124,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>VRL-Bench: Benchmarking agents on computer control tasks under finite trial budgets</h1>
+        <div class="meta">
+          Yu Bai, Yukai Miao, Dawei Wang, Li Chen, Yanyu Ren, Yuqian Shi, Dan Li, Ying Xiong, Chengqiu Tan, Run Zhou, Li Li
+          · 2609.12404
+          · <time datetime="2026-09-11">2026-09-11</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Learning from trial and error is a promising way to improve language agents on complex tasks such as computer control. Reflexion introduced verbal reinforcement learning, which turns failed trials into text that guides later attempts without updating model parameters. We introduce VRL-Bench, a harness for fair evaluation of trial-and-error learning under finite trial budgets. Across three models on MiniWoB and WebShop, we evaluate updates from several prominent verbal-memory methods spanning Reflexion and later work: each improves observed success over memory-free retry in some settings but reduces it in others. Replay experiments show that using reflection can reduce success rates, revealing a trade-off between exploiting experience and continued exploration. We propose VEX$^2$, a verbal exploration--exploitation scheduler that uses a language model to jointly select policies and allocate the remaining trial budget. VEX$^2$ is the only evaluated update to achieve positive observed success-rate gains over retry in all six settings.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.12404v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.12404v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.12404" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.21267.html"><strong>Efficient Benchmarking in Production: A Study of an Evolving LLM Agent</strong></a> <span>2026-09-21</span></li>
+          <li><a href="2609.18123.html"><strong>AutoTuneBench: Trustworthy Measurement for Agent Auto-Tuning of LLM Serving Engines</strong></a> <span>2026-09-17</span></li>
+          <li><a href="2609.13637.html"><strong>Identity Is More Than Recall: A Benchmark for Persistent Identity in Deployed AI Agents</strong></a> <span>2026-09-15</span></li>
+          <li><a href="2609.13076.html"><strong>MP-Bench: Evaluating Voice Agents as a Multiparty Conversation Participant</strong></a> <span>2026-09-11</span></li>
+          <li><a href="2609.11515.html"><strong>ChurnBench: A Drift-Aware Benchmark Demonstrating That Refresh Scheduling, Not Cache Age, Governs Staleness in Agentic AI</strong></a> <span>2026-09-10</span></li>
+          <li><a href="2609.08887.html"><strong>Q2D-Web: A Large-Scale Benchmark for Retrieval in Agentic RAG Systems</strong></a> <span>2026-09-08</span></li>
+          <li><a href="2609.08040.html"><strong>VEX-Bench: Benchmarking LLM Agents for Assessing Exploitability of Software Supply Chain Vulnerabilities</strong></a> <span>2026-09-07</span></li>
+          <li><a href="2609.06027.html"><strong>Evaluating Deep-Search Agents under Hierarchical Web Evidence Poisoning</strong></a> <span>2026-09-05</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

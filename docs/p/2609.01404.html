@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Evaluating Multimodal LLMs as Generalist Vision-Language-Action Agents for Drone Control: Commanding, Approaching, Tracking and Searching | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Multimodal Large Language Models (MLLMs) are strong perceivers of images and video. We ask how far that reach extends into acting…" />
+    <meta name="keywords" content="Multimodal, Embodied / robotics, agent benchmark, LLM agent, arXiv, 2609.01404" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.01404.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Evaluating Multimodal LLMs as Generalist Vision-Language-Action Agents for Drone Control: Commanding, Approaching, Tracking and Searching" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Multimodal Large Language Models (MLLMs) are strong perceivers of images and video. We ask how far that reach extends into acting…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.01404.html" />
+    <meta property="article:published_time" content="2026-09-01T15:27:43Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Evaluating Multimodal LLMs as Generalist Vision-Language-Action Agents for Drone Control: Commanding, Approaching, Tracking and Searching" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Multimodal Large Language Models (MLLMs) are strong perceivers of images and video. We ask how far that reach extends into acting…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,104 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Evaluating Multimodal LLMs as Generalist Vision-Language-Action Agents for Drone Control: Commanding, Approach",
+  "name": "Evaluating Multimodal LLMs as Generalist Vision-Language-Action Agents for Drone Control: Commanding, Approaching, Tracking and Searching",
+  "abstract": "Multimodal Large Language Models (MLLMs) are strong perceivers of images and video. We ask how far that reach extends into acting: dropping an MLLM directly into a drone's control loop, with its entire action space declared solely in the prompt. Recent systems approach this setting but increasingly narrow the model's decision-making. We widen it back. We introduce DroneCATS-Agent, an architecture where the MLLM is a swappable component, and DroneCATS, a benchmark treating the model as the independent variable. Beyond merely flying toward a pixel, our agent entrusts the model to yaw and search, deliberate when unsure, and self-declare arrival---all without fine-tuning or function-calling schemas. Evaluating frontier and open models across four core capabilities---approaching a visible target, tracking a moving one, searching outside the initial view, and commanding a multi-drone fleet---reveals that even the simplest embodied settings are far from solved. Crucially, to identify what breaks first at the edge, our roster scales down to 2B parameters. The findings expose a stark paradox: it is not the flying that fails. Small open models often navigate into the success radius more reliably than frontier models, yet lose the episode by declaring arrival prematurely or not at all. Multi-drone commanding amplifies this divide, with small models failing by blindly copying a single coordinate across distinct views. Viewed as vision-language-action agents, the models' spatial perception holds up, but their action protocol does not. What separates a deployable edge model from a frontier model is not navigation, but the discipline to sustain a declared protocol and emit the correct terminating action. The open problem is closing this gap at onboard compute costs---yielding a fast model that plans persistently and knows exactly when it is done---and DroneCATS is built to measure that distance.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jaewoo Park"
+    },
+    {
+      "@type": "Person",
+      "name": "Minyoung Lee"
+    },
+    {
+      "@type": "Person",
+      "name": "Sukmin Seo"
+    },
+    {
+      "@type": "Person",
+      "name": "Moonbin Yim"
+    },
+    {
+      "@type": "Person",
+      "name": "Hyunwook Yoon"
+    },
+    {
+      "@type": "Person",
+      "name": "Dohoon Ryu"
+    },
+    {
+      "@type": "Person",
+      "name": "Daehee Kim"
+    },
+    {
+      "@type": "Person",
+      "name": "Myungseo Song"
+    },
+    {
+      "@type": "Person",
+      "name": "Jihyuk Byun"
+    },
+    {
+      "@type": "Person",
+      "name": "Seunggyu Chang"
+    },
+    {
+      "@type": "Person",
+      "name": "Taeho Kil"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiseob Kim"
+    },
+    {
+      "@type": "Person",
+      "name": "Bado Lee"
+    },
+    {
+      "@type": "Person",
+      "name": "Geewook Kim"
+    }
+  ],
+  "datePublished": "2026-09-01T15:27:43Z",
+  "dateModified": "2026-09-01T15:27:43Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.01404.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.01404.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.01404v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.01404"
+  },
+  "keywords": [
+    "Multimodal",
+    "Embodied / robotics",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multimodal"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.01404v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.01404"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +136,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Evaluating Multimodal LLMs as Generalist Vision-Language-Action Agents for Drone Control: Commanding, Approaching, Tracking and Searching</h1>
+        <div class="meta">
+          Jaewoo Park, Minyoung Lee, Sukmin Seo, Moonbin Yim, Hyunwook Yoon, Dohoon Ryu, Daehee Kim, Myungseo Song, Jihyuk Byun, Seunggyu Chang, Taeho Kil, Jiseob Kim, Bado Lee, Geewook Kim
+          · 2609.01404
+          · <time datetime="2026-09-01">2026-09-01</time>
+          · Multimodal
+        </div>
+        <div class="themes"><span class="chip">Embodied / robotics</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Multimodal Large Language Models (MLLMs) are strong perceivers of images and video. We ask how far that reach extends into acting: dropping an MLLM directly into a drone&#x27;s control loop, with its entire action space declared solely in the prompt. Recent systems approach this setting but increasingly narrow the model&#x27;s decision-making. We widen it back. We introduce DroneCATS-Agent, an architecture where the MLLM is a swappable component, and DroneCATS, a benchmark treating the model as the independent variable. Beyond merely flying toward a pixel, our agent entrusts the model to yaw and search, deliberate when unsure, and self-declare arrival---all without fine-tuning or function-calling schemas. Evaluating frontier and open models across four core capabilities---approaching a visible target, tracking a moving one, searching outside the initial view, and commanding a multi-drone fleet---reveals that even the simplest embodied settings are far from solved. Crucially, to identify what breaks first at the edge, our roster scales down to 2B parameters. The findings expose a stark paradox: it is not the flying that fails. Small open models often navigate into the success radius more reliably than frontier models, yet lose the episode by declaring arrival prematurely or not at all. Multi-drone commanding amplifies this divide, with small models failing by blindly copying a single coordinate across distinct views. Viewed as vision-language-action agents, the models&#x27; spatial perception holds up, but their action protocol does not. What separates a deployable edge model from a frontier model is not navigation, but the discipline to sustain a declared protocol and emit the correct terminating action. The open problem is closing this gap at onboard compute costs---yielding a fast model that plans persistently and knows exactly when it is done---and DroneCATS is built to measure that distance.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.01404v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.01404v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.01404" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multimodal benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.15683.html"><strong>V-ICAL Bench: Evaluating Video In-Context Learning for Multimodal Agents in Interactive Environments</strong></a> <span>2026-09-15</span></li>
+          <li><a href="2609.15478.html"><strong>BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender</strong></a> <span>2026-09-15</span></li>
+          <li><a href="2609.06059.html"><strong>DAREBench: Deployment-Aware and Reliable Evaluation of Models as Agents</strong></a> <span>2026-09-05</span></li>
+          <li><a href="2609.04438.html"><strong>ICM-Bench: Person-Level Identity Reasoning in Multimodal Agents with Long-Term Memory</strong></a> <span>2026-09-03</span></li>
+          <li><a href="2609.01383.html"><strong>InSight: A Benchmark for Agentic Claim Verification in Interactive Visualizations</strong></a> <span>2026-09-01</span></li>
+          <li><a href="2608.31022.html"><strong>MNIST-PRO: MNIST is Back as a Partially Observable World for AI Agents</strong></a> <span>2026-08-31</span></li>
+          <li><a href="2608.25417.html"><strong>Paint What You See: Benchmarking Dexterous Visual Tool Use in Multimodal Agents</strong></a> <span>2026-08-26</span></li>
+          <li><a href="2608.25039.html"><strong>LifePlanner: Evaluating LLM Agents for Geo-spatial Planning with Social Media Data</strong></a> <span>2026-08-25</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

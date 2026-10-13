@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>AgentSLABench: Evaluating and Benchmarking Agentic Systems Under Resource Constraints | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: We present AgentSLABench, a resource-aware evaluation framework for autonomous AI agents that measures correctness alongside latency…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Memory, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2608.00805" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.00805.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AgentSLABench: Evaluating and Benchmarking Agentic Systems Under Resource Constraints" />
+    <meta property="og:description" content="Daily Agent Benchmarks: We present AgentSLABench, a resource-aware evaluation framework for autonomous AI agents that measures correctness alongside latency…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.00805.html" />
+    <meta property="article:published_time" content="2026-08-01T18:17:47Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AgentSLABench: Evaluating and Benchmarking Agentic Systems Under Resource Constraints" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: We present AgentSLABench, a resource-aware evaluation framework for autonomous AI agents that measures correctness alongside latency…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,58 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AgentSLABench: Evaluating and Benchmarking Agentic Systems Under Resource Constraints",
+  "name": "AgentSLABench: Evaluating and Benchmarking Agentic Systems Under Resource Constraints",
+  "abstract": "We present AgentSLABench, a resource-aware evaluation framework for autonomous AI agents that measures correctness alongside latency, cost, compute, memory, and network usage under declared resource budgets. Unlike standard benchmarks that report only accuracy, AgentSLABench produces a multi-dimensional profile per agent per task - the same way systems profilers (perf, pprof, cProfile) measure resource consumption of code, but extended with task correctness as a first-class dimension. AgentSLABench provides 16 task environments across 6 categories (5 core: multi-hop QA, retail substitution, code generation, web shopping, travel planning; 11 extended) with isolated Docker containers, declared CPU/memory/time/network budgets, sealed test sets with SHA256 hashes, and a standardized profiling protocol. We profile 5 general-purpose baseline agents (ReAct, PlanAndSolve, Reflexion, CoT, Random) plus 4 task-specialized agents, finding that specialized agents achieve 100% success on 3/5 core tasks (fact_qa, web_shopping, travel_planning) and 66.7-83.3% on retail and code_gen, while general baselines fail entirely on 4/5 domain tasks. Crucially, we report the Efficiency-Adjusted Success Rate (EASR) - success weighted by resource consumption relative to declared budgets - revealing that high accuracy at unbounded cost is not production-viable. We release the full infrastructure, sealed test sets, and profiling results to enable reproducible, resource-aware agent evaluation.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Meher Bhaskar Madiraju"
+    },
+    {
+      "@type": "Person",
+      "name": "Meher Sai Preetam Madiraju"
+    }
+  ],
+  "datePublished": "2026-08-01T18:17:47Z",
+  "dateModified": "2026-08-01T18:17:47Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.00805.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.00805.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.00805v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.00805"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Memory",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.00805v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.00805"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +90,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AgentSLABench: Evaluating and Benchmarking Agentic Systems Under Resource Constraints</h1>
+        <div class="meta">
+          Meher Bhaskar Madiraju, Meher Sai Preetam Madiraju
+          · 2608.00805
+          · <time datetime="2026-08-01">2026-08-01</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Memory</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>We present AgentSLABench, a resource-aware evaluation framework for autonomous AI agents that measures correctness alongside latency, cost, compute, memory, and network usage under declared resource budgets. Unlike standard benchmarks that report only accuracy, AgentSLABench produces a multi-dimensional profile per agent per task - the same way systems profilers (perf, pprof, cProfile) measure resource consumption of code, but extended with task correctness as a first-class dimension. AgentSLABench provides 16 task environments across 6 categories (5 core: multi-hop QA, retail substitution, code generation, web shopping, travel planning; 11 extended) with isolated Docker containers, declared CPU/memory/time/network budgets, sealed test sets with SHA256 hashes, and a standardized profiling protocol. We profile 5 general-purpose baseline agents (ReAct, PlanAndSolve, Reflexion, CoT, Random) plus 4 task-specialized agents, finding that specialized agents achieve 100% success on 3/5 core tasks (fact_qa, web_shopping, travel_planning) and 66.7-83.3% on retail and code_gen, while general baselines fail entirely on 4/5 domain tasks. Crucially, we report the Efficiency-Adjusted Success Rate (EASR) - success weighted by resource consumption relative to declared budgets - revealing that high accuracy at unbounded cost is not production-viable. We release the full infrastructure, sealed test sets, and profiling results to enable reproducible, resource-aware agent evaluation.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.00805v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.00805v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.00805" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.03474.html"><strong>MT-Web2Code: Benchmarking Coding Agents on Multi-Turn Regional Reconstruction and Localized Modification</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.02499.html"><strong>SWE-Touch: Benchmarking Coding Agents When Users Touch the Code</strong></a> <span>2026-08-03</span></li>
+          <li><a href="2608.02001.html"><strong>VulnGym: Benchmarking Coding Agents for Repository-Level Vulnerability Detection</strong></a> <span>2026-08-03</span></li>
+          <li><a href="2608.01149.html"><strong>PATH-Bench: Path-Dependent Evaluation of Lifelong Agents</strong></a> <span>2026-08-02</span></li>
+          <li><a href="2608.11232.html"><strong>Backtrader-Bench: Benchmarking LLM Agents on Algorithmic Trading with Self-Generated MCQs</strong></a> <span>2026-07-31</span></li>
+          <li><a href="2608.02642.html"><strong>MDArena: Evaluating Coding Agents on Realistic Molecular Dynamics Workflows</strong></a> <span>2026-07-31</span></li>
+          <li><a href="2608.00267.html"><strong>LoopsBench: From Harness Engineering to Loop Engineering in Coding Agent Evaluation</strong></a> <span>2026-07-31</span></li>
+          <li><a href="2607.29626.html"><strong>AgentHPOBench: A Benchmark For Evaluating LLM Agents as Sequential Hyperparameter Optimizers</strong></a> <span>2026-07-31</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

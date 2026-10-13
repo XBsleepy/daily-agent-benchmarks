@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>LITMUS: Benchmarking Behavioral Jailbreaks of LLM Agents in Real OS Environments | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: The rapid proliferation of LLM-based autonomous agents in real operating system environments introduces a new category of safety risk…" />
+    <meta name="keywords" content="Multi-agent, Safety, agent benchmark, LLM agent, arXiv, 2605.10779" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.10779.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="LITMUS: Benchmarking Behavioral Jailbreaks of LLM Agents in Real OS Environments" />
+    <meta property="og:description" content="Daily Agent Benchmarks: The rapid proliferation of LLM-based autonomous agents in real operating system environments introduces a new category of safety risk…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.10779.html" />
+    <meta property="article:published_time" content="2026-05-11T16:14:04Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="LITMUS: Benchmarking Behavioral Jailbreaks of LLM Agents in Real OS Environments" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: The rapid proliferation of LLM-based autonomous agents in real operating system environments introduces a new category of safety risk…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,92 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "LITMUS: Benchmarking Behavioral Jailbreaks of LLM Agents in Real OS Environments",
+  "name": "LITMUS: Benchmarking Behavioral Jailbreaks of LLM Agents in Real OS Environments",
+  "abstract": "The rapid proliferation of LLM-based autonomous agents in real operating system environments introduces a new category of safety risk beyond content safety: behavior jailbreak, where an adversary induces an agent to execute dangerous OS-level operations with irreversible consequences. Existing benchmarks either evaluate safety at the semantic layer alone, missing physical-layer harms, or fail to isolate test cases, letting earlier runs contaminate later ones. We present LITMUS (LLM-agents In-OS Testing for Measuring Unsafe Subversion), a benchmark addressing both gaps via a semantic-physical dual verification mechanism and OS-level state rollback. LITMUS comprises 819 high-risk test cases organized into one harmful seed subset and six attack-extended subsets covering three adversarial paradigms (jailbreak speaking, skill injection, and entity wrapping), plus a fully automated multi-agent evaluation framework judging behavior at both conversational and OS-level physical layers. Evaluation across frontier agents reveals three findings: (1) current agents lack effective safety awareness, with strong models (e.g., Claude Sonnet 4.6) still executing 40.64% of high-risk operations; (2) agents exhibit pervasive Execution Hallucination (EH), verbally refusing a request while the dangerous operation has already completed at the system level, invisible to every prior semantic-only framework; and (3) skill injection and entity wrapping attacks achieve high success rates, exposing pronounced agent vulnerabilities. LITMUS provides the first standardized platform for reproducible, physically grounded behavioral safety evaluation of LLM agents in real OS environments.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Chiyu Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Huiqin Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Bendong Jiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaolei Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yiran Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Ruyi Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Lu Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaogang Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiafei Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Liming Fang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhe Liu"
+    }
+  ],
+  "datePublished": "2026-05-11T16:14:04Z",
+  "dateModified": "2026-05-11T16:14:04Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.10779.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.10779.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.10779v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.10779"
+  },
+  "keywords": [
+    "Multi-agent",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multi-agent"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.10779v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.10779"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +124,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>LITMUS: Benchmarking Behavioral Jailbreaks of LLM Agents in Real OS Environments</h1>
+        <div class="meta">
+          Chiyu Zhang, Huiqin Yang, Bendong Jiang, Xiaolei Zhang, Yiran Zhao, Ruyi Chen, Lu Zhou, Xiaogang Xu, Jiafei Wu, Liming Fang, Zhe Liu
+          · 2605.10779
+          · <time datetime="2026-05-11">2026-05-11</time>
+          · Multi-agent · 2 citations
+        </div>
+        <div class="themes"><span class="chip">Multi-agent</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>The rapid proliferation of LLM-based autonomous agents in real operating system environments introduces a new category of safety risk beyond content safety: behavior jailbreak, where an adversary induces an agent to execute dangerous OS-level operations with irreversible consequences. Existing benchmarks either evaluate safety at the semantic layer alone, missing physical-layer harms, or fail to isolate test cases, letting earlier runs contaminate later ones. We present LITMUS (LLM-agents In-OS Testing for Measuring Unsafe Subversion), a benchmark addressing both gaps via a semantic-physical dual verification mechanism and OS-level state rollback. LITMUS comprises 819 high-risk test cases organized into one harmful seed subset and six attack-extended subsets covering three adversarial paradigms (jailbreak speaking, skill injection, and entity wrapping), plus a fully automated multi-agent evaluation framework judging behavior at both conversational and OS-level physical layers. Evaluation across frontier agents reveals three findings: (1) current agents lack effective safety awareness, with strong models (e.g., Claude Sonnet 4.6) still executing 40.64% of high-risk operations; (2) agents exhibit pervasive Execution Hallucination (EH), verbally refusing a request while the dangerous operation has already completed at the system level, invisible to every prior semantic-only framework; and (3) skill injection and entity wrapping attacks achieve high success rates, exposing pronounced agent vulnerabilities. LITMUS provides the first standardized platform for reproducible, physically grounded behavioral safety evaluation of LLM agents in real OS environments.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.10779v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.10779v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.10779" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multi-agent benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.14537.html"><strong>Cattle Trade: A Multi-Agent Benchmark for LLM Bluffing, Bidding, and Bargaining</strong></a> <span>2026-05-14</span></li>
+          <li><a href="2605.14002.html"><strong>PolitNuggets: Benchmarking Agentic Discovery of Long-Tail Political Facts</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.13172.html"><strong>When Does Hierarchy Help? Benchmarking Agent Coordination in Event-Driven Industrial Scheduling</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.10904.html"><strong>MDrive: Benchmarking Closed-Loop Cooperative Driving for End-to-End Multi-agent Systems</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2605.09823.html"><strong>CalBench: Evaluating Coordination-Privacy Trade-offs in Multi-Agent LLMs</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.09703.html"><strong>MOTOR-Bench: A Real-world Dataset and Multi-agent Framework for Zero-shot Human Mental State Understanding</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.09027.html"><strong>GAMBIT: A Three-Mode Benchmark for Adversarial Robustness in Multi-Agent LLM Collectives</strong></a> <span>2026-05-09</span></li>
+          <li><a href="2605.08583.html"><strong>Source or It Didn&#x27;t Happen: A Multi-Agent Framework for Citation Hallucination Detection</strong></a> <span>2026-05-09</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

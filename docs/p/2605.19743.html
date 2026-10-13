@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>EngiAI: A Multi-Agent Framework and Benchmark Suite for LLM-Driven Engineering Design | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large Language Model (LLM) agents are increasingly applied to engineering design tasks, yet existing evaluation frameworks do not…" />
+    <meta name="keywords" content="Multi-agent, Tool use, Memory, agent benchmark, LLM agent, arXiv, 2605.19743" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.19743.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="EngiAI: A Multi-Agent Framework and Benchmark Suite for LLM-Driven Engineering Design" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large Language Model (LLM) agents are increasingly applied to engineering design tasks, yet existing evaluation frameworks do not…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.19743.html" />
+    <meta property="article:published_time" content="2026-05-19T12:12:09Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="EngiAI: A Multi-Agent Framework and Benchmark Suite for LLM-Driven Engineering Design" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large Language Model (LLM) agents are increasingly applied to engineering design tasks, yet existing evaluation frameworks do not…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,65 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "EngiAI: A Multi-Agent Framework and Benchmark Suite for LLM-Driven Engineering Design",
+  "name": "EngiAI: A Multi-Agent Framework and Benchmark Suite for LLM-Driven Engineering Design",
+  "abstract": "Large Language Model (LLM) agents are increasingly applied to engineering design tasks, yet existing evaluation frameworks do not adequately address multi-agent systems that combine simulation, retrieval, and manufacturing preparation. We introduce a benchmark suite with three evaluation dimensions: (1) a workflow benchmark with seven prompt styles targeting distinct cognitive demands-including direct tool use, semantic disambiguation, conditional branching, and working-memory tasks; (2) a Retrieval-Augmented Generation (RAG) benchmark with gated scoring isolating retrieval contributions to parameter selection; and (3) an High Performance Computing (HPC) benchmark evaluating end-to-end ML training orchestration on a SLURM cluster. Alongside the benchmark we present EngiAI, a Multi-Agent System (MAS) reference implementation built on LangGraph that operationalizes the benchmark by coordinating seven specialized agents through a supervisor architecture, unifying topology optimization, document retrieval, HPC job orchestration, and 3D printer control. Across four LLM backends and two EngiBench problems, proprietary models achieve 96-97% average task completion on Beams2D, while open-source 4B-parameter models reach 55-78%, with clear generational improvement. Conditional branching proves most challenging, with task completion dropping to 20-53% for the conditional style on Photonics2D. RAG gating confirms near-perfect retrieval-augmented scores (about 1.0) versus near-zero without retrieval, validating the evaluation design. On HPC orchestration, one model completes all pipeline steps in 100% of runs while another drops to 50%, revealing that multi-step instruction following degrades over long-running workflows.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Gioele Molinari"
+    },
+    {
+      "@type": "Person",
+      "name": "Florian Felten"
+    },
+    {
+      "@type": "Person",
+      "name": "Soheyl Massoudi"
+    },
+    {
+      "@type": "Person",
+      "name": "Mark Fuge"
+    }
+  ],
+  "datePublished": "2026-05-19T12:12:09Z",
+  "dateModified": "2026-05-27T12:23:43Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.19743.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.19743.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.19743v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.19743"
+  },
+  "keywords": [
+    "Multi-agent",
+    "Tool use",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multi-agent"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.19743v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.19743"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +97,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>EngiAI: A Multi-Agent Framework and Benchmark Suite for LLM-Driven Engineering Design</h1>
+        <div class="meta">
+          Gioele Molinari, Florian Felten, Soheyl Massoudi, Mark Fuge
+          · 2605.19743
+          · <time datetime="2026-05-19">2026-05-19</time>
+          · Multi-agent · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Multi-agent</span><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large Language Model (LLM) agents are increasingly applied to engineering design tasks, yet existing evaluation frameworks do not adequately address multi-agent systems that combine simulation, retrieval, and manufacturing preparation. We introduce a benchmark suite with three evaluation dimensions: (1) a workflow benchmark with seven prompt styles targeting distinct cognitive demands-including direct tool use, semantic disambiguation, conditional branching, and working-memory tasks; (2) a Retrieval-Augmented Generation (RAG) benchmark with gated scoring isolating retrieval contributions to parameter selection; and (3) an High Performance Computing (HPC) benchmark evaluating end-to-end ML training orchestration on a SLURM cluster. Alongside the benchmark we present EngiAI, a Multi-Agent System (MAS) reference implementation built on LangGraph that operationalizes the benchmark by coordinating seven specialized agents through a supervisor architecture, unifying topology optimization, document retrieval, HPC job orchestration, and 3D printer control. Across four LLM backends and two EngiBench problems, proprietary models achieve 96-97% average task completion on Beams2D, while open-source 4B-parameter models reach 55-78%, with clear generational improvement. Conditional branching proves most challenging, with task completion dropping to 20-53% for the conditional style on Photonics2D. RAG gating confirms near-perfect retrieval-augmented scores (about 1.0) versus near-zero without retrieval, validating the evaluation design. On HPC orchestration, one model completes all pipeline steps in 100% of runs while another drops to 50%, revealing that multi-step instruction following degrades over long-running workflows.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.19743v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.19743v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.19743" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multi-agent benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.29512.html"><strong>MINDGAMES: A Live Arena for Evaluating Social and Strategic Reasoning in Multi-Agent LLMs</strong></a> <span>2026-05-28</span></li>
+          <li><a href="2605.29178.html"><strong>The Best-Laid SCHEMEs: Coordinated Sabotage and Monitoring in Multi-Agent Systems</strong></a> <span>2026-05-27</span></li>
+          <li><a href="2605.26835.html"><strong>Helicase: Uncertainty-Guided Supply Chain Knowledge Graph Construction with Autonomous Multi-Agent LLMs</strong></a> <span>2026-05-26</span></li>
+          <li><a href="2605.24699.html"><strong>MDIA: A Multi-Agent Diagnostic Intelligence Pipeline on HealthBench Professional</strong></a> <span>2026-05-23</span></li>
+          <li><a href="2605.14537.html"><strong>Cattle Trade: A Multi-Agent Benchmark for LLM Bluffing, Bidding, and Bargaining</strong></a> <span>2026-05-14</span></li>
+          <li><a href="2605.14002.html"><strong>PolitNuggets: Benchmarking Agentic Discovery of Long-Tail Political Facts</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.13172.html"><strong>When Does Hierarchy Help? Benchmarking Agent Coordination in Event-Driven Industrial Scheduling</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.10904.html"><strong>MDrive: Benchmarking Closed-Loop Cooperative Driving for End-to-End Multi-agent Systems</strong></a> <span>2026-05-11</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

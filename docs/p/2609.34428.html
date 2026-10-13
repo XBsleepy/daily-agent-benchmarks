@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>AgentHop: A Diagnostic Benchmark for Agentic Multi-Hop Scientific Question Answering | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Agentic tasks require a large language model to interact with the world, navigating information and gathering evidence across…" />
+    <meta name="keywords" content="Science &amp; research, Tool use, Science lab, agent benchmark, LLM agent, arXiv, 2609.34428" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.34428.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AgentHop: A Diagnostic Benchmark for Agentic Multi-Hop Scientific Question Answering" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Agentic tasks require a large language model to interact with the world, navigating information and gathering evidence across…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.34428.html" />
+    <meta property="article:published_time" content="2026-09-28T06:45:01Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AgentHop: A Diagnostic Benchmark for Agentic Multi-Hop Scientific Question Answering" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Agentic tasks require a large language model to interact with the world, navigating information and gathering evidence across…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,69 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AgentHop: A Diagnostic Benchmark for Agentic Multi-Hop Scientific Question Answering",
+  "name": "AgentHop: A Diagnostic Benchmark for Agentic Multi-Hop Scientific Question Answering",
+  "abstract": "Agentic tasks require a large language model to interact with the world, navigating information and gathering evidence across multiple steps with restricted resources. Due to this complexity, agentic task failures arise from various sources, and pinpointing these failure causes is essential to diagnose and improve agentic systems. Existing benchmarks, however, tend to focus on a single leaderboard score, leaving the underlying failure modes opaque. To fill this gap, we introduce AgentHop, a diagnostic benchmark of 1,011 multiple-choice questions paired with a controlled seven-tool sandbox under fixed token, turn, and tool-call constraints. AgentHop reveals model vulnerabilities by dissecting a single accuracy score along four axes of agent operation: retrieval, synthesis, tool-call, and resource management. Across 19 models, we find that behavior clusters by model family, with tool-call signatures revealing distinct family fingerprints: GPT models commit early, Anthropic and GLM checkpoints verify before committing, DeepSeek and Kimi over-search, and Gemini-3 Pro stays balanced. Decomposed axes further expose within-family structure: Claude Opus 4.6 and Sonnet 4.6 land within one accuracy point yet diverge on retrieval-versus-synthesis emphasis, with Opus retrieving more and Sonnet synthesizing better. We release the full benchmark set and the harness to support diagnostic agent benchmarking.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Chanhee Park"
+    },
+    {
+      "@type": "Person",
+      "name": "Jeongho Yoon"
+    },
+    {
+      "@type": "Person",
+      "name": "Sungbin Han"
+    },
+    {
+      "@type": "Person",
+      "name": "Hyeonseok Moon"
+    },
+    {
+      "@type": "Person",
+      "name": "Heuiseok Lim"
+    }
+  ],
+  "datePublished": "2026-09-28T06:45:01Z",
+  "dateModified": "2026-09-28T06:45:01Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.34428.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.34428.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.34428v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.34428"
+  },
+  "keywords": [
+    "Science & research",
+    "Tool use",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Science & research"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.34428v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.34428"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +101,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AgentHop: A Diagnostic Benchmark for Agentic Multi-Hop Scientific Question Answering</h1>
+        <div class="meta">
+          Chanhee Park, Jeongho Yoon, Sungbin Han, Hyeonseok Moon, Heuiseok Lim
+          · 2609.34428
+          · <time datetime="2026-09-28">2026-09-28</time>
+          · Science &amp; research
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Agentic tasks require a large language model to interact with the world, navigating information and gathering evidence across multiple steps with restricted resources. Due to this complexity, agentic task failures arise from various sources, and pinpointing these failure causes is essential to diagnose and improve agentic systems. Existing benchmarks, however, tend to focus on a single leaderboard score, leaving the underlying failure modes opaque. To fill this gap, we introduce AgentHop, a diagnostic benchmark of 1,011 multiple-choice questions paired with a controlled seven-tool sandbox under fixed token, turn, and tool-call constraints. AgentHop reveals model vulnerabilities by dissecting a single accuracy score along four axes of agent operation: retrieval, synthesis, tool-call, and resource management. Across 19 models, we find that behavior clusters by model family, with tool-call signatures revealing distinct family fingerprints: GPT models commit early, Anthropic and GLM checkpoints verify before committing, DeepSeek and Kimi over-search, and Gemini-3 Pro stays balanced. Decomposed axes further expose within-family structure: Claude Opus 4.6 and Sonnet 4.6 land within one accuracy point yet diverge on retrieval-versus-synthesis emphasis, with Opus retrieving more and Sonnet synthesizing better. We release the full benchmark set and the harness to support diagnostic agent benchmarking.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.34428v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.34428v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.34428" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Science &amp; research benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.00609.html"><strong>Legal Research Bench: Measuring End-to-End Reliability in Long-Horizon Legal Research Agents</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.00492.html"><strong>EurekaBench: Measuring Agentic Ability to Discover New Scientific Insights</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2609.35515.html"><strong>MechBench: Can AI Scientific Agents Discover Mechanisms Beyond Phenomenal Laws?</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34537.html"><strong>The Marathon of Scientific Reasoning: Robustness of Scientific Agents to Perturbations in Multi-Turn Interactions</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.30971.html"><strong>SciHorizon-eLab: An Agentic Protocol-to-Task Compiler for Scalable Benchmarking of Scientific Embodied Agents</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.32318.html"><strong>What Can a Leaderboard Certify? Compositional Controllability for Fair Evaluation and Training of Biomedical Literature-Review Agents</strong></a> <span>2026-09-26</span></li>
+          <li><a href="2609.27490.html"><strong>WhatWorkedBench: Benchmarking Experimental Understanding in AI Agents</strong></a> <span>2026-09-24</span></li>
+          <li><a href="2609.11318.html"><strong>Mr.LHDR: A Benchmark for Multimodal Real-World Long-Horizon Deep Research Agents</strong></a> <span>2026-09-10</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Can LLM Agents Generate Real-World Evidence? Evaluating Observational Studies in Medical Databases | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Observational studies can yield clinically actionable evidence at scale, but executing them on real-world databases is open-ended and…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2603.22767" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.22767.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Can LLM Agents Generate Real-World Evidence? Evaluating Observational Studies in Medical Databases" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Observational studies can yield clinically actionable evidence at scale, but executing them on real-world databases is open-ended and…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.22767.html" />
+    <meta property="article:published_time" content="2026-03-24T03:50:34Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Can LLM Agents Generate Real-World Evidence? Evaluating Observational Studies in Medical Databases" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Observational studies can yield clinically actionable evidence at scale, but executing them on real-world databases is open-ended and…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,67 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Can LLM Agents Generate Real-World Evidence? Evaluating Observational Studies in Medical Databases",
+  "name": "Can LLM Agents Generate Real-World Evidence? Evaluating Observational Studies in Medical Databases",
+  "abstract": "Observational studies can yield clinically actionable evidence at scale, but executing them on real-world databases is open-ended and requires coherent decisions across cohort construction, analysis, and reporting. Prior evaluations of LLM agents emphasize isolated steps or single answers, missing the integrity and internal structure of the resulting evidence bundle. To address this gap, we introduce RWE-bench, a benchmark grounded in MIMIC-IV and derived from peer-reviewed observational studies. Each task provides the corresponding study protocol as the reference standard, requiring agents to execute experiments in a real database and iteratively generate tree-structured evidence bundles. We evaluate six LLMs (three open-source, three closed-source) under three agent scaffolds using both question-level correctness and end-to-end task metrics. Across 162 tasks, task success is low: the best agent reaches 39.9%, and the best open-source model reaches 30.4%. Agent scaffolds also matter substantially, causing over 30% variation in performance metrics. Furthermore, we implement an automated cohort evaluation method to rapidly localize errors and identify agent failure modes. Overall, the results highlight persistent limitations in agents' ability to produce end-to-end evidence bundles, and efficient validation remains an important direction for future work. Code and data are available at https://github.com/somewordstoolate/RWE-bench.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Dubai Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuxiang He"
+    },
+    {
+      "@type": "Person",
+      "name": "Yan Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yu Tian"
+    },
+    {
+      "@type": "Person",
+      "name": "Jingsong Li"
+    }
+  ],
+  "datePublished": "2026-03-24T03:50:34Z",
+  "dateModified": "2026-03-24T03:50:34Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.22767.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.22767.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2603.22767v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2603.22767"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2603.22767v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2603.22767"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +99,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Can LLM Agents Generate Real-World Evidence? Evaluating Observational Studies in Medical Databases</h1>
+        <div class="meta">
+          Dubai Li, Yuxiang He, Yan Hu, Yu Tian, Jingsong Li
+          · 2603.22767
+          · <time datetime="2026-03-24">2026-03-24</time>
+          · General · 1 citations
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Observational studies can yield clinically actionable evidence at scale, but executing them on real-world databases is open-ended and requires coherent decisions across cohort construction, analysis, and reporting. Prior evaluations of LLM agents emphasize isolated steps or single answers, missing the integrity and internal structure of the resulting evidence bundle. To address this gap, we introduce RWE-bench, a benchmark grounded in MIMIC-IV and derived from peer-reviewed observational studies. Each task provides the corresponding study protocol as the reference standard, requiring agents to execute experiments in a real database and iteratively generate tree-structured evidence bundles. We evaluate six LLMs (three open-source, three closed-source) under three agent scaffolds using both question-level correctness and end-to-end task metrics. Across 162 tasks, task success is low: the best agent reaches 39.9%, and the best open-source model reaches 30.4%. Agent scaffolds also matter substantially, causing over 30% variation in performance metrics. Furthermore, we implement an automated cohort evaluation method to rapidly localize errors and identify agent failure modes. Overall, the results highlight persistent limitations in agents&#x27; ability to produce end-to-end evidence bundles, and efficient validation remains an important direction for future work. Code and data are available at https://github.com/somewordstoolate/RWE-bench.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2603.22767v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2603.22767v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2603.22767" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2603.23749.html"><strong>Efficient Benchmarking of AI Agents</strong></a> <span>2026-03-24</span></li>
+          <li><a href="2603.23638.html"><strong>Can LLM Agents Be CFOs? Benchmarking Long-Horizon Resource Allocation in an Uncertain Enterprise Environment</strong></a> <span>2026-03-24</span></li>
+          <li><a href="2603.23231.html"><strong>PERMA: Benchmarking Personalized Memory Agents via Event-Driven Preference and Realistic Task Environments</strong></a> <span>2026-03-24</span></li>
+          <li><a href="2603.22999.html"><strong>PaperVoyager : Building Interactive Web with Visual Language Models</strong></a> <span>2026-03-24</span></li>
+          <li><a href="2603.22744.html"><strong>LH-Bench: Skill-Grounded Evaluation of Long-Horizon Agents on Subjective Enterprise Tasks</strong></a> <span>2026-03-24</span></li>
+          <li><a href="2603.21251.html"><strong>WirelessBench: A Tolerance-Aware LLM Agent Benchmark for Wireless Network Intelligence</strong></a> <span>2026-03-22</span></li>
+          <li><a href="2603.20576.html"><strong>Can AI Agents Answer Your Data Questions? A Benchmark for Data Agents</strong></a> <span>2026-03-21</span></li>
+          <li><a href="2604.13072.html"><strong>LiveClawBench: Benchmarking LLM Agents on Complex, Real-World Assistant Tasks</strong></a> <span>2026-03-20</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

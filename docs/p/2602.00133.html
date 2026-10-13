@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>PredictionMarketBench: A SWE-bench-Style Framework for Backtesting Trading Agents on Prediction Markets | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Prediction markets offer a natural testbed for trading agents: contracts have binary payoffs, prices can be interpreted as…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Tool use, Safety, agent benchmark, LLM agent, arXiv, 2602.00133" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.00133.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="PredictionMarketBench: A SWE-bench-Style Framework for Backtesting Trading Agents on Prediction Markets" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Prediction markets offer a natural testbed for trading agents: contracts have binary payoffs, prices can be interpreted as…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.00133.html" />
+    <meta property="article:published_time" content="2026-01-28T06:41:12Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PredictionMarketBench: A SWE-bench-Style Framework for Backtesting Trading Agents on Prediction Markets" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Prediction markets offer a natural testbed for trading agents: contracts have binary payoffs, prices can be interpreted as…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,58 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "PredictionMarketBench: A SWE-bench-Style Framework for Backtesting Trading Agents on Prediction Markets",
+  "name": "PredictionMarketBench: A SWE-bench-Style Framework for Backtesting Trading Agents on Prediction Markets",
+  "abstract": "Prediction markets offer a natural testbed for trading agents: contracts have binary payoffs, prices can be interpreted as probabilities, and realized performance depends critically on market microstructure, fees, and settlement risk. We introduce PredictionMarketBench, a SWE-bench-style benchmark for evaluating algorithmic and LLM-based trading agents on prediction markets via deterministic, event-driven replay of historical limit-order-book and trade data. PredictionMarketBench standardizes (i) episode construction from raw exchange streams (orderbooks, trades, lifecycle, settlement), (ii) an execution-realistic simulator with maker/taker semantics and fee modeling, and (iii) a tool-based agent interface that supports both classical strategies and tool-calling LLM agents with reproducible trajectories. We release four Kalshi-based episodes spanning cryptocurrency, weather, and sports. Baseline results show that naive trading agents can underperform due to transaction costs and settlement losses, while fee-aware algorithmic strategies remain competitive in volatile episodes.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Avi Arora"
+    },
+    {
+      "@type": "Person",
+      "name": "Ritesh Malpani"
+    }
+  ],
+  "datePublished": "2026-01-28T06:41:12Z",
+  "dateModified": "2026-01-28T06:41:12Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.00133.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.00133.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2602.00133v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2602.00133"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Tool use",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2602.00133v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2602.00133"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +90,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>PredictionMarketBench: A SWE-bench-Style Framework for Backtesting Trading Agents on Prediction Markets</h1>
+        <div class="meta">
+          Avi Arora, Ritesh Malpani
+          · 2602.00133
+          · <time datetime="2026-01-28">2026-01-28</time>
+          · Coding / SWE · 2 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Prediction markets offer a natural testbed for trading agents: contracts have binary payoffs, prices can be interpreted as probabilities, and realized performance depends critically on market microstructure, fees, and settlement risk. We introduce PredictionMarketBench, a SWE-bench-style benchmark for evaluating algorithmic and LLM-based trading agents on prediction markets via deterministic, event-driven replay of historical limit-order-book and trade data. PredictionMarketBench standardizes (i) episode construction from raw exchange streams (orderbooks, trades, lifecycle, settlement), (ii) an execution-realistic simulator with maker/taker semantics and fee modeling, and (iii) a tool-based agent interface that supports both classical strategies and tool-calling LLM agents with reproducible trajectories. We release four Kalshi-based episodes spanning cryptocurrency, weather, and sports. Baseline results show that naive trading agents can underperform due to transaction costs and settlement losses, while fee-aware algorithmic strategies remain competitive in volatile episodes.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2602.00133v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2602.00133v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2602.00133" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2602.05892.html"><strong>ContextBench: A Benchmark for Context Retrieval in Coding Agents</strong></a> <span>2026-02-05</span></li>
+          <li><a href="2602.04449.html"><strong>What&#x27;s in a Benchmark? The Case of SWE-Bench in Automated Program Repair</strong></a> <span>2026-02-04</span></li>
+          <li><a href="2602.02262.html"><strong>OmniCode: A Benchmark for Evaluating Software Engineering Agents</strong></a> <span>2026-02-02</span></li>
+          <li><a href="2602.01655.html"><strong>ProjDevBench: Benchmarking AI Coding Agents on End-to-End Project Development</strong></a> <span>2026-02-02</span></li>
+          <li><a href="2601.20886.html"><strong>IDE-Bench: Evaluating Large Language Models as IDE Agents on Real-World Software Engineering Tasks</strong></a> <span>2026-01-28</span></li>
+          <li><a href="2601.20882.html"><strong>DevOps-Gym: Benchmarking AI Agents in Software DevOps Cycle</strong></a> <span>2026-01-27</span></li>
+          <li><a href="2601.13295.html"><strong>CooperBench: Why Coding Agents Cannot be Your Teammates Yet</strong></a> <span>2026-01-19</span></li>
+          <li><a href="2601.11077.html"><strong>ABC-Bench: Benchmarking Agentic Backend Coding in Real-World Development</strong></a> <span>2026-01-16</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>SentinelBench: A Benchmark for Long-Running Monitoring Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: AI agents are increasingly asked to carry out work that spans minutes, hours, or longer. Yet the default model of agent behavior is…" />
+    <meta name="keywords" content="Web &amp; browser, Web agents, Tool use, agent benchmark, LLM agent, arXiv, 2606.05342" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.05342.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SentinelBench: A Benchmark for Long-Running Monitoring Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: AI agents are increasingly asked to carry out work that spans minutes, hours, or longer. Yet the default model of agent behavior is…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.05342.html" />
+    <meta property="article:published_time" content="2026-06-03T18:32:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SentinelBench: A Benchmark for Long-Running Monitoring Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: AI agents are increasingly asked to carry out work that spans minutes, hours, or longer. Yet the default model of agent behavior is…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,81 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SentinelBench: A Benchmark for Long-Running Monitoring Agents",
+  "name": "SentinelBench: A Benchmark for Long-Running Monitoring Agents",
+  "abstract": "AI agents are increasingly asked to carry out work that spans minutes, hours, or longer. Yet the default model of agent behavior is continuous action: issuing tool calls, refreshing pages, searching for alternatives, or otherwise trying to force progress. This is the wrong approach for many long-running tasks, which are better served by a strategy of sustained attention. Instead, agents should monitor an environment, notice when an external event makes progress possible, then respond promptly without wasting resources while waiting. To measure progress on this class of tasks, we introduce SentinelBench, an open-source benchmark for time-evolving monitoring tasks. SentinelBench contains 100 tasks across 10 synthetic web environments, including email, calendars, finance, professional networking, and entertainment. Each environment exposes a live web interface and replays a scripted sequence of events, requiring agents to navigate and reason about web pages whose state shifts underfoot. SentinelBench measures task completion, reaction time, and resource use, exposing the tradeoff between responsiveness and cost. We report results across three models and two browser-agent harnesses, establishing performance baselines for future comparison and demonstrating how agent design choices can dramatically impact key metrics. Together, these results show that SentinelBench distinguishes meaningful differences in agent behavior.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Matheus Kunzler Maldaner"
+    },
+    {
+      "@type": "Person",
+      "name": "Adam Fourney"
+    },
+    {
+      "@type": "Person",
+      "name": "Amanda Swearngin"
+    },
+    {
+      "@type": "Person",
+      "name": "Hussein Mozannar"
+    },
+    {
+      "@type": "Person",
+      "name": "Gagan Bansal"
+    },
+    {
+      "@type": "Person",
+      "name": "Maya Murad"
+    },
+    {
+      "@type": "Person",
+      "name": "Rafah Hosn"
+    },
+    {
+      "@type": "Person",
+      "name": "Saleema Amershi"
+    }
+  ],
+  "datePublished": "2026-06-03T18:32:00Z",
+  "dateModified": "2026-06-05T17:19:56Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.05342.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.05342.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.05342v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.05342"
+  },
+  "keywords": [
+    "Web & browser",
+    "Web agents",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Web & browser"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.05342v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.05342"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +113,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SentinelBench: A Benchmark for Long-Running Monitoring Agents</h1>
+        <div class="meta">
+          Matheus Kunzler Maldaner, Adam Fourney, Amanda Swearngin, Hussein Mozannar, Gagan Bansal, Maya Murad, Rafah Hosn, Saleema Amershi
+          · 2606.05342
+          · <time datetime="2026-06-03">2026-06-03</time>
+          · Web &amp; browser · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Web agents</span><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>AI agents are increasingly asked to carry out work that spans minutes, hours, or longer. Yet the default model of agent behavior is continuous action: issuing tool calls, refreshing pages, searching for alternatives, or otherwise trying to force progress. This is the wrong approach for many long-running tasks, which are better served by a strategy of sustained attention. Instead, agents should monitor an environment, notice when an external event makes progress possible, then respond promptly without wasting resources while waiting. To measure progress on this class of tasks, we introduce SentinelBench, an open-source benchmark for time-evolving monitoring tasks. SentinelBench contains 100 tasks across 10 synthetic web environments, including email, calendars, finance, professional networking, and entertainment. Each environment exposes a live web interface and replays a scripted sequence of events, requiring agents to navigate and reason about web pages whose state shifts underfoot. SentinelBench measures task completion, reaction time, and resource use, exposing the tradeoff between responsiveness and cost. We report results across three models and two browser-agent harnesses, establishing performance baselines for future comparison and demonstrating how agent design choices can dramatically impact key metrics. Together, these results show that SentinelBench distinguishes meaningful differences in agent behavior.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.05342v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.05342v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.05342" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Web &amp; browser benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.16659.html"><strong>FraudSMSWalker: Benchmarking Agentic Large Language Models for SMS-to-Webpage Fraud Detection</strong></a> <span>2026-06-15</span></li>
+          <li><a href="2606.14027.html"><strong>Same-Origin Policy for Agentic Browsers</strong></a> <span>2026-06-12</span></li>
+          <li><a href="2606.13385.html"><strong>Who Pays the Price? Stakeholder-Centric Prompt Injection Benchmarking for Real-world Web Agents</strong></a> <span>2026-06-11</span></li>
+          <li><a href="2606.05920.html"><strong>Asuka-Bench: Benchmarking Code Agents on Underspecified User Intent and Multi-Round Refinement</strong></a> <span>2026-06-04</span></li>
+          <li><a href="2607.20482.html"><strong>PersonaTrail: Benchmarking Personalized Web Agents through Browsing Trails</strong></a> <span>2026-05-30</span></li>
+          <li><a href="2606.00497.html"><strong>&quot;I Strongly Suspect This Website Is a Scam&quot;: Benchmarking PII Leakage and Detection without Defense in Autonomous Web Agents</strong></a> <span>2026-05-30</span></li>
+          <li><a href="2605.22564.html"><strong>SynAE: A Framework for Measuring the Quality of Synthetic Data for Tool-Calling Agent Evaluations</strong></a> <span>2026-05-21</span></li>
+          <li><a href="2605.20833.html"><strong>MemGym: a Long-Horizon Memory Environment for LLM Agents</strong></a> <span>2026-05-20</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>GuardianAgentBench: Where Agents Fail and How to Guard Them | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: As large language model agents increasingly operate autonomously with access to tools and external environments, ensuring their safe…" />
+    <meta name="keywords" content="General, Tool use, Safety, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2607.20982" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.20982.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="GuardianAgentBench: Where Agents Fail and How to Guard Them" />
+    <meta property="og:description" content="Daily Agent Benchmarks: As large language model agents increasingly operate autonomously with access to tools and external environments, ensuring their safe…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.20982.html" />
+    <meta property="article:published_time" content="2026-07-23T07:05:05Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="GuardianAgentBench: Where Agents Fail and How to Guard Them" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: As large language model agents increasingly operate autonomously with access to tools and external environments, ensuring their safe…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,82 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "GuardianAgentBench: Where Agents Fail and How to Guard Them",
+  "name": "GuardianAgentBench: Where Agents Fail and How to Guard Them",
+  "abstract": "As large language model agents increasingly operate autonomously with access to tools and external environments, ensuring their safe and reliable behavior becomes critical. We present GuardianAgentBench (GABench), a benchmark of 580 scenarios across six domains evaluated on three production-ready frameworks: LangChain, LlamaIndex, and Vectara. The benchmark incorporates rigorous multi-stage validation and five adversarial attack modes. Experiments with six state-of-the-art models reveal that even the strongest configuration achieves only 74.8% overall accuracy and expose two distinct failure regimes: stronger models under-call required tools, while weaker models mis-select and over-call tools. Performance degrades monotonically with both tool-set size and sequential turn depth, with long-horizon planning proving the steeper bottleneck. Our guardrail implementation consistently outperforms system-prompt-based defenses across all models, recovering 19.9% of failures at a false positive rate of just 0.5%. These results demonstrate that execution-time structural intervention improves safety without disrupting correct agent behavior.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Vishal Ishwar Naik"
+    },
+    {
+      "@type": "Person",
+      "name": "Chenyu Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Donna Dong"
+    },
+    {
+      "@type": "Person",
+      "name": "Hussein Hassan"
+    },
+    {
+      "@type": "Person",
+      "name": "Abhishek Pradhan"
+    },
+    {
+      "@type": "Person",
+      "name": "Ofer Mendelevitch"
+    },
+    {
+      "@type": "Person",
+      "name": "Tallat Shafat"
+    },
+    {
+      "@type": "Person",
+      "name": "Humayun Irshad"
+    }
+  ],
+  "datePublished": "2026-07-23T07:05:05Z",
+  "dateModified": "2026-07-23T07:05:05Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.20982.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.20982.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.20982v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.20982"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Safety",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.20982v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.20982"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +114,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>GuardianAgentBench: Where Agents Fail and How to Guard Them</h1>
+        <div class="meta">
+          Vishal Ishwar Naik, Chenyu Xu, Donna Dong, Hussein Hassan, Abhishek Pradhan, Ofer Mendelevitch, Tallat Shafat, Humayun Irshad
+          · 2607.20982
+          · <time datetime="2026-07-23">2026-07-23</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>As large language model agents increasingly operate autonomously with access to tools and external environments, ensuring their safe and reliable behavior becomes critical. We present GuardianAgentBench (GABench), a benchmark of 580 scenarios across six domains evaluated on three production-ready frameworks: LangChain, LlamaIndex, and Vectara. The benchmark incorporates rigorous multi-stage validation and five adversarial attack modes. Experiments with six state-of-the-art models reveal that even the strongest configuration achieves only 74.8% overall accuracy and expose two distinct failure regimes: stronger models under-call required tools, while weaker models mis-select and over-call tools. Performance degrades monotonically with both tool-set size and sequential turn depth, with long-horizon planning proving the steeper bottleneck. Our guardrail implementation consistently outperforms system-prompt-based defenses across all models, recovering 19.9% of failures at a false positive rate of just 0.5%. These results demonstrate that execution-time structural intervention improves safety without disrupting correct agent behavior.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.20982v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.20982v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.20982" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.22165.html"><strong>DBA-Bench: A Production-Fidelity Benchmark for LLM-Based Database Operations Agents</strong></a> <span>2026-07-24</span></li>
+          <li><a href="2607.21824.html"><strong>Protocol-Level Attacks on Agentic Commerce Platforms: A Cross-Platform Taxonomy, AIP-Bench, and Unified Defense</strong></a> <span>2026-07-23</span></li>
+          <li><a href="2607.21799.html"><strong>Agentic Evaluation of Copyright Law Compliance</strong></a> <span>2026-07-23</span></li>
+          <li><a href="2607.21533.html"><strong>Benchmarking Agents for Proving Theorems in Quantum Algorithms and Quantum Information</strong></a> <span>2026-07-23</span></li>
+          <li><a href="2607.19865.html"><strong>DocOps: A Verifiable Benchmark for Autonomous Agents in Complex Document Operations</strong></a> <span>2026-07-22</span></li>
+          <li><a href="2607.19670.html"><strong>Same Game, Different Story: A Minimal Conservative Strategic Robustness Benchmark for Large Language Model Agents</strong></a> <span>2026-07-22</span></li>
+          <li><a href="2607.19238.html"><strong>FinanceComplexQA: Benchmarking Agentic Reasoning on Industrial-grade Financial Documents</strong></a> <span>2026-07-21</span></li>
+          <li><a href="2607.18485.html"><strong>Trusted Credentials, Untrusted Behavior: Benchmarking LLM-Agent Security in High-Performance Computing</strong></a> <span>2026-07-20</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

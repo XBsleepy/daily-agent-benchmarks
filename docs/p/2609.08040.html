@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>VEX-Bench: Benchmarking LLM Agents for Assessing Exploitability of Software Supply Chain Vulnerabilities | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: The software supply chain has become an increasingly exposed attack surface because of its reliance on intricate yet fragile…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2609.08040" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.08040.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="VEX-Bench: Benchmarking LLM Agents for Assessing Exploitability of Software Supply Chain Vulnerabilities" />
+    <meta property="og:description" content="Daily Agent Benchmarks: The software supply chain has become an increasingly exposed attack surface because of its reliance on intricate yet fragile…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.08040.html" />
+    <meta property="article:published_time" content="2026-09-07T22:52:09Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="VEX-Bench: Benchmarking LLM Agents for Assessing Exploitability of Software Supply Chain Vulnerabilities" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: The software supply chain has become an increasingly exposed attack surface because of its reliance on intricate yet fragile…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,99 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "VEX-Bench: Benchmarking LLM Agents for Assessing Exploitability of Software Supply Chain Vulnerabilities",
+  "name": "VEX-Bench: Benchmarking LLM Agents for Assessing Exploitability of Software Supply Chain Vulnerabilities",
+  "abstract": "The software supply chain has become an increasingly exposed attack surface because of its reliance on intricate yet fragile dependencies. Existing defenses such as GitHub Dependabot often raise many false alerts because their coarse-grained matching cannot determine whether a vulnerable dependency is actually exploitable. Security analysts typically spend substantial time assessing vulnerability exploitability case by case. Recent LLM agents have emerged as promising candidates for this task given their advanced capabilities in coding and cybersecurity, yet no existing benchmark evaluates them on it. Prior benchmarks target zero-day settings, where agents detect and exploit previously unknown vulnerabilities. In contrast, software supply chain security focuses on how known vulnerabilities in upstream dependencies affect downstream projects. This requires agents to reason across repositories and determine whether an upstream vulnerability is exploitable in the downstream project. To address this gap, we introduce VEX-Bench, the first benchmark for evaluating LLM agents' ability to assess the exploitability of software supply chain vulnerabilities. It contains 75 real-world cases mined from GitHub and labeled by security experts, covering Python, Java, and Go. We evaluate nine models across three agent harnesses. While GPT-5.5 and Claude Opus 4.6 reach approximately 80% F1 on binary vulnerability-status classification, only GPT-5.5 surpasses 70% macro-F1 on fine-grained justification classification. This gap highlights the challenge of moving beyond binary exploitability assessment to identifying fine-grained exploitability reasons. Code and data: https://github.com/steven1518/vex-bench",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jiahao Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Edward Tsien"
+    },
+    {
+      "@type": "Person",
+      "name": "Yifeng Di"
+    },
+    {
+      "@type": "Person",
+      "name": "Hongjiao Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuan Tang"
+    },
+    {
+      "@type": "Person",
+      "name": "Ronit Dey"
+    },
+    {
+      "@type": "Person",
+      "name": "Ilona Shishov"
+    },
+    {
+      "@type": "Person",
+      "name": "Gal Netanel"
+    },
+    {
+      "@type": "Person",
+      "name": "Zvi Grinberg"
+    },
+    {
+      "@type": "Person",
+      "name": "Vladimir Belousov"
+    },
+    {
+      "@type": "Person",
+      "name": "Bat-Zion Rotman"
+    },
+    {
+      "@type": "Person",
+      "name": "Ilan Pinto"
+    },
+    {
+      "@type": "Person",
+      "name": "Tianyi Zhang"
+    }
+  ],
+  "datePublished": "2026-09-07T22:52:09Z",
+  "dateModified": "2026-09-07T22:52:09Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.08040.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.08040.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.08040v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.08040"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.08040v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.08040"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +131,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>VEX-Bench: Benchmarking LLM Agents for Assessing Exploitability of Software Supply Chain Vulnerabilities</h1>
+        <div class="meta">
+          Jiahao Shi, Edward Tsien, Yifeng Di, Hongjiao Zhang, Yuan Tang, Ronit Dey, Ilona Shishov, Gal Netanel, Zvi Grinberg, Vladimir Belousov, Bat-Zion Rotman, Ilan Pinto, Tianyi Zhang
+          · 2609.08040
+          · <time datetime="2026-09-07">2026-09-07</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>The software supply chain has become an increasingly exposed attack surface because of its reliance on intricate yet fragile dependencies. Existing defenses such as GitHub Dependabot often raise many false alerts because their coarse-grained matching cannot determine whether a vulnerable dependency is actually exploitable. Security analysts typically spend substantial time assessing vulnerability exploitability case by case. Recent LLM agents have emerged as promising candidates for this task given their advanced capabilities in coding and cybersecurity, yet no existing benchmark evaluates them on it. Prior benchmarks target zero-day settings, where agents detect and exploit previously unknown vulnerabilities. In contrast, software supply chain security focuses on how known vulnerabilities in upstream dependencies affect downstream projects. This requires agents to reason across repositories and determine whether an upstream vulnerability is exploitable in the downstream project. To address this gap, we introduce VEX-Bench, the first benchmark for evaluating LLM agents&#x27; ability to assess the exploitability of software supply chain vulnerabilities. It contains 75 real-world cases mined from GitHub and labeled by security experts, covering Python, Java, and Go. We evaluate nine models across three agent harnesses. While GPT-5.5 and Claude Opus 4.6 reach approximately 80% F1 on binary vulnerability-status classification, only GPT-5.5 surpasses 70% macro-F1 on fine-grained justification classification. This gap highlights the challenge of moving beyond binary exploitability assessment to identifying fine-grained exploitability reasons. Code and data: https://github.com/steven1518/vex-bench</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.08040v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.08040v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.08040" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.13076.html"><strong>MP-Bench: Evaluating Voice Agents as a Multiparty Conversation Participant</strong></a> <span>2026-09-11</span></li>
+          <li><a href="2609.12404.html"><strong>VRL-Bench: Benchmarking agents on computer control tasks under finite trial budgets</strong></a> <span>2026-09-11</span></li>
+          <li><a href="2609.11515.html"><strong>ChurnBench: A Drift-Aware Benchmark Demonstrating That Refresh Scheduling, Not Cache Age, Governs Staleness in Agentic AI</strong></a> <span>2026-09-10</span></li>
+          <li><a href="2609.08887.html"><strong>Q2D-Web: A Large-Scale Benchmark for Retrieval in Agentic RAG Systems</strong></a> <span>2026-09-08</span></li>
+          <li><a href="2609.06027.html"><strong>Evaluating Deep-Search Agents under Hierarchical Web Evidence Poisoning</strong></a> <span>2026-09-05</span></li>
+          <li><a href="2609.04706.html"><strong>FinalityBench: An Effect-Level Benchmark for Agent Decisions Under Delayed and Conflicting Financial Finality</strong></a> <span>2026-09-04</span></li>
+          <li><a href="2609.04641.html"><strong>A Cost-Aware Agentic Architecture for NL-to-SQL over Nested Enterprise Schemas, with a New Benchmark</strong></a> <span>2026-09-04</span></li>
+          <li><a href="2609.01600.html"><strong>CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?</strong></a> <span>2026-09-01</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

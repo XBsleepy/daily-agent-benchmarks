@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ParanoiaEval: Benchmarking Unnecessary Defensive Work in Agentic Coding | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: As coding agents increasingly undertake real-world work autonomously, judging whether their risk treatments are warranted has become…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Safety, agent benchmark, LLM agent, arXiv, 2610.08662" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.08662.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ParanoiaEval: Benchmarking Unnecessary Defensive Work in Agentic Coding" />
+    <meta property="og:description" content="Daily Agent Benchmarks: As coding agents increasingly undertake real-world work autonomously, judging whether their risk treatments are warranted has become…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.08662.html" />
+    <meta property="article:published_time" content="2026-10-06T16:46:14Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ParanoiaEval: Benchmarking Unnecessary Defensive Work in Agentic Coding" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: As coding agents increasingly undertake real-world work autonomously, judging whether their risk treatments are warranted has become…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,77 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ParanoiaEval: Benchmarking Unnecessary Defensive Work in Agentic Coding",
+  "name": "ParanoiaEval: Benchmarking Unnecessary Defensive Work in Agentic Coding",
+  "abstract": "As coding agents increasingly undertake real-world work autonomously, judging whether their risk treatments are warranted has become important. Existing work evaluates related agent behaviors from separate perspectives, but lacks a systematic framework for unifying these behaviors. To bridge this gap, we introduce ParanoiaEval, the first benchmark for unified evaluation of risk-treatment capabilities in coding agents. Grounded in the well-established Avoidance-Transfer-Mitigation-Acceptance framework in software engineering risk management, ParanoiaEval operationalizes its 4 fundamental treatments for coding-agent settings and contains 200 evidence-controlled repository-level task pairs, each differing only in treatment-defining evidence. We further introduce dedicated metrics for risk-treatment violations and evidence responsiveness, using a human-calibrated agentic judge for reliable evaluation. Large-scale experiments on 8 representative models and a post-hoc human study reveal that (I) unnecessary risk treatment occurs in 11.2%-58.7% of runs despite explicit evidence, with substantial variation across agent configurations; (II) stronger task capability does not ensure more appropriate risk treatment, while treatment violations substantially harm developers' experience, establishing risk treatment as an independent capability dimension; and (III) agents exhibit systematic patterns consistent with established risk-management findings, suggesting that knowledge from human practice can guide the diagnosis and improvement of this capability.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Hanjun Luo"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiucheng Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhuoning Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhimu Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yingbin Jin"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinfeng Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Hanan Salam"
+    }
+  ],
+  "datePublished": "2026-10-06T16:46:14Z",
+  "dateModified": "2026-10-08T09:27:04Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.08662.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.08662.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.08662v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.08662"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.08662v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2610.08662"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +109,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ParanoiaEval: Benchmarking Unnecessary Defensive Work in Agentic Coding</h1>
+        <div class="meta">
+          Hanjun Luo, Xiucheng Zhang, Zhuoning Xu, Zhimu Huang, Yingbin Jin, Xinfeng Li, Hanan Salam
+          · 2610.08662
+          · <time datetime="2026-10-06">2026-10-06</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>As coding agents increasingly undertake real-world work autonomously, judging whether their risk treatments are warranted has become important. Existing work evaluates related agent behaviors from separate perspectives, but lacks a systematic framework for unifying these behaviors. To bridge this gap, we introduce ParanoiaEval, the first benchmark for unified evaluation of risk-treatment capabilities in coding agents. Grounded in the well-established Avoidance-Transfer-Mitigation-Acceptance framework in software engineering risk management, ParanoiaEval operationalizes its 4 fundamental treatments for coding-agent settings and contains 200 evidence-controlled repository-level task pairs, each differing only in treatment-defining evidence. We further introduce dedicated metrics for risk-treatment violations and evidence responsiveness, using a human-calibrated agentic judge for reliable evaluation. Large-scale experiments on 8 representative models and a post-hoc human study reveal that (I) unnecessary risk treatment occurs in 11.2%-58.7% of runs despite explicit evidence, with substantial variation across agent configurations; (II) stronger task capability does not ensure more appropriate risk treatment, while treatment violations substantially harm developers&#x27; experience, establishing risk treatment as an independent capability dimension; and (III) agents exhibit systematic patterns consistent with established risk-management findings, suggesting that knowledge from human practice can guide the diagnosis and improvement of this capability.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.08662v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.08662v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.08662" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.11482.html"><strong>Evaluating Local Language Model Agents for Reproducible Data Engineering: An Empirical Software Engineering Study of Mobility Workflows</strong></a> <span>2026-10-08</span></li>
+          <li><a href="2610.11447.html"><strong>Closed-loop evaluation of LLM agents for embedded software development</strong></a> <span>2026-10-08</span></li>
+          <li><a href="2610.09633.html"><strong>Coding-Agent Benchmarks Should Match Their Users&#x27; Task Flows</strong></a> <span>2026-10-07</span></li>
+          <li><a href="2610.08720.html"><strong>WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?</strong></a> <span>2026-10-06</span></li>
+          <li><a href="2610.07639.html"><strong>HarnessSecurity-Bench: Do Security Mechanisms Really Protect Coding Agent Harnesses?</strong></a> <span>2026-10-06</span></li>
+          <li><a href="2610.07594.html"><strong>BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation</strong></a> <span>2026-10-06</span></li>
+          <li><a href="2610.07557.html"><strong>CheckerBench: Can Long-Horizon Agents Synthesize Static-Analysis Checkers?</strong></a> <span>2026-10-06</span></li>
+          <li><a href="2610.07261.html"><strong>Verifying Coordination in Parallel Coding Agents: NP-Bench and a Scheduling Planner</strong></a> <span>2026-10-05</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

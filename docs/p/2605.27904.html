@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Dr-CiK: A Testbed for Foresight-Driven Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Time series forecasting in real-world settings often depends not only on historical observations, but also on external context that…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2605.27904" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.27904.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Dr-CiK: A Testbed for Foresight-Driven Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Time series forecasting in real-world settings often depends not only on historical observations, but also on external context that…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.27904.html" />
+    <meta property="article:published_time" content="2026-05-27T03:26:42Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Dr-CiK: A Testbed for Foresight-Driven Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Time series forecasting in real-world settings often depends not only on historical observations, but also on external context that…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,83 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Dr-CiK: A Testbed for Foresight-Driven Agents",
+  "name": "Dr-CiK: A Testbed for Foresight-Driven Agents",
+  "abstract": "Time series forecasting in real-world settings often depends not only on historical observations, but also on external context that must be actively discovered from noisy, heterogeneous information sources. Yet existing context-aided forecasting benchmarks typically assume that the supporting context is already provided, leaving open whether agents can identify it on their own. Therefore, we introduce Dr-CiK, a benchmark for evaluating whether agents can retrieve forecasting-relevant supporting context from a document corpus, filter out distractors, distill the retrieved context into forecast-useful evidence, and generate forecasts supported by that evidence. Through context ablations and evaluations of state-of-the-art deep research and forecasting methods paired together, we show that high-quality context substantially improves forecasting performance in Dr-CiK. However, most existing DR agents recover only a small fraction of the ground-truth supporting evidence (usually <5%), are frequently misled by distractors (>80% distractor citations), and can cause forecasters to perform worse with retrieved context than without context. Our results motivate research on foresight-driven agents that search for the right context to predict the future.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yihong Tang"
+    },
+    {
+      "@type": "Person",
+      "name": "Andrew Robert Williams"
+    },
+    {
+      "@type": "Person",
+      "name": "Arjun Ashok"
+    },
+    {
+      "@type": "Person",
+      "name": "Vincent Zhihao Zheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Lijun Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Alexandre Drouin"
+    },
+    {
+      "@type": "Person",
+      "name": "Issam H. Laradji"
+    },
+    {
+      "@type": "Person",
+      "name": "Étienne Marcotte"
+    },
+    {
+      "@type": "Person",
+      "name": "Valentina Zantedeschi"
+    }
+  ],
+  "datePublished": "2026-05-27T03:26:42Z",
+  "dateModified": "2026-05-27T03:26:42Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.27904.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.27904.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.27904v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.27904"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.27904v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.27904"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +115,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Dr-CiK: A Testbed for Foresight-Driven Agents</h1>
+        <div class="meta">
+          Yihong Tang, Andrew Robert Williams, Arjun Ashok, Vincent Zhihao Zheng, Lijun Sun, Alexandre Drouin, Issam H. Laradji, Étienne Marcotte, Valentina Zantedeschi
+          · 2605.27904
+          · <time datetime="2026-05-27">2026-05-27</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Time series forecasting in real-world settings often depends not only on historical observations, but also on external context that must be actively discovered from noisy, heterogeneous information sources. Yet existing context-aided forecasting benchmarks typically assume that the supporting context is already provided, leaving open whether agents can identify it on their own. Therefore, we introduce Dr-CiK, a benchmark for evaluating whether agents can retrieve forecasting-relevant supporting context from a document corpus, filter out distractors, distill the retrieved context into forecast-useful evidence, and generate forecasts supported by that evidence. Through context ablations and evaluations of state-of-the-art deep research and forecasting methods paired together, we show that high-quality context substantially improves forecasting performance in Dr-CiK. However, most existing DR agents recover only a small fraction of the ground-truth supporting evidence (usually &lt;5%), are frequently misled by distractors (&gt;80% distractor citations), and can cause forecasters to perform worse with retrieved context than without context. Our results motivate research on foresight-driven agents that search for the right context to predict the future.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.27904v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.27904v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.27904" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.28158.html"><strong>OR-Space: A Full-Lifecycle Workspace Benchmark for Industrial Optimization Agents</strong></a> <span>2026-05-27</span></li>
+          <li><a href="2605.28108.html"><strong>Ask Now, Use Later: Benchmarking the Proactivity Gap in Long-Lived LLM Agents</strong></a> <span>2026-05-27</span></li>
+          <li><a href="2605.27984.html"><strong>KVoiceBench, KOpenAudioBench, and KMMAU: Agent-Driven Korean Speech Benchmarks for Evaluating SpeechLMs</strong></a> <span>2026-05-27</span></li>
+          <li><a href="2605.27922.html"><strong>Harness-Bench: Measuring Harness Effects across Models in Realistic Agent Workflows</strong></a> <span>2026-05-27</span></li>
+          <li><a href="2605.27879.html"><strong>Towards Faithful Agentic XAI: A Verification Method and an Open-World Benchmark for Better Model Faithfulness</strong></a> <span>2026-05-27</span></li>
+          <li><a href="2605.27566.html"><strong>DynaSchedBench: Calibrated Dynamic Scheduling Benchmarks and Observability Paradox in LLM-based Scheduling Agents</strong></a> <span>2026-05-26</span></li>
+          <li><a href="2605.27240.html"><strong>ENPMR-Bench: Benchmarking Proactive Memory Retrieval for Emotional Support Agents</strong></a> <span>2026-05-26</span></li>
+          <li><a href="2605.27141.html"><strong>VitaBench 2.0: Evaluating Personalized and Proactive Agents in Long-Term User Interactions</strong></a> <span>2026-05-26</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MM-ToolSandBox: A Unified Framework for Evaluating Visual Tool-Calling Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: We introduce MM-ToolSandBox, a benchmark and evaluation framework for visually grounded tool-calling agents. The framework provides a…" />
+    <meta name="keywords" content="General, Tool use, Safety, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2607.11818" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.11818.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MM-ToolSandBox: A Unified Framework for Evaluating Visual Tool-Calling Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: We introduce MM-ToolSandBox, a benchmark and evaluation framework for visually grounded tool-calling agents. The framework provides a…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.11818.html" />
+    <meta property="article:published_time" content="2026-07-13T17:13:09Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MM-ToolSandBox: A Unified Framework for Evaluating Visual Tool-Calling Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: We introduce MM-ToolSandBox, a benchmark and evaluation framework for visually grounded tool-calling agents. The framework provides a…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,74 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MM-ToolSandBox: A Unified Framework for Evaluating Visual Tool-Calling Agents",
+  "name": "MM-ToolSandBox: A Unified Framework for Evaluating Visual Tool-Calling Agents",
+  "abstract": "We introduce MM-ToolSandBox, a benchmark and evaluation framework for visually grounded tool-calling agents. The framework provides a stateful execution environment spanning 500+ tools across 16 application domains, supporting multi-image, multi-turn tasks where agents must ground progressively arriving visual inputs into executable tool calls while handling realistic conversational phenomena (goal revisions, error corrections, state mutations). An automated scenario generation pipeline produces diverse, visually grounded scenarios through information-flow-guided planning and multi-stage quality filtering, yielding 258 human-verified nominal scenarios and 50 variants targeting interactive UI applications. Evaluating 12 state-of-the-art models, from 4B open-weight to frontier proprietary systems, shows that current models still lack robust visual tool-calling capability: even the best model achieves below 50% success rate. Our failure analysis further reveals that visual precision, not only planning, is a primary bottleneck for capable models: 53% of failures stem from incorrect information extraction from images despite otherwise correct task workflows. A planning-to-precision crossover emerges with scale: smaller models fail at deciding what to do, while larger models fail at perceiving what they see, suggesting fundamentally different research directions for improving models at different capability levels. The framework and the benchmark are publicly available at https://github.com/apple/ml-mmtoolsandbox",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Kaixin Ma"
+    },
+    {
+      "@type": "Person",
+      "name": "Di Feng"
+    },
+    {
+      "@type": "Person",
+      "name": "Alexander Metz"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiarui Lu"
+    },
+    {
+      "@type": "Person",
+      "name": "Eshan Verma"
+    },
+    {
+      "@type": "Person",
+      "name": "Afshin Dehghan"
+    }
+  ],
+  "datePublished": "2026-07-13T17:13:09Z",
+  "dateModified": "2026-08-21T08:13:36Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.11818.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.11818.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.11818v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.11818"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Safety",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.11818v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.11818"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +106,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MM-ToolSandBox: A Unified Framework for Evaluating Visual Tool-Calling Agents</h1>
+        <div class="meta">
+          Kaixin Ma, Di Feng, Alexander Metz, Jiarui Lu, Eshan Verma, Afshin Dehghan
+          · 2607.11818
+          · <time datetime="2026-07-13">2026-07-13</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>We introduce MM-ToolSandBox, a benchmark and evaluation framework for visually grounded tool-calling agents. The framework provides a stateful execution environment spanning 500+ tools across 16 application domains, supporting multi-image, multi-turn tasks where agents must ground progressively arriving visual inputs into executable tool calls while handling realistic conversational phenomena (goal revisions, error corrections, state mutations). An automated scenario generation pipeline produces diverse, visually grounded scenarios through information-flow-guided planning and multi-stage quality filtering, yielding 258 human-verified nominal scenarios and 50 variants targeting interactive UI applications. Evaluating 12 state-of-the-art models, from 4B open-weight to frontier proprietary systems, shows that current models still lack robust visual tool-calling capability: even the best model achieves below 50% success rate. Our failure analysis further reveals that visual precision, not only planning, is a primary bottleneck for capable models: 53% of failures stem from incorrect information extraction from images despite otherwise correct task workflows. A planning-to-precision crossover emerges with scale: smaller models fail at deciding what to do, while larger models fail at perceiving what they see, suggesting fundamentally different research directions for improving models at different capability levels. The framework and the benchmark are publicly available at https://github.com/apple/ml-mmtoolsandbox</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.11818v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.11818v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.11818" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.14004.html"><strong>Do Agent Optimizers Compound? A Continual-Learning Evaluation on Terminal-Bench 2.0</strong></a> <span>2026-07-15</span></li>
+          <li><a href="2607.12385.html"><strong>PM-Bench: Evaluating Prospective Memory in LLM Agents</strong></a> <span>2026-07-14</span></li>
+          <li><a href="2607.26072.html"><strong>IFCMemoryBench: Evaluating Long-Term Memory of LLM-Based Agents in BIM Information Retrieval</strong></a> <span>2026-07-13</span></li>
+          <li><a href="2607.12085.html"><strong>Operationalising Multi-Dimensional Evaluation for Conversational Agents: A Scalable, Governed Pipeline with Selective Re-evaluation and Model Benchmarking</strong></a> <span>2026-07-13</span></li>
+          <li><a href="2607.10526.html"><strong>Agents Don&#x27;t Just Agree, They Remember: Benchmarking Persistent Sycophancy in Stateful Personal Agents</strong></a> <span>2026-07-12</span></li>
+          <li><a href="2607.19409.html"><strong>FORCE-Bench: A Benchmark, Dataset, and Evaluation Harness for Agentic AI in Enterprise Finance</strong></a> <span>2026-07-11</span></li>
+          <li><a href="2607.10490.html"><strong>NetInjectBench: Benchmarking Indirect Prompt Injection in Tool-Using Large Language Model Agents for Network Operations</strong></a> <span>2026-07-11</span></li>
+          <li><a href="2607.09322.html"><strong>LongMedBench: Benchmarking Medical Agents for Long-Horizon Clinical Decision-Making</strong></a> <span>2026-07-10</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

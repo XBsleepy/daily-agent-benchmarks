@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>PluginEval: A Diagnostic Benchmark for Fine-Grained Error Attribution in Function Calling | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Reliable evaluation of tool routing is critical as Large Language Models increasingly operate as autonomous agents. Current…" />
+    <meta name="keywords" content="Tool use, agent benchmark, LLM agent, arXiv, 2608.08700" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.08700.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="PluginEval: A Diagnostic Benchmark for Fine-Grained Error Attribution in Function Calling" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Reliable evaluation of tool routing is critical as Large Language Models increasingly operate as autonomous agents. Current…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.08700.html" />
+    <meta property="article:published_time" content="2026-08-09T13:25:54Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PluginEval: A Diagnostic Benchmark for Fine-Grained Error Attribution in Function Calling" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Reliable evaluation of tool routing is critical as Large Language Models increasingly operate as autonomous agents. Current…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,83 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "PluginEval: A Diagnostic Benchmark for Fine-Grained Error Attribution in Function Calling",
+  "name": "PluginEval: A Diagnostic Benchmark for Fine-Grained Error Attribution in Function Calling",
+  "abstract": "Reliable evaluation of tool routing is critical as Large Language Models increasingly operate as autonomous agents. Current benchmarks face three structural limitations: data distributions that follow a power law leave rare scenarios underrepresented; the absence of adversarial hard negatives obscures performance differences across models; and annotation pipelines depend on LLM judgments that have not been validated through execution. In this paper, we introduce PluginEval, a benchmark constructed through a two-stage framework that systematically mitigates these limitations. First, we formulate tool routing as a sequence of three decisions and separate generation from verification. LLMs propose candidate calls, while deterministic validation and real API execution provide reliable quality signals. Second, we decompose each plugin by capability, intent, and boundary to identify trigger and exclusion scenarios. We then generate queries at different difficulty levels to fill coverage gaps, including adversarial negatives targeting three failure modes, and return them to the first stage for annotation. This process creates a closed loop that iterates until coverage converges. For evaluation, we move beyond aggregate accuracy. An LLM judge anchored to gold annotations classifies failures as missed calls, spurious calls, or parameter errors, producing a detailed error profile for each model. We evaluate five model families, including proprietary models and models with open weights, analyze their performance across difficulty levels and error categories, and validate the judge through agreement with human annotations.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Dongjie Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Julius"
+    },
+    {
+      "@type": "Person",
+      "name": "Hanchi Dong"
+    },
+    {
+      "@type": "Person",
+      "name": "Minghua Tang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuxuan Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Ziwei Nie"
+    },
+    {
+      "@type": "Person",
+      "name": "Zicheng Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Dujun Qing"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiajie Xu"
+    }
+  ],
+  "datePublished": "2026-08-09T13:25:54Z",
+  "dateModified": "2026-08-09T13:25:54Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.08700.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.08700.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.08700v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.08700"
+  },
+  "keywords": [
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.08700v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.08700"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +115,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>PluginEval: A Diagnostic Benchmark for Fine-Grained Error Attribution in Function Calling</h1>
+        <div class="meta">
+          Dongjie Xu, Julius, Hanchi Dong, Minghua Tang, Yuxuan Sun, Ziwei Nie, Zicheng Liu, Dujun Qing, Jiajie Xu
+          · 2608.08700
+          · <time datetime="2026-08-09">2026-08-09</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Reliable evaluation of tool routing is critical as Large Language Models increasingly operate as autonomous agents. Current benchmarks face three structural limitations: data distributions that follow a power law leave rare scenarios underrepresented; the absence of adversarial hard negatives obscures performance differences across models; and annotation pipelines depend on LLM judgments that have not been validated through execution. In this paper, we introduce PluginEval, a benchmark constructed through a two-stage framework that systematically mitigates these limitations. First, we formulate tool routing as a sequence of three decisions and separate generation from verification. LLMs propose candidate calls, while deterministic validation and real API execution provide reliable quality signals. Second, we decompose each plugin by capability, intent, and boundary to identify trigger and exclusion scenarios. We then generate queries at different difficulty levels to fill coverage gaps, including adversarial negatives targeting three failure modes, and return them to the first stage for annotation. This process creates a closed loop that iterates until coverage converges. For evaluation, we move beyond aggregate accuracy. An LLM judge anchored to gold annotations classifies failures as missed calls, spurious calls, or parameter errors, producing a detailed error profile for each model. We evaluate five model families, including proprietary models and models with open weights, analyze their performance across difficulty levels and error categories, and validate the judge through agreement with human annotations.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.08700v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.08700v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.08700" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.26199.html"><strong>Benchmarking AI Agents for Hardware Design Automation via MCP Tool Calling</strong></a> <span>2026-08-25</span></li>
+          <li><a href="2608.24509.html"><strong>PeakBench: Benchmarking Resource-Aware Tool Invocation in LLM Agents</strong></a> <span>2026-08-25</span></li>
+          <li><a href="2608.23067.html"><strong>Signal or Noise? A Benchmark Study of Agent Skills in Web Development</strong></a> <span>2026-08-24</span></li>
+          <li><a href="2608.22331.html"><strong>Noise Floor Audit for Agent Benchmarks</strong></a> <span>2026-08-23</span></li>
+          <li><a href="2607.23722.html"><strong>E-Bench: Benchmarking Multi-Step Tool-Use Agents in Real-World Product Scenarios</strong></a> <span>2026-07-26</span></li>
+          <li><a href="2607.14642.html"><strong>MCPEvol-Bench: Benchmarking LLM Agent Performance Across Dynamic Evolutions of MCP Servers</strong></a> <span>2026-07-16</span></li>
+          <li><a href="2607.20536.html"><strong>AppWorld-UL: Benchmarking Diverse Agent-User Interactions for Tool-Use</strong></a> <span>2026-07-10</span></li>
+          <li><a href="2607.20531.html"><strong>DynamicMCPBench: A Trace-Grounded, Effect-Scored Benchmark for LLM Agents over Live MCP Servers</strong></a> <span>2026-07-10</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MTVA-Bench: Evaluating the Language Model Inside Cascaded Voice Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Generally, most voice agents are cascaded systems, i.e., an ASR model transcribes the caller&#x27;s audio, a language model reads the…" />
+    <meta name="keywords" content="Tool use, agent benchmark, LLM agent, arXiv, 2609.20152" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.20152.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MTVA-Bench: Evaluating the Language Model Inside Cascaded Voice Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Generally, most voice agents are cascaded systems, i.e., an ASR model transcribes the caller&#x27;s audio, a language model reads the…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.20152.html" />
+    <meta property="article:published_time" content="2026-09-18T04:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MTVA-Bench: Evaluating the Language Model Inside Cascaded Voice Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Generally, most voice agents are cascaded systems, i.e., an ASR model transcribes the caller&#x27;s audio, a language model reads the…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,51 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MTVA-Bench: Evaluating the Language Model Inside Cascaded Voice Agents",
+  "name": "MTVA-Bench: Evaluating the Language Model Inside Cascaded Voice Agents",
+  "abstract": "Generally, most voice agents are cascaded systems, i.e., an ASR model transcribes the caller's audio, a language model reads the transcript and decides what to say and which backend tools to call, and a TTS model speaks the reply. Nearly all of the decision making happens in the language model, but existing evaluations measure it either too broadly or too narrowly. End-to-end voice benchmarks score the full pipeline, so recognition errors and model errors mix into a single number. LLM benchmarks isolate the model but they do not evaluate what makes real phone calls hard, such as transcription issues, caller's voice being split across messages and the requirement that replies follow the language and script specified. We introduce the Multi-Turn Voice Agent Benchmark (MTVA-Bench), which evaluates the language model on the same conditions it faces inside a cascaded system. The caller is played by an LLM following a set of rubrics and tool calls are answered by a mock backend which responds to the arguments the model actually sent. The benchmark contains 49 agents working across 490 reviewed scenarios and supports 7 languages. Scoring is a combination of deterministic checks on tool calls with two LLM judges, one that scores scenario specific rules and one that grades conversation quality without access to the task. Both judges must cite specific messages from the transcript. Task and conversation scores are weighted equally, since a call can complete its task and still go badly for the caller. In a seven-model study, six of the models select the correct tool within 6.4 points of one another, but their overall scores span 24.4 points. Most of the gap comes from argument values, action ordering, rule compliance, and what the model says around its tool calls.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Pritish Mishra, Ishaan Kumar, Akshat Mandoli, Sudarshan Kamath"
+    }
+  ],
+  "datePublished": "2026-09-18T04:00:00Z",
+  "dateModified": "2026-09-18T04:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.20152.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.20152.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.20152"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.20152"
+  },
+  "keywords": [
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.20152"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.20152"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +83,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MTVA-Bench: Evaluating the Language Model Inside Cascaded Voice Agents</h1>
+        <div class="meta">
+          Pritish Mishra, Ishaan Kumar, Akshat Mandoli, Sudarshan Kamath
+          · 2609.20152
+          · <time datetime="2026-09-18">2026-09-18</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Generally, most voice agents are cascaded systems, i.e., an ASR model transcribes the caller&#x27;s audio, a language model reads the transcript and decides what to say and which backend tools to call, and a TTS model speaks the reply. Nearly all of the decision making happens in the language model, but existing evaluations measure it either too broadly or too narrowly. End-to-end voice benchmarks score the full pipeline, so recognition errors and model errors mix into a single number. LLM benchmarks isolate the model but they do not evaluate what makes real phone calls hard, such as transcription issues, caller&#x27;s voice being split across messages and the requirement that replies follow the language and script specified. We introduce the Multi-Turn Voice Agent Benchmark (MTVA-Bench), which evaluates the language model on the same conditions it faces inside a cascaded system. The caller is played by an LLM following a set of rubrics and tool calls are answered by a mock backend which responds to the arguments the model actually sent. The benchmark contains 49 agents working across 490 reviewed scenarios and supports 7 languages. Scoring is a combination of deterministic checks on tool calls with two LLM judges, one that scores scenario specific rules and one that grades conversation quality without access to the task. Both judges must cite specific messages from the transcript. Task and conversation scores are weighted equally, since a call can complete its task and still go badly for the caller. In a seven-model study, six of the models select the correct tool within 6.4 points of one another, but their overall scores span 24.4 points. Most of the gap comes from argument values, action ordering, rule compliance, and what the model says around its tool calls.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.20152" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.20152" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.20152" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.24663.html"><strong>Beyond Endpoint Performance: Process-Level Evaluation of Self-Evolving Agents</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.23490.html"><strong>BabelArena: A Large-Scale Multilingual Benchmark for LLM Agents</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.22076.html"><strong>APort Vault: Benchmarking AI Agent Payment Authorization with the Open Agent Passport</strong></a> <span>2026-09-21</span></li>
+          <li><a href="2609.20886.html"><strong>BI-Agent and BI-Bench: Towards Automating End-to-End Business Intelligence</strong></a> <span>2026-09-21</span></li>
+          <li><a href="2609.12808.html"><strong>K-Bench: A Benchmark for LLM Unlearning in Agentic Deployments</strong></a> <span>2026-09-11</span></li>
+          <li><a href="2609.12345.html"><strong>ParaRecover: A Process-Level Benchmark for Error Localization and Recovery in Parallel Tool-Use Agents</strong></a> <span>2026-09-11</span></li>
+          <li><a href="2609.09853.html"><strong>The Era by Eon Benchmark: A Generated Enterprise Estate with Exact Ground Truth for Benchmarking LLM Agents</strong></a> <span>2026-09-09</span></li>
+          <li><a href="2609.09754.html"><strong>LexAgentHallu: A Hierarchical Benchmark for Profiling Hallucinations in Legal Agents</strong></a> <span>2026-09-09</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

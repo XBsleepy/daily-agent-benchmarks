@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Trains but Doesn&#x27;t Learn: A Post-Training Delivery Benchmark for LLM Agents as Forward-Deployed Engineers | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Post-training is becoming a service (PTaaS): a customer hands an operator data and a goal, and a forward-deployed engineer (FDE)…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2609.25237" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.25237.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Trains but Doesn&#x27;t Learn: A Post-Training Delivery Benchmark for LLM Agents as Forward-Deployed Engineers" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Post-training is becoming a service (PTaaS): a customer hands an operator data and a goal, and a forward-deployed engineer (FDE)…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.25237.html" />
+    <meta property="article:published_time" content="2026-09-23T04:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Trains but Doesn&#x27;t Learn: A Post-Training Delivery Benchmark for LLM Agents as Forward-Deployed Engineers" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Post-training is becoming a service (PTaaS): a customer hands an operator data and a goal, and a forward-deployed engineer (FDE)…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,51 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Trains but Doesn't Learn: A Post-Training Delivery Benchmark for LLM Agents as Forward-Deployed Engineers",
+  "name": "Trains but Doesn't Learn: A Post-Training Delivery Benchmark for LLM Agents as Forward-Deployed Engineers",
+  "abstract": "Post-training is becoming a service (PTaaS): a customer hands an operator data and a goal, and a forward-deployed engineer (FDE) returns a fine-tuned, evaluated, and deployed model under a budget, a human-approval gate, and reproducibility requirements. Seating an LLM agent in the FDE seat raises a question existing benchmarks cannot answer: not whether an agent can raise a metric, but whether it can be trusted to deliver. We answer it on a governed delivery plane, where an agent drives ten stages and an oracle scores each stage from platform-recorded facts. The central silent failure is the run that trains but does not learn (TBDL): loss falls, every signal stays green, and the delivered model is no better than the base. An operator-run acceptance gate catches every such run before payment, and a detector calibrated on known-corrupted runs flags severe corruption mid-run. We ran four frontier agents (Claude Opus 5, GPT-5.6-luna, Gemini 3.7 Flash, DeepSeek V4-Pro) end to end on metered L40S, A100, and H200 GPUs across 8B to 70B open bases, certifying every scenario before scoring. We also ran a human FDE arm under the same oracle and compare every agent against it.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Weihang Ding, Junfei Zhan"
+    }
+  ],
+  "datePublished": "2026-09-23T04:00:00Z",
+  "dateModified": "2026-09-23T04:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.25237.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.25237.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.25237"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.25237"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.25237"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.25237"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +83,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Trains but Doesn&#x27;t Learn: A Post-Training Delivery Benchmark for LLM Agents as Forward-Deployed Engineers</h1>
+        <div class="meta">
+          Weihang Ding, Junfei Zhan
+          · 2609.25237
+          · <time datetime="2026-09-23">2026-09-23</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Post-training is becoming a service (PTaaS): a customer hands an operator data and a goal, and a forward-deployed engineer (FDE) returns a fine-tuned, evaluated, and deployed model under a budget, a human-approval gate, and reproducibility requirements. Seating an LLM agent in the FDE seat raises a question existing benchmarks cannot answer: not whether an agent can raise a metric, but whether it can be trusted to deliver. We answer it on a governed delivery plane, where an agent drives ten stages and an oracle scores each stage from platform-recorded facts. The central silent failure is the run that trains but does not learn (TBDL): loss falls, every signal stays green, and the delivered model is no better than the base. An operator-run acceptance gate catches every such run before payment, and a detector calibrated on known-corrupted runs flags severe corruption mid-run. We ran four frontier agents (Claude Opus 5, GPT-5.6-luna, Gemini 3.7 Flash, DeepSeek V4-Pro) end to end on metered L40S, A100, and H200 GPUs across 8B to 70B open bases, certifying every scenario before scoring. We also ran a human FDE arm under the same oracle and compare every agent against it.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.25237" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.25237" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.25237" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.33023.html"><strong>SRE-Marathon: A Continuous, Change-Driven Benchmark for Autonomous Site Reliability Agents</strong></a> <span>2026-09-26</span></li>
+          <li><a href="2609.32795.html"><strong>AgentHabit: Characterizing Distinct Behaviors of Agents on Everyday Tasks</strong></a> <span>2026-09-26</span></li>
+          <li><a href="2609.28850.html"><strong>RECLAIM: Can Agents Reproduce the Claims of Machine Learning Papers?</strong></a> <span>2026-09-25</span></li>
+          <li><a href="2609.26826.html"><strong>What Makes a Terminal-Bench Task Hard? Separating Genuine Hardness from Fake-Hardness on an Adjudicated Agentic Corpus</strong></a> <span>2026-09-24</span></li>
+          <li><a href="2609.24971.html"><strong>DolphinBench: Mapping the Pareto Frontier of Agent Memory</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.23989.html"><strong>ACLArena: Agent Continue Learning in Multi-stage Post-training</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.21267.html"><strong>Efficient Benchmarking in Production: A Study of an Evolving LLM Agent</strong></a> <span>2026-09-21</span></li>
+          <li><a href="2609.18123.html"><strong>AutoTuneBench: Trustworthy Measurement for Agent Auto-Tuning of LLM Serving Engines</strong></a> <span>2026-09-17</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

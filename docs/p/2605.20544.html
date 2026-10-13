@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>The Yes-Man Syndrome: Benchmarking Abstention in Embodied Robotic Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Vision-language models (VLMs) are used as high-level planners for embodied agents, translating natural language instructions and…" />
+    <meta name="keywords" content="Embodied / robotics, GUI agents, Planning / reasoning, Multimodal, agent benchmark, LLM agent, arXiv, 2605.20544" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.20544.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="The Yes-Man Syndrome: Benchmarking Abstention in Embodied Robotic Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Vision-language models (VLMs) are used as high-level planners for embodied agents, translating natural language instructions and…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.20544.html" />
+    <meta property="article:published_time" content="2026-05-19T22:32:44Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="The Yes-Man Syndrome: Benchmarking Abstention in Embodied Robotic Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Vision-language models (VLMs) are used as high-level planners for embodied agents, translating natural language instructions and…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,74 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "The Yes-Man Syndrome: Benchmarking Abstention in Embodied Robotic Agents",
+  "name": "The Yes-Man Syndrome: Benchmarking Abstention in Embodied Robotic Agents",
+  "abstract": "Vision-language models (VLMs) are used as high-level planners for embodied agents, translating natural language instructions and visual observations into action plans. While prior work has studied abstention in LLMs, existing benchmarks are largely text-only and do not capture the perceptual grounding and physical constraints inherent to embodied robotics environments. In such settings, abstention requires recognizing when instructions are ambiguous, physically infeasible, based on false premises, or otherwise unresolvable given the available sensory modalities and context. To address this gap, we introduce a taxonomy to categorize abstention in the context of embodied robotics and present RoboAbstention, a scalable and auditable framework for generating abstention instructions grounded in images gathered from five robotics datasets. RoboAbstention instantiates the taxonomy through a three-phase pipeline: (1) structured visual grounding, (2) deterministic constraint derivation, and (3) controlled instruction generation via category-specific templates. This enables the construction of a diverse dataset with verifiable abstention conditions. We evaluate several frontier VLMs and find that all models exhibit significant weaknesses in abstention, including those with advanced reasoning capabilities. The best-performing model, Gemini 2.5 Flash, abstains on only 39.0% of our 6,069 benchmark instructions, while the embodied planner Gemini Robotics ER 1.6 Preview abstains on just 16.5%. We further explore methods for improving abstention in VLM planners, such as defensive prompting and in-context learning, and find that these interventions substantially improve performance, reaching 93.6% abstention rate for Gemini Robotics ER 1.6 Preview and 88.6% for GPT 5.4 Mini, yet no approach fully solves the problem. We open-source RoboAbstention at https://purseclab.github.io/RoboAbstention/.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Doguhan Yeke"
+    },
+    {
+      "@type": "Person",
+      "name": "Elif Su Temirel"
+    },
+    {
+      "@type": "Person",
+      "name": "Ananth Shreekumar"
+    },
+    {
+      "@type": "Person",
+      "name": "Brandon Lee"
+    },
+    {
+      "@type": "Person",
+      "name": "Dongyan Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Z Berkay Celik"
+    }
+  ],
+  "datePublished": "2026-05-19T22:32:44Z",
+  "dateModified": "2026-05-19T22:32:44Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.20544.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.20544.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.20544v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.20544"
+  },
+  "keywords": [
+    "Embodied / robotics",
+    "GUI agents",
+    "Planning / reasoning",
+    "Multimodal",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Embodied / robotics"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.20544v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.20544"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +106,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>The Yes-Man Syndrome: Benchmarking Abstention in Embodied Robotic Agents</h1>
+        <div class="meta">
+          Doguhan Yeke, Elif Su Temirel, Ananth Shreekumar, Brandon Lee, Dongyan Xu, Z Berkay Celik
+          · 2605.20544
+          · <time datetime="2026-05-19">2026-05-19</time>
+          · Embodied / robotics
+        </div>
+        <div class="themes"><span class="chip">GUI agents</span><span class="chip">Embodied / robotics</span><span class="chip">Planning / reasoning</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Vision-language models (VLMs) are used as high-level planners for embodied agents, translating natural language instructions and visual observations into action plans. While prior work has studied abstention in LLMs, existing benchmarks are largely text-only and do not capture the perceptual grounding and physical constraints inherent to embodied robotics environments. In such settings, abstention requires recognizing when instructions are ambiguous, physically infeasible, based on false premises, or otherwise unresolvable given the available sensory modalities and context. To address this gap, we introduce a taxonomy to categorize abstention in the context of embodied robotics and present RoboAbstention, a scalable and auditable framework for generating abstention instructions grounded in images gathered from five robotics datasets. RoboAbstention instantiates the taxonomy through a three-phase pipeline: (1) structured visual grounding, (2) deterministic constraint derivation, and (3) controlled instruction generation via category-specific templates. This enables the construction of a diverse dataset with verifiable abstention conditions. We evaluate several frontier VLMs and find that all models exhibit significant weaknesses in abstention, including those with advanced reasoning capabilities. The best-performing model, Gemini 2.5 Flash, abstains on only 39.0% of our 6,069 benchmark instructions, while the embodied planner Gemini Robotics ER 1.6 Preview abstains on just 16.5%. We further explore methods for improving abstention in VLM planners, such as defensive prompting and in-context learning, and find that these interventions substantially improve performance, reaching 93.6% abstention rate for Gemini Robotics ER 1.6 Preview and 88.6% for GPT 5.4 Mini, yet no approach fully solves the problem. We open-source RoboAbstention at https://purseclab.github.io/RoboAbstention/.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.20544v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.20544v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.20544" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Embodied / robotics benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.27826.html"><strong>NormAct: Benchmarking Embodied Agents&#x27; Proactive Compliance with Unspoken Social Norms</strong></a> <span>2026-06-26</span></li>
+          <li><a href="2606.20401.html"><strong>PowerAgentBench-Dyn: A Benchmark for Agentic AI in Power System Dynamic Studies</strong></a> <span>2026-06-18</span></li>
+          <li><a href="2606.18847.html"><strong>WorldLines: Benchmarking and Modeling Long-Horizon Stateful Embodied Agents</strong></a> <span>2026-06-17</span></li>
+          <li><a href="2606.11150.html"><strong>ABC-Bench: An Agentic Bio-Capabilities Benchmark for Biosecurity</strong></a> <span>2026-06-09</span></li>
+          <li><a href="2605.19328.html"><strong>RoboJailBench: Benchmarking Adversarial Attacks and Defenses in Embodied Robotic Agents</strong></a> <span>2026-05-19</span></li>
+          <li><a href="2605.14504.html"><strong>When Robots Do the Chores: A Benchmark and Agent for Long-Horizon Household Task Execution</strong></a> <span>2026-05-14</span></li>
+          <li><a href="2605.09874.html"><strong>EgoMemReason: A Memory-Driven Reasoning Benchmark for Long-Horizon Egocentric Video Understanding</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2605.09826.html"><strong>EnactToM: An Evolving Benchmark for Functional Theory of Mind in Embodied Agents</strong></a> <span>2026-05-11</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>SkillSafetyBench: Evaluating Agent Safety under Skill-Facing Attack Surfaces | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Reusable skills are becoming a common interface for extending large language model agents, packaging procedural guidance with access…" />
+    <meta name="keywords" content="Safety, Tool use, Memory, agent benchmark, LLM agent, arXiv, 2605.12015" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.12015.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SkillSafetyBench: Evaluating Agent Safety under Skill-Facing Attack Surfaces" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Reusable skills are becoming a common interface for extending large language model agents, packaging procedural guidance with access…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.12015.html" />
+    <meta property="article:published_time" content="2026-05-12T12:03:54Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SkillSafetyBench: Evaluating Agent Safety under Skill-Facing Attack Surfaces" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Reusable skills are becoming a common interface for extending large language model agents, packaging procedural guidance with access…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,89 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SkillSafetyBench: Evaluating Agent Safety under Skill-Facing Attack Surfaces",
+  "name": "SkillSafetyBench: Evaluating Agent Safety under Skill-Facing Attack Surfaces",
+  "abstract": "Reusable skills are becoming a common interface for extending large language model agents, packaging procedural guidance with access to files, tools, memory, and execution environments. However, this modularity introduces attack surfaces that are largely missed by existing safety evaluations: even when the user request is benign, unsafe influence may reside in skill guidance, local artifacts, or execution-environment files that steer the agent toward unsafe actions. We present SkillSafetyBench, a runnable benchmark for evaluating such skill-mediated safety failures. SkillSafetyBench includes 155 adversarial cases across 47 tasks, 6 risk domains, and 30 safety categories, each evaluated with a case-specific rule-based verifier. Experiments with multiple CLI agents and model backends show that non-user attacks can consistently induce unsafe behavior, with distinct failure patterns across domains, attack methods, and scaffold-model pairings. Our findings suggest that agent safety depends not only on model-level alignment, but also on how agents interpret skills, trust workflow context, and act through executable environments.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Chang Jin"
+    },
+    {
+      "@type": "Person",
+      "name": "An Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zeming Wei"
+    },
+    {
+      "@type": "Person",
+      "name": "Kai Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Biaojie Zeng"
+    },
+    {
+      "@type": "Person",
+      "name": "Qiaosheng Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chao Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jingjing Qu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xia Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xingcheng Xu"
+    }
+  ],
+  "datePublished": "2026-05-12T12:03:54Z",
+  "dateModified": "2026-05-27T06:26:15Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.12015.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.12015.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.12015v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.12015"
+  },
+  "keywords": [
+    "Safety",
+    "Tool use",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Safety"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.12015v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.12015"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +121,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SkillSafetyBench: Evaluating Agent Safety under Skill-Facing Attack Surfaces</h1>
+        <div class="meta">
+          Chang Jin, An Wang, Zeming Wei, Kai Wang, Biaojie Zeng, Qiaosheng Zhang, Chao Yang, Jingjing Qu, Xia Hu, Xingcheng Xu
+          · 2605.12015
+          · <time datetime="2026-05-12">2026-05-12</time>
+          · Safety · 10 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Reusable skills are becoming a common interface for extending large language model agents, packaging procedural guidance with access to files, tools, memory, and execution environments. However, this modularity introduces attack surfaces that are largely missed by existing safety evaluations: even when the user request is benign, unsafe influence may reside in skill guidance, local artifacts, or execution-environment files that steer the agent toward unsafe actions. We present SkillSafetyBench, a runnable benchmark for evaluating such skill-mediated safety failures. SkillSafetyBench includes 155 adversarial cases across 47 tasks, 6 risk domains, and 30 safety categories, each evaluated with a case-specific rule-based verifier. Experiments with multiple CLI agents and model backends show that non-user attacks can consistently induce unsafe behavior, with distinct failure patterns across domains, attack methods, and scaffold-model pairings. Our findings suggest that agent safety depends not only on model-level alignment, but also on how agents interpret skills, trust workflow context, and act through executable environments.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.12015v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.12015v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.12015" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Safety benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.07131.html"><strong>MalSkillBench: A Runtime-Verified Benchmark of Malicious Agent Skills</strong></a> <span>2026-06-05</span></li>
+          <li><a href="2605.29224.html"><strong>Relevance as a Vulnerability: How Web Retrieval Degrades Safety Alignment in LLM Agents</strong></a> <span>2026-05-28</span></li>
+          <li><a href="2605.22643.html"><strong>Boiling the Frog: A Multi-Turn Benchmark for Agentic Safety</strong></a> <span>2026-05-21</span></li>
+          <li><a href="2605.14271.html"><strong>Auditing Agent Harness Safety</strong></a> <span>2026-05-14</span></li>
+          <li><a href="2604.15774.html"><strong>MemEvoBench: Benchmarking Safety Risks from Memory Misevolution in LLM Agents</strong></a> <span>2026-04-17</span></li>
+          <li><a href="2604.11174.html"><strong>EmbodiedGovBench: A Benchmark for Governance, Recovery, and Upgrade Safety in Embodied Agent Systems</strong></a> <span>2026-04-13</span></li>
+          <li><a href="2605.16282.html"><strong>Taxonomy and Consistency Analysis of Safety Benchmarks for AI Agents</strong></a> <span>2026-04-11</span></li>
+          <li><a href="2604.10286.html"><strong>STARS: Skill-Triggered Audit for Request-Conditioned Invocation Safety in Agent Systems</strong></a> <span>2026-04-11</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

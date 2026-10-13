@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>HarnessDev: Can LLMs Create and Evolve Their Own Agent Harness? | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: As agents move from research prototypes to deployed tools, their capability increasingly depends on model-external execution…" />
+    <meta name="keywords" content="Tool use, agent benchmark, LLM agent, arXiv, 2609.01437" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.01437.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="HarnessDev: Can LLMs Create and Evolve Their Own Agent Harness?" />
+    <meta property="og:description" content="Daily Agent Benchmarks: As agents move from research prototypes to deployed tools, their capability increasingly depends on model-external execution…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.01437.html" />
+    <meta property="article:published_time" content="2026-09-01T15:45:33Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="HarnessDev: Can LLMs Create and Evolve Their Own Agent Harness?" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: As agents move from research prototypes to deployed tools, their capability increasingly depends on model-external execution…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,123 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "HarnessDev: Can LLMs Create and Evolve Their Own Agent Harness?",
+  "name": "HarnessDev: Can LLMs Create and Evolve Their Own Agent Harness?",
+  "abstract": "As agents move from research prototypes to deployed tools, their capability increasingly depends on model-external execution infrastructure, commonly termed the agent harness. Changing this harness while holding model weights fixed can substantially alter task performance. Current agent evaluations typically report downstream performance under a chosen harness, leaving a model's ability to develop the harness itself comparatively underexplored. We introduce HarnessDev, a benchmark that shifts the unit of evaluation from task outputs to runnable infrastructure. HarnessDev covers two stages. In Creation, the agent starts from a minimal seed and a small number of cases, then builds a complete execution system. In Evolution, it starts from its own created harness and iteratively revises it using downstream execution feedback, with the goal of improving benchmark performance. We then evaluate each constructed harness on capability (task success on held-out benchmarks) and efficiency (execution-token cost). The reported Creation results cover six creator LLMs, four domains, and five downstream benchmarks totaling 2,207 unique downstream instances, with hidden evaluation tasks withheld from development. We find that generated harnesses remain substantially behind mature human-engineered references on code and on search and research, while matching or exceeding the selected references on writing and machine-learning experimentation, with large variation in execution cost. Evolution produces some performance gains, but they are unstable and transfer only partially to held-out tasks. Experiments with a fixed runtime model further show that the gains depend strongly on the model executing the harness, indicating limited transfer across models.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yuhao Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jingyuan Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiajun Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinping Lei"
+    },
+    {
+      "@type": "Person",
+      "name": "Qingshui Gu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuxuan Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zexuan Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chen He"
+    },
+    {
+      "@type": "Person",
+      "name": "Chen Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Maojia Song"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhiyuan Zeng"
+    },
+    {
+      "@type": "Person",
+      "name": "Shaowen Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jinkai Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yunfeng Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiaheng Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Shen Yan"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenhao Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Ge Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenxuan Zhang"
+    }
+  ],
+  "datePublished": "2026-09-01T15:45:33Z",
+  "dateModified": "2026-09-01T15:45:33Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.01437.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.01437.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.01437v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.01437"
+  },
+  "keywords": [
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.01437v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.01437"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +155,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>HarnessDev: Can LLMs Create and Evolve Their Own Agent Harness?</h1>
+        <div class="meta">
+          Yuhao Wu, Jingyuan Zhang, Jiajun Shi, Xinping Lei, Qingshui Gu, Yuxuan Zhang, Zexuan Wang, Chen He, Chen Huang, Maojia Song, Zhiyuan Zeng, Shaowen Wang, Jinkai Liu, Yunfeng Shi, Jiaheng Liu, Shen Yan, Wenhao Huang, Ge Zhang, Wenxuan Zhang
+          · 2609.01437
+          · <time datetime="2026-09-01">2026-09-01</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>As agents move from research prototypes to deployed tools, their capability increasingly depends on model-external execution infrastructure, commonly termed the agent harness. Changing this harness while holding model weights fixed can substantially alter task performance. Current agent evaluations typically report downstream performance under a chosen harness, leaving a model&#x27;s ability to develop the harness itself comparatively underexplored. We introduce HarnessDev, a benchmark that shifts the unit of evaluation from task outputs to runnable infrastructure. HarnessDev covers two stages. In Creation, the agent starts from a minimal seed and a small number of cases, then builds a complete execution system. In Evolution, it starts from its own created harness and iteratively revises it using downstream execution feedback, with the goal of improving benchmark performance. We then evaluate each constructed harness on capability (task success on held-out benchmarks) and efficiency (execution-token cost). The reported Creation results cover six creator LLMs, four domains, and five downstream benchmarks totaling 2,207 unique downstream instances, with hidden evaluation tasks withheld from development. We find that generated harnesses remain substantially behind mature human-engineered references on code and on search and research, while matching or exceeding the selected references on writing and machine-learning experimentation, with large variation in execution cost. Evolution produces some performance gains, but they are unstable and transfer only partially to held-out tasks. Experiments with a fixed runtime model further show that the gains depend strongly on the model executing the harness, indicating limited transfer across models.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.01437v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.01437v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.01437" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.05818.html"><strong>Agentic BAIM-LLM Evaluation (ABLE): Benchmarking LLM Use of Protein Design Tools</strong></a> <span>2026-09-05</span></li>
+          <li><a href="2609.04280.html"><strong>EVOHARNESSBENCH: Can Your Agents Keep Pace with an Evolving Harness?</strong></a> <span>2026-09-03</span></li>
+          <li><a href="2609.03588.html"><strong>KC-Bench: A Dynamic Interactive Benchmark for Evaluating Knowledge Conflicts in LLM Agents</strong></a> <span>2026-09-03</span></li>
+          <li><a href="2609.02459.html"><strong>CivBench: A Long-Horizon Benchmark for Tool-Mediated Agents in Civilization VI</strong></a> <span>2026-09-02</span></li>
+          <li><a href="2608.29397.html"><strong>AlgoWorlds: Benchmarking Tool Use for Global Optimization in Algorithmic Worlds</strong></a> <span>2026-08-29</span></li>
+          <li><a href="2608.29128.html"><strong>APIFlow-Bench: Measuring Whether Agents Survive Long, Dependent API Workflows</strong></a> <span>2026-08-29</span></li>
+          <li><a href="2608.27334.html"><strong>BTS-AgentBench: A Deterministic, Replayable Pipeline from Read-Only Telemetry Logs to Agent Benchmarks</strong></a> <span>2026-08-27</span></li>
+          <li><a href="2608.26867.html"><strong>BekchiAI: Measuring, Observing, and Controlling LLM Agents in One Click</strong></a> <span>2026-08-27</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

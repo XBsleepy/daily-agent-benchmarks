@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Enterprise workflows increasingly rely on agents for \emph{schema-guided extraction}: given a document and a user-defined schema, the…" />
+    <meta name="keywords" content="Work / office, Coding agents, agent benchmark, LLM agent, arXiv, 2607.29677" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.29677.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Enterprise workflows increasingly rely on agents for \emph{schema-guided extraction}: given a document and a user-defined schema, the…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.29677.html" />
+    <meta property="article:published_time" content="2026-07-31T17:55:58Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Enterprise workflows increasingly rely on agents for \emph{schema-guided extraction}: given a document and a user-defined schema, the…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,68 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction",
+  "name": "ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction",
+  "abstract": "Enterprise workflows increasingly rely on agents for \\emph{schema-guided extraction}: given a document and a user-defined schema, the agent faithfully follows the schema to produce the correct output with source evidence as grounding metadata. We present ExtractBench, a benchmark for schema-guided extraction and, to our knowledge, the first to score value accuracy, record completeness at scale, grounding, and measured cost together. The evaluation system contains 4,869 pages across 370 enterprise documents, 8 business domains, and 67 document types, with clear tags differentiating their challenge scenarios. The scalable schema and ground-truth curation pipeline combines independent-system agreement for real documents, known values for synthetic lists, and human verification for forms. We report order-insensitive value F1 for value accuracy, plus two grounding metrics for source traceability: word- and page-level F1. Commercial VLMs perform well on short documents but often truncate record lists on long ones, while coding agents retain higher accuracy at much higher cost. LlamaExtract Agentic Plus ranks first on all three metrics, with accuracy comparable to coding agents at a fraction of the cost. Dataset and evaluation code are available on \\href{https://huggingface.co/datasets/llamaindex/ExtractBench}{HuggingFace} and \\href{https://github.com/run-llama/ExtractBench}{GitHub}.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Boyang Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Adrian Lyjak"
+    },
+    {
+      "@type": "Person",
+      "name": "Eli Stewart"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhaoqi Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Simon Suo"
+    }
+  ],
+  "datePublished": "2026-07-31T17:55:58Z",
+  "dateModified": "2026-08-05T17:48:49Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.29677.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.29677.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.29677v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.29677"
+  },
+  "keywords": [
+    "Work / office",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Work / office"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.29677v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.29677"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +100,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction</h1>
+        <div class="meta">
+          Boyang Zhang, Adrian Lyjak, Eli Stewart, Zhaoqi Li, Simon Suo
+          · 2607.29677
+          · <time datetime="2026-07-31">2026-07-31</time>
+          · Work / office · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Enterprise workflows increasingly rely on agents for \emph{schema-guided extraction}: given a document and a user-defined schema, the agent faithfully follows the schema to produce the correct output with source evidence as grounding metadata. We present ExtractBench, a benchmark for schema-guided extraction and, to our knowledge, the first to score value accuracy, record completeness at scale, grounding, and measured cost together. The evaluation system contains 4,869 pages across 370 enterprise documents, 8 business domains, and 67 document types, with clear tags differentiating their challenge scenarios. The scalable schema and ground-truth curation pipeline combines independent-system agreement for real documents, known values for synthetic lists, and human verification for forms. We report order-insensitive value F1 for value accuracy, plus two grounding metrics for source traceability: word- and page-level F1. Commercial VLMs perform well on short documents but often truncate record lists on long ones, while coding agents retain higher accuracy at much higher cost. LlamaExtract Agentic Plus ranks first on all three metrics, with accuracy comparable to coding agents at a fraction of the cost. Dataset and evaluation code are available on \href{https://huggingface.co/datasets/llamaindex/ExtractBench}{HuggingFace} and \href{https://github.com/run-llama/ExtractBench}{GitHub}.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.29677v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.29677v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.29677" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Work / office benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.09096.html"><strong>Evo-Bench: Can Language Models Improve Agent Harness?</strong></a> <span>2026-08-10</span></li>
+          <li><a href="2608.06144.html"><strong>FinEvo-Bench: A Longitudinal Benchmark for Self-Evolving Agents in Professional Financial Workflows</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2608.05263.html"><strong>OrchestraBench: Evaluating Multi-Agent Orchestration Failure Modes, Recovery, and Decomposition Quality</strong></a> <span>2026-08-05</span></li>
+          <li><a href="2608.02758.html"><strong>Everyone Conforms, No One Believes: Pluralistic Ignorance in LLM Agent Populations</strong></a> <span>2026-08-03</span></li>
+          <li><a href="2607.27155.html"><strong>OmegaUse-OfficeVal: Benchmarking LLM Agents on Long-Horizon Office-Suite Tasks with Economic Grounding</strong></a> <span>2026-07-29</span></li>
+          <li><a href="2607.27080.html"><strong>MemSecBench: Tracking Agent Memory Poisoning from Persistence to Consequence and Repair</strong></a> <span>2026-07-29</span></li>
+          <li><a href="2607.25765.html"><strong>WorkSurface-Bench: Benchmarking Enterprise Agents on Multi-Surface Knowledge Routing</strong></a> <span>2026-07-28</span></li>
+          <li><a href="2607.16057.html"><strong>Frontier AI performance across the business disciplines: a case-grounded benchmark of knowledge work and analytical reasoning</strong></a> <span>2026-07-17</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

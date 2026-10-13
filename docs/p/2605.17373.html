@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>FML-bench: A Controlled Study of AI Research Agent Strategies from the Perspective of Search Dynamics | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: AI research agents accelerate ML research by automating hypothesis generation, experimentation, and empirical refinement. Existing…" />
+    <meta name="keywords" content="Science &amp; research, Research agents, agent benchmark, LLM agent, arXiv, 2605.17373" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.17373.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="FML-bench: A Controlled Study of AI Research Agent Strategies from the Perspective of Search Dynamics" />
+    <meta property="og:description" content="Daily Agent Benchmarks: AI research agents accelerate ML research by automating hypothesis generation, experimentation, and empirical refinement. Existing…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.17373.html" />
+    <meta property="article:published_time" content="2026-05-17T10:30:38Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="FML-bench: A Controlled Study of AI Research Agent Strategies from the Perspective of Search Dynamics" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: AI research agents accelerate ML research by automating hypothesis generation, experimentation, and empirical refinement. Existing…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,104 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "FML-bench: A Controlled Study of AI Research Agent Strategies from the Perspective of Search Dynamics",
+  "name": "FML-bench: A Controlled Study of AI Research Agent Strategies from the Perspective of Search Dynamics",
+  "abstract": "AI research agents accelerate ML research by automating hypothesis generation, experimentation, and empirical refinement. Existing agent strategies range from greedy hill-climbing to tree search and evolutionary optimization, yet which strategy choices drive performance remains unclear. Answering this question requires a benchmark that separates agent strategy (e.g., search topology) from execution infrastructure (e.g., code editor), so that performance differences are attributable to strategy rather than infrastructure, and that provides process-level metrics beyond final scores to analyze exploration behaviors. Existing benchmarks offer limited support. We propose FML-Bench, a benchmark of 18 fundamental ML research tasks across 10 domains that separates agent strategy from execution infrastructure and defines 12 process-level behavioral metrics. Evaluating six representative agents, we find that: (1) strategy complexity alone does not guarantee strong performance: a simple greedy hill-climber nearly matches the best-performing tree-search agent, both well above the remaining agents; (2) our analysis suggests this pattern relates to improvement opportunity structure: greedy search tends to be more effective when opportunities are dense, while tree-search and evolutionary strategies tend to be more effective when opportunities are sparse; an adaptive agent built on this insight switches to broader exploration upon detecting improvement stagnation and outperforms the other six agents, lending initial support to this observation; and (3) process-level analysis reveals that early convergence and directionally focused exploration are significantly associated with final performance, while solution diversity and compute cost are not. Our benchmark is available at: https://github.com/qrzou/FML-bench.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Qiran Zou"
+    },
+    {
+      "@type": "Person",
+      "name": "Hou Hei Lam"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenhao Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Tingting Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Yiming Tang"
+    },
+    {
+      "@type": "Person",
+      "name": "Samson Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yingtao Zhu"
+    },
+    {
+      "@type": "Person",
+      "name": "Srinivas Anumasa"
+    },
+    {
+      "@type": "Person",
+      "name": "Zufeng Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Tianyi Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chang Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhengyao Jiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Anirudh Goyal"
+    },
+    {
+      "@type": "Person",
+      "name": "Dianbo Liu"
+    }
+  ],
+  "datePublished": "2026-05-17T10:30:38Z",
+  "dateModified": "2026-05-29T04:24:32Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.17373.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.17373.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.17373v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.17373"
+  },
+  "keywords": [
+    "Science & research",
+    "Research agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Science & research"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.17373v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.17373"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +136,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>FML-bench: A Controlled Study of AI Research Agent Strategies from the Perspective of Search Dynamics</h1>
+        <div class="meta">
+          Qiran Zou, Hou Hei Lam, Wenhao Zhao, Tingting Chen, Yiming Tang, Samson Yu, Yingtao Zhu, Srinivas Anumasa, Zufeng Zhang, Tianyi Zhang, Chang Liu, Zhengyao Jiang, Anirudh Goyal, Dianbo Liu
+          · 2605.17373
+          · <time datetime="2026-05-17">2026-05-17</time>
+          · Science &amp; research · 3 citations
+        </div>
+        <div class="themes"><span class="chip">Research agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>AI research agents accelerate ML research by automating hypothesis generation, experimentation, and empirical refinement. Existing agent strategies range from greedy hill-climbing to tree search and evolutionary optimization, yet which strategy choices drive performance remains unclear. Answering this question requires a benchmark that separates agent strategy (e.g., search topology) from execution infrastructure (e.g., code editor), so that performance differences are attributable to strategy rather than infrastructure, and that provides process-level metrics beyond final scores to analyze exploration behaviors. Existing benchmarks offer limited support. We propose FML-Bench, a benchmark of 18 fundamental ML research tasks across 10 domains that separates agent strategy from execution infrastructure and defines 12 process-level behavioral metrics. Evaluating six representative agents, we find that: (1) strategy complexity alone does not guarantee strong performance: a simple greedy hill-climber nearly matches the best-performing tree-search agent, both well above the remaining agents; (2) our analysis suggests this pattern relates to improvement opportunity structure: greedy search tends to be more effective when opportunities are dense, while tree-search and evolutionary strategies tend to be more effective when opportunities are sparse; an adaptive agent built on this insight switches to broader exploration upon detecting improvement stagnation and outperforms the other six agents, lending initial support to this observation; and (3) process-level analysis reveals that early convergence and directionally focused exploration are significantly associated with final performance, while solution diversity and compute cost are not. Our benchmark is available at: https://github.com/qrzou/FML-bench.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.17373v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.17373v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.17373" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Science &amp; research benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.02320.html"><strong>TVIR: Building Deep Research Agents Towards Text-Visual Interleaved Report Generation</strong></a> <span>2026-06-01</span></li>
+          <li><a href="2606.00750.html"><strong>I-WebGenBench : Evaluating Interactivity in LLM-Generated Scientific Web Applications</strong></a> <span>2026-05-30</span></li>
+          <li><a href="2605.30727.html"><strong>MosaicLeaks:Privacy Risks in Querying-in-the-Open for Deep Research Agents</strong></a> <span>2026-05-29</span></li>
+          <li><a href="2606.07591.html"><strong>ResearchClawBench: A Benchmark for End-to-End Autonomous Scientific Research</strong></a> <span>2026-05-28</span></li>
+          <li><a href="2605.11732.html"><strong>AgentDisCo: Towards Disentanglement and Collaboration in Open-ended Deep Research Agents</strong></a> <span>2026-05-12</span></li>
+          <li><a href="2605.06345.html"><strong>More Than Can Be Said: A Benchmark and Framework for Pre-Question Scientific Ideation</strong></a> <span>2026-05-07</span></li>
+          <li><a href="2605.06177.html"><strong>BioMedArena: An Open-source Toolkit for Building and Evaluating Biomedical Deep Research Agents</strong></a> <span>2026-05-07</span></li>
+          <li><a href="2604.25256.html"><strong>AutoResearchBench: Benchmarking AI Agents on Complex Scientific Literature Discovery</strong></a> <span>2026-04-28</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

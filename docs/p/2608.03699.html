@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>TARL: Transaction-Aware Reliable Ledgers for Executable Memory Management in Long-Term Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Persistent memory helps long-term agents retain knowledge, yet a single update error can repeatedly distort future retrieval and…" />
+    <meta name="keywords" content="General, Memory, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2608.03699" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.03699.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="TARL: Transaction-Aware Reliable Ledgers for Executable Memory Management in Long-Term Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Persistent memory helps long-term agents retain knowledge, yet a single update error can repeatedly distort future retrieval and…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.03699.html" />
+    <meta property="article:published_time" content="2026-08-04T14:02:55Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="TARL: Transaction-Aware Reliable Ledgers for Executable Memory Management in Long-Term Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Persistent memory helps long-term agents retain knowledge, yet a single update error can repeatedly distort future retrieval and…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,69 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "TARL: Transaction-Aware Reliable Ledgers for Executable Memory Management in Long-Term Agents",
+  "name": "TARL: Transaction-Aware Reliable Ledgers for Executable Memory Management in Long-Term Agents",
+  "abstract": "Persistent memory helps long-term agents retain knowledge, yet a single update error can repeatedly distort future retrieval and reasoning. Most existing systems reduce memory updating to a binary Write/Hold decision, which cannot distinguish whether new information should be added, ignored, used to revise an outdated belief, rejected as unreliable, or deferred for verification. These choices may share the same binary label while producing fundamentally different memory states. We introduce TARL, a memory state update framework that maps each statement to one of five executable actions. TARL identifies the affected memory, resolves its temporal scope, compares source reliability, and updates accepted, pending, and rejected ledgers. It is further trained by comparing the memory states produced by alternative update operations, encouraging the model to select the operation that leads to the correct result. We also introduce TARL-Mem, a benchmark with fine-grained action labels and next-state targets. Across in-domain, cross-source, temporal, counterfactual, and sequential evaluations, TARL improves action prediction and state recovery, reduces memory pollution, preserves conflicting evidence, and limits cumulative corruption.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Han Xiao"
+    },
+    {
+      "@type": "Person",
+      "name": "Hongjun Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xin Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yidong Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaodong Shi"
+    }
+  ],
+  "datePublished": "2026-08-04T14:02:55Z",
+  "dateModified": "2026-08-11T12:23:39Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.03699.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.03699.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.03699v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.03699"
+  },
+  "keywords": [
+    "General",
+    "Memory",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.03699v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.03699"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +101,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>TARL: Transaction-Aware Reliable Ledgers for Executable Memory Management in Long-Term Agents</h1>
+        <div class="meta">
+          Han Xiao, Hongjun Xu, Xin Zhang, Yidong Chen, Xiaodong Shi
+          · 2608.03699
+          · <time datetime="2026-08-04">2026-08-04</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Memory</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Persistent memory helps long-term agents retain knowledge, yet a single update error can repeatedly distort future retrieval and reasoning. Most existing systems reduce memory updating to a binary Write/Hold decision, which cannot distinguish whether new information should be added, ignored, used to revise an outdated belief, rejected as unreliable, or deferred for verification. These choices may share the same binary label while producing fundamentally different memory states. We introduce TARL, a memory state update framework that maps each statement to one of five executable actions. TARL identifies the affected memory, resolves its temporal scope, compares source reliability, and updates accepted, pending, and rejected ledgers. It is further trained by comparing the memory states produced by alternative update operations, encouraging the model to select the operation that leads to the correct result. We also introduce TARL-Mem, a benchmark with fine-grained action labels and next-state targets. Across in-domain, cross-source, temporal, counterfactual, and sequential evaluations, TARL improves action prediction and state recovery, reduces memory pollution, preserves conflicting evidence, and limits cumulative corruption.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.03699v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.03699v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.03699" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.14680.html"><strong>When Agentic Executions Fail: Detecting and Localizing Runtime Faults from Telemetry</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.04095.html"><strong>FinPerMA: A Theory-Informed, Event-Grounded Personalized-Memory Benchmark for LLM Agents</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.04077.html"><strong>FinProBench: Evaluating Financial AI Agents with Role-Grounded Rubrics Derived from Professional Deliverables</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.03882.html"><strong>MultiGlobeQA: A Multilingual and Globally Diverse Benchmark for Geospatial Reasoning</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.03591.html"><strong>DiagChain: A Diagnostic Benchmark for Evaluating LLM Agents on Evidence-Grounded Attack Chain Reconstruction</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.03206.html"><strong>EduClaw-Bench: A Long-Horizon Benchmark for Pedagogical LLM Agents with Simulated Learners</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.03018.html"><strong>UrbanAgent: A Tool-Augmented Agent for Cross-System Urban Tasks</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.02358.html"><strong>ScrambleToolBench: Agents Search Exhaustively Even When Their Own Map Points to the Next Step</strong></a> <span>2026-08-03</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

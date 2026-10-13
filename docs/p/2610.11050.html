@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>AgentHorizon: Evaluating Agentic Judges for Long-Horizon Computer-Use Tasks | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Computer-use agents are capable of completing complex tasks, increasing the use of automatic judges to determine success, either for…" />
+    <meta name="keywords" content="GUI / computer use, Coding agents, Tool use, Computer use, agent benchmark, LLM agent, arXiv, 2610.11050" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.11050.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AgentHorizon: Evaluating Agentic Judges for Long-Horizon Computer-Use Tasks" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Computer-use agents are capable of completing complex tasks, increasing the use of automatic judges to determine success, either for…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.11050.html" />
+    <meta property="article:published_time" content="2026-10-08T01:03:48Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AgentHorizon: Evaluating Agentic Judges for Long-Horizon Computer-Use Tasks" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Computer-use agents are capable of completing complex tasks, increasing the use of automatic judges to determine success, either for…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,90 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AgentHorizon: Evaluating Agentic Judges for Long-Horizon Computer-Use Tasks",
+  "name": "AgentHorizon: Evaluating Agentic Judges for Long-Horizon Computer-Use Tasks",
+  "abstract": "Computer-use agents are capable of completing complex tasks, increasing the use of automatic judges to determine success, either for training or for evaluation without human involvement. Despite their flexibility, their reliability on long tasks spanning multiple applications remains unclear. A trajectory, composed of long sequences of screenshots and actions, may appear complete, but in reality violates constraints from the instruction or introduces an unwanted side effect. To identify these errors, a judge needs to examine the trajectory with respect to the user's instruction. To this end, we introduce AgentHorizon, a benchmark of 1,373 computer-use tasks (instruction-trajectory pairs) drawn from 166 hours of human-recorded trajectories spanning three operating systems. By recording trajectories for closely related instructions, we can construct negative tasks by swapping the instructions. This paired design evaluates judges on their ability to distinguish a successful trajectory from one that completed a similar (but incompatible) request. We release the benchmark under three splits: a frontier split, AgentHorizon (AH), a simplified split, AgentHorizon-Simple (AH-S), and a development split, AgentHorizon-Development (AH-D). We further evaluate eleven judges by (1) directly passing the full trajectory (with up to 300 screenshots and actions), and (2) using them as coding agents across five agent harnesses. We find that our best agentic judge, GPT-5.5, achieves 80.9% balanced accuracy on the AH subset. We find that tool-use improves certain models but results in worse performance for open-weight models, and that judges differ drastically in their ability to accept a valid trajectory and reject failed ones. Our findings highlight the need for judges that are capable of locating and verifying often hidden evidence that a task was properly completed inside long interaction histories.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Xing Han Lù"
+    },
+    {
+      "@type": "Person",
+      "name": "Dheeraj Vattikonda"
+    },
+    {
+      "@type": "Person",
+      "name": "Sina Hajimiri"
+    },
+    {
+      "@type": "Person",
+      "name": "Fatemeh Pesaran Zadeh"
+    },
+    {
+      "@type": "Person",
+      "name": "Parishad BehnamGhader"
+    },
+    {
+      "@type": "Person",
+      "name": "Ghazwa Darwiche"
+    },
+    {
+      "@type": "Person",
+      "name": "Amirhossein Kazemnejad"
+    },
+    {
+      "@type": "Person",
+      "name": "Christopher Pal"
+    },
+    {
+      "@type": "Person",
+      "name": "Alexandre Drouin"
+    },
+    {
+      "@type": "Person",
+      "name": "Siva Reddy"
+    }
+  ],
+  "datePublished": "2026-10-08T01:03:48Z",
+  "dateModified": "2026-10-08T01:03:48Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.11050.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.11050.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.11050v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.11050"
+  },
+  "keywords": [
+    "GUI / computer use",
+    "Coding agents",
+    "Tool use",
+    "Computer use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "GUI / computer use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.11050v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2610.11050"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +122,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AgentHorizon: Evaluating Agentic Judges for Long-Horizon Computer-Use Tasks</h1>
+        <div class="meta">
+          Xing Han Lù, Dheeraj Vattikonda, Sina Hajimiri, Fatemeh Pesaran Zadeh, Parishad BehnamGhader, Ghazwa Darwiche, Amirhossein Kazemnejad, Christopher Pal, Alexandre Drouin, Siva Reddy
+          · 2610.11050
+          · <time datetime="2026-10-08">2026-10-08</time>
+          · GUI / computer use
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span><span class="chip">Computer use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Computer-use agents are capable of completing complex tasks, increasing the use of automatic judges to determine success, either for training or for evaluation without human involvement. Despite their flexibility, their reliability on long tasks spanning multiple applications remains unclear. A trajectory, composed of long sequences of screenshots and actions, may appear complete, but in reality violates constraints from the instruction or introduces an unwanted side effect. To identify these errors, a judge needs to examine the trajectory with respect to the user&#x27;s instruction. To this end, we introduce AgentHorizon, a benchmark of 1,373 computer-use tasks (instruction-trajectory pairs) drawn from 166 hours of human-recorded trajectories spanning three operating systems. By recording trajectories for closely related instructions, we can construct negative tasks by swapping the instructions. This paired design evaluates judges on their ability to distinguish a successful trajectory from one that completed a similar (but incompatible) request. We release the benchmark under three splits: a frontier split, AgentHorizon (AH), a simplified split, AgentHorizon-Simple (AH-S), and a development split, AgentHorizon-Development (AH-D). We further evaluate eleven judges by (1) directly passing the full trajectory (with up to 300 screenshots and actions), and (2) using them as coding agents across five agent harnesses. We find that our best agentic judge, GPT-5.5, achieves 80.9% balanced accuracy on the AH subset. We find that tool-use improves certain models but results in worse performance for open-weight models, and that judges differ drastically in their ability to accept a valid trajectory and reject failed ones. Our findings highlight the need for judges that are capable of locating and verifying often hidden evidence that a task was properly completed inside long interaction histories.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.11050v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.11050v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.11050" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More GUI / computer use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.09944.html"><strong>AgentTime: Can Agents Estimate and Control Their Own Runtime?</strong></a> <span>2026-10-07</span></li>
+          <li><a href="2610.04800.html"><strong>MedImageOSWorld: Benchmarking GUI Agents for Medical Image Consoles</strong></a> <span>2026-10-03</span></li>
+          <li><a href="2609.40284.html"><strong>cua-speedrun: Standardized Benchmarking of the Speed of Computer-Use Agents</strong></a> <span>2026-09-30</span></li>
+          <li><a href="2609.39903.html"><strong>OSWorld-Science: A Benchmark of Computer Use Agents for Learning and Using Scientific Software</strong></a> <span>2026-09-30</span></li>
+          <li><a href="2609.38867.html"><strong>Talk2Agent: Benchmarking Voice Interfaces for Text Agents</strong></a> <span>2026-09-30</span></li>
+          <li><a href="2609.36923.html"><strong>PrecogUI: Proactive GUI Agents via Pre-cognitive Simulation and Experience Retrieval</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.34769.html"><strong>LongPuzzleBench: Evaluating GUI Agents on Long-Horizon Visual Puzzles</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.32600.html"><strong>CUA-SWE: When Computer-Use Agents Meet Visual Software Engineering</strong></a> <span>2026-09-26</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

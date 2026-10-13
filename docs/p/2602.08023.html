@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>CTFExplorer: Evaluating LLM Offensive Agents Through Multi-Target Web CTF Benchmarking | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Existing benchmarks for LLM-based offensive security agents use isolated, single-target setups with a known vulnerable service and…" />
+    <meta name="keywords" content="Multi-agent, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2602.08023" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.08023.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="CTFExplorer: Evaluating LLM Offensive Agents Through Multi-Target Web CTF Benchmarking" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Existing benchmarks for LLM-based offensive security agents use isolated, single-target setups with a known vulnerable service and…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.08023.html" />
+    <meta property="article:published_time" content="2026-02-08T15:56:22Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="CTFExplorer: Evaluating LLM Offensive Agents Through Multi-Target Web CTF Benchmarking" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Existing benchmarks for LLM-based offensive security agents use isolated, single-target setups with a known vulnerable service and…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,96 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "CTFExplorer: Evaluating LLM Offensive Agents Through Multi-Target Web CTF Benchmarking",
+  "name": "CTFExplorer: Evaluating LLM Offensive Agents Through Multi-Target Web CTF Benchmarking",
+  "abstract": "Existing benchmarks for LLM-based offensive security agents use isolated, single-target setups with a known vulnerable service and fixed objective. They measure exploitation effectively, but miss how real Capture-the-Flag (CTF) participants triage unknown surfaces, prioritize targets, and allocate effort under uncertainty. Current evaluations therefore fail to assess strategic reasoning beyond exploitation alone. To address this, we introduce \\textit{CTFExplorer}, a benchmark suite that shifts offensive security evaluation toward a multi-target setting, which tests how agents explore, prioritize, and chain attacks. CTFExplorer deploys 40 web-based vulnerable services within a single environment, where agents must autonomously discover, distinguish, and exploit targets without predefined guidance. We also present a reactive multi-agent setup as a reference agent framework and develop an agent-agnostic evaluation framework that records structured reasoning traces for fine-grained assessment. This enables behavioral evaluation beyond binary flag capture, such as how agents manage target selection, handle failed hypotheses, coordinate across multiple stages, and extract security intelligence.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Nanda Rani"
+    },
+    {
+      "@type": "Person",
+      "name": "Kimberly Milner"
+    },
+    {
+      "@type": "Person",
+      "name": "Minghao Shao"
+    },
+    {
+      "@type": "Person",
+      "name": "Meet Udeshi"
+    },
+    {
+      "@type": "Person",
+      "name": "Haoran Xi"
+    },
+    {
+      "@type": "Person",
+      "name": "Venkata Sai Charan Putrevu"
+    },
+    {
+      "@type": "Person",
+      "name": "Saksham Aggarwal"
+    },
+    {
+      "@type": "Person",
+      "name": "Sandeep K. Shukla"
+    },
+    {
+      "@type": "Person",
+      "name": "Prashanth Krishnamurthy"
+    },
+    {
+      "@type": "Person",
+      "name": "Farshad Khorrami"
+    },
+    {
+      "@type": "Person",
+      "name": "Muhammad Shafique"
+    },
+    {
+      "@type": "Person",
+      "name": "Ramesh Karri"
+    }
+  ],
+  "datePublished": "2026-02-08T15:56:22Z",
+  "dateModified": "2026-05-20T17:32:45Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.08023.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.08023.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2602.08023v3"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2602.08023"
+  },
+  "keywords": [
+    "Multi-agent",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multi-agent"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2602.08023v3"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2602.08023"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +128,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>CTFExplorer: Evaluating LLM Offensive Agents Through Multi-Target Web CTF Benchmarking</h1>
+        <div class="meta">
+          Nanda Rani, Kimberly Milner, Minghao Shao, Meet Udeshi, Haoran Xi, Venkata Sai Charan Putrevu, Saksham Aggarwal, Sandeep K. Shukla, Prashanth Krishnamurthy, Farshad Khorrami, Muhammad Shafique, Ramesh Karri
+          · 2602.08023
+          · <time datetime="2026-02-08">2026-02-08</time>
+          · Multi-agent · 3 citations
+        </div>
+        <div class="themes"><span class="chip">Multi-agent</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Existing benchmarks for LLM-based offensive security agents use isolated, single-target setups with a known vulnerable service and fixed objective. They measure exploitation effectively, but miss how real Capture-the-Flag (CTF) participants triage unknown surfaces, prioritize targets, and allocate effort under uncertainty. Current evaluations therefore fail to assess strategic reasoning beyond exploitation alone. To address this, we introduce \textit{CTFExplorer}, a benchmark suite that shifts offensive security evaluation toward a multi-target setting, which tests how agents explore, prioritize, and chain attacks. CTFExplorer deploys 40 web-based vulnerable services within a single environment, where agents must autonomously discover, distinguish, and exploit targets without predefined guidance. We also present a reactive multi-agent setup as a reference agent framework and develop an agent-agnostic evaluation framework that records structured reasoning traces for fine-grained assessment. This enables behavioral evaluation beyond binary flag capture, such as how agents manage target selection, handle failed hypotheses, coordinate across multiple stages, and extract security intelligence.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2602.08023v3" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2602.08023v3" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2602.08023" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multi-agent benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2602.13059.html"><strong>TraceBack: Multi-Agent Decomposition for Fine-Grained Table Attribution</strong></a> <span>2026-02-13</span></li>
+          <li><a href="2602.11510.html"><strong>AgentLeak: A Benchmark for Internal-Channel Privacy Leakage in Multi-Agent LLM Systems</strong></a> <span>2026-02-12</span></li>
+          <li><a href="2602.13318.html"><strong>DECKBench: Benchmarking Multi-Agent Frameworks for Academic Slide Generation and Editing</strong></a> <span>2026-02-10</span></li>
+          <li><a href="2602.09379.html"><strong>LingxiDiagBench: A Multi-Agent Framework for Benchmarking LLMs in Chinese Psychiatric Consultation and Diagnosis</strong></a> <span>2026-02-10</span></li>
+          <li><a href="2602.05302.html"><strong>PieArena: Ranking and Profiling Language Agents in Realistic Negotiation Scenarios</strong></a> <span>2026-02-05</span></li>
+          <li><a href="2602.11198.html"><strong>Declarative by Design, Assistable Only by Convention: Benchmarking Multi-Agent Frameworks for AI-Assistability</strong></a> <span>2026-02-03</span></li>
+          <li><a href="2601.19507.html"><strong>Automated Safety Benchmarking: A Multi-agent Pipeline for LVLMs</strong></a> <span>2026-01-27</span></li>
+          <li><a href="2601.08676.html"><strong>Advancing ESG Intelligence: An Expert-level Agent and Comprehensive Benchmark for Sustainable Finance</strong></a> <span>2026-01-13</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

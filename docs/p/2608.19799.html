@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science? | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Software increasingly functions as part of the scientific instrument itself, making failures in scientific code capable of…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Science lab, agent benchmark, LLM agent, arXiv, 2608.19799" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.19799.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Software increasingly functions as part of the scientific instrument itself, making failures in scientific code capable of…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.19799.html" />
+    <meta property="article:published_time" content="2026-08-20T08:53:15Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Software increasingly functions as part of the scientific instrument itself, making failures in scientific code capable of…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,69 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?",
+  "name": "SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?",
+  "abstract": "Software increasingly functions as part of the scientific instrument itself, making failures in scientific code capable of compromising not only program behavior but also the evidence underlying scientific conclusions. Yet existing evaluations of coding agents largely emphasize aggregate task success, providing limited insight into why agents fail when repairing scientific software. We introduce \\textbf{SWE-bench Science}, a repository-level benchmark for scientific software engineering comprising 119 tasks from 98 GitHub repositories across 20 scientific domains. Each task is organized into one of three paradigms: Issue-driven, Expert-exploratory, and Engineering-integration. Even the best-performing agent, \\textbf{Claude Code with Opus-5 (max), achieves a pass@1 below 50\\%}, highlighting the substantial challenges posed by scientific software engineering. We identify four recurring failure mechanisms: deficits in scientific knowledge or abstraction, misguided exploration or surface-level repair, incomplete repair coverage or system integration, and failures to generalize scientific knowledge beyond observed cases in our analysis. We further conduct a paired ablation that removes explicit scientific guidance while preserving the repository and executable engineering context. The results show that scientific knowledge is not uniformly beneficial: well-grounded information can constrain repair and improve average performance and token efficiency, whereas poorly aligned guidance can induce anchoring and does not necessarily improve exact repair success. Together, SWE-bench Science provides a broad testbed for studying both the capabilities and failure mechanisms of coding agents in scientific software engineering.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Zhipeng Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiahao Lu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yining Zheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuxin Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xipeng Qiu"
+    }
+  ],
+  "datePublished": "2026-08-20T08:53:15Z",
+  "dateModified": "2026-08-20T08:53:15Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.19799.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.19799.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.19799v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.19799"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.19799v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.19799"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +101,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?</h1>
+        <div class="meta">
+          Zhipeng Xu, Jiahao Lu, Yining Zheng, Yuxin Wang, Xipeng Qiu
+          · 2608.19799
+          · <time datetime="2026-08-20">2026-08-20</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Software increasingly functions as part of the scientific instrument itself, making failures in scientific code capable of compromising not only program behavior but also the evidence underlying scientific conclusions. Yet existing evaluations of coding agents largely emphasize aggregate task success, providing limited insight into why agents fail when repairing scientific software. We introduce \textbf{SWE-bench Science}, a repository-level benchmark for scientific software engineering comprising 119 tasks from 98 GitHub repositories across 20 scientific domains. Each task is organized into one of three paradigms: Issue-driven, Expert-exploratory, and Engineering-integration. Even the best-performing agent, \textbf{Claude Code with Opus-5 (max), achieves a pass@1 below 50\%}, highlighting the substantial challenges posed by scientific software engineering. We identify four recurring failure mechanisms: deficits in scientific knowledge or abstraction, misguided exploration or surface-level repair, incomplete repair coverage or system integration, and failures to generalize scientific knowledge beyond observed cases in our analysis. We further conduct a paired ablation that removes explicit scientific guidance while preserving the repository and executable engineering context. The results show that scientific knowledge is not uniformly beneficial: well-grounded information can constrain repair and improve average performance and token efficiency, whereas poorly aligned guidance can induce anchoring and does not necessarily improve exact repair success. Together, SWE-bench Science provides a broad testbed for studying both the capabilities and failure mechanisms of coding agents in scientific software engineering.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.19799v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.19799v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.19799" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.23564.html"><strong>SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration?</strong></a> <span>2026-08-24</span></li>
+          <li><a href="2608.21833.html"><strong>GameXpert-Bench: How Far Are Coding Agents from Expert Game Development?</strong></a> <span>2026-08-22</span></li>
+          <li><a href="2608.20851.html"><strong>BC-Bench: Evaluating Agentic Engineering in a Domain-Specific Language for ERP</strong></a> <span>2026-08-21</span></li>
+          <li><a href="2608.20664.html"><strong>DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents</strong></a> <span>2026-08-21</span></li>
+          <li><a href="2608.17524.html"><strong>Evaluating RL Explainability Methods by How Much They Help Fix Bugs in Agents</strong></a> <span>2026-08-18</span></li>
+          <li><a href="2608.16022.html"><strong>OpenHarmony Bench: Evaluating LLMs and Coding Agents on OpenHarmony App Development</strong></a> <span>2026-08-17</span></li>
+          <li><a href="2608.09802.html"><strong>SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring</strong></a> <span>2026-08-10</span></li>
+          <li><a href="2608.09072.html"><strong>A Unified Issue Resolution Benchmark for Requirement Clarification, Planning, and Code Generation for Coding Agents</strong></a> <span>2026-08-10</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLM-based agentic systems have shown remarkable capabilities in complex domains, while suffering from cascading errors and difficulty…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Tool use, agent benchmark, LLM agent, arXiv, 2608.06346" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.06346.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLM-based agentic systems have shown remarkable capabilities in complex domains, while suffering from cascading errors and difficulty…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.06346.html" />
+    <meta property="article:published_time" content="2026-08-06T17:51:20Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLM-based agentic systems have shown remarkable capabilities in complex domains, while suffering from cascading errors and difficulty…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,101 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories",
+  "name": "TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories",
+  "abstract": "LLM-based agentic systems have shown remarkable capabilities in complex domains, while suffering from cascading errors and difficulty in debugging. Critical error detection aims to locate the earliest error step in a failed trajectory that is responsible for the final failure. However, progress faces two main challenges. First, long trajectories make it difficult to identify individual errors, since the evidence for judging a step may be scattered across distant instructions, observations, and prior context. Second, failed trajectories often contain multiple local errors with different downstream effects, only some of which remain responsible for the final failure. In this work, we propose TrajDebug, an error-lifecycle tracing framework that addresses long-trajectory error discovery with multi-granularity history compression and evidence-based error identification, and supports critical attribution by tracing each error's resolution status and terminal impact. We further construct TrajErrBench, a benchmark of 486 manually annotated failed trajectories from Tau2Bench and SWE-Bench Pro, covering realistic tool-use and coding scenarios. Experiments across diverse agent benchmarks show that TrajDebug achieves the best overall performance over existing baselines, and application studies further demonstrate that its diagnoses provide actionable feedback for improving downstream agent success. We will release the codes and data to facilitate further research.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yunjia Qi"
+    },
+    {
+      "@type": "Person",
+      "name": "Zehua Yin"
+    },
+    {
+      "@type": "Person",
+      "name": "Xintong Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Hao Peng"
+    },
+    {
+      "@type": "Person",
+      "name": "Songyuanyi Lu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yixian Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Richeng Xuan"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuhong Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhichao Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaozhi Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Lei Hou"
+    },
+    {
+      "@type": "Person",
+      "name": "Bin Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Juanzi Li"
+    }
+  ],
+  "datePublished": "2026-08-06T17:51:20Z",
+  "dateModified": "2026-08-06T17:51:20Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.06346.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.06346.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.06346v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.06346"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.06346v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.06346"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +133,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories</h1>
+        <div class="meta">
+          Yunjia Qi, Zehua Yin, Xintong Shi, Hao Peng, Songyuanyi Lu, Yixian Liu, Richeng Xuan, Yuhong Liu, Zhichao Hu, Xiaozhi Wang, Lei Hou, Bin Xu, Juanzi Li
+          · 2608.06346
+          · <time datetime="2026-08-06">2026-08-06</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLM-based agentic systems have shown remarkable capabilities in complex domains, while suffering from cascading errors and difficulty in debugging. Critical error detection aims to locate the earliest error step in a failed trajectory that is responsible for the final failure. However, progress faces two main challenges. First, long trajectories make it difficult to identify individual errors, since the evidence for judging a step may be scattered across distant instructions, observations, and prior context. Second, failed trajectories often contain multiple local errors with different downstream effects, only some of which remain responsible for the final failure. In this work, we propose TrajDebug, an error-lifecycle tracing framework that addresses long-trajectory error discovery with multi-granularity history compression and evidence-based error identification, and supports critical attribution by tracing each error&#x27;s resolution status and terminal impact. We further construct TrajErrBench, a benchmark of 486 manually annotated failed trajectories from Tau2Bench and SWE-Bench Pro, covering realistic tool-use and coding scenarios. Experiments across diverse agent benchmarks show that TrajDebug achieves the best overall performance over existing baselines, and application studies further demonstrate that its diagnoses provide actionable feedback for improving downstream agent success. We will release the codes and data to facilitate further research.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.06346v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.06346v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.06346" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.17524.html"><strong>Evaluating RL Explainability Methods by How Much They Help Fix Bugs in Agents</strong></a> <span>2026-08-18</span></li>
+          <li><a href="2608.16022.html"><strong>OpenHarmony Bench: Evaluating LLMs and Coding Agents on OpenHarmony App Development</strong></a> <span>2026-08-17</span></li>
+          <li><a href="2608.09802.html"><strong>SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring</strong></a> <span>2026-08-10</span></li>
+          <li><a href="2608.09072.html"><strong>A Unified Issue Resolution Benchmark for Requirement Clarification, Planning, and Code Generation for Coding Agents</strong></a> <span>2026-08-10</span></li>
+          <li><a href="2608.04682.html"><strong>Active-SWE: Benchmarking Coding Agents for Proactive Bug Fixing without Issue Reports</strong></a> <span>2026-08-05</span></li>
+          <li><a href="2608.03474.html"><strong>MT-Web2Code: Benchmarking Coding Agents on Multi-Turn Regional Reconstruction and Localized Modification</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.02499.html"><strong>SWE-Touch: Benchmarking Coding Agents When Users Touch the Code</strong></a> <span>2026-08-03</span></li>
+          <li><a href="2608.02001.html"><strong>VulnGym: Benchmarking Coding Agents for Repository-Level Vulnerability Detection</strong></a> <span>2026-08-03</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

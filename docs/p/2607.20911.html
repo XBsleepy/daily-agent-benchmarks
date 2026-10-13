@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Tencent WorkBuddy Bench: A Multi-Domain Coding-Agent Benchmark with Contamination-Resistant Task Construction | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: We introduce Tencent WorkBuddy Bench, a multi-domain evaluation suite for coding agents; this report documents its construction…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2607.20911" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.20911.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Tencent WorkBuddy Bench: A Multi-Domain Coding-Agent Benchmark with Contamination-Resistant Task Construction" />
+    <meta property="og:description" content="Daily Agent Benchmarks: We introduce Tencent WorkBuddy Bench, a multi-domain evaluation suite for coding agents; this report documents its construction…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.20911.html" />
+    <meta property="article:published_time" content="2026-07-23T04:34:06Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Tencent WorkBuddy Bench: A Multi-Domain Coding-Agent Benchmark with Contamination-Resistant Task Construction" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: We introduce Tencent WorkBuddy Bench, a multi-domain evaluation suite for coding agents; this report documents its construction…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,200 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Tencent WorkBuddy Bench: A Multi-Domain Coding-Agent Benchmark with Contamination-Resistant Task Construction",
+  "name": "Tencent WorkBuddy Bench: A Multi-Domain Coding-Agent Benchmark with Contamination-Resistant Task Construction",
+  "abstract": "We introduce Tencent WorkBuddy Bench, a multi-domain evaluation suite for coding agents; this report documents its construction methodology, scoring protocol, and a cross-model leaderboard. At its core is a unified evaluation framework for constructing and running distribution-informed coding-agent tasks across four work domains - Code, Web, Office, and Security. Rather than adapting public issue text, every task is reverse-engineered from a real commit, pull request, or business scenario and rewritten as a short, colloquial, role-played request, so that a task's prompt is not recoverable by web-searching the underlying issue, pull request, or commit thread. Because the dataset is released openly - task directories, environment images, evaluation harness, tests, and reference solutions - contamination resistance rests on this construction together with dataset versioning rather than on secrecy. The four subsets - repository-level engineering, front-end development, office and business workflows, and red-/blue-team security - probe complementary facets of real work, each with its own verification style. All are packaged in a uniform task-directory format and run, under a uniform and reproducible protocol, on two agent harnesses (CodeBuddy Code and Claude Code); the full open release makes the benchmark reproducible end to end and directly auditable, since any third party can re-run each task and inspect its content. Because each subset uses a different scoring instrument, scores are not comparable across subsets and the suite reports no suite-wide average. We report a cross-model leaderboard across several model families.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Tencent WorkBuddy Bench Team"
+    },
+    {
+      "@type": "Person",
+      "name": "Siqi Cai"
+    },
+    {
+      "@type": "Person",
+      "name": "Shaopeng Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiang Fei"
+    },
+    {
+      "@type": "Person",
+      "name": "Yong Mao"
+    },
+    {
+      "@type": "Person",
+      "name": "Zihan Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhiheng Lyu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhijian Shao"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuchen Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Shuwen Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chaofan Qiu"
+    },
+    {
+      "@type": "Person",
+      "name": "Linjie Che"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaoxi Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Feng Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Kai Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chaofan Zhu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yubin Qi"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaoyun Liang"
+    },
+    {
+      "@type": "Person",
+      "name": "Peijie Dong"
+    },
+    {
+      "@type": "Person",
+      "name": "Yunhao Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuanjie Zhu"
+    },
+    {
+      "@type": "Person",
+      "name": "Ling Jiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xianjun Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhehang Chu"
+    },
+    {
+      "@type": "Person",
+      "name": "Anyuan Sang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhen Feng"
+    },
+    {
+      "@type": "Person",
+      "name": "Sen Nie"
+    },
+    {
+      "@type": "Person",
+      "name": "Shi Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuanzhen Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xin Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Ning Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhiqiang Dong"
+    },
+    {
+      "@type": "Person",
+      "name": "Hande Dong"
+    },
+    {
+      "@type": "Person",
+      "name": "Qiang Lin"
+    },
+    {
+      "@type": "Person",
+      "name": "Yi Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yunsheng Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Ke Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Xing Sun"
+    }
+  ],
+  "datePublished": "2026-07-23T04:34:06Z",
+  "dateModified": "2026-07-23T04:34:06Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.20911.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.20911.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.20911v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.20911"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.20911v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.20911"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +232,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Tencent WorkBuddy Bench: A Multi-Domain Coding-Agent Benchmark with Contamination-Resistant Task Construction</h1>
+        <div class="meta">
+          Tencent WorkBuddy Bench Team, Siqi Cai, Shaopeng Chen, Xiang Fei, Yong Mao, Zihan Xu, Zhiheng Lyu, Zhijian Shao, Yuchen Shi, Shuwen Zhang, Chaofan Qiu, Linjie Che, Xiaoxi Zhao, Feng Wu, Kai Zhang, Chaofan Zhu, Yubin Qi, Xiaoyun Liang, Peijie Dong, Yunhao Zhang, Yuanjie Zhu, Ling Jiang, Xianjun Zhang, Zhehang Chu, Anyuan Sang, Zhen Feng, Sen Nie, Shi Wu, Yuanzhen Xu, Xin Li, Ning Yang, Zhiqiang Dong, Hande Dong, Qiang Lin, Yi Liu, Yunsheng Wu, Ke Li, Xing Sun
+          · 2607.20911
+          · <time datetime="2026-07-23">2026-07-23</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>We introduce Tencent WorkBuddy Bench, a multi-domain evaluation suite for coding agents; this report documents its construction methodology, scoring protocol, and a cross-model leaderboard. At its core is a unified evaluation framework for constructing and running distribution-informed coding-agent tasks across four work domains - Code, Web, Office, and Security. Rather than adapting public issue text, every task is reverse-engineered from a real commit, pull request, or business scenario and rewritten as a short, colloquial, role-played request, so that a task&#x27;s prompt is not recoverable by web-searching the underlying issue, pull request, or commit thread. Because the dataset is released openly - task directories, environment images, evaluation harness, tests, and reference solutions - contamination resistance rests on this construction together with dataset versioning rather than on secrecy. The four subsets - repository-level engineering, front-end development, office and business workflows, and red-/blue-team security - probe complementary facets of real work, each with its own verification style. All are packaged in a uniform task-directory format and run, under a uniform and reproducible protocol, on two agent harnesses (CodeBuddy Code and Claude Code); the full open release makes the benchmark reproducible end to end and directly auditable, since any third party can re-run each task and inspect its content. Because each subset uses a different scoring instrument, scores are not comparable across subsets and the suite reports no suite-wide average. We report a cross-model leaderboard across several model families.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.20911v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.20911v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.20911" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.26451.html"><strong>ExplainBench: Evaluating Code Explanations from Agents</strong></a> <span>2026-07-29</span></li>
+          <li><a href="2607.26155.html"><strong>ClinLens: Towards Long-Horizon Coding Agents for Longitudinal Multimodal Clinical Data Science</strong></a> <span>2026-07-28</span></li>
+          <li><a href="2607.24882.html"><strong>Agent Retrieval Bench: Evaluating Repository Context Retrieval for Coding Agents</strong></a> <span>2026-07-27</span></li>
+          <li><a href="2607.22368.html"><strong>Do Agent Benchmarks Measure Capability? Protocol Validity in the Age of Agentic AI</strong></a> <span>2026-07-24</span></li>
+          <li><a href="2607.20759.html"><strong>IssueTrojanBench: Benchmarking AI Coding Agents Against Malicious Issue Requests</strong></a> <span>2026-07-22</span></li>
+          <li><a href="2607.17528.html"><strong>Can AI Agents Really Complete RTL-to-GDS? Lessons from Benchmarking Tool-Interactive EDA Workflows</strong></a> <span>2026-07-20</span></li>
+          <li><a href="2607.16632.html"><strong>CLOSER-Bench: Evaluating Budgeted Cross-Stage Design Closure for Hardware Agents</strong></a> <span>2026-07-18</span></li>
+          <li><a href="2607.14573.html"><strong>Alipay-PIBench: A Realistic Payment Integration Benchmark for Coding Agents</strong></a> <span>2026-07-16</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

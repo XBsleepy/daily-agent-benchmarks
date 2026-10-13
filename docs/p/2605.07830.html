@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>CyBiasBench: Benchmarking Bias in LLM Agents for Cyber-Attack Scenarios | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language models (LLMs) are increasingly deployed as autonomous agents in offensive cybersecurity. In this paper, we reveal an…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2605.07830" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.07830.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="CyBiasBench: Benchmarking Bias in LLM Agents for Cyber-Attack Scenarios" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language models (LLMs) are increasingly deployed as autonomous agents in offensive cybersecurity. In this paper, we reveal an…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.07830.html" />
+    <meta property="article:published_time" content="2026-05-08T14:57:53Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="CyBiasBench: Benchmarking Bias in LLM Agents for Cyber-Attack Scenarios" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language models (LLMs) are increasingly deployed as autonomous agents in offensive cybersecurity. In this paper, we reveal an…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,67 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "CyBiasBench: Benchmarking Bias in LLM Agents for Cyber-Attack Scenarios",
+  "name": "CyBiasBench: Benchmarking Bias in LLM Agents for Cyber-Attack Scenarios",
+  "abstract": "Large language models (LLMs) are increasingly deployed as autonomous agents in offensive cybersecurity. In this paper, we reveal an interesting phenomenon: different agents exhibit distinct attack patterns. Specifically, each agent exhibits an attack-selection bias, disproportionately concentrating its efforts on a narrow subset of attack families regardless of prompt variations. To systematically quantify this behavior, we introduce CyBiasBench, a comprehensive 630-session benchmark that evaluates five agents on three targets and four prompt conditions with ten attack families. We identify explicit bias across agents, with different dominant attack families and varying entropy levels in their attack-family allocation distributions. Such bias is better characterized as a trait of the agents, rather than a factor associated with the attack success rate. Furthermore, our experiments reveal a bias momentum effect, where agents resist explicit steering toward attack families that conflict with their bias. This forced distribution shift does not yield measurable improvements in attack performance. To ensure reproducibility and facilitate future research, we release an interactive result dashboard at https://trustworthyai.co.kr/CyBiasBench/ and a reproducibility artifact with aggregated session-level statistics and full evaluation scripts at https://github.com/Harry24k/CyBiasBench.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Taein Lim"
+    },
+    {
+      "@type": "Person",
+      "name": "Seongyong Ju"
+    },
+    {
+      "@type": "Person",
+      "name": "Munhyeok Kim"
+    },
+    {
+      "@type": "Person",
+      "name": "Hyunjun Kim"
+    },
+    {
+      "@type": "Person",
+      "name": "Hoki Kim"
+    }
+  ],
+  "datePublished": "2026-05-08T14:57:53Z",
+  "dateModified": "2026-05-08T14:57:53Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.07830.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.07830.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.07830v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.07830"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.07830v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.07830"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +99,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>CyBiasBench: Benchmarking Bias in LLM Agents for Cyber-Attack Scenarios</h1>
+        <div class="meta">
+          Taein Lim, Seongyong Ju, Munhyeok Kim, Hyunjun Kim, Hoki Kim
+          · 2605.07830
+          · <time datetime="2026-05-08">2026-05-08</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Large language models (LLMs) are increasingly deployed as autonomous agents in offensive cybersecurity. In this paper, we reveal an interesting phenomenon: different agents exhibit distinct attack patterns. Specifically, each agent exhibits an attack-selection bias, disproportionately concentrating its efforts on a narrow subset of attack families regardless of prompt variations. To systematically quantify this behavior, we introduce CyBiasBench, a comprehensive 630-session benchmark that evaluates five agents on three targets and four prompt conditions with ten attack families. We identify explicit bias across agents, with different dominant attack families and varying entropy levels in their attack-family allocation distributions. Such bias is better characterized as a trait of the agents, rather than a factor associated with the attack success rate. Furthermore, our experiments reveal a bias momentum effect, where agents resist explicit steering toward attack families that conflict with their bias. This forced distribution shift does not yield measurable improvements in attack performance. To ensure reproducibility and facilitate future research, we release an interactive result dashboard at https://trustworthyai.co.kr/CyBiasBench/ and a reproducibility artifact with aggregated session-level statistics and full evaluation scripts at https://github.com/Harry24k/CyBiasBench.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.07830v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.07830v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.07830" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.08904.html"><strong>OPT-BENCH: Evaluating the Iterative Self-Optimization of LLM Agents in Large-Scale Search Spaces</strong></a> <span>2026-05-09</span></li>
+          <li><a href="2605.08828.html"><strong>When Agents Overtrust Environmental Evidence: An Extensible Agentic Framework for Benchmarking Evidence-Grounding Defects in LLM Agents</strong></a> <span>2026-05-09</span></li>
+          <li><a href="2605.10966.html"><strong>MMTB: Evaluating Terminal Agents on Multimedia-File Tasks</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.07926.html"><strong>AgentEscapeBench: Evaluating Out-of-Domain Tool-Grounded Reasoning in LLM Agents</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.07251.html"><strong>Can Agents Price a Reaction? Evaluating LLMs on Chemical Cost Reasoning</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.07180.html"><strong>Learning Agent Routing From Early Experience</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.07161.html"><strong>SREGym: A Live Benchmark for AI SRE Agents with High-Fidelity Failure Scenarios</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.07073.html"><strong>TeamBench: Evaluating Agent Coordination under Enforced Role Separation</strong></a> <span>2026-05-08</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

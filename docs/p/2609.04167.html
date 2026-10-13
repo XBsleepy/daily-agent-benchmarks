@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>SWE-Gate: Passing Functional Tests Is Not Enough for Software Engineering Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Repository-level software engineering benchmarks have significantly advanced the evaluation of coding agents, but existing benchmarks…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2609.04167" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.04167.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SWE-Gate: Passing Functional Tests Is Not Enough for Software Engineering Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Repository-level software engineering benchmarks have significantly advanced the evaluation of coding agents, but existing benchmarks…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.04167.html" />
+    <meta property="article:published_time" content="2026-09-03T17:53:34Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SWE-Gate: Passing Functional Tests Is Not Enough for Software Engineering Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Repository-level software engineering benchmarks have significantly advanced the evaluation of coding agents, but existing benchmarks…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,72 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SWE-Gate: Passing Functional Tests Is Not Enough for Software Engineering Agents",
+  "name": "SWE-Gate: Passing Functional Tests Is Not Enough for Software Engineering Agents",
+  "abstract": "Repository-level software engineering benchmarks have significantly advanced the evaluation of coding agents, but existing benchmarks primarily measure whether generated patches pass functional tests and overlook review-derived acceptance constraints (review constraints) that often influence whether a patch is acceptable in real-world software development. We introduce SWE-Gate, a repository-level benchmark for software engineering agents that explicitly evaluates review constraint compliance alongside functional correctness. SWE-Gate derives review constraints from real pull request review comments and synthesizes repository-level repair instances around these constraints. Each instance provides separate functional and constraint tests, together with non-compliant and gold patches, enabling explicit separation between issue resolution capability and review constraint compliance. We construct SWE-Gate with 303 repository-level repair instances spanning 75 open-source Python repositories across diverse software domains. Experiments with four LLM backends spanning different capability levels under a common coding-agent scaffold reveal a substantial gap between functional success and success under the complete repair specification: among 644 repairs that pass the functional tests, 221 fail to satisfy the provided review constraints. These findings show that functional-only evaluation overestimates agents' ability to satisfy the full requirements of repository-level repair tasks. The replication package including code, data, and experimental results is available at https://github.com/DeepSoftwareAnalytics/SWE-Gate.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Xin He"
+    },
+    {
+      "@type": "Person",
+      "name": "Yanlin Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Mingwei Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiachi Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Hongyu Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Guanbin Li"
+    }
+  ],
+  "datePublished": "2026-09-03T17:53:34Z",
+  "dateModified": "2026-09-03T17:53:34Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.04167.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.04167.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.04167v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.04167"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.04167v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.04167"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +104,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SWE-Gate: Passing Functional Tests Is Not Enough for Software Engineering Agents</h1>
+        <div class="meta">
+          Xin He, Yanlin Wang, Mingwei Liu, Jiachi Chen, Hongyu Zhang, Guanbin Li
+          · 2609.04167
+          · <time datetime="2026-09-03">2026-09-03</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Repository-level software engineering benchmarks have significantly advanced the evaluation of coding agents, but existing benchmarks primarily measure whether generated patches pass functional tests and overlook review-derived acceptance constraints (review constraints) that often influence whether a patch is acceptable in real-world software development. We introduce SWE-Gate, a repository-level benchmark for software engineering agents that explicitly evaluates review constraint compliance alongside functional correctness. SWE-Gate derives review constraints from real pull request review comments and synthesizes repository-level repair instances around these constraints. Each instance provides separate functional and constraint tests, together with non-compliant and gold patches, enabling explicit separation between issue resolution capability and review constraint compliance. We construct SWE-Gate with 303 repository-level repair instances spanning 75 open-source Python repositories across diverse software domains. Experiments with four LLM backends spanning different capability levels under a common coding-agent scaffold reveal a substantial gap between functional success and success under the complete repair specification: among 644 repairs that pass the functional tests, 221 fail to satisfy the provided review constraints. These findings show that functional-only evaluation overestimates agents&#x27; ability to satisfy the full requirements of repository-level repair tasks. The replication package including code, data, and experimental results is available at https://github.com/DeepSoftwareAnalytics/SWE-Gate.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.04167v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.04167v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.04167" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.09526.html"><strong>Benchmarking Agentic HLS Design Tasks With HLS-Eval</strong></a> <span>2026-09-08</span></li>
+          <li><a href="2609.08149.html"><strong>SWE-Bench Pro Verified: A Reliable Benchmark for Software Engineering Agents</strong></a> <span>2026-09-08</span></li>
+          <li><a href="2609.07785.html"><strong>What Does an LLM-Agent Leaderboard Rank Actually Compare?</strong></a> <span>2026-09-07</span></li>
+          <li><a href="2609.04611.html"><strong>$τ^τ$-Bench: An Environment for End-To-End, Realistic Agent Construction</strong></a> <span>2026-09-04</span></li>
+          <li><a href="2609.04075.html"><strong>PatchBench: Evaluating AI Agents for Vulnerability Patching</strong></a> <span>2026-09-03</span></li>
+          <li><a href="2609.01603.html"><strong>Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation</strong></a> <span>2026-09-01</span></li>
+          <li><a href="2608.29834.html"><strong>You Know What I Mean: A Benchmark for Agentic Conversational Reference Grounding</strong></a> <span>2026-08-30</span></li>
+          <li><a href="2608.23653.html"><strong>Beyond Executable Models: The Pufibara Agent Harness and the Modelica Agent Workflow Benchmark for Physical System Modeling</strong></a> <span>2026-08-24</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

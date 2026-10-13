@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>VESTA: Visual Exploration with Statistical Tool Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Fitting quantitative models to data is a central step in scientific workflows, yet it remains one of the least automated. Recent…" />
+    <meta name="keywords" content="Multimodal, Tool use, Safety, Science lab, agent benchmark, LLM agent, arXiv, 2606.00384" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.00384.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="VESTA: Visual Exploration with Statistical Tool Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Fitting quantitative models to data is a central step in scientific workflows, yet it remains one of the least automated. Recent…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.00384.html" />
+    <meta property="article:published_time" content="2026-05-29T21:57:37Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="VESTA: Visual Exploration with Statistical Tool Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Fitting quantitative models to data is a central step in scientific workflows, yet it remains one of the least automated. Recent…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,86 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "VESTA: Visual Exploration with Statistical Tool Agents",
+  "name": "VESTA: Visual Exploration with Statistical Tool Agents",
+  "abstract": "Fitting quantitative models to data is a central step in scientific workflows, yet it remains one of the least automated. Recent agent-based systems leverage language and vision-language models (VLMs) to iteratively propose and refine statistical models, but these systems struggle on more challenging modeling tasks. To address these limitations, we introduce VESTA: Visual Exploration with Statistical Tool Agents, a framework that equips VLMs with a dynamically growing exploration toolkit to guide model refinement through data transformations, hypothesis-driven visualizations, and robust statistical tests. Unlike prior systems that rely on iterative critique alone, VESTA actively explores data before and during refinement by selecting or creating diagnostic tools, which accumulate in the model's context and can be reused later. We evaluate VESTA against established baselines in three toolkit configurations: no tools, static expert-written tools, and dynamic model-written tools. To support this evaluation, we introduce DAWN (Dataset for Automated Workflows and Numerical Modeling), a benchmark targeting distribution fitting and time series modeling with varying difficulty tiers, and culminating in real-world astronomy tasks including modeling initial mass functions and gravitational-wave chirp signals. We find that VESTA's dynamic tool creation outperforms prior agentic pipelines, with the largest gains on complex and domain-specific tasks. We further show that dynamically generated tools are substantially more sophisticated than those produced by existing visual tool-creation systems, covering more diagnostic categories per function and strongly preferring visual outputs that the VLM critic can reason over directly.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "William Rudman"
+    },
+    {
+      "@type": "Person",
+      "name": "Abhishek Divekar"
+    },
+    {
+      "@type": "Person",
+      "name": "Kanishk Jain"
+    },
+    {
+      "@type": "Person",
+      "name": "Sebastian Joseph"
+    },
+    {
+      "@type": "Person",
+      "name": "Stella S. R. Offner"
+    },
+    {
+      "@type": "Person",
+      "name": "Matthew Lease"
+    },
+    {
+      "@type": "Person",
+      "name": "Kyle Mahowald"
+    },
+    {
+      "@type": "Person",
+      "name": "Greg Durrett"
+    },
+    {
+      "@type": "Person",
+      "name": "Junyi Jessy Li"
+    }
+  ],
+  "datePublished": "2026-05-29T21:57:37Z",
+  "dateModified": "2026-06-07T19:48:24Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.00384.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.00384.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.00384v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.00384"
+  },
+  "keywords": [
+    "Multimodal",
+    "Tool use",
+    "Safety",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multimodal"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.00384v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.00384"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +118,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>VESTA: Visual Exploration with Statistical Tool Agents</h1>
+        <div class="meta">
+          William Rudman, Abhishek Divekar, Kanishk Jain, Sebastian Joseph, Stella S. R. Offner, Matthew Lease, Kyle Mahowald, Greg Durrett, Junyi Jessy Li
+          · 2606.00384
+          · <time datetime="2026-05-29">2026-05-29</time>
+          · Multimodal · 2 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span><span class="chip">Multimodal</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Fitting quantitative models to data is a central step in scientific workflows, yet it remains one of the least automated. Recent agent-based systems leverage language and vision-language models (VLMs) to iteratively propose and refine statistical models, but these systems struggle on more challenging modeling tasks. To address these limitations, we introduce VESTA: Visual Exploration with Statistical Tool Agents, a framework that equips VLMs with a dynamically growing exploration toolkit to guide model refinement through data transformations, hypothesis-driven visualizations, and robust statistical tests. Unlike prior systems that rely on iterative critique alone, VESTA actively explores data before and during refinement by selecting or creating diagnostic tools, which accumulate in the model&#x27;s context and can be reused later. We evaluate VESTA against established baselines in three toolkit configurations: no tools, static expert-written tools, and dynamic model-written tools. To support this evaluation, we introduce DAWN (Dataset for Automated Workflows and Numerical Modeling), a benchmark targeting distribution fitting and time series modeling with varying difficulty tiers, and culminating in real-world astronomy tasks including modeling initial mass functions and gravitational-wave chirp signals. We find that VESTA&#x27;s dynamic tool creation outperforms prior agentic pipelines, with the largest gains on complex and domain-specific tasks. We further show that dynamically generated tools are substantially more sophisticated than those produced by existing visual tool-creation systems, covering more diagnostic categories per function and strongly preferring visual outputs that the VLM critic can reason over directly.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.00384v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.00384v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.00384" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multimodal benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.03920.html"><strong>Benchmarking Visual State Tracking in Multimodal Video Understanding</strong></a> <span>2026-06-02</span></li>
+          <li><a href="2606.01961.html"><strong>AutoMedBench: Towards Medical AutoResearch with Agentic AI Models</strong></a> <span>2026-06-01</span></li>
+          <li><a href="2606.01057.html"><strong>3DCodeBench: Benchmarking Agentic Procedural 3D Modeling Via Code</strong></a> <span>2026-05-31</span></li>
+          <li><a href="2606.07595.html"><strong>VisualLeakBench: Reproducible Action-Boundary Propagation Failures in Vision-Language Agents</strong></a> <span>2026-05-29</span></li>
+          <li><a href="2605.29341.html"><strong>WorldMemArena: Evaluating Multimodal Agent Memory Through Action-World Interaction</strong></a> <span>2026-05-28</span></li>
+          <li><a href="2605.28683.html"><strong>VeriTrip: A Verifiable Benchmark for Travel Planning Agents over Unstructured Web Corpora</strong></a> <span>2026-05-27</span></li>
+          <li><a href="2605.27705.html"><strong>AgenticVBench: Can AI Agents Complete Real-World Post-Production Tasks?</strong></a> <span>2026-05-26</span></li>
+          <li><a href="2605.27134.html"><strong>Scaling, Benchmarking, and Reasoning of Vision-Language Agents for Mobile GUI Navigation</strong></a> <span>2026-05-26</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

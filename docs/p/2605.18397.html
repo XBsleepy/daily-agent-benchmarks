@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Duet instrumentation: An Agentic Approach to Improving Sensitivity in Cloud Service Benchmarking | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Continuous cloud service performance benchmarking is essential for detecting performance bugs early before deploying them to…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2605.18397" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.18397.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Duet instrumentation: An Agentic Approach to Improving Sensitivity in Cloud Service Benchmarking" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Continuous cloud service performance benchmarking is essential for detecting performance bugs early before deploying them to…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.18397.html" />
+    <meta property="article:published_time" content="2026-05-18T13:43:10Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Duet instrumentation: An Agentic Approach to Improving Sensitivity in Cloud Service Benchmarking" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Continuous cloud service performance benchmarking is essential for detecting performance bugs early before deploying them to…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,59 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Duet instrumentation: An Agentic Approach to Improving Sensitivity in Cloud Service Benchmarking",
+  "name": "Duet instrumentation: An Agentic Approach to Improving Sensitivity in Cloud Service Benchmarking",
+  "abstract": "Continuous cloud service performance benchmarking is essential for detecting performance bugs early before deploying them to production. However, detecting performance regressions using application benchmarks, which usually treat the system under test as a black box, is challenging due to variable I/O calls or changing performance characteristics of the underlying cloud infrastructure. Microbenchmarks are often more sensitive and accurate, but also more time-consuming to implement and run. Further, they do not capture the performance of the integrated system as a whole. A comprehensive performance assessment therefore typically requires a combination of both approaches. To address the shortcomings of application benchmarks, we propose duet instrumentation, a novel benchmarking paradigm enabled by recent advancements in large language model (LLM) code understanding. The idea is to analyze code changes between two consecutive application versions and measure performance differences directly at performance-relevant changes during a synchronized benchmark of both application versions, uncovering performance changes with higher sensitivity. We design a system that reliably automates the assessment and instrumentation of performance-relevant code changes between the two application versions. In experiments with a realistic testbed application offering configurable performance regressions, we find that our prototype achieves 58% precision, 93% recall, and 71% specificity (averaged across tasks) when comparing the generated instrumentation against the ideal instrumentation with a line-distance threshold of five. In the downstream application benchmark, we find that our prototype can detect performance regressions at up to 5x lower injected severity compared to a traditional duet application benchmark while preserving similar A/A latency distributions.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Sebastian Koch"
+    },
+    {
+      "@type": "Person",
+      "name": "Nils Japke"
+    },
+    {
+      "@type": "Person",
+      "name": "David Bermbach"
+    }
+  ],
+  "datePublished": "2026-05-18T13:43:10Z",
+  "dateModified": "2026-05-18T13:43:10Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.18397.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.18397.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.18397v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.18397"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.18397v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.18397"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +91,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Duet instrumentation: An Agentic Approach to Improving Sensitivity in Cloud Service Benchmarking</h1>
+        <div class="meta">
+          Sebastian Koch, Nils Japke, David Bermbach
+          · 2605.18397
+          · <time datetime="2026-05-18">2026-05-18</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Continuous cloud service performance benchmarking is essential for detecting performance bugs early before deploying them to production. However, detecting performance regressions using application benchmarks, which usually treat the system under test as a black box, is challenging due to variable I/O calls or changing performance characteristics of the underlying cloud infrastructure. Microbenchmarks are often more sensitive and accurate, but also more time-consuming to implement and run. Further, they do not capture the performance of the integrated system as a whole. A comprehensive performance assessment therefore typically requires a combination of both approaches. To address the shortcomings of application benchmarks, we propose duet instrumentation, a novel benchmarking paradigm enabled by recent advancements in large language model (LLM) code understanding. The idea is to analyze code changes between two consecutive application versions and measure performance differences directly at performance-relevant changes during a synchronized benchmark of both application versions, uncovering performance changes with higher sensitivity. We design a system that reliably automates the assessment and instrumentation of performance-relevant code changes between the two application versions. In experiments with a realistic testbed application offering configurable performance regressions, we find that our prototype achieves 58% precision, 93% recall, and 71% specificity (averaged across tasks) when comparing the generated instrumentation against the ideal instrumentation with a line-distance threshold of five. In the downstream application benchmark, we find that our prototype can detect performance regressions at up to 5x lower injected severity compared to a traditional duet application benchmark while preserving similar A/A latency distributions.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.18397v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.18397v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.18397" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.19717.html"><strong>Physics-in-the-Loop: A Hybrid Agentic Architecture for Validated CAD Engineering Design</strong></a> <span>2026-05-19</span></li>
+          <li><a href="2605.19127.html"><strong>POLAR-Bench: A Diagnostic Benchmark for Privacy-Utility Trade-offs in LLM Agents</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.18548.html"><strong>STT-Arena: A More Realistic Environment for Tool-Using with Spatio-Temporal Dynamics</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.18421.html"><strong>EvoMemBench: Benchmarking Agent Memory from a Self-Evolving Perspective</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.17324.html"><strong>ASPI: Seeking Ambiguity Clarification Amplifies Prompt Injection Vulnerability in LLM Agents</strong></a> <span>2026-05-17</span></li>
+          <li><a href="2605.17281.html"><strong>ContractBench: Can LLM Agents Preserve Observation Contracts?</strong></a> <span>2026-05-17</span></li>
+          <li><a href="2607.18261.html"><strong>When JSON Is Not Enough: Semantic Reliability of Schema-Constrained LLM Ordering Agents</strong></a> <span>2026-05-16</span></li>
+          <li><a href="2605.16679.html"><strong>CHI-Bench: Can AI Agents Automate End-to-End, Long-Horizon, Policy-Rich Healthcare Workflows?</strong></a> <span>2026-05-15</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

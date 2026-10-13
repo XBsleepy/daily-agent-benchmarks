@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>PilotBench: A Benchmark for General Aviation Agents with Safety Constraints | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: As Large Language Models (LLMs) advance toward embodied AI agents operating in physical environments, a fundamental question emerges…" />
+    <meta name="keywords" content="Safety, Embodied / robotics, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2604.08987" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.08987.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="PilotBench: A Benchmark for General Aviation Agents with Safety Constraints" />
+    <meta property="og:description" content="Daily Agent Benchmarks: As Large Language Models (LLMs) advance toward embodied AI agents operating in physical environments, a fundamental question emerges…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.08987.html" />
+    <meta property="article:published_time" content="2026-04-10T05:48:38Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PilotBench: A Benchmark for General Aviation Agents with Safety Constraints" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: As Large Language Models (LLMs) advance toward embodied AI agents operating in physical environments, a fundamental question emerges…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,65 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "PilotBench: A Benchmark for General Aviation Agents with Safety Constraints",
+  "name": "PilotBench: A Benchmark for General Aviation Agents with Safety Constraints",
+  "abstract": "As Large Language Models (LLMs) advance toward embodied AI agents operating in physical environments, a fundamental question emerges: can models trained on text corpora reliably reason about complex physics while adhering to safety constraints? We address this through PilotBench, a benchmark evaluating LLMs on safety-critical flight trajectory and attitude prediction. Built from 708 real-world general aviation trajectories spanning nine operationally distinct flight phases with synchronized 34-channel telemetry, PilotBench systematically probes the intersection of semantic understanding and physics-governed prediction through comparative analysis of LLMs and traditional forecasters. We introduce Pilot-Score, a composite metric balancing 60% regression accuracy with 40% instruction adherence and safety compliance. Comparative evaluation across 41 models uncovers a Precision-Controllability Dichotomy: traditional forecasters achieve superior MAE of 7.01 but lack semantic reasoning capabilities, while LLMs gain controllability with 86--89% instruction-following at the cost of 11--14 MAE precision. Phase-stratified analysis further exposes a Dynamic Complexity Gap-LLM performance degrades sharply in high-workload phases such as Climb and Approach, suggesting brittle implicit physics models. These empirical discoveries motivate hybrid architectures combining LLMs' symbolic reasoning with specialized forecasters' numerical precision. PilotBench provides a rigorous foundation for advancing embodied AI in safety-constrained domains.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yalun Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Haotian Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhoujun Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Boyang Wang"
+    }
+  ],
+  "datePublished": "2026-04-10T05:48:38Z",
+  "dateModified": "2026-04-10T05:48:38Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.08987.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.08987.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.08987v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2604.08987"
+  },
+  "keywords": [
+    "Safety",
+    "Embodied / robotics",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Safety"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2604.08987v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2604.08987"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +97,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>PilotBench: A Benchmark for General Aviation Agents with Safety Constraints</h1>
+        <div class="meta">
+          Yalun Wu, Haotian Liu, Zhoujun Li, Boyang Wang
+          · 2604.08987
+          · <time datetime="2026-04-10">2026-04-10</time>
+          · Safety · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Embodied / robotics</span><span class="chip">Safety</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>As Large Language Models (LLMs) advance toward embodied AI agents operating in physical environments, a fundamental question emerges: can models trained on text corpora reliably reason about complex physics while adhering to safety constraints? We address this through PilotBench, a benchmark evaluating LLMs on safety-critical flight trajectory and attitude prediction. Built from 708 real-world general aviation trajectories spanning nine operationally distinct flight phases with synchronized 34-channel telemetry, PilotBench systematically probes the intersection of semantic understanding and physics-governed prediction through comparative analysis of LLMs and traditional forecasters. We introduce Pilot-Score, a composite metric balancing 60% regression accuracy with 40% instruction adherence and safety compliance. Comparative evaluation across 41 models uncovers a Precision-Controllability Dichotomy: traditional forecasters achieve superior MAE of 7.01 but lack semantic reasoning capabilities, while LLMs gain controllability with 86--89% instruction-following at the cost of 11--14 MAE precision. Phase-stratified analysis further exposes a Dynamic Complexity Gap-LLM performance degrades sharply in high-workload phases such as Climb and Approach, suggesting brittle implicit physics models. These empirical discoveries motivate hybrid architectures combining LLMs&#x27; symbolic reasoning with specialized forecasters&#x27; numerical precision. PilotBench provides a rigorous foundation for advancing embodied AI in safety-constrained domains.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2604.08987v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2604.08987v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2604.08987" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Safety benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2604.15774.html"><strong>MemEvoBench: Benchmarking Safety Risks from Memory Misevolution in LLM Agents</strong></a> <span>2026-04-17</span></li>
+          <li><a href="2604.11174.html"><strong>EmbodiedGovBench: A Benchmark for Governance, Recovery, and Upgrade Safety in Embodied Agent Systems</strong></a> <span>2026-04-13</span></li>
+          <li><a href="2605.16282.html"><strong>Taxonomy and Consistency Analysis of Safety Benchmarks for AI Agents</strong></a> <span>2026-04-11</span></li>
+          <li><a href="2604.10286.html"><strong>STARS: Skill-Triggered Audit for Request-Conditioned Invocation Safety in Agent Systems</strong></a> <span>2026-04-11</span></li>
+          <li><a href="2604.05172.html"><strong>ClawsBench: Evaluating Capability and Safety of LLM Productivity Agents in Simulated Workspaces</strong></a> <span>2026-04-06</span></li>
+          <li><a href="2604.02022.html"><strong>ATBench: A Diverse and Realistic Agent Trajectory Benchmark for Safety Evaluation and Diagnosis</strong></a> <span>2026-04-02</span></li>
+          <li><a href="2602.13379.html"><strong>Unsafer in Many Turns: Benchmarking and Defending Multi-Turn Safety Risks in Tool-Using Agents</strong></a> <span>2026-02-13</span></li>
+          <li><a href="2602.03100.html"><strong>Risky-Bench: Probing Agentic Safety Risks under Real-World Deployment</strong></a> <span>2026-02-03</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

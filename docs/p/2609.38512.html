@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>VAmoS Part Deux: Harder, More Realistic Voice-Agent Simulation | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Voice agents in production must handle several requests, background speech, and customers who lose patience. We introduce VAmoS…" />
+    <meta name="keywords" content="Tool use, agent benchmark, LLM agent, arXiv, 2609.38512" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.38512.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="VAmoS Part Deux: Harder, More Realistic Voice-Agent Simulation" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Voice agents in production must handle several requests, background speech, and customers who lose patience. We introduce VAmoS…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.38512.html" />
+    <meta property="article:published_time" content="2026-09-29T20:33:57Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="VAmoS Part Deux: Harder, More Realistic Voice-Agent Simulation" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Voice agents in production must handle several requests, background speech, and customers who lose patience. We introduce VAmoS…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,79 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "VAmoS Part Deux: Harder, More Realistic Voice-Agent Simulation",
+  "name": "VAmoS Part Deux: Harder, More Realistic Voice-Agent Simulation",
+  "abstract": "Voice agents in production must handle several requests, background speech, and customers who lose patience. We introduce VAmoS Energy, a benchmark that combines these challenges in 100 calls about utility billing and payment assistance. Each caller makes two to four requests. The agent has sixteen tools backed by a stateful Stripe billing twin and the Apache Fineract loan engine, with account access blocked until caller verification succeeds. The tasks use public household electricity data and a policy based on Pennsylvania's residential billing rules. An LLM-as-a-verifier checks the agent's actions and spoken figures against explicit requirements. On a calibration run, it agrees with a code verifier on 99.1% of checks. Across fourteen voice stacks and three repeats per task, completion ranges from 17.3% to 44.7%. Grok Voice leads, and Gemini 3.8 Live and GPT-Live follow at about the same cost per call. Background television reduces pooled completion from 38.7% to 8.6%. The simulated caller often accepts an incorrect result because it hears the agent's words but cannot inspect its actions. These findings show why voice agents need evaluation across the whole call, including what they say, what they change, and how they handle competing speech.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Joshua Meyer"
+    },
+    {
+      "@type": "Person",
+      "name": "Sahar Shayegan"
+    },
+    {
+      "@type": "Person",
+      "name": "Ritiz Tambi"
+    },
+    {
+      "@type": "Person",
+      "name": "Ali Khan"
+    },
+    {
+      "@type": "Person",
+      "name": "Sun Kim"
+    },
+    {
+      "@type": "Person",
+      "name": "Victor Shih"
+    },
+    {
+      "@type": "Person",
+      "name": "Mehdi Jamei"
+    },
+    {
+      "@type": "Person",
+      "name": "Andi Partovi"
+    }
+  ],
+  "datePublished": "2026-09-29T20:33:57Z",
+  "dateModified": "2026-09-29T20:33:57Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.38512.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.38512.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.38512v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.38512"
+  },
+  "keywords": [
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.38512v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.38512"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +111,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>VAmoS Part Deux: Harder, More Realistic Voice-Agent Simulation</h1>
+        <div class="meta">
+          Joshua Meyer, Sahar Shayegan, Ritiz Tambi, Ali Khan, Sun Kim, Victor Shih, Mehdi Jamei, Andi Partovi
+          · 2609.38512
+          · <time datetime="2026-09-29">2026-09-29</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Voice agents in production must handle several requests, background speech, and customers who lose patience. We introduce VAmoS Energy, a benchmark that combines these challenges in 100 calls about utility billing and payment assistance. Each caller makes two to four requests. The agent has sixteen tools backed by a stateful Stripe billing twin and the Apache Fineract loan engine, with account access blocked until caller verification succeeds. The tasks use public household electricity data and a policy based on Pennsylvania&#x27;s residential billing rules. An LLM-as-a-verifier checks the agent&#x27;s actions and spoken figures against explicit requirements. On a calibration run, it agrees with a code verifier on 99.1% of checks. Across fourteen voice stacks and three repeats per task, completion ranges from 17.3% to 44.7%. Grok Voice leads, and Gemini 3.8 Live and GPT-Live follow at about the same cost per call. Background television reduces pooled completion from 38.7% to 8.6%. The simulated caller often accepts an incorrect result because it hears the agent&#x27;s words but cannot inspect its actions. These findings show why voice agents need evaluation across the whole call, including what they say, what they change, and how they handle competing speech.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.38512v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.38512v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.38512" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.02206.html"><strong>KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.02089.html"><strong>HumanoidToolBench: Benchmarking Humanoid Tool Use from Selection to Mobile Execution</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.02563.html"><strong>OpenGameEval: Benchmarking Agentic Programming and Exploration in a Stateful Game Engine</strong></a> <span>2026-10-01</span></li>
+          <li><a href="2609.38652.html"><strong>AgBench: Agentic AI Benchmarks for Personal AI Devices</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.37315.html"><strong>Do Agent Benchmarks Do What They Say? An Executable-Contract Audit of Tool-Using Agent Environments</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.35732.html"><strong>Failure-Transparent Agents: Benchmarking Post-Failure Reporting in Tool-Using Language Models</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34930.html"><strong>PDEU-Bench: Benchmarking the Personalized Planning Lifecycle of Tool-Calling LLM Agents</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34492.html"><strong>PowerBench: A Benchmark for Agentic Retrieval and Reasoning in Power Systems</strong></a> <span>2026-09-28</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

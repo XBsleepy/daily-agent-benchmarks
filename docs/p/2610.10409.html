@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: General-purpose agents increasingly write code, use tools, and complete complex digital tasks, raising the question of how far these…" />
+    <meta name="keywords" content="Embodied / robotics, Tool use, Multimodal, agent benchmark, LLM agent, arXiv, 2610.10409" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.10409.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments" />
+    <meta property="og:description" content="Daily Agent Benchmarks: General-purpose agents increasingly write code, use tools, and complete complex digital tasks, raising the question of how far these…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.10409.html" />
+    <meta property="article:published_time" content="2026-10-07T16:55:24Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: General-purpose agents increasingly write code, use tools, and complete complex digital tasks, raising the question of how far these…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,181 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments",
+  "name": "RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments",
+  "abstract": "General-purpose agents increasingly write code, use tools, and complete complex digital tasks, raising the question of how far these capabilities carry into the physical world. To investigate this, we introduce RobotWorld, a challenging simulation testbed for robot use: turning instructions and observations into physical task execution through robot interfaces. Its 84 tasks span manipulation, mobile manipulation, locomotion, driving, and aerial control, with explicit interaction budgets and executable success checks. By analysing task outcomes alongside execution traces, we identify both the capabilities that transfer and the gaps that prevent reliable completion. Furthermore, we find that current agents can construct sophisticated perception and control workflows, including image segmentation, camera calibration, spatial estimation, and dynamics-based computation. These capabilities, however, do not consistently compose into successful behaviour: agents lose task-relevant object states despite reaching commanded poses, fail to correct ineffective actions, recover too late, or mistake unfinished tasks for completion. This uneven transfer also differs across models: Astra succeeds more often on spatial and constrained-contact goals, whereas Opus 5.5 succeeds more often on continuous-balance and timed-interaction goals. By linking these outcomes to execution behaviour, RobotWorld provides both a rigorous proving ground and an empirical account of the remaining capability gaps, thereby establishing concrete targets for training and designing more reliable physical-world agents.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Zhiqin Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chenxin Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaomeng Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yibin Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Weidong Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiankai Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Haitao Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Zijian Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuzhi Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Fanding Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Hanwen Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiashun Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jingqi Tong"
+    },
+    {
+      "@type": "Person",
+      "name": "Mingxin Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Shaoli Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Shijue Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Tianyi Bai"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinyuan Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yunlong Lin"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhengyang Tang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhexin Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhuo Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Xierui Song"
+    },
+    {
+      "@type": "Person",
+      "name": "Juntao Dai"
+    },
+    {
+      "@type": "Person",
+      "name": "Boyuan Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiaming Ji"
+    },
+    {
+      "@type": "Person",
+      "name": "Fangneng Zhan"
+    },
+    {
+      "@type": "Person",
+      "name": "Mengkang Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Wei Xue"
+    },
+    {
+      "@type": "Person",
+      "name": "Yonggang Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Han Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Tsung-Yi Ho"
+    },
+    {
+      "@type": "Person",
+      "name": "Yike Guo"
+    }
+  ],
+  "datePublished": "2026-10-07T16:55:24Z",
+  "dateModified": "2026-10-07T16:55:24Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.10409.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.10409.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.10409v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.10409"
+  },
+  "keywords": [
+    "Embodied / robotics",
+    "Tool use",
+    "Multimodal",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Embodied / robotics"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.10409v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2610.10409"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +213,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments</h1>
+        <div class="meta">
+          Zhiqin Yang, Chenxin Li, Xiaomeng Hu, Yibin Liu, Weidong Huang, Jiankai Sun, Haitao Li, Zijian Wu, Yuzhi Huang, Fanding Huang, Hanwen Sun, Jiashun Liu, Jingqi Tong, Mingxin Huang, Shaoli Hu, Shijue Huang, Tianyi Bai, Xinyuan Wang, Yunlong Lin, Zhengyang Tang, Zhexin Zhang, Zhuo Chen, Xierui Song, Juntao Dai, Boyuan Chen, Jiaming Ji, Fangneng Zhan, Mengkang Hu, Wei Xue, Yonggang Zhang, Han Hu, Tsung-Yi Ho, Yike Guo
+          · 2610.10409
+          · <time datetime="2026-10-07">2026-10-07</time>
+          · Embodied / robotics
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Embodied / robotics</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>General-purpose agents increasingly write code, use tools, and complete complex digital tasks, raising the question of how far these capabilities carry into the physical world. To investigate this, we introduce RobotWorld, a challenging simulation testbed for robot use: turning instructions and observations into physical task execution through robot interfaces. Its 84 tasks span manipulation, mobile manipulation, locomotion, driving, and aerial control, with explicit interaction budgets and executable success checks. By analysing task outcomes alongside execution traces, we identify both the capabilities that transfer and the gaps that prevent reliable completion. Furthermore, we find that current agents can construct sophisticated perception and control workflows, including image segmentation, camera calibration, spatial estimation, and dynamics-based computation. These capabilities, however, do not consistently compose into successful behaviour: agents lose task-relevant object states despite reaching commanded poses, fail to correct ineffective actions, recover too late, or mistake unfinished tasks for completion. This uneven transfer also differs across models: Astra succeeds more often on spatial and constrained-contact goals, whereas Opus 5.5 succeeds more often on continuous-balance and timed-interaction goals. By linking these outcomes to execution behaviour, RobotWorld provides both a rigorous proving ground and an empirical account of the remaining capability gaps, thereby establishing concrete targets for training and designing more reliable physical-world agents.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.10409v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.10409v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.10409" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Embodied / robotics benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.13534.html"><strong>MAGMA-Bench: Evaluating Long-Horizon Embodied Agents under Dynamic Tasks and Execution Failures</strong></a> <span>2026-10-09</span></li>
+          <li><a href="2610.13021.html"><strong>EmbodiedCLBench: Evaluating Continual Learning for Self-Evolving Embodied Agents</strong></a> <span>2026-10-09</span></li>
+          <li><a href="2610.12561.html"><strong>What Should Embodied Agents Remember? Benchmarking and Evaluating Memory Modality for Embodied Agents</strong></a> <span>2026-10-08</span></li>
+          <li><a href="2610.10388.html"><strong>RoboQuest: Generalist Physical Agents that Search, Inspect and Test</strong></a> <span>2026-10-07</span></li>
+          <li><a href="2609.35032.html"><strong>JRDB-AVR: An Active Visual Reasoning Benchmark for Embodied Agents in Real-World Environments</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.33807.html"><strong>CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation</strong></a> <span>2026-09-27</span></li>
+          <li><a href="2609.23695.html"><strong>PhysAI-Bench: A Benchmark for LLM-Based Agentic Decision-Making in Autonomous UAV-Centric Physical AI</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2608.08814.html"><strong>360CityArena: A Realistic Virtual Urban Navigation Benchmark for Embodied Agents</strong></a> <span>2026-08-09</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

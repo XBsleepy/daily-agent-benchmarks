@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Agentick: A Unified Benchmark for General Sequential Decision-Making Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: AI agent research spans a wide spectrum: from RL agents that learn from scratch to foundation model agents that leverage pre-trained…" />
+    <meta name="keywords" content="Multi-agent, Planning / reasoning, Multimodal, agent benchmark, LLM agent, arXiv, 2605.06869" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.06869.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Agentick: A Unified Benchmark for General Sequential Decision-Making Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: AI agent research spans a wide spectrum: from RL agents that learn from scratch to foundation model agents that leverage pre-trained…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.06869.html" />
+    <meta property="article:published_time" content="2026-05-07T19:12:03Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Agentick: A Unified Benchmark for General Sequential Decision-Making Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: AI agent research spans a wide spectrum: from RL agents that learn from scratch to foundation model agents that leverage pre-trained…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,61 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Agentick: A Unified Benchmark for General Sequential Decision-Making Agents",
+  "name": "Agentick: A Unified Benchmark for General Sequential Decision-Making Agents",
+  "abstract": "AI agent research spans a wide spectrum: from RL agents that learn from scratch to foundation model agents that leverage pre-trained knowledge, yet no unified benchmark enables fair comparison across these approaches. We present Agentick, a benchmark for sequential decision-making agents designed to evaluate RL, LLM, VLM, hybrid, and human agents on common ground and to power research on the fundamental challenges of sequential decision-making. Agentick provides 37 procedurally generated tasks across six capability categories, four difficulty levels, and five observation modalities, all exposed through a single Gymnasium-compatible interface. The benchmark ships with a Coding API, oracle reference policies for all tasks, pre-built SFT datasets, a composable agent harness, and a live leaderboard. An evaluation spanning 27 configurations and over 90,000 episodes reveals that no single approach dominates: GPT-5 mini leads overall at 0.309 oracle-normalized score while PPO dominates planning and multi-agent tasks; the reasoning harness multiplies LLM performance by 3-10x; and ASCII observations consistently outperform natural language. These findings highlight the substantial room for improvement that remains across all agent paradigms. Agentick's capability-decomposed, multi-modal design provides the empirical infrastructure needed to drive progress toward general autonomous agents, both as an evaluation framework and as a training ground for RL post-training of foundation models in truly sequential environments.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Roger Creus Castanyer"
+    },
+    {
+      "@type": "Person",
+      "name": "Pablo Samuel Castro"
+    },
+    {
+      "@type": "Person",
+      "name": "Glen Berseth"
+    }
+  ],
+  "datePublished": "2026-05-07T19:12:03Z",
+  "dateModified": "2026-05-12T18:33:33Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.06869.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.06869.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.06869v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.06869"
+  },
+  "keywords": [
+    "Multi-agent",
+    "Planning / reasoning",
+    "Multimodal",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multi-agent"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.06869v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.06869"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +93,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Agentick: A Unified Benchmark for General Sequential Decision-Making Agents</h1>
+        <div class="meta">
+          Roger Creus Castanyer, Pablo Samuel Castro, Glen Berseth
+          · 2605.06869
+          · <time datetime="2026-05-07">2026-05-07</time>
+          · Multi-agent
+        </div>
+        <div class="themes"><span class="chip">Multi-agent</span><span class="chip">Planning / reasoning</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>AI agent research spans a wide spectrum: from RL agents that learn from scratch to foundation model agents that leverage pre-trained knowledge, yet no unified benchmark enables fair comparison across these approaches. We present Agentick, a benchmark for sequential decision-making agents designed to evaluate RL, LLM, VLM, hybrid, and human agents on common ground and to power research on the fundamental challenges of sequential decision-making. Agentick provides 37 procedurally generated tasks across six capability categories, four difficulty levels, and five observation modalities, all exposed through a single Gymnasium-compatible interface. The benchmark ships with a Coding API, oracle reference policies for all tasks, pre-built SFT datasets, a composable agent harness, and a live leaderboard. An evaluation spanning 27 configurations and over 90,000 episodes reveals that no single approach dominates: GPT-5 mini leads overall at 0.309 oracle-normalized score while PPO dominates planning and multi-agent tasks; the reasoning harness multiplies LLM performance by 3-10x; and ASCII observations consistently outperform natural language. These findings highlight the substantial room for improvement that remains across all agent paradigms. Agentick&#x27;s capability-decomposed, multi-modal design provides the empirical infrastructure needed to drive progress toward general autonomous agents, both as an evaluation framework and as a training ground for RL post-training of foundation models in truly sequential environments.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.06869v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.06869v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.06869" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multi-agent benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.09823.html"><strong>CalBench: Evaluating Coordination-Privacy Trade-offs in Multi-Agent LLMs</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.09703.html"><strong>MOTOR-Bench: A Real-world Dataset and Multi-agent Framework for Zero-shot Human Mental State Understanding</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.09027.html"><strong>GAMBIT: A Three-Mode Benchmark for Adversarial Robustness in Multi-Agent LLM Collectives</strong></a> <span>2026-05-09</span></li>
+          <li><a href="2605.08583.html"><strong>Source or It Didn&#x27;t Happen: A Multi-Agent Framework for Citation Hallucination Detection</strong></a> <span>2026-05-09</span></li>
+          <li><a href="2604.24477.html"><strong>GAMMAF: A Common Framework for Graph-Based Anomaly Monitoring Benchmarking in LLM Multi-Agent Systems</strong></a> <span>2026-04-27</span></li>
+          <li><a href="2604.23580.html"><strong>PhysCodeBench: Benchmarking Physics-Aware Symbolic Simulation of 3D Scenes via Self-Corrective Multi-Agent Refinement</strong></a> <span>2026-04-26</span></li>
+          <li><a href="2604.22708.html"><strong>Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems</strong></a> <span>2026-04-24</span></li>
+          <li><a href="2604.20273.html"><strong>ActuBench: A Multi-Agent LLM Pipeline for Generation and Evaluation of Actuarial Reasoning Tasks</strong></a> <span>2026-04-22</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

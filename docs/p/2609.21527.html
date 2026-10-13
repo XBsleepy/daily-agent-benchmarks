@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>OpenMAS-GCom. A Diagnostic Benchmark for Graph-enhanced Multi-Agent Systems | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Graph-enhanced multi-agent systems (G-MAS) coordinate large language model agents through communication graphs and role assignments…" />
+    <meta name="keywords" content="Multi-agent, agent benchmark, LLM agent, arXiv, 2609.21527" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.21527.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="OpenMAS-GCom. A Diagnostic Benchmark for Graph-enhanced Multi-Agent Systems" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Graph-enhanced multi-agent systems (G-MAS) coordinate large language model agents through communication graphs and role assignments…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.21527.html" />
+    <meta property="article:published_time" content="2026-09-21T04:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="OpenMAS-GCom. A Diagnostic Benchmark for Graph-enhanced Multi-Agent Systems" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Graph-enhanced multi-agent systems (G-MAS) coordinate large language model agents through communication graphs and role assignments…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,51 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "OpenMAS-GCom. A Diagnostic Benchmark for Graph-enhanced Multi-Agent Systems",
+  "name": "OpenMAS-GCom. A Diagnostic Benchmark for Graph-enhanced Multi-Agent Systems",
+  "abstract": "Graph-enhanced multi-agent systems (G-MAS) coordinate large language model agents through communication graphs and role assignments, which determine how agents exchange information and divide responsibilities. However, final-score comparisons across systems combine differences in models, communication patterns, roles, and computation costs, making performance differences difficult to attribute to specific communication structures, role assignments, and information flows. To address this evaluation attribution problem, we introduce OpenMAS-GCom, a benchmark for diagnosing how these components affect G-MAS performance through controlled interventions. We represent systems through collaboration units, communication links, shared intermediate information, and execution rules. OpenMAS-GCom compares original systems with versions modified by changing one component while keeping tasks, models, prompts, and budget limits fixed. We rewire communication edges, remove specialist or critic agents, replace intermediate messages with incorrect content, and disable workers during execution. The benchmark evaluates 17 single-agent, ordinary multi-agent, and graph-enhanced configurations on 29 datasets across six domains. We add 400 G-MAS-Complex tasks requiring agents to combine information from multiple documents, resolve conflicting records, and return specified values with source identifiers. Experiments show larger mean losses after specialist removal than after critic removal, different performance degradation under incorrect messages and worker failures despite similar original scores, and different configurations achieving the highest accuracy and accuracy per token on G-MAS-Complex.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Kairui Yang, Xunkai Li, Kaixiang Zhang, Minghao An, Zekai Chen, Yuxuan Ba, Rong-Hua Li"
+    }
+  ],
+  "datePublished": "2026-09-21T04:00:00Z",
+  "dateModified": "2026-09-21T04:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.21527.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.21527.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.21527"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.21527"
+  },
+  "keywords": [
+    "Multi-agent",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multi-agent"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.21527"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.21527"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +83,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>OpenMAS-GCom. A Diagnostic Benchmark for Graph-enhanced Multi-Agent Systems</h1>
+        <div class="meta">
+          Kairui Yang, Xunkai Li, Kaixiang Zhang, Minghao An, Zekai Chen, Yuxuan Ba, Rong-Hua Li
+          · 2609.21527
+          · <time datetime="2026-09-21">2026-09-21</time>
+          · Multi-agent
+        </div>
+        <div class="themes"><span class="chip">Multi-agent</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Graph-enhanced multi-agent systems (G-MAS) coordinate large language model agents through communication graphs and role assignments, which determine how agents exchange information and divide responsibilities. However, final-score comparisons across systems combine differences in models, communication patterns, roles, and computation costs, making performance differences difficult to attribute to specific communication structures, role assignments, and information flows. To address this evaluation attribution problem, we introduce OpenMAS-GCom, a benchmark for diagnosing how these components affect G-MAS performance through controlled interventions. We represent systems through collaboration units, communication links, shared intermediate information, and execution rules. OpenMAS-GCom compares original systems with versions modified by changing one component while keeping tasks, models, prompts, and budget limits fixed. We rewire communication edges, remove specialist or critic agents, replace intermediate messages with incorrect content, and disable workers during execution. The benchmark evaluates 17 single-agent, ordinary multi-agent, and graph-enhanced configurations on 29 datasets across six domains. We add 400 G-MAS-Complex tasks requiring agents to combine information from multiple documents, resolve conflicting records, and return specified values with source identifiers. Experiments show larger mean losses after specialist removal than after critic removal, different performance degradation under incorrect messages and worker failures despite similar original scores, and different configurations achieving the highest accuracy and accuracy per token on G-MAS-Complex.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.21527" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.21527" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.21527" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multi-agent benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.32245.html"><strong>AutoPDEBench: Benchmarking LLM Auto-Research for Neural PDE Solver Design</strong></a> <span>2026-09-26</span></li>
+          <li><a href="2609.32192.html"><strong>CoMemBench: Benchmarking Collaborative Memory Boundaries across Multi-Agent Workflow Topologies</strong></a> <span>2026-09-26</span></li>
+          <li><a href="2609.29509.html"><strong>Delay-of-Gratification as a Multi-Agent Survival Micro-benchmark for Long-Horizon LLMs: Social Exposure, Personas, and Tool Use Budgets</strong></a> <span>2026-09-25</span></li>
+          <li><a href="2609.24662.html"><strong>DUMA-Bench: A Dual-Control Multi-Agent Benchmark for Evaluating LLM Agent Security</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.11141.html"><strong>Can LLMs Normalize Databases? A Benchmark and Multi-Agent Framework for Schema Normalization</strong></a> <span>2026-09-10</span></li>
+          <li><a href="2609.09947.html"><strong>SpeechAnnotator: A Context-Aware Multi-Agent Framework and Benchmark for Multidimensional Speech Annotation</strong></a> <span>2026-09-09</span></li>
+          <li><a href="2609.08696.html"><strong>MorphoOrgaAgent: A Foundation-Model-Based Multi-Agent System for Autonomous Organoid Analysis</strong></a> <span>2026-09-08</span></li>
+          <li><a href="2609.00384.html"><strong>RestoreBench: Can AI Agents Restore Power Flow Convergence?</strong></a> <span>2026-08-31</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>TERMS-Bench: Diagnosing LLM Negotiation Agents Beyond Deal Rate | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Negotiation is a central mechanism of economic exchange, shaping markets, procurement, labor agreements, and resource allocation. It…" />
+    <meta name="keywords" content="General, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2605.13909" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.13909.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="TERMS-Bench: Diagnosing LLM Negotiation Agents Beyond Deal Rate" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Negotiation is a central mechanism of economic exchange, shaping markets, procurement, labor agreements, and resource allocation. It…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.13909.html" />
+    <meta property="article:published_time" content="2026-05-13T06:22:50Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="TERMS-Bench: Diagnosing LLM Negotiation Agents Beyond Deal Rate" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Negotiation is a central mechanism of economic exchange, shaping markets, procurement, labor agreements, and resource allocation. It…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,80 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "TERMS-Bench: Diagnosing LLM Negotiation Agents Beyond Deal Rate",
+  "name": "TERMS-Bench: Diagnosing LLM Negotiation Agents Beyond Deal Rate",
+  "abstract": "Negotiation is a central mechanism of economic exchange, shaping markets, procurement, labor agreements, and resource allocation. It is also a canonical testbed for agentic language models, requiring multi-turn interaction under hidden preferences, strategic communication, and binding constraints. These properties make negotiation hard to evaluate: unlike math or code, it has no intrinsic verifier. Existing LLM negotiation evaluations rely on LLM-vs.-LLM interaction or aggregate outcomes such as deal rate, leaving failures opaque. We introduce Terms-Bench, short for Testbed for Economic Reasoning in Multi-turn Strategy, a Bayesian-game framework that makes the environment itself the verifier by specifying the counterpart's latent type, policy, and payoff structure. We instantiate it in bilateral price negotiation, where the counterpart's private state and simulator policy are hidden from the agent but observable to the evaluator. This turns the counterpart from a black-box opponent into a diagnostic instrument, enabling agent-attributable failure analysis and oracle-reference optimality gaps. Evaluating 13 LLM agents spanning frontier systems from major providers, Terms-Bench turns negotiation evaluation from aggregate ranking into actionable diagnosis: where agents fail, why they fail, and what to strengthen. Empirically, frontier models saturate deal rate yet diverge in surplus extraction, cue use, belief calibration, and compliance, revealing agent-specific bargaining bottlenecks masked by prior benchmarks.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Erica Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Fangzhao Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Aneesh Pappu"
+    },
+    {
+      "@type": "Person",
+      "name": "Batu El"
+    },
+    {
+      "@type": "Person",
+      "name": "Jose Blanchet"
+    },
+    {
+      "@type": "Person",
+      "name": "Susan Athey"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiashuo Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "James Zou"
+    }
+  ],
+  "datePublished": "2026-05-13T06:22:50Z",
+  "dateModified": "2026-06-13T21:49:28Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.13909.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.13909.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.13909v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.13909"
+  },
+  "keywords": [
+    "General",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.13909v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.13909"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +112,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>TERMS-Bench: Diagnosing LLM Negotiation Agents Beyond Deal Rate</h1>
+        <div class="meta">
+          Erica Zhang, Fangzhao Zhang, Aneesh Pappu, Batu El, Jose Blanchet, Susan Athey, Jiashuo Liu, James Zou
+          · 2605.13909
+          · <time datetime="2026-05-13">2026-05-13</time>
+          · General · 3 citations
+        </div>
+        <div class="themes"><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Negotiation is a central mechanism of economic exchange, shaping markets, procurement, labor agreements, and resource allocation. It is also a canonical testbed for agentic language models, requiring multi-turn interaction under hidden preferences, strategic communication, and binding constraints. These properties make negotiation hard to evaluate: unlike math or code, it has no intrinsic verifier. Existing LLM negotiation evaluations rely on LLM-vs.-LLM interaction or aggregate outcomes such as deal rate, leaving failures opaque. We introduce Terms-Bench, short for Testbed for Economic Reasoning in Multi-turn Strategy, a Bayesian-game framework that makes the environment itself the verifier by specifying the counterpart&#x27;s latent type, policy, and payoff structure. We instantiate it in bilateral price negotiation, where the counterpart&#x27;s private state and simulator policy are hidden from the agent but observable to the evaluator. This turns the counterpart from a black-box opponent into a diagnostic instrument, enabling agent-attributable failure analysis and oracle-reference optimality gaps. Evaluating 13 LLM agents spanning frontier systems from major providers, Terms-Bench turns negotiation evaluation from aggregate ranking into actionable diagnosis: where agents fail, why they fail, and what to strengthen. Empirically, frontier models saturate deal rate yet diverge in surplus extraction, cue use, belief calibration, and compliance, revealing agent-specific bargaining bottlenecks masked by prior benchmarks.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.13909v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.13909v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.13909" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.15229.html"><strong>PBT-Bench: Benchmarking AI Agents on Property-Based Testing</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.14153.html"><strong>ExploitBench: A Capability Ladder Benchmark for LLM Cybersecurity Agents</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.14133.html"><strong>ClawForge: Generating Executable Interactive Benchmarks for Command-Line Agents</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.13940.html"><strong>AgentTrap: Measuring Runtime Trust Failures in Third-Party Agent Skills</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.13841.html"><strong>EVA-Bench: A New End-to-end Framework for Evaluating Voice Agents</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.13542.html"><strong>RealICU: Do LLM Agents Understand Long-Context ICU Data? A Benchmark Beyond Behavior Imitation</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.12887.html"><strong>EcoGEO: Trajectory-Aware Evidence Ecosystems for Web-Enabled LLM Search Agents</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.11874.html"><strong>RecRM-Bench: Benchmarking Multidimensional Reward Modeling for Agentic Recommender Systems</strong></a> <span>2026-05-12</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

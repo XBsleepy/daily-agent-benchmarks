@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Do Agent Benchmarks Do What They Say? An Executable-Contract Audit of Tool-Using Agent Environments | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Tool-using agents are entering settings where a wrong action carries real cost, and the benchmarks certifying them grade what each…" />
+    <meta name="keywords" content="Tool use, agent benchmark, LLM agent, arXiv, 2609.37315" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.37315.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Do Agent Benchmarks Do What They Say? An Executable-Contract Audit of Tool-Using Agent Environments" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Tool-using agents are entering settings where a wrong action carries real cost, and the benchmarks certifying them grade what each…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.37315.html" />
+    <meta property="article:published_time" content="2026-09-29T11:50:55Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Do Agent Benchmarks Do What They Say? An Executable-Contract Audit of Tool-Using Agent Environments" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Tool-using agents are entering settings where a wrong action carries real cost, and the benchmarks certifying them grade what each…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,59 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Do Agent Benchmarks Do What They Say? An Executable-Contract Audit of Tool-Using Agent Environments",
+  "name": "Do Agent Benchmarks Do What They Say? An Executable-Contract Audit of Tool-Using Agent Environments",
+  "abstract": "Tool-using agents are entering settings where a wrong action carries real cost, and the benchmarks certifying them grade what each simulated tool call reports having done, assuming the tool did what its interface advertises. The audit taxonomies we survey publish no category for that assumption, and a defect beneath a score is present on every rerun. We treat a tool's advertised surfaces as an executable contract, check the implementation against it, and trace each score's provenance through the task files and evaluator code to the verdicts that derive from state a defective tool should have written. Across 34 audited mutating tools in four benchmarks we confirm seven tool defects and one evaluator property at pinned commits. On injected defects the checker raised no false positive in 25 flags, flagged 2 of 5 negative controls, and missed most: in 29 of 33 scored misses a clause covered the defect but no probe revealed it. The checker's own static half, run alone, flags 14 of 17 confirmed sites, so on these findings the dynamic half confirms and traces rather than discovers. Twelve further AgentDojo tools, with six held-out tools and the seven audited first, complete its 25-tool mutating surface, on which at least 5 tools diverge from their advertised surface as our contracts read it, a rate for AgentDojo alone. No gold trajectory reaches either tau2-bench defect; on 1,120 paths built to isolate the telecom defect, a number fixed by construction, the evaluator rewards a refuel of a suspended line and fails the repaired tool. The clearest case is a clinical benchmark whose tool tells the agent each write executed under a documented no-write design its interface does not disclose; its grader takes that message as evidence, so its action success rate records whether a request carried the expected payload, not whether any record changed.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Rohith Reddy Bellibatlu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zichong Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenbin Zhang"
+    }
+  ],
+  "datePublished": "2026-09-29T11:50:55Z",
+  "dateModified": "2026-09-29T11:50:55Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.37315.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.37315.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.37315v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.37315"
+  },
+  "keywords": [
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.37315v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.37315"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +91,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Do Agent Benchmarks Do What They Say? An Executable-Contract Audit of Tool-Using Agent Environments</h1>
+        <div class="meta">
+          Rohith Reddy Bellibatlu, Zichong Wang, Wenbin Zhang
+          · 2609.37315
+          · <time datetime="2026-09-29">2026-09-29</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Tool-using agents are entering settings where a wrong action carries real cost, and the benchmarks certifying them grade what each simulated tool call reports having done, assuming the tool did what its interface advertises. The audit taxonomies we survey publish no category for that assumption, and a defect beneath a score is present on every rerun. We treat a tool&#x27;s advertised surfaces as an executable contract, check the implementation against it, and trace each score&#x27;s provenance through the task files and evaluator code to the verdicts that derive from state a defective tool should have written. Across 34 audited mutating tools in four benchmarks we confirm seven tool defects and one evaluator property at pinned commits. On injected defects the checker raised no false positive in 25 flags, flagged 2 of 5 negative controls, and missed most: in 29 of 33 scored misses a clause covered the defect but no probe revealed it. The checker&#x27;s own static half, run alone, flags 14 of 17 confirmed sites, so on these findings the dynamic half confirms and traces rather than discovers. Twelve further AgentDojo tools, with six held-out tools and the seven audited first, complete its 25-tool mutating surface, on which at least 5 tools diverge from their advertised surface as our contracts read it, a rate for AgentDojo alone. No gold trajectory reaches either tau2-bench defect; on 1,120 paths built to isolate the telecom defect, a number fixed by construction, the evaluator rewards a refuel of a suspended line and fails the repaired tool. The clearest case is a clinical benchmark whose tool tells the agent each write executed under a documented no-write design its interface does not disclose; its grader takes that message as evidence, so its action success rate records whether a request carried the expected payload, not whether any record changed.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.37315v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.37315v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.37315" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.02089.html"><strong>HumanoidToolBench: Benchmarking Humanoid Tool Use from Selection to Mobile Execution</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.02563.html"><strong>OpenGameEval: Benchmarking Agentic Programming and Exploration in a Stateful Game Engine</strong></a> <span>2026-10-01</span></li>
+          <li><a href="2609.38652.html"><strong>AgBench: Agentic AI Benchmarks for Personal AI Devices</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.38512.html"><strong>VAmoS Part Deux: Harder, More Realistic Voice-Agent Simulation</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.35732.html"><strong>Failure-Transparent Agents: Benchmarking Post-Failure Reporting in Tool-Using Language Models</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34930.html"><strong>PDEU-Bench: Benchmarking the Personalized Planning Lifecycle of Tool-Calling LLM Agents</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34492.html"><strong>PowerBench: A Benchmark for Agentic Retrieval and Reasoning in Power Systems</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.30717.html"><strong>RecToolBench: Benchmarking Recommendation-Specific Tool Orchestration under Fuzzy User Intent</strong></a> <span>2026-09-28</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

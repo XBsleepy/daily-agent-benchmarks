@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>AgentRedBench: Dynamic Redteaming and Integration-Aware Defense for LLM Agents over SaaS Integrations | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Indirect prompt injection in tool-use agents is a concrete production threat: LLM agents read from integrations (third-party services…" />
+    <meta name="keywords" content="General, Tool use, agent benchmark, LLM agent, arXiv, 2606.02240" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.02240.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AgentRedBench: Dynamic Redteaming and Integration-Aware Defense for LLM Agents over SaaS Integrations" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Indirect prompt injection in tool-use agents is a concrete production threat: LLM agents read from integrations (third-party services…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.02240.html" />
+    <meta property="article:published_time" content="2026-06-01T13:34:24Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AgentRedBench: Dynamic Redteaming and Integration-Aware Defense for LLM Agents over SaaS Integrations" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Indirect prompt injection in tool-use agents is a concrete production threat: LLM agents read from integrations (third-party services…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,56 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AgentRedBench: Dynamic Redteaming and Integration-Aware Defense for LLM Agents over SaaS Integrations",
+  "name": "AgentRedBench: Dynamic Redteaming and Integration-Aware Defense for LLM Agents over SaaS Integrations",
+  "abstract": "Indirect prompt injection in tool-use agents is a concrete production threat: LLM agents read from integrations (third-party services such as Gmail, Salesforce, or Jira accessed through tool calls) whose response content the user neither writes nor controls. Existing benchmarks under-measure the threat: most cover only a handful of integrations with the same attack payload replayed across runs, and open-source guards are trained on chat-style data rather than tool-response content. We introduce AGENTREDBENCH, a dynamic LLM-driven redteaming benchmark of 215 subtle underspecified-authorization scenarios across 24 enterprise integrations and five attack types. Across an eight-model panel (Anthropic, OpenAI, Google), no-guard attack success rate ranges from 32% to 81%. To keep the scenario set out of training corpora and preserve headline ASR meaning over time, we release the codebase, integration schemas, and AGENTREDGUARD model openly; the canonical scenarios are evaluated through a maintainer-mediated channel with immutable versioning. AGENTREDGUARD cuts online attack success by 75-77pp across three target model families (Haiku, GPT-5.4-mini, Gemini-3-flash) at 0.0% real-benign false-positive rate (0.2% on a synthetic-benign corpus), outperforming every open-source baseline with non-trivial detection (Llama Guard, PromptGuard 2, ProtectAI) on both axes. Cross-integration and cross-attacker holdouts (two independent attacker families held out from training) confirm the gain transfers beyond the training subset.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Hiskias Dingeto"
+    },
+    {
+      "@type": "Person",
+      "name": "William Leeney"
+    }
+  ],
+  "datePublished": "2026-06-01T13:34:24Z",
+  "dateModified": "2026-07-17T12:28:54Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.02240.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.02240.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.02240v3"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.02240"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.02240v3"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.02240"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +88,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AgentRedBench: Dynamic Redteaming and Integration-Aware Defense for LLM Agents over SaaS Integrations</h1>
+        <div class="meta">
+          Hiskias Dingeto, William Leeney
+          · 2606.02240
+          · <time datetime="2026-06-01">2026-06-01</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Indirect prompt injection in tool-use agents is a concrete production threat: LLM agents read from integrations (third-party services such as Gmail, Salesforce, or Jira accessed through tool calls) whose response content the user neither writes nor controls. Existing benchmarks under-measure the threat: most cover only a handful of integrations with the same attack payload replayed across runs, and open-source guards are trained on chat-style data rather than tool-response content. We introduce AGENTREDBENCH, a dynamic LLM-driven redteaming benchmark of 215 subtle underspecified-authorization scenarios across 24 enterprise integrations and five attack types. Across an eight-model panel (Anthropic, OpenAI, Google), no-guard attack success rate ranges from 32% to 81%. To keep the scenario set out of training corpora and preserve headline ASR meaning over time, we release the codebase, integration schemas, and AGENTREDGUARD model openly; the canonical scenarios are evaluated through a maintainer-mediated channel with immutable versioning. AGENTREDGUARD cuts online attack success by 75-77pp across three target model families (Haiku, GPT-5.4-mini, Gemini-3-flash) at 0.0% real-benign false-positive rate (0.2% on a synthetic-benign corpus), outperforming every open-source baseline with non-trivial detection (Llama Guard, PromptGuard 2, ProtectAI) on both axes. Cross-integration and cross-attacker holdouts (two independent attacker families held out from training) confirm the gain transfers beyond the training subset.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.02240v3" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.02240v3" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.02240" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.03303.html"><strong>LEAP: Supercharging LLMs for Formal Mathematics with Agentic Frameworks</strong></a> <span>2026-06-02</span></li>
+          <li><a href="2606.03271.html"><strong>Agentic Relationship Harm: Benchmarking and Gating Relational Manipulation in AI Agents</strong></a> <span>2026-06-02</span></li>
+          <li><a href="2606.02404.html"><strong>K-BrowseComp: A Web Browsing Agent Benchmark Grounded in Korean Contexts</strong></a> <span>2026-06-01</span></li>
+          <li><a href="2606.02380.html"><strong>SPADE-Bench: Evaluating Spontaneous Strategic Deception in Agents via Plan-Action Divergence</strong></a> <span>2026-06-01</span></li>
+          <li><a href="2606.01912.html"><strong>SMH-Bench: Benchmarking LLM Agents for Environment-Grounded Reasoning and Action in Smart Homes</strong></a> <span>2026-06-01</span></li>
+          <li><a href="2606.01815.html"><strong>CRAB-Bench: Evaluating LLM Agents under Complex Task Dependencies and Human-aligned User Simulation</strong></a> <span>2026-06-01</span></li>
+          <li><a href="2606.01552.html"><strong>RoleCDE:Benchmarking and Mitigating Role-Alignment Trade-offs in Role-Playing Agents</strong></a> <span>2026-06-01</span></li>
+          <li><a href="2606.01046.html"><strong>TravelEval: A Comprehensive Benchmarking Framework for Evaluating LLM-Powered Travel Planning Agents</strong></a> <span>2026-05-31</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

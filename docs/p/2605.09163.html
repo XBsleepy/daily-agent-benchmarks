@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>FORTIS: Benchmarking Over-Privilege in Agent Skills | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language model agents increasingly operate through an intermediate skill layer that mediates between user intent and concrete…" />
+    <meta name="keywords" content="General, Tool use, agent benchmark, LLM agent, arXiv, 2605.09163" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.09163.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="FORTIS: Benchmarking Over-Privilege in Agent Skills" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language model agents increasingly operate through an intermediate skill layer that mediates between user intent and concrete…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.09163.html" />
+    <meta property="article:published_time" content="2026-05-09T20:57:18Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="FORTIS: Benchmarking Over-Privilege in Agent Skills" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language model agents increasingly operate through an intermediate skill layer that mediates between user intent and concrete…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,92 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "FORTIS: Benchmarking Over-Privilege in Agent Skills",
+  "name": "FORTIS: Benchmarking Over-Privilege in Agent Skills",
+  "abstract": "Large language model agents increasingly operate through an intermediate skill layer that mediates between user intent and concrete task execution. This layer is widely treated as an organizational abstraction, but we argue it is also a privilege boundary that current models routinely exceed. We present \\textbf{FORTIS}, a benchmark that evaluates over-privilege in agent skills across two stages: whether a model selects the minimally sufficient skill from a large overlapping library, and whether it executes that skill without expanding into broader tools or actions than the skill permits. Across ten frontier models and three domains, we find that over-privileged behavior is the norm rather than the exception. Models consistently reach for higher-privilege skills and tools than the task requires, failing at both stages at rates that remain high even for the strongest available models. Failure is especially severe under the ordinary conditions of real user interaction: incomplete specification, convenience framing, and proximity to skill boundaries. None of these requires adversarial construction. The results indicate that the skill layer, far from containing agent behavior, is itself a primary source of privilege escalation in current systems.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Shawn Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Chenxiao Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Han Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Wei Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Ryan Rossi"
+    },
+    {
+      "@type": "Person",
+      "name": "Franck Dernoncourt"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiyang Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Philip Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Chaowei Xiao"
+    },
+    {
+      "@type": "Person",
+      "name": "Huan Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yue Zhao"
+    }
+  ],
+  "datePublished": "2026-05-09T20:57:18Z",
+  "dateModified": "2026-06-14T19:18:08Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.09163.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.09163.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.09163v3"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.09163"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.09163v3"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.09163"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +124,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>FORTIS: Benchmarking Over-Privilege in Agent Skills</h1>
+        <div class="meta">
+          Shawn Li, Chenxiao Yu, Han Wang, Wei Yang, Ryan Rossi, Franck Dernoncourt, Xiyang Hu, Philip Yu, Chaowei Xiao, Huan Zhang, Yue Zhao
+          · 2605.09163
+          · <time datetime="2026-05-09">2026-05-09</time>
+          · General · 7 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large language model agents increasingly operate through an intermediate skill layer that mediates between user intent and concrete task execution. This layer is widely treated as an organizational abstraction, but we argue it is also a privilege boundary that current models routinely exceed. We present \textbf{FORTIS}, a benchmark that evaluates over-privilege in agent skills across two stages: whether a model selects the minimally sufficient skill from a large overlapping library, and whether it executes that skill without expanding into broader tools or actions than the skill permits. Across ten frontier models and three domains, we find that over-privileged behavior is the norm rather than the exception. Models consistently reach for higher-privilege skills and tools than the task requires, failing at both stages at rates that remain high even for the strongest available models. Failure is especially severe under the ordinary conditions of real user interaction: incomplete specification, convenience framing, and proximity to skill boundaries. None of these requires adversarial construction. The results indicate that the skill layer, far from containing agent behavior, is itself a primary source of privilege escalation in current systems.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.09163v3" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.09163v3" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.09163" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.10365.html"><strong>Agent-ValueBench: A Comprehensive Benchmark for Evaluating Agent Values</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2606.14715.html"><strong>MiroBench: Benchmarking Realism in Agentic Simulation of Real-world Discussions</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.09698.html"><strong>Ambig-DS: A Benchmark for Task-Framing Ambiguity in Data-Science Agents</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.09252.html"><strong>LLM Agents Already Know When to Call Tools -- Even Without Reasoning</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.08904.html"><strong>OPT-BENCH: Evaluating the Iterative Self-Optimization of LLM Agents in Large-Scale Search Spaces</strong></a> <span>2026-05-09</span></li>
+          <li><a href="2605.08828.html"><strong>When Agents Overtrust Environmental Evidence: An Extensible Agentic Framework for Benchmarking Evidence-Grounding Defects in LLM Agents</strong></a> <span>2026-05-09</span></li>
+          <li><a href="2605.10966.html"><strong>MMTB: Evaluating Terminal Agents on Multimedia-File Tasks</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.07926.html"><strong>AgentEscapeBench: Evaluating Out-of-Domain Tool-Grounded Reasoning in LLM Agents</strong></a> <span>2026-05-08</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

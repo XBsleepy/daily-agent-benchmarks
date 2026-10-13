@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>DynGraphAgentBench: A Benchmark for Agentic Lifecycle Control in Dynamic Graph Anomaly Detection | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Dynamic graph anomaly detection requires repeated decisions as graph structure and class prevalence drift, yet detector benchmarks…" />
+    <meta name="keywords" content="General, Memory, agent benchmark, LLM agent, arXiv, 2609.33980" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.33980.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="DynGraphAgentBench: A Benchmark for Agentic Lifecycle Control in Dynamic Graph Anomaly Detection" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Dynamic graph anomaly detection requires repeated decisions as graph structure and class prevalence drift, yet detector benchmarks…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.33980.html" />
+    <meta property="article:published_time" content="2026-09-27T22:20:55Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="DynGraphAgentBench: A Benchmark for Agentic Lifecycle Control in Dynamic Graph Anomaly Detection" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Dynamic graph anomaly detection requires repeated decisions as graph structure and class prevalence drift, yet detector benchmarks…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,76 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "DynGraphAgentBench: A Benchmark for Agentic Lifecycle Control in Dynamic Graph Anomaly Detection",
+  "name": "DynGraphAgentBench: A Benchmark for Agentic Lifecycle Control in Dynamic Graph Anomaly Detection",
+  "abstract": "Dynamic graph anomaly detection requires repeated decisions as graph structure and class prevalence drift, yet detector benchmarks usually score a fixed pipeline after current labels are known. We introduce DynGraphAgentBench, an executable benchmark for agentic lifecycle control under delayed feedback. It comprises seven temporal graph datasets with node- and edge-level anomaly tasks, eleven selectable detectors, and eight chronological deployment windows per dataset. In each window, a controller sees only time-causal aggregate context, registered model cards, and its own matured history. It must choose a detector before current-window training or candidate scores exist. A sandboxed executor trains the chosen architecture on mature data, scores a hidden deployment window, and releases the outcome after a one-window delay. A deterministic verifier checks decision timing, leakage guards, legal actions, training scope, and persisted artifacts. We measure detection utility with average precision and capture at fixed review depth, and characterize adaptation through model switches and compute. Complete eight-window trajectories from two primary controllers and a no-memory reference on four datasets, together with three additional controllers on three datasets, expose useful, costly, and ineffective reactions to delayed evidence without granting an exhaustive current-window oracle.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yuwei Han"
+    },
+    {
+      "@type": "Person",
+      "name": "Lingwei Wei"
+    },
+    {
+      "@type": "Person",
+      "name": "Wooseong Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Liangjie Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Liancheng Fang"
+    },
+    {
+      "@type": "Person",
+      "name": "Huanhuan Ma"
+    },
+    {
+      "@type": "Person",
+      "name": "Philip S. Yu"
+    }
+  ],
+  "datePublished": "2026-09-27T22:20:55Z",
+  "dateModified": "2026-09-27T22:20:55Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.33980.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.33980.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.33980v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.33980"
+  },
+  "keywords": [
+    "General",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.33980v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.33980"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +108,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>DynGraphAgentBench: A Benchmark for Agentic Lifecycle Control in Dynamic Graph Anomaly Detection</h1>
+        <div class="meta">
+          Yuwei Han, Lingwei Wei, Wooseong Yang, Liangjie Huang, Liancheng Fang, Huanhuan Ma, Philip S. Yu
+          · 2609.33980
+          · <time datetime="2026-09-27">2026-09-27</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Dynamic graph anomaly detection requires repeated decisions as graph structure and class prevalence drift, yet detector benchmarks usually score a fixed pipeline after current labels are known. We introduce DynGraphAgentBench, an executable benchmark for agentic lifecycle control under delayed feedback. It comprises seven temporal graph datasets with node- and edge-level anomaly tasks, eleven selectable detectors, and eight chronological deployment windows per dataset. In each window, a controller sees only time-causal aggregate context, registered model cards, and its own matured history. It must choose a detector before current-window training or candidate scores exist. A sandboxed executor trains the chosen architecture on mature data, scores a hidden deployment window, and releases the outcome after a one-window delay. A deterministic verifier checks decision timing, leakage guards, legal actions, training scope, and persisted artifacts. We measure detection utility with average precision and capture at fixed review depth, and characterize adaptation through model switches and compute. Complete eight-window trajectories from two primary controllers and a no-memory reference on four datasets, together with three additional controllers on three datasets, expose useful, costly, and ineffective reactions to delayed evidence without granting an exhaustive current-window oracle.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.33980v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.33980v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.33980" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.34710.html"><strong>FromPitch2Board: Benchmarking LLM Agents in Long-Horizon Football Management</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34450.html"><strong>ReproBench: Benchmarking LLM Agents on Reproducing Vulnerability From Scratch</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.31468.html"><strong>PriceBench: A Diagnostic Benchmark for Price, Quality, and Brand Preferences in LLM Booking Agents</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.30325.html"><strong>ScopeBench: Do Agents Preserve Engagement Boundaries Under Goal Pressure?</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.33627.html"><strong>StoryEngine: A State-Grounded Agentic Framework for Video Storytelling</strong></a> <span>2026-09-27</span></li>
+          <li><a href="2609.33023.html"><strong>SRE-Marathon: A Continuous, Change-Driven Benchmark for Autonomous Site Reliability Agents</strong></a> <span>2026-09-26</span></li>
+          <li><a href="2609.32795.html"><strong>AgentHabit: Characterizing Distinct Behaviors of Agents on Everyday Tasks</strong></a> <span>2026-09-26</span></li>
+          <li><a href="2609.28850.html"><strong>RECLAIM: Can Agents Reproduce the Claims of Machine Learning Papers?</strong></a> <span>2026-09-25</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

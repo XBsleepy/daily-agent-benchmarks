@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Proof of Time: A Benchmark for Evaluating Scientific Idea Judgments | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language models are increasingly being used to assess and forecast research ideas, yet we lack scalable ways to evaluate the…" />
+    <meta name="keywords" content="Science &amp; research, Tool use, Science lab, agent benchmark, LLM agent, arXiv, 2601.07606" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.07606.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Proof of Time: A Benchmark for Evaluating Scientific Idea Judgments" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language models are increasingly being used to assess and forecast research ideas, yet we lack scalable ways to evaluate the…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.07606.html" />
+    <meta property="article:published_time" content="2026-01-12T14:55:37Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Proof of Time: A Benchmark for Evaluating Scientific Idea Judgments" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language models are increasingly being used to assess and forecast research ideas, yet we lack scalable ways to evaluate the…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,77 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Proof of Time: A Benchmark for Evaluating Scientific Idea Judgments",
+  "name": "Proof of Time: A Benchmark for Evaluating Scientific Idea Judgments",
+  "abstract": "Large language models are increasingly being used to assess and forecast research ideas, yet we lack scalable ways to evaluate the quality of models' judgments about these scientific ideas. Towards this goal, we introduce PoT, a semi-verifiable benchmarking framework that links scientific idea judgments to downstream signals that become observable later (e.g., citations and shifts in researchers' agendas). PoT freezes a pre-cutoff snapshot of evidence in an offline sandbox and asks models to forecast post-cutoff outcomes, enabling verifiable evaluation when ground truth arrives, scalable benchmarking without exhaustive expert annotation, and analysis of human-model misalignment against signals such as peer-review awards. In addition, PoT provides a controlled testbed for agent-based research judgments that evaluate scientific ideas, comparing tool-using agents to non-agent baselines under prompt ablations and budget scaling. Across 30,000+ instances spanning four benchmark domains, we find that, compared with non-agent baselines, higher interaction budgets generally improve agent performance, while the benefit of tool use is strongly task-dependent. By combining time-partitioned, future-verifiable targets with an offline sandbox for tool use, PoT supports scalable evaluation of agents on future-facing scientific idea judgment tasks.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Bingyang Ye"
+    },
+    {
+      "@type": "Person",
+      "name": "Shan Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Jingxuan Tu"
+    },
+    {
+      "@type": "Person",
+      "name": "Chen Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zidi Xiong"
+    },
+    {
+      "@type": "Person",
+      "name": "Samuel Schmidgall"
+    },
+    {
+      "@type": "Person",
+      "name": "Danielle S. Bitterman"
+    }
+  ],
+  "datePublished": "2026-01-12T14:55:37Z",
+  "dateModified": "2026-01-12T14:55:37Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.07606.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.07606.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2601.07606v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2601.07606"
+  },
+  "keywords": [
+    "Science & research",
+    "Tool use",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Science & research"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2601.07606v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2601.07606"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +109,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Proof of Time: A Benchmark for Evaluating Scientific Idea Judgments</h1>
+        <div class="meta">
+          Bingyang Ye, Shan Chen, Jingxuan Tu, Chen Liu, Zidi Xiong, Samuel Schmidgall, Danielle S. Bitterman
+          · 2601.07606
+          · <time datetime="2026-01-12">2026-01-12</time>
+          · Science &amp; research · 2 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large language models are increasingly being used to assess and forecast research ideas, yet we lack scalable ways to evaluate the quality of models&#x27; judgments about these scientific ideas. Towards this goal, we introduce PoT, a semi-verifiable benchmarking framework that links scientific idea judgments to downstream signals that become observable later (e.g., citations and shifts in researchers&#x27; agendas). PoT freezes a pre-cutoff snapshot of evidence in an offline sandbox and asks models to forecast post-cutoff outcomes, enabling verifiable evaluation when ground truth arrives, scalable benchmarking without exhaustive expert annotation, and analysis of human-model misalignment against signals such as peer-review awards. In addition, PoT provides a controlled testbed for agent-based research judgments that evaluate scientific ideas, comparing tool-using agents to non-agent baselines under prompt ablations and budget scaling. Across 30,000+ instances spanning four benchmark domains, we find that, compared with non-agent baselines, higher interaction budgets generally improve agent performance, while the benefit of tool use is strongly task-dependent. By combining time-partitioned, future-verifiable targets with an offline sandbox for tool use, PoT supports scalable evaluation of agents on future-facing scientific idea judgment tasks.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2601.07606v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2601.07606v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2601.07606" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Science &amp; research benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2603.28407.html"><strong>MiroEval: Benchmarking Multimodal Deep Research Agents in Process and Outcome</strong></a> <span>2026-03-30</span></li>
+          <li><a href="2602.12984.html"><strong>SciAgentGym: Benchmarking Multi-Step Scientific Tool-use in LLM Agents</strong></a> <span>2026-02-13</span></li>
+          <li><a href="2602.05975.html"><strong>SAGE: Benchmarking and Improving Retrieval for Deep Research Agents</strong></a> <span>2026-02-05</span></li>
+          <li><a href="2602.02905.html"><strong>FIRE-Bench: Evaluating AI Agents on the Rediscovery of Scientific Insights</strong></a> <span>2026-02-02</span></li>
+          <li><a href="2601.12346.html"><strong>MMDeepResearch-Bench: A Benchmark for Multimodal Deep Research Agents</strong></a> <span>2026-01-18</span></li>
+          <li><a href="2601.10504.html"><strong>DR-Arena: an Automated Evaluation Framework for Deep Research Agents</strong></a> <span>2026-01-15</span></li>
+          <li><a href="2601.08536.html"><strong>DeepResearch Bench II: Diagnosing Deep Research Agents via Rubrics from Expert Report</strong></a> <span>2026-01-13</span></li>
+          <li><a href="2601.06676.html"><strong>One Interaction Is Worth a Thousand Guesses: Benchmarking the Interactive Capabilities of Deep Research Agents</strong></a> <span>2026-01-10</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

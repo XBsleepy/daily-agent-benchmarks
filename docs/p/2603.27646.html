@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>PRBench: End-to-end Paper Reproduction in Physics Research | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: AI agents powered by large language models exhibit strong reasoning and problem-solving capabilities, enabling them to assist…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Planning / reasoning, Science lab, agent benchmark, LLM agent, arXiv, 2603.27646" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.27646.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="PRBench: End-to-end Paper Reproduction in Physics Research" />
+    <meta property="og:description" content="Daily Agent Benchmarks: AI agents powered by large language models exhibit strong reasoning and problem-solving capabilities, enabling them to assist…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.27646.html" />
+    <meta property="article:published_time" content="2026-03-29T11:44:57Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PRBench: End-to-end Paper Reproduction in Physics Research" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: AI agents powered by large language models exhibit strong reasoning and problem-solving capabilities, enabling them to assist…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,254 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "PRBench: End-to-end Paper Reproduction in Physics Research",
+  "name": "PRBench: End-to-end Paper Reproduction in Physics Research",
+  "abstract": "AI agents powered by large language models exhibit strong reasoning and problem-solving capabilities, enabling them to assist scientific research tasks such as formula derivation and code generation. However, whether these agents can reliably perform end-to-end reproduction from real scientific papers remains an open question. We introduce PRBench, a benchmark of 30 expert-curated tasks spanning 11 subfields of physics. Each task requires an agent to comprehend the methodology of a published paper, implement the corresponding algorithms from scratch, and produce quantitative results matching the original publication. Agents are provided only with the task instruction and paper content, and operate in a sandboxed execution environment. All tasks are contributed by domain experts from over 20 research groups at the School of Physics, Peking University, each grounded in a real published paper and validated through end-to-end reproduction with verified ground-truth results and detailed scoring rubrics. Using an agentified assessment pipeline, we evaluate a set of coding agents on PRBench and analyze their capabilities across key dimensions of scientific reasoning and execution. The best-performing agent, OpenAI Codex powered by GPT-5.3-Codex, achieves a mean overall score of 34%. All agents exhibit a zero end-to-end callback success rate, with particularly poor performance in data accuracy and code correctness. We further identify systematic failure modes, including errors in formula implementation, inability to debug numerical simulations, and fabrication of output data. Overall, PRBench provides a rigorous benchmark for evaluating progress toward autonomous scientific research.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Shi Qiu"
+    },
+    {
+      "@type": "Person",
+      "name": "Junyi Deng"
+    },
+    {
+      "@type": "Person",
+      "name": "Yiwei Deng"
+    },
+    {
+      "@type": "Person",
+      "name": "Haoran Dong"
+    },
+    {
+      "@type": "Person",
+      "name": "Jieyu Fu"
+    },
+    {
+      "@type": "Person",
+      "name": "Mao Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Zeyu Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhaolong Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Huiwen Zheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Leidong Bao"
+    },
+    {
+      "@type": "Person",
+      "name": "Anqi Lv"
+    },
+    {
+      "@type": "Person",
+      "name": "Zihan Mo"
+    },
+    {
+      "@type": "Person",
+      "name": "Yadi Niu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yiyang Peng"
+    },
+    {
+      "@type": "Person",
+      "name": "Yu Tian"
+    },
+    {
+      "@type": "Person",
+      "name": "Yili Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Ziyu Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zi-Yu Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiashen Wei"
+    },
+    {
+      "@type": "Person",
+      "name": "Liuheng Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Aoran Xue"
+    },
+    {
+      "@type": "Person",
+      "name": "Leyi Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Guanglu Yuan"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiarui Zhan"
+    },
+    {
+      "@type": "Person",
+      "name": "Jingjun Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zifan Zheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Pengfei Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Linrui Zhen"
+    },
+    {
+      "@type": "Person",
+      "name": "Kaiyang Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Qichang Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Ziheng Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Guo-En Nian"
+    },
+    {
+      "@type": "Person",
+      "name": "Yunwei Xiao"
+    },
+    {
+      "@type": "Person",
+      "name": "Qing-Hong Cao"
+    },
+    {
+      "@type": "Person",
+      "name": "Linjie Dai"
+    },
+    {
+      "@type": "Person",
+      "name": "Xu Feng"
+    },
+    {
+      "@type": "Person",
+      "name": "Peng Gao"
+    },
+    {
+      "@type": "Person",
+      "name": "Ying Gu"
+    },
+    {
+      "@type": "Person",
+      "name": "Chang Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jia Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Ming-xing Luo"
+    },
+    {
+      "@type": "Person",
+      "name": "Yan-Qing Ma"
+    },
+    {
+      "@type": "Person",
+      "name": "Liang-You Peng"
+    },
+    {
+      "@type": "Person",
+      "name": "Huichao Song"
+    },
+    {
+      "@type": "Person",
+      "name": "Shufeng Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chenxu Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Tao Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yi-Nan Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chengyin Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Pengwei Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Hua Xing Zhu"
+    }
+  ],
+  "datePublished": "2026-03-29T11:44:57Z",
+  "dateModified": "2026-03-29T11:44:57Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.27646.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.27646.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2603.27646v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2603.27646"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Planning / reasoning",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2603.27646v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2603.27646"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +286,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>PRBench: End-to-end Paper Reproduction in Physics Research</h1>
+        <div class="meta">
+          Shi Qiu, Junyi Deng, Yiwei Deng, Haoran Dong, Jieyu Fu, Mao Li, Zeyu Li, Zhaolong Zhang, Huiwen Zheng, Leidong Bao, Anqi Lv, Zihan Mo, Yadi Niu, Yiyang Peng, Yu Tian, Yili Wang, Ziyu Wang, Zi-Yu Wang, Jiashen Wei, Liuheng Wu, Aoran Xue, Leyi Yang, Guanglu Yuan, Xiarui Zhan, Jingjun Zhang, Zifan Zheng, Pengfei Liu, Linrui Zhen, Kaiyang Li, Qichang Li, Ziheng Zhou, Guo-En Nian, Yunwei Xiao, Qing-Hong Cao, Linjie Dai, Xu Feng, Peng Gao, Ying Gu, Chang Liu, Jia Liu, Ming-xing Luo, Yan-Qing Ma, Liang-You Peng, Huichao Song, Shufeng Wang, Chenxu Wang, Tao Wang, Yi-Nan Wang, Chengyin Wu, Pengwei Zhao, Hua Xing Zhu
+          · 2603.27646
+          · <time datetime="2026-03-29">2026-03-29</time>
+          · Coding / SWE · 5 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Planning / reasoning</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>AI agents powered by large language models exhibit strong reasoning and problem-solving capabilities, enabling them to assist scientific research tasks such as formula derivation and code generation. However, whether these agents can reliably perform end-to-end reproduction from real scientific papers remains an open question. We introduce PRBench, a benchmark of 30 expert-curated tasks spanning 11 subfields of physics. Each task requires an agent to comprehend the methodology of a published paper, implement the corresponding algorithms from scratch, and produce quantitative results matching the original publication. Agents are provided only with the task instruction and paper content, and operate in a sandboxed execution environment. All tasks are contributed by domain experts from over 20 research groups at the School of Physics, Peking University, each grounded in a real published paper and validated through end-to-end reproduction with verified ground-truth results and detailed scoring rubrics. Using an agentified assessment pipeline, we evaluate a set of coding agents on PRBench and analyze their capabilities across key dimensions of scientific reasoning and execution. The best-performing agent, OpenAI Codex powered by GPT-5.3-Codex, achieves a mean overall score of 34%. All agents exhibit a zero end-to-end callback success rate, with particularly poor performance in data accuracy and code correctness. We further identify systematic failure modes, including errors in formula implementation, inability to debug numerical simulations, and fabrication of output data. Overall, PRBench provides a rigorous benchmark for evaluating progress toward autonomous scientific research.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2603.27646v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2603.27646v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2603.27646" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2604.04979.html"><strong>Squeez: Task-Conditioned Tool-Output Pruning for Coding Agents</strong></a> <span>2026-04-04</span></li>
+          <li><a href="2604.02648.html"><strong>GBQA: A Game Benchmark for Evaluating LLMs as Quality Assurance Engineers</strong></a> <span>2026-04-03</span></li>
+          <li><a href="2604.01527.html"><strong>REAP: Automatic Curation of Coding Agent Benchmarks from Interactive Production Usage</strong></a> <span>2026-04-02</span></li>
+          <li><a href="2604.01438.html"><strong>ClawSafety: &quot;Safe&quot; LLMs, Unsafe Agents</strong></a> <span>2026-04-01</span></li>
+          <li><a href="2603.26648.html"><strong>Vision2Web: A Hierarchical Benchmark for Visual Website Development with Agent Verification</strong></a> <span>2026-03-27</span></li>
+          <li><a href="2603.26337.html"><strong>RACE-Bench: A Reasoning-Augmented Benchmark for Repository-Level Code Agents on Feature Addition</strong></a> <span>2026-03-27</span></li>
+          <li><a href="2603.24755.html"><strong>SlopCodeBench: Benchmarking How Coding Agents Degrade Over Long-Horizon Iterative Tasks</strong></a> <span>2026-03-25</span></li>
+          <li><a href="2603.23448.html"><strong>Code Review Agent Benchmark</strong></a> <span>2026-03-24</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

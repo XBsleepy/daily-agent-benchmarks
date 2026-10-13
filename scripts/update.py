@@ -17,12 +17,12 @@ from arxiv_client import fetch_by_ids, fetch_window  # noqa: E402
 from citations import attach_citations  # noqa: E402
 from classify import classify  # noqa: E402
 from config import ARCHIVE_START  # noqa: E402
+from site_pages import write_site  # noqa: E402
 from summarize import build_report  # noqa: E402
 
 ROOT = HERE.parent
 DATA_DIR = ROOT / "docs" / "data"
 INDEX_PATH = DATA_DIR / "index.json"
-PAPER_DIR = ROOT / "docs" / "p"
 
 
 def utc_today() -> datetime:
@@ -162,67 +162,7 @@ def write_payload(payload: dict[str, Any]) -> None:
         json.dumps(meta, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    write_paper_pages(payload["papers"])
-
-
-PAPER_PAGE = """<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
-    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../css/style.css" />
-    <script>window.PAPER_ID = {id_json}; window.PAPER_BASE = "../";</script>
-  </head>
-  <body>
-    <header class="masthead masthead--simple">
-      <div class="masthead__brand">
-        <a class="wordmark" href="../">
-          <span>
-            <span class="wordmark__kicker">arXiv daily</span>
-            <span class="wordmark__title">Agent Benchmarks</span>
-          </span>
-        </a>
-      </div>
-    </header>
-    <main id="main" class="paper-page"></main>
-    <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
-      </p>
-    </footer>
-    <script defer src="https://events.vercount.one/js"></script>
-    <script src="../js/i18n.js"></script>
-    <script src="../js/bm25.js"></script>
-    <script src="../js/paper.js"></script>
-  </body>
-</html>
-"""
-
-
-def write_paper_pages(papers: list[dict[str, Any]]) -> None:
-    PAPER_DIR.mkdir(parents=True, exist_ok=True)
-    keep = set()
-    for paper in papers:
-        pid = paper["id"]
-        keep.add(pid)
-        # arXiv ids can contain '/' for old papers; flatten to a filename.
-        safe = pid.replace("/", "_")
-        (PAPER_DIR / f"{safe}.html").write_text(
-            PAPER_PAGE.format(id_json=json.dumps(pid)),
-            encoding="utf-8",
-        )
-    for old in PAPER_DIR.glob("*.html"):
-        if old.stem not in {p.replace("/", "_") for p in keep}:
-            old.unlink()
+    write_site(payload, ROOT / "docs")
 
 
 def run(

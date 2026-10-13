@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>PriMobiBench: Characterizing Visual Privacy Leakage in VLM-Driven Mobile GUI Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Mobile GUI agents increasingly rely on Vision-Language Models (VLMs) to automate smartphone tasks by interpreting screenshot streams…" />
+    <meta name="keywords" content="GUI / computer use, GUI agents, Multimodal, Mobile agents, agent benchmark, LLM agent, arXiv, 2609.13873" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.13873.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="PriMobiBench: Characterizing Visual Privacy Leakage in VLM-Driven Mobile GUI Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Mobile GUI agents increasingly rely on Vision-Language Models (VLMs) to automate smartphone tasks by interpreting screenshot streams…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.13873.html" />
+    <meta property="article:published_time" content="2026-09-15T04:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PriMobiBench: Characterizing Visual Privacy Leakage in VLM-Driven Mobile GUI Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Mobile GUI agents increasingly rely on Vision-Language Models (VLMs) to automate smartphone tasks by interpreting screenshot streams…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,54 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "PriMobiBench: Characterizing Visual Privacy Leakage in VLM-Driven Mobile GUI Agents",
+  "name": "PriMobiBench: Characterizing Visual Privacy Leakage in VLM-Driven Mobile GUI Agents",
+  "abstract": "Mobile GUI agents increasingly rely on Vision-Language Models (VLMs) to automate smartphone tasks by interpreting screenshot streams. However, this design introduces serious and underexplored privacy risks, including direct leakage of sensitive on-screen information and unintended user profiling. The absence of standardized benchmarks makes it difficult to quantify these risks in realistic mobile agent workflows. To address this gap, we propose PriMobiBench, the first benchmark for systematically evaluating privacy leakage and visual profiling in screenshot-driven mobile agents. It provides a unified pipeline for data generation, agent trajectory construction, and multi-model evaluation. We also introduce MobiLeak, a dataset of execution traces from 16 apps, covering 25 privacy attributes with 2,960 embedded privacy instances. Our results reveal substantial risks: (1) VLMs can directly extract sensitive information with up to 82.5% success rate; (2) beyond explicit leakage, they can infer user profiles from aggregated visual evidence with approximately 70% success. We further propose a mitigation that masks privacy-sensitive but task-irrelevant UI elements before cloud processing, reducing profiling success by up to 58% with only approximately 8% performance loss. Overall, our work provides the first systematic benchmark for visual privacy risks in mobile GUI agents, demonstrates that both leakage and profiling are feasible at a highly concerning level, and offers a practical direction for mitigation.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Qihang Cen, Tianshuo Cong, Da Song, Xinlei He, Jiaxing Song, Ke Xu, Qi Li"
+    }
+  ],
+  "datePublished": "2026-09-15T04:00:00Z",
+  "dateModified": "2026-09-15T04:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.13873.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.13873.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.13873"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.13873"
+  },
+  "keywords": [
+    "GUI / computer use",
+    "GUI agents",
+    "Multimodal",
+    "Mobile agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "GUI / computer use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.13873"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.13873"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +86,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>PriMobiBench: Characterizing Visual Privacy Leakage in VLM-Driven Mobile GUI Agents</h1>
+        <div class="meta">
+          Qihang Cen, Tianshuo Cong, Da Song, Xinlei He, Jiaxing Song, Ke Xu, Qi Li
+          · 2609.13873
+          · <time datetime="2026-09-15">2026-09-15</time>
+          · GUI / computer use
+        </div>
+        <div class="themes"><span class="chip">GUI agents</span><span class="chip">Multimodal</span><span class="chip">Mobile agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Mobile GUI agents increasingly rely on Vision-Language Models (VLMs) to automate smartphone tasks by interpreting screenshot streams. However, this design introduces serious and underexplored privacy risks, including direct leakage of sensitive on-screen information and unintended user profiling. The absence of standardized benchmarks makes it difficult to quantify these risks in realistic mobile agent workflows. To address this gap, we propose PriMobiBench, the first benchmark for systematically evaluating privacy leakage and visual profiling in screenshot-driven mobile agents. It provides a unified pipeline for data generation, agent trajectory construction, and multi-model evaluation. We also introduce MobiLeak, a dataset of execution traces from 16 apps, covering 25 privacy attributes with 2,960 embedded privacy instances. Our results reveal substantial risks: (1) VLMs can directly extract sensitive information with up to 82.5% success rate; (2) beyond explicit leakage, they can infer user profiles from aggregated visual evidence with approximately 70% success. We further propose a mitigation that masks privacy-sensitive but task-irrelevant UI elements before cloud processing, reducing profiling success by up to 58% with only approximately 8% performance loss. Overall, our work provides the first systematic benchmark for visual privacy risks in mobile GUI agents, demonstrates that both leakage and profiling are feasible at a highly concerning level, and offers a practical direction for mitigation.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.13873" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.13873" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.13873" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More GUI / computer use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.31957.html"><strong>CaptchaArena: A Large-Scale, Fine-Grained Dataset for Training Computer-Use Agents on Interactive CAPTCHAs</strong></a> <span>2026-09-25</span></li>
+          <li><a href="2609.24890.html"><strong>OSWorld-Pro: Process-based Evaluation for Computer Use Agents</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.16251.html"><strong>CADWorld: Computer-Use Benchmark for Long-Horizon Computer-Aided Design</strong></a> <span>2026-09-16</span></li>
+          <li><a href="2609.14239.html"><strong>CoArena: Evaluating Computer-Use and Multi-Agent Systems in Real Time</strong></a> <span>2026-09-15</span></li>
+          <li><a href="2609.07712.html"><strong>APPSim-Bench: Bridging Real-world Apps and Reproducible Evaluation for Mobile GUI Agents</strong></a> <span>2026-09-07</span></li>
+          <li><a href="2609.07603.html"><strong>FinCUABuild: Can Agents Build Reliable Benchmarks for Dynamic Financial Computer Use?</strong></a> <span>2026-09-07</span></li>
+          <li><a href="2609.03438.html"><strong>Do GUI Agents Know When Not to Act? Enabling Conflict-Aware Termination for Multimodal GUI Agents</strong></a> <span>2026-09-03</span></li>
+          <li><a href="2609.00048.html"><strong>GUI-CC: Benchmarking Contextual Consistency of GUI World Models as Agent Environments</strong></a> <span>2026-08-30</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

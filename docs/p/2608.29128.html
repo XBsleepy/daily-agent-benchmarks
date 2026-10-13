@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>APIFlow-Bench: Measuring Whether Agents Survive Long, Dependent API Workflows | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Tool-using agents are commonly evaluated by a single bit: whether an end-to-end workflow completed. This metric fails to distinguish…" />
+    <meta name="keywords" content="Tool use, agent benchmark, LLM agent, arXiv, 2608.29128" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.29128.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="APIFlow-Bench: Measuring Whether Agents Survive Long, Dependent API Workflows" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Tool-using agents are commonly evaluated by a single bit: whether an end-to-end workflow completed. This metric fails to distinguish…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.29128.html" />
+    <meta property="article:published_time" content="2026-08-29T08:12:11Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="APIFlow-Bench: Measuring Whether Agents Survive Long, Dependent API Workflows" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Tool-using agents are commonly evaluated by a single bit: whether an end-to-end workflow completed. This metric fails to distinguish…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,67 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "APIFlow-Bench: Measuring Whether Agents Survive Long, Dependent API Workflows",
+  "name": "APIFlow-Bench: Measuring Whether Agents Survive Long, Dependent API Workflows",
+  "abstract": "Tool-using agents are commonly evaluated by a single bit: whether an end-to-end workflow completed. This metric fails to distinguish failures that matter in production, such as expired credentials, malformed payloads, or correct execution followed by incorrect final delivery. We introduce APIFlow-Bench, a fully auditable benchmark for long-horizon, dependent REST-API workflows that decomposes performance into seven engineering capabilities and requires agents to produce answers supported by the actual call path. We generate synthetic API worlds forward, subtask by subtask; each subtask is admitted only after a zero-LLM self-test triad verifies its grader and an oracle establishes solvability, and an adversarial audit identified and fixed six grader exploits. Grading is deterministic and provenance-sensitive: a state check traces a mock-minted canary through the API data flow to the response the answer must originate from, and a typed answer card is verified field by field. We release all answer keys and 44,362 unredacted execution transcripts. Across 19 frontier and open-weight models under one neutral scaffold, we find: (1) longer dependency chains degrade success, from 93% on individual subtasks to 74% on clean 20-subtask chains and 61% when including the 8% of chain trials that a model-consensus screen flags as passed by no model; (2) reliability separates models more than best-case capability, with best-of-five spanning seven points but all-five-of-five reliability spanning 44 points; (3) the independent-error account of compounding failure does not fit the data: pass rates on 20-subtask chains are 33 percentage points above the product of subtask-level rates, and on the clean slice 77% of failing runs reached the correct final state and failed only at delivery.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Zelin Wan"
+    },
+    {
+      "@type": "Person",
+      "name": "Arash Nourian"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaoxiao Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Nihar Nandan"
+    },
+    {
+      "@type": "Person",
+      "name": "Kamalakannan Nandagopal"
+    }
+  ],
+  "datePublished": "2026-08-29T08:12:11Z",
+  "dateModified": "2026-08-29T08:12:11Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.29128.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.29128.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.29128v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.29128"
+  },
+  "keywords": [
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.29128v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.29128"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +99,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>APIFlow-Bench: Measuring Whether Agents Survive Long, Dependent API Workflows</h1>
+        <div class="meta">
+          Zelin Wan, Arash Nourian, Xiaoxiao Li, Nihar Nandan, Kamalakannan Nandagopal
+          · 2608.29128
+          · <time datetime="2026-08-29">2026-08-29</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Tool-using agents are commonly evaluated by a single bit: whether an end-to-end workflow completed. This metric fails to distinguish failures that matter in production, such as expired credentials, malformed payloads, or correct execution followed by incorrect final delivery. We introduce APIFlow-Bench, a fully auditable benchmark for long-horizon, dependent REST-API workflows that decomposes performance into seven engineering capabilities and requires agents to produce answers supported by the actual call path. We generate synthetic API worlds forward, subtask by subtask; each subtask is admitted only after a zero-LLM self-test triad verifies its grader and an oracle establishes solvability, and an adversarial audit identified and fixed six grader exploits. Grading is deterministic and provenance-sensitive: a state check traces a mock-minted canary through the API data flow to the response the answer must originate from, and a typed answer card is verified field by field. We release all answer keys and 44,362 unredacted execution transcripts. Across 19 frontier and open-weight models under one neutral scaffold, we find: (1) longer dependency chains degrade success, from 93% on individual subtasks to 74% on clean 20-subtask chains and 61% when including the 8% of chain trials that a model-consensus screen flags as passed by no model; (2) reliability separates models more than best-case capability, with best-of-five spanning seven points but all-five-of-five reliability spanning 44 points; (3) the independent-error account of compounding failure does not fit the data: pass rates on 20-subtask chains are 33 percentage points above the product of subtask-level rates, and on the clean slice 77% of failing runs reached the correct final state and failed only at delivery.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.29128v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.29128v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.29128" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.03588.html"><strong>KC-Bench: A Dynamic Interactive Benchmark for Evaluating Knowledge Conflicts in LLM Agents</strong></a> <span>2026-09-03</span></li>
+          <li><a href="2609.02459.html"><strong>CivBench: A Long-Horizon Benchmark for Tool-Mediated Agents in Civilization VI</strong></a> <span>2026-09-02</span></li>
+          <li><a href="2609.01437.html"><strong>HarnessDev: Can LLMs Create and Evolve Their Own Agent Harness?</strong></a> <span>2026-09-01</span></li>
+          <li><a href="2608.29397.html"><strong>AlgoWorlds: Benchmarking Tool Use for Global Optimization in Algorithmic Worlds</strong></a> <span>2026-08-29</span></li>
+          <li><a href="2608.27334.html"><strong>BTS-AgentBench: A Deterministic, Replayable Pipeline from Read-Only Telemetry Logs to Agent Benchmarks</strong></a> <span>2026-08-27</span></li>
+          <li><a href="2608.26867.html"><strong>BekchiAI: Measuring, Observing, and Controlling LLM Agents in One Click</strong></a> <span>2026-08-27</span></li>
+          <li><a href="2608.26623.html"><strong>AgentJudgeBench: A Multi-Difficulty Benchmark for Evaluating LLM Judges on Agentic Tool-Calling</strong></a> <span>2026-08-27</span></li>
+          <li><a href="2608.26199.html"><strong>Benchmarking AI Agents for Hardware Design Automation via MCP Tool Calling</strong></a> <span>2026-08-25</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

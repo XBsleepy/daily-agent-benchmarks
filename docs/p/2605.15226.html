@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Is Agentic AI Ready for Real-World Hardware Engineering? A Deep Dive with Phoenix-bench | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: We ask whether agentic AI systems built for software engineering transfer to realistic hardware engineering. Existing hardware LLM…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2605.15226" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.15226.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Is Agentic AI Ready for Real-World Hardware Engineering? A Deep Dive with Phoenix-bench" />
+    <meta property="og:description" content="Daily Agent Benchmarks: We ask whether agentic AI systems built for software engineering transfer to realistic hardware engineering. Existing hardware LLM…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.15226.html" />
+    <meta property="article:published_time" content="2026-05-13T14:14:54Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Is Agentic AI Ready for Real-World Hardware Engineering? A Deep Dive with Phoenix-bench" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: We ask whether agentic AI systems built for software engineering transfer to realistic hardware engineering. Existing hardware LLM…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,68 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Is Agentic AI Ready for Real-World Hardware Engineering? A Deep Dive with Phoenix-bench",
+  "name": "Is Agentic AI Ready for Real-World Hardware Engineering? A Deep Dive with Phoenix-bench",
+  "abstract": "We ask whether agentic AI systems built for software engineering transfer to realistic hardware engineering. Existing hardware LLM benchmarks isolate sub-tasks but none jointly requires repository navigation, hierarchy-aware localization, Electronic Design Automation (EDA) executable verification, and maintenance-style patching. We introduce \\textbf{Phoenix-bench}, a synchronized corpus of 511 verified Verilator instances from 114 GitHub repositories, each shipped with the developer patch, design-flow labels, fail-to-pass and pass-to-pass testbenches, and a Docker-pinned EDA environment so resolved-rate differences reflect agent behavior rather than toolchain availability. Using Phoenix-bench we run a uniform evaluation of four commercial agents and eight open-source agentic structures across four LLM backbones, plus two diagnostic interventions (file-level oracle localization and one round of testbench-log feedback). Three findings emerge. (i)~Software and hardware are fundamentally different engineering tasks: the same agent loses 37\\% to 58\\% from SWE-bench Verified to Phoenix-bench because hardware bugs propagate across parallel instantiated modules through signal flow rather than along a software-style call graph, and software-tuned agents stop at the symptom file instead of tracing back through the instantiation chain. (ii)~Failures concentrate on design control-flow / finite state machine (FSM) bugs, verification testbench bugs, and hard cases that demand cross-hierarchy signal-flow tracking and coordinated multi-file edits. (iii)~Localization granularity matters far more than localization itself: a perfect file-level oracle yields only $+1.4$\\% because the agent then breaks files that did not need editing, while a single round of test case feedback lifts resolved rate by $42$\\% to $45$\\% because the test case tells \\emph{where} the bug is and \\emph{what} the fix has to look like.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Qingyun Zou"
+    },
+    {
+      "@type": "Person",
+      "name": "Feng Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Hongshi Tan"
+    },
+    {
+      "@type": "Person",
+      "name": "Bingsheng He"
+    },
+    {
+      "@type": "Person",
+      "name": "WengFai Wong"
+    }
+  ],
+  "datePublished": "2026-05-13T14:14:54Z",
+  "dateModified": "2026-05-13T14:14:54Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.15226.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.15226.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.15226v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.15226"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.15226v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.15226"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +100,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Is Agentic AI Ready for Real-World Hardware Engineering? A Deep Dive with Phoenix-bench</h1>
+        <div class="meta">
+          Qingyun Zou, Feng Yu, Hongshi Tan, Bingsheng He, WengFai Wong
+          · 2605.15226
+          · <time datetime="2026-05-13">2026-05-13</time>
+          · Coding / SWE · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>We ask whether agentic AI systems built for software engineering transfer to realistic hardware engineering. Existing hardware LLM benchmarks isolate sub-tasks but none jointly requires repository navigation, hierarchy-aware localization, Electronic Design Automation (EDA) executable verification, and maintenance-style patching. We introduce \textbf{Phoenix-bench}, a synchronized corpus of 511 verified Verilator instances from 114 GitHub repositories, each shipped with the developer patch, design-flow labels, fail-to-pass and pass-to-pass testbenches, and a Docker-pinned EDA environment so resolved-rate differences reflect agent behavior rather than toolchain availability. Using Phoenix-bench we run a uniform evaluation of four commercial agents and eight open-source agentic structures across four LLM backbones, plus two diagnostic interventions (file-level oracle localization and one round of testbench-log feedback). Three findings emerge. (i)~Software and hardware are fundamentally different engineering tasks: the same agent loses 37\% to 58\% from SWE-bench Verified to Phoenix-bench because hardware bugs propagate across parallel instantiated modules through signal flow rather than along a software-style call graph, and software-tuned agents stop at the symptom file instead of tracing back through the instantiation chain. (ii)~Failures concentrate on design control-flow / finite state machine (FSM) bugs, verification testbench bugs, and hard cases that demand cross-hierarchy signal-flow tracking and coordinated multi-file edits. (iii)~Localization granularity matters far more than localization itself: a perfect file-level oracle yields only $+1.4$\% because the agent then breaks files that did not need editing, while a single round of test case feedback lifts resolved rate by $42$\% to $45$\% because the test case tells \emph{where} the bug is and \emph{what} the fix has to look like.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.15226v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.15226v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.15226" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.15669.html"><strong>Rule2DRC: Benchmarking LLM Agents for DRC Script Synthesis with Execution-Guided Test Generation</strong></a> <span>2026-05-15</span></li>
+          <li><a href="2605.18859.html"><strong>TwinRouterBench: Fast Static and Live Dynamic Evaluation for Realistic Agentic LLM Routing</strong></a> <span>2026-05-14</span></li>
+          <li><a href="2605.14415.html"><strong>SWE-Chain: Benchmarking Coding Agents on Chained Release-Level Package Upgrades</strong></a> <span>2026-05-14</span></li>
+          <li><a href="2606.20585.html"><strong>Turning Intent into Specifications: A Benchmark and an Interactive User-Assistant Agent</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.13950.html"><strong>Collider-Bench: Benchmarking AI Agents with Particle Physics Analysis Reproduction</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.13139.html"><strong>SWE-Cycle: Benchmarking Code Agents across the Complete Issue Resolution Cycle</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.12808.html"><strong>Neurodata Without Boredom: Benchmarking Agentic AI for Data Reuse</strong></a> <span>2026-05-12</span></li>
+          <li><a href="2605.12673.html"><strong>Do Androids Dream of Breaking the Game? Systematically Auditing AI Agent Benchmarks with BenchJack</strong></a> <span>2026-05-12</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

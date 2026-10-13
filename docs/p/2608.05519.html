@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>EcoAgent-Bench: Evaluating Economic Decision-Making in Budget-Constrained LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Agent benchmarks usually measure task completion and treat resource use as an auxiliary statistic. In deployment, however, the choice…" />
+    <meta name="keywords" content="General, Tool use, agent benchmark, LLM agent, arXiv, 2608.05519" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.05519.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="EcoAgent-Bench: Evaluating Economic Decision-Making in Budget-Constrained LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Agent benchmarks usually measure task completion and treat resource use as an auxiliary statistic. In deployment, however, the choice…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.05519.html" />
+    <meta property="article:published_time" content="2026-08-06T01:47:47Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="EcoAgent-Bench: Evaluating Economic Decision-Making in Budget-Constrained LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Agent benchmarks usually measure task completion and treat resource use as an auxiliary statistic. In deployment, however, the choice…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,64 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "EcoAgent-Bench: Evaluating Economic Decision-Making in Budget-Constrained LLM Agents",
+  "name": "EcoAgent-Bench: Evaluating Economic Decision-Making in Budget-Constrained LLM Agents",
+  "abstract": "Agent benchmarks usually measure task completion and treat resource use as an auxiliary statistic. In deployment, however, the choice among a local lookup, broad search, composite research tool, stronger model, or human escalation is part of the task itself. We introduce EcoAgent-Bench, in which every task specifies priced actions and an explicit budget. Its 304 real-derived tasks span five families adapted from GAIA, HotpotQA, and MuSiQue, and test four decisions: avoiding unnecessary escalation, escalating when local evidence is insufficient, selecting a model tier, and stopping on unsupported premises. We evaluate seven LLM agents in tool-API and workspace-CLI settings, together with four oracle scripted controls. Micro-averaged accuracy rewards one-sided policies: always-escalate controls achieve high micro success while failing save-oriented tasks. We therefore also report an economic-consistency score (the worse of accuracy on upgrade-oriented and save-oriented family groups) which exposes this failure. Tool-API agents attain only 3.9-24.0% micro strict success (at most 7.3% economic consistency), often either stopping before warranted escalation or overspending on cheap tasks. A threshold-crossing budget sweep changes GPT-5.4's escalation rate from 0% to only 3%. These results show that completion under a budget and economical action selection are distinct properties. We release the task bundle, transformation pipeline, frozen evaluation environments, and integrity-bound result artifacts needed to study both.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jie Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Ming Gong"
+    },
+    {
+      "@type": "Person",
+      "name": "Feixiang Cheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Qinqin Zhao"
+    }
+  ],
+  "datePublished": "2026-08-06T01:47:47Z",
+  "dateModified": "2026-08-06T01:47:47Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.05519.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.05519.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.05519v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.05519"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.05519v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.05519"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +96,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>EcoAgent-Bench: Evaluating Economic Decision-Making in Budget-Constrained LLM Agents</h1>
+        <div class="meta">
+          Jie Wu, Ming Gong, Feixiang Cheng, Qinqin Zhao
+          · 2608.05519
+          · <time datetime="2026-08-06">2026-08-06</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Agent benchmarks usually measure task completion and treat resource use as an auxiliary statistic. In deployment, however, the choice among a local lookup, broad search, composite research tool, stronger model, or human escalation is part of the task itself. We introduce EcoAgent-Bench, in which every task specifies priced actions and an explicit budget. Its 304 real-derived tasks span five families adapted from GAIA, HotpotQA, and MuSiQue, and test four decisions: avoiding unnecessary escalation, escalating when local evidence is insufficient, selecting a model tier, and stopping on unsupported premises. We evaluate seven LLM agents in tool-API and workspace-CLI settings, together with four oracle scripted controls. Micro-averaged accuracy rewards one-sided policies: always-escalate controls achieve high micro success while failing save-oriented tasks. We therefore also report an economic-consistency score (the worse of accuracy on upgrade-oriented and save-oriented family groups) which exposes this failure. Tool-API agents attain only 3.9-24.0% micro strict success (at most 7.3% economic consistency), often either stopping before warranted escalation or overspending on cheap tasks. A threshold-crossing budget sweep changes GPT-5.4&#x27;s escalation rate from 0% to only 3%. These results show that completion under a budget and economical action selection are distinct properties. We release the task bundle, transformation pipeline, frozen evaluation environments, and integrity-bound result artifacts needed to study both.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.05519v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.05519v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.05519" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.06909.html"><strong>Long-Horizon Agent Trajectory Attribution: A Unified Benchmark and Fine-Grained Annotation Framework</strong></a> <span>2026-08-07</span></li>
+          <li><a href="2608.06329.html"><strong>Benchmarking the Benchmarks: Evaluating Benchmarks for Conversational Agents</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2608.06027.html"><strong>FormBharo: Designing and Evaluating a Voice Agent for Conversational Form Filling in Rural India</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2608.05573.html"><strong>SkillTV-Bench: Benchmarking How Well Judges Perform on Skill-Augmented Agentic Execution</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2608.05212.html"><strong>SearchAuditor: Auditing and Attributing Failures in Long-Horizon Search Agents</strong></a> <span>2026-08-05</span></li>
+          <li><a href="2608.04828.html"><strong>Skill-Use: Can LLMs Actually Use Skills in Agentic Harnesses?</strong></a> <span>2026-08-05</span></li>
+          <li><a href="2608.04746.html"><strong>Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems</strong></a> <span>2026-08-05</span></li>
+          <li><a href="2608.14680.html"><strong>When Agentic Executions Fail: Detecting and Localizing Runtime Faults from Telemetry</strong></a> <span>2026-08-04</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Governance at the Boundary: How Agent Decomposition Degrades Policy Compliance | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Existing agent benchmarks ask whether the agent finished the task. We ask whether it finished it within policy. We introduce…" />
+    <meta name="keywords" content="General, Safety, agent benchmark, LLM agent, arXiv, 2608.16055" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.16055.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Governance at the Boundary: How Agent Decomposition Degrades Policy Compliance" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Existing agent benchmarks ask whether the agent finished the task. We ask whether it finished it within policy. We introduce…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.16055.html" />
+    <meta property="article:published_time" content="2026-08-17T03:31:59Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Governance at the Boundary: How Agent Decomposition Degrades Policy Compliance" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Existing agent benchmarks ask whether the agent finished the task. We ask whether it finished it within policy. We introduce…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,56 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Governance at the Boundary: How Agent Decomposition Degrades Policy Compliance",
+  "name": "Governance at the Boundary: How Agent Decomposition Degrades Policy Compliance",
+  "abstract": "Existing agent benchmarks ask whether the agent finished the task. We ask whether it finished it within policy. We introduce Fiducia-bench, a benchmark for the governability of financial agents---whether they escalate when obligated, abstain when required, and leave an auditable trail---and use it to study a question no prior benchmark addresses: does decomposing an agent into components degrade its governance? It does, and the mechanism is specific. Policy-relevant facts discovered by one component are attenuated at the handoff boundary before reaching the component that must act on them. In a 626-episode experiment across 100 KYC/AML task variants, two models, and three architectures, a 32B open-weights model attenuated 0% of discovered facts under a single-loop baseline, 56% under a fixed pipeline, and 85% under an orchestrator-subagent architecture (all at constraint distance 2). A stronger model (gpt-4.1-mini) attenuated 3-6% under the same conditions, suggesting the governance cost of decomposition is partly a function of model capability. Critically, the same mechanism produces both under-escalation and over-escalation, depending on whether the dropped fact was a risk signal or an exculpating one. The benchmark, all tasks, and the verification harness are open-source",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Bowen Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Guojun Wang"
+    }
+  ],
+  "datePublished": "2026-08-17T03:31:59Z",
+  "dateModified": "2026-08-17T03:31:59Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.16055.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.16055.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.16055v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.16055"
+  },
+  "keywords": [
+    "General",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.16055v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.16055"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +88,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Governance at the Boundary: How Agent Decomposition Degrades Policy Compliance</h1>
+        <div class="meta">
+          Bowen Li, Guojun Wang
+          · 2608.16055
+          · <time datetime="2026-08-17">2026-08-17</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Existing agent benchmarks ask whether the agent finished the task. We ask whether it finished it within policy. We introduce Fiducia-bench, a benchmark for the governability of financial agents---whether they escalate when obligated, abstain when required, and leave an auditable trail---and use it to study a question no prior benchmark addresses: does decomposing an agent into components degrade its governance? It does, and the mechanism is specific. Policy-relevant facts discovered by one component are attenuated at the handoff boundary before reaching the component that must act on them. In a 626-episode experiment across 100 KYC/AML task variants, two models, and three architectures, a 32B open-weights model attenuated 0% of discovered facts under a single-loop baseline, 56% under a fixed pipeline, and 85% under an orchestrator-subagent architecture (all at constraint distance 2). A stronger model (gpt-4.1-mini) attenuated 3-6% under the same conditions, suggesting the governance cost of decomposition is partly a function of model capability. Critically, the same mechanism produces both under-escalation and over-escalation, depending on whether the dropped fact was a risk signal or an exculpating one. The benchmark, all tasks, and the verification harness are open-source</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.16055v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.16055v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.16055" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.18423.html"><strong>FM-Bench: A Benchmark for Long-Horizon Management with Competing Agents</strong></a> <span>2026-08-19</span></li>
+          <li><a href="2608.17889.html"><strong>VisDocAgentBench: Benchmarking Agents for Visually Rich Document Retrieval</strong></a> <span>2026-08-18</span></li>
+          <li><a href="2608.16637.html"><strong>PDDLCoder: Agentic PDDL Generation for LLM-Assisted Symbolic Planning</strong></a> <span>2026-08-17</span></li>
+          <li><a href="2608.16349.html"><strong>AeroCopilotBench: A Two-Tier Benchmark for Evaluating LLM Agents as Aviation Copilots in an Interactive Virtual Cockpit Environment</strong></a> <span>2026-08-17</span></li>
+          <li><a href="2608.15654.html"><strong>When Stories Evolve: Benchmarking LLM Storytelling Across Agent Architectures in Open-Ended World Simulations</strong></a> <span>2026-08-16</span></li>
+          <li><a href="2608.15242.html"><strong>LongRCA Bench: Diagnosing Responsible Roles and Root Causes in Long-Horizon Agent Failures</strong></a> <span>2026-08-15</span></li>
+          <li><a href="2608.15127.html"><strong>From LLM Inference to Agentic Workloads: Characterization and Implications for Serving Systems</strong></a> <span>2026-08-15</span></li>
+          <li><a href="2608.14380.html"><strong>AgentRewind: Recoverable Execution for Long-Horizon LLM Agents</strong></a> <span>2026-08-14</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

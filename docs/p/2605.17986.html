@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>LivePI: More Realistic Benchmarking of Agents Against Indirect Prompt Injection | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: AI agents such as OpenClaw are increasingly deployed in local workflows with access to external tools. This creates indirect…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Tool use, Safety, agent benchmark, LLM agent, arXiv, 2605.17986" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.17986.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="LivePI: More Realistic Benchmarking of Agents Against Indirect Prompt Injection" />
+    <meta property="og:description" content="Daily Agent Benchmarks: AI agents such as OpenClaw are increasingly deployed in local workflows with access to external tools. This creates indirect…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.17986.html" />
+    <meta property="article:published_time" content="2026-05-18T07:41:35Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="LivePI: More Realistic Benchmarking of Agents Against Indirect Prompt Injection" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: AI agents such as OpenClaw are increasingly deployed in local workflows with access to external tools. This creates indirect…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,62 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "LivePI: More Realistic Benchmarking of Agents Against Indirect Prompt Injection",
+  "name": "LivePI: More Realistic Benchmarking of Agents Against Indirect Prompt Injection",
+  "abstract": "AI agents such as OpenClaw are increasingly deployed in local workflows with access to external tools. This creates indirect prompt-injection (IPI) risk: an agent may execute harmful instructions embedded in untrusted inputs such as email, downloaded files, webpages, repositories, or group-chat messages. Existing evaluations are often small, purely simulated, or focused on a narrow set of channels. We introduce LivePI (Live Prompt Injection), a structured benchmark for IPI risk in a production-like but test-controlled environment. LivePI covers seven input surfaces, twelve attack/rendering families, and five malicious goals, including protected-information exfiltration, unauthorized security-control changes, unsafe code retrieval or execution, inbox-summary exfiltration, and cryptocurrency transfer. We run LivePI on a real virtual machine with live but test-controlled email, chat, web, local-file, repository, and wallet interfaces. Across GPT-5.3-Codex, Claude Opus 4.6, Gemini 3.1 Pro, Kimi K2.5, and GLM-5, total attack success rates range from 10.7% to 29.6%. Group-chat injection is uniformly successful across the evaluated backbones in our deployment, and repository-link attacks produce high-severity failures despite a small denominator. We also evaluate a two-layer defense consisting of prompt-level filtering and pre-execution tool-call authorization. In the GPT-5.3-Codex setting, the defense intercepts all tested malicious-goal completions in LivePI before execution while preserving benign utility on PinchBench-derived workloads.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Lei Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Abhay Bhaskar"
+    },
+    {
+      "@type": "Person",
+      "name": "Edgar Dobriban"
+    }
+  ],
+  "datePublished": "2026-05-18T07:41:35Z",
+  "dateModified": "2026-06-17T05:08:04Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.17986.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.17986.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.17986v3"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.17986"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Tool use",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.17986v3"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.17986"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +94,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>LivePI: More Realistic Benchmarking of Agents Against Indirect Prompt Injection</h1>
+        <div class="meta">
+          Lei Zhao, Abhay Bhaskar, Edgar Dobriban
+          · 2605.17986
+          · <time datetime="2026-05-18">2026-05-18</time>
+          · Coding / SWE · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>AI agents such as OpenClaw are increasingly deployed in local workflows with access to external tools. This creates indirect prompt-injection (IPI) risk: an agent may execute harmful instructions embedded in untrusted inputs such as email, downloaded files, webpages, repositories, or group-chat messages. Existing evaluations are often small, purely simulated, or focused on a narrow set of channels. We introduce LivePI (Live Prompt Injection), a structured benchmark for IPI risk in a production-like but test-controlled environment. LivePI covers seven input surfaces, twelve attack/rendering families, and five malicious goals, including protected-information exfiltration, unauthorized security-control changes, unsafe code retrieval or execution, inbox-summary exfiltration, and cryptocurrency transfer. We run LivePI on a real virtual machine with live but test-controlled email, chat, web, local-file, repository, and wallet interfaces. Across GPT-5.3-Codex, Claude Opus 4.6, Gemini 3.1 Pro, Kimi K2.5, and GLM-5, total attack success rates range from 10.7% to 29.6%. Group-chat injection is uniformly successful across the evaluated backbones in our deployment, and repository-link attacks produce high-severity failures despite a small denominator. We also evaluate a two-layer defense consisting of prompt-level filtering and pre-execution tool-call authorization. In the GPT-5.3-Codex setting, the defense intercepts all tested malicious-goal completions in LivePI before execution while preserving benign utility on PinchBench-derived workloads.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.17986v3" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.17986v3" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.17986" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.19399.html"><strong>HSCO-Bench: An Agent-Driven End-to-End Hardware-Software Co-design Benchmark for Systems-on-Chip</strong></a> <span>2026-05-19</span></li>
+          <li><a href="2605.20251.html"><strong>ProcCtrlBench: Evaluating Process-Level Defects and Control Preservation in LLM Coding Agents</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.18693.html"><strong>SkillGenBench: Benchmarking Skill Generation Pipelines for LLM Agents</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.18583.html"><strong>Overeager Coding Agents: Measuring Out-of-Scope Actions on Benign Tasks</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.17937.html"><strong>BacktestBench: Benchmarking Large Language Models for Automated Quantitative Strategy Backtesting</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.17637.html"><strong>WebGameBench: Requirement-to-Application Evaluation for Coding Agents via Browser-Native Games</strong></a> <span>2026-05-17</span></li>
+          <li><a href="2605.17526.html"><strong>SaaSBench: Exploring the Boundaries of Coding Agents in Long-Horizon Enterprise SaaS Engineering</strong></a> <span>2026-05-17</span></li>
+          <li><a href="2605.17046.html"><strong>1GC-7RC: One Graphic Card -- Seven Research Challenges! How Good Are AI Agents at Doing Your Job?</strong></a> <span>2026-05-16</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

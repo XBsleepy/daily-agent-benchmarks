@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>PainterBench: A Figural Divergent-Thinking Benchmark for Tool-Using Language Models | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Figural divergent thinking is the ability to develop a given shape fragment into an original drawing. In humans, this ability is…" />
+    <meta name="keywords" content="Multimodal, Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2609.34195" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.34195.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="PainterBench: A Figural Divergent-Thinking Benchmark for Tool-Using Language Models" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Figural divergent thinking is the ability to develop a given shape fragment into an original drawing. In humans, this ability is…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.34195.html" />
+    <meta property="article:published_time" content="2026-09-28T03:08:43Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PainterBench: A Figural Divergent-Thinking Benchmark for Tool-Using Language Models" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Figural divergent thinking is the ability to develop a given shape fragment into an original drawing. In humans, this ability is…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,57 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "PainterBench: A Figural Divergent-Thinking Benchmark for Tool-Using Language Models",
+  "name": "PainterBench: A Figural Divergent-Thinking Benchmark for Tool-Using Language Models",
+  "abstract": "Figural divergent thinking is the ability to develop a given shape fragment into an original drawing. In humans, this ability is assessed with incomplete-drawing tasks. We introduce PainterBench, a benchmark that ports the incomplete-drawing task to the agentic setting. The agent draws on a canvas through tool calls and observes the result after every turn. The canvas includes a starting shape which cannot be erased, and the agent's goal is to incorporate this shape into the most original drawing it can produce. The task is open-ended, and the agent itself decides when the drawing is finished. The benchmark tests incremental visual planning over a short horizon and the transfer of creative ability from pretraining to multi-turn tool use. We evaluate 14 multimodal language models from small to frontier scale. Across the primary study and six sensitivity analyses, we collect 2,700 drawings and crowdsource creativity and recognizability ratings for every drawing and for 300 human reference drawings. We also present ViDrA-adapted, an automated scorer that predicts human creativity ratings of agent drawings (r = 0.85 on random held-out test split). Figural divergent thinking varies widely across the 14 models, and GPT-6 Astra produces the most creative drawings. Relative to the human drawings, the agent drawings score higher in creativity but lower in recognizability. We release the final drawings, per-round canvas snapshots, tool call traces, stimulus bank, benchmark harness, crowdsourced ratings (N = 72,000), and ViDrA checkpoint.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Shane K. A. Dalumura Hettige"
+    },
+    {
+      "@type": "Person",
+      "name": "Jonas Oppenlaender"
+    }
+  ],
+  "datePublished": "2026-09-28T03:08:43Z",
+  "dateModified": "2026-09-28T03:08:43Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.34195.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.34195.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.34195v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.34195"
+  },
+  "keywords": [
+    "Multimodal",
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multimodal"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.34195v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.34195"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +89,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>PainterBench: A Figural Divergent-Thinking Benchmark for Tool-Using Language Models</h1>
+        <div class="meta">
+          Shane K. A. Dalumura Hettige, Jonas Oppenlaender
+          · 2609.34195
+          · <time datetime="2026-09-28">2026-09-28</time>
+          · Multimodal
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Figural divergent thinking is the ability to develop a given shape fragment into an original drawing. In humans, this ability is assessed with incomplete-drawing tasks. We introduce PainterBench, a benchmark that ports the incomplete-drawing task to the agentic setting. The agent draws on a canvas through tool calls and observes the result after every turn. The canvas includes a starting shape which cannot be erased, and the agent&#x27;s goal is to incorporate this shape into the most original drawing it can produce. The task is open-ended, and the agent itself decides when the drawing is finished. The benchmark tests incremental visual planning over a short horizon and the transfer of creative ability from pretraining to multi-turn tool use. We evaluate 14 multimodal language models from small to frontier scale. Across the primary study and six sensitivity analyses, we collect 2,700 drawings and crowdsource creativity and recognizability ratings for every drawing and for 300 human reference drawings. We also present ViDrA-adapted, an automated scorer that predicts human creativity ratings of agent drawings (r = 0.85 on random held-out test split). Figural divergent thinking varies widely across the 14 models, and GPT-6 Astra produces the most creative drawings. Relative to the human drawings, the agent drawings score higher in creativity but lower in recognizability. We release the final drawings, per-round canvas snapshots, tool call traces, stimulus bank, benchmark harness, crowdsourced ratings (N = 72,000), and ViDrA checkpoint.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.34195v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.34195v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.34195" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multimodal benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.02399.html"><strong>VisAudit: Evaluating Multimodal Agents for Visual Diagnosis and Repair</strong></a> <span>2026-10-01</span></li>
+          <li><a href="2609.40325.html"><strong>WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents</strong></a> <span>2026-09-30</span></li>
+          <li><a href="2609.37053.html"><strong>MatToolBench: Benchmarking Multimodal Agents in Real-World Materials Science Workflows</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.34274.html"><strong>BIABench: Evaluating AI agents on real-world bioimage analysis tasks</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.33117.html"><strong>ECG-Scroll: A Long-Horizon, Streaming Benchmark and Agent Environment for Interpretation of Ambulatory Electrocardiograms</strong></a> <span>2026-09-27</span></li>
+          <li><a href="2609.32569.html"><strong>OmniSmartHome: A Multimodal Reasoning Benchmark for Smart-Home Agents</strong></a> <span>2026-09-26</span></li>
+          <li><a href="2609.24094.html"><strong>WidgetVA: A Widget-Centric Framework and Benchmark for Agentic Visual Analytics</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.22308.html"><strong>GameReplica: A Benchmark for Black-Box Visual Game Replication by Vision-Language Agents</strong></a> <span>2026-09-22</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

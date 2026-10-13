@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: DreamBench-SWE is a multi-session benchmark for software-agent memory hygiene in which later software tasks depend on non-inferable…" />
+    <meta name="keywords" content="Coding / SWE, Memory, agent benchmark, LLM agent, arXiv, 2608.20664" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.20664.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: DreamBench-SWE is a multi-session benchmark for software-agent memory hygiene in which later software tasks depend on non-inferable…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.20664.html" />
+    <meta property="article:published_time" content="2026-08-21T01:48:57Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: DreamBench-SWE is a multi-session benchmark for software-agent memory hygiene in which later software tasks depend on non-inferable…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,52 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents",
+  "name": "DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents",
+  "abstract": "DreamBench-SWE is a multi-session benchmark for software-agent memory hygiene in which later software tasks depend on non-inferable evidence from earlier sessions and are scored by executable hidden oracles. We report the original scaled v2 fold and a separately preregistered v2.1 successor audit designed after that study but frozen before successor outcome inspection. The successor run completed 360/360 work units and 720/720 S3 cells across four conditions. In the original fold, the primary DF-hybrid--B5 contrast was null (95/180 versus 89/180; clustered p=.518, Holm p=1), not evidence of equivalence, and C9/C10 retained B0-headroom limitations. In the successor, no external memory achieved 21/180 passes (rate 0.1167), deterministic verbatim event memory 82/180 (rate 0.4556), the typed-plus-raw reference probe 83/180 (rate 0.4611), and one pinned hosted Mem0 literal-storage configuration 97/180 (rate 0.5389). The registered six-slot Family A retained unavailable slots at p=1; all three available comparisons against no memory rejected after Holm correction. Both preregistered mechanism contrasts were unavailable after pre-evaluation conformance rejection. The secondary literal-storage-versus-verbatim comparison was nonconfirmatory and sensitivity-dependent, while the comparison with the reference probe did not reject. The audit therefore supports DreamBench-SWE as a discriminating executable profile benchmark and characterizes one exact hosted-memory configuration, but it does not establish an external-system mechanism, superiority among memory-bearing conditions, equivalence, or broad product generality. The original v2.0.5 findings and artifacts remain unchanged.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Sarthak Singh"
+    }
+  ],
+  "datePublished": "2026-08-21T01:48:57Z",
+  "dateModified": "2026-08-21T01:48:57Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.20664.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.20664.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.20664v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.20664"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.20664v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.20664"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +84,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents</h1>
+        <div class="meta">
+          Sarthak Singh
+          · 2608.20664
+          · <time datetime="2026-08-21">2026-08-21</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>DreamBench-SWE is a multi-session benchmark for software-agent memory hygiene in which later software tasks depend on non-inferable evidence from earlier sessions and are scored by executable hidden oracles. We report the original scaled v2 fold and a separately preregistered v2.1 successor audit designed after that study but frozen before successor outcome inspection. The successor run completed 360/360 work units and 720/720 S3 cells across four conditions. In the original fold, the primary DF-hybrid--B5 contrast was null (95/180 versus 89/180; clustered p=.518, Holm p=1), not evidence of equivalence, and C9/C10 retained B0-headroom limitations. In the successor, no external memory achieved 21/180 passes (rate 0.1167), deterministic verbatim event memory 82/180 (rate 0.4556), the typed-plus-raw reference probe 83/180 (rate 0.4611), and one pinned hosted Mem0 literal-storage configuration 97/180 (rate 0.5389). The registered six-slot Family A retained unavailable slots at p=1; all three available comparisons against no memory rejected after Holm correction. Both preregistered mechanism contrasts were unavailable after pre-evaluation conformance rejection. The secondary literal-storage-versus-verbatim comparison was nonconfirmatory and sensitivity-dependent, while the comparison with the reference probe did not reject. The audit therefore supports DreamBench-SWE as a discriminating executable profile benchmark and characterizes one exact hosted-memory configuration, but it does not establish an external-system mechanism, superiority among memory-bearing conditions, equivalence, or broad product generality. The original v2.0.5 findings and artifacts remain unchanged.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.20664v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.20664v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.20664" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.23653.html"><strong>Beyond Executable Models: The Pufibara Agent Harness and the Modelica Agent Workflow Benchmark for Physical System Modeling</strong></a> <span>2026-08-24</span></li>
+          <li><a href="2608.23564.html"><strong>SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration?</strong></a> <span>2026-08-24</span></li>
+          <li><a href="2608.21833.html"><strong>GameXpert-Bench: How Far Are Coding Agents from Expert Game Development?</strong></a> <span>2026-08-22</span></li>
+          <li><a href="2608.20851.html"><strong>BC-Bench: Evaluating Agentic Engineering in a Domain-Specific Language for ERP</strong></a> <span>2026-08-21</span></li>
+          <li><a href="2608.19799.html"><strong>SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?</strong></a> <span>2026-08-20</span></li>
+          <li><a href="2608.17524.html"><strong>Evaluating RL Explainability Methods by How Much They Help Fix Bugs in Agents</strong></a> <span>2026-08-18</span></li>
+          <li><a href="2608.16022.html"><strong>OpenHarmony Bench: Evaluating LLMs and Coding Agents on OpenHarmony App Development</strong></a> <span>2026-08-17</span></li>
+          <li><a href="2608.09802.html"><strong>SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring</strong></a> <span>2026-08-10</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

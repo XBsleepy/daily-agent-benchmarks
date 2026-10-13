@@ -83,6 +83,7 @@
   function paperRow(paper, query, matchKind) {
     const title = query ? BM25.highlight(paper.title, query) : BM25.escapeHtml(paper.title);
     const absUrl = paper.links?.abs || `https://arxiv.org/abs/${paper.id}`;
+    const pageUrl = `./p/${encodeURIComponent(paper.id.replace(/\//g, "_"))}.html`;
     const cites = Number(paper.citations || 0);
     const rawAbs = paper.abstract || "";
     const absText = query ? BM25.highlight(rawAbs, query) : BM25.escapeHtml(rawAbs);
@@ -101,7 +102,7 @@
     return `
       <article class="row">
         <div class="row__main">
-          <h3><a href="${absUrl}" target="_blank" rel="noopener">${title}</a></h3>
+          <h3><a href="${pageUrl}">${title}</a></h3>
           <div class="meta">
             ${BM25.escapeHtml(paper.announced_date || "")}
             · <a href="${absUrl}" target="_blank" rel="noopener">${BM25.escapeHtml(paper.id)}</a>

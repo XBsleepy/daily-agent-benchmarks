@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>HSCO-Bench: An Agent-Driven End-to-End Hardware-Software Co-design Benchmark for Systems-on-Chip | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language models (LLMs) are adopted for software and hardware design, yet these domains are still evaluated separately. Software…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2605.19399" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.19399.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="HSCO-Bench: An Agent-Driven End-to-End Hardware-Software Co-design Benchmark for Systems-on-Chip" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language models (LLMs) are adopted for software and hardware design, yet these domains are still evaluated separately. Software…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.19399.html" />
+    <meta property="article:published_time" content="2026-05-19T05:51:28Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="HSCO-Bench: An Agent-Driven End-to-End Hardware-Software Co-design Benchmark for Systems-on-Chip" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language models (LLMs) are adopted for software and hardware design, yet these domains are still evaluated separately. Software…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,68 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "HSCO-Bench: An Agent-Driven End-to-End Hardware-Software Co-design Benchmark for Systems-on-Chip",
+  "name": "HSCO-Bench: An Agent-Driven End-to-End Hardware-Software Co-design Benchmark for Systems-on-Chip",
+  "abstract": "Large language models (LLMs) are adopted for software and hardware design, yet these domains are still evaluated separately. Software benchmarks typically assume fixed hardware targets, while hardware benchmarks focus on component-level optimization without considering the full hardware-software stack. Consequently, no existing benchmark evaluates whether an LLM agent can perform end-to-end, system-level hardware-software co-design. Such a process requires: 1) analyzing applications to identify kernels requiring acceleration, 2) designing and integrating heterogeneous accelerators into a System-on-Chip (SoC) under resource constraints, and 3) mapping kernels onto the generated accelerators. We present HSCO-Bench, an end-to-end hardware-software co-design benchmark for accelerator-rich heterogeneous SoC generation. Built upon an open-source SoC platform with a curated repository structure, HSCO-Bench evaluates the ability of LLMs to jointly optimize software and hardware stacks, producing SoC prototypes deployed on the AMD Virtex-7 FPGA VC707 Evaluation Kit. Experimental results show that end-to-end integration remains challenging for current models. Among the five frontier models evaluated, only two of them could successfully generate valid SoC prototypes. Yet, even in these successful instances, the generated designs are far from optimal. While we observe a promising peak speedup of 16.22X, the maximum additional resource utilization reaches only 23.67%. This highlights that while state-of-the-art models demonstrate an emerging capability for hardware acceleration, they still heavily underutilize the available hardware capacity, leaving room for future optimization. To the best of our knowledge, HSCO-Bench is the first benchmark targeting this complete co-design flow, enabling LLMs to jointly reason about and modify both the software and hardware stacks of heterogeneous SoCs.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Pei-Huan Tsai"
+    },
+    {
+      "@type": "Person",
+      "name": "Kuan-Lin Chiu"
+    },
+    {
+      "@type": "Person",
+      "name": "William Baisi"
+    },
+    {
+      "@type": "Person",
+      "name": "Pin-Yu Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Luca P. Carloni"
+    }
+  ],
+  "datePublished": "2026-05-19T05:51:28Z",
+  "dateModified": "2026-05-19T05:51:28Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.19399.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.19399.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.19399v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.19399"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.19399v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.19399"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +100,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>HSCO-Bench: An Agent-Driven End-to-End Hardware-Software Co-design Benchmark for Systems-on-Chip</h1>
+        <div class="meta">
+          Pei-Huan Tsai, Kuan-Lin Chiu, William Baisi, Pin-Yu Chen, Luca P. Carloni
+          · 2605.19399
+          · <time datetime="2026-05-19">2026-05-19</time>
+          · Coding / SWE · 2 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large language models (LLMs) are adopted for software and hardware design, yet these domains are still evaluated separately. Software benchmarks typically assume fixed hardware targets, while hardware benchmarks focus on component-level optimization without considering the full hardware-software stack. Consequently, no existing benchmark evaluates whether an LLM agent can perform end-to-end, system-level hardware-software co-design. Such a process requires: 1) analyzing applications to identify kernels requiring acceleration, 2) designing and integrating heterogeneous accelerators into a System-on-Chip (SoC) under resource constraints, and 3) mapping kernels onto the generated accelerators. We present HSCO-Bench, an end-to-end hardware-software co-design benchmark for accelerator-rich heterogeneous SoC generation. Built upon an open-source SoC platform with a curated repository structure, HSCO-Bench evaluates the ability of LLMs to jointly optimize software and hardware stacks, producing SoC prototypes deployed on the AMD Virtex-7 FPGA VC707 Evaluation Kit. Experimental results show that end-to-end integration remains challenging for current models. Among the five frontier models evaluated, only two of them could successfully generate valid SoC prototypes. Yet, even in these successful instances, the generated designs are far from optimal. While we observe a promising peak speedup of 16.22X, the maximum additional resource utilization reaches only 23.67%. This highlights that while state-of-the-art models demonstrate an emerging capability for hardware acceleration, they still heavily underutilize the available hardware capacity, leaving room for future optimization. To the best of our knowledge, HSCO-Bench is the first benchmark targeting this complete co-design flow, enabling LLMs to jointly reason about and modify both the software and hardware stacks of heterogeneous SoCs.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.19399v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.19399v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.19399" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.26144.html"><strong>VISTA: An End-to-End Benchmark for Visual Spec-to-Web-App Coding Agents</strong></a> <span>2026-05-22</span></li>
+          <li><a href="2605.24183.html"><strong>AvalancheBench: Evaluating Enterprise Data Agents Through Latent World Recovery</strong></a> <span>2026-05-22</span></li>
+          <li><a href="2605.24110.html"><strong>EvoCode-Bench: Evaluating Coding Agents in Multi-Turn Iterative Interactions</strong></a> <span>2026-05-22</span></li>
+          <li><a href="2605.21384.html"><strong>SpecBench: Measuring Reward Hacking in Long-Horizon Coding Agents</strong></a> <span>2026-05-20</span></li>
+          <li><a href="2605.20251.html"><strong>ProcCtrlBench: Evaluating Process-Level Defects and Control Preservation in LLM Coding Agents</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.18693.html"><strong>SkillGenBench: Benchmarking Skill Generation Pipelines for LLM Agents</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.18583.html"><strong>Overeager Coding Agents: Measuring Out-of-Scope Actions on Benign Tasks</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.17986.html"><strong>LivePI: More Realistic Benchmarking of Agents Against Indirect Prompt Injection</strong></a> <span>2026-05-18</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

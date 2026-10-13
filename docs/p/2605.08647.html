@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>AgentCollabBench: Diagnosing When Good Agents Make Bad Collaborators | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Multi-agent systems achieve state-of-the-art outcomes through peer collaboration. However, when an agent in the pipeline silently…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Multi-agent, Safety, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2605.08647" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.08647.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AgentCollabBench: Diagnosing When Good Agents Make Bad Collaborators" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Multi-agent systems achieve state-of-the-art outcomes through peer collaboration. However, when an agent in the pipeline silently…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.08647.html" />
+    <meta property="article:published_time" content="2026-05-09T03:35:09Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AgentCollabBench: Diagnosing When Good Agents Make Bad Collaborators" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Multi-agent systems achieve state-of-the-art outcomes through peer collaboration. However, when an agent in the pipeline silently…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,103 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AgentCollabBench: Diagnosing When Good Agents Make Bad Collaborators",
+  "name": "AgentCollabBench: Diagnosing When Good Agents Make Bad Collaborators",
+  "abstract": "Multi-agent systems achieve state-of-the-art outcomes through peer collaboration. However, when an agent in the pipeline silently drops a constraint, the system's final output may look correct even though the reasoning chain was quietly corrupted, and existing outcome-based evaluations are blind to such multi-hop process failures. To make these vulnerabilities measurable before deployment, we introduce AgentCollabBench, a diagnostic benchmark of 900 human-validated tasks spanning software engineering, DevOps, and data engineering. Each task isolates one of four behavioral risks: instruction decay (does a constraint survive peer pressure?), false-belief contagion (does a falsehood spread through consensus?), context leakage (does information bleed between tasks?), and tracer durability (does marked data reach the final agent?). Evaluating four modern LLMs (GPT 4.1 mini, Gemini 2.5 Flash Lite, Qwen-3.5-35B-A3B, and Llama 3.1 8B Instruct), we expose model-specific vulnerability profiles invisible to outcome-only evaluation; Qwen-3.5-35B-A3B, for example, leads on tracer durability and instruction stability, while GPT 4.1 mini leads on leakage containment and false-belief resistance. Beyond per-model differences, communication topology emerges as a primary risk factor that explains 7-40% of the variance in multi-hop information survival. The effect traces to a synthesis bottleneck specific to converging-DAG nodes: an agent weighing competing parent inputs discards constraints carried by a minority branch, a bottleneck structurally absent from linear chains. AgentCollabBench demonstrates that suboptimal topology can silently erase the safeguards of highly capable models, arguing that multi-agent reliability is fundamentally a structural problem and that scaling model intelligence alone is no substitute for architecture.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Aritra Mazumder"
+    },
+    {
+      "@type": "Person",
+      "name": "Shubhashis Roy Dipta"
+    },
+    {
+      "@type": "Person",
+      "name": "Nusrat Jahan Lia"
+    },
+    {
+      "@type": "Person",
+      "name": "Tanzila Khan"
+    },
+    {
+      "@type": "Person",
+      "name": "Kainat Raisa Hossain"
+    },
+    {
+      "@type": "Person",
+      "name": "Nehaa Shri"
+    },
+    {
+      "@type": "Person",
+      "name": "Shubhrangshu Debsarkar"
+    },
+    {
+      "@type": "Person",
+      "name": "Humayra Tasnim"
+    },
+    {
+      "@type": "Person",
+      "name": "Gour Gupal Talukder Shawon"
+    },
+    {
+      "@type": "Person",
+      "name": "Debjoty Mitra"
+    },
+    {
+      "@type": "Person",
+      "name": "Sumaiya Ahmed Rani"
+    },
+    {
+      "@type": "Person",
+      "name": "Al Jami Islam Anik"
+    },
+    {
+      "@type": "Person",
+      "name": "Al Nafeu Khan"
+    }
+  ],
+  "datePublished": "2026-05-09T03:35:09Z",
+  "dateModified": "2026-05-09T03:35:09Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.08647.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.08647.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.08647v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.08647"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Multi-agent",
+    "Safety",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.08647v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.08647"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +135,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AgentCollabBench: Diagnosing When Good Agents Make Bad Collaborators</h1>
+        <div class="meta">
+          Aritra Mazumder, Shubhashis Roy Dipta, Nusrat Jahan Lia, Tanzila Khan, Kainat Raisa Hossain, Nehaa Shri, Shubhrangshu Debsarkar, Humayra Tasnim, Gour Gupal Talukder Shawon, Debjoty Mitra, Sumaiya Ahmed Rani, Al Jami Islam Anik, Al Nafeu Khan
+          · 2605.08647
+          · <time datetime="2026-05-09">2026-05-09</time>
+          · Coding / SWE · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Multi-agent</span><span class="chip">Safety</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Multi-agent systems achieve state-of-the-art outcomes through peer collaboration. However, when an agent in the pipeline silently drops a constraint, the system&#x27;s final output may look correct even though the reasoning chain was quietly corrupted, and existing outcome-based evaluations are blind to such multi-hop process failures. To make these vulnerabilities measurable before deployment, we introduce AgentCollabBench, a diagnostic benchmark of 900 human-validated tasks spanning software engineering, DevOps, and data engineering. Each task isolates one of four behavioral risks: instruction decay (does a constraint survive peer pressure?), false-belief contagion (does a falsehood spread through consensus?), context leakage (does information bleed between tasks?), and tracer durability (does marked data reach the final agent?). Evaluating four modern LLMs (GPT 4.1 mini, Gemini 2.5 Flash Lite, Qwen-3.5-35B-A3B, and Llama 3.1 8B Instruct), we expose model-specific vulnerability profiles invisible to outcome-only evaluation; Qwen-3.5-35B-A3B, for example, leads on tracer durability and instruction stability, while GPT 4.1 mini leads on leakage containment and false-belief resistance. Beyond per-model differences, communication topology emerges as a primary risk factor that explains 7-40% of the variance in multi-hop information survival. The effect traces to a synthesis bottleneck specific to converging-DAG nodes: an agent weighing competing parent inputs discards constraints carried by a minority branch, a bottleneck structurally absent from linear chains. AgentCollabBench demonstrates that suboptimal topology can silently erase the safeguards of highly capable models, arguing that multi-agent reliability is fundamentally a structural problem and that scaling model intelligence alone is no substitute for architecture.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.08647v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.08647v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.08647" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.11030.html"><strong>An Executable Benchmarking Suite for Tool-Using Agents</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.09684.html"><strong>MonitoringBench: Semi-Automated Red-Teaming for Agent Monitoring</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.09675.html"><strong>CodeClinic: Evaluating Automation of Coding Skills for Clinical Reasoning Agents</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.08941.html"><strong>MDGYM: Benchmarking AI Agents on Molecular Simulations</strong></a> <span>2026-05-09</span></li>
+          <li><a href="2605.08366.html"><strong>SWE Atlas: Benchmarking Coding Agents Beyond Issue Resolution</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.06125.html"><strong>Breaking, Stale, or Missing? Benchmarking Coding Agents on Project-Level Test Evolution</strong></a> <span>2026-05-07</span></li>
+          <li><a href="2605.04637.html"><strong>SWE-WebDevBench: Evaluating Coding Agent Application Platforms as Virtual Software Agencies</strong></a> <span>2026-05-06</span></li>
+          <li><a href="2605.03952.html"><strong>MOSAIC-Bench: Measuring Compositional Vulnerability Induction in Coding Agents</strong></a> <span>2026-05-05</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

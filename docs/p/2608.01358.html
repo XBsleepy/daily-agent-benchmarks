@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>HopRefusalBench: Diagnosing Refusal Failures in Search-Augmented Agents for Multi-Hop Reasoning | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Search-augmented large language model agents are increasingly capable of solving knowledge-intensive tasks, but their behavior when a…" />
+    <meta name="keywords" content="General, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2608.01358" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.01358.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="HopRefusalBench: Diagnosing Refusal Failures in Search-Augmented Agents for Multi-Hop Reasoning" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Search-augmented large language model agents are increasingly capable of solving knowledge-intensive tasks, but their behavior when a…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.01358.html" />
+    <meta property="article:published_time" content="2026-08-02T16:20:55Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="HopRefusalBench: Diagnosing Refusal Failures in Search-Augmented Agents for Multi-Hop Reasoning" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Search-augmented large language model agents are increasingly capable of solving knowledge-intensive tasks, but their behavior when a…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,72 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "HopRefusalBench: Diagnosing Refusal Failures in Search-Augmented Agents for Multi-Hop Reasoning",
+  "name": "HopRefusalBench: Diagnosing Refusal Failures in Search-Augmented Agents for Multi-Hop Reasoning",
+  "abstract": "Search-augmented large language model agents are increasingly capable of solving knowledge-intensive tasks, but their behavior when a multi-hop question is fundamentally unanswerable remains poorly understood. Existing abstention benchmarks largely expose defects at the surface of single-hop queries and therefore cannot reveal failures that emerge only after valid intermediate reasoning and retrieval. We introduce HopRefusalBench, the first controlled benchmark of refusal within multi-hop search, comprising 889 unanswerable questions constructed from KILT-grounded entity paths. It crosses three causes of unanswerability (answer unknown, false premise, and underspecified context) with root, middle, and terminal topologies, making premise verification, intermediate-bridge validation, and terminal stopping separately observable. We further propose a final-outcome taxonomy spanning target-aware refusal, pseudo-refusal, hallucinated completion, and search-budget exhaustion, together with source-aware trajectory metrics for post-trigger continuation and token waste. Across ten frontier proprietary and open-weight models in search-augmented mode, the best model achieves a target-aware correct halting rate (TCHR) of only 42.9%. Root and middle items are consistently harder than terminal items, and all models attain their highest TCHR on false premises and their lowest on underspecified questions. Yet when pooled across categories, 84.7--98.4% of each model's explicit refusal-like responses identify the correct rationale, localizing the main bottleneck to committing to an appropriate non-answer; failed trajectories instead diverge into hallucination or search-budget exhaustion. These results establish refusal in multi-hop search as a consequential evaluation problem and provide a foundation for diagnosing and improving the reliability of search-augmented agents.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jianan Xie"
+    },
+    {
+      "@type": "Person",
+      "name": "Xin Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhongqi Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Xing Zheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Qiang Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Bowen Song"
+    }
+  ],
+  "datePublished": "2026-08-02T16:20:55Z",
+  "dateModified": "2026-08-02T16:20:55Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.01358.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.01358.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.01358v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.01358"
+  },
+  "keywords": [
+    "General",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.01358v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.01358"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +104,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>HopRefusalBench: Diagnosing Refusal Failures in Search-Augmented Agents for Multi-Hop Reasoning</h1>
+        <div class="meta">
+          Jianan Xie, Xin Sun, Zhongqi Chen, Xing Zheng, Qiang Liu, Bowen Song
+          · 2608.01358
+          · <time datetime="2026-08-02">2026-08-02</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Search-augmented large language model agents are increasingly capable of solving knowledge-intensive tasks, but their behavior when a multi-hop question is fundamentally unanswerable remains poorly understood. Existing abstention benchmarks largely expose defects at the surface of single-hop queries and therefore cannot reveal failures that emerge only after valid intermediate reasoning and retrieval. We introduce HopRefusalBench, the first controlled benchmark of refusal within multi-hop search, comprising 889 unanswerable questions constructed from KILT-grounded entity paths. It crosses three causes of unanswerability (answer unknown, false premise, and underspecified context) with root, middle, and terminal topologies, making premise verification, intermediate-bridge validation, and terminal stopping separately observable. We further propose a final-outcome taxonomy spanning target-aware refusal, pseudo-refusal, hallucinated completion, and search-budget exhaustion, together with source-aware trajectory metrics for post-trigger continuation and token waste. Across ten frontier proprietary and open-weight models in search-augmented mode, the best model achieves a target-aware correct halting rate (TCHR) of only 42.9%. Root and middle items are consistently harder than terminal items, and all models attain their highest TCHR on false premises and their lowest on underspecified questions. Yet when pooled across categories, 84.7--98.4% of each model&#x27;s explicit refusal-like responses identify the correct rationale, localizing the main bottleneck to committing to an appropriate non-answer; failed trajectories instead diverge into hallucination or search-budget exhaustion. These results establish refusal in multi-hop search as a consequential evaluation problem and provide a foundation for diagnosing and improving the reliability of search-augmented agents.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.01358v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.01358v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.01358" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.03018.html"><strong>UrbanAgent: A Tool-Augmented Agent for Cross-System Urban Tasks</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.02358.html"><strong>ScrambleToolBench: Agents Search Exhaustively Even When Their Own Map Points to the Next Step</strong></a> <span>2026-08-03</span></li>
+          <li><a href="2608.02171.html"><strong>From Profiling to Synthesis: Benchmarking Implicit Behavioral Alignment in Personalized LLM Agents</strong></a> <span>2026-08-03</span></li>
+          <li><a href="2608.01684.html"><strong>GABench: A Comprehensive Benchmark for Evaluating LLM Agents on Graph Analysis Tasks</strong></a> <span>2026-08-03</span></li>
+          <li><a href="2608.00677.html"><strong>OpenART: Scaling Agent Red Teaming via Open-Ended Environment Evolution</strong></a> <span>2026-08-01</span></li>
+          <li><a href="2608.11234.html"><strong>InfraBench: Evaluating Infrastructure Agents Across Layers, Lifecycle, and Risk</strong></a> <span>2026-07-31</span></li>
+          <li><a href="2608.00107.html"><strong>MetaRoute-Bench: Evaluating Meta-Decision Policies for Agentic Workflow Routing</strong></a> <span>2026-07-31</span></li>
+          <li><a href="2607.28956.html"><strong>MerchantBench: Benchmarking LLM Agents for Long-Term Coherence in E-Commerce Operations</strong></a> <span>2026-07-31</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

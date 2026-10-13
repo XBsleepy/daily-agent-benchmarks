@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Recognition, Simulation, and Refusal: A Contamination-Aware Study of Classic Psychological Effects in LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: An LLM producing the response pattern associated with a human psychological effect is not the same claim as the LLM possessing that…" />
+    <meta name="keywords" content="Safety, agent benchmark, LLM agent, arXiv, 2609.22090" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.22090.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Recognition, Simulation, and Refusal: A Contamination-Aware Study of Classic Psychological Effects in LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: An LLM producing the response pattern associated with a human psychological effect is not the same claim as the LLM possessing that…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.22090.html" />
+    <meta property="article:published_time" content="2026-09-22T04:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Recognition, Simulation, and Refusal: A Contamination-Aware Study of Classic Psychological Effects in LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: An LLM producing the response pattern associated with a human psychological effect is not the same claim as the LLM possessing that…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,51 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Recognition, Simulation, and Refusal: A Contamination-Aware Study of Classic Psychological Effects in LLM Agen",
+  "name": "Recognition, Simulation, and Refusal: A Contamination-Aware Study of Classic Psychological Effects in LLM Agents",
+  "abstract": "An LLM producing the response pattern associated with a human psychological effect is not the same claim as the LLM possessing that bias. We present PsyAgentBench, a benchmark that re-runs classic psychology experiments on LLM agents under a factorial design built to separate these: each paradigm is run with the paradigm explicitly labeled in the prompt (named) or framed as a routine task (blind), and on the literal textbook version of the task (canonical) or a structurally matched variant written to reduce lexical and scenario overlap with likely training data (counterfactual), crossed with a persona manipulation. Across five completed paradigms, evaluated on up to three open-weight model families with 41,904 trials released, apparently human-like effects arise through qualitatively different routes rather than one susceptibility: paradigm-label gating with explicit override (Asch conformity, 0 percent blind to 83.3 percent named on gpt-oss-120B), knowledge-dependent signal reliance (anchoring, exactly zero on grounded facts versus near total on invented quantities, a pattern equally consistent with rational use of the only available signal), amplification on novel content under labeling (framing), robust absence (sunk cost), and safety-mediated selection where refusal itself is the primary finding (minimal-group allocation). A one-sentence persona change (agreeableness, framed as an instruction rather than a verified trait manipulation) eliminates, dampens, or reverses these effects depending on which effect it is, arguing against any single response-bias account. We further formalize, and in two cases document empirically, three ways a psychology paradigm can fail to port to LLM agents: persona dominance, population collapse, and safety selection. We argue scalar bias-susceptibility scores obscure this structure and report replication profiles instead.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Joy Bose"
+    }
+  ],
+  "datePublished": "2026-09-22T04:00:00Z",
+  "dateModified": "2026-09-22T04:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.22090.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.22090.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.22090"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.22090"
+  },
+  "keywords": [
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Safety"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.22090"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.22090"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +83,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Recognition, Simulation, and Refusal: A Contamination-Aware Study of Classic Psychological Effects in LLM Agents</h1>
+        <div class="meta">
+          Joy Bose
+          · 2609.22090
+          · <time datetime="2026-09-22">2026-09-22</time>
+          · Safety
+        </div>
+        <div class="themes"><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>An LLM producing the response pattern associated with a human psychological effect is not the same claim as the LLM possessing that bias. We present PsyAgentBench, a benchmark that re-runs classic psychology experiments on LLM agents under a factorial design built to separate these: each paradigm is run with the paradigm explicitly labeled in the prompt (named) or framed as a routine task (blind), and on the literal textbook version of the task (canonical) or a structurally matched variant written to reduce lexical and scenario overlap with likely training data (counterfactual), crossed with a persona manipulation. Across five completed paradigms, evaluated on up to three open-weight model families with 41,904 trials released, apparently human-like effects arise through qualitatively different routes rather than one susceptibility: paradigm-label gating with explicit override (Asch conformity, 0 percent blind to 83.3 percent named on gpt-oss-120B), knowledge-dependent signal reliance (anchoring, exactly zero on grounded facts versus near total on invented quantities, a pattern equally consistent with rational use of the only available signal), amplification on novel content under labeling (framing), robust absence (sunk cost), and safety-mediated selection where refusal itself is the primary finding (minimal-group allocation). A one-sentence persona change (agreeableness, framed as an instruction rather than a verified trait manipulation) eliminates, dampens, or reverses these effects depending on which effect it is, arguing against any single response-bias account. We further formalize, and in two cases document empirically, three ways a psychology paradigm can fail to port to LLM agents: persona dominance, population collapse, and safety selection. We argue scalar bias-susceptibility scores obscure this structure and report replication profiles instead.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.22090" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.22090" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.22090" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Safety benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.32616.html"><strong>&quot;You&#x27;re Right, Let Me Fix It&quot;: How LLM Agents Damage Correct Work When Falsely Accused</strong></a> <span>2026-09-26</span></li>
+          <li><a href="2609.31967.html"><strong>IndicFDB: Benchmarking Full-Duplex Voice Agents across Indian Languages</strong></a> <span>2026-09-25</span></li>
+          <li><a href="2609.28197.html"><strong>PASTABench: Proactive Assessment of Sequential Trajectories for Agent Safety</strong></a> <span>2026-09-24</span></li>
+          <li><a href="2609.24259.html"><strong>MemCalib: Benchmarking and Optimizing Memory Use in LLM Agents</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.19892.html"><strong>ClashBench: Conflicts Leading Agents to Seize and Harm</strong></a> <span>2026-09-18</span></li>
+          <li><a href="2609.18949.html"><strong>StableEval Arena: A Cost-Aware Agentic Benchmark for Stablecoin Price Stability Prediction</strong></a> <span>2026-09-17</span></li>
+          <li><a href="2609.18605.html"><strong>PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?</strong></a> <span>2026-09-17</span></li>
+          <li><a href="2609.14976.html"><strong>MemRiskBench: Trace-Aware Risk-Preserving Evaluation for Long-Horizon LLM Agents</strong></a> <span>2026-09-15</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

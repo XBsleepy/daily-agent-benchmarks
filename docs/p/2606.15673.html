@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Where Did It Go Wrong? Process-Level Evaluation of Web Agents with Semantic State Tracking | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Web agents act through long interaction sequences, yet existing benchmarks evaluate only terminal success, discarding all process…" />
+    <meta name="keywords" content="Web &amp; browser, Web agents, GUI agents, agent benchmark, LLM agent, arXiv, 2606.15673" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.15673.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Where Did It Go Wrong? Process-Level Evaluation of Web Agents with Semantic State Tracking" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Web agents act through long interaction sequences, yet existing benchmarks evaluate only terminal success, discarding all process…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.15673.html" />
+    <meta property="article:published_time" content="2026-04-08T07:25:29Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Where Did It Go Wrong? Process-Level Evaluation of Web Agents with Semantic State Tracking" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Web agents act through long interaction sequences, yet existing benchmarks evaluate only terminal success, discarding all process…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,65 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Where Did It Go Wrong? Process-Level Evaluation of Web Agents with Semantic State Tracking",
+  "name": "Where Did It Go Wrong? Process-Level Evaluation of Web Agents with Semantic State Tracking",
+  "abstract": "Web agents act through long interaction sequences, yet existing benchmarks evaluate only terminal success, discarding all process information and offering little guidance on improvement. In this work, we conduct a process-level analysis of web agents. We introduce WebStep, a benchmark of 1,800 task instances with controlled difficulty and automatic semantic state tracking. Each website exposes a deterministic semantic MDP alongside the GUI: the agent operates on the interface, while the environment records high-level states and transitions in the background, enabling fine-grained analysis without manual annotation. Based on the semantic trajectory, we first show that process metrics reveal differences invisible to outcome evaluation: three agents whose success rates cluster within 34-37% diverge in exploration reach versus execution accuracy. Then, decomposing by skill characterizes the nature of these differences, exposing opposite per-skill rankings hidden within the same website: e.g., on Q&A, Claude CUA outperforms OpenAI CUA by 30% on navigation actions yet underperforms it by 6.7% on inspection, pinpointing a concrete skill to improve even within a domain. Bifurcation analysis further localizes the decisive error that loses the task and shows that this error is agent-specific rather than shared. Finally, these differences widen as tasks grow harder: success rate is similar on easy tasks but separates sharply as exploration becomes more demanding. Our process-level analysis opens a new avenue in web agent evaluation, providing fine-grained and actionable insight into where and how each agent should be improved. Project page: https://jiwanchung.github.io/webstep",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jiwan Chung"
+    },
+    {
+      "@type": "Person",
+      "name": "JiHyuk Byun"
+    },
+    {
+      "@type": "Person",
+      "name": "Vibhav Vineet"
+    },
+    {
+      "@type": "Person",
+      "name": "Seon Joo Kim"
+    }
+  ],
+  "datePublished": "2026-04-08T07:25:29Z",
+  "dateModified": "2026-08-04T05:22:33Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.15673.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.15673.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.15673v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.15673"
+  },
+  "keywords": [
+    "Web & browser",
+    "Web agents",
+    "GUI agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Web & browser"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.15673v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.15673"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +97,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Where Did It Go Wrong? Process-Level Evaluation of Web Agents with Semantic State Tracking</h1>
+        <div class="meta">
+          Jiwan Chung, JiHyuk Byun, Vibhav Vineet, Seon Joo Kim
+          · 2606.15673
+          · <time datetime="2026-04-08">2026-04-08</time>
+          · Web &amp; browser · 2 citations
+        </div>
+        <div class="themes"><span class="chip">Web agents</span><span class="chip">GUI agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Web agents act through long interaction sequences, yet existing benchmarks evaluate only terminal success, discarding all process information and offering little guidance on improvement. In this work, we conduct a process-level analysis of web agents. We introduce WebStep, a benchmark of 1,800 task instances with controlled difficulty and automatic semantic state tracking. Each website exposes a deterministic semantic MDP alongside the GUI: the agent operates on the interface, while the environment records high-level states and transitions in the background, enabling fine-grained analysis without manual annotation. Based on the semantic trajectory, we first show that process metrics reveal differences invisible to outcome evaluation: three agents whose success rates cluster within 34-37% diverge in exploration reach versus execution accuracy. Then, decomposing by skill characterizes the nature of these differences, exposing opposite per-skill rankings hidden within the same website: e.g., on Q&amp;A, Claude CUA outperforms OpenAI CUA by 30% on navigation actions yet underperforms it by 6.7% on inspection, pinpointing a concrete skill to improve even within a domain. Bifurcation analysis further localizes the decisive error that loses the task and shows that this error is agent-specific rather than shared. Finally, these differences widen as tasks grow harder: success rate is similar on easy tasks but separates sharply as exploration becomes more demanding. Our process-level analysis opens a new avenue in web agent evaluation, providing fine-grained and actionable insight into where and how each agent should be improved. Project page: https://jiwanchung.github.io/webstep</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.15673v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.15673v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.15673" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Web &amp; browser benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.13686.html"><strong>Benchmarking Web Agent Safety under E-commerce Deceptive Interfaces</strong></a> <span>2026-04-26</span></li>
+          <li><a href="2604.23455.html"><strong>CUJBench: Benchmarking LLM-Agent on Cross-Modal Failure Diagnosis from Browser to Backend</strong></a> <span>2026-04-25</span></li>
+          <li><a href="2604.15309.html"><strong>MM-WebAgent: A Hierarchical Multimodal Web Agent for Webpage Generation</strong></a> <span>2026-04-16</span></li>
+          <li><a href="2604.10988.html"><strong>WebForge: Breaking the Realism-Reproducibility-Scalability Trilemma in Browser Agent Benchmark</strong></a> <span>2026-04-13</span></li>
+          <li><a href="2604.00892.html"><strong>When Users Change Their Mind: Evaluating Interruptible Agents in Long-Horizon Web Navigation</strong></a> <span>2026-04-01</span></li>
+          <li><a href="2604.16385.html"><strong>StressWeb: A Diagnostic Benchmark for Web Agent Robustness under Realistic Interaction Variability</strong></a> <span>2026-03-27</span></li>
+          <li><a href="2603.22529.html"><strong>Ego2Web: A Web Agent Benchmark Grounded in Egocentric Videos</strong></a> <span>2026-03-23</span></li>
+          <li><a href="2603.04949.html"><strong>TimeWarp: Evaluating Web Agents by Revisiting the Past</strong></a> <span>2026-03-05</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

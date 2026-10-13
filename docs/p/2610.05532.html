@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>DelegationBench: Measuring When AI Agents Should Ask Before Acting | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: AI agents that send emails, edit files, and make purchases must decide when to act on their own and when to check with the user…" />
+    <meta name="keywords" content="Tool use, agent benchmark, LLM agent, arXiv, 2610.05532" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.05532.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="DelegationBench: Measuring When AI Agents Should Ask Before Acting" />
+    <meta property="og:description" content="Daily Agent Benchmarks: AI agents that send emails, edit files, and make purchases must decide when to act on their own and when to check with the user…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.05532.html" />
+    <meta property="article:published_time" content="2026-10-04T20:54:35Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="DelegationBench: Measuring When AI Agents Should Ask Before Acting" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: AI agents that send emails, edit files, and make purchases must decide when to act on their own and when to check with the user…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,51 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "DelegationBench: Measuring When AI Agents Should Ask Before Acting",
+  "name": "DelegationBench: Measuring When AI Agents Should Ask Before Acting",
+  "abstract": "AI agents that send emails, edit files, and make purchases must decide when to act on their own and when to check with the user first. This decision is usually evaluated by showing a model a proposed action, asking whether it should proceed, and scoring agreement with human labels. We introduce DelegationBench to test whether such scores can be trusted. It has 156 scenarios with four possible responses (act, ask for permission, ask for missing information, refuse), and most scenarios come in matched pairs that change a single feature: whether the action was requested, what is at stake, whether it can be undone, or who will see it. Across ten models from five families, agreement scores mislead in three ways. A simple keyword rule, which we wrote after seeing the benchmark, agrees with our annotators more often than eight of the models, yet its decision changes in only 9 of 48 matched pairs. Equivalent ways of asking the same question change how often a model acts by up to 52.5 percentage points. And every model stops to ask the user less often when it must carry out the task with tools than when it judges a proposed action. When rules are stated explicitly, the same models follow them almost perfectly, so the gaps are not explained by a general inability to follow rules. We release the benchmark and evaluation tools and recommend reporting these properties separately rather than as one score.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Shiva Pochampally"
+    }
+  ],
+  "datePublished": "2026-10-04T20:54:35Z",
+  "dateModified": "2026-10-04T20:54:35Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.05532.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.05532.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.05532v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.05532"
+  },
+  "keywords": [
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.05532v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2610.05532"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +83,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>DelegationBench: Measuring When AI Agents Should Ask Before Acting</h1>
+        <div class="meta">
+          Shiva Pochampally
+          · 2610.05532
+          · <time datetime="2026-10-04">2026-10-04</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>AI agents that send emails, edit files, and make purchases must decide when to act on their own and when to check with the user first. This decision is usually evaluated by showing a model a proposed action, asking whether it should proceed, and scoring agreement with human labels. We introduce DelegationBench to test whether such scores can be trusted. It has 156 scenarios with four possible responses (act, ask for permission, ask for missing information, refuse), and most scenarios come in matched pairs that change a single feature: whether the action was requested, what is at stake, whether it can be undone, or who will see it. Across ten models from five families, agreement scores mislead in three ways. A simple keyword rule, which we wrote after seeing the benchmark, agrees with our annotators more often than eight of the models, yet its decision changes in only 9 of 48 matched pairs. Equivalent ways of asking the same question change how often a model acts by up to 52.5 percentage points. And every model stops to ask the user less often when it must carry out the task with tools than when it judges a proposed action. When rules are stated explicitly, the same models follow them almost perfectly, so the gaps are not explained by a general inability to follow rules. We release the benchmark and evaluation tools and recommend reporting these properties separately rather than as one score.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.05532v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.05532v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.05532" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.09112.html"><strong>GeoNatureAgent (GNA): A Framework and Benchmark for Pre-Production Evaluation of Tool-Using Agents on Geospatial and Environmental Tasks</strong></a> <span>2026-10-06</span></li>
+          <li><a href="2610.07614.html"><strong>BioStudyBench: Evaluating Agents on Post-Cutoff Biomedical Studies</strong></a> <span>2026-10-06</span></li>
+          <li><a href="2610.06454.html"><strong>AgentPrivArena: Evaluating and Auditing Real-world AI Agent Privacy</strong></a> <span>2026-10-05</span></li>
+          <li><a href="2610.06411.html"><strong>From Benchmark to Bench: Can Agents Survive Real-World Drug Discovery?</strong></a> <span>2026-10-05</span></li>
+          <li><a href="2610.04292.html"><strong>LMBuild: Evaluating LLM Agents for Generating Buildable and Functional Structures</strong></a> <span>2026-10-03</span></li>
+          <li><a href="2610.03356.html"><strong>ReFract: Benchmarking Perspective Awareness in Language Model Agents with Text World Models</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.03226.html"><strong>D2K-Bench: Can LLM Agents Turn Expert Designs into Efficient GPU Kernels?</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.02206.html"><strong>KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards</strong></a> <span>2026-10-02</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

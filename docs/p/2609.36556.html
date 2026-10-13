@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MAADBench: The Refreshable Paradigm for Anomaly Detection in Multi-Agent Systems | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Recent studies report that LLM-based multi-agent systems (MAS) fail at rates of 41%-87%, yet to our knowledge, no benchmark to date…" />
+    <meta name="keywords" content="Multi-agent, Safety, agent benchmark, LLM agent, arXiv, 2609.36556" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.36556.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MAADBench: The Refreshable Paradigm for Anomaly Detection in Multi-Agent Systems" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Recent studies report that LLM-based multi-agent systems (MAS) fail at rates of 41%-87%, yet to our knowledge, no benchmark to date…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.36556.html" />
+    <meta property="article:published_time" content="2026-09-29T02:42:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MAADBench: The Refreshable Paradigm for Anomaly Detection in Multi-Agent Systems" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Recent studies report that LLM-based multi-agent systems (MAS) fail at rates of 41%-87%, yet to our knowledge, no benchmark to date…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,76 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MAADBench: The Refreshable Paradigm for Anomaly Detection in Multi-Agent Systems",
+  "name": "MAADBench: The Refreshable Paradigm for Anomaly Detection in Multi-Agent Systems",
+  "abstract": "Recent studies report that LLM-based multi-agent systems (MAS) fail at rates of 41%-87%, yet to our knowledge, no benchmark to date supports systematic anomaly detection (AD) for them. Building MAS AD benchmarks is hard because they must remain fresh as LLM systems evolve: tasks may leak into training data and thus be memorized by LLMs, traces and anomaly patterns expire as backbones evolve, and labels must be provided reliably for each refresh. To address these challenges, we present MAADBench (MA: multi-agent; AD: anomaly detection), the first refreshable MAS AD benchmark designed for diverse, evolving LLM backbones underlying the agents. MAADBench combines (1) sampled-and-coupled generative tasks over an approximately 10^37-task space to mitigate task leakage, (2) refreshable trace generation under configurable LLM backbones, and (3) automated provision of cost-free, deterministic step-level labels for fine-grained AD evaluation. Beyond offering the paradigm itself, we run MAADBench with five state-of-the-art LLM backbones and release the MAADBench-Full dataset with 5,200 step-labeled traces. Benchmarking 25 AD methods on the MAADBench dataset reveals substantial limitations in current approaches: they rely heavily on supervision, struggle with subtle MAS-specific anomalies, and lack robustness across LLM backbones. These gaps point to a rich research agenda for MAS-specific anomaly detection, with MAADBench providing a systematic and refreshable testbed for method development and evaluation. We open-source MAADBench-Full at https://huggingface.co/datasets/hww123/MAADBench-full.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Lei Ma"
+    },
+    {
+      "@type": "Person",
+      "name": "Dennis Hofmann"
+    },
+    {
+      "@type": "Person",
+      "name": "Haowen Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Joshua DeOliveira"
+    },
+    {
+      "@type": "Person",
+      "name": "Peter VanNostrand"
+    },
+    {
+      "@type": "Person",
+      "name": "Lei Cao"
+    },
+    {
+      "@type": "Person",
+      "name": "Elke Rundensteiner"
+    }
+  ],
+  "datePublished": "2026-09-29T02:42:00Z",
+  "dateModified": "2026-09-29T02:42:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.36556.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.36556.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.36556v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.36556"
+  },
+  "keywords": [
+    "Multi-agent",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multi-agent"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.36556v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.36556"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +108,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MAADBench: The Refreshable Paradigm for Anomaly Detection in Multi-Agent Systems</h1>
+        <div class="meta">
+          Lei Ma, Dennis Hofmann, Haowen Xu, Joshua DeOliveira, Peter VanNostrand, Lei Cao, Elke Rundensteiner
+          · 2609.36556
+          · <time datetime="2026-09-29">2026-09-29</time>
+          · Multi-agent
+        </div>
+        <div class="themes"><span class="chip">Multi-agent</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Recent studies report that LLM-based multi-agent systems (MAS) fail at rates of 41%-87%, yet to our knowledge, no benchmark to date supports systematic anomaly detection (AD) for them. Building MAS AD benchmarks is hard because they must remain fresh as LLM systems evolve: tasks may leak into training data and thus be memorized by LLMs, traces and anomaly patterns expire as backbones evolve, and labels must be provided reliably for each refresh. To address these challenges, we present MAADBench (MA: multi-agent; AD: anomaly detection), the first refreshable MAS AD benchmark designed for diverse, evolving LLM backbones underlying the agents. MAADBench combines (1) sampled-and-coupled generative tasks over an approximately 10^37-task space to mitigate task leakage, (2) refreshable trace generation under configurable LLM backbones, and (3) automated provision of cost-free, deterministic step-level labels for fine-grained AD evaluation. Beyond offering the paradigm itself, we run MAADBench with five state-of-the-art LLM backbones and release the MAADBench-Full dataset with 5,200 step-labeled traces. Benchmarking 25 AD methods on the MAADBench dataset reveals substantial limitations in current approaches: they rely heavily on supervision, struggle with subtle MAS-specific anomalies, and lack robustness across LLM backbones. These gaps point to a rich research agenda for MAS-specific anomaly detection, with MAADBench providing a systematic and refreshable testbed for method development and evaluation. We open-source MAADBench-Full at https://huggingface.co/datasets/hww123/MAADBench-full.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.36556v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.36556v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.36556" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multi-agent benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.01017.html"><strong>Pay for the Fault, Not the Flow: Label-Free In-Flow Multi-Agent Workflow Optimization</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2609.39777.html"><strong>GraphMAS: A Systematic Benchmark of Multi-Agent Coordination for Graph Learning</strong></a> <span>2026-09-30</span></li>
+          <li><a href="2609.39146.html"><strong>MADBench: Benchmarking the Security of Multi-Agent Debate</strong></a> <span>2026-09-30</span></li>
+          <li><a href="2609.36739.html"><strong>Frontier Autolab: Organizational Memory, Adversarial Dissent and Temporal Leakage in Multi-Agent LLM Firms Across Fifty Years of Technological Change</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.35916.html"><strong>VehicleArena: A Realistic Urban Environment for Multi-Agent Driving</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34913.html"><strong>DGF-Bench: A Benchmark for Simulating and Auditing Deception Against Multi-Agent Governance Boards</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34821.html"><strong>CEO Arena: Evaluating Long-Horizon Multi-Agent Decision-Making in Competitive Markets</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34496.html"><strong>MASTraceBench: Diagnosing Collaboration Gains through Proposal Trajectories in LLM-Based Multi-Agent Systems</strong></a> <span>2026-09-28</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

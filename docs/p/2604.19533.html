@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Cyber Defense Benchmark: Agentic Threat Hunting Evaluation for LLMs in SecOps | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: We introduce the Cyber Defense Benchmark, a benchmark for measuring how well large language model (LLM) agents perform the core SOC…" />
+    <meta name="keywords" content="General, Memory, agent benchmark, LLM agent, arXiv, 2604.19533" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.19533.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Cyber Defense Benchmark: Agentic Threat Hunting Evaluation for LLMs in SecOps" />
+    <meta property="og:description" content="Daily Agent Benchmarks: We introduce the Cyber Defense Benchmark, a benchmark for measuring how well large language model (LLM) agents perform the core SOC…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.19533.html" />
+    <meta property="article:published_time" content="2026-04-21T14:53:23Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Cyber Defense Benchmark: Agentic Threat Hunting Evaluation for LLMs in SecOps" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: We introduce the Cyber Defense Benchmark, a benchmark for measuring how well large language model (LLM) agents perform the core SOC…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,60 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Cyber Defense Benchmark: Agentic Threat Hunting Evaluation for LLMs in SecOps",
+  "name": "Cyber Defense Benchmark: Agentic Threat Hunting Evaluation for LLMs in SecOps",
+  "abstract": "We introduce the Cyber Defense Benchmark, a benchmark for measuring how well large language model (LLM) agents perform the core SOC analyst task of threat hunting: given a database of raw Windows event logs with no guided questions or hints, identify the exact timestamps of malicious events. The benchmark wraps 106 real attack procedures from the OTRF Security-Datasets corpus - spanning 86 MITRE ATT&CK sub-techniques across 12 tactics - into a Gymnasium reinforcement-learning environment. Each episode presents the agent with an in-memory SQLite database of 75,000-135,000 log records produced by a deterministic campaign simulator that time-shifts and entity-obfuscates the raw recordings. The agent must iteratively submit SQL queries to discover malicious event timestamps and explicitly flag them, scored CTF-style against Sigma-rule-derived ground truth. Evaluating five frontier models - Claude Opus 4.6, GPT-5, Gemini 3.1 Pro, Kimi K2.5, and Gemini 3 Flash - on 26 campaigns covering 105 of 106 procedures, we find that all models fail dramatically: the best model (Claude Opus 4.6) submits correct flags for only 3.8% of malicious events on average, and no run across any model ever finds all flags. We define a passing score as >= 50% recall on every ATT&CK tactic - the minimum bar for unsupervised SOC deployment. No model passes: the leader clears this bar on 5 of 13 tactics and the remaining four on zero. These results suggest that current LLMs are poorly suited for open-ended, evidence-driven threat hunting despite strong performance on curated Q&A security benchmarks.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Alankrit Chona"
+    },
+    {
+      "@type": "Person",
+      "name": "Igor Kozlov"
+    },
+    {
+      "@type": "Person",
+      "name": "Ambuj Kumar"
+    }
+  ],
+  "datePublished": "2026-04-21T14:53:23Z",
+  "dateModified": "2026-04-23T17:59:02Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.19533.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.19533.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.19533v3"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2604.19533"
+  },
+  "keywords": [
+    "General",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2604.19533v3"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2604.19533"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +92,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Cyber Defense Benchmark: Agentic Threat Hunting Evaluation for LLMs in SecOps</h1>
+        <div class="meta">
+          Alankrit Chona, Igor Kozlov, Ambuj Kumar
+          · 2604.19533
+          · <time datetime="2026-04-21">2026-04-21</time>
+          · General · 5 citations
+        </div>
+        <div class="themes"><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>We introduce the Cyber Defense Benchmark, a benchmark for measuring how well large language model (LLM) agents perform the core SOC analyst task of threat hunting: given a database of raw Windows event logs with no guided questions or hints, identify the exact timestamps of malicious events. The benchmark wraps 106 real attack procedures from the OTRF Security-Datasets corpus - spanning 86 MITRE ATT&amp;CK sub-techniques across 12 tactics - into a Gymnasium reinforcement-learning environment. Each episode presents the agent with an in-memory SQLite database of 75,000-135,000 log records produced by a deterministic campaign simulator that time-shifts and entity-obfuscates the raw recordings. The agent must iteratively submit SQL queries to discover malicious event timestamps and explicitly flag them, scored CTF-style against Sigma-rule-derived ground truth. Evaluating five frontier models - Claude Opus 4.6, GPT-5, Gemini 3.1 Pro, Kimi K2.5, and Gemini 3 Flash - on 26 campaigns covering 105 of 106 procedures, we find that all models fail dramatically: the best model (Claude Opus 4.6) submits correct flags for only 3.8% of malicious events on average, and no run across any model ever finds all flags. We define a passing score as &gt;= 50% recall on every ATT&amp;CK tactic - the minimum bar for unsupervised SOC deployment. No model passes: the leader clears this bar on 5 of 13 tactics and the remaining four on zero. These results suggest that current LLMs are poorly suited for open-ended, evidence-driven threat hunting despite strong performance on curated Q&amp;A security benchmarks.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2604.19533v3" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2604.19533v3" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2604.19533" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2604.22436.html"><strong>AgentSearchBench: A Benchmark for AI Agent Search in the Wild</strong></a> <span>2026-04-24</span></li>
+          <li><a href="2604.22861.html"><strong>IntrAgent: An LLM Agent for Content-Grounded Information Retrieval through Literature Review</strong></a> <span>2026-04-23</span></li>
+          <li><a href="2604.20087.html"><strong>SkillLearnBench: Benchmarking Continual Learning Methods for Agent Skill Generation on Real-World Tasks</strong></a> <span>2026-04-22</span></li>
+          <li><a href="2604.20006.html"><strong>From Recall to Forgetting: Benchmarking Long-Term Memory for Personalized Agents</strong></a> <span>2026-04-21</span></li>
+          <li><a href="2604.19354.html"><strong>Do Agents Dream of Root Shells? Partial-Credit Evaluation of LLM Agents in Capture the Flag Challenges</strong></a> <span>2026-04-21</span></li>
+          <li><a href="2604.18934.html"><strong>AutomationBench</strong></a> <span>2026-04-21</span></li>
+          <li><a href="2604.18543.html"><strong>ClawEnvKit: Automatic Environment Generation for Claw-Like Agents</strong></a> <span>2026-04-20</span></li>
+          <li><a href="2604.18292.html"><strong>Agent-World: Scaling Real-World Environment Synthesis for Evolving General Agent Intelligence</strong></a> <span>2026-04-20</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

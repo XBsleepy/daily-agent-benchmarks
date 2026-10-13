@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Failure attribution, i.e., identifying the responsible agent and decisive step of a failure, is particularly challenging in LLM-based…" />
+    <meta name="keywords" content="Multi-agent, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2604.22708" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.22708.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Failure attribution, i.e., identifying the responsible agent and decisive step of a failure, is particularly challenging in LLM-based…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.22708.html" />
+    <meta property="article:published_time" content="2026-04-24T16:40:44Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Failure attribution, i.e., identifying the responsible agent and decisive step of a failure, is particularly challenging in LLM-based…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,76 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems",
+  "name": "Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems",
+  "abstract": "Failure attribution, i.e., identifying the responsible agent and decisive step of a failure, is particularly challenging in LLM-based multi-agent systems (MAS) due to their natural-language reasoning, nondeterministic outputs, and intricate interaction dynamics. A reliable benchmark is therefore essential to guide and evaluate attribution techniques. Yet existing benchmarks rely on partially observable traces that capture only agent outputs, omitting the inputs and context that developers actually use when debugging. We argue that failure attribution should be studied under full execution observability, aligning with real-world developer-facing scenarios where complete traces, rather than only outputs, are accessible for diagnosis. To this end, we introduce TraceElephant, a benchmark designed for failure attribution with full execution traces and reproducible environments. We then systematically evaluate failure attribution techniques across various configurations. Specifically, full traces improve attribution accuracy by up to 76\\% over a partial-observation counterpart, confirming that missing inputs obscure many failure causes. TraceElephant provides a foundation for follow-up failure attribution research, promoting evaluation practices that reflect real-world debugging and supporting the development of more transparent MASs.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Mengzhuo Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Junjie Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Fangwen Mu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yawen Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhe Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Huanxiang Feng"
+    },
+    {
+      "@type": "Person",
+      "name": "Qing Wang"
+    }
+  ],
+  "datePublished": "2026-04-24T16:40:44Z",
+  "dateModified": "2026-04-24T16:40:44Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.22708.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.22708.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.22708v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2604.22708"
+  },
+  "keywords": [
+    "Multi-agent",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multi-agent"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2604.22708v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2604.22708"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +108,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems</h1>
+        <div class="meta">
+          Mengzhuo Chen, Junjie Wang, Fangwen Mu, Yawen Wang, Zhe Liu, Huanxiang Feng, Qing Wang
+          · 2604.22708
+          · <time datetime="2026-04-24">2026-04-24</time>
+          · Multi-agent · 12 citations
+        </div>
+        <div class="themes"><span class="chip">Multi-agent</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Failure attribution, i.e., identifying the responsible agent and decisive step of a failure, is particularly challenging in LLM-based multi-agent systems (MAS) due to their natural-language reasoning, nondeterministic outputs, and intricate interaction dynamics. A reliable benchmark is therefore essential to guide and evaluate attribution techniques. Yet existing benchmarks rely on partially observable traces that capture only agent outputs, omitting the inputs and context that developers actually use when debugging. We argue that failure attribution should be studied under full execution observability, aligning with real-world developer-facing scenarios where complete traces, rather than only outputs, are accessible for diagnosis. To this end, we introduce TraceElephant, a benchmark designed for failure attribution with full execution traces and reproducible environments. We then systematically evaluate failure attribution techniques across various configurations. Specifically, full traces improve attribution accuracy by up to 76\% over a partial-observation counterpart, confirming that missing inputs obscure many failure causes. TraceElephant provides a foundation for follow-up failure attribution research, promoting evaluation practices that reflect real-world debugging and supporting the development of more transparent MASs.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2604.22708v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2604.22708v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2604.22708" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multi-agent benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.08583.html"><strong>Source or It Didn&#x27;t Happen: A Multi-Agent Framework for Citation Hallucination Detection</strong></a> <span>2026-05-09</span></li>
+          <li><a href="2605.06869.html"><strong>Agentick: A Unified Benchmark for General Sequential Decision-Making Agents</strong></a> <span>2026-05-07</span></li>
+          <li><a href="2604.24477.html"><strong>GAMMAF: A Common Framework for Graph-Based Anomaly Monitoring Benchmarking in LLM Multi-Agent Systems</strong></a> <span>2026-04-27</span></li>
+          <li><a href="2604.23580.html"><strong>PhysCodeBench: Benchmarking Physics-Aware Symbolic Simulation of 3D Scenes via Self-Corrective Multi-Agent Refinement</strong></a> <span>2026-04-26</span></li>
+          <li><a href="2604.20273.html"><strong>ActuBench: A Multi-Agent LLM Pipeline for Generation and Evaluation of Actuarial Reasoning Tasks</strong></a> <span>2026-04-22</span></li>
+          <li><a href="2604.17159.html"><strong>Systematic Capability Benchmarking of Frontier Large Language Models for Offensive Cyber Tasks</strong></a> <span>2026-04-18</span></li>
+          <li><a href="2604.16729.html"><strong>Agentic Large Language Models for Training-Free Neuro-Radiological Image Analysis</strong></a> <span>2026-04-17</span></li>
+          <li><a href="2604.16022.html"><strong>SocialGrid: A Benchmark for Planning and Social Reasoning in Embodied Multi-Agent Systems</strong></a> <span>2026-04-17</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

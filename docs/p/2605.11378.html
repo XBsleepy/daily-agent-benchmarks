@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>An Empirical Study of Automating Agent Evaluation | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Agent evaluation requires assessing complex multi-step behaviors involving tool use and intermediate reasoning, making it costly and…" />
+    <meta name="keywords" content="General, Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2605.11378" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.11378.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="An Empirical Study of Automating Agent Evaluation" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Agent evaluation requires assessing complex multi-step behaviors involving tool use and intermediate reasoning, making it costly and…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.11378.html" />
+    <meta property="article:published_time" content="2026-05-12T01:06:34Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="An Empirical Study of Automating Agent Evaluation" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Agent evaluation requires assessing complex multi-step behaviors involving tool use and intermediate reasoning, making it costly and…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,117 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "An Empirical Study of Automating Agent Evaluation",
+  "name": "An Empirical Study of Automating Agent Evaluation",
+  "abstract": "Agent evaluation requires assessing complex multi-step behaviors involving tool use and intermediate reasoning, making it costly and expertise-intensive. A natural question arises: can frontier coding assistants reliably automate this evaluation process? Our study shows that simply prompting coding assistants is insufficient for this task. Without domain-specific evaluation knowledge, frontier coding assistants achieve only a 30% execution success rate and produce over-engineered evaluations averaging 12+ metrics per agent, indicating that strong coding ability does not automatically translate to reliable agent evaluation. We introduce EvalAgent, an AI assistant that automates the end-to-end agent evaluation pipeline. EvalAgent encodes evaluation domain expertise as evaluation skills (procedural instructions, reusable code and templates, and dynamically retrieved API documentation) that compose into a trace-based pipeline producing complete evaluation artifacts including metrics, executable code, and reports. To systematically assess generated evaluations, we introduce a meta-evaluation framework alongside AgentEvalBench, a benchmark comprising 20 agents, each paired with evaluation requirements and test scenarios. We further propose the Eval@1 metric to measure whether generated evaluation code both executes and yields meaningful results on the first run. Our experiments show that EvalAgent produces focused evaluations, improving Eval@1 from 17.5% to 65%, and achieving 79.5% human expert preference over baseline approaches. Further ablation studies show that evaluation skills are critical for handling complex evaluation: removing them causes Eval@1 to drop significantly from 65% to 30%.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Kang Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Sangmin Woo"
+    },
+    {
+      "@type": "Person",
+      "name": "Haibo Ding"
+    },
+    {
+      "@type": "Person",
+      "name": "Kiran Ramnath"
+    },
+    {
+      "@type": "Person",
+      "name": "Subramanian Chidambaram"
+    },
+    {
+      "@type": "Person",
+      "name": "Aosong Feng"
+    },
+    {
+      "@type": "Person",
+      "name": "Vinayak Arannil"
+    },
+    {
+      "@type": "Person",
+      "name": "Muhyun Kim"
+    },
+    {
+      "@type": "Person",
+      "name": "Ishan Singh"
+    },
+    {
+      "@type": "Person",
+      "name": "Darren Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhichao Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Megha Gandhi"
+    },
+    {
+      "@type": "Person",
+      "name": "Nirmal Prabhu"
+    },
+    {
+      "@type": "Person",
+      "name": "Soumya Smruti Mishra"
+    },
+    {
+      "@type": "Person",
+      "name": "Vivek Singh"
+    },
+    {
+      "@type": "Person",
+      "name": "Gouri Pandeshwar"
+    },
+    {
+      "@type": "Person",
+      "name": "Lin Lee Cheong"
+    }
+  ],
+  "datePublished": "2026-05-12T01:06:34Z",
+  "dateModified": "2026-06-11T21:00:11Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.11378.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.11378.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.11378v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.11378"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.11378v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.11378"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +149,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>An Empirical Study of Automating Agent Evaluation</h1>
+        <div class="meta">
+          Kang Zhou, Sangmin Woo, Haibo Ding, Kiran Ramnath, Subramanian Chidambaram, Aosong Feng, Vinayak Arannil, Muhyun Kim, Ishan Singh, Darren Wang, Zhichao Xu, Megha Gandhi, Nirmal Prabhu, Soumya Smruti Mishra, Vivek Singh, Gouri Pandeshwar, Lin Lee Cheong
+          · 2605.11378
+          · <time datetime="2026-05-12">2026-05-12</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Agent evaluation requires assessing complex multi-step behaviors involving tool use and intermediate reasoning, making it costly and expertise-intensive. A natural question arises: can frontier coding assistants reliably automate this evaluation process? Our study shows that simply prompting coding assistants is insufficient for this task. Without domain-specific evaluation knowledge, frontier coding assistants achieve only a 30% execution success rate and produce over-engineered evaluations averaging 12+ metrics per agent, indicating that strong coding ability does not automatically translate to reliable agent evaluation. We introduce EvalAgent, an AI assistant that automates the end-to-end agent evaluation pipeline. EvalAgent encodes evaluation domain expertise as evaluation skills (procedural instructions, reusable code and templates, and dynamically retrieved API documentation) that compose into a trace-based pipeline producing complete evaluation artifacts including metrics, executable code, and reports. To systematically assess generated evaluations, we introduce a meta-evaluation framework alongside AgentEvalBench, a benchmark comprising 20 agents, each paired with evaluation requirements and test scenarios. We further propose the Eval@1 metric to measure whether generated evaluation code both executes and yields meaningful results on the first run. Our experiments show that EvalAgent produces focused evaluations, improving Eval@1 from 17.5% to 65%, and achieving 79.5% human expert preference over baseline approaches. Further ablation studies show that evaluation skills are critical for handling complex evaluation: removing them causes Eval@1 to drop significantly from 65% to 30%.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.11378v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.11378v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.11378" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.11874.html"><strong>RecRM-Bench: Benchmarking Multidimensional Reward Modeling for Agentic Recommender Systems</strong></a> <span>2026-05-12</span></li>
+          <li><a href="2605.11814.html"><strong>MedMemoryBench: Benchmarking Agent Memory in Personalized Healthcare</strong></a> <span>2026-05-12</span></li>
+          <li><a href="2605.11633.html"><strong>Can LLM Agents Respond to Disasters? Benchmarking Heterogeneous Geospatial Reasoning in Emergency Operations</strong></a> <span>2026-05-12</span></li>
+          <li><a href="2605.11504.html"><strong>CTFusion: A CTF-based Benchmark for LLM Agent Evaluation</strong></a> <span>2026-05-12</span></li>
+          <li><a href="2605.18805.html"><strong>RecoAtlas: From Semantic Plausibility to Set-Level Utility in LLM Recommendation Agents</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2605.11224.html"><strong>ABRA: Agent Benchmark for Radiology Applications</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2605.10876.html"><strong>AssayBench: An Assay-Level Virtual Cell Benchmark for LLMs and Agents</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2605.10787.html"><strong>ComplexMCP: Evaluation of LLM Agents in Dynamic, Interdependent, and Large-Scale Tool Sandbox</strong></a> <span>2026-05-11</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Skill-Inject: Measuring Agent Vulnerability to Skill File Attacks | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLM agents are evolving rapidly, powered by code execution, tools, and the recently introduced agent skills feature. Skills allow…" />
+    <meta name="keywords" content="Web &amp; browser, Web agents, Tool use, Safety, agent benchmark, LLM agent, arXiv, 2602.20156" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.20156.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Skill-Inject: Measuring Agent Vulnerability to Skill File Attacks" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLM agents are evolving rapidly, powered by code execution, tools, and the recently introduced agent skills feature. Skills allow…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.20156.html" />
+    <meta property="article:published_time" content="2026-02-23T18:59:27Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Skill-Inject: Measuring Agent Vulnerability to Skill File Attacks" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLM agents are evolving rapidly, powered by code execution, tools, and the recently introduced agent skills feature. Skills allow…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,66 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Skill-Inject: Measuring Agent Vulnerability to Skill File Attacks",
+  "name": "Skill-Inject: Measuring Agent Vulnerability to Skill File Attacks",
+  "abstract": "LLM agents are evolving rapidly, powered by code execution, tools, and the recently introduced agent skills feature. Skills allow users to extend LLM applications with specialized third-party code, knowledge, and instructions. Although this can extend agent capabilities to new domains, it creates an increasingly complex agent supply chain, offering new surfaces for prompt injection attacks. We identify skill-based prompt injection as a significant threat and introduce SkillInject, a benchmark evaluating the susceptibility of widely-used LLM agents to injections through skill files. SkillInject contains 202 injection-task pairs with attacks ranging from obviously malicious injections to subtle, context-dependent attacks hidden in otherwise legitimate instructions. We evaluate frontier LLMs on SkillInject, measuring both security in terms of harmful instruction avoidance and utility in terms of legitimate instruction compliance. Our results show that today's agents are highly vulnerable with up to 80% attack success rate with frontier models, often executing extremely harmful instructions including data exfiltration, destructive action, and ransomware-like behavior. They furthermore suggest that this problem will not be solved through model scaling or simple input filtering, but that robust agent security will require context-aware authorization frameworks. Our benchmark is available at https://www.skill-inject.com/.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Schmotz"
+    },
+    {
+      "@type": "Person",
+      "name": "Luca Beurer-Kellner"
+    },
+    {
+      "@type": "Person",
+      "name": "Sahar Abdelnabi"
+    },
+    {
+      "@type": "Person",
+      "name": "Maksym Andriushchenko"
+    }
+  ],
+  "datePublished": "2026-02-23T18:59:27Z",
+  "dateModified": "2026-02-25T18:14:01Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.20156.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.20156.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2602.20156v3"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2602.20156"
+  },
+  "keywords": [
+    "Web & browser",
+    "Web agents",
+    "Tool use",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Web & browser"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2602.20156v3"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2602.20156"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +98,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Skill-Inject: Measuring Agent Vulnerability to Skill File Attacks</h1>
+        <div class="meta">
+          David Schmotz, Luca Beurer-Kellner, Sahar Abdelnabi, Maksym Andriushchenko
+          · 2602.20156
+          · <time datetime="2026-02-23">2026-02-23</time>
+          · Web &amp; browser · 72 citations
+        </div>
+        <div class="themes"><span class="chip">Web agents</span><span class="chip">Tool use</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLM agents are evolving rapidly, powered by code execution, tools, and the recently introduced agent skills feature. Skills allow users to extend LLM applications with specialized third-party code, knowledge, and instructions. Although this can extend agent capabilities to new domains, it creates an increasingly complex agent supply chain, offering new surfaces for prompt injection attacks. We identify skill-based prompt injection as a significant threat and introduce SkillInject, a benchmark evaluating the susceptibility of widely-used LLM agents to injections through skill files. SkillInject contains 202 injection-task pairs with attacks ranging from obviously malicious injections to subtle, context-dependent attacks hidden in otherwise legitimate instructions. We evaluate frontier LLMs on SkillInject, measuring both security in terms of harmful instruction avoidance and utility in terms of legitimate instruction compliance. Our results show that today&#x27;s agents are highly vulnerable with up to 80% attack success rate with frontier models, often executing extremely harmful instructions including data exfiltration, destructive action, and ransomware-like behavior. They furthermore suggest that this problem will not be solved through model scaling or simple input filtering, but that robust agent security will require context-aware authorization frameworks. Our benchmark is available at https://www.skill-inject.com/.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2602.20156v3" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2602.20156v3" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2602.20156" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Web &amp; browser benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2604.16385.html"><strong>StressWeb: A Diagnostic Benchmark for Web Agent Robustness under Realistic Interaction Variability</strong></a> <span>2026-03-27</span></li>
+          <li><a href="2603.22529.html"><strong>Ego2Web: A Web Agent Benchmark Grounded in Egocentric Videos</strong></a> <span>2026-03-23</span></li>
+          <li><a href="2603.04949.html"><strong>TimeWarp: Evaluating Web Agents by Revisiting the Past</strong></a> <span>2026-03-05</span></li>
+          <li><a href="2603.00476.html"><strong>Atomicity for Agents: Exposing, Exploiting, and Mitigating TOCTOU Vulnerabilities in Browser-Use Agents</strong></a> <span>2026-02-28</span></li>
+          <li><a href="2602.17003.html"><strong>Persona2Web: Benchmarking Personalized Web Agents for Contextual Reasoning with User History</strong></a> <span>2026-02-19</span></li>
+          <li><a href="2601.18113.html"><strong>MalURLBench: A Benchmark Evaluating Agents&#x27; Vulnerabilities When Processing Web URLs</strong></a> <span>2026-01-26</span></li>
+          <li><a href="2601.11868.html"><strong>Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces</strong></a> <span>2026-01-17</span></li>
+          <li><a href="2601.06301.html"><strong>Beyond BeautifulSoup: Benchmarking LLM-Powered Web Scraping for Everyday Users</strong></a> <span>2026-01-09</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

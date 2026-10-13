@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>What Twelve LLM Agent Benchmark Papers Disclose About Themselves: A Pilot Audit and an Open Scoring Schema | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: We read twelve well-known LLM agent benchmark papers and recorded, dimension by dimension, what each paper actually says about how…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2605.21404" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.21404.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="What Twelve LLM Agent Benchmark Papers Disclose About Themselves: A Pilot Audit and an Open Scoring Schema" />
+    <meta property="og:description" content="Daily Agent Benchmarks: We read twelve well-known LLM agent benchmark papers and recorded, dimension by dimension, what each paper actually says about how…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.21404.html" />
+    <meta property="article:published_time" content="2026-05-20T17:02:36Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="What Twelve LLM Agent Benchmark Papers Disclose About Themselves: A Pilot Audit and an Open Scoring Schema" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: We read twelve well-known LLM agent benchmark papers and recorded, dimension by dimension, what each paper actually says about how…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,55 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "What Twelve LLM Agent Benchmark Papers Disclose About Themselves: A Pilot Audit and an Open Scoring Schema",
+  "name": "What Twelve LLM Agent Benchmark Papers Disclose About Themselves: A Pilot Audit and an Open Scoring Schema",
+  "abstract": "We read twelve well-known LLM agent benchmark papers and recorded, dimension by dimension, what each paper actually says about how its evaluation was run. The motivation came from a familiar frustration: two papers will report results on the same benchmark with the same model name and disagree, and you cannot tell why -- the scaffold, the sampling settings, the subset, or the evaluator version. In many cases the published artifact does not let you answer. This paper is an implementation report on the attempt. We designed a small audit schema (five fields: benchmark identity, harness specification, inference settings, cost reporting, failure breakdown), wrote a scoring codebook with the boundary cases we hit during pilot scoring, applied it to twelve canonical papers (eight agent, four classical static), and recorded what we saw. We score the disclosure of an agent run, not its correctness, and make no claim that disclosure implies a trustworthy result. The mean audit score across the eight agent-benchmark papers is 0.38 (out of 1.0), and across the four classical static benchmarks 0.66; the largest gap is on cost (none of the eight agent benchmark papers disclose inference cost in any form) and on harness specification (none fully disclose a content-addressed container image of the evaluation environment). We release the schema as a JSON Schema file, the codebook as a Markdown document, and the raw scoring sheet as a CSV. The scoring was performed by a single auditor in one pass; a multi-rater audit is the natural next step, and we discuss what we think it would change.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Mahdi Naser Moghadasi"
+    },
+    {
+      "@type": "Person",
+      "name": "Faezeh Ghaderi"
+    }
+  ],
+  "datePublished": "2026-05-20T17:02:36Z",
+  "dateModified": "2026-05-20T17:02:36Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.21404.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.21404.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.21404v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.21404"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.21404v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.21404"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +87,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>What Twelve LLM Agent Benchmark Papers Disclose About Themselves: A Pilot Audit and an Open Scoring Schema</h1>
+        <div class="meta">
+          Mahdi Naser Moghadasi, Faezeh Ghaderi
+          · 2605.21404
+          · <time datetime="2026-05-20">2026-05-20</time>
+          · General · 4 citations
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>We read twelve well-known LLM agent benchmark papers and recorded, dimension by dimension, what each paper actually says about how its evaluation was run. The motivation came from a familiar frustration: two papers will report results on the same benchmark with the same model name and disagree, and you cannot tell why -- the scaffold, the sampling settings, the subset, or the evaluator version. In many cases the published artifact does not let you answer. This paper is an implementation report on the attempt. We designed a small audit schema (five fields: benchmark identity, harness specification, inference settings, cost reporting, failure breakdown), wrote a scoring codebook with the boundary cases we hit during pilot scoring, applied it to twelve canonical papers (eight agent, four classical static), and recorded what we saw. We score the disclosure of an agent run, not its correctness, and make no claim that disclosure implies a trustworthy result. The mean audit score across the eight agent-benchmark papers is 0.38 (out of 1.0), and across the four classical static benchmarks 0.66; the largest gap is on cost (none of the eight agent benchmark papers disclose inference cost in any form) and on harness specification (none fully disclose a content-addressed container image of the evaluation environment). We release the schema as a JSON Schema file, the codebook as a Markdown document, and the raw scoring sheet as a CSV. The scoring was performed by a single auditor in one pass; a multi-rater audit is the natural next step, and we discuss what we think it would change.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.21404v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.21404v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.21404" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.22535.html"><strong>TerminalWorld: Benchmarking Agents on Real-World Terminal Tasks</strong></a> <span>2026-05-21</span></li>
+          <li><a href="2605.22219.html"><strong>SGR-Bench: Benchmarking Search Agents on State-Gated Retrieval</strong></a> <span>2026-05-21</span></li>
+          <li><a href="2607.20468.html"><strong>InferenceBench: A Benchmark for Open-Ended LLM Inference Optimization by AI Agents</strong></a> <span>2026-05-20</span></li>
+          <li><a href="2605.21740.html"><strong>SMDD-Bench: Can LLMs Solve Real-World Small Molecule Drug Design Tasks?</strong></a> <span>2026-05-20</span></li>
+          <li><a href="2605.22855.html"><strong>PrefBench: Evaluating Zero-Shot LLM Agents in Hidden-Preference Personalized Pricing Negotiations</strong></a> <span>2026-05-19</span></li>
+          <li><a href="2605.20530.html"><strong>AgentAtlas: Beyond Outcome Leaderboards for LLM Agents</strong></a> <span>2026-05-19</span></li>
+          <li><a href="2605.19717.html"><strong>Physics-in-the-Loop: A Hybrid Agentic Architecture for Validated CAD Engineering Design</strong></a> <span>2026-05-19</span></li>
+          <li><a href="2605.19127.html"><strong>POLAR-Bench: A Diagnostic Benchmark for Privacy-Utility Trade-offs in LLM Agents</strong></a> <span>2026-05-18</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

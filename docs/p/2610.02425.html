@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Finding the Move Is Not Winning the Game: XiangqiBench for Closed-Loop Evaluation of LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Static evaluations credit a language model for naming the right move, but an agent must carry a plan through to a verified outcome…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2610.02425" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.02425.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Finding the Move Is Not Winning the Game: XiangqiBench for Closed-Loop Evaluation of LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Static evaluations credit a language model for naming the right move, but an agent must carry a plan through to a verified outcome…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.02425.html" />
+    <meta property="article:published_time" content="2026-10-01T19:48:08Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Finding the Move Is Not Winning the Game: XiangqiBench for Closed-Loop Evaluation of LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Static evaluations credit a language model for naming the right move, but an agent must carry a plan through to a verified outcome…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,59 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Finding the Move Is Not Winning the Game: XiangqiBench for Closed-Loop Evaluation of LLM Agents",
+  "name": "Finding the Move Is Not Winning the Game: XiangqiBench for Closed-Loop Evaluation of LLM Agents",
+  "abstract": "Static evaluations credit a language model for naming the right move, but an agent must carry a plan through to a verified outcome while an opponent responds. We introduce XiangqiBench, an executable benchmark that measures this difference in Chinese chess: starting from 119 tactical endgames with forced mates supported by engine or checks-only search, an LLM agent must deliver checkmate against an engine defender. An interactive REPL interface separates real moves, state queries, and forward simulation, and we record 8,568 multi-turn trajectories from 12 frontier LLMs under two observation protocols. Three signals that look like competence each overstate closed-loop success. (i) The Conversion Gap: models play the stored reference first move in 26.1\\% of Sighted trials, yet only 13.9\\% of these trials end in a win. (ii) The Consistency Gap: the leading model reaches 38.7\\% pass@3 but only 5.9\\% pass^3, winning all three trials on 7 of the 46 positions it ever wins. (iii) The Simulation Gap: 32.3\\% of accepted simulation calls stop on an illegal move, and in 49.3\\% of comparable cases the real defender replies differently from the line the agent simulated; self-authored rollouts check legality but cannot anticipate the opponent. Finding the move is not winning the game: agent evaluations should score closed-loop outcomes and report reliability alongside coverage.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yekun Chai"
+    },
+    {
+      "@type": "Person",
+      "name": "Qiwei Peng"
+    },
+    {
+      "@type": "Person",
+      "name": "Haoyi Xiong"
+    }
+  ],
+  "datePublished": "2026-10-01T19:48:08Z",
+  "dateModified": "2026-10-01T19:48:08Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.02425.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.02425.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.02425v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.02425"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.02425v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2610.02425"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +91,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Finding the Move Is Not Winning the Game: XiangqiBench for Closed-Loop Evaluation of LLM Agents</h1>
+        <div class="meta">
+          Yekun Chai, Qiwei Peng, Haoyi Xiong
+          · 2610.02425
+          · <time datetime="2026-10-01">2026-10-01</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Static evaluations credit a language model for naming the right move, but an agent must carry a plan through to a verified outcome while an opponent responds. We introduce XiangqiBench, an executable benchmark that measures this difference in Chinese chess: starting from 119 tactical endgames with forced mates supported by engine or checks-only search, an LLM agent must deliver checkmate against an engine defender. An interactive REPL interface separates real moves, state queries, and forward simulation, and we record 8,568 multi-turn trajectories from 12 frontier LLMs under two observation protocols. Three signals that look like competence each overstate closed-loop success. (i) The Conversion Gap: models play the stored reference first move in 26.1\% of Sighted trials, yet only 13.9\% of these trials end in a win. (ii) The Consistency Gap: the leading model reaches 38.7\% pass@3 but only 5.9\% pass^3, winning all three trials on 7 of the 46 positions it ever wins. (iii) The Simulation Gap: 32.3\% of accepted simulation calls stop on an illegal move, and in 49.3\% of comparable cases the real defender replies differently from the line the agent simulated; self-authored rollouts check legality but cannot anticipate the opponent. Finding the move is not winning the game: agent evaluations should score closed-loop outcomes and report reliability alongside coverage.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.02425v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.02425v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.02425" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.03020.html"><strong>DyadMem: A Long-Term Memory Benchmark of How Agents Work with Users</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.00954.html"><strong>Beyond Leaderboards: Tokenomics of Agentic Small Language Model Ensembles</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.00651.html"><strong>Agent Evaluation Reliability: More Tasks Won&#x27;t (Always) Fix An Agent Leaderboard</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.02588.html"><strong>Open-Endedness Bench: Measuring Epistemic Process from Agent Records</strong></a> <span>2026-10-01</span></li>
+          <li><a href="2610.02363.html"><strong>ArrivalBench: Agent-Generated Data Pipelines Are Correct Once and Wrong Under Time</strong></a> <span>2026-10-01</span></li>
+          <li><a href="2609.38974.html"><strong>RealWorldShop: Benchmarking and Improving Conversational Shopping Agents in Real-World E-commerce</strong></a> <span>2026-09-30</span></li>
+          <li><a href="2609.38460.html"><strong>NAQD Env: A benchmark for selective withdrawal in language agents</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.34710.html"><strong>FromPitch2Board: Benchmarking LLM Agents in Long-Horizon Football Management</strong></a> <span>2026-09-28</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

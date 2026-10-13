@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Asuka-Bench: Benchmarking Code Agents on Underspecified User Intent and Multi-Round Refinement | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Existing code-generation benchmarks score a single mapping from a complete prompt to a one-shot output. However, real web development…" />
+    <meta name="keywords" content="Web &amp; browser, Web agents, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2606.05920" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.05920.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Asuka-Bench: Benchmarking Code Agents on Underspecified User Intent and Multi-Round Refinement" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Existing code-generation benchmarks score a single mapping from a complete prompt to a one-shot output. However, real web development…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.05920.html" />
+    <meta property="article:published_time" content="2026-06-04T09:24:30Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Asuka-Bench: Benchmarking Code Agents on Underspecified User Intent and Multi-Round Refinement" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Existing code-generation benchmarks score a single mapping from a complete prompt to a one-shot output. However, real web development…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,93 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Asuka-Bench: Benchmarking Code Agents on Underspecified User Intent and Multi-Round Refinement",
+  "name": "Asuka-Bench: Benchmarking Code Agents on Underspecified User Intent and Multi-Round Refinement",
+  "abstract": "Existing code-generation benchmarks score a single mapping from a complete prompt to a one-shot output. However, real web development is different. Users seldom write a full spec at the start; many requirements only become clear once they look at an intermediate result and react to it. We present Asuka-Bench, a benchmark that pairs underspecified user intent with multi-round refinement, grounded in browser-rendered behavior. Each task is resolved through a closed loop: a Code Agent generates a web project, a UI Agent executes test cases on the deployed site, and a User LLM turns evaluation outcomes into natural-language feedback for the next round. The benchmark comprises 50 web tasks with 784 evaluation criteria and 2402 expected outcomes. We benchmark 8 LLMs across 2 agent frameworks. The results separate models clearly: weighted Task Pass Rate varies by 38 percentage points and models also differ substantially in their ability to repair from feedback. Asuka-Bench is also far from saturated: even the strongest model completes only 52% of projects after three rounds.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Xin Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Liangtai Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Yaoming Zhu"
+    },
+    {
+      "@type": "Person",
+      "name": "Shuang Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiaxing Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Fengjiao Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Lin Qiu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xuezhi Cao"
+    },
+    {
+      "@type": "Person",
+      "name": "Xunliang Cai"
+    },
+    {
+      "@type": "Person",
+      "name": "Licheng Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhendong Mao"
+    }
+  ],
+  "datePublished": "2026-06-04T09:24:30Z",
+  "dateModified": "2026-06-04T09:24:30Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.05920.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.05920.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.05920v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.05920"
+  },
+  "keywords": [
+    "Web & browser",
+    "Web agents",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Web & browser"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.05920v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.05920"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +125,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Asuka-Bench: Benchmarking Code Agents on Underspecified User Intent and Multi-Round Refinement</h1>
+        <div class="meta">
+          Xin Wang, Liangtai Sun, Yaoming Zhu, Shuang Zhou, Jiaxing Liu, Fengjiao Chen, Lin Qiu, Xuezhi Cao, Xunliang Cai, Licheng Zhang, Zhendong Mao
+          · 2606.05920
+          · <time datetime="2026-06-04">2026-06-04</time>
+          · Web &amp; browser · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Web agents</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Existing code-generation benchmarks score a single mapping from a complete prompt to a one-shot output. However, real web development is different. Users seldom write a full spec at the start; many requirements only become clear once they look at an intermediate result and react to it. We present Asuka-Bench, a benchmark that pairs underspecified user intent with multi-round refinement, grounded in browser-rendered behavior. Each task is resolved through a closed loop: a Code Agent generates a web project, a UI Agent executes test cases on the deployed site, and a User LLM turns evaluation outcomes into natural-language feedback for the next round. The benchmark comprises 50 web tasks with 784 evaluation criteria and 2402 expected outcomes. We benchmark 8 LLMs across 2 agent frameworks. The results separate models clearly: weighted Task Pass Rate varies by 38 percentage points and models also differ substantially in their ability to repair from feedback. Asuka-Bench is also far from saturated: even the strongest model completes only 52% of projects after three rounds.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.05920v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.05920v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.05920" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Web &amp; browser benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.22000.html"><strong>CFAgentBench: A Reproducible Environment and Benchmark for Autonomous Construction-Finance Agents</strong></a> <span>2026-06-20</span></li>
+          <li><a href="2606.16659.html"><strong>FraudSMSWalker: Benchmarking Agentic Large Language Models for SMS-to-Webpage Fraud Detection</strong></a> <span>2026-06-15</span></li>
+          <li><a href="2606.14027.html"><strong>Same-Origin Policy for Agentic Browsers</strong></a> <span>2026-06-12</span></li>
+          <li><a href="2606.13385.html"><strong>Who Pays the Price? Stakeholder-Centric Prompt Injection Benchmarking for Real-world Web Agents</strong></a> <span>2026-06-11</span></li>
+          <li><a href="2606.05342.html"><strong>SentinelBench: A Benchmark for Long-Running Monitoring Agents</strong></a> <span>2026-06-03</span></li>
+          <li><a href="2607.20482.html"><strong>PersonaTrail: Benchmarking Personalized Web Agents through Browsing Trails</strong></a> <span>2026-05-30</span></li>
+          <li><a href="2606.00497.html"><strong>&quot;I Strongly Suspect This Website Is a Scam&quot;: Benchmarking PII Leakage and Detection without Defense in Autonomous Web Agents</strong></a> <span>2026-05-30</span></li>
+          <li><a href="2605.22564.html"><strong>SynAE: A Framework for Measuring the Quality of Synthetic Data for Tool-Calling Agent Evaluations</strong></a> <span>2026-05-21</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

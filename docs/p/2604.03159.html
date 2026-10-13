@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>BibTeX Citation Errors in Scientific Publishing Agents: Evaluation and Mitigation | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language models with web search are increasingly used in scientific publishing agents, yet they produce BibTeX entries with…" />
+    <meta name="keywords" content="Science &amp; research, Tool use, Memory, Science lab, agent benchmark, LLM agent, arXiv, 2604.03159" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.03159.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="BibTeX Citation Errors in Scientific Publishing Agents: Evaluation and Mitigation" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language models with web search are increasingly used in scientific publishing agents, yet they produce BibTeX entries with…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.03159.html" />
+    <meta property="article:published_time" content="2026-04-03T16:30:58Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="BibTeX Citation Errors in Scientific Publishing Agents: Evaluation and Mitigation" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language models with web search are increasingly used in scientific publishing agents, yet they produce BibTeX entries with…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,58 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "BibTeX Citation Errors in Scientific Publishing Agents: Evaluation and Mitigation",
+  "name": "BibTeX Citation Errors in Scientific Publishing Agents: Evaluation and Mitigation",
+  "abstract": "Large language models with web search are increasingly used in scientific publishing agents, yet they produce BibTeX entries with pervasive field-level errors stemming from omission, partial corruption, substitution, and hallucination. We construct a benchmark of 931 papers across four domains and three citation tiers---popular, low-citation, and recent post-cutoff---with version-aware ground truth. Three search-enabled frontier models (GPT-5, Claude Sonnet-4.6, Gemini-3 Flash) generate approximately 23,000 field-level observations. Overall accuracy is 83.6%, but only 50.9% of entries are fully correct; accuracy drops 27.7 pp from popular to recent papers, revealing heavy reliance on parametric memory even when search is available. Co-occurrence analysis identifies two failure modes: wholesale entry substitution and isolated field error. We present clibib, an open-source tool for deterministic BibTeX retrieval, as a mitigation mechanism. Two-stage integration raises accuracy to 91.5% (+8.0 pp) and fully correct entries to 78.3%, with a 0.8% regression rate. Separating search from revision yields larger gains and lower regression than single-stage tool loops (0.8% vs. 4.8%), demonstrating that integration architecture matters independently of model/tool capability. We release clibib and an accompanying agent skill under the MIT License to improve citation accuracy in increasingly automated scientific workflows.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Delip Rao"
+    },
+    {
+      "@type": "Person",
+      "name": "Chris Callison-Burch"
+    }
+  ],
+  "datePublished": "2026-04-03T16:30:58Z",
+  "dateModified": "2026-08-08T18:39:45Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.03159.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.03159.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.03159v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2604.03159"
+  },
+  "keywords": [
+    "Science & research",
+    "Tool use",
+    "Memory",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Science & research"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2604.03159v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2604.03159"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +90,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>BibTeX Citation Errors in Scientific Publishing Agents: Evaluation and Mitigation</h1>
+        <div class="meta">
+          Delip Rao, Chris Callison-Burch
+          · 2604.03159
+          · <time datetime="2026-04-03">2026-04-03</time>
+          · Science &amp; research · 2 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Memory</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large language models with web search are increasingly used in scientific publishing agents, yet they produce BibTeX entries with pervasive field-level errors stemming from omission, partial corruption, substitution, and hallucination. We construct a benchmark of 931 papers across four domains and three citation tiers---popular, low-citation, and recent post-cutoff---with version-aware ground truth. Three search-enabled frontier models (GPT-5, Claude Sonnet-4.6, Gemini-3 Flash) generate approximately 23,000 field-level observations. Overall accuracy is 83.6%, but only 50.9% of entries are fully correct; accuracy drops 27.7 pp from popular to recent papers, revealing heavy reliance on parametric memory even when search is available. Co-occurrence analysis identifies two failure modes: wholesale entry substitution and isolated field error. We present clibib, an open-source tool for deterministic BibTeX retrieval, as a mitigation mechanism. Two-stage integration raises accuracy to 91.5% (+8.0 pp) and fully correct entries to 78.3%, with a 0.8% regression rate. Separating search from revision yields larger gains and lower regression than single-stage tool loops (0.8% vs. 4.8%), demonstrating that integration architecture matters independently of model/tool capability. We release clibib and an accompanying agent skill under the MIT License to improve citation accuracy in increasingly automated scientific workflows.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2604.03159v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2604.03159v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2604.03159" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Science &amp; research benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2604.25256.html"><strong>AutoResearchBench: Benchmarking AI Agents on Complex Scientific Literature Discovery</strong></a> <span>2026-04-28</span></li>
+          <li><a href="2604.21304.html"><strong>PaperMind: Benchmarking Agentic Reasoning and Critique over Scientific Papers in Multimodal LLMs</strong></a> <span>2026-04-23</span></li>
+          <li><a href="2604.12102.html"><strong>Spatial Atlas: Compute-Grounded Reasoning for Spatial-Aware Research Agent Benchmarks</strong></a> <span>2026-04-13</span></li>
+          <li><a href="2604.11307.html"><strong>PaperScope: A Multi-Modal Multi-Document Benchmark for Agentic Deep Research Across Massive Scientific Papers</strong></a> <span>2026-04-13</span></li>
+          <li><a href="2603.29139.html"><strong>SciVisAgentBench: A Benchmark for Evaluating Scientific Data Analysis and Visualization Agents</strong></a> <span>2026-03-31</span></li>
+          <li><a href="2603.28407.html"><strong>MiroEval: Benchmarking Multimodal Deep Research Agents in Process and Outcome</strong></a> <span>2026-03-30</span></li>
+          <li><a href="2602.12984.html"><strong>SciAgentGym: Benchmarking Multi-Step Scientific Tool-use in LLM Agents</strong></a> <span>2026-02-13</span></li>
+          <li><a href="2602.05975.html"><strong>SAGE: Benchmarking and Improving Retrieval for Deep Research Agents</strong></a> <span>2026-02-05</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

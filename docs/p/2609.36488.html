@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>AdaptArena: Evaluating Test-Time Personalization of Web Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language model (LLM) agents have demonstrated strong performance on complex web navigation tasks, yet they remain brittle in…" />
+    <meta name="keywords" content="Web &amp; browser, Web agents, Safety, agent benchmark, LLM agent, arXiv, 2609.36488" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.36488.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AdaptArena: Evaluating Test-Time Personalization of Web Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language model (LLM) agents have demonstrated strong performance on complex web navigation tasks, yet they remain brittle in…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.36488.html" />
+    <meta property="article:published_time" content="2026-09-29T01:46:48Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AdaptArena: Evaluating Test-Time Personalization of Web Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language model (LLM) agents have demonstrated strong performance on complex web navigation tasks, yet they remain brittle in…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,89 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AdaptArena: Evaluating Test-Time Personalization of Web Agents",
+  "name": "AdaptArena: Evaluating Test-Time Personalization of Web Agents",
+  "abstract": "Large language model (LLM) agents have demonstrated strong performance on complex web navigation tasks, yet they remain brittle in real-world settings where user intentions are underspecified and preferences are heterogeneous. In practice, users rarely provide explicit profiles, requiring agents to infer latent preferences from implicit signals. Despite its importance for deployment, this problem setting is largely underexplored in existing benchmarks. To address this gap, we introduce AdaptArena, a benchmark for evaluating test-time personalization of web agents via implicit preference inference. AdaptArena consists of 480 tasks, featuring both single-preference and double-preference scenarios. Each evaluation task must be solved by retrieving and leveraging the most relevant historical user trajectory that implicitly encodes the target preference. In addition, we introduce AdaptiveAgent, a retrieval-based framework for standardized evaluation of implicit preference inference. Experiments reveal a substantial performance gap: while oracle agents with access to ground-truth preferences achieve an 82.92% success rate, the evaluated LLM agents using our framework reach at most 15.62%. Furthermore, we find that correctly inferring user preferences is necessary but not sufficient for task success, as execution failures in downstream web interactions remain a significant bottleneck even when agents align with the target preference. These findings highlight implicit preference inference and robust action grounding as key challenges for deploying reliable, user-facing web agents. We release our code: https://github.com/McGill-NLP/web-agents-test-time-adaptations",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Dongchan Shin"
+    },
+    {
+      "@type": "Person",
+      "name": "Xing Han Lù"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiaqi Deng"
+    },
+    {
+      "@type": "Person",
+      "name": "Jay Gala"
+    },
+    {
+      "@type": "Person",
+      "name": "Tomás Vergara Browne"
+    },
+    {
+      "@type": "Person",
+      "name": "Jaewon Moon"
+    },
+    {
+      "@type": "Person",
+      "name": "Fengyuan Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Alexandre Drouin"
+    },
+    {
+      "@type": "Person",
+      "name": "Siva Reddy"
+    },
+    {
+      "@type": "Person",
+      "name": "Alexandre Lacoste"
+    }
+  ],
+  "datePublished": "2026-09-29T01:46:48Z",
+  "dateModified": "2026-09-29T01:46:48Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.36488.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.36488.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.36488v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.36488"
+  },
+  "keywords": [
+    "Web & browser",
+    "Web agents",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Web & browser"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.36488v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.36488"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +121,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AdaptArena: Evaluating Test-Time Personalization of Web Agents</h1>
+        <div class="meta">
+          Dongchan Shin, Xing Han Lù, Jiaqi Deng, Jay Gala, Tomás Vergara Browne, Jaewon Moon, Fengyuan Liu, Alexandre Drouin, Siva Reddy, Alexandre Lacoste
+          · 2609.36488
+          · <time datetime="2026-09-29">2026-09-29</time>
+          · Web &amp; browser
+        </div>
+        <div class="themes"><span class="chip">Web agents</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large language model (LLM) agents have demonstrated strong performance on complex web navigation tasks, yet they remain brittle in real-world settings where user intentions are underspecified and preferences are heterogeneous. In practice, users rarely provide explicit profiles, requiring agents to infer latent preferences from implicit signals. Despite its importance for deployment, this problem setting is largely underexplored in existing benchmarks. To address this gap, we introduce AdaptArena, a benchmark for evaluating test-time personalization of web agents via implicit preference inference. AdaptArena consists of 480 tasks, featuring both single-preference and double-preference scenarios. Each evaluation task must be solved by retrieving and leveraging the most relevant historical user trajectory that implicitly encodes the target preference. In addition, we introduce AdaptiveAgent, a retrieval-based framework for standardized evaluation of implicit preference inference. Experiments reveal a substantial performance gap: while oracle agents with access to ground-truth preferences achieve an 82.92% success rate, the evaluated LLM agents using our framework reach at most 15.62%. Furthermore, we find that correctly inferring user preferences is necessary but not sufficient for task success, as execution failures in downstream web interactions remain a significant bottleneck even when agents align with the target preference. These findings highlight implicit preference inference and robust action grounding as key challenges for deploying reliable, user-facing web agents. We release our code: https://github.com/McGill-NLP/web-agents-test-time-adaptations</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.36488v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.36488v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.36488" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Web &amp; browser benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.12823.html"><strong>When Charts Deceive Web Agents: A Paired Benchmark for Misleading Visualization-Grounded Tasks</strong></a> <span>2026-10-09</span></li>
+          <li><a href="2610.01491.html"><strong>Auditing Web Agent Evaluation on WebArena-Lite: Human Review of Outcomes and Trajectories</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2609.30604.html"><strong>The Hard Part Comes After Search: Benchmarking Web Agents on Synthesizing, Organizing, and Displaying Knowledge</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.32915.html"><strong>AgentTell: Behavioural Side-Channel Leakage in Browser-Use Agents</strong></a> <span>2026-09-26</span></li>
+          <li><a href="2609.00081.html"><strong>Framework and Benchmark for Code-Driven Agentic Testing in Web Development</strong></a> <span>2026-08-31</span></li>
+          <li><a href="2608.08392.html"><strong>CAP: A Scalable Benchmark for Evaluating Cross-Site Browser Agents with Complex Actions and Perception</strong></a> <span>2026-08-09</span></li>
+          <li><a href="2607.06118.html"><strong>WebRetriever: A Large-Scale Comprehensive Benchmark for Efficient Web Agent Evaluation</strong></a> <span>2026-07-07</span></li>
+          <li><a href="2606.29193.html"><strong>A Multi-Dataset Benchmark for Evaluating LLM Agents in Microservice Failure Diagnosis</strong></a> <span>2026-06-28</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

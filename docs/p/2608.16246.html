@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>CompoSkill: Compositional Skill Chain Attacks from Individually Scanner-Passing LLM Agent Skills | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Autonomous AI agents tackling Long Horizon Tasks depend on marketplace skills that are certified one at a time: a scanner returns a…" />
+    <meta name="keywords" content="Work / office, Safety, agent benchmark, LLM agent, arXiv, 2608.16246" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.16246.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="CompoSkill: Compositional Skill Chain Attacks from Individually Scanner-Passing LLM Agent Skills" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Autonomous AI agents tackling Long Horizon Tasks depend on marketplace skills that are certified one at a time: a scanner returns a…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.16246.html" />
+    <meta property="article:published_time" content="2026-08-17T08:20:44Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="CompoSkill: Compositional Skill Chain Attacks from Individually Scanner-Passing LLM Agent Skills" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Autonomous AI agents tackling Long Horizon Tasks depend on marketplace skills that are certified one at a time: a scanner returns a…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,76 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "CompoSkill: Compositional Skill Chain Attacks from Individually Scanner-Passing LLM Agent Skills",
+  "name": "CompoSkill: Compositional Skill Chain Attacks from Individually Scanner-Passing LLM Agent Skills",
+  "abstract": "Autonomous AI agents tackling Long Horizon Tasks depend on marketplace skills that are certified one at a time: a scanner returns a safety verdict for each skill and declares the ecosystem safe if every package passes. We show that this assumption fails under skill composition. A skill may pass the per-skill scanner individually yet participate in a risky composition when an agent connects its outputs, capabilities, or side effects with those of other scanner-passing skills. This makes skill composition risk a path level property rather than a node level property, explaining why existing skill scanners that inspect individual packages achieve limited interception. To study this threat, we present CompoSkill, a framework that constructs skill composition attacks through a dual attacker system. The white-box attacker knows the victim's installed skill pool and directly injects explicit skill-id sequences; the black-box attacker knows only a role profile, downloads the top marketplace skills for that scenario, builds a Skill Composition Graph, and searches for high risk chains whose implicit lures never name skill identifiers. We further construct CompoSkill-Bench, a benchmark of 1,140 records built from long-horizon professional workflows across five threats and six scenarios on OpenClaw and Nanobot. CompoSkill achieves risk Chain Formation Rates (CFR) up to 83.3% in the white box setting and 80.6% in the black box setting, while existing skill scanners block only a limited fraction of the risky compositions. Finally, we observe a bridge-bonus-then-hop-decay pattern: a bridge skill can increase attack success, but Attack Success Rate (ASR) decreases once additional hops make the risk chain longer than three skills. These results expose a systematic gap in single skill certification for autonomous AI agents.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Mingxiao Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhoumian Jiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jianan Ma"
+    },
+    {
+      "@type": "Person",
+      "name": "Jian Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jialuo Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinhao Deng"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhen Wang"
+    }
+  ],
+  "datePublished": "2026-08-17T08:20:44Z",
+  "dateModified": "2026-08-17T08:20:44Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.16246.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.16246.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.16246v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.16246"
+  },
+  "keywords": [
+    "Work / office",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Work / office"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.16246v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.16246"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +108,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>CompoSkill: Compositional Skill Chain Attacks from Individually Scanner-Passing LLM Agent Skills</h1>
+        <div class="meta">
+          Mingxiao Liu, Zhoumian Jiang, Jianan Ma, Jian Zhang, Jialuo Chen, Xinhao Deng, Zhen Wang
+          · 2608.16246
+          · <time datetime="2026-08-17">2026-08-17</time>
+          · Work / office
+        </div>
+        <div class="themes"><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Autonomous AI agents tackling Long Horizon Tasks depend on marketplace skills that are certified one at a time: a scanner returns a safety verdict for each skill and declares the ecosystem safe if every package passes. We show that this assumption fails under skill composition. A skill may pass the per-skill scanner individually yet participate in a risky composition when an agent connects its outputs, capabilities, or side effects with those of other scanner-passing skills. This makes skill composition risk a path level property rather than a node level property, explaining why existing skill scanners that inspect individual packages achieve limited interception. To study this threat, we present CompoSkill, a framework that constructs skill composition attacks through a dual attacker system. The white-box attacker knows the victim&#x27;s installed skill pool and directly injects explicit skill-id sequences; the black-box attacker knows only a role profile, downloads the top marketplace skills for that scenario, builds a Skill Composition Graph, and searches for high risk chains whose implicit lures never name skill identifiers. We further construct CompoSkill-Bench, a benchmark of 1,140 records built from long-horizon professional workflows across five threats and six scenarios on OpenClaw and Nanobot. CompoSkill achieves risk Chain Formation Rates (CFR) up to 83.3% in the white box setting and 80.6% in the black box setting, while existing skill scanners block only a limited fraction of the risky compositions. Finally, we observe a bridge-bonus-then-hop-decay pattern: a bridge skill can increase attack success, but Attack Success Rate (ASR) decreases once additional hops make the risk chain longer than three skills. These results expose a systematic gap in single skill certification for autonomous AI agents.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.16246v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.16246v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.16246" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Work / office benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.17885.html"><strong>ERPBench: A State-Grounded Evaluation Paradigm for Computer-Use Agents in Enterprise Software</strong></a> <span>2026-09-17</span></li>
+          <li><a href="2609.04667.html"><strong>ERPBench: Evaluating LLM Agents for Enterprise Decision-Making Across Competitive Market Ecologies</strong></a> <span>2026-09-04</span></li>
+          <li><a href="2608.22510.html"><strong>ClawProBench: Trace-Aware Evaluation of AI Agents with Runtime Coverage and Frozen Workplace-Style Holdouts</strong></a> <span>2026-08-23</span></li>
+          <li><a href="2608.17800.html"><strong>StartupBench: Benchmarking General-Purpose Agents on Market-Validated End-to-End Workflows</strong></a> <span>2026-08-18</span></li>
+          <li><a href="2608.12654.html"><strong>SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries</strong></a> <span>2026-08-12</span></li>
+          <li><a href="2608.11616.html"><strong>MBA: Multimodal Benchmark and Agents for Real-World Business Ideation</strong></a> <span>2026-08-12</span></li>
+          <li><a href="2608.09096.html"><strong>Evo-Bench: Can Language Models Improve Agent Harness?</strong></a> <span>2026-08-10</span></li>
+          <li><a href="2608.06144.html"><strong>FinEvo-Bench: A Longitudinal Benchmark for Self-Evolving Agents in Professional Financial Workflows</strong></a> <span>2026-08-06</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>$τ^τ$-Bench: An Environment for End-To-End, Realistic Agent Construction | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLM agents are rapidly becoming production software, deployed to handle customer service, adjudicate disputes, and operate internal…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Dialogue / customer, agent benchmark, LLM agent, arXiv, 2609.04611" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.04611.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="$τ^τ$-Bench: An Environment for End-To-End, Realistic Agent Construction" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLM agents are rapidly becoming production software, deployed to handle customer service, adjudicate disputes, and operate internal…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.04611.html" />
+    <meta property="article:published_time" content="2026-09-04T01:23:47Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="$τ^τ$-Bench: An Environment for End-To-End, Realistic Agent Construction" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLM agents are rapidly becoming production software, deployed to handle customer service, adjudicate disputes, and operate internal…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,65 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "$τ^τ$-Bench: An Environment for End-To-End, Realistic Agent Construction",
+  "name": "$τ^τ$-Bench: An Environment for End-To-End, Realistic Agent Construction",
+  "abstract": "LLM agents are rapidly becoming production software, deployed to handle customer service, adjudicate disputes, and operate internal systems. Notably, the work of building them is increasingly handed to coding agents, yet existing benchmarks say little about whether an AI system can deliver one under the conditions of a real client engagement. We introduce $τ^τ$-bench (pronounced hyper-tau-bench), a benchmark that makes agent construction the task. A developer agent is given the records a business actually keeps, a client who holds requirements, a production API that operations must run through, a codebase to inherit, and limits on serving cost and models: the same starting point a real engagement provides. From these it must deliver a complete customer-service agent, scored by deploying that agent against held-out simulated users. Across 53 tasks spanning four domains, the strongest configuration, Claude Opus 5 under Claude Code, passes just 23.9% of evaluation simulations. Meanwhile, an expert-authored reference ceiling scores 82.2%. The failures mirror ones human agent developers see: models issue shallow queries in place of deep comprehension of the records, communicate almost nothing to the client, and experiment too little with agent architecture and serving spend, shipping the first design that runs. We aim for $τ^τ$-bench to turn the work of cooperative agent building into a measurable target for coding agents.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Quan Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Keshav Dhandhania"
+    },
+    {
+      "@type": "Person",
+      "name": "Karthik Narasimhan"
+    },
+    {
+      "@type": "Person",
+      "name": "Victor Barres"
+    }
+  ],
+  "datePublished": "2026-09-04T01:23:47Z",
+  "dateModified": "2026-09-04T01:23:47Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.04611.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.04611.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.04611v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.04611"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Dialogue / customer",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.04611v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.04611"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +97,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>$τ^τ$-Bench: An Environment for End-To-End, Realistic Agent Construction</h1>
+        <div class="meta">
+          Quan Shi, Keshav Dhandhania, Karthik Narasimhan, Victor Barres
+          · 2609.04611
+          · <time datetime="2026-09-04">2026-09-04</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Dialogue / customer</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLM agents are rapidly becoming production software, deployed to handle customer service, adjudicate disputes, and operate internal systems. Notably, the work of building them is increasingly handed to coding agents, yet existing benchmarks say little about whether an AI system can deliver one under the conditions of a real client engagement. We introduce $τ^τ$-bench (pronounced hyper-tau-bench), a benchmark that makes agent construction the task. A developer agent is given the records a business actually keeps, a client who holds requirements, a production API that operations must run through, a codebase to inherit, and limits on serving cost and models: the same starting point a real engagement provides. From these it must deliver a complete customer-service agent, scored by deploying that agent against held-out simulated users. Across 53 tasks spanning four domains, the strongest configuration, Claude Opus 5 under Claude Code, passes just 23.9% of evaluation simulations. Meanwhile, an expert-authored reference ceiling scores 82.2%. The failures mirror ones human agent developers see: models issue shallow queries in place of deep comprehension of the records, communicate almost nothing to the client, and experiment too little with agent architecture and serving spend, shipping the first design that runs. We aim for $τ^τ$-bench to turn the work of cooperative agent building into a measurable target for coding agents.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.04611v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.04611v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.04611" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.12265.html"><strong>GTA: Graph Theory Agent and Benchmark for Algorithmic Graph Reasoning with LLMs</strong></a> <span>2026-09-10</span></li>
+          <li><a href="2609.09526.html"><strong>Benchmarking Agentic HLS Design Tasks With HLS-Eval</strong></a> <span>2026-09-08</span></li>
+          <li><a href="2609.08149.html"><strong>SWE-Bench Pro Verified: A Reliable Benchmark for Software Engineering Agents</strong></a> <span>2026-09-08</span></li>
+          <li><a href="2609.07785.html"><strong>What Does an LLM-Agent Leaderboard Rank Actually Compare?</strong></a> <span>2026-09-07</span></li>
+          <li><a href="2609.04167.html"><strong>SWE-Gate: Passing Functional Tests Is Not Enough for Software Engineering Agents</strong></a> <span>2026-09-03</span></li>
+          <li><a href="2609.04075.html"><strong>PatchBench: Evaluating AI Agents for Vulnerability Patching</strong></a> <span>2026-09-03</span></li>
+          <li><a href="2609.01603.html"><strong>Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation</strong></a> <span>2026-09-01</span></li>
+          <li><a href="2608.29834.html"><strong>You Know What I Mean: A Benchmark for Agentic Conversational Reference Grounding</strong></a> <span>2026-08-30</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MedMemoryBench: Benchmarking Agent Memory in Personalized Healthcare | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: The large-scale deployment of personalized healthcare agents demands memory mechanisms that are exceptionally precise, safe, and…" />
+    <meta name="keywords" content="General, Safety, Memory, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2605.11814" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.11814.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MedMemoryBench: Benchmarking Agent Memory in Personalized Healthcare" />
+    <meta property="og:description" content="Daily Agent Benchmarks: The large-scale deployment of personalized healthcare agents demands memory mechanisms that are exceptionally precise, safe, and…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.11814.html" />
+    <meta property="article:published_time" content="2026-05-12T09:06:40Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MedMemoryBench: Benchmarking Agent Memory in Personalized Healthcare" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: The large-scale deployment of personalized healthcare agents demands memory mechanisms that are exceptionally precise, safe, and…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,102 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MedMemoryBench: Benchmarking Agent Memory in Personalized Healthcare",
+  "name": "MedMemoryBench: Benchmarking Agent Memory in Personalized Healthcare",
+  "abstract": "The large-scale deployment of personalized healthcare agents demands memory mechanisms that are exceptionally precise, safe, and capable of long-term clinical tracking. However, existing benchmarks primarily focus on daily open-domain conversations, failing to capture the high-stakes complexity of real-world medical applications. Motivated by the stringent production requirements of an industry-leading health management agent serving tens of millions of active users, we introduce MedMemoryBench. We develop a human-agent collaborative pipeline to synthesize highly realistic, long-horizon medical trajectories based on clinically grounded, synthetic patient archetypes. This process yields a massive, expertly validated dataset comprising approximately 2,000 sessions and 16,000 interaction turns. Crucially, MedMemoryBench departs from traditional static evaluations by pioneering an \"evaluate-while-constructing\" streaming assessment protocol, which precisely mirrors dynamic memory accumulation in production environments. Furthermore, we formalize and systematically investigate the critical phenomenon of memory saturation, where sustained information influx actively degrades retrieval and reasoning robustness. Comprehensive benchmarking reveals severe bottlenecks in mainstream architectures, particularly concerning complex medical reasoning and noise resilience. By exposing these fundamental flaws, MedMemoryBench establishes a vital foundation for developing robust, production-ready medical agents.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yihao Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Haoran Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Renjie Gu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yixuan Ye"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinyi Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinyu Mu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuan Gao"
+    },
+    {
+      "@type": "Person",
+      "name": "Chunxiao Guo"
+    },
+    {
+      "@type": "Person",
+      "name": "Peng Wei"
+    },
+    {
+      "@type": "Person",
+      "name": "Jinjie Gu"
+    },
+    {
+      "@type": "Person",
+      "name": "Huan Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Ke Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Lidan Shou"
+    }
+  ],
+  "datePublished": "2026-05-12T09:06:40Z",
+  "dateModified": "2026-05-12T09:06:40Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.11814.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.11814.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.11814v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.11814"
+  },
+  "keywords": [
+    "General",
+    "Safety",
+    "Memory",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.11814v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.11814"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +134,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MedMemoryBench: Benchmarking Agent Memory in Personalized Healthcare</h1>
+        <div class="meta">
+          Yihao Wang, Haoran Xu, Renjie Gu, Yixuan Ye, Xinyi Chen, Xinyu Mu, Yuan Gao, Chunxiao Guo, Peng Wei, Jinjie Gu, Huan Li, Ke Chen, Lidan Shou
+          · 2605.11814
+          · <time datetime="2026-05-12">2026-05-12</time>
+          · General · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Safety</span><span class="chip">Memory</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>The large-scale deployment of personalized healthcare agents demands memory mechanisms that are exceptionally precise, safe, and capable of long-term clinical tracking. However, existing benchmarks primarily focus on daily open-domain conversations, failing to capture the high-stakes complexity of real-world medical applications. Motivated by the stringent production requirements of an industry-leading health management agent serving tens of millions of active users, we introduce MedMemoryBench. We develop a human-agent collaborative pipeline to synthesize highly realistic, long-horizon medical trajectories based on clinically grounded, synthetic patient archetypes. This process yields a massive, expertly validated dataset comprising approximately 2,000 sessions and 16,000 interaction turns. Crucially, MedMemoryBench departs from traditional static evaluations by pioneering an &quot;evaluate-while-constructing&quot; streaming assessment protocol, which precisely mirrors dynamic memory accumulation in production environments. Furthermore, we formalize and systematically investigate the critical phenomenon of memory saturation, where sustained information influx actively degrades retrieval and reasoning robustness. Comprehensive benchmarking reveals severe bottlenecks in mainstream architectures, particularly concerning complex medical reasoning and noise resilience. By exposing these fundamental flaws, MedMemoryBench establishes a vital foundation for developing robust, production-ready medical agents.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.11814v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.11814v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.11814" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.13841.html"><strong>EVA-Bench: A New End-to-end Framework for Evaluating Voice Agents</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.13542.html"><strong>RealICU: Do LLM Agents Understand Long-Context ICU Data? A Benchmark Beyond Behavior Imitation</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.12887.html"><strong>EcoGEO: Trajectory-Aware Evidence Ecosystems for Web-Enabled LLM Search Agents</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.11874.html"><strong>RecRM-Bench: Benchmarking Multidimensional Reward Modeling for Agentic Recommender Systems</strong></a> <span>2026-05-12</span></li>
+          <li><a href="2605.11633.html"><strong>Can LLM Agents Respond to Disasters? Benchmarking Heterogeneous Geospatial Reasoning in Emergency Operations</strong></a> <span>2026-05-12</span></li>
+          <li><a href="2605.11504.html"><strong>CTFusion: A CTF-based Benchmark for LLM Agent Evaluation</strong></a> <span>2026-05-12</span></li>
+          <li><a href="2605.11378.html"><strong>An Empirical Study of Automating Agent Evaluation</strong></a> <span>2026-05-12</span></li>
+          <li><a href="2605.18805.html"><strong>RecoAtlas: From Semantic Plausibility to Set-Level Utility in LLM Recommendation Agents</strong></a> <span>2026-05-11</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

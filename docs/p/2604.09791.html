@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Pioneer Agent: Continual Improvement of Small Language Models in Production | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Small language models are attractive for production deployment due to their low cost, fast inference, and ease of specialization…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2604.09791" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.09791.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Pioneer Agent: Continual Improvement of Small Language Models in Production" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Small language models are attractive for production deployment due to their low cost, fast inference, and ease of specialization…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.09791.html" />
+    <meta property="article:published_time" content="2026-04-10T18:13:09Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Pioneer Agent: Continual Improvement of Small Language Models in Production" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Small language models are attractive for production deployment due to their low cost, fast inference, and ease of specialization…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,81 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Pioneer Agent: Continual Improvement of Small Language Models in Production",
+  "name": "Pioneer Agent: Continual Improvement of Small Language Models in Production",
+  "abstract": "Small language models are attractive for production deployment due to their low cost, fast inference, and ease of specialization. However, adapting them to a specific task remains a challenging engineering loop, driven not by training itself but by surrounding decisions: data curation, failure diagnosis, regression avoidance, and iteration control. We present Pioneer Agent, a closed-loop system that automates this lifecycle. In cold-start mode, given only a natural-language task description, the agent acquires data, constructs evaluation sets, and iteratively trains models by jointly optimizing data, hyperparameters, and learning strategy. In production mode, given a deployed model with labeled failures, it diagnoses error patterns, constructs targeted training data, and retrains under explicit regression constraints. To evaluate this setting, we introduce AdaptFT-Bench, a benchmark of synthetic inference logs with progressively increasing noise, designed to test the full adaptation loop: diagnosis, curriculum synthesis, retraining, and verification. Across eight cold-start benchmarks spanning reasoning, math, code generation, summarization, and classification, Pioneer Agent improves over base models by 1.6-83.8 points. On AdaptFT-Bench, it improves or preserves performance in all seven scenarios, while naive retraining degrades by up to 43 points. On two production-style deployments built from public benchmark tasks, it raises intent classification from 84.9% to 99.3% and Entity F1 from 0.345 to 0.810. Beyond performance gains, the agent often discovers effective training strategies, including chain-of-thought supervision, task-specific optimization, and quality-focused data curation, purely from downstream feedback.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Dhruv Atreja"
+    },
+    {
+      "@type": "Person",
+      "name": "Julia White"
+    },
+    {
+      "@type": "Person",
+      "name": "Nikhil Nayak"
+    },
+    {
+      "@type": "Person",
+      "name": "Kelton Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Henrijs Princis"
+    },
+    {
+      "@type": "Person",
+      "name": "George Hurn-Maloney"
+    },
+    {
+      "@type": "Person",
+      "name": "Ash Lewis"
+    },
+    {
+      "@type": "Person",
+      "name": "Urchade Zaratiana"
+    }
+  ],
+  "datePublished": "2026-04-10T18:13:09Z",
+  "dateModified": "2026-04-10T18:13:09Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.09791.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.09791.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.09791v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2604.09791"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2604.09791v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2604.09791"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +113,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Pioneer Agent: Continual Improvement of Small Language Models in Production</h1>
+        <div class="meta">
+          Dhruv Atreja, Julia White, Nikhil Nayak, Kelton Zhang, Henrijs Princis, George Hurn-Maloney, Ash Lewis, Urchade Zaratiana
+          · 2604.09791
+          · <time datetime="2026-04-10">2026-04-10</time>
+          · Coding / SWE · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Small language models are attractive for production deployment due to their low cost, fast inference, and ease of specialization. However, adapting them to a specific task remains a challenging engineering loop, driven not by training itself but by surrounding decisions: data curation, failure diagnosis, regression avoidance, and iteration control. We present Pioneer Agent, a closed-loop system that automates this lifecycle. In cold-start mode, given only a natural-language task description, the agent acquires data, constructs evaluation sets, and iteratively trains models by jointly optimizing data, hyperparameters, and learning strategy. In production mode, given a deployed model with labeled failures, it diagnoses error patterns, constructs targeted training data, and retrains under explicit regression constraints. To evaluate this setting, we introduce AdaptFT-Bench, a benchmark of synthetic inference logs with progressively increasing noise, designed to test the full adaptation loop: diagnosis, curriculum synthesis, retraining, and verification. Across eight cold-start benchmarks spanning reasoning, math, code generation, summarization, and classification, Pioneer Agent improves over base models by 1.6-83.8 points. On AdaptFT-Bench, it improves or preserves performance in all seven scenarios, while naive retraining degrades by up to 43 points. On two production-style deployments built from public benchmark tasks, it raises intent classification from 84.9% to 99.3% and Entity F1 from 0.345 to 0.810. Beyond performance gains, the agent often discovers effective training strategies, including chain-of-thought supervision, task-specific optimization, and quality-focused data curation, purely from downstream feedback.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2604.09791v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2604.09791v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2604.09791" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2604.17180.html"><strong>BranchBench: Aligning Database Branching with Agentic Demands</strong></a> <span>2026-04-19</span></li>
+          <li><a href="2604.14709.html"><strong>HWE-Bench: Benchmarking LLM Agents on Real-World Hardware Bug Repair Tasks</strong></a> <span>2026-04-16</span></li>
+          <li><a href="2604.12290.html"><strong>Frontier-Eng: Benchmarking Self-Evolving Agents on Real-World Engineering Tasks with Generative Optimization</strong></a> <span>2026-04-14</span></li>
+          <li><a href="2604.11201.html"><strong>CocoaBench: Evaluating Unified Digital Agents in the Wild</strong></a> <span>2026-04-13</span></li>
+          <li><a href="2604.09408.html"><strong>HiL-Bench (Human-in-Loop Benchmark): Do Agents Know When to Ask for Help?</strong></a> <span>2026-04-10</span></li>
+          <li><a href="2604.04226.html"><strong>SW-$A^2$-Bench: Benchmarking Autonomous Software Agent Generation for Agentic Web</strong></a> <span>2026-04-05</span></li>
+          <li><a href="2604.04979.html"><strong>Squeez: Task-Conditioned Tool-Output Pruning for Coding Agents</strong></a> <span>2026-04-04</span></li>
+          <li><a href="2604.02648.html"><strong>GBQA: A Game Benchmark for Evaluating LLMs as Quality Assurance Engineers</strong></a> <span>2026-04-03</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>GPUPhysBench: Benchmarking Coding Agents for Correct and Efficient GPU Physics Simulation | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Writing fast GPU code for physical simulation is difficult: implementations must preserve numerical accuracy while handling irregular…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2609.35639" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.35639.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="GPUPhysBench: Benchmarking Coding Agents for Correct and Efficient GPU Physics Simulation" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Writing fast GPU code for physical simulation is difficult: implementations must preserve numerical accuracy while handling irregular…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.35639.html" />
+    <meta property="article:published_time" content="2026-09-28T17:06:44Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="GPUPhysBench: Benchmarking Coding Agents for Correct and Efficient GPU Physics Simulation" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Writing fast GPU code for physical simulation is difficult: implementations must preserve numerical accuracy while handling irregular…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,64 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "GPUPhysBench: Benchmarking Coding Agents for Correct and Efficient GPU Physics Simulation",
+  "name": "GPUPhysBench: Benchmarking Coding Agents for Correct and Efficient GPU Physics Simulation",
+  "abstract": "Writing fast GPU code for physical simulation is difficult: implementations must preserve numerical accuracy while handling irregular data access, synchronization, and iterative solvers. We introduce GPUPhysBench, a benchmark of 50 tasks testing whether coding agents can meet these demands. Tasks cover fluids, deformable solids, and granular materials, from individual simulation operators to complete simulators. Agents write, compile, test, and optimize GPU code with access to a NVIDIA GPU under fixed time budgets. We report pass rates and runtime performance relative to expert-optimized reference implementations. In a single-attempt evaluation of six frontier model-harness pairs, the two strongest pass all 50 tasks, but even the fastest reaches at least 0.9 the reference speed on only 22% of them, and no submission is more than 5% faster than the reference. The largest gaps arise in collision detection, constraint solving, and iterative solvers. GPUPhysBench brings physical simulation workloads to coding-agent evaluation, testing both the ability to implement numerical methods correctly and the ability to make them run efficiently.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yuchen Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Jinjin He"
+    },
+    {
+      "@type": "Person",
+      "name": "Sinan Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Bo Zhu"
+    }
+  ],
+  "datePublished": "2026-09-28T17:06:44Z",
+  "dateModified": "2026-09-28T17:06:44Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.35639.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.35639.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.35639v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.35639"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.35639v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.35639"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +96,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>GPUPhysBench: Benchmarking Coding Agents for Correct and Efficient GPU Physics Simulation</h1>
+        <div class="meta">
+          Yuchen Sun, Jinjin He, Sinan Wang, Bo Zhu
+          · 2609.35639
+          · <time datetime="2026-09-28">2026-09-28</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Writing fast GPU code for physical simulation is difficult: implementations must preserve numerical accuracy while handling irregular data access, synchronization, and iterative solvers. We introduce GPUPhysBench, a benchmark of 50 tasks testing whether coding agents can meet these demands. Tasks cover fluids, deformable solids, and granular materials, from individual simulation operators to complete simulators. Agents write, compile, test, and optimize GPU code with access to a NVIDIA GPU under fixed time budgets. We report pass rates and runtime performance relative to expert-optimized reference implementations. In a single-attempt evaluation of six frontier model-harness pairs, the two strongest pass all 50 tasks, but even the fastest reaches at least 0.9 the reference speed on only 22% of them, and no submission is more than 5% faster than the reference. The largest gaps arise in collision detection, constraint solving, and iterative solvers. GPUPhysBench brings physical simulation workloads to coding-agent evaluation, testing both the ability to implement numerical methods correctly and the ability to make them run efficiently.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.35639v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.35639v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.35639" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.37143.html"><strong>LoLBench: Evaluating Coding Agents with Long-Horizon Proposals on Large Software Systems</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.36777.html"><strong>Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.36635.html"><strong>WitnessGym: Benchmarking Coding Agents on the Construction of Bug Witnesses</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.36161.html"><strong>From Dead Code and Static Requirements to Working Engines: Software Revival with Coding Agents</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34683.html"><strong>AgentPerfBench: A Benchmarking and Evaluation Suite for Inference Performance of Agentic LLMs</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34210.html"><strong>RLE-Bench: A Qualifying Exam for Coding Agents as Robot Learning Engineers</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.31587.html"><strong>Compact Documentation for Coding Agents: A Benchmark, an Optimizer, and Why It Does Not Transfer</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.33812.html"><strong>Identical Runs, Different Results: Benchmarking AI Coding Agents on Open-Weight Models</strong></a> <span>2026-09-27</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

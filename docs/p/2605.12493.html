@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>LongMemEval-V2: Evaluating Long-Term Agent Memory Toward Experienced Colleagues | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Long-term memory is crucial for agents in specialized web environments, where success depends on recalling interface affordances…" />
+    <meta name="keywords" content="Coding / SWE, Web agents, Coding agents, Memory, agent benchmark, LLM agent, arXiv, 2605.12493" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.12493.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="LongMemEval-V2: Evaluating Long-Term Agent Memory Toward Experienced Colleagues" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Long-term memory is crucial for agents in specialized web environments, where success depends on recalling interface affordances…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.12493.html" />
+    <meta property="article:published_time" content="2026-05-12T17:59:34Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="LongMemEval-V2: Evaluating Long-Term Agent Memory Toward Experienced Colleagues" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Long-term memory is crucial for agents in specialized web environments, where success depends on recalling interface affordances…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,78 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "LongMemEval-V2: Evaluating Long-Term Agent Memory Toward Experienced Colleagues",
+  "name": "LongMemEval-V2: Evaluating Long-Term Agent Memory Toward Experienced Colleagues",
+  "abstract": "Long-term memory is crucial for agents in specialized web environments, where success depends on recalling interface affordances, state dynamics, workflows, and recurring failure modes. However, existing memory benchmarks for agents mostly focus on user histories, short traces, or downstream task success, leaving open how to directly evaluate whether memory systems effectively internalize environment-specific experience. To address this gap, we introduce LongMemEval-V2 (LME-V2), a benchmark for evaluating whether memory systems can help agents acquire the experience needed to become knowledgeable colleagues in customized environments. LME-V2 contains 451 manually curated questions covering five core memory abilities for web agents: static state recall, dynamic state tracking, workflow knowledge, environment gotchas, and premise awareness. Questions are paired with history trajectories containing up to 500 trajectories and 115M tokens. We use a context gathering formulation: memory systems consume history trajectories and return compact evidence for downstream question answering. We propose a suite of two memory methods: AgentRunbook-R, an efficient RAG-based memory with knowledge pools for raw state observations, events, and strategy notes, and AgentRunbook-C, which stores trajectories as files and invokes a coding agent to gather evidence in an augmented sandbox. Experiments show that AgentRunbook-C achieves the best performance with 72.5% average accuracy, outperforming the strongest RAG baseline (48.5%) and the off-the-shelf coding agent baseline (69.3%). Despite the strong performance gains, coding agent based methods have high latency costs. While AgentRunbook-C advances the accuracy-latency Pareto frontier, substantial room for improvement remains. Together, these results establish LME-V2 as a challenging testbed for developing long-term memory systems for environment experience.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Di Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zixiang Ji"
+    },
+    {
+      "@type": "Person",
+      "name": "Asmi Kawatkar"
+    },
+    {
+      "@type": "Person",
+      "name": "Bryan Kwan"
+    },
+    {
+      "@type": "Person",
+      "name": "Jia-Chen Gu"
+    },
+    {
+      "@type": "Person",
+      "name": "Nanyun Peng"
+    },
+    {
+      "@type": "Person",
+      "name": "Kai-Wei Chang"
+    }
+  ],
+  "datePublished": "2026-05-12T17:59:34Z",
+  "dateModified": "2026-05-12T17:59:34Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.12493.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.12493.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.12493v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.12493"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Web agents",
+    "Coding agents",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.12493v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.12493"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +110,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>LongMemEval-V2: Evaluating Long-Term Agent Memory Toward Experienced Colleagues</h1>
+        <div class="meta">
+          Di Wu, Zixiang Ji, Asmi Kawatkar, Bryan Kwan, Jia-Chen Gu, Nanyun Peng, Kai-Wei Chang
+          · 2605.12493
+          · <time datetime="2026-05-12">2026-05-12</time>
+          · Coding / SWE · 8 citations
+        </div>
+        <div class="themes"><span class="chip">Web agents</span><span class="chip">Coding agents</span><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Long-term memory is crucial for agents in specialized web environments, where success depends on recalling interface affordances, state dynamics, workflows, and recurring failure modes. However, existing memory benchmarks for agents mostly focus on user histories, short traces, or downstream task success, leaving open how to directly evaluate whether memory systems effectively internalize environment-specific experience. To address this gap, we introduce LongMemEval-V2 (LME-V2), a benchmark for evaluating whether memory systems can help agents acquire the experience needed to become knowledgeable colleagues in customized environments. LME-V2 contains 451 manually curated questions covering five core memory abilities for web agents: static state recall, dynamic state tracking, workflow knowledge, environment gotchas, and premise awareness. Questions are paired with history trajectories containing up to 500 trajectories and 115M tokens. We use a context gathering formulation: memory systems consume history trajectories and return compact evidence for downstream question answering. We propose a suite of two memory methods: AgentRunbook-R, an efficient RAG-based memory with knowledge pools for raw state observations, events, and strategy notes, and AgentRunbook-C, which stores trajectories as files and invokes a coding agent to gather evidence in an augmented sandbox. Experiments show that AgentRunbook-C achieves the best performance with 72.5% average accuracy, outperforming the strongest RAG baseline (48.5%) and the off-the-shelf coding agent baseline (69.3%). Despite the strong performance gains, coding agent based methods have high latency costs. While AgentRunbook-C advances the accuracy-latency Pareto frontier, substantial room for improvement remains. Together, these results establish LME-V2 as a challenging testbed for developing long-term memory systems for environment experience.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.12493v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.12493v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.12493" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.13950.html"><strong>Collider-Bench: Benchmarking AI Agents with Particle Physics Analysis Reproduction</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.13139.html"><strong>SWE-Cycle: Benchmarking Code Agents across the Complete Issue Resolution Cycle</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.12808.html"><strong>Neurodata Without Boredom: Benchmarking Agentic AI for Data Reuse</strong></a> <span>2026-05-12</span></li>
+          <li><a href="2605.12673.html"><strong>Do Androids Dream of Breaking the Game? Systematically Auditing AI Agent Benchmarks with BenchJack</strong></a> <span>2026-05-12</span></li>
+          <li><a href="2605.10597.html"><strong>CrackMeBench: Binary Reverse Engineering for Agents</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2605.11030.html"><strong>An Executable Benchmarking Suite for Tool-Using Agents</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.09684.html"><strong>MonitoringBench: Semi-Automated Red-Teaming for Agent Monitoring</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.09675.html"><strong>CodeClinic: Evaluating Automation of Coding Skills for Clinical Reasoning Agents</strong></a> <span>2026-05-10</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

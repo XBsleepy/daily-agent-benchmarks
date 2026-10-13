@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Benchmarking LLM Tool-Use in the Wild | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Fulfilling user needs through Large Language Model multi-turn, multi-step tool-use is rarely a straightforward process. Real user…" />
+    <meta name="keywords" content="Tool use, Safety, Dialogue / customer, agent benchmark, LLM agent, arXiv, 2604.06185" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.06185.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Benchmarking LLM Tool-Use in the Wild" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Fulfilling user needs through Large Language Model multi-turn, multi-step tool-use is rarely a straightforward process. Real user…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.06185.html" />
+    <meta property="article:published_time" content="2026-02-13T08:55:46Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Benchmarking LLM Tool-Use in the Wild" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Fulfilling user needs through Large Language Model multi-turn, multi-step tool-use is rarely a straightforward process. Real user…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,77 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Benchmarking LLM Tool-Use in the Wild",
+  "name": "Benchmarking LLM Tool-Use in the Wild",
+  "abstract": "Fulfilling user needs through Large Language Model multi-turn, multi-step tool-use is rarely a straightforward process. Real user interactions are inherently wild, being intricate, messy, and flexible. We identify three key challenges from user behaviour: compositional tasks that demand efficient orchestration of tool-call topologies, implicit intent spread across dialogue turns that require contextual inference, and instruction transition, which mixes task queries, clarifications, and casual conversation, forcing LLMs to adjust their policies on the fly. Existing benchmarks overlook these behaviors, making the apparent progress of LLMs on tool-use spurious. To address this, we introduce WildToolBench, an LLM tool-use benchmark grounded in real-world user behavior patterns. Comprehensive evaluations of 57 LLMs reveal that no model achieves an accuracy of more than 15%, indicating a substantial gap in the robustness of LLMs' agentic ability. Controlled experiments and in-depth analyses further indicate that the real challenge for LLM tool-use lies not in artificially complex tasks, but in the wild nature of user behavior, emphasizing the need to reconsider the interactions among LLMs, users, and tools.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Peijie Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Wei Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yifan Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jinjian Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Zelong Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiao Feng"
+    },
+    {
+      "@type": "Person",
+      "name": "Feng Zhang"
+    }
+  ],
+  "datePublished": "2026-02-13T08:55:46Z",
+  "dateModified": "2026-02-13T08:55:46Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.06185.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.06185.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.06185v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2604.06185"
+  },
+  "keywords": [
+    "Tool use",
+    "Safety",
+    "Dialogue / customer",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2604.06185v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2604.06185"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +109,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Benchmarking LLM Tool-Use in the Wild</h1>
+        <div class="meta">
+          Peijie Yu, Wei Liu, Yifan Yang, Jinjian Li, Zelong Zhang, Xiao Feng, Feng Zhang
+          · 2604.06185
+          · <time datetime="2026-02-13">2026-02-13</time>
+          · Tool use · 11 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span><span class="chip">Dialogue / customer</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Fulfilling user needs through Large Language Model multi-turn, multi-step tool-use is rarely a straightforward process. Real user interactions are inherently wild, being intricate, messy, and flexible. We identify three key challenges from user behaviour: compositional tasks that demand efficient orchestration of tool-call topologies, implicit intent spread across dialogue turns that require contextual inference, and instruction transition, which mixes task queries, clarifications, and casual conversation, forcing LLMs to adjust their policies on the fly. Existing benchmarks overlook these behaviors, making the apparent progress of LLMs on tool-use spurious. To address this, we introduce WildToolBench, an LLM tool-use benchmark grounded in real-world user behavior patterns. Comprehensive evaluations of 57 LLMs reveal that no model achieves an accuracy of more than 15%, indicating a substantial gap in the robustness of LLMs&#x27; agentic ability. Controlled experiments and in-depth analyses further indicate that the real challenge for LLM tool-use lies not in artificially complex tasks, but in the wild nature of user behavior, emphasizing the need to reconsider the interactions among LLMs, users, and tools.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2604.06185v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2604.06185v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2604.06185" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2604.15715.html"><strong>GTA-2: Benchmarking General Tool Agents from Atomic Tool-Use to Open-Ended Workflows</strong></a> <span>2026-04-17</span></li>
+          <li><a href="2604.04847.html"><strong>Full-Duplex-Bench-v3: Benchmarking Tool Use for Full-Duplex Voice Agents Under Real-World Disfluency</strong></a> <span>2026-04-06</span></li>
+          <li><a href="2604.04017.html"><strong>GeoBrowse: A Geolocation Benchmark for Agentic Tool Use with Expert-Annotated Reasoning Traces</strong></a> <span>2026-04-05</span></li>
+          <li><a href="2603.24943.html"><strong>FinMCP-Bench: Benchmarking LLM Agents for Real-World Financial Tool Use under the Model Context Protocol</strong></a> <span>2026-03-26</span></li>
+          <li><a href="2603.15309.html"><strong>CCTU: A Benchmark for Tool Use under Complex Constraints</strong></a> <span>2026-03-16</span></li>
+          <li><a href="2603.08262.html"><strong>FinToolBench: Evaluating LLM Agents for Real-World Financial Tool Use</strong></a> <span>2026-03-09</span></li>
+          <li><a href="2603.01357.html"><strong>ASTRA-bench: Evaluating Tool-Use Agent Reasoning and Action Planning with Personal User Context</strong></a> <span>2026-03-02</span></li>
+          <li><a href="2602.00933.html"><strong>MCP-Atlas: A Large-Scale Benchmark for Tool-Use Competency with Real MCP Servers</strong></a> <span>2026-01-31</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>NAQD Env: A benchmark for selective withdrawal in language agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Language agents must revise planned actions when evidence changes, permission is revoked, or a stop instruction arrives. A useful…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2609.38460" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.38460.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="NAQD Env: A benchmark for selective withdrawal in language agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Language agents must revise planned actions when evidence changes, permission is revoked, or a stop instruction arrives. A useful…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.38460.html" />
+    <meta property="article:published_time" content="2026-09-29T19:48:41Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="NAQD Env: A benchmark for selective withdrawal in language agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Language agents must revise planned actions when evidence changes, permission is revoked, or a stop instruction arrives. A useful…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,51 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "NAQD Env: A benchmark for selective withdrawal in language agents",
+  "name": "NAQD Env: A benchmark for selective withdrawal in language agents",
+  "abstract": "Language agents must revise planned actions when evidence changes, permission is revoked, or a stop instruction arrives. A useful response is selective: suspend affected actions, preserve unaffected work, and resume only after sufficient repair. We introduce NAQD-Env, a synthetic environment that evaluates these decisions against a deterministic reference policy over explicit evidence, authorization, and constraint dependencies. Eleven dependency families support evaluation on development structures, held-out families, and held-out combinations of structures. Metrics distinguish attempted violations from violations permitted by a simulated execution gate and jointly report policy agreement, task value, withdrawal, resumption, and event reporting. We evaluate three open-weight instruction-tuned models from two families under three prompt conditions on 350 frozen scenarios, yielding 3,150 model-prompt episodes before gate replay. Across the reported conditions, withdrawal recall is at most 0.06, no valid resumption is observed at eligible opportunities, and only one episode matches the complete reference policy. Under the NAQD prompt, Qwen2.5-7B has fewer unsafe-attempt episodes than Qwen2.5-3B and Llama-3.1-8B, but also completes less useful work and preserves unaffected actions less accurately. Exploratory supervised fine-tuning probes increase Qwen2.5-3B decision accuracy from 0.45-0.54 to 0.83-0.92; separate diagnostics reveal inappropriate withdrawal after curriculum omissions and a loss of event reporting. These results motivate evaluating selective withdrawal as a distinct component of agent reliability. The setting measures policy application with trusted structured inputs and does not establish real-world containment or source-verification ability.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Mohamed Abouzahra"
+    }
+  ],
+  "datePublished": "2026-09-29T19:48:41Z",
+  "dateModified": "2026-09-29T19:48:41Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.38460.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.38460.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.38460v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.38460"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.38460v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.38460"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +83,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>NAQD Env: A benchmark for selective withdrawal in language agents</h1>
+        <div class="meta">
+          Mohamed Abouzahra
+          · 2609.38460
+          · <time datetime="2026-09-29">2026-09-29</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Language agents must revise planned actions when evidence changes, permission is revoked, or a stop instruction arrives. A useful response is selective: suspend affected actions, preserve unaffected work, and resume only after sufficient repair. We introduce NAQD-Env, a synthetic environment that evaluates these decisions against a deterministic reference policy over explicit evidence, authorization, and constraint dependencies. Eleven dependency families support evaluation on development structures, held-out families, and held-out combinations of structures. Metrics distinguish attempted violations from violations permitted by a simulated execution gate and jointly report policy agreement, task value, withdrawal, resumption, and event reporting. We evaluate three open-weight instruction-tuned models from two families under three prompt conditions on 350 frozen scenarios, yielding 3,150 model-prompt episodes before gate replay. Across the reported conditions, withdrawal recall is at most 0.06, no valid resumption is observed at eligible opportunities, and only one episode matches the complete reference policy. Under the NAQD prompt, Qwen2.5-7B has fewer unsafe-attempt episodes than Qwen2.5-3B and Llama-3.1-8B, but also completes less useful work and preserves unaffected actions less accurately. Exploratory supervised fine-tuning probes increase Qwen2.5-3B decision accuracy from 0.45-0.54 to 0.83-0.92; separate diagnostics reveal inappropriate withdrawal after curriculum omissions and a loss of event reporting. These results motivate evaluating selective withdrawal as a distinct component of agent reliability. The setting measures policy application with trusted structured inputs and does not establish real-world containment or source-verification ability.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.38460v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.38460v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.38460" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.02588.html"><strong>Open-Endedness Bench: Measuring Epistemic Process from Agent Records</strong></a> <span>2026-10-01</span></li>
+          <li><a href="2610.02425.html"><strong>Finding the Move Is Not Winning the Game: XiangqiBench for Closed-Loop Evaluation of LLM Agents</strong></a> <span>2026-10-01</span></li>
+          <li><a href="2610.02363.html"><strong>ArrivalBench: Agent-Generated Data Pipelines Are Correct Once and Wrong Under Time</strong></a> <span>2026-10-01</span></li>
+          <li><a href="2609.38974.html"><strong>RealWorldShop: Benchmarking and Improving Conversational Shopping Agents in Real-World E-commerce</strong></a> <span>2026-09-30</span></li>
+          <li><a href="2609.34710.html"><strong>FromPitch2Board: Benchmarking LLM Agents in Long-Horizon Football Management</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34450.html"><strong>ReproBench: Benchmarking LLM Agents on Reproducing Vulnerability From Scratch</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.31468.html"><strong>PriceBench: A Diagnostic Benchmark for Price, Quality, and Brand Preferences in LLM Booking Agents</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.30325.html"><strong>ScopeBench: Do Agents Preserve Engagement Boundaries Under Goal Pressure?</strong></a> <span>2026-09-28</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

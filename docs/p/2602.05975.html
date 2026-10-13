@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>SAGE: Benchmarking and Improving Retrieval for Deep Research Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Deep research agents have emerged as powerful systems for addressing complex queries. Meanwhile, LLM-based retrievers have…" />
+    <meta name="keywords" content="Science &amp; research, Tool use, Planning / reasoning, Research agents, Science lab, agent benchmark, LLM agent, arXiv, 2602.05975" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.05975.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SAGE: Benchmarking and Improving Retrieval for Deep Research Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Deep research agents have emerged as powerful systems for addressing complex queries. Meanwhile, LLM-based retrievers have…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.05975.html" />
+    <meta property="article:published_time" content="2026-02-05T18:25:24Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SAGE: Benchmarking and Improving Retrieval for Deep Research Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Deep research agents have emerged as powerful systems for addressing complex queries. Meanwhile, LLM-based retrievers have…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,71 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SAGE: Benchmarking and Improving Retrieval for Deep Research Agents",
+  "name": "SAGE: Benchmarking and Improving Retrieval for Deep Research Agents",
+  "abstract": "Deep research agents have emerged as powerful systems for addressing complex queries. Meanwhile, LLM-based retrievers have demonstrated strong capability in following instructions or reasoning. This raises a critical question: can LLM-based retrievers effectively contribute to deep research agent workflows? To investigate this, we introduce SAGE, a benchmark for scientific literature retrieval comprising 1,200 queries across four scientific domains, with a 200,000 paper retrieval corpus. We evaluate six deep research agents and find that all systems struggle with reasoning-intensive retrieval. Using DR Tulu as backbone, we further compare BM25 and LLM-based retrievers (i.e., ReasonIR and gte-Qwen2-7B-instruct) as alternative search tools. Surprisingly, BM25 significantly outperforms LLM-based retrievers by approximately 30%, as existing agents generate keyword-oriented sub-queries. To improve performance, we propose a corpus-level test-time scaling framework that uses LLMs to augment documents with metadata and keywords, making retrieval easier for off-the-shelf retrievers. This yields 8% and 2% gains on short-form and open-ended questions, respectively.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Tiansheng Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yilun Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Canyu Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Arman Cohan"
+    },
+    {
+      "@type": "Person",
+      "name": "Chen Zhao"
+    }
+  ],
+  "datePublished": "2026-02-05T18:25:24Z",
+  "dateModified": "2026-02-06T04:59:37Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.05975.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.05975.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2602.05975v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2602.05975"
+  },
+  "keywords": [
+    "Science & research",
+    "Tool use",
+    "Planning / reasoning",
+    "Research agents",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Science & research"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2602.05975v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2602.05975"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +103,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SAGE: Benchmarking and Improving Retrieval for Deep Research Agents</h1>
+        <div class="meta">
+          Tiansheng Hu, Yilun Zhao, Canyu Zhang, Arman Cohan, Chen Zhao
+          · 2602.05975
+          · <time datetime="2026-02-05">2026-02-05</time>
+          · Science &amp; research · 4 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span><span class="chip">Research agents</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Deep research agents have emerged as powerful systems for addressing complex queries. Meanwhile, LLM-based retrievers have demonstrated strong capability in following instructions or reasoning. This raises a critical question: can LLM-based retrievers effectively contribute to deep research agent workflows? To investigate this, we introduce SAGE, a benchmark for scientific literature retrieval comprising 1,200 queries across four scientific domains, with a 200,000 paper retrieval corpus. We evaluate six deep research agents and find that all systems struggle with reasoning-intensive retrieval. Using DR Tulu as backbone, we further compare BM25 and LLM-based retrievers (i.e., ReasonIR and gte-Qwen2-7B-instruct) as alternative search tools. Surprisingly, BM25 significantly outperforms LLM-based retrievers by approximately 30%, as existing agents generate keyword-oriented sub-queries. To improve performance, we propose a corpus-level test-time scaling framework that uses LLMs to augment documents with metadata and keywords, making retrieval easier for off-the-shelf retrievers. This yields 8% and 2% gains on short-form and open-ended questions, respectively.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2602.05975v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2602.05975v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2602.05975" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Science &amp; research benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2604.03159.html"><strong>BibTeX Citation Errors in Scientific Publishing Agents: Evaluation and Mitigation</strong></a> <span>2026-04-03</span></li>
+          <li><a href="2603.29139.html"><strong>SciVisAgentBench: A Benchmark for Evaluating Scientific Data Analysis and Visualization Agents</strong></a> <span>2026-03-31</span></li>
+          <li><a href="2603.28407.html"><strong>MiroEval: Benchmarking Multimodal Deep Research Agents in Process and Outcome</strong></a> <span>2026-03-30</span></li>
+          <li><a href="2602.12984.html"><strong>SciAgentGym: Benchmarking Multi-Step Scientific Tool-use in LLM Agents</strong></a> <span>2026-02-13</span></li>
+          <li><a href="2602.02905.html"><strong>FIRE-Bench: Evaluating AI Agents on the Rediscovery of Scientific Insights</strong></a> <span>2026-02-02</span></li>
+          <li><a href="2601.12346.html"><strong>MMDeepResearch-Bench: A Benchmark for Multimodal Deep Research Agents</strong></a> <span>2026-01-18</span></li>
+          <li><a href="2601.10504.html"><strong>DR-Arena: an Automated Evaluation Framework for Deep Research Agents</strong></a> <span>2026-01-15</span></li>
+          <li><a href="2601.08536.html"><strong>DeepResearch Bench II: Diagnosing Deep Research Agents via Rubrics from Expert Report</strong></a> <span>2026-01-13</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

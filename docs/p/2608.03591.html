@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>DiagChain: A Diagnostic Benchmark for Evaluating LLM Agents on Evidence-Grounded Attack Chain Reconstruction | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large Language Model (LLM) agents offer a promising approach to attack chain reconstruction by retrieving and interpreting…" />
+    <meta name="keywords" content="General, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2608.03591" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.03591.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="DiagChain: A Diagnostic Benchmark for Evaluating LLM Agents on Evidence-Grounded Attack Chain Reconstruction" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large Language Model (LLM) agents offer a promising approach to attack chain reconstruction by retrieving and interpreting…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.03591.html" />
+    <meta property="article:published_time" content="2026-08-04T12:43:47Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="DiagChain: A Diagnostic Benchmark for Evaluating LLM Agents on Evidence-Grounded Attack Chain Reconstruction" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large Language Model (LLM) agents offer a promising approach to attack chain reconstruction by retrieving and interpreting…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,92 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "DiagChain: A Diagnostic Benchmark for Evaluating LLM Agents on Evidence-Grounded Attack Chain Reconstruction",
+  "name": "DiagChain: A Diagnostic Benchmark for Evaluating LLM Agents on Evidence-Grounded Attack Chain Reconstruction",
+  "abstract": "Large Language Model (LLM) agents offer a promising approach to attack chain reconstruction by retrieving and interpreting heterogeneous telemetry to infer ordered attacker actions. However, existing benchmarks mainly evaluate final outputs or aggregate accuracy, providing limited insight into how errors arise and propagate across intermediate reasoning stages. We present DiagChain, a diagnostic benchmark for evidence-grounded attack chain reconstruction that enables stage-wise evaluation of LLM agents. DiagChain includes MAIN-69, a suite of 69 scenarios spanning multiple operating systems, evidence noise levels, and chain lengths. It further introduces Evidence-Centric Retrieval-Augmented Generation (ECRAG), which couples evidence retrieval with an evolving structured representation of the reconstructed chain. Five complementary metrics are introduced to assess distinct stages of the reconstruction process and support systematic failure diagnosis. Based on evaluations using 6 LLMs, DiagChain reveals that even the strongest configuration succeeds on only 39.6% of the 849 reference steps in MAIN-69. Our analysis further shows that smaller models struggle with the more basic task of incorporating retrieved evidence into their outputs, whereas larger models can proceed to later steps, where correctly ordering that evidence becomes the main bottleneck. These results validate the importance of diagnostic evaluation beyond end-to-end accuracy and provide actionable insights for improving evidence-grounded cybersecurity agents.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Xuyang Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yibin Han"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhenwei Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Kai Chang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhiwei Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Tian Qiu"
+    },
+    {
+      "@type": "Person",
+      "name": "Weixian Deng"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiabao Gao"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaolin Peng"
+    },
+    {
+      "@type": "Person",
+      "name": "Hai Wan"
+    },
+    {
+      "@type": "Person",
+      "name": "Xibin Zhao"
+    }
+  ],
+  "datePublished": "2026-08-04T12:43:47Z",
+  "dateModified": "2026-08-04T12:43:47Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.03591.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.03591.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.03591v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.03591"
+  },
+  "keywords": [
+    "General",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.03591v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.03591"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +124,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>DiagChain: A Diagnostic Benchmark for Evaluating LLM Agents on Evidence-Grounded Attack Chain Reconstruction</h1>
+        <div class="meta">
+          Xuyang Liu, Yibin Han, Zhenwei Zhang, Kai Chang, Zhiwei Xu, Tian Qiu, Weixian Deng, Jiabao Gao, Xiaolin Peng, Hai Wan, Xibin Zhao
+          · 2608.03591
+          · <time datetime="2026-08-04">2026-08-04</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large Language Model (LLM) agents offer a promising approach to attack chain reconstruction by retrieving and interpreting heterogeneous telemetry to infer ordered attacker actions. However, existing benchmarks mainly evaluate final outputs or aggregate accuracy, providing limited insight into how errors arise and propagate across intermediate reasoning stages. We present DiagChain, a diagnostic benchmark for evidence-grounded attack chain reconstruction that enables stage-wise evaluation of LLM agents. DiagChain includes MAIN-69, a suite of 69 scenarios spanning multiple operating systems, evidence noise levels, and chain lengths. It further introduces Evidence-Centric Retrieval-Augmented Generation (ECRAG), which couples evidence retrieval with an evolving structured representation of the reconstructed chain. Five complementary metrics are introduced to assess distinct stages of the reconstruction process and support systematic failure diagnosis. Based on evaluations using 6 LLMs, DiagChain reveals that even the strongest configuration succeeds on only 39.6% of the 849 reference steps in MAIN-69. Our analysis further shows that smaller models struggle with the more basic task of incorporating retrieved evidence into their outputs, whereas larger models can proceed to later steps, where correctly ordering that evidence becomes the main bottleneck. These results validate the importance of diagnostic evaluation beyond end-to-end accuracy and provide actionable insights for improving evidence-grounded cybersecurity agents.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.03591v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.03591v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.03591" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.04095.html"><strong>FinPerMA: A Theory-Informed, Event-Grounded Personalized-Memory Benchmark for LLM Agents</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.04077.html"><strong>FinProBench: Evaluating Financial AI Agents with Role-Grounded Rubrics Derived from Professional Deliverables</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.03882.html"><strong>MultiGlobeQA: A Multilingual and Globally Diverse Benchmark for Geospatial Reasoning</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.03699.html"><strong>TARL: Transaction-Aware Reliable Ledgers for Executable Memory Management in Long-Term Agents</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.03206.html"><strong>EduClaw-Bench: A Long-Horizon Benchmark for Pedagogical LLM Agents with Simulated Learners</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.03018.html"><strong>UrbanAgent: A Tool-Augmented Agent for Cross-System Urban Tasks</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.02358.html"><strong>ScrambleToolBench: Agents Search Exhaustively Even When Their Own Map Points to the Next Step</strong></a> <span>2026-08-03</span></li>
+          <li><a href="2608.02171.html"><strong>From Profiling to Synthesis: Benchmarking Implicit Behavioral Alignment in Personalized LLM Agents</strong></a> <span>2026-08-03</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

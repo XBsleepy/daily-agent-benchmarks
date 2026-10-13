@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>PATH-Bench: Path-Dependent Evaluation of Lifelong Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Lifelong LLM agents increasingly adapt through external learning states that store past interactions as retrievable memories or…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Tool use, Safety, agent benchmark, LLM agent, arXiv, 2608.01149" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.01149.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="PATH-Bench: Path-Dependent Evaluation of Lifelong Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Lifelong LLM agents increasingly adapt through external learning states that store past interactions as retrievable memories or…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.01149.html" />
+    <meta property="article:published_time" content="2026-08-02T11:00:04Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PATH-Bench: Path-Dependent Evaluation of Lifelong Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Lifelong LLM agents increasingly adapt through external learning states that store past interactions as retrievable memories or…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,90 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "PATH-Bench: Path-Dependent Evaluation of Lifelong Agents",
+  "name": "PATH-Bench: Path-Dependent Evaluation of Lifelong Agents",
+  "abstract": "Lifelong LLM agents increasingly adapt through external learning states that store past interactions as retrievable memories or reusable skills, yet existing benchmarks rarely account for how the path of accumulated experience shapes what agents transfer and retain. In this work, we establish PATH-Bench, a benchmark for path-dependent evaluation of lifelong agents. PATH-Bench estimates directed task relationships via multi-model in-context learning, constructs probe-centered sequences with controlled helpful and interfering histories, and repeatedly evaluates probe tasks to measure average performance, forward transfer, backward transfer, and forgetting. We evaluate eight representative agents on single-turn code generation and multi-turn tool-use tasks under positive- and negative-dominant histories. Benchmark results show that experience utility depends jointly on how experience is represented and on the task's interaction structure, that strong transfer does not ensure retention, and that later experience can reshape gains acquired earlier in the learning path. Based on these findings, we propose Selective Experience Use (SEU), an agent harness that regulates how path-accumulated experience influences each new task, admitting helpful items while filtering out potential interference. SEU consistently reduces forgetting while improving forward transfer in the majority of settings. The PATH-Bench provides both a controlled evaluation framework and actionable guidance for designing more selective and robust lifelong agents.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Xidong Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xingyi Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenhao Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenyan Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Junjie Sheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Yun Hua"
+    },
+    {
+      "@type": "Person",
+      "name": "Wei Yin"
+    },
+    {
+      "@type": "Person",
+      "name": "Tao Fang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chuyun Shen"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiangfeng Wang"
+    }
+  ],
+  "datePublished": "2026-08-02T11:00:04Z",
+  "dateModified": "2026-08-02T11:00:04Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.01149.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.01149.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.01149v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.01149"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Tool use",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.01149v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.01149"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +122,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>PATH-Bench: Path-Dependent Evaluation of Lifelong Agents</h1>
+        <div class="meta">
+          Xidong Yang, Xingyi Zhang, Wenhao Li, Wenyan Liu, Junjie Sheng, Yun Hua, Wei Yin, Tao Fang, Chuyun Shen, Xiangfeng Wang
+          · 2608.01149
+          · <time datetime="2026-08-02">2026-08-02</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Lifelong LLM agents increasingly adapt through external learning states that store past interactions as retrievable memories or reusable skills, yet existing benchmarks rarely account for how the path of accumulated experience shapes what agents transfer and retain. In this work, we establish PATH-Bench, a benchmark for path-dependent evaluation of lifelong agents. PATH-Bench estimates directed task relationships via multi-model in-context learning, constructs probe-centered sequences with controlled helpful and interfering histories, and repeatedly evaluates probe tasks to measure average performance, forward transfer, backward transfer, and forgetting. We evaluate eight representative agents on single-turn code generation and multi-turn tool-use tasks under positive- and negative-dominant histories. Benchmark results show that experience utility depends jointly on how experience is represented and on the task&#x27;s interaction structure, that strong transfer does not ensure retention, and that later experience can reshape gains acquired earlier in the learning path. Based on these findings, we propose Selective Experience Use (SEU), an agent harness that regulates how path-accumulated experience influences each new task, admitting helpful items while filtering out potential interference. SEU consistently reduces forgetting while improving forward transfer in the majority of settings. The PATH-Bench provides both a controlled evaluation framework and actionable guidance for designing more selective and robust lifelong agents.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.01149v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.01149v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.01149" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.04682.html"><strong>Active-SWE: Benchmarking Coding Agents for Proactive Bug Fixing without Issue Reports</strong></a> <span>2026-08-05</span></li>
+          <li><a href="2608.03474.html"><strong>MT-Web2Code: Benchmarking Coding Agents on Multi-Turn Regional Reconstruction and Localized Modification</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.02499.html"><strong>SWE-Touch: Benchmarking Coding Agents When Users Touch the Code</strong></a> <span>2026-08-03</span></li>
+          <li><a href="2608.02001.html"><strong>VulnGym: Benchmarking Coding Agents for Repository-Level Vulnerability Detection</strong></a> <span>2026-08-03</span></li>
+          <li><a href="2608.00805.html"><strong>AgentSLABench: Evaluating and Benchmarking Agentic Systems Under Resource Constraints</strong></a> <span>2026-08-01</span></li>
+          <li><a href="2608.11232.html"><strong>Backtrader-Bench: Benchmarking LLM Agents on Algorithmic Trading with Self-Generated MCQs</strong></a> <span>2026-07-31</span></li>
+          <li><a href="2608.02642.html"><strong>MDArena: Evaluating Coding Agents on Realistic Molecular Dynamics Workflows</strong></a> <span>2026-07-31</span></li>
+          <li><a href="2608.00267.html"><strong>LoopsBench: From Harness Engineering to Loop Engineering in Coding Agent Evaluation</strong></a> <span>2026-07-31</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

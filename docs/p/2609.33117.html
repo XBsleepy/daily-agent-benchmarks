@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ECG-Scroll: A Long-Horizon, Streaming Benchmark and Agent Environment for Interpretation of Ambulatory Electrocardiograms | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Multimodal large language models (MLLMs) can now interpret a standard ten-second, twelve-lead electrocardiogram (ECG) with clinically…" />
+    <meta name="keywords" content="Multimodal, Tool use, Memory, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2609.33117" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.33117.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ECG-Scroll: A Long-Horizon, Streaming Benchmark and Agent Environment for Interpretation of Ambulatory Electrocardiograms" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Multimodal large language models (MLLMs) can now interpret a standard ten-second, twelve-lead electrocardiogram (ECG) with clinically…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.33117.html" />
+    <meta property="article:published_time" content="2026-09-27T02:38:13Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ECG-Scroll: A Long-Horizon, Streaming Benchmark and Agent Environment for Interpretation of Ambulatory Electrocardiograms" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Multimodal large language models (MLLMs) can now interpret a standard ten-second, twelve-lead electrocardiogram (ECG) with clinically…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,74 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ECG-Scroll: A Long-Horizon, Streaming Benchmark and Agent Environment for Interpretation of Ambulatory Electro",
+  "name": "ECG-Scroll: A Long-Horizon, Streaming Benchmark and Agent Environment for Interpretation of Ambulatory Electrocardiograms",
+  "abstract": "Multimodal large language models (MLLMs) can now interpret a standard ten-second, twelve-lead electrocardiogram (ECG) with clinically grounded, reward-verified reasoning. Real cardiac monitoring is different. Ambulatory (Holter) and telemetry recordings span hours to days and are read as they stream in, and their clinically decisive findings are paroxysmal, brief episodes buried in an otherwise unremarkable trace. Such a recording cannot be held in one context at diagnostic resolution, and its future has not yet happened, so a reader must work online, deciding what to measure now, committing evidence to memory as it passes, and reporting events as they occur. We recast long-duration ECG interpretation as a long-horizon, online (streaming, causal) sequential decision process and introduce ECG-Scroll. As a benchmark, long ambulatory recordings are streamed to an agent chunk by chunk, and it must localize, quantify, and promptly flag paroxysmal events without access to future signal; because the underlying signal is retained, every answer is checkable against objective ground truth, giving rule-based rather than judge-based rewards, and the streaming formulation adds a metric batch evaluation cannot express, the detection latency between an event's onset and the moment the agent records it. As an agent environment, it is a fixed, gym-style interaction layer that exercises three competencies single-glance ECG models never touch: Memory, Tool use through signal-grounded measurement rather than reading pixels, and Planning of what to measure now and when to commit. We release 390 whole-recording instances spanning 2,536 hours of two-lead ambulatory ECG and evaluate a signal-threshold rule agent alongside off-the-shelf LLM agents online, characterizing how they use memory, tools, and planning and where the benchmark's head-room lies.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Haitao Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Chenglin Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhengyao Ding"
+    },
+    {
+      "@type": "Person",
+      "name": "Ziyu Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Yiheng Mao"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhengxing Huang"
+    }
+  ],
+  "datePublished": "2026-09-27T02:38:13Z",
+  "dateModified": "2026-09-27T02:38:13Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.33117.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.33117.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.33117v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.33117"
+  },
+  "keywords": [
+    "Multimodal",
+    "Tool use",
+    "Memory",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multimodal"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.33117v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.33117"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +106,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ECG-Scroll: A Long-Horizon, Streaming Benchmark and Agent Environment for Interpretation of Ambulatory Electrocardiograms</h1>
+        <div class="meta">
+          Haitao Li, Chenglin Li, Zhengyao Ding, Ziyu Li, Yiheng Mao, Zhengxing Huang
+          · 2609.33117
+          · <time datetime="2026-09-27">2026-09-27</time>
+          · Multimodal
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Memory</span><span class="chip">Planning / reasoning</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Multimodal large language models (MLLMs) can now interpret a standard ten-second, twelve-lead electrocardiogram (ECG) with clinically grounded, reward-verified reasoning. Real cardiac monitoring is different. Ambulatory (Holter) and telemetry recordings span hours to days and are read as they stream in, and their clinically decisive findings are paroxysmal, brief episodes buried in an otherwise unremarkable trace. Such a recording cannot be held in one context at diagnostic resolution, and its future has not yet happened, so a reader must work online, deciding what to measure now, committing evidence to memory as it passes, and reporting events as they occur. We recast long-duration ECG interpretation as a long-horizon, online (streaming, causal) sequential decision process and introduce ECG-Scroll. As a benchmark, long ambulatory recordings are streamed to an agent chunk by chunk, and it must localize, quantify, and promptly flag paroxysmal events without access to future signal; because the underlying signal is retained, every answer is checkable against objective ground truth, giving rule-based rather than judge-based rewards, and the streaming formulation adds a metric batch evaluation cannot express, the detection latency between an event&#x27;s onset and the moment the agent records it. As an agent environment, it is a fixed, gym-style interaction layer that exercises three competencies single-glance ECG models never touch: Memory, Tool use through signal-grounded measurement rather than reading pixels, and Planning of what to measure now and when to commit. We release 390 whole-recording instances spanning 2,536 hours of two-lead ambulatory ECG and evaluate a signal-threshold rule agent alongside off-the-shelf LLM agents online, characterizing how they use memory, tools, and planning and where the benchmark&#x27;s head-room lies.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.33117v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.33117v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.33117" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multimodal benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.40325.html"><strong>WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents</strong></a> <span>2026-09-30</span></li>
+          <li><a href="2609.37053.html"><strong>MatToolBench: Benchmarking Multimodal Agents in Real-World Materials Science Workflows</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.34274.html"><strong>BIABench: Evaluating AI agents on real-world bioimage analysis tasks</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34195.html"><strong>PainterBench: A Figural Divergent-Thinking Benchmark for Tool-Using Language Models</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.32569.html"><strong>OmniSmartHome: A Multimodal Reasoning Benchmark for Smart-Home Agents</strong></a> <span>2026-09-26</span></li>
+          <li><a href="2609.24094.html"><strong>WidgetVA: A Widget-Centric Framework and Benchmark for Agentic Visual Analytics</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.22308.html"><strong>GameReplica: A Benchmark for Black-Box Visual Game Replication by Vision-Language Agents</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.21392.html"><strong>Omni Demand Understanding: A Benchmark for Contextual User-Intent Inference in Multimodal Interaction</strong></a> <span>2026-09-21</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

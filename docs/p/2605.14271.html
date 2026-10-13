@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Auditing Agent Harness Safety | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLM agents increasingly run inside execution harnesses that dispatch tools, allocate resources, and route messages between…" />
+    <meta name="keywords" content="Safety, Tool use, Multi-agent, agent benchmark, LLM agent, arXiv, 2605.14271" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.14271.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Auditing Agent Harness Safety" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLM agents increasingly run inside execution harnesses that dispatch tools, allocate resources, and route messages between…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.14271.html" />
+    <meta property="article:published_time" content="2026-05-14T02:14:28Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Auditing Agent Harness Safety" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLM agents increasingly run inside execution harnesses that dispatch tools, allocate resources, and route messages between…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,93 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Auditing Agent Harness Safety",
+  "name": "Auditing Agent Harness Safety",
+  "abstract": "LLM agents increasingly run inside execution harnesses that dispatch tools, allocate resources, and route messages between specialized components. However, a harness can return a correct, benign answer over a trajectory that accesses unauthorized resources or leaks context to the wrong agent. Output-level evaluation cannot see these failures, yet most safety benchmarks score only final outputs or terminal states, even though many violations occur mid-trajectory rather than at termination. The central question is whether the harness respects user intent, permission boundaries, and information-flow constraints throughout execution. To address this gap, we propose HarnessAudit, a framework that audits full execution trajectories across boundary compliance, execution fidelity, and system stability, with a focus on multi-agent harnesses where these risks are most pronounced. We further introduce HarnessAudit-Bench, a benchmark of 210 tasks across eight real-world domains, instantiated in both single-agent and multi-agent configurations with embedded safety constraints. Evaluating ten harness configurations across frontier models and three multi-agent frameworks, we find that: (i) task completion is misaligned with safe execution, and violations accumulate with trajectory length; (ii) safety risks vary across domains, task types, and agent roles; (iii) most violations concentrate in resource access and inter-agent information transfer; and (iv) multi-agent collaboration expands the safety risk surface, while harness design sets the upper bound of safe deployment.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Chengzhi Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yichen Guo"
+    },
+    {
+      "@type": "Person",
+      "name": "Yepeng Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuzhe Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Qianqi Yan"
+    },
+    {
+      "@type": "Person",
+      "name": "Xuandong Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenyue Hua"
+    },
+    {
+      "@type": "Person",
+      "name": "Sheng Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Sharon Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuheng Bu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xin Eric Wang"
+    }
+  ],
+  "datePublished": "2026-05-14T02:14:28Z",
+  "dateModified": "2026-05-16T00:50:55Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.14271.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.14271.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.14271v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.14271"
+  },
+  "keywords": [
+    "Safety",
+    "Tool use",
+    "Multi-agent",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Safety"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.14271v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.14271"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +125,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Auditing Agent Harness Safety</h1>
+        <div class="meta">
+          Chengzhi Liu, Yichen Guo, Yepeng Liu, Yuzhe Yang, Qianqi Yan, Xuandong Zhao, Wenyue Hua, Sheng Liu, Sharon Li, Yuheng Bu, Xin Eric Wang
+          · 2605.14271
+          · <time datetime="2026-05-14">2026-05-14</time>
+          · Safety · 3 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Multi-agent</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLM agents increasingly run inside execution harnesses that dispatch tools, allocate resources, and route messages between specialized components. However, a harness can return a correct, benign answer over a trajectory that accesses unauthorized resources or leaks context to the wrong agent. Output-level evaluation cannot see these failures, yet most safety benchmarks score only final outputs or terminal states, even though many violations occur mid-trajectory rather than at termination. The central question is whether the harness respects user intent, permission boundaries, and information-flow constraints throughout execution. To address this gap, we propose HarnessAudit, a framework that audits full execution trajectories across boundary compliance, execution fidelity, and system stability, with a focus on multi-agent harnesses where these risks are most pronounced. We further introduce HarnessAudit-Bench, a benchmark of 210 tasks across eight real-world domains, instantiated in both single-agent and multi-agent configurations with embedded safety constraints. Evaluating ten harness configurations across frontier models and three multi-agent frameworks, we find that: (i) task completion is misaligned with safe execution, and violations accumulate with trajectory length; (ii) safety risks vary across domains, task types, and agent roles; (iii) most violations concentrate in resource access and inter-agent information transfer; and (iv) multi-agent collaboration expands the safety risk surface, while harness design sets the upper bound of safe deployment.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.14271v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.14271v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.14271" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Safety benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.07867.html"><strong>The Cold-Start Safety Gap in LLM Agents</strong></a> <span>2026-06-05</span></li>
+          <li><a href="2606.07131.html"><strong>MalSkillBench: A Runtime-Verified Benchmark of Malicious Agent Skills</strong></a> <span>2026-06-05</span></li>
+          <li><a href="2605.29224.html"><strong>Relevance as a Vulnerability: How Web Retrieval Degrades Safety Alignment in LLM Agents</strong></a> <span>2026-05-28</span></li>
+          <li><a href="2605.22643.html"><strong>Boiling the Frog: A Multi-Turn Benchmark for Agentic Safety</strong></a> <span>2026-05-21</span></li>
+          <li><a href="2605.12015.html"><strong>SkillSafetyBench: Evaluating Agent Safety under Skill-Facing Attack Surfaces</strong></a> <span>2026-05-12</span></li>
+          <li><a href="2604.15774.html"><strong>MemEvoBench: Benchmarking Safety Risks from Memory Misevolution in LLM Agents</strong></a> <span>2026-04-17</span></li>
+          <li><a href="2604.11174.html"><strong>EmbodiedGovBench: A Benchmark for Governance, Recovery, and Upgrade Safety in Embodied Agent Systems</strong></a> <span>2026-04-13</span></li>
+          <li><a href="2605.16282.html"><strong>Taxonomy and Consistency Analysis of Safety Benchmarks for AI Agents</strong></a> <span>2026-04-11</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

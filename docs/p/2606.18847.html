@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>WorldLines: Benchmarking and Modeling Long-Horizon Stateful Embodied Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: To assist humans over extended periods in real homes, embodied agents must remember user routines, world states, and past…" />
+    <meta name="keywords" content="Embodied / robotics, Memory, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2606.18847" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.18847.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="WorldLines: Benchmarking and Modeling Long-Horizon Stateful Embodied Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: To assist humans over extended periods in real homes, embodied agents must remember user routines, world states, and past…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.18847.html" />
+    <meta property="article:published_time" content="2026-06-17T09:26:26Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="WorldLines: Benchmarking and Modeling Long-Horizon Stateful Embodied Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: To assist humans over extended periods in real homes, embodied agents must remember user routines, world states, and past…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,89 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "WorldLines: Benchmarking and Modeling Long-Horizon Stateful Embodied Agents",
+  "name": "WorldLines: Benchmarking and Modeling Long-Horizon Stateful Embodied Agents",
+  "abstract": "To assist humans over extended periods in real homes, embodied agents must remember user routines, world states, and past interactions. Existing long-term memory benchmarks mainly evaluate language-centric retrieval and question answering, while embodied benchmarks often focus on short-horizon task execution without testing long-term memory use in dynamic environments. We introduce WorldLines, a project-driven benchmark for long-horizon embodied household assistance. It constructs temporally extended household traces with dialogues, actions, execution feedback, object and device state changes, and converts them into evidence-linked samples for Memory QA and Embodied Task Planning. We further propose ObsMem, an observer-grounded memory framework that maintains visibility-aware memories and action-native state trails for state-aware decisions. Experiments reveal persistent challenges in partial observability, overwritten world states, and translating long-term memory into embodied plans, while ObsMem offers a stronger reference architecture for this setting.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yehang Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jianchong Su"
+    },
+    {
+      "@type": "Person",
+      "name": "Haojian Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yifan Chang"
+    },
+    {
+      "@type": "Person",
+      "name": "Tianhao Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinli Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yingjie Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yinchuan Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Zexi Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Ying-Cong Chen"
+    }
+  ],
+  "datePublished": "2026-06-17T09:26:26Z",
+  "dateModified": "2026-08-21T12:53:57Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.18847.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.18847.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.18847v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.18847"
+  },
+  "keywords": [
+    "Embodied / robotics",
+    "Memory",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Embodied / robotics"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.18847v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.18847"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +121,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>WorldLines: Benchmarking and Modeling Long-Horizon Stateful Embodied Agents</h1>
+        <div class="meta">
+          Yehang Zhang, Jianchong Su, Haojian Huang, Yifan Chang, Tianhao Zhou, Xinli Xu, Yingjie Xu, Yinchuan Li, Zexi Li, Ying-Cong Chen
+          · 2606.18847
+          · <time datetime="2026-06-17">2026-06-17</time>
+          · Embodied / robotics · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Embodied / robotics</span><span class="chip">Memory</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>To assist humans over extended periods in real homes, embodied agents must remember user routines, world states, and past interactions. Existing long-term memory benchmarks mainly evaluate language-centric retrieval and question answering, while embodied benchmarks often focus on short-horizon task execution without testing long-term memory use in dynamic environments. We introduce WorldLines, a project-driven benchmark for long-horizon embodied household assistance. It constructs temporally extended household traces with dialogues, actions, execution feedback, object and device state changes, and converts them into evidence-linked samples for Memory QA and Embodied Task Planning. We further propose ObsMem, an observer-grounded memory framework that maintains visibility-aware memories and action-native state trails for state-aware decisions. Experiments reveal persistent challenges in partial observability, overwritten world states, and translating long-term memory into embodied plans, while ObsMem offers a stronger reference architecture for this setting.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.18847v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.18847v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.18847" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Embodied / robotics benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.22014.html"><strong>Zero-Shot Mission-Level Evaluation for Aerial MLLM Agents</strong></a> <span>2026-07-24</span></li>
+          <li><a href="2606.31966.html"><strong>MECoBench: A Systematic Study of Multimodal Agent Collaboration in Embodied Environments</strong></a> <span>2026-06-30</span></li>
+          <li><a href="2606.27826.html"><strong>NormAct: Benchmarking Embodied Agents&#x27; Proactive Compliance with Unspoken Social Norms</strong></a> <span>2026-06-26</span></li>
+          <li><a href="2606.20401.html"><strong>PowerAgentBench-Dyn: A Benchmark for Agentic AI in Power System Dynamic Studies</strong></a> <span>2026-06-18</span></li>
+          <li><a href="2606.11150.html"><strong>ABC-Bench: An Agentic Bio-Capabilities Benchmark for Biosecurity</strong></a> <span>2026-06-09</span></li>
+          <li><a href="2605.20544.html"><strong>The Yes-Man Syndrome: Benchmarking Abstention in Embodied Robotic Agents</strong></a> <span>2026-05-19</span></li>
+          <li><a href="2605.19328.html"><strong>RoboJailBench: Benchmarking Adversarial Attacks and Defenses in Embodied Robotic Agents</strong></a> <span>2026-05-19</span></li>
+          <li><a href="2605.14504.html"><strong>When Robots Do the Chores: A Benchmark and Agent for Long-Horizon Household Task Execution</strong></a> <span>2026-05-14</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

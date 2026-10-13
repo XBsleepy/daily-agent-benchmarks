@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>StreamMemBench: Streaming Evaluation of Agent Memory for Future-Oriented Assistance | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: A central role of personal-agent memory is to turn stored information and prior interactions into future-oriented assistance. In…" />
+    <meta name="keywords" content="Dialogue, Memory, Dialogue / customer, agent benchmark, LLM agent, arXiv, 2606.14571" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.14571.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="StreamMemBench: Streaming Evaluation of Agent Memory for Future-Oriented Assistance" />
+    <meta property="og:description" content="Daily Agent Benchmarks: A central role of personal-agent memory is to turn stored information and prior interactions into future-oriented assistance. In…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.14571.html" />
+    <meta property="article:published_time" content="2026-06-12T15:48:43Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="StreamMemBench: Streaming Evaluation of Agent Memory for Future-Oriented Assistance" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: A central role of personal-agent memory is to turn stored information and prior interactions into future-oriented assistance. In…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,81 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "StreamMemBench: Streaming Evaluation of Agent Memory for Future-Oriented Assistance",
+  "name": "StreamMemBench: Streaming Evaluation of Agent Memory for Future-Oriented Assistance",
+  "abstract": "A central role of personal-agent memory is to turn stored information and prior interactions into future-oriented assistance. In daily use, useful cues come from what the agent observes and how the user interacts with the agent, and the agent must carry them forward from the current request to similar future tasks. Existing memory benchmarks usually test dialogue recall or task improvement in isolation, leaving the trajectory from streaming observations to later assistance largely untested. We introduce StreamMemBench, a streaming benchmark that constructs a two-step task sequence around each evidence anchor from EgoLife egocentric streams. The initial task tests evidence use, while the follow-up task tests whether feedback and interaction experience are reused. Four metrics diagnose evidence recall, initial evidence use, feedback incorporation, and follow-up reuse. Experiments with eight memory systems across two backbones show that current systems often fail to use observed evidence or turn feedback into reliable follow-up behavior, even when evidence is stored or feedback is incorporated locally. StreamMemBench is publicly available at https://github.com/landian60/StreamMemBench.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Guanming Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuqi Ren"
+    },
+    {
+      "@type": "Person",
+      "name": "Hansu Gu"
+    },
+    {
+      "@type": "Person",
+      "name": "Peng Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Weihang Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiahao Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Ning Gu"
+    },
+    {
+      "@type": "Person",
+      "name": "Tun Lu"
+    }
+  ],
+  "datePublished": "2026-06-12T15:48:43Z",
+  "dateModified": "2026-06-12T15:48:43Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.14571.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.14571.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.14571v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.14571"
+  },
+  "keywords": [
+    "Dialogue",
+    "Memory",
+    "Dialogue / customer",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Dialogue"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.14571v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.14571"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +113,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>StreamMemBench: Streaming Evaluation of Agent Memory for Future-Oriented Assistance</h1>
+        <div class="meta">
+          Guanming Liu, Yuqi Ren, Hansu Gu, Peng Zhang, Weihang Wang, Jiahao Liu, Ning Gu, Tun Lu
+          · 2606.14571
+          · <time datetime="2026-06-12">2026-06-12</time>
+          · Dialogue
+        </div>
+        <div class="themes"><span class="chip">Memory</span><span class="chip">Dialogue / customer</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>A central role of personal-agent memory is to turn stored information and prior interactions into future-oriented assistance. In daily use, useful cues come from what the agent observes and how the user interacts with the agent, and the agent must carry them forward from the current request to similar future tasks. Existing memory benchmarks usually test dialogue recall or task improvement in isolation, leaving the trajectory from streaming observations to later assistance largely untested. We introduce StreamMemBench, a streaming benchmark that constructs a two-step task sequence around each evidence anchor from EgoLife egocentric streams. The initial task tests evidence use, while the follow-up task tests whether feedback and interaction experience are reused. Four metrics diagnose evidence recall, initial evidence use, feedback incorporation, and follow-up reuse. Experiments with eight memory systems across two backbones show that current systems often fail to use observed evidence or turn feedback into reliable follow-up behavior, even when evidence is stored or feedback is incorporated locally. StreamMemBench is publicly available at https://github.com/landian60/StreamMemBench.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.14571v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.14571v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.14571" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Dialogue benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.03700.html"><strong>When Agents Learn to Be You: Benchmarking Privacy Leakage, Impersonation Risk, and Defenses in Persona Skills</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.18136.html"><strong>FraudBench: Stress-Testing Policy-Grounded Banking Agents Against Adaptive Fraud</strong></a> <span>2026-08-02</span></li>
+          <li><a href="2606.19595.html"><strong>IHBench: Evaluating Post-Interruption Recovery in Voice Agents with Structured Workflows</strong></a> <span>2026-06-17</span></li>
+          <li><a href="2608.00009.html"><strong>AgentMemBench: A Systematic Benchmark for Evaluating Long-Term Memory Management Strategies in Conversational AI Agents</strong></a> <span>2026-06-16</span></li>
+          <li><a href="2606.10156.html"><strong>$τ$-Rec: A Verifiable Benchmark for Agentic Recommender Systems</strong></a> <span>2026-06-08</span></li>
+          <li><a href="2606.02754.html"><strong>$Ψ$-Bench: Evaluating Persona-Sensitive Influencing in Persuasive Dialogues</strong></a> <span>2026-06-01</span></li>
+          <li><a href="2606.01498.html"><strong>TimeSage-MT: A Multi-Turn Benchmark for Evaluating Agentic Time Series Reasoning</strong></a> <span>2026-05-31</span></li>
+          <li><a href="2605.25200.html"><strong>GroupTravelBench: Benchmarking LLM Agents on Multi-Person Travel Planning</strong></a> <span>2026-05-24</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>SovereignPA-Bench: Evaluating User-Owned Personal Agents under Evolving Intent, Platform Mediation, and Consent Constraints | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Personal agents are becoming persistent user-owned intermediaries: they remember preferences, filter platform-mediated information…" />
+    <meta name="keywords" content="GUI / computer use, GUI agents, Tool use, Safety, Memory, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2607.05363" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.05363.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SovereignPA-Bench: Evaluating User-Owned Personal Agents under Evolving Intent, Platform Mediation, and Consent Constraints" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Personal agents are becoming persistent user-owned intermediaries: they remember preferences, filter platform-mediated information…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.05363.html" />
+    <meta property="article:published_time" content="2026-07-06T17:39:05Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SovereignPA-Bench: Evaluating User-Owned Personal Agents under Evolving Intent, Platform Mediation, and Consent Constraints" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Personal agents are becoming persistent user-owned intermediaries: they remember preferences, filter platform-mediated information…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,56 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SovereignPA-Bench: Evaluating User-Owned Personal Agents under Evolving Intent, Platform Mediation, and Consen",
+  "name": "SovereignPA-Bench: Evaluating User-Owned Personal Agents under Evolving Intent, Platform Mediation, and Consent Constraints",
+  "abstract": "Personal agents are becoming persistent user-owned intermediaries: they remember preferences, filter platform-mediated information, use tools, and negotiate with services. Existing benchmarks evaluate tool use, web navigation, desktop control, personalization, recommendation, and evolving context, but rarely ask whether an agent preserves user sovereignty: advancing the user's current interests while respecting privacy, consent, evidence, user burden, and resistance to manipulative incentives. We introduce SovereignPA-Bench, an executable benchmark for evaluating user-owned personal agents under evolving intent, platform mediation, privacy boundaries, consent constraints, evidence requirements, and burden tradeoffs. The benchmark separates agent-visible ObservableState from evaluator-only HiddenLabels, reports component metrics for task success, alignment, privacy, consent, evidence, manipulation, burden, and auditability, and preserves paired scenario ordering for model and policy comparisons. We evaluate 120 sovereignty stress scenarios across 4 model families and 8 policy baselines, yielding 3,840 frozen-prompt trajectories with raw prompts, outputs, provider-form responses, parsed actions, recomputable metrics, hard-set analyses, qualitative cases, and a blinded 3-annotator audit over 240 items. Full-sovereign scaffolding improves sovereignty score over direct, memory-only, consent-only, evidence-only, ReAct/tool-use, safety-prompt, and judge-guard baselines while reducing privacy leakage, consent violation, over-concession, and manipulation capture. Human audit shows high agreement on privacy and consent and lower agreement on manipulation, identifying the subjective frontier of platform-persuasion judgments. These results show that personal-agent evaluation must move beyond task completion toward representative, consent-aware, evidence-grounded action.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Dylan Zongmin Liu"
+    }
+  ],
+  "datePublished": "2026-07-06T17:39:05Z",
+  "dateModified": "2026-07-06T17:39:05Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.05363.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.05363.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.05363v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.05363"
+  },
+  "keywords": [
+    "GUI / computer use",
+    "GUI agents",
+    "Tool use",
+    "Safety",
+    "Memory",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "GUI / computer use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.05363v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.05363"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +88,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SovereignPA-Bench: Evaluating User-Owned Personal Agents under Evolving Intent, Platform Mediation, and Consent Constraints</h1>
+        <div class="meta">
+          Dylan Zongmin Liu
+          · 2607.05363
+          · <time datetime="2026-07-06">2026-07-06</time>
+          · GUI / computer use
+        </div>
+        <div class="themes"><span class="chip">GUI agents</span><span class="chip">Tool use</span><span class="chip">Safety</span><span class="chip">Memory</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Personal agents are becoming persistent user-owned intermediaries: they remember preferences, filter platform-mediated information, use tools, and negotiate with services. Existing benchmarks evaluate tool use, web navigation, desktop control, personalization, recommendation, and evolving context, but rarely ask whether an agent preserves user sovereignty: advancing the user&#x27;s current interests while respecting privacy, consent, evidence, user burden, and resistance to manipulative incentives. We introduce SovereignPA-Bench, an executable benchmark for evaluating user-owned personal agents under evolving intent, platform mediation, privacy boundaries, consent constraints, evidence requirements, and burden tradeoffs. The benchmark separates agent-visible ObservableState from evaluator-only HiddenLabels, reports component metrics for task success, alignment, privacy, consent, evidence, manipulation, burden, and auditability, and preserves paired scenario ordering for model and policy comparisons. We evaluate 120 sovereignty stress scenarios across 4 model families and 8 policy baselines, yielding 3,840 frozen-prompt trajectories with raw prompts, outputs, provider-form responses, parsed actions, recomputable metrics, hard-set analyses, qualitative cases, and a blinded 3-annotator audit over 240 items. Full-sovereign scaffolding improves sovereignty score over direct, memory-only, consent-only, evidence-only, ReAct/tool-use, safety-prompt, and judge-guard baselines while reducing privacy leakage, consent violation, over-concession, and manipulation capture. Human audit shows high agreement on privacy and consent and lower agreement on manipulation, identifying the subjective frontier of platform-persuasion judgments. These results show that personal-agent evaluation must move beyond task completion toward representative, consent-aware, evidence-grounded action.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.05363v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.05363v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.05363" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More GUI / computer use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.26041.html"><strong>Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions?</strong></a> <span>2026-07-28</span></li>
+          <li><a href="2607.25904.html"><strong>Interactive Reward Agent: GUI Task Evaluation via Environment-State Verification</strong></a> <span>2026-07-28</span></li>
+          <li><a href="2607.22689.html"><strong>Beyond Sequential Interaction: Benchmarking Parallel Execution and Coordination for GUI Agents</strong></a> <span>2026-07-17</span></li>
+          <li><a href="2607.13465.html"><strong>DevicesWorld: Benchmarking Cross-Device Agents in Heterogeneous Environments</strong></a> <span>2026-07-15</span></li>
+          <li><a href="2606.31154.html"><strong>PPT-Eval: A Benchmark for Computer-Use Agents on PowerPoint Tasks</strong></a> <span>2026-06-30</span></li>
+          <li><a href="2606.29445.html"><strong>Bridging VideoQA and Video-Guided Agentic Tasks via Generalized Keyframe Extraction</strong></a> <span>2026-06-28</span></li>
+          <li><a href="2606.28480.html"><strong>TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents</strong></a> <span>2026-06-26</span></li>
+          <li><a href="2606.25760.html"><strong>Uncertainty Quantification for Computer-Use Agents: A Benchmark across Vision-Language Models and GUI Grounding Datasets</strong></a> <span>2026-06-24</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

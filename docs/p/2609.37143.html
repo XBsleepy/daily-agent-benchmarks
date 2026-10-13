@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>LoLBench: Evaluating Coding Agents with Long-Horizon Proposals on Large Software Systems | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Modern coding agents can deliver increasingly large repository-level changes, and recent benchmarks reflect this by emphasizing…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2609.37143" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.37143.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="LoLBench: Evaluating Coding Agents with Long-Horizon Proposals on Large Software Systems" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Modern coding agents can deliver increasingly large repository-level changes, and recent benchmarks reflect this by emphasizing…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.37143.html" />
+    <meta property="article:published_time" content="2026-09-29T09:41:33Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="LoLBench: Evaluating Coding Agents with Long-Horizon Proposals on Large Software Systems" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Modern coding agents can deliver increasingly large repository-level changes, and recent benchmarks reflect this by emphasizing…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,84 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "LoLBench: Evaluating Coding Agents with Long-Horizon Proposals on Large Software Systems",
+  "name": "LoLBench: Evaluating Coding Agents with Long-Horizon Proposals on Large Software Systems",
+  "abstract": "Modern coding agents can deliver increasingly large repository-level changes, and recent benchmarks reflect this by emphasizing long-horizon tasks with large reference implementations. Many benchmarks evaluate coding agents' implementation capability to produce correct code edits from detailed specifications. However, practical modular development tasks also require the perception capability of grounding user intent and high-level design to derive a specification. We introduce LoLBench to evaluate both capabilities through the entire proposal-to-implementation process on large software systems. It is a multilingual benchmark of 100 tasks across 29 software systems in five domains. Each task provides a human-written enhancement proposal with user intent and high-level design. On average, proposals contain about 5,000 words, software systems contain 2.4 million source lines of code (LoC), and implementation pull requests (PRs) change approximately 5,500 LoC. Across 28 agents we evaluated, the best agent resolves only 14% of tasks and achieves a 52.7% Fail-to-Pass (F2P) pass rate. Failure analysis identifies incomplete code localization as a major bottleneck, while providing reference-derived file trees alongside API specifications improves resolved rates by 16--22 percentage points (2.4--17$\\times$), reaching at most 34%. These results show that both perception and implementation remain central challenges for coding agents in practical modular development on large software systems. LoLBench is available at https://huggingface.co/datasets/lolbench26/LoLBench.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yun Peng"
+    },
+    {
+      "@type": "Person",
+      "name": "Zihan Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zeyang Zhuang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xin Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Rui Shu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xu Han"
+    },
+    {
+      "@type": "Person",
+      "name": "Chun Yong Chong"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuan Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiakun Liu"
+    }
+  ],
+  "datePublished": "2026-09-29T09:41:33Z",
+  "dateModified": "2026-09-29T09:41:33Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.37143.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.37143.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.37143v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.37143"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.37143v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.37143"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +116,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>LoLBench: Evaluating Coding Agents with Long-Horizon Proposals on Large Software Systems</h1>
+        <div class="meta">
+          Yun Peng, Zihan Wu, Zeyang Zhuang, Xin Zhou, Rui Shu, Xu Han, Chun Yong Chong, Yuan Wang, Jiakun Liu
+          · 2609.37143
+          · <time datetime="2026-09-29">2026-09-29</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Modern coding agents can deliver increasingly large repository-level changes, and recent benchmarks reflect this by emphasizing long-horizon tasks with large reference implementations. Many benchmarks evaluate coding agents&#x27; implementation capability to produce correct code edits from detailed specifications. However, practical modular development tasks also require the perception capability of grounding user intent and high-level design to derive a specification. We introduce LoLBench to evaluate both capabilities through the entire proposal-to-implementation process on large software systems. It is a multilingual benchmark of 100 tasks across 29 software systems in five domains. Each task provides a human-written enhancement proposal with user intent and high-level design. On average, proposals contain about 5,000 words, software systems contain 2.4 million source lines of code (LoC), and implementation pull requests (PRs) change approximately 5,500 LoC. Across 28 agents we evaluated, the best agent resolves only 14% of tasks and achieves a 52.7% Fail-to-Pass (F2P) pass rate. Failure analysis identifies incomplete code localization as a major bottleneck, while providing reference-derived file trees alongside API specifications improves resolved rates by 16--22 percentage points (2.4--17$\times$), reaching at most 34%. These results show that both perception and implementation remain central challenges for coding agents in practical modular development on large software systems. LoLBench is available at https://huggingface.co/datasets/lolbench26/LoLBench.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.37143v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.37143v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.37143" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.39909.html"><strong>DoGBench: Can Agents Meet Expert Standards for User-Facing Documentation?</strong></a> <span>2026-09-30</span></li>
+          <li><a href="2609.39086.html"><strong>Trustworthy Runtime Error Healing in Real-World Repositories: A Benchmark and Guardrail</strong></a> <span>2026-09-30</span></li>
+          <li><a href="2609.38335.html"><strong>E2E-SWE: Benchmarking LLMs on Building Working Codebases from Scratch</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.38269.html"><strong>Zero2Repo: Can Coding Agents Build Repositories from Scratch?</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.36777.html"><strong>Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.36635.html"><strong>WitnessGym: Benchmarking Coding Agents on the Construction of Bug Witnesses</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.36161.html"><strong>From Dead Code and Static Requirements to Working Engines: Software Revival with Coding Agents</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.35639.html"><strong>GPUPhysBench: Benchmarking Coding Agents for Correct and Efficient GPU Physics Simulation</strong></a> <span>2026-09-28</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

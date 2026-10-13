@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>WhatWorkedBench: Benchmarking Experimental Understanding in AI Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: AI research agents need reliable knowledge of how their experiments change outcomes. We introduce WhatWorkedBench to measure…" />
+    <meta name="keywords" content="Science &amp; research, Research agents, agent benchmark, LLM agent, arXiv, 2609.27490" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.27490.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="WhatWorkedBench: Benchmarking Experimental Understanding in AI Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: AI research agents need reliable knowledge of how their experiments change outcomes. We introduce WhatWorkedBench to measure…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.27490.html" />
+    <meta property="article:published_time" content="2026-09-24T04:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="WhatWorkedBench: Benchmarking Experimental Understanding in AI Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: AI research agents need reliable knowledge of how their experiments change outcomes. We introduce WhatWorkedBench to measure…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,52 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "WhatWorkedBench: Benchmarking Experimental Understanding in AI Agents",
+  "name": "WhatWorkedBench: Benchmarking Experimental Understanding in AI Agents",
+  "abstract": "AI research agents need reliable knowledge of how their experiments change outcomes. We introduce WhatWorkedBench to measure experimental understanding, the accuracy of predictions about component changes after budgeted experimentation. Agents inspect code, select measurements, and submit a response surface, a table predicting scores for every configuration of component settings. Exhaustive CPU execution supplies reference effects for changing each component while holding the others fixed. These effects capture combinations of changes across 36 tasks from 30 data sources and 8 workflow types, with 1248 configuration records. Core evaluation combines 4,206 numerical-control records across all eight families and 108 agent episodes across the original six. At eight new measurements, pair-effect ridge selects an optimum on 15 of 22 sources and limits every effect error to 10% of score range on three. Fitting a Gaussian process (GP) to the same agent observations raises effect recovery, accuracy relative to true effect magnitude, from 0.632 to 0.698 in the original Flash cohort and from 0.621 to 0.720 in an additional cohort. On six completed beat-detection and graph submissions, the same-observation GP raises family-macro recovery from 0.303 to 0.455. On six workflows with six binary options at 20 new measurements, encoding code equivalences, configurations with identical behavior, raises GP recovery from 0.248 to 0.462. WhatWorkedBench supports research on experimental agents, adaptive experimental design, numerical inference, and use of program structure.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jingjie Ning, Xueqi Li, Yibo Kong, Dongting Li"
+    }
+  ],
+  "datePublished": "2026-09-24T04:00:00Z",
+  "dateModified": "2026-09-24T04:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.27490.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.27490.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.27490"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.27490"
+  },
+  "keywords": [
+    "Science & research",
+    "Research agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Science & research"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.27490"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.27490"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +84,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>WhatWorkedBench: Benchmarking Experimental Understanding in AI Agents</h1>
+        <div class="meta">
+          Jingjie Ning, Xueqi Li, Yibo Kong, Dongting Li
+          · 2609.27490
+          · <time datetime="2026-09-24">2026-09-24</time>
+          · Science &amp; research
+        </div>
+        <div class="themes"><span class="chip">Research agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>AI research agents need reliable knowledge of how their experiments change outcomes. We introduce WhatWorkedBench to measure experimental understanding, the accuracy of predictions about component changes after budgeted experimentation. Agents inspect code, select measurements, and submit a response surface, a table predicting scores for every configuration of component settings. Exhaustive CPU execution supplies reference effects for changing each component while holding the others fixed. These effects capture combinations of changes across 36 tasks from 30 data sources and 8 workflow types, with 1248 configuration records. Core evaluation combines 4,206 numerical-control records across all eight families and 108 agent episodes across the original six. At eight new measurements, pair-effect ridge selects an optimum on 15 of 22 sources and limits every effect error to 10% of score range on three. Fitting a Gaussian process (GP) to the same agent observations raises effect recovery, accuracy relative to true effect magnitude, from 0.632 to 0.698 in the original Flash cohort and from 0.621 to 0.720 in an additional cohort. On six completed beat-detection and graph submissions, the same-observation GP raises family-macro recovery from 0.303 to 0.455. On six workflows with six binary options at 20 new measurements, encoding code equivalences, configurations with identical behavior, raises GP recovery from 0.248 to 0.462. WhatWorkedBench supports research on experimental agents, adaptive experimental design, numerical inference, and use of program structure.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.27490" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.27490" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.27490" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Science &amp; research benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.34537.html"><strong>The Marathon of Scientific Reasoning: Robustness of Scientific Agents to Perturbations in Multi-Turn Interactions</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34428.html"><strong>AgentHop: A Diagnostic Benchmark for Agentic Multi-Hop Scientific Question Answering</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.30971.html"><strong>SciHorizon-eLab: An Agentic Protocol-to-Task Compiler for Scalable Benchmarking of Scientific Embodied Agents</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.32318.html"><strong>What Can a Leaderboard Certify? Compositional Controllability for Fair Evaluation and Training of Biomedical Literature-Review Agents</strong></a> <span>2026-09-26</span></li>
+          <li><a href="2609.11318.html"><strong>Mr.LHDR: A Benchmark for Multimodal Real-World Long-Horizon Deep Research Agents</strong></a> <span>2026-09-10</span></li>
+          <li><a href="2609.11243.html"><strong>Sci-MMR: Benchmarking Multi-Step Evidence-Grounded Scientific Reasoning in Multimodal Agents</strong></a> <span>2026-09-10</span></li>
+          <li><a href="2609.11117.html"><strong>Overview of the NLPCC 2026 Shared Task 11: Agent-Based Experiment Reproduction from Scientific Papers</strong></a> <span>2026-09-10</span></li>
+          <li><a href="2609.07611.html"><strong>AgentIdeaBench: Benchmarking Scientific Ideation in the Agent Era</strong></a> <span>2026-09-07</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

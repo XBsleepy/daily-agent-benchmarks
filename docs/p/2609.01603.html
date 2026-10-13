@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Evaluating software engineering agents on realistic benchmarks is costly, since each task may require multi-step code exploration…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2609.01603" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.01603.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Evaluating software engineering agents on realistic benchmarks is costly, since each task may require multi-step code exploration…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.01603.html" />
+    <meta property="article:published_time" content="2026-09-01T17:59:46Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Evaluating software engineering agents on realistic benchmarks is costly, since each task may require multi-step code exploration…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,88 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation",
+  "name": "Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation",
+  "abstract": "Evaluating software engineering agents on realistic benchmarks is costly, since each task may require multi-step code exploration, modification, and test execution. Existing efficient evaluation methods select representative subsets to estimate full-benchmark performance, but are largely result-only: they fit historical pass/fail response matrices or static task semantics, discarding how agents solve problems. We propose PTA-IRT, a Privileged Trajectory-Aware Item Response Theory framework that fuses process and outcome signals. Historical execution trajectories supply process-level evidence beyond pass/fail, such as explored context, attempted edits, and solving paths, which PTA-IRT uses as privileged information for calibration subset selection and ability estimation. Under low calibration budgets, PTA-IRT consistently outperforms prior IRT baselines on score and ranking recovery across four SWE benchmarks. Code and data are publicly available at https://github.com/DeepSoftwareAnalytics/PTA-IRT.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Kefeng Duan"
+    },
+    {
+      "@type": "Person",
+      "name": "Dewu Zheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Yanlin Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiwen Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Ensheng Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Xilin Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuchi Ma"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiachi Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Mingwei Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zibin Zheng"
+    }
+  ],
+  "datePublished": "2026-09-01T17:59:46Z",
+  "dateModified": "2026-09-01T17:59:46Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.01603.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.01603.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.01603v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.01603"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.01603v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.01603"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +120,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation</h1>
+        <div class="meta">
+          Kefeng Duan, Dewu Zheng, Yanlin Wang, Xiwen Wang, Ensheng Shi, Xilin Liu, Yuchi Ma, Jiachi Chen, Mingwei Liu, Zibin Zheng
+          · 2609.01603
+          · <time datetime="2026-09-01">2026-09-01</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Evaluating software engineering agents on realistic benchmarks is costly, since each task may require multi-step code exploration, modification, and test execution. Existing efficient evaluation methods select representative subsets to estimate full-benchmark performance, but are largely result-only: they fit historical pass/fail response matrices or static task semantics, discarding how agents solve problems. We propose PTA-IRT, a Privileged Trajectory-Aware Item Response Theory framework that fuses process and outcome signals. Historical execution trajectories supply process-level evidence beyond pass/fail, such as explored context, attempted edits, and solving paths, which PTA-IRT uses as privileged information for calibration subset selection and ability estimation. Under low calibration budgets, PTA-IRT consistently outperforms prior IRT baselines on score and ranking recovery across four SWE benchmarks. Code and data are publicly available at https://github.com/DeepSoftwareAnalytics/PTA-IRT.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.01603v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.01603v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.01603" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.07785.html"><strong>What Does an LLM-Agent Leaderboard Rank Actually Compare?</strong></a> <span>2026-09-07</span></li>
+          <li><a href="2609.04611.html"><strong>$τ^τ$-Bench: An Environment for End-To-End, Realistic Agent Construction</strong></a> <span>2026-09-04</span></li>
+          <li><a href="2609.04167.html"><strong>SWE-Gate: Passing Functional Tests Is Not Enough for Software Engineering Agents</strong></a> <span>2026-09-03</span></li>
+          <li><a href="2609.04075.html"><strong>PatchBench: Evaluating AI Agents for Vulnerability Patching</strong></a> <span>2026-09-03</span></li>
+          <li><a href="2608.29834.html"><strong>You Know What I Mean: A Benchmark for Agentic Conversational Reference Grounding</strong></a> <span>2026-08-30</span></li>
+          <li><a href="2608.23653.html"><strong>Beyond Executable Models: The Pufibara Agent Harness and the Modelica Agent Workflow Benchmark for Physical System Modeling</strong></a> <span>2026-08-24</span></li>
+          <li><a href="2608.23564.html"><strong>SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration?</strong></a> <span>2026-08-24</span></li>
+          <li><a href="2608.21833.html"><strong>GameXpert-Bench: How Far Are Coding Agents from Expert Game Development?</strong></a> <span>2026-08-22</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

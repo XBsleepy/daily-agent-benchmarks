@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>TRACER: Verifiable Generative Provenance for Multimodal Tool-Using Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Multimodal large language models increasingly solve vision-centric tasks by calling external tools for visual inspection, OCR…" />
+    <meta name="keywords" content="Multimodal, Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2605.09934" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.09934.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="TRACER: Verifiable Generative Provenance for Multimodal Tool-Using Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Multimodal large language models increasingly solve vision-centric tasks by calling external tools for visual inspection, OCR…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.09934.html" />
+    <meta property="article:published_time" content="2026-05-11T03:32:55Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="TRACER: Verifiable Generative Provenance for Multimodal Tool-Using Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Multimodal large language models increasingly solve vision-centric tasks by calling external tools for visual inspection, OCR…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,85 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "TRACER: Verifiable Generative Provenance for Multimodal Tool-Using Agents",
+  "name": "TRACER: Verifiable Generative Provenance for Multimodal Tool-Using Agents",
+  "abstract": "Multimodal large language models increasingly solve vision-centric tasks by calling external tools for visual inspection, OCR, retrieval, calculation, and multi-step reasoning. Current tool-using agents usually expose the executed tool trajectory and the final answer, but they rarely specify which tool observation supports each generated claim. We call this missing claim-level dependency structure the provenance gap. The gap makes tool use hard to verify and hard to optimize, because useful evidence, redundant exploration, and unsupported reasoning are mixed in the same trajectory. We introduce TRACER, a framework for verifiable generative provenance in multimodal tool-using agents. Instead of adding citations after generation, TRACER generates each answer sentence together with a structured provenance record that identifies the supporting tool turn, evidence unit, and semantic support relation. Its relation space contains Quotation, Compression, and Inference, covering direct reuse, faithful condensation, and grounded derivation. TRACER verifies each record through schema checking, tool-turn alignment, source authenticity, and relation rationality, and then converts verified provenance into traceability constraints and provenance-derived local credit for reinforcement learning. We further construct TRACE-Bench, a benchmark for sentence-level provenance reconstruction from coarse multimodal tool trajectories. On TRACE-Bench, simply adding tools often introduces noise. With Qwen3-VL-8B, TRACER reaches 78.23% answer accuracy and 95.72% summary accuracy, outperforming the strongest closed-source tool-augmented baseline by 23.80 percentage points. Compared with tool-only supervised fine-tuning, it also reduces total test-set tool calls from 4949 to 3486. These results show that reliable multimodal tool reasoning depends on provenance-aware use of observations, not on more tool calls alone.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Bihui Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Caijun Jia"
+    },
+    {
+      "@type": "Person",
+      "name": "Jing Chi"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaohan Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yining Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "He Bai"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuchen Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jingxuan Wei"
+    },
+    {
+      "@type": "Person",
+      "name": "Junnan Zhu"
+    }
+  ],
+  "datePublished": "2026-05-11T03:32:55Z",
+  "dateModified": "2026-05-11T03:32:55Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.09934.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.09934.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.09934v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.09934"
+  },
+  "keywords": [
+    "Multimodal",
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multimodal"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.09934v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.09934"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +117,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>TRACER: Verifiable Generative Provenance for Multimodal Tool-Using Agents</h1>
+        <div class="meta">
+          Bihui Yu, Caijun Jia, Jing Chi, Xiaohan Liu, Yining Wang, He Bai, Yuchen Liu, Jingxuan Wei, Junnan Zhu
+          · 2605.09934
+          · <time datetime="2026-05-11">2026-05-11</time>
+          · Multimodal
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Multimodal large language models increasingly solve vision-centric tasks by calling external tools for visual inspection, OCR, retrieval, calculation, and multi-step reasoning. Current tool-using agents usually expose the executed tool trajectory and the final answer, but they rarely specify which tool observation supports each generated claim. We call this missing claim-level dependency structure the provenance gap. The gap makes tool use hard to verify and hard to optimize, because useful evidence, redundant exploration, and unsupported reasoning are mixed in the same trajectory. We introduce TRACER, a framework for verifiable generative provenance in multimodal tool-using agents. Instead of adding citations after generation, TRACER generates each answer sentence together with a structured provenance record that identifies the supporting tool turn, evidence unit, and semantic support relation. Its relation space contains Quotation, Compression, and Inference, covering direct reuse, faithful condensation, and grounded derivation. TRACER verifies each record through schema checking, tool-turn alignment, source authenticity, and relation rationality, and then converts verified provenance into traceability constraints and provenance-derived local credit for reinforcement learning. We further construct TRACE-Bench, a benchmark for sentence-level provenance reconstruction from coarse multimodal tool trajectories. On TRACE-Bench, simply adding tools often introduces noise. With Qwen3-VL-8B, TRACER reaches 78.23% answer accuracy and 95.72% summary accuracy, outperforming the strongest closed-source tool-augmented baseline by 23.80 percentage points. Compared with tool-only supervised fine-tuning, it also reduces total test-set tool calls from 4949 to 3486. These results show that reliable multimodal tool reasoning depends on provenance-aware use of observations, not on more tool calls alone.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.09934v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.09934v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.09934" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multimodal benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.15710.html"><strong>SMMBench: A Benchmark for Source-Distributed Multimodal Agent Memory</strong></a> <span>2026-05-15</span></li>
+          <li><a href="2605.15128.html"><strong>MemEye: A Visual-Centric Evaluation Framework for Multimodal Agent Memory</strong></a> <span>2026-05-14</span></li>
+          <li><a href="2605.10912.html"><strong>WildClawBench: A Benchmark for Real-World, Long-Horizon Agent Evaluation</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2605.10286.html"><strong>AgentRx: A Benchmark Study of LLM Agents for Multimodal Clinical Prediction Tasks</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2605.09679.html"><strong>DeepTumorVQA: A Hierarchical 3D CT Benchmark for Stage-Wise Evaluation of Medical VLMs and Tool-Augmented Agents</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.08445.html"><strong>Measuring What Matters: Benchmarking Generative, Multimodal, and Agentic AI in Healthcare</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.07510.html"><strong>InterLV-Search: Benchmarking Interleaved Multimodal Agentic Search</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.01250.html"><strong>EO-Gym: A Multimodal, Interactive Environment for Earth Observation Agents</strong></a> <span>2026-05-02</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

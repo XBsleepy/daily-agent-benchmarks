@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Existing evaluations of agents with memory typically assess memorization and action in isolation. One class of benchmarks evaluates…" />
+    <meta name="keywords" content="General, Memory, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2602.16313" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.16313.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Existing evaluations of agents with memory typically assess memorization and action in isolation. One class of benchmarks evaluates…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.16313.html" />
+    <meta property="article:published_time" content="2026-02-18T09:49:14Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Existing evaluations of agents with memory typically assess memorization and action in isolation. One class of benchmarks evaluates…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,105 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks",
+  "name": "MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks",
+  "abstract": "Existing evaluations of agents with memory typically assess memorization and action in isolation. One class of benchmarks evaluates memorization by testing recall of past conversations or text but fails to capture how memory is used to guide future decisions. Another class focuses on agents acting in single-session tasks without the need for long-term memory. However, in realistic settings, memorization and action are tightly coupled: agents acquire memory while interacting with the environment, and subsequently rely on that memory to solve future tasks. To capture this setting, we introduce MemoryArena, a unified evaluation gym for benchmarking agent memory in multi-session Memory-Agent-Environment loops. The benchmark consists of human-crafted agentic tasks with explicitly interdependent subtasks, where agents must learn from earlier actions and feedback by distilling experiences into memory, and subsequently use that memory to guide later actions to solve the overall task. MemoryArena supports evaluation across web navigation, preference-constrained planning, progressive information search, and sequential formal reasoning, and reveals that agents with near-saturated performance on existing long-context memory benchmarks like LoCoMo perform poorly in our agentic setting, exposing a gap in current evaluations for agents with memory.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Zexue He"
+    },
+    {
+      "@type": "Person",
+      "name": "Yu Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Churan Zhi"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuanzhe Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Tzu-Ping Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Lang Yin"
+    },
+    {
+      "@type": "Person",
+      "name": "Ze Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Tong Arthur Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Siru Ouyang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zihan Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiaxin Pei"
+    },
+    {
+      "@type": "Person",
+      "name": "Julian McAuley"
+    },
+    {
+      "@type": "Person",
+      "name": "Yejin Choi"
+    },
+    {
+      "@type": "Person",
+      "name": "Alex Pentland"
+    }
+  ],
+  "datePublished": "2026-02-18T09:49:14Z",
+  "dateModified": "2026-02-18T09:49:14Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.16313.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.16313.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2602.16313v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2602.16313"
+  },
+  "keywords": [
+    "General",
+    "Memory",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2602.16313v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2602.16313"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +137,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks</h1>
+        <div class="meta">
+          Zexue He, Yu Wang, Churan Zhi, Yuanzhe Hu, Tzu-Ping Chen, Lang Yin, Ze Chen, Tong Arthur Wu, Siru Ouyang, Zihan Wang, Jiaxin Pei, Julian McAuley, Yejin Choi, Alex Pentland
+          · 2602.16313
+          · <time datetime="2026-02-18">2026-02-18</time>
+          · General · 61 citations
+        </div>
+        <div class="themes"><span class="chip">Memory</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Existing evaluations of agents with memory typically assess memorization and action in isolation. One class of benchmarks evaluates memorization by testing recall of past conversations or text but fails to capture how memory is used to guide future decisions. Another class focuses on agents acting in single-session tasks without the need for long-term memory. However, in realistic settings, memorization and action are tightly coupled: agents acquire memory while interacting with the environment, and subsequently rely on that memory to solve future tasks. To capture this setting, we introduce MemoryArena, a unified evaluation gym for benchmarking agent memory in multi-session Memory-Agent-Environment loops. The benchmark consists of human-crafted agentic tasks with explicitly interdependent subtasks, where agents must learn from earlier actions and feedback by distilling experiences into memory, and subsequently use that memory to guide later actions to solve the overall task. MemoryArena supports evaluation across web navigation, preference-constrained planning, progressive information search, and sequential formal reasoning, and reveals that agents with near-saturated performance on existing long-context memory benchmarks like LoCoMo perform poorly in our agentic setting, exposing a gap in current evaluations for agents with memory.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2602.16313v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2602.16313v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2602.16313" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2602.19073.html"><strong>Evaluation and Benchmarking Suite for Financial Large Language Models and Agents</strong></a> <span>2026-02-22</span></li>
+          <li><a href="2602.18998.html"><strong>Benchmark Test-Time Scaling of General LLM Agents</strong></a> <span>2026-02-22</span></li>
+          <li><a href="2602.18008.html"><strong>Are LLMs Ready for Neural-integrated Mechanistic Modeling? A Benchmark and Agentic Framework</strong></a> <span>2026-02-20</span></li>
+          <li><a href="2602.16953.html"><strong>LLM4Cov: Execution-Aware Agentic Learning for High-coverage Testbench Generation</strong></a> <span>2026-02-18</span></li>
+          <li><a href="2602.15197.html"><strong>OpaqueToolsBench: Learning Nuances of Tool Behavior Through Interaction</strong></a> <span>2026-02-16</span></li>
+          <li><a href="2602.14257.html"><strong>AD-Bench: A Real-World, Trajectory-Aware Advertising Analytics Benchmark for LLM Agents</strong></a> <span>2026-02-15</span></li>
+          <li><a href="2602.13372.html"><strong>MoralityGym: A Benchmark for Evaluating Hierarchical Moral Alignment in Sequential Decision-Making Agents</strong></a> <span>2026-02-13</span></li>
+          <li><a href="2602.12670.html"><strong>SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks</strong></a> <span>2026-02-13</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

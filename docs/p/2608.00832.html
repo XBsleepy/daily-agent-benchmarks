@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>AdvPlan-Bench: Adversarial Evaluation of Structured Plan-Generation Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Structured plan-generation agents are often evaluated as if a plan has quality in isolation, yet many realistic planning tasks…" />
+    <meta name="keywords" content="Multi-agent, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2608.00832" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.00832.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AdvPlan-Bench: Adversarial Evaluation of Structured Plan-Generation Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Structured plan-generation agents are often evaluated as if a plan has quality in isolation, yet many realistic planning tasks…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.00832.html" />
+    <meta property="article:published_time" content="2026-08-01T19:17:03Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AdvPlan-Bench: Adversarial Evaluation of Structured Plan-Generation Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Structured plan-generation agents are often evaluated as if a plan has quality in isolation, yet many realistic planning tasks…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,64 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AdvPlan-Bench: Adversarial Evaluation of Structured Plan-Generation Agents",
+  "name": "AdvPlan-Bench: Adversarial Evaluation of Structured Plan-Generation Agents",
+  "abstract": "Structured plan-generation agents are often evaluated as if a plan has quality in isolation, yet many realistic planning tasks require asking how a candidate behaves when another agent can search for responses. We introduce AdvPlan-Bench, an offline benchmark for adversarial evaluation of structured plan-generation agents. The contribution is a general evaluation object: a typed plan, an adversarial response set, selector diagnostics, and traceable candidate-frontier metrics. AdvPlan-Bench represents plans as typed action chains with optional branches, assigns synthetic quality scores, compares opposing plans with BLUE-vs-RED advantage and Nash-gap diagnostics, and evaluates qualitative constraint coherence with a transparent heuristic rubric. In 150 synthetic scenarios spanning five planning templates, a sampled best-response policy that draws eight response candidates reduces BLUE advantage from .518 to .486 and BLUE win rate from .900 to .820 relative to a single-sample response. An offline LLM-policy contract baseline reaches .496 BLUE advantage and .700 BLUE win rate, while a two-stage multi-agent council obtains .509 BLUE advantage and .813 BLUE win rate. A three-rater rubric-sensitivity study over 600 rating records yields .978 inter-rater agreement. AdvPlan-Bench is not an operational planner and provides no evidence about real-world decision quality; it is a reproducible benchmark artifact for studying adversarial plan evaluation, response-budget sensitivity, candidate frontiers, and multi-agent critique-and-revision traces.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Alina Kapanova"
+    },
+    {
+      "@type": "Person",
+      "name": "Arun Kanhai"
+    },
+    {
+      "@type": "Person",
+      "name": "Natan Vidra"
+    },
+    {
+      "@type": "Person",
+      "name": "Spurthi Setty"
+    }
+  ],
+  "datePublished": "2026-08-01T19:17:03Z",
+  "dateModified": "2026-08-01T19:17:03Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.00832.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.00832.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.00832v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.00832"
+  },
+  "keywords": [
+    "Multi-agent",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multi-agent"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.00832v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.00832"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +96,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AdvPlan-Bench: Adversarial Evaluation of Structured Plan-Generation Agents</h1>
+        <div class="meta">
+          Alina Kapanova, Arun Kanhai, Natan Vidra, Spurthi Setty
+          · 2608.00832
+          · <time datetime="2026-08-01">2026-08-01</time>
+          · Multi-agent
+        </div>
+        <div class="themes"><span class="chip">Multi-agent</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Structured plan-generation agents are often evaluated as if a plan has quality in isolation, yet many realistic planning tasks require asking how a candidate behaves when another agent can search for responses. We introduce AdvPlan-Bench, an offline benchmark for adversarial evaluation of structured plan-generation agents. The contribution is a general evaluation object: a typed plan, an adversarial response set, selector diagnostics, and traceable candidate-frontier metrics. AdvPlan-Bench represents plans as typed action chains with optional branches, assigns synthetic quality scores, compares opposing plans with BLUE-vs-RED advantage and Nash-gap diagnostics, and evaluates qualitative constraint coherence with a transparent heuristic rubric. In 150 synthetic scenarios spanning five planning templates, a sampled best-response policy that draws eight response candidates reduces BLUE advantage from .518 to .486 and BLUE win rate from .900 to .820 relative to a single-sample response. An offline LLM-policy contract baseline reaches .496 BLUE advantage and .700 BLUE win rate, while a two-stage multi-agent council obtains .509 BLUE advantage and .813 BLUE win rate. A three-rater rubric-sensitivity study over 600 rating records yields .978 inter-rater agreement. AdvPlan-Bench is not an operational planner and provides no evidence about real-world decision quality; it is a reproducible benchmark artifact for studying adversarial plan evaluation, response-budget sensitivity, candidate frontiers, and multi-agent critique-and-revision traces.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.00832v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.00832v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.00832" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multi-agent benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.08605.html"><strong>ForestBench: A Unified Graph Framework for Evaluating Multi-Agent Collaboration</strong></a> <span>2026-08-09</span></li>
+          <li><a href="2608.08045.html"><strong>Lingjing: A Simulation Testbed for Multi-Agent Embodied Tasks in Open-Ended Cities</strong></a> <span>2026-08-08</span></li>
+          <li><a href="2608.01805.html"><strong>CockpitHAT: Dependency-Graph-Driven Hierarchical Attribution for Embodied Multi-Agent Cockpits</strong></a> <span>2026-08-03</span></li>
+          <li><a href="2608.07556.html"><strong>MasDrift: Benchmarking Authorization Preservation Across Multi-Agent Architectures</strong></a> <span>2026-08-02</span></li>
+          <li><a href="2607.25656.html"><strong>OrchBench: Evaluating Multi-Agent Orchestration Plans in Isolation via Deterministic Simulation</strong></a> <span>2026-07-28</span></li>
+          <li><a href="2607.15434.html"><strong>Coercion and Deception in AI-to-AI Management: An Agentic Benchmark of Unprompted Escalation</strong></a> <span>2026-07-16</span></li>
+          <li><a href="2607.01766.html"><strong>SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation</strong></a> <span>2026-07-02</span></li>
+          <li><a href="2607.00547.html"><strong>EgoGapBench: Benchmarking Egocentric Action Selection in Multi-Agent Scenes</strong></a> <span>2026-07-01</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

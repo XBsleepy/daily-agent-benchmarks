@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>AgentRewind: Recoverable Execution for Long-Horizon LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Many real-world tasks require LLM agents to interact with their environments over long execution horizons. Errors that occur early in…" />
+    <meta name="keywords" content="General, Safety, agent benchmark, LLM agent, arXiv, 2608.14380" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.14380.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AgentRewind: Recoverable Execution for Long-Horizon LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Many real-world tasks require LLM agents to interact with their environments over long execution horizons. Errors that occur early in…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.14380.html" />
+    <meta property="article:published_time" content="2026-08-14T15:20:35Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AgentRewind: Recoverable Execution for Long-Horizon LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Many real-world tasks require LLM agents to interact with their environments over long execution horizons. Errors that occur early in…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,72 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AgentRewind: Recoverable Execution for Long-Horizon LLM Agents",
+  "name": "AgentRewind: Recoverable Execution for Long-Horizon LLM Agents",
+  "abstract": "Many real-world tasks require LLM agents to interact with their environments over long execution horizons. Errors that occur early in execution may propagate through both the agent context and environment state, and their effects may be difficult to reverse through subsequent actions. Existing methods mainly seek to reduce such errors through plan refinement and safety checks but provide little support after errors occur. To enable recovery during long-horizon execution, we present AgentRewind, a runtime recovery framework that records aligned checkpoints of the agent context and controlled environment, allowing agents to return to an earlier state and resume execution with information from previous attempts. We also construct MettleBench, a benchmark for evaluating task completion and partial progress on long-horizon engineering assignments containing a series of related requirements. Experiments across tasks, multiple models, execution strategies, and agent harnesses show that AgentRewind improves task success rate and average checklist progress over the compared baselines.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yu Zhuang"
+    },
+    {
+      "@type": "Person",
+      "name": "Kefei Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Yitong Duan"
+    },
+    {
+      "@type": "Person",
+      "name": "Shuxin Zheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Jian Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Xu-Yao Zhang"
+    }
+  ],
+  "datePublished": "2026-08-14T15:20:35Z",
+  "dateModified": "2026-08-14T15:20:35Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.14380.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.14380.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.14380v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.14380"
+  },
+  "keywords": [
+    "General",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.14380v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.14380"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +104,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AgentRewind: Recoverable Execution for Long-Horizon LLM Agents</h1>
+        <div class="meta">
+          Yu Zhuang, Kefei Chen, Yitong Duan, Shuxin Zheng, Jian Li, Xu-Yao Zhang
+          · 2608.14380
+          · <time datetime="2026-08-14">2026-08-14</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Many real-world tasks require LLM agents to interact with their environments over long execution horizons. Errors that occur early in execution may propagate through both the agent context and environment state, and their effects may be difficult to reverse through subsequent actions. Existing methods mainly seek to reduce such errors through plan refinement and safety checks but provide little support after errors occur. To enable recovery during long-horizon execution, we present AgentRewind, a runtime recovery framework that records aligned checkpoints of the agent context and controlled environment, allowing agents to return to an earlier state and resume execution with information from previous attempts. We also construct MettleBench, a benchmark for evaluating task completion and partial progress on long-horizon engineering assignments containing a series of related requirements. Experiments across tasks, multiple models, execution strategies, and agent harnesses show that AgentRewind improves task success rate and average checklist progress over the compared baselines.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.14380v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.14380v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.14380" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.16055.html"><strong>Governance at the Boundary: How Agent Decomposition Degrades Policy Compliance</strong></a> <span>2026-08-17</span></li>
+          <li><a href="2608.15654.html"><strong>When Stories Evolve: Benchmarking LLM Storytelling Across Agent Architectures in Open-Ended World Simulations</strong></a> <span>2026-08-16</span></li>
+          <li><a href="2608.15242.html"><strong>LongRCA Bench: Diagnosing Responsible Roles and Root Causes in Long-Horizon Agent Failures</strong></a> <span>2026-08-15</span></li>
+          <li><a href="2608.15127.html"><strong>From LLM Inference to Agentic Workloads: Characterization and Implications for Serving Systems</strong></a> <span>2026-08-15</span></li>
+          <li><a href="2608.14270.html"><strong>TimeSage-EV: A Live Benchmark for Agentic Time Series Analysis in Evolving Environments</strong></a> <span>2026-08-14</span></li>
+          <li><a href="2608.13883.html"><strong>MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends</strong></a> <span>2026-08-14</span></li>
+          <li><a href="2608.13552.html"><strong>PlayWorld: Benchmarking World Models with Agent Players over Long-Horizon Objectives</strong></a> <span>2026-08-13</span></li>
+          <li><a href="2608.12593.html"><strong>DiG-bench: Discovery in Games</strong></a> <span>2026-08-12</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

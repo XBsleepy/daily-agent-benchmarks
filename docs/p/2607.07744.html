@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>PERFOPT-Bench: Evaluating Coding Agents on Software Performance Optimization | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Coding-agent benchmarks have largely measured whether agents can produce functionally correct patches, but production software also…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2607.07744" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.07744.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="PERFOPT-Bench: Evaluating Coding Agents on Software Performance Optimization" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Coding-agent benchmarks have largely measured whether agents can produce functionally correct patches, but production software also…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.07744.html" />
+    <meta property="article:published_time" content="2026-07-08T08:32:18Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PERFOPT-Bench: Evaluating Coding Agents on Software Performance Optimization" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Coding-agent benchmarks have largely measured whether agents can produce functionally correct patches, but production software also…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,72 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "PERFOPT-Bench: Evaluating Coding Agents on Software Performance Optimization",
+  "name": "PERFOPT-Bench: Evaluating Coding Agents on Software Performance Optimization",
+  "abstract": "Coding-agent benchmarks have largely measured whether agents can produce functionally correct patches, but production software also demands measurable speedups on real execution targets. Performance optimization is a distinct agentic task: agents must profile executions, diagnose cross-layer bottlenecks, edit code without breaking correctness, and verify that gains are reproducible rather than measurement artifacts. We introduce PERFOPT-Bench, a benchmark for evaluating this full performance-engineering loop. Each task provides a correct but deliberately suboptimal codebase and asks the agent to improve a target performance metric; scoring requires hidden correctness tests, verified-speedup measurement, and trajectory-level audit. We evaluate 7 agent stacks with different LLMs and agent frameworks on 7 long-horizon optimization tasks. The results show that optimization performance is workload-dependent rather than determined by model identity alone: no single stack dominates, and changing the agent framework can materially change the same LLM's per-task speedup profile. We further find that raw speedup is unsafe as a benchmark score, since some large gains arise from benchmark-specific shortcut exploitation; an exploratory relay pilot suggests that restarting from an externalized optimization summary can recover additional headroom after an initial session stops. The benchmark and our evaluation are available at: https://anonymous.4open.science/r/Dataset-D3CC.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yingyun Cui"
+    },
+    {
+      "@type": "Person",
+      "name": "Yi Xie"
+    },
+    {
+      "@type": "Person",
+      "name": "Piaohong Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiawei Ma"
+    },
+    {
+      "@type": "Person",
+      "name": "Bo Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Liangliang Cao"
+    }
+  ],
+  "datePublished": "2026-07-08T08:32:18Z",
+  "dateModified": "2026-07-08T08:32:18Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.07744.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.07744.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.07744v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.07744"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.07744v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.07744"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +104,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>PERFOPT-Bench: Evaluating Coding Agents on Software Performance Optimization</h1>
+        <div class="meta">
+          Yingyun Cui, Yi Xie, Piaohong Wang, Jiawei Ma, Bo Liu, Liangliang Cao
+          · 2607.07744
+          · <time datetime="2026-07-08">2026-07-08</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Coding-agent benchmarks have largely measured whether agents can produce functionally correct patches, but production software also demands measurable speedups on real execution targets. Performance optimization is a distinct agentic task: agents must profile executions, diagnose cross-layer bottlenecks, edit code without breaking correctness, and verify that gains are reproducible rather than measurement artifacts. We introduce PERFOPT-Bench, a benchmark for evaluating this full performance-engineering loop. Each task provides a correct but deliberately suboptimal codebase and asks the agent to improve a target performance metric; scoring requires hidden correctness tests, verified-speedup measurement, and trajectory-level audit. We evaluate 7 agent stacks with different LLMs and agent frameworks on 7 long-horizon optimization tasks. The results show that optimization performance is workload-dependent rather than determined by model identity alone: no single stack dominates, and changing the agent framework can materially change the same LLM&#x27;s per-task speedup profile. We further find that raw speedup is unsafe as a benchmark score, since some large gains arise from benchmark-specific shortcut exploitation; an exploratory relay pilot suggests that restarting from an externalized optimization summary can recover additional headroom after an initial session stops. The benchmark and our evaluation are available at: https://anonymous.4open.science/r/Dataset-D3CC.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.07744v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.07744v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.07744" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.10789.html"><strong>Imaging-101: Benchmarking LLM Coding Agents on Scientific Computational Imaging</strong></a> <span>2026-07-12</span></li>
+          <li><a href="2607.08964.html"><strong>Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading</strong></a> <span>2026-07-09</span></li>
+          <li><a href="2607.20518.html"><strong>CANN Bench: Benchmarking Agent Generated Kernels against Real NPU and Algorithmic Limits</strong></a> <span>2026-07-08</span></li>
+          <li><a href="2607.07946.html"><strong>DeepSWE: Measuring Frontier Coding Agents on Original, Long-Horizon Engineering Tasks</strong></a> <span>2026-07-08</span></li>
+          <li><a href="2607.06624.html"><strong>AgentLens: Production-Assessed Trajectory Reviews for Coding Agent Evaluation</strong></a> <span>2026-07-07</span></li>
+          <li><a href="2607.06411.html"><strong>RuBench: A Repository-Level Agentic Coding Benchmark with Natively Authored Russian Task Specifications</strong></a> <span>2026-07-07</span></li>
+          <li><a href="2607.03525.html"><strong>GameEngineBench: Evaluating Coding Agents on Real C++ Runtime Environments</strong></a> <span>2026-07-03</span></li>
+          <li><a href="2607.02684.html"><strong>Can Coding Agents Implement Missed Compiler Optimizations? Evaluating LLM Agents on LLVM Peephole Optimizations</strong></a> <span>2026-07-02</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

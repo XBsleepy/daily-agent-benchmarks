@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>CLQT: A Closed-Loop, Cost-Aware, Strategy-Consistent Benchmark for Diagnostic Evaluation of LLM Portfolio-Management Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLM agents are increasingly cast as autonomous portfolio managers, and benchmarks have moved from financial question-answering to…" />
+    <meta name="keywords" content="General, Tool use, Memory, agent benchmark, LLM agent, arXiv, 2606.29771" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.29771.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="CLQT: A Closed-Loop, Cost-Aware, Strategy-Consistent Benchmark for Diagnostic Evaluation of LLM Portfolio-Management Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLM agents are increasingly cast as autonomous portfolio managers, and benchmarks have moved from financial question-answering to…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.29771.html" />
+    <meta property="article:published_time" content="2026-06-29T04:26:30Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="CLQT: A Closed-Loop, Cost-Aware, Strategy-Consistent Benchmark for Diagnostic Evaluation of LLM Portfolio-Management Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLM agents are increasingly cast as autonomous portfolio managers, and benchmarks have moved from financial question-answering to…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,57 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "CLQT: A Closed-Loop, Cost-Aware, Strategy-Consistent Benchmark for Diagnostic Evaluation of LLM Portfolio-Mana",
+  "name": "CLQT: A Closed-Loop, Cost-Aware, Strategy-Consistent Benchmark for Diagnostic Evaluation of LLM Portfolio-Management Agents",
+  "abstract": "LLM agents are increasingly cast as autonomous portfolio managers, and benchmarks have moved from financial question-answering to sequential trading. Yet most still rank agents by returns over a fixed window, a weak proxy: the market path dominates a period's return, and apparent alpha can dissolve once look-ahead leakage is controlled. We introduce CLQT, which reframes closed-loop trading evaluation as diagnosis before ranking: an instrument that localizes where and why an agent's process succeeds or fails. CLQT is a closed-loop, cost-aware, strategy-consistent, temporally-gated environment whose agents run a five-stage cycle: gather, synthesize, allocate, execute, reflect. Every round emits a DecisionRound sealed into a recompute-verifiable hash chain. Six pillars form the substrate: a TimeGate, transaction- and financing-cost modeling, strategy-consistency scoring, three-tier memory, a Model-Context-Protocol tool layer, and mandate-aware synthesis. The same agent runs structured or fully autonomous, making process scaffolding an experimental variable. From the audit trail we compute a five-axis capability scorecard (APM-CS: Coherence, Acuity, Composure, Discipline, Reliability), with Coherence partly judged by a held-out, out-of-cohort LLM. We validate CLQT on a contamination-controlled multi-model backtest with an ablation grid and a live broker track on unseen, post-cutoff data, against a repeated-run noise floor. Three findings illustrate the diagnosis-first read: the capability leader is not the Sharpe leader (the nominal winner is a 5-of-26-round reliability artifact); signal-action agreement exceeds a held-out judge's coherence score by a stable margin on both tracks (+0.30 backtest, +0.23 live); and module value registers on the capability axes when returns cannot separate it. CLQT yields not a model ranking but a durable, extensible map of agent competencies and limitations.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Bo Qu"
+    },
+    {
+      "@type": "Person",
+      "name": "Mingguang Chen"
+    }
+  ],
+  "datePublished": "2026-06-29T04:26:30Z",
+  "dateModified": "2026-08-02T10:48:28Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.29771.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.29771.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.29771v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.29771"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.29771v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.29771"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +89,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>CLQT: A Closed-Loop, Cost-Aware, Strategy-Consistent Benchmark for Diagnostic Evaluation of LLM Portfolio-Management Agents</h1>
+        <div class="meta">
+          Bo Qu, Mingguang Chen
+          · 2606.29771
+          · <time datetime="2026-06-29">2026-06-29</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLM agents are increasingly cast as autonomous portfolio managers, and benchmarks have moved from financial question-answering to sequential trading. Yet most still rank agents by returns over a fixed window, a weak proxy: the market path dominates a period&#x27;s return, and apparent alpha can dissolve once look-ahead leakage is controlled. We introduce CLQT, which reframes closed-loop trading evaluation as diagnosis before ranking: an instrument that localizes where and why an agent&#x27;s process succeeds or fails. CLQT is a closed-loop, cost-aware, strategy-consistent, temporally-gated environment whose agents run a five-stage cycle: gather, synthesize, allocate, execute, reflect. Every round emits a DecisionRound sealed into a recompute-verifiable hash chain. Six pillars form the substrate: a TimeGate, transaction- and financing-cost modeling, strategy-consistency scoring, three-tier memory, a Model-Context-Protocol tool layer, and mandate-aware synthesis. The same agent runs structured or fully autonomous, making process scaffolding an experimental variable. From the audit trail we compute a five-axis capability scorecard (APM-CS: Coherence, Acuity, Composure, Discipline, Reliability), with Coherence partly judged by a held-out, out-of-cohort LLM. We validate CLQT on a contamination-controlled multi-model backtest with an ablation grid and a live broker track on unseen, post-cutoff data, against a repeated-run noise floor. Three findings illustrate the diagnosis-first read: the capability leader is not the Sharpe leader (the nominal winner is a 5-of-26-round reliability artifact); signal-action agreement exceeds a held-out judge&#x27;s coherence score by a stable margin on both tracks (+0.30 backtest, +0.23 live); and module value registers on the capability axes when returns cannot separate it. CLQT yields not a model ranking but a durable, extensible map of agent competencies and limitations.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.29771v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.29771v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.29771" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.00627.html"><strong>AGI Maze as a Benchmark Framework for World-Modeling Agents</strong></a> <span>2026-07-01</span></li>
+          <li><a href="2606.31522.html"><strong>FinPersona-Bench: A Benchmark for Longitudinal Psychometric Stability of Autonomous Financial Agents</strong></a> <span>2026-06-30</span></li>
+          <li><a href="2606.31179.html"><strong>HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents</strong></a> <span>2026-06-30</span></li>
+          <li><a href="2606.29955.html"><strong>SpreadsheetBench 2: Evaluating Agents on End-to-End Business Spreadsheet Workflows</strong></a> <span>2026-06-29</span></li>
+          <li><a href="2606.28061.html"><strong>ToolPrivacyBench: Benchmarking Purpose-Bound Privacy in Tool-Using LLM Agents</strong></a> <span>2026-06-26</span></li>
+          <li><a href="2606.27669.html"><strong>When Search Agents Should Ask: DiscoBench for Clarification-Aware Deep Search</strong></a> <span>2026-06-26</span></li>
+          <li><a href="2607.16229.html"><strong>FinBench: Time-Gated Calibration and Uncertainty Benchmarking for Agentic Financial Forecasting</strong></a> <span>2026-06-24</span></li>
+          <li><a href="2606.27397.html"><strong>SidConArena: An Environment Evaluating Agents in Open-Ended,Positive-Sum Bargaining Game</strong></a> <span>2026-06-24</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

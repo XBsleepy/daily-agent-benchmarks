@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>The Blind Spot of Agent Safety: How Benign User Instructions Expose Critical Vulnerabilities in Computer-Use Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Computer-use agents (CUAs) can now autonomously complete complex tasks in real digital environments, but when misled, they can also…" />
+    <meta name="keywords" content="GUI / computer use, Multi-agent, Computer use, Safety, agent benchmark, LLM agent, arXiv, 2604.10577" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.10577.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="The Blind Spot of Agent Safety: How Benign User Instructions Expose Critical Vulnerabilities in Computer-Use Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Computer-use agents (CUAs) can now autonomously complete complex tasks in real digital environments, but when misled, they can also…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.10577.html" />
+    <meta property="article:published_time" content="2026-04-12T10:52:42Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="The Blind Spot of Agent Safety: How Benign User Instructions Expose Critical Vulnerabilities in Computer-Use Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Computer-use agents (CUAs) can now autonomously complete complex tasks in real digital environments, but when misled, they can also…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,86 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "The Blind Spot of Agent Safety: How Benign User Instructions Expose Critical Vulnerabilities in Computer-Use A",
+  "name": "The Blind Spot of Agent Safety: How Benign User Instructions Expose Critical Vulnerabilities in Computer-Use Agents",
+  "abstract": "Computer-use agents (CUAs) can now autonomously complete complex tasks in real digital environments, but when misled, they can also be used to automate harmful actions programmatically. Existing safety evaluations largely target explicit threats such as misuse and prompt injection, but overlook a subtle yet critical setting where user instructions are entirely benign and harm arises from the task context or execution outcome. We introduce OS-BLIND, a benchmark that evaluates CUAs under unintended attack conditions, comprising 300 human-crafted tasks across 12 categories, 8 applications, and 2 threat clusters: environment-embedded threats and agent-initiated harms. Our evaluation on frontier models and agentic frameworks reveals that most CUAs exceed 90% attack success rate (ASR), and even the safety-aligned Claude 4.5 Sonnet reaches 73.0% ASR. More interestingly, this vulnerability becomes even more severe, with ASR rising from 73.0% to 92.7% when Claude 4.5 Sonnet is deployed in multi-agent systems. Our analysis further shows that existing safety defenses provide limited protection when user instructions are benign. Safety alignment primarily activates within the first few steps and rarely re-engages during subsequent execution. In multi-agent systems, decomposed subtasks obscure the harmful intent from the model, causing safety-aligned models to fail. We will release our OS-BLIND to encourage the broader research community to further investigate and address these safety challenges.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Xuwei Ding"
+    },
+    {
+      "@type": "Person",
+      "name": "Skylar Zhai"
+    },
+    {
+      "@type": "Person",
+      "name": "Linxin Song"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiate Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Taiwei Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Nicholas Meade"
+    },
+    {
+      "@type": "Person",
+      "name": "Siva Reddy"
+    },
+    {
+      "@type": "Person",
+      "name": "Jian Kang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jieyu Zhao"
+    }
+  ],
+  "datePublished": "2026-04-12T10:52:42Z",
+  "dateModified": "2026-04-17T07:20:03Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.10577.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.10577.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.10577v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2604.10577"
+  },
+  "keywords": [
+    "GUI / computer use",
+    "Multi-agent",
+    "Computer use",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "GUI / computer use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2604.10577v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2604.10577"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +118,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>The Blind Spot of Agent Safety: How Benign User Instructions Expose Critical Vulnerabilities in Computer-Use Agents</h1>
+        <div class="meta">
+          Xuwei Ding, Skylar Zhai, Linxin Song, Jiate Li, Taiwei Shi, Nicholas Meade, Siva Reddy, Jian Kang, Jieyu Zhao
+          · 2604.10577
+          · <time datetime="2026-04-12">2026-04-12</time>
+          · GUI / computer use · 6 citations
+        </div>
+        <div class="themes"><span class="chip">Multi-agent</span><span class="chip">Computer use</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Computer-use agents (CUAs) can now autonomously complete complex tasks in real digital environments, but when misled, they can also be used to automate harmful actions programmatically. Existing safety evaluations largely target explicit threats such as misuse and prompt injection, but overlook a subtle yet critical setting where user instructions are entirely benign and harm arises from the task context or execution outcome. We introduce OS-BLIND, a benchmark that evaluates CUAs under unintended attack conditions, comprising 300 human-crafted tasks across 12 categories, 8 applications, and 2 threat clusters: environment-embedded threats and agent-initiated harms. Our evaluation on frontier models and agentic frameworks reveals that most CUAs exceed 90% attack success rate (ASR), and even the safety-aligned Claude 4.5 Sonnet reaches 73.0% ASR. More interestingly, this vulnerability becomes even more severe, with ASR rising from 73.0% to 92.7% when Claude 4.5 Sonnet is deployed in multi-agent systems. Our analysis further shows that existing safety defenses provide limited protection when user instructions are benign. Safety alignment primarily activates within the first few steps and rarely re-engages during subsequent execution. In multi-agent systems, decomposed subtasks obscure the harmful intent from the model, causing safety-aligned models to fail. We will release our OS-BLIND to encourage the broader research community to further investigate and address these safety challenges.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2604.10577v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2604.10577v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2604.10577" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More GUI / computer use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.12501.html"><strong>Covering Human Action Space for Computer Use: Data Synthesis and Benchmark</strong></a> <span>2026-05-12</span></li>
+          <li><a href="2604.21134.html"><strong>Beyond Pixels: Introspective and Interactive Grounding for Visualization Agents</strong></a> <span>2026-04-22</span></li>
+          <li><a href="2604.18847.html"><strong>Human-Guided Harm Recovery for Computer Use Agents</strong></a> <span>2026-04-20</span></li>
+          <li><a href="2604.14956.html"><strong>FedGUI: Benchmarking Federated GUI Agents across Heterogeneous Platforms, Devices, and Operating Systems</strong></a> <span>2026-04-16</span></li>
+          <li><a href="2604.09937.html"><strong>HealthAdminBench: Evaluating Computer-Use Agents on Healthcare Administration Tasks</strong></a> <span>2026-04-10</span></li>
+          <li><a href="2604.09155.html"><strong>CORA: Conformal Risk-Controlled Agents for Safeguarded Mobile GUI Automation</strong></a> <span>2026-04-10</span></li>
+          <li><a href="2604.08538.html"><strong>ParseBench: A Document Parsing Benchmark for AI Agents</strong></a> <span>2026-04-09</span></li>
+          <li><a href="2605.18758.html"><strong>OmniGUI: Benchmarking GUI Agents in Omni-Modal Smartphone Environments</strong></a> <span>2026-04-03</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

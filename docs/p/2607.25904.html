@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Interactive Reward Agent: GUI Task Evaluation via Environment-State Verification | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Graphical user interface task evaluation aims to determine whether a GUI agent has successfully completed a user instruction…" />
+    <meta name="keywords" content="GUI / computer use, GUI agents, Tool use, agent benchmark, LLM agent, arXiv, 2607.25904" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.25904.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Interactive Reward Agent: GUI Task Evaluation via Environment-State Verification" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Graphical user interface task evaluation aims to determine whether a GUI agent has successfully completed a user instruction…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.25904.html" />
+    <meta property="article:published_time" content="2026-07-28T16:01:38Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Interactive Reward Agent: GUI Task Evaluation via Environment-State Verification" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Graphical user interface task evaluation aims to determine whether a GUI agent has successfully completed a user instruction…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,81 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Interactive Reward Agent: GUI Task Evaluation via Environment-State Verification",
+  "name": "Interactive Reward Agent: GUI Task Evaluation via Environment-State Verification",
+  "abstract": "Graphical user interface task evaluation aims to determine whether a GUI agent has successfully completed a user instruction. Automated GUI task evaluation has received increasing attention because the evaluation results can serve as reward signals for both test-time scaling and post-training. However, reliable GUI task evaluation remains challenging because the judgments often require access to environment states, such as system configurations, file data, and application settings, beyond the screenshots of execution trajectories. In this paper, we propose an interactive reward agent (IRA) based on a propose-then-verify framework to acquire and verify evidence from the post-execution environment. Given a task instruction and a GUI environment after the GUI agent execution, IRA first proposes the task completion conditions and then verifies them by invoking system tools, application tools, and GUI tools. This design combines evidence from both visible interfaces and the environment state in an interactive process. We further introduce GUI-RewardBench, a benchmark of 321 GUI task trajectories spanning 10 Ubuntu desktop application categories. Experiments show that IRA achieves 86.9% accuracy on GUI-RewardBench, outperforming existing evaluator baselines. We further apply IRA to reinforcement learning of GUI agents, achieving a 34.0% OSWorld success rate, which demonstrates that IRA can provide effective reward signals for training GUI agents.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Chenrui Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuwei Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yang Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Ruining Feng"
+    },
+    {
+      "@type": "Person",
+      "name": "Zirui Shang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhi Gao"
+    },
+    {
+      "@type": "Person",
+      "name": "Lifeng Fan"
+    },
+    {
+      "@type": "Person",
+      "name": "Che Sun"
+    }
+  ],
+  "datePublished": "2026-07-28T16:01:38Z",
+  "dateModified": "2026-07-29T05:13:57Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.25904.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.25904.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.25904v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.25904"
+  },
+  "keywords": [
+    "GUI / computer use",
+    "GUI agents",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "GUI / computer use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.25904v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.25904"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +113,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Interactive Reward Agent: GUI Task Evaluation via Environment-State Verification</h1>
+        <div class="meta">
+          Chenrui Shi, Yuwei Wu, Yang Liu, Ruining Feng, Zirui Shang, Zhi Gao, Lifeng Fan, Che Sun
+          · 2607.25904
+          · <time datetime="2026-07-28">2026-07-28</time>
+          · GUI / computer use
+        </div>
+        <div class="themes"><span class="chip">GUI agents</span><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Graphical user interface task evaluation aims to determine whether a GUI agent has successfully completed a user instruction. Automated GUI task evaluation has received increasing attention because the evaluation results can serve as reward signals for both test-time scaling and post-training. However, reliable GUI task evaluation remains challenging because the judgments often require access to environment states, such as system configurations, file data, and application settings, beyond the screenshots of execution trajectories. In this paper, we propose an interactive reward agent (IRA) based on a propose-then-verify framework to acquire and verify evidence from the post-execution environment. Given a task instruction and a GUI environment after the GUI agent execution, IRA first proposes the task completion conditions and then verifies them by invoking system tools, application tools, and GUI tools. This design combines evidence from both visible interfaces and the environment state in an interactive process. We further introduce GUI-RewardBench, a benchmark of 321 GUI task trajectories spanning 10 Ubuntu desktop application categories. Experiments show that IRA achieves 86.9% accuracy on GUI-RewardBench, outperforming existing evaluator baselines. We further apply IRA to reinforcement learning of GUI agents, achieving a 34.0% OSWorld success rate, which demonstrates that IRA can provide effective reward signals for training GUI agents.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.25904v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.25904v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.25904" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More GUI / computer use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.18307.html"><strong>ComponentBench: Diagnosing Component-Level Failures in Computer-Use Agents</strong></a> <span>2026-08-18</span></li>
+          <li><a href="2608.06477.html"><strong>StepJack: Benchmarking Computer-Use Agent Safety Against Multi-Step Indirect Prompt Injection</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2607.28074.html"><strong>Echoverse: Deep, Evolving Environments for Training Computer-Use Agents at Scale</strong></a> <span>2026-07-30</span></li>
+          <li><a href="2607.26041.html"><strong>Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions?</strong></a> <span>2026-07-28</span></li>
+          <li><a href="2607.22689.html"><strong>Beyond Sequential Interaction: Benchmarking Parallel Execution and Coordination for GUI Agents</strong></a> <span>2026-07-17</span></li>
+          <li><a href="2607.13465.html"><strong>DevicesWorld: Benchmarking Cross-Device Agents in Heterogeneous Environments</strong></a> <span>2026-07-15</span></li>
+          <li><a href="2607.05363.html"><strong>SovereignPA-Bench: Evaluating User-Owned Personal Agents under Evolving Intent, Platform Mediation, and Consent Constraints</strong></a> <span>2026-07-06</span></li>
+          <li><a href="2606.31154.html"><strong>PPT-Eval: A Benchmark for Computer-Use Agents on PowerPoint Tasks</strong></a> <span>2026-06-30</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

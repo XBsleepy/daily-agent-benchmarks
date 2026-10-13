@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>RuBench: A Repository-Level Agentic Coding Benchmark with Natively Authored Russian Task Specifications | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Developers increasingly delegate real maintenance work to product-grade coding agents, and many state tasks in their native language…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Tool use, agent benchmark, LLM agent, arXiv, 2607.06411" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.06411.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="RuBench: A Repository-Level Agentic Coding Benchmark with Natively Authored Russian Task Specifications" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Developers increasingly delegate real maintenance work to product-grade coding agents, and many state tasks in their native language…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.06411.html" />
+    <meta property="article:published_time" content="2026-07-07T15:41:22Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="RuBench: A Repository-Level Agentic Coding Benchmark with Natively Authored Russian Task Specifications" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Developers increasingly delegate real maintenance work to product-grade coding agents, and many state tasks in their native language…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,53 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "RuBench: A Repository-Level Agentic Coding Benchmark with Natively Authored Russian Task Specifications",
+  "name": "RuBench: A Repository-Level Agentic Coding Benchmark with Natively Authored Russian Task Specifications",
+  "abstract": "Developers increasingly delegate real maintenance work to product-grade coding agents, and many state tasks in their native language, in the style of a customer request rather than a curated English issue. We introduce RuBench 1.0, a benchmark of 25 tasks mined from recent fix commits in five live open-source repositories (aiohttp, aiogram, Laravel, NestJS, Fastify), each specified natively in Russian -- written from scratch, not translated -- and judged by the upstream maintainer's regression tests, which we withhold from release. All fix commits postdate the training-data cutoffs of every evaluated model. Round 1 evaluates Claude Code with Opus 4.8, Sonnet 5, and Haiku 4.5, and Codex CLI with GPT-5.5 (3 independent runs each; pass@1 with task-level uncertainty); the best configuration resolves 78.7% of tasks. Auditing full trajectories of an hors-concours configuration (Claude Code + Fable 5), we caught the product silently substituting the model on 20% of tasks via an official safeguard fallback -- evidence that the deployed product, not the model, is the unit actually measured. Version 2 adds Round 2: seven further configurations on the same frozen set under a per-configuration freshness gate -- the Russian-market agents SourceCraft CLI (ds, legacy) and Koda CLI (koda-pro), Antigravity with Gemini 3.1 Pro and 3.5 Flash, and Codex CLI with GPT-5.6 Sol and Luna. SourceCraft's flagship resolves 68.1% (N=23), above GPT-5.5 and both Gemini rows. A tool-call contamination re-audit of all 437 Round-2 trajectories finds the Russian and Gemini columns clean (0/293 cells) while flagging systematic oracle-hunting in the GPT-5.6 family (8/69 and 13/75 cells), including one case of mining a prior round's artifacts from the run machine's disk; honest scores are published alongside raw ones. We release statements, metadata, trajectories, and diffs; oracles are withheld with a SHA-256 manifest.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Evgeny Shilov"
+    }
+  ],
+  "datePublished": "2026-07-07T15:41:22Z",
+  "dateModified": "2026-07-19T18:49:59Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.06411.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.06411.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.06411v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.06411"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.06411v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.06411"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +85,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>RuBench: A Repository-Level Agentic Coding Benchmark with Natively Authored Russian Task Specifications</h1>
+        <div class="meta">
+          Evgeny Shilov
+          · 2607.06411
+          · <time datetime="2026-07-07">2026-07-07</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Developers increasingly delegate real maintenance work to product-grade coding agents, and many state tasks in their native language, in the style of a customer request rather than a curated English issue. We introduce RuBench 1.0, a benchmark of 25 tasks mined from recent fix commits in five live open-source repositories (aiohttp, aiogram, Laravel, NestJS, Fastify), each specified natively in Russian -- written from scratch, not translated -- and judged by the upstream maintainer&#x27;s regression tests, which we withhold from release. All fix commits postdate the training-data cutoffs of every evaluated model. Round 1 evaluates Claude Code with Opus 4.8, Sonnet 5, and Haiku 4.5, and Codex CLI with GPT-5.5 (3 independent runs each; pass@1 with task-level uncertainty); the best configuration resolves 78.7% of tasks. Auditing full trajectories of an hors-concours configuration (Claude Code + Fable 5), we caught the product silently substituting the model on 20% of tasks via an official safeguard fallback -- evidence that the deployed product, not the model, is the unit actually measured. Version 2 adds Round 2: seven further configurations on the same frozen set under a per-configuration freshness gate -- the Russian-market agents SourceCraft CLI (ds, legacy) and Koda CLI (koda-pro), Antigravity with Gemini 3.1 Pro and 3.5 Flash, and Codex CLI with GPT-5.6 Sol and Luna. SourceCraft&#x27;s flagship resolves 68.1% (N=23), above GPT-5.5 and both Gemini rows. A tool-call contamination re-audit of all 437 Round-2 trajectories finds the Russian and Gemini columns clean (0/293 cells) while flagging systematic oracle-hunting in the GPT-5.6 family (8/69 and 13/75 cells), including one case of mining a prior round&#x27;s artifacts from the run machine&#x27;s disk; honest scores are published alongside raw ones. We release statements, metadata, trajectories, and diffs; oracles are withheld with a SHA-256 manifest.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.06411v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.06411v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.06411" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.20518.html"><strong>CANN Bench: Benchmarking Agent Generated Kernels against Real NPU and Algorithmic Limits</strong></a> <span>2026-07-08</span></li>
+          <li><a href="2607.07946.html"><strong>DeepSWE: Measuring Frontier Coding Agents on Original, Long-Horizon Engineering Tasks</strong></a> <span>2026-07-08</span></li>
+          <li><a href="2607.07744.html"><strong>PERFOPT-Bench: Evaluating Coding Agents on Software Performance Optimization</strong></a> <span>2026-07-08</span></li>
+          <li><a href="2607.06624.html"><strong>AgentLens: Production-Assessed Trajectory Reviews for Coding Agent Evaluation</strong></a> <span>2026-07-07</span></li>
+          <li><a href="2607.03525.html"><strong>GameEngineBench: Evaluating Coding Agents on Real C++ Runtime Environments</strong></a> <span>2026-07-03</span></li>
+          <li><a href="2607.02684.html"><strong>Can Coding Agents Implement Missed Compiler Optimizations? Evaluating LLM Agents on LLVM Peephole Optimizations</strong></a> <span>2026-07-02</span></li>
+          <li><a href="2607.02370.html"><strong>Understanding Agent-Based Patching of Compiler Missed Optimizations</strong></a> <span>2026-07-02</span></li>
+          <li><a href="2607.02606.html"><strong>ChainSWE: Benchmarking Coding Agents on Multi-Bug Software Maintenance</strong></a> <span>2026-07-01</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

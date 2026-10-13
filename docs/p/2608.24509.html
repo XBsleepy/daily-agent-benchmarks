@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>PeakBench: Benchmarking Resource-Aware Tool Invocation in LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLM agents increasingly solve tasks by invoking multiple tools, where parallel execution is essential for low latency but difficult…" />
+    <meta name="keywords" content="Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2608.24509" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.24509.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="PeakBench: Benchmarking Resource-Aware Tool Invocation in LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLM agents increasingly solve tasks by invoking multiple tools, where parallel execution is essential for low latency but difficult…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.24509.html" />
+    <meta property="article:published_time" content="2026-08-25T12:56:08Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PeakBench: Benchmarking Resource-Aware Tool Invocation in LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLM agents increasingly solve tasks by invoking multiple tools, where parallel execution is essential for low latency but difficult…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,68 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "PeakBench: Benchmarking Resource-Aware Tool Invocation in LLM Agents",
+  "name": "PeakBench: Benchmarking Resource-Aware Tool Invocation in LLM Agents",
+  "abstract": "LLM agents increasingly solve tasks by invoking multiple tools, where parallel execution is essential for low latency but difficult to manage safely. Existing agent benchmarks primarily evaluate tool selection, argument generation, and end-to-end success under mostly serial execution, largely overlooking valid parallelization and resource-constrained scheduling. This missing scheduling dimension creates a practical failure mode: serial execution is safe but slow, while resource-agnostic parallel execution is fast but prone to avoidable resource overflows. To address this gap, we introduce PeakBench, a benchmark of executable multi-tool workflows with execution-grounded dependency annotations and measured resource profiles. A central challenge in evaluating such workflows is attribution: failures and inefficiencies may arise from incorrect dependency planning, poor resource-constrained scheduling, or both. PeakBench addresses this challenge with a two-part evaluation framework that disentangles logical planning from physical scheduling, with dedicated metrics for each dimension. Using this framework, we show that strong logical planning does not reliably translate into safe or efficient execution under resource constraints. We further show that exposing resource information can reduce avoidable overflows and improve resource utilization, making PeakBench a useful testbed for diagnosing resource-aware agent behavior. Code is available at https://github.com/Czzzk/Staggering-the-Peaks.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Zhi-Kai Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Xu-Xiang Zhong"
+    },
+    {
+      "@type": "Person",
+      "name": "Song-Yan Li"
+    },
+    {
+      "@type": "Person",
+      "name": "De-Chuan Zhan"
+    },
+    {
+      "@type": "Person",
+      "name": "Han-Jia Ye"
+    }
+  ],
+  "datePublished": "2026-08-25T12:56:08Z",
+  "dateModified": "2026-08-25T12:56:08Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.24509.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.24509.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.24509v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.24509"
+  },
+  "keywords": [
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.24509v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.24509"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +100,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>PeakBench: Benchmarking Resource-Aware Tool Invocation in LLM Agents</h1>
+        <div class="meta">
+          Zhi-Kai Chen, Xu-Xiang Zhong, Song-Yan Li, De-Chuan Zhan, Han-Jia Ye
+          · 2608.24509
+          · <time datetime="2026-08-25">2026-08-25</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLM agents increasingly solve tasks by invoking multiple tools, where parallel execution is essential for low latency but difficult to manage safely. Existing agent benchmarks primarily evaluate tool selection, argument generation, and end-to-end success under mostly serial execution, largely overlooking valid parallelization and resource-constrained scheduling. This missing scheduling dimension creates a practical failure mode: serial execution is safe but slow, while resource-agnostic parallel execution is fast but prone to avoidable resource overflows. To address this gap, we introduce PeakBench, a benchmark of executable multi-tool workflows with execution-grounded dependency annotations and measured resource profiles. A central challenge in evaluating such workflows is attribution: failures and inefficiencies may arise from incorrect dependency planning, poor resource-constrained scheduling, or both. PeakBench addresses this challenge with a two-part evaluation framework that disentangles logical planning from physical scheduling, with dedicated metrics for each dimension. Using this framework, we show that strong logical planning does not reliably translate into safe or efficient execution under resource constraints. We further show that exposing resource information can reduce avoidable overflows and improve resource utilization, making PeakBench a useful testbed for diagnosing resource-aware agent behavior. Code is available at https://github.com/Czzzk/Staggering-the-Peaks.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.24509v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.24509v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.24509" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.27334.html"><strong>BTS-AgentBench: A Deterministic, Replayable Pipeline from Read-Only Telemetry Logs to Agent Benchmarks</strong></a> <span>2026-08-27</span></li>
+          <li><a href="2608.26867.html"><strong>BekchiAI: Measuring, Observing, and Controlling LLM Agents in One Click</strong></a> <span>2026-08-27</span></li>
+          <li><a href="2608.26623.html"><strong>AgentJudgeBench: A Multi-Difficulty Benchmark for Evaluating LLM Judges on Agentic Tool-Calling</strong></a> <span>2026-08-27</span></li>
+          <li><a href="2608.26199.html"><strong>Benchmarking AI Agents for Hardware Design Automation via MCP Tool Calling</strong></a> <span>2026-08-25</span></li>
+          <li><a href="2608.23067.html"><strong>Signal or Noise? A Benchmark Study of Agent Skills in Web Development</strong></a> <span>2026-08-24</span></li>
+          <li><a href="2608.22331.html"><strong>Noise Floor Audit for Agent Benchmarks</strong></a> <span>2026-08-23</span></li>
+          <li><a href="2608.08700.html"><strong>PluginEval: A Diagnostic Benchmark for Fine-Grained Error Attribution in Function Calling</strong></a> <span>2026-08-09</span></li>
+          <li><a href="2607.23722.html"><strong>E-Bench: Benchmarking Multi-Step Tool-Use Agents in Real-World Product Scenarios</strong></a> <span>2026-07-26</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

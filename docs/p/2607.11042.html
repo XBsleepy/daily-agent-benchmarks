@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>BackendForge: Benchmarking Agentic End-to-End Code Generation with Backend Services | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language models (LLMs) are increasingly used in agentic coding settings, where they can inspect files, execute commands, run…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2607.11042" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.11042.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="BackendForge: Benchmarking Agentic End-to-End Code Generation with Backend Services" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language models (LLMs) are increasingly used in agentic coding settings, where they can inspect files, execute commands, run…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.11042.html" />
+    <meta property="article:published_time" content="2026-07-13T03:13:21Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="BackendForge: Benchmarking Agentic End-to-End Code Generation with Backend Services" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language models (LLMs) are increasingly used in agentic coding settings, where they can inspect files, execute commands, run…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,76 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "BackendForge: Benchmarking Agentic End-to-End Code Generation with Backend Services",
+  "name": "BackendForge: Benchmarking Agentic End-to-End Code Generation with Backend Services",
+  "abstract": "Large language models (LLMs) are increasingly used in agentic coding settings, where they can inspect files, execute commands, run tests, observe failures, and iteratively revise code. This shift raises a central evaluation question: can an agentic LLM generate an end-to-end software artifact that is both deployable and behaviorally correct under execution? Backend services provide a controlled but realistic substrate for this evaluation. Their APIs expose application-level executable semantics, and deployed behavior can be checked deterministically against an OpenAPI contract through black-box HTTP interactions. We introduce BackendForge, a benchmark of 56 contract-defined backend generation tasks rewritten from real open-source applications. Given a visible specification and an OpenAPI contract, an LLM must generate a Dockerized service that is built, deployed, and evaluated only through HTTP tests. To strengthen evaluation without introducing hidden requirements, BackendForge uses a test agent and a code agent to co-evolve the test oracle and reference service, where the test agent proposes specification-grounded backend tests and the code agent repairs the reference implementation. Although the best-performing model, GPT-5.5, succeeds on 55.4\\% of tasks under the base oracle, it succeeds on only 28.6\\% under the final oracle. This gap suggests that current LLMs can implement many local API behaviors, but still struggle to produce complete backend services.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yuzhe Guo"
+    },
+    {
+      "@type": "Person",
+      "name": "Mengzhou Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuan Cao"
+    },
+    {
+      "@type": "Person",
+      "name": "Jialei Wei"
+    },
+    {
+      "@type": "Person",
+      "name": "Dezhi Ran"
+    },
+    {
+      "@type": "Person",
+      "name": "Wei Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Tao Xie"
+    }
+  ],
+  "datePublished": "2026-07-13T03:13:21Z",
+  "dateModified": "2026-07-13T03:13:21Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.11042.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.11042.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.11042v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.11042"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.11042v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.11042"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +108,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>BackendForge: Benchmarking Agentic End-to-End Code Generation with Backend Services</h1>
+        <div class="meta">
+          Yuzhe Guo, Mengzhou Wu, Yuan Cao, Jialei Wei, Dezhi Ran, Wei Yang, Tao Xie
+          · 2607.11042
+          · <time datetime="2026-07-13">2026-07-13</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large language models (LLMs) are increasingly used in agentic coding settings, where they can inspect files, execute commands, run tests, observe failures, and iteratively revise code. This shift raises a central evaluation question: can an agentic LLM generate an end-to-end software artifact that is both deployable and behaviorally correct under execution? Backend services provide a controlled but realistic substrate for this evaluation. Their APIs expose application-level executable semantics, and deployed behavior can be checked deterministically against an OpenAPI contract through black-box HTTP interactions. We introduce BackendForge, a benchmark of 56 contract-defined backend generation tasks rewritten from real open-source applications. Given a visible specification and an OpenAPI contract, an LLM must generate a Dockerized service that is built, deployed, and evaluated only through HTTP tests. To strengthen evaluation without introducing hidden requirements, BackendForge uses a test agent and a code agent to co-evolve the test oracle and reference service, where the test agent proposes specification-grounded backend tests and the code agent repairs the reference implementation. Although the best-performing model, GPT-5.5, succeeds on 55.4\% of tasks under the base oracle, it succeeds on only 28.6\% under the final oracle. This gap suggests that current LLMs can implement many local API behaviors, but still struggle to produce complete backend services.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.11042v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.11042v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.11042" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.16632.html"><strong>CLOSER-Bench: Evaluating Budgeted Cross-Stage Design Closure for Hardware Agents</strong></a> <span>2026-07-18</span></li>
+          <li><a href="2607.14573.html"><strong>Alipay-PIBench: A Realistic Payment Integration Benchmark for Coding Agents</strong></a> <span>2026-07-16</span></li>
+          <li><a href="2607.14541.html"><strong>Are LLM-Generated GPU Kernels Production-Ready? A Trace-Driven Benchmark and Optimization Agent</strong></a> <span>2026-07-16</span></li>
+          <li><a href="2607.12338.html"><strong>How Many Tasks Are Enough for Agent Benchmark Decisions? A Replay Analysis of Public LLM Agent Benchmarks</strong></a> <span>2026-07-14</span></li>
+          <li><a href="2607.10789.html"><strong>Imaging-101: Benchmarking LLM Coding Agents on Scientific Computational Imaging</strong></a> <span>2026-07-12</span></li>
+          <li><a href="2607.08964.html"><strong>Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading</strong></a> <span>2026-07-09</span></li>
+          <li><a href="2607.20518.html"><strong>CANN Bench: Benchmarking Agent Generated Kernels against Real NPU and Algorithmic Limits</strong></a> <span>2026-07-08</span></li>
+          <li><a href="2607.07946.html"><strong>DeepSWE: Measuring Frontier Coding Agents on Original, Long-Horizon Engineering Tasks</strong></a> <span>2026-07-08</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

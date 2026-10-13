@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MDGYM: Benchmarking AI Agents on Molecular Simulations | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: The promise of AI-driven scientific discovery hinges on whether AI agents can autonomously design and execute the computational…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Planning / reasoning, Research agents, Science lab, agent benchmark, LLM agent, arXiv, 2605.08941" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.08941.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MDGYM: Benchmarking AI Agents on Molecular Simulations" />
+    <meta property="og:description" content="Daily Agent Benchmarks: The promise of AI-driven scientific discovery hinges on whether AI agents can autonomously design and execute the computational…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.08941.html" />
+    <meta property="article:published_time" content="2026-05-09T13:21:51Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MDGYM: Benchmarking AI Agents on Molecular Simulations" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: The promise of AI-driven scientific discovery hinges on whether AI agents can autonomously design and execute the computational…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,67 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MDGYM: Benchmarking AI Agents on Molecular Simulations",
+  "name": "MDGYM: Benchmarking AI Agents on Molecular Simulations",
+  "abstract": "The promise of AI-driven scientific discovery hinges on whether AI agents can autonomously design and execute the computational workflows that underpin modern science. Molecular dynamics (MD) simulation presents a natural test bed to stress-test this claim; it requires translating physical intuition into syntactically and semantically correct input scripts, reasoning about initial and boundary conditions, diagnosing numerically unstable trajectories, and interpreting outputs against known physical behavior and laws. We introduce MDGYM, a benchmark of 169 expert-curated MD simulations spanning LAMMPS and GROMACS, two widely used MD packages, across three increasing difficulty levels. We evaluate three agentic frameworks -- Claude Code, Codex, and OpenHands -- with four LLMs, and find that all perform poorly: even the strongest agent solves only 21\\% of easy-level tasks, with less than 10\\% at higher difficulties. Trajectory analysis reveals a characteristic pattern of failure -- agents successfully invoke simulation machinery but produce physically unstable configurations, fabricate numerical outputs without executing the underlying computation, or abandon tasks prematurely rather than iterating through simulation-specific errors. These failure modes are qualitatively distinct from those observed in general software engineering benchmarks, indicating that fluent code generation does not transfer to grounded physical reasoning.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Vinay Kumar"
+    },
+    {
+      "@type": "Person",
+      "name": "Satyendra Rajput"
+    },
+    {
+      "@type": "Person",
+      "name": "Mausam"
+    },
+    {
+      "@type": "Person",
+      "name": "N. M. Anoop Krishnan"
+    }
+  ],
+  "datePublished": "2026-05-09T13:21:51Z",
+  "dateModified": "2026-05-09T13:21:51Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.08941.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.08941.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.08941v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.08941"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Planning / reasoning",
+    "Research agents",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.08941v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.08941"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +99,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MDGYM: Benchmarking AI Agents on Molecular Simulations</h1>
+        <div class="meta">
+          Vinay Kumar, Satyendra Rajput, Mausam, N. M. Anoop Krishnan
+          · 2605.08941
+          · <time datetime="2026-05-09">2026-05-09</time>
+          · Coding / SWE · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Planning / reasoning</span><span class="chip">Research agents</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>The promise of AI-driven scientific discovery hinges on whether AI agents can autonomously design and execute the computational workflows that underpin modern science. Molecular dynamics (MD) simulation presents a natural test bed to stress-test this claim; it requires translating physical intuition into syntactically and semantically correct input scripts, reasoning about initial and boundary conditions, diagnosing numerically unstable trajectories, and interpreting outputs against known physical behavior and laws. We introduce MDGYM, a benchmark of 169 expert-curated MD simulations spanning LAMMPS and GROMACS, two widely used MD packages, across three increasing difficulty levels. We evaluate three agentic frameworks -- Claude Code, Codex, and OpenHands -- with four LLMs, and find that all perform poorly: even the strongest agent solves only 21\% of easy-level tasks, with less than 10\% at higher difficulties. Trajectory analysis reveals a characteristic pattern of failure -- agents successfully invoke simulation machinery but produce physically unstable configurations, fabricate numerical outputs without executing the underlying computation, or abandon tasks prematurely rather than iterating through simulation-specific errors. These failure modes are qualitatively distinct from those observed in general software engineering benchmarks, indicating that fluent code generation does not transfer to grounded physical reasoning.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.08941v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.08941v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.08941" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.10597.html"><strong>CrackMeBench: Binary Reverse Engineering for Agents</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2605.11030.html"><strong>An Executable Benchmarking Suite for Tool-Using Agents</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.09684.html"><strong>MonitoringBench: Semi-Automated Red-Teaming for Agent Monitoring</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.09675.html"><strong>CodeClinic: Evaluating Automation of Coding Skills for Clinical Reasoning Agents</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.08647.html"><strong>AgentCollabBench: Diagnosing When Good Agents Make Bad Collaborators</strong></a> <span>2026-05-09</span></li>
+          <li><a href="2605.08366.html"><strong>SWE Atlas: Benchmarking Coding Agents Beyond Issue Resolution</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.06125.html"><strong>Breaking, Stale, or Missing? Benchmarking Coding Agents on Project-Level Test Evolution</strong></a> <span>2026-05-07</span></li>
+          <li><a href="2605.04637.html"><strong>SWE-WebDevBench: Evaluating Coding Agent Application Platforms as Virtual Software Agencies</strong></a> <span>2026-05-06</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

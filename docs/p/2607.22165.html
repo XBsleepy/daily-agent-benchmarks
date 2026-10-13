@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>DBA-Bench: A Production-Fidelity Benchmark for LLM-Based Database Operations Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLM-based database agents show promise, but differing task scopes, testbeds, and metrics hinder comparison. We identify four gaps…" />
+    <meta name="keywords" content="General, Safety, agent benchmark, LLM agent, arXiv, 2607.22165" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.22165.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="DBA-Bench: A Production-Fidelity Benchmark for LLM-Based Database Operations Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLM-based database agents show promise, but differing task scopes, testbeds, and metrics hinder comparison. We identify four gaps…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.22165.html" />
+    <meta property="article:published_time" content="2026-07-24T10:11:24Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="DBA-Bench: A Production-Fidelity Benchmark for LLM-Based Database Operations Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLM-based database agents show promise, but differing task scopes, testbeds, and metrics hinder comparison. We identify four gaps…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,68 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "DBA-Bench: A Production-Fidelity Benchmark for LLM-Based Database Operations Agents",
+  "name": "DBA-Bench: A Production-Fidelity Benchmark for LLM-Based Database Operations Agents",
+  "abstract": "LLM-based database agents show promise, but differing task scopes, testbeds, and metrics hinder comparison. We identify four gaps between evaluation and production operations: live-environment fidelity (multi-turn read-write interaction with a running database); observation-space scale and complexity (causal diagnosis across thousands of time series, business logs, and concurrent activity); solution-space openness (multiple remediations with different operational trade-offs); and scenario complexity and coverage (faults cascading across internal mechanisms and operational domains). We present DBA-Bench, a benchmark addressing these gaps through production fidelity, outcome-first evaluation, and controlled scenario reproducibility. It uses instrumented PostgreSQL environments with active workloads, persistent state, and multi-source observations; defines success by measurable recovery or fault elimination under safety constraints; and restores snapshots with scenario-specific checks before each run. The benchmark contains 106 scenarios across seven task domains, with two public difficulty labels based on reference-path diagnostic depth and environmental complexity. We evaluate nine baseline groups, including six foundation-model systems, two GPT-5.5-backed database agents, and a Human DBA reference. Across 848 automated runs, Diagnosis, Outcome, and Safe Pass rates are 32.7%, 19.6%, and 12.4%; the best automated baseline reaches 17.9% Safe Pass versus 93.4% for the Human DBA reference. Automated Safe Pass falls from 19.6% on Easy scenarios to 7.6% on Hard scenarios, underscoring the difficulty of safe end-to-end remediation.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Junming Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Junyang Jiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xu Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Zibo Liang"
+    },
+    {
+      "@type": "Person",
+      "name": "Kai Zheng"
+    }
+  ],
+  "datePublished": "2026-07-24T10:11:24Z",
+  "dateModified": "2026-07-24T10:11:24Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.22165.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.22165.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.22165v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.22165"
+  },
+  "keywords": [
+    "General",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.22165v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.22165"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +100,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>DBA-Bench: A Production-Fidelity Benchmark for LLM-Based Database Operations Agents</h1>
+        <div class="meta">
+          Junming Chen, Junyang Jiang, Xu Chen, Zibo Liang, Kai Zheng
+          · 2607.22165
+          · <time datetime="2026-07-24">2026-07-24</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLM-based database agents show promise, but differing task scopes, testbeds, and metrics hinder comparison. We identify four gaps between evaluation and production operations: live-environment fidelity (multi-turn read-write interaction with a running database); observation-space scale and complexity (causal diagnosis across thousands of time series, business logs, and concurrent activity); solution-space openness (multiple remediations with different operational trade-offs); and scenario complexity and coverage (faults cascading across internal mechanisms and operational domains). We present DBA-Bench, a benchmark addressing these gaps through production fidelity, outcome-first evaluation, and controlled scenario reproducibility. It uses instrumented PostgreSQL environments with active workloads, persistent state, and multi-source observations; defines success by measurable recovery or fault elimination under safety constraints; and restores snapshots with scenario-specific checks before each run. The benchmark contains 106 scenarios across seven task domains, with two public difficulty labels based on reference-path diagnostic depth and environmental complexity. We evaluate nine baseline groups, including six foundation-model systems, two GPT-5.5-backed database agents, and a Human DBA reference. Across 848 automated runs, Diagnosis, Outcome, and Safe Pass rates are 32.7%, 19.6%, and 12.4%; the best automated baseline reaches 17.9% Safe Pass versus 93.4% for the Human DBA reference. Automated Safe Pass falls from 19.6% on Easy scenarios to 7.6% on Hard scenarios, underscoring the difficulty of safe end-to-end remediation.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.22165v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.22165v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.22165" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.24368.html"><strong>Keep It InMind: Benchmarking the Implicit-Association Blind Spot in Agent Memory</strong></a> <span>2026-07-27</span></li>
+          <li><a href="2607.23999.html"><strong>ContainmentBench: Trace-Based Evaluation of Post-Exposure Containment in Tool-Using LLM Agents</strong></a> <span>2026-07-27</span></li>
+          <li><a href="2607.23332.html"><strong>AllocBench: Measuring Online Tool Allocation Capability in LLM Agents</strong></a> <span>2026-07-25</span></li>
+          <li><a href="2607.23123.html"><strong>SQBench: A Benchmark for Evaluating Task Delivery by Language-Model Agents in Production-Oriented Workflows</strong></a> <span>2026-07-25</span></li>
+          <li><a href="2607.21824.html"><strong>Protocol-Level Attacks on Agentic Commerce Platforms: A Cross-Platform Taxonomy, AIP-Bench, and Unified Defense</strong></a> <span>2026-07-23</span></li>
+          <li><a href="2607.21799.html"><strong>Agentic Evaluation of Copyright Law Compliance</strong></a> <span>2026-07-23</span></li>
+          <li><a href="2607.21533.html"><strong>Benchmarking Agents for Proving Theorems in Quantum Algorithms and Quantum Information</strong></a> <span>2026-07-23</span></li>
+          <li><a href="2607.20982.html"><strong>GuardianAgentBench: Where Agents Fail and How to Guard Them</strong></a> <span>2026-07-23</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

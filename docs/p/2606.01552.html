@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>RoleCDE:Benchmarking and Mitigating Role-Alignment Trade-offs in Role-Playing Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Role-playing agents(RPAs) are widely used to steer large language models(LLMs) toward role-consistent behavior, yet existing…" />
+    <meta name="keywords" content="General, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2606.01552" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.01552.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="RoleCDE:Benchmarking and Mitigating Role-Alignment Trade-offs in Role-Playing Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Role-playing agents(RPAs) are widely used to steer large language models(LLMs) toward role-consistent behavior, yet existing…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.01552.html" />
+    <meta property="article:published_time" content="2026-06-01T01:56:27Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="RoleCDE:Benchmarking and Mitigating Role-Alignment Trade-offs in Role-Playing Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Role-playing agents(RPAs) are widely used to steer large language models(LLMs) toward role-consistent behavior, yet existing…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,80 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "RoleCDE:Benchmarking and Mitigating Role-Alignment Trade-offs in Role-Playing Agents",
+  "name": "RoleCDE:Benchmarking and Mitigating Role-Alignment Trade-offs in Role-Playing Agents",
+  "abstract": "Role-playing agents(RPAs) are widely used to steer large language models(LLMs) toward role-consistent behavior, yet existing benchmarks mainly evaluate surface-level fidelity and offer limited insight into decision making under role-alignment value conflicts. To address this gap, we introduce RoleCDE, the first benchmark designed to evaluate RPAs under structured conflicts between role-specific values and alignment-oriented constraints. RoleCDE formulates role-aware decision making as cognitive dilemma scenarios, jointly evaluating role-scenario grounding, value conflict resolution, and decision tendencies. The benchmark is constructed at scale, covering approximately 8k diverse role profiles and scenarios and nearly 24k dilemma instances across three difficulty levels and eight role categories. Evaluation of several mainstream LLMs reveals a \"Role Value Decoupling\" phenomenon, where agents systematically default to alignment-and morality-consistent decisions rather than role-specific values when the two conflict, even under explicit role conditioning. This behavior is largely invariant to dilemma difficulty but varies substantially across role categories. We further show that RoleCDE-based fine-tuning effectively mitigates this decoupling by improving value trade-off reasoning, while preserving general role-playing fidelity and general reasoning performance. Code is available at: https://github.com/rabbitrose/RoleCDE.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Huayi Lai"
+    },
+    {
+      "@type": "Person",
+      "name": "Shichao Song"
+    },
+    {
+      "@type": "Person",
+      "name": "Simin Niu"
+    },
+    {
+      "@type": "Person",
+      "name": "Hanyu Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiawei Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhouxing Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhiqiang Yin"
+    },
+    {
+      "@type": "Person",
+      "name": "Xun Liang"
+    }
+  ],
+  "datePublished": "2026-06-01T01:56:27Z",
+  "dateModified": "2026-06-01T01:56:27Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.01552.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.01552.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.01552v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.01552"
+  },
+  "keywords": [
+    "General",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.01552v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.01552"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +112,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>RoleCDE:Benchmarking and Mitigating Role-Alignment Trade-offs in Role-Playing Agents</h1>
+        <div class="meta">
+          Huayi Lai, Shichao Song, Simin Niu, Hanyu Wang, Jiawei Yang, Zhouxing Wang, Zhiqiang Yin, Xun Liang
+          · 2606.01552
+          · <time datetime="2026-06-01">2026-06-01</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Role-playing agents(RPAs) are widely used to steer large language models(LLMs) toward role-consistent behavior, yet existing benchmarks mainly evaluate surface-level fidelity and offer limited insight into decision making under role-alignment value conflicts. To address this gap, we introduce RoleCDE, the first benchmark designed to evaluate RPAs under structured conflicts between role-specific values and alignment-oriented constraints. RoleCDE formulates role-aware decision making as cognitive dilemma scenarios, jointly evaluating role-scenario grounding, value conflict resolution, and decision tendencies. The benchmark is constructed at scale, covering approximately 8k diverse role profiles and scenarios and nearly 24k dilemma instances across three difficulty levels and eight role categories. Evaluation of several mainstream LLMs reveals a &quot;Role Value Decoupling&quot; phenomenon, where agents systematically default to alignment-and morality-consistent decisions rather than role-specific values when the two conflict, even under explicit role conditioning. This behavior is largely invariant to dilemma difficulty but varies substantially across role categories. We further show that RoleCDE-based fine-tuning effectively mitigates this decoupling by improving value trade-off reasoning, while preserving general role-playing fidelity and general reasoning performance. Code is available at: https://github.com/rabbitrose/RoleCDE.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.01552v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.01552v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.01552" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.02380.html"><strong>SPADE-Bench: Evaluating Spontaneous Strategic Deception in Agents via Plan-Action Divergence</strong></a> <span>2026-06-01</span></li>
+          <li><a href="2606.02240.html"><strong>AgentRedBench: Dynamic Redteaming and Integration-Aware Defense for LLM Agents over SaaS Integrations</strong></a> <span>2026-06-01</span></li>
+          <li><a href="2606.01912.html"><strong>SMH-Bench: Benchmarking LLM Agents for Environment-Grounded Reasoning and Action in Smart Homes</strong></a> <span>2026-06-01</span></li>
+          <li><a href="2606.01815.html"><strong>CRAB-Bench: Evaluating LLM Agents under Complex Task Dependencies and Human-aligned User Simulation</strong></a> <span>2026-06-01</span></li>
+          <li><a href="2606.01046.html"><strong>TravelEval: A Comprehensive Benchmarking Framework for Evaluating LLM-Powered Travel Planning Agents</strong></a> <span>2026-05-31</span></li>
+          <li><a href="2606.20634.html"><strong>DEMM-Bench: A Cross-Regime Benchmark for Agent-Runtime Governance-Evidence Sufficiency</strong></a> <span>2026-05-30</span></li>
+          <li><a href="2606.00925.html"><strong>Benchmarking Security Risk Detection and Verification in Open Agentic Skill Ecosystems</strong></a> <span>2026-05-30</span></li>
+          <li><a href="2606.00832.html"><strong>Momento: Evaluating Persistent Memory and Reasoning with Multi-Session Agentic Conversations</strong></a> <span>2026-05-30</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

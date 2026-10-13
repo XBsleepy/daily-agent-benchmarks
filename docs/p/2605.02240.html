@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>PhysicianBench: Evaluating LLM Agents in Real-World EHR Environments | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: We introduce PhysicianBench, a benchmark for evaluating LLM agents on physician tasks grounded in real clinical setting within…" />
+    <meta name="keywords" content="General, Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2605.02240" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.02240.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="PhysicianBench: Evaluating LLM Agents in Real-World EHR Environments" />
+    <meta property="og:description" content="Daily Agent Benchmarks: We introduce PhysicianBench, a benchmark for evaluating LLM agents on physician tasks grounded in real clinical setting within…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.02240.html" />
+    <meta property="article:published_time" content="2026-05-04T05:32:25Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PhysicianBench: Evaluating LLM Agents in Real-World EHR Environments" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: We introduce PhysicianBench, a benchmark for evaluating LLM agents on physician tasks grounded in real clinical setting within…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,101 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "PhysicianBench: Evaluating LLM Agents in Real-World EHR Environments",
+  "name": "PhysicianBench: Evaluating LLM Agents in Real-World EHR Environments",
+  "abstract": "We introduce PhysicianBench, a benchmark for evaluating LLM agents on physician tasks grounded in real clinical setting within electronic health record (EHR) environments. Existing medical agent benchmarks primarily focus on static knowledge recall, single-step atomic actions, or action intent without verifiable execution against the environment. As a result, they fail to capture the long-horizon, composite workflows that characterize real clinical systems. PhysicianBench comprises 100 long-horizon tasks adapted from real consultation cases between primary care and subspecialty physicians, with each task independently reviewed by a separate panel of physicians. Tasks are instantiated in an EHR environment with real patient records and accessed through the same standard APIs used by commercial EHR vendors. Tasks span 21 specialties (e.g., cardiology, endocrinology, oncology, psychiatry) and diverse workflow types (e.g., diagnosis interpretation, medication prescribing, treatment planning), requiring an average of 27 tool calls per task. Solving each task requires retrieving data across encounters, reasoning over heterogeneous clinical information, executing consequential clinical actions, and producing clinical documentation. Each task is decomposed into structured checkpoints (670 in total across the benchmark) capturing distinct stages of completion graded by task-specific scripts with execution-grounded verification. Across 13 proprietary and open-source LLM agents, the best-performing model achieves only 46% success rate (pass@1), while open-source models reach at most 19%, revealing a substantial gap between current agent capabilities and the demands of real-world clinical workflows. PhysicianBench provides a realistic and execution-grounded benchmark for measuring progress toward autonomous clinical agents.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Ruoqi Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Imran Q. Mohiuddin"
+    },
+    {
+      "@type": "Person",
+      "name": "Austin J. Schoeffler"
+    },
+    {
+      "@type": "Person",
+      "name": "Kavita Renduchintala"
+    },
+    {
+      "@type": "Person",
+      "name": "Ashwin Nayak"
+    },
+    {
+      "@type": "Person",
+      "name": "Prasantha L. Vemu"
+    },
+    {
+      "@type": "Person",
+      "name": "Shivam C. Vedak"
+    },
+    {
+      "@type": "Person",
+      "name": "Kameron C. Black"
+    },
+    {
+      "@type": "Person",
+      "name": "John L. Havlik"
+    },
+    {
+      "@type": "Person",
+      "name": "Isaac Ogunmola"
+    },
+    {
+      "@type": "Person",
+      "name": "Stephen P. Ma"
+    },
+    {
+      "@type": "Person",
+      "name": "Roopa Dhatt"
+    },
+    {
+      "@type": "Person",
+      "name": "Jonathan H. Chen"
+    }
+  ],
+  "datePublished": "2026-05-04T05:32:25Z",
+  "dateModified": "2026-05-04T05:32:25Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.02240.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.02240.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.02240v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.02240"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.02240v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.02240"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +133,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>PhysicianBench: Evaluating LLM Agents in Real-World EHR Environments</h1>
+        <div class="meta">
+          Ruoqi Liu, Imran Q. Mohiuddin, Austin J. Schoeffler, Kavita Renduchintala, Ashwin Nayak, Prasantha L. Vemu, Shivam C. Vedak, Kameron C. Black, John L. Havlik, Isaac Ogunmola, Stephen P. Ma, Roopa Dhatt, Jonathan H. Chen
+          · 2605.02240
+          · <time datetime="2026-05-04">2026-05-04</time>
+          · General · 10 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>We introduce PhysicianBench, a benchmark for evaluating LLM agents on physician tasks grounded in real clinical setting within electronic health record (EHR) environments. Existing medical agent benchmarks primarily focus on static knowledge recall, single-step atomic actions, or action intent without verifiable execution against the environment. As a result, they fail to capture the long-horizon, composite workflows that characterize real clinical systems. PhysicianBench comprises 100 long-horizon tasks adapted from real consultation cases between primary care and subspecialty physicians, with each task independently reviewed by a separate panel of physicians. Tasks are instantiated in an EHR environment with real patient records and accessed through the same standard APIs used by commercial EHR vendors. Tasks span 21 specialties (e.g., cardiology, endocrinology, oncology, psychiatry) and diverse workflow types (e.g., diagnosis interpretation, medication prescribing, treatment planning), requiring an average of 27 tool calls per task. Solving each task requires retrieving data across encounters, reasoning over heterogeneous clinical information, executing consequential clinical actions, and producing clinical documentation. Each task is decomposed into structured checkpoints (670 in total across the benchmark) capturing distinct stages of completion graded by task-specific scripts with execution-grounded verification. Across 13 proprietary and open-source LLM agents, the best-performing model achieves only 46% success rate (pass@1), while open-source models reach at most 19%, revealing a substantial gap between current agent capabilities and the demands of real-world clinical workflows. PhysicianBench provides a realistic and execution-grounded benchmark for measuring progress toward autonomous clinical agents.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.02240v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.02240v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.02240" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.06334.html"><strong>MANTRA: Synthesizing SMT-Validated Compliance Benchmarks for Tool-Using LLM Agents</strong></a> <span>2026-05-07</span></li>
+          <li><a href="2605.05726.html"><strong>SkillRet: A Large-Scale Benchmark for Skill Retrieval in LLM Agents</strong></a> <span>2026-05-07</span></li>
+          <li><a href="2605.03596.html"><strong>Workspace-Bench 1.0: Benchmarking AI Agents on Workspace Tasks with Large-Scale File Dependencies</strong></a> <span>2026-05-05</span></li>
+          <li><a href="2605.02503.html"><strong>DataClawBench: An Agent Benchmark for Exploratory Real-World Financial Data Analysis</strong></a> <span>2026-05-04</span></li>
+          <li><a href="2605.01847.html"><strong>NeuroState-Bench: A Human-Calibrated Benchmark for Commitment Integrity in LLM Agent Profiles</strong></a> <span>2026-05-03</span></li>
+          <li><a href="2605.01394.html"><strong>LiveFMBench: Unveiling the Power and Limits of Agentic Workflows in Specification Generation</strong></a> <span>2026-05-02</span></li>
+          <li><a href="2605.00420.html"><strong>Foresight Arena: An On-Chain Benchmark for Evaluating AI Forecasting Agents</strong></a> <span>2026-05-01</span></li>
+          <li><a href="2604.28139.html"><strong>Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows</strong></a> <span>2026-04-30</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

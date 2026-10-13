@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>AgentHPOBench: A Benchmark For Evaluating LLM Agents as Sequential Hyperparameter Optimizers | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: As LLMs evolve from code completion systems into autonomous scientific agents, evaluating their ability to conduct experiments has…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Science lab, agent benchmark, LLM agent, arXiv, 2607.29626" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.29626.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AgentHPOBench: A Benchmark For Evaluating LLM Agents as Sequential Hyperparameter Optimizers" />
+    <meta property="og:description" content="Daily Agent Benchmarks: As LLMs evolve from code completion systems into autonomous scientific agents, evaluating their ability to conduct experiments has…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.29626.html" />
+    <meta property="article:published_time" content="2026-07-31T16:58:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AgentHPOBench: A Benchmark For Evaluating LLM Agents as Sequential Hyperparameter Optimizers" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: As LLMs evolve from code completion systems into autonomous scientific agents, evaluating their ability to conduct experiments has…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,81 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AgentHPOBench: A Benchmark For Evaluating LLM Agents as Sequential Hyperparameter Optimizers",
+  "name": "AgentHPOBench: A Benchmark For Evaluating LLM Agents as Sequential Hyperparameter Optimizers",
+  "abstract": "As LLMs evolve from code completion systems into autonomous scientific agents, evaluating their ability to conduct experiments has become increasingly important. Existing benchmarks typically focus on static code generation, paper replication, or final answer correctness, but do not directly assess whether agents can interpret experimental evidence and use it to guide subsequent hyperparameter decisions. To address this gap, we introduce AgentHPOBench, a sequential benchmark comprising 30 executable machine learning tasks across seven research categories. Each task begins with a validated baseline run, after which an agent performs several sequential interventions. At each step, the agent observes the accumulated configurations, metrics, and logs before proposing the next valid configuration. We evaluate 12 widely used agents and conventional HPO baselines under a unified protocol. The results show that current agents exhibit measurable experimental optimization ability across domains, but still face clear limitations in sustained iterative refinement, complex log diagnosis, and consistent progress toward reported reference performance.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Tianyu Huai"
+    },
+    {
+      "@type": "Person",
+      "name": "Tingshuo Fan"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinchi Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Yining Zheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuxin Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Shuang Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Jie Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Xuanjing Huang"
+    }
+  ],
+  "datePublished": "2026-07-31T16:58:00Z",
+  "dateModified": "2026-07-31T16:58:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.29626.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.29626.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.29626v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.29626"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.29626v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.29626"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +113,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AgentHPOBench: A Benchmark For Evaluating LLM Agents as Sequential Hyperparameter Optimizers</h1>
+        <div class="meta">
+          Tianyu Huai, Tingshuo Fan, Xinchi Chen, Yining Zheng, Yuxin Wang, Shuang Chen, Jie Zhou, Xuanjing Huang
+          · 2607.29626
+          · <time datetime="2026-07-31">2026-07-31</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>As LLMs evolve from code completion systems into autonomous scientific agents, evaluating their ability to conduct experiments has become increasingly important. Existing benchmarks typically focus on static code generation, paper replication, or final answer correctness, but do not directly assess whether agents can interpret experimental evidence and use it to guide subsequent hyperparameter decisions. To address this gap, we introduce AgentHPOBench, a sequential benchmark comprising 30 executable machine learning tasks across seven research categories. Each task begins with a validated baseline run, after which an agent performs several sequential interventions. At each step, the agent observes the accumulated configurations, metrics, and logs before proposing the next valid configuration. We evaluate 12 widely used agents and conventional HPO baselines under a unified protocol. The results show that current agents exhibit measurable experimental optimization ability across domains, but still face clear limitations in sustained iterative refinement, complex log diagnosis, and consistent progress toward reported reference performance.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.29626v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.29626v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.29626" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.00805.html"><strong>AgentSLABench: Evaluating and Benchmarking Agentic Systems Under Resource Constraints</strong></a> <span>2026-08-01</span></li>
+          <li><a href="2608.11232.html"><strong>Backtrader-Bench: Benchmarking LLM Agents on Algorithmic Trading with Self-Generated MCQs</strong></a> <span>2026-07-31</span></li>
+          <li><a href="2608.02642.html"><strong>MDArena: Evaluating Coding Agents on Realistic Molecular Dynamics Workflows</strong></a> <span>2026-07-31</span></li>
+          <li><a href="2608.00267.html"><strong>LoopsBench: From Harness Engineering to Loop Engineering in Coding Agent Evaluation</strong></a> <span>2026-07-31</span></li>
+          <li><a href="2607.28587.html"><strong>PAIChecker: Uncovering and Checking PR-Issue Misalignment in SWE-Bench-Like Benchmarks</strong></a> <span>2026-07-30</span></li>
+          <li><a href="2607.28545.html"><strong>ORCA-bench: How Ready Are Language Model Agents for Oncall?</strong></a> <span>2026-07-30</span></li>
+          <li><a href="2607.27409.html"><strong>SWE-NFI: Studying and Benchmarking Coding Agents for Non-Functional Improvements</strong></a> <span>2026-07-29</span></li>
+          <li><a href="2607.26451.html"><strong>ExplainBench: Evaluating Code Explanations from Agents</strong></a> <span>2026-07-29</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

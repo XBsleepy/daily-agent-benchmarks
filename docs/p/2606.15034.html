@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>OSGuard: A Benchmark for Safety in Computer-Use Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Computer-use agents are increasingly evaluated by whether they complete realistic desktop and web tasks. However, task success alone…" />
+    <meta name="keywords" content="GUI / computer use, GUI agents, Computer use, Safety, Multimodal, agent benchmark, LLM agent, arXiv, 2606.15034" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.15034.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="OSGuard: A Benchmark for Safety in Computer-Use Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Computer-use agents are increasingly evaluated by whether they complete realistic desktop and web tasks. However, task success alone…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.15034.html" />
+    <meta property="article:published_time" content="2026-06-13T00:32:24Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="OSGuard: A Benchmark for Safety in Computer-Use Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Computer-use agents are increasingly evaluated by whether they complete realistic desktop and web tasks. However, task success alone…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,59 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "OSGuard: A Benchmark for Safety in Computer-Use Agents",
+  "name": "OSGuard: A Benchmark for Safety in Computer-Use Agents",
+  "abstract": "Computer-use agents are increasingly evaluated by whether they complete realistic desktop and web tasks. However, task success alone can miss failures in which an agent reaches the nominal goal through an unsafe shortcut. We introduce OSGuard, a dual-granularity benchmark suite for evaluating safety in computer-use agents under benign, unchanged user instructions. OSGuard contains an action-level benchmark for local guardrail decisions and a risk-augmented execution suite for end-to-end evaluation. The action-level benchmark consists of contextualized proposed actions labeled as allowed, unrelated, or unsafe, each judged relative to the original instruction and current interface state. The execution suite contains manually constructed OSWorld-derived task variants in which the original task remains achievable, but the environment is modified to introduce latent hazards such as destructive overwrites, etc. Each variant is paired with augmented evaluators that retain the original task-success criterion while adding explicit state-based safety invariants, allowing us to distinguish safe completions from unsafe completions that satisfy the nominal task objective. Our experimental results on OSGuard show that current multimodal guardrails can perform well on isolated action judgments, while risk-augmented execution exposes remaining gaps between local oversight and reliable end-to-end safety. This dual-granularity design enables more precise diagnosis of whether models can both recognize unsafe proposed actions and improve full-task safety when deployed as guardrails.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Mina Mohammadmirzaei"
+    },
+    {
+      "@type": "Person",
+      "name": "Jeffrey Flanigan"
+    }
+  ],
+  "datePublished": "2026-06-13T00:32:24Z",
+  "dateModified": "2026-06-13T00:32:24Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.15034.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.15034.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.15034v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.15034"
+  },
+  "keywords": [
+    "GUI / computer use",
+    "GUI agents",
+    "Computer use",
+    "Safety",
+    "Multimodal",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "GUI / computer use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.15034v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.15034"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +91,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>OSGuard: A Benchmark for Safety in Computer-Use Agents</h1>
+        <div class="meta">
+          Mina Mohammadmirzaei, Jeffrey Flanigan
+          · 2606.15034
+          · <time datetime="2026-06-13">2026-06-13</time>
+          · GUI / computer use
+        </div>
+        <div class="themes"><span class="chip">GUI agents</span><span class="chip">Computer use</span><span class="chip">Safety</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Computer-use agents are increasingly evaluated by whether they complete realistic desktop and web tasks. However, task success alone can miss failures in which an agent reaches the nominal goal through an unsafe shortcut. We introduce OSGuard, a dual-granularity benchmark suite for evaluating safety in computer-use agents under benign, unchanged user instructions. OSGuard contains an action-level benchmark for local guardrail decisions and a risk-augmented execution suite for end-to-end evaluation. The action-level benchmark consists of contextualized proposed actions labeled as allowed, unrelated, or unsafe, each judged relative to the original instruction and current interface state. The execution suite contains manually constructed OSWorld-derived task variants in which the original task remains achievable, but the environment is modified to introduce latent hazards such as destructive overwrites, etc. Each variant is paired with augmented evaluators that retain the original task-success criterion while adding explicit state-based safety invariants, allowing us to distinguish safe completions from unsafe completions that satisfy the nominal task objective. Our experimental results on OSGuard show that current multimodal guardrails can perform well on isolated action judgments, while risk-augmented execution exposes remaining gaps between local oversight and reliable end-to-end safety. This dual-granularity design enables more precise diagnosis of whether models can both recognize unsafe proposed actions and improve full-task safety when deployed as guardrails.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.15034v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.15034v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.15034" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More GUI / computer use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.25760.html"><strong>Uncertainty Quantification for Computer-Use Agents: A Benchmark across Vision-Language Models and GUI Grounding Datasets</strong></a> <span>2026-06-24</span></li>
+          <li><a href="2606.22557.html"><strong>MacAgentBench: Benchmarking AI Agents on Real-World macOS Desktop</strong></a> <span>2026-06-21</span></li>
+          <li><a href="2606.16802.html"><strong>LabOSBench: Benchmarking Computer Use Agents for Scientific Instrument Control</strong></a> <span>2026-06-15</span></li>
+          <li><a href="2606.16748.html"><strong>MyPCBench: A Benchmark for Personally Intelligent Computer-Use Agents</strong></a> <span>2026-06-15</span></li>
+          <li><a href="2606.09426.html"><strong>WeaveBench: A Long-Horizon, Real-World Benchmark for Computer-Use Agents with Hybrid Interfaces</strong></a> <span>2026-06-08</span></li>
+          <li><a href="2606.06560.html"><strong>MacArena: Benchmarking Computer Use Agents on an Online macOS Environment</strong></a> <span>2026-06-04</span></li>
+          <li><a href="2606.06322.html"><strong>DragOn: A Benchmark and Dataset for Drag-Based GUI Interactions</strong></a> <span>2026-06-04</span></li>
+          <li><a href="2606.04701.html"><strong>Benchmarking Living-Screen-Native GUI Agents on Short-Video Platforms</strong></a> <span>2026-06-03</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

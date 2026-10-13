@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Synthesizing Reactive Character Behaviors for Continuous Games via Programmatic Policy Search | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: We present a method for synthesizing reactive character behaviors for continuous games as compact, human-readable programs. Game AI…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Tool use, Multi-agent, agent benchmark, LLM agent, arXiv, 2609.24025" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.24025.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Synthesizing Reactive Character Behaviors for Continuous Games via Programmatic Policy Search" />
+    <meta property="og:description" content="Daily Agent Benchmarks: We present a method for synthesizing reactive character behaviors for continuous games as compact, human-readable programs. Game AI…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.24025.html" />
+    <meta property="article:published_time" content="2026-09-22T04:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Synthesizing Reactive Character Behaviors for Continuous Games via Programmatic Policy Search" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: We present a method for synthesizing reactive character behaviors for continuous games as compact, human-readable programs. Game AI…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,54 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Synthesizing Reactive Character Behaviors for Continuous Games via Programmatic Policy Search",
+  "name": "Synthesizing Reactive Character Behaviors for Continuous Games via Programmatic Policy Search",
+  "abstract": "We present a method for synthesizing reactive character behaviors for continuous games as compact, human-readable programs. Game AI practice still relies heavily on manually authored behavior trees, state machines, and scripts, while academic reinforcement learning typically produces opaque neural controllers that are expensive to train and difficult to edit. Our approach bridges this gap by searching directly over a domain-specific language for continuous-space game policies. The language is designed around reactive geometric decisions and includes higher-order constructs such as direction maximization. These constructs help discretize a continuous behavior space into enumerable program structures. To make program search practical, we introduce a large set of synthesis antipatterns that remove redundant program forms while preserving behavioral coverage. We further combine bottom-up symbolic enumeration with top-down guidance from a coding agent. Our resulting method, agentic sketching, has the agent propose high-level policy structure and call an enumerator to complete local program slots. We evaluate the method on a benchmark of 14 continuous games, ranging from classic control tasks to multi-agent football. We find that pure enumeration is often more efficient than using a coding agent alone, while the combined method substantially outperforms both. Our results suggest that programmatic policy search can be a practical authoring tool for game AI: designers specify reward functions, and the system discovers editable behaviors that are effective, portable, and often surprising.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Maxim Gumin, Hsueh-Ti Derek Liu, Victor Zordan, Daniel Ritchie"
+    }
+  ],
+  "datePublished": "2026-09-22T04:00:00Z",
+  "dateModified": "2026-09-22T04:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.24025.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.24025.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.24025"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.24025"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Tool use",
+    "Multi-agent",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.24025"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.24025"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +86,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Synthesizing Reactive Character Behaviors for Continuous Games via Programmatic Policy Search</h1>
+        <div class="meta">
+          Maxim Gumin, Hsueh-Ti Derek Liu, Victor Zordan, Daniel Ritchie
+          · 2609.24025
+          · <time datetime="2026-09-22">2026-09-22</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span><span class="chip">Multi-agent</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>We present a method for synthesizing reactive character behaviors for continuous games as compact, human-readable programs. Game AI practice still relies heavily on manually authored behavior trees, state machines, and scripts, while academic reinforcement learning typically produces opaque neural controllers that are expensive to train and difficult to edit. Our approach bridges this gap by searching directly over a domain-specific language for continuous-space game policies. The language is designed around reactive geometric decisions and includes higher-order constructs such as direction maximization. These constructs help discretize a continuous behavior space into enumerable program structures. To make program search practical, we introduce a large set of synthesis antipatterns that remove redundant program forms while preserving behavioral coverage. We further combine bottom-up symbolic enumeration with top-down guidance from a coding agent. Our resulting method, agentic sketching, has the agent propose high-level policy structure and call an enumerator to complete local program slots. We evaluate the method on a benchmark of 14 continuous games, ranging from classic control tasks to multi-agent football. We find that pure enumeration is often more efficient than using a coding agent alone, while the combined method substantially outperforms both. Our results suggest that programmatic policy search can be a practical authoring tool for game AI: designers specify reward functions, and the system discovers editable behaviors that are effective, portable, and often surprising.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.24025" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.24025" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.24025" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.27891.html"><strong>Schr\&quot;odinger&#x27;s Code Repository: Have LLMs Learned SWE-bench or Memorized It?</strong></a> <span>2026-09-24</span></li>
+          <li><a href="2609.26777.html"><strong>SWE-Serve: Benchmarking Agentic Engineering For Production Inference Serving</strong></a> <span>2026-09-23</span></li>
+          <li><a href="2609.25591.html"><strong>Evaluating Coding Agents on Kernel Exploit Generation</strong></a> <span>2026-09-23</span></li>
+          <li><a href="2609.25396.html"><strong>Passes Alone, Fails Together: Benchmarking Semantic Coordination in Parallel LLM-Agent Development</strong></a> <span>2026-09-23</span></li>
+          <li><a href="2609.23980.html"><strong>MobileCybench: Evaluating Agent Vulnerability Discovery via Executable Probes</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.23570.html"><strong>VibeMemBench: Evaluating Memory Systems for Coding Agents on Real Repository Coding Tasks</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.23363.html"><strong>TicTacBench: Benchmarking Timing Closure Capabilities of Coding Agents</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.23142.html"><strong>CraftBench-UE: Deterministic Evaluation for Coding Agents in Unreal Engine</strong></a> <span>2026-09-22</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

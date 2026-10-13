@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Ambig-DS: A Benchmark for Task-Framing Ambiguity in Data-Science Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: As data-science agents shift from co-pilots to auto-pilots, silent misframing becomes a critical failure mode. Agents quietly commit…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2605.09698" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.09698.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Ambig-DS: A Benchmark for Task-Framing Ambiguity in Data-Science Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: As data-science agents shift from co-pilots to auto-pilots, silent misframing becomes a critical failure mode. Agents quietly commit…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.09698.html" />
+    <meta property="article:published_time" content="2026-05-10T18:34:12Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Ambig-DS: A Benchmark for Task-Framing Ambiguity in Data-Science Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: As data-science agents shift from co-pilots to auto-pilots, silent misframing becomes a critical failure mode. Agents quietly commit…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,67 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Ambig-DS: A Benchmark for Task-Framing Ambiguity in Data-Science Agents",
+  "name": "Ambig-DS: A Benchmark for Task-Framing Ambiguity in Data-Science Agents",
+  "abstract": "As data-science agents shift from co-pilots to auto-pilots, silent misframing becomes a critical failure mode. Agents quietly commit to plausible but unintended task framings, producing clean, executable artifacts that hide their incorrect assessment of the task. Existing benchmarks score whether the pipeline runs, ignoring whether the agent recognized the task was underspecified. We introduce Ambig-DS, two diagnostic suites: one for prediction-target ambiguity (Ambig-DS-Target, 51 tasks built on DSBench, a tabular modeling benchmark) and one for evaluation-objective ambiguity (Ambig-DS-Objective, 61 tasks built on MLE-bench, a Kaggle-style ML competition benchmark), constructed so that scoring uses each source benchmark's original evaluator. For every task we pair the original, fully specified version with an ambiguous variant produced by controlled edits; a human-and-LLM verification pipeline confirms each variant admits multiple plausible interpretations with decision-relevant consequences. The suites are analyzed independently and ambiguity lowers performance in both. Across five agents spanning efficient to frontier-class models, we find in our controlled diagnostic setting: (i) failures are silent commitments: wrong-target submissions on Target, wrong-metric or non-committal baseline submissions on Objective, rather than execution errors; (ii) allowing the agent to ask one clarifying question recovers much of the loss under idealized conditions, suggesting missing framing information drives a substantial part of the observed degradation; but (iii) agents cannot reliably tell when to use it: permissive prompts induce over-asking on clear tasks, while conservative prompts induce silent defaulting on ambiguous ones. Recognizing target and objective underspecification, not pipeline execution, is the bottleneck missing from standard DS-agent evaluations.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Josefa Lia Stoisser"
+    },
+    {
+      "@type": "Person",
+      "name": "Marc Boubnovski Martell"
+    },
+    {
+      "@type": "Person",
+      "name": "Sidsel Boldsen"
+    },
+    {
+      "@type": "Person",
+      "name": "Kaspar Märtens"
+    },
+    {
+      "@type": "Person",
+      "name": "Robert Kitchen"
+    }
+  ],
+  "datePublished": "2026-05-10T18:34:12Z",
+  "dateModified": "2026-05-10T18:34:12Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.09698.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.09698.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.09698v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.09698"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.09698v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.09698"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +99,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Ambig-DS: A Benchmark for Task-Framing Ambiguity in Data-Science Agents</h1>
+        <div class="meta">
+          Josefa Lia Stoisser, Marc Boubnovski Martell, Sidsel Boldsen, Kaspar Märtens, Robert Kitchen
+          · 2605.09698
+          · <time datetime="2026-05-10">2026-05-10</time>
+          · General · 1 citations
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>As data-science agents shift from co-pilots to auto-pilots, silent misframing becomes a critical failure mode. Agents quietly commit to plausible but unintended task framings, producing clean, executable artifacts that hide their incorrect assessment of the task. Existing benchmarks score whether the pipeline runs, ignoring whether the agent recognized the task was underspecified. We introduce Ambig-DS, two diagnostic suites: one for prediction-target ambiguity (Ambig-DS-Target, 51 tasks built on DSBench, a tabular modeling benchmark) and one for evaluation-objective ambiguity (Ambig-DS-Objective, 61 tasks built on MLE-bench, a Kaggle-style ML competition benchmark), constructed so that scoring uses each source benchmark&#x27;s original evaluator. For every task we pair the original, fully specified version with an ambiguous variant produced by controlled edits; a human-and-LLM verification pipeline confirms each variant admits multiple plausible interpretations with decision-relevant consequences. The suites are analyzed independently and ambiguity lowers performance in both. Across five agents spanning efficient to frontier-class models, we find in our controlled diagnostic setting: (i) failures are silent commitments: wrong-target submissions on Target, wrong-metric or non-committal baseline submissions on Objective, rather than execution errors; (ii) allowing the agent to ask one clarifying question recovers much of the loss under idealized conditions, suggesting missing framing information drives a substantial part of the observed degradation; but (iii) agents cannot reliably tell when to use it: permissive prompts induce over-asking on clear tasks, while conservative prompts induce silent defaulting on ambiguous ones. Recognizing target and objective underspecification, not pipeline execution, is the bottleneck missing from standard DS-agent evaluations.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.09698v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.09698v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.09698" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.10448.html"><strong>Can Agent Benchmarks Support Their Scores? Evidence-Supported Bounds for Interactive-Agent Evaluation</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2605.10384.html"><strong>Agentic Performance at the Edge: Insights from Benchmarking</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2605.10365.html"><strong>Agent-ValueBench: A Comprehensive Benchmark for Evaluating Agent Values</strong></a> <span>2026-05-11</span></li>
+          <li><a href="2606.14715.html"><strong>MiroBench: Benchmarking Realism in Agentic Simulation of Real-world Discussions</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.09252.html"><strong>LLM Agents Already Know When to Call Tools -- Even Without Reasoning</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.09163.html"><strong>FORTIS: Benchmarking Over-Privilege in Agent Skills</strong></a> <span>2026-05-09</span></li>
+          <li><a href="2605.08904.html"><strong>OPT-BENCH: Evaluating the Iterative Self-Optimization of LLM Agents in Large-Scale Search Spaces</strong></a> <span>2026-05-09</span></li>
+          <li><a href="2605.08828.html"><strong>When Agents Overtrust Environmental Evidence: An Extensible Agentic Framework for Benchmarking Evidence-Grounding Defects in LLM Agents</strong></a> <span>2026-05-09</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

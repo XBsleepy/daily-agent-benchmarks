@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>SkillRet: A Large-Scale Benchmark for Skill Retrieval in LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: As LLM agents are increasingly deployed with large libraries of reusable skills, selecting the right skill for a user request has…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2605.05726" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.05726.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SkillRet: A Large-Scale Benchmark for Skill Retrieval in LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: As LLM agents are increasingly deployed with large libraries of reusable skills, selecting the right skill for a user request has…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.05726.html" />
+    <meta property="article:published_time" content="2026-05-07T06:18:11Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SkillRet: A Large-Scale Benchmark for Skill Retrieval in LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: As LLM agents are increasingly deployed with large libraries of reusable skills, selecting the right skill for a user request has…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,59 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SkillRet: A Large-Scale Benchmark for Skill Retrieval in LLM Agents",
+  "name": "SkillRet: A Large-Scale Benchmark for Skill Retrieval in LLM Agents",
+  "abstract": "As LLM agents are increasingly deployed with large libraries of reusable skills, selecting the right skill for a user request has become a critical systems challenge. In small libraries, users may invoke skills explicitly by name, but this assumption breaks down as skill ecosystems grow under tight context and latency budgets. Despite its practical importance, skill retrieval remains underexplored, with limited benchmarks and little understanding of retrieval behavior on realistic skill libraries. To address this gap, we introduce SkillRet, a large-scale benchmark for skill retrieval in LLM agents. SkillRet contains 17,810 public agent skills, organized with structured semantic tags and a two-level taxonomy spanning 6 major categories and 18 sub-categories. It provides 63,259 training samples and 4,997 evaluation queries with disjoint skill pools, enabling both benchmarking and retrieval-oriented training. Across a diverse set of retrievers, we find that skill retrieval remains far from solved: off-the-shelf models struggle on realistic large-scale skill libraries, and prior skill-retrieval models still leave substantial headroom. Task-specific fine-tuning on SkillRet substantially improves performance, improving NDCG@10 by +13.1 points over the strongest prior retriever and by +16.9 points over the strongest off-the-shelf retriever. Our analysis further suggests that these gains arise because fine-tuned models better focus on the small skill-relevant signals within long and noisy queries. These results establish SkillRet as a strong benchmark and foundation for future research on retrieval in large-scale agent systems.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Hongcheol Cho"
+    },
+    {
+      "@type": "Person",
+      "name": "Ryangkyung Kang"
+    },
+    {
+      "@type": "Person",
+      "name": "Youngeun Kim"
+    }
+  ],
+  "datePublished": "2026-05-07T06:18:11Z",
+  "dateModified": "2026-05-07T06:18:11Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.05726.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.05726.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.05726v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.05726"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.05726v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.05726"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +91,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SkillRet: A Large-Scale Benchmark for Skill Retrieval in LLM Agents</h1>
+        <div class="meta">
+          Hongcheol Cho, Ryangkyung Kang, Youngeun Kim
+          · 2605.05726
+          · <time datetime="2026-05-07">2026-05-07</time>
+          · General · 30 citations
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>As LLM agents are increasingly deployed with large libraries of reusable skills, selecting the right skill for a user request has become a critical systems challenge. In small libraries, users may invoke skills explicitly by name, but this assumption breaks down as skill ecosystems grow under tight context and latency budgets. Despite its practical importance, skill retrieval remains underexplored, with limited benchmarks and little understanding of retrieval behavior on realistic skill libraries. To address this gap, we introduce SkillRet, a large-scale benchmark for skill retrieval in LLM agents. SkillRet contains 17,810 public agent skills, organized with structured semantic tags and a two-level taxonomy spanning 6 major categories and 18 sub-categories. It provides 63,259 training samples and 4,997 evaluation queries with disjoint skill pools, enabling both benchmarking and retrieval-oriented training. Across a diverse set of retrievers, we find that skill retrieval remains far from solved: off-the-shelf models struggle on realistic large-scale skill libraries, and prior skill-retrieval models still leave substantial headroom. Task-specific fine-tuning on SkillRet substantially improves performance, improving NDCG@10 by +13.1 points over the strongest prior retriever and by +16.9 points over the strongest off-the-shelf retriever. Our analysis further suggests that these gains arise because fine-tuned models better focus on the small skill-relevant signals within long and noisy queries. These results establish SkillRet as a strong benchmark and foundation for future research on retrieval in large-scale agent systems.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.05726v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.05726v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.05726" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.07073.html"><strong>TeamBench: Evaluating Agent Coordination under Enforced Role Separation</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.06527.html"><strong>STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?</strong></a> <span>2026-05-07</span></li>
+          <li><a href="2605.06490.html"><strong>Instrumental Choices: Measuring the Propensity of LLM Agents to Pursue Instrumental Behaviors</strong></a> <span>2026-05-07</span></li>
+          <li><a href="2605.06334.html"><strong>MANTRA: Synthesizing SMT-Validated Compliance Benchmarks for Tool-Using LLM Agents</strong></a> <span>2026-05-07</span></li>
+          <li><a href="2605.03596.html"><strong>Workspace-Bench 1.0: Benchmarking AI Agents on Workspace Tasks with Large-Scale File Dependencies</strong></a> <span>2026-05-05</span></li>
+          <li><a href="2605.02503.html"><strong>DataClawBench: An Agent Benchmark for Exploratory Real-World Financial Data Analysis</strong></a> <span>2026-05-04</span></li>
+          <li><a href="2605.02240.html"><strong>PhysicianBench: Evaluating LLM Agents in Real-World EHR Environments</strong></a> <span>2026-05-04</span></li>
+          <li><a href="2605.01847.html"><strong>NeuroState-Bench: A Human-Calibrated Benchmark for Commitment Integrity in LLM Agent Profiles</strong></a> <span>2026-05-03</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

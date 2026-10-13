@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Breaking, Stale, or Missing? Benchmarking Coding Agents on Project-Level Test Evolution | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: As production code evolves, the test suite must co-evolve to remain effective. Existing benchmarks for test evolution operate at…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2605.06125" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.06125.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Breaking, Stale, or Missing? Benchmarking Coding Agents on Project-Level Test Evolution" />
+    <meta property="og:description" content="Daily Agent Benchmarks: As production code evolves, the test suite must co-evolve to remain effective. Existing benchmarks for test evolution operate at…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.06125.html" />
+    <meta property="article:published_time" content="2026-05-07T12:31:09Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Breaking, Stale, or Missing? Benchmarking Coding Agents on Project-Level Test Evolution" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: As production code evolves, the test suite must co-evolve to remain effective. Existing benchmarks for test evolution operate at…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,73 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Breaking, Stale, or Missing? Benchmarking Coding Agents on Project-Level Test Evolution",
+  "name": "Breaking, Stale, or Missing? Benchmarking Coding Agents on Project-Level Test Evolution",
+  "abstract": "As production code evolves, the test suite must co-evolve to remain effective. Existing benchmarks for test evolution operate at method-level granularity with pre-paired inputs, bypassing the task of locating affected tests from the full project and excluding the need for new tests entirely. We present TEBench, the first project-level benchmark for test evolution. Given a project repository and a code-changing commit, TEBench requires systems to autonomously identify tests requiring modification, determine where new tests are needed, and produce the corresponding test patch. We construct TEBench through a four-stage pipeline over Defects4J projects, curating 314 task instances from 10 projects with developer-written ground truth. Each instance is annotated with one or more of three evolution types: Test-Breaking (tests that fail), Test-Stale (tests that pass but no longer meaningfully validate updated behavior), and Test-Missing (new tests needed for introduced behavior). We evaluate seven configurations spanning three industrial agent frameworks (Claude Code, Codex CLI, OpenCode) and six base models, alongside a heuristic baseline. All seven configurations converge on an identification F1 of 45.7% to 49.4%, revealing a shared performance ceiling across both frameworks and base models. Test-Stale is the most challenging type, averaging F1 around 36%, since configurations rely on execution failure signals and lack proactive semantic reasoning. On the update task, configurations produce highly executable test modifications whose surface form diverges substantially from ground truth. Trajectory analysis reveals a reactive \"execute-fail-fix\" loop that succeeds for breaking tests but structurally cannot address stale or missing tests. TEBench is available at https://github.com/iSEngLab/TEBench with a leaderboard at https://tebench-leadership.vercel.app.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Ye Shang"
+    },
+    {
+      "@type": "Person",
+      "name": "Quanjun Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Haichuan Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Chunrong Fang"
+    },
+    {
+      "@type": "Person",
+      "name": "Liang Xiao"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhenyu Chen"
+    }
+  ],
+  "datePublished": "2026-05-07T12:31:09Z",
+  "dateModified": "2026-05-07T12:31:09Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.06125.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.06125.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.06125v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.06125"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.06125v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.06125"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +105,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Breaking, Stale, or Missing? Benchmarking Coding Agents on Project-Level Test Evolution</h1>
+        <div class="meta">
+          Ye Shang, Quanjun Zhang, Haichuan Hu, Chunrong Fang, Liang Xiao, Zhenyu Chen
+          · 2605.06125
+          · <time datetime="2026-05-07">2026-05-07</time>
+          · Coding / SWE · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>As production code evolves, the test suite must co-evolve to remain effective. Existing benchmarks for test evolution operate at method-level granularity with pre-paired inputs, bypassing the task of locating affected tests from the full project and excluding the need for new tests entirely. We present TEBench, the first project-level benchmark for test evolution. Given a project repository and a code-changing commit, TEBench requires systems to autonomously identify tests requiring modification, determine where new tests are needed, and produce the corresponding test patch. We construct TEBench through a four-stage pipeline over Defects4J projects, curating 314 task instances from 10 projects with developer-written ground truth. Each instance is annotated with one or more of three evolution types: Test-Breaking (tests that fail), Test-Stale (tests that pass but no longer meaningfully validate updated behavior), and Test-Missing (new tests needed for introduced behavior). We evaluate seven configurations spanning three industrial agent frameworks (Claude Code, Codex CLI, OpenCode) and six base models, alongside a heuristic baseline. All seven configurations converge on an identification F1 of 45.7% to 49.4%, revealing a shared performance ceiling across both frameworks and base models. Test-Stale is the most challenging type, averaging F1 around 36%, since configurations rely on execution failure signals and lack proactive semantic reasoning. On the update task, configurations produce highly executable test modifications whose surface form diverges substantially from ground truth. Trajectory analysis reveals a reactive &quot;execute-fail-fix&quot; loop that succeeds for breaking tests but structurally cannot address stale or missing tests. TEBench is available at https://github.com/iSEngLab/TEBench with a leaderboard at https://tebench-leadership.vercel.app.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.06125v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.06125v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.06125" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.09675.html"><strong>CodeClinic: Evaluating Automation of Coding Skills for Clinical Reasoning Agents</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.08941.html"><strong>MDGYM: Benchmarking AI Agents on Molecular Simulations</strong></a> <span>2026-05-09</span></li>
+          <li><a href="2605.08647.html"><strong>AgentCollabBench: Diagnosing When Good Agents Make Bad Collaborators</strong></a> <span>2026-05-09</span></li>
+          <li><a href="2605.08366.html"><strong>SWE Atlas: Benchmarking Coding Agents Beyond Issue Resolution</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.04637.html"><strong>SWE-WebDevBench: Evaluating Coding Agent Application Platforms as Virtual Software Agencies</strong></a> <span>2026-05-06</span></li>
+          <li><a href="2605.03952.html"><strong>MOSAIC-Bench: Measuring Compositional Vulnerability Induction in Coding Agents</strong></a> <span>2026-05-05</span></li>
+          <li><a href="2605.00803.html"><strong>Can Coding Agents Reproduce Findings in Computational Materials Science?</strong></a> <span>2026-05-01</span></li>
+          <li><a href="2604.26278.html"><strong>SWE-Bench 5G: Benchmarking AI Coding Agents on Telecom Network Engineering Tasks</strong></a> <span>2026-04-29</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

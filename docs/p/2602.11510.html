@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>AgentLeak: A Benchmark for Internal-Channel Privacy Leakage in Multi-Agent LLM Systems | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Multi-agent Large Language Model (LLM) systems create privacy risks that current output-only benchmarks cannot measure. When agents…" />
+    <meta name="keywords" content="Multi-agent, Tool use, Safety, Memory, agent benchmark, LLM agent, arXiv, 2602.11510" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.11510.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AgentLeak: A Benchmark for Internal-Channel Privacy Leakage in Multi-Agent LLM Systems" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Multi-agent Large Language Model (LLM) systems create privacy risks that current output-only benchmarks cannot measure. When agents…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.11510.html" />
+    <meta property="article:published_time" content="2026-02-12T03:10:44Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AgentLeak: A Benchmark for Internal-Channel Privacy Leakage in Multi-Agent LLM Systems" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Multi-agent Large Language Model (LLM) systems create privacy risks that current output-only benchmarks cannot measure. When agents…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,63 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AgentLeak: A Benchmark for Internal-Channel Privacy Leakage in Multi-Agent LLM Systems",
+  "name": "AgentLeak: A Benchmark for Internal-Channel Privacy Leakage in Multi-Agent LLM Systems",
+  "abstract": "Multi-agent Large Language Model (LLM) systems create privacy risks that current output-only benchmarks cannot measure. When agents coordinate on tasks, sensitive data may pass through inter-agent messages, shared memory, and tool arguments, all pathways that final-output audits typically do not inspect. We introduce AgentLeak, a benchmark for evaluating internal-channel privacy leakage in multi-agent LLM systems. AgentLeak instruments seven privacy-relevant communication pathways and provides a large-scale empirical evaluation focused on final outputs, inter-agent messages, and shared memory. Across 1,000 scenarios spanning healthcare, finance, legal, and corporate domains, five production LLMs (GPT-4o, GPT-4o-mini, Claude 3.5 Sonnet, Mistral Large, and Llama 3.3 70B), and 4,979 validated execution traces, we find that multi-agent configurations reduce final-output leakage (C1: 27.2% vs 43.2% in single-agent mode) compared with single-agent baselines but introduce internal channels that raise total system exposure to 68.9% (aggregated across C1, C2, C5). Inter-agent messages (C2) leak at 68.8%, compared with 27.2% for final outputs (C1), meaning that output-only audits miss 41.7% of violations. Across all five models and four domains, the pattern C2 $\\geq$ C1 holds consistently. These results suggest, within the evaluated coordinator-worker setting, that privacy risk in multi-agent systems is strongly shaped by architectural coordination channels rather than final-output behavior alone: it arises from internal channels that remain invisible to standard output-level defenses.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Faouzi El Yagoubi"
+    },
+    {
+      "@type": "Person",
+      "name": "Godwin Badu-Marfo"
+    },
+    {
+      "@type": "Person",
+      "name": "Ranwa Al Mallah"
+    }
+  ],
+  "datePublished": "2026-02-12T03:10:44Z",
+  "dateModified": "2026-06-15T09:43:49Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.11510.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.11510.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2602.11510v3",
+    "https://doi.org/10.1109/ACCESS.2026.3704541"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2602.11510"
+  },
+  "keywords": [
+    "Multi-agent",
+    "Tool use",
+    "Safety",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multi-agent"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2602.11510v3"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2602.11510"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +95,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AgentLeak: A Benchmark for Internal-Channel Privacy Leakage in Multi-Agent LLM Systems</h1>
+        <div class="meta">
+          Faouzi El Yagoubi, Godwin Badu-Marfo, Ranwa Al Mallah
+          · 2602.11510
+          · <time datetime="2026-02-12">2026-02-12</time>
+          · Multi-agent · 9 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Multi-agent</span><span class="chip">Safety</span><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Multi-agent Large Language Model (LLM) systems create privacy risks that current output-only benchmarks cannot measure. When agents coordinate on tasks, sensitive data may pass through inter-agent messages, shared memory, and tool arguments, all pathways that final-output audits typically do not inspect. We introduce AgentLeak, a benchmark for evaluating internal-channel privacy leakage in multi-agent LLM systems. AgentLeak instruments seven privacy-relevant communication pathways and provides a large-scale empirical evaluation focused on final outputs, inter-agent messages, and shared memory. Across 1,000 scenarios spanning healthcare, finance, legal, and corporate domains, five production LLMs (GPT-4o, GPT-4o-mini, Claude 3.5 Sonnet, Mistral Large, and Llama 3.3 70B), and 4,979 validated execution traces, we find that multi-agent configurations reduce final-output leakage (C1: 27.2% vs 43.2% in single-agent mode) compared with single-agent baselines but introduce internal channels that raise total system exposure to 68.9% (aggregated across C1, C2, C5). Inter-agent messages (C2) leak at 68.8%, compared with 27.2% for final outputs (C1), meaning that output-only audits miss 41.7% of violations. Across all five models and four domains, the pattern C2 $\geq$ C1 holds consistently. These results suggest, within the evaluated coordinator-worker setting, that privacy risk in multi-agent systems is strongly shaped by architectural coordination channels rather than final-output behavior alone: it arises from internal channels that remain invisible to standard output-level defenses.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2602.11510v3" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2602.11510v3" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2602.11510" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multi-agent benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2603.00468.html"><strong>Cloud-OpsBench: A Reproducible Benchmark for Agentic Root Cause Analysis in Cloud Systems</strong></a> <span>2026-02-28</span></li>
+          <li><a href="2604.09568.html"><strong>EvoDiagram: Agentic Editable Diagram Creation via Design Expertise Evolution</strong></a> <span>2026-02-20</span></li>
+          <li><a href="2602.15721.html"><strong>Lifelong Scalable Multi-Agent Realistic Testbed and A Comprehensive Study on Design Choices in Lifelong AGV Fleet Management Systems</strong></a> <span>2026-02-17</span></li>
+          <li><a href="2602.13059.html"><strong>TraceBack: Multi-Agent Decomposition for Fine-Grained Table Attribution</strong></a> <span>2026-02-13</span></li>
+          <li><a href="2602.13318.html"><strong>DECKBench: Benchmarking Multi-Agent Frameworks for Academic Slide Generation and Editing</strong></a> <span>2026-02-10</span></li>
+          <li><a href="2602.09379.html"><strong>LingxiDiagBench: A Multi-Agent Framework for Benchmarking LLMs in Chinese Psychiatric Consultation and Diagnosis</strong></a> <span>2026-02-10</span></li>
+          <li><a href="2602.08023.html"><strong>CTFExplorer: Evaluating LLM Offensive Agents Through Multi-Target Web CTF Benchmarking</strong></a> <span>2026-02-08</span></li>
+          <li><a href="2602.05302.html"><strong>PieArena: Ranking and Profiling Language Agents in Realistic Negotiation Scenarios</strong></a> <span>2026-02-05</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

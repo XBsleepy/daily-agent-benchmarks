@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>EHR-Complex: Benchmarking Medical Agents for Complex Clinical Reasoning | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Clinical agents promise to democratize access to electronic health records (EHRs), yet existing benchmarks fail to reflect the…" />
+    <meta name="keywords" content="General, Safety, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2606.23301" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.23301.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="EHR-Complex: Benchmarking Medical Agents for Complex Clinical Reasoning" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Clinical agents promise to democratize access to electronic health records (EHRs), yet existing benchmarks fail to reflect the…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.23301.html" />
+    <meta property="article:published_time" content="2026-06-22T13:14:21Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="EHR-Complex: Benchmarking Medical Agents for Complex Clinical Reasoning" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Clinical agents promise to democratize access to electronic health records (EHRs), yet existing benchmarks fail to reflect the…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,77 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "EHR-Complex: Benchmarking Medical Agents for Complex Clinical Reasoning",
+  "name": "EHR-Complex: Benchmarking Medical Agents for Complex Clinical Reasoning",
+  "abstract": "Clinical agents promise to democratize access to electronic health records (EHRs), yet existing benchmarks fail to reflect the complexity of practical EHR analysis, e.g., often operating on idealized, clean EHRs via static SQL generation rather than interactive execution. In this work, we introduce EHR-Complex, a large-scale benchmark designed for interactive clinical database reasoning. Built on the large MIMIC-IV substrate (365K patients, 31 tables, 500M+ records), EHR-Complex comprises about 52K tasks spanning six clinical intents, supporting both patient-level and population-level queries, where each task requires an agent to interact with a sandboxed environment by executing SQL queries or Python code. Notably, EHR-Complex considers the real-world SQL task complexity for longitudinal multi-table aggregation and compositional reasoning, resulting in 31.93 SQL structural components per query on average. Evaluation results on EHR-Complex reveal the clinical difficulty of these EHR reasoning scenarios, with the top-performing model achieving only 62.3% exact-match accuracy. Pass^k consistency drops below 50% for nearly all evaluated models at k=4, exposing broad stochastic fragility. A fine-grained analysis of more than 3,800 failed trajectories for representative LLMs reveals three dominant failure modes: SQL logic errors, medical-code lookup failures, and semantic misunderstandings. EHR-Complex provides a rigorous testbed for clinical agents and highlights remaining gaps in robust reasoning for large-scale EHR analysis.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yitong Qiao"
+    },
+    {
+      "@type": "Person",
+      "name": "Lei Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yue Shen"
+    },
+    {
+      "@type": "Person",
+      "name": "Jian Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jinjie Gu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhixuan Chu"
+    },
+    {
+      "@type": "Person",
+      "name": "Kui Ren"
+    }
+  ],
+  "datePublished": "2026-06-22T13:14:21Z",
+  "dateModified": "2026-06-22T13:14:21Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.23301.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.23301.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.23301v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.23301"
+  },
+  "keywords": [
+    "General",
+    "Safety",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.23301v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.23301"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +109,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>EHR-Complex: Benchmarking Medical Agents for Complex Clinical Reasoning</h1>
+        <div class="meta">
+          Yitong Qiao, Lei Liu, Yue Shen, Jian Wang, Jinjie Gu, Zhixuan Chu, Kui Ren
+          · 2606.23301
+          · <time datetime="2026-06-22">2026-06-22</time>
+          · General · 2 citations
+        </div>
+        <div class="themes"><span class="chip">Safety</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Clinical agents promise to democratize access to electronic health records (EHRs), yet existing benchmarks fail to reflect the complexity of practical EHR analysis, e.g., often operating on idealized, clean EHRs via static SQL generation rather than interactive execution. In this work, we introduce EHR-Complex, a large-scale benchmark designed for interactive clinical database reasoning. Built on the large MIMIC-IV substrate (365K patients, 31 tables, 500M+ records), EHR-Complex comprises about 52K tasks spanning six clinical intents, supporting both patient-level and population-level queries, where each task requires an agent to interact with a sandboxed environment by executing SQL queries or Python code. Notably, EHR-Complex considers the real-world SQL task complexity for longitudinal multi-table aggregation and compositional reasoning, resulting in 31.93 SQL structural components per query on average. Evaluation results on EHR-Complex reveal the clinical difficulty of these EHR reasoning scenarios, with the top-performing model achieving only 62.3% exact-match accuracy. Pass^k consistency drops below 50% for nearly all evaluated models at k=4, exposing broad stochastic fragility. A fine-grained analysis of more than 3,800 failed trajectories for representative LLMs reveals three dominant failure modes: SQL logic errors, medical-code lookup failures, and semantic misunderstandings. EHR-Complex provides a rigorous testbed for clinical agents and highlights remaining gaps in robust reasoning for large-scale EHR analysis.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.23301v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.23301v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.23301" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.09711.html"><strong>EvoClawBench: Can Agents Learn Reusable Skills from Their Own Runs?</strong></a> <span>2026-06-23</span></li>
+          <li><a href="2606.25139.html"><strong>Buildrix: An Open Platform for Sharing and Benchmarking Agentic AI Skills in Building Engineering</strong></a> <span>2026-06-23</span></li>
+          <li><a href="2606.24026.html"><strong>Can Language Model Agents be Helpful Circuit Explainers in Mechanistic Interpretability?</strong></a> <span>2026-06-23</span></li>
+          <li><a href="2606.23927.html"><strong>RIFT-Bench: Dynamic Red-teaming For Agentic AI Systems</strong></a> <span>2026-06-22</span></li>
+          <li><a href="2606.23032.html"><strong>IPO Finance Agent: Benchmark of LLM Financial Analysts Beyond Finance Agent v2, with Automated Rubric Generation, on the SpaceX (SPCX) IPO</strong></a> <span>2026-06-22</span></li>
+          <li><a href="2608.20370.html"><strong>Benchmarking LLM Serving Systems for Agentic AI Workloads with XPerf</strong></a> <span>2026-06-19</span></li>
+          <li><a href="2606.21169.html"><strong>Trip+: Benchmarking Agents in Personalized Interactive Travel Planning</strong></a> <span>2026-06-19</span></li>
+          <li><a href="2606.21140.html"><strong>Matching Matters: A Fair Quality-Efficiency Benchmark for Command-Line Agents</strong></a> <span>2026-06-19</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

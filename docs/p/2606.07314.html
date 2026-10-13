@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>QBugLM: An Agentic Benchmarking Framework for LLM-based Quantum Software Debugging | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Quantum software bugs often yield silent, incorrect outputs rather than explicit errors, making them particularly difficult to detect…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Multi-agent, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2606.07314" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.07314.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="QBugLM: An Agentic Benchmarking Framework for LLM-based Quantum Software Debugging" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Quantum software bugs often yield silent, incorrect outputs rather than explicit errors, making them particularly difficult to detect…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.07314.html" />
+    <meta property="article:published_time" content="2026-06-05T14:34:46Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="QBugLM: An Agentic Benchmarking Framework for LLM-based Quantum Software Debugging" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Quantum software bugs often yield silent, incorrect outputs rather than explicit errors, making them particularly difficult to detect…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,62 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "QBugLM: An Agentic Benchmarking Framework for LLM-based Quantum Software Debugging",
+  "name": "QBugLM: An Agentic Benchmarking Framework for LLM-based Quantum Software Debugging",
+  "abstract": "Quantum software bugs often yield silent, incorrect outputs rather than explicit errors, making them particularly difficult to detect and repair with conventional techniques. Although large language models (LLMs) have shown strong performance on classical software engineering tasks, their ability to debug quantum code remains largely unexplored. To bridge this gap, we propose QBugLM, a multi-agent framework that automates the quantum software debugging pipeline, from taxonomy-driven bug injection to LLM-based detection and repair, and finally to simulation-based validation, for framework-agnostic OpenQASM 3.0 programs. We further conduct a comprehensive case study using QBugLM to benchmark two LLMs, Claude 4.6 Sonnet and Qwen3 Coder Next, across different prompting strategies, bug categories, and quantum programs. Our results show that iterative feedback is critical, as a single retry raises Pass@1 from below 25% to above 80%. Moreover, simpler structured prompting can even outperform Chain-of-Thought and ReAct for reasoning-capable models under fixed-resource constraints. Our work takes initial steps toward benchmarking LLM capabilities for debugging quantum programs and offers practical insights to support future efforts in automated quantum software repair.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "An B. B. Pham"
+    },
+    {
+      "@type": "Person",
+      "name": "Hoa T. Nguyen"
+    },
+    {
+      "@type": "Person",
+      "name": "Muhammad Usman"
+    }
+  ],
+  "datePublished": "2026-06-05T14:34:46Z",
+  "dateModified": "2026-06-05T14:34:46Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.07314.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.07314.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.07314v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.07314"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Multi-agent",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.07314v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.07314"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +94,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>QBugLM: An Agentic Benchmarking Framework for LLM-based Quantum Software Debugging</h1>
+        <div class="meta">
+          An B. B. Pham, Hoa T. Nguyen, Muhammad Usman
+          · 2606.07314
+          · <time datetime="2026-06-05">2026-06-05</time>
+          · Coding / SWE · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Multi-agent</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Quantum software bugs often yield silent, incorrect outputs rather than explicit errors, making them particularly difficult to detect and repair with conventional techniques. Although large language models (LLMs) have shown strong performance on classical software engineering tasks, their ability to debug quantum code remains largely unexplored. To bridge this gap, we propose QBugLM, a multi-agent framework that automates the quantum software debugging pipeline, from taxonomy-driven bug injection to LLM-based detection and repair, and finally to simulation-based validation, for framework-agnostic OpenQASM 3.0 programs. We further conduct a comprehensive case study using QBugLM to benchmark two LLMs, Claude 4.6 Sonnet and Qwen3 Coder Next, across different prompting strategies, bug categories, and quantum programs. Our results show that iterative feedback is critical, as a single retry raises Pass@1 from below 25% to above 80%. Moreover, simpler structured prompting can even outperform Chain-of-Thought and ReAct for reasoning-capable models under fixed-resource constraints. Our work takes initial steps toward benchmarking LLM capabilities for debugging quantum programs and offers practical insights to support future efforts in automated quantum software repair.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.07314v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.07314v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.07314" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.12344.html"><strong>Claw-SWE-Bench: A Benchmark for Evaluating OpenClaw-style Agent Harnesses on Coding Tasks</strong></a> <span>2026-06-10</span></li>
+          <li><a href="2606.11864.html"><strong>CORE-Bench: A Comprehensive Benchmark for Code Retrieval in the Era of Agentic Coding</strong></a> <span>2026-06-10</span></li>
+          <li><a href="2606.11447.html"><strong>AI Coding Agents Can Reproduce Social Science Findings</strong></a> <span>2026-06-09</span></li>
+          <li><a href="2606.07682.html"><strong>SWE-Marathon: Can Agents Autonomously Complete Ultra-Long-Horizon Software Work?</strong></a> <span>2026-06-05</span></li>
+          <li><a href="2606.07297.html"><strong>SWE-Explore: Benchmarking How Coding Agents Explore Repositories</strong></a> <span>2026-06-05</span></li>
+          <li><a href="2606.05570.html"><strong>TensorBench: Benchmarking Coding Agents on a Compiler-Based Tensor Framework</strong></a> <span>2026-06-04</span></li>
+          <li><a href="2606.05238.html"><strong>DeployBench: Benchmarking LLM Agents for Research Artifact Deployment</strong></a> <span>2026-06-03</span></li>
+          <li><a href="2606.01317.html"><strong>SABER: Benchmarking Operational Safety of LLM Coding Agents in Stateful Project Workspaces</strong></a> <span>2026-05-31</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ADeptS-Bench: Measuring the Trustworthiness of Computer Use Agents Across Devices | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Computer Use Agents (CUAs) are increasingly deployed to navigate mobile and desktop applications on behalf of users, yet no benchmark…" />
+    <meta name="keywords" content="GUI / computer use, GUI agents, Tool use, Computer use, Safety, agent benchmark, LLM agent, arXiv, 2608.26204" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.26204.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ADeptS-Bench: Measuring the Trustworthiness of Computer Use Agents Across Devices" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Computer Use Agents (CUAs) are increasingly deployed to navigate mobile and desktop applications on behalf of users, yet no benchmark…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.26204.html" />
+    <meta property="article:published_time" content="2026-08-25T23:21:57Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ADeptS-Bench: Measuring the Trustworthiness of Computer Use Agents Across Devices" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Computer Use Agents (CUAs) are increasingly deployed to navigate mobile and desktop applications on behalf of users, yet no benchmark…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,75 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ADeptS-Bench: Measuring the Trustworthiness of Computer Use Agents Across Devices",
+  "name": "ADeptS-Bench: Measuring the Trustworthiness of Computer Use Agents Across Devices",
+  "abstract": "Computer Use Agents (CUAs) are increasingly deployed to navigate mobile and desktop applications on behalf of users, yet no benchmark comprehensively evaluates whether they can safely interact with visual interfaces while handling ambiguous instructions. We introduce ADeptS-Bench, a dual-stream trustworthiness benchmark, grounded in the ADEPTS capability framework and general population user studies. The Safety stream provides paired benign/malicious tasks with threats embedded in the visual interface. The Disambiguation stream evaluates whether agents seek clarification when intent is ambiguous. Evaluating seven models reveals that no model consistently exceeds 80% task success while staying below 30% attack success; every model clicks \"Checkout\" on a $25K order without hesitation, and none detects that a \"factory reset\" button is mislabeled as \"Optimize.\" An ablation reveals three distinct safety architectures: tool-dependent (ASR +21-23pp without refusal tool), partially tool-dependent (+10-11pp), and no mechanism (unchanged). In disambiguation, all models overestimate consequence severity, mirroring the over-refusal bias observed in safety. We release all data, evaluation code, and analysis tools upon publication.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Joy Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Alejandro Castillejo Munoz"
+    },
+    {
+      "@type": "Person",
+      "name": "Pierluca D'Oro"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuxuan Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Chloe Evans"
+    },
+    {
+      "@type": "Person",
+      "name": "Joseph Tighe"
+    }
+  ],
+  "datePublished": "2026-08-25T23:21:57Z",
+  "dateModified": "2026-08-25T23:21:57Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.26204.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.26204.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.26204v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.26204"
+  },
+  "keywords": [
+    "GUI / computer use",
+    "GUI agents",
+    "Tool use",
+    "Computer use",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "GUI / computer use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.26204v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.26204"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +107,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ADeptS-Bench: Measuring the Trustworthiness of Computer Use Agents Across Devices</h1>
+        <div class="meta">
+          Joy Chen, Alejandro Castillejo Munoz, Pierluca D&#x27;Oro, Yuxuan Sun, Chloe Evans, Joseph Tighe
+          · 2608.26204
+          · <time datetime="2026-08-25">2026-08-25</time>
+          · GUI / computer use
+        </div>
+        <div class="themes"><span class="chip">GUI agents</span><span class="chip">Tool use</span><span class="chip">Computer use</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Computer Use Agents (CUAs) are increasingly deployed to navigate mobile and desktop applications on behalf of users, yet no benchmark comprehensively evaluates whether they can safely interact with visual interfaces while handling ambiguous instructions. We introduce ADeptS-Bench, a dual-stream trustworthiness benchmark, grounded in the ADEPTS capability framework and general population user studies. The Safety stream provides paired benign/malicious tasks with threats embedded in the visual interface. The Disambiguation stream evaluates whether agents seek clarification when intent is ambiguous. Evaluating seven models reveals that no model consistently exceeds 80% task success while staying below 30% attack success; every model clicks &quot;Checkout&quot; on a $25K order without hesitation, and none detects that a &quot;factory reset&quot; button is mislabeled as &quot;Optimize.&quot; An ablation reveals three distinct safety architectures: tool-dependent (ASR +21-23pp without refusal tool), partially tool-dependent (+10-11pp), and no mechanism (unchanged). In disambiguation, all models overestimate consequence severity, mirroring the over-refusal bias observed in safety. We release all data, evaluation code, and analysis tools upon publication.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.26204v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.26204v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.26204" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More GUI / computer use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.07712.html"><strong>APPSim-Bench: Bridging Real-world Apps and Reproducible Evaluation for Mobile GUI Agents</strong></a> <span>2026-09-07</span></li>
+          <li><a href="2609.07603.html"><strong>FinCUABuild: Can Agents Build Reliable Benchmarks for Dynamic Financial Computer Use?</strong></a> <span>2026-09-07</span></li>
+          <li><a href="2609.03438.html"><strong>Do GUI Agents Know When Not to Act? Enabling Conflict-Aware Termination for Multimodal GUI Agents</strong></a> <span>2026-09-03</span></li>
+          <li><a href="2609.00048.html"><strong>GUI-CC: Benchmarking Contextual Consistency of GUI World Models as Agent Environments</strong></a> <span>2026-08-30</span></li>
+          <li><a href="2608.18307.html"><strong>ComponentBench: Diagnosing Component-Level Failures in Computer-Use Agents</strong></a> <span>2026-08-18</span></li>
+          <li><a href="2608.06477.html"><strong>StepJack: Benchmarking Computer-Use Agent Safety Against Multi-Step Indirect Prompt Injection</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2607.28074.html"><strong>Echoverse: Deep, Evolving Environments for Training Computer-Use Agents at Scale</strong></a> <span>2026-07-30</span></li>
+          <li><a href="2607.26041.html"><strong>Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions?</strong></a> <span>2026-07-28</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

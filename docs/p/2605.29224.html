@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Relevance as a Vulnerability: How Web Retrieval Degrades Safety Alignment in LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: AI agents augment large language models with external tools such as web retrieval, enabling grounded and up-to-date responses…" />
+    <meta name="keywords" content="Safety, Tool use, agent benchmark, LLM agent, arXiv, 2605.29224" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.29224.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Relevance as a Vulnerability: How Web Retrieval Degrades Safety Alignment in LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: AI agents augment large language models with external tools such as web retrieval, enabling grounded and up-to-date responses…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.29224.html" />
+    <meta property="article:published_time" content="2026-05-28T01:23:48Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Relevance as a Vulnerability: How Web Retrieval Degrades Safety Alignment in LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: AI agents augment large language models with external tools such as web retrieval, enabling grounded and up-to-date responses…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,60 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Relevance as a Vulnerability: How Web Retrieval Degrades Safety Alignment in LLM Agents",
+  "name": "Relevance as a Vulnerability: How Web Retrieval Degrades Safety Alignment in LLM Agents",
+  "abstract": "AI agents augment large language models with external tools such as web retrieval, enabling grounded and up-to-date responses. However, incorporating external content into the generation pipeline can weaken the safety alignment mechanisms that govern model outputs. Prior work shows that enabling retrieval in agents increases compliance with harmful requests. We introduce AgentREVEAL, a diagnostic framework for analyzing retrieval-induced safety degradation in LLM agents. The framework examines two axes: how retrieval is integrated into the agent pipeline and the properties of the retrieved content. Along the integration axis, we find that binding tool invocation and response generation in a single step amplifies harmful outputs. Along the content axis, we uncover the Safe Source Paradox: even oppositional or safety-oriented sources, such as pages containing warnings or risk disclaimers, can increase harmful compliance by an average of 25% compared to the no-retrieval baseline. Finally, we show that relevance acts as a shared activation condition for both vulnerabilities. Similar patterns appear on frontier closed models, and harmful compliance remains elevated under several representative pipeline interventions, with some agents also entering this regime under autonomous retrieval. Because relevance is also what makes retrieval useful, these results expose a safety-utility trade-off for retrieval-enabled agents. We introduce HarmURLBench, a benchmark containing 1,405 real-world URLs paired with 320 harmful behaviors to support future evaluations.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Aditya Nawal"
+    },
+    {
+      "@type": "Person",
+      "name": "Manit Baser"
+    },
+    {
+      "@type": "Person",
+      "name": "Mohan Gurusamy"
+    }
+  ],
+  "datePublished": "2026-05-28T01:23:48Z",
+  "dateModified": "2026-05-28T01:23:48Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.29224.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.29224.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.29224v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.29224"
+  },
+  "keywords": [
+    "Safety",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Safety"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.29224v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.29224"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +92,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Relevance as a Vulnerability: How Web Retrieval Degrades Safety Alignment in LLM Agents</h1>
+        <div class="meta">
+          Aditya Nawal, Manit Baser, Mohan Gurusamy
+          · 2605.29224
+          · <time datetime="2026-05-28">2026-05-28</time>
+          · Safety
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>AI agents augment large language models with external tools such as web retrieval, enabling grounded and up-to-date responses. However, incorporating external content into the generation pipeline can weaken the safety alignment mechanisms that govern model outputs. Prior work shows that enabling retrieval in agents increases compliance with harmful requests. We introduce AgentREVEAL, a diagnostic framework for analyzing retrieval-induced safety degradation in LLM agents. The framework examines two axes: how retrieval is integrated into the agent pipeline and the properties of the retrieved content. Along the integration axis, we find that binding tool invocation and response generation in a single step amplifies harmful outputs. Along the content axis, we uncover the Safe Source Paradox: even oppositional or safety-oriented sources, such as pages containing warnings or risk disclaimers, can increase harmful compliance by an average of 25% compared to the no-retrieval baseline. Finally, we show that relevance acts as a shared activation condition for both vulnerabilities. Similar patterns appear on frontier closed models, and harmful compliance remains elevated under several representative pipeline interventions, with some agents also entering this regime under autonomous retrieval. Because relevance is also what makes retrieval useful, these results expose a safety-utility trade-off for retrieval-enabled agents. We introduce HarmURLBench, a benchmark containing 1,405 real-world URLs paired with 320 harmful behaviors to support future evaluations.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.29224v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.29224v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.29224" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Safety benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.20408.html"><strong>NRT-Bench: Benchmarking Multi-Turn Red-Teaming of LLM Operator Agents in Safety-Critical Control Rooms</strong></a> <span>2026-06-18</span></li>
+          <li><a href="2606.13994.html"><strong>Hidden in Plain Sight: Benchmarking Agent Safety Against Decomposition Attacks with DECOMPBENCH</strong></a> <span>2026-06-12</span></li>
+          <li><a href="2606.07867.html"><strong>The Cold-Start Safety Gap in LLM Agents</strong></a> <span>2026-06-05</span></li>
+          <li><a href="2606.07131.html"><strong>MalSkillBench: A Runtime-Verified Benchmark of Malicious Agent Skills</strong></a> <span>2026-06-05</span></li>
+          <li><a href="2605.22643.html"><strong>Boiling the Frog: A Multi-Turn Benchmark for Agentic Safety</strong></a> <span>2026-05-21</span></li>
+          <li><a href="2605.14271.html"><strong>Auditing Agent Harness Safety</strong></a> <span>2026-05-14</span></li>
+          <li><a href="2605.12015.html"><strong>SkillSafetyBench: Evaluating Agent Safety under Skill-Facing Attack Surfaces</strong></a> <span>2026-05-12</span></li>
+          <li><a href="2604.15774.html"><strong>MemEvoBench: Benchmarking Safety Risks from Memory Misevolution in LLM Agents</strong></a> <span>2026-04-17</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

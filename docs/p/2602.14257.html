@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>AD-Bench: A Real-World, Trajectory-Aware Advertising Analytics Benchmark for LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: While Large Language Model (LLM) agents have made remarkable progress on complex reasoning, evaluating them in real-world…" />
+    <meta name="keywords" content="General, Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2602.14257" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.14257.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AD-Bench: A Real-World, Trajectory-Aware Advertising Analytics Benchmark for LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: While Large Language Model (LLM) agents have made remarkable progress on complex reasoning, evaluating them in real-world…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.14257.html" />
+    <meta property="article:published_time" content="2026-02-15T17:59:47Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AD-Bench: A Real-World, Trajectory-Aware Advertising Analytics Benchmark for LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: While Large Language Model (LLM) agents have made remarkable progress on complex reasoning, evaluating them in real-world…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,85 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AD-Bench: A Real-World, Trajectory-Aware Advertising Analytics Benchmark for LLM Agents",
+  "name": "AD-Bench: A Real-World, Trajectory-Aware Advertising Analytics Benchmark for LLM Agents",
+  "abstract": "While Large Language Model (LLM) agents have made remarkable progress on complex reasoning, evaluating them in real-world environments remains an open problem. Existing benchmarks are largely confined to idealized simulations and fail to capture specialized domains such as advertising and marketing analytics, where tasks require multi-round interaction with professional tools and where ground-truth answers quickly become obsolete as data and platform rules evolve. To address this, we propose AD-Bench, a benchmark built from real user marketing-analysis requests on a production advertising platform. AD-Bench introduces two key designs: (i) a dynamic ground-truth pipeline that replays expert tool-call trajectories to regenerate answers consistent with the current environment, mitigating answer obsolescence; and (ii) a trajectory-aware evaluation that jointly measures end-to-end answer correctness (Pass@k) and trajectory coverage. Requests are stratified into three difficulty levels (L1-L3) to probe multi-round, multi-tool collaboration. Experiments show that the best model, Claude-Opus-4.7, attains Pass@1 = 76.9% and Pass@3 = 80.4% with 82.7% trajectory coverage overall, yet drops sharply on L3 to Pass@1 = 61.4% and Pass@3 = 65.1%, revealing that even state-of-the-art agents have substantial gaps in complex advertising analytics.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Lingxiang Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yiding Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Tianle Xia"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenwei Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Ming Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Lan Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Siying Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Wei Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jie Jiang"
+    }
+  ],
+  "datePublished": "2026-02-15T17:59:47Z",
+  "dateModified": "2026-06-22T06:59:51Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.14257.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.14257.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2602.14257v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2602.14257"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2602.14257v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2602.14257"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +117,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AD-Bench: A Real-World, Trajectory-Aware Advertising Analytics Benchmark for LLM Agents</h1>
+        <div class="meta">
+          Lingxiang Hu, Yiding Sun, Tianle Xia, Wenwei Li, Ming Xu, Lan Xu, Siying Wang, Wei Xu, Jie Jiang
+          · 2602.14257
+          · <time datetime="2026-02-15">2026-02-15</time>
+          · General · 3 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>While Large Language Model (LLM) agents have made remarkable progress on complex reasoning, evaluating them in real-world environments remains an open problem. Existing benchmarks are largely confined to idealized simulations and fail to capture specialized domains such as advertising and marketing analytics, where tasks require multi-round interaction with professional tools and where ground-truth answers quickly become obsolete as data and platform rules evolve. To address this, we propose AD-Bench, a benchmark built from real user marketing-analysis requests on a production advertising platform. AD-Bench introduces two key designs: (i) a dynamic ground-truth pipeline that replays expert tool-call trajectories to regenerate answers consistent with the current environment, mitigating answer obsolescence; and (ii) a trajectory-aware evaluation that jointly measures end-to-end answer correctness (Pass@k) and trajectory coverage. Requests are stratified into three difficulty levels (L1-L3) to probe multi-round, multi-tool collaboration. Experiments show that the best model, Claude-Opus-4.7, attains Pass@1 = 76.9% and Pass@3 = 80.4% with 82.7% trajectory coverage overall, yet drops sharply on L3 to Pass@1 = 61.4% and Pass@3 = 65.1%, revealing that even state-of-the-art agents have substantial gaps in complex advertising analytics.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2602.14257v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2602.14257v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2602.14257" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2602.18008.html"><strong>Are LLMs Ready for Neural-integrated Mechanistic Modeling? A Benchmark and Agentic Framework</strong></a> <span>2026-02-20</span></li>
+          <li><a href="2602.16953.html"><strong>LLM4Cov: Execution-Aware Agentic Learning for High-coverage Testbench Generation</strong></a> <span>2026-02-18</span></li>
+          <li><a href="2602.16313.html"><strong>MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks</strong></a> <span>2026-02-18</span></li>
+          <li><a href="2602.15197.html"><strong>OpaqueToolsBench: Learning Nuances of Tool Behavior Through Interaction</strong></a> <span>2026-02-16</span></li>
+          <li><a href="2602.13372.html"><strong>MoralityGym: A Benchmark for Evaluating Hierarchical Moral Alignment in Sequential Decision-Making Agents</strong></a> <span>2026-02-13</span></li>
+          <li><a href="2602.12670.html"><strong>SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks</strong></a> <span>2026-02-13</span></li>
+          <li><a href="2602.12631.html"><strong>AI Agents for Inventory Control: Human-LLM-OR Complementarity</strong></a> <span>2026-02-13</span></li>
+          <li><a href="2602.12315.html"><strong>AgenticShop: Benchmarking Agentic Product Curation for Personalized Web Shopping</strong></a> <span>2026-02-12</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

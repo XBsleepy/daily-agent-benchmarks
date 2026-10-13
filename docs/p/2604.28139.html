@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLM agents are expected to complete end-to-end units of work across software tools, business services, and local workspaces. Yet many…" />
+    <meta name="keywords" content="General, Tool use, agent benchmark, LLM agent, arXiv, 2604.28139" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.28139.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLM agents are expected to complete end-to-end units of work across software tools, business services, and local workspaces. Yet many…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.28139.html" />
+    <meta property="article:published_time" content="2026-04-30T17:23:19Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLM agents are expected to complete end-to-end units of work across software tools, business services, and local workspaces. Yet many…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,92 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows",
+  "name": "Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows",
+  "abstract": "LLM agents are expected to complete end-to-end units of work across software tools, business services, and local workspaces. Yet many agent benchmarks freeze a curated task set at release time and grade mainly the final response, making it difficult to evaluate agents against evolving workflow demand or verify whether a task was executed. We introduce Claw-Eval-Live, a live benchmark for workflow agents that separates a refreshable signal layer, updated across releases from public workflow-demand signals, from a reproducible, time-stamped release snapshot. Each release is constructed from public workflow-demand signals, with ClawHub Top-500 skills used in the current release, and materialized as controlled tasks with fixed fixtures, services, workspaces, and graders. For grading, Claw-Eval-Live records execution traces, audit logs, service state, and post-run workspace artifacts, using deterministic checks when evidence is sufficient and structured LLM judging only for semantic dimensions. The release contains 105 tasks spanning controlled business services and local workspace repair, and evaluates 13 frontier models under a shared public pass rule. Experiments reveal that reliable workflow automation remains far from solved: the leading model passes only 66.7% of tasks and no model reaches 70%. Failures are structured by task family and execution surface, with HR, management, and multi-system business workflows as persistent bottlenecks and local workspace repair comparatively easier but unsaturated. Leaderboard rank alone is insufficient because models with similar pass rates can diverge in overall completion, and task-level discrimination concentrates in a middle band of tasks. Claw-Eval-Live suggests that workflow-agent evaluation should be grounded twice, in fresh external demand and in verifiable agent action.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Chenxin Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhengyang Tang"
+    },
+    {
+      "@type": "Person",
+      "name": "Mingxin Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yunlong Lin"
+    },
+    {
+      "@type": "Person",
+      "name": "Shijue Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Shengyuan Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Bowen Ye"
+    },
+    {
+      "@type": "Person",
+      "name": "Rang Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Lei Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Benyou Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yixuan Yuan"
+    }
+  ],
+  "datePublished": "2026-04-30T17:23:19Z",
+  "dateModified": "2026-05-01T09:39:37Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.28139.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.28139.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.28139v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2604.28139"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2604.28139v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2604.28139"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +124,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows</h1>
+        <div class="meta">
+          Chenxin Li, Zhengyang Tang, Mingxin Huang, Yunlong Lin, Shijue Huang, Shengyuan Liu, Bowen Ye, Rang Li, Lei Li, Benyou Wang, Yixuan Yuan
+          · 2604.28139
+          · <time datetime="2026-04-30">2026-04-30</time>
+          · General · 12 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLM agents are expected to complete end-to-end units of work across software tools, business services, and local workspaces. Yet many agent benchmarks freeze a curated task set at release time and grade mainly the final response, making it difficult to evaluate agents against evolving workflow demand or verify whether a task was executed. We introduce Claw-Eval-Live, a live benchmark for workflow agents that separates a refreshable signal layer, updated across releases from public workflow-demand signals, from a reproducible, time-stamped release snapshot. Each release is constructed from public workflow-demand signals, with ClawHub Top-500 skills used in the current release, and materialized as controlled tasks with fixed fixtures, services, workspaces, and graders. For grading, Claw-Eval-Live records execution traces, audit logs, service state, and post-run workspace artifacts, using deterministic checks when evidence is sufficient and structured LLM judging only for semantic dimensions. The release contains 105 tasks spanning controlled business services and local workspace repair, and evaluates 13 frontier models under a shared public pass rule. Experiments reveal that reliable workflow automation remains far from solved: the leading model passes only 66.7% of tasks and no model reaches 70%. Failures are structured by task family and execution surface, with HR, management, and multi-system business workflows as persistent bottlenecks and local workspace repair comparatively easier but unsaturated. Leaderboard rank alone is insufficient because models with similar pass rates can diverge in overall completion, and task-level discrimination concentrates in a middle band of tasks. Claw-Eval-Live suggests that workflow-agent evaluation should be grounded twice, in fresh external demand and in verifiable agent action.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2604.28139v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2604.28139v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2604.28139" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.02240.html"><strong>PhysicianBench: Evaluating LLM Agents in Real-World EHR Environments</strong></a> <span>2026-05-04</span></li>
+          <li><a href="2605.01847.html"><strong>NeuroState-Bench: A Human-Calibrated Benchmark for Commitment Integrity in LLM Agent Profiles</strong></a> <span>2026-05-03</span></li>
+          <li><a href="2605.01394.html"><strong>LiveFMBench: Unveiling the Power and Limits of Agentic Workflows in Specification Generation</strong></a> <span>2026-05-02</span></li>
+          <li><a href="2605.00420.html"><strong>Foresight Arena: An On-Chain Benchmark for Evaluating AI Forecasting Agents</strong></a> <span>2026-05-01</span></li>
+          <li><a href="2604.28093.html"><strong>What Makes a Good Terminal-Agent Benchmark Task: A Guideline for Adversarial, Difficult, and Legible Evaluation Design</strong></a> <span>2026-04-30</span></li>
+          <li><a href="2604.26904.html"><strong>ClawGym: A Scalable Framework for Building Effective Claw Agents</strong></a> <span>2026-04-29</span></li>
+          <li><a href="2604.26235.html"><strong>LATTICE: Evaluating Decision Support Utility of Crypto Agents</strong></a> <span>2026-04-29</span></li>
+          <li><a href="2604.24955.html"><strong>BenchGuard: Who Guards the Benchmarks? Automated Auditing of LLM Agent Benchmarks</strong></a> <span>2026-04-27</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

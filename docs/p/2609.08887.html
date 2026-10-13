@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Q2D-Web: A Large-Scale Benchmark for Retrieval in Agentic RAG Systems | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Evaluating first-stage retrievers in large-scale production RAG requires a benchmark that pairs a large-scale corpus with a large set…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2609.08887" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.08887.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Q2D-Web: A Large-Scale Benchmark for Retrieval in Agentic RAG Systems" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Evaluating first-stage retrievers in large-scale production RAG requires a benchmark that pairs a large-scale corpus with a large set…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.08887.html" />
+    <meta property="article:published_time" content="2026-09-08T15:26:05Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Q2D-Web: A Large-Scale Benchmark for Retrieval in Agentic RAG Systems" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Evaluating first-stage retrievers in large-scale production RAG requires a benchmark that pairs a large-scale corpus with a large set…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,75 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Q2D-Web: A Large-Scale Benchmark for Retrieval in Agentic RAG Systems",
+  "name": "Q2D-Web: A Large-Scale Benchmark for Retrieval in Agentic RAG Systems",
+  "abstract": "Evaluating first-stage retrievers in large-scale production RAG requires a benchmark that pairs a large-scale corpus with a large set of agent-reformulated search queries based on real user queries and their conversation threads, and that labels many relevant documents per query. No existing public benchmark evaluates this setting: large-scale collections typically provide only a small number of evaluation queries, whereas benchmarks with many queries generally contain only millions of documents. Moreover, most benchmarks assess human-written queries, while the first-stage retrievers in agentic RAG pipelines serve machine-written reformulations whose distribution differs from human search behavior. To overcome these evaluation gaps, we introduce Q2D-Web (Query2Doc-Web), a large-scale agentic retrieval benchmark consisting of a 190M-document web corpus and 70k agentic search queries in ten languages, reformulated from real-world user queries in production systems. Q2D-Web provides three sets of fixed relevance judgments: agent citations, production rankings, and a combined set that unions both signals and adds LLM-based judgments of unlabeled pooled documents to reduce false negatives. We benchmark 13 retrievers including lexical, dense, and late-interaction models and find that their relative ordering is largely insensitive to the choice of judgment set, while diverging substantially across topical domains, query languages, and query types. To enable fast evaluation, we also study subcorpus sampling as an approximation to full-corpus evaluations. Retaining a third of the corpus, selected by reciprocal rank fusion over pooled retriever runs, preserves the full-corpus model ranking under the combined judgments while raising absolute Recall@1000 only by 3 to 7 points. The public leaderboard is accessible under: https://huggingface.co/spaces/perplexity-ai/q2d-web-leaderboard",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Maximilian Schall"
+    },
+    {
+      "@type": "Person",
+      "name": "Sedigheh Eslami"
+    },
+    {
+      "@type": "Person",
+      "name": "Markus Krimmel"
+    },
+    {
+      "@type": "Person",
+      "name": "Antoine Chaffin"
+    },
+    {
+      "@type": "Person",
+      "name": "Louis Milliken"
+    },
+    {
+      "@type": "Person",
+      "name": "Bo Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Denis Bykov"
+    }
+  ],
+  "datePublished": "2026-09-08T15:26:05Z",
+  "dateModified": "2026-09-08T15:26:05Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.08887.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.08887.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.08887v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.08887"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.08887v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.08887"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +107,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Q2D-Web: A Large-Scale Benchmark for Retrieval in Agentic RAG Systems</h1>
+        <div class="meta">
+          Maximilian Schall, Sedigheh Eslami, Markus Krimmel, Antoine Chaffin, Louis Milliken, Bo Wang, Denis Bykov
+          · 2609.08887
+          · <time datetime="2026-09-08">2026-09-08</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Evaluating first-stage retrievers in large-scale production RAG requires a benchmark that pairs a large-scale corpus with a large set of agent-reformulated search queries based on real user queries and their conversation threads, and that labels many relevant documents per query. No existing public benchmark evaluates this setting: large-scale collections typically provide only a small number of evaluation queries, whereas benchmarks with many queries generally contain only millions of documents. Moreover, most benchmarks assess human-written queries, while the first-stage retrievers in agentic RAG pipelines serve machine-written reformulations whose distribution differs from human search behavior. To overcome these evaluation gaps, we introduce Q2D-Web (Query2Doc-Web), a large-scale agentic retrieval benchmark consisting of a 190M-document web corpus and 70k agentic search queries in ten languages, reformulated from real-world user queries in production systems. Q2D-Web provides three sets of fixed relevance judgments: agent citations, production rankings, and a combined set that unions both signals and adds LLM-based judgments of unlabeled pooled documents to reduce false negatives. We benchmark 13 retrievers including lexical, dense, and late-interaction models and find that their relative ordering is largely insensitive to the choice of judgment set, while diverging substantially across topical domains, query languages, and query types. To enable fast evaluation, we also study subcorpus sampling as an approximation to full-corpus evaluations. Retaining a third of the corpus, selected by reciprocal rank fusion over pooled retriever runs, preserves the full-corpus model ranking under the combined judgments while raising absolute Recall@1000 only by 3 to 7 points. The public leaderboard is accessible under: https://huggingface.co/spaces/perplexity-ai/q2d-web-leaderboard</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.08887v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.08887v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.08887" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.13637.html"><strong>Identity Is More Than Recall: A Benchmark for Persistent Identity in Deployed AI Agents</strong></a> <span>2026-09-15</span></li>
+          <li><a href="2609.13076.html"><strong>MP-Bench: Evaluating Voice Agents as a Multiparty Conversation Participant</strong></a> <span>2026-09-11</span></li>
+          <li><a href="2609.12404.html"><strong>VRL-Bench: Benchmarking agents on computer control tasks under finite trial budgets</strong></a> <span>2026-09-11</span></li>
+          <li><a href="2609.11515.html"><strong>ChurnBench: A Drift-Aware Benchmark Demonstrating That Refresh Scheduling, Not Cache Age, Governs Staleness in Agentic AI</strong></a> <span>2026-09-10</span></li>
+          <li><a href="2609.08040.html"><strong>VEX-Bench: Benchmarking LLM Agents for Assessing Exploitability of Software Supply Chain Vulnerabilities</strong></a> <span>2026-09-07</span></li>
+          <li><a href="2609.06027.html"><strong>Evaluating Deep-Search Agents under Hierarchical Web Evidence Poisoning</strong></a> <span>2026-09-05</span></li>
+          <li><a href="2609.04706.html"><strong>FinalityBench: An Effect-Level Benchmark for Agent Decisions Under Delayed and Conflicting Financial Finality</strong></a> <span>2026-09-04</span></li>
+          <li><a href="2609.04641.html"><strong>A Cost-Aware Agentic Architecture for NL-to-SQL over Nested Enterprise Schemas, with a New Benchmark</strong></a> <span>2026-09-04</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

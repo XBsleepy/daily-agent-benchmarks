@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ISO-Bench: Can Coding Agents Optimize Real-World Inference Workloads? | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: We introduce ISO-Bench, a benchmark for coding agents to test their capabilities on real-world inference optimization tasks. These…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2602.19594" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.19594.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ISO-Bench: Can Coding Agents Optimize Real-World Inference Workloads?" />
+    <meta property="og:description" content="Daily Agent Benchmarks: We introduce ISO-Bench, a benchmark for coding agents to test their capabilities on real-world inference optimization tasks. These…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.19594.html" />
+    <meta property="article:published_time" content="2026-02-23T08:37:53Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ISO-Bench: Can Coding Agents Optimize Real-World Inference Workloads?" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: We introduce ISO-Bench, a benchmark for coding agents to test their capabilities on real-world inference optimization tasks. These…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,64 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ISO-Bench: Can Coding Agents Optimize Real-World Inference Workloads?",
+  "name": "ISO-Bench: Can Coding Agents Optimize Real-World Inference Workloads?",
+  "abstract": "We introduce ISO-Bench, a benchmark for coding agents to test their capabilities on real-world inference optimization tasks. These tasks were taken from vLLM and SGLang, two of the most popular LLM serving frameworks. Each task provides an agent with a codebase and bottleneck description, whereby the agent must produce an optimization patch evaluated against expert human solutions. We curated 54 tasks from merged pull requests with measurable performance improvements. While existing benchmarks heavily use runtime-based metrics, such approaches can be gamed to pass tests without capturing the actual intent of the code changes. Therefore, we combine both hard (execution-based) and soft (LLM-based) metrics to show that both are necessary for complete evaluation. While evaluating both closed and open-source coding agents, we find no single agent dominates across codebases. Surprisingly, agents often identify correct bottlenecks but fail to execute working solutions. We also show that agents with identical underlying models differ substantially, suggesting scaffolding is as important as the model.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Ayush Nangia"
+    },
+    {
+      "@type": "Person",
+      "name": "Shikhar Mishra"
+    },
+    {
+      "@type": "Person",
+      "name": "Aman Gokrani"
+    },
+    {
+      "@type": "Person",
+      "name": "Paras Chopra"
+    }
+  ],
+  "datePublished": "2026-02-23T08:37:53Z",
+  "dateModified": "2026-02-23T08:37:53Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.19594.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.19594.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2602.19594v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2602.19594"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2602.19594v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2602.19594"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +96,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ISO-Bench: Can Coding Agents Optimize Real-World Inference Workloads?</h1>
+        <div class="meta">
+          Ayush Nangia, Shikhar Mishra, Aman Gokrani, Paras Chopra
+          · 2602.19594
+          · <time datetime="2026-02-23">2026-02-23</time>
+          · Coding / SWE · 3 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>We introduce ISO-Bench, a benchmark for coding agents to test their capabilities on real-world inference optimization tasks. These tasks were taken from vLLM and SGLang, two of the most popular LLM serving frameworks. Each task provides an agent with a codebase and bottleneck description, whereby the agent must produce an optimization patch evaluated against expert human solutions. We curated 54 tasks from merged pull requests with measurable performance improvements. While existing benchmarks heavily use runtime-based metrics, such approaches can be gamed to pass tests without capturing the actual intent of the code changes. Therefore, we combine both hard (execution-based) and soft (LLM-based) metrics to show that both are necessary for complete evaluation. While evaluating both closed and open-source coding agents, we find no single agent dominates across codebases. Surprisingly, agents often identify correct bottlenecks but fail to execute working solutions. We also show that agents with identical underlying models differ substantially, suggesting scaffolding is as important as the model.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2602.19594v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2602.19594v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2602.19594" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2603.02297.html"><strong>ZeroDayBench: Evaluating LLM Agents on Unseen Zero-Day Vulnerabilities for Cyberdefense</strong></a> <span>2026-03-02</span></li>
+          <li><a href="2603.02176.html"><strong>Organizing, Orchestrating, and Benchmarking Agent Skills at Ecosystem Scale</strong></a> <span>2026-03-02</span></li>
+          <li><a href="2603.00601.html"><strong>Theory of Code Space: Do Code Agents Understand Software Architecture?</strong></a> <span>2026-02-28</span></li>
+          <li><a href="2603.00187.html"><strong>ClarEval: A Benchmark for Evaluating Clarification Skills of Code Agents under Ambiguous Instructions</strong></a> <span>2026-02-27</span></li>
+          <li><a href="2602.15112.html"><strong>ResearchGym: Evaluating Language Model Agents on Real-World AI Research</strong></a> <span>2026-02-16</span></li>
+          <li><a href="2602.14337.html"><strong>LongCLI-Bench: A Preliminary Benchmark and Study for Long-horizon Agentic Programming in Command-Line Interfaces</strong></a> <span>2026-02-15</span></li>
+          <li><a href="2602.10975.html"><strong>FeatureBench: Benchmarking Agentic Coding for Complex Feature Development</strong></a> <span>2026-02-11</span></li>
+          <li><a href="2603.08721.html"><strong>KernelCraft: Benchmarking for Agentic Close-to-Metal Kernel Generation on Emerging Hardware</strong></a> <span>2026-02-10</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

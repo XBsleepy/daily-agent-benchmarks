@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Open-Endedness Bench: Measuring Epistemic Process from Agent Records | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Agents are increasingly given open-ended research tasks: discovering an empirical law from self-designed experiments, improving a…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2610.02588" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.02588.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Open-Endedness Bench: Measuring Epistemic Process from Agent Records" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Agents are increasingly given open-ended research tasks: discovering an empirical law from self-designed experiments, improving a…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.02588.html" />
+    <meta property="article:published_time" content="2026-10-01T23:34:37Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Open-Endedness Bench: Measuring Epistemic Process from Agent Records" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Agents are increasingly given open-ended research tasks: discovering an empirical law from self-designed experiments, improving a…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,71 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Open-Endedness Bench: Measuring Epistemic Process from Agent Records",
+  "name": "Open-Endedness Bench: Measuring Epistemic Process from Agent Records",
+  "abstract": "Agents are increasingly given open-ended research tasks: discovering an empirical law from self-designed experiments, improving a heuristic whose optimum nobody knows, or beating a standing record. Their execution logs record every step of this research, yet the runs are still judged by their outcome score. That score alone does not establish whether an agent's claims follow from executed experiments, and a reference answer may be unavailable. We evaluate the agent's epistemic process: how it forms hypotheses, tests them, and revises them in response to evidence. We introduce OEB (Open-Endedness Bench), a benchmark-agnostic methodology that reads only the agent's execution record and never a reference answer or an outcome score. OEB compiles the record into a unified epistemic event graph whose edges connect the propositions the agent states to the executed actions that test them; each node carries an exact excerpt that code verifies against the record. One principle governs scoring: prose can state a proposition, but only evidence returned by an executed action can support or refute it, so OEB checks what the agent writes against what it actually ran. From the graph, OEB scores four competence axes (evidence, experiment, revision, and no reward hacking), mostly as the share of opportunities for sound research that the agent took, and profiles six subjective persona traits that describe the agent's research habits. We score 119 existing runs over 12 tasks from three benchmarks: LLM post-training, chip design, and a training-speed record. Against logged results, only 16-29% of the improvements agents claim are real. On 9 of 10 tasks, the best run tries more new ideas in its second half than the worst run. The persona readings follow the model: for every trait, the model that ran explains more of its variance across runs than the task (a median of 43% against 7%).",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Chengyang Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Xianglin Ji"
+    },
+    {
+      "@type": "Person",
+      "name": "Jintao Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jicheng Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yifeng He"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiachen Liu"
+    }
+  ],
+  "datePublished": "2026-10-01T23:34:37Z",
+  "dateModified": "2026-10-01T23:34:37Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.02588.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.02588.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.02588v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.02588"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.02588v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2610.02588"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +103,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Open-Endedness Bench: Measuring Epistemic Process from Agent Records</h1>
+        <div class="meta">
+          Chengyang Shi, Xianglin Ji, Jintao Huang, Jicheng Wang, Yifeng He, Jiachen Liu
+          · 2610.02588
+          · <time datetime="2026-10-01">2026-10-01</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Agents are increasingly given open-ended research tasks: discovering an empirical law from self-designed experiments, improving a heuristic whose optimum nobody knows, or beating a standing record. Their execution logs record every step of this research, yet the runs are still judged by their outcome score. That score alone does not establish whether an agent&#x27;s claims follow from executed experiments, and a reference answer may be unavailable. We evaluate the agent&#x27;s epistemic process: how it forms hypotheses, tests them, and revises them in response to evidence. We introduce OEB (Open-Endedness Bench), a benchmark-agnostic methodology that reads only the agent&#x27;s execution record and never a reference answer or an outcome score. OEB compiles the record into a unified epistemic event graph whose edges connect the propositions the agent states to the executed actions that test them; each node carries an exact excerpt that code verifies against the record. One principle governs scoring: prose can state a proposition, but only evidence returned by an executed action can support or refute it, so OEB checks what the agent writes against what it actually ran. From the graph, OEB scores four competence axes (evidence, experiment, revision, and no reward hacking), mostly as the share of opportunities for sound research that the agent took, and profiles six subjective persona traits that describe the agent&#x27;s research habits. We score 119 existing runs over 12 tasks from three benchmarks: LLM post-training, chip design, and a training-speed record. Against logged results, only 16-29% of the improvements agents claim are real. On 9 of 10 tasks, the best run tries more new ideas in its second half than the worst run. The persona readings follow the model: for every trait, the model that ran explains more of its variance across runs than the task (a median of 43% against 7%).</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.02588v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.02588v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.02588" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.04008.html"><strong>SkillScriptBench: Benchmarking Self-Evolution of Executable Agent Skill Packages Beyond Markdown</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.03020.html"><strong>DyadMem: A Long-Term Memory Benchmark of How Agents Work with Users</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.00954.html"><strong>Beyond Leaderboards: Tokenomics of Agentic Small Language Model Ensembles</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.00651.html"><strong>Agent Evaluation Reliability: More Tasks Won&#x27;t (Always) Fix An Agent Leaderboard</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.02425.html"><strong>Finding the Move Is Not Winning the Game: XiangqiBench for Closed-Loop Evaluation of LLM Agents</strong></a> <span>2026-10-01</span></li>
+          <li><a href="2610.02363.html"><strong>ArrivalBench: Agent-Generated Data Pipelines Are Correct Once and Wrong Under Time</strong></a> <span>2026-10-01</span></li>
+          <li><a href="2609.38974.html"><strong>RealWorldShop: Benchmarking and Improving Conversational Shopping Agents in Real-World E-commerce</strong></a> <span>2026-09-30</span></li>
+          <li><a href="2609.38460.html"><strong>NAQD Env: A benchmark for selective withdrawal in language agents</strong></a> <span>2026-09-29</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

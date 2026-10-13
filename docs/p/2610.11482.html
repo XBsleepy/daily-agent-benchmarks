@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Evaluating Local Language Model Agents for Reproducible Data Engineering: An Empirical Software Engineering Study of Mobility Workflows | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Context: Large language model (LLM) agents are increasingly used as software and data-engineering assistants, yet evidence about…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Tool use, Memory, agent benchmark, LLM agent, arXiv, 2610.11482" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.11482.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Evaluating Local Language Model Agents for Reproducible Data Engineering: An Empirical Software Engineering Study of Mobility Workflows" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Context: Large language model (LLM) agents are increasingly used as software and data-engineering assistants, yet evidence about…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.11482.html" />
+    <meta property="article:published_time" content="2026-10-08T08:26:46Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Evaluating Local Language Model Agents for Reproducible Data Engineering: An Empirical Software Engineering Study of Mobility Workflows" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Context: Large language model (LLM) agents are increasingly used as software and data-engineering assistants, yet evidence about…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,70 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Evaluating Local Language Model Agents for Reproducible Data Engineering: An Empirical Software Engineering St",
+  "name": "Evaluating Local Language Model Agents for Reproducible Data Engineering: An Empirical Software Engineering Study of Mobility Workflows",
+  "abstract": "Context: Large language model (LLM) agents are increasingly used as software and data-engineering assistants, yet evidence about locally deployable open-weight agents remains limited. Existing evaluations often emphasize textual responses or isolated code generation rather than the validity of complete engineering artifacts. Objectives: We evaluate whether local LLM agents can produce correct and reproducible data-engineering artifacts, quantify the effect of a closed-loop workspace condition, and examine trade-offs in model scale, architecture, quantization, runtime, tool use, and failure. Methods: We introduce a benchmark of fifteen mobility-workflow tasks covering data discovery, connectors, transport-feed processing, semantic enrichment, feature engineering, validation, visualization, and reporting. Deterministic checkers assess generated scripts, tables, structured files, figures, and reports. Ten local configurations are evaluated in one-shot and closed-loop conditions, with five repetitions per model, mode, and task, yielding 1,500 scored attempts on a consumer-grade GPU. Results: Among models larger than two billion parameters, the workspace condition increases pass rates by 26.7-52.0 percentage points over one-shot generation. The strongest configuration reaches 85.3% artifact-level success, and a quantized 9-billion-parameter model reaches 69.3% with an approximately 6.5 GB memory footprint. Gains are largest when intermediate artifacts expose errors the agent can inspect and repair. Conclusion: Local open-weight agents can support a meaningful subset of software-intensive data-engineering work, but reliability depends on model capability, task verifiability, and deterministic validation. The benchmark provides a reproducible method for evaluating complete agent configurations before adoption in engineering workflows.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jorge García-Carrasco"
+    },
+    {
+      "@type": "Person",
+      "name": "Javier Sanchis"
+    },
+    {
+      "@type": "Person",
+      "name": "Alejandro Reina-Reina"
+    },
+    {
+      "@type": "Person",
+      "name": "Alejandro Maté"
+    },
+    {
+      "@type": "Person",
+      "name": "Juan Trujillo"
+    }
+  ],
+  "datePublished": "2026-10-08T08:26:46Z",
+  "dateModified": "2026-10-08T08:26:46Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.11482.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.11482.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.11482v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.11482"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Tool use",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.11482v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2610.11482"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +102,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Evaluating Local Language Model Agents for Reproducible Data Engineering: An Empirical Software Engineering Study of Mobility Workflows</h1>
+        <div class="meta">
+          Jorge García-Carrasco, Javier Sanchis, Alejandro Reina-Reina, Alejandro Maté, Juan Trujillo
+          · 2610.11482
+          · <time datetime="2026-10-08">2026-10-08</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Context: Large language model (LLM) agents are increasingly used as software and data-engineering assistants, yet evidence about locally deployable open-weight agents remains limited. Existing evaluations often emphasize textual responses or isolated code generation rather than the validity of complete engineering artifacts. Objectives: We evaluate whether local LLM agents can produce correct and reproducible data-engineering artifacts, quantify the effect of a closed-loop workspace condition, and examine trade-offs in model scale, architecture, quantization, runtime, tool use, and failure. Methods: We introduce a benchmark of fifteen mobility-workflow tasks covering data discovery, connectors, transport-feed processing, semantic enrichment, feature engineering, validation, visualization, and reporting. Deterministic checkers assess generated scripts, tables, structured files, figures, and reports. Ten local configurations are evaluated in one-shot and closed-loop conditions, with five repetitions per model, mode, and task, yielding 1,500 scored attempts on a consumer-grade GPU. Results: Among models larger than two billion parameters, the workspace condition increases pass rates by 26.7-52.0 percentage points over one-shot generation. The strongest configuration reaches 85.3% artifact-level success, and a quantized 9-billion-parameter model reaches 69.3% with an approximately 6.5 GB memory footprint. Gains are largest when intermediate artifacts expose errors the agent can inspect and repair. Conclusion: Local open-weight agents can support a meaningful subset of software-intensive data-engineering work, but reliability depends on model capability, task verifiability, and deterministic validation. The benchmark provides a reproducible method for evaluating complete agent configurations before adoption in engineering workflows.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.11482v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.11482v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.11482" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.13668.html"><strong>(When) Should a Software Factory be Lights-off? Benchmarking Code Review Agents on Bug Detection</strong></a> <span>2026-10-09</span></li>
+          <li><a href="2610.13361.html"><strong>AgentSWE: Can Coding Agents Build the Agent You Actually Want?</strong></a> <span>2026-10-09</span></li>
+          <li><a href="2610.12569.html"><strong>SWE-Duel: Towards a Self-Scaling Arena for Coding Agents</strong></a> <span>2026-10-08</span></li>
+          <li><a href="2610.12452.html"><strong>BrickBench: Evaluating Agentic Brick Design</strong></a> <span>2026-10-08</span></li>
+          <li><a href="2610.11447.html"><strong>Closed-loop evaluation of LLM agents for embedded software development</strong></a> <span>2026-10-08</span></li>
+          <li><a href="2610.09633.html"><strong>Coding-Agent Benchmarks Should Match Their Users&#x27; Task Flows</strong></a> <span>2026-10-07</span></li>
+          <li><a href="2610.08720.html"><strong>WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?</strong></a> <span>2026-10-06</span></li>
+          <li><a href="2610.08662.html"><strong>ParanoiaEval: Benchmarking Unnecessary Defensive Work in Agentic Coding</strong></a> <span>2026-10-06</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

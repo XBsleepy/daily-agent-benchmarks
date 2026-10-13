@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>TimeWarp: Evaluating Web Agents by Revisiting the Past | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: The improvement of web agents on current benchmarks raises the question: Do today&#x27;s agents perform just as well when the web changes?…" />
+    <meta name="keywords" content="Web &amp; browser, Web agents, Safety, agent benchmark, LLM agent, arXiv, 2603.04949" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.04949.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="TimeWarp: Evaluating Web Agents by Revisiting the Past" />
+    <meta property="og:description" content="Daily Agent Benchmarks: The improvement of web agents on current benchmarks raises the question: Do today&#x27;s agents perform just as well when the web changes?…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.04949.html" />
+    <meta property="article:published_time" content="2026-03-05T08:43:06Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="TimeWarp: Evaluating Web Agents by Revisiting the Past" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: The improvement of web agents on current benchmarks raises the question: Do today&#x27;s agents perform just as well when the web changes?…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,57 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "TimeWarp: Evaluating Web Agents by Revisiting the Past",
+  "name": "TimeWarp: Evaluating Web Agents by Revisiting the Past",
+  "abstract": "The improvement of web agents on current benchmarks raises the question: Do today's agents perform just as well when the web changes? We introduce TimeWarp, a benchmark that emulates the evolving web using containerized environments that vary in UI, design, and layout. TimeWarp consists of three web environments, each with six UI versions spanning different eras of the internet, paired with a set of complex, realistic tasks requiring different forms of web navigation. Our experiments reveal web agents' vulnerability to changes and the limitations of behavior cloning (BC) on single-version trajectories. To address this, we propose TimeTraj, a simple yet effective algorithm that uses plan distillation to collect trajectories across multiple versions. By training agents on teacher rollouts using our BC-variant, we achieve substantial performance gains: $20.4\\%\\rightarrow37.7\\%$ for Qwen-3 4B and $0\\%\\rightarrow27.0\\%$ for Llama-3.1 8B models. We hope our work helps researchers study generalization across web designs and unlock a new paradigm for collecting plans rather than trajectories, thereby improving the robustness of web agents.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Md Farhan Ishmam"
+    },
+    {
+      "@type": "Person",
+      "name": "Kenneth Marino"
+    }
+  ],
+  "datePublished": "2026-03-05T08:43:06Z",
+  "dateModified": "2026-03-05T08:43:06Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.04949.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.04949.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2603.04949v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2603.04949"
+  },
+  "keywords": [
+    "Web & browser",
+    "Web agents",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Web & browser"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2603.04949v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2603.04949"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +89,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>TimeWarp: Evaluating Web Agents by Revisiting the Past</h1>
+        <div class="meta">
+          Md Farhan Ishmam, Kenneth Marino
+          · 2603.04949
+          · <time datetime="2026-03-05">2026-03-05</time>
+          · Web &amp; browser · 4 citations
+        </div>
+        <div class="themes"><span class="chip">Web agents</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>The improvement of web agents on current benchmarks raises the question: Do today&#x27;s agents perform just as well when the web changes? We introduce TimeWarp, a benchmark that emulates the evolving web using containerized environments that vary in UI, design, and layout. TimeWarp consists of three web environments, each with six UI versions spanning different eras of the internet, paired with a set of complex, realistic tasks requiring different forms of web navigation. Our experiments reveal web agents&#x27; vulnerability to changes and the limitations of behavior cloning (BC) on single-version trajectories. To address this, we propose TimeTraj, a simple yet effective algorithm that uses plan distillation to collect trajectories across multiple versions. By training agents on teacher rollouts using our BC-variant, we achieve substantial performance gains: $20.4\%\rightarrow37.7\%$ for Qwen-3 4B and $0\%\rightarrow27.0\%$ for Llama-3.1 8B models. We hope our work helps researchers study generalization across web designs and unlock a new paradigm for collecting plans rather than trajectories, thereby improving the robustness of web agents.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2603.04949v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2603.04949v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2603.04949" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Web &amp; browser benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.15673.html"><strong>Where Did It Go Wrong? Process-Level Evaluation of Web Agents with Semantic State Tracking</strong></a> <span>2026-04-08</span></li>
+          <li><a href="2604.00892.html"><strong>When Users Change Their Mind: Evaluating Interruptible Agents in Long-Horizon Web Navigation</strong></a> <span>2026-04-01</span></li>
+          <li><a href="2604.16385.html"><strong>StressWeb: A Diagnostic Benchmark for Web Agent Robustness under Realistic Interaction Variability</strong></a> <span>2026-03-27</span></li>
+          <li><a href="2603.22529.html"><strong>Ego2Web: A Web Agent Benchmark Grounded in Egocentric Videos</strong></a> <span>2026-03-23</span></li>
+          <li><a href="2603.00476.html"><strong>Atomicity for Agents: Exposing, Exploiting, and Mitigating TOCTOU Vulnerabilities in Browser-Use Agents</strong></a> <span>2026-02-28</span></li>
+          <li><a href="2602.20156.html"><strong>Skill-Inject: Measuring Agent Vulnerability to Skill File Attacks</strong></a> <span>2026-02-23</span></li>
+          <li><a href="2602.17003.html"><strong>Persona2Web: Benchmarking Personalized Web Agents for Contextual Reasoning with User History</strong></a> <span>2026-02-19</span></li>
+          <li><a href="2601.18113.html"><strong>MalURLBench: A Benchmark Evaluating Agents&#x27; Vulnerabilities When Processing Web URLs</strong></a> <span>2026-01-26</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

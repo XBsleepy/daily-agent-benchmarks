@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Behavioral Governance for Autonomous AI Agents: The AgentBound Framework | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Autonomous AI agents increasingly perform consequential actions on behalf of human principals, including financial transactions…" />
+    <meta name="keywords" content="Work / office, agent benchmark, LLM agent, arXiv, 2606.30970" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.30970.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Behavioral Governance for Autonomous AI Agents: The AgentBound Framework" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Autonomous AI agents increasingly perform consequential actions on behalf of human principals, including financial transactions…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.30970.html" />
+    <meta property="article:published_time" content="2026-06-29T23:12:06Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Behavioral Governance for Autonomous AI Agents: The AgentBound Framework" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Autonomous AI agents increasingly perform consequential actions on behalf of human principals, including financial transactions…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,59 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Behavioral Governance for Autonomous AI Agents: The AgentBound Framework",
+  "name": "Behavioral Governance for Autonomous AI Agents: The AgentBound Framework",
+  "abstract": "Autonomous AI agents increasingly perform consequential actions on behalf of human principals, including financial transactions, external communications, and enterprise workflows. Existing agent infrastructure relies on identity federation and delegated authorization to authenticate workloads and control resource access, but it cannot determine whether an authorized action should be executed under the current behavioral and operational context. We present AgentBound, a runtime governance framework that provides verifiable behavioral oversight for autonomous AI agents. AgentBound evaluates each proposed action using three independent authorities: delegated authorization, owner-signed behavioral constitutions, and site action contracts. Their judgments are conservatively composed through a formal decision model to determine whether an action should be permitted, reviewed, or denied before execution. To provide accountability, AgentBound generates cryptographically verifiable governance receipts that bind every action to the exact delegation, policy, and semantic artifacts governing the decision, enabling independent replay verification and policy provenance. The framework also introduces standing delegation for long-running agents, allowing periodic workloads to operate under continuously refreshed governance policies while preserving revocability and bounded authority. We present the formal foundation, system architecture, governance receipt protocol, and AgentBound-Bench, a benchmark framework for evaluating governance correctness, authority composition, and accountability. Rather than replacing model alignment, AgentBound complements it by providing a deterministic governance layer between authorization and execution, transforming governance from a process that must be trusted into one that can be independently verified.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Anuj Kaul"
+    },
+    {
+      "@type": "Person",
+      "name": "Qianlong Lan"
+    },
+    {
+      "@type": "Person",
+      "name": "Pranay Gupta"
+    }
+  ],
+  "datePublished": "2026-06-29T23:12:06Z",
+  "dateModified": "2026-07-01T18:23:51Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.30970.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.30970.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.30970v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.30970"
+  },
+  "keywords": [
+    "Work / office",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Work / office"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.30970v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.30970"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +91,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Behavioral Governance for Autonomous AI Agents: The AgentBound Framework</h1>
+        <div class="meta">
+          Anuj Kaul, Qianlong Lan, Pranay Gupta
+          · 2606.30970
+          · <time datetime="2026-06-29">2026-06-29</time>
+          · Work / office · 1 citations
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Autonomous AI agents increasingly perform consequential actions on behalf of human principals, including financial transactions, external communications, and enterprise workflows. Existing agent infrastructure relies on identity federation and delegated authorization to authenticate workloads and control resource access, but it cannot determine whether an authorized action should be executed under the current behavioral and operational context. We present AgentBound, a runtime governance framework that provides verifiable behavioral oversight for autonomous AI agents. AgentBound evaluates each proposed action using three independent authorities: delegated authorization, owner-signed behavioral constitutions, and site action contracts. Their judgments are conservatively composed through a formal decision model to determine whether an action should be permitted, reviewed, or denied before execution. To provide accountability, AgentBound generates cryptographically verifiable governance receipts that bind every action to the exact delegation, policy, and semantic artifacts governing the decision, enabling independent replay verification and policy provenance. The framework also introduces standing delegation for long-running agents, allowing periodic workloads to operate under continuously refreshed governance policies while preserving revocability and bounded authority. We present the formal foundation, system architecture, governance receipt protocol, and AgentBound-Bench, a benchmark framework for evaluating governance correctness, authority composition, and accountability. Rather than replacing model alignment, AgentBound complements it by providing a deterministic governance layer between authorization and execution, transforming governance from a process that must be trusted into one that can be independently verified.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.30970v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.30970v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.30970" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Work / office benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.06008.html"><strong>PolyWorkBench: Benchmarking LLM Agents for Cross-Lingual Long-Horizon Workflows</strong></a> <span>2026-07-07</span></li>
+          <li><a href="2607.05202.html"><strong>EvoAgentBench: Benchmarking Agent Self-Evolution via Ability Transfer</strong></a> <span>2026-07-06</span></li>
+          <li><a href="2607.20510.html"><strong>Telco-GAIA: Bilingual Benchmark for Agents in Telecom Domain</strong></a> <span>2026-07-04</span></li>
+          <li><a href="2607.01647.html"><strong>AgenticDataBench: A Comprehensive Benchmark for Data Agents</strong></a> <span>2026-07-02</span></li>
+          <li><a href="2606.29537.html"><strong>OSWorld 2.0: Benchmarking Computer Use Agents on Long-Horizon Real-World Tasks</strong></a> <span>2026-06-28</span></li>
+          <li><a href="2606.24526.html"><strong>AGORA: An Archive-Grounded Benchmark for Agentic Workplace Document Reasoning</strong></a> <span>2026-06-23</span></li>
+          <li><a href="2606.23654.html"><strong>EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions</strong></a> <span>2026-06-22</span></li>
+          <li><a href="2606.23127.html"><strong>Managing Procedural Memory in LLM Agents: Control, Adaptation, and Evaluation</strong></a> <span>2026-06-22</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

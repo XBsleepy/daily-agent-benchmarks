@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ClawGym: A Scalable Framework for Building Effective Claw Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Claw-style environments support multi-step workflows over local files, tools, and persistent workspace states. However, scalable…" />
+    <meta name="keywords" content="General, Tool use, agent benchmark, LLM agent, arXiv, 2604.26904" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.26904.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ClawGym: A Scalable Framework for Building Effective Claw Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Claw-style environments support multi-step workflows over local files, tools, and persistent workspace states. However, scalable…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.26904.html" />
+    <meta property="article:published_time" content="2026-04-29T17:12:22Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ClawGym: A Scalable Framework for Building Effective Claw Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Claw-style environments support multi-step workflows over local files, tools, and persistent workspace states. However, scalable…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,104 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ClawGym: A Scalable Framework for Building Effective Claw Agents",
+  "name": "ClawGym: A Scalable Framework for Building Effective Claw Agents",
+  "abstract": "Claw-style environments support multi-step workflows over local files, tools, and persistent workspace states. However, scalable development around these environments remains constrained by the absence of a systematic framework, especially one for synthesizing verifiable training data and integrating it with agent training and diagnostic evaluation. To address this challenge, we present ClawGym, a scalable framework that supports the full lifecycle of Claw-style personal agent development. Concretely, we construct ClawGym-SynData, a diverse dataset of 13.5K filtered tasks synthesized from persona-driven intents and skill-grounded operations, paired with realistic mock workspaces and hybrid verification mechanisms. We then train a family of capable Claw-style models, termed ClawGym-Agents, through supervised fine-tuning on black-box rollout trajectories, and further explore reinforcement learning via a lightweight pipeline that parallelizes rollouts across per-task sandboxes. To support reliable evaluation, we further construct ClawGym-Bench, a benchmark of 200 instances calibrated through automated filtering and human-LLM review. Relevant resources have been released at https://github.com/ClawGym.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Fei Bai"
+    },
+    {
+      "@type": "Person",
+      "name": "Huatong Song"
+    },
+    {
+      "@type": "Person",
+      "name": "Shuang Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Daixuan Cheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Yike Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chuan Hao"
+    },
+    {
+      "@type": "Person",
+      "name": "Renyuan Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Feng Chang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuan Wei"
+    },
+    {
+      "@type": "Person",
+      "name": "Ran Tao"
+    },
+    {
+      "@type": "Person",
+      "name": "Bryan Dai"
+    },
+    {
+      "@type": "Person",
+      "name": "Jian Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Wayne Xin Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Ji-Rong Wen"
+    }
+  ],
+  "datePublished": "2026-04-29T17:12:22Z",
+  "dateModified": "2026-05-16T05:33:51Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.26904.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.26904.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.26904v3"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2604.26904"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2604.26904v3"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2604.26904"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +136,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ClawGym: A Scalable Framework for Building Effective Claw Agents</h1>
+        <div class="meta">
+          Fei Bai, Huatong Song, Shuang Sun, Daixuan Cheng, Yike Yang, Chuan Hao, Renyuan Li, Feng Chang, Yuan Wei, Ran Tao, Bryan Dai, Jian Yang, Wayne Xin Zhao, Ji-Rong Wen
+          · 2604.26904
+          · <time datetime="2026-04-29">2026-04-29</time>
+          · General · 5 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Claw-style environments support multi-step workflows over local files, tools, and persistent workspace states. However, scalable development around these environments remains constrained by the absence of a systematic framework, especially one for synthesizing verifiable training data and integrating it with agent training and diagnostic evaluation. To address this challenge, we present ClawGym, a scalable framework that supports the full lifecycle of Claw-style personal agent development. Concretely, we construct ClawGym-SynData, a diverse dataset of 13.5K filtered tasks synthesized from persona-driven intents and skill-grounded operations, paired with realistic mock workspaces and hybrid verification mechanisms. We then train a family of capable Claw-style models, termed ClawGym-Agents, through supervised fine-tuning on black-box rollout trajectories, and further explore reinforcement learning via a lightweight pipeline that parallelizes rollouts across per-task sandboxes. To support reliable evaluation, we further construct ClawGym-Bench, a benchmark of 200 instances calibrated through automated filtering and human-LLM review. Relevant resources have been released at https://github.com/ClawGym.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2604.26904v3" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2604.26904v3" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2604.26904" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.01394.html"><strong>LiveFMBench: Unveiling the Power and Limits of Agentic Workflows in Specification Generation</strong></a> <span>2026-05-02</span></li>
+          <li><a href="2605.00420.html"><strong>Foresight Arena: An On-Chain Benchmark for Evaluating AI Forecasting Agents</strong></a> <span>2026-05-01</span></li>
+          <li><a href="2604.28139.html"><strong>Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows</strong></a> <span>2026-04-30</span></li>
+          <li><a href="2604.28093.html"><strong>What Makes a Good Terminal-Agent Benchmark Task: A Guideline for Adversarial, Difficult, and Legible Evaluation Design</strong></a> <span>2026-04-30</span></li>
+          <li><a href="2604.26235.html"><strong>LATTICE: Evaluating Decision Support Utility of Crypto Agents</strong></a> <span>2026-04-29</span></li>
+          <li><a href="2604.24955.html"><strong>BenchGuard: Who Guards the Benchmarks? Automated Auditing of LLM Agent Benchmarks</strong></a> <span>2026-04-27</span></li>
+          <li><a href="2604.24929.html"><strong>GAIA-v2-LILT: Multilingual Adaptation of Agent Benchmark beyond Translation</strong></a> <span>2026-04-27</span></li>
+          <li><a href="2604.22436.html"><strong>AgentSearchBench: A Benchmark for AI Agent Search in the Wild</strong></a> <span>2026-04-24</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MemSyco-Bench: Benchmarking Sycophancy in Agent Memory | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Memory has emerged as a cornerstone of modern LLM-based agents, supporting their evolution from single-turn assistants to long-term…" />
+    <meta name="keywords" content="General, Safety, Memory, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2607.01071" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.01071.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MemSyco-Bench: Benchmarking Sycophancy in Agent Memory" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Memory has emerged as a cornerstone of modern LLM-based agents, supporting their evolution from single-turn assistants to long-term…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.01071.html" />
+    <meta property="article:published_time" content="2026-07-01T15:30:33Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MemSyco-Bench: Benchmarking Sycophancy in Agent Memory" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Memory has emerged as a cornerstone of modern LLM-based agents, supporting their evolution from single-turn assistants to long-term…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,82 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MemSyco-Bench: Benchmarking Sycophancy in Agent Memory",
+  "name": "MemSyco-Bench: Benchmarking Sycophancy in Agent Memory",
+  "abstract": "Memory has emerged as a cornerstone of modern LLM-based agents, supporting their evolution from single-turn assistants to long-term collaborators. However, memory is not always beneficial: retrieved memories often induce a critical issue of sycophancy, causing agents to over-align with the user at the cost of factual accuracy or objective reasoning. Despite this emerging risk, existing memory benchmarks primarily evaluate whether memories are correctly stored, retrieved, or updated, while overlooking how retrieved memories influence downstream reasoning and decision-making. To bridge this gap, we propose MemSyco-Bench, a comprehensive benchmark for evaluating memory-induced sycophancy in agent systems. MemSyco-Bench measures when memory should influence a decision and how valid memory should be used. Specifically, it covers five tasks that assess whether agents can reject memory as factual evidence, respect its applicable scope, resolve conflicts between memory and objective evidence, track memory updates, and use valid memory for personalization. All related resources are collected for the community at https://github.com/XMUDeepLIT/MemSyco-Bench.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Zhishang Xiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zerui Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Yunbo Tang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhimin Wei"
+    },
+    {
+      "@type": "Person",
+      "name": "Ruqin Ning"
+    },
+    {
+      "@type": "Person",
+      "name": "Yujie Lin"
+    },
+    {
+      "@type": "Person",
+      "name": "Qinggang Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jinsong Su"
+    }
+  ],
+  "datePublished": "2026-07-01T15:30:33Z",
+  "dateModified": "2026-07-02T15:40:30Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.01071.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.01071.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.01071v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.01071"
+  },
+  "keywords": [
+    "General",
+    "Safety",
+    "Memory",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.01071v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.01071"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +114,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MemSyco-Bench: Benchmarking Sycophancy in Agent Memory</h1>
+        <div class="meta">
+          Zhishang Xiang, Zerui Chen, Yunbo Tang, Zhimin Wei, Ruqin Ning, Yujie Lin, Qinggang Zhang, Jinsong Su
+          · 2607.01071
+          · <time datetime="2026-07-01">2026-07-01</time>
+          · General · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Safety</span><span class="chip">Memory</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Memory has emerged as a cornerstone of modern LLM-based agents, supporting their evolution from single-turn assistants to long-term collaborators. However, memory is not always beneficial: retrieved memories often induce a critical issue of sycophancy, causing agents to over-align with the user at the cost of factual accuracy or objective reasoning. Despite this emerging risk, existing memory benchmarks primarily evaluate whether memories are correctly stored, retrieved, or updated, while overlooking how retrieved memories influence downstream reasoning and decision-making. To bridge this gap, we propose MemSyco-Bench, a comprehensive benchmark for evaluating memory-induced sycophancy in agent systems. MemSyco-Bench measures when memory should influence a decision and how valid memory should be used. Specifically, it covers five tasks that assess whether agents can reject memory as factual evidence, respect its applicable scope, resolve conflicts between memory and objective evidence, track memory updates, and use valid memory for personalization. All related resources are collected for the community at https://github.com/XMUDeepLIT/MemSyco-Bench.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.01071v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.01071v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.01071" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.02689.html"><strong>S-EMBER: A Large-Scale Benchmark for Streaming Egocentric Memory Retrieval</strong></a> <span>2026-07-02</span></li>
+          <li><a href="2607.02255.html"><strong>AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents</strong></a> <span>2026-07-02</span></li>
+          <li><a href="2607.02141.html"><strong>A$^{2}$utoLPBench: An Auto-Generated, Agent-Friendly LP Benchmark via Inverse-KKT Construction</strong></a> <span>2026-07-02</span></li>
+          <li><a href="2608.09944.html"><strong>Navigation Alone Is Not Enough: Evaluating Explanatory Assistive UI Agents</strong></a> <span>2026-07-01</span></li>
+          <li><a href="2607.00627.html"><strong>AGI Maze as a Benchmark Framework for World-Modeling Agents</strong></a> <span>2026-07-01</span></li>
+          <li><a href="2606.31522.html"><strong>FinPersona-Bench: A Benchmark for Longitudinal Psychometric Stability of Autonomous Financial Agents</strong></a> <span>2026-06-30</span></li>
+          <li><a href="2606.31179.html"><strong>HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents</strong></a> <span>2026-06-30</span></li>
+          <li><a href="2606.29955.html"><strong>SpreadsheetBench 2: Evaluating Agents on End-to-End Business Spreadsheet Workflows</strong></a> <span>2026-06-29</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

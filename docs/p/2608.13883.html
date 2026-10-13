@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Most agent-memory benchmarks test post-hoc recall, whereas MemoryArena evaluates whether memory supports interdependent…" />
+    <meta name="keywords" content="General, Memory, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2608.13883" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.13883.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Most agent-memory benchmarks test post-hoc recall, whereas MemoryArena evaluates whether memory supports interdependent…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.13883.html" />
+    <meta property="article:published_time" content="2026-08-14T02:19:26Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Most agent-memory benchmarks test post-hoc recall, whereas MemoryArena evaluates whether memory supports interdependent…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,69 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends",
+  "name": "MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends",
+  "abstract": "Most agent-memory benchmarks test post-hoc recall, whereas MemoryArena evaluates whether memory supports interdependent, multi-session task completion. We compare MemoryLake, a structured multi-track memory backend, with Mem0, text-embedding-3-small vector RAG, and a long-context control across all five MemoryArena domains. The systems share the same agent framework, requested gpt-5-mini model alias, task samples, and scoring code; the memory integration is the intentionally changed component. Because each backend bundles write, retrieval, consolidation, budgeting, and prompt-assembly choices, the study is a matched system-level comparison, not a representation-only ablation or a cost-matched experiment. On the shared evaluation sets, MemoryLake has the highest observed success rate (SR) in mathematics (9/40), physics (12/20), and progressive retrieval (4/20). Every system has zero SR in travel planning, and web shopping yields a single bundle-level success (long context, 1/150); MemoryLake ranks third on both the travel soft process score and shopping step match. Following MemoryArena's suite-level convention, a post-hoc equal-weight average over the five SRs is 20.5% for MemoryLake versus 13.6% for the best comparator. These are point estimates: sample sizes are modest, confidence intervals overlap, and we do not report paired significance tests. A separate MemoryLake-only run over all 221 progressive queries yields a failure-counted SR of 26.7% (59/221) and is not a baseline comparison. The results support a workload-dependent view of memory backends and an observed lead among the four evaluated systems on the shared sets; they do not establish benchmark-wide state of the art or a causal advantage of representation structure.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Chaoqun Zhan"
+    },
+    {
+      "@type": "Person",
+      "name": "Qiang Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Guannan Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhenqiang Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Qianjin Wang"
+    }
+  ],
+  "datePublished": "2026-08-14T02:19:26Z",
+  "dateModified": "2026-08-14T02:19:26Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.13883.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.13883.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.13883v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.13883"
+  },
+  "keywords": [
+    "General",
+    "Memory",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.13883v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.13883"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +101,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends</h1>
+        <div class="meta">
+          Chaoqun Zhan, Qiang Zhou, Guannan Li, Zhenqiang Huang, Qianjin Wang
+          · 2608.13883
+          · <time datetime="2026-08-14">2026-08-14</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Memory</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Most agent-memory benchmarks test post-hoc recall, whereas MemoryArena evaluates whether memory supports interdependent, multi-session task completion. We compare MemoryLake, a structured multi-track memory backend, with Mem0, text-embedding-3-small vector RAG, and a long-context control across all five MemoryArena domains. The systems share the same agent framework, requested gpt-5-mini model alias, task samples, and scoring code; the memory integration is the intentionally changed component. Because each backend bundles write, retrieval, consolidation, budgeting, and prompt-assembly choices, the study is a matched system-level comparison, not a representation-only ablation or a cost-matched experiment. On the shared evaluation sets, MemoryLake has the highest observed success rate (SR) in mathematics (9/40), physics (12/20), and progressive retrieval (4/20). Every system has zero SR in travel planning, and web shopping yields a single bundle-level success (long context, 1/150); MemoryLake ranks third on both the travel soft process score and shopping step match. Following MemoryArena&#x27;s suite-level convention, a post-hoc equal-weight average over the five SRs is 20.5% for MemoryLake versus 13.6% for the best comparator. These are point estimates: sample sizes are modest, confidence intervals overlap, and we do not report paired significance tests. A separate MemoryLake-only run over all 221 progressive queries yields a failure-counted SR of 26.7% (59/221) and is not a baseline comparison. The results support a workload-dependent view of memory backends and an observed lead among the four evaluated systems on the shared sets; they do not establish benchmark-wide state of the art or a causal advantage of representation structure.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.13883v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.13883v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.13883" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.15242.html"><strong>LongRCA Bench: Diagnosing Responsible Roles and Root Causes in Long-Horizon Agent Failures</strong></a> <span>2026-08-15</span></li>
+          <li><a href="2608.15127.html"><strong>From LLM Inference to Agentic Workloads: Characterization and Implications for Serving Systems</strong></a> <span>2026-08-15</span></li>
+          <li><a href="2608.14380.html"><strong>AgentRewind: Recoverable Execution for Long-Horizon LLM Agents</strong></a> <span>2026-08-14</span></li>
+          <li><a href="2608.14270.html"><strong>TimeSage-EV: A Live Benchmark for Agentic Time Series Analysis in Evolving Environments</strong></a> <span>2026-08-14</span></li>
+          <li><a href="2608.13552.html"><strong>PlayWorld: Benchmarking World Models with Agent Players over Long-Horizon Objectives</strong></a> <span>2026-08-13</span></li>
+          <li><a href="2608.12593.html"><strong>DiG-bench: Discovery in Games</strong></a> <span>2026-08-12</span></li>
+          <li><a href="2608.12002.html"><strong>CTBench: Evaluating Troubleshooting Capabilities of AI Agents in Realistic Telecom Network Operations</strong></a> <span>2026-08-12</span></li>
+          <li><a href="2608.11879.html"><strong>Total Recall at What Cost? Benchmarking the Serving Cost of Agentic Memory Systems</strong></a> <span>2026-08-12</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

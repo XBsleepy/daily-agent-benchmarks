@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Matching Matters: A Fair Quality-Efficiency Benchmark for Command-Line Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Rapid advances in large language models have improved the task-solving capabilities of command-line-interface (CLI)-based agents…" />
+    <meta name="keywords" content="General, Tool use, agent benchmark, LLM agent, arXiv, 2606.21140" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.21140.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Matching Matters: A Fair Quality-Efficiency Benchmark for Command-Line Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Rapid advances in large language models have improved the task-solving capabilities of command-line-interface (CLI)-based agents…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.21140.html" />
+    <meta property="article:published_time" content="2026-06-19T06:26:32Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Matching Matters: A Fair Quality-Efficiency Benchmark for Command-Line Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Rapid advances in large language models have improved the task-solving capabilities of command-line-interface (CLI)-based agents…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,68 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Matching Matters: A Fair Quality-Efficiency Benchmark for Command-Line Agents",
+  "name": "Matching Matters: A Fair Quality-Efficiency Benchmark for Command-Line Agents",
+  "abstract": "Rapid advances in large language models have improved the task-solving capabilities of command-line-interface (CLI)-based agents, whose CLIs determine how models invoke tools, maintain interaction history, and recover from failures. Consequently, effective matching between CLIs and LLMs has become essential. However, existing agent benchmarks largely emphasize success rate while overlooking practical objectives such as cost and efficiency, as well as the selection of LM-CLI combinations, all of which are critical in real-world deployment. We therefore introduce AgentMeter, a quality-efficiency benchmark with a new metric, the AgentMeter Score (AMS), that jointly characterizes task quality, budget sensitivity, and resource-intensive zero-reward execution, enabling a more complete assessment of deployed LM-CLI pairs. Furthermore, collected task descriptions may inadvertently favor LM-CLI pairs that are particularly compatible with their wording and structure, causing evaluation results to reflect description-specific advantages rather than general task-solving capability. We therefore propose AgentMeter-Opt, a trajectory-grounded optimization framework that constructs pair-adapted, task-preserving description variants to build a fairer evaluation set across LM-CLI pairs. Extensive experiments show that no CLI is universally optimal across language models and that task success, execution cost, and AMS identify different competitive configurations. Results on AgentMeter-Opt further reveal that task-preserving description changes affect LM-CLI pairs unevenly and can alter their relative ordering across valid description conditions. Together, AgentMeter and AgentMeter-Opt provide a practical foundation for fair and deployment-relevant evaluation of command-line agents.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Han Chi"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiaxin Qi"
+    },
+    {
+      "@type": "Person",
+      "name": "Yan Cui"
+    },
+    {
+      "@type": "Person",
+      "name": "Baisheng Lai"
+    },
+    {
+      "@type": "Person",
+      "name": "Jianqiang Huang"
+    }
+  ],
+  "datePublished": "2026-06-19T06:26:32Z",
+  "dateModified": "2026-08-06T08:32:42Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.21140.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.21140.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.21140v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.21140"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.21140v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.21140"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +100,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Matching Matters: A Fair Quality-Efficiency Benchmark for Command-Line Agents</h1>
+        <div class="meta">
+          Han Chi, Jiaxin Qi, Yan Cui, Baisheng Lai, Jianqiang Huang
+          · 2606.21140
+          · <time datetime="2026-06-19">2026-06-19</time>
+          · General · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Rapid advances in large language models have improved the task-solving capabilities of command-line-interface (CLI)-based agents, whose CLIs determine how models invoke tools, maintain interaction history, and recover from failures. Consequently, effective matching between CLIs and LLMs has become essential. However, existing agent benchmarks largely emphasize success rate while overlooking practical objectives such as cost and efficiency, as well as the selection of LM-CLI combinations, all of which are critical in real-world deployment. We therefore introduce AgentMeter, a quality-efficiency benchmark with a new metric, the AgentMeter Score (AMS), that jointly characterizes task quality, budget sensitivity, and resource-intensive zero-reward execution, enabling a more complete assessment of deployed LM-CLI pairs. Furthermore, collected task descriptions may inadvertently favor LM-CLI pairs that are particularly compatible with their wording and structure, causing evaluation results to reflect description-specific advantages rather than general task-solving capability. We therefore propose AgentMeter-Opt, a trajectory-grounded optimization framework that constructs pair-adapted, task-preserving description variants to build a fairer evaluation set across LM-CLI pairs. Extensive experiments show that no CLI is universally optimal across language models and that task success, execution cost, and AMS identify different competitive configurations. Results on AgentMeter-Opt further reveal that task-preserving description changes affect LM-CLI pairs unevenly and can alter their relative ordering across valid description conditions. Together, AgentMeter and AgentMeter-Opt provide a practical foundation for fair and deployment-relevant evaluation of command-line agents.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.21140v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.21140v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.21140" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.23301.html"><strong>EHR-Complex: Benchmarking Medical Agents for Complex Clinical Reasoning</strong></a> <span>2026-06-22</span></li>
+          <li><a href="2606.23032.html"><strong>IPO Finance Agent: Benchmark of LLM Financial Analysts Beyond Finance Agent v2, with Automated Rubric Generation, on the SpaceX (SPCX) IPO</strong></a> <span>2026-06-22</span></li>
+          <li><a href="2608.20370.html"><strong>Benchmarking LLM Serving Systems for Agentic AI Workloads with XPerf</strong></a> <span>2026-06-19</span></li>
+          <li><a href="2606.21169.html"><strong>Trip+: Benchmarking Agents in Personalized Interactive Travel Planning</strong></a> <span>2026-06-19</span></li>
+          <li><a href="2606.20950.html"><strong>Power Systems Agent Benchmark: Executable Evaluation of AI Agents in Electric Power Engineering</strong></a> <span>2026-06-18</span></li>
+          <li><a href="2606.20235.html"><strong>ScholarQuest: A Taxonomy-Guided Benchmark for Agentic Academic Paper Search in Open Literature Environments</strong></a> <span>2026-06-18</span></li>
+          <li><a href="2606.19787.html"><strong>ORAgentBench: Can LLM Agents Solve Challenging Operations Research Tasks End to End?</strong></a> <span>2026-06-18</span></li>
+          <li><a href="2606.19749.html"><strong>Benchmarking Agentic Review Systems</strong></a> <span>2026-06-18</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

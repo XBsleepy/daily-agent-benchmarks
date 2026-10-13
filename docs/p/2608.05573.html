@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>SkillTV-Bench: Benchmarking How Well Judges Perform on Skill-Augmented Agentic Execution | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLM agents increasingly execute long-horizon tasks through tool use and environment interaction, shifting evaluation from…" />
+    <meta name="keywords" content="General, Tool use, agent benchmark, LLM agent, arXiv, 2608.05573" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.05573.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SkillTV-Bench: Benchmarking How Well Judges Perform on Skill-Augmented Agentic Execution" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLM agents increasingly execute long-horizon tasks through tool use and environment interaction, shifting evaluation from…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.05573.html" />
+    <meta property="article:published_time" content="2026-08-06T03:52:37Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SkillTV-Bench: Benchmarking How Well Judges Perform on Skill-Augmented Agentic Execution" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLM agents increasingly execute long-horizon tasks through tool use and environment interaction, shifting evaluation from…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,72 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SkillTV-Bench: Benchmarking How Well Judges Perform on Skill-Augmented Agentic Execution",
+  "name": "SkillTV-Bench: Benchmarking How Well Judges Perform on Skill-Augmented Agentic Execution",
+  "abstract": "LLM agents increasingly execute long-horizon tasks through tool use and environment interaction, shifting evaluation from final-response scoring to verification of complete executions. For skill-augmented agents, verification additionally requires the procedural knowledge encoded in task-time skills, because this knowledge indicates what evidence to inspect and which failures are task-critical. However, existing judge benchmarks often expose final responses or static trajectories, and rarely combine task-time skills with directly inspectable artifacts and environments. We therefore introduce SkillTV-Bench, a 681-case benchmark of real agent trajectories from 50 tasks across eleven domains, designed to evaluate skill-aware trajectory verification for both LLM-as-a-Judge and Agent-as-a-Judge methods. Additionally, we propose SkillTV-Evolve, which externalizes verification knowledge as a reusable JudgeSkill that guides an agent judge to plan targeted inspections and issue evidence-grounded verdicts. On a disjoint development pool, an automated evolution loop further refines the JudgeSkill using misjudged cases. On SkillTV-Bench, the refined skill increases the same agent judge's accuracy by 14.8 percentage points. In offline rollout-pool selection, it increases selected-trajectory success from 22.9% with one rollout to 45.5% with ten rollouts. The code and data are available at https://github.com/HanZhi306/SkillTV-Bench",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Zhi Han"
+    },
+    {
+      "@type": "Person",
+      "name": "Chenxi Zeng"
+    },
+    {
+      "@type": "Person",
+      "name": "Liuhaichen Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zihan Guo"
+    },
+    {
+      "@type": "Person",
+      "name": "Ming Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Yang Li"
+    }
+  ],
+  "datePublished": "2026-08-06T03:52:37Z",
+  "dateModified": "2026-08-06T03:52:37Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.05573.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.05573.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.05573v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.05573"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.05573v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.05573"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +104,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SkillTV-Bench: Benchmarking How Well Judges Perform on Skill-Augmented Agentic Execution</h1>
+        <div class="meta">
+          Zhi Han, Chenxi Zeng, Liuhaichen Yang, Zihan Guo, Ming Zhou, Yang Li
+          · 2608.05573
+          · <time datetime="2026-08-06">2026-08-06</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLM agents increasingly execute long-horizon tasks through tool use and environment interaction, shifting evaluation from final-response scoring to verification of complete executions. For skill-augmented agents, verification additionally requires the procedural knowledge encoded in task-time skills, because this knowledge indicates what evidence to inspect and which failures are task-critical. However, existing judge benchmarks often expose final responses or static trajectories, and rarely combine task-time skills with directly inspectable artifacts and environments. We therefore introduce SkillTV-Bench, a 681-case benchmark of real agent trajectories from 50 tasks across eleven domains, designed to evaluate skill-aware trajectory verification for both LLM-as-a-Judge and Agent-as-a-Judge methods. Additionally, we propose SkillTV-Evolve, which externalizes verification knowledge as a reusable JudgeSkill that guides an agent judge to plan targeted inspections and issue evidence-grounded verdicts. On a disjoint development pool, an automated evolution loop further refines the JudgeSkill using misjudged cases. On SkillTV-Bench, the refined skill increases the same agent judge&#x27;s accuracy by 14.8 percentage points. In offline rollout-pool selection, it increases selected-trajectory success from 22.9% with one rollout to 45.5% with ten rollouts. The code and data are available at https://github.com/HanZhi306/SkillTV-Bench</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.05573v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.05573v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.05573" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.07899.html"><strong>TelemetrySuffBench: Is Agent Telemetry Sufficient for Failure-Origin Diagnosis?</strong></a> <span>2026-08-08</span></li>
+          <li><a href="2608.06909.html"><strong>Long-Horizon Agent Trajectory Attribution: A Unified Benchmark and Fine-Grained Annotation Framework</strong></a> <span>2026-08-07</span></li>
+          <li><a href="2608.06329.html"><strong>Benchmarking the Benchmarks: Evaluating Benchmarks for Conversational Agents</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2608.06027.html"><strong>FormBharo: Designing and Evaluating a Voice Agent for Conversational Form Filling in Rural India</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2608.05519.html"><strong>EcoAgent-Bench: Evaluating Economic Decision-Making in Budget-Constrained LLM Agents</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2608.05212.html"><strong>SearchAuditor: Auditing and Attributing Failures in Long-Horizon Search Agents</strong></a> <span>2026-08-05</span></li>
+          <li><a href="2608.04828.html"><strong>Skill-Use: Can LLMs Actually Use Skills in Agentic Harnesses?</strong></a> <span>2026-08-05</span></li>
+          <li><a href="2608.04746.html"><strong>Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems</strong></a> <span>2026-08-05</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

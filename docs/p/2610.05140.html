@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>AutoSciBench: Autonomous Benchmark Generation for Evaluating Scientific Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: As agents rapidly evolve, existing benchmarks can become saturated, limiting their ability to distinguish capabilities and reveal…" />
+    <meta name="keywords" content="Science &amp; research, Planning / reasoning, Science lab, agent benchmark, LLM agent, arXiv, 2610.05140" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.05140.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AutoSciBench: Autonomous Benchmark Generation for Evaluating Scientific Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: As agents rapidly evolve, existing benchmarks can become saturated, limiting their ability to distinguish capabilities and reveal…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.05140.html" />
+    <meta property="article:published_time" content="2026-10-04T11:40:11Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AutoSciBench: Autonomous Benchmark Generation for Evaluating Scientific Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: As agents rapidly evolve, existing benchmarks can become saturated, limiting their ability to distinguish capabilities and reveal…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,89 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AutoSciBench: Autonomous Benchmark Generation for Evaluating Scientific Agents",
+  "name": "AutoSciBench: Autonomous Benchmark Generation for Evaluating Scientific Agents",
+  "abstract": "As agents rapidly evolve, existing benchmarks can become saturated, limiting their ability to distinguish capabilities and reveal remaining failure modes. Particularly in scientific domains, constructing and updating benchmarks requires substantial time, labor, and domain expertise, making it difficult to keep evaluation aligned with advances in agent capabilities. We address this challenge by investigating whether scientific-agent benchmarks can be automatically generated and iteratively adapted as agent capabilities evolve. We introduce AutoSciBench, a framework that represents each task as a high-level concept specifying the scientific domain, data modality, and required reasoning approach, together with a low-level recipe specifying how the question, environment, and ground-truth answer are constructed and verified. Agents attempt to solve each task, producing solver trajectories and corresponding judge feedback which AutoSciBench uses to revise the recipe or concept, closing observed shortcuts and shifting tasks toward raw-data re-examination, interpretation of intermediate results, and evidence integration. Experience distilled from completed refinement trajectories further guides new concept generation, allowing lessons from earlier task refinement to inform subsequent benchmark construction. Starting from existing benchmarks, we evaluate AutoSciBench across computational biology, materials science, and clinical imaging. Generated benchmarks reduce average solver accuracy by 22.4 and 25.5 percentage points relative to the human-curated benchmarks in computational biology and materials science, respectively, while generated tasks receive higher average quality ratings across all three domains, suggesting that scientific-agent evaluation can adapt as agent capabilities advance.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Dongki Kim"
+    },
+    {
+      "@type": "Person",
+      "name": "Namkyeong Lee"
+    },
+    {
+      "@type": "Person",
+      "name": "Surag Nair"
+    },
+    {
+      "@type": "Person",
+      "name": "Carl Edwards"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiner Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Edward De Brouwer"
+    },
+    {
+      "@type": "Person",
+      "name": "Jenna Lynn Collier"
+    },
+    {
+      "@type": "Person",
+      "name": "Sung Ju Hwang"
+    },
+    {
+      "@type": "Person",
+      "name": "Gabriele Scalia"
+    },
+    {
+      "@type": "Person",
+      "name": "Ehsan Hajiramezanali"
+    }
+  ],
+  "datePublished": "2026-10-04T11:40:11Z",
+  "dateModified": "2026-10-04T11:40:11Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.05140.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.05140.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.05140v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.05140"
+  },
+  "keywords": [
+    "Science & research",
+    "Planning / reasoning",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Science & research"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.05140v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2610.05140"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +121,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AutoSciBench: Autonomous Benchmark Generation for Evaluating Scientific Agents</h1>
+        <div class="meta">
+          Dongki Kim, Namkyeong Lee, Surag Nair, Carl Edwards, Xiner Li, Edward De Brouwer, Jenna Lynn Collier, Sung Ju Hwang, Gabriele Scalia, Ehsan Hajiramezanali
+          · 2610.05140
+          · <time datetime="2026-10-04">2026-10-04</time>
+          · Science &amp; research
+        </div>
+        <div class="themes"><span class="chip">Planning / reasoning</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>As agents rapidly evolve, existing benchmarks can become saturated, limiting their ability to distinguish capabilities and reveal remaining failure modes. Particularly in scientific domains, constructing and updating benchmarks requires substantial time, labor, and domain expertise, making it difficult to keep evaluation aligned with advances in agent capabilities. We address this challenge by investigating whether scientific-agent benchmarks can be automatically generated and iteratively adapted as agent capabilities evolve. We introduce AutoSciBench, a framework that represents each task as a high-level concept specifying the scientific domain, data modality, and required reasoning approach, together with a low-level recipe specifying how the question, environment, and ground-truth answer are constructed and verified. Agents attempt to solve each task, producing solver trajectories and corresponding judge feedback which AutoSciBench uses to revise the recipe or concept, closing observed shortcuts and shifting tasks toward raw-data re-examination, interpretation of intermediate results, and evidence integration. Experience distilled from completed refinement trajectories further guides new concept generation, allowing lessons from earlier task refinement to inform subsequent benchmark construction. Starting from existing benchmarks, we evaluate AutoSciBench across computational biology, materials science, and clinical imaging. Generated benchmarks reduce average solver accuracy by 22.4 and 25.5 percentage points relative to the human-curated benchmarks in computational biology and materials science, respectively, while generated tasks receive higher average quality ratings across all three domains, suggesting that scientific-agent evaluation can adapt as agent capabilities advance.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.05140v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.05140v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.05140" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Science &amp; research benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.08691.html"><strong>ScienceClaw: Benchmarking Continual Self-Evolution of AI-for-Science Agents Across the Natural and Social Sciences</strong></a> <span>2026-10-06</span></li>
+          <li><a href="2610.02122.html"><strong>Argo-Bench: Evaluating Data Agents on Enterprise-Scale Workflows</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.00636.html"><strong>CompMat-Bench: Benchmarking AI Agents for Computational Materials Science</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.00609.html"><strong>Legal Research Bench: Measuring End-to-End Reliability in Long-Horizon Legal Research Agents</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.00492.html"><strong>EurekaBench: Measuring Agentic Ability to Discover New Scientific Insights</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2609.35515.html"><strong>MechBench: Can AI Scientific Agents Discover Mechanisms Beyond Phenomenal Laws?</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34537.html"><strong>The Marathon of Scientific Reasoning: Robustness of Scientific Agents to Perturbations in Multi-Turn Interactions</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34428.html"><strong>AgentHop: A Diagnostic Benchmark for Agentic Multi-Hop Scientific Question Answering</strong></a> <span>2026-09-28</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

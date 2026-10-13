@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>K-Bench: A Benchmark for LLM Unlearning in Agentic Deployments | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Unlearning benchmarks such as TOFU and MUSE certify forgetting by reading the model&#x27;s final answer, where a model that refuses to…" />
+    <meta name="keywords" content="Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2609.12808" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.12808.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="K-Bench: A Benchmark for LLM Unlearning in Agentic Deployments" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Unlearning benchmarks such as TOFU and MUSE certify forgetting by reading the model&#x27;s final answer, where a model that refuses to…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.12808.html" />
+    <meta property="article:published_time" content="2026-09-11T13:04:13Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="K-Bench: A Benchmark for LLM Unlearning in Agentic Deployments" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Unlearning benchmarks such as TOFU and MUSE certify forgetting by reading the model&#x27;s final answer, where a model that refuses to…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,68 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "K-Bench: A Benchmark for LLM Unlearning in Agentic Deployments",
+  "name": "K-Bench: A Benchmark for LLM Unlearning in Agentic Deployments",
+  "abstract": "Unlearning benchmarks such as TOFU and MUSE certify forgetting by reading the model's final answer, where a model that refuses to answer already counts as having forgotten. We show that this model-level certificate does not transfer once the model is deployed as an agent. We introduce K-Bench, a benchmark that scores LLM unlearning under agentic deployment. K-Bench inspects all six channels a ReAct agent exposes, including its chain-of-thought (CoT), tool calls and tool observations, and elicited summary. A query counts as leaked if the secret appears in any of them. Each experiment places the secret in exactly one of the agent's three sources (the weights, the prompt, or the retrieval store). The K-Score is computed separately for each source and credits forgetting only when the agent remains usable. Clearing the answer channel does not make the secret unrecoverable. On structured retrieval, the secret stays verbatim in the tool-observation channel and the aggregate leak rate is unchanged. When the secret lives in the prompt or the retrieval store, TOFU and MUSE report no leakage, while the deployed agent still leaks it on 22--86\\% of queries. When the secret is in the weights, none of the twenty evaluated published methods demonstrably removes it, and only an input-corruption intervention reaches selective forgetting under the evaluated observer. The top-ranked method changes across base models. A refusal-tuning method resists the evaluated extraction without verified knowledge removal.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Guangsheng Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yanna Jiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Qin Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Baihe Ma"
+    },
+    {
+      "@type": "Person",
+      "name": "Xu Wang"
+    }
+  ],
+  "datePublished": "2026-09-11T13:04:13Z",
+  "dateModified": "2026-09-14T03:32:56Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.12808.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.12808.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.12808v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.12808"
+  },
+  "keywords": [
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.12808v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.12808"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +100,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>K-Bench: A Benchmark for LLM Unlearning in Agentic Deployments</h1>
+        <div class="meta">
+          Guangsheng Yu, Yanna Jiang, Qin Wang, Baihe Ma, Xu Wang
+          · 2609.12808
+          · <time datetime="2026-09-11">2026-09-11</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Unlearning benchmarks such as TOFU and MUSE certify forgetting by reading the model&#x27;s final answer, where a model that refuses to answer already counts as having forgotten. We show that this model-level certificate does not transfer once the model is deployed as an agent. We introduce K-Bench, a benchmark that scores LLM unlearning under agentic deployment. K-Bench inspects all six channels a ReAct agent exposes, including its chain-of-thought (CoT), tool calls and tool observations, and elicited summary. A query counts as leaked if the secret appears in any of them. Each experiment places the secret in exactly one of the agent&#x27;s three sources (the weights, the prompt, or the retrieval store). The K-Score is computed separately for each source and credits forgetting only when the agent remains usable. Clearing the answer channel does not make the secret unrecoverable. On structured retrieval, the secret stays verbatim in the tool-observation channel and the aggregate leak rate is unchanged. When the secret lives in the prompt or the retrieval store, TOFU and MUSE report no leakage, while the deployed agent still leaks it on 22--86\% of queries. When the secret is in the weights, none of the twenty evaluated published methods demonstrably removes it, and only an input-corruption intervention reaches selective forgetting under the evaluated observer. The top-ranked method changes across base models. A refusal-tuning method resists the evaluated extraction without verified knowledge removal.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.12808v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.12808v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.12808" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.23490.html"><strong>BabelArena: A Large-Scale Multilingual Benchmark for LLM Agents</strong></a> <span>2026-09-22</span></li>
+          <li><a href="2609.22076.html"><strong>APort Vault: Benchmarking AI Agent Payment Authorization with the Open Agent Passport</strong></a> <span>2026-09-21</span></li>
+          <li><a href="2609.20886.html"><strong>BI-Agent and BI-Bench: Towards Automating End-to-End Business Intelligence</strong></a> <span>2026-09-21</span></li>
+          <li><a href="2609.20152.html"><strong>MTVA-Bench: Evaluating the Language Model Inside Cascaded Voice Agents</strong></a> <span>2026-09-18</span></li>
+          <li><a href="2609.12345.html"><strong>ParaRecover: A Process-Level Benchmark for Error Localization and Recovery in Parallel Tool-Use Agents</strong></a> <span>2026-09-11</span></li>
+          <li><a href="2609.09853.html"><strong>The Era by Eon Benchmark: A Generated Enterprise Estate with Exact Ground Truth for Benchmarking LLM Agents</strong></a> <span>2026-09-09</span></li>
+          <li><a href="2609.09754.html"><strong>LexAgentHallu: A Hierarchical Benchmark for Profiling Hallucinations in Legal Agents</strong></a> <span>2026-09-09</span></li>
+          <li><a href="2609.09410.html"><strong>Benchmarking Hybrid Deep Research Across Database Querying and Web Search</strong></a> <span>2026-09-08</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

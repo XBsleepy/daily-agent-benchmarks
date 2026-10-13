@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Plant, Persist, Trigger: Sleeper Attack on Large Language Model Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large Language Model (LLM) agents remain vulnerable to safety threats from the external environment, where attackers inject…" />
+    <meta name="keywords" content="General, Tool use, Safety, Memory, agent benchmark, LLM agent, arXiv, 2605.28201" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.28201.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Plant, Persist, Trigger: Sleeper Attack on Large Language Model Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large Language Model (LLM) agents remain vulnerable to safety threats from the external environment, where attackers inject…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.28201.html" />
+    <meta property="article:published_time" content="2026-05-27T09:25:37Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Plant, Persist, Trigger: Sleeper Attack on Large Language Model Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large Language Model (LLM) agents remain vulnerable to safety threats from the external environment, where attackers inject…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,78 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Plant, Persist, Trigger: Sleeper Attack on Large Language Model Agents",
+  "name": "Plant, Persist, Trigger: Sleeper Attack on Large Language Model Agents",
+  "abstract": "Large Language Model (LLM) agents remain vulnerable to safety threats from the external environment, where attackers inject adversarial content into external observations such as tool-returned data, webpages, or MCP context, causing harmful agentic behaviors such as unsafe actions or incorrect outputs. Existing studies typically focus on single-interaction attacks, where the agent observes adversarial content and immediately exhibits harmful behavior within one user request. However, we show that adversarial content can also persist across interactions served by the same agent, making such threats harder to detect and mitigate. Specifically, adversarial content may persist in the agent state, remain dormant across interactions, and later be activated by a benign user query. We formalize this type of safety threat as Sleeper Attack. To evaluate it, we construct a benchmark with 1,896 instances covering six real-world harmful outcomes, three attack strategies, and three agent state targets: session context, memory, and reusable skills. Experiments on seven strong open-source and closed-source LLMs show that state-of-the-art LLM agents remain vulnerable to Sleeper Attack, even when they achieve low attack success rates under a single-interaction baseline. Our code and data are available at https://anonymous.4open.science/r/skdvnfu23ihr9wdscnksf1asdffsaef.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yongxiang Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Moxin Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhixin Ma"
+    },
+    {
+      "@type": "Person",
+      "name": "Fengbin Zhu"
+    },
+    {
+      "@type": "Person",
+      "name": "Dongrui Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenjie Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Fuli Feng"
+    }
+  ],
+  "datePublished": "2026-05-27T09:25:37Z",
+  "dateModified": "2026-05-27T09:25:37Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.28201.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.28201.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.28201v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.28201"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Safety",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.28201v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.28201"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +110,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Plant, Persist, Trigger: Sleeper Attack on Large Language Model Agents</h1>
+        <div class="meta">
+          Yongxiang Li, Moxin Li, Zhixin Ma, Fengbin Zhu, Dongrui Liu, Wenjie Wang, Fuli Feng
+          · 2605.28201
+          · <time datetime="2026-05-27">2026-05-27</time>
+          · General · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large Language Model (LLM) agents remain vulnerable to safety threats from the external environment, where attackers inject adversarial content into external observations such as tool-returned data, webpages, or MCP context, causing harmful agentic behaviors such as unsafe actions or incorrect outputs. Existing studies typically focus on single-interaction attacks, where the agent observes adversarial content and immediately exhibits harmful behavior within one user request. However, we show that adversarial content can also persist across interactions served by the same agent, making such threats harder to detect and mitigate. Specifically, adversarial content may persist in the agent state, remain dormant across interactions, and later be activated by a benign user query. We formalize this type of safety threat as Sleeper Attack. To evaluate it, we construct a benchmark with 1,896 instances covering six real-world harmful outcomes, three attack strategies, and three agent state targets: session context, memory, and reusable skills. Experiments on seven strong open-source and closed-source LLMs show that state-of-the-art LLM agents remain vulnerable to Sleeper Attack, even when they achieve low attack success rates under a single-interaction baseline. Our code and data are available at https://anonymous.4open.science/r/skdvnfu23ihr9wdscnksf1asdffsaef.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.28201v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.28201v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.28201" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.28721.html"><strong>LiveBrowseComp: Are Search Agents Searching, or Just Verifying What They Already Know?</strong></a> <span>2026-05-27</span></li>
+          <li><a href="2605.28556.html"><strong>A Matter of TASTE: Improving Coverage and Difficulty of Agent Benchmarks</strong></a> <span>2026-05-27</span></li>
+          <li><a href="2605.28465.html"><strong>Beyond One Path: Evaluating and Enhancing Divergent Thinking in Interactive LLM Agents</strong></a> <span>2026-05-27</span></li>
+          <li><a href="2605.28359.html"><strong>From Knowing to Doing: A Memory-Controlled Benchmark for LLM Trading Agents on Stock Markets</strong></a> <span>2026-05-27</span></li>
+          <li><a href="2605.28192.html"><strong>Agentic Active Omni-Modal Perception for Multi-Hop Audio-Visual Reasoning</strong></a> <span>2026-05-27</span></li>
+          <li><a href="2605.28158.html"><strong>OR-Space: A Full-Lifecycle Workspace Benchmark for Industrial Optimization Agents</strong></a> <span>2026-05-27</span></li>
+          <li><a href="2605.28108.html"><strong>Ask Now, Use Later: Benchmarking the Proactivity Gap in Long-Lived LLM Agents</strong></a> <span>2026-05-27</span></li>
+          <li><a href="2605.27984.html"><strong>KVoiceBench, KOpenAudioBench, and KMMAU: Agent-Driven Korean Speech Benchmarks for Evaluating SpeechLMs</strong></a> <span>2026-05-27</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

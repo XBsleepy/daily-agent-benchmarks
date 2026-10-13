@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ToolPrivacyBench: Benchmarking Purpose-Bound Privacy in Tool-Using LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language models (LLMs) have increasingly moved from standalone text generation systems to agents that invoke external tools…" />
+    <meta name="keywords" content="General, Tool use, agent benchmark, LLM agent, arXiv, 2606.28061" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.28061.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ToolPrivacyBench: Benchmarking Purpose-Bound Privacy in Tool-Using LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language models (LLMs) have increasingly moved from standalone text generation systems to agents that invoke external tools…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.28061.html" />
+    <meta property="article:published_time" content="2026-06-26T13:08:46Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ToolPrivacyBench: Benchmarking Purpose-Bound Privacy in Tool-Using LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language models (LLMs) have increasingly moved from standalone text generation systems to agents that invoke external tools…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,64 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ToolPrivacyBench: Benchmarking Purpose-Bound Privacy in Tool-Using LLM Agents",
+  "name": "ToolPrivacyBench: Benchmarking Purpose-Bound Privacy in Tool-Using LLM Agents",
+  "abstract": "Large language models (LLMs) have increasingly moved from standalone text generation systems to agents that invoke external tools, access environments, and execute multi-step tasks. However, conventional function-calling benchmarks mainly evaluate task completion and API correctness, while privacy evaluation benchmarks typically focus on final responses or privacy judgments. Neither perspective captures purpose-bound information flow across an executed multi-tool trajectory. Motivated by this limitation in current agent evaluation, ToolPrivacyBench audits whether task-private atoms are routed only to authorized tools and downstream sinks, thereby evaluating both task completion and privacy over-disclosure during tool use. The benchmark contains 2,150 cases, including 1,150 fully synthetic privacy-sensitive business workflows and 1,000 cases adapted from existing multi-tool and function-calling benchmarks. Each case is represented by a policy knowledge base. After an agent executes against mock business backends, the evaluator compares recorded tool arguments and backend audit logs with this policy knowledge base. The evaluation covers nine widely used agents to characterize purpose-bound privacy over-disclosure. The results show that successful tool execution does not imply appropriate privacy disclosure: an agent may complete a task while transmitting unnecessary private information through intermediate tool calls. ToolPrivacyBench therefore formalizes a need-to-know disclosure boundary, under which each tool should receive only the information necessary for its stated purpose, and uses trajectory-level auditing to identify privacy over-disclosure in multi-tool workflows.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Shijing Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Liang Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhu Meng"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhicheng Zhao"
+    }
+  ],
+  "datePublished": "2026-06-26T13:08:46Z",
+  "dateModified": "2026-06-26T13:08:46Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.28061.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.28061.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.28061v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.28061"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.28061v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.28061"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +96,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ToolPrivacyBench: Benchmarking Purpose-Bound Privacy in Tool-Using LLM Agents</h1>
+        <div class="meta">
+          Shijing Hu, Liang Liu, Zhu Meng, Zhicheng Zhao
+          · 2606.28061
+          · <time datetime="2026-06-26">2026-06-26</time>
+          · General · 3 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large language models (LLMs) have increasingly moved from standalone text generation systems to agents that invoke external tools, access environments, and execute multi-step tasks. However, conventional function-calling benchmarks mainly evaluate task completion and API correctness, while privacy evaluation benchmarks typically focus on final responses or privacy judgments. Neither perspective captures purpose-bound information flow across an executed multi-tool trajectory. Motivated by this limitation in current agent evaluation, ToolPrivacyBench audits whether task-private atoms are routed only to authorized tools and downstream sinks, thereby evaluating both task completion and privacy over-disclosure during tool use. The benchmark contains 2,150 cases, including 1,150 fully synthetic privacy-sensitive business workflows and 1,000 cases adapted from existing multi-tool and function-calling benchmarks. Each case is represented by a policy knowledge base. After an agent executes against mock business backends, the evaluator compares recorded tool arguments and backend audit logs with this policy knowledge base. The evaluation covers nine widely used agents to characterize purpose-bound privacy over-disclosure. The results show that successful tool execution does not imply appropriate privacy disclosure: an agent may complete a task while transmitting unnecessary private information through intermediate tool calls. ToolPrivacyBench therefore formalizes a need-to-know disclosure boundary, under which each tool should receive only the information necessary for its stated purpose, and uses trajectory-level auditing to identify privacy over-disclosure in multi-tool workflows.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.28061v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.28061v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.28061" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.31522.html"><strong>FinPersona-Bench: A Benchmark for Longitudinal Psychometric Stability of Autonomous Financial Agents</strong></a> <span>2026-06-30</span></li>
+          <li><a href="2606.31179.html"><strong>HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents</strong></a> <span>2026-06-30</span></li>
+          <li><a href="2606.29955.html"><strong>SpreadsheetBench 2: Evaluating Agents on End-to-End Business Spreadsheet Workflows</strong></a> <span>2026-06-29</span></li>
+          <li><a href="2606.29771.html"><strong>CLQT: A Closed-Loop, Cost-Aware, Strategy-Consistent Benchmark for Diagnostic Evaluation of LLM Portfolio-Management Agents</strong></a> <span>2026-06-29</span></li>
+          <li><a href="2606.27669.html"><strong>When Search Agents Should Ask: DiscoBench for Clarification-Aware Deep Search</strong></a> <span>2026-06-26</span></li>
+          <li><a href="2607.16229.html"><strong>FinBench: Time-Gated Calibration and Uncertainty Benchmarking for Agentic Financial Forecasting</strong></a> <span>2026-06-24</span></li>
+          <li><a href="2606.27397.html"><strong>SidConArena: An Environment Evaluating Agents in Open-Ended,Positive-Sum Bargaining Game</strong></a> <span>2026-06-24</span></li>
+          <li><a href="2606.26216.html"><strong>CyberChainBench: Can AI Agents Secure Smart Contracts Against Real-World On-Chain Vulnerabilities?</strong></a> <span>2026-06-24</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

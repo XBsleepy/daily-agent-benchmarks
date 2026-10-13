@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>PBT-Bench: Benchmarking AI Agents on Property-Based Testing | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Existing code benchmarks measure whether an agent can produce any test that reproduces a known bug, or whether it can produce a patch…" />
+    <meta name="keywords" content="General, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2605.15229" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.15229.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="PBT-Bench: Benchmarking AI Agents on Property-Based Testing" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Existing code benchmarks measure whether an agent can produce any test that reproduces a known bug, or whether it can produce a patch…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.15229.html" />
+    <meta property="article:published_time" content="2026-05-13T18:01:05Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PBT-Bench: Benchmarking AI Agents on Property-Based Testing" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Existing code benchmarks measure whether an agent can produce any test that reproduces a known bug, or whether it can produce a patch…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,64 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "PBT-Bench: Benchmarking AI Agents on Property-Based Testing",
+  "name": "PBT-Bench: Benchmarking AI Agents on Property-Based Testing",
+  "abstract": "Existing code benchmarks measure whether an agent can produce any test that reproduces a known bug, or whether it can produce a patch that fixes a described issue. Neither isolates the distinct skill of property-based testing: deriving a semantic invariant from documentation, and then constructing an input-generation strategy precise enough to make a random search reveal the violation. We introduce PBT-Bench, a benchmark of 100 curated property-based testing problems across 40 real Python libraries. Each problem injects one or more semantic bugs (365 in total, mean 3.65 per problem) designed so that default-strategy random inputs almost never trigger them; the agent must read the library's documentation, identify the relevant invariant, and specify a Hypothesis @given strategy that concentrates mass in the trigger region. Bugs are stratified across three difficulty levels (L1-L3) spanning single-constraint boundary bugs to stateful, cross-function protocol violations. We evaluate eight contemporary LLMs under two prompting regimes (open-ended baseline vs. explicit Hypothesis scaffolding) for three independent runs per configuration. Bug recall under the PBT-guided prompt ranges from 42.1% to 83.4% across models; under the open-ended baseline, from 31.4% to 76.7%. Hypothesis scaffolding lifts mid-capability models by over 20 percentage points, but yields smaller gains for the strongest models, with two exceptions showing degradation, suggesting the structured prompt can interfere with certain model behaviours rather than complementing them. The hardest bugs prove model-specific: different architectures fail on different problems, leaving persistent gaps that no single model closes. We release the benchmark, harness, and full evaluation corpus to support downstream work on documentation-grounded semantic reasoning.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Lucas Jing"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinqi Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Liao Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Simon S. Du"
+    }
+  ],
+  "datePublished": "2026-05-13T18:01:05Z",
+  "dateModified": "2026-05-30T04:31:25Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.15229.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.15229.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.15229v3"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.15229"
+  },
+  "keywords": [
+    "General",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.15229v3"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.15229"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +96,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>PBT-Bench: Benchmarking AI Agents on Property-Based Testing</h1>
+        <div class="meta">
+          Lucas Jing, Xinqi Wang, Liao Zhang, Simon S. Du
+          · 2605.15229
+          · <time datetime="2026-05-13">2026-05-13</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Existing code benchmarks measure whether an agent can produce any test that reproduces a known bug, or whether it can produce a patch that fixes a described issue. Neither isolates the distinct skill of property-based testing: deriving a semantic invariant from documentation, and then constructing an input-generation strategy precise enough to make a random search reveal the violation. We introduce PBT-Bench, a benchmark of 100 curated property-based testing problems across 40 real Python libraries. Each problem injects one or more semantic bugs (365 in total, mean 3.65 per problem) designed so that default-strategy random inputs almost never trigger them; the agent must read the library&#x27;s documentation, identify the relevant invariant, and specify a Hypothesis @given strategy that concentrates mass in the trigger region. Bugs are stratified across three difficulty levels (L1-L3) spanning single-constraint boundary bugs to stateful, cross-function protocol violations. We evaluate eight contemporary LLMs under two prompting regimes (open-ended baseline vs. explicit Hypothesis scaffolding) for three independent runs per configuration. Bug recall under the PBT-guided prompt ranges from 42.1% to 83.4% across models; under the open-ended baseline, from 31.4% to 76.7%. Hypothesis scaffolding lifts mid-capability models by over 20 percentage points, but yields smaller gains for the strongest models, with two exceptions showing degradation, suggesting the structured prompt can interfere with certain model behaviours rather than complementing them. The hardest bugs prove model-specific: different architectures fail on different problems, leaving persistent gaps that no single model closes. We release the benchmark, harness, and full evaluation corpus to support downstream work on documentation-grounded semantic reasoning.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.15229v3" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.15229v3" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.15229" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.15766.html"><strong>BioXArena: Benchmarking LLM Agents on Multi-Modal Biomedical Machine Learning Tasks</strong></a> <span>2026-05-15</span></li>
+          <li><a href="2605.14678.html"><strong>$π$-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</strong></a> <span>2026-05-14</span></li>
+          <li><a href="2605.14355.html"><strong>Herculean: An Agentic Benchmark for Financial Intelligence</strong></a> <span>2026-05-14</span></li>
+          <li><a href="2605.15230.html"><strong>EnergyAgentBench: Benchmarking LLM Agents on Live Energy Infrastructure Data</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.14153.html"><strong>ExploitBench: A Capability Ladder Benchmark for LLM Cybersecurity Agents</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.14133.html"><strong>ClawForge: Generating Executable Interactive Benchmarks for Command-Line Agents</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.13940.html"><strong>AgentTrap: Measuring Runtime Trust Failures in Third-Party Agent Skills</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.13909.html"><strong>TERMS-Bench: Diagnosing LLM Negotiation Agents Beyond Deal Rate</strong></a> <span>2026-05-13</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

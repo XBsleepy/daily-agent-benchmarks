@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>The Amazing Agent Race: Strong Tool Users, Weak Navigators | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Existing tool-use benchmarks for LLM agents are overwhelmingly linear: our analysis of six benchmarks shows 55 to 100% of instances…" />
+    <meta name="keywords" content="General, Tool use, agent benchmark, LLM agent, arXiv, 2604.10261" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.10261.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="The Amazing Agent Race: Strong Tool Users, Weak Navigators" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Existing tool-use benchmarks for LLM agents are overwhelmingly linear: our analysis of six benchmarks shows 55 to 100% of instances…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.10261.html" />
+    <meta property="article:published_time" content="2026-04-11T15:58:29Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="The Amazing Agent Race: Strong Tool Users, Weak Navigators" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Existing tool-use benchmarks for LLM agents are overwhelmingly linear: our analysis of six benchmarks shows 55 to 100% of instances…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,68 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "The Amazing Agent Race: Strong Tool Users, Weak Navigators",
+  "name": "The Amazing Agent Race: Strong Tool Users, Weak Navigators",
+  "abstract": "Existing tool-use benchmarks for LLM agents are overwhelmingly linear: our analysis of six benchmarks shows 55 to 100% of instances are simple chains of 2 to 5 steps. We introduce The Amazing Agent Race (AAR), a benchmark featuring directed acyclic graph (DAG) puzzles (or \"legs\") with fork-merge tool chains. We release 1,400 instances across two variants: sequential (800 legs) and compositional (600 DAG legs). Agents must navigate Wikipedia, execute multi-step tool chains, and aggregate results into a verifiable answer. Legs are procedurally generated from Wikipedia seeds across four difficulty levels with live-API validation. Three complementary metrics (finish-line accuracy, pit-stop visit rate, and roadblock completion rate) separately diagnose navigation, tool-use, and arithmetic failures. Evaluating three agent frameworks on 1,400 legs, the best achieves only 37.2% accuracy. Navigation errors dominate (27 to 52% of trials) while tool-use errors remain below 17%, and agent architecture matters as much as model scale (Claude Code matches Codex CLI at 37% with 6x fewer tokens). The compositional structure of AAR reveals that agents fail not at calling tools but at navigating to the right pages, a blind spot invisible to linear benchmarks. The project page can be accessed at: https://minnesotanlp.github.io/the-amazing-agent-race",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Zae Myung Kim"
+    },
+    {
+      "@type": "Person",
+      "name": "Dongseok Lee"
+    },
+    {
+      "@type": "Person",
+      "name": "Jaehyung Kim"
+    },
+    {
+      "@type": "Person",
+      "name": "Vipul Raheja"
+    },
+    {
+      "@type": "Person",
+      "name": "Dongyeop Kang"
+    }
+  ],
+  "datePublished": "2026-04-11T15:58:29Z",
+  "dateModified": "2026-04-17T01:52:26Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.10261.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.10261.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.10261v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2604.10261"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2604.10261v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2604.10261"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +100,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>The Amazing Agent Race: Strong Tool Users, Weak Navigators</h1>
+        <div class="meta">
+          Zae Myung Kim, Dongseok Lee, Jaehyung Kim, Vipul Raheja, Dongyeop Kang
+          · 2604.10261
+          · <time datetime="2026-04-11">2026-04-11</time>
+          · General · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Existing tool-use benchmarks for LLM agents are overwhelmingly linear: our analysis of six benchmarks shows 55 to 100% of instances are simple chains of 2 to 5 steps. We introduce The Amazing Agent Race (AAR), a benchmark featuring directed acyclic graph (DAG) puzzles (or &quot;legs&quot;) with fork-merge tool chains. We release 1,400 instances across two variants: sequential (800 legs) and compositional (600 DAG legs). Agents must navigate Wikipedia, execute multi-step tool chains, and aggregate results into a verifiable answer. Legs are procedurally generated from Wikipedia seeds across four difficulty levels with live-API validation. Three complementary metrics (finish-line accuracy, pit-stop visit rate, and roadblock completion rate) separately diagnose navigation, tool-use, and arithmetic failures. Evaluating three agent frameworks on 1,400 legs, the best achieves only 37.2% accuracy. Navigation errors dominate (27 to 52% of trials) while tool-use errors remain below 17%, and agent architecture matters as much as model scale (Claude Code matches Codex CLI at 37% with 6x fewer tokens). The compositional structure of AAR reveals that agents fail not at calling tools but at navigating to the right pages, a blind spot invisible to linear benchmarks. The project page can be accessed at: https://minnesotanlp.github.io/the-amazing-agent-race</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2604.10261v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2604.10261v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2604.10261" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2604.12177.html"><strong>Policy-Invisible Violations in LLM-Based Agents</strong></a> <span>2026-04-14</span></li>
+          <li><a href="2604.12040.html"><strong>SIR-Bench: Evaluating Investigation Depth in Security Incident Response Agents</strong></a> <span>2026-04-13</span></li>
+          <li><a href="2604.11270.html"><strong>Evaluating LLM Agents on Automated Software Analysis Tasks</strong></a> <span>2026-04-13</span></li>
+          <li><a href="2604.10547.html"><strong>Agent^2 RL-Bench: Can LLM Agents Engineer Agentic RL Post-Training?</strong></a> <span>2026-04-12</span></li>
+          <li><a href="2604.08988.html"><strong>SEA-Eval: A Benchmark for Evaluating Self-Evolving Agents Beyond Episodic Assessment</strong></a> <span>2026-04-10</span></li>
+          <li><a href="2604.08970.html"><strong>Litmus (Re)Agent: A Benchmark and Agentic System for Predictive Evaluation of Multilingual Models</strong></a> <span>2026-04-10</span></li>
+          <li><a href="2604.08523.html"><strong>ClawBench: Can AI Agents Complete Everyday Online Tasks?</strong></a> <span>2026-04-09</span></li>
+          <li><a href="2604.08178.html"><strong>Aligning Agents via Planning: A Benchmark for Trajectory-Level Reward Modeling</strong></a> <span>2026-04-09</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

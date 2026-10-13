@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Beyond Memory Leaderboards: Evaluating Scientific Memory as Budgeted Context Restoration | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Long-term memory is becoming a core component of LLM agents, but most memory benchmarks evaluate conversations or compact summaries…" />
+    <meta name="keywords" content="Science &amp; research, Tool use, Memory, Research agents, Science lab, agent benchmark, LLM agent, arXiv, 2607.16848" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.16848.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Beyond Memory Leaderboards: Evaluating Scientific Memory as Budgeted Context Restoration" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Long-term memory is becoming a core component of LLM agents, but most memory benchmarks evaluate conversations or compact summaries…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.16848.html" />
+    <meta property="article:published_time" content="2026-07-18T15:09:58Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Beyond Memory Leaderboards: Evaluating Scientific Memory as Budgeted Context Restoration" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Long-term memory is becoming a core component of LLM agents, but most memory benchmarks evaluate conversations or compact summaries…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,63 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Beyond Memory Leaderboards: Evaluating Scientific Memory as Budgeted Context Restoration",
+  "name": "Beyond Memory Leaderboards: Evaluating Scientific Memory as Budgeted Context Restoration",
+  "abstract": "Long-term memory is becoming a core component of LLM agents, but most memory benchmarks evaluate conversations or compact summaries, while research agents need to restore evidence from full scientific papers. We introduce two full-text scientific-memory benchmarks, Public AI Memory (PAIM; 81 papers, 66 questions) and Public Transformers (PTr; 252 papers, 98 questions). We evaluate eight memory/retrieval systems, including our own proposed Theoria, plus a no-retrieval baseline. Our results show that memory leaderboards are not interpretable without the full protocol: ingestion granularity, raw-text preservation, retrieval budget, retrieval modality, rubric audit, and judge choice all affect the outcome. For example, on PAIM Graphiti wins convincingly but uses 2.6M characters of retrieved context per query, and after controlling for retrieval budget the lead disappears. On PTr, for the systems where BM25 retrieval can be added cleanly, the sparse-dense hybrid is the single most significant intervention: hybrid variants of Simple RAG, Mem0, and Theoria tie for the lead within 0.03 points. Multi-judge and human side-by-side calibration show that LLM-as-a-judge rankings are consistent across frontier judges and agree with human evaluation, with an effective resolution of roughly one point on a ten-point scale. We argue that scientific memory should be evaluated as budgeted, modality-aware context restoration rather than as an unconstrained architecture leaderboard, and we release the datasets, harness, raw outputs, judgments, and scripts to reproduce our results and serve as tools for such evaluation. Our code is available at http://gitlab.com/quantellence/research/scientific-recall-bench , and the datasets are available at http://huggingface.co/datasets/quantellence/srb-data .",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Maksim Sheverev"
+    },
+    {
+      "@type": "Person",
+      "name": "David Finkelstein"
+    },
+    {
+      "@type": "Person",
+      "name": "Sergey Nikolenko"
+    }
+  ],
+  "datePublished": "2026-07-18T15:09:58Z",
+  "dateModified": "2026-07-18T15:09:58Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.16848.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.16848.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.16848v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.16848"
+  },
+  "keywords": [
+    "Science & research",
+    "Tool use",
+    "Memory",
+    "Research agents",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Science & research"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.16848v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.16848"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +95,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Beyond Memory Leaderboards: Evaluating Scientific Memory as Budgeted Context Restoration</h1>
+        <div class="meta">
+          Maksim Sheverev, David Finkelstein, Sergey Nikolenko
+          · 2607.16848
+          · <time datetime="2026-07-18">2026-07-18</time>
+          · Science &amp; research
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Memory</span><span class="chip">Research agents</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Long-term memory is becoming a core component of LLM agents, but most memory benchmarks evaluate conversations or compact summaries, while research agents need to restore evidence from full scientific papers. We introduce two full-text scientific-memory benchmarks, Public AI Memory (PAIM; 81 papers, 66 questions) and Public Transformers (PTr; 252 papers, 98 questions). We evaluate eight memory/retrieval systems, including our own proposed Theoria, plus a no-retrieval baseline. Our results show that memory leaderboards are not interpretable without the full protocol: ingestion granularity, raw-text preservation, retrieval budget, retrieval modality, rubric audit, and judge choice all affect the outcome. For example, on PAIM Graphiti wins convincingly but uses 2.6M characters of retrieved context per query, and after controlling for retrieval budget the lead disappears. On PTr, for the systems where BM25 retrieval can be added cleanly, the sparse-dense hybrid is the single most significant intervention: hybrid variants of Simple RAG, Mem0, and Theoria tie for the lead within 0.03 points. Multi-judge and human side-by-side calibration show that LLM-as-a-judge rankings are consistent across frontier judges and agree with human evaluation, with an effective resolution of roughly one point on a ten-point scale. We argue that scientific memory should be evaluated as budgeted, modality-aware context restoration rather than as an unconstrained architecture leaderboard, and we release the datasets, harness, raw outputs, judgments, and scripts to reproduce our results and serve as tools for such evaluation. Our code is available at http://gitlab.com/quantellence/research/scientific-recall-bench , and the datasets are available at http://huggingface.co/datasets/quantellence/srb-data .</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.16848v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.16848v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.16848" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Science &amp; research benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.28692.html"><strong>SciToolAgent-Evo: An Ontology-Aware Self-Evolving Agent for Open-World Scientific Tool Acquisition</strong></a> <span>2026-07-30</span></li>
+          <li><a href="2607.20926.html"><strong>SciExplore: Evaluating Autonomous Agents from Scientific Navigation to Information Integration</strong></a> <span>2026-07-23</span></li>
+          <li><a href="2607.18084.html"><strong>WorldCupArena: Fine-Grained Evaluation of Language Models and Deep-Research Agents on Football Forecasting</strong></a> <span>2026-07-20</span></li>
+          <li><a href="2607.17291.html"><strong>DRNOISE: Benchmarking Deep Research Agents in Misleading Evidence Environments</strong></a> <span>2026-07-19</span></li>
+          <li><a href="2607.03105.html"><strong>ORBIT-Q: Dual-axis benchmarking of autonomous agents in scientific quantum programming</strong></a> <span>2026-07-03</span></li>
+          <li><a href="2607.00436.html"><strong>PHREEQC-MCQ-200: A Diagnostic Benchmark for Tool-Augmented Scientific Simulator Agents</strong></a> <span>2026-07-01</span></li>
+          <li><a href="2606.12736.html"><strong>Benchmarking AI Agents for Addressing Scientific Challenges Across Scales</strong></a> <span>2026-06-10</span></li>
+          <li><a href="2606.03829.html"><strong>BigFinanceBench: A Workflow-Grounded Benchmark for Financial-Research Agents</strong></a> <span>2026-06-02</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

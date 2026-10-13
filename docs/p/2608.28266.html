@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>CoCoBench: A Cooperative Coordination Benchmark for Embodied Multi-Agent Task Planning | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Agent systems powered by multimodal large language models (MLLMs) have advanced rapidly in recent years, yet existing embodied-agent…" />
+    <meta name="keywords" content="Multi-agent, Embodied / robotics, Planning / reasoning, Multimodal, agent benchmark, LLM agent, arXiv, 2608.28266" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.28266.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="CoCoBench: A Cooperative Coordination Benchmark for Embodied Multi-Agent Task Planning" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Agent systems powered by multimodal large language models (MLLMs) have advanced rapidly in recent years, yet existing embodied-agent…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.28266.html" />
+    <meta property="article:published_time" content="2026-08-28T12:29:23Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="CoCoBench: A Cooperative Coordination Benchmark for Embodied Multi-Agent Task Planning" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Agent systems powered by multimodal large language models (MLLMs) have advanced rapidly in recent years, yet existing embodied-agent…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,94 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "CoCoBench: A Cooperative Coordination Benchmark for Embodied Multi-Agent Task Planning",
+  "name": "CoCoBench: A Cooperative Coordination Benchmark for Embodied Multi-Agent Task Planning",
+  "abstract": "Agent systems powered by multimodal large language models (MLLMs) have advanced rapidly in recent years, yet existing embodied-agent benchmarks still lack fine-grained diagnostics for multi-agent coordination. Most benchmarks either focus on single-agent task completion or summarize multi-agent behavior with overall task success rates, which can obscure coordination failures such as duplicated work, violations of ordering constraints, resource contention, and desynchronized handoffs. In this paper, we introduce CoCoBench, a construct-level benchmark for evaluating multi-agent embodied coordination in executable household tasks. CoCoBench contains 897 oracle-validated instances organized around four recurring coordination constructs: task allocation, sequential ordering, mutual exclusion, and handoff coordination. In addition to task success rate, CoCoBench provides construct-level scores that measure whether agents coordinate effectively. We evaluate 11 leading MLLMs across different coordination modes, observation inputs, and numbers of agents. The results show that coordination ability is highly construct-specific: strong overall performance does not imply balanced competence across different coordination types. These findings point to new directions for designing targeted model architectures and improving multi-agent coordination ability.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yang Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Ye-Xin Xie"
+    },
+    {
+      "@type": "Person",
+      "name": "Lirong Che"
+    },
+    {
+      "@type": "Person",
+      "name": "Danyang Peng"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuzhe Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Peiwen Lin"
+    },
+    {
+      "@type": "Person",
+      "name": "Xu Cao"
+    },
+    {
+      "@type": "Person",
+      "name": "Chuang Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Lei Yuan"
+    },
+    {
+      "@type": "Person",
+      "name": "Jian Su"
+    },
+    {
+      "@type": "Person",
+      "name": "Lan-Zhe Guo"
+    }
+  ],
+  "datePublished": "2026-08-28T12:29:23Z",
+  "dateModified": "2026-08-28T12:29:23Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.28266.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.28266.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.28266v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.28266"
+  },
+  "keywords": [
+    "Multi-agent",
+    "Embodied / robotics",
+    "Planning / reasoning",
+    "Multimodal",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multi-agent"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.28266v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.28266"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +126,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>CoCoBench: A Cooperative Coordination Benchmark for Embodied Multi-Agent Task Planning</h1>
+        <div class="meta">
+          Yang Chen, Ye-Xin Xie, Lirong Che, Danyang Peng, Yuzhe Yang, Peiwen Lin, Xu Cao, Chuang Wang, Lei Yuan, Jian Su, Lan-Zhe Guo
+          · 2608.28266
+          · <time datetime="2026-08-28">2026-08-28</time>
+          · Multi-agent
+        </div>
+        <div class="themes"><span class="chip">Multi-agent</span><span class="chip">Embodied / robotics</span><span class="chip">Planning / reasoning</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Agent systems powered by multimodal large language models (MLLMs) have advanced rapidly in recent years, yet existing embodied-agent benchmarks still lack fine-grained diagnostics for multi-agent coordination. Most benchmarks either focus on single-agent task completion or summarize multi-agent behavior with overall task success rates, which can obscure coordination failures such as duplicated work, violations of ordering constraints, resource contention, and desynchronized handoffs. In this paper, we introduce CoCoBench, a construct-level benchmark for evaluating multi-agent embodied coordination in executable household tasks. CoCoBench contains 897 oracle-validated instances organized around four recurring coordination constructs: task allocation, sequential ordering, mutual exclusion, and handoff coordination. In addition to task success rate, CoCoBench provides construct-level scores that measure whether agents coordinate effectively. We evaluate 11 leading MLLMs across different coordination modes, observation inputs, and numbers of agents. The results show that coordination ability is highly construct-specific: strong overall performance does not imply balanced competence across different coordination types. These findings point to new directions for designing targeted model architectures and improving multi-agent coordination ability.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.28266v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.28266v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.28266" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multi-agent benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.08696.html"><strong>MorphoOrgaAgent: A Foundation-Model-Based Multi-Agent System for Autonomous Organoid Analysis</strong></a> <span>2026-09-08</span></li>
+          <li><a href="2609.00384.html"><strong>RestoreBench: Can AI Agents Restore Power Flow Convergence?</strong></a> <span>2026-08-31</span></li>
+          <li><a href="2608.30661.html"><strong>SwarmBench: Can Large Language Models Act as Agent Swarm Orchestrators?</strong></a> <span>2026-08-31</span></li>
+          <li><a href="2608.29528.html"><strong>MedCache: Efficient and Temporally Valid Memory for Longitudinal Clinical Agents</strong></a> <span>2026-08-30</span></li>
+          <li><a href="2608.27142.html"><strong>GRAIN: Bridging Name and Narrative Shifts in Real-World Graph Reasoning through Invariance-Rewarded Agentic RL</strong></a> <span>2026-08-27</span></li>
+          <li><a href="2608.24361.html"><strong>Adaptive Influence Graphs for Failure Attribution in Multi-Agent Systems</strong></a> <span>2026-08-25</span></li>
+          <li><a href="2608.12547.html"><strong>Do LLMs Beat Nash? Testing Decentralized Coordination in Self-Play Multi-Agent Games</strong></a> <span>2026-08-12</span></li>
+          <li><a href="2608.11738.html"><strong>Advancing MLLM-based UAV Image Understanding and Reasoning: A Benchmark and a Training-Free Multi-Agent System</strong></a> <span>2026-08-12</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

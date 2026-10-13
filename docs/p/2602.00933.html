@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MCP-Atlas: A Large-Scale Benchmark for Tool-Use Competency with Real MCP Servers | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: The Model Context Protocol (MCP) is emerging as a standard interface through which large language model (LLM) agents discover and…" />
+    <meta name="keywords" content="Tool use, agent benchmark, LLM agent, arXiv, 2602.00933" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.00933.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MCP-Atlas: A Large-Scale Benchmark for Tool-Use Competency with Real MCP Servers" />
+    <meta property="og:description" content="Daily Agent Benchmarks: The Model Context Protocol (MCP) is emerging as a standard interface through which large language model (LLM) agents discover and…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.00933.html" />
+    <meta property="article:published_time" content="2026-01-31T23:19:39Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MCP-Atlas: A Large-Scale Benchmark for Tool-Use Competency with Real MCP Servers" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: The Model Context Protocol (MCP) is emerging as a standard interface through which large language model (LLM) agents discover and…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,139 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MCP-Atlas: A Large-Scale Benchmark for Tool-Use Competency with Real MCP Servers",
+  "name": "MCP-Atlas: A Large-Scale Benchmark for Tool-Use Competency with Real MCP Servers",
+  "abstract": "The Model Context Protocol (MCP) is emerging as a standard interface through which large language model (LLM) agents discover and invoke external tools. However, existing MCP evaluations fall short along three key axes: realistic multi-step workflows with cross-server orchestration, breadth across authentic MCP servers rather than mocks, and structured, reproducible claim-level scoring disentangled from agent verbosity or style. We introduce MCP-Atlas, a benchmark for measuring tool-use competency against production MCP servers. MCP-Atlas contains 1,000 natural-language tasks written and verified by human experts spanning 36 real MCP servers and 220 tools. Prompts do not specify servers, tools, or parameters, requiring agents to identify relevant tools among semantically plausible distractors and to compose multi-step, cross-server workflows. Each task is scored with a claim-level rubric, where final answers are scored against atomic factual claims grounded in tool outputs. This answer-centric scoring permits valid alternative tool-call trajectories to receive credit. We pair this with an 11-category diagnostic taxonomy that disentangles tool-call failures from cognitive failures in task understanding, synthesis, parsing, and stopping. Evaluating 20 frontier models from six providers under matched task-level conditions, we find pass rates up to 82.2% at a 0.75 claim coverage threshold and a clear three-tier performance structure. Automated diagnostics show that 63.3% of diagnosed failures are cognitive rather than tool-call related. Notably, several high-performing models fail after successful tool execution due to premature stopping or incorrect synthesis. We release the task schema, containerized harness, claim evaluator, and a 500-task public split, while reserving a 500-task private split to preserve leaderboard integrity. The code is at https://github.com/scaleapi/mcp-atlas.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Chaithanya Bandi"
+    },
+    {
+      "@type": "Person",
+      "name": "Razvan-Gabriel Dumitru"
+    },
+    {
+      "@type": "Person",
+      "name": "Ben Hertzberg"
+    },
+    {
+      "@type": "Person",
+      "name": "Divyansh Agarwal"
+    },
+    {
+      "@type": "Person",
+      "name": "Geobio Boo"
+    },
+    {
+      "@type": "Person",
+      "name": "Tejas Polakam"
+    },
+    {
+      "@type": "Person",
+      "name": "Sami Hassaan"
+    },
+    {
+      "@type": "Person",
+      "name": "Jeff Da"
+    },
+    {
+      "@type": "Person",
+      "name": "HiJae Kim"
+    },
+    {
+      "@type": "Person",
+      "name": "Vipul Gupta"
+    },
+    {
+      "@type": "Person",
+      "name": "Manasi Sharma"
+    },
+    {
+      "@type": "Person",
+      "name": "Andrew Park"
+    },
+    {
+      "@type": "Person",
+      "name": "Martin Dimakis"
+    },
+    {
+      "@type": "Person",
+      "name": "Ernesto Gabriel Hernandez Montoya"
+    },
+    {
+      "@type": "Person",
+      "name": "Dan Rambado"
+    },
+    {
+      "@type": "Person",
+      "name": "Ivan Salazar"
+    },
+    {
+      "@type": "Person",
+      "name": "Rafael Cruz"
+    },
+    {
+      "@type": "Person",
+      "name": "MohammadHossein Rezaei"
+    },
+    {
+      "@type": "Person",
+      "name": "Chetan Rane"
+    },
+    {
+      "@type": "Person",
+      "name": "Ben Levin"
+    },
+    {
+      "@type": "Person",
+      "name": "Daniel Yue Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Brad Kenstler"
+    },
+    {
+      "@type": "Person",
+      "name": "Bing Liu"
+    }
+  ],
+  "datePublished": "2026-01-31T23:19:39Z",
+  "dateModified": "2026-05-19T23:26:22Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.00933.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.00933.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2602.00933v3"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2602.00933"
+  },
+  "keywords": [
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2602.00933v3"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2602.00933"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +171,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MCP-Atlas: A Large-Scale Benchmark for Tool-Use Competency with Real MCP Servers</h1>
+        <div class="meta">
+          Chaithanya Bandi, Razvan-Gabriel Dumitru, Ben Hertzberg, Divyansh Agarwal, Geobio Boo, Tejas Polakam, Sami Hassaan, Jeff Da, HiJae Kim, Vipul Gupta, Manasi Sharma, Andrew Park, Martin Dimakis, Ernesto Gabriel Hernandez Montoya, Dan Rambado, Ivan Salazar, Rafael Cruz, MohammadHossein Rezaei, Chetan Rane, Ben Levin, Daniel Yue Zhang, Brad Kenstler, Bing Liu
+          · 2602.00933
+          · <time datetime="2026-01-31">2026-01-31</time>
+          · Tool use · 40 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>The Model Context Protocol (MCP) is emerging as a standard interface through which large language model (LLM) agents discover and invoke external tools. However, existing MCP evaluations fall short along three key axes: realistic multi-step workflows with cross-server orchestration, breadth across authentic MCP servers rather than mocks, and structured, reproducible claim-level scoring disentangled from agent verbosity or style. We introduce MCP-Atlas, a benchmark for measuring tool-use competency against production MCP servers. MCP-Atlas contains 1,000 natural-language tasks written and verified by human experts spanning 36 real MCP servers and 220 tools. Prompts do not specify servers, tools, or parameters, requiring agents to identify relevant tools among semantically plausible distractors and to compose multi-step, cross-server workflows. Each task is scored with a claim-level rubric, where final answers are scored against atomic factual claims grounded in tool outputs. This answer-centric scoring permits valid alternative tool-call trajectories to receive credit. We pair this with an 11-category diagnostic taxonomy that disentangles tool-call failures from cognitive failures in task understanding, synthesis, parsing, and stopping. Evaluating 20 frontier models from six providers under matched task-level conditions, we find pass rates up to 82.2% at a 0.75 claim coverage threshold and a clear three-tier performance structure. Automated diagnostics show that 63.3% of diagnosed failures are cognitive rather than tool-call related. Notably, several high-performing models fail after successful tool execution due to premature stopping or incorrect synthesis. We release the task schema, containerized harness, claim evaluator, and a 500-task public split, while reserving a 500-task private split to preserve leaderboard integrity. The code is at https://github.com/scaleapi/mcp-atlas.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2602.00933v3" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2602.00933v3" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2602.00933" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2604.15715.html"><strong>GTA-2: Benchmarking General Tool Agents from Atomic Tool-Use to Open-Ended Workflows</strong></a> <span>2026-04-17</span></li>
+          <li><a href="2604.04847.html"><strong>Full-Duplex-Bench-v3: Benchmarking Tool Use for Full-Duplex Voice Agents Under Real-World Disfluency</strong></a> <span>2026-04-06</span></li>
+          <li><a href="2604.04017.html"><strong>GeoBrowse: A Geolocation Benchmark for Agentic Tool Use with Expert-Annotated Reasoning Traces</strong></a> <span>2026-04-05</span></li>
+          <li><a href="2603.24943.html"><strong>FinMCP-Bench: Benchmarking LLM Agents for Real-World Financial Tool Use under the Model Context Protocol</strong></a> <span>2026-03-26</span></li>
+          <li><a href="2603.15309.html"><strong>CCTU: A Benchmark for Tool Use under Complex Constraints</strong></a> <span>2026-03-16</span></li>
+          <li><a href="2603.08262.html"><strong>FinToolBench: Evaluating LLM Agents for Real-World Financial Tool Use</strong></a> <span>2026-03-09</span></li>
+          <li><a href="2603.01357.html"><strong>ASTRA-bench: Evaluating Tool-Use Agent Reasoning and Action Planning with Personal User Context</strong></a> <span>2026-03-02</span></li>
+          <li><a href="2604.06185.html"><strong>Benchmarking LLM Tool-Use in the Wild</strong></a> <span>2026-02-13</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

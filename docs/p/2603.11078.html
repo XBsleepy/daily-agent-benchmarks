@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>CR-Bench: Evaluating the Real-World Utility of AI Code Review Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Recent advances in frontier large language models have enabled code review agents that operate in open-ended, reasoning-intensive…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2603.11078" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.11078.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="CR-Bench: Evaluating the Real-World Utility of AI Code Review Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Recent advances in frontier large language models have enabled code review agents that operate in open-ended, reasoning-intensive…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.11078.html" />
+    <meta property="article:published_time" content="2026-03-10T21:29:42Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="CR-Bench: Evaluating the Real-World Utility of AI Code Review Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Recent advances in frontier large language models have enabled code review agents that operate in open-ended, reasoning-intensive…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,66 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "CR-Bench: Evaluating the Real-World Utility of AI Code Review Agents",
+  "name": "CR-Bench: Evaluating the Real-World Utility of AI Code Review Agents",
+  "abstract": "Recent advances in frontier large language models have enabled code review agents that operate in open-ended, reasoning-intensive settings. However, the lack of standardized benchmarks and granular evaluation protocols makes it difficult to assess behavior of code review agents beyond coarse success metrics, particularly for tasks where false positives are costly. To address this gap, we introduce CR-Bench, a benchmarking dataset, and CR-Evaluator, a fine-grained evaluation pipeline for code review agents. Using these tools, we conduct a preliminary study evaluating both a single-shot agent and a Reflexion-based agent across two frontier models. We find that code review agents can exhibit a low signal-to-noise ratio when designed to identify all hidden issues, obscuring true progress and developer productivity when measured solely by resolution rates. Our analysis identifies the hidden trade-off between issue resolution and spurious findings, revealing a frontier that constrains effective agent design. Together, CR-Bench and CR-Evaluator provide a timely foundation for studying and developing code review agents as LLM-based systems transition from controlled benchmarks to real-world software engineering workflows.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Kristen Pereira"
+    },
+    {
+      "@type": "Person",
+      "name": "Neelabh Sinha"
+    },
+    {
+      "@type": "Person",
+      "name": "Rajat Ghosh"
+    },
+    {
+      "@type": "Person",
+      "name": "Debojyoti Dutta"
+    }
+  ],
+  "datePublished": "2026-03-10T21:29:42Z",
+  "dateModified": "2026-03-10T21:29:42Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.11078.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.11078.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2603.11078v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2603.11078"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2603.11078v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2603.11078"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +98,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>CR-Bench: Evaluating the Real-World Utility of AI Code Review Agents</h1>
+        <div class="meta">
+          Kristen Pereira, Neelabh Sinha, Rajat Ghosh, Debojyoti Dutta
+          · 2603.11078
+          · <time datetime="2026-03-10">2026-03-10</time>
+          · Coding / SWE · 7 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Recent advances in frontier large language models have enabled code review agents that operate in open-ended, reasoning-intensive settings. However, the lack of standardized benchmarks and granular evaluation protocols makes it difficult to assess behavior of code review agents beyond coarse success metrics, particularly for tasks where false positives are costly. To address this gap, we introduce CR-Bench, a benchmarking dataset, and CR-Evaluator, a fine-grained evaluation pipeline for code review agents. Using these tools, we conduct a preliminary study evaluating both a single-shot agent and a Reflexion-based agent across two frontier models. We find that code review agents can exhibit a low signal-to-noise ratio when designed to identify all hidden issues, obscuring true progress and developer productivity when measured solely by resolution rates. Our analysis identifies the hidden trade-off between issue resolution and spurious findings, revealing a frontier that constrains effective agent design. Together, CR-Bench and CR-Evaluator provide a timely foundation for studying and developing code review agents as LLM-based systems transition from controlled benchmarks to real-world software engineering workflows.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2603.11078v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2603.11078v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2603.11078" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2603.22435.html"><strong>CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation</strong></a> <span>2026-03-23</span></li>
+          <li><a href="2603.17104.html"><strong>When the Specification Emerges: Benchmarking Faithfulness Loss in Long-Horizon Coding Agents</strong></a> <span>2026-03-17</span></li>
+          <li><a href="2603.16011.html"><strong>FormulaCode: Evaluating Agentic Optimization on Large Codebases</strong></a> <span>2026-03-16</span></li>
+          <li><a href="2603.15401.html"><strong>SWE-Skills-Bench: Do Agent Skills Actually Help in Real-World Software Engineering?</strong></a> <span>2026-03-16</span></li>
+          <li><a href="2603.08640.html"><strong>PostTrainBench: Can LLM Agents Automate LLM Post-Training?</strong></a> <span>2026-03-09</span></li>
+          <li><a href="2603.06739.html"><strong>ResearchEnvBench: Benchmarking Agents on Environment Synthesis for Research Code Execution</strong></a> <span>2026-03-06</span></li>
+          <li><a href="2603.05764.html"><strong>TML-Bench: Benchmark for Data Science Agents on Tabular ML Tasks</strong></a> <span>2026-03-05</span></li>
+          <li><a href="2603.02297.html"><strong>ZeroDayBench: Evaluating LLM Agents on Unseen Zero-Day Vulnerabilities for Cyberdefense</strong></a> <span>2026-03-02</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

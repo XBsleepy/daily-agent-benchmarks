@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>LLM4Cov: Execution-Aware Agentic Learning for High-coverage Testbench Generation | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Execution-aware LLM agents offer a promising paradigm for learning from tool feedback, but such feedback can be expensive and slow to…" />
+    <meta name="keywords" content="General, Tool use, agent benchmark, LLM agent, arXiv, 2602.16953" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.16953.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="LLM4Cov: Execution-Aware Agentic Learning for High-coverage Testbench Generation" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Execution-aware LLM agents offer a promising paradigm for learning from tool feedback, but such feedback can be expensive and slow to…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.16953.html" />
+    <meta property="article:published_time" content="2026-02-18T23:36:46Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="LLM4Cov: Execution-Aware Agentic Learning for High-coverage Testbench Generation" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Execution-aware LLM agents offer a promising paradigm for learning from tool feedback, but such feedback can be expensive and slow to…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,72 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "LLM4Cov: Execution-Aware Agentic Learning for High-coverage Testbench Generation",
+  "name": "LLM4Cov: Execution-Aware Agentic Learning for High-coverage Testbench Generation",
+  "abstract": "Execution-aware LLM agents offer a promising paradigm for learning from tool feedback, but such feedback can be expensive and slow to obtain, making online reinforcement learning (RL) less practical in certain scenarios. High-coverage hardware verification exemplifies this challenge due to its reliance on industrial simulators and non-differentiable execution signals. We propose LLM4Cov, an offline agent-learning framework that models verification as single-step state transitions guided by deterministic evaluators. Building on this formulation, we introduce execution-validated data curation, policy-aware agentic data synthesis, and worst-state-prioritized sampling to enable scalable learning under execution constraints. We further curate a reality-aligned benchmark adapted from an existing verification suite through a revised evaluation protocol. Using the proposed pipeline, a compact 4B-parameter model achieves 69.2% pass rate and 90.4% average coverage in CVDP-ECov under agentic evaluation, outperforming its teacher by 5.3% and 10.5%, demonstrating competitive performance against models an order of magnitude larger.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Hejia Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhongming Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Chia-Tung Ho"
+    },
+    {
+      "@type": "Person",
+      "name": "Haoxing Ren"
+    },
+    {
+      "@type": "Person",
+      "name": "Brucek Khailany"
+    },
+    {
+      "@type": "Person",
+      "name": "Jishen Zhao"
+    }
+  ],
+  "datePublished": "2026-02-18T23:36:46Z",
+  "dateModified": "2026-05-29T19:21:13Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.16953.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2602.16953.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2602.16953v3"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2602.16953"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2602.16953v3"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2602.16953"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +104,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>LLM4Cov: Execution-Aware Agentic Learning for High-coverage Testbench Generation</h1>
+        <div class="meta">
+          Hejia Zhang, Zhongming Yu, Chia-Tung Ho, Haoxing Ren, Brucek Khailany, Jishen Zhao
+          · 2602.16953
+          · <time datetime="2026-02-18">2026-02-18</time>
+          · General · 4 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Execution-aware LLM agents offer a promising paradigm for learning from tool feedback, but such feedback can be expensive and slow to obtain, making online reinforcement learning (RL) less practical in certain scenarios. High-coverage hardware verification exemplifies this challenge due to its reliance on industrial simulators and non-differentiable execution signals. We propose LLM4Cov, an offline agent-learning framework that models verification as single-step state transitions guided by deterministic evaluators. Building on this formulation, we introduce execution-validated data curation, policy-aware agentic data synthesis, and worst-state-prioritized sampling to enable scalable learning under execution constraints. We further curate a reality-aligned benchmark adapted from an existing verification suite through a revised evaluation protocol. Using the proposed pipeline, a compact 4B-parameter model achieves 69.2% pass rate and 90.4% average coverage in CVDP-ECov under agentic evaluation, outperforming its teacher by 5.3% and 10.5%, demonstrating competitive performance against models an order of magnitude larger.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2602.16953v3" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2602.16953v3" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2602.16953" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2602.19127.html"><strong>AgenticRAGTracer: A Hop-Aware Benchmark for Diagnosing Multi-Step Retrieval Reasoning in Agentic RAG</strong></a> <span>2026-02-22</span></li>
+          <li><a href="2602.19073.html"><strong>Evaluation and Benchmarking Suite for Financial Large Language Models and Agents</strong></a> <span>2026-02-22</span></li>
+          <li><a href="2602.18998.html"><strong>Benchmark Test-Time Scaling of General LLM Agents</strong></a> <span>2026-02-22</span></li>
+          <li><a href="2602.18008.html"><strong>Are LLMs Ready for Neural-integrated Mechanistic Modeling? A Benchmark and Agentic Framework</strong></a> <span>2026-02-20</span></li>
+          <li><a href="2602.16313.html"><strong>MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks</strong></a> <span>2026-02-18</span></li>
+          <li><a href="2602.15197.html"><strong>OpaqueToolsBench: Learning Nuances of Tool Behavior Through Interaction</strong></a> <span>2026-02-16</span></li>
+          <li><a href="2602.14257.html"><strong>AD-Bench: A Real-World, Trajectory-Aware Advertising Analytics Benchmark for LLM Agents</strong></a> <span>2026-02-15</span></li>
+          <li><a href="2602.13372.html"><strong>MoralityGym: A Benchmark for Evaluating Hierarchical Moral Alignment in Sequential Decision-Making Agents</strong></a> <span>2026-02-13</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

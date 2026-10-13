@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>DeepSWE: Measuring Frontier Coding Agents on Original, Long-Horizon Engineering Tasks | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: DeepSWE is a benchmark of 113 original, long-horizon software engineering tasks for evaluating coding agents. Most public agentic…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2607.07946" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.07946.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="DeepSWE: Measuring Frontier Coding Agents on Original, Long-Horizon Engineering Tasks" />
+    <meta property="og:description" content="Daily Agent Benchmarks: DeepSWE is a benchmark of 113 original, long-horizon software engineering tasks for evaluating coding agents. Most public agentic…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.07946.html" />
+    <meta property="article:published_time" content="2026-07-08T21:45:34Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="DeepSWE: Measuring Frontier Coding Agents on Original, Long-Horizon Engineering Tasks" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: DeepSWE is a benchmark of 113 original, long-horizon software engineering tasks for evaluating coding agents. Most public agentic…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,64 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "DeepSWE: Measuring Frontier Coding Agents on Original, Long-Horizon Engineering Tasks",
+  "name": "DeepSWE: Measuring Frontier Coding Agents on Original, Long-Horizon Engineering Tasks",
+  "abstract": "DeepSWE is a benchmark of 113 original, long-horizon software engineering tasks for evaluating coding agents. Most public agentic coding benchmarks follow SWE-bench in mining merged fixes from public GitHub repositories, which creates two problems: the fixes and their discussion were likely seen during pretraining, so a high score can reflect recall rather than problem-solving; and each task is graded by the tests that shipped with its merged fix, which were written to confirm one specific fix rather than grade an arbitrary solution, so they can fail a correct alternative or pass an incomplete one. DeepSWE avoids both. Its tasks are written from scratch across 91 active open-source repositories and five languages and are never contributed back upstream, so their reference solutions stay out of the public record that model training scrapes; and each task is graded by a hand-written verifier that checks the requested functionality and accepts any implementation that provides it. When an independent LLM judge re-reviews graded runs, it disagrees with DeepSWE's verifier about an order of magnitude less often than with SWE-Bench Pro's inherited tests (1.4% versus 32.4%). Despite being about half the length of SWE-Bench Pro's prompts, DeepSWE's prompts describe tasks whose reference solutions touch 5.5x more code, and the benchmark separates frontier agents across a wider score band than the leaderboards on which they otherwise cluster. We release the benchmark, its verifiers, and the full record of evaluation trajectories.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Wenqi Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Charley Lee"
+    },
+    {
+      "@type": "Person",
+      "name": "Leonard Tng"
+    },
+    {
+      "@type": "Person",
+      "name": "Serena Ge"
+    }
+  ],
+  "datePublished": "2026-07-08T21:45:34Z",
+  "dateModified": "2026-07-08T21:45:34Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.07946.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.07946.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.07946v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.07946"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.07946v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.07946"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +96,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>DeepSWE: Measuring Frontier Coding Agents on Original, Long-Horizon Engineering Tasks</h1>
+        <div class="meta">
+          Wenqi Huang, Charley Lee, Leonard Tng, Serena Ge
+          · 2607.07946
+          · <time datetime="2026-07-08">2026-07-08</time>
+          · Coding / SWE · 13 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>DeepSWE is a benchmark of 113 original, long-horizon software engineering tasks for evaluating coding agents. Most public agentic coding benchmarks follow SWE-bench in mining merged fixes from public GitHub repositories, which creates two problems: the fixes and their discussion were likely seen during pretraining, so a high score can reflect recall rather than problem-solving; and each task is graded by the tests that shipped with its merged fix, which were written to confirm one specific fix rather than grade an arbitrary solution, so they can fail a correct alternative or pass an incomplete one. DeepSWE avoids both. Its tasks are written from scratch across 91 active open-source repositories and five languages and are never contributed back upstream, so their reference solutions stay out of the public record that model training scrapes; and each task is graded by a hand-written verifier that checks the requested functionality and accepts any implementation that provides it. When an independent LLM judge re-reviews graded runs, it disagrees with DeepSWE&#x27;s verifier about an order of magnitude less often than with SWE-Bench Pro&#x27;s inherited tests (1.4% versus 32.4%). Despite being about half the length of SWE-Bench Pro&#x27;s prompts, DeepSWE&#x27;s prompts describe tasks whose reference solutions touch 5.5x more code, and the benchmark separates frontier agents across a wider score band than the leaderboards on which they otherwise cluster. We release the benchmark, its verifiers, and the full record of evaluation trajectories.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.07946v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.07946v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.07946" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.11042.html"><strong>BackendForge: Benchmarking Agentic End-to-End Code Generation with Backend Services</strong></a> <span>2026-07-13</span></li>
+          <li><a href="2607.10789.html"><strong>Imaging-101: Benchmarking LLM Coding Agents on Scientific Computational Imaging</strong></a> <span>2026-07-12</span></li>
+          <li><a href="2607.08964.html"><strong>Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading</strong></a> <span>2026-07-09</span></li>
+          <li><a href="2607.20518.html"><strong>CANN Bench: Benchmarking Agent Generated Kernels against Real NPU and Algorithmic Limits</strong></a> <span>2026-07-08</span></li>
+          <li><a href="2607.07744.html"><strong>PERFOPT-Bench: Evaluating Coding Agents on Software Performance Optimization</strong></a> <span>2026-07-08</span></li>
+          <li><a href="2607.06624.html"><strong>AgentLens: Production-Assessed Trajectory Reviews for Coding Agent Evaluation</strong></a> <span>2026-07-07</span></li>
+          <li><a href="2607.06411.html"><strong>RuBench: A Repository-Level Agentic Coding Benchmark with Natively Authored Russian Task Specifications</strong></a> <span>2026-07-07</span></li>
+          <li><a href="2607.03525.html"><strong>GameEngineBench: Evaluating Coding Agents on Real C++ Runtime Environments</strong></a> <span>2026-07-03</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

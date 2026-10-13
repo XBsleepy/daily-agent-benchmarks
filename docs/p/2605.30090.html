@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>DirectorBench: Diagnosing Long-Form Video Generation with Personalized Multi-Agent Evaluation | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Long-form video generation is rapidly moving from short, single-scene synthesis toward minute-long, multi-shot creation with…" />
+    <meta name="keywords" content="Multi-agent, agent benchmark, LLM agent, arXiv, 2605.30090" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.30090.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="DirectorBench: Diagnosing Long-Form Video Generation with Personalized Multi-Agent Evaluation" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Long-form video generation is rapidly moving from short, single-scene synthesis toward minute-long, multi-shot creation with…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.30090.html" />
+    <meta property="article:published_time" content="2026-05-28T15:35:34Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="DirectorBench: Diagnosing Long-Form Video Generation with Personalized Multi-Agent Evaluation" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Long-form video generation is rapidly moving from short, single-scene synthesis toward minute-long, multi-shot creation with…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,79 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "DirectorBench: Diagnosing Long-Form Video Generation with Personalized Multi-Agent Evaluation",
+  "name": "DirectorBench: Diagnosing Long-Form Video Generation with Personalized Multi-Agent Evaluation",
+  "abstract": "Long-form video generation is rapidly moving from short, single-scene synthesis toward minute-long, multi-shot creation with narrative structure, cinematic control, audio, and cross-modal synchronization. However, evaluating such videos remains challenging, since existing benchmarks largely focus on local visual quality, short-horizon temporal consistency, or generic prompt alignment, and provide limited diagnosis of workflow failures and user-dependent preferences. We introduce DirectorBench, a personalized multi-agent diagnostic benchmark for long-form video generation. DirectorBench evaluates generated videos with respect to 80 structured metadata entries, 7 user profiles, and 40 checkpoint criteria across 5 dimensions: script, visual, audio, cross-modal, and stability. Instead of reducing quality to a single aggregate score, DirectorBench localizes checkpoint-level bottlenecks and supports profile-aware evaluation. We evaluate 4 long-form video generation workflows, 6 base LLMs, and 7 user profiles. Across workflows, DirectorBench reveals a between-unit bottleneck: transition quality averages only 0.256 and reaches 0.356 for the best workflow, while prompt-level user demand fulfillment averages 0.71. We further conduct human evaluation with 14 annotators to validate the alignment between DirectorBench and human judgment. The results show that DirectorBench captures human-perceptible quality differences and reveals workflow- and profile-dependent failure modes that are hidden by aggregate scoring. These findings highlight the importance of diagnostic and profile-aware benchmarking for long-form video generation.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jiamin Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Qianben Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiawen Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yidi Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuchen Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaokun Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Wangchunshu Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Chen Ma"
+    }
+  ],
+  "datePublished": "2026-05-28T15:35:34Z",
+  "dateModified": "2026-05-28T15:35:34Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.30090.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.30090.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.30090v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.30090"
+  },
+  "keywords": [
+    "Multi-agent",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multi-agent"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.30090v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.30090"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +111,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>DirectorBench: Diagnosing Long-Form Video Generation with Personalized Multi-Agent Evaluation</h1>
+        <div class="meta">
+          Jiamin Chen, Qianben Chen, Jiawen Zhang, Yidi Wu, Yuchen Li, Xiaokun Zhang, Wangchunshu Zhou, Chen Ma
+          · 2605.30090
+          · <time datetime="2026-05-28">2026-05-28</time>
+          · Multi-agent · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Multi-agent</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Long-form video generation is rapidly moving from short, single-scene synthesis toward minute-long, multi-shot creation with narrative structure, cinematic control, audio, and cross-modal synchronization. However, evaluating such videos remains challenging, since existing benchmarks largely focus on local visual quality, short-horizon temporal consistency, or generic prompt alignment, and provide limited diagnosis of workflow failures and user-dependent preferences. We introduce DirectorBench, a personalized multi-agent diagnostic benchmark for long-form video generation. DirectorBench evaluates generated videos with respect to 80 structured metadata entries, 7 user profiles, and 40 checkpoint criteria across 5 dimensions: script, visual, audio, cross-modal, and stability. Instead of reducing quality to a single aggregate score, DirectorBench localizes checkpoint-level bottlenecks and supports profile-aware evaluation. We evaluate 4 long-form video generation workflows, 6 base LLMs, and 7 user profiles. Across workflows, DirectorBench reveals a between-unit bottleneck: transition quality averages only 0.256 and reaches 0.356 for the best workflow, while prompt-level user demand fulfillment averages 0.71. We further conduct human evaluation with 14 annotators to validate the alignment between DirectorBench and human judgment. The results show that DirectorBench captures human-perceptible quality differences and reveals workflow- and profile-dependent failure modes that are hidden by aggregate scoring. These findings highlight the importance of diagnostic and profile-aware benchmarking for long-form video generation.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.30090v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.30090v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.30090" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multi-agent benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.01434.html"><strong>DrugClaw and DrugAudit: A Primary-Source-Grounded Agent and Authority-Aware Benchmark for Drug-Information Question Answering</strong></a> <span>2026-05-31</span></li>
+          <li><a href="2605.31529.html"><strong>SVI-Bench: A Dynamic Microworld for Strategic Video Intelligence</strong></a> <span>2026-05-29</span></li>
+          <li><a href="2605.30931.html"><strong>MineExplorer: Evaluating Open-World Exploration of MLLM Agents in Minecraft</strong></a> <span>2026-05-29</span></li>
+          <li><a href="2605.30611.html"><strong>Crafter: A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs</strong></a> <span>2026-05-28</span></li>
+          <li><a href="2605.29512.html"><strong>MINDGAMES: A Live Arena for Evaluating Social and Strategic Reasoning in Multi-Agent LLMs</strong></a> <span>2026-05-28</span></li>
+          <li><a href="2605.29178.html"><strong>The Best-Laid SCHEMEs: Coordinated Sabotage and Monitoring in Multi-Agent Systems</strong></a> <span>2026-05-27</span></li>
+          <li><a href="2605.26835.html"><strong>Helicase: Uncertainty-Guided Supply Chain Knowledge Graph Construction with Autonomous Multi-Agent LLMs</strong></a> <span>2026-05-26</span></li>
+          <li><a href="2605.24699.html"><strong>MDIA: A Multi-Agent Diagnostic Intelligence Pipeline on HealthBench Professional</strong></a> <span>2026-05-23</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

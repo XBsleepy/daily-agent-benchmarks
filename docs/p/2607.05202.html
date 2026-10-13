@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>EvoAgentBench: Benchmarking Agent Self-Evolution via Ability Transfer | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Agent self-evolution in long-horizon LLM systems is largely procedural: useful experience is not merely stored information, but…" />
+    <meta name="keywords" content="Work / office, Coding agents, Memory, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2607.05202" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.05202.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="EvoAgentBench: Benchmarking Agent Self-Evolution via Ability Transfer" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Agent self-evolution in long-horizon LLM systems is largely procedural: useful experience is not merely stored information, but…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.05202.html" />
+    <meta property="article:published_time" content="2026-07-06T15:17:09Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="EvoAgentBench: Benchmarking Agent Self-Evolution via Ability Transfer" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Agent self-evolution in long-horizon LLM systems is largely procedural: useful experience is not merely stored information, but…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,98 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "EvoAgentBench: Benchmarking Agent Self-Evolution via Ability Transfer",
+  "name": "EvoAgentBench: Benchmarking Agent Self-Evolution via Ability Transfer",
+  "abstract": "Agent self-evolution in long-horizon LLM systems is largely procedural: useful experience is not merely stored information, but reusable procedures for searching, debugging, and verification. Yet current evaluations do not isolate this form of transfer. Agent benchmarks test single-episode task solving; memory benchmarks target information retention rather than procedural reuse. We introduce EvoAgentBench, a benchmark for agent self-evolution via Ability-guided transfer across four agentic domains: web research, algorithmic reasoning, software engineering, and knowledge work. EvoAgentBench extracts trace-grounded Abilities from agent executions, canonicalizes them into operational units, and builds domain-specific Ability Graphs linking tasks that share procedural overlap. By design, every test task is backed by verified training-side Ability support. Across a 528/267 train/test split, two scaffolds, and three backbones, curated Ability content transfers reliably across model families, but no current automatic method sustains positive gain in all settings. EvoAgentBench shifts self-evolution evaluation from aggregate accuracy comparison to fine-grained diagnosis of experience encoding, routing, and uptake. The benchmark is publicly available at https://huggingface.co/datasets/EverMind-AI/EvoAgentBench.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Xingze Gao"
+    },
+    {
+      "@type": "Person",
+      "name": "Chuanrui Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Hongda Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Pengfei Yao"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhao Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yi Bai"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhengwei Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yunyun Han"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaofeng Cong"
+    },
+    {
+      "@type": "Person",
+      "name": "Jie Gui"
+    },
+    {
+      "@type": "Person",
+      "name": "Yafeng Deng"
+    },
+    {
+      "@type": "Person",
+      "name": "Teng Li"
+    }
+  ],
+  "datePublished": "2026-07-06T15:17:09Z",
+  "dateModified": "2026-07-06T15:17:09Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.05202.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.05202.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.05202v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.05202"
+  },
+  "keywords": [
+    "Work / office",
+    "Coding agents",
+    "Memory",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Work / office"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.05202v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.05202"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +130,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>EvoAgentBench: Benchmarking Agent Self-Evolution via Ability Transfer</h1>
+        <div class="meta">
+          Xingze Gao, Chuanrui Hu, Hongda Chen, Pengfei Yao, Zhao Wang, Yi Bai, Zhengwei Wu, Yunyun Han, Xiaofeng Cong, Jie Gui, Yafeng Deng, Teng Li
+          · 2607.05202
+          · <time datetime="2026-07-06">2026-07-06</time>
+          · Work / office · 7 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Memory</span><span class="chip">Planning / reasoning</span><span class="chip">Work / office</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Agent self-evolution in long-horizon LLM systems is largely procedural: useful experience is not merely stored information, but reusable procedures for searching, debugging, and verification. Yet current evaluations do not isolate this form of transfer. Agent benchmarks test single-episode task solving; memory benchmarks target information retention rather than procedural reuse. We introduce EvoAgentBench, a benchmark for agent self-evolution via Ability-guided transfer across four agentic domains: web research, algorithmic reasoning, software engineering, and knowledge work. EvoAgentBench extracts trace-grounded Abilities from agent executions, canonicalizes them into operational units, and builds domain-specific Ability Graphs linking tasks that share procedural overlap. By design, every test task is backed by verified training-side Ability support. Across a 528/267 train/test split, two scaffolds, and three backbones, curated Ability content transfers reliably across model families, but no current automatic method sustains positive gain in all settings. EvoAgentBench shifts self-evolution evaluation from aggregate accuracy comparison to fine-grained diagnosis of experience encoding, routing, and uptake. The benchmark is publicly available at https://huggingface.co/datasets/EverMind-AI/EvoAgentBench.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.05202v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.05202v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.05202" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Work / office benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.25765.html"><strong>WorkSurface-Bench: Benchmarking Enterprise Agents on Multi-Surface Knowledge Routing</strong></a> <span>2026-07-28</span></li>
+          <li><a href="2607.16057.html"><strong>Frontier AI performance across the business disciplines: a case-grounded benchmark of knowledge work and analytical reasoning</strong></a> <span>2026-07-17</span></li>
+          <li><a href="2607.10768.html"><strong>Opti-Agent-Bench: Benchmarking End-to-End Optimization R&amp;D Agents on Real-World Business Problems</strong></a> <span>2026-07-12</span></li>
+          <li><a href="2607.06008.html"><strong>PolyWorkBench: Benchmarking LLM Agents for Cross-Lingual Long-Horizon Workflows</strong></a> <span>2026-07-07</span></li>
+          <li><a href="2607.20510.html"><strong>Telco-GAIA: Bilingual Benchmark for Agents in Telecom Domain</strong></a> <span>2026-07-04</span></li>
+          <li><a href="2607.01647.html"><strong>AgenticDataBench: A Comprehensive Benchmark for Data Agents</strong></a> <span>2026-07-02</span></li>
+          <li><a href="2606.30970.html"><strong>Behavioral Governance for Autonomous AI Agents: The AgentBound Framework</strong></a> <span>2026-06-29</span></li>
+          <li><a href="2606.29537.html"><strong>OSWorld 2.0: Benchmarking Computer Use Agents on Long-Horizon Real-World Tasks</strong></a> <span>2026-06-28</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

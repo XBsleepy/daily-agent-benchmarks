@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ELT-Bench-Verified: Benchmark Quality Issues Underestimate AI Agent Capabilities | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Constructing Extract-Load-Transform (ELT) pipelines is a labor-intensive data engineering task and a high-impact target for AI…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2603.29399" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.29399.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ELT-Bench-Verified: Benchmark Quality Issues Underestimate AI Agent Capabilities" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Constructing Extract-Load-Transform (ELT) pipelines is a labor-intensive data engineering task and a high-impact target for AI…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.29399.html" />
+    <meta property="article:published_time" content="2026-03-31T08:02:16Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ELT-Bench-Verified: Benchmark Quality Issues Underestimate AI Agent Capabilities" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Constructing Extract-Load-Transform (ELT) pipelines is a labor-intensive data engineering task and a high-impact target for AI…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,67 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ELT-Bench-Verified: Benchmark Quality Issues Underestimate AI Agent Capabilities",
+  "name": "ELT-Bench-Verified: Benchmark Quality Issues Underestimate AI Agent Capabilities",
+  "abstract": "Constructing Extract-Load-Transform (ELT) pipelines is a labor-intensive data engineering task and a high-impact target for AI automation. On ELT-Bench, the first benchmark for end-to-end ELT pipeline construction, AI agents initially showed low success rates, suggesting they lacked practical utility. We revisit these results and identify two factors causing a substantial underestimation of agent capabilities. First, re-evaluating ELT-Bench with upgraded large language models reveals that the extraction and loading stage is largely solved, while transformation performance improves significantly. Second, we develop an Auditor-Corrector methodology that combines scalable LLM-driven root-cause analysis with rigorous human validation (inter-annotator agreement Fleiss' kappa = 0.85) to audit benchmark quality. Applying this to ELT-Bench uncovers that most failed transformation tasks contain benchmark-attributable errors -- including rigid evaluation scripts, ambiguous specifications, and incorrect ground truth -- that penalize correct agent outputs. Based on these findings, we construct ELT-Bench-Verified, a revised benchmark with refined evaluation logic and corrected ground truth. Re-evaluating on this version yields significant improvement attributable entirely to benchmark correction. Our results show that both rapid model improvement and benchmark quality issues contributed to underestimating agent capabilities. More broadly, our findings echo observations of pervasive annotation errors in text-to-SQL benchmarks, suggesting quality issues are systemic in data engineering evaluation. Systematic quality auditing should be standard practice for complex agentic tasks. We release ELT-Bench-Verified to provide a more reliable foundation for progress in AI-driven data engineering automation.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Christopher Zanoli"
+    },
+    {
+      "@type": "Person",
+      "name": "Andrea Giovannini"
+    },
+    {
+      "@type": "Person",
+      "name": "Tengjun Jin"
+    },
+    {
+      "@type": "Person",
+      "name": "Ana Klimovic"
+    },
+    {
+      "@type": "Person",
+      "name": "Yotam Perlitz"
+    }
+  ],
+  "datePublished": "2026-03-31T08:02:16Z",
+  "dateModified": "2026-04-02T17:59:44Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.29399.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.29399.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2603.29399v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2603.29399"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2603.29399v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2603.29399"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +99,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ELT-Bench-Verified: Benchmark Quality Issues Underestimate AI Agent Capabilities</h1>
+        <div class="meta">
+          Christopher Zanoli, Andrea Giovannini, Tengjun Jin, Ana Klimovic, Yotam Perlitz
+          · 2603.29399
+          · <time datetime="2026-03-31">2026-03-31</time>
+          · General · 1 citations
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Constructing Extract-Load-Transform (ELT) pipelines is a labor-intensive data engineering task and a high-impact target for AI automation. On ELT-Bench, the first benchmark for end-to-end ELT pipeline construction, AI agents initially showed low success rates, suggesting they lacked practical utility. We revisit these results and identify two factors causing a substantial underestimation of agent capabilities. First, re-evaluating ELT-Bench with upgraded large language models reveals that the extraction and loading stage is largely solved, while transformation performance improves significantly. Second, we develop an Auditor-Corrector methodology that combines scalable LLM-driven root-cause analysis with rigorous human validation (inter-annotator agreement Fleiss&#x27; kappa = 0.85) to audit benchmark quality. Applying this to ELT-Bench uncovers that most failed transformation tasks contain benchmark-attributable errors -- including rigid evaluation scripts, ambiguous specifications, and incorrect ground truth -- that penalize correct agent outputs. Based on these findings, we construct ELT-Bench-Verified, a revised benchmark with refined evaluation logic and corrected ground truth. Re-evaluating on this version yields significant improvement attributable entirely to benchmark correction. Our results show that both rapid model improvement and benchmark quality issues contributed to underestimating agent capabilities. More broadly, our findings echo observations of pervasive annotation errors in text-to-SQL benchmarks, suggesting quality issues are systemic in data engineering evaluation. Systematic quality auditing should be standard practice for complex agentic tasks. We release ELT-Bench-Verified to provide a more reliable foundation for progress in AI-driven data engineering automation.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2603.29399v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2603.29399v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2603.29399" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2604.01212.html"><strong>$\texttt{YC-Bench}$: Benchmarking AI Agents for Long-Term Planning and Consistent Execution</strong></a> <span>2026-04-01</span></li>
+          <li><a href="2604.00842.html"><strong>Proactive Agent Research Environment: Simulating Active Users to Evaluate Proactive Assistants</strong></a> <span>2026-04-01</span></li>
+          <li><a href="2604.19787.html"><strong>LLM Agents Predict Social Media Reactions but Do Not Outperform Text Classifiers: Benchmarking Simulation Accuracy Using 120K+ Personas of 1511 Humans</strong></a> <span>2026-03-31</span></li>
+          <li><a href="2604.00284.html"><strong>Improvisational Games as a Benchmark for Social Intelligence of AI Agents: The Case of Connections</strong></a> <span>2026-03-31</span></li>
+          <li><a href="2603.28815.html"><strong>SkillTester: Benchmarking Utility and Security of Agent Skills</strong></a> <span>2026-03-28</span></li>
+          <li><a href="2603.25973.html"><strong>MemoryCD: Benchmarking Long-Context User Memory of LLM Agents for Lifelong Cross-Domain Personalization</strong></a> <span>2026-03-26</span></li>
+          <li><a href="2603.25253.html"><strong>MolQuest: A Benchmark for Agentic Evaluation of Abductive Reasoning in Chemical Structure Elucidation</strong></a> <span>2026-03-26</span></li>
+          <li><a href="2603.23848.html"><strong>BeliefShift: Benchmarking Temporal Belief Consistency and Opinion Drift in LLM Agents</strong></a> <span>2026-03-25</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>AgentSelect: Benchmark for Narrative Query-to-Agent Recommendation | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLM agents are rapidly becoming the practical interface for task automation, yet the ecosystem lacks a principled way to choose among…" />
+    <meta name="keywords" content="General, Tool use, agent benchmark, LLM agent, arXiv, 2603.03761" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.03761.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AgentSelect: Benchmark for Narrative Query-to-Agent Recommendation" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLM agents are rapidly becoming the practical interface for task automation, yet the ecosystem lacks a principled way to choose among…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.03761.html" />
+    <meta property="article:published_time" content="2026-03-04T06:17:51Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AgentSelect: Benchmark for Narrative Query-to-Agent Recommendation" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLM agents are rapidly becoming the practical interface for task automation, yet the ecosystem lacks a principled way to choose among…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,88 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AgentSelect: Benchmark for Narrative Query-to-Agent Recommendation",
+  "name": "AgentSelect: Benchmark for Narrative Query-to-Agent Recommendation",
+  "abstract": "LLM agents are rapidly becoming the practical interface for task automation, yet the ecosystem lacks a principled way to choose among an exploding space of deployable configurations. Existing LLM leaderboards and tool/agent benchmarks evaluate components in isolation and remain fragmented across tasks, metrics, and candidate pools, leaving a critical research gap: there is little query-conditioned supervision for learning to recommend end-to-end agent configurations that couple a backbone model with a toolkit. We address this gap with AgentSelect, a benchmark that reframes agent selection as narrative query-to-agent recommendation over capability profiles and systematically converts heterogeneous evaluation artifacts into unified, positive-only interaction data. AgentSelectcomprises 111,179 queries, 107,721 deployable agents, and 251,103 interaction records aggregated from 40+ sources, spanning LLM-only, toolkit-only, and compositional agents. Our analyses reveal a regime shift from dense head reuse to long-tail, near one-off supervision, where popularity-based CF/GNN methods become fragile and content-aware capability matching is essential. We further show that Part~III synthesized compositional interactions are learnable, induce capability-sensitive behavior under controlled counterfactual edits, and improve coverage over realistic compositions; models trained on AgentSelect also transfer to a public agent marketplace (MuleRun), yielding consistent gains on an unseen catalog. Overall, AgentSelect provides the first unified data and evaluation infrastructure for agent recommendation, which establishes a reproducible foundation to study and accelerate the emerging agent ecosystem.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yunxiao Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Wujiang Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Tingwei Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Haoning Shang"
+    },
+    {
+      "@type": "Person",
+      "name": "Ling Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yunfeng Wan"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhuo Cao"
+    },
+    {
+      "@type": "Person",
+      "name": "Xing Zi"
+    },
+    {
+      "@type": "Person",
+      "name": "Dimitris N. Metaxas"
+    },
+    {
+      "@type": "Person",
+      "name": "Min Xu"
+    }
+  ],
+  "datePublished": "2026-03-04T06:17:51Z",
+  "dateModified": "2026-03-04T06:17:51Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.03761.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.03761.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2603.03761v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2603.03761"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2603.03761v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2603.03761"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +120,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AgentSelect: Benchmark for Narrative Query-to-Agent Recommendation</h1>
+        <div class="meta">
+          Yunxiao Shi, Wujiang Xu, Tingwei Chen, Haoning Shang, Ling Yang, Yunfeng Wan, Zhuo Cao, Xing Zi, Dimitris N. Metaxas, Min Xu
+          · 2603.03761
+          · <time datetime="2026-03-04">2026-03-04</time>
+          · General · 3 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLM agents are rapidly becoming the practical interface for task automation, yet the ecosystem lacks a principled way to choose among an exploding space of deployable configurations. Existing LLM leaderboards and tool/agent benchmarks evaluate components in isolation and remain fragmented across tasks, metrics, and candidate pools, leaving a critical research gap: there is little query-conditioned supervision for learning to recommend end-to-end agent configurations that couple a backbone model with a toolkit. We address this gap with AgentSelect, a benchmark that reframes agent selection as narrative query-to-agent recommendation over capability profiles and systematically converts heterogeneous evaluation artifacts into unified, positive-only interaction data. AgentSelectcomprises 111,179 queries, 107,721 deployable agents, and 251,103 interaction records aggregated from 40+ sources, spanning LLM-only, toolkit-only, and compositional agents. Our analyses reveal a regime shift from dense head reuse to long-tail, near one-off supervision, where popularity-based CF/GNN methods become fragile and content-aware capability matching is essential. We further show that Part~III synthesized compositional interactions are learnable, induce capability-sensitive behavior under controlled counterfactual edits, and improve coverage over realistic compositions; models trained on AgentSelect also transfer to a public agent marketplace (MuleRun), yielding consistent gains on an unseen catalog. Overall, AgentSelect provides the first unified data and evaluation infrastructure for agent recommendation, which establishes a reproducible foundation to study and accelerate the emerging agent ecosystem.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2603.03761v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2603.03761v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2603.03761" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2603.05910.html"><strong>The World Won&#x27;t Stay Still: Programmable Evolution for Agent Benchmarks</strong></a> <span>2026-03-06</span></li>
+          <li><a href="2603.05578.html"><strong>Tool-Genesis: A Task-Driven Tool Creation Benchmark for Self-Evolving Language Agent</strong></a> <span>2026-03-05</span></li>
+          <li><a href="2603.04902.html"><strong>AgentSCOPE: Evaluating Contextual Privacy Across Agentic Workflows</strong></a> <span>2026-03-05</span></li>
+          <li><a href="2603.04656.html"><strong>iAgentBench: Benchmarking Sensemaking Capabilities of Information-Seeking Agents on High-Traffic Topics</strong></a> <span>2026-03-04</span></li>
+          <li><a href="2603.02586.html"><strong>LiveAgentBench: Comprehensive Benchmarking of Agentic Systems Across 104 Real-World Challenges</strong></a> <span>2026-03-03</span></li>
+          <li><a href="2603.00501.html"><strong>WirelessAgent++: Automated Agentic Workflow Design and Benchmarking for Wireless Networks</strong></a> <span>2026-02-28</span></li>
+          <li><a href="2603.00285.html"><strong>TraderBench: How Robust Are AI Agents in Adversarial Capital Markets?</strong></a> <span>2026-02-27</span></li>
+          <li><a href="2602.23949.html"><strong>HotelQuEST: Balancing Quality and Efficiency in Agentic Search</strong></a> <span>2026-02-27</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

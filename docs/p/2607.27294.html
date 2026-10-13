@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>AgentS4D: Benchmarking Runtime Risks across the Execution Lifecycle of LLM-Based Workspace Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language model (LLM)-based workspace agents execute stateful, multi-step workflows across heterogeneous resources, external…" />
+    <meta name="keywords" content="General, Tool use, Safety, agent benchmark, LLM agent, arXiv, 2607.27294" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.27294.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AgentS4D: Benchmarking Runtime Risks across the Execution Lifecycle of LLM-Based Workspace Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language model (LLM)-based workspace agents execute stateful, multi-step workflows across heterogeneous resources, external…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.27294.html" />
+    <meta property="article:published_time" content="2026-07-29T15:55:45Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AgentS4D: Benchmarking Runtime Risks across the Execution Lifecycle of LLM-Based Workspace Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language model (LLM)-based workspace agents execute stateful, multi-step workflows across heterogeneous resources, external…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,73 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AgentS4D: Benchmarking Runtime Risks across the Execution Lifecycle of LLM-Based Workspace Agents",
+  "name": "AgentS4D: Benchmarking Runtime Risks across the Execution Lifecycle of LLM-Based Workspace Agents",
+  "abstract": "Large language model (LLM)-based workspace agents execute stateful, multi-step workflows across heterogeneous resources, external tools, and persistent state. Their safety must therefore be assessed from actions, side effects, and state changes throughout execution. Although recent benchmarks have advanced executable safety testing and trajectory-aware verification, they rarely provide a unified account of where risks enter, how they elicit unsafe behavior, which harms they target, and where supporting evidence appears during execution. We introduce AgentS4D, a sandboxed benchmark for lifecycle-wide runtime safety evaluation. Its four-dimensional runtime-safety framework uses six risk-entry sources, six induction strategies, and nine target harms to guide case construction, while seven lifecycle checkpoints organize post-run evidence. AgentS4D contains 328 risk-injected cases. We evaluate all 20 combinations of four harnesses (Hermes, OpenClaw, Claude Code, and Codex) and five LLM backends (GPT-5.5, Gemini 3.1 Pro, DeepSeek-V4-Pro, MiniMax-M3, and Qwen3.7-Plus) on these cases, yielding 6,560 runs. Overall, 4,461 runs (68.0%) trigger prespecified unsafe signals. Across the 20 configurations, the observed safety of an agent system varies with both its harness-LLM pairing and how risk is introduced. Agent systems exhibit markedly different safety behavior when the same induction strategy reaches them through different risk carriers. They also respond differently to the same target harm when it is realized through different carriers and strategies. Moreover, 4,344 runs (66.22% overall) are unsafe yet complete. Thus, task completion cannot establish runtime safety, and testing only one form of a risk can conceal important weaknesses. Evaluations should examine complete agent configurations across diverse risk conditions and retain evidence throughout execution.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jiajun Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhaoxuan Ke"
+    },
+    {
+      "@type": "Person",
+      "name": "Jihang Ye"
+    },
+    {
+      "@type": "Person",
+      "name": "Xuanze Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Shanqing Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Qi Xuan"
+    }
+  ],
+  "datePublished": "2026-07-29T15:55:45Z",
+  "dateModified": "2026-07-29T15:55:45Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.27294.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.27294.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.27294v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.27294"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.27294v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.27294"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +105,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AgentS4D: Benchmarking Runtime Risks across the Execution Lifecycle of LLM-Based Workspace Agents</h1>
+        <div class="meta">
+          Jiajun Zhou, Zhaoxuan Ke, Jihang Ye, Xuanze Chen, Shanqing Yu, Qi Xuan
+          · 2607.27294
+          · <time datetime="2026-07-29">2026-07-29</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large language model (LLM)-based workspace agents execute stateful, multi-step workflows across heterogeneous resources, external tools, and persistent state. Their safety must therefore be assessed from actions, side effects, and state changes throughout execution. Although recent benchmarks have advanced executable safety testing and trajectory-aware verification, they rarely provide a unified account of where risks enter, how they elicit unsafe behavior, which harms they target, and where supporting evidence appears during execution. We introduce AgentS4D, a sandboxed benchmark for lifecycle-wide runtime safety evaluation. Its four-dimensional runtime-safety framework uses six risk-entry sources, six induction strategies, and nine target harms to guide case construction, while seven lifecycle checkpoints organize post-run evidence. AgentS4D contains 328 risk-injected cases. We evaluate all 20 combinations of four harnesses (Hermes, OpenClaw, Claude Code, and Codex) and five LLM backends (GPT-5.5, Gemini 3.1 Pro, DeepSeek-V4-Pro, MiniMax-M3, and Qwen3.7-Plus) on these cases, yielding 6,560 runs. Overall, 4,461 runs (68.0%) trigger prespecified unsafe signals. Across the 20 configurations, the observed safety of an agent system varies with both its harness-LLM pairing and how risk is introduced. Agent systems exhibit markedly different safety behavior when the same induction strategy reaches them through different risk carriers. They also respond differently to the same target harm when it is realized through different carriers and strategies. Moreover, 4,344 runs (66.22% overall) are unsafe yet complete. Thus, task completion cannot establish runtime safety, and testing only one form of a risk can conceal important weaknesses. Evaluations should examine complete agent configurations across diverse risk conditions and retain evidence throughout execution.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.27294v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.27294v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.27294" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.28146.html"><strong>Can Agents Deceive? Evaluating Reasoning and Deception in ParliamentBench using a Social Deduction Game</strong></a> <span>2026-07-30</span></li>
+          <li><a href="2607.28033.html"><strong>DataClawEval: A Benchmark for Data Engineering Agents in Real Industrial Harness</strong></a> <span>2026-07-30</span></li>
+          <li><a href="2607.27453.html"><strong>VAmoS Bench: Voice Agent Simulation Bench</strong></a> <span>2026-07-29</span></li>
+          <li><a href="2607.27353.html"><strong>LayerRAG-Bench: A Cross-Layer Reliability Benchmark for Agentic Retrieval-Augmented Generation</strong></a> <span>2026-07-29</span></li>
+          <li><a href="2607.27056.html"><strong>Setoka: A Benchmark for Hierarchical User Understanding in Personalized Agents over Heterogeneous Data</strong></a> <span>2026-07-29</span></li>
+          <li><a href="2607.26977.html"><strong>TREK: A Travel Reasoning and Evaluation Kit for LLM Agents in Complex Trip Planning</strong></a> <span>2026-07-29</span></li>
+          <li><a href="2607.26791.html"><strong>SecRespond: Benchmarking AI Agents for Real-World Post-Compromise Incident Response</strong></a> <span>2026-07-29</span></li>
+          <li><a href="2607.26367.html"><strong>Exploring Structures in Physics Problems: Can AI Agents Discover Statistical Mechanical Mappings?</strong></a> <span>2026-07-29</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

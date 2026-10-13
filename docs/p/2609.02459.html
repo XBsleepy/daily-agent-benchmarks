@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>CivBench: A Long-Horizon Benchmark for Tool-Mediated Agents in Civilization VI | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: We present CivBench, an open-source benchmark for evaluating language model agents in long-horizon, tool-mediated environments…" />
+    <meta name="keywords" content="Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2609.02459" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.02459.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="CivBench: A Long-Horizon Benchmark for Tool-Mediated Agents in Civilization VI" />
+    <meta property="og:description" content="Daily Agent Benchmarks: We present CivBench, an open-source benchmark for evaluating language model agents in long-horizon, tool-mediated environments…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.02459.html" />
+    <meta property="article:published_time" content="2026-09-02T11:31:39Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="CivBench: A Long-Horizon Benchmark for Tool-Mediated Agents in Civilization VI" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: We present CivBench, an open-source benchmark for evaluating language model agents in long-horizon, tool-mediated environments…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,72 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "CivBench: A Long-Horizon Benchmark for Tool-Mediated Agents in Civilization VI",
+  "name": "CivBench: A Long-Horizon Benchmark for Tool-Mediated Agents in Civilization VI",
+  "abstract": "We present CivBench, an open-source benchmark for evaluating language model agents in long-horizon, tool-mediated environments through the Model Context Protocol (MCP). A single episode spans 300+ turns and produces thousands of tool calls over a large action space, requiring sustained planning, state monitoring, and execution under partial observability. The environment exposes 76 MCP tools and a narration layer that converts visual game state into structured text. We use CivBench to characterise agent behaviour across four model families in 23 admissible runs. The sample is a pilot, not a model ranking: aggregate outcomes do not reliably discriminate models at this scale. Instead, we introduce two interface-level metrics that the environment makes measurable: Proactive Monitoring Rate (PMR), capturing whether agents actively query latent strategic state, and RAG@10, capturing whether commitments stated in structured planning reflections are executed within ten subsequent turns. Across runs we observe two consistent patterns under a shared playbook protocol. Agents under-monitor strategically relevant state that is available but requires explicit querying: despite playbook guidance to query victory progress every 20 turns, agents do so only every 30 to 75 turns, and in 7 of 20 detectable defeats they failed to query within the 20 turn warning window before game end. Agents also frequently fail to execute near-term commitments stated in their own planning reflections (RAG@10 between 48.2% and 65.8% across models). Both patterns arise despite tool access and explicit guidance, and we interpret them as deviations under instruction rather than absences of capability. We release the environment, scenarios, logs, metrics, and analysis pipeline at https://github.com/lmwilki/civ6-mcp",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Austin Tudor David Andrews"
+    },
+    {
+      "@type": "Person",
+      "name": "Liam Wilkinson"
+    },
+    {
+      "@type": "Person",
+      "name": "Jamie Heagerty"
+    },
+    {
+      "@type": "Person",
+      "name": "Harry Coppock"
+    },
+    {
+      "@type": "Person",
+      "name": "Jakob Nicolaus Foerster"
+    },
+    {
+      "@type": "Person",
+      "name": "Rui Ponte Costa"
+    }
+  ],
+  "datePublished": "2026-09-02T11:31:39Z",
+  "dateModified": "2026-09-02T11:31:39Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.02459.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.02459.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.02459v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.02459"
+  },
+  "keywords": [
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.02459v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.02459"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +104,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>CivBench: A Long-Horizon Benchmark for Tool-Mediated Agents in Civilization VI</h1>
+        <div class="meta">
+          Austin Tudor David Andrews, Liam Wilkinson, Jamie Heagerty, Harry Coppock, Jakob Nicolaus Foerster, Rui Ponte Costa
+          · 2609.02459
+          · <time datetime="2026-09-02">2026-09-02</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>We present CivBench, an open-source benchmark for evaluating language model agents in long-horizon, tool-mediated environments through the Model Context Protocol (MCP). A single episode spans 300+ turns and produces thousands of tool calls over a large action space, requiring sustained planning, state monitoring, and execution under partial observability. The environment exposes 76 MCP tools and a narration layer that converts visual game state into structured text. We use CivBench to characterise agent behaviour across four model families in 23 admissible runs. The sample is a pilot, not a model ranking: aggregate outcomes do not reliably discriminate models at this scale. Instead, we introduce two interface-level metrics that the environment makes measurable: Proactive Monitoring Rate (PMR), capturing whether agents actively query latent strategic state, and RAG@10, capturing whether commitments stated in structured planning reflections are executed within ten subsequent turns. Across runs we observe two consistent patterns under a shared playbook protocol. Agents under-monitor strategically relevant state that is available but requires explicit querying: despite playbook guidance to query victory progress every 20 turns, agents do so only every 30 to 75 turns, and in 7 of 20 detectable defeats they failed to query within the 20 turn warning window before game end. Agents also frequently fail to execute near-term commitments stated in their own planning reflections (RAG@10 between 48.2% and 65.8% across models). Both patterns arise despite tool access and explicit guidance, and we interpret them as deviations under instruction rather than absences of capability. We release the environment, scenarios, logs, metrics, and analysis pipeline at https://github.com/lmwilki/civ6-mcp</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.02459v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.02459v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.02459" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.06972.html"><strong>AgentDrift: A Step-Labeled Benchmark of Injection-Hijacked LLM Agent Trajectories</strong></a> <span>2026-09-07</span></li>
+          <li><a href="2609.05818.html"><strong>Agentic BAIM-LLM Evaluation (ABLE): Benchmarking LLM Use of Protein Design Tools</strong></a> <span>2026-09-05</span></li>
+          <li><a href="2609.04280.html"><strong>EVOHARNESSBENCH: Can Your Agents Keep Pace with an Evolving Harness?</strong></a> <span>2026-09-03</span></li>
+          <li><a href="2609.03588.html"><strong>KC-Bench: A Dynamic Interactive Benchmark for Evaluating Knowledge Conflicts in LLM Agents</strong></a> <span>2026-09-03</span></li>
+          <li><a href="2609.01437.html"><strong>HarnessDev: Can LLMs Create and Evolve Their Own Agent Harness?</strong></a> <span>2026-09-01</span></li>
+          <li><a href="2608.29397.html"><strong>AlgoWorlds: Benchmarking Tool Use for Global Optimization in Algorithmic Worlds</strong></a> <span>2026-08-29</span></li>
+          <li><a href="2608.29128.html"><strong>APIFlow-Bench: Measuring Whether Agents Survive Long, Dependent API Workflows</strong></a> <span>2026-08-29</span></li>
+          <li><a href="2608.27334.html"><strong>BTS-AgentBench: A Deterministic, Replayable Pipeline from Read-Only Telemetry Logs to Agent Benchmarks</strong></a> <span>2026-08-27</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

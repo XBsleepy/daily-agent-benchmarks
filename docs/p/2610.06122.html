@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Benchmarking Jailbreak Guardrails for Embodied Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Embodied agents powered by large language models and vision-language models are increasingly deployed in physical environments, but…" />
+    <meta name="keywords" content="Safety, Embodied / robotics, Planning / reasoning, Multimodal, agent benchmark, LLM agent, arXiv, 2610.06122" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.06122.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Benchmarking Jailbreak Guardrails for Embodied Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Embodied agents powered by large language models and vision-language models are increasingly deployed in physical environments, but…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.06122.html" />
+    <meta property="article:published_time" content="2026-10-05T10:56:18Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Benchmarking Jailbreak Guardrails for Embodied Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Embodied agents powered by large language models and vision-language models are increasingly deployed in physical environments, but…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,74 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Benchmarking Jailbreak Guardrails for Embodied Agents",
+  "name": "Benchmarking Jailbreak Guardrails for Embodied Agents",
+  "abstract": "Embodied agents powered by large language models and vision-language models are increasingly deployed in physical environments, but jailbreak attacks can induce these agents to perform physically harmful actions. A growing number of guardrail methods have been proposed to intercept dangerous behavior before it is executed, yet existing safety benchmarks evaluate the embodied models themselves, leaving it unclear how well these guardrails actually defend an embodied agent in practice. We present the first systematic evaluation of jailbreak guardrails for embodied agents. To compare guardrails under identical conditions, we build a pluggable evaluation framework that treats the embodied agent as a fixed backend and each guardrail as a module that can intervene at the perception, planning, or control stage. We subject six representative guardrails to template-based and automated jailbreak attacks as well as safe instructions, and assess them at the system level along three dimensions: defense effectiveness, measured by the bypass rate and the hazard success rate in the simulator; usability, measured by the false-positive rate and the task completion rate on safe instructions; and efficiency, measured by the latency overhead added at runtime. Experiments on guardrails that span different intervention stages, decision mechanisms, and input modalities reveal a clear trade-off among the three dimensions, and show that no single guardrail dominates in all settings. We further analyze how intervention stage, decision mechanism, and input modality shape safety outcomes, and we offer practical guidance for selecting and designing guardrails for embodied agents.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Xunguang Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Qingyue Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuguang Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Zongjie Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenxuan Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Shuai Wang"
+    }
+  ],
+  "datePublished": "2026-10-05T10:56:18Z",
+  "dateModified": "2026-10-05T10:56:18Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.06122.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.06122.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.06122v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.06122"
+  },
+  "keywords": [
+    "Safety",
+    "Embodied / robotics",
+    "Planning / reasoning",
+    "Multimodal",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Safety"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.06122v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2610.06122"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +106,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Benchmarking Jailbreak Guardrails for Embodied Agents</h1>
+        <div class="meta">
+          Xunguang Wang, Qingyue Wang, Yuguang Zhou, Zongjie Li, Wenxuan Wang, Shuai Wang
+          · 2610.06122
+          · <time datetime="2026-10-05">2026-10-05</time>
+          · Safety
+        </div>
+        <div class="themes"><span class="chip">Embodied / robotics</span><span class="chip">Safety</span><span class="chip">Planning / reasoning</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Embodied agents powered by large language models and vision-language models are increasingly deployed in physical environments, but jailbreak attacks can induce these agents to perform physically harmful actions. A growing number of guardrail methods have been proposed to intercept dangerous behavior before it is executed, yet existing safety benchmarks evaluate the embodied models themselves, leaving it unclear how well these guardrails actually defend an embodied agent in practice. We present the first systematic evaluation of jailbreak guardrails for embodied agents. To compare guardrails under identical conditions, we build a pluggable evaluation framework that treats the embodied agent as a fixed backend and each guardrail as a module that can intervene at the perception, planning, or control stage. We subject six representative guardrails to template-based and automated jailbreak attacks as well as safe instructions, and assess them at the system level along three dimensions: defense effectiveness, measured by the bypass rate and the hazard success rate in the simulator; usability, measured by the false-positive rate and the task completion rate on safe instructions; and efficiency, measured by the latency overhead added at runtime. Experiments on guardrails that span different intervention stages, decision mechanisms, and input modalities reveal a clear trade-off among the three dimensions, and show that no single guardrail dominates in all settings. We further analyze how intervention stage, decision mechanism, and input modality shape safety outcomes, and we offer practical guidance for selecting and designing guardrails for embodied agents.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.06122v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.06122v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.06122" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Safety benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.09294.html"><strong>RT-Safe: Benchmarking Agent Safety in Real-Time Embodied Environment</strong></a> <span>2026-10-07</span></li>
+          <li><a href="2610.08513.html"><strong>Wiki-Talkie: Multilingual Benchmarking of Persona-Based Agents on Real-World Discussions</strong></a> <span>2026-10-06</span></li>
+          <li><a href="2610.06748.html"><strong>BazaarBench: Delegation Safety in Decentralized C2C Marketplaces Run by LLM Agents</strong></a> <span>2026-10-05</span></li>
+          <li><a href="2610.06514.html"><strong>ANT: A Multi-Granularity Network Traffic Dataset and Benchmark for Agents Behavior Auditing</strong></a> <span>2026-10-05</span></li>
+          <li><a href="2610.05622.html"><strong>UndoBench: Separating Task Competence from Recovery Capability in Tool-Using AI Agents</strong></a> <span>2026-10-04</span></li>
+          <li><a href="2610.03153.html"><strong>EvoRiskBench: An Evolving Benchmark for Runtime Security Risks in Workspace Agents</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.02304.html"><strong>SimuVerity: Benchmarking Agents for Engineering-Grade Simulink Model Generation</strong></a> <span>2026-10-01</span></li>
+          <li><a href="2609.39371.html"><strong>EHR-RobustGym: Benchmarking and Training Agents for Robust Clinical Reasoning</strong></a> <span>2026-09-30</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

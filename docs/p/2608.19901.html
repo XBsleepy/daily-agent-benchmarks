@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MaliciousSkillBench: A Comprehensive Benchmark for Malicious Agent Skill Detection | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Agent Skills extend LLM agents with reusable instruction packages that may also include scripts, resources, and service…" />
+    <meta name="keywords" content="Safety, agent benchmark, LLM agent, arXiv, 2608.19901" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.19901.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MaliciousSkillBench: A Comprehensive Benchmark for Malicious Agent Skill Detection" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Agent Skills extend LLM agents with reusable instruction packages that may also include scripts, resources, and service…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.19901.html" />
+    <meta property="article:published_time" content="2026-08-20T11:13:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MaliciousSkillBench: A Comprehensive Benchmark for Malicious Agent Skill Detection" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Agent Skills extend LLM agents with reusable instruction packages that may also include scripts, resources, and service…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,75 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MaliciousSkillBench: A Comprehensive Benchmark for Malicious Agent Skill Detection",
+  "name": "MaliciousSkillBench: A Comprehensive Benchmark for Malicious Agent Skill Detection",
+  "abstract": "Agent Skills extend LLM agents with reusable instruction packages that may also include scripts, resources, and service configuration. This creates a direct distribution channel for malicious behavior, yet existing malicious-Skill datasets are fragmented across sources, artifact formats, evidence regimes, and benign coverage; duplicated and structurally related content further complicates direct aggregation and evaluation. We present MaliciousSkillBench, a comprehensive benchmark for malicious Agent Skill detection. We consolidate 13 public sources, 11 of which contribute Core malicious artifacts, and reduce 8,414 raw malicious records to 7,539 normalized-unique identities in 4,588 operational structural families. After conservative cross-label conflict exclusion, the primary benchmark contains 9,740 Skills: 7,505 malicious and 2,235 benign. To characterize its coverage, we harmonize 11 attack categories for 4,983 malicious identities with supported source-native mappings and find substantial differences in threat composition across sources. We then evaluate three learned text detectors and three off-the-shelf Skill scanners. Learned detectors achieve 0.882-0.932 Random Macro-F1 but only 0.653-0.665 under Source-Disjoint evaluation; the strongest word TF-IDF SVM scores 0.932/0.916/0.665 on Random/structural-disjoint/Source-Disjoint while retaining 95.6% malicious recall but producing 62.4% benign FPR on held-out sources. Off-the-shelf scanners occupy different but also unsatisfactory operating regimes, reducing false positives only at the cost of sharply lower malicious recall. Together, these results show that reliable malicious-Skill detection requires both broader cross-source benchmark coverage and evaluation that jointly measures attack detection and benign over-flagging.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yue Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yi Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Gelei Deng"
+    },
+    {
+      "@type": "Person",
+      "name": "Ying Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuekang Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhenyu Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Leo Zhang"
+    }
+  ],
+  "datePublished": "2026-08-20T11:13:00Z",
+  "dateModified": "2026-08-20T11:13:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.19901.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.19901.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.19901v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.19901"
+  },
+  "keywords": [
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Safety"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.19901v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.19901"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +107,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MaliciousSkillBench: A Comprehensive Benchmark for Malicious Agent Skill Detection</h1>
+        <div class="meta">
+          Yue Wang, Yi Liu, Gelei Deng, Ying Zhang, Yuekang Li, Zhenyu Chen, Leo Zhang
+          · 2608.19901
+          · <time datetime="2026-08-20">2026-08-20</time>
+          · Safety
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Agent Skills extend LLM agents with reusable instruction packages that may also include scripts, resources, and service configuration. This creates a direct distribution channel for malicious behavior, yet existing malicious-Skill datasets are fragmented across sources, artifact formats, evidence regimes, and benign coverage; duplicated and structurally related content further complicates direct aggregation and evaluation. We present MaliciousSkillBench, a comprehensive benchmark for malicious Agent Skill detection. We consolidate 13 public sources, 11 of which contribute Core malicious artifacts, and reduce 8,414 raw malicious records to 7,539 normalized-unique identities in 4,588 operational structural families. After conservative cross-label conflict exclusion, the primary benchmark contains 9,740 Skills: 7,505 malicious and 2,235 benign. To characterize its coverage, we harmonize 11 attack categories for 4,983 malicious identities with supported source-native mappings and find substantial differences in threat composition across sources. We then evaluate three learned text detectors and three off-the-shelf Skill scanners. Learned detectors achieve 0.882-0.932 Random Macro-F1 but only 0.653-0.665 under Source-Disjoint evaluation; the strongest word TF-IDF SVM scores 0.932/0.916/0.665 on Random/structural-disjoint/Source-Disjoint while retaining 95.6% malicious recall but producing 62.4% benign FPR on held-out sources. Off-the-shelf scanners occupy different but also unsatisfactory operating regimes, reducing false positives only at the cost of sharply lower malicious recall. Together, these results show that reliable malicious-Skill detection requires both broader cross-source benchmark coverage and evaluation that jointly measures attack detection and benign over-flagging.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.19901v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.19901v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.19901" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Safety benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.25340.html"><strong>HRGuard: Gating Relationship Manipulation in Multi-Turn Agentic AI Conversations</strong></a> <span>2026-08-26</span></li>
+          <li><a href="2608.24314.html"><strong>Benchmarking LLM Judges for Voice-Agent Evaluation: Reliability, Calibration, and Human Oversight</strong></a> <span>2026-08-25</span></li>
+          <li><a href="2608.23179.html"><strong>NetConfArena: An Executable Benchmark for LLM Agents in Closed-Loop Network Configuration</strong></a> <span>2026-08-24</span></li>
+          <li><a href="2608.23635.html"><strong>ToolRobustBench: Stage-Wise Perturbation Evaluation and Failure Diagnosis for Tool-Calling Agents</strong></a> <span>2026-08-23</span></li>
+          <li><a href="2608.17597.html"><strong>HarnessRisk: A Lifecycle-Oriented Benchmark for Agent Harness Safety</strong></a> <span>2026-08-18</span></li>
+          <li><a href="2608.09476.html"><strong>ActBench: Self-Evolving Benchmark of Behavioral Safety in Cowork Agents</strong></a> <span>2026-08-10</span></li>
+          <li><a href="2608.06984.html"><strong>HarnessSafe: Evaluating Safety Across Persistent Carriers in Agent Harnesses</strong></a> <span>2026-08-07</span></li>
+          <li><a href="2607.20121.html"><strong>OpenSkillRisk: Benchmarking Agent Safety When Using Real-World Risky Third-Party Skills</strong></a> <span>2026-07-22</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

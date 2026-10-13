@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>SearchAuditor: Auditing and Attributing Failures in Long-Horizon Search Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Deep search agents tackle challenging questions through long-horizon web interactions, a process that is both complex and fragile…" />
+    <meta name="keywords" content="General, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2608.05212" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.05212.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SearchAuditor: Auditing and Attributing Failures in Long-Horizon Search Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Deep search agents tackle challenging questions through long-horizon web interactions, a process that is both complex and fragile…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.05212.html" />
+    <meta property="article:published_time" content="2026-08-05T09:09:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SearchAuditor: Auditing and Attributing Failures in Long-Horizon Search Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Deep search agents tackle challenging questions through long-horizon web interactions, a process that is both complex and fragile…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,80 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SearchAuditor: Auditing and Attributing Failures in Long-Horizon Search Agents",
+  "name": "SearchAuditor: Auditing and Attributing Failures in Long-Horizon Search Agents",
+  "abstract": "Deep search agents tackle challenging questions through long-horizon web interactions, a process that is both complex and fragile: small reasoning errors may propagate through long, noisy trajectories into fluent but incorrect answers. Diagnosing such failures is difficult, requiring the manual inspection of extremely long execution traces, which could be beyond human capacity. We therefore introduce SearchAuditBench, a benchmark that evaluates whether LLM auditors can localize, attribute, and repair these failures, thereby reducing the human burden. SearchAuditBench comprises 1,243 failed trajectories, averaging 73.1 messages and 65.1K tokens, collected from eight open-weight models on five deep-search benchmarks, each expert-annotated with the critical error step, a search-specific root cause, and a reference repair with grading rubrics. We further propose SearchAuditor, a multi-perspective auditing framework that effectively localizes, attributes, and repairs search-agent failures through evidence-grounded adjudication. Experimental results show that even the strongest baseline, when powered by a frontier model like GPT-5.5, attains only a 26.6% end-to-end pass rate. In contrast, our SearchAuditor consistently outperforms all baselines across different frontier models, achieving an end-to-end pass rate of 32.3%, and resuming failed runs with its repairs enables agents to better recover from errors.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Zhixiang Liang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yifei Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yidan Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Haozhe Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Beichen Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiaqi Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Nan Duan"
+    },
+    {
+      "@type": "Person",
+      "name": "Qiong Cao"
+    }
+  ],
+  "datePublished": "2026-08-05T09:09:00Z",
+  "dateModified": "2026-08-05T09:09:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.05212.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.05212.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.05212v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.05212"
+  },
+  "keywords": [
+    "General",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.05212v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.05212"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +112,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SearchAuditor: Auditing and Attributing Failures in Long-Horizon Search Agents</h1>
+        <div class="meta">
+          Zhixiang Liang, Yifei Liu, Yidan Huang, Haozhe Zhao, Beichen Huang, Jiaqi Wang, Nan Duan, Qiong Cao
+          · 2608.05212
+          · <time datetime="2026-08-05">2026-08-05</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Deep search agents tackle challenging questions through long-horizon web interactions, a process that is both complex and fragile: small reasoning errors may propagate through long, noisy trajectories into fluent but incorrect answers. Diagnosing such failures is difficult, requiring the manual inspection of extremely long execution traces, which could be beyond human capacity. We therefore introduce SearchAuditBench, a benchmark that evaluates whether LLM auditors can localize, attribute, and repair these failures, thereby reducing the human burden. SearchAuditBench comprises 1,243 failed trajectories, averaging 73.1 messages and 65.1K tokens, collected from eight open-weight models on five deep-search benchmarks, each expert-annotated with the critical error step, a search-specific root cause, and a reference repair with grading rubrics. We further propose SearchAuditor, a multi-perspective auditing framework that effectively localizes, attributes, and repairs search-agent failures through evidence-grounded adjudication. Experimental results show that even the strongest baseline, when powered by a frontier model like GPT-5.5, attains only a 26.6% end-to-end pass rate. In contrast, our SearchAuditor consistently outperforms all baselines across different frontier models, achieving an end-to-end pass rate of 32.3%, and resuming failed runs with its repairs enables agents to better recover from errors.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.05212v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.05212v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.05212" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.06329.html"><strong>Benchmarking the Benchmarks: Evaluating Benchmarks for Conversational Agents</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2608.06027.html"><strong>FormBharo: Designing and Evaluating a Voice Agent for Conversational Form Filling in Rural India</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2608.05573.html"><strong>SkillTV-Bench: Benchmarking How Well Judges Perform on Skill-Augmented Agentic Execution</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2608.05519.html"><strong>EcoAgent-Bench: Evaluating Economic Decision-Making in Budget-Constrained LLM Agents</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2608.04828.html"><strong>Skill-Use: Can LLMs Actually Use Skills in Agentic Harnesses?</strong></a> <span>2026-08-05</span></li>
+          <li><a href="2608.04746.html"><strong>Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems</strong></a> <span>2026-08-05</span></li>
+          <li><a href="2608.14680.html"><strong>When Agentic Executions Fail: Detecting and Localizing Runtime Faults from Telemetry</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.04095.html"><strong>FinPerMA: A Theory-Informed, Event-Grounded Personalized-Memory Benchmark for LLM Agents</strong></a> <span>2026-08-04</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

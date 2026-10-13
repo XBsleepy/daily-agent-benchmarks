@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>FinSkillBench: Evaluating AI Agents and Domain Skills for Investment Management | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Investment management is a high-stakes domain in which agentic AI systems must do more than generate plausible text. They must…" />
+    <meta name="keywords" content="General, Tool use, Safety, agent benchmark, LLM agent, arXiv, 2608.18099" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.18099.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="FinSkillBench: Evaluating AI Agents and Domain Skills for Investment Management" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Investment management is a high-stakes domain in which agentic AI systems must do more than generate plausible text. They must…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.18099.html" />
+    <meta property="article:published_time" content="2026-06-09T07:40:39Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="FinSkillBench: Evaluating AI Agents and Domain Skills for Investment Management" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Investment management is a high-stakes domain in which agentic AI systems must do more than generate plausible text. They must…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,61 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "FinSkillBench: Evaluating AI Agents and Domain Skills for Investment Management",
+  "name": "FinSkillBench: Evaluating AI Agents and Domain Skills for Investment Management",
+  "abstract": "Investment management is a high-stakes domain in which agentic AI systems must do more than generate plausible text. They must retrieve point-in-time data, assemble correct computational inputs, invoke specialized methods, and produce auditable structured outputs. We introduce FinSkillBench, an evaluation suite designed to measure whether language model agents can effectively use financial domain skills to solve investment management tasks. The benchmark spans three domains, portfolio construction, risk management, and fundamental analysis, and includes 12 subtasks with 2,603 task episodes. Each episode provides point-in-time inputs, hidden ground truth, and a task-specific verifier.We compare three conditions: no skill, curated skill packages consisting of procedural documents and executable components, and self-generated skills in which the agent writes and reuses its own procedures within an episode. Across 9 models and a large-scale evaluation, curated skills consistently improve performance, raising mean scores from 0.366 to 0.528, with the largest gains in portfolio construction and risk management. In contrast, self-generated skills provide little benefit despite higher computational cost. An independent evaluation using a separate agent framework (Hermes Agent, 8 models, 5,280 episodes total) reproduces the directional pattern across all three domains, with the magnitude of skill effects varying by subtask and harness. These results showthat in investment management agents, access to reliable procedural skills can be as important as model choice, while naive self-generation of skills is often ineffective. We release the benchmark, evaluation tools, curated skill packages, and full trajectories to support further research.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jermyn Zhen Yong Bek"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhuang Qiang Bok"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhongtian Sun"
+    }
+  ],
+  "datePublished": "2026-06-09T07:40:39Z",
+  "dateModified": "2026-06-09T07:40:39Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.18099.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.18099.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.18099v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.18099"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.18099v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.18099"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +93,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>FinSkillBench: Evaluating AI Agents and Domain Skills for Investment Management</h1>
+        <div class="meta">
+          Jermyn Zhen Yong Bek, Zhuang Qiang Bok, Zhongtian Sun
+          · 2608.18099
+          · <time datetime="2026-06-09">2026-06-09</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Investment management is a high-stakes domain in which agentic AI systems must do more than generate plausible text. They must retrieve point-in-time data, assemble correct computational inputs, invoke specialized methods, and produce auditable structured outputs. We introduce FinSkillBench, an evaluation suite designed to measure whether language model agents can effectively use financial domain skills to solve investment management tasks. The benchmark spans three domains, portfolio construction, risk management, and fundamental analysis, and includes 12 subtasks with 2,603 task episodes. Each episode provides point-in-time inputs, hidden ground truth, and a task-specific verifier.We compare three conditions: no skill, curated skill packages consisting of procedural documents and executable components, and self-generated skills in which the agent writes and reuses its own procedures within an episode. Across 9 models and a large-scale evaluation, curated skills consistently improve performance, raising mean scores from 0.366 to 0.528, with the largest gains in portfolio construction and risk management. In contrast, self-generated skills provide little benefit despite higher computational cost. An independent evaluation using a separate agent framework (Hermes Agent, 8 models, 5,280 episodes total) reproduces the directional pattern across all three domains, with the magnitude of skill effects varying by subtask and harness. These results showthat in investment management agents, access to reliable procedural skills can be as important as model choice, while naive self-generation of skills is often ineffective. We release the benchmark, evaluation tools, curated skill packages, and full trajectories to support further research.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.18099v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.18099v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.18099" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.12871.html"><strong>DailyReport: An Open-ended Benchmark for Evaluating Search Agents on Daily Search Tasks</strong></a> <span>2026-06-11</span></li>
+          <li><a href="2606.12837.html"><strong>LoHoSearch: Benchmarking Long-Horizon Search Agents Beyond the Human Difficulty Ceiling</strong></a> <span>2026-06-11</span></li>
+          <li><a href="2606.12821.html"><strong>GeoNatureAgent Benchmark: Benchmarking LLM Agents for Environmental Geospatial Analysis Across Frontier and Open-Weight Foundation Models</strong></a> <span>2026-06-11</span></li>
+          <li><a href="2607.20491.html"><strong>DFAH-Bench: Benchmarking Observable Agent Instability in Financial Decision-Making</strong></a> <span>2026-06-10</span></li>
+          <li><a href="2606.20661.html"><strong>From Knowing to Acting: Benchmarking Self-Awareness Capability of LLM Agents</strong></a> <span>2026-06-09</span></li>
+          <li><a href="2606.11070.html"><strong>T1-Bench: Benchmarking Multi-Scenario Agents in Real-World Domains</strong></a> <span>2026-06-09</span></li>
+          <li><a href="2606.10813.html"><strong>RedAct: Redacting Agent Capability Traces for Procedural Skill Protection</strong></a> <span>2026-06-09</span></li>
+          <li><a href="2606.10394.html"><strong>STAGE-Claw: Automated State-based Agent Benchmarking for Realistic Scenarios</strong></a> <span>2026-06-09</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

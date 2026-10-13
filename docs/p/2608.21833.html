@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>GameXpert-Bench: How Far Are Coding Agents from Expert Game Development? | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Recent large language models (LLMs) can operate as coding agents that build complete games from natural language requests. Game…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2608.21833" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.21833.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="GameXpert-Bench: How Far Are Coding Agents from Expert Game Development?" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Recent large language models (LLMs) can operate as coding agents that build complete games from natural language requests. Game…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.21833.html" />
+    <meta property="article:published_time" content="2026-08-22T08:05:16Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="GameXpert-Bench: How Far Are Coding Agents from Expert Game Development?" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Recent large language models (LLMs) can operate as coding agents that build complete games from natural language requests. Game…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,88 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "GameXpert-Bench: How Far Are Coding Agents from Expert Game Development?",
+  "name": "GameXpert-Bench: How Far Are Coding Agents from Expert Game Development?",
+  "abstract": "Recent large language models (LLMs) can operate as coding agents that build complete games from natural language requests. Game development is especially demanding because program logic, visual and audio content, interfaces, interaction and playability must function together in one executable artifact. Measuring this capability therefore requires evaluation of both game product and the development process. Existing benchmarks often assess the game development capabilities of LLMs by evaluating the final artifact or an isolated development stage. Our analysis of complete human-agent development trajectories identifies three stages that together span the lifecycle of game development with a coding agent: initial game generation, bug diagnosis and repair, and optimization over multiple turns. Therefore, we introduce GameXpert-Bench, which operationalizes the three lifecycle stages as three complementary benchmark tracks. GameGen evaluates complete game creation from a single request in an empty workspace. GameFix evaluates diagnosis and repair when defects are reported or left for the agent to discover. GameOpt evaluates cumulative optimization through request chains seeded by real development trajectories between users and agents. We evaluate each track using live game interaction, deterministic behavioral tests, or final product criteria with regression checks. The suite contains 97 generation tasks across 11 genres; 100 repair tasks from 50 game levels verified by humans, each with 19-27 injected bugs; and 17 optimization chains with six turns and 102 requests. Across the three tracks, current agents are more reliable at producing playable foundations and implementing explicit requirements than at discovering defects, verifying runtime behavior, and preserving functionality across changes.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Kun Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Haorong Hong"
+    },
+    {
+      "@type": "Person",
+      "name": "Peizhong Gao"
+    },
+    {
+      "@type": "Person",
+      "name": "Jianfeng Lin"
+    },
+    {
+      "@type": "Person",
+      "name": "Tongxu Luo"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuxuan Xie"
+    },
+    {
+      "@type": "Person",
+      "name": "Chenxu Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jieling He"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhongyuan Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zeno Zeng"
+    }
+  ],
+  "datePublished": "2026-08-22T08:05:16Z",
+  "dateModified": "2026-08-22T08:05:16Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.21833.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.21833.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.21833v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.21833"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.21833v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.21833"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +120,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>GameXpert-Bench: How Far Are Coding Agents from Expert Game Development?</h1>
+        <div class="meta">
+          Kun Chen, Haorong Hong, Peizhong Gao, Jianfeng Lin, Tongxu Luo, Yuxuan Xie, Chenxu Liu, Jieling He, Zhongyuan Liu, Zeno Zeng
+          · 2608.21833
+          · <time datetime="2026-08-22">2026-08-22</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Recent large language models (LLMs) can operate as coding agents that build complete games from natural language requests. Game development is especially demanding because program logic, visual and audio content, interfaces, interaction and playability must function together in one executable artifact. Measuring this capability therefore requires evaluation of both game product and the development process. Existing benchmarks often assess the game development capabilities of LLMs by evaluating the final artifact or an isolated development stage. Our analysis of complete human-agent development trajectories identifies three stages that together span the lifecycle of game development with a coding agent: initial game generation, bug diagnosis and repair, and optimization over multiple turns. Therefore, we introduce GameXpert-Bench, which operationalizes the three lifecycle stages as three complementary benchmark tracks. GameGen evaluates complete game creation from a single request in an empty workspace. GameFix evaluates diagnosis and repair when defects are reported or left for the agent to discover. GameOpt evaluates cumulative optimization through request chains seeded by real development trajectories between users and agents. We evaluate each track using live game interaction, deterministic behavioral tests, or final product criteria with regression checks. The suite contains 97 generation tasks across 11 genres; 100 repair tasks from 50 game levels verified by humans, each with 19-27 injected bugs; and 17 optimization chains with six turns and 102 requests. Across the three tracks, current agents are more reliable at producing playable foundations and implementing explicit requirements than at discovering defects, verifying runtime behavior, and preserving functionality across changes.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.21833v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.21833v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.21833" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.01603.html"><strong>Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation</strong></a> <span>2026-09-01</span></li>
+          <li><a href="2608.29834.html"><strong>You Know What I Mean: A Benchmark for Agentic Conversational Reference Grounding</strong></a> <span>2026-08-30</span></li>
+          <li><a href="2608.23653.html"><strong>Beyond Executable Models: The Pufibara Agent Harness and the Modelica Agent Workflow Benchmark for Physical System Modeling</strong></a> <span>2026-08-24</span></li>
+          <li><a href="2608.23564.html"><strong>SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration?</strong></a> <span>2026-08-24</span></li>
+          <li><a href="2608.20851.html"><strong>BC-Bench: Evaluating Agentic Engineering in a Domain-Specific Language for ERP</strong></a> <span>2026-08-21</span></li>
+          <li><a href="2608.20664.html"><strong>DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents</strong></a> <span>2026-08-21</span></li>
+          <li><a href="2608.19799.html"><strong>SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?</strong></a> <span>2026-08-20</span></li>
+          <li><a href="2608.17524.html"><strong>Evaluating RL Explainability Methods by How Much They Help Fix Bugs in Agents</strong></a> <span>2026-08-18</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

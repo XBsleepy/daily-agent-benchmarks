@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>PDEU-Bench: Benchmarking the Personalized Planning Lifecycle of Tool-Calling LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language model (LLM) agents are evolving from tool-calling systems that execute isolated instructions into task-oriented agents…" />
+    <meta name="keywords" content="Tool use, Memory, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2609.34930" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.34930.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="PDEU-Bench: Benchmarking the Personalized Planning Lifecycle of Tool-Calling LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language model (LLM) agents are evolving from tool-calling systems that execute isolated instructions into task-oriented agents…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.34930.html" />
+    <meta property="article:published_time" content="2026-09-28T11:27:17Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PDEU-Bench: Benchmarking the Personalized Planning Lifecycle of Tool-Calling LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language model (LLM) agents are evolving from tool-calling systems that execute isolated instructions into task-oriented agents…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,77 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "PDEU-Bench: Benchmarking the Personalized Planning Lifecycle of Tool-Calling LLM Agents",
+  "name": "PDEU-Bench: Benchmarking the Personalized Planning Lifecycle of Tool-Calling LLM Agents",
+  "abstract": "Large language model (LLM) agents are evolving from tool-calling systems that execute isolated instructions into task-oriented agents that pursue user goals through sustained, multi-step interactions. However, existing benchmarks for personalized tool use largely assess isolated calls or reactive execution, leaving unclear whether agents can formulate, execute, and revise an explicit plan while preserving user preferences throughout long-term interaction. To address this gap, we introduce \\textbf{PDEU-Bench} (\\textbf{P}ersonalized plan \\textbf{D}efinition, plan \\textbf{E}xecution, and plan \\textbf{U}pdate \\textbf{Bench}mark), a benchmark for evaluating the complete planning lifecycle of personalized tool-using agents. PDEU-Bench comprises 214 long-horizon interaction tasks spanning 12 everyday domains and 94 tools, with stage-specific assessments of preference adherence and plan quality. Extensive evaluations of 15 representative open-source and closed-source LLMs reveal a pronounced gap between local tool execution and dynamic planning: LLMs can often instantiate preferences in individual calls, yet struggle to construct coherent plan definition and plan update. We further evaluate mainstream personalization and memory-augmentation methods. Although these methods improve particular stages, none of the evaluated methods reliably propagates user preferences throughout the complete lifecycle, and their gains frequently fail to transfer to subsequent execution. Fine-grained error analysis further reveals that preference omissions and conflicts persist throughout the planning lifecycle, highlighting the need for future research to parameterize LLMs with preference-aware information retrieval and memory capabilities. We provide the relevant code and data in the appendix to support future research.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Huayi Lai"
+    },
+    {
+      "@type": "Person",
+      "name": "Shichao Song"
+    },
+    {
+      "@type": "Person",
+      "name": "Qingchen Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Simin Niu"
+    },
+    {
+      "@type": "Person",
+      "name": "Mengwei Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Hanyu Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xun Liang"
+    }
+  ],
+  "datePublished": "2026-09-28T11:27:17Z",
+  "dateModified": "2026-09-28T11:27:17Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.34930.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.34930.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.34930v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.34930"
+  },
+  "keywords": [
+    "Tool use",
+    "Memory",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.34930v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.34930"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +109,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>PDEU-Bench: Benchmarking the Personalized Planning Lifecycle of Tool-Calling LLM Agents</h1>
+        <div class="meta">
+          Huayi Lai, Shichao Song, Qingchen Yu, Simin Niu, Mengwei Wang, Hanyu Wang, Xun Liang
+          · 2609.34930
+          · <time datetime="2026-09-28">2026-09-28</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Memory</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large language model (LLM) agents are evolving from tool-calling systems that execute isolated instructions into task-oriented agents that pursue user goals through sustained, multi-step interactions. However, existing benchmarks for personalized tool use largely assess isolated calls or reactive execution, leaving unclear whether agents can formulate, execute, and revise an explicit plan while preserving user preferences throughout long-term interaction. To address this gap, we introduce \textbf{PDEU-Bench} (\textbf{P}ersonalized plan \textbf{D}efinition, plan \textbf{E}xecution, and plan \textbf{U}pdate \textbf{Bench}mark), a benchmark for evaluating the complete planning lifecycle of personalized tool-using agents. PDEU-Bench comprises 214 long-horizon interaction tasks spanning 12 everyday domains and 94 tools, with stage-specific assessments of preference adherence and plan quality. Extensive evaluations of 15 representative open-source and closed-source LLMs reveal a pronounced gap between local tool execution and dynamic planning: LLMs can often instantiate preferences in individual calls, yet struggle to construct coherent plan definition and plan update. We further evaluate mainstream personalization and memory-augmentation methods. Although these methods improve particular stages, none of the evaluated methods reliably propagates user preferences throughout the complete lifecycle, and their gains frequently fail to transfer to subsequent execution. Fine-grained error analysis further reveals that preference omissions and conflicts persist throughout the planning lifecycle, highlighting the need for future research to parameterize LLMs with preference-aware information retrieval and memory capabilities. We provide the relevant code and data in the appendix to support future research.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.34930v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.34930v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.34930" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.38652.html"><strong>AgBench: Agentic AI Benchmarks for Personal AI Devices</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.38512.html"><strong>VAmoS Part Deux: Harder, More Realistic Voice-Agent Simulation</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.37315.html"><strong>Do Agent Benchmarks Do What They Say? An Executable-Contract Audit of Tool-Using Agent Environments</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.35732.html"><strong>Failure-Transparent Agents: Benchmarking Post-Failure Reporting in Tool-Using Language Models</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34492.html"><strong>PowerBench: A Benchmark for Agentic Retrieval and Reasoning in Power Systems</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.30717.html"><strong>RecToolBench: Benchmarking Recommendation-Specific Tool Orchestration under Fuzzy User Intent</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.31906.html"><strong>EmailBench: A Benchmark for Evaluating LLM Agents on Enterprise Email and Productivity Tasks</strong></a> <span>2026-09-25</span></li>
+          <li><a href="2609.29578.html"><strong>PartHackBench: Certified Equal-Progress Stress Tests for Partial-Credit Tool-Agent Evaluation</strong></a> <span>2026-09-25</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

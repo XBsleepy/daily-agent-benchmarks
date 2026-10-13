@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>VISTA: An End-to-End Benchmark for Visual Spec-to-Web-App Coding Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: We present VISTA (VIsual Spec-To-App Benchmark), a benchmark for evaluating the end-to-end web-app generation capabilities of…" />
+    <meta name="keywords" content="Coding / SWE, Web agents, Coding agents, Tool use, Safety, agent benchmark, LLM agent, arXiv, 2605.26144" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.26144.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="VISTA: An End-to-End Benchmark for Visual Spec-to-Web-App Coding Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: We present VISTA (VIsual Spec-To-App Benchmark), a benchmark for evaluating the end-to-end web-app generation capabilities of…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.26144.html" />
+    <meta property="article:published_time" content="2026-05-22T20:29:12Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="VISTA: An End-to-End Benchmark for Visual Spec-to-Web-App Coding Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: We present VISTA (VIsual Spec-To-App Benchmark), a benchmark for evaluating the end-to-end web-app generation capabilities of…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,71 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "VISTA: An End-to-End Benchmark for Visual Spec-to-Web-App Coding Agents",
+  "name": "VISTA: An End-to-End Benchmark for Visual Spec-to-Web-App Coding Agents",
+  "abstract": "We present VISTA (VIsual Spec-To-App Benchmark), a benchmark for evaluating the end-to-end web-app generation capabilities of LLM-based agents. Unlike prior code generation benchmarks that focus on algorithmic tasks, VISTA targets realistic UI-centric development, where agents must produce functional, visually coherent applications from underspecified inputs. We define five prompt-information conditions that vary along two axes, visual/structural fidelity and stack constraint: (1) text only with free stack choice, (2) text with reference screenshots under three specified stacks, (3) text with reference screenshots under free stack choice, (4) text with screenshots and pruned Figma structure under a single specified stack, and (5) text with screenshots and pruned Figma structure under free stack choice. To enable robust evaluation, each page in the benchmark is manually annotated with interactive UI components and around three visual anchor points, addressing the well-known limitations of script-based testing tools such as Playwright in open-ended code generation settings. Evaluation combines DOM-grounded reference matching, behavior-specific browser tests, and CLIP-based visual similarity, jointly measuring structural alignment, behavioral completeness, and overall visual fidelity. We use VISTA to assess four agent systems drawn from two model families and two harnesses, finding that visual fidelity and functional correctness are partially decoupled across both input conditions and agents, and that agent editing style varies sharply but is largely orthogonal to task quality. VISTA establishes a rigorous and reproducible foundation for advancing agent-based software engineering research. Code is available at https://github.com/kaboider/VISTA_Bench.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "JunJia Guo"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuhang Yao"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiawei"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Jingdi Chen"
+    }
+  ],
+  "datePublished": "2026-05-22T20:29:12Z",
+  "dateModified": "2026-06-22T18:12:46Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.26144.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.26144.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.26144v3"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.26144"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Web agents",
+    "Coding agents",
+    "Tool use",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.26144v3"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.26144"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +103,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>VISTA: An End-to-End Benchmark for Visual Spec-to-Web-App Coding Agents</h1>
+        <div class="meta">
+          JunJia Guo, Yuhang Yao, Jiawei, Zhou, Jingdi Chen
+          · 2605.26144
+          · <time datetime="2026-05-22">2026-05-22</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Web agents</span><span class="chip">Coding agents</span><span class="chip">Tool use</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>We present VISTA (VIsual Spec-To-App Benchmark), a benchmark for evaluating the end-to-end web-app generation capabilities of LLM-based agents. Unlike prior code generation benchmarks that focus on algorithmic tasks, VISTA targets realistic UI-centric development, where agents must produce functional, visually coherent applications from underspecified inputs. We define five prompt-information conditions that vary along two axes, visual/structural fidelity and stack constraint: (1) text only with free stack choice, (2) text with reference screenshots under three specified stacks, (3) text with reference screenshots under free stack choice, (4) text with screenshots and pruned Figma structure under a single specified stack, and (5) text with screenshots and pruned Figma structure under free stack choice. To enable robust evaluation, each page in the benchmark is manually annotated with interactive UI components and around three visual anchor points, addressing the well-known limitations of script-based testing tools such as Playwright in open-ended code generation settings. Evaluation combines DOM-grounded reference matching, behavior-specific browser tests, and CLIP-based visual similarity, jointly measuring structural alignment, behavioral completeness, and overall visual fidelity. We use VISTA to assess four agent systems drawn from two model families and two harnesses, finding that visual fidelity and functional correctness are partially decoupled across both input conditions and agents, and that agent editing style varies sharply but is largely orthogonal to task quality. VISTA establishes a rigorous and reproducible foundation for advancing agent-based software engineering research. Code is available at https://github.com/kaboider/VISTA_Bench.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.26144v3" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.26144v3" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.26144" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.01317.html"><strong>SABER: Benchmarking Operational Safety of LLM Coding Agents in Stateful Project Workspaces</strong></a> <span>2026-05-31</span></li>
+          <li><a href="2605.30314.html"><strong>SpecBench: Evaluating Specification-Level Reasoning for Software Engineering LLM Agents</strong></a> <span>2026-05-28</span></li>
+          <li><a href="2605.28876.html"><strong>LogDx-CI: Benchmarking Log Reduction Tools for LLM Root-Cause Diagnosis</strong></a> <span>2026-05-26</span></li>
+          <li><a href="2605.26457.html"><strong>Verus-SpecGym: An Agentic Environment for Evaluating Specification Autoformalization</strong></a> <span>2026-05-26</span></li>
+          <li><a href="2605.24183.html"><strong>AvalancheBench: Evaluating Enterprise Data Agents Through Latent World Recovery</strong></a> <span>2026-05-22</span></li>
+          <li><a href="2605.24110.html"><strong>EvoCode-Bench: Evaluating Coding Agents in Multi-Turn Iterative Interactions</strong></a> <span>2026-05-22</span></li>
+          <li><a href="2605.21384.html"><strong>SpecBench: Measuring Reward Hacking in Long-Horizon Coding Agents</strong></a> <span>2026-05-20</span></li>
+          <li><a href="2605.19399.html"><strong>HSCO-Bench: An Agent-Driven End-to-End Hardware-Software Co-design Benchmark for Systems-on-Chip</strong></a> <span>2026-05-19</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

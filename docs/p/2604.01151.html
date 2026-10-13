@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Detecting Multi-Agent Collusion Through Multi-Agent Interpretability | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: As LLM agents are increasingly deployed in multi-agent systems, they introduce risks of covert coordination that may evade standard…" />
+    <meta name="keywords" content="Multi-agent, agent benchmark, LLM agent, arXiv, 2604.01151" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.01151.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Detecting Multi-Agent Collusion Through Multi-Agent Interpretability" />
+    <meta property="og:description" content="Daily Agent Benchmarks: As LLM agents are increasingly deployed in multi-agent systems, they introduce risks of covert coordination that may evade standard…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.01151.html" />
+    <meta property="article:published_time" content="2026-04-01T17:08:05Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Detecting Multi-Agent Collusion Through Multi-Agent Interpretability" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: As LLM agents are increasingly deployed in multi-agent systems, they introduce risks of covert coordination that may evade standard…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,71 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Detecting Multi-Agent Collusion Through Multi-Agent Interpretability",
+  "name": "Detecting Multi-Agent Collusion Through Multi-Agent Interpretability",
+  "abstract": "As LLM agents are increasingly deployed in multi-agent systems, they introduce risks of covert coordination that may evade standard forms of human oversight. While linear probes on model activations have shown promise for detecting deception in single-agent settings, collusion is inherently a multi-agent phenomenon, and the use of internal representations for detecting collusion between agents remains unexplored. We introduce NARCBench, a benchmark for evaluating collusion detection under environment distribution shift, and propose five probing techniques that aggregate per-agent deception scores to classify scenarios at the group level, evaluated across four open-weight models (Qwen3-32B, Llama-3.1-70B, DeepSeek-R1 32B, GPT-OSS-20B) and six probe architectures. We frame this as a distributed anomaly detection problem, identifying three collusion signatures that map onto distinct anomaly types and detection paradigms. Every model reaches 1.00 AUROC in-distribution; on our strongest model (Llama-3.1-70B), our five probing techniques achieve 0.73 to 0.93 AUROC when transferred zero-shot to structurally different multi-agent scenarios and 0.99 to 1.00 on a steganographic blackjack card-counting task, with detection performance scaling with model capability. We find that no single probing technique dominates across all collusion types, consistent with the framework's prediction that different anomaly types require different detection paradigms. This work takes a step toward multi-agent interpretability: extending white-box inspection from single models to multi-agent contexts, where detection requires aggregating signals across agents. These results suggest that model internals provide a complementary signal to text-level monitoring for detecting multi-agent collusion. Code and data available at https://github.com/aaronrose227/narcbench.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Aaron Rose"
+    },
+    {
+      "@type": "Person",
+      "name": "Carissa Cullen"
+    },
+    {
+      "@type": "Person",
+      "name": "Sahar Abdelnabi"
+    },
+    {
+      "@type": "Person",
+      "name": "Philip Torr"
+    },
+    {
+      "@type": "Person",
+      "name": "Brandon Gary Kaplowitz"
+    },
+    {
+      "@type": "Person",
+      "name": "Christian Schroeder de Witt"
+    }
+  ],
+  "datePublished": "2026-04-01T17:08:05Z",
+  "dateModified": "2026-05-09T19:42:28Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.01151.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.01151.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.01151v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2604.01151"
+  },
+  "keywords": [
+    "Multi-agent",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multi-agent"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2604.01151v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2604.01151"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +103,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Detecting Multi-Agent Collusion Through Multi-Agent Interpretability</h1>
+        <div class="meta">
+          Aaron Rose, Carissa Cullen, Sahar Abdelnabi, Philip Torr, Brandon Gary Kaplowitz, Christian Schroeder de Witt
+          · 2604.01151
+          · <time datetime="2026-04-01">2026-04-01</time>
+          · Multi-agent · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Multi-agent</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>As LLM agents are increasingly deployed in multi-agent systems, they introduce risks of covert coordination that may evade standard forms of human oversight. While linear probes on model activations have shown promise for detecting deception in single-agent settings, collusion is inherently a multi-agent phenomenon, and the use of internal representations for detecting collusion between agents remains unexplored. We introduce NARCBench, a benchmark for evaluating collusion detection under environment distribution shift, and propose five probing techniques that aggregate per-agent deception scores to classify scenarios at the group level, evaluated across four open-weight models (Qwen3-32B, Llama-3.1-70B, DeepSeek-R1 32B, GPT-OSS-20B) and six probe architectures. We frame this as a distributed anomaly detection problem, identifying three collusion signatures that map onto distinct anomaly types and detection paradigms. Every model reaches 1.00 AUROC in-distribution; on our strongest model (Llama-3.1-70B), our five probing techniques achieve 0.73 to 0.93 AUROC when transferred zero-shot to structurally different multi-agent scenarios and 0.99 to 1.00 on a steganographic blackjack card-counting task, with detection performance scaling with model capability. We find that no single probing technique dominates across all collusion types, consistent with the framework&#x27;s prediction that different anomaly types require different detection paradigms. This work takes a step toward multi-agent interpretability: extending white-box inspection from single models to multi-agent contexts, where detection requires aggregating signals across agents. These results suggest that model internals provide a complementary signal to text-level monitoring for detecting multi-agent collusion. Code and data available at https://github.com/aaronrose227/narcbench.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2604.01151v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2604.01151v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2604.01151" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multi-agent benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2604.05681.html"><strong>LUDOBENCH: Evaluating LLM Behavioural Decision-Making Through Spot-Based Board Game Scenarios in Ludo</strong></a> <span>2026-04-07</span></li>
+          <li><a href="2604.05523.html"><strong>Market-Bench: Benchmarking Large Language Models on Economic and Trade Competition</strong></a> <span>2026-04-07</span></li>
+          <li><a href="2604.05076.html"><strong>GLANCE: A Global-Local Coordination Multi-Agent Framework for Music-Grounded Non-Linear Video Editing</strong></a> <span>2026-04-06</span></li>
+          <li><a href="2604.01487.html"><strong>AgentSocialBench: Evaluating Privacy Risks in Human-Centered Agentic Social Networks</strong></a> <span>2026-04-01</span></li>
+          <li><a href="2603.29902.html"><strong>ATP-Bench: Towards Agentic Tool Planning for MLLM Interleaved Generation</strong></a> <span>2026-03-31</span></li>
+          <li><a href="2603.28998.html"><strong>Design Principles for the Construction of a Benchmark Evaluating Security Operation Capabilities of Multi-agent AI Systems</strong></a> <span>2026-03-30</span></li>
+          <li><a href="2603.27991.html"><strong>ViviDoc: Generating Interactive Documents through Human-Agent Collaboration</strong></a> <span>2026-03-30</span></li>
+          <li><a href="2603.24329.html"><strong>GameplayQA: A Benchmarking Framework for Decision-Dense POV-Synced Multi-Video Understanding of 3D Virtual Agents</strong></a> <span>2026-03-25</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

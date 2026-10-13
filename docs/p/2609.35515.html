@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MechBench: Can AI Scientific Agents Discover Mechanisms Beyond Phenomenal Laws? | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Scientific discovery requires not only recovering mathematical laws that describe observable behavior, but also identifying the…" />
+    <meta name="keywords" content="Science &amp; research, Planning / reasoning, Research agents, Science lab, agent benchmark, LLM agent, arXiv, 2609.35515" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.35515.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MechBench: Can AI Scientific Agents Discover Mechanisms Beyond Phenomenal Laws?" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Scientific discovery requires not only recovering mathematical laws that describe observable behavior, but also identifying the…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.35515.html" />
+    <meta property="article:published_time" content="2026-09-28T16:08:19Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MechBench: Can AI Scientific Agents Discover Mechanisms Beyond Phenomenal Laws?" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Scientific discovery requires not only recovering mathematical laws that describe observable behavior, but also identifying the…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,70 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MechBench: Can AI Scientific Agents Discover Mechanisms Beyond Phenomenal Laws?",
+  "name": "MechBench: Can AI Scientific Agents Discover Mechanisms Beyond Phenomenal Laws?",
+  "abstract": "Scientific discovery requires not only recovering mathematical laws that describe observable behavior, but also identifying the mechanisms that generate them. Existing benchmarks for symbolic regression and scientific agents primarily evaluate phenomenal-law recovery, leaving mechanism discovery largely untested. We introduce MechBench, a benchmark that explicitly separates these two capabilities. Each task is defined by a mechanistic model, a structured set of scientifically meaningful relations whose joint consequences entail an observable phenomenal law, while agents receive only observational data and scientific context. We evaluate mechanism recovery through mechanism probes, which query internal scientific consequences that cannot be inferred from the phenomenal law alone. To reduce reliance on memorized textbook mechanisms, we construct unfamiliar variants through controlled, scientifically interpretable mutations of canonical mechanisms, and screen for mechanistic indistinguishability to exclude ambiguous instances admitting comparable competing mechanisms. Experiments across representative scientific agents reveal a substantial phenomenal--mechanism recovery gap: for Codex with GPT-5.6-sol, phenomenal-law accuracy reaches 35.00% on the Core-set while mechanism accuracy is only 13.75%, with mechanism recovery failing in 64.29% of cases where the phenomenal law is correctly recovered. The gap widens as mechanisms become increasingly mutated, and even providing the correct phenomenal law leaves mechanism recovery below 50%. These results reveal a substantial generalization gap in mechanistic reasoning and establish mechanism discovery as a distinct challenge beyond recovering observable scientific laws.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Zihan Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiadong Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jialin Cheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Jingtao Ding"
+    },
+    {
+      "@type": "Person",
+      "name": "Yong Li"
+    }
+  ],
+  "datePublished": "2026-09-28T16:08:19Z",
+  "dateModified": "2026-09-28T16:08:19Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.35515.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.35515.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.35515v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.35515"
+  },
+  "keywords": [
+    "Science & research",
+    "Planning / reasoning",
+    "Research agents",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Science & research"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.35515v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.35515"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +102,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MechBench: Can AI Scientific Agents Discover Mechanisms Beyond Phenomenal Laws?</h1>
+        <div class="meta">
+          Zihan Yu, Jiadong Zhang, Jialin Cheng, Jingtao Ding, Yong Li
+          · 2609.35515
+          · <time datetime="2026-09-28">2026-09-28</time>
+          · Science &amp; research
+        </div>
+        <div class="themes"><span class="chip">Planning / reasoning</span><span class="chip">Research agents</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Scientific discovery requires not only recovering mathematical laws that describe observable behavior, but also identifying the mechanisms that generate them. Existing benchmarks for symbolic regression and scientific agents primarily evaluate phenomenal-law recovery, leaving mechanism discovery largely untested. We introduce MechBench, a benchmark that explicitly separates these two capabilities. Each task is defined by a mechanistic model, a structured set of scientifically meaningful relations whose joint consequences entail an observable phenomenal law, while agents receive only observational data and scientific context. We evaluate mechanism recovery through mechanism probes, which query internal scientific consequences that cannot be inferred from the phenomenal law alone. To reduce reliance on memorized textbook mechanisms, we construct unfamiliar variants through controlled, scientifically interpretable mutations of canonical mechanisms, and screen for mechanistic indistinguishability to exclude ambiguous instances admitting comparable competing mechanisms. Experiments across representative scientific agents reveal a substantial phenomenal--mechanism recovery gap: for Codex with GPT-5.6-sol, phenomenal-law accuracy reaches 35.00% on the Core-set while mechanism accuracy is only 13.75%, with mechanism recovery failing in 64.29% of cases where the phenomenal law is correctly recovered. The gap widens as mechanisms become increasingly mutated, and even providing the correct phenomenal law leaves mechanism recovery below 50%. These results reveal a substantial generalization gap in mechanistic reasoning and establish mechanism discovery as a distinct challenge beyond recovering observable scientific laws.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.35515v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.35515v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.35515" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Science &amp; research benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.02122.html"><strong>Argo-Bench: Evaluating Data Agents on Enterprise-Scale Workflows</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.00636.html"><strong>CompMat-Bench: Benchmarking AI Agents for Computational Materials Science</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.00609.html"><strong>Legal Research Bench: Measuring End-to-End Reliability in Long-Horizon Legal Research Agents</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.00492.html"><strong>EurekaBench: Measuring Agentic Ability to Discover New Scientific Insights</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2609.34537.html"><strong>The Marathon of Scientific Reasoning: Robustness of Scientific Agents to Perturbations in Multi-Turn Interactions</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34428.html"><strong>AgentHop: A Diagnostic Benchmark for Agentic Multi-Hop Scientific Question Answering</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.30971.html"><strong>SciHorizon-eLab: An Agentic Protocol-to-Task Compiler for Scalable Benchmarking of Scientific Embodied Agents</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.32318.html"><strong>What Can a Leaderboard Certify? Compositional Controllability for Fair Evaluation and Training of Biomedical Literature-Review Agents</strong></a> <span>2026-09-26</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

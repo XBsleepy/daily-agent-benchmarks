@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>BazaarBench: Delegation Safety in Decentralized C2C Marketplaces Run by LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: In decentralized consumer-to-consumer (C2C) marketplaces, people list goods, negotiate with strangers, and rate one another, so trust…" />
+    <meta name="keywords" content="Safety, agent benchmark, LLM agent, arXiv, 2610.06748" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.06748.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="BazaarBench: Delegation Safety in Decentralized C2C Marketplaces Run by LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: In decentralized consumer-to-consumer (C2C) marketplaces, people list goods, negotiate with strangers, and rate one another, so trust…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.06748.html" />
+    <meta property="article:published_time" content="2026-10-05T17:26:17Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="BazaarBench: Delegation Safety in Decentralized C2C Marketplaces Run by LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: In decentralized consumer-to-consumer (C2C) marketplaces, people list goods, negotiate with strangers, and rate one another, so trust…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,79 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "BazaarBench: Delegation Safety in Decentralized C2C Marketplaces Run by LLM Agents",
+  "name": "BazaarBench: Delegation Safety in Decentralized C2C Marketplaces Run by LLM Agents",
+  "abstract": "In decentralized consumer-to-consumer (C2C) marketplaces, people list goods, negotiate with strangers, and rate one another, so trust rests on reputation. Large language model (LLM) agents now act for users, raising risks to their money, privacy, and reputation. We introduce BazaarBench, a simulated C2C marketplace and benchmark for evaluating the safety of these agents. It tracks ownership, item condition, and commitments across transactions, combining record checks with rubric-based LLM judgments to identify six failure types across five stages. We run three base markets for 30 simulated days, each with 100 agents using one model and inventories drawn from a public eBay sample. Across 45 continuations, we evaluate five models under ordinary instructions, deadline pressure, or adversarial instructions to exploit other traders. Each continuation runs for seven simulated days from a copy of a market's day-30 state. The tested model controls the same 20 selected agents, retaining their personas, inventories, and histories, while the other 80 keep the base model. All five models attempt to promise the same item to multiple buyers under ordinary instructions. Adding targets and deadlines increases these attempts for every model. Under adversarial instructions, the share of tested sellers' committed transactions completed despite unavailable items or overstated conditions rises from 15.4% to 33.4%, reaching 55.5% for GPT-5.4. Averaged across models and markets, simulated weekly earnings per tested agent rise from USD 20 under ordinary instructions to USD 33 under adversarial instructions. Most of the increase comes from items the sellers never held. We release the simulator, saved market states, evaluation code, and records covering 357,608 agent model calls for evaluating new models and developing safer marketplace agents.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Ziyan Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Shuqing Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "James Oldfield"
+    },
+    {
+      "@type": "Person",
+      "name": "Samuele Marro"
+    },
+    {
+      "@type": "Person",
+      "name": "Jialin Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Philip Torr"
+    },
+    {
+      "@type": "Person",
+      "name": "Yali Du"
+    },
+    {
+      "@type": "Person",
+      "name": "Adel Bibi"
+    }
+  ],
+  "datePublished": "2026-10-05T17:26:17Z",
+  "dateModified": "2026-10-05T17:26:17Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.06748.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.06748.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.06748v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.06748"
+  },
+  "keywords": [
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Safety"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.06748v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2610.06748"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +111,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>BazaarBench: Delegation Safety in Decentralized C2C Marketplaces Run by LLM Agents</h1>
+        <div class="meta">
+          Ziyan Wang, Shuqing Shi, James Oldfield, Samuele Marro, Jialin Yu, Philip Torr, Yali Du, Adel Bibi
+          · 2610.06748
+          · <time datetime="2026-10-05">2026-10-05</time>
+          · Safety
+        </div>
+        <div class="themes"><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>In decentralized consumer-to-consumer (C2C) marketplaces, people list goods, negotiate with strangers, and rate one another, so trust rests on reputation. Large language model (LLM) agents now act for users, raising risks to their money, privacy, and reputation. We introduce BazaarBench, a simulated C2C marketplace and benchmark for evaluating the safety of these agents. It tracks ownership, item condition, and commitments across transactions, combining record checks with rubric-based LLM judgments to identify six failure types across five stages. We run three base markets for 30 simulated days, each with 100 agents using one model and inventories drawn from a public eBay sample. Across 45 continuations, we evaluate five models under ordinary instructions, deadline pressure, or adversarial instructions to exploit other traders. Each continuation runs for seven simulated days from a copy of a market&#x27;s day-30 state. The tested model controls the same 20 selected agents, retaining their personas, inventories, and histories, while the other 80 keep the base model. All five models attempt to promise the same item to multiple buyers under ordinary instructions. Adding targets and deadlines increases these attempts for every model. Under adversarial instructions, the share of tested sellers&#x27; committed transactions completed despite unavailable items or overstated conditions rises from 15.4% to 33.4%, reaching 55.5% for GPT-5.4. Averaged across models and markets, simulated weekly earnings per tested agent rise from USD 20 under ordinary instructions to USD 33 under adversarial instructions. Most of the increase comes from items the sellers never held. We release the simulator, saved market states, evaluation code, and records covering 357,608 agent model calls for evaluating new models and developing safer marketplace agents.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.06748v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.06748v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.06748" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Safety benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.13116.html"><strong>DRYLAB-Bench: Benchmarking the Biosecurity Risk of Agentic LLM Mutation Design</strong></a> <span>2026-10-09</span></li>
+          <li><a href="2610.12596.html"><strong>SpireBench: Evaluating Long-Horizon Strategic Play of Agentic Models with Slay the Spire</strong></a> <span>2026-10-08</span></li>
+          <li><a href="2610.09294.html"><strong>RT-Safe: Benchmarking Agent Safety in Real-Time Embodied Environment</strong></a> <span>2026-10-07</span></li>
+          <li><a href="2610.08513.html"><strong>Wiki-Talkie: Multilingual Benchmarking of Persona-Based Agents on Real-World Discussions</strong></a> <span>2026-10-06</span></li>
+          <li><a href="2610.06514.html"><strong>ANT: A Multi-Granularity Network Traffic Dataset and Benchmark for Agents Behavior Auditing</strong></a> <span>2026-10-05</span></li>
+          <li><a href="2610.06122.html"><strong>Benchmarking Jailbreak Guardrails for Embodied Agents</strong></a> <span>2026-10-05</span></li>
+          <li><a href="2610.05622.html"><strong>UndoBench: Separating Task Competence from Recovery Capability in Tool-Using AI Agents</strong></a> <span>2026-10-04</span></li>
+          <li><a href="2610.03153.html"><strong>EvoRiskBench: An Evolving Benchmark for Runtime Security Risks in Workspace Agents</strong></a> <span>2026-10-02</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

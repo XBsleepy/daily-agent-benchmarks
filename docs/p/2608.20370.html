@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Benchmarking LLM Serving Systems for Agentic AI Workloads with XPerf | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: We present XPerf, a benchmarking framework that load-tests LLM serving systems with diverse agentic AI workloads. It provides…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2608.20370" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.20370.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Benchmarking LLM Serving Systems for Agentic AI Workloads with XPerf" />
+    <meta property="og:description" content="Daily Agent Benchmarks: We present XPerf, a benchmarking framework that load-tests LLM serving systems with diverse agentic AI workloads. It provides…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.20370.html" />
+    <meta property="article:published_time" content="2026-06-19T17:17:04Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Benchmarking LLM Serving Systems for Agentic AI Workloads with XPerf" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: We present XPerf, a benchmarking framework that load-tests LLM serving systems with diverse agentic AI workloads. It provides…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,71 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Benchmarking LLM Serving Systems for Agentic AI Workloads with XPerf",
+  "name": "Benchmarking LLM Serving Systems for Agentic AI Workloads with XPerf",
+  "abstract": "We present XPerf, a benchmarking framework that load-tests LLM serving systems with diverse agentic AI workloads. It provides detailed profiling of the serving system and hardware, enabling users to identify performance bottlenecks introduced by agentic workloads. Benchmarking LLM serving systems under agentic workloads is challenging - agentic applications rely on nondeterministic LLM outputs to guide their control flow; therefore, workload patterns vary unpredictably from run to run. XPerf minimizes this workload variation with a fine-grained trace replay approach: it enables users to easily collect traces from real agentic applications, synthesize new workloads with various patterns if needed, and reproducibly replay them on different LLM serving systems. XPerf includes eight agentic applications across diverse use cases (e.g., coding, deep research, and Q&A) by default. Our empirical study using these workloads shows that XPerf accurately replays agentic workloads, provides detailed performance breakdowns, scales to larger serving systems, and assists in serving system debugging. We will open-source XPerf on GitHub.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Michael Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yikang Yue"
+    },
+    {
+      "@type": "Person",
+      "name": "Shaobo Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Yirui Eric Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Chen Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jian Huang"
+    }
+  ],
+  "datePublished": "2026-06-19T17:17:04Z",
+  "dateModified": "2026-06-19T17:17:04Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.20370.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.20370.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.20370v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.20370"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.20370v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.20370"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +103,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Benchmarking LLM Serving Systems for Agentic AI Workloads with XPerf</h1>
+        <div class="meta">
+          Michael Wang, Yikang Yue, Shaobo Li, Yirui Eric Zhou, Chen Wang, Jian Huang
+          · 2608.20370
+          · <time datetime="2026-06-19">2026-06-19</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>We present XPerf, a benchmarking framework that load-tests LLM serving systems with diverse agentic AI workloads. It provides detailed profiling of the serving system and hardware, enabling users to identify performance bottlenecks introduced by agentic workloads. Benchmarking LLM serving systems under agentic workloads is challenging - agentic applications rely on nondeterministic LLM outputs to guide their control flow; therefore, workload patterns vary unpredictably from run to run. XPerf minimizes this workload variation with a fine-grained trace replay approach: it enables users to easily collect traces from real agentic applications, synthesize new workloads with various patterns if needed, and reproducibly replay them on different LLM serving systems. XPerf includes eight agentic applications across diverse use cases (e.g., coding, deep research, and Q&amp;A) by default. Our empirical study using these workloads shows that XPerf accurately replays agentic workloads, provides detailed performance breakdowns, scales to larger serving systems, and assists in serving system debugging. We will open-source XPerf on GitHub.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.20370v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.20370v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.20370" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.24026.html"><strong>Can Language Model Agents be Helpful Circuit Explainers in Mechanistic Interpretability?</strong></a> <span>2026-06-23</span></li>
+          <li><a href="2606.23927.html"><strong>RIFT-Bench: Dynamic Red-teaming For Agentic AI Systems</strong></a> <span>2026-06-22</span></li>
+          <li><a href="2606.23301.html"><strong>EHR-Complex: Benchmarking Medical Agents for Complex Clinical Reasoning</strong></a> <span>2026-06-22</span></li>
+          <li><a href="2606.23032.html"><strong>IPO Finance Agent: Benchmark of LLM Financial Analysts Beyond Finance Agent v2, with Automated Rubric Generation, on the SpaceX (SPCX) IPO</strong></a> <span>2026-06-22</span></li>
+          <li><a href="2606.21169.html"><strong>Trip+: Benchmarking Agents in Personalized Interactive Travel Planning</strong></a> <span>2026-06-19</span></li>
+          <li><a href="2606.21140.html"><strong>Matching Matters: A Fair Quality-Efficiency Benchmark for Command-Line Agents</strong></a> <span>2026-06-19</span></li>
+          <li><a href="2606.20950.html"><strong>Power Systems Agent Benchmark: Executable Evaluation of AI Agents in Electric Power Engineering</strong></a> <span>2026-06-18</span></li>
+          <li><a href="2606.20235.html"><strong>ScholarQuest: A Taxonomy-Guided Benchmark for Agentic Academic Paper Search in Open Literature Environments</strong></a> <span>2026-06-18</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

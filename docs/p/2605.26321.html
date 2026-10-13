@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Anchor: Mitigating Artifact Drift in Agent Benchmark Generation | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: AI agents are beginning to complete valuable, long-horizon business operations tasks, but training and evaluation environments for…" />
+    <meta name="keywords" content="Work / office, agent benchmark, LLM agent, arXiv, 2605.26321" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.26321.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Anchor: Mitigating Artifact Drift in Agent Benchmark Generation" />
+    <meta property="og:description" content="Daily Agent Benchmarks: AI agents are beginning to complete valuable, long-horizon business operations tasks, but training and evaluation environments for…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.26321.html" />
+    <meta property="article:published_time" content="2026-05-25T20:44:17Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Anchor: Mitigating Artifact Drift in Agent Benchmark Generation" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: AI agents are beginning to complete valuable, long-horizon business operations tasks, but training and evaluation environments for…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,55 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Anchor: Mitigating Artifact Drift in Agent Benchmark Generation",
+  "name": "Anchor: Mitigating Artifact Drift in Agent Benchmark Generation",
+  "abstract": "AI agents are beginning to complete valuable, long-horizon business operations tasks, but training and evaluation environments for enterprise work still struggle to balance realism, verifiability, and scale. Environment and task creation frequently suffers from a failure mode we call artifact drift: when instructions, environments, oracles, and verifiers are created by loosely coupled processes, they frequently disagree on what a task requires, producing environments that are unsolvable, reward-hackable, or inconsistent. We introduce Anchor, a task-generation pipeline that formalizes domain experts' specifications of business workflows into constraint optimization programs. From a single parametric specification, the pipeline jointly produces a natural-language instruction, environment configuration, solver-certified ground-truth solution, and state-based verifier. With Anchor, altering parameters yields new tasks with controlled difficulty and known optimal solutions, producing harness-agnostic environments whose rewards depend solely on end-state business correctness. We apply Anchor to produce ERP-Bench: a benchmark of 300 long-horizon tasks spanning procurement and manufacturing workflows in a production-grade ERP system. We find that generation parameters predict realized difficulty, and that frontier models satisfy explicit task constraints in 26.1% of trials but reach a fully optimal solution in only 17.4% of trials. Overall, we show that Anchor and ERP-Bench offer a concrete recipe for building auditable evaluation environments for economically valuable agent work. We release the task generator and ERP-Bench dataset at erpbench.ai",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Maksim Ivanov"
+    },
+    {
+      "@type": "Person",
+      "name": "Abhijay Rana"
+    }
+  ],
+  "datePublished": "2026-05-25T20:44:17Z",
+  "dateModified": "2026-05-25T20:44:17Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.26321.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.26321.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.26321v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.26321"
+  },
+  "keywords": [
+    "Work / office",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Work / office"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.26321v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.26321"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +87,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Anchor: Mitigating Artifact Drift in Agent Benchmark Generation</h1>
+        <div class="meta">
+          Maksim Ivanov, Abhijay Rana
+          · 2605.26321
+          · <time datetime="2026-05-25">2026-05-25</time>
+          · Work / office
+        </div>
+        <div class="themes"><span class="chip">Work / office</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>AI agents are beginning to complete valuable, long-horizon business operations tasks, but training and evaluation environments for enterprise work still struggle to balance realism, verifiability, and scale. Environment and task creation frequently suffers from a failure mode we call artifact drift: when instructions, environments, oracles, and verifiers are created by loosely coupled processes, they frequently disagree on what a task requires, producing environments that are unsolvable, reward-hackable, or inconsistent. We introduce Anchor, a task-generation pipeline that formalizes domain experts&#x27; specifications of business workflows into constraint optimization programs. From a single parametric specification, the pipeline jointly produces a natural-language instruction, environment configuration, solver-certified ground-truth solution, and state-based verifier. With Anchor, altering parameters yields new tasks with controlled difficulty and known optimal solutions, producing harness-agnostic environments whose rewards depend solely on end-state business correctness. We apply Anchor to produce ERP-Bench: a benchmark of 300 long-horizon tasks spanning procurement and manufacturing workflows in a production-grade ERP system. We find that generation parameters predict realized difficulty, and that frontier models satisfy explicit task constraints in 26.1% of trials but reach a fully optimal solution in only 17.4% of trials. Overall, we show that Anchor and ERP-Bench offer a concrete recipe for building auditable evaluation environments for economically valuable agent work. We release the task generator and ERP-Bench dataset at erpbench.ai</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.26321v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.26321v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.26321" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Work / office benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.03103.html"><strong>DeskCraft: Benchmarking Desktop Agents on Professional Workflows and Human-in-the-Loop Collaboration</strong></a> <span>2026-06-02</span></li>
+          <li><a href="2605.30907.html"><strong>BlueFin: Benchmarking LLM Agents on Financial Spreadsheets</strong></a> <span>2026-05-29</span></li>
+          <li><a href="2605.28646.html"><strong>MaskClaw: Edge-Side Personalized Privacy Arbitration for GUI Agents with Behavior-Driven Skill Evolution</strong></a> <span>2026-05-27</span></li>
+          <li><a href="2605.26329.html"><strong>JobBench: Aligning Agent Work With Human Will</strong></a> <span>2026-05-25</span></li>
+          <li><a href="2605.17554.html"><strong>Evaluating Deep Research Agents on Expert Consulting Work: A Benchmark with Verifiers, Rubrics, and Cognitive Traps</strong></a> <span>2026-05-17</span></li>
+          <li><a href="2605.16909.html"><strong>TOBench: A Task-Oriented Omni-Modal Benchmark for Real-World Tool-Using Agents</strong></a> <span>2026-05-16</span></li>
+          <li><a href="2605.15777.html"><strong>SaaS-Bench: Can Computer-Use Agents Leverage Real-World SaaS to Solve Professional Workflows?</strong></a> <span>2026-05-15</span></li>
+          <li><a href="2605.14498.html"><strong>GroupMemBench: Benchmarking LLM Agent Memory in Multi-Party Conversations</strong></a> <span>2026-05-14</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

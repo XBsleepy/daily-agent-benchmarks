@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>From Dead Code and Static Requirements to Working Engines: Software Revival with Coding Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Can coding agents restore software that no longer runs while preserving its underlying methods, and reconstruct industrial software…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Tool use, agent benchmark, LLM agent, arXiv, 2609.36161" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.36161.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="From Dead Code and Static Requirements to Working Engines: Software Revival with Coding Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Can coding agents restore software that no longer runs while preserving its underlying methods, and reconstruct industrial software…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.36161.html" />
+    <meta property="article:published_time" content="2026-09-28T19:30:12Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="From Dead Code and Static Requirements to Working Engines: Software Revival with Coding Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Can coding agents restore software that no longer runs while preserving its underlying methods, and reconstruct industrial software…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,65 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "From Dead Code and Static Requirements to Working Engines: Software Revival with Coding Agents",
+  "name": "From Dead Code and Static Requirements to Working Engines: Software Revival with Coding Agents",
+  "abstract": "Can coding agents restore software that no longer runs while preserving its underlying methods, and reconstruct industrial software engines from open specifications? Here we introduce ReviveBench, a benchmark with two task families evaluated by hidden verifiers calibrated against native execution environments, established engineering tools, or purpose-built reference implementations. The revival family comprises ten tasks involving dependency incompatibilities, deleted core modules, legacy builds, and a GPU-based foundation model. Every starting workspace fails verification, and the strongest evaluated model passes all ten tasks in at least one run each. In contamination-control experiments, identifier obfuscation reduces line similarity to the original implementations from 0.51--0.96 to 0.03--0.44 without reducing the observed pass rate of any evaluated model. On repositories created after the stated knowledge cutoffs, the strongest model passes eight of nine runs. The reconstruction family comprises thirteen tasks spanning numerical, geometric, hardware, and transactional systems (e.g. CAD and CRM). Two models meet the benchmark's pass criteria on all thirteen, although our audit shows that the CFD task cannot establish numerical-solver capability. Benchmark construction and auditing uncover 28 verifier defects, including 24 false negatives and two false positives. These findings show that executable verification can itself introduce substantial measurement error. We present three practical checks: test whether prescribed methods can reach the grading thresholds, investigate agreement among independently generated candidates, and recompute diagnostics from submitted artifacts. ReviveBench thus provides both an evaluation of software revival and engine reconstruction, and cases in validating the verifiers used to measure coding agents for software design.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Tianyu Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Dingyuan Dai"
+    },
+    {
+      "@type": "Person",
+      "name": "Yufan Du"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhen Yang"
+    }
+  ],
+  "datePublished": "2026-09-28T19:30:12Z",
+  "dateModified": "2026-09-28T19:30:12Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.36161.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.36161.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.36161v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.36161"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.36161v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.36161"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +97,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>From Dead Code and Static Requirements to Working Engines: Software Revival with Coding Agents</h1>
+        <div class="meta">
+          Tianyu Liu, Dingyuan Dai, Yufan Du, Zhen Yang
+          · 2609.36161
+          · <time datetime="2026-09-28">2026-09-28</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Can coding agents restore software that no longer runs while preserving its underlying methods, and reconstruct industrial software engines from open specifications? Here we introduce ReviveBench, a benchmark with two task families evaluated by hidden verifiers calibrated against native execution environments, established engineering tools, or purpose-built reference implementations. The revival family comprises ten tasks involving dependency incompatibilities, deleted core modules, legacy builds, and a GPU-based foundation model. Every starting workspace fails verification, and the strongest evaluated model passes all ten tasks in at least one run each. In contamination-control experiments, identifier obfuscation reduces line similarity to the original implementations from 0.51--0.96 to 0.03--0.44 without reducing the observed pass rate of any evaluated model. On repositories created after the stated knowledge cutoffs, the strongest model passes eight of nine runs. The reconstruction family comprises thirteen tasks spanning numerical, geometric, hardware, and transactional systems (e.g. CAD and CRM). Two models meet the benchmark&#x27;s pass criteria on all thirteen, although our audit shows that the CFD task cannot establish numerical-solver capability. Benchmark construction and auditing uncover 28 verifier defects, including 24 false negatives and two false positives. These findings show that executable verification can itself introduce substantial measurement error. We present three practical checks: test whether prescribed methods can reach the grading thresholds, investigate agreement among independently generated candidates, and recompute diagnostics from submitted artifacts. ReviveBench thus provides both an evaluation of software revival and engine reconstruction, and cases in validating the verifiers used to measure coding agents for software design.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.36161v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.36161v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.36161" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.38269.html"><strong>Zero2Repo: Can Coding Agents Build Repositories from Scratch?</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.37143.html"><strong>LoLBench: Evaluating Coding Agents with Long-Horizon Proposals on Large Software Systems</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.36777.html"><strong>Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.36635.html"><strong>WitnessGym: Benchmarking Coding Agents on the Construction of Bug Witnesses</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.35639.html"><strong>GPUPhysBench: Benchmarking Coding Agents for Correct and Efficient GPU Physics Simulation</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34683.html"><strong>AgentPerfBench: A Benchmarking and Evaluation Suite for Inference Performance of Agentic LLMs</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34210.html"><strong>RLE-Bench: A Qualifying Exam for Coding Agents as Robot Learning Engineers</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.31587.html"><strong>Compact Documentation for Coding Agents: A Benchmark, an Optimizer, and Why It Does Not Transfer</strong></a> <span>2026-09-28</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>SEVRA-BENCH: Social Engineering of Vulnerabilities in Review Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language models (LLMs) are increasingly deployed in automated code-review systems, where their approvals can determine which…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2606.13757" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.13757.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SEVRA-BENCH: Social Engineering of Vulnerabilities in Review Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language models (LLMs) are increasingly deployed in automated code-review systems, where their approvals can determine which…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.13757.html" />
+    <meta property="article:published_time" content="2026-06-11T16:35:56Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SEVRA-BENCH: Social Engineering of Vulnerabilities in Review Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language models (LLMs) are increasingly deployed in automated code-review systems, where their approvals can determine which…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,67 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SEVRA-BENCH: Social Engineering of Vulnerabilities in Review Agents",
+  "name": "SEVRA-BENCH: Social Engineering of Vulnerabilities in Review Agents",
+  "abstract": "Large language models (LLMs) are increasingly deployed in automated code-review systems, where their approvals can determine which code is merged into shared repositories. However, it is unclear whether review agents can detect vulnerability-introducing code when an attacker controls both the code change and the persuasive Pull Request (PR) narrative designed to mask it. We introduce SEVRA-BENCH (Social Engineering of Vulnerabilities in Review Agents), a benchmark that measures how often a review agent approves such adversarial PR s. Each PR in SEVRA-BENCH is built from a historical commit that fixed a vulnerability. We automatically reverse that fix to extract the original vulnerable code, and submit the resulting code change as a PR wrapped in one of 15 social-engineering framings. To test review-agent resilience to narrative manipulation, these framings vary dimensions such as supporting evidence, conveyed urgency, signals of prior approval, and appeals to authority. SEVRA-BENCH evaluates a retained challenge split of roughly 1000 adversarial PRs drawn from publicly disclosed vulnerability fixes across the top 10 entries of the MITRE's 2025 most dangerous software weaknesses. Evaluating 8 review agents against this benchmark, we reveal that review agents are susceptible to narrative manipulation, exposing a significant gap in security capabilities.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Rui Melo"
+    },
+    {
+      "@type": "Person",
+      "name": "Riccardo Fogliato"
+    },
+    {
+      "@type": "Person",
+      "name": "Sean Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Pratiksha Thaker"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhiwei Steven Wu"
+    }
+  ],
+  "datePublished": "2026-06-11T16:35:56Z",
+  "dateModified": "2026-07-06T18:27:31Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.13757.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.13757.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.13757v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.13757"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.13757v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.13757"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +99,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SEVRA-BENCH: Social Engineering of Vulnerabilities in Review Agents</h1>
+        <div class="meta">
+          Rui Melo, Riccardo Fogliato, Sean Zhou, Pratiksha Thaker, Zhiwei Steven Wu
+          · 2606.13757
+          · <time datetime="2026-06-11">2026-06-11</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Large language models (LLMs) are increasingly deployed in automated code-review systems, where their approvals can determine which code is merged into shared repositories. However, it is unclear whether review agents can detect vulnerability-introducing code when an attacker controls both the code change and the persuasive Pull Request (PR) narrative designed to mask it. We introduce SEVRA-BENCH (Social Engineering of Vulnerabilities in Review Agents), a benchmark that measures how often a review agent approves such adversarial PR s. Each PR in SEVRA-BENCH is built from a historical commit that fixed a vulnerability. We automatically reverse that fix to extract the original vulnerable code, and submit the resulting code change as a PR wrapped in one of 15 social-engineering framings. To test review-agent resilience to narrative manipulation, these framings vary dimensions such as supporting evidence, conveyed urgency, signals of prior approval, and appeals to authority. SEVRA-BENCH evaluates a retained challenge split of roughly 1000 adversarial PRs drawn from publicly disclosed vulnerability fixes across the top 10 entries of the MITRE&#x27;s 2025 most dangerous software weaknesses. Evaluating 8 review agents against this benchmark, we reveal that review agents are susceptible to narrative manipulation, exposing a significant gap in security capabilities.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.13757v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.13757v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.13757" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.15107.html"><strong>Towards Verifiable Agentic Data Science: Solving Irregular TSQA Via Tool-Grounded Reasoning</strong></a> <span>2026-06-13</span></li>
+          <li><a href="2607.13041.html"><strong>LessonBench-V1: A Benchmark Dataset for Evaluating AI Lesson Generation Agents</strong></a> <span>2026-06-12</span></li>
+          <li><a href="2606.14397.html"><strong>Running the Gauntlet: Re-evaluating the Capabilities of Agents Beyond Familiar Environments</strong></a> <span>2026-06-12</span></li>
+          <li><a href="2606.14154.html"><strong>SkillMutator: Benchmarking and Defending Language-and-Code Cross-modal Attacks on LLM Agent Skills</strong></a> <span>2026-06-12</span></li>
+          <li><a href="2606.13681.html"><strong>EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments</strong></a> <span>2026-06-11</span></li>
+          <li><a href="2606.13602.html"><strong>EpiBench: Verifiable Evaluation of AI Agents on Epigenomics Analysis</strong></a> <span>2026-06-11</span></li>
+          <li><a href="2606.13148.html"><strong>TerraBench: Can Agents Reason Over Heterogeneous Earth-System Data?</strong></a> <span>2026-06-11</span></li>
+          <li><a href="2606.13120.html"><strong>EvoBrowseComp: Benchmarking Search Agents on Evolving Knowledge</strong></a> <span>2026-06-11</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

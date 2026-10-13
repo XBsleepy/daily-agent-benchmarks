@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Right Family, Wrong Skill: Benchmarking Risk Exposure in Agent Skill Retrieval | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Agent skill libraries are becoming routable software assets: a retrieved skill can contribute instructions, scripts, resource…" />
+    <meta name="keywords" content="General, Safety, agent benchmark, LLM agent, arXiv, 2606.10388" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.10388.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Right Family, Wrong Skill: Benchmarking Risk Exposure in Agent Skill Retrieval" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Agent skill libraries are becoming routable software assets: a retrieved skill can contribute instructions, scripts, resource…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.10388.html" />
+    <meta property="article:published_time" content="2026-06-09T03:54:45Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Right Family, Wrong Skill: Benchmarking Risk Exposure in Agent Skill Retrieval" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Agent skill libraries are becoming routable software assets: a retrieved skill can contribute instructions, scripts, resource…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,64 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Right Family, Wrong Skill: Benchmarking Risk Exposure in Agent Skill Retrieval",
+  "name": "Right Family, Wrong Skill: Benchmarking Risk Exposure in Agent Skill Retrieval",
+  "abstract": "Agent skill libraries are becoming routable software assets: a retrieved skill can contribute instructions, scripts, resource bindings, and execution assumptions to an agent. This makes retrieval failures more specific than broad irrelevance. A system can find the right capability family yet expose the wrong same-capability representative. We study this failure as same-capability risk-exposure retrieval. Each benchmark unit pairs a helpful skill with a query-specific risky sibling that shares the capability family but differs on an execution-controlling contract, such as the required resource, precondition, procedure, or artifact. We introduce SameCapRisk-Bench, an auditable benchmark with 1,190 skill-risk units and 1,686 evaluation query cases: 694 marked-sibling units under public library pressure and 496 hard role-flip units where the same two skills swap helpful/risky roles across paired queries. The release records admission evidence, cue/leakage checks, source hashes, family relations, and fixed candidate pools. The benchmark reports helpful ranking together with harmful sibling rate (HSR@K), the top-K exposure of the marked risky sibling. On this benchmark, public SkillRouter, SkillRet, and R3-Skill retrieve helpful skills at high Recall@3 (0.848--0.888) but also expose marked risky siblings frequently (HSR@3 0.346--0.372). A fully public score-and-cluster pipeline lowers HSR@3 to 0.128--0.182, with Recall@3 of 0.713--0.776. Under a benchmark-trained reference scorer, public text-cluster and controlled resolvers reach HSR@3 0.012 and 0.007; the latter attains Recall@3 0.833. Skill retrieval should therefore report both capability matching and same-family risk exposure, with HSR serving as a targeted exposure certificate for fixed skill libraries.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jiandong Ding"
+    },
+    {
+      "@type": "Person",
+      "name": "Honglei Ji"
+    },
+    {
+      "@type": "Person",
+      "name": "Ming Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Tao Duan"
+    }
+  ],
+  "datePublished": "2026-06-09T03:54:45Z",
+  "dateModified": "2026-08-20T01:59:33Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.10388.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.10388.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.10388v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.10388"
+  },
+  "keywords": [
+    "General",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.10388v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.10388"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +96,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Right Family, Wrong Skill: Benchmarking Risk Exposure in Agent Skill Retrieval</h1>
+        <div class="meta">
+          Jiandong Ding, Honglei Ji, Ming Liu, Tao Duan
+          · 2606.10388
+          · <time datetime="2026-06-09">2026-06-09</time>
+          · General · 3 citations
+        </div>
+        <div class="themes"><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Agent skill libraries are becoming routable software assets: a retrieved skill can contribute instructions, scripts, resource bindings, and execution assumptions to an agent. This makes retrieval failures more specific than broad irrelevance. A system can find the right capability family yet expose the wrong same-capability representative. We study this failure as same-capability risk-exposure retrieval. Each benchmark unit pairs a helpful skill with a query-specific risky sibling that shares the capability family but differs on an execution-controlling contract, such as the required resource, precondition, procedure, or artifact. We introduce SameCapRisk-Bench, an auditable benchmark with 1,190 skill-risk units and 1,686 evaluation query cases: 694 marked-sibling units under public library pressure and 496 hard role-flip units where the same two skills swap helpful/risky roles across paired queries. The release records admission evidence, cue/leakage checks, source hashes, family relations, and fixed candidate pools. The benchmark reports helpful ranking together with harmful sibling rate (HSR@K), the top-K exposure of the marked risky sibling. On this benchmark, public SkillRouter, SkillRet, and R3-Skill retrieve helpful skills at high Recall@3 (0.848--0.888) but also expose marked risky siblings frequently (HSR@3 0.346--0.372). A fully public score-and-cluster pipeline lowers HSR@3 to 0.128--0.182, with Recall@3 of 0.713--0.776. Under a benchmark-trained reference scorer, public text-cluster and controlled resolvers reach HSR@3 0.012 and 0.007; the latter attains Recall@3 0.833. Skill retrieval should therefore report both capability matching and same-family risk exposure, with HSR serving as a targeted exposure certificate for fixed skill libraries.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.10388v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.10388v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.10388" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.20661.html"><strong>From Knowing to Acting: Benchmarking Self-Awareness Capability of LLM Agents</strong></a> <span>2026-06-09</span></li>
+          <li><a href="2606.11070.html"><strong>T1-Bench: Benchmarking Multi-Scenario Agents in Real-World Domains</strong></a> <span>2026-06-09</span></li>
+          <li><a href="2606.10813.html"><strong>RedAct: Redacting Agent Capability Traces for Procedural Skill Protection</strong></a> <span>2026-06-09</span></li>
+          <li><a href="2606.10394.html"><strong>STAGE-Claw: Automated State-based Agent Benchmarking for Realistic Scenarios</strong></a> <span>2026-06-09</span></li>
+          <li><a href="2606.10064.html"><strong>Bittensor Agent Arenas as a Trajectory Primitive: Distilling a Shopping Agent from ShoppingBench Subnet Traces</strong></a> <span>2026-06-08</span></li>
+          <li><a href="2606.08960.html"><strong>Hardening Agent Benchmarks with Adversarial Hacker-Fixer Loops</strong></a> <span>2026-06-08</span></li>
+          <li><a href="2606.06960.html"><strong>FinEvolveBench: A Benchmark for Self-Evolving Agents on Low-Repetition Tasks with Implicit Rewards</strong></a> <span>2026-06-05</span></li>
+          <li><a href="2606.06055.html"><strong>HUSH-Bench: Measuring Memory-Use Boundaries for Sensitive History in Conversational Agents</strong></a> <span>2026-06-04</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

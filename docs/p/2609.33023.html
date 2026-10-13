@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>SRE-Marathon: A Continuous, Change-Driven Benchmark for Autonomous Site Reliability Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Benchmarks for site reliability engineering (SRE) agents are typically episodic: one fault is injected, the agent receives an…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2609.33023" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.33023.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SRE-Marathon: A Continuous, Change-Driven Benchmark for Autonomous Site Reliability Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Benchmarks for site reliability engineering (SRE) agents are typically episodic: one fault is injected, the agent receives an…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.33023.html" />
+    <meta property="article:published_time" content="2026-09-26T23:43:04Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SRE-Marathon: A Continuous, Change-Driven Benchmark for Autonomous Site Reliability Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Benchmarks for site reliability engineering (SRE) agents are typically episodic: one fault is injected, the agent receives an…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,75 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SRE-Marathon: A Continuous, Change-Driven Benchmark for Autonomous Site Reliability Agents",
+  "name": "SRE-Marathon: A Continuous, Change-Driven Benchmark for Autonomous Site Reliability Agents",
+  "abstract": "Benchmarks for site reliability engineering (SRE) agents are typically episodic: one fault is injected, the agent receives an incident task, and its response is scored. Production operation is not. Incidents surface through noisy alerts, overlap in time, and often originate from code or configuration changes. We present SRE-Marathon, a benchmark for long-horizon, continuous SRE operation. An agent is invoked at a fixed cadence with cumulative alert history and a persistent workspace while operating a live two-zone Kubernetes deployment as a fault orchestrator injects overlapping faults according to a seeded, production-calibrated schedule. Curated code and configuration changes deployed through the same build pipeline available for repair. Each run is recorded into a sealed bundle and scored offline: Marathon-Score credits each injected fault for ordered progress through correlation, localization, and repair, with all metrics computed deterministically from recorded system evidence. Across three applications and about sixty faults per run, the best of 10 methods reaches only 41.3 out of 100. Agents often correlate and localize faults, but almost never complete repairs while the faults remain active.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yifang Tian"
+    },
+    {
+      "@type": "Person",
+      "name": "Yingjian Bai"
+    },
+    {
+      "@type": "Person",
+      "name": "Yifeng He"
+    },
+    {
+      "@type": "Person",
+      "name": "Zichun Chong"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuanchen Gao"
+    },
+    {
+      "@type": "Person",
+      "name": "Yiran Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Hans-Arno Jacobsen"
+    }
+  ],
+  "datePublished": "2026-09-26T23:43:04Z",
+  "dateModified": "2026-09-26T23:43:04Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.33023.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.33023.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.33023v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.33023"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.33023v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.33023"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +107,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SRE-Marathon: A Continuous, Change-Driven Benchmark for Autonomous Site Reliability Agents</h1>
+        <div class="meta">
+          Yifang Tian, Yingjian Bai, Yifeng He, Zichun Chong, Yuanchen Gao, Yiran Li, Hans-Arno Jacobsen
+          · 2609.33023
+          · <time datetime="2026-09-26">2026-09-26</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Benchmarks for site reliability engineering (SRE) agents are typically episodic: one fault is injected, the agent receives an incident task, and its response is scored. Production operation is not. Incidents surface through noisy alerts, overlap in time, and often originate from code or configuration changes. We present SRE-Marathon, a benchmark for long-horizon, continuous SRE operation. An agent is invoked at a fixed cadence with cumulative alert history and a persistent workspace while operating a live two-zone Kubernetes deployment as a fault orchestrator injects overlapping faults according to a seeded, production-calibrated schedule. Curated code and configuration changes deployed through the same build pipeline available for repair. Each run is recorded into a sealed bundle and scored offline: Marathon-Score credits each injected fault for ordered progress through correlation, localization, and repair, with all metrics computed deterministically from recorded system evidence. Across three applications and about sixty faults per run, the best of 10 methods reaches only 41.3 out of 100. Agents often correlate and localize faults, but almost never complete repairs while the faults remain active.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.33023v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.33023v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.33023" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.31468.html"><strong>PriceBench: A Diagnostic Benchmark for Price, Quality, and Brand Preferences in LLM Booking Agents</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.30325.html"><strong>ScopeBench: Do Agents Preserve Engagement Boundaries Under Goal Pressure?</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.33980.html"><strong>DynGraphAgentBench: A Benchmark for Agentic Lifecycle Control in Dynamic Graph Anomaly Detection</strong></a> <span>2026-09-27</span></li>
+          <li><a href="2609.33627.html"><strong>StoryEngine: A State-Grounded Agentic Framework for Video Storytelling</strong></a> <span>2026-09-27</span></li>
+          <li><a href="2609.32795.html"><strong>AgentHabit: Characterizing Distinct Behaviors of Agents on Everyday Tasks</strong></a> <span>2026-09-26</span></li>
+          <li><a href="2609.28850.html"><strong>RECLAIM: Can Agents Reproduce the Claims of Machine Learning Papers?</strong></a> <span>2026-09-25</span></li>
+          <li><a href="2609.26826.html"><strong>What Makes a Terminal-Bench Task Hard? Separating Genuine Hardness from Fake-Hardness on an Adjudicated Agentic Corpus</strong></a> <span>2026-09-24</span></li>
+          <li><a href="2609.25237.html"><strong>Trains but Doesn&#x27;t Learn: A Post-Training Delivery Benchmark for LLM Agents as Forward-Deployed Engineers</strong></a> <span>2026-09-23</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

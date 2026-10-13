@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>SlopCodeBench: Benchmarking How Coding Agents Degrade Over Long-Horizon Iterative Tasks | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Software development is iterative, yet agentic coding benchmarks hide design issues through their single-shot setup. Recent iterative…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2603.24755" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.24755.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SlopCodeBench: Benchmarking How Coding Agents Degrade Over Long-Horizon Iterative Tasks" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Software development is iterative, yet agentic coding benchmarks hide design issues through their single-shot setup. Recent iterative…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.24755.html" />
+    <meta property="article:published_time" content="2026-03-25T19:26:44Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SlopCodeBench: Benchmarking How Coding Agents Degrade Over Long-Horizon Iterative Tasks" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Software development is iterative, yet agentic coding benchmarks hide design issues through their single-shot setup. Recent iterative…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,89 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SlopCodeBench: Benchmarking How Coding Agents Degrade Over Long-Horizon Iterative Tasks",
+  "name": "SlopCodeBench: Benchmarking How Coding Agents Degrade Over Long-Horizon Iterative Tasks",
+  "abstract": "Software development is iterative, yet agentic coding benchmarks hide design issues through their single-shot setup. Recent iterative benchmarks attempt to remedy this but heavily constrain an agent's design decision space, making it impossible to faithfully measure how their decisions shape future extensions. We introduce SlopCodeBench, a benchmark of 36 problems and 196 checkpoints where agents repeatedly extend their own solutions. Unlike prior iterative benchmarks, our evolving specifications demand architectural decisions but leave internal structure to the agent. We measure two forms of degradation: structural erosion (concentrated complexity) and verbosity (redundant code). Evaluating 15 coding agents across open and closed models, we find that no agent fully solves any problem end-to-end, and the best agent passes 14.8% of checkpoints. Quality degrades across checkpoints, with structural erosion rising in 77% of trajectories and verbosity in 75.5%. Compared to 473 open-source Python repositories, agent code is 2.3x more verbose and 2.0x more eroded, and the human repositories degrade less often and by smaller margins across their git histories. Explicit quality guidance reduces initial verbosity and erosion by up to a third, without affecting degradation rates. SlopCodeBench provides the first measurement of code degradation under iterative extension, revealing that agents pass checkpoints while producing code that erodes and bloats with each turn.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Gabriel Orlanski"
+    },
+    {
+      "@type": "Person",
+      "name": "Devjeet Roy"
+    },
+    {
+      "@type": "Person",
+      "name": "Alexander Yun"
+    },
+    {
+      "@type": "Person",
+      "name": "Changho Shin"
+    },
+    {
+      "@type": "Person",
+      "name": "Alex Gu"
+    },
+    {
+      "@type": "Person",
+      "name": "Albert Ge"
+    },
+    {
+      "@type": "Person",
+      "name": "Dyah Adila"
+    },
+    {
+      "@type": "Person",
+      "name": "Nicholas Roberts"
+    },
+    {
+      "@type": "Person",
+      "name": "Frederic Sala"
+    },
+    {
+      "@type": "Person",
+      "name": "Aws Albarghouthi"
+    }
+  ],
+  "datePublished": "2026-03-25T19:26:44Z",
+  "dateModified": "2026-05-07T20:39:58Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.24755.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.24755.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2603.24755v2",
+    "https://doi.org/10.5281/zenodo.18405900,"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2603.24755"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2603.24755v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2603.24755"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +121,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SlopCodeBench: Benchmarking How Coding Agents Degrade Over Long-Horizon Iterative Tasks</h1>
+        <div class="meta">
+          Gabriel Orlanski, Devjeet Roy, Alexander Yun, Changho Shin, Alex Gu, Albert Ge, Dyah Adila, Nicholas Roberts, Frederic Sala, Aws Albarghouthi
+          · 2603.24755
+          · <time datetime="2026-03-25">2026-03-25</time>
+          · Coding / SWE · 15 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Software development is iterative, yet agentic coding benchmarks hide design issues through their single-shot setup. Recent iterative benchmarks attempt to remedy this but heavily constrain an agent&#x27;s design decision space, making it impossible to faithfully measure how their decisions shape future extensions. We introduce SlopCodeBench, a benchmark of 36 problems and 196 checkpoints where agents repeatedly extend their own solutions. Unlike prior iterative benchmarks, our evolving specifications demand architectural decisions but leave internal structure to the agent. We measure two forms of degradation: structural erosion (concentrated complexity) and verbosity (redundant code). Evaluating 15 coding agents across open and closed models, we find that no agent fully solves any problem end-to-end, and the best agent passes 14.8% of checkpoints. Quality degrades across checkpoints, with structural erosion rising in 77% of trajectories and verbosity in 75.5%. Compared to 473 open-source Python repositories, agent code is 2.3x more verbose and 2.0x more eroded, and the human repositories degrade less often and by smaller margins across their git histories. Explicit quality guidance reduces initial verbosity and erosion by up to a third, without affecting degradation rates. SlopCodeBench provides the first measurement of code degradation under iterative extension, revealing that agents pass checkpoints while producing code that erodes and bloats with each turn.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2603.24755v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2603.24755v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2603.24755" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2604.01438.html"><strong>ClawSafety: &quot;Safe&quot; LLMs, Unsafe Agents</strong></a> <span>2026-04-01</span></li>
+          <li><a href="2603.27646.html"><strong>PRBench: End-to-end Paper Reproduction in Physics Research</strong></a> <span>2026-03-29</span></li>
+          <li><a href="2603.26648.html"><strong>Vision2Web: A Hierarchical Benchmark for Visual Website Development with Agent Verification</strong></a> <span>2026-03-27</span></li>
+          <li><a href="2603.26337.html"><strong>RACE-Bench: A Reasoning-Augmented Benchmark for Repository-Level Code Agents on Feature Addition</strong></a> <span>2026-03-27</span></li>
+          <li><a href="2603.23448.html"><strong>Code Review Agent Benchmark</strong></a> <span>2026-03-24</span></li>
+          <li><a href="2603.22435.html"><strong>CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation</strong></a> <span>2026-03-23</span></li>
+          <li><a href="2603.17104.html"><strong>When the Specification Emerges: Benchmarking Faithfulness Loss in Long-Horizon Coding Agents</strong></a> <span>2026-03-17</span></li>
+          <li><a href="2603.16011.html"><strong>FormulaCode: Evaluating Agentic Optimization on Large Codebases</strong></a> <span>2026-03-16</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

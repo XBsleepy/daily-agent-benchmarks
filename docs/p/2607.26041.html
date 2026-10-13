@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions? | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Computer-use agents (CUAs) increasingly act through desktop GUIs to complete long-horizon tasks. Current benchmarks primarily measure…" />
+    <meta name="keywords" content="GUI / computer use, GUI agents, Computer use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2607.26041" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.26041.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions?" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Computer-use agents (CUAs) increasingly act through desktop GUIs to complete long-horizon tasks. Current benchmarks primarily measure…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.26041.html" />
+    <meta property="article:published_time" content="2026-07-28T17:49:51Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions?" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Computer-use agents (CUAs) increasingly act through desktop GUIs to complete long-horizon tasks. Current benchmarks primarily measure…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,62 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions?",
+  "name": "Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions?",
+  "abstract": "Computer-use agents (CUAs) increasingly act through desktop GUIs to complete long-horizon tasks. Current benchmarks primarily measure end-task success or single-frame grounding. Neither isolates whether a model can reconstruct the causal, task-relevant transition produced by an action- crucial for rejecting stale observations, verifying progress, and recovering from failure. This is difficult because inference, remote input, app rendering, and screenshot capture are asynchronous: the next observation may be delayed, occluded, transient, or unrelated, then misread as progress and carried into subsequent planning. We introduce Desktop-Delta Bench (DDB), an offline step-level benchmark with 2,013 human-verified instances from novel, multi-app Linux trajectories across ~15 applications and 50 task domains. DDB trajectories targets 3 failure dimensions- state verification, source tracking, and context-aware control- through 2 complementary tasks: 463 3-frame temporal-ordering instances, including 105 with a cross-trajectory decoy, and 1,550 before-after pairs labeled from 5 actions + its payload. We evaluate 8 closed and open-source model families across 32 ordering and 16 single-action settings, observing consistent gaps. Ordering remains unsaturated: best non-decoy and decoy exact-match rates are 65.1% and 65.7%. Task context improves decoy identification by 6.9 percentage points but reduces non-decoy exact match by 2.2 points; error analysis reveals systematic copying of the presented A-B-C order. Single-action results show that inferring the action family is harder than locating it: click F1 is 0.96 vs, 0.76 for drag, while recognized drags are generally localized well. DDB, thus, complements end-to-end benchmarks by filling the missing diagnostic layer between GUI grounding and final task success, enabling targeted improvements to desktop CUA verification, reliability, and recovery.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Abhishek Pillai"
+    },
+    {
+      "@type": "Person",
+      "name": "Samir Kumar Nayak"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuan Chen"
+    }
+  ],
+  "datePublished": "2026-07-28T17:49:51Z",
+  "dateModified": "2026-07-29T19:07:50Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.26041.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.26041.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.26041v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.26041"
+  },
+  "keywords": [
+    "GUI / computer use",
+    "GUI agents",
+    "Computer use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "GUI / computer use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.26041v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.26041"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +94,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions?</h1>
+        <div class="meta">
+          Abhishek Pillai, Samir Kumar Nayak, Yuan Chen
+          · 2607.26041
+          · <time datetime="2026-07-28">2026-07-28</time>
+          · GUI / computer use
+        </div>
+        <div class="themes"><span class="chip">GUI agents</span><span class="chip">Computer use</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Computer-use agents (CUAs) increasingly act through desktop GUIs to complete long-horizon tasks. Current benchmarks primarily measure end-task success or single-frame grounding. Neither isolates whether a model can reconstruct the causal, task-relevant transition produced by an action- crucial for rejecting stale observations, verifying progress, and recovering from failure. This is difficult because inference, remote input, app rendering, and screenshot capture are asynchronous: the next observation may be delayed, occluded, transient, or unrelated, then misread as progress and carried into subsequent planning. We introduce Desktop-Delta Bench (DDB), an offline step-level benchmark with 2,013 human-verified instances from novel, multi-app Linux trajectories across ~15 applications and 50 task domains. DDB trajectories targets 3 failure dimensions- state verification, source tracking, and context-aware control- through 2 complementary tasks: 463 3-frame temporal-ordering instances, including 105 with a cross-trajectory decoy, and 1,550 before-after pairs labeled from 5 actions + its payload. We evaluate 8 closed and open-source model families across 32 ordering and 16 single-action settings, observing consistent gaps. Ordering remains unsaturated: best non-decoy and decoy exact-match rates are 65.1% and 65.7%. Task context improves decoy identification by 6.9 percentage points but reduces non-decoy exact match by 2.2 points; error analysis reveals systematic copying of the presented A-B-C order. Single-action results show that inferring the action family is harder than locating it: click F1 is 0.96 vs, 0.76 for drag, while recognized drags are generally localized well. DDB, thus, complements end-to-end benchmarks by filling the missing diagnostic layer between GUI grounding and final task success, enabling targeted improvements to desktop CUA verification, reliability, and recovery.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.26041v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.26041v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.26041" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More GUI / computer use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.26204.html"><strong>ADeptS-Bench: Measuring the Trustworthiness of Computer Use Agents Across Devices</strong></a> <span>2026-08-25</span></li>
+          <li><a href="2608.18307.html"><strong>ComponentBench: Diagnosing Component-Level Failures in Computer-Use Agents</strong></a> <span>2026-08-18</span></li>
+          <li><a href="2608.06477.html"><strong>StepJack: Benchmarking Computer-Use Agent Safety Against Multi-Step Indirect Prompt Injection</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2607.28074.html"><strong>Echoverse: Deep, Evolving Environments for Training Computer-Use Agents at Scale</strong></a> <span>2026-07-30</span></li>
+          <li><a href="2607.25904.html"><strong>Interactive Reward Agent: GUI Task Evaluation via Environment-State Verification</strong></a> <span>2026-07-28</span></li>
+          <li><a href="2607.22689.html"><strong>Beyond Sequential Interaction: Benchmarking Parallel Execution and Coordination for GUI Agents</strong></a> <span>2026-07-17</span></li>
+          <li><a href="2607.13465.html"><strong>DevicesWorld: Benchmarking Cross-Device Agents in Heterogeneous Environments</strong></a> <span>2026-07-15</span></li>
+          <li><a href="2607.05363.html"><strong>SovereignPA-Bench: Evaluating User-Owned Personal Agents under Evolving Intent, Platform Mediation, and Consent Constraints</strong></a> <span>2026-07-06</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

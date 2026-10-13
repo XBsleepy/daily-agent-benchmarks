@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>CrackMeBench: Binary Reverse Engineering for Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Benchmarks for coding agents increasingly measure source-level software repair, and cybersecurity benchmarks increasingly measure…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2605.10597" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.10597.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="CrackMeBench: Binary Reverse Engineering for Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Benchmarks for coding agents increasingly measure source-level software repair, and cybersecurity benchmarks increasingly measure…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.10597.html" />
+    <meta property="article:published_time" content="2026-05-11T14:01:36Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="CrackMeBench: Binary Reverse Engineering for Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Benchmarks for coding agents increasingly measure source-level software repair, and cybersecurity benchmarks increasingly measure…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,58 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "CrackMeBench: Binary Reverse Engineering for Agents",
+  "name": "CrackMeBench: Binary Reverse Engineering for Agents",
+  "abstract": "Benchmarks for coding agents increasingly measure source-level software repair, and cybersecurity benchmarks increasingly measure broad capture-the-flag performance. Classical binary reverse engineering remains less precisely specified: given only an executable, can an agent recover validation logic and produce an input, serial, artifact, or key generator accepted by the program? We introduce CrackMeBench, a benchmark for evaluating language-model agents on educational CrackMe-style reverse-engineering tasks. CrackMeBench focuses on deterministic binary validation problems with executable oracles, symbol-poor binaries, explicit local tool access, and externally scored submissions rather than free-form explanations. The v0 benchmark combines eight public calibration CrackMes with twelve generated main-score tasks built from seeded C, Rust, and Go templates, and agents run through an equal shell interface in a no-network Linux Docker sandbox with standard reverse-engineering tools. In a three-model evaluation with a five-minute budget and three scored submissions per task, pass@3 on the generated split is 11/12 tasks (92%) for GPT-5.5, 7/12 (58%) for Claude Opus 4.7, and 5/12 (42%) for Kimi K2. The harder generated half separates the models more sharply, with pass@3 of 5/6, 2/6, and 1/6, respectively; on the eight-task public calibration split, pass@3 is 3/8, 2/8, and 1/8. CrackMeBench records pass@1 and pass@3, scored submissions, wall-clock time, command traces, tool categories, provider-reported token usage, estimated cost, and qualitative failure labels, providing a reproducible testbed for measuring progress from source-code reasoning toward autonomous binary analysis while restricting scope to educational, purpose-built programs.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Isaac David"
+    },
+    {
+      "@type": "Person",
+      "name": "Arthur Gervais"
+    }
+  ],
+  "datePublished": "2026-05-11T14:01:36Z",
+  "dateModified": "2026-05-11T14:01:36Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.10597.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.10597.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.10597v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.10597"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.10597v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.10597"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +90,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>CrackMeBench: Binary Reverse Engineering for Agents</h1>
+        <div class="meta">
+          Isaac David, Arthur Gervais
+          · 2605.10597
+          · <time datetime="2026-05-11">2026-05-11</time>
+          · Coding / SWE · 2 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Benchmarks for coding agents increasingly measure source-level software repair, and cybersecurity benchmarks increasingly measure broad capture-the-flag performance. Classical binary reverse engineering remains less precisely specified: given only an executable, can an agent recover validation logic and produce an input, serial, artifact, or key generator accepted by the program? We introduce CrackMeBench, a benchmark for evaluating language-model agents on educational CrackMe-style reverse-engineering tasks. CrackMeBench focuses on deterministic binary validation problems with executable oracles, symbol-poor binaries, explicit local tool access, and externally scored submissions rather than free-form explanations. The v0 benchmark combines eight public calibration CrackMes with twelve generated main-score tasks built from seeded C, Rust, and Go templates, and agents run through an equal shell interface in a no-network Linux Docker sandbox with standard reverse-engineering tools. In a three-model evaluation with a five-minute budget and three scored submissions per task, pass@3 on the generated split is 11/12 tasks (92%) for GPT-5.5, 7/12 (58%) for Claude Opus 4.7, and 5/12 (42%) for Kimi K2. The harder generated half separates the models more sharply, with pass@3 of 5/6, 2/6, and 1/6, respectively; on the eight-task public calibration split, pass@3 is 3/8, 2/8, and 1/8. CrackMeBench records pass@1 and pass@3, scored submissions, wall-clock time, command traces, tool categories, provider-reported token usage, estimated cost, and qualitative failure labels, providing a reproducible testbed for measuring progress from source-code reasoning toward autonomous binary analysis while restricting scope to educational, purpose-built programs.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.10597v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.10597v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.10597" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.13139.html"><strong>SWE-Cycle: Benchmarking Code Agents across the Complete Issue Resolution Cycle</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.12808.html"><strong>Neurodata Without Boredom: Benchmarking Agentic AI for Data Reuse</strong></a> <span>2026-05-12</span></li>
+          <li><a href="2605.12673.html"><strong>Do Androids Dream of Breaking the Game? Systematically Auditing AI Agent Benchmarks with BenchJack</strong></a> <span>2026-05-12</span></li>
+          <li><a href="2605.12493.html"><strong>LongMemEval-V2: Evaluating Long-Term Agent Memory Toward Experienced Colleagues</strong></a> <span>2026-05-12</span></li>
+          <li><a href="2605.11030.html"><strong>An Executable Benchmarking Suite for Tool-Using Agents</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.09684.html"><strong>MonitoringBench: Semi-Automated Red-Teaming for Agent Monitoring</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.09675.html"><strong>CodeClinic: Evaluating Automation of Coding Skills for Clinical Reasoning Agents</strong></a> <span>2026-05-10</span></li>
+          <li><a href="2605.08941.html"><strong>MDGYM: Benchmarking AI Agents on Molecular Simulations</strong></a> <span>2026-05-09</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

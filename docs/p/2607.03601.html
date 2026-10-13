@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ArchEval: Measuring AI Agents as Computer Architects | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Computer architecture has long used benchmarks to make progress measurable. LLM agents create a different measurement problem…" />
+    <meta name="keywords" content="General, Tool use, Memory, agent benchmark, LLM agent, arXiv, 2607.03601" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.03601.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ArchEval: Measuring AI Agents as Computer Architects" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Computer architecture has long used benchmarks to make progress measurable. LLM agents create a different measurement problem…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.03601.html" />
+    <meta property="article:published_time" content="2026-07-03T20:58:29Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ArchEval: Measuring AI Agents as Computer Architects" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Computer architecture has long used benchmarks to make progress measurable. LLM agents create a different measurement problem…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,93 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ArchEval: Measuring AI Agents as Computer Architects",
+  "name": "ArchEval: Measuring AI Agents as Computer Architects",
+  "abstract": "Computer architecture has long used benchmarks to make progress measurable. LLM agents create a different measurement problem: success is not merely writing code or tuning parameters. The agent must interpret workloads, choose mechanisms, use simulators, predict performance, satisfy hard constraints, and decide which feasible design is worth evaluating. This paper introduces ArchEval, a benchmark and platform for evaluating LLM agents on computer architecture design and optimization. It contains 20 challenges across CPU core mechanisms, system architecture, memory systems, accelerators, and compute-in-memory, backed by eight simulators. Each challenge is posed under three settings: L1 full harness, with repeated simulator feedback; L2 simulator-code container, where simulator source is available but the agent must assemble its own workflow; and L3 agent-only, with no runnable feedback before submission. Each run reports baseline-normalized verifier performance and records the full trajectory, connecting results to workload analysis, simulator-tool use, prediction, constraint handling, and artifact integrity. Initial results show a sharp boundary in current agents. With L1 support, all four evaluated agents reach or exceed baseline and improve real designs across diverse simulators. Removing support exposes weaknesses: many agents fail to turn simulator source into useful experiments, and L3 predictions often disagree with verifier results. In L3, only GPT-5.5 + Codex remains above baseline, reaching 1.21x geomean performance and a 65% win rate; the other three fall below baseline. Even GPT-5.5 + Codex has only a 15% performance-modeling pass rate. ArchEval frames today's agents as useful optimization assistants rather than autonomous architects, and identifies capabilities needed next: simulator-tool use, calibrated prediction, pre-feedback judgment, and useful mechanism discovery.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Chenyu Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zishen Wan"
+    },
+    {
+      "@type": "Person",
+      "name": "Jeffrey Ma"
+    },
+    {
+      "@type": "Person",
+      "name": "Shvetank Prakash"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhenting Qi"
+    },
+    {
+      "@type": "Person",
+      "name": "Haebin Do"
+    },
+    {
+      "@type": "Person",
+      "name": "Andy Cheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Arya Tschand"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiahe Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Yilun Du"
+    },
+    {
+      "@type": "Person",
+      "name": "Vijay Janapa Reddi"
+    }
+  ],
+  "datePublished": "2026-07-03T20:58:29Z",
+  "dateModified": "2026-07-03T20:58:29Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.03601.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.03601.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.03601v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.03601"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.03601v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.03601"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +125,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ArchEval: Measuring AI Agents as Computer Architects</h1>
+        <div class="meta">
+          Chenyu Wang, Zishen Wan, Jeffrey Ma, Shvetank Prakash, Zhenting Qi, Haebin Do, Andy Cheng, Arya Tschand, Jiahe Shi, Yilun Du, Vijay Janapa Reddi
+          · 2607.03601
+          · <time datetime="2026-07-03">2026-07-03</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Computer architecture has long used benchmarks to make progress measurable. LLM agents create a different measurement problem: success is not merely writing code or tuning parameters. The agent must interpret workloads, choose mechanisms, use simulators, predict performance, satisfy hard constraints, and decide which feasible design is worth evaluating. This paper introduces ArchEval, a benchmark and platform for evaluating LLM agents on computer architecture design and optimization. It contains 20 challenges across CPU core mechanisms, system architecture, memory systems, accelerators, and compute-in-memory, backed by eight simulators. Each challenge is posed under three settings: L1 full harness, with repeated simulator feedback; L2 simulator-code container, where simulator source is available but the agent must assemble its own workflow; and L3 agent-only, with no runnable feedback before submission. Each run reports baseline-normalized verifier performance and records the full trajectory, connecting results to workload analysis, simulator-tool use, prediction, constraint handling, and artifact integrity. Initial results show a sharp boundary in current agents. With L1 support, all four evaluated agents reach or exceed baseline and improve real designs across diverse simulators. Removing support exposes weaknesses: many agents fail to turn simulator source into useful experiments, and L3 predictions often disagree with verifier results. In L3, only GPT-5.5 + Codex remains above baseline, reaching 1.21x geomean performance and a 65% win rate; the other three fall below baseline. Even GPT-5.5 + Codex has only a 15% performance-modeling pass rate. ArchEval frames today&#x27;s agents as useful optimization assistants rather than autonomous architects, and identifies capabilities needed next: simulator-tool use, calibrated prediction, pre-feedback judgment, and useful mechanism discovery.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.03601v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.03601v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.03601" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.04329.html"><strong>HAS-Bench: Evaluating LLM-Based Human-Agent Systems under Configurable Human Participation</strong></a> <span>2026-07-05</span></li>
+          <li><a href="2607.04293.html"><strong>CausalGame: Benchmarking Causal Thinking of LLM Agents in Games</strong></a> <span>2026-07-05</span></li>
+          <li><a href="2607.03730.html"><strong>ProACT: Towards Breakdown-Aware Proactive Agent in Multi-User Collaboration</strong></a> <span>2026-07-04</span></li>
+          <li><a href="2608.09946.html"><strong>HoosierHelp: Benchmarking LLM Agents for Social Service Navigation</strong></a> <span>2026-07-03</span></li>
+          <li><a href="2607.03162.html"><strong>APeB: Benchmarking Personalization Ability of Large Language Model Agents</strong></a> <span>2026-07-03</span></li>
+          <li><a href="2607.02814.html"><strong>SovereignNegotiation-Bench: Evaluating User-Owned Personal Agents In Delegated Bargaining Under Privacy, Consent, Evidence, And Institutional Pressure</strong></a> <span>2026-07-02</span></li>
+          <li><a href="2607.02689.html"><strong>S-EMBER: A Large-Scale Benchmark for Streaming Egocentric Memory Retrieval</strong></a> <span>2026-07-02</span></li>
+          <li><a href="2607.02255.html"><strong>AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents</strong></a> <span>2026-07-02</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

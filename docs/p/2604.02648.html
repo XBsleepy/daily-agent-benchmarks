@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>GBQA: A Game Benchmark for Evaluating LLMs as Quality Assurance Engineers | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: The autonomous discovery of bugs remains a significant challenge in modern software development. Compared to code generation, the…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Multi-agent, Memory, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2604.02648" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.02648.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="GBQA: A Game Benchmark for Evaluating LLMs as Quality Assurance Engineers" />
+    <meta property="og:description" content="Daily Agent Benchmarks: The autonomous discovery of bugs remains a significant challenge in modern software development. Compared to code generation, the…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.02648.html" />
+    <meta property="article:published_time" content="2026-04-03T02:23:50Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="GBQA: A Game Benchmark for Evaluating LLMs as Quality Assurance Engineers" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: The autonomous discovery of bugs remains a significant challenge in modern software development. Compared to code generation, the…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,63 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "GBQA: A Game Benchmark for Evaluating LLMs as Quality Assurance Engineers",
+  "name": "GBQA: A Game Benchmark for Evaluating LLMs as Quality Assurance Engineers",
+  "abstract": "The autonomous discovery of bugs remains a significant challenge in modern software development. Compared to code generation, the complexity of dynamic runtime environments makes bug discovery considerably harder for large language models (LLMs). In this paper, we take game development as a representative domain and introduce the Game Benchmark for Quality Assurance (GBQA), a benchmark containing 30 games and 124 human-verified bugs across three difficulty levels, to evaluate whether LLMs can autonomously detect software bugs. The benchmark is constructed using a multi-agent system that develops games and injects bugs in a scalable manner, with human experts in the loop to ensure correctness. Moreover, we provide a baseline interactive agent equipped with a multi-round ReAct loop and a memory mechanism, enabling long-horizon exploration of game environments for bug detection across different LLMs. Extensive experiments on frontier LLMs demonstrate that autonomous bug discovery remains highly challenging: the best-performing model, Claude-4.6-Opus in thinking mode, identifies only 48.39% of the verified bugs. We believe GBQA provides an adequate testbed and evaluation criterion, and that further progress on it will help close the gap in autonomous software engineering.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Shufan Jiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chios Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhiyang Chen"
+    }
+  ],
+  "datePublished": "2026-04-03T02:23:50Z",
+  "dateModified": "2026-04-03T02:23:50Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.02648.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.02648.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.02648v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2604.02648"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Multi-agent",
+    "Memory",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2604.02648v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2604.02648"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +95,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>GBQA: A Game Benchmark for Evaluating LLMs as Quality Assurance Engineers</h1>
+        <div class="meta">
+          Shufan Jiang, Chios Chen, Zhiyang Chen
+          · 2604.02648
+          · <time datetime="2026-04-03">2026-04-03</time>
+          · Coding / SWE · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Multi-agent</span><span class="chip">Memory</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>The autonomous discovery of bugs remains a significant challenge in modern software development. Compared to code generation, the complexity of dynamic runtime environments makes bug discovery considerably harder for large language models (LLMs). In this paper, we take game development as a representative domain and introduce the Game Benchmark for Quality Assurance (GBQA), a benchmark containing 30 games and 124 human-verified bugs across three difficulty levels, to evaluate whether LLMs can autonomously detect software bugs. The benchmark is constructed using a multi-agent system that develops games and injects bugs in a scalable manner, with human experts in the loop to ensure correctness. Moreover, we provide a baseline interactive agent equipped with a multi-round ReAct loop and a memory mechanism, enabling long-horizon exploration of game environments for bug detection across different LLMs. Extensive experiments on frontier LLMs demonstrate that autonomous bug discovery remains highly challenging: the best-performing model, Claude-4.6-Opus in thinking mode, identifies only 48.39% of the verified bugs. We believe GBQA provides an adequate testbed and evaluation criterion, and that further progress on it will help close the gap in autonomous software engineering.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2604.02648v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2604.02648v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2604.02648" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2604.09791.html"><strong>Pioneer Agent: Continual Improvement of Small Language Models in Production</strong></a> <span>2026-04-10</span></li>
+          <li><a href="2604.09408.html"><strong>HiL-Bench (Human-in-Loop Benchmark): Do Agents Know When to Ask for Help?</strong></a> <span>2026-04-10</span></li>
+          <li><a href="2604.04226.html"><strong>SW-$A^2$-Bench: Benchmarking Autonomous Software Agent Generation for Agentic Web</strong></a> <span>2026-04-05</span></li>
+          <li><a href="2604.04979.html"><strong>Squeez: Task-Conditioned Tool-Output Pruning for Coding Agents</strong></a> <span>2026-04-04</span></li>
+          <li><a href="2604.01527.html"><strong>REAP: Automatic Curation of Coding Agent Benchmarks from Interactive Production Usage</strong></a> <span>2026-04-02</span></li>
+          <li><a href="2604.01438.html"><strong>ClawSafety: &quot;Safe&quot; LLMs, Unsafe Agents</strong></a> <span>2026-04-01</span></li>
+          <li><a href="2603.27646.html"><strong>PRBench: End-to-end Paper Reproduction in Physics Research</strong></a> <span>2026-03-29</span></li>
+          <li><a href="2603.26648.html"><strong>Vision2Web: A Hierarchical Benchmark for Visual Website Development with Agent Verification</strong></a> <span>2026-03-27</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

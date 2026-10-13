@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>A Physics-Grounded Benchmark for Multi-Agent Dynamics in World Models | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Generative world models hold immense promise as scalable simulators for autonomous systems, particularly for synthesizing rare but…" />
+    <meta name="keywords" content="Multi-agent, Tool use, Safety, agent benchmark, LLM agent, arXiv, 2606.28757" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.28757.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="A Physics-Grounded Benchmark for Multi-Agent Dynamics in World Models" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Generative world models hold immense promise as scalable simulators for autonomous systems, particularly for synthesizing rare but…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.28757.html" />
+    <meta property="article:published_time" content="2026-06-27T06:13:35Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="A Physics-Grounded Benchmark for Multi-Agent Dynamics in World Models" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Generative world models hold immense promise as scalable simulators for autonomous systems, particularly for synthesizing rare but…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,109 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "A Physics-Grounded Benchmark for Multi-Agent Dynamics in World Models",
+  "name": "A Physics-Grounded Benchmark for Multi-Agent Dynamics in World Models",
+  "abstract": "Generative world models hold immense promise as scalable simulators for autonomous systems, particularly for synthesizing rare but safety-critical multi-agent interactions, such as vehicle collisions. However, current evaluation paradigms index heavily on visual fidelity and semantic alignment, leaving a critical blind spot: they cannot reliably quantify whether generated dynamics actually obey the fundamental physical laws required for reliable simulation. Assessing this physical plausibility is inherently difficult due to a lack of physical metrics and the challenge of extracting metric-scale kinematics from uncalibrated video rollouts. To bridge this gap, we introduce CrashTwin, a physics-grounded evaluation framework designed to stress-test the physical trustworthiness of world models. CrashTwin couples a diverse dataset of multi-agent collision scenarios, comprising 25K controllable synthetic and 12K in-the-wild real-world collision sequences with a novel calibration-free reconstruction pipeline, enabling the recovery of 3D physical attributes directly from world model rollouts. We propose a diagnostic suite that systematically evaluates three dimensions: spatio-temporal consistency, momentum and kinetic energy conservation, and world-dynamics integrity. Extensive benchmarking of state-of-the-art models reveals a crucial insight: high perceptual quality frequently masks severe physical violations during complex interactions. By quantitatively exposing these failure modes, CrashTwin provides a vital diagnostic tool for developing physically grounded world models capable of reliable real-world simulation.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Nuo Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Lulin Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zihao Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Ziyao Zeng"
+    },
+    {
+      "@type": "Person",
+      "name": "Zihao Zhu"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenyan Cong"
+    },
+    {
+      "@type": "Person",
+      "name": "Junyuan Hong"
+    },
+    {
+      "@type": "Person",
+      "name": "Yunhao Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhengzhong Tu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yan Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Boris Ivanovic"
+    },
+    {
+      "@type": "Person",
+      "name": "Marco Pavone"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhangyang Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yang Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhiwen Fan"
+    }
+  ],
+  "datePublished": "2026-06-27T06:13:35Z",
+  "dateModified": "2026-07-07T07:21:54Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.28757.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.28757.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.28757v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.28757"
+  },
+  "keywords": [
+    "Multi-agent",
+    "Tool use",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multi-agent"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.28757v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.28757"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +141,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>A Physics-Grounded Benchmark for Multi-Agent Dynamics in World Models</h1>
+        <div class="meta">
+          Nuo Chen, Lulin Liu, Zihao Li, Ziyao Zeng, Zihao Zhu, Wenyan Cong, Junyuan Hong, Yunhao Yang, Zhengzhong Tu, Yan Wang, Boris Ivanovic, Marco Pavone, Zhangyang Wang, Yang Zhou, Zhiwen Fan
+          · 2606.28757
+          · <time datetime="2026-06-27">2026-06-27</time>
+          · Multi-agent · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Multi-agent</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Generative world models hold immense promise as scalable simulators for autonomous systems, particularly for synthesizing rare but safety-critical multi-agent interactions, such as vehicle collisions. However, current evaluation paradigms index heavily on visual fidelity and semantic alignment, leaving a critical blind spot: they cannot reliably quantify whether generated dynamics actually obey the fundamental physical laws required for reliable simulation. Assessing this physical plausibility is inherently difficult due to a lack of physical metrics and the challenge of extracting metric-scale kinematics from uncalibrated video rollouts. To bridge this gap, we introduce CrashTwin, a physics-grounded evaluation framework designed to stress-test the physical trustworthiness of world models. CrashTwin couples a diverse dataset of multi-agent collision scenarios, comprising 25K controllable synthetic and 12K in-the-wild real-world collision sequences with a novel calibration-free reconstruction pipeline, enabling the recovery of 3D physical attributes directly from world model rollouts. We propose a diagnostic suite that systematically evaluates three dimensions: spatio-temporal consistency, momentum and kinetic energy conservation, and world-dynamics integrity. Extensive benchmarking of state-of-the-art models reveals a crucial insight: high perceptual quality frequently masks severe physical violations during complex interactions. By quantitatively exposing these failure modes, CrashTwin provides a vital diagnostic tool for developing physically grounded world models capable of reliable real-world simulation.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.28757v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.28757v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.28757" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multi-agent benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.01766.html"><strong>SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation</strong></a> <span>2026-07-02</span></li>
+          <li><a href="2607.00547.html"><strong>EgoGapBench: Benchmarking Egocentric Action Selection in Multi-Agent Scenes</strong></a> <span>2026-07-01</span></li>
+          <li><a href="2606.31174.html"><strong>ClawArena-Team: Benchmarking Subagent Orchestration and Dynamic Workflows in Language-Model Agents</strong></a> <span>2026-06-30</span></li>
+          <li><a href="2608.20381.html"><strong>EditPPT: Faithful Long-Deck Slide Editing via Structured Tool-Using Multi-Agent with Dual-Modal Validators</strong></a> <span>2026-06-29</span></li>
+          <li><a href="2606.23664.html"><strong>MAS-PromptBench: When Does Prompt Optimization Improve Multi-Agent LLM Systems?</strong></a> <span>2026-06-22</span></li>
+          <li><a href="2606.18648.html"><strong>Deep Research in Physical Sciences: A Multi-Agent Framework and Comprehensive Benchmark</strong></a> <span>2026-06-17</span></li>
+          <li><a href="2606.17459.html"><strong>Can LLMs Be CEOs? Benchmarking Strategic Resource Reallocation with Multi-Role Agent Simulation</strong></a> <span>2026-06-16</span></li>
+          <li><a href="2606.17246.html"><strong>GeoDisaster: Benchmarking Orchestrated Agents for Operational Disaster Geo-Intelligence</strong></a> <span>2026-06-15</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

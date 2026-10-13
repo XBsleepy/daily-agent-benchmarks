@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>A Matter of TASTE: Improving Coverage and Difficulty of Agent Benchmarks | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: As agent capabilities advance, existing benchmarks, such as $τ^2$-Bench, are becoming increasingly saturated. Yet constructing new…" />
+    <meta name="keywords" content="General, Tool use, Safety, agent benchmark, LLM agent, arXiv, 2605.28556" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.28556.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="A Matter of TASTE: Improving Coverage and Difficulty of Agent Benchmarks" />
+    <meta property="og:description" content="Daily Agent Benchmarks: As agent capabilities advance, existing benchmarks, such as $τ^2$-Bench, are becoming increasingly saturated. Yet constructing new…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.28556.html" />
+    <meta property="article:published_time" content="2026-05-27T14:45:59Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="A Matter of TASTE: Improving Coverage and Difficulty of Agent Benchmarks" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: As agent capabilities advance, existing benchmarks, such as $τ^2$-Bench, are becoming increasingly saturated. Yet constructing new…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,73 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "A Matter of TASTE: Improving Coverage and Difficulty of Agent Benchmarks",
+  "name": "A Matter of TASTE: Improving Coverage and Difficulty of Agent Benchmarks",
+  "abstract": "As agent capabilities advance, existing benchmarks, such as $τ^2$-Bench, are becoming increasingly saturated. Yet constructing new benchmark tasks remains complex, costly, and labor-intensive. Moreover, the standard approach, in which scenarios are first written in natural language and then mapped to tool sequences, captures only a narrow subset of the tool-use patterns agents exercise. In this paper, we address these problems by reversing the task construction process. We propose TASTE: Task Synthesis from Tool Sequence Evolution, an automatic method that generates challenging tasks with broader tool-use coverage. TASTE utilizes an Adaptive Contrastive $n$-gram model trained on LLM-judged validity signals. This enables sampling valid tool sequences that cover a vast range of tool combinations. TASTE then selects representative sequences from the pool via clustering, instantiates them into complete benchmark tasks, and refines them through iterative difficulty evolution. Using TASTE, we construct $τ^c$-Bench, a challenging extension of the three domains of $τ^2$-Bench. We evaluate $11$ agent/user LLM pairs and find that models nearly saturating $τ^2$-Bench suffer severe performance drops on our tasks (e.g., Gemini-3-Flash falls from $0.82\\!-\\!0.94$ to $0.28\\!-\\!0.61$). Beyond increasing difficulty, our generated tasks more than double the number of unique tool combinations agents must execute. Our results suggest high scores on existing benchmarks often reflect saturation rather than robust task-solving ability. By automating the generation of difficult, high-coverage benchmarks, TASTE enables continuous, scalable evaluation of future agents.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Tomer Keren"
+    },
+    {
+      "@type": "Person",
+      "name": "Nitay Calderon"
+    },
+    {
+      "@type": "Person",
+      "name": "Asaf Yehudai"
+    },
+    {
+      "@type": "Person",
+      "name": "Yotam Perlitz"
+    },
+    {
+      "@type": "Person",
+      "name": "Michal Shmueli-Scheuer"
+    },
+    {
+      "@type": "Person",
+      "name": "Roi Reichart"
+    }
+  ],
+  "datePublished": "2026-05-27T14:45:59Z",
+  "dateModified": "2026-06-02T10:20:59Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.28556.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.28556.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.28556v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.28556"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.28556v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.28556"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +105,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>A Matter of TASTE: Improving Coverage and Difficulty of Agent Benchmarks</h1>
+        <div class="meta">
+          Tomer Keren, Nitay Calderon, Asaf Yehudai, Yotam Perlitz, Michal Shmueli-Scheuer, Roi Reichart
+          · 2605.28556
+          · <time datetime="2026-05-27">2026-05-27</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>As agent capabilities advance, existing benchmarks, such as $τ^2$-Bench, are becoming increasingly saturated. Yet constructing new benchmark tasks remains complex, costly, and labor-intensive. Moreover, the standard approach, in which scenarios are first written in natural language and then mapped to tool sequences, captures only a narrow subset of the tool-use patterns agents exercise. In this paper, we address these problems by reversing the task construction process. We propose TASTE: Task Synthesis from Tool Sequence Evolution, an automatic method that generates challenging tasks with broader tool-use coverage. TASTE utilizes an Adaptive Contrastive $n$-gram model trained on LLM-judged validity signals. This enables sampling valid tool sequences that cover a vast range of tool combinations. TASTE then selects representative sequences from the pool via clustering, instantiates them into complete benchmark tasks, and refines them through iterative difficulty evolution. Using TASTE, we construct $τ^c$-Bench, a challenging extension of the three domains of $τ^2$-Bench. We evaluate $11$ agent/user LLM pairs and find that models nearly saturating $τ^2$-Bench suffer severe performance drops on our tasks (e.g., Gemini-3-Flash falls from $0.82\!-\!0.94$ to $0.28\!-\!0.61$). Beyond increasing difficulty, our generated tasks more than double the number of unique tool combinations agents must execute. Our results suggest high scores on existing benchmarks often reflect saturation rather than robust task-solving ability. By automating the generation of difficult, high-coverage benchmarks, TASTE enables continuous, scalable evaluation of future agents.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.28556v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.28556v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.28556" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.29286.html"><strong>CrossAlpha: An Annual-Report Benchmark for Cross-Market Factor Research (with LLM Agents)</strong></a> <span>2026-05-28</span></li>
+          <li><a href="2605.29253.html"><strong>OpenClawBench: Benchmarking Process-side Anomalies in Real-world Agent Execution Trajectories</strong></a> <span>2026-05-28</span></li>
+          <li><a href="2605.29225.html"><strong>BenchTrace: A Benchmark for Testing Reflection Ability and Controlled Evolution in LLM Agents</strong></a> <span>2026-05-28</span></li>
+          <li><a href="2605.28721.html"><strong>LiveBrowseComp: Are Search Agents Searching, or Just Verifying What They Already Know?</strong></a> <span>2026-05-27</span></li>
+          <li><a href="2605.28465.html"><strong>Beyond One Path: Evaluating and Enhancing Divergent Thinking in Interactive LLM Agents</strong></a> <span>2026-05-27</span></li>
+          <li><a href="2605.28359.html"><strong>From Knowing to Doing: A Memory-Controlled Benchmark for LLM Trading Agents on Stock Markets</strong></a> <span>2026-05-27</span></li>
+          <li><a href="2605.28201.html"><strong>Plant, Persist, Trigger: Sleeper Attack on Large Language Model Agents</strong></a> <span>2026-05-27</span></li>
+          <li><a href="2605.28192.html"><strong>Agentic Active Omni-Modal Perception for Multi-Hop Audio-Visual Reasoning</strong></a> <span>2026-05-27</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

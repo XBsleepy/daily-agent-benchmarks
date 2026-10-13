@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Trusted Credentials, Untrusted Behavior: Benchmarking LLM-Agent Security in High-Performance Computing | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language model (LLM) agents are starting to take on routine work in high-performance computing (HPC), including monitoring…" />
+    <meta name="keywords" content="General, Tool use, Science lab, agent benchmark, LLM agent, arXiv, 2607.18485" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.18485.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Trusted Credentials, Untrusted Behavior: Benchmarking LLM-Agent Security in High-Performance Computing" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language model (LLM) agents are starting to take on routine work in high-performance computing (HPC), including monitoring…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.18485.html" />
+    <meta property="article:published_time" content="2026-07-20T20:16:02Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Trusted Credentials, Untrusted Behavior: Benchmarking LLM-Agent Security in High-Performance Computing" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language model (LLM) agents are starting to take on routine work in high-performance computing (HPC), including monitoring…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,53 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Trusted Credentials, Untrusted Behavior: Benchmarking LLM-Agent Security in High-Performance Computing",
+  "name": "Trusted Credentials, Untrusted Behavior: Benchmarking LLM-Agent Security in High-Performance Computing",
+  "abstract": "Large language model (LLM) agents are starting to take on routine work in high-performance computing (HPC), including monitoring Slurm jobs, diagnosing failed builds, inspecting simulation output, and coordinating scientific workflows. To do this work, an agent commonly acts under its user's credentials and inherits the user's access to files and the scheduler. This arrangement creates a failure mode that ordinary account-level controls do not capture. Adversarial instructions in a log, tool description, shared file, or peer-agent message may redirect the agent beyond the task the user assigned, even though every resulting command is authenticated and permitted for that account. We refer to this as the hijacked authorized agent problem. Existing agent-security studies explain relevant mechanisms, such as indirect prompt injection and tool misuse, but generally evaluate them in web, enterprise, or personal-assistant settings. HPC security, by contrast, has mature controls for identity and isolation but does not ordinarily represent the intent of a particular task. This paper defines the threat model in the HPC setting, identifies attack surfaces created by schedulers, shared storage, multi-project accounts, and scientific workflows, and examines where current controls fall short. It concludes with a research agenda and a plan for an empirical benchmark, TaskBound.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jie Li"
+    }
+  ],
+  "datePublished": "2026-07-20T20:16:02Z",
+  "dateModified": "2026-07-20T20:16:02Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.18485.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.18485.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.18485v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.18485"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.18485v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.18485"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +85,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Trusted Credentials, Untrusted Behavior: Benchmarking LLM-Agent Security in High-Performance Computing</h1>
+        <div class="meta">
+          Jie Li
+          · 2607.18485
+          · <time datetime="2026-07-20">2026-07-20</time>
+          · General · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large language model (LLM) agents are starting to take on routine work in high-performance computing (HPC), including monitoring Slurm jobs, diagnosing failed builds, inspecting simulation output, and coordinating scientific workflows. To do this work, an agent commonly acts under its user&#x27;s credentials and inherits the user&#x27;s access to files and the scheduler. This arrangement creates a failure mode that ordinary account-level controls do not capture. Adversarial instructions in a log, tool description, shared file, or peer-agent message may redirect the agent beyond the task the user assigned, even though every resulting command is authenticated and permitted for that account. We refer to this as the hijacked authorized agent problem. Existing agent-security studies explain relevant mechanisms, such as indirect prompt injection and tool misuse, but generally evaluate them in web, enterprise, or personal-assistant settings. HPC security, by contrast, has mature controls for identity and isolation but does not ordinarily represent the intent of a particular task. This paper defines the threat model in the HPC setting, identifies attack surfaces created by schedulers, shared storage, multi-project accounts, and scientific workflows, and examines where current controls fall short. It concludes with a research agenda and a plan for an empirical benchmark, TaskBound.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.18485v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.18485v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.18485" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.20982.html"><strong>GuardianAgentBench: Where Agents Fail and How to Guard Them</strong></a> <span>2026-07-23</span></li>
+          <li><a href="2607.19865.html"><strong>DocOps: A Verifiable Benchmark for Autonomous Agents in Complex Document Operations</strong></a> <span>2026-07-22</span></li>
+          <li><a href="2607.19670.html"><strong>Same Game, Different Story: A Minimal Conservative Strategic Robustness Benchmark for Large Language Model Agents</strong></a> <span>2026-07-22</span></li>
+          <li><a href="2607.19238.html"><strong>FinanceComplexQA: Benchmarking Agentic Reasoning on Industrial-grade Financial Documents</strong></a> <span>2026-07-21</span></li>
+          <li><a href="2607.18063.html"><strong>Adaptive Adversaries: A Multi-Turn, Multi-LLM Benchmark for LLM Agent Security</strong></a> <span>2026-07-20</span></li>
+          <li><a href="2607.17765.html"><strong>FIFA World Cup 2026 as a Contamination-Free Benchmark for LLM Forecasting Agents: Four Models, a Bookmaker, and 104 Matches</strong></a> <span>2026-07-20</span></li>
+          <li><a href="2607.17701.html"><strong>ProEvent: An Event-centric Benchmark for Proactive Agents</strong></a> <span>2026-07-20</span></li>
+          <li><a href="2607.16716.html"><strong>RECON: Benchmarking Agent Memory for Compositional Reasoning over Long Contexts</strong></a> <span>2026-07-18</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

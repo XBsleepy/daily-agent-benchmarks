@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Total Recall at What Cost? Benchmarking the Serving Cost of Agentic Memory Systems | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Long-running conversational agents increasingly rely on a memory system to avoid resending the whole conversation each turn, yet how…" />
+    <meta name="keywords" content="General, Memory, agent benchmark, LLM agent, arXiv, 2608.11879" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.11879.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Total Recall at What Cost? Benchmarking the Serving Cost of Agentic Memory Systems" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Long-running conversational agents increasingly rely on a memory system to avoid resending the whole conversation each turn, yet how…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.11879.html" />
+    <meta property="article:published_time" content="2026-08-12T10:05:29Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Total Recall at What Cost? Benchmarking the Serving Cost of Agentic Memory Systems" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Long-running conversational agents increasingly rely on a memory system to avoid resending the whole conversation each turn, yet how…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,56 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Total Recall at What Cost? Benchmarking the Serving Cost of Agentic Memory Systems",
+  "name": "Total Recall at What Cost? Benchmarking the Serving Cost of Agentic Memory Systems",
+  "abstract": "Long-running conversational agents increasingly rely on a memory system to avoid resending the whole conversation each turn, yet how much that costs to serve has received little systematic benchmarking. We compare three memory systems (Mem0, Hindsight, and Mastra Observational Memory) against two reference strategies -- a fixed-size rolling window and resubmitting the full transcript -- across two backbones and conversations of up to 400 turns, pairing every cost measurement with answer accuracy on 665 LoCoMo questions. First, a memory system's serving cost cannot be predicted from conversation length and message size alone: a regression that tracks the two reference strategies closely misses the memory systems by 18-69%, their cost driven instead by internal memory behavior. Second, a break-even analysis shows that whether -- and when -- a memory system becomes cheaper to serve than the full transcript is highly sensitive to the system and the backbone, from the first tens of turns for the cheapest to never within 400 turns for the most expensive. Third, no system wins on both axes: accuracy spans 21-54%, and the backbone choice drives cost as much as the memory system does.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Natchanon Pollertlam"
+    },
+    {
+      "@type": "Person",
+      "name": "Witchayut Kornsuwannawit"
+    }
+  ],
+  "datePublished": "2026-08-12T10:05:29Z",
+  "dateModified": "2026-08-12T10:05:29Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.11879.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.11879.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.11879v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.11879"
+  },
+  "keywords": [
+    "General",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.11879v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.11879"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +88,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Total Recall at What Cost? Benchmarking the Serving Cost of Agentic Memory Systems</h1>
+        <div class="meta">
+          Natchanon Pollertlam, Witchayut Kornsuwannawit
+          · 2608.11879
+          · <time datetime="2026-08-12">2026-08-12</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Long-running conversational agents increasingly rely on a memory system to avoid resending the whole conversation each turn, yet how much that costs to serve has received little systematic benchmarking. We compare three memory systems (Mem0, Hindsight, and Mastra Observational Memory) against two reference strategies -- a fixed-size rolling window and resubmitting the full transcript -- across two backbones and conversations of up to 400 turns, pairing every cost measurement with answer accuracy on 665 LoCoMo questions. First, a memory system&#x27;s serving cost cannot be predicted from conversation length and message size alone: a regression that tracks the two reference strategies closely misses the memory systems by 18-69%, their cost driven instead by internal memory behavior. Second, a break-even analysis shows that whether -- and when -- a memory system becomes cheaper to serve than the full transcript is highly sensitive to the system and the backbone, from the first tens of turns for the cheapest to never within 400 turns for the most expensive. Third, no system wins on both axes: accuracy spans 21-54%, and the backbone choice drives cost as much as the memory system does.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.11879v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.11879v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.11879" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.13883.html"><strong>MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends</strong></a> <span>2026-08-14</span></li>
+          <li><a href="2608.13552.html"><strong>PlayWorld: Benchmarking World Models with Agent Players over Long-Horizon Objectives</strong></a> <span>2026-08-13</span></li>
+          <li><a href="2608.12593.html"><strong>DiG-bench: Discovery in Games</strong></a> <span>2026-08-12</span></li>
+          <li><a href="2608.12002.html"><strong>CTBench: Evaluating Troubleshooting Capabilities of AI Agents in Realistic Telecom Network Operations</strong></a> <span>2026-08-12</span></li>
+          <li><a href="2608.11683.html"><strong>FrontierFinance: A Challenging Benchmark for Measuring Frontier Intelligence of Finance Agents</strong></a> <span>2026-08-12</span></li>
+          <li><a href="2608.11679.html"><strong>AgenticTwin: An Agentic LLM Framework Integrated with Digital Twin for Anomaly Detection</strong></a> <span>2026-08-12</span></li>
+          <li><a href="2608.10875.html"><strong>VibeLifeBench: Can Your Life Agent Be Proactive and Persistent in a Living World?</strong></a> <span>2026-08-11</span></li>
+          <li><a href="2608.10669.html"><strong>REDAgentBench: Executable Red Teaming and Faithful Measurement of LLM Agent Systems</strong></a> <span>2026-08-11</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

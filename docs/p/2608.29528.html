@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MedCache: Efficient and Temporally Valid Memory for Longitudinal Clinical Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Longitudinal clinical agents must maintain an evolving patient state from evidence distributed across visits, time points, and…" />
+    <meta name="keywords" content="Multi-agent, Memory, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2608.29528" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.29528.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MedCache: Efficient and Temporally Valid Memory for Longitudinal Clinical Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Longitudinal clinical agents must maintain an evolving patient state from evidence distributed across visits, time points, and…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.29528.html" />
+    <meta property="article:published_time" content="2026-08-30T03:28:56Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MedCache: Efficient and Temporally Valid Memory for Longitudinal Clinical Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Longitudinal clinical agents must maintain an evolving patient state from evidence distributed across visits, time points, and…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,81 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MedCache: Efficient and Temporally Valid Memory for Longitudinal Clinical Agents",
+  "name": "MedCache: Efficient and Temporally Valid Memory for Longitudinal Clinical Agents",
+  "abstract": "Longitudinal clinical agents must maintain an evolving patient state from evidence distributed across visits, time points, and specialties. However, how agent memory should be designed for this setting remains unclear. We introduce a benchmark of multi-visit, multi-specialty patient records that evaluates long-context evidence retrieval, cross-time evidence aggregation, and cross-specialty clinical reasoning. Using this benchmark, we systematically study four memory design choices: curation, organization, retrieval, and memory-augmented reasoning. We find that temporal validity is more important than simply retaining more history; specialty-factorized memory reduces context but can hide shared evidence; and multiple agents help when specialists must reason together, not merely when evidence comes from multiple memories. Guided by these findings, we propose \\textit{MedCache}, a hybrid framework that constructs temporally valid patient memory, organizes evidence into overlapping specialty views, routes each query to relevant memories, and adaptively invokes one or multiple specialists. Experiments show that MedCache improves reasoning accuracy and memory efficiency over strong single-agent and multi-agent baselines, while generalizing across model backbones and external datasets.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Hei Ting"
+    },
+    {
+      "@type": "Person",
+      "name": "Chan"
+    },
+    {
+      "@type": "Person",
+      "name": "Chenwei Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xueshen Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Boyuan Zheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Liyue Shen"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiasi Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Z. Morley Mao"
+    }
+  ],
+  "datePublished": "2026-08-30T03:28:56Z",
+  "dateModified": "2026-08-30T03:28:56Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.29528.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.29528.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.29528v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.29528"
+  },
+  "keywords": [
+    "Multi-agent",
+    "Memory",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multi-agent"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.29528v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.29528"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +113,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MedCache: Efficient and Temporally Valid Memory for Longitudinal Clinical Agents</h1>
+        <div class="meta">
+          Hei Ting, Chan, Chenwei Wu, Xueshen Liu, Boyuan Zheng, Liyue Shen, Jiasi Chen, Z. Morley Mao
+          · 2608.29528
+          · <time datetime="2026-08-30">2026-08-30</time>
+          · Multi-agent
+        </div>
+        <div class="themes"><span class="chip">Multi-agent</span><span class="chip">Memory</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Longitudinal clinical agents must maintain an evolving patient state from evidence distributed across visits, time points, and specialties. However, how agent memory should be designed for this setting remains unclear. We introduce a benchmark of multi-visit, multi-specialty patient records that evaluates long-context evidence retrieval, cross-time evidence aggregation, and cross-specialty clinical reasoning. Using this benchmark, we systematically study four memory design choices: curation, organization, retrieval, and memory-augmented reasoning. We find that temporal validity is more important than simply retaining more history; specialty-factorized memory reduces context but can hide shared evidence; and multiple agents help when specialists must reason together, not merely when evidence comes from multiple memories. Guided by these findings, we propose \textit{MedCache}, a hybrid framework that constructs temporally valid patient memory, organizes evidence into overlapping specialty views, routes each query to relevant memories, and adaptively invokes one or multiple specialists. Experiments show that MedCache improves reasoning accuracy and memory efficiency over strong single-agent and multi-agent baselines, while generalizing across model backbones and external datasets.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.29528v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.29528v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.29528" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multi-agent benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.09947.html"><strong>SpeechAnnotator: A Context-Aware Multi-Agent Framework and Benchmark for Multidimensional Speech Annotation</strong></a> <span>2026-09-09</span></li>
+          <li><a href="2609.08696.html"><strong>MorphoOrgaAgent: A Foundation-Model-Based Multi-Agent System for Autonomous Organoid Analysis</strong></a> <span>2026-09-08</span></li>
+          <li><a href="2609.00384.html"><strong>RestoreBench: Can AI Agents Restore Power Flow Convergence?</strong></a> <span>2026-08-31</span></li>
+          <li><a href="2608.30661.html"><strong>SwarmBench: Can Large Language Models Act as Agent Swarm Orchestrators?</strong></a> <span>2026-08-31</span></li>
+          <li><a href="2608.28266.html"><strong>CoCoBench: A Cooperative Coordination Benchmark for Embodied Multi-Agent Task Planning</strong></a> <span>2026-08-28</span></li>
+          <li><a href="2608.27142.html"><strong>GRAIN: Bridging Name and Narrative Shifts in Real-World Graph Reasoning through Invariance-Rewarded Agentic RL</strong></a> <span>2026-08-27</span></li>
+          <li><a href="2608.24361.html"><strong>Adaptive Influence Graphs for Failure Attribution in Multi-Agent Systems</strong></a> <span>2026-08-25</span></li>
+          <li><a href="2608.12547.html"><strong>Do LLMs Beat Nash? Testing Decentralized Coordination in Self-Play Multi-Agent Games</strong></a> <span>2026-08-12</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

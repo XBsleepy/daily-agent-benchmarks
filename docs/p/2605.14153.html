@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ExploitBench: A Capability Ladder Benchmark for LLM Cybersecurity Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Exploitation is not a binary event. It is a ladder of acquiring progressive capabilities, from executing a single buggy line of code…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2605.14153" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.14153.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ExploitBench: A Capability Ladder Benchmark for LLM Cybersecurity Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Exploitation is not a binary event. It is a ladder of acquiring progressive capabilities, from executing a single buggy line of code…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.14153.html" />
+    <meta property="article:published_time" content="2026-05-13T22:08:05Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ExploitBench: A Capability Ladder Benchmark for LLM Cybersecurity Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Exploitation is not a binary event. It is a ladder of acquiring progressive capabilities, from executing a single buggy line of code…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,55 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ExploitBench: A Capability Ladder Benchmark for LLM Cybersecurity Agents",
+  "name": "ExploitBench: A Capability Ladder Benchmark for LLM Cybersecurity Agents",
+  "abstract": "Exploitation is not a binary event. It is a ladder of acquiring progressive capabilities, from executing a single buggy line of code to taking full control of the target. However, existing LLM security benchmarks treat a crash as exploitation success. That single binary outcome collapses the hard parts of exploitation: the transition from triggering a bug to constructing reusable primitives and control. We present ExploitBench, a capability-graded benchmark that decomposes exploitation into 16 measurable flags, from coverage and crash through sandbox primitives, arbitrary read/write, control-flow hijack, and arbitrary code execution. Each capability is verified by a deterministic oracle that uses a per-run randomized challenge-response for primitives, differential execution against ground-truth binaries to measure progress, and a signal-handler proof for code execution. We instantiate ExploitBench on 41 V8 bugs because V8 is both widely deployed and exploitation-hardened. We report three arms: <model,env> as the primary measurement of model-environment capability, <model,env, adaptive coaching> as a secondary arm that adds adaptive coaching to test whether targeted feedback shifts outcomes, and <model,env,harness> as an ablation that swaps in the model's native CLI to check whether vendor-side optimizations increase exploitation capabilities. Our results show a sharp capability split between publicly deployed frontier models and the private frontier. Across the 8 publicly deployed models tested, reaching the vulnerable code and triggering a crash is routine, but arbitrary code execution is not. The private model shows arbitrary code execution on approximately half. Overall, results suggest that exploit construction against hardened targets is an emerging frontier capability.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Seunghyun Lee"
+    },
+    {
+      "@type": "Person",
+      "name": "David Brumley"
+    }
+  ],
+  "datePublished": "2026-05-13T22:08:05Z",
+  "dateModified": "2026-05-13T22:08:05Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.14153.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.14153.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.14153v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.14153"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.14153v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.14153"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +87,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ExploitBench: A Capability Ladder Benchmark for LLM Cybersecurity Agents</h1>
+        <div class="meta">
+          Seunghyun Lee, David Brumley
+          · 2605.14153
+          · <time datetime="2026-05-13">2026-05-13</time>
+          · General · 9 citations
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Exploitation is not a binary event. It is a ladder of acquiring progressive capabilities, from executing a single buggy line of code to taking full control of the target. However, existing LLM security benchmarks treat a crash as exploitation success. That single binary outcome collapses the hard parts of exploitation: the transition from triggering a bug to constructing reusable primitives and control. We present ExploitBench, a capability-graded benchmark that decomposes exploitation into 16 measurable flags, from coverage and crash through sandbox primitives, arbitrary read/write, control-flow hijack, and arbitrary code execution. Each capability is verified by a deterministic oracle that uses a per-run randomized challenge-response for primitives, differential execution against ground-truth binaries to measure progress, and a signal-handler proof for code execution. We instantiate ExploitBench on 41 V8 bugs because V8 is both widely deployed and exploitation-hardened. We report three arms: &lt;model,env&gt; as the primary measurement of model-environment capability, &lt;model,env, adaptive coaching&gt; as a secondary arm that adds adaptive coaching to test whether targeted feedback shifts outcomes, and &lt;model,env,harness&gt; as an ablation that swaps in the model&#x27;s native CLI to check whether vendor-side optimizations increase exploitation capabilities. Our results show a sharp capability split between publicly deployed frontier models and the private frontier. Across the 8 publicly deployed models tested, reaching the vulnerable code and triggering a crash is routine, but arbitrary code execution is not. The private model shows arbitrary code execution on approximately half. Overall, results suggest that exploit construction against hardened targets is an emerging frontier capability.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.14153v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.14153v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.14153" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.14678.html"><strong>$π$-Bench: Evaluating Proactive Personal Assistant Agents in Long-Horizon Workflows</strong></a> <span>2026-05-14</span></li>
+          <li><a href="2605.14355.html"><strong>Herculean: An Agentic Benchmark for Financial Intelligence</strong></a> <span>2026-05-14</span></li>
+          <li><a href="2605.15230.html"><strong>EnergyAgentBench: Benchmarking LLM Agents on Live Energy Infrastructure Data</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.15229.html"><strong>PBT-Bench: Benchmarking AI Agents on Property-Based Testing</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.14133.html"><strong>ClawForge: Generating Executable Interactive Benchmarks for Command-Line Agents</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.13940.html"><strong>AgentTrap: Measuring Runtime Trust Failures in Third-Party Agent Skills</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.13909.html"><strong>TERMS-Bench: Diagnosing LLM Negotiation Agents Beyond Deal Rate</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.13841.html"><strong>EVA-Bench: A New End-to-end Framework for Evaluating Voice Agents</strong></a> <span>2026-05-13</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>BioAgent Bench: An AI Agent Evaluation Suite for Bioinformatics | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: We introduce BioAgent Bench, an evaluation suite designed for measuring the performance and robustness of AI agents in common…" />
+    <meta name="keywords" content="General, Safety, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2601.21800" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.21800.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="BioAgent Bench: An AI Agent Evaluation Suite for Bioinformatics" />
+    <meta property="og:description" content="Daily Agent Benchmarks: We introduce BioAgent Bench, an evaluation suite designed for measuring the performance and robustness of AI agents in common…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.21800.html" />
+    <meta property="article:published_time" content="2026-01-29T14:44:03Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="BioAgent Bench: An AI Agent Evaluation Suite for Bioinformatics" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: We introduce BioAgent Bench, an evaluation suite designed for measuring the performance and robustness of AI agents in common…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,65 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "BioAgent Bench: An AI Agent Evaluation Suite for Bioinformatics",
+  "name": "BioAgent Bench: An AI Agent Evaluation Suite for Bioinformatics",
+  "abstract": "We introduce BioAgent Bench, an evaluation suite designed for measuring the performance and robustness of AI agents in common bioinformatics tasks. The suite consists of manually curated end-to-end tasks (e.g., RNA-seq, variant calling, metagenomics) accompanied by task-specific prompts and concrete output artifacts to support automated assessment. We evaluate frontier closed- and open-weight models across multiple agent harnesses, and use an LLM-based grader to score pipeline progress and outcome validity. We find that agents based on frontier LLMs can complete multi-step bioinformatics pipelines without elaborate custom scaffolding, often producing the requested final artifacts reliably. However, robustness tests reveal failure modes under controlled perturbations (corrupted inputs, decoy files, and prompt bloat), indicating that correct high-level pipeline construction does not guarantee reliable step-level reasoning. By releasing the code and the complementary resources constituting our suite, our primary goal is to accelerate the development of cost-effective yet reliable local agents, capable of handling complex bioinformatics workflows often involving sensitive patient data or unpublished intellectual property.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Dionizije Fa"
+    },
+    {
+      "@type": "Person",
+      "name": "Marko Culjak"
+    },
+    {
+      "@type": "Person",
+      "name": "Bruno Pandza"
+    },
+    {
+      "@type": "Person",
+      "name": "Mateo Cupic"
+    }
+  ],
+  "datePublished": "2026-01-29T14:44:03Z",
+  "dateModified": "2026-08-06T06:33:02Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.21800.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.21800.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2601.21800v4"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2601.21800"
+  },
+  "keywords": [
+    "General",
+    "Safety",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2601.21800v4"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2601.21800"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +97,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>BioAgent Bench: An AI Agent Evaluation Suite for Bioinformatics</h1>
+        <div class="meta">
+          Dionizije Fa, Marko Culjak, Bruno Pandza, Mateo Cupic
+          · 2601.21800
+          · <time datetime="2026-01-29">2026-01-29</time>
+          · General · 7 citations
+        </div>
+        <div class="themes"><span class="chip">Safety</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>We introduce BioAgent Bench, an evaluation suite designed for measuring the performance and robustness of AI agents in common bioinformatics tasks. The suite consists of manually curated end-to-end tasks (e.g., RNA-seq, variant calling, metagenomics) accompanied by task-specific prompts and concrete output artifacts to support automated assessment. We evaluate frontier closed- and open-weight models across multiple agent harnesses, and use an LLM-based grader to score pipeline progress and outcome validity. We find that agents based on frontier LLMs can complete multi-step bioinformatics pipelines without elaborate custom scaffolding, often producing the requested final artifacts reliably. However, robustness tests reveal failure modes under controlled perturbations (corrupted inputs, decoy files, and prompt bloat), indicating that correct high-level pipeline construction does not guarantee reliable step-level reasoning. By releasing the code and the complementary resources constituting our suite, our primary goal is to accelerate the development of cost-effective yet reliable local agents, capable of handling complex bioinformatics workflows often involving sensitive patient data or unpublished intellectual property.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2601.21800v4" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2601.21800v4" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2601.21800" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2602.01355.html"><strong>Aggregation Queries over Unstructured Text: Benchmark and Agentic Method</strong></a> <span>2026-02-01</span></li>
+          <li><a href="2602.00685.html"><strong>HumanStudy-Bench: Towards AI Agent Design for Participant Simulation</strong></a> <span>2026-01-31</span></li>
+          <li><a href="2602.00456.html"><strong>Benchmarking Agents in Insurance Underwriting Environments</strong></a> <span>2026-01-31</span></li>
+          <li><a href="2602.00352.html"><strong>DETOUR: An Interactive Benchmark for Dual-Agent Search and Reasoning</strong></a> <span>2026-01-30</span></li>
+          <li><a href="2601.20730.html"><strong>AgentLongBench: A Controllable Long Benchmark For Long-Contexts Agents via Environment Rollouts</strong></a> <span>2026-01-28</span></li>
+          <li><a href="2601.20617.html"><strong>Agent Benchmarks Fail Public Sector Requirements</strong></a> <span>2026-01-28</span></li>
+          <li><a href="2601.20316.html"><strong>Less is More: Benchmarking LLM Based Recommendation Agents</strong></a> <span>2026-01-28</span></li>
+          <li><a href="2601.18137.html"><strong>DeepPlanning: Benchmarking Long-Horizon Agentic Planning with Verifiable Constraints</strong></a> <span>2026-01-26</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

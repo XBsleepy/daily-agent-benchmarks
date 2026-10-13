@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>HWE-Bench: Benchmarking LLM Agents on Real-World Hardware Bug Repair Tasks | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Existing benchmarks for hardware design primarily evaluate Large Language Models (LLMs) on isolated, component-level tasks such as…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2604.14709" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.14709.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="HWE-Bench: Benchmarking LLM Agents on Real-World Hardware Bug Repair Tasks" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Existing benchmarks for hardware design primarily evaluate Large Language Models (LLMs) on isolated, component-level tasks such as…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.14709.html" />
+    <meta property="article:published_time" content="2026-04-16T07:19:34Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="HWE-Bench: Benchmarking LLM Agents on Real-World Hardware Bug Repair Tasks" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Existing benchmarks for hardware design primarily evaluate Large Language Models (LLMs) on isolated, component-level tasks such as…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,69 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "HWE-Bench: Benchmarking LLM Agents on Real-World Hardware Bug Repair Tasks",
+  "name": "HWE-Bench: Benchmarking LLM Agents on Real-World Hardware Bug Repair Tasks",
+  "abstract": "Existing benchmarks for hardware design primarily evaluate Large Language Models (LLMs) on isolated, component-level tasks such as generating HDL modules from specifications, leaving repository-scale evaluation unaddressed. We introduce HWE-Bench, the first large-scale, repository-level benchmark for evaluating LLM agents on real-world hardware bug repair tasks. HWE-Bench comprises 417 task instances derived from real historical bug-fix pull requests across six major open-source projects spanning both Verilog/SystemVerilog and Chisel, covering RISC-V cores, SoCs, and security roots-of-trust. Each task is grounded in a fully containerized environment where the agent must resolve a real bug report, with correctness validated through the project's native simulation and regression flows. The benchmark is built through a largely automated pipeline that enables efficient expansion to new repositories. We evaluate seven LLMs with four agent frameworks and find that the best agent resolves 70.7% of tasks overall, with performance exceeding 90% on smaller cores but dropping below 65% on complex SoC-level projects. We observe larger performance gaps across models than commonly reported on software benchmarks, and difficulty is driven by project scope and bug-type distribution rather than code size alone. Our failure analysis traces agent failures to three stages of the debugging process: fault localization, hardware-semantic reasoning, and cross-artifact coordination across RTL, configuration, and verification components, providing concrete directions for developing more capable hardware-aware agents.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Fan Cui"
+    },
+    {
+      "@type": "Person",
+      "name": "Hongyuan Hou"
+    },
+    {
+      "@type": "Person",
+      "name": "Zizhang Luo"
+    },
+    {
+      "@type": "Person",
+      "name": "Chenyun Yin"
+    },
+    {
+      "@type": "Person",
+      "name": "Yun Liang"
+    }
+  ],
+  "datePublished": "2026-04-16T07:19:34Z",
+  "dateModified": "2026-05-05T12:56:34Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.14709.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.14709.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.14709v3"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2604.14709"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2604.14709v3"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2604.14709"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +101,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>HWE-Bench: Benchmarking LLM Agents on Real-World Hardware Bug Repair Tasks</h1>
+        <div class="meta">
+          Fan Cui, Hongyuan Hou, Zizhang Luo, Chenyun Yin, Yun Liang
+          · 2604.14709
+          · <time datetime="2026-04-16">2026-04-16</time>
+          · Coding / SWE · 2 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Existing benchmarks for hardware design primarily evaluate Large Language Models (LLMs) on isolated, component-level tasks such as generating HDL modules from specifications, leaving repository-scale evaluation unaddressed. We introduce HWE-Bench, the first large-scale, repository-level benchmark for evaluating LLM agents on real-world hardware bug repair tasks. HWE-Bench comprises 417 task instances derived from real historical bug-fix pull requests across six major open-source projects spanning both Verilog/SystemVerilog and Chisel, covering RISC-V cores, SoCs, and security roots-of-trust. Each task is grounded in a fully containerized environment where the agent must resolve a real bug report, with correctness validated through the project&#x27;s native simulation and regression flows. The benchmark is built through a largely automated pipeline that enables efficient expansion to new repositories. We evaluate seven LLMs with four agent frameworks and find that the best agent resolves 70.7% of tasks overall, with performance exceeding 90% on smaller cores but dropping below 65% on complex SoC-level projects. We observe larger performance gaps across models than commonly reported on software benchmarks, and difficulty is driven by project scope and bug-type distribution rather than code size alone. Our failure analysis traces agent failures to three stages of the debugging process: fault localization, hardware-semantic reasoning, and cross-artifact coordination across RTL, configuration, and verification components, providing concrete directions for developing more capable hardware-aware agents.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2604.14709v3" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2604.14709v3" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2604.14709" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.00803.html"><strong>Can Coding Agents Reproduce Findings in Computational Materials Science?</strong></a> <span>2026-05-01</span></li>
+          <li><a href="2604.26278.html"><strong>SWE-Bench 5G: Benchmarking AI Coding Agents on Telecom Network Engineering Tasks</strong></a> <span>2026-04-29</span></li>
+          <li><a href="2604.23897.html"><strong>MarketBench: Evaluating AI Agents as Market Participants</strong></a> <span>2026-04-26</span></li>
+          <li><a href="2604.17180.html"><strong>BranchBench: Aligning Database Branching with Agentic Demands</strong></a> <span>2026-04-19</span></li>
+          <li><a href="2604.12290.html"><strong>Frontier-Eng: Benchmarking Self-Evolving Agents on Real-World Engineering Tasks with Generative Optimization</strong></a> <span>2026-04-14</span></li>
+          <li><a href="2604.11201.html"><strong>CocoaBench: Evaluating Unified Digital Agents in the Wild</strong></a> <span>2026-04-13</span></li>
+          <li><a href="2604.09791.html"><strong>Pioneer Agent: Continual Improvement of Small Language Models in Production</strong></a> <span>2026-04-10</span></li>
+          <li><a href="2604.09408.html"><strong>HiL-Bench (Human-in-Loop Benchmark): Do Agents Know When to Ask for Help?</strong></a> <span>2026-04-10</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

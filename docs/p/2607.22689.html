@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Beyond Sequential Interaction: Benchmarking Parallel Execution and Coordination for GUI Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Graphical user interface (GUI) agents are systems powered by large multimodal models (LMMs). They perceive screen state and execute…" />
+    <meta name="keywords" content="GUI / computer use, GUI agents, Multimodal, agent benchmark, LLM agent, arXiv, 2607.22689" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.22689.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Beyond Sequential Interaction: Benchmarking Parallel Execution and Coordination for GUI Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Graphical user interface (GUI) agents are systems powered by large multimodal models (LMMs). They perceive screen state and execute…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.22689.html" />
+    <meta property="article:published_time" content="2026-07-17T12:48:03Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Beyond Sequential Interaction: Benchmarking Parallel Execution and Coordination for GUI Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Graphical user interface (GUI) agents are systems powered by large multimodal models (LMMs). They perceive screen state and execute…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,93 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Beyond Sequential Interaction: Benchmarking Parallel Execution and Coordination for GUI Agents",
+  "name": "Beyond Sequential Interaction: Benchmarking Parallel Execution and Coordination for GUI Agents",
+  "abstract": "Graphical user interface (GUI) agents are systems powered by large multimodal models (LMMs). They perceive screen state and execute user instructions through GUI actions such as clicking, typing, and scrolling on desktops and mobile devices. However, current agents scale poorly to long-horizon tasks: actions incur costly LMM inferences, and performance degrades as context grows. Humans divide such workloads among collaborators who complete sub-tasks in parallel. Yet parallel coordination among GUI agents has received little attention. To close this gap, we introduce ParaGUIBench, to our knowledge, the first benchmark dedicated to parallel execution and coordination of multiple GUI agents on separate desktop instances. It consists of three components: a multi-device Docker infrastructure with a shared file system; a dataset of 233 tasks spanning six task categories; and an evaluation system with efficiency metrics, including step reduction ratio and token cost. We further introduce ParaGUI, a planner-worker agent that decomposes GUI tasks and dispatches sub-tasks to concurrent workers on separate desktop instances. On ParaGUIBench, ParaGUI reaches a 46.4% success rate, outperforming the strongest serial baseline (Claude Sonnet 4.6) by 12.9 points while using roughly half the steps and less than half the tokens. These results show that parallel execution can improve both success rate and efficiency on decomposable, long-horizon GUI tasks, pointing to a direction worth further study.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Zedong Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Qianxing Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhi Gao"
+    },
+    {
+      "@type": "Person",
+      "name": "Liuyu Xiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chenrui Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Yang Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Huiming Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yujie Wei"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuhao Fei"
+    },
+    {
+      "@type": "Person",
+      "name": "Yubo Fu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhaofeng He"
+    }
+  ],
+  "datePublished": "2026-07-17T12:48:03Z",
+  "dateModified": "2026-07-17T12:48:03Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.22689.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.22689.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.22689v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.22689"
+  },
+  "keywords": [
+    "GUI / computer use",
+    "GUI agents",
+    "Multimodal",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "GUI / computer use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.22689v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.22689"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +125,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Beyond Sequential Interaction: Benchmarking Parallel Execution and Coordination for GUI Agents</h1>
+        <div class="meta">
+          Zedong Yu, Qianxing Li, Zhi Gao, Liuyu Xiang, Chenrui Shi, Yang Liu, Huiming Wu, Yujie Wei, Yuhao Fei, Yubo Fu, Zhaofeng He
+          · 2607.22689
+          · <time datetime="2026-07-17">2026-07-17</time>
+          · GUI / computer use
+        </div>
+        <div class="themes"><span class="chip">GUI agents</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Graphical user interface (GUI) agents are systems powered by large multimodal models (LMMs). They perceive screen state and execute user instructions through GUI actions such as clicking, typing, and scrolling on desktops and mobile devices. However, current agents scale poorly to long-horizon tasks: actions incur costly LMM inferences, and performance degrades as context grows. Humans divide such workloads among collaborators who complete sub-tasks in parallel. Yet parallel coordination among GUI agents has received little attention. To close this gap, we introduce ParaGUIBench, to our knowledge, the first benchmark dedicated to parallel execution and coordination of multiple GUI agents on separate desktop instances. It consists of three components: a multi-device Docker infrastructure with a shared file system; a dataset of 233 tasks spanning six task categories; and an evaluation system with efficiency metrics, including step reduction ratio and token cost. We further introduce ParaGUI, a planner-worker agent that decomposes GUI tasks and dispatches sub-tasks to concurrent workers on separate desktop instances. On ParaGUIBench, ParaGUI reaches a 46.4% success rate, outperforming the strongest serial baseline (Claude Sonnet 4.6) by 12.9 points while using roughly half the steps and less than half the tokens. These results show that parallel execution can improve both success rate and efficiency on decomposable, long-horizon GUI tasks, pointing to a direction worth further study.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.22689v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.22689v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.22689" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More GUI / computer use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.06477.html"><strong>StepJack: Benchmarking Computer-Use Agent Safety Against Multi-Step Indirect Prompt Injection</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2607.28074.html"><strong>Echoverse: Deep, Evolving Environments for Training Computer-Use Agents at Scale</strong></a> <span>2026-07-30</span></li>
+          <li><a href="2607.26041.html"><strong>Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions?</strong></a> <span>2026-07-28</span></li>
+          <li><a href="2607.25904.html"><strong>Interactive Reward Agent: GUI Task Evaluation via Environment-State Verification</strong></a> <span>2026-07-28</span></li>
+          <li><a href="2607.13465.html"><strong>DevicesWorld: Benchmarking Cross-Device Agents in Heterogeneous Environments</strong></a> <span>2026-07-15</span></li>
+          <li><a href="2607.05363.html"><strong>SovereignPA-Bench: Evaluating User-Owned Personal Agents under Evolving Intent, Platform Mediation, and Consent Constraints</strong></a> <span>2026-07-06</span></li>
+          <li><a href="2606.31154.html"><strong>PPT-Eval: A Benchmark for Computer-Use Agents on PowerPoint Tasks</strong></a> <span>2026-06-30</span></li>
+          <li><a href="2606.29445.html"><strong>Bridging VideoQA and Video-Guided Agentic Tasks via Generalized Keyframe Extraction</strong></a> <span>2026-06-28</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>LongDA: Benchmarking LLM Agents for Long-Document Data Analysis | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: We introduce LongDA, a data analysis benchmark for evaluating LLM-based agents under documentation-intensive analytical workflows. In…" />
+    <meta name="keywords" content="General, Tool use, agent benchmark, LLM agent, arXiv, 2601.02598" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.02598.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="LongDA: Benchmarking LLM Agents for Long-Document Data Analysis" />
+    <meta property="og:description" content="Daily Agent Benchmarks: We introduce LongDA, a data analysis benchmark for evaluating LLM-based agents under documentation-intensive analytical workflows. In…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.02598.html" />
+    <meta property="article:published_time" content="2026-01-05T23:23:16Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="LongDA: Benchmarking LLM Agents for Long-Document Data Analysis" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: We introduce LongDA, a data analysis benchmark for evaluating LLM-based agents under documentation-intensive analytical workflows. In…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,76 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "LongDA: Benchmarking LLM Agents for Long-Document Data Analysis",
+  "name": "LongDA: Benchmarking LLM Agents for Long-Document Data Analysis",
+  "abstract": "We introduce LongDA, a data analysis benchmark for evaluating LLM-based agents under documentation-intensive analytical workflows. In contrast to existing benchmarks that assume well-specified schemas and inputs, LongDA targets real-world settings in which navigating long documentation and complex data is the primary bottleneck. To this end, we manually curate raw data files, long and heterogeneous documentation, and expert-written publications from 17 publicly available U.S. national surveys, from which we extract 505 analytical queries grounded in real analytical practice. Solving these queries requires agents to first retrieve and integrate key information from multiple unstructured documents, before performing multi-step computations and writing executable code, which remains challenging for existing data analysis agents. To support the systematic evaluation under this setting, we develop LongTA, a tool-augmented agent framework that enables document access, retrieval, and code execution, and evaluate a range of proprietary and open-source models. Our experiments reveal substantial performance gaps even among state-of-the-art models, highlighting the challenges researchers should consider before applying LLM agents for decision support in real-world, high-stakes analytical settings.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yiyang Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Zheyuan Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Tianyi Ma"
+    },
+    {
+      "@type": "Person",
+      "name": "Zehong Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Keerthiram Murugesan"
+    },
+    {
+      "@type": "Person",
+      "name": "Chuxu Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yanfang Ye"
+    }
+  ],
+  "datePublished": "2026-01-05T23:23:16Z",
+  "dateModified": "2026-01-11T22:21:22Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.02598.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2601.02598.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2601.02598v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2601.02598"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2601.02598v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2601.02598"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +108,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>LongDA: Benchmarking LLM Agents for Long-Document Data Analysis</h1>
+        <div class="meta">
+          Yiyang Li, Zheyuan Zhang, Tianyi Ma, Zehong Wang, Keerthiram Murugesan, Chuxu Zhang, Yanfang Ye
+          · 2601.02598
+          · <time datetime="2026-01-05">2026-01-05</time>
+          · General · 5 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>We introduce LongDA, a data analysis benchmark for evaluating LLM-based agents under documentation-intensive analytical workflows. In contrast to existing benchmarks that assume well-specified schemas and inputs, LongDA targets real-world settings in which navigating long documentation and complex data is the primary bottleneck. To this end, we manually curate raw data files, long and heterogeneous documentation, and expert-written publications from 17 publicly available U.S. national surveys, from which we extract 505 analytical queries grounded in real analytical practice. Solving these queries requires agents to first retrieve and integrate key information from multiple unstructured documents, before performing multi-step computations and writing executable code, which remains challenging for existing data analysis agents. To support the systematic evaluation under this setting, we develop LongTA, a tool-augmented agent framework that enables document access, retrieval, and code execution, and evaluate a range of proprietary and open-source models. Our experiments reveal substantial performance gaps even among state-of-the-art models, highlighting the challenges researchers should consider before applying LLM agents for decision support in real-world, high-stakes analytical settings.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2601.02598v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2601.02598v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2601.02598" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2601.06818.html"><strong>AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents</strong></a> <span>2026-01-11</span></li>
+          <li><a href="2601.05101.html"><strong>Arabic Prompts with English Tools: A Benchmark</strong></a> <span>2026-01-08</span></li>
+          <li><a href="2601.03540.html"><strong>DeepSynth-Eval: Objectively Evaluating Information Consolidation in Deep Survey Writing</strong></a> <span>2026-01-07</span></li>
+          <li><a href="2601.02941.html"><strong>SastBench: A Benchmark for Testing Agentic SAST Triage</strong></a> <span>2026-01-06</span></li>
+          <li><a href="2601.02314.html"><strong>Project Ariadne: A Structural Causal Framework for Auditing Faithfulness in LLM Agents</strong></a> <span>2026-01-05</span></li>
+          <li><a href="2601.06112.html"><strong>ReliabilityBench: Evaluating LLM Agent Reliability Under Production-Like Stress Conditions</strong></a> <span>2026-01-03</span></li>
+          <li><a href="2603.04403.html"><strong>FinRetrieval: A Benchmark for Financial Data Retrieval by AI Agents</strong></a> <span>2026-01-02</span></li>
+          <li><a href="2601.00227.html"><strong>FlashInfer-Bench: Building the Virtuous Cycle for AI-driven LLM Systems</strong></a> <span>2026-01-01</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

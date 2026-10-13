@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>WirelessBench: A Tolerance-Aware LLM Agent Benchmark for Wireless Network Intelligence | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLM agents are emerging as a key enabler for autonomous wireless network management. Reliably deploying them, however, demands…" />
+    <meta name="keywords" content="General, Tool use, Safety, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2603.21251" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.21251.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="WirelessBench: A Tolerance-Aware LLM Agent Benchmark for Wireless Network Intelligence" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLM agents are emerging as a key enabler for autonomous wireless network management. Reliably deploying them, however, demands…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.21251.html" />
+    <meta property="article:published_time" content="2026-03-22T14:14:30Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="WirelessBench: A Tolerance-Aware LLM Agent Benchmark for Wireless Network Intelligence" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLM agents are emerging as a key enabler for autonomous wireless network management. Reliably deploying them, however, demands…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,86 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "WirelessBench: A Tolerance-Aware LLM Agent Benchmark for Wireless Network Intelligence",
+  "name": "WirelessBench: A Tolerance-Aware LLM Agent Benchmark for Wireless Network Intelligence",
+  "abstract": "LLM agents are emerging as a key enabler for autonomous wireless network management. Reliably deploying them, however, demands benchmarks that reflect real engineering risk. Existing wireless benchmarks evaluate single isolated capabilities and treat all errors uniformly, missing both cascaded-chain failures and catastrophic unit confusions (\\textit{e.g.}, dB vs.\\ dBm). We present \\wb{}, the first tolerance-aware, tool-integrated benchmark for LLM-based wireless agents. \\wb{} is organized as a three-tier cognitive hierarchy: domain knowledge reasoning (WCHW, 1{,}392 items), intent-driven resource allocation (WCNS, 1{,}000 items), and proactive multi-step decisions under mobility (WCMSA, 1{,}000 items). Moreover, \\wb{} is established on three design principles: \\emph{(i)}~tolerance-aware scoring with catastrophic-error detection; \\emph{(ii)}~tool-necessary tasks requiring a 3GPP-compliant ray-tracing query for channel quality; and \\emph{(iii)}~Chain-of-Thought (CoT)-traceable items, where every benchmark item ships with a complete CoT trajectory enabling fine-grained diagnosis of where in the reasoning chain an agent fails. Our numerical results show that the direct-prompting model (GPT-4o) scores $68\\%$, trailing a tool-integrated agent ($84.64\\%$) by $16.64$\\,pp; $23\\%$ of errors are catastrophic failures invisible to exact-match metrics. More importantly, the hierarchy decomposes errors into four actionable diagnostic categories that flat evaluation cannot reveal. Code and data: https://wirelessbench.github.io/.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jingwen Tong"
+    },
+    {
+      "@type": "Person",
+      "name": "Fang Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Linkai Xv"
+    },
+    {
+      "@type": "Person",
+      "name": "Shiliang Lu"
+    },
+    {
+      "@type": "Person",
+      "name": "Kangqi Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Yiqian Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yijie Song"
+    },
+    {
+      "@type": "Person",
+      "name": "Zeyang Xue"
+    },
+    {
+      "@type": "Person",
+      "name": "Jun Zhang"
+    }
+  ],
+  "datePublished": "2026-03-22T14:14:30Z",
+  "dateModified": "2026-03-22T14:14:30Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.21251.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2603.21251.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2603.21251v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2603.21251"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Safety",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2603.21251v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2603.21251"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +118,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>WirelessBench: A Tolerance-Aware LLM Agent Benchmark for Wireless Network Intelligence</h1>
+        <div class="meta">
+          Jingwen Tong, Fang Liu, Linkai Xv, Shiliang Lu, Kangqi Li, Yiqian Zhang, Yijie Song, Zeyang Xue, Jun Zhang
+          · 2603.21251
+          · <time datetime="2026-03-22">2026-03-22</time>
+          · General · 5 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLM agents are emerging as a key enabler for autonomous wireless network management. Reliably deploying them, however, demands benchmarks that reflect real engineering risk. Existing wireless benchmarks evaluate single isolated capabilities and treat all errors uniformly, missing both cascaded-chain failures and catastrophic unit confusions (\textit{e.g.}, dB vs.\ dBm). We present \wb{}, the first tolerance-aware, tool-integrated benchmark for LLM-based wireless agents. \wb{} is organized as a three-tier cognitive hierarchy: domain knowledge reasoning (WCHW, 1{,}392 items), intent-driven resource allocation (WCNS, 1{,}000 items), and proactive multi-step decisions under mobility (WCMSA, 1{,}000 items). Moreover, \wb{} is established on three design principles: \emph{(i)}~tolerance-aware scoring with catastrophic-error detection; \emph{(ii)}~tool-necessary tasks requiring a 3GPP-compliant ray-tracing query for channel quality; and \emph{(iii)}~Chain-of-Thought (CoT)-traceable items, where every benchmark item ships with a complete CoT trajectory enabling fine-grained diagnosis of where in the reasoning chain an agent fails. Our numerical results show that the direct-prompting model (GPT-4o) scores $68\%$, trailing a tool-integrated agent ($84.64\%$) by $16.64$\,pp; $23\%$ of errors are catastrophic failures invisible to exact-match metrics. More importantly, the hierarchy decomposes errors into four actionable diagnostic categories that flat evaluation cannot reveal. Code and data: https://wirelessbench.github.io/.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2603.21251v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2603.21251v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2603.21251" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2603.23231.html"><strong>PERMA: Benchmarking Personalized Memory Agents via Event-Driven Preference and Realistic Task Environments</strong></a> <span>2026-03-24</span></li>
+          <li><a href="2603.22999.html"><strong>PaperVoyager : Building Interactive Web with Visual Language Models</strong></a> <span>2026-03-24</span></li>
+          <li><a href="2603.22767.html"><strong>Can LLM Agents Generate Real-World Evidence? Evaluating Observational Studies in Medical Databases</strong></a> <span>2026-03-24</span></li>
+          <li><a href="2603.22744.html"><strong>LH-Bench: Skill-Grounded Evaluation of Long-Horizon Agents on Subjective Enterprise Tasks</strong></a> <span>2026-03-24</span></li>
+          <li><a href="2603.20576.html"><strong>Can AI Agents Answer Your Data Questions? A Benchmark for Data Agents</strong></a> <span>2026-03-21</span></li>
+          <li><a href="2604.13072.html"><strong>LiveClawBench: Benchmarking LLM Agents on Complex, Real-World Assistant Tasks</strong></a> <span>2026-03-20</span></li>
+          <li><a href="2603.19583.html"><strong>Skilled AI Agents for Embedded and IoT Systems Development</strong></a> <span>2026-03-20</span></li>
+          <li><a href="2603.16453.html"><strong>RetailBench: Evaluating Long-Horizon Autonomous Decision-Making and Strategy Stability of LLM Agents in Realistic Retail Environments</strong></a> <span>2026-03-17</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

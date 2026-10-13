@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ASPI: Seeking Ambiguity Clarification Amplifies Prompt Injection Vulnerability in LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Clarification-seeking behavior is widely regarded as a desirable property of LLM agents, enabling them to resolve ambiguity before…" />
+    <meta name="keywords" content="General, Tool use, Safety, agent benchmark, LLM agent, arXiv, 2605.17324" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.17324.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ASPI: Seeking Ambiguity Clarification Amplifies Prompt Injection Vulnerability in LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Clarification-seeking behavior is widely regarded as a desirable property of LLM agents, enabling them to resolve ambiguity before…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.17324.html" />
+    <meta property="article:published_time" content="2026-05-17T08:30:45Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ASPI: Seeking Ambiguity Clarification Amplifies Prompt Injection Vulnerability in LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Clarification-seeking behavior is widely regarded as a desirable property of LLM agents, enabling them to resolve ambiguity before…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,73 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ASPI: Seeking Ambiguity Clarification Amplifies Prompt Injection Vulnerability in LLM Agents",
+  "name": "ASPI: Seeking Ambiguity Clarification Amplifies Prompt Injection Vulnerability in LLM Agents",
+  "abstract": "Clarification-seeking behavior is widely regarded as a desirable property of LLM agents, enabling them to resolve ambiguity before acting on underspecified tasks. However, the security implications of this interaction pattern remain unexplored. We investigate whether the transition from standard execution to a clarification-seeking state increases an agent's susceptibility to prompt injection attacks. We introduce ASPI (Ambiguous-State Prompt Injection), a benchmark of 728 task-attack scenarios that isolates clarification as a distinct agent state and measures how this state transition affects vulnerability under controlled conditions. Each benchmark instance is evaluated under matched execution and clarification settings: in the execution setting, the agent acts on a fully specified instruction and encounters adversarial content only through tool-returned data; in the clarification setting, the agent must first request and incorporate additional user input before acting. We evaluate ten frontier LLMs and find that clarification-seeking consistently and substantially amplifies vulnerability. For instance, attack success rises from 1.8% to 34.0% for o3 and from 2.2% to 35.7% for Gemini-3-Flash. A decomposition analysis reveals that this gap reflects both a state-dependent shift in how models process incoming content and a channel-specific effect arising from the agent-solicited clarification interface. These findings demonstrate that standard execution-time security evaluation systematically underestimates the attack surface of interactive agents, and that robustness under fully specified tasks does not translate to robustness under ambiguity. For reproducibility, our data and source code are available at https://github.com/scaleapi/aspi.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Udari Madhushani Sehwag"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhengyang Shan"
+    },
+    {
+      "@type": "Person",
+      "name": "Heming Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Dileepa Lakshan"
+    },
+    {
+      "@type": "Person",
+      "name": "Joseph Brandifino"
+    },
+    {
+      "@type": "Person",
+      "name": "Max Fenkell"
+    }
+  ],
+  "datePublished": "2026-05-17T08:30:45Z",
+  "dateModified": "2026-05-17T08:30:45Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.17324.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.17324.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.17324v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.17324"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.17324v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.17324"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +105,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ASPI: Seeking Ambiguity Clarification Amplifies Prompt Injection Vulnerability in LLM Agents</h1>
+        <div class="meta">
+          Udari Madhushani Sehwag, Zhengyang Shan, Heming Liu, Dileepa Lakshan, Joseph Brandifino, Max Fenkell
+          · 2605.17324
+          · <time datetime="2026-05-17">2026-05-17</time>
+          · General · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Clarification-seeking behavior is widely regarded as a desirable property of LLM agents, enabling them to resolve ambiguity before acting on underspecified tasks. However, the security implications of this interaction pattern remain unexplored. We investigate whether the transition from standard execution to a clarification-seeking state increases an agent&#x27;s susceptibility to prompt injection attacks. We introduce ASPI (Ambiguous-State Prompt Injection), a benchmark of 728 task-attack scenarios that isolates clarification as a distinct agent state and measures how this state transition affects vulnerability under controlled conditions. Each benchmark instance is evaluated under matched execution and clarification settings: in the execution setting, the agent acts on a fully specified instruction and encounters adversarial content only through tool-returned data; in the clarification setting, the agent must first request and incorporate additional user input before acting. We evaluate ten frontier LLMs and find that clarification-seeking consistently and substantially amplifies vulnerability. For instance, attack success rises from 1.8% to 34.0% for o3 and from 2.2% to 35.7% for Gemini-3-Flash. A decomposition analysis reveals that this gap reflects both a state-dependent shift in how models process incoming content and a channel-specific effect arising from the agent-solicited clarification interface. These findings demonstrate that standard execution-time security evaluation systematically underestimates the attack surface of interactive agents, and that robustness under fully specified tasks does not translate to robustness under ambiguity. For reproducibility, our data and source code are available at https://github.com/scaleapi/aspi.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.17324v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.17324v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.17324" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.19127.html"><strong>POLAR-Bench: A Diagnostic Benchmark for Privacy-Utility Trade-offs in LLM Agents</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.18548.html"><strong>STT-Arena: A More Realistic Environment for Tool-Using with Spatio-Temporal Dynamics</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.18421.html"><strong>EvoMemBench: Benchmarking Agent Memory from a Self-Evolving Perspective</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.18397.html"><strong>Duet instrumentation: An Agentic Approach to Improving Sensitivity in Cloud Service Benchmarking</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.17281.html"><strong>ContractBench: Can LLM Agents Preserve Observation Contracts?</strong></a> <span>2026-05-17</span></li>
+          <li><a href="2607.18261.html"><strong>When JSON Is Not Enough: Semantic Reliability of Schema-Constrained LLM Ordering Agents</strong></a> <span>2026-05-16</span></li>
+          <li><a href="2605.16679.html"><strong>CHI-Bench: Can AI Agents Automate End-to-End, Long-Horizon, Policy-Rich Healthcare Workflows?</strong></a> <span>2026-05-15</span></li>
+          <li><a href="2605.15766.html"><strong>BioXArena: Benchmarking LLM Agents on Multi-Modal Biomedical Machine Learning Tasks</strong></a> <span>2026-05-15</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Evo-Bench: Can Language Models Improve Agent Harness? | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large Language Models (LLMs) have driven rapid progress in autonomous agents, yet standard evaluations remain confined to static task…" />
+    <meta name="keywords" content="Work / office, Safety, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2608.09096" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.09096.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Evo-Bench: Can Language Models Improve Agent Harness?" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large Language Models (LLMs) have driven rapid progress in autonomous agents, yet standard evaluations remain confined to static task…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.09096.html" />
+    <meta property="article:published_time" content="2026-08-10T03:49:28Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Evo-Bench: Can Language Models Improve Agent Harness?" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large Language Models (LLMs) have driven rapid progress in autonomous agents, yet standard evaluations remain confined to static task…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,85 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Evo-Bench: Can Language Models Improve Agent Harness?",
+  "name": "Evo-Bench: Can Language Models Improve Agent Harness?",
+  "abstract": "Large Language Models (LLMs) have driven rapid progress in autonomous agents, yet standard evaluations remain confined to static task solving. An emerging frontier is harness evolution---the agent's capacity to autonomously optimize its own operating harness. However, systematically benchmarking this capability remains challenging, as existing evaluations fail to isolate harness improvements from base model strength, prevent task-specific overfitting, or capture long-horizon iterative research. To address these challenges, we introduce Evo-Bench, the first benchmark designed to evaluate models' intrinsic harness-evolving capabilities across Search, Office, and General agent domains. To rigorously isolate this capability, Evo-Bench employs a novel harness-guided construction framework: it leverages auxiliary-task evolution to identify tasks genuinely sensitive to framework improvements, followed by sensitivity-aware stratified splitting to ensure robust cross-suite generalization. Extensive evaluations across nine frontier and open-weight models reveal that top models achieve massive absolute gains reaching 16.6 points, closely approaching state-of-the-art human-engineered baselines. Crucially, while autonomous evolution outpeforms artificial harness in General tasks and excels in Search tasks, it struggles in Office tasks that demand highly specific processing workflows. Furthermore, our analysis exposes critical temporal anomalies like early saturation, while demonstrating that the synthesized harnesses act as highly transferable reasoning structures, consistently boosting diverse policy models.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Lisheng Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chen Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Hao Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Huatong Song"
+    },
+    {
+      "@type": "Person",
+      "name": "Zongchao Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Ran Le"
+    },
+    {
+      "@type": "Person",
+      "name": "Yang Song"
+    },
+    {
+      "@type": "Person",
+      "name": "Wayne Xin Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Tao Zhang"
+    }
+  ],
+  "datePublished": "2026-08-10T03:49:28Z",
+  "dateModified": "2026-08-11T02:53:55Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.09096.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.09096.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.09096v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.09096"
+  },
+  "keywords": [
+    "Work / office",
+    "Safety",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Work / office"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.09096v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.09096"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +117,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Evo-Bench: Can Language Models Improve Agent Harness?</h1>
+        <div class="meta">
+          Lisheng Huang, Chen Yang, Hao Zhou, Huatong Song, Zongchao Chen, Ran Le, Yang Song, Wayne Xin Zhao, Tao Zhang
+          · 2608.09096
+          · <time datetime="2026-08-10">2026-08-10</time>
+          · Work / office
+        </div>
+        <div class="themes"><span class="chip">Safety</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large Language Models (LLMs) have driven rapid progress in autonomous agents, yet standard evaluations remain confined to static task solving. An emerging frontier is harness evolution---the agent&#x27;s capacity to autonomously optimize its own operating harness. However, systematically benchmarking this capability remains challenging, as existing evaluations fail to isolate harness improvements from base model strength, prevent task-specific overfitting, or capture long-horizon iterative research. To address these challenges, we introduce Evo-Bench, the first benchmark designed to evaluate models&#x27; intrinsic harness-evolving capabilities across Search, Office, and General agent domains. To rigorously isolate this capability, Evo-Bench employs a novel harness-guided construction framework: it leverages auxiliary-task evolution to identify tasks genuinely sensitive to framework improvements, followed by sensitivity-aware stratified splitting to ensure robust cross-suite generalization. Extensive evaluations across nine frontier and open-weight models reveal that top models achieve massive absolute gains reaching 16.6 points, closely approaching state-of-the-art human-engineered baselines. Crucially, while autonomous evolution outpeforms artificial harness in General tasks and excels in Search tasks, it struggles in Office tasks that demand highly specific processing workflows. Furthermore, our analysis exposes critical temporal anomalies like early saturation, while demonstrating that the synthesized harnesses act as highly transferable reasoning structures, consistently boosting diverse policy models.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.09096v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.09096v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.09096" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Work / office benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.17800.html"><strong>StartupBench: Benchmarking General-Purpose Agents on Market-Validated End-to-End Workflows</strong></a> <span>2026-08-18</span></li>
+          <li><a href="2608.16246.html"><strong>CompoSkill: Compositional Skill Chain Attacks from Individually Scanner-Passing LLM Agent Skills</strong></a> <span>2026-08-17</span></li>
+          <li><a href="2608.12654.html"><strong>SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries</strong></a> <span>2026-08-12</span></li>
+          <li><a href="2608.11616.html"><strong>MBA: Multimodal Benchmark and Agents for Real-World Business Ideation</strong></a> <span>2026-08-12</span></li>
+          <li><a href="2608.06144.html"><strong>FinEvo-Bench: A Longitudinal Benchmark for Self-Evolving Agents in Professional Financial Workflows</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2608.05263.html"><strong>OrchestraBench: Evaluating Multi-Agent Orchestration Failure Modes, Recovery, and Decomposition Quality</strong></a> <span>2026-08-05</span></li>
+          <li><a href="2608.02758.html"><strong>Everyone Conforms, No One Believes: Pluralistic Ignorance in LLM Agent Populations</strong></a> <span>2026-08-03</span></li>
+          <li><a href="2607.29677.html"><strong>ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction</strong></a> <span>2026-07-31</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

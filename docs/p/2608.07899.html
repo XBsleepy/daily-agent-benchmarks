@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>TelemetrySuffBench: Is Agent Telemetry Sufficient for Failure-Origin Diagnosis? | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Agent systems increasingly expose execution traces, yet telemetry that reveals a failure may still be inadequate for identifying…" />
+    <meta name="keywords" content="General, Safety, agent benchmark, LLM agent, arXiv, 2608.07899" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.07899.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="TelemetrySuffBench: Is Agent Telemetry Sufficient for Failure-Origin Diagnosis?" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Agent systems increasingly expose execution traces, yet telemetry that reveals a failure may still be inadequate for identifying…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.07899.html" />
+    <meta property="article:published_time" content="2026-08-08T03:54:22Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="TelemetrySuffBench: Is Agent Telemetry Sufficient for Failure-Origin Diagnosis?" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Agent systems increasingly expose execution traces, yet telemetry that reveals a failure may still be inadequate for identifying…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,56 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "TelemetrySuffBench: Is Agent Telemetry Sufficient for Failure-Origin Diagnosis?",
+  "name": "TelemetrySuffBench: Is Agent Telemetry Sufficient for Failure-Origin Diagnosis?",
+  "abstract": "Agent systems increasingly expose execution traces, yet telemetry that reveals a failure may still be inadequate for identifying where that failure originated. We introduce TelemetrySuffBench, a controlled benchmark that separates failure detection, fault-origin localization, and safe abstention under insufficient evidence. The benchmark constructs canonical multi-component traces with delayed-binding faults and renders them as paired coarse views, seven-factor telemetry masks, and exact-equal ambiguous origin pairs. We evaluate five frontier language models using unified protocols, explicit candidate sets, invalid-output accounting, subgroup analyses, and a frozen blind holdout. With full telemetry, origin-step Top-1 accuracy ranges from 33.8% to 97.2% across models. Metadata, OpenTelemetry-compatible, and OpenInference-compatible views retain 99.5% to 100% detection F1 while limiting origin-step accuracy to at most 0.5%, exposing a robust detection-localization gap. Factor ablations further show that removing decision content reduces origin-step accuracy to zero for every model, while provenance removal also causes large model-dependent losses. On rich ambiguous inputs that require abstention, evidence gating reduces unsupported unique-origin answers by 12.5 to 48.6 percentage points for three models, whereas two models still answer every case, revealing strong model dependence in safe abstention. Results on the frozen holdout reproduce the central pattern within the same generator family. These findings show that terminal status can support detection, whereas reliable causal attribution requires explicit decision-to-provenance links and abstention safeguards that remain effective across models. The dataset and benchmark implementation are available at https://anonymous.4open.science/r/TelemetrySuffBench-E635/README.md.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yuxuan Zhu"
+    },
+    {
+      "@type": "Person",
+      "name": "Peng Pu"
+    }
+  ],
+  "datePublished": "2026-08-08T03:54:22Z",
+  "dateModified": "2026-08-08T03:54:22Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.07899.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.07899.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.07899v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.07899"
+  },
+  "keywords": [
+    "General",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.07899v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.07899"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +88,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>TelemetrySuffBench: Is Agent Telemetry Sufficient for Failure-Origin Diagnosis?</h1>
+        <div class="meta">
+          Yuxuan Zhu, Peng Pu
+          · 2608.07899
+          · <time datetime="2026-08-08">2026-08-08</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Agent systems increasingly expose execution traces, yet telemetry that reveals a failure may still be inadequate for identifying where that failure originated. We introduce TelemetrySuffBench, a controlled benchmark that separates failure detection, fault-origin localization, and safe abstention under insufficient evidence. The benchmark constructs canonical multi-component traces with delayed-binding faults and renders them as paired coarse views, seven-factor telemetry masks, and exact-equal ambiguous origin pairs. We evaluate five frontier language models using unified protocols, explicit candidate sets, invalid-output accounting, subgroup analyses, and a frozen blind holdout. With full telemetry, origin-step Top-1 accuracy ranges from 33.8% to 97.2% across models. Metadata, OpenTelemetry-compatible, and OpenInference-compatible views retain 99.5% to 100% detection F1 while limiting origin-step accuracy to at most 0.5%, exposing a robust detection-localization gap. Factor ablations further show that removing decision content reduces origin-step accuracy to zero for every model, while provenance removal also causes large model-dependent losses. On rich ambiguous inputs that require abstention, evidence gating reduces unsupported unique-origin answers by 12.5 to 48.6 percentage points for three models, whereas two models still answer every case, revealing strong model dependence in safe abstention. Results on the frozen holdout reproduce the central pattern within the same generator family. These findings show that terminal status can support detection, whereas reliable causal attribution requires explicit decision-to-provenance links and abstention safeguards that remain effective across models. The dataset and benchmark implementation are available at https://anonymous.4open.science/r/TelemetrySuffBench-E635/README.md.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.07899v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.07899v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.07899" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.09282.html"><strong>ComboShoppingBench: Evaluating LLM Agents for Budget-Constrained Basket Shopping with Coupons</strong></a> <span>2026-08-10</span></li>
+          <li><a href="2608.08621.html"><strong>Business Arena: Benchmarking LLM Agents in a Realistic Marketplace</strong></a> <span>2026-08-09</span></li>
+          <li><a href="2608.08277.html"><strong>WirelessOpsAgent: A Benchmark and Agent Design for Action Assurance in Wireless Networks</strong></a> <span>2026-08-08</span></li>
+          <li><a href="2608.08160.html"><strong>Can LLM Agents Stick to the Script? A Benchmark for Long-Horizon Consistency in Interactive Narratives</strong></a> <span>2026-08-08</span></li>
+          <li><a href="2608.06909.html"><strong>Long-Horizon Agent Trajectory Attribution: A Unified Benchmark and Fine-Grained Annotation Framework</strong></a> <span>2026-08-07</span></li>
+          <li><a href="2608.06329.html"><strong>Benchmarking the Benchmarks: Evaluating Benchmarks for Conversational Agents</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2608.06027.html"><strong>FormBharo: Designing and Evaluating a Voice Agent for Conversational Form Filling in Rural India</strong></a> <span>2026-08-06</span></li>
+          <li><a href="2608.05573.html"><strong>SkillTV-Bench: Benchmarking How Well Judges Perform on Skill-Augmented Agentic Execution</strong></a> <span>2026-08-06</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

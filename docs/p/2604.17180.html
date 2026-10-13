@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>BranchBench: Aligning Database Branching with Agentic Demands | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Branchable databases are evolving from developer tools to infrastructure for agentic workloads characterized by speculative mutations…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Tool use, agent benchmark, LLM agent, arXiv, 2604.17180" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.17180.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="BranchBench: Aligning Database Branching with Agentic Demands" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Branchable databases are evolving from developer tools to infrastructure for agentic workloads characterized by speculative mutations…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.17180.html" />
+    <meta property="article:published_time" content="2026-04-19T00:47:24Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="BranchBench: Aligning Database Branching with Agentic Demands" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Branchable databases are evolving from developer tools to infrastructure for agentic workloads characterized by speculative mutations…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,73 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "BranchBench: Aligning Database Branching with Agentic Demands",
+  "name": "BranchBench: Aligning Database Branching with Agentic Demands",
+  "abstract": "Branchable databases are evolving from developer tools to infrastructure for agentic workloads characterized by speculative mutations and non-linear state exploration. Traditional RDBMS mechanisms such as nested transactions do not provide the persistent isolation and concurrent branch management required by autonomous agents, and recent \"zero-copy\" designs make different trade-offs whose impact on agentic workloads remains unclear. To clarify this space, we present BranchBench, a benchmark for evaluating branchable relational DBMSes under agentic exploration. We characterize five representative workloads-agentic software engineering, failure reproduction, data curation, MCTS, and simulation-and design parameterized macrobenchmarks that execute branch-mutate-evaluate loops to reflect these workloads, along with microbenchmarks that isolate branch lifecycle costs. We evaluate state of the art systems including Neon, DoltgreSQL, Tiger Data, Xata, and PostgreSQL baselines, and find a fundamental tension: systems optimized for fast branching suffer up to 5-4000x slower reads as branches deepen, while systems optimized for fast data operations incur 25-1500x higher branch creation and switching latency. Further, no current system supports the representative workloads at scale. These results highlight the need for branch-native DBMSes designed specifically for agentic exploration.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Elaine Ang"
+    },
+    {
+      "@type": "Person",
+      "name": "Sam Weldon"
+    },
+    {
+      "@type": "Person",
+      "name": "In Keun Kim"
+    },
+    {
+      "@type": "Person",
+      "name": "Kevin Durand"
+    },
+    {
+      "@type": "Person",
+      "name": "Kostis Kaffes"
+    },
+    {
+      "@type": "Person",
+      "name": "Eugene Wu"
+    }
+  ],
+  "datePublished": "2026-04-19T00:47:24Z",
+  "dateModified": "2026-04-19T00:47:24Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.17180.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2604.17180.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.17180v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2604.17180"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2604.17180v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2604.17180"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +105,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>BranchBench: Aligning Database Branching with Agentic Demands</h1>
+        <div class="meta">
+          Elaine Ang, Sam Weldon, In Keun Kim, Kevin Durand, Kostis Kaffes, Eugene Wu
+          · 2604.17180
+          · <time datetime="2026-04-19">2026-04-19</time>
+          · Coding / SWE · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Branchable databases are evolving from developer tools to infrastructure for agentic workloads characterized by speculative mutations and non-linear state exploration. Traditional RDBMS mechanisms such as nested transactions do not provide the persistent isolation and concurrent branch management required by autonomous agents, and recent &quot;zero-copy&quot; designs make different trade-offs whose impact on agentic workloads remains unclear. To clarify this space, we present BranchBench, a benchmark for evaluating branchable relational DBMSes under agentic exploration. We characterize five representative workloads-agentic software engineering, failure reproduction, data curation, MCTS, and simulation-and design parameterized macrobenchmarks that execute branch-mutate-evaluate loops to reflect these workloads, along with microbenchmarks that isolate branch lifecycle costs. We evaluate state of the art systems including Neon, DoltgreSQL, Tiger Data, Xata, and PostgreSQL baselines, and find a fundamental tension: systems optimized for fast branching suffer up to 5-4000x slower reads as branches deepen, while systems optimized for fast data operations incur 25-1500x higher branch creation and switching latency. Further, no current system supports the representative workloads at scale. These results highlight the need for branch-native DBMSes designed specifically for agentic exploration.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2604.17180v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2604.17180v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2604.17180" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.03952.html"><strong>MOSAIC-Bench: Measuring Compositional Vulnerability Induction in Coding Agents</strong></a> <span>2026-05-05</span></li>
+          <li><a href="2605.00803.html"><strong>Can Coding Agents Reproduce Findings in Computational Materials Science?</strong></a> <span>2026-05-01</span></li>
+          <li><a href="2604.26278.html"><strong>SWE-Bench 5G: Benchmarking AI Coding Agents on Telecom Network Engineering Tasks</strong></a> <span>2026-04-29</span></li>
+          <li><a href="2604.23897.html"><strong>MarketBench: Evaluating AI Agents as Market Participants</strong></a> <span>2026-04-26</span></li>
+          <li><a href="2604.14709.html"><strong>HWE-Bench: Benchmarking LLM Agents on Real-World Hardware Bug Repair Tasks</strong></a> <span>2026-04-16</span></li>
+          <li><a href="2604.12290.html"><strong>Frontier-Eng: Benchmarking Self-Evolving Agents on Real-World Engineering Tasks with Generative Optimization</strong></a> <span>2026-04-14</span></li>
+          <li><a href="2604.11201.html"><strong>CocoaBench: Evaluating Unified Digital Agents in the Wild</strong></a> <span>2026-04-13</span></li>
+          <li><a href="2604.09791.html"><strong>Pioneer Agent: Continual Improvement of Small Language Models in Production</strong></a> <span>2026-04-10</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

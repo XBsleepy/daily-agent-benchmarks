@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>BenchTrace: A Benchmark for Testing Reflection Ability and Controlled Evolution in LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Self-evolving agents improve over time by reflecting on past failures, but existing evaluation is limited in two ways: it measures…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2605.29225" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.29225.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="BenchTrace: A Benchmark for Testing Reflection Ability and Controlled Evolution in LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Self-evolving agents improve over time by reflecting on past failures, but existing evaluation is limited in two ways: it measures…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.29225.html" />
+    <meta property="article:published_time" content="2026-05-28T01:25:37Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="BenchTrace: A Benchmark for Testing Reflection Ability and Controlled Evolution in LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Self-evolving agents improve over time by reflecting on past failures, but existing evaluation is limited in two ways: it measures…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,67 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "BenchTrace: A Benchmark for Testing Reflection Ability and Controlled Evolution in LLM Agents",
+  "name": "BenchTrace: A Benchmark for Testing Reflection Ability and Controlled Evolution in LLM Agents",
+  "abstract": "Self-evolving agents improve over time by reflecting on past failures, but existing evaluation is limited in two ways: it measures only task scores, leaving reflection quality unknown, and it relies on agents' own episode runs, offering no mechanism to target specific failure patterns. We present \\textbf{BenchTrace}, a benchmark for evaluating self-evolution ability in LLM agents. BenchTrace is built on a snapshot-reflection dataset of 1,821 annotated episodes spanning six diverse tasks, and comprises a \\textbf{Reflection Evaluation} that probes failure identification through targeted QA tasks, and an \\textbf{Evolution Evaluation} that tests whether past failure experience translates into avoidance behavior in a controlled self-evolution simulation. Building on BenchTrace, we propose \\textbf{failure avoidance rate (FAR)}, a new evaluation metric measuring the fraction of test cases in which the agent successfully avoids the target failure instance. Experiments with Qwen3-32B and GPT-4.1 reveal that both models fall below a 30\\% end-to-end pass rate on reflection evaluation, with diagnosis as the primary bottleneck. Evolution evaluation shows that self-evolution methods generally improve FAR over the non-evolving baseline, but agents forget early lessons as noise episodes accumulate, and agents fail to generalize their reflections beyond the specific context, causing negative transfer across task contexts. Our correlation analysis further reveals that only a fully correct reflection is strongly associated with higher FAR. BenchTrace exposes concrete limits of current self-evolution approaches and provides a controlled, model-agnostic framework for targeted evaluation.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jiahao Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Fei Cheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Junfeng Jiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zefan Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Akiko Aizawa"
+    }
+  ],
+  "datePublished": "2026-05-28T01:25:37Z",
+  "dateModified": "2026-05-28T01:25:37Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.29225.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.29225.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.29225v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.29225"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.29225v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.29225"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +99,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>BenchTrace: A Benchmark for Testing Reflection Ability and Controlled Evolution in LLM Agents</h1>
+        <div class="meta">
+          Jiahao Huang, Fei Cheng, Junfeng Jiang, Zefan Yu, Akiko Aizawa
+          · 2605.29225
+          · <time datetime="2026-05-28">2026-05-28</time>
+          · General · 1 citations
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Self-evolving agents improve over time by reflecting on past failures, but existing evaluation is limited in two ways: it measures only task scores, leaving reflection quality unknown, and it relies on agents&#x27; own episode runs, offering no mechanism to target specific failure patterns. We present \textbf{BenchTrace}, a benchmark for evaluating self-evolution ability in LLM agents. BenchTrace is built on a snapshot-reflection dataset of 1,821 annotated episodes spanning six diverse tasks, and comprises a \textbf{Reflection Evaluation} that probes failure identification through targeted QA tasks, and an \textbf{Evolution Evaluation} that tests whether past failure experience translates into avoidance behavior in a controlled self-evolution simulation. Building on BenchTrace, we propose \textbf{failure avoidance rate (FAR)}, a new evaluation metric measuring the fraction of test cases in which the agent successfully avoids the target failure instance. Experiments with Qwen3-32B and GPT-4.1 reveal that both models fall below a 30\% end-to-end pass rate on reflection evaluation, with diagnosis as the primary bottleneck. Evolution evaluation shows that self-evolution methods generally improve FAR over the non-evolving baseline, but agents forget early lessons as noise episodes accumulate, and agents fail to generalize their reflections beyond the specific context, causing negative transfer across task contexts. Our correlation analysis further reveals that only a fully correct reflection is strongly associated with higher FAR. BenchTrace exposes concrete limits of current self-evolution approaches and provides a controlled, model-agnostic framework for targeted evaluation.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.29225v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.29225v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.29225" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.29676.html"><strong>Notation Matters: A Benchmark Study of Token-Optimized Formats in Agentic AI Systems</strong></a> <span>2026-05-28</span></li>
+          <li><a href="2605.29653.html"><strong>PTCG-Bench: Can LLM Agents Master Pokémon Trading Card Game?</strong></a> <span>2026-05-28</span></li>
+          <li><a href="2605.29286.html"><strong>CrossAlpha: An Annual-Report Benchmark for Cross-Market Factor Research (with LLM Agents)</strong></a> <span>2026-05-28</span></li>
+          <li><a href="2605.29253.html"><strong>OpenClawBench: Benchmarking Process-side Anomalies in Real-world Agent Execution Trajectories</strong></a> <span>2026-05-28</span></li>
+          <li><a href="2605.28721.html"><strong>LiveBrowseComp: Are Search Agents Searching, or Just Verifying What They Already Know?</strong></a> <span>2026-05-27</span></li>
+          <li><a href="2605.28556.html"><strong>A Matter of TASTE: Improving Coverage and Difficulty of Agent Benchmarks</strong></a> <span>2026-05-27</span></li>
+          <li><a href="2605.28465.html"><strong>Beyond One Path: Evaluating and Enhancing Divergent Thinking in Interactive LLM Agents</strong></a> <span>2026-05-27</span></li>
+          <li><a href="2605.28359.html"><strong>From Knowing to Doing: A Memory-Controlled Benchmark for LLM Trading Agents on Stock Markets</strong></a> <span>2026-05-27</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

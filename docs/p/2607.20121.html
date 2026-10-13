@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>OpenSkillRisk: Benchmarking Agent Safety When Using Real-World Risky Third-Party Skills | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLM-based agents leverage third-party skills to extend their capabilities in open-world scenarios. However, third-party skills can…" />
+    <meta name="keywords" content="Safety, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2607.20121" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.20121.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="OpenSkillRisk: Benchmarking Agent Safety When Using Real-World Risky Third-Party Skills" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLM-based agents leverage third-party skills to extend their capabilities in open-world scenarios. However, third-party skills can…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.20121.html" />
+    <meta property="article:published_time" content="2026-07-22T13:24:09Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="OpenSkillRisk: Benchmarking Agent Safety When Using Real-World Risky Third-Party Skills" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLM-based agents leverage third-party skills to extend their capabilities in open-world scenarios. However, third-party skills can…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,68 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "OpenSkillRisk: Benchmarking Agent Safety When Using Real-World Risky Third-Party Skills",
+  "name": "OpenSkillRisk: Benchmarking Agent Safety When Using Real-World Risky Third-Party Skills",
+  "abstract": "LLM-based agents leverage third-party skills to extend their capabilities in open-world scenarios. However, third-party skills can introduce extra security vulnerabilities, as seemingly harmless skills can contain latent safety risks that only emerge during actual execution. In this work, we conduct a systematic investigation into how well current agent systems recognize and avoid such risks. To support quantitative and qualitative evaluation, we construct OpenSkillRisk, a dedicated safety benchmark containing 263 risky skills collected from public skill marketplaces. We classify these skills into seven categories based on their threat types and pair each skill with a standardized user task and a corresponding sandbox for controlled evaluation. Distinct from prior benchmarks, OpenSkillRisk not only covers more realistic and diverse unsafe scenarios, but also provides a fine-grained analysis to diagnose the behavioral patterns of agents in such scenarios. We conduct comprehensive experiments covering three mainstream CLI agent frameworks and thirteen state-of-the-art LLMs. Experimental results show that no tested system handles risky skills reliably: even the safest configurations still execute unsafe actions in about 17% of cases. Context-dependent and system-level risks are especially difficult for current agent systems to avoid. Our behavioral analysis reveals three recurring failure patterns: agents may fail to recognize the risk, recognize it but fail to intervene before acting, or follow skill instructions beyond the user's intended scope. These findings highlight the need to improve both risk reasoning in LLMs and execution control in agent frameworks.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Qiyuan Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Tingfeng Hui"
+    },
+    {
+      "@type": "Person",
+      "name": "Kun Zhan"
+    },
+    {
+      "@type": "Person",
+      "name": "Kaike Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Ning Miao"
+    }
+  ],
+  "datePublished": "2026-07-22T13:24:09Z",
+  "dateModified": "2026-07-23T09:17:24Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.20121.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.20121.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.20121v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.20121"
+  },
+  "keywords": [
+    "Safety",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Safety"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.20121v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.20121"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +100,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>OpenSkillRisk: Benchmarking Agent Safety When Using Real-World Risky Third-Party Skills</h1>
+        <div class="meta">
+          Qiyuan Liu, Tingfeng Hui, Kun Zhan, Kaike Zhang, Ning Miao
+          · 2607.20121
+          · <time datetime="2026-07-22">2026-07-22</time>
+          · Safety
+        </div>
+        <div class="themes"><span class="chip">Safety</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLM-based agents leverage third-party skills to extend their capabilities in open-world scenarios. However, third-party skills can introduce extra security vulnerabilities, as seemingly harmless skills can contain latent safety risks that only emerge during actual execution. In this work, we conduct a systematic investigation into how well current agent systems recognize and avoid such risks. To support quantitative and qualitative evaluation, we construct OpenSkillRisk, a dedicated safety benchmark containing 263 risky skills collected from public skill marketplaces. We classify these skills into seven categories based on their threat types and pair each skill with a standardized user task and a corresponding sandbox for controlled evaluation. Distinct from prior benchmarks, OpenSkillRisk not only covers more realistic and diverse unsafe scenarios, but also provides a fine-grained analysis to diagnose the behavioral patterns of agents in such scenarios. We conduct comprehensive experiments covering three mainstream CLI agent frameworks and thirteen state-of-the-art LLMs. Experimental results show that no tested system handles risky skills reliably: even the safest configurations still execute unsafe actions in about 17% of cases. Context-dependent and system-level risks are especially difficult for current agent systems to avoid. Our behavioral analysis reveals three recurring failure patterns: agents may fail to recognize the risk, recognize it but fail to intervene before acting, or follow skill instructions beyond the user&#x27;s intended scope. These findings highlight the need to improve both risk reasoning in LLMs and execution control in agent frameworks.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.20121v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.20121v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.20121" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Safety benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.19901.html"><strong>MaliciousSkillBench: A Comprehensive Benchmark for Malicious Agent Skill Detection</strong></a> <span>2026-08-20</span></li>
+          <li><a href="2608.17597.html"><strong>HarnessRisk: A Lifecycle-Oriented Benchmark for Agent Harness Safety</strong></a> <span>2026-08-18</span></li>
+          <li><a href="2608.09476.html"><strong>ActBench: Self-Evolving Benchmark of Behavioral Safety in Cowork Agents</strong></a> <span>2026-08-10</span></li>
+          <li><a href="2608.06984.html"><strong>HarnessSafe: Evaluating Safety Across Persistent Carriers in Agent Harnesses</strong></a> <span>2026-08-07</span></li>
+          <li><a href="2607.18665.html"><strong>SciHazard: A Benchmark for Measuring Scientific Safety Risks with Decomposed Harm Scoring</strong></a> <span>2026-07-21</span></li>
+          <li><a href="2607.14543.html"><strong>SafeRelBench: A Spatial-Relation-Aware Benchmark for Process-Level Safety in VLM-Driven Embodied Agents</strong></a> <span>2026-07-16</span></li>
+          <li><a href="2606.22528.html"><strong>Governance Decay: How Context Compaction Silently Erases Safety Constraints in Long-Horizon LLM Agents</strong></a> <span>2026-06-21</span></li>
+          <li><a href="2606.20408.html"><strong>NRT-Bench: Benchmarking Multi-Turn Red-Teaming of LLM Operator Agents in Safety-Critical Control Rooms</strong></a> <span>2026-06-18</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

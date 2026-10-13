@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>DSV-Mem: Evaluating Multimodal Memory in Professional Workflows for MLLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Conversational MLLM agents are increasingly expected to assist in professional workflows, from AI research and engineering design to…" />
+    <meta name="keywords" content="Work / office, Memory, Planning / reasoning, Multimodal, agent benchmark, LLM agent, arXiv, 2610.08102" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.08102.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="DSV-Mem: Evaluating Multimodal Memory in Professional Workflows for MLLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Conversational MLLM agents are increasingly expected to assist in professional workflows, from AI research and engineering design to…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.08102.html" />
+    <meta property="article:published_time" content="2026-10-06T10:30:14Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="DSV-Mem: Evaluating Multimodal Memory in Professional Workflows for MLLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Conversational MLLM agents are increasingly expected to assist in professional workflows, from AI research and engineering design to…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,78 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "DSV-Mem: Evaluating Multimodal Memory in Professional Workflows for MLLM Agents",
+  "name": "DSV-Mem: Evaluating Multimodal Memory in Professional Workflows for MLLM Agents",
+  "abstract": "Conversational MLLM agents are increasingly expected to assist in professional workflows, from AI research and engineering design to product management and business operations. Yet this capability remains underexplored: existing benchmarks largely focus on informal, everyday interactions and personal-life scenarios featuring photographic natural images, isolated static artifacts, and recall-oriented questions. In contrast, professional scenarios often involve structured, information-heavy artifacts that undergo frequent revisions and authority updates, and compositional queries requiring reconciliation of many artifact versions while tracking state precisely. To address these challenges, we introduce DSV-Mem, a benchmark for evaluating Dense Stateful Visual Memory. DSV-Mem comprises expert-reviewed scenarios and 1,000 questions across five user-oriented categories (Current State, Past State, Derived State, Change History, and Conflict/Refusal). A Hartley-inspired criterion favors questions with broader visual-evidence inspection demands. We also introduce a generation harness that produces evaluation suites by decoupling state-transition synthesis from conversation filling. Evaluation over 27 configurations spanning frontier and open-weight models and memory management methods reveals that the strongest baseline scores below 45% on DSV-Mem. Analysis surfaces findings: 1) multimodality and information density both contribute to difficulty, but state evolution, particularly the number of governing updates, is the dominant tested factor. Raw conversation/haystack length, OCR, and arithmetic are not the primary bottlenecks; 2) models often fail to verify user premises against prior state updates before answering; 3) increased reasoning effort and memory management methods yield limited gains, whereas state-aware designs prove more effective. The benchmark and code will be publicly released.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jike Zhong"
+    },
+    {
+      "@type": "Person",
+      "name": "Ritwick Chaudhry"
+    },
+    {
+      "@type": "Person",
+      "name": "Xuanbai Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Tianchen Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Linghan Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yifan Xing"
+    },
+    {
+      "@type": "Person",
+      "name": "Nishant Sankaran"
+    }
+  ],
+  "datePublished": "2026-10-06T10:30:14Z",
+  "dateModified": "2026-10-06T10:30:14Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.08102.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.08102.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.08102v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.08102"
+  },
+  "keywords": [
+    "Work / office",
+    "Memory",
+    "Planning / reasoning",
+    "Multimodal",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Work / office"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.08102v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2610.08102"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +110,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>DSV-Mem: Evaluating Multimodal Memory in Professional Workflows for MLLM Agents</h1>
+        <div class="meta">
+          Jike Zhong, Ritwick Chaudhry, Xuanbai Chen, Tianchen Zhao, Linghan Xu, Yifan Xing, Nishant Sankaran
+          · 2610.08102
+          · <time datetime="2026-10-06">2026-10-06</time>
+          · Work / office
+        </div>
+        <div class="themes"><span class="chip">Memory</span><span class="chip">Planning / reasoning</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Conversational MLLM agents are increasingly expected to assist in professional workflows, from AI research and engineering design to product management and business operations. Yet this capability remains underexplored: existing benchmarks largely focus on informal, everyday interactions and personal-life scenarios featuring photographic natural images, isolated static artifacts, and recall-oriented questions. In contrast, professional scenarios often involve structured, information-heavy artifacts that undergo frequent revisions and authority updates, and compositional queries requiring reconciliation of many artifact versions while tracking state precisely. To address these challenges, we introduce DSV-Mem, a benchmark for evaluating Dense Stateful Visual Memory. DSV-Mem comprises expert-reviewed scenarios and 1,000 questions across five user-oriented categories (Current State, Past State, Derived State, Change History, and Conflict/Refusal). A Hartley-inspired criterion favors questions with broader visual-evidence inspection demands. We also introduce a generation harness that produces evaluation suites by decoupling state-transition synthesis from conversation filling. Evaluation over 27 configurations spanning frontier and open-weight models and memory management methods reveals that the strongest baseline scores below 45% on DSV-Mem. Analysis surfaces findings: 1) multimodality and information density both contribute to difficulty, but state evolution, particularly the number of governing updates, is the dominant tested factor. Raw conversation/haystack length, OCR, and arithmetic are not the primary bottlenecks; 2) models often fail to verify user premises against prior state updates before answering; 3) increased reasoning effort and memory management methods yield limited gains, whereas state-aware designs prove more effective. The benchmark and code will be publicly released.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.08102v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.08102v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.08102" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Work / office benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.00316.html"><strong>DuplexSpeechBench-Document Grounding: Benchmarking Document Grounding and Hallucinations in Voice Agents</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2609.37658.html"><strong>EnterpriseBench: Benchmarking LLM Agents on Enterprise-Level Strategic Reasoning and Decision-Making</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.36308.html"><strong>CheatBench: Measuring Reward Gaming in AI Agents</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34973.html"><strong>APEX-Voice: Can Voice Agents Complete Professional Workflows Through Full-Duplex Interaction</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.30055.html"><strong>Era by Eon: Benchmarking Enterprise Agents on Hidden Knowledge</strong></a> <span>2026-09-25</span></li>
+          <li><a href="2609.29718.html"><strong>PPTBench: Can Coding Agents Reconstruct the Visual World through Structured, Editable Slides</strong></a> <span>2026-09-25</span></li>
+          <li><a href="2609.17885.html"><strong>ERPBench: A State-Grounded Evaluation Paradigm for Computer-Use Agents in Enterprise Software</strong></a> <span>2026-09-17</span></li>
+          <li><a href="2609.04667.html"><strong>ERPBench: Evaluating LLM Agents for Enterprise Decision-Making Across Competitive Market Ecologies</strong></a> <span>2026-09-04</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

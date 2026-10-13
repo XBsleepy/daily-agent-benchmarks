@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Boiling the Frog: A Multi-Turn Benchmark for Agentic Safety | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Background. Traditional safety benchmarks for language models evaluate generated text: whether a model outputs toxic language…" />
+    <meta name="keywords" content="Safety, Tool use, agent benchmark, LLM agent, arXiv, 2605.22643" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.22643.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Boiling the Frog: A Multi-Turn Benchmark for Agentic Safety" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Background. Traditional safety benchmarks for language models evaluate generated text: whether a model outputs toxic language…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.22643.html" />
+    <meta property="article:published_time" content="2026-05-21T15:50:18Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Boiling the Frog: A Multi-Turn Benchmark for Agentic Safety" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Background. Traditional safety benchmarks for language models evaluate generated text: whether a model outputs toxic language…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,104 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Boiling the Frog: A Multi-Turn Benchmark for Agentic Safety",
+  "name": "Boiling the Frog: A Multi-Turn Benchmark for Agentic Safety",
+  "abstract": "Background. Traditional safety benchmarks for language models evaluate generated text: whether a model outputs toxic language, reproduces bias, or follows harmful instructions. When models are deployed as agents, the safety-relevant object shifts from what the system says to what it does within an environment, and evaluating model responses under prompting is no longer sufficient to address the safety challenges posed by artificial intelligence. Recent developments have seen the rise of benchmarks that evaluate large language models as agents. We contribute to this strand of research. Approach. We introduce Boiling the Frog, a benchmark that evaluates whether tool-using AI models deployed in corporate and office settings are susceptible to incremental attacks. Each scenario begins with benign workspace edits and later introduces a risk-bearing request. The benchmark focuses on stateful multi-turn evaluation: chains expose a persistent workspace, place the risk-bearing payload at controlled positions in the turn sequence, and score whether the resulting artifact state becomes unsafe. Scenarios are organized through a three-level operational risk taxonomy grounded in the Boiling the Frog risks, the AI Act Annex I and Annex III high-risk contexts, and EU AI Act's Code of Practice on General-Purpose AI (GPAI). Results. Across a nine-model panel, aggregate strict attack success rate (ASR) is 44.4%. Model-level ASR ranges from 20.5% for Claude Haiku 4.5 to 92.9% for Gemini 3.1 Flash Lite, with Seed 2.0 Lite also above 80%. Average chain category-level ASR reaches 93.3% for Code of Practice loss-of-control scenarios.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Piercosma Bisconti"
+    },
+    {
+      "@type": "Person",
+      "name": "Matteo Prandi"
+    },
+    {
+      "@type": "Person",
+      "name": "Federico Pierucci"
+    },
+    {
+      "@type": "Person",
+      "name": "Federico Sartore"
+    },
+    {
+      "@type": "Person",
+      "name": "Enrico Panai"
+    },
+    {
+      "@type": "Person",
+      "name": "Laura Caroli"
+    },
+    {
+      "@type": "Person",
+      "name": "Yue Zhu"
+    },
+    {
+      "@type": "Person",
+      "name": "Adam Leon Smith"
+    },
+    {
+      "@type": "Person",
+      "name": "Luca Nannini"
+    },
+    {
+      "@type": "Person",
+      "name": "Marcello Galisai"
+    },
+    {
+      "@type": "Person",
+      "name": "Susanna Cifani"
+    },
+    {
+      "@type": "Person",
+      "name": "Francesco Giarrusso"
+    },
+    {
+      "@type": "Person",
+      "name": "Marcantonio Bracale Syrnikov"
+    },
+    {
+      "@type": "Person",
+      "name": "Daniele Nardi"
+    }
+  ],
+  "datePublished": "2026-05-21T15:50:18Z",
+  "dateModified": "2026-05-22T14:53:30Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.22643.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.22643.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.22643v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.22643"
+  },
+  "keywords": [
+    "Safety",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Safety"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.22643v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.22643"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +136,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Boiling the Frog: A Multi-Turn Benchmark for Agentic Safety</h1>
+        <div class="meta">
+          Piercosma Bisconti, Matteo Prandi, Federico Pierucci, Federico Sartore, Enrico Panai, Laura Caroli, Yue Zhu, Adam Leon Smith, Luca Nannini, Marcello Galisai, Susanna Cifani, Francesco Giarrusso, Marcantonio Bracale Syrnikov, Daniele Nardi
+          · 2605.22643
+          · <time datetime="2026-05-21">2026-05-21</time>
+          · Safety
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Background. Traditional safety benchmarks for language models evaluate generated text: whether a model outputs toxic language, reproduces bias, or follows harmful instructions. When models are deployed as agents, the safety-relevant object shifts from what the system says to what it does within an environment, and evaluating model responses under prompting is no longer sufficient to address the safety challenges posed by artificial intelligence. Recent developments have seen the rise of benchmarks that evaluate large language models as agents. We contribute to this strand of research. Approach. We introduce Boiling the Frog, a benchmark that evaluates whether tool-using AI models deployed in corporate and office settings are susceptible to incremental attacks. Each scenario begins with benign workspace edits and later introduces a risk-bearing request. The benchmark focuses on stateful multi-turn evaluation: chains expose a persistent workspace, place the risk-bearing payload at controlled positions in the turn sequence, and score whether the resulting artifact state becomes unsafe. Scenarios are organized through a three-level operational risk taxonomy grounded in the Boiling the Frog risks, the AI Act Annex I and Annex III high-risk contexts, and EU AI Act&#x27;s Code of Practice on General-Purpose AI (GPAI). Results. Across a nine-model panel, aggregate strict attack success rate (ASR) is 44.4%. Model-level ASR ranges from 20.5% for Claude Haiku 4.5 to 92.9% for Gemini 3.1 Flash Lite, with Seed 2.0 Lite also above 80%. Average chain category-level ASR reaches 93.3% for Code of Practice loss-of-control scenarios.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.22643v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.22643v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.22643" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Safety benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.13994.html"><strong>Hidden in Plain Sight: Benchmarking Agent Safety Against Decomposition Attacks with DECOMPBENCH</strong></a> <span>2026-06-12</span></li>
+          <li><a href="2606.07867.html"><strong>The Cold-Start Safety Gap in LLM Agents</strong></a> <span>2026-06-05</span></li>
+          <li><a href="2606.07131.html"><strong>MalSkillBench: A Runtime-Verified Benchmark of Malicious Agent Skills</strong></a> <span>2026-06-05</span></li>
+          <li><a href="2605.29224.html"><strong>Relevance as a Vulnerability: How Web Retrieval Degrades Safety Alignment in LLM Agents</strong></a> <span>2026-05-28</span></li>
+          <li><a href="2605.14271.html"><strong>Auditing Agent Harness Safety</strong></a> <span>2026-05-14</span></li>
+          <li><a href="2605.12015.html"><strong>SkillSafetyBench: Evaluating Agent Safety under Skill-Facing Attack Surfaces</strong></a> <span>2026-05-12</span></li>
+          <li><a href="2604.15774.html"><strong>MemEvoBench: Benchmarking Safety Risks from Memory Misevolution in LLM Agents</strong></a> <span>2026-04-17</span></li>
+          <li><a href="2604.11174.html"><strong>EmbodiedGovBench: A Benchmark for Governance, Recovery, and Upgrade Safety in Embodied Agent Systems</strong></a> <span>2026-04-13</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

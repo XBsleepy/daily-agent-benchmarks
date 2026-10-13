@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MasDrift: Benchmarking Authorization Preservation Across Multi-Agent Architectures | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Multi-agent systems (MAS) decompose long-horizon tasks across supervisors and subagents, but delegated goals do not necessarily carry…" />
+    <meta name="keywords" content="Multi-agent, Safety, agent benchmark, LLM agent, arXiv, 2608.07556" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.07556.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MasDrift: Benchmarking Authorization Preservation Across Multi-Agent Architectures" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Multi-agent systems (MAS) decompose long-horizon tasks across supervisors and subagents, but delegated goals do not necessarily carry…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.07556.html" />
+    <meta property="article:published_time" content="2026-08-02T04:46:15Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MasDrift: Benchmarking Authorization Preservation Across Multi-Agent Architectures" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Multi-agent systems (MAS) decompose long-horizon tasks across supervisors and subagents, but delegated goals do not necessarily carry…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,72 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MasDrift: Benchmarking Authorization Preservation Across Multi-Agent Architectures",
+  "name": "MasDrift: Benchmarking Authorization Preservation Across Multi-Agent Architectures",
+  "abstract": "Multi-agent systems (MAS) decompose long-horizon tasks across supervisors and subagents, but delegated goals do not necessarily carry their original authorization boundaries. Existing safety benchmarks mainly study adversarial compromise, while work on constraint drift lacks controlled architecture-level evaluation. We introduce MasDrift, a benchmark of 600 benign productivity tasks across eight domains. Each task pairs required work with reserved actions. MasDrift compares single-agent, centralized, and decentralized coordination while varying hierarchy depth and peer width, measuring task completion and authorization preservation. Across generic multi-agent conditions, centralized hierarchies achieve 93.9--98.6% task completion versus 85.7--87.0% for peer networks, while unauthorized actions occur in 2.7--19.8% of tasks versus 0.6--0.8%, a gap that widens with hierarchy depth. We further compare two defenses that differ in where authorization evidence resides. One re-anchors every pending call to the original user request. The other carries an attenuated policy along the delegation chain. Re-anchoring reduces unauthorized actions in every model configuration we evaluate, at a cost of 1.6 points of pooled completion. Chain propagation blocks required work instead, forfeiting up to 36.3 points. A heterogeneous case study confirms that the failure follows from coordination rather than model strength. MasDrift exposes a centralization tradeoff and makes authorization preservation a measurable property of MAS design.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Zhuoning Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiucheng Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Hanjun Luo"
+    },
+    {
+      "@type": "Person",
+      "name": "Yingbin Jin"
+    },
+    {
+      "@type": "Person",
+      "name": "Yinpeng Dong"
+    },
+    {
+      "@type": "Person",
+      "name": "Hanan Salam"
+    }
+  ],
+  "datePublished": "2026-08-02T04:46:15Z",
+  "dateModified": "2026-08-11T07:14:50Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.07556.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.07556.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.07556v2"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.07556"
+  },
+  "keywords": [
+    "Multi-agent",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multi-agent"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.07556v2"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.07556"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +104,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MasDrift: Benchmarking Authorization Preservation Across Multi-Agent Architectures</h1>
+        <div class="meta">
+          Zhuoning Xu, Xiucheng Zhang, Hanjun Luo, Yingbin Jin, Yinpeng Dong, Hanan Salam
+          · 2608.07556
+          · <time datetime="2026-08-02">2026-08-02</time>
+          · Multi-agent
+        </div>
+        <div class="themes"><span class="chip">Multi-agent</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Multi-agent systems (MAS) decompose long-horizon tasks across supervisors and subagents, but delegated goals do not necessarily carry their original authorization boundaries. Existing safety benchmarks mainly study adversarial compromise, while work on constraint drift lacks controlled architecture-level evaluation. We introduce MasDrift, a benchmark of 600 benign productivity tasks across eight domains. Each task pairs required work with reserved actions. MasDrift compares single-agent, centralized, and decentralized coordination while varying hierarchy depth and peer width, measuring task completion and authorization preservation. Across generic multi-agent conditions, centralized hierarchies achieve 93.9--98.6% task completion versus 85.7--87.0% for peer networks, while unauthorized actions occur in 2.7--19.8% of tasks versus 0.6--0.8%, a gap that widens with hierarchy depth. We further compare two defenses that differ in where authorization evidence resides. One re-anchors every pending call to the original user request. The other carries an attenuated policy along the delegation chain. Re-anchoring reduces unauthorized actions in every model configuration we evaluate, at a cost of 1.6 points of pooled completion. Chain propagation blocks required work instead, forfeiting up to 36.3 points. A heterogeneous case study confirms that the failure follows from coordination rather than model strength. MasDrift exposes a centralization tradeoff and makes authorization preservation a measurable property of MAS design.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.07556v2" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.07556v2" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.07556" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multi-agent benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.11738.html"><strong>Advancing MLLM-based UAV Image Understanding and Reasoning: A Benchmark and a Training-Free Multi-Agent System</strong></a> <span>2026-08-12</span></li>
+          <li><a href="2608.08605.html"><strong>ForestBench: A Unified Graph Framework for Evaluating Multi-Agent Collaboration</strong></a> <span>2026-08-09</span></li>
+          <li><a href="2608.08045.html"><strong>Lingjing: A Simulation Testbed for Multi-Agent Embodied Tasks in Open-Ended Cities</strong></a> <span>2026-08-08</span></li>
+          <li><a href="2608.01805.html"><strong>CockpitHAT: Dependency-Graph-Driven Hierarchical Attribution for Embodied Multi-Agent Cockpits</strong></a> <span>2026-08-03</span></li>
+          <li><a href="2608.00832.html"><strong>AdvPlan-Bench: Adversarial Evaluation of Structured Plan-Generation Agents</strong></a> <span>2026-08-01</span></li>
+          <li><a href="2607.25656.html"><strong>OrchBench: Evaluating Multi-Agent Orchestration Plans in Isolation via Deterministic Simulation</strong></a> <span>2026-07-28</span></li>
+          <li><a href="2607.15434.html"><strong>Coercion and Deception in AI-to-AI Management: An Agentic Benchmark of Unprompted Escalation</strong></a> <span>2026-07-16</span></li>
+          <li><a href="2607.01766.html"><strong>SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation</strong></a> <span>2026-07-02</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

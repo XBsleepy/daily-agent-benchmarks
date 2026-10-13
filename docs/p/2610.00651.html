@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Agent Evaluation Reliability: More Tasks Won&#x27;t (Always) Fix An Agent Leaderboard | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Agent evaluations are increasingly used to compare LLMs and inform deployment decisions, yet ranks can reflect not only the model but…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2610.00651" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.00651.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Agent Evaluation Reliability: More Tasks Won&#x27;t (Always) Fix An Agent Leaderboard" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Agent evaluations are increasingly used to compare LLMs and inform deployment decisions, yet ranks can reflect not only the model but…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.00651.html" />
+    <meta property="article:published_time" content="2026-10-02T04:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Agent Evaluation Reliability: More Tasks Won&#x27;t (Always) Fix An Agent Leaderboard" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Agent evaluations are increasingly used to compare LLMs and inform deployment decisions, yet ranks can reflect not only the model but…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,51 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Agent Evaluation Reliability: More Tasks Won't (Always) Fix An Agent Leaderboard",
+  "name": "Agent Evaluation Reliability: More Tasks Won't (Always) Fix An Agent Leaderboard",
+  "abstract": "Agent evaluations are increasingly used to compare LLMs and inform deployment decisions, yet ranks can reflect not only the model but also the effects of the evaluation conditions such as the scaffolds or tasks. This makes reliability claim-dependent: an evaluation that reliably ranks deployed systems may not reliably rank underlying models. We ask which conclusions current agent evaluations reliably support and what additional evaluation would improve them. We develop a Bayesian variance-decomposition framework for sparse, imbalanced agent leaderboards and apply it to 22 benchmarks from the Holistic Agent Leaderboard and Harbor Index. The framework separates signal, performance differences relevant to the intended claim, from noise, irrelevant variation that can still change rankings. We find: (1) Reliability depends on the measurement goal. Fixed model-scaffold systems are ranked reliably (0.935-0.994), while underlying-model reliability is substantially lower (0.148-0.841). (2) Scaffold choice can change conclusions. Inter-scaffold reliability measures whether scaffolds preserve model rankings, showing that scaffold effects vary substantially across evaluations. (3) More tasks cannot resolve all uncertainty. Even infinitely many similarly constructed tasks improve model-ranking reliability of a benchmark by at most 0.097 when uncertainty is dominated by limited scaffold coverage. (4) Pooling diverse benchmarks can improve cross-task rankings at lower cost. For rankings across diverse agentic tasks, pooling benchmarks raises projected reliability from 0.44 to 0.75 at the same task budget and can reduce projected cost by up to 83\\%. Evaluation design should follow the intended claim: identify what a score or ranking should mean, diagnose what limits its reliability, and spend evaluation budget on the sources of uncertainty that matter.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Michael Hardy, Ruhana Azam, Anka Reuel, Mykel Kochenderfer, Sanmi Koyejo"
+    }
+  ],
+  "datePublished": "2026-10-02T04:00:00Z",
+  "dateModified": "2026-10-02T04:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.00651.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.00651.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.00651"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.00651"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.00651"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2610.00651"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +83,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Agent Evaluation Reliability: More Tasks Won&#x27;t (Always) Fix An Agent Leaderboard</h1>
+        <div class="meta">
+          Michael Hardy, Ruhana Azam, Anka Reuel, Mykel Kochenderfer, Sanmi Koyejo
+          · 2610.00651
+          · <time datetime="2026-10-02">2026-10-02</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Agent evaluations are increasingly used to compare LLMs and inform deployment decisions, yet ranks can reflect not only the model but also the effects of the evaluation conditions such as the scaffolds or tasks. This makes reliability claim-dependent: an evaluation that reliably ranks deployed systems may not reliably rank underlying models. We ask which conclusions current agent evaluations reliably support and what additional evaluation would improve them. We develop a Bayesian variance-decomposition framework for sparse, imbalanced agent leaderboards and apply it to 22 benchmarks from the Holistic Agent Leaderboard and Harbor Index. The framework separates signal, performance differences relevant to the intended claim, from noise, irrelevant variation that can still change rankings. We find: (1) Reliability depends on the measurement goal. Fixed model-scaffold systems are ranked reliably (0.935-0.994), while underlying-model reliability is substantially lower (0.148-0.841). (2) Scaffold choice can change conclusions. Inter-scaffold reliability measures whether scaffolds preserve model rankings, showing that scaffold effects vary substantially across evaluations. (3) More tasks cannot resolve all uncertainty. Even infinitely many similarly constructed tasks improve model-ranking reliability of a benchmark by at most 0.097 when uncertainty is dominated by limited scaffold coverage. (4) Pooling diverse benchmarks can improve cross-task rankings at lower cost. For rankings across diverse agentic tasks, pooling benchmarks raises projected reliability from 0.44 to 0.75 at the same task budget and can reduce projected cost by up to 83\%. Evaluation design should follow the intended claim: identify what a score or ranking should mean, diagnose what limits its reliability, and spend evaluation budget on the sources of uncertainty that matter.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.00651" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.00651" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.00651" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.04246.html"><strong>Benchmarking Psychological Dynamics in Generative Agents</strong></a> <span>2026-10-03</span></li>
+          <li><a href="2610.04008.html"><strong>SkillScriptBench: Benchmarking Self-Evolution of Executable Agent Skill Packages Beyond Markdown</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.03020.html"><strong>DyadMem: A Long-Term Memory Benchmark of How Agents Work with Users</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.00954.html"><strong>Beyond Leaderboards: Tokenomics of Agentic Small Language Model Ensembles</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2610.02588.html"><strong>Open-Endedness Bench: Measuring Epistemic Process from Agent Records</strong></a> <span>2026-10-01</span></li>
+          <li><a href="2610.02425.html"><strong>Finding the Move Is Not Winning the Game: XiangqiBench for Closed-Loop Evaluation of LLM Agents</strong></a> <span>2026-10-01</span></li>
+          <li><a href="2610.02363.html"><strong>ArrivalBench: Agent-Generated Data Pipelines Are Correct Once and Wrong Under Time</strong></a> <span>2026-10-01</span></li>
+          <li><a href="2609.38974.html"><strong>RealWorldShop: Benchmarking and Improving Conversational Shopping Agents in Real-World E-commerce</strong></a> <span>2026-09-30</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

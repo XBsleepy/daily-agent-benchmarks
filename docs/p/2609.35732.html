@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>Failure-Transparent Agents: Benchmarking Post-Failure Reporting in Tool-Using Language Models | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Tool-using agents can fail twice: a required tool can fail, and the agent can then report success without the evidence needed to…" />
+    <meta name="keywords" content="Tool use, agent benchmark, LLM agent, arXiv, 2609.35732" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.35732.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Failure-Transparent Agents: Benchmarking Post-Failure Reporting in Tool-Using Language Models" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Tool-using agents can fail twice: a required tool can fail, and the agent can then report success without the evidence needed to…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.35732.html" />
+    <meta property="article:published_time" content="2026-09-28T17:51:41Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Failure-Transparent Agents: Benchmarking Post-Failure Reporting in Tool-Using Language Models" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Tool-using agents can fail twice: a required tool can fail, and the agent can then report success without the evidence needed to…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,75 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Failure-Transparent Agents: Benchmarking Post-Failure Reporting in Tool-Using Language Models",
+  "name": "Failure-Transparent Agents: Benchmarking Post-Failure Reporting in Tool-Using Language Models",
+  "abstract": "Tool-using agents can fail twice: a required tool can fail, and the agent can then report success without the evidence needed to justify it. Existing benchmarks often entangle this reporting failure with tool selection, recovery, and environment dynamics. We introduce Failure-Transparent Agents (FTA), a controlled benchmark that fixes the failed observation and required evidence state before generation, making post-failure claims directly auditable. FTA contains 100 tasks with deterministic failure traces spanning five failure families, a neutral control, and four user-pressure conditions, and evaluates unsupported claims alongside useful recovery. Across six models, three response policies, and 3,600 human-annotated responses, false-success rates are 22.8% under the baseline policy, 9.3% with a transparency instruction, and 0.8% with a structured evidence contract. Fabricated-detail rates decrease from 28.3% to 14.3% and 0.8%, while useful responses increase from 74.9% to 89.2% and 98.8%, respectively. The tested evidence-contract policy is associated with substantially lower post-failure reporting errors while useful-response rates remain high within this blocked-task benchmark.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Junru Zhu"
+    },
+    {
+      "@type": "Person",
+      "name": "Shiming Xie"
+    },
+    {
+      "@type": "Person",
+      "name": "Aime Lu Fan Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaoqing Ding"
+    },
+    {
+      "@type": "Person",
+      "name": "Chunxin Tang"
+    },
+    {
+      "@type": "Person",
+      "name": "Ruoyu Qi"
+    },
+    {
+      "@type": "Person",
+      "name": "Yulang Fei"
+    }
+  ],
+  "datePublished": "2026-09-28T17:51:41Z",
+  "dateModified": "2026-09-28T17:51:41Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.35732.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2609.35732.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2609.35732v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2609.35732"
+  },
+  "keywords": [
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2609.35732v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2609.35732"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +107,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Failure-Transparent Agents: Benchmarking Post-Failure Reporting in Tool-Using Language Models</h1>
+        <div class="meta">
+          Junru Zhu, Shiming Xie, Aime Lu Fan Chen, Xiaoqing Ding, Chunxin Tang, Ruoyu Qi, Yulang Fei
+          · 2609.35732
+          · <time datetime="2026-09-28">2026-09-28</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Tool-using agents can fail twice: a required tool can fail, and the agent can then report success without the evidence needed to justify it. Existing benchmarks often entangle this reporting failure with tool selection, recovery, and environment dynamics. We introduce Failure-Transparent Agents (FTA), a controlled benchmark that fixes the failed observation and required evidence state before generation, making post-failure claims directly auditable. FTA contains 100 tasks with deterministic failure traces spanning five failure families, a neutral control, and four user-pressure conditions, and evaluates unsupported claims alongside useful recovery. Across six models, three response policies, and 3,600 human-annotated responses, false-success rates are 22.8% under the baseline policy, 9.3% with a transparency instruction, and 0.8% with a structured evidence contract. Fabricated-detail rates decrease from 28.3% to 14.3% and 0.8%, while useful responses increase from 74.9% to 89.2% and 98.8%, respectively. The tested evidence-contract policy is associated with substantially lower post-failure reporting errors while useful-response rates remain high within this blocked-task benchmark.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2609.35732v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2609.35732v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2609.35732" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.02563.html"><strong>OpenGameEval: Benchmarking Agentic Programming and Exploration in a Stateful Game Engine</strong></a> <span>2026-10-01</span></li>
+          <li><a href="2609.38652.html"><strong>AgBench: Agentic AI Benchmarks for Personal AI Devices</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.38512.html"><strong>VAmoS Part Deux: Harder, More Realistic Voice-Agent Simulation</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.37315.html"><strong>Do Agent Benchmarks Do What They Say? An Executable-Contract Audit of Tool-Using Agent Environments</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.34930.html"><strong>PDEU-Bench: Benchmarking the Personalized Planning Lifecycle of Tool-Calling LLM Agents</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34492.html"><strong>PowerBench: A Benchmark for Agentic Retrieval and Reasoning in Power Systems</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.30717.html"><strong>RecToolBench: Benchmarking Recommendation-Specific Tool Orchestration under Fuzzy User Intent</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.31906.html"><strong>EmailBench: A Benchmark for Evaluating LLM Agents on Enterprise Email and Productivity Tasks</strong></a> <span>2026-09-25</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

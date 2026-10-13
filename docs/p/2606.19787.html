@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ORAgentBench: Can LLM Agents Solve Challenging Operations Research Tasks End to End? | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language models are increasingly deployed as autonomous agents for multi-step tasks in executable environments, yet their…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2606.19787" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.19787.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ORAgentBench: Can LLM Agents Solve Challenging Operations Research Tasks End to End?" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language models are increasingly deployed as autonomous agents for multi-step tasks in executable environments, yet their…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.19787.html" />
+    <meta property="article:published_time" content="2026-06-18T04:43:23Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ORAgentBench: Can LLM Agents Solve Challenging Operations Research Tasks End to End?" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language models are increasingly deployed as autonomous agents for multi-step tasks in executable environments, yet their…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,79 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ORAgentBench: Can LLM Agents Solve Challenging Operations Research Tasks End to End?",
+  "name": "ORAgentBench: Can LLM Agents Solve Challenging Operations Research Tasks End to End?",
+  "abstract": "Large language models are increasingly deployed as autonomous agents for multi-step tasks in executable environments, yet their ability to perform realistic operations research (OR) work remains unclear. Existing OR evaluations often decouple modeling from solving, rely on pre-formalized or text-only instances, and rarely test the full workflow from operational artifacts to validated decisions. In this work, we introduce ORAgentBench, an execution-grounded benchmark for evaluating autonomous agents on challenging end-to-end operations research tasks. It contains 107 human-reviewed tasks across diverse operational scenarios, each packaged in an isolated environment with a natural-language brief, multi-file data, configuration artifacts, and a required submission schema. Agents must write and run solution code, and their submissions are evaluated by hidden validators for schema validity, hard-constraint feasibility, and normalized objective quality. Experiments with fourteen frontier agent-model configurations show that current agents remain far from reliable OR practice. The best agent passes only 35.51% of all tasks and 20.59% of hard tasks, and many feasible submissions still fall below the required quality threshold. Failure analysis further shows that errors are dominated by strategic weaknesses, including missed operational rules, brittle formulations, weak feasible-solution construction, and insufficient solution improvement. OR-specific procedural skills increase hard-task feasibility, but do not reliably improve solution quality or pass rate. These results suggest that progress in OR agents requires moving beyond plausible optimization code toward dependable, high-quality operational decision-making.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jiajun Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Mingshu Cai"
+    },
+    {
+      "@type": "Person",
+      "name": "Yixuan Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Yu Ding"
+    },
+    {
+      "@type": "Person",
+      "name": "Ran Hou"
+    },
+    {
+      "@type": "Person",
+      "name": "Guanyu Nie"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiongwei Han"
+    },
+    {
+      "@type": "Person",
+      "name": "Wanyuan Wang"
+    }
+  ],
+  "datePublished": "2026-06-18T04:43:23Z",
+  "dateModified": "2026-06-18T04:43:23Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.19787.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.19787.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.19787v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.19787"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.19787v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.19787"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +111,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ORAgentBench: Can LLM Agents Solve Challenging Operations Research Tasks End to End?</h1>
+        <div class="meta">
+          Jiajun Li, Mingshu Cai, Yixuan Li, Yu Ding, Ran Hou, Guanyu Nie, Xiongwei Han, Wanyuan Wang
+          · 2606.19787
+          · <time datetime="2026-06-18">2026-06-18</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Large language models are increasingly deployed as autonomous agents for multi-step tasks in executable environments, yet their ability to perform realistic operations research (OR) work remains unclear. Existing OR evaluations often decouple modeling from solving, rely on pre-formalized or text-only instances, and rarely test the full workflow from operational artifacts to validated decisions. In this work, we introduce ORAgentBench, an execution-grounded benchmark for evaluating autonomous agents on challenging end-to-end operations research tasks. It contains 107 human-reviewed tasks across diverse operational scenarios, each packaged in an isolated environment with a natural-language brief, multi-file data, configuration artifacts, and a required submission schema. Agents must write and run solution code, and their submissions are evaluated by hidden validators for schema validity, hard-constraint feasibility, and normalized objective quality. Experiments with fourteen frontier agent-model configurations show that current agents remain far from reliable OR practice. The best agent passes only 35.51% of all tasks and 20.59% of hard tasks, and many feasible submissions still fall below the required quality threshold. Failure analysis further shows that errors are dominated by strategic weaknesses, including missed operational rules, brittle formulations, weak feasible-solution construction, and insufficient solution improvement. OR-specific procedural skills increase hard-task feasibility, but do not reliably improve solution quality or pass rate. These results suggest that progress in OR agents requires moving beyond plausible optimization code toward dependable, high-quality operational decision-making.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.19787v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.19787v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.19787" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.21169.html"><strong>Trip+: Benchmarking Agents in Personalized Interactive Travel Planning</strong></a> <span>2026-06-19</span></li>
+          <li><a href="2606.21140.html"><strong>Matching Matters: A Fair Quality-Efficiency Benchmark for Command-Line Agents</strong></a> <span>2026-06-19</span></li>
+          <li><a href="2606.20950.html"><strong>Power Systems Agent Benchmark: Executable Evaluation of AI Agents in Electric Power Engineering</strong></a> <span>2026-06-18</span></li>
+          <li><a href="2606.20235.html"><strong>ScholarQuest: A Taxonomy-Guided Benchmark for Agentic Academic Paper Search in Open Literature Environments</strong></a> <span>2026-06-18</span></li>
+          <li><a href="2606.19749.html"><strong>Benchmarking Agentic Review Systems</strong></a> <span>2026-06-18</span></li>
+          <li><a href="2606.19704.html"><strong>Beyond Static Leaderboards: Predictive Validity for the Evaluation of LLM Agents</strong></a> <span>2026-06-18</span></li>
+          <li><a href="2606.19416.html"><strong>MortarBench: Evaluating Mortgage Loan Origination Agents</strong></a> <span>2026-06-17</span></li>
+          <li><a href="2606.19245.html"><strong>TxBench-PP: Analyzing AI Agent Performance on Small-Molecule Preclinical Pharmacology</strong></a> <span>2026-06-17</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>TimeSage-MT: A Multi-Turn Benchmark for Evaluating Agentic Time Series Reasoning | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Time series data inform critical decisions across many real-world domains. While large language model (LLM) agents can analyze data…" />
+    <meta name="keywords" content="Dialogue, Tool use, Memory, Planning / reasoning, Dialogue / customer, agent benchmark, LLM agent, arXiv, 2606.01498" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.01498.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="TimeSage-MT: A Multi-Turn Benchmark for Evaluating Agentic Time Series Reasoning" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Time series data inform critical decisions across many real-world domains. While large language model (LLM) agents can analyze data…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.01498.html" />
+    <meta property="article:published_time" content="2026-05-31T23:34:35Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="TimeSage-MT: A Multi-Turn Benchmark for Evaluating Agentic Time Series Reasoning" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Time series data inform critical decisions across many real-world domains. While large language model (LLM) agents can analyze data…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,91 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "TimeSage-MT: A Multi-Turn Benchmark for Evaluating Agentic Time Series Reasoning",
+  "name": "TimeSage-MT: A Multi-Turn Benchmark for Evaluating Agentic Time Series Reasoning",
+  "abstract": "Time series data inform critical decisions across many real-world domains. While large language model (LLM) agents can analyze data through natural language and tools, it remains unclear whether they can conduct reliable time series analysis across multi-turn conversations. Existing benchmarks focus on single-step tasks such as forecasting and anomaly detection, overlooking practical workflows where user goals evolve, agents must build on prior analyses, and conclusions emerge from accumulated evidence. In this work, we introduce TimeSage-MT, a multi-turn benchmark for agentic time series reasoning with 240 tasks and 2,680 dialogue turns across 8 real-world domains, spanning basic exploration to decision-oriented analysis. TimeSage-MT is built through a reproducible pipeline that converts real-world time series data into multi-turn conversations with verifiable answers. It provides a unified evaluation protocol and public leaderboard for comparing time series agentic systems. To demonstrate the benchmark's utility, we evaluate frontier LLMs alongside TimeSage, a novel structured agent equipped with a comprehensive time series skill library. The results show sharp performance drops on decision-oriented tasks, driven by failures in memory, uncertainty handling, and domain-based decision making. TimeSage-MT exposes critical gaps in current agentic reasoning and provides a rigorous foundation for future development.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yaxuan Kong"
+    },
+    {
+      "@type": "Person",
+      "name": "Qingren Yao"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuqi Nie"
+    },
+    {
+      "@type": "Person",
+      "name": "Yichen Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Yilei Shao"
+    },
+    {
+      "@type": "Person",
+      "name": "Stefan Zohren"
+    },
+    {
+      "@type": "Person",
+      "name": "Anna Vettoruzzo"
+    },
+    {
+      "@type": "Person",
+      "name": "Joaquin Vanschoren"
+    },
+    {
+      "@type": "Person",
+      "name": "Ming Jin"
+    },
+    {
+      "@type": "Person",
+      "name": "Qingsong Wen"
+    }
+  ],
+  "datePublished": "2026-05-31T23:34:35Z",
+  "dateModified": "2026-05-31T23:34:35Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.01498.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.01498.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.01498v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.01498"
+  },
+  "keywords": [
+    "Dialogue",
+    "Tool use",
+    "Memory",
+    "Planning / reasoning",
+    "Dialogue / customer",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Dialogue"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.01498v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.01498"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +123,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>TimeSage-MT: A Multi-Turn Benchmark for Evaluating Agentic Time Series Reasoning</h1>
+        <div class="meta">
+          Yaxuan Kong, Qingren Yao, Yuqi Nie, Yichen Li, Yilei Shao, Stefan Zohren, Anna Vettoruzzo, Joaquin Vanschoren, Ming Jin, Qingsong Wen
+          · 2606.01498
+          · <time datetime="2026-05-31">2026-05-31</time>
+          · Dialogue · 1 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Memory</span><span class="chip">Planning / reasoning</span><span class="chip">Dialogue / customer</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Time series data inform critical decisions across many real-world domains. While large language model (LLM) agents can analyze data through natural language and tools, it remains unclear whether they can conduct reliable time series analysis across multi-turn conversations. Existing benchmarks focus on single-step tasks such as forecasting and anomaly detection, overlooking practical workflows where user goals evolve, agents must build on prior analyses, and conclusions emerge from accumulated evidence. In this work, we introduce TimeSage-MT, a multi-turn benchmark for agentic time series reasoning with 240 tasks and 2,680 dialogue turns across 8 real-world domains, spanning basic exploration to decision-oriented analysis. TimeSage-MT is built through a reproducible pipeline that converts real-world time series data into multi-turn conversations with verifiable answers. It provides a unified evaluation protocol and public leaderboard for comparing time series agentic systems. To demonstrate the benchmark&#x27;s utility, we evaluate frontier LLMs alongside TimeSage, a novel structured agent equipped with a comprehensive time series skill library. The results show sharp performance drops on decision-oriented tasks, driven by failures in memory, uncertainty handling, and domain-based decision making. TimeSage-MT exposes critical gaps in current agentic reasoning and provides a rigorous foundation for future development.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.01498v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.01498v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.01498" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Dialogue benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.00009.html"><strong>AgentMemBench: A Systematic Benchmark for Evaluating Long-Term Memory Management Strategies in Conversational AI Agents</strong></a> <span>2026-06-16</span></li>
+          <li><a href="2606.14571.html"><strong>StreamMemBench: Streaming Evaluation of Agent Memory for Future-Oriented Assistance</strong></a> <span>2026-06-12</span></li>
+          <li><a href="2606.10156.html"><strong>$τ$-Rec: A Verifiable Benchmark for Agentic Recommender Systems</strong></a> <span>2026-06-08</span></li>
+          <li><a href="2606.02754.html"><strong>$Ψ$-Bench: Evaluating Persona-Sensitive Influencing in Persuasive Dialogues</strong></a> <span>2026-06-01</span></li>
+          <li><a href="2605.25200.html"><strong>GroupTravelBench: Benchmarking LLM Agents on Multi-Person Travel Planning</strong></a> <span>2026-05-24</span></li>
+          <li><a href="2608.02613.html"><strong>MemArena: An Ego-Centric Benchmark for On-Device Agentic Personal Memory Assistants at Scale</strong></a> <span>2026-05-20</span></li>
+          <li><a href="2605.19099.html"><strong>DecisionBench: A Benchmark for Emergent Delegation in Long-Horizon Agentic Workflows</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.18565.html"><strong>MINTEval: Evaluating Memory under Multi-Target Interference in Long-Horizon Agent Systems</strong></a> <span>2026-05-18</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

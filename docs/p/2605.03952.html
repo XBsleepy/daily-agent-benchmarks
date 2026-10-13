@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MOSAIC-Bench: Measuring Compositional Vulnerability Induction in Coding Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Coding agents often pass per-prompt safety review yet ship exploitable code when their tasks are decomposed into routine engineering…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Safety, agent benchmark, LLM agent, arXiv, 2605.03952" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.03952.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MOSAIC-Bench: Measuring Compositional Vulnerability Induction in Coding Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Coding agents often pass per-prompt safety review yet ship exploitable code when their tasks are decomposed into routine engineering…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.03952.html" />
+    <meta property="article:published_time" content="2026-05-05T16:38:23Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MOSAIC-Bench: Measuring Compositional Vulnerability Induction in Coding Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Coding agents often pass per-prompt safety review yet ship exploitable code when their tasks are decomposed into routine engineering…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,57 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MOSAIC-Bench: Measuring Compositional Vulnerability Induction in Coding Agents",
+  "name": "MOSAIC-Bench: Measuring Compositional Vulnerability Induction in Coding Agents",
+  "abstract": "Coding agents often pass per-prompt safety review yet ship exploitable code when their tasks are decomposed into routine engineering tickets. The challenge is structural: existing safety alignment evaluates overt requests in isolation, leaving models blind to malicious end-states that emerge from sequenced compliance with innocuous-looking requests. We introduce MOSAIC-Bench (Malicious Objectives Sequenced As Innocuous Compliance), a benchmark of 199 three-stage attack chains paired with deterministic exploit oracles on deployed software substrates (10 web-application substrates, 31 CWE classes, 5 programming languages) that treats both exploit ground truth and downstream reviewer protocol as first-class evaluation axes. On this benchmark, nine production coding agents from Anthropic, OpenAI, Google, Moonshot, Zhipu, and Minimax compose innocuous tickets at 53-86% end-to-end ASR with only two refusals across all staged runs. In a matched direct-prompt experiment over four frontier Claude/Codex agents, vulnerable-output rates fall to 0-20.4%: Claude primarily refuses, while Codex primarily hardens rather than emitting the vulnerable implementation - ticket staging silences both defense modes simultaneously. Downstream, code reviewer agents approve 25.8% of these confirmed-vulnerable cumulative diffs as routine PRs, and a full-context implementation protocol closes only 50% of the staged/direct gap, ruling out context fragmentation as the sole explanation. As a deployable but non-adaptive mitigation, reframing the reviewer as an adversarial pentester reduces evasion across the evaluated reviewer subset; pentester framed evasion ranges from 3.0% to 17.6%, and an open-weight Gemma-4-E4B-it reviewer under this framing detects 88.4% of attacks on the dataset with a 4.6% false-positive rate measured on 608 real-world GitHub PRs.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jonathan Steinberg"
+    },
+    {
+      "@type": "Person",
+      "name": "Oren Gal"
+    }
+  ],
+  "datePublished": "2026-05-05T16:38:23Z",
+  "dateModified": "2026-05-05T16:38:23Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.03952.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.03952.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.03952v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.03952"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.03952v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.03952"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +89,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MOSAIC-Bench: Measuring Compositional Vulnerability Induction in Coding Agents</h1>
+        <div class="meta">
+          Jonathan Steinberg, Oren Gal
+          · 2605.03952
+          · <time datetime="2026-05-05">2026-05-05</time>
+          · Coding / SWE · 4 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Coding agents often pass per-prompt safety review yet ship exploitable code when their tasks are decomposed into routine engineering tickets. The challenge is structural: existing safety alignment evaluates overt requests in isolation, leaving models blind to malicious end-states that emerge from sequenced compliance with innocuous-looking requests. We introduce MOSAIC-Bench (Malicious Objectives Sequenced As Innocuous Compliance), a benchmark of 199 three-stage attack chains paired with deterministic exploit oracles on deployed software substrates (10 web-application substrates, 31 CWE classes, 5 programming languages) that treats both exploit ground truth and downstream reviewer protocol as first-class evaluation axes. On this benchmark, nine production coding agents from Anthropic, OpenAI, Google, Moonshot, Zhipu, and Minimax compose innocuous tickets at 53-86% end-to-end ASR with only two refusals across all staged runs. In a matched direct-prompt experiment over four frontier Claude/Codex agents, vulnerable-output rates fall to 0-20.4%: Claude primarily refuses, while Codex primarily hardens rather than emitting the vulnerable implementation - ticket staging silences both defense modes simultaneously. Downstream, code reviewer agents approve 25.8% of these confirmed-vulnerable cumulative diffs as routine PRs, and a full-context implementation protocol closes only 50% of the staged/direct gap, ruling out context fragmentation as the sole explanation. As a deployable but non-adaptive mitigation, reframing the reviewer as an adversarial pentester reduces evasion across the evaluated reviewer subset; pentester framed evasion ranges from 3.0% to 17.6%, and an open-weight Gemma-4-E4B-it reviewer under this framing detects 88.4% of attacks on the dataset with a 4.6% false-positive rate measured on 608 real-world GitHub PRs.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.03952v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.03952v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.03952" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.08647.html"><strong>AgentCollabBench: Diagnosing When Good Agents Make Bad Collaborators</strong></a> <span>2026-05-09</span></li>
+          <li><a href="2605.08366.html"><strong>SWE Atlas: Benchmarking Coding Agents Beyond Issue Resolution</strong></a> <span>2026-05-08</span></li>
+          <li><a href="2605.06125.html"><strong>Breaking, Stale, or Missing? Benchmarking Coding Agents on Project-Level Test Evolution</strong></a> <span>2026-05-07</span></li>
+          <li><a href="2605.04637.html"><strong>SWE-WebDevBench: Evaluating Coding Agent Application Platforms as Virtual Software Agencies</strong></a> <span>2026-05-06</span></li>
+          <li><a href="2605.00803.html"><strong>Can Coding Agents Reproduce Findings in Computational Materials Science?</strong></a> <span>2026-05-01</span></li>
+          <li><a href="2604.26278.html"><strong>SWE-Bench 5G: Benchmarking AI Coding Agents on Telecom Network Engineering Tasks</strong></a> <span>2026-04-29</span></li>
+          <li><a href="2604.23897.html"><strong>MarketBench: Evaluating AI Agents as Market Participants</strong></a> <span>2026-04-26</span></li>
+          <li><a href="2604.17180.html"><strong>BranchBench: Aligning Database Branching with Agentic Demands</strong></a> <span>2026-04-19</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

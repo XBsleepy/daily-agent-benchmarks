@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>DecisionBench: A Benchmark for Emergent Delegation in Long-Horizon Agentic Workflows | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: We introduce DecisionBench, a benchmark substrate for emergent delegation in long-horizon agentic workflows. The substrate fixes a…" />
+    <meta name="keywords" content="Dialogue, Tool use, Dialogue / customer, agent benchmark, LLM agent, arXiv, 2605.19099" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.19099.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="DecisionBench: A Benchmark for Emergent Delegation in Long-Horizon Agentic Workflows" />
+    <meta property="og:description" content="Daily Agent Benchmarks: We introduce DecisionBench, a benchmark substrate for emergent delegation in long-horizon agentic workflows. The substrate fixes a…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.19099.html" />
+    <meta property="article:published_time" content="2026-05-18T20:37:14Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="DecisionBench: A Benchmark for Emergent Delegation in Long-Horizon Agentic Workflows" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: We introduce DecisionBench, a benchmark substrate for emergent delegation in long-horizon agentic workflows. The substrate fixes a…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,69 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "DecisionBench: A Benchmark for Emergent Delegation in Long-Horizon Agentic Workflows",
+  "name": "DecisionBench: A Benchmark for Emergent Delegation in Long-Horizon Agentic Workflows",
+  "abstract": "We introduce DecisionBench, a benchmark substrate for emergent delegation in long-horizon agentic workflows. The substrate fixes a task suite (GAIA, tau-bench, BFCL multi-turn), a peer-model pool (11 models, 7 vendor families), a delegation interface (call_model plus an optional read_profile channel), a deterministic skill-annotation layer, and a multi-axis metric suite covering quality, cost, latency, delegation rate, routing fidelity-at-k, vendor self-preference, and a counterfactual-delegation ceiling. The substrate is agnostic to how peer information is generated or delivered, so learned routers, richer peer memories, adaptive profile construction, and multi-step delegation can all be evaluated against it. We characterize the substrate with a five-condition reference sweep on the full pool (n=23,375 task instances). Three benchmark-level findings emerge: (i) mean end-task quality is statistically indistinguishable across the four awareness conditions (|beta| <= 0.010, p >= 0.21), so quality-only evaluation would miss the orchestration signal; (ii) routing fidelity-at-1 ranges from 7.5% to 29.5% across conditions at near-equal mean quality, with delivery channel (on-demand tool vs. preloaded description) dominating description content; (iii) a counterfactual ceiling places perfect delegation 15-31 percentage points above measured performance on every suite, locating large unrealized headroom for future orchestration methods. We release the substrate, annotation layer, reference intervention suite, analysis pipeline, and 220 per-condition run archives.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yuxuan Gao"
+    },
+    {
+      "@type": "Person",
+      "name": "Megan Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yi Ling Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zijian Carl Ma"
+    },
+    {
+      "@type": "Person",
+      "name": "Ao Qu"
+    }
+  ],
+  "datePublished": "2026-05-18T20:37:14Z",
+  "dateModified": "2026-05-18T20:37:14Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.19099.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.19099.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.19099v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.19099"
+  },
+  "keywords": [
+    "Dialogue",
+    "Tool use",
+    "Dialogue / customer",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Dialogue"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.19099v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.19099"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +101,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>DecisionBench: A Benchmark for Emergent Delegation in Long-Horizon Agentic Workflows</h1>
+        <div class="meta">
+          Yuxuan Gao, Megan Wang, Yi Ling Yu, Zijian Carl Ma, Ao Qu
+          · 2605.19099
+          · <time datetime="2026-05-18">2026-05-18</time>
+          · Dialogue · 2 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Dialogue / customer</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>We introduce DecisionBench, a benchmark substrate for emergent delegation in long-horizon agentic workflows. The substrate fixes a task suite (GAIA, tau-bench, BFCL multi-turn), a peer-model pool (11 models, 7 vendor families), a delegation interface (call_model plus an optional read_profile channel), a deterministic skill-annotation layer, and a multi-axis metric suite covering quality, cost, latency, delegation rate, routing fidelity-at-k, vendor self-preference, and a counterfactual-delegation ceiling. The substrate is agnostic to how peer information is generated or delivered, so learned routers, richer peer memories, adaptive profile construction, and multi-step delegation can all be evaluated against it. We characterize the substrate with a five-condition reference sweep on the full pool (n=23,375 task instances). Three benchmark-level findings emerge: (i) mean end-task quality is statistically indistinguishable across the four awareness conditions (|beta| &lt;= 0.010, p &gt;= 0.21), so quality-only evaluation would miss the orchestration signal; (ii) routing fidelity-at-1 ranges from 7.5% to 29.5% across conditions at near-equal mean quality, with delivery channel (on-demand tool vs. preloaded description) dominating description content; (iii) a counterfactual ceiling places perfect delegation 15-31 percentage points above measured performance on every suite, locating large unrealized headroom for future orchestration methods. We release the substrate, annotation layer, reference intervention suite, analysis pipeline, and 220 per-condition run archives.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.19099v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.19099v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.19099" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Dialogue benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.02754.html"><strong>$Ψ$-Bench: Evaluating Persona-Sensitive Influencing in Persuasive Dialogues</strong></a> <span>2026-06-01</span></li>
+          <li><a href="2606.01498.html"><strong>TimeSage-MT: A Multi-Turn Benchmark for Evaluating Agentic Time Series Reasoning</strong></a> <span>2026-05-31</span></li>
+          <li><a href="2605.25200.html"><strong>GroupTravelBench: Benchmarking LLM Agents on Multi-Person Travel Planning</strong></a> <span>2026-05-24</span></li>
+          <li><a href="2608.02613.html"><strong>MemArena: An Ego-Centric Benchmark for On-Device Agentic Personal Memory Assistants at Scale</strong></a> <span>2026-05-20</span></li>
+          <li><a href="2605.18565.html"><strong>MINTEval: Evaluating Memory under Multi-Target Interference in Long-Horizon Agent Systems</strong></a> <span>2026-05-18</span></li>
+          <li><a href="2605.16207.html"><strong>Confirming Correct, Missing the Rest: LLM Tutoring Agents Struggle Where Feedback Matters Most</strong></a> <span>2026-05-15</span></li>
+          <li><a href="2604.18356.html"><strong>ComPASS: Towards Personalized Agentic Social Support via Tool-Augmented Companionship</strong></a> <span>2026-04-20</span></li>
+          <li><a href="2604.01576.html"><strong>Care-Conditioned Neuromodulation for Autonomy-Preserving Supportive Dialogue Agents</strong></a> <span>2026-04-02</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

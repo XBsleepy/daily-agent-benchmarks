@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>PDDLCoder: Agentic PDDL Generation for LLM-Assisted Symbolic Planning | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLMs remain unreliable for long-horizon planning, often generating logically inconsistent or non-applicable plans. Recent hybrid…" />
+    <meta name="keywords" content="General, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2608.16637" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.16637.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="PDDLCoder: Agentic PDDL Generation for LLM-Assisted Symbolic Planning" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLMs remain unreliable for long-horizon planning, often generating logically inconsistent or non-applicable plans. Recent hybrid…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.16637.html" />
+    <meta property="article:published_time" content="2026-08-17T14:34:56Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PDDLCoder: Agentic PDDL Generation for LLM-Assisted Symbolic Planning" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLMs remain unreliable for long-horizon planning, often generating logically inconsistent or non-applicable plans. Recent hybrid…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,64 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "PDDLCoder: Agentic PDDL Generation for LLM-Assisted Symbolic Planning",
+  "name": "PDDLCoder: Agentic PDDL Generation for LLM-Assisted Symbolic Planning",
+  "abstract": "LLMs remain unreliable for long-horizon planning, often generating logically inconsistent or non-applicable plans. Recent hybrid methods instead translate natural language into the Planning Domain Definition Language (PDDL), allowing symbolic planners to produce verifiable plans. However, existing methods frequently rely on rigid generation pipelines, a partial PDDL definition, or human feedback. Furthermore, their evaluation is hindered by the lack of standardized benchmarks with automated verification. To address these limitations, we present PDDLCoder, an agentic framework for PDDL generation from natural language that iteratively generates, analyzes, and refines planning specifications. We further introduce NL-pddlgym, a benchmark dataset comprising 711 planning problems across 23 domains with executable gym environments for the automated verification of plan applicability. Experiments on the NL-pddlgym test set containing 106 problems across 4 held-out domains show that PDDLCoder generates applicable plans for 89.6\\% of tested planning problems. This improves upon our adaptations of previous PDDL generation methods, which achieved up to 45.3\\%, and outperforms direct LLM planning approaches, which reached up to 74.5\\% on the same test set. Our work demonstrates the effectiveness of agentic PDDL generation for planning and establishes a reproducible benchmark for future research on LLM-assisted symbolic planning.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Veit Laule"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiangtao Shuai"
+    },
+    {
+      "@type": "Person",
+      "name": "Manfred Hauswirth"
+    },
+    {
+      "@type": "Person",
+      "name": "Sonja Schimmler"
+    }
+  ],
+  "datePublished": "2026-08-17T14:34:56Z",
+  "dateModified": "2026-08-17T14:34:56Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.16637.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.16637.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.16637v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.16637"
+  },
+  "keywords": [
+    "General",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.16637v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.16637"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +96,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>PDDLCoder: Agentic PDDL Generation for LLM-Assisted Symbolic Planning</h1>
+        <div class="meta">
+          Veit Laule, Jiangtao Shuai, Manfred Hauswirth, Sonja Schimmler
+          · 2608.16637
+          · <time datetime="2026-08-17">2026-08-17</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLMs remain unreliable for long-horizon planning, often generating logically inconsistent or non-applicable plans. Recent hybrid methods instead translate natural language into the Planning Domain Definition Language (PDDL), allowing symbolic planners to produce verifiable plans. However, existing methods frequently rely on rigid generation pipelines, a partial PDDL definition, or human feedback. Furthermore, their evaluation is hindered by the lack of standardized benchmarks with automated verification. To address these limitations, we present PDDLCoder, an agentic framework for PDDL generation from natural language that iteratively generates, analyzes, and refines planning specifications. We further introduce NL-pddlgym, a benchmark dataset comprising 711 planning problems across 23 domains with executable gym environments for the automated verification of plan applicability. Experiments on the NL-pddlgym test set containing 106 problems across 4 held-out domains show that PDDLCoder generates applicable plans for 89.6\% of tested planning problems. This improves upon our adaptations of previous PDDL generation methods, which achieved up to 45.3\%, and outperforms direct LLM planning approaches, which reached up to 74.5\% on the same test set. Our work demonstrates the effectiveness of agentic PDDL generation for planning and establishes a reproducible benchmark for future research on LLM-assisted symbolic planning.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.16637v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.16637v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.16637" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.19741.html"><strong>One Success Isn&#x27;t Reliability: Thinkingbox, a Sandbox and Benchmark for Agents in Stateful Business Workflows</strong></a> <span>2026-08-20</span></li>
+          <li><a href="2608.19653.html"><strong>DeltaML-Bench: Evaluating Machine Learning Agents on Real-World Research Repositories</strong></a> <span>2026-08-20</span></li>
+          <li><a href="2608.18423.html"><strong>FM-Bench: A Benchmark for Long-Horizon Management with Competing Agents</strong></a> <span>2026-08-19</span></li>
+          <li><a href="2608.17889.html"><strong>VisDocAgentBench: Benchmarking Agents for Visually Rich Document Retrieval</strong></a> <span>2026-08-18</span></li>
+          <li><a href="2608.16349.html"><strong>AeroCopilotBench: A Two-Tier Benchmark for Evaluating LLM Agents as Aviation Copilots in an Interactive Virtual Cockpit Environment</strong></a> <span>2026-08-17</span></li>
+          <li><a href="2608.16055.html"><strong>Governance at the Boundary: How Agent Decomposition Degrades Policy Compliance</strong></a> <span>2026-08-17</span></li>
+          <li><a href="2608.15654.html"><strong>When Stories Evolve: Benchmarking LLM Storytelling Across Agent Architectures in Open-Ended World Simulations</strong></a> <span>2026-08-16</span></li>
+          <li><a href="2608.15242.html"><strong>LongRCA Bench: Diagnosing Responsible Roles and Root Causes in Long-Horizon Agent Failures</strong></a> <span>2026-08-15</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

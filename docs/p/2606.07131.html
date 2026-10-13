@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>MalSkillBench: A Runtime-Verified Benchmark of Malicious Agent Skills | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: AI coding agents such as Claude Code and Gemini CLI increasingly extend themselves with third-party skills: markdown packages…" />
+    <meta name="keywords" content="Safety, Coding agents, Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2606.07131" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.07131.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MalSkillBench: A Runtime-Verified Benchmark of Malicious Agent Skills" />
+    <meta property="og:description" content="Daily Agent Benchmarks: AI coding agents such as Claude Code and Gemini CLI increasingly extend themselves with third-party skills: markdown packages…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.07131.html" />
+    <meta property="article:published_time" content="2026-06-05T10:43:19Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MalSkillBench: A Runtime-Verified Benchmark of Malicious Agent Skills" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: AI coding agents such as Claude Code and Gemini CLI increasingly extend themselves with third-party skills: markdown packages…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,82 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MalSkillBench: A Runtime-Verified Benchmark of Malicious Agent Skills",
+  "name": "MalSkillBench: A Runtime-Verified Benchmark of Malicious Agent Skills",
+  "abstract": "AI coding agents such as Claude Code and Gemini CLI increasingly extend themselves with third-party skills: markdown packages bundling natural-language instructions, executable scripts, and tool permissions. Because a skill is at once code and agent-facing instruction, it introduces a supply chain dependency whose risk is neither pure code nor pure prompt. Detection tools have never been measured against verified ground truth spanning this hybrid space, leaving their effectiveness unknown and wild-only evaluations biased. We present MalSkillBench, the first runtime-verified benchmark of malicious agent skills: 3,944 malicious skills labeled along a three-dimensional taxonomy of 108 cells. Of these, 3,214 come from a closed-loop Generate-Verify-Feedback pipeline admitting only samples whose malicious behavior fires inside a Docker sandbox under system-call monitoring and an LLM judge; we add 703 in-the-wild and 4,000 matched benign skills. Our measurements are consistent: code injection reaches 94.5% verification yield but prompt injection only 75.8%, the same fragility that later makes it hard to detect; the wild sample is narrow, dominated by one cryptocurrency-theft campaign (86.6% one behavior, 81% from two accounts) with a small but architecturally new tail attacking the agent control plane; the strongest skill-specific detector reaches 98.4% recall on code injection yet collapses on prompt-injection and agent-control attacks, and wild-only scoring swings the ranking by up to 66 recall points; supply-chain scanners and prompt-injection defenses each see only half of a skill, and no combination recovers the code-instruction relationship. Detecting malicious skills therefore requires reasoning jointly over task intent, code, and instructions. We release the dataset, pipeline, baselines, and results.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Wenbo Guo"
+    },
+    {
+      "@type": "Person",
+      "name": "Wei Zeng"
+    },
+    {
+      "@type": "Person",
+      "name": "Chengwei Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaojun Jia"
+    },
+    {
+      "@type": "Person",
+      "name": "Yijia Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Lei Tang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yong Fang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yang Liu"
+    }
+  ],
+  "datePublished": "2026-06-05T10:43:19Z",
+  "dateModified": "2026-06-19T05:32:49Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.07131.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2606.07131.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2606.07131v3"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2606.07131"
+  },
+  "keywords": [
+    "Safety",
+    "Coding agents",
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Safety"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2606.07131v3"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2606.07131"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +114,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MalSkillBench: A Runtime-Verified Benchmark of Malicious Agent Skills</h1>
+        <div class="meta">
+          Wenbo Guo, Wei Zeng, Chengwei Liu, Xiaojun Jia, Yijia Xu, Lei Tang, Yong Fang, Yang Liu
+          · 2606.07131
+          · <time datetime="2026-06-05">2026-06-05</time>
+          · Safety · 11 citations
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span><span class="chip">Safety</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>AI coding agents such as Claude Code and Gemini CLI increasingly extend themselves with third-party skills: markdown packages bundling natural-language instructions, executable scripts, and tool permissions. Because a skill is at once code and agent-facing instruction, it introduces a supply chain dependency whose risk is neither pure code nor pure prompt. Detection tools have never been measured against verified ground truth spanning this hybrid space, leaving their effectiveness unknown and wild-only evaluations biased. We present MalSkillBench, the first runtime-verified benchmark of malicious agent skills: 3,944 malicious skills labeled along a three-dimensional taxonomy of 108 cells. Of these, 3,214 come from a closed-loop Generate-Verify-Feedback pipeline admitting only samples whose malicious behavior fires inside a Docker sandbox under system-call monitoring and an LLM judge; we add 703 in-the-wild and 4,000 matched benign skills. Our measurements are consistent: code injection reaches 94.5% verification yield but prompt injection only 75.8%, the same fragility that later makes it hard to detect; the wild sample is narrow, dominated by one cryptocurrency-theft campaign (86.6% one behavior, 81% from two accounts) with a small but architecturally new tail attacking the agent control plane; the strongest skill-specific detector reaches 98.4% recall on code injection yet collapses on prompt-injection and agent-control attacks, and wild-only scoring swings the ranking by up to 66 recall points; supply-chain scanners and prompt-injection defenses each see only half of a skill, and no combination recovers the code-instruction relationship. Detecting malicious skills therefore requires reasoning jointly over task intent, code, and instructions. We release the dataset, pipeline, baselines, and results.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2606.07131v3" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2606.07131v3" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2606.07131" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Safety benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2606.22528.html"><strong>Governance Decay: How Context Compaction Silently Erases Safety Constraints in Long-Horizon LLM Agents</strong></a> <span>2026-06-21</span></li>
+          <li><a href="2606.20408.html"><strong>NRT-Bench: Benchmarking Multi-Turn Red-Teaming of LLM Operator Agents in Safety-Critical Control Rooms</strong></a> <span>2026-06-18</span></li>
+          <li><a href="2606.13994.html"><strong>Hidden in Plain Sight: Benchmarking Agent Safety Against Decomposition Attacks with DECOMPBENCH</strong></a> <span>2026-06-12</span></li>
+          <li><a href="2606.07867.html"><strong>The Cold-Start Safety Gap in LLM Agents</strong></a> <span>2026-06-05</span></li>
+          <li><a href="2605.29224.html"><strong>Relevance as a Vulnerability: How Web Retrieval Degrades Safety Alignment in LLM Agents</strong></a> <span>2026-05-28</span></li>
+          <li><a href="2605.22643.html"><strong>Boiling the Frog: A Multi-Turn Benchmark for Agentic Safety</strong></a> <span>2026-05-21</span></li>
+          <li><a href="2605.14271.html"><strong>Auditing Agent Harness Safety</strong></a> <span>2026-05-14</span></li>
+          <li><a href="2605.12015.html"><strong>SkillSafetyBench: Evaluating Agent Safety under Skill-Facing Attack Surfaces</strong></a> <span>2026-05-12</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

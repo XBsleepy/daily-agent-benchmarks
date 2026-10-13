@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ScrambleToolBench: Agents Search Exhaustively Even When Their Own Map Points to the Next Step | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: To operate robustly in open-world environments, autonomous agents should be able to infer the behavior of unfamiliar systems through…" />
+    <meta name="keywords" content="General, Tool use, Safety, Memory, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2608.02358" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.02358.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ScrambleToolBench: Agents Search Exhaustively Even When Their Own Map Points to the Next Step" />
+    <meta property="og:description" content="Daily Agent Benchmarks: To operate robustly in open-world environments, autonomous agents should be able to infer the behavior of unfamiliar systems through…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.02358.html" />
+    <meta property="article:published_time" content="2026-08-03T15:07:46Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ScrambleToolBench: Agents Search Exhaustively Even When Their Own Map Points to the Next Step" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: To operate robustly in open-world environments, autonomous agents should be able to infer the behavior of unfamiliar systems through…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,71 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ScrambleToolBench: Agents Search Exhaustively Even When Their Own Map Points to the Next Step",
+  "name": "ScrambleToolBench: Agents Search Exhaustively Even When Their Own Map Points to the Next Step",
+  "abstract": "To operate robustly in open-world environments, autonomous agents should be able to infer the behavior of unfamiliar systems through interaction alone, even in the absence of documentation. However, existing tool-use benchmarks expose semantic tool schemas in static environments, allowing agents to rely on prior knowledge rather than autonomous discovery. To address this limitation, we introduce ScrambleToolBench, an interactive terminal benchmark designed to isolate behavioral reasoning. By removing semantic cues and enforcing a continuous task curriculum, the benchmark requires agents to uncover hidden tool behaviors entirely through trial-and-error interaction. The benchmark further introduces dynamic challenges, including mapping drift, stochastic action failures, and temporal execution windows, to evaluate whether agents can revise and adapt their hypotheses as the environment changes. Our evaluation of state-of-the-art language models reveals that successful initial discovery does not translate into robust adaptation. When faced with structural changes such as mapping drift, agents fail to use deductive strategies such as cycle tracing, and instead exhibit belief inertia or fall back to exhaustive search. Increasing test-time reasoning only amplifies this expensive brute-force search rather than enabling deductive recovery. While equipping agents with persistent memory reduces compounding errors, they remain unable to efficiently infer structural changes, highlighting a gap in current agent reasoning.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Vernon Toh"
+    },
+    {
+      "@type": "Person",
+      "name": "Navonil Majumder"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhengyuan Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Nancy F. Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Soujanya Poria"
+    }
+  ],
+  "datePublished": "2026-08-03T15:07:46Z",
+  "dateModified": "2026-08-03T15:07:46Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.02358.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.02358.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.02358v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.02358"
+  },
+  "keywords": [
+    "General",
+    "Tool use",
+    "Safety",
+    "Memory",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.02358v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.02358"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +103,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ScrambleToolBench: Agents Search Exhaustively Even When Their Own Map Points to the Next Step</h1>
+        <div class="meta">
+          Vernon Toh, Navonil Majumder, Zhengyuan Liu, Nancy F. Chen, Soujanya Poria
+          · 2608.02358
+          · <time datetime="2026-08-03">2026-08-03</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span><span class="chip">Memory</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>To operate robustly in open-world environments, autonomous agents should be able to infer the behavior of unfamiliar systems through interaction alone, even in the absence of documentation. However, existing tool-use benchmarks expose semantic tool schemas in static environments, allowing agents to rely on prior knowledge rather than autonomous discovery. To address this limitation, we introduce ScrambleToolBench, an interactive terminal benchmark designed to isolate behavioral reasoning. By removing semantic cues and enforcing a continuous task curriculum, the benchmark requires agents to uncover hidden tool behaviors entirely through trial-and-error interaction. The benchmark further introduces dynamic challenges, including mapping drift, stochastic action failures, and temporal execution windows, to evaluate whether agents can revise and adapt their hypotheses as the environment changes. Our evaluation of state-of-the-art language models reveals that successful initial discovery does not translate into robust adaptation. When faced with structural changes such as mapping drift, agents fail to use deductive strategies such as cycle tracing, and instead exhibit belief inertia or fall back to exhaustive search. Increasing test-time reasoning only amplifies this expensive brute-force search rather than enabling deductive recovery. While equipping agents with persistent memory reduces compounding errors, they remain unable to efficiently infer structural changes, highlighting a gap in current agent reasoning.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.02358v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.02358v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.02358" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2608.03699.html"><strong>TARL: Transaction-Aware Reliable Ledgers for Executable Memory Management in Long-Term Agents</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.03591.html"><strong>DiagChain: A Diagnostic Benchmark for Evaluating LLM Agents on Evidence-Grounded Attack Chain Reconstruction</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.03206.html"><strong>EduClaw-Bench: A Long-Horizon Benchmark for Pedagogical LLM Agents with Simulated Learners</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.03018.html"><strong>UrbanAgent: A Tool-Augmented Agent for Cross-System Urban Tasks</strong></a> <span>2026-08-04</span></li>
+          <li><a href="2608.02171.html"><strong>From Profiling to Synthesis: Benchmarking Implicit Behavioral Alignment in Personalized LLM Agents</strong></a> <span>2026-08-03</span></li>
+          <li><a href="2608.01684.html"><strong>GABench: A Comprehensive Benchmark for Evaluating LLM Agents on Graph Analysis Tasks</strong></a> <span>2026-08-03</span></li>
+          <li><a href="2608.01358.html"><strong>HopRefusalBench: Diagnosing Refusal Failures in Search-Augmented Agents for Multi-Hop Reasoning</strong></a> <span>2026-08-02</span></li>
+          <li><a href="2608.00677.html"><strong>OpenART: Scaling Agent Red Teaming via Open-Ended Environment Evolution</strong></a> <span>2026-08-01</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

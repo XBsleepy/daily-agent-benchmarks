@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>StepJack: Benchmarking Computer-Use Agent Safety Against Multi-Step Indirect Prompt Injection | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Computer-use agents (CUAs) face a growing threat from indirect prompt injection, where adversarial instructions are planted in the…" />
+    <meta name="keywords" content="GUI / computer use, Computer use, Safety, agent benchmark, LLM agent, arXiv, 2608.06477" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.06477.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="StepJack: Benchmarking Computer-Use Agent Safety Against Multi-Step Indirect Prompt Injection" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Computer-use agents (CUAs) face a growing threat from indirect prompt injection, where adversarial instructions are planted in the…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.06477.html" />
+    <meta property="article:published_time" content="2026-08-06T18:14:30Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="StepJack: Benchmarking Computer-Use Agent Safety Against Multi-Step Indirect Prompt Injection" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Computer-use agents (CUAs) face a growing threat from indirect prompt injection, where adversarial instructions are planted in the…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,69 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "StepJack: Benchmarking Computer-Use Agent Safety Against Multi-Step Indirect Prompt Injection",
+  "name": "StepJack: Benchmarking Computer-Use Agent Safety Against Multi-Step Indirect Prompt Injection",
+  "abstract": "Computer-use agents (CUAs) face a growing threat from indirect prompt injection, where adversarial instructions are planted in the environment such as web pages. In this paper, we introduce multi-step indirect prompt injection, a new attack class against CUAs in which the adversarial goal is decomposed into multiple innocuous-looking sub-steps and distributed across a chain of pages referenced along the agent's navigation path. We develop a pipeline to automatically decompose an adversarial goal under the constraint that the execution of the decomposed sub-steps must achieve the original goal while optimizing the innocuousness of each decomposed sub-step. With this pipeline, we build StepJack, a CUA safety benchmark with 480 test examples. On this benchmark, we evaluate six state-of-the-art CUAs and find that at a fixed decomposition depth, multi-step attacks raise attack success rate (ASR) on three of six CUAs, by up to 31.2 points (e.g., GPT-5.4-mini: 41.7% at single-step to 72.9% at three-step); averaged over the five CUAs that can reliably follow the reference chain (all but EvoCUA-32B), ASR rises from 31.3% at single-step to 36.9% at three-step. Dataset and code are available at https://github.com/BorealisAI/StepJack.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Zhuoxin Zhan"
+    },
+    {
+      "@type": "Person",
+      "name": "Akbar Rafiey"
+    },
+    {
+      "@type": "Person",
+      "name": "Avery Ma"
+    },
+    {
+      "@type": "Person",
+      "name": "Leila Pishdad"
+    },
+    {
+      "@type": "Person",
+      "name": "Layla El Asri"
+    }
+  ],
+  "datePublished": "2026-08-06T18:14:30Z",
+  "dateModified": "2026-08-06T18:14:30Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.06477.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2608.06477.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2608.06477v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2608.06477"
+  },
+  "keywords": [
+    "GUI / computer use",
+    "Computer use",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "GUI / computer use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2608.06477v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2608.06477"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +101,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>StepJack: Benchmarking Computer-Use Agent Safety Against Multi-Step Indirect Prompt Injection</h1>
+        <div class="meta">
+          Zhuoxin Zhan, Akbar Rafiey, Avery Ma, Leila Pishdad, Layla El Asri
+          · 2608.06477
+          · <time datetime="2026-08-06">2026-08-06</time>
+          · GUI / computer use
+        </div>
+        <div class="themes"><span class="chip">Computer use</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Computer-use agents (CUAs) face a growing threat from indirect prompt injection, where adversarial instructions are planted in the environment such as web pages. In this paper, we introduce multi-step indirect prompt injection, a new attack class against CUAs in which the adversarial goal is decomposed into multiple innocuous-looking sub-steps and distributed across a chain of pages referenced along the agent&#x27;s navigation path. We develop a pipeline to automatically decompose an adversarial goal under the constraint that the execution of the decomposed sub-steps must achieve the original goal while optimizing the innocuousness of each decomposed sub-step. With this pipeline, we build StepJack, a CUA safety benchmark with 480 test examples. On this benchmark, we evaluate six state-of-the-art CUAs and find that at a fixed decomposition depth, multi-step attacks raise attack success rate (ASR) on three of six CUAs, by up to 31.2 points (e.g., GPT-5.4-mini: 41.7% at single-step to 72.9% at three-step); averaged over the five CUAs that can reliably follow the reference chain (all but EvoCUA-32B), ASR rises from 31.3% at single-step to 36.9% at three-step. Dataset and code are available at https://github.com/BorealisAI/StepJack.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2608.06477v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2608.06477v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2608.06477" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More GUI / computer use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2609.03438.html"><strong>Do GUI Agents Know When Not to Act? Enabling Conflict-Aware Termination for Multimodal GUI Agents</strong></a> <span>2026-09-03</span></li>
+          <li><a href="2609.00048.html"><strong>GUI-CC: Benchmarking Contextual Consistency of GUI World Models as Agent Environments</strong></a> <span>2026-08-30</span></li>
+          <li><a href="2608.26204.html"><strong>ADeptS-Bench: Measuring the Trustworthiness of Computer Use Agents Across Devices</strong></a> <span>2026-08-25</span></li>
+          <li><a href="2608.18307.html"><strong>ComponentBench: Diagnosing Component-Level Failures in Computer-Use Agents</strong></a> <span>2026-08-18</span></li>
+          <li><a href="2607.28074.html"><strong>Echoverse: Deep, Evolving Environments for Training Computer-Use Agents at Scale</strong></a> <span>2026-07-30</span></li>
+          <li><a href="2607.26041.html"><strong>Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions?</strong></a> <span>2026-07-28</span></li>
+          <li><a href="2607.25904.html"><strong>Interactive Reward Agent: GUI Task Evaluation via Environment-State Verification</strong></a> <span>2026-07-28</span></li>
+          <li><a href="2607.22689.html"><strong>Beyond Sequential Interaction: Benchmarking Parallel Execution and Coordination for GUI Agents</strong></a> <span>2026-07-17</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

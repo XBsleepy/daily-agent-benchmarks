@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>ToolFailBench: Diagnosing Tool-Use Failures in LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Tool calling is central to modern language model agents, but aggregate benchmark scores often hide where tool use fails. A model that…" />
+    <meta name="keywords" content="Tool use, agent benchmark, LLM agent, arXiv, 2607.04686" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.04686.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ToolFailBench: Diagnosing Tool-Use Failures in LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Tool calling is central to modern language model agents, but aggregate benchmark scores often hide where tool use fails. A model that…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.04686.html" />
+    <meta property="article:published_time" content="2026-07-06T05:25:21Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ToolFailBench: Diagnosing Tool-Use Failures in LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Tool calling is central to modern language model agents, but aggregate benchmark scores often hide where tool use fails. A model that…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,51 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ToolFailBench: Diagnosing Tool-Use Failures in LLM Agents",
+  "name": "ToolFailBench: Diagnosing Tool-Use Failures in LLM Agents",
+  "abstract": "Tool calling is central to modern language model agents, but aggregate benchmark scores often hide where tool use fails. A model that never calls a needed tool and a model that calls the tool but ignores the result can look similar under final task accuracy. We introduce ToolFailBench, a diagnostic benchmark for measuring tool-use failures across 1,000 tasks in finance, medicine, law, cybersecurity, and real estate. Tool-required tasks return values the model wouldn't guess, forcing it to trust the tool while control tasks attach the same tools but should be answered directly. We label each trace with Tool-Skip, Result-Ignore, Output-Fabrication, and Unnecessary-Tool-Use, using a rule classifier and two LLM judges aggregated by majority vote. Across 19 headline models, the best reaches 86.33% Clean Tool-Use Rate, showing that faithful tool use is not saturated. More importantly, models with similar aggregate scores fail in different ways: most stay disciplined on no-tool controls, while Llama-3.1 models show an Always-Call pattern, and at the same parameter scale Llama-3.1-70B and Qwen2.5-72B differ by 89 percentage points on control-task accuracy. Tool-use evaluation should measure not only whether agents call tools, but whether they use tool outputs correctly and avoid tools when none is needed.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Harsh Soni"
+    }
+  ],
+  "datePublished": "2026-07-06T05:25:21Z",
+  "dateModified": "2026-07-06T05:25:21Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.04686.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2607.04686.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2607.04686v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2607.04686"
+  },
+  "keywords": [
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2607.04686v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2607.04686"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +83,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ToolFailBench: Diagnosing Tool-Use Failures in LLM Agents</h1>
+        <div class="meta">
+          Harsh Soni
+          · 2607.04686
+          · <time datetime="2026-07-06">2026-07-06</time>
+          · Tool use · 2 citations
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Tool calling is central to modern language model agents, but aggregate benchmark scores often hide where tool use fails. A model that never calls a needed tool and a model that calls the tool but ignores the result can look similar under final task accuracy. We introduce ToolFailBench, a diagnostic benchmark for measuring tool-use failures across 1,000 tasks in finance, medicine, law, cybersecurity, and real estate. Tool-required tasks return values the model wouldn&#x27;t guess, forcing it to trust the tool while control tasks attach the same tools but should be answered directly. We label each trace with Tool-Skip, Result-Ignore, Output-Fabrication, and Unnecessary-Tool-Use, using a rule classifier and two LLM judges aggregated by majority vote. Across 19 headline models, the best reaches 86.33% Clean Tool-Use Rate, showing that faithful tool use is not saturated. More importantly, models with similar aggregate scores fail in different ways: most stay disciplined on no-tool controls, while Llama-3.1 models show an Always-Call pattern, and at the same parameter scale Llama-3.1-70B and Qwen2.5-72B differ by 89 percentage points on control-task accuracy. Tool-use evaluation should measure not only whether agents call tools, but whether they use tool outputs correctly and avoid tools when none is needed.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2607.04686v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2607.04686v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2607.04686" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2607.14642.html"><strong>MCPEvol-Bench: Benchmarking LLM Agent Performance Across Dynamic Evolutions of MCP Servers</strong></a> <span>2026-07-16</span></li>
+          <li><a href="2607.20536.html"><strong>AppWorld-UL: Benchmarking Diverse Agent-User Interactions for Tool-Use</strong></a> <span>2026-07-10</span></li>
+          <li><a href="2607.20531.html"><strong>DynamicMCPBench: A Trace-Grounded, Effect-Scored Benchmark for LLM Agents over Live MCP Servers</strong></a> <span>2026-07-10</span></li>
+          <li><a href="2607.05775.html"><strong>Beyond the Leaderboard: A Synthesis of Tool-Use, Planning, and Reasoning Failures in Large Language Model Agents</strong></a> <span>2026-07-07</span></li>
+          <li><a href="2606.29073.html"><strong>From Tool Connection to Execution Control: Benchmarking Security Invariants in MCP-Style Agent Runtimes</strong></a> <span>2026-06-27</span></li>
+          <li><a href="2606.25819.html"><strong>Beyond Function Calling: Benchmarking Tool-Using Agents under Tool-Environment Unreliability</strong></a> <span>2026-06-24</span></li>
+          <li><a href="2606.22388.html"><strong>PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems</strong></a> <span>2026-06-21</span></li>
+          <li><a href="2606.03657.html"><strong>Diagnosing Knowledge Gaps in LLM Tool Use: An Agentic Benchmark for Novel API Acquisition</strong></a> <span>2026-06-02</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>

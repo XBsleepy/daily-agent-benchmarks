@@ -3,7 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily Agent Benchmarks</title>
+    <title>AgentTrap: Measuring Runtime Trust Failures in Third-Party Agent Skills | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Third-party skills are becoming the package ecosystem for LLM agents. They package natural-language instructions, helper scripts…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2605.13940" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.13940.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AgentTrap: Measuring Runtime Trust Failures in Third-Party Agent Skills" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Third-party skills are becoming the package ecosystem for LLM agents. They package natural-language instructions, helper scripts…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.13940.html" />
+    <meta property="article:published_time" content="2026-05-13T17:04:17Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AgentTrap: Measuring Runtime Trust Failures in Third-Party Agent Skills" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Third-party skills are becoming the package ecosystem for LLM agents. They package natural-language instructions, helper scripts…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +25,79 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AgentTrap: Measuring Runtime Trust Failures in Third-Party Agent Skills",
+  "name": "AgentTrap: Measuring Runtime Trust Failures in Third-Party Agent Skills",
+  "abstract": "Third-party skills are becoming the package ecosystem for LLM agents. They package natural-language instructions, helper scripts, templates, documents, and service configuration into reusable workflows. This makes skills useful, but it also introduces a new security problem: a malicious skill does not need to ask the model to perform an obviously harmful action. Instead, it can disguise the harmful behavior as part of a routine workflow, relying on the agent to execute that workflow with high-value permissions and limited human supervision. We introduce AgentTrap, a dynamic benchmark for evaluating whether LLM agents can use third-party skills while resisting malicious runtime behavior. AgentTrap contains 141 tasks: 91 malicious tasks and 50 benign utility tasks, covering 16 security-impact dimensions grounded in agent-skill supply-chain threats. In each task, the agent receives an ordinary user request, runs with installed skills that may contain malicious workflow elements, and is executed in a sandboxed environment. AgentTrap then judges complete trajectories for attack success, blocked or refused behavior, attack-not-triggered cases, and no-attack-evidence outcomes. Our central finding is that the most informative failures are not simple jailbreaks. Models often complete the visible user task while treating unsafe side effects introduced by the skill as part of the normal workflow. This motivates runtime evaluation of the concrete model--framework--workspace environment in which users actually delegate work. Code and data are available at https://github.com/zhmzm/AgentTrap and https://huggingface.co/datasets/zhmzm/AgentTrap.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Haomin Zhuang"
+    },
+    {
+      "@type": "Person",
+      "name": "Hanwen Xing"
+    },
+    {
+      "@type": "Person",
+      "name": "Yujun Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuchen Ma"
+    },
+    {
+      "@type": "Person",
+      "name": "Yue Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yili Shen"
+    },
+    {
+      "@type": "Person",
+      "name": "Yufei Han"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiangliang Zhang"
+    }
+  ],
+  "datePublished": "2026-05-13T17:04:17Z",
+  "dateModified": "2026-05-13T17:04:17Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.13940.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2605.13940.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2605.13940v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2605.13940"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2605.13940v1"
+  }
+}
+    </script>
     <script>window.PAPER_ID = "2605.13940"; window.PAPER_BASE = "../";</script>
   </head>
   <body>
@@ -25,11 +111,51 @@
         </a>
       </div>
     </header>
-    <main id="main" class="paper-page"></main>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AgentTrap: Measuring Runtime Trust Failures in Third-Party Agent Skills</h1>
+        <div class="meta">
+          Haomin Zhuang, Hanwen Xing, Yujun Zhou, Yuchen Ma, Yue Huang, Yili Shen, Yufei Han, Xiangliang Zhang
+          · 2605.13940
+          · <time datetime="2026-05-13">2026-05-13</time>
+          · General · 4 citations
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Third-party skills are becoming the package ecosystem for LLM agents. They package natural-language instructions, helper scripts, templates, documents, and service configuration into reusable workflows. This makes skills useful, but it also introduces a new security problem: a malicious skill does not need to ask the model to perform an obviously harmful action. Instead, it can disguise the harmful behavior as part of a routine workflow, relying on the agent to execute that workflow with high-value permissions and limited human supervision. We introduce AgentTrap, a dynamic benchmark for evaluating whether LLM agents can use third-party skills while resisting malicious runtime behavior. AgentTrap contains 141 tasks: 91 malicious tasks and 50 benign utility tasks, covering 16 security-impact dimensions grounded in agent-skill supply-chain threats. In each task, the agent receives an ordinary user request, runs with installed skills that may contain malicious workflow elements, and is executed in a sandboxed environment. AgentTrap then judges complete trajectories for attack success, blocked or refused behavior, attack-not-triggered cases, and no-attack-evidence outcomes. Our central finding is that the most informative failures are not simple jailbreaks. Models often complete the visible user task while treating unsafe side effects introduced by the skill as part of the normal workflow. This motivates runtime evaluation of the concrete model--framework--workspace environment in which users actually delegate work. Code and data are available at https://github.com/zhmzm/AgentTrap and https://huggingface.co/datasets/zhmzm/AgentTrap.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2605.13940v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2605.13940v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2605.13940" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2605.15230.html"><strong>EnergyAgentBench: Benchmarking LLM Agents on Live Energy Infrastructure Data</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.15229.html"><strong>PBT-Bench: Benchmarking AI Agents on Property-Based Testing</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.14153.html"><strong>ExploitBench: A Capability Ladder Benchmark for LLM Cybersecurity Agents</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.14133.html"><strong>ClawForge: Generating Executable Interactive Benchmarks for Command-Line Agents</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.13909.html"><strong>TERMS-Bench: Diagnosing LLM Negotiation Agents Beyond Deal Rate</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.13841.html"><strong>EVA-Bench: A New End-to-end Framework for Evaluating Voice Agents</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.13542.html"><strong>RealICU: Do LLM Agents Understand Long-Context ICU Data? A Benchmark Beyond Behavior Imitation</strong></a> <span>2026-05-13</span></li>
+          <li><a href="2605.12887.html"><strong>EcoGEO: Trajectory-Aware Evidence Ecosystems for Web-Enabled LLM Search Agents</strong></a> <span>2026-05-13</span></li>
+      </ol>
+    </nav>
     <footer class="colophon">
-      <p>
-        <span id="page-visitors"></span>
-        · <span id="site-visitors"></span>
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
     <script defer src="https://events.vercount.one/js"></script>
