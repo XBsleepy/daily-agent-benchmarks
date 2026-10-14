@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AM-Bench: Understanding Agents under Task Underspecification across Models and Harnesses | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Ambiguous or incomplete task specifications complicate both execution and clarification for language-model agents. Yet agents&#x27;…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Science lab, agent benchmark, LLM agent, arXiv, 2610.18090" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.18090.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AM-Bench: Understanding Agents under Task Underspecification across Models and Harnesses" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Ambiguous or incomplete task specifications complicate both execution and clarification for language-model agents. Yet agents&#x27;…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.18090.html" />
+    <meta property="article:published_time" content="2026-10-13T10:11:05Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AM-Bench: Understanding Agents under Task Underspecification across Models and Harnesses" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Ambiguous or incomplete task specifications complicate both execution and clarification for language-model agents. Yet agents&#x27;…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AM-Bench: Understanding Agents under Task Underspecification across Models and Harnesses",
+  "name": "AM-Bench: Understanding Agents under Task Underspecification across Models and Harnesses",
+  "abstract": "Ambiguous or incomplete task specifications complicate both execution and clarification for language-model agents. Yet agents' responses to these information gaps remain poorly characterized across models and execution harnesses. We present AM-Bench, a benchmark built from 48 tasks adapted from Terminal-Bench 2.0 and Harness-Bench. Each task includes a fully specified reference and six variants spanning ambiguous or missing goals, context, and constraints. We evaluate every pairing of five models and four harnesses over 20,160 runs. Our results reveal distinct execution deficits: goal gaps hinder completion, context gaps increase token use, and constraint gaps weaken compliance without necessarily preventing completion. Missingness lowers success more than ambiguity in all three domains. These effects also reshape system comparisons: advantages under complete information need not persist, and rankings depend on model $\\times$ harness pairings and the evaluation criterion -- completion, success, or repeat consistency. Estimates based on observed clarification requests and matched fully specified runs further suggest that clarification could recover unfinished work while leaving most constraint violations unresolved. Together, these findings motivate joint model-harness evaluation across information conditions and targeted clarification of unresolved requirements before dependent actions. To support future research on agents under task underspecification, we provide the AM-Bench project repository at https://github.com/s4-lab-cuhksz/AM-Bench.git.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Kaiyu Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yiting Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Angyang Gu"
+    },
+    {
+      "@type": "Person",
+      "name": "Pinjia He"
+    },
+    {
+      "@type": "Person",
+      "name": "Minchen Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Qingjiang Shi"
+    }
+  ],
+  "datePublished": "2026-10-13T10:11:05Z",
+  "dateModified": "2026-10-13T10:11:05Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.18090.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.18090.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.18090v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.18090"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.18090v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.18090"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AM-Bench: Understanding Agents under Task Underspecification across Models and Harnesses</h1>
+        <div class="meta">
+          Kaiyu Huang, Yiting Li, Angyang Gu, Pinjia He, Minchen Yu, Qingjiang Shi
+          · 2610.18090
+          · <time datetime="2026-10-13">2026-10-13</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Ambiguous or incomplete task specifications complicate both execution and clarification for language-model agents. Yet agents&#x27; responses to these information gaps remain poorly characterized across models and execution harnesses. We present AM-Bench, a benchmark built from 48 tasks adapted from Terminal-Bench 2.0 and Harness-Bench. Each task includes a fully specified reference and six variants spanning ambiguous or missing goals, context, and constraints. We evaluate every pairing of five models and four harnesses over 20,160 runs. Our results reveal distinct execution deficits: goal gaps hinder completion, context gaps increase token use, and constraint gaps weaken compliance without necessarily preventing completion. Missingness lowers success more than ambiguity in all three domains. These effects also reshape system comparisons: advantages under complete information need not persist, and rankings depend on model $\times$ harness pairings and the evaluation criterion -- completion, success, or repeat consistency. Estimates based on observed clarification requests and matched fully specified runs further suggest that clarification could recover unfinished work while leaving most constraint violations unresolved. Together, these findings motivate joint model-harness evaluation across information conditions and targeted clarification of unresolved requirements before dependent actions. To support future research on agents under task underspecification, we provide the AM-Bench project repository at https://github.com/s4-lab-cuhksz/AM-Bench.git.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.18090v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.18090v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.18090" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.18206.html"><strong>SWE-MISBEHAVIOR: Benchmarking and Mitigating Boundary Violations in Software Coding Agents</strong></a> <span>2026-10-13</span></li>
+          <li><a href="2610.17288.html"><strong>PhysCodeGym: Benchmarking Coding Agents for Physically Verifiable 4D Reconstruction</strong></a> <span>2026-10-12</span></li>
+          <li><a href="2610.17020.html"><strong>CWE-bench: Refocusing Agentic Security from Exploitation to Defense</strong></a> <span>2026-10-12</span></li>
+          <li><a href="2610.16870.html"><strong>SpecGuardBench: Can Coding Agents Construct Reliable Validation Harnesses from Natural Language Specifications?</strong></a> <span>2026-10-12</span></li>
+          <li><a href="2610.16859.html"><strong>ANCHOR: Assessing Naturalistic Constraint Hierarchies and Ordering in Repository-Grounded Agentic Coding</strong></a> <span>2026-10-12</span></li>
+          <li><a href="2610.16402.html"><strong>EvoWeb: A Benchmark for Coding Agents on Evolving Web Applications</strong></a> <span>2026-10-12</span></li>
+          <li><a href="2610.13668.html"><strong>(When) Should a Software Factory be Lights-off? Benchmarking Code Review Agents on Bug Detection</strong></a> <span>2026-10-09</span></li>
+          <li><a href="2610.13361.html"><strong>AgentSWE: Can Coding Agents Build the Agent You Actually Want?</strong></a> <span>2026-10-09</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

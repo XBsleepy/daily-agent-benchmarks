@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LatentRiskBench: Measuring State-Dependent Risks in Enterprise Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Enterprise agents face safety risks that cannot be determined from individual actions alone. Existing safety benchmarks largely…" />
+    <meta name="keywords" content="Work / office, Safety, agent benchmark, LLM agent, arXiv, 2610.17685" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.17685.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="LatentRiskBench: Measuring State-Dependent Risks in Enterprise Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Enterprise agents face safety risks that cannot be determined from individual actions alone. Existing safety benchmarks largely…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.17685.html" />
+    <meta property="article:published_time" content="2026-10-13T04:07:44Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="LatentRiskBench: Measuring State-Dependent Risks in Enterprise Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Enterprise agents face safety risks that cannot be determined from individual actions alone. Existing safety benchmarks largely…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "LatentRiskBench: Measuring State-Dependent Risks in Enterprise Agents",
+  "name": "LatentRiskBench: Measuring State-Dependent Risks in Enterprise Agents",
+  "abstract": "Enterprise agents face safety risks that cannot be determined from individual actions alone. Existing safety benchmarks largely evaluate action-local risks, overlooking failures whose safety depends on workflow state. In such state-dependent risks, the same action may be safe in one context but violate policy in another. Hence, we introduce LatentRiskBench for evaluating such state-dependent risks in enterprise settings. It pairs risky trajectories with benign counterparts that share the same terminal action but differ in latent policy-relevant states, requiring models to reconstruct workflow context rather than rely on action-level cues. We also introduce new metrics for state-dependent risk evaluation, including a suite of residual risk (RR) measures. Experiments on the benchmark show that action-level evaluation detects only 0.09 of state-dependent violations, whereas state-level evaluation reaches 0.96. Existing guardrail methods largely overlook such risks unless they are explicitly applied to workflow states. Case studies on a commercial deployed scenario further show that the safety metrics embedded in the benchmark provide a more realistic measure of safety for enterprise agents. Our dataset and code are available at https://github.com/JingyueCong/LatentRiskBench.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jingyue Cong"
+    },
+    {
+      "@type": "Person",
+      "name": "Estrid He"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhuang Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Nan Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Li Shen"
+    },
+    {
+      "@type": "Person",
+      "name": "Yameng Peng"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinshu Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Andy Song"
+    }
+  ],
+  "datePublished": "2026-10-13T04:07:44Z",
+  "dateModified": "2026-10-13T04:07:44Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.17685.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.17685.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.17685v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.17685"
+  },
+  "keywords": [
+    "Work / office",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Work / office"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.17685v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.17685"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>LatentRiskBench: Measuring State-Dependent Risks in Enterprise Agents</h1>
+        <div class="meta">
+          Jingyue Cong, Estrid He, Zhuang Li, Nan Wu, Li Shen, Yameng Peng, Xinshu Li, Andy Song
+          · 2610.17685
+          · <time datetime="2026-10-13">2026-10-13</time>
+          · Work / office
+        </div>
+        <div class="themes"><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Enterprise agents face safety risks that cannot be determined from individual actions alone. Existing safety benchmarks largely evaluate action-local risks, overlooking failures whose safety depends on workflow state. In such state-dependent risks, the same action may be safe in one context but violate policy in another. Hence, we introduce LatentRiskBench for evaluating such state-dependent risks in enterprise settings. It pairs risky trajectories with benign counterparts that share the same terminal action but differ in latent policy-relevant states, requiring models to reconstruct workflow context rather than rely on action-level cues. We also introduce new metrics for state-dependent risk evaluation, including a suite of residual risk (RR) measures. Experiments on the benchmark show that action-level evaluation detects only 0.09 of state-dependent violations, whereas state-level evaluation reaches 0.96. Existing guardrail methods largely overlook such risks unless they are explicitly applied to workflow states. Case studies on a commercial deployed scenario further show that the safety metrics embedded in the benchmark provide a more realistic measure of safety for enterprise agents. Our dataset and code are available at https://github.com/JingyueCong/LatentRiskBench.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.17685v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.17685v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.17685" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Work / office benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.14918.html"><strong>SkillForgeBench: Evaluating Agent Reliability Grounded in Agent Skill Specifications</strong></a> <span>2026-10-10</span></li>
+          <li><a href="2610.08102.html"><strong>DSV-Mem: Evaluating Multimodal Memory in Professional Workflows for MLLM Agents</strong></a> <span>2026-10-06</span></li>
+          <li><a href="2610.00316.html"><strong>DuplexSpeechBench-Document Grounding: Benchmarking Document Grounding and Hallucinations in Voice Agents</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2609.37658.html"><strong>EnterpriseBench: Benchmarking LLM Agents on Enterprise-Level Strategic Reasoning and Decision-Making</strong></a> <span>2026-09-29</span></li>
+          <li><a href="2609.36308.html"><strong>CheatBench: Measuring Reward Gaming in AI Agents</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.34973.html"><strong>APEX-Voice: Can Voice Agents Complete Professional Workflows Through Full-Duplex Interaction</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.30055.html"><strong>Era by Eon: Benchmarking Enterprise Agents on Hidden Knowledge</strong></a> <span>2026-09-25</span></li>
+          <li><a href="2609.29718.html"><strong>PPTBench: Can Coding Agents Reconstruct the Visual World through Structured, Editable Slides</strong></a> <span>2026-09-25</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

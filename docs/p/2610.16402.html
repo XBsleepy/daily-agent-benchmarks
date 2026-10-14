@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EvoWeb: A Benchmark for Coding Agents on Evolving Web Applications | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Web application development often proceeds through successive requests that extend an existing implementation. Yet web-generation…" />
+    <meta name="keywords" content="Coding / SWE, Web agents, Coding agents, Multimodal, agent benchmark, LLM agent, arXiv, 2610.16402" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.16402.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="EvoWeb: A Benchmark for Coding Agents on Evolving Web Applications" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Web application development often proceeds through successive requests that extend an existing implementation. Yet web-generation…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.16402.html" />
+    <meta property="article:published_time" content="2026-10-12T08:42:42Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="EvoWeb: A Benchmark for Coding Agents on Evolving Web Applications" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Web application development often proceeds through successive requests that extend an existing implementation. Yet web-generation…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "EvoWeb: A Benchmark for Coding Agents on Evolving Web Applications",
+  "name": "EvoWeb: A Benchmark for Coding Agents on Evolving Web Applications",
+  "abstract": "Web application development often proceeds through successive requests that extend an existing implementation. Yet web-generation benchmarks primarily evaluate development toward fixed specifications. We introduce EvoWeb, a novel benchmark comprising 320 cumulative requests over 32 web applications, grounded in real-world product features and structured by functional dependency graphs. Agents iteratively modify a persistent codebase, while a multimodal web agent tests each intermediate application in a live browser, assessing newly requested functionality, cross-request integration, and previously requested functionality. To characterize reliability throughout development, we integrate trajectory performance across user-tolerance thresholds rather than impose a fixed stopping criterion. Experiments across open- and closed-source frontier models show that EvoWeb reveals clear performance differences between models, with cross-request integration emerging as a key challenge. Further analysis shows that later requests with deeper or more numerous dependencies are solved less accurately, while runtime errors become more frequent over successive requests. EvoWeb provides a testbed for evaluating and improving coding agents in long-horizon, multi-request development.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Nukrai"
+    },
+    {
+      "@type": "Person",
+      "name": "Bar Alon"
+    },
+    {
+      "@type": "Person",
+      "name": "Nativ Levy"
+    },
+    {
+      "@type": "Person",
+      "name": "Ido Andrew Atad"
+    },
+    {
+      "@type": "Person",
+      "name": "Ido Cohen"
+    },
+    {
+      "@type": "Person",
+      "name": "Itamar Zimerman"
+    },
+    {
+      "@type": "Person",
+      "name": "Lior Wolf"
+    },
+    {
+      "@type": "Person",
+      "name": "Eli David"
+    },
+    {
+      "@type": "Person",
+      "name": "Ilan Naiman"
+    }
+  ],
+  "datePublished": "2026-10-12T08:42:42Z",
+  "dateModified": "2026-10-12T08:42:42Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.16402.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.16402.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.16402v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.16402"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Web agents",
+    "Coding agents",
+    "Multimodal",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.16402v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.16402"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>EvoWeb: A Benchmark for Coding Agents on Evolving Web Applications</h1>
+        <div class="meta">
+          David Nukrai, Bar Alon, Nativ Levy, Ido Andrew Atad, Ido Cohen, Itamar Zimerman, Lior Wolf, Eli David, Ilan Naiman
+          · 2610.16402
+          · <time datetime="2026-10-12">2026-10-12</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Web agents</span><span class="chip">Coding agents</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Web application development often proceeds through successive requests that extend an existing implementation. Yet web-generation benchmarks primarily evaluate development toward fixed specifications. We introduce EvoWeb, a novel benchmark comprising 320 cumulative requests over 32 web applications, grounded in real-world product features and structured by functional dependency graphs. Agents iteratively modify a persistent codebase, while a multimodal web agent tests each intermediate application in a live browser, assessing newly requested functionality, cross-request integration, and previously requested functionality. To characterize reliability throughout development, we integrate trajectory performance across user-tolerance thresholds rather than impose a fixed stopping criterion. Experiments across open- and closed-source frontier models show that EvoWeb reveals clear performance differences between models, with cross-request integration emerging as a key challenge. Further analysis shows that later requests with deeper or more numerous dependencies are solved less accurately, while runtime errors become more frequent over successive requests. EvoWeb provides a testbed for evaluating and improving coding agents in long-horizon, multi-request development.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.16402v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.16402v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.16402" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.17288.html"><strong>PhysCodeGym: Benchmarking Coding Agents for Physically Verifiable 4D Reconstruction</strong></a> <span>2026-10-12</span></li>
+          <li><a href="2610.17020.html"><strong>CWE-bench: Refocusing Agentic Security from Exploitation to Defense</strong></a> <span>2026-10-12</span></li>
+          <li><a href="2610.16870.html"><strong>SpecGuardBench: Can Coding Agents Construct Reliable Validation Harnesses from Natural Language Specifications?</strong></a> <span>2026-10-12</span></li>
+          <li><a href="2610.16859.html"><strong>ANCHOR: Assessing Naturalistic Constraint Hierarchies and Ordering in Repository-Grounded Agentic Coding</strong></a> <span>2026-10-12</span></li>
+          <li><a href="2610.13668.html"><strong>(When) Should a Software Factory be Lights-off? Benchmarking Code Review Agents on Bug Detection</strong></a> <span>2026-10-09</span></li>
+          <li><a href="2610.13361.html"><strong>AgentSWE: Can Coding Agents Build the Agent You Actually Want?</strong></a> <span>2026-10-09</span></li>
+          <li><a href="2610.12569.html"><strong>SWE-Duel: Towards a Self-Scaling Arena for Coding Agents</strong></a> <span>2026-10-08</span></li>
+          <li><a href="2610.12452.html"><strong>BrickBench: Evaluating Agentic Brick Design</strong></a> <span>2026-10-08</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

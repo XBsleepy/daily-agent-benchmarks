@@ -1,0 +1,543 @@
+{
+  "date": "2026-10-13",
+  "count": 12,
+  "report": {
+    "date": "2026-10-13",
+    "count": 12,
+    "themes": [
+      {
+        "id": "research",
+        "count": 2,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "science",
+        "count": 2,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      }
+    ],
+    "en": {
+      "headline": "12 new agent benchmarks",
+      "summary": "On October 13, 2026, arXiv listed 12 new agent benchmarks. Work clustered around Research agents (2), Science lab (2), Coding agents (2), and Tool use (2).",
+      "highlights": [
+        {
+          "id": "2610.17794",
+          "title": "GIFT-Eval-CTX: A Benchmark For Contextual Forecasting Model Evaluation",
+          "blurb": "Contextual forecasting seeks to improve time series forecasting by incorporating forward-looking information, such as planned events, external conditions, and expert expectations."
+        },
+        {
+          "id": "2610.18449",
+          "title": "Autonomous Science Bench: Evaluating AI Agents for Autonomous Scientific Discovery",
+          "blurb": "AI agents for autonomous scientific discovery must decide which experiments to run under a limited budget."
+        },
+        {
+          "id": "2610.18052",
+          "title": "Can Agents Forget When Asked? A Benchmark for Memory Unlearning in LLM Agents",
+          "blurb": "Long-term memory has become a core component of large language model (LLM) agents."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 12 篇 Agent Benchmark",
+      "summary": "2026年10月13日，arXiv 新增 12 篇 Agent Benchmark。当日主题集中在科研智能体（2）、科学实验（2）、代码智能体（2）、工具使用（2）。",
+      "highlights": [
+        {
+          "id": "2610.17794",
+          "title": "GIFT-Eval-CTX: A Benchmark For Contextual Forecasting Model Evaluation",
+          "blurb": "Contextual forecasting seeks to improve time series forecasting by incorporating forward-looking information, such as planned events, external conditions, and expert expectations."
+        },
+        {
+          "id": "2610.18449",
+          "title": "Autonomous Science Bench: Evaluating AI Agents for Autonomous Scientific Discovery",
+          "blurb": "AI agents for autonomous scientific discovery must decide which experiments to run under a limited budget."
+        },
+        {
+          "id": "2610.18052",
+          "title": "Can Agents Forget When Asked? A Benchmark for Memory Unlearning in LLM Agents",
+          "blurb": "Long-term memory has become a core component of large language model (LLM) agents."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2610.18449",
+      "title": "Autonomous Science Bench: Evaluating AI Agents for Autonomous Scientific Discovery",
+      "abstract": "AI agents for autonomous scientific discovery must decide which experiments to run under a limited budget. Most benchmarks for science agents provide fixed datasets, while others that support active experimentation largely rely on simulation. We introduce Autonomous Science Bench, an initial release comprising six budgeted design-build-test-learn campaigns grounded in published experiments across biology, chemistry, and materials science. Agents select batches of designs, receive measurements from a lab service, and use the results to guide subsequent experiments before delivering a predictive model. Success requires passing two calibrated gates: a discovery gate, which evaluates the designs the agent measured, and a learning gate, which evaluates its model's ranking of held-out designs. In a pilot evaluation of eight agent-model configurations and 144 trials, the best configuration succeeds in 67% of trials, while the hardest campaign is solved in only three of 24 attempts. The two gates reveal different weaknesses: some agents build accurate rankings but find too few promising designs, while others find promising designs but fail to predict which unseen designs will perform well. These differences are obscured by overall success rates alone. We release version 0.1 of the campaigns, lab runtime, and public leaderboard at https://yibow.me/autonomous-science-bench.",
+      "authors": [
+        "Yibo Wen",
+        "Han Liu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-13T14:18:56Z",
+      "updated": "2026-10-13T14:18:56Z",
+      "announced_date": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.18449v1",
+        "pdf": "https://arxiv.org/pdf/2610.18449v1",
+        "html": "https://arxiv.org/html/2610.18449"
+      },
+      "score": 16,
+      "tags": [
+        "research",
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2610.18307",
+      "title": "I2O2I-Nav: A Benchmark with a Modular Agent for Long-Horizon Indoor-to-Outdoor-to-Indoor Navigation",
+      "abstract": "Service and delivery robots often need to complete long-horizon navigation missions spanning indoor and outdoor environments. Existing embodied navigation benchmarks primarily evaluate isolated stages or partial cross-domain journeys, providing limited support for assessing how heterogeneous navigation capabilities compose under continuous execution. We introduce I2O2I-Nav, a physics-enabled benchmark of 20 real-world composite scenes spanning over 115,000 square meters across multiple buildings and floors, with aligned 3DGS rendering and collision geometry. Its three-level evaluation progresses from independent primitives to two-stage compositions and complete four-stage I2O2I missions. Each stage starts from its predecessor's actual endpoint, while stage-conditional metrics track completion and localize failures along the mission. We further propose the MODULAR-Agent that coordinates frozen navigation policies through completion verification, stage handoffs, and bounded recovery. Evaluation across 1,374 episodes highlights the difficulty of continuous composition. The MODULAR-Agent achieves 40.5-76% success on individual primitives, but full I2O2I success remains low. Compared with a fixed policy chain using the same underlying policies, it more than doubles success on both Indoor-to-Outdoor (I2O) and Outdoor-to-Indoor (O2I), while improving full-mission success from 1.15% to 4.02%. Stage-wise analysis shows that the MODULAR-Agent enables more missions to reach the final object-navigation stage, where conditional success remains low, revealing challenges in both long-horizon stage execution and completion decisions.",
+      "authors": [
+        "Zhengjie Shu",
+        "Wanyu Li",
+        "Di Xiao",
+        "Lingxin Jiang",
+        "Lai Jiang",
+        "Kaidi Hu",
+        "Xincheng Tang",
+        "Wenkang Hu",
+        "Haoran Wang",
+        "Jinchuan Zhang",
+        "Chang Chen",
+        "Wei Li",
+        "Jia Pan",
+        "Ruigang Yang"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-13T12:52:13Z",
+      "updated": "2026-10-13T12:52:13Z",
+      "announced_date": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "comment": "28 pages. Project page: https://i2o2i-nav.github.io/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.18307v1",
+        "pdf": "https://arxiv.org/pdf/2610.18307v1",
+        "html": "https://arxiv.org/html/2610.18307"
+      },
+      "score": 8,
+      "tags": [
+        "embodied"
+      ],
+      "field": "embodied",
+      "citations": 0
+    },
+    {
+      "id": "2610.18206",
+      "title": "SWE-MISBEHAVIOR: Benchmarking and Mitigating Boundary Violations in Software Coding Agents",
+      "abstract": "We present SWE-MISBEHAVIOR, the first taxonomy and evaluation framework for diagnosing boundary-violating misbehaviors in coding agents. It contains 7.4K human-in-the-loop synthesized samples spanning three layers of agent action space: (i) Code Generation, (ii) File Management, and (iii) System Interaction. Across these categories, SWE-MISBEHAVIOR covers 11 distinct misbehaviors with a fully automated evaluation protocol, including coding-action violations, Create/Read/Update/Delete (CRUD) file misbehaviors, system integrity and abuse violations, and task-goal misalignment. Experiments on state-of-the-art open-source coding agents (e.g., OpenHands, smolagents) reveal substantial misaligned behaviors, including dependency misinterpretation (up to 98.5% of cases), unintended modification of user inputs (50.5%), and silent compromise of environment integrity (53%). Motivated by these findings, we further propose CODE-KIT, a lightweight adaptive framework that combines misbehavior-aware guidelines with novel tools to help agents avoid such failures. CODE-KIT reduces misbehaviors by 52% for smolagents and 34% for OpenHands, while simultaneously improving task completion performance.",
+      "authors": [
+        "Do Xuan Trong",
+        "Duc Anh Nguyen",
+        "Do Xuan Long",
+        "Ngoc-Hai Nguyen",
+        "Tongyao Zhu",
+        "Duy Dinh",
+        "Cayden Chik",
+        "Cuong Dang",
+        "Jiaying Wu",
+        "Xuan-Phi Nguyen",
+        "Vinh Van Nguyen",
+        "Kenji Kawaguchi",
+        "Shafiq Joty",
+        "Nancy F. Chen",
+        "Min-Yen Kan"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-13T11:40:10Z",
+      "updated": "2026-10-13T11:40:10Z",
+      "announced_date": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "comment": "Codes and data are available at https://github.com/dxlong2000/SWE-Misbehavior",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.18206v1",
+        "pdf": "https://arxiv.org/pdf/2610.18206v1",
+        "html": "https://arxiv.org/html/2610.18206"
+      },
+      "score": 11,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.18092",
+      "title": "LifeSearch: Benchmarking Deep Research Agents for Real-World Life and Productivity",
+      "abstract": "Deep research (DR) agents address open-ended information needs through multi-step reasoning, long-horizon web search, and evidence synthesis. However, existing benchmarks primarily focus on academic research or synthetic tasks, leaving DR agents' capabilities in real-world life and professional productivity settings insufficiently evaluated. To bridge this gap, we introduce LifeSearch, a challenging benchmark comprising 203 Chinese and English tasks derived from real-user query seeds across 7 concrete life and productivity domains. With more than 4,500 hours of human annotation, we construct over 4,000 expert-written, fine-grained rubrics, covering both report-content criteria for coverage and accuracy and concrete criteria specifying values, units, dates, and URLs. We conduct extensive experiments on 12 advanced DR agents under a unified evaluation harness, systematically analyzing their performance patterns and failure modes. We find that even the best-performing frontier agent, GPT-5.6 Sol, achieves a score of only 63.4%, leaving substantial room for improvement on realistic life and professional DR tasks. We select the grading configuration by comparing candidate LLM judges against human rubric labels, and a human ranking study shows strong alignment between aggregate benchmark scores and human judgments (Spearman's $ρ= 0.89$, Kendall's $τ= 0.81$). LifeSearch provides a rigorous evaluation framework and foundation for advancing DR agents toward real-world life and productivity.",
+      "authors": [
+        "Yibo Wang",
+        "Senjie Jin",
+        "Yansong Ning",
+        "Xinbing Liang",
+        "Haotian Luo",
+        "Jiazheng Zhang",
+        "Yuxuan He",
+        "Will Wu",
+        "Clarenceai"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-13T10:12:26Z",
+      "updated": "2026-10-13T10:12:26Z",
+      "announced_date": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "comment": "Preprint",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.18092v1",
+        "pdf": "https://arxiv.org/pdf/2610.18092v1",
+        "html": "https://arxiv.org/html/2610.18092"
+      },
+      "score": 13,
+      "tags": [
+        "planning",
+        "research"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2610.18090",
+      "title": "AM-Bench: Understanding Agents under Task Underspecification across Models and Harnesses",
+      "abstract": "Ambiguous or incomplete task specifications complicate both execution and clarification for language-model agents. Yet agents' responses to these information gaps remain poorly characterized across models and execution harnesses. We present AM-Bench, a benchmark built from 48 tasks adapted from Terminal-Bench 2.0 and Harness-Bench. Each task includes a fully specified reference and six variants spanning ambiguous or missing goals, context, and constraints. We evaluate every pairing of five models and four harnesses over 20,160 runs. Our results reveal distinct execution deficits: goal gaps hinder completion, context gaps increase token use, and constraint gaps weaken compliance without necessarily preventing completion. Missingness lowers success more than ambiguity in all three domains. These effects also reshape system comparisons: advantages under complete information need not persist, and rankings depend on model $\\times$ harness pairings and the evaluation criterion -- completion, success, or repeat consistency. Estimates based on observed clarification requests and matched fully specified runs further suggest that clarification could recover unfinished work while leaving most constraint violations unresolved. Together, these findings motivate joint model-harness evaluation across information conditions and targeted clarification of unresolved requirements before dependent actions. To support future research on agents under task underspecification, we provide the AM-Bench project repository at https://github.com/s4-lab-cuhksz/AM-Bench.git.",
+      "authors": [
+        "Kaiyu Huang",
+        "Yiting Li",
+        "Angyang Gu",
+        "Pinjia He",
+        "Minchen Yu",
+        "Qingjiang Shi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-13T10:11:05Z",
+      "updated": "2026-10-13T10:11:05Z",
+      "announced_date": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.18090v1",
+        "pdf": "https://arxiv.org/pdf/2610.18090v1",
+        "html": "https://arxiv.org/html/2610.18090"
+      },
+      "score": 14,
+      "tags": [
+        "coding",
+        "science"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.18052",
+      "title": "Can Agents Forget When Asked? A Benchmark for Memory Unlearning in LLM Agents",
+      "abstract": "Long-term memory has become a core component of large language model (LLM) agents. As agents accumulate personal information over long-term use, users increasingly ask them to delete sensitive or outdated facts. A memory system should honor such requests. It should remove exactly what was requested and keep the rest of its memory intact. However, existing memory benchmarks evaluate only memory writing, retrieval, and organization, so whether agents can forget at the user's explicit request remains under-evaluated. To address this gap, we propose Bemula, the first benchmark dedicated to memory unlearning. It comprises 50 multi-session dialogue instances, 135 forget requests of six types, and 1,742 test questions. Each dialogue has a control version without the requests, so that only systems that have stored the target can earn credit for forgetting. Across the paired versions, five test suites measure storage, removal of the requested information, preservation of unrelated memories, relearning of similar facts, and resistance to extraction attacks. On Bemula, we evaluate six mainstream memory systems under three backbone LLMs, together with the Full Context LLM on two of them. The results are negative. Across all evaluated systems and backbones, no system passes more than 1.5% of forget requests end to end, and most pass none at all. These systems either leave the requested information extractable under simple attacks or delete far more than requested. Memory unlearning therefore remains an open challenge for agent memory design. We release our data and code at https://github.com/Nboxff/bemula-benchmark.",
+      "authors": [
+        "Bofan Xie",
+        "Chaokun Wang",
+        "Guanchen Ge",
+        "Songyao Wang",
+        "Fang Niu",
+        "Hang Zhang",
+        "Wei Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-13T09:41:12Z",
+      "updated": "2026-10-13T09:41:12Z",
+      "announced_date": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.18052v1",
+        "pdf": "https://arxiv.org/pdf/2610.18052v1",
+        "html": "https://arxiv.org/html/2610.18052"
+      },
+      "score": 16,
+      "tags": [
+        "memory",
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 0
+    },
+    {
+      "id": "2610.17874",
+      "title": "Searching for What Matters: Open-Ended Discovery of Multiple Hypotheses with Agentic Data Exploration",
+      "abstract": "Discovering what drives an outcome from data is central to science and often requires deciding what is worth investigating before a specific hypothesis is known. Yet most existing hypothesis generation settings substantially narrow this search by providing a research question, target relationship, or curated context. We introduce open-ended multiple hypothesis discovery, where a system receives only a large tabular dataset and an outcome and must discover multiple data-supported hypotheses without knowing in advance the relevant variables, functional forms, conditions, or number of underlying mechanisms. To study this problem, we introduce a benchmark built from structural causal models grounded in real-world data schemas, containing 351 planted hypotheses across 15 tasks and five domains, with 53--65 variables and 1M--10M rows per task. The causal model is hidden from the discovery method and retained only by the evaluator, allowing proposed hypotheses to be tested through interventions and separating observational discovery from causal validation. We further propose HypAgent, which treats the dataset as an interactive environment and performs iterative search by proposing candidate directions, triaging and refining promising hypotheses, and removing explained signal so that each accepted discovery redirects subsequent search. HypAgent achieves 0.47 precision, 0.51 recall, and 0.49 F1, compared with 0.35 F1 for the strongest baseline. Our analysis shows that many failures occur after a relevant variable has already been surfaced, suggesting that correctly characterizing a mechanism's functional form and conditions, rather than merely identifying relevant variables, remains a key challenge in open-ended discovery.",
+      "authors": [
+        "Sanchit Kabra",
+        "Nurendra Choudhary",
+        "Jiangshu Du",
+        "Eddie Huang",
+        "Danai Koutra",
+        "Chandan K Reddy"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-10-13T07:33:48Z",
+      "updated": "2026-10-13T07:33:48Z",
+      "announced_date": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.17874v1",
+        "pdf": "https://arxiv.org/pdf/2610.17874v1",
+        "html": "https://arxiv.org/html/2610.17874"
+      },
+      "score": 10,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.17837",
+      "title": "ProtoArena: Can AI Agents Discover and Exploit Real-World Cross-Component Protocol Vulnerabilities?",
+      "abstract": "Large language model (LLM) agents are increasingly used for vulnerability analysis, yet existing benchmarks provide limited coverage of exploitation that depends on interactions among network protocol components. Such vulnerabilities arise from inconsistencies in message interpretation, timing, state, or trust assumptions across participants. We introduce ProtoArena, a black-box, multi-component, dynamic benchmark with 80 cross-component vulnerability-exploitation environments spanning 11 protocol and application domains and 7 attack categories. Tasks are primarily informed by published protocol-attack mechanisms. Agents interact with running systems through scoped interfaces to achieve security-effect objectives without target source code. Three information levels assess guided reproduction, exploitation with mechanism and topology context, and effect-directed black-box exploration. A hybrid verifier combines rule-based checks with LLM review of independently collected traffic and logs. We evaluate five LLMs. Claude Opus 4.8 achieves the highest observed success rates: 48.8% under L1 guidance and 12.5% under effect-directed black-box L3. In a separate DNSBomb optimization experiment, it achieves a peak downstream-response to average query-input byte-rate ratio exceeding 171,000 times. The results show that agents can achieve verifiable exploitation effects in some cross-component environments, but success with limited black-box information remains low and varies across domains and attack categories. All experiments use controlled, explicitly authorized targets; they do not test production systems or disclose previously unknown vulnerabilities.",
+      "authors": [
+        "Fasheng Miao",
+        "Zhaoyu Hu",
+        "Xiang Li",
+        "Changqing An",
+        "Jiutian Zeng",
+        "Longtao Huang",
+        "Haixin Duan",
+        "Jilong Wang"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-10-13T06:56:32Z",
+      "updated": "2026-10-13T06:56:32Z",
+      "announced_date": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "comment": "18 pages, 5 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.17837v1",
+        "pdf": "https://arxiv.org/pdf/2610.17837v1",
+        "html": "https://arxiv.org/html/2610.17837"
+      },
+      "score": 12,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.17827",
+      "title": "Benchmarking and Training Reward Models for Cross-Source Evidence Grounding in Search Agents",
+      "abstract": "Existing approaches to training and evaluating search agents focus heavily on final-answer quality, largely neglecting how generated answers map back to retrieved evidence. Recent methods track citations to enforce grounding, but citation support alone does not establish source independence or whether an answer appropriately handles conflicting evidence. We argue that credibility in open-web retrieval depends on principled cross-source evidence grounding that accounts for source independence and systematically attributes and adjudicates conflicting evidence, while hierarchical judgments of these grounding decisions provide a unified signal for training and evaluation. To this end, we propose an evaluation framework, Cross-Source Evidence Grounding (CSEG), that employs a fine-grained, six-layer decision tree over the complete search trajectory. We introduce CSEG-Bench and trainable reward models to provide targeted supervision following this framework. Our approach helps eliminating the severe data skew of natural trajectories by providing targeted coverage over complex, deep-layer decision paths, such as cross-source conflict resolution and nuanced attribution, that standard rollouts fail to capture. Specifically, (1) we define the hierarchy at label, node, and path levels; (2) we construct 1,160 verified trajectories over nine canonical paths by rewriting answers on real retrieved document pools, with independent frontier judges reproducing the entire gold path and human experts deciding inclusion; (3) we train CSEG-RM, which reaches 83.9% exact accuracy on our benchmark while lying on the performance-token efficiency Pareto frontier. Experiments that use this reward alone to supervise a frozen-retrieval answer policy raise the independently judged mean label from 2.83 to 4.19, and show that learning the hierarchy generalizes across layers at a fraction of frontier-judge cost.",
+      "authors": [
+        "Haochen Zhao",
+        "Minsheng Hao",
+        "Zheng Li",
+        "Yifan Li",
+        "Zikang Liu",
+        "Bowen Qin",
+        "Yuhao Cheng",
+        "Chuang Fan",
+        "Haosheng Zou",
+        "Jeff Chen",
+        "Sujian Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-13T06:48:56Z",
+      "updated": "2026-10-13T06:48:56Z",
+      "announced_date": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.17827v1",
+        "pdf": "https://arxiv.org/pdf/2610.17827v1",
+        "html": "https://arxiv.org/html/2610.17827"
+      },
+      "score": 8,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.17816",
+      "title": "Empowering Edge Agents: A Systematic Analysis of Edge-Cloud Collaboration in LLM Agent Execution",
+      "abstract": "Edge-cloud collaboration combines the lower inference overhead and greater data locality of edge-side execution with the stronger capabilities of cloud-hosted models. However, as LLM agents increasingly operate in long-horizon scenarios, cloud participation becomes interleaved throughout execution rather than a one-shot decision for each query. Such interleaved participation introduces trajectory-level effects that remain insufficiently understood. To address this gap, we introduce EC2-Bench, a benchmark for evaluating edge-cloud collaboration in long-horizon agent execution. It provides executable digital-workspace agent tasks and a unified evaluation framework covering task performance, resource usage, and privacy exposure. Using this benchmark, we empirically study diverse forms of edge-cloud collaboration. Our study reveals three findings. First, collaboration achieves a favorable balance among task performance, resource usage, and privacy exposure compared with edge-only and cloud-only execution. Second, as edge models become stronger, collaborative execution approaches cloud-only performance, and performance differences across strategies shrink, while privacy exposure remains strongly strategy-dependent. Third, stronger edge capability shifts preferred collaboration from externally controlled cloud participation and direct cloud execution toward more edge-controlled collaboration. Further analyses identify cloud-invocation decision-making and instruction following as important edge-side abilities for effective collaboration. These findings provide a systematic understanding of edge-cloud collaboration in long-horizon agent execution and insights for designing future edge agents that effectively collaborate with cloud models. Code and resources are available at https://github.com/OpenBMB/EC2-Bench.",
+      "authors": [
+        "Pengcheng Huang",
+        "Zhenghao Liu",
+        "Shixin Ren",
+        "Shi Yu",
+        "Sijia Yao",
+        "Yukun Yan",
+        "Chaojun Xiao",
+        "Maosong Sun"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-13T06:40:22Z",
+      "updated": "2026-10-13T06:40:22Z",
+      "announced_date": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "comment": "23 pages, 5 figures, 12 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.17816v1",
+        "pdf": "https://arxiv.org/pdf/2610.17816v1",
+        "html": "https://arxiv.org/html/2610.17816"
+      },
+      "score": 13,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.17794",
+      "title": "GIFT-Eval-CTX: A Benchmark For Contextual Forecasting Model Evaluation",
+      "abstract": "Contextual forecasting seeks to improve time series forecasting by incorporating forward-looking information, such as planned events, external conditions, and expert expectations. However, reliable evaluation remains difficult: existing benchmarks often have limited domain coverage, lack standardized history-future splits, or provide text that is not guaranteed to inform the future. We introduce GIFT-Eval-CTX, a benchmark that isolates whether forecasting methods can translate verified future information into accurate numerical trajectories. Built upon GIFT-Eval, GIFT-Eval-CTX contains 10,000 instances across 20 datasets. Each instance provides structured effects derived from the realized future: Macro effects describe horizon-wide behavior, while Micro effects specify localized changes. We construct these annotations with an agentic pipeline combining LLM-based discovery and deterministic code validation. We benchmark TSFMs, frontier LLMs, and tool-using agentic systems. The results show that structured effects reduce aggregate relative MASE by 40.7% for GPT-5.6 Sol and 29.6% for Claude Opus 4.8 relative to history-only prompting. The evaluated MoiraiAgent system achieves the best overall result. We further analyze the contributions of structured effects and agentic systems to performance, and identify opportunities for future research.",
+      "authors": [
+        "Xu Liu",
+        "Hanshu Yan",
+        "Taha Aksu",
+        "Quang Pham",
+        "Zhongzheng Qiao",
+        "Jun Hao Liew",
+        "Silvio Savarese",
+        "Doyen Sahoo",
+        "Junnan Li"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-10-13T06:21:50Z",
+      "updated": "2026-10-13T06:21:50Z",
+      "announced_date": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.17794v1",
+        "pdf": "https://arxiv.org/pdf/2610.17794v1",
+        "html": "https://arxiv.org/html/2610.17794"
+      },
+      "score": 19,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.17685",
+      "title": "LatentRiskBench: Measuring State-Dependent Risks in Enterprise Agents",
+      "abstract": "Enterprise agents face safety risks that cannot be determined from individual actions alone. Existing safety benchmarks largely evaluate action-local risks, overlooking failures whose safety depends on workflow state. In such state-dependent risks, the same action may be safe in one context but violate policy in another. Hence, we introduce LatentRiskBench for evaluating such state-dependent risks in enterprise settings. It pairs risky trajectories with benign counterparts that share the same terminal action but differ in latent policy-relevant states, requiring models to reconstruct workflow context rather than rely on action-level cues. We also introduce new metrics for state-dependent risk evaluation, including a suite of residual risk (RR) measures. Experiments on the benchmark show that action-level evaluation detects only 0.09 of state-dependent violations, whereas state-level evaluation reaches 0.96. Existing guardrail methods largely overlook such risks unless they are explicitly applied to workflow states. Case studies on a commercial deployed scenario further show that the safety metrics embedded in the benchmark provide a more realistic measure of safety for enterprise agents. Our dataset and code are available at https://github.com/JingyueCong/LatentRiskBench.",
+      "authors": [
+        "Jingyue Cong",
+        "Estrid He",
+        "Zhuang Li",
+        "Nan Wu",
+        "Li Shen",
+        "Yameng Peng",
+        "Xinshu Li",
+        "Andy Song"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-10-13T04:07:44Z",
+      "updated": "2026-10-13T04:07:44Z",
+      "announced_date": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "comment": "Accepted to EMNLP 2026 Industry Track. 18 pages, 3 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.17685v1",
+        "pdf": "https://arxiv.org/pdf/2610.17685v1",
+        "html": "https://arxiv.org/html/2610.17685"
+      },
+      "score": 9,
+      "tags": [
+        "safety"
+      ],
+      "field": "workplace",
+      "citations": 0
+    }
+  ]
+}

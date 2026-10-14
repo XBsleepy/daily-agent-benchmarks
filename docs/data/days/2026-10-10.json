@@ -1,0 +1,272 @@
+{
+  "date": "2026-10-10",
+  "count": 6,
+  "report": {
+    "date": "2026-10-10",
+    "count": 6,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      }
+    ],
+    "en": {
+      "headline": "6 new agent benchmarks",
+      "summary": "On October 10, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Tool use (1), and Memory (1).",
+      "highlights": [
+        {
+          "id": "2610.14431",
+          "title": "MemForm: Benchmarking Memory Formation Poisoning in LLM Agents",
+          "blurb": "Long-term memory enables LLM agents to learn from past interactions but exposes memory formation to adversarial influence."
+        },
+        {
+          "id": "2610.14807",
+          "title": "ASIWorld: Benchmarking Autonomous Agents in a Persistent Survival Sandbox",
+          "blurb": "Evaluating autonomous agents requires examining whether they can translate goals into coherent action across extended interactions."
+        },
+        {
+          "id": "2610.14700",
+          "title": "DSABench: Benchmarking Source Discovery, Coordination, and Execution for Multi-Database Agents",
+          "blurb": "Most text-to-SQL benchmarks provide the target database."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 6 篇 Agent Benchmark",
+      "summary": "2026年10月10日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在工具使用（1）、记忆（1）。",
+      "highlights": [
+        {
+          "id": "2610.14431",
+          "title": "MemForm: Benchmarking Memory Formation Poisoning in LLM Agents",
+          "blurb": "Long-term memory enables LLM agents to learn from past interactions but exposes memory formation to adversarial influence."
+        },
+        {
+          "id": "2610.14807",
+          "title": "ASIWorld: Benchmarking Autonomous Agents in a Persistent Survival Sandbox",
+          "blurb": "Evaluating autonomous agents requires examining whether they can translate goals into coherent action across extended interactions."
+        },
+        {
+          "id": "2610.14700",
+          "title": "DSABench: Benchmarking Source Discovery, Coordination, and Execution for Multi-Database Agents",
+          "blurb": "Most text-to-SQL benchmarks provide the target database."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2610.15055",
+      "title": "Trace Evolution Bench: Measuring Whether Agents Improve from Their Own Environment Traces",
+      "abstract": "Self-evolving agents are usually scored by endpoint Gain: held-out success after an update minus success before. That difference can credit a frozen rescore as evolution. We introduce Trace Evolution Bench (TEB), a protocol that separates that rescore from a context or weight update, together with three frozen 80/20/40 packs. An update is accepted only when validation does not fall, held-out identifiers never enter the update, and a text update is not ranked with a weight update. The primary scoreboard is coding, graded by hidden unit tests in a closed workspace. On that pack (40 held-out tasks, one family), DeepSeek v4 Pro under no_evolve never changes its policy yet moves 7.5, 5.0, and 12.5 percentage points across three seeds. Of nine text-update cells inspired by GEPA, ACE, and ExpeL, seven have positive excess above that seed's own band, and one gepa_llm seed moves down by the width of its band (-12.5, regression 0.48). GLM and MiniMax do not reproduce that seven-of-nine pattern. No method stays above its own band on every seed of all three models: GLM has two paired cells above their own bands, and MiniMax expel_llm seed 44 is a third (regression 0.30). The methods were fixed on a validation screen before held-out was read. Office, graded by rule-bounded delivery, and manufacturing table QA are separate packs: office DeepSeek does not exceed its own bands (widest 17.5 points), and manufacturing has no paired positive excess beyond its seed band.",
+      "authors": [
+        "Fangfei Li",
+        "Chenyang Zhao",
+        "Long Wang",
+        "Feng Tian",
+        "Lv Guo"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-10T16:45:52Z",
+      "updated": "2026-10-10T16:45:52Z",
+      "announced_date": "2026-10-10",
+      "first_seen": "2026-10-10",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.15055v1",
+        "pdf": "https://arxiv.org/pdf/2610.15055v1",
+        "html": "https://arxiv.org/html/2610.15055"
+      },
+      "score": 5,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.14966",
+      "title": "SkillHorizon: Constructing Long-Horizon Agent Tasks through Skill Composition",
+      "abstract": "Long-horizon agents must complete workflows in which later activities depend on earlier outputs and changes to shared state. A key challenge for evaluation is to expand task requirements and their dependencies while keeping tasks executable and outcomes verifiable. We introduce SkillHorizon, a benchmark that constructs long-horizon tasks through skill composition in seven business environments. Its generators use domain-specific rules to turn reusable skill procedures into concrete business activities. These activities are connected through input-output dependencies, shared resources, and state updates, allowing workload and coordination demands to grow together. Successful reference executions validate task feasibility and measure interaction workload, while programmatic evaluators assess local completion and whole-task success. We evaluate five language models on 1,050 tasks with reference interaction workloads ranging from 64K to 1M tokens. Across these scales, mean local-goal completion falls from 90.4% to 46.8%, as completed work fails to keep pace with growing requirements. At larger workloads, agents more often submit unsuccessful final answers with substantial work unfinished and tool-call allowance remaining. Trace analysis also identifies cases where scripts execute successfully but their outputs fail downstream business checks. SkillHorizon provides a configurable testbed for studying sustained progress, dependency coordination, and complete task delivery in growing workflows. Our code is available at https://github.com/KnowComp/SkillHorizon.",
+      "authors": [
+        "Yuxuan Liu",
+        "Zhaochen Su",
+        "Hangyu Guo",
+        "Shijue Huang",
+        "Zhixiong Zhang",
+        "Kawai Chung",
+        "Zhongwei Xie",
+        "Tianshi Zheng",
+        "Wei Fan",
+        "Qing Zong",
+        "Haochen Shi",
+        "Baixuan Xu",
+        "Haoran Li",
+        "Yangqiu Song"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-10T14:36:39Z",
+      "updated": "2026-10-10T14:36:39Z",
+      "announced_date": "2026-10-10",
+      "first_seen": "2026-10-10",
+      "comment": "29 pages, 7 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.14966v1",
+        "pdf": "https://arxiv.org/pdf/2610.14966v1",
+        "html": "https://arxiv.org/html/2610.14966"
+      },
+      "score": 8,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.14918",
+      "title": "SkillForgeBench: Evaluating Agent Reliability Grounded in Agent Skill Specifications",
+      "abstract": "Evaluating an agent's ability to strictly satisfy diverse and procedurally complex requirements is essential to determining its practical reliability. Conducting such an evaluation demands agentic tasks that reconcile broad domain coverage with deep procedural complexity. Existing paradigms face a fundamental trade-off: expert-curated benchmarks achieve procedural depth but suffer from domain diversity bottlenecks, whereas crowdsourced benchmarks span diverse scenarios but lack execution rigor. To resolve this tension, we present SkillForgeBench, which leverages agent skills as unifying execution blueprints across three co-designed stages: (1) Resource Preparation uses domain-balanced skills to guide artifact retrieval, establishing broad workflow coverage; (2) Skill-driven Task Synthesis employs skills as procedural anchors to partition artifact roles, synthesize naturalistic task instructions, and package sandboxed scenarios for deep procedural execution; and (3) Holistic Evaluation Design translates skill-embedded requirements into fine-grained completion and process rubrics to enable strict requirement-level scoring. Comprising 842 sandboxed tasks across five major professional domains, SkillForgeBench reveals a steep capability hierarchy among eight mainstream agents, led by Opus 4.8 ($40.9\\%$ strict completion). Requiring all constrains satisfaction uncovers severe capability bottlenecks across all model tiers that remain masked under individual rubric pass rates ($70.0\\%$ to $85.7\\%$ vs. $12.6\\%$ to $40.9\\%$). Crucially, under the external guidance from skills, top-tier agents obtain larger gains than low-tier agents (i.e., $Δ19.2\\%$ for Opus 4.8 vs. $Δ5.8\\%$ for Haiku 4.5). Finally, agents satisfy process rubrics far less frequently than completion rubrics (under $3\\%$ for Haiku 4.5), proving that completion-only checks overestimate real-world agent reliability.",
+      "authors": [
+        "Zhengxi Li",
+        "Junyi Zhou",
+        "Qiyuan Zhang",
+        "Chuhan Wu",
+        "Fuyuan Lyu",
+        "Le Tian",
+        "Xiao Zhou",
+        "Chen Ma",
+        "Yufei Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-10T13:40:38Z",
+      "updated": "2026-10-10T13:40:38Z",
+      "announced_date": "2026-10-10",
+      "first_seen": "2026-10-10",
+      "comment": "38 pages, 9 figures, 7 tables, including appendices. The first two authors contributed equally to this work",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.14918v1",
+        "pdf": "https://arxiv.org/pdf/2610.14918v1",
+        "html": "https://arxiv.org/html/2610.14918"
+      },
+      "score": 10,
+      "tags": [],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2610.14807",
+      "title": "ASIWorld: Benchmarking Autonomous Agents in a Persistent Survival Sandbox",
+      "abstract": "Evaluating autonomous agents requires examining whether they can translate goals into coherent action across extended interactions. In persistent environments, this requires coordinating interdependent actions under incomplete observations, accounting for delayed effects, and adapting as earlier decisions shape subsequent opportunities. We introduce ASIWorld, a survival sandbox that combines persistent world and character state with character-scoped observations and a programmable asynchronous interface to study sustained goal execution. Agents pursue interdependent production and exploration tasks through direct actions or agent-authored programs that continue running between model calls. The evaluation assesses task success, the attainment of development achievements, and survival costs, complemented by an analysis of execution behavior. In an exploratory study of nine agent configurations using a common harness, eight complete the production task and six complete both tasks. Analyses of execution trajectories and performance across difficulty levels reveal different preparation, combat, and recovery behaviors among configurations with similar task outcomes. Incomplete preparation is associated with stalled progression, while configurations that complete the tasks differ in survival costs and the fulfillment of additional achievement criteria. These findings illustrate the value of assessing sustained goal execution through both task outcomes and the behaviors and costs associated with achieving them.",
+      "authors": [
+        "Jianfeng Lin",
+        "Runze Wang",
+        "Haorong Hong",
+        "Yuxuan Xie",
+        "Zeno Zeng",
+        "Zhongyuan Liu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-10T10:59:36Z",
+      "updated": "2026-10-10T10:59:36Z",
+      "announced_date": "2026-10-10",
+      "first_seen": "2026-10-10",
+      "comment": "15 pages, 5 figures, 9 tables. Project website: https://asigameworld.github.io/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.14807v1",
+        "pdf": "https://arxiv.org/pdf/2610.14807v1",
+        "html": "https://arxiv.org/html/2610.14807"
+      },
+      "score": 11,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.14700",
+      "title": "DSABench: Benchmarking Source Discovery, Coordination, and Execution for Multi-Database Agents",
+      "abstract": "Most text-to-SQL benchmarks provide the target database. In a large data catalog, however, choosing the sources is part of the problem: an agent must find every database needed for a request, determine how their results fit together, and execute the resulting workflow. We present DSABench to evaluate these capabilities jointly. Its 815 human-reviewed tasks draw on Spider, BIRD, and LiveSQLBench; 618 require several databases to contribute, and 105 allow more than one interpretation of the required sources. Executable contracts define source participation, cross-source dependencies, and source-local execution, while RouteEnv lets agents inspect public catalog evidence without revealing the gold annotations. In our routing-only study across seven model backends, the highest RA-Set score is 60.55%, compared with a highest RA-Graph score of 34.66% when coordination requirements are included. The gap becomes more pronounced when execution is required. Across four backends, median non-privileged Route+Exec-Graph success ranges from 6.69% to 7.98% without clarification and from 11.44% to 13.25% with one clarification; the best observed clarified configuration reaches 16.99%. On ambiguous tasks, clarification improves exact branch-source recovery by 39.8-43.2 percentage points. These findings illustrate why retrieving plausible databases or producing correct local SQL is not enough: an agent must carry the right information through the entire multi-database workflow.",
+      "authors": [
+        "Jinlong Luo",
+        "Haoran Wu",
+        "Bo Xu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-10T08:17:52Z",
+      "updated": "2026-10-10T08:17:52Z",
+      "announced_date": "2026-10-10",
+      "first_seen": "2026-10-10",
+      "comment": "39 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.14700v1",
+        "pdf": "https://arxiv.org/pdf/2610.14700v1",
+        "html": "https://arxiv.org/html/2610.14700"
+      },
+      "score": 11,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.14431",
+      "title": "MemForm: Benchmarking Memory Formation Poisoning in LLM Agents",
+      "abstract": "Long-term memory enables LLM agents to learn from past interactions but exposes memory formation to adversarial influence. Existing studies primarily organize memory poisoning by attack channels, corruption patterns, or lifecycle stages, leaving formation interfaces insufficiently characterized. We formulate Memory Formation Poisoning as adversarial manipulation of the interfaces through which persistent agent memory is produced and committed, and introduce MemForm, a controlled diagnostic benchmark covering five interfaces: Content, Evidence, Scope, Selection, and Path Poisoning. We introduce Selection and Path Poisoning as controlled intervention categories that isolate retention and consolidation order effects, respectively. Each category pairs clean and poisoned conditions with interface-specific controls. Evaluations across six LLMs and two response formats reveal broad susceptibility at all five interfaces under the evaluated memory protocols and implementations. Crucially, authentic experiences with successful outcomes do not guarantee reliable behavior after memory formation: changes to contextual support, retention, or consolidation order can induce undesirable downstream behavior. In particular, consolidation order can alter behavior even with identical retained experiences, depending on the memory formation procedure. Additional analyses show that interface applicability depends on memory architecture and that Path Poisoning susceptibility depends on the updater. The evaluated defenses provide incomplete mitigation that varies by interface. These findings motivate protecting both what is committed to persistent memory and how memory is formed from experiences. Code and data are available at https://github.com/opanhw/memform-code.",
+      "authors": [
+        "Haowen Pan",
+        "Pengyang Shao",
+        "Yunshan Ma",
+        "Yanzheng Jin",
+        "Naixin Zhai",
+        "Xiang Wang",
+        "Xun Yang"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-10-10T00:52:32Z",
+      "updated": "2026-10-10T00:52:32Z",
+      "announced_date": "2026-10-10",
+      "first_seen": "2026-10-10",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.14431v1",
+        "pdf": "https://arxiv.org/pdf/2610.14431v1",
+        "html": "https://arxiv.org/html/2610.14431"
+      },
+      "score": 13,
+      "tags": [
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

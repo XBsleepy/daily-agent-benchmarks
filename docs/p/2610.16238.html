@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Embodied Skill Bench: Benchmarking How Well Agents with Embodied Skills Perform on Physical Tasks | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLM agents increasingly control robots using VLA policies, perception models, and procedural knowledge. These modules are difficult…" />
+    <meta name="keywords" content="Embodied / robotics, agent benchmark, LLM agent, arXiv, 2610.16238" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.16238.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Embodied Skill Bench: Benchmarking How Well Agents with Embodied Skills Perform on Physical Tasks" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLM agents increasingly control robots using VLA policies, perception models, and procedural knowledge. These modules are difficult…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.16238.html" />
+    <meta property="article:published_time" content="2026-10-12T06:11:29Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Embodied Skill Bench: Benchmarking How Well Agents with Embodied Skills Perform on Physical Tasks" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLM agents increasingly control robots using VLA policies, perception models, and procedural knowledge. These modules are difficult…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Embodied Skill Bench: Benchmarking How Well Agents with Embodied Skills Perform on Physical Tasks",
+  "name": "Embodied Skill Bench: Benchmarking How Well Agents with Embodied Skills Perform on Physical Tasks",
+  "abstract": "LLM agents increasingly control robots using VLA policies, perception models, and procedural knowledge. These modules are difficult to reuse because their interfaces, embodiment assumptions, and conditions of use differ, and their benefits on physical tasks remain unclear. We package them as embodied skills that extend agent skills with explicit embodiment assumptions and conditions of use, building 250 action, perception, and experience skills from 1,052 resources. On this basis we introduce EmbodiedSkillBench, which runs an agent in a closed observation-action loop and records success, actions, tokens, and wall-clock time. It supports three modes: native control, skill-only execution, and Agent-Directed Reuse (ADR), a mode we propose in which the agent keeps its native controls and decides for each skill whether to invoke, modify, or ignore it. Across four agents on 100 perturbed LIBERO-Pro tasks, we find that skills help an agent only as far as they exceed what it can already do. Skill-only execution lifts GPT-5.6-Sol from 11% to 63% and Kimi-K3 and Claude-Opus-5 by about 20 points, while cutting their token usage by 58% to 85%. Yet all four agents then end up between 61% and 64%, and GPT-6-Astra falls from 92% under native control to 61%. This suggests that as agents grow stronger, the role of embodied skills shifts from supplying missing capability to reducing cost: GPT-6-Astra already solves most tasks through native control, so restricting it to skills removes more than it adds. Under ADR, which lets it keep native control and call skills selectively, GPT-6-Astra recovers to 85%, within 7 points of native control, while using 14.1% fewer tokens and 11.9% less time. With Jev as a skill choosing motion directions and gripper actions, it reaches 81% with 50% fewer tokens and 57% less time. The code is available at https://github.com/HanZhi306/EmbodiedSkill-Bench.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Zhi Han"
+    },
+    {
+      "@type": "Person",
+      "name": "Zihan Guo"
+    },
+    {
+      "@type": "Person",
+      "name": "Chenxi Zeng"
+    },
+    {
+      "@type": "Person",
+      "name": "Zicai Cui"
+    },
+    {
+      "@type": "Person",
+      "name": "Yue Xin"
+    },
+    {
+      "@type": "Person",
+      "name": "Ming Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Dongzhan Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Weinan Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yang Li"
+    }
+  ],
+  "datePublished": "2026-10-12T06:11:29Z",
+  "dateModified": "2026-10-12T06:11:29Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.16238.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.16238.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.16238v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.16238"
+  },
+  "keywords": [
+    "Embodied / robotics",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Embodied / robotics"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.16238v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.16238"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Embodied Skill Bench: Benchmarking How Well Agents with Embodied Skills Perform on Physical Tasks</h1>
+        <div class="meta">
+          Zhi Han, Zihan Guo, Chenxi Zeng, Zicai Cui, Yue Xin, Ming Zhou, Dongzhan Zhou, Weinan Zhang, Yang Li
+          · 2610.16238
+          · <time datetime="2026-10-12">2026-10-12</time>
+          · Embodied / robotics
+        </div>
+        <div class="themes"><span class="chip">Embodied / robotics</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLM agents increasingly control robots using VLA policies, perception models, and procedural knowledge. These modules are difficult to reuse because their interfaces, embodiment assumptions, and conditions of use differ, and their benefits on physical tasks remain unclear. We package them as embodied skills that extend agent skills with explicit embodiment assumptions and conditions of use, building 250 action, perception, and experience skills from 1,052 resources. On this basis we introduce EmbodiedSkillBench, which runs an agent in a closed observation-action loop and records success, actions, tokens, and wall-clock time. It supports three modes: native control, skill-only execution, and Agent-Directed Reuse (ADR), a mode we propose in which the agent keeps its native controls and decides for each skill whether to invoke, modify, or ignore it. Across four agents on 100 perturbed LIBERO-Pro tasks, we find that skills help an agent only as far as they exceed what it can already do. Skill-only execution lifts GPT-5.6-Sol from 11% to 63% and Kimi-K3 and Claude-Opus-5 by about 20 points, while cutting their token usage by 58% to 85%. Yet all four agents then end up between 61% and 64%, and GPT-6-Astra falls from 92% under native control to 61%. This suggests that as agents grow stronger, the role of embodied skills shifts from supplying missing capability to reducing cost: GPT-6-Astra already solves most tasks through native control, so restricting it to skills removes more than it adds. Under ADR, which lets it keep native control and call skills selectively, GPT-6-Astra recovers to 85%, within 7 points of native control, while using 14.1% fewer tokens and 11.9% less time. With Jev as a skill choosing motion directions and gripper actions, it reaches 81% with 50% fewer tokens and 57% less time. The code is available at https://github.com/HanZhi306/EmbodiedSkill-Bench.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.16238v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.16238v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.16238" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Embodied / robotics benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.18307.html"><strong>I2O2I-Nav: A Benchmark with a Modular Agent for Long-Horizon Indoor-to-Outdoor-to-Indoor Navigation</strong></a> <span>2026-10-13</span></li>
+          <li><a href="2610.13534.html"><strong>MAGMA-Bench: Evaluating Long-Horizon Embodied Agents under Dynamic Tasks and Execution Failures</strong></a> <span>2026-10-09</span></li>
+          <li><a href="2610.13021.html"><strong>EmbodiedCLBench: Evaluating Continual Learning for Self-Evolving Embodied Agents</strong></a> <span>2026-10-09</span></li>
+          <li><a href="2610.12561.html"><strong>What Should Embodied Agents Remember? Benchmarking and Evaluating Memory Modality for Embodied Agents</strong></a> <span>2026-10-08</span></li>
+          <li><a href="2610.10409.html"><strong>RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments</strong></a> <span>2026-10-07</span></li>
+          <li><a href="2610.10388.html"><strong>RoboQuest: Generalist Physical Agents that Search, Inspect and Test</strong></a> <span>2026-10-07</span></li>
+          <li><a href="2609.35032.html"><strong>JRDB-AVR: An Active Visual Reasoning Benchmark for Embodied Agents in Real-World Environments</strong></a> <span>2026-09-28</span></li>
+          <li><a href="2609.33807.html"><strong>CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation</strong></a> <span>2026-09-27</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

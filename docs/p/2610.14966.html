@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SkillHorizon: Constructing Long-Horizon Agent Tasks through Skill Composition | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Long-horizon agents must complete workflows in which later activities depend on earlier outputs and changes to shared state. A key…" />
+    <meta name="keywords" content="Tool use, agent benchmark, LLM agent, arXiv, 2610.14966" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.14966.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SkillHorizon: Constructing Long-Horizon Agent Tasks through Skill Composition" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Long-horizon agents must complete workflows in which later activities depend on earlier outputs and changes to shared state. A key…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.14966.html" />
+    <meta property="article:published_time" content="2026-10-10T14:36:39Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SkillHorizon: Constructing Long-Horizon Agent Tasks through Skill Composition" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Long-horizon agents must complete workflows in which later activities depend on earlier outputs and changes to shared state. A key…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SkillHorizon: Constructing Long-Horizon Agent Tasks through Skill Composition",
+  "name": "SkillHorizon: Constructing Long-Horizon Agent Tasks through Skill Composition",
+  "abstract": "Long-horizon agents must complete workflows in which later activities depend on earlier outputs and changes to shared state. A key challenge for evaluation is to expand task requirements and their dependencies while keeping tasks executable and outcomes verifiable. We introduce SkillHorizon, a benchmark that constructs long-horizon tasks through skill composition in seven business environments. Its generators use domain-specific rules to turn reusable skill procedures into concrete business activities. These activities are connected through input-output dependencies, shared resources, and state updates, allowing workload and coordination demands to grow together. Successful reference executions validate task feasibility and measure interaction workload, while programmatic evaluators assess local completion and whole-task success. We evaluate five language models on 1,050 tasks with reference interaction workloads ranging from 64K to 1M tokens. Across these scales, mean local-goal completion falls from 90.4% to 46.8%, as completed work fails to keep pace with growing requirements. At larger workloads, agents more often submit unsuccessful final answers with substantial work unfinished and tool-call allowance remaining. Trace analysis also identifies cases where scripts execute successfully but their outputs fail downstream business checks. SkillHorizon provides a configurable testbed for studying sustained progress, dependency coordination, and complete task delivery in growing workflows. Our code is available at https://github.com/KnowComp/SkillHorizon.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yuxuan Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhaochen Su"
+    },
+    {
+      "@type": "Person",
+      "name": "Hangyu Guo"
+    },
+    {
+      "@type": "Person",
+      "name": "Shijue Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhixiong Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Kawai Chung"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhongwei Xie"
+    },
+    {
+      "@type": "Person",
+      "name": "Tianshi Zheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Wei Fan"
+    },
+    {
+      "@type": "Person",
+      "name": "Qing Zong"
+    },
+    {
+      "@type": "Person",
+      "name": "Haochen Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Baixuan Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Haoran Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Yangqiu Song"
+    }
+  ],
+  "datePublished": "2026-10-10T14:36:39Z",
+  "dateModified": "2026-10-10T14:36:39Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.14966.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.14966.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.14966v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.14966"
+  },
+  "keywords": [
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.14966v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.14966"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SkillHorizon: Constructing Long-Horizon Agent Tasks through Skill Composition</h1>
+        <div class="meta">
+          Yuxuan Liu, Zhaochen Su, Hangyu Guo, Shijue Huang, Zhixiong Zhang, Kawai Chung, Zhongwei Xie, Tianshi Zheng, Wei Fan, Qing Zong, Haochen Shi, Baixuan Xu, Haoran Li, Yangqiu Song
+          · 2610.14966
+          · <time datetime="2026-10-10">2026-10-10</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Long-horizon agents must complete workflows in which later activities depend on earlier outputs and changes to shared state. A key challenge for evaluation is to expand task requirements and their dependencies while keeping tasks executable and outcomes verifiable. We introduce SkillHorizon, a benchmark that constructs long-horizon tasks through skill composition in seven business environments. Its generators use domain-specific rules to turn reusable skill procedures into concrete business activities. These activities are connected through input-output dependencies, shared resources, and state updates, allowing workload and coordination demands to grow together. Successful reference executions validate task feasibility and measure interaction workload, while programmatic evaluators assess local completion and whole-task success. We evaluate five language models on 1,050 tasks with reference interaction workloads ranging from 64K to 1M tokens. Across these scales, mean local-goal completion falls from 90.4% to 46.8%, as completed work fails to keep pace with growing requirements. At larger workloads, agents more often submit unsuccessful final answers with substantial work unfinished and tool-call allowance remaining. Trace analysis also identifies cases where scripts execute successfully but their outputs fail downstream business checks. SkillHorizon provides a configurable testbed for studying sustained progress, dependency coordination, and complete task delivery in growing workflows. Our code is available at https://github.com/KnowComp/SkillHorizon.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.14966v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.14966v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.14966" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.17794.html"><strong>GIFT-Eval-CTX: A Benchmark For Contextual Forecasting Model Evaluation</strong></a> <span>2026-10-13</span></li>
+          <li><a href="2610.16333.html"><strong>TRAP: Tool-result Replay Attack for Probing Misbinding in LLM Agents</strong></a> <span>2026-10-12</span></li>
+          <li><a href="2610.16067.html"><strong>When Agent Evaluation Becomes Unreliable: An Empirical Study of Oracle Failures and Configuration-Dependent Measurement in an LLM Agent Benchmark</strong></a> <span>2026-10-12</span></li>
+          <li><a href="2610.12183.html"><strong>A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization</strong></a> <span>2026-10-08</span></li>
+          <li><a href="2610.10942.html"><strong>StoreBench: A Live-Commerce Environment for Evaluating and Training Autonomous Operator Agents</strong></a> <span>2026-10-07</span></li>
+          <li><a href="2610.09112.html"><strong>GeoNatureAgent (GNA): A Framework and Benchmark for Pre-Production Evaluation of Tool-Using Agents on Geospatial and Environmental Tasks</strong></a> <span>2026-10-06</span></li>
+          <li><a href="2610.07614.html"><strong>BioStudyBench: Evaluating Agents on Post-Cutoff Biomedical Studies</strong></a> <span>2026-10-06</span></li>
+          <li><a href="2610.06454.html"><strong>AgentPrivArena: Evaluating and Auditing Real-world AI Agent Privacy</strong></a> <span>2026-10-05</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>
