@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OS-Bench: Evaluating SWE Agents on Cross-OS Code Migration | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Language-model (LM) agents are increasingly evaluated on repository-level software engineering (SWE) benchmarks derived from GitHub…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2610.19368" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.19368.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="OS-Bench: Evaluating SWE Agents on Cross-OS Code Migration" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Language-model (LM) agents are increasingly evaluated on repository-level software engineering (SWE) benchmarks derived from GitHub…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.19368.html" />
+    <meta property="article:published_time" content="2026-10-14T01:12:46Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="OS-Bench: Evaluating SWE Agents on Cross-OS Code Migration" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Language-model (LM) agents are increasingly evaluated on repository-level software engineering (SWE) benchmarks derived from GitHub…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "OS-Bench: Evaluating SWE Agents on Cross-OS Code Migration",
+  "name": "OS-Bench: Evaluating SWE Agents on Cross-OS Code Migration",
+  "abstract": "Language-model (LM) agents are increasingly evaluated on repository-level software engineering (SWE) benchmarks derived from GitHub issues and pull requests. Although these benchmarks cover a broad range of development tasks, they provide limited insight into a common yet technically distinct challenge: migrating an existing implementation from one operating system (OS) to another while preserving behavior on both. We introduce OS-Bench, an executable benchmark for cross-OS code migration between Linux and Windows. Motivated by case studies showing that cross-platform features are frequently implemented on one OS before support is added for another, OS-Bench identifies migration opportunities by comparing execution coverage collected from the same repository on both systems. Platform-specific regions are then verified, organized into five migration scenarios, and transformed into repository-level tasks with target-platform tests and source-platform regression tests. The resulting benchmark contains 140 validated tasks from 111 repositories across C, C++, C#, Go, and Rust, comprising 91 Windows-to-Linux and 49 Linux-to-Windows migrations. We evaluate six models with SWE-agent, Claude Code, OpenHands, and Win-agent. The best configurations achieve only 26.4% success on Linux-target tasks and 20.4% on Windows-target tasks while preserving correctness across both systems. These results indicate that cross-OS migration is a challenging and underexplored capability, and OS-Bench is a testbed for improving platform-aware SWE agents.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Qirui Jin"
+    },
+    {
+      "@type": "Person",
+      "name": "Kenan Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Liao Zhu"
+    },
+    {
+      "@type": "Person",
+      "name": "Lingching Tung"
+    },
+    {
+      "@type": "Person",
+      "name": "Yikai Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yijia Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zijian Jin"
+    },
+    {
+      "@type": "Person",
+      "name": "Pengfei Gao"
+    },
+    {
+      "@type": "Person",
+      "name": "Yu Kang"
+    },
+    {
+      "@type": "Person",
+      "name": "Qingwei Lin"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenke Lee"
+    }
+  ],
+  "datePublished": "2026-10-14T01:12:46Z",
+  "dateModified": "2026-10-14T01:12:46Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.19368.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.19368.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.19368v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.19368"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.19368v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.19368"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>OS-Bench: Evaluating SWE Agents on Cross-OS Code Migration</h1>
+        <div class="meta">
+          Qirui Jin, Kenan Li, Liao Zhu, Lingching Tung, Yikai Zhang, Yijia Wu, Zijian Jin, Pengfei Gao, Yu Kang, Qingwei Lin, Wenke Lee
+          · 2610.19368
+          · <time datetime="2026-10-14">2026-10-14</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Language-model (LM) agents are increasingly evaluated on repository-level software engineering (SWE) benchmarks derived from GitHub issues and pull requests. Although these benchmarks cover a broad range of development tasks, they provide limited insight into a common yet technically distinct challenge: migrating an existing implementation from one operating system (OS) to another while preserving behavior on both. We introduce OS-Bench, an executable benchmark for cross-OS code migration between Linux and Windows. Motivated by case studies showing that cross-platform features are frequently implemented on one OS before support is added for another, OS-Bench identifies migration opportunities by comparing execution coverage collected from the same repository on both systems. Platform-specific regions are then verified, organized into five migration scenarios, and transformed into repository-level tasks with target-platform tests and source-platform regression tests. The resulting benchmark contains 140 validated tasks from 111 repositories across C, C++, C#, Go, and Rust, comprising 91 Windows-to-Linux and 49 Linux-to-Windows migrations. We evaluate six models with SWE-agent, Claude Code, OpenHands, and Win-agent. The best configurations achieve only 26.4% success on Linux-target tasks and 20.4% on Windows-target tasks while preserving correctness across both systems. These results indicate that cross-OS migration is a challenging and underexplored capability, and OS-Bench is a testbed for improving platform-aware SWE agents.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.19368v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.19368v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.19368" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.20344.html"><strong>Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents</strong></a> <span>2026-10-14</span></li>
+          <li><a href="2610.18206.html"><strong>SWE-MISBEHAVIOR: Benchmarking and Mitigating Boundary Violations in Software Coding Agents</strong></a> <span>2026-10-13</span></li>
+          <li><a href="2610.18090.html"><strong>AM-Bench: Understanding Agents under Task Underspecification across Models and Harnesses</strong></a> <span>2026-10-13</span></li>
+          <li><a href="2610.17288.html"><strong>PhysCodeGym: Benchmarking Coding Agents for Physically Verifiable 4D Reconstruction</strong></a> <span>2026-10-12</span></li>
+          <li><a href="2610.17020.html"><strong>CWE-bench: Refocusing Agentic Security from Exploitation to Defense</strong></a> <span>2026-10-12</span></li>
+          <li><a href="2610.16870.html"><strong>SpecGuardBench: Can Coding Agents Construct Reliable Validation Harnesses from Natural Language Specifications?</strong></a> <span>2026-10-12</span></li>
+          <li><a href="2610.16859.html"><strong>ANCHOR: Assessing Naturalistic Constraint Hierarchies and Ordering in Repository-Grounded Agentic Coding</strong></a> <span>2026-10-12</span></li>
+          <li><a href="2610.16402.html"><strong>EvoWeb: A Benchmark for Coding Agents on Evolving Web Applications</strong></a> <span>2026-10-12</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

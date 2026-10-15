@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>What Makes a Social Agent&#x27;s Interactions Effective? Learning from Verifiable Outcomes in Paired Worlds | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Effective social interaction requires more than fluent responses: agents must reach plans that fit the participants&#x27; needs and…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2610.20195" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.20195.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="What Makes a Social Agent&#x27;s Interactions Effective? Learning from Verifiable Outcomes in Paired Worlds" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Effective social interaction requires more than fluent responses: agents must reach plans that fit the participants&#x27; needs and…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.20195.html" />
+    <meta property="article:published_time" content="2026-10-14T13:44:30Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="What Makes a Social Agent&#x27;s Interactions Effective? Learning from Verifiable Outcomes in Paired Worlds" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Effective social interaction requires more than fluent responses: agents must reach plans that fit the participants&#x27; needs and…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "What Makes a Social Agent's Interactions Effective? Learning from Verifiable Outcomes in Paired Worlds",
+  "name": "What Makes a Social Agent's Interactions Effective? Learning from Verifiable Outcomes in Paired Worlds",
+  "abstract": "Effective social interaction requires more than fluent responses: agents must reach plans that fit the participants' needs and circumstances. Existing evaluations of social agents mainly rely on LLM judges that rate the conversation, without checking the resulting plan. We introduce HICO-Bench, a benchmark of 180 everyday coordination scenarios, such as resource allocation, scheduling, and authorization, in which two agents with private information converse and then independently record the plan they agreed on. A program checks Feasibility (the two records match and satisfy both participants' private conditions), and an LLM judge checks Integrity (the conversation supports the recorded plan); passing both is a Verified Success. Each scenario has two versions that share the same public context but differ in one private condition, so the correct plan differs between them. Across thirteen LLMs, 36% of conversations rated highly for goal completion fail Verified Success. To learn from outcomes that arrive only at the end of a conversation, we propose Paired-Credit Policy Optimization (PaCPO). After each turn, PaCPO asks the agent for a tentative plan, checks it in both versions of the scenario, and rewards the turns after which the tentative plans fit their respective versions. PaCPO raises Qwen3-8B's Verified Success from 20.4% to 28.3%.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Caixin Kang"
+    },
+    {
+      "@type": "Person",
+      "name": "Ke Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuchuan Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaoqiang Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Ling Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Bingxue Qiu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yongbin Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Yoichi Sato"
+    }
+  ],
+  "datePublished": "2026-10-14T13:44:30Z",
+  "dateModified": "2026-10-14T13:44:30Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.20195.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.20195.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.20195v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.20195"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.20195v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.20195"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>What Makes a Social Agent&#x27;s Interactions Effective? Learning from Verifiable Outcomes in Paired Worlds</h1>
+        <div class="meta">
+          Caixin Kang, Ke Wang, Yuchuan Wu, Xiaoqiang Wang, Ling Li, Bingxue Qiu, Yongbin Li, Yoichi Sato
+          · 2610.20195
+          · <time datetime="2026-10-14">2026-10-14</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Effective social interaction requires more than fluent responses: agents must reach plans that fit the participants&#x27; needs and circumstances. Existing evaluations of social agents mainly rely on LLM judges that rate the conversation, without checking the resulting plan. We introduce HICO-Bench, a benchmark of 180 everyday coordination scenarios, such as resource allocation, scheduling, and authorization, in which two agents with private information converse and then independently record the plan they agreed on. A program checks Feasibility (the two records match and satisfy both participants&#x27; private conditions), and an LLM judge checks Integrity (the conversation supports the recorded plan); passing both is a Verified Success. Each scenario has two versions that share the same public context but differ in one private condition, so the correct plan differs between them. Across thirteen LLMs, 36% of conversations rated highly for goal completion fail Verified Success. To learn from outcomes that arrive only at the end of a conversation, we propose Paired-Credit Policy Optimization (PaCPO). After each turn, PaCPO asks the agent for a tentative plan, checks it in both versions of the scenario, and rewards the turns after which the tentative plans fit their respective versions. PaCPO raises Qwen3-8B&#x27;s Verified Success from 20.4% to 28.3%.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.20195v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.20195v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.20195" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.19698.html"><strong>RuleTrek: Benchmarking Agentic Rule Reasoning in Complex Scenarios</strong></a> <span>2026-10-14</span></li>
+          <li><a href="2610.19005.html"><strong>CyberArena: Benchmarking AI Agents in Live Symmetric Attack-and-Defense Combat</strong></a> <span>2026-10-13</span></li>
+          <li><a href="2610.17874.html"><strong>Searching for What Matters: Open-Ended Discovery of Multiple Hypotheses with Agentic Data Exploration</strong></a> <span>2026-10-13</span></li>
+          <li><a href="2610.17837.html"><strong>ProtoArena: Can AI Agents Discover and Exploit Real-World Cross-Component Protocol Vulnerabilities?</strong></a> <span>2026-10-13</span></li>
+          <li><a href="2610.17827.html"><strong>Benchmarking and Training Reward Models for Cross-Source Evidence Grounding in Search Agents</strong></a> <span>2026-10-13</span></li>
+          <li><a href="2610.17816.html"><strong>Empowering Edge Agents: A Systematic Analysis of Edge-Cloud Collaboration in LLM Agent Execution</strong></a> <span>2026-10-13</span></li>
+          <li><a href="2610.15055.html"><strong>Trace Evolution Bench: Measuring Whether Agents Improve from Their Own Environment Traces</strong></a> <span>2026-10-10</span></li>
+          <li><a href="2610.14807.html"><strong>ASIWorld: Benchmarking Autonomous Agents in a Persistent Survival Sandbox</strong></a> <span>2026-10-10</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

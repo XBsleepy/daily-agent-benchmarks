@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Agents driven by large language models are increasingly deployed on long-horizon tasks, where they use tools and modify real…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Tool use, agent benchmark, LLM agent, arXiv, 2610.20344" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.20344.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Agents driven by large language models are increasingly deployed on long-horizon tasks, where they use tools and modify real…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.20344.html" />
+    <meta property="article:published_time" content="2026-10-14T15:24:39Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Agents driven by large language models are increasingly deployed on long-horizon tasks, where they use tools and modify real…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents",
+  "name": "Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents",
+  "abstract": "Agents driven by large language models are increasingly deployed on long-horizon tasks, where they use tools and modify real workspaces. How well they perform depends as much on the harness around the model as on the model itself. Existing benchmarks measure downstream task success under a fixed harness, leaving harness engineering itself unexplored. We propose Doc2Harness, a two-stage benchmark that evaluates long-horizon harness engineering directly. In Stage 1, a build model operating inside a fixed builder harness receives an interface-only contract skeleton and a development document that consolidates behavior across twelve frontier harnesses, and then constructs a complete candidate harness in an isolated container. In Stage 2, the frozen candidate harness runs in containers separate from the construction environment, one per test case, and is driven end to end by a scripted mock model. We score each test case using four observable channels, namely the requests sent to the model, the files on disk, the process exit code, and the command output; positive controls rule out vacuous passes. Across nineteen frontier models, each evaluated with three independent builds on 328 test cases, GPT-6 Astra achieves the highest pass rate at 53.05%, while the weakest model reaches 27.44%, a gap of roughly twenty-six percentage points. Even the strongest model fails nearly half of the test cases, and failures cluster around how cross-cutting functionality is split across modules. To our knowledge, Doc2Harness provides the first deterministic benchmark for measuring long-horizon harness engineering.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yuyao Ge"
+    },
+    {
+      "@type": "Person",
+      "name": "Shenghua Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Peizhong Gao"
+    },
+    {
+      "@type": "Person",
+      "name": "Chendi Ge"
+    },
+    {
+      "@type": "Person",
+      "name": "Chenxu Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yiwei Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Lingrui Mei"
+    },
+    {
+      "@type": "Person",
+      "name": "Baolong Bi"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiayu Yao"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiafeng Guo"
+    },
+    {
+      "@type": "Person",
+      "name": "Xueqi Cheng"
+    }
+  ],
+  "datePublished": "2026-10-14T15:24:39Z",
+  "dateModified": "2026-10-14T15:24:39Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.20344.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.20344.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.20344v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.20344"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.20344v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.20344"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents</h1>
+        <div class="meta">
+          Yuyao Ge, Shenghua Liu, Peizhong Gao, Chendi Ge, Chenxu Liu, Yiwei Wang, Lingrui Mei, Baolong Bi, Jiayu Yao, Jiafeng Guo, Xueqi Cheng
+          · 2610.20344
+          · <time datetime="2026-10-14">2026-10-14</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Agents driven by large language models are increasingly deployed on long-horizon tasks, where they use tools and modify real workspaces. How well they perform depends as much on the harness around the model as on the model itself. Existing benchmarks measure downstream task success under a fixed harness, leaving harness engineering itself unexplored. We propose Doc2Harness, a two-stage benchmark that evaluates long-horizon harness engineering directly. In Stage 1, a build model operating inside a fixed builder harness receives an interface-only contract skeleton and a development document that consolidates behavior across twelve frontier harnesses, and then constructs a complete candidate harness in an isolated container. In Stage 2, the frozen candidate harness runs in containers separate from the construction environment, one per test case, and is driven end to end by a scripted mock model. We score each test case using four observable channels, namely the requests sent to the model, the files on disk, the process exit code, and the command output; positive controls rule out vacuous passes. Across nineteen frontier models, each evaluated with three independent builds on 328 test cases, GPT-6 Astra achieves the highest pass rate at 53.05%, while the weakest model reaches 27.44%, a gap of roughly twenty-six percentage points. Even the strongest model fails nearly half of the test cases, and failures cluster around how cross-cutting functionality is split across modules. To our knowledge, Doc2Harness provides the first deterministic benchmark for measuring long-horizon harness engineering.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.20344v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.20344v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.20344" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.19368.html"><strong>OS-Bench: Evaluating SWE Agents on Cross-OS Code Migration</strong></a> <span>2026-10-14</span></li>
+          <li><a href="2610.18206.html"><strong>SWE-MISBEHAVIOR: Benchmarking and Mitigating Boundary Violations in Software Coding Agents</strong></a> <span>2026-10-13</span></li>
+          <li><a href="2610.18090.html"><strong>AM-Bench: Understanding Agents under Task Underspecification across Models and Harnesses</strong></a> <span>2026-10-13</span></li>
+          <li><a href="2610.17288.html"><strong>PhysCodeGym: Benchmarking Coding Agents for Physically Verifiable 4D Reconstruction</strong></a> <span>2026-10-12</span></li>
+          <li><a href="2610.17020.html"><strong>CWE-bench: Refocusing Agentic Security from Exploitation to Defense</strong></a> <span>2026-10-12</span></li>
+          <li><a href="2610.16870.html"><strong>SpecGuardBench: Can Coding Agents Construct Reliable Validation Harnesses from Natural Language Specifications?</strong></a> <span>2026-10-12</span></li>
+          <li><a href="2610.16859.html"><strong>ANCHOR: Assessing Naturalistic Constraint Hierarchies and Ordering in Repository-Grounded Agentic Coding</strong></a> <span>2026-10-12</span></li>
+          <li><a href="2610.16402.html"><strong>EvoWeb: A Benchmark for Coding Agents on Evolving Web Applications</strong></a> <span>2026-10-12</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

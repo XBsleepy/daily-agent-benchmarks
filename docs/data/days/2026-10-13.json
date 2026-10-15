@@ -1,21 +1,33 @@
 {
   "date": "2026-10-13",
-  "count": 12,
+  "count": 16,
   "report": {
     "date": "2026-10-13",
-    "count": 12,
+    "count": 16,
     "themes": [
+      {
+        "id": "science",
+        "count": 3,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
       {
         "id": "research",
         "count": 2,
         "en": "Research agents",
         "zh": "科研智能体"
-      },
-      {
-        "id": "science",
-        "count": 2,
-        "en": "Science lab",
-        "zh": "科学实验"
       },
       {
         "id": "coding",
@@ -24,80 +36,249 @@
         "zh": "代码智能体"
       },
       {
-        "id": "tool-use",
-        "count": 2,
-        "en": "Tool use",
-        "zh": "工具使用"
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
       },
       {
-        "id": "embodied",
+        "id": "computer-use",
         "count": 1,
-        "en": "Embodied / robotics",
-        "zh": "具身 / 机器人"
+        "en": "Computer use",
+        "zh": "计算机使用"
       },
       {
-        "id": "planning",
+        "id": "multimodal",
         "count": 1,
-        "en": "Planning / reasoning",
-        "zh": "规划 / 推理"
-      },
-      {
-        "id": "memory",
-        "count": 1,
-        "en": "Memory",
-        "zh": "记忆"
-      },
-      {
-        "id": "conversation",
-        "count": 1,
-        "en": "Dialogue / customer",
-        "zh": "对话 / 客服"
+        "en": "Multimodal",
+        "zh": "多模态"
       }
     ],
     "en": {
-      "headline": "12 new agent benchmarks",
-      "summary": "On October 13, 2026, arXiv listed 12 new agent benchmarks. Work clustered around Research agents (2), Science lab (2), Coding agents (2), and Tool use (2).",
+      "headline": "16 new agent benchmarks",
+      "summary": "On October 13, 2026, arXiv listed 16 new agent benchmarks. Work clustered around Science lab (3), Tool use (3), Planning / reasoning (2), and Research agents (2).",
       "highlights": [
+        {
+          "id": "2610.19005",
+          "title": "CyberArena: Benchmarking AI Agents in Live Symmetric Attack-and-Defense Combat",
+          "blurb": "AI agents are demonstrating increasingly strong offensive and defensive cybersecurity capabilities in the real world."
+        },
         {
           "id": "2610.17794",
           "title": "GIFT-Eval-CTX: A Benchmark For Contextual Forecasting Model Evaluation",
           "blurb": "Contextual forecasting seeks to improve time series forecasting by incorporating forward-looking information, such as planned events, external conditions, and expert expectations."
         },
         {
-          "id": "2610.18449",
-          "title": "Autonomous Science Bench: Evaluating AI Agents for Autonomous Scientific Discovery",
-          "blurb": "AI agents for autonomous scientific discovery must decide which experiments to run under a limited budget."
-        },
-        {
-          "id": "2610.18052",
-          "title": "Can Agents Forget When Asked? A Benchmark for Memory Unlearning in LLM Agents",
-          "blurb": "Long-term memory has become a core component of large language model (LLM) agents."
+          "id": "2610.19128",
+          "title": "CLASHarness: Benchmarking Multi-Agent Conflict in Computer Use via a Controllable and Verifiable Generation Pipeline",
+          "blurb": "Vision-language models (VLMs) are increasingly deployed in multi-agent systems to automate complex computer-use workflows, yet existing benchmarks mostly assume consistent, cooperative environments."
         }
       ]
     },
     "zh": {
-      "headline": "新增 12 篇 Agent Benchmark",
-      "summary": "2026年10月13日，arXiv 新增 12 篇 Agent Benchmark。当日主题集中在科研智能体（2）、科学实验（2）、代码智能体（2）、工具使用（2）。",
+      "headline": "新增 16 篇 Agent Benchmark",
+      "summary": "2026年10月13日，arXiv 新增 16 篇 Agent Benchmark。当日主题集中在科学实验（3）、工具使用（3）、规划 / 推理（2）、科研智能体（2）。",
       "highlights": [
+        {
+          "id": "2610.19005",
+          "title": "CyberArena: Benchmarking AI Agents in Live Symmetric Attack-and-Defense Combat",
+          "blurb": "AI agents are demonstrating increasingly strong offensive and defensive cybersecurity capabilities in the real world."
+        },
         {
           "id": "2610.17794",
           "title": "GIFT-Eval-CTX: A Benchmark For Contextual Forecasting Model Evaluation",
           "blurb": "Contextual forecasting seeks to improve time series forecasting by incorporating forward-looking information, such as planned events, external conditions, and expert expectations."
         },
         {
-          "id": "2610.18449",
-          "title": "Autonomous Science Bench: Evaluating AI Agents for Autonomous Scientific Discovery",
-          "blurb": "AI agents for autonomous scientific discovery must decide which experiments to run under a limited budget."
-        },
-        {
-          "id": "2610.18052",
-          "title": "Can Agents Forget When Asked? A Benchmark for Memory Unlearning in LLM Agents",
-          "blurb": "Long-term memory has become a core component of large language model (LLM) agents."
+          "id": "2610.19128",
+          "title": "CLASHarness: Benchmarking Multi-Agent Conflict in Computer Use via a Controllable and Verifiable Generation Pipeline",
+          "blurb": "Vision-language models (VLMs) are increasingly deployed in multi-agent systems to automate complex computer-use workflows, yet existing benchmarks mostly assume consistent, cooperative environments."
         }
       ]
     }
   },
   "papers": [
+    {
+      "id": "2610.19159",
+      "title": "Into the Unknown: Benchmarking AI agents on open scientific research problems",
+      "abstract": "Can AI agents carry out research on open scientific problems? We introduce Into the Unknown, a benchmark that provides an agent with a science paper along with a research direction to pursue and tasks it to write a follow-up paper. We work with scientists at US Department of Energy (DOE) national laboratories, who each contribute an unpublished follow-up direction from their own work together with the necessary conditions a submission must meet. While assessing the quality of a follow-up paper is challenging in general, using these conditions to form a rubric makes evaluation more tractable for research problems that have no reference answer. We have nine frontier agents write 15 follow-ups each, spanning quantum computing, plasma physics, computational chemistry, materials science, and scientific machine learning domains. None of the 135 submissions satisfies all the conditions, and 114 fail our integrity check, most often because the paper claims work that was never done or reports numbers that contradict the recorded evidence. Overall, agents readily produce papers that look like follow-ups, but none meets the standard of the domain scientist, leaving substantial headroom. Our code and data are publicly available.",
+      "authors": [
+        "Seungone Kim",
+        "Jiayi Geng",
+        "Young-Jun Lee",
+        "Bo Liu",
+        "Juyoung Suk",
+        "Nicholas Lubbers",
+        "Mitchell Wood",
+        "Marcus Noack",
+        "Yong-Xin Yao",
+        "Yuan Shi",
+        "Roxana Bujack",
+        "Cristina Garcia Cardona",
+        "Austin Rodriguez",
+        "Ilon Joseph",
+        "Woojin Cho",
+        "Zora Zhiruo Wang",
+        "Chuanyang Jin",
+        "Ian Wu",
+        "Apurva Gandhi",
+        "Tianjian Li",
+        "Weiwei Sun",
+        "Carolin Lawrence",
+        "Kiril Gashteovski",
+        "Dongyeop Kang",
+        "Jay Shin",
+        "Akari Asai",
+        "Graham Neubig",
+        "Sean Welleck"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-13T20:25:59Z",
+      "updated": "2026-10-13T20:25:59Z",
+      "announced_date": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "comment": "preprint under review",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.19159v1",
+        "pdf": "https://arxiv.org/pdf/2610.19159v1",
+        "html": "https://arxiv.org/html/2610.19159"
+      },
+      "score": 15,
+      "tags": [
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2610.19158",
+      "title": "AgentCIScope: Grounded Contextual Integrity Evaluation for LLM Agents",
+      "abstract": "LLM agents are becoming increasingly capable of handling daily workspace tasks by interacting with application environments through tool calls. However, as agents read and write sensitive user data across email, documents, and other applications, a central privacy question is whether they preserve contextual integrity (CI), that is, whether the information flows they produce comply with context-specific disclosure constraints. Existing work either focuses on model-level privacy leakage or evaluates agents in limited application environments with manually constructed disclosure constraints. In this work, we introduce AgentCIScope, a unified platform and benchmark for evaluating agent-level contextual integrity through executable, multi-step tasks across diverse, realistic application environments. AgentCIScope transforms public and synthetic privacy cases into executable agent tasks, with disclosure constraints grounded in three criteria: governing privacy policies, persona-based agreement, and a predefined sensitive-attribute taxonomy. Based on AgentCIScope, we evaluate 12 agents on 936 tasks and find that strong task-completion capability does not guarantee contextual-integrity preservation: single-run leakage rates range from 32.5% to 94.4%, while repeating each task five times further increases leakage by 4-19 percentage points. Leakage varies substantially across attributes: personal preferences and booking details have average leakage rates of 84.7% and 76.5%, compared with 17.1% for credit-card information and 29.4% for SSNs; environments: calendar has the highest average leakage rate as an information source, while WhatsApp ranks highest as an information destination; and governing privacy policies. AgentCIScope provides deep insights into agent privacy leakage and serves as a unified testbed for developing privacy-preserving agents.",
+      "authors": [
+        "Chengquan Guo",
+        "Zhaorun Chen",
+        "Zinan Lin",
+        "Xiaodong Liu",
+        "Bo Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-13T20:25:00Z",
+      "updated": "2026-10-13T20:25:00Z",
+      "announced_date": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.19158v1",
+        "pdf": "https://arxiv.org/pdf/2610.19158v1",
+        "html": "https://arxiv.org/html/2610.19158"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.19128",
+      "title": "CLASHarness: Benchmarking Multi-Agent Conflict in Computer Use via a Controllable and Verifiable Generation Pipeline",
+      "abstract": "Vision-language models (VLMs) are increasingly deployed in multi-agent systems to automate complex computer-use workflows, yet existing benchmarks mostly assume consistent, cooperative environments. In contrast, real-world collaboration rarely runs on consistent information: peer or sub-agents frequently report outdated states, issue contradictory instructions, or compete over shared permissions and files, forcing agents to check others' outputs and verify ground truth in the environment. Evaluating such conflict resolution remains challenging: manual authoring cannot scale across complex systems, while unconstrained LLM generation produces narrative drift, answer leakage, and unsatisfiable rubrics. We introduce CLASHarness (Conflict-Loaded Agent Scenario Harness), a controllable framework for generating verifiable multi-agent conflicts in computer use, with a benchmark of 600 multi-round tasks. By combining hierarchical scenario planning with an eight-step verified micro-pipeline, CLASHarness pre-commits decisive visual facts before rendering and compiles hybrid code and semantic graders directly from executed reference trajectories, guaranteeing every task is solvable by construction. Evaluating 15 frontier models on CLASHarness reveals three core bottlenecks. First, when sub-agent outputs conflict with the environment, weaker models blindly follow misleading information, whereas stronger models inspect visual evidence to verify ground truth. Second, resolving conflicts is much harder than finding them: while agents can spot inconsistencies, actively fixing system state drops task success significantly. Third, coordination protocols remain a universal bottleneck: even frontier models fail over 58% of closing actions, often forgetting to release shared locks or hand off tasks. CLASHarness provides a scalable, verifiable foundation for building reliable multi-agent systems.",
+      "authors": [
+        "Yuxiang Lai",
+        "Jike Zhong",
+        "Chengzhi Liu",
+        "Ming Li",
+        "Haonan Wang",
+        "Xiaofeng Yang",
+        "Liang Zhao",
+        "Youbao Tang",
+        "Ruixi Fan"
+      ],
+      "categories": [
+        "cs.MA"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-10-13T20:01:18Z",
+      "updated": "2026-10-13T20:01:18Z",
+      "announced_date": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.19128v1",
+        "pdf": "https://arxiv.org/pdf/2610.19128v1",
+        "html": "https://arxiv.org/html/2610.19128"
+      },
+      "score": 17,
+      "tags": [
+        "multi-agent",
+        "computer-use",
+        "planning",
+        "multimodal"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.19005",
+      "title": "CyberArena: Benchmarking AI Agents in Live Symmetric Attack-and-Defense Combat",
+      "abstract": "AI agents are demonstrating increasingly strong offensive and defensive cybersecurity capabilities in the real world. Current benchmarks mostly evaluate agents in isolation against static targets. Real cyber operations, however, are dynamic and coupled: security postures constantly change as attackers and defenders adapt to each other in real time. Static benchmarks quickly saturate and miss an agent's ability to attack and defend simultaneously under live pressure. To address this gap, we present CyberArena, a dynamic, symmetric adversarial benchmark built around multi-round attack-and-defense combat. In isolated sandboxes, two agents compete under identical rules, acting concurrently as both attackers and defenders over continuously changing services. This converts static targets into evolving, semi-open challenges, directly testing an agent's speed and precision in discovering, exploiting, and patching vulnerabilities. To sustain the benchmark's longevity, an automated agentic pipeline continuously generates, reviews, and validates new environments. Furthermore, because pairwise contests are notoriously hard to quantify, we introduce a dynamical model that maps match dynamics into unified, multidimensional scores across offensive, defensive, and domain-specific capabilities. Evaluating 12 frontier LLM agents across 40 challenges in 466 matches, CyberArena separates model capabilities where single-agent baselines hit a ceiling. The trajectories read like a fight rather than an exam: defenders patch one hole and miss the next and certify repairs on stale evidence, while capable agents think a move ahead, planting backdoors for later rounds and, in one case, writing their own packet sniffer to watch the opponent. Beyond a benchmark, CyberArena serves as an adaptable, scalable experimental platform for future research on cybersecurity agents.",
+      "authors": [
+        "Bangya Liu",
+        "Jianhong Tu",
+        "Yueyang Pan",
+        "Hanhong Zhao",
+        "Zhe Ye",
+        "Hongwei Li",
+        "Saastha Vasan",
+        "Katherine Lambert",
+        "Junmin Zhu",
+        "Hao Wang",
+        "Jienan Chen",
+        "Yunze Xiao",
+        "Minglai Yang",
+        "Zihan Wang",
+        "Hairong Yin",
+        "Hao Wang",
+        "Zhiwen Fan",
+        "Tianneng Shi",
+        "Zhun Wang",
+        "Chenguang Wang",
+        "Dawn Song"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-10-13T18:05:26Z",
+      "updated": "2026-10-13T18:05:26Z",
+      "announced_date": "2026-10-13",
+      "first_seen": "2026-10-13",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.19005v1",
+        "pdf": "https://arxiv.org/pdf/2610.19005v1",
+        "html": "https://arxiv.org/html/2610.19005"
+      },
+      "score": 20,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
     {
       "id": "2610.18449",
       "title": "Autonomous Science Bench: Evaluating AI Agents for Autonomous Scientific Discovery",
