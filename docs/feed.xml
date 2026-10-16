@@ -5,136 +5,147 @@
   <link href="https://xbsleepy.github.io/daily-agent-benchmarks/" />
   <link rel="self" href="https://xbsleepy.github.io/daily-agent-benchmarks/feed.xml" />
   <id>https://xbsleepy.github.io/daily-agent-benchmarks/</id>
-  <updated>2026-10-16T08:25:58Z</updated>
+  <updated>2026-10-16T17:54:57Z</updated>
   <entry>
     <title>X-RIC: An Agentic RAN-Intelligent Controller Benchmark for Enhancing Reinforcement Learning</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.22269.html" />
-    <link rel="related" href="https://arxiv.org/abs/2610.22269v1" />
+    <link rel="related" href="https://arxiv.org/abs/2610.22269" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.22269.html</id>
-    <published>2026-10-15T17:34:17Z</published>
-    <updated>2026-10-15T17:34:17Z</updated>
-    <author><name>Adhwaa Al-Chaab</name></author><author><name>Ayman Younis</name></author><author><name>Dario Pompili</name></author>
+    <published>2026-10-16T04:00:00Z</published>
+    <updated>2026-10-16T04:00:00Z</updated>
+    <author><name>Adhwaa Al-Chaab, Ayman Younis, Dario Pompili</name></author>
     <category term="General" />
     <summary>The O-RAN ALLIANCE introduces architectural flexibility through disaggregation and AI-driven control. While the RAN Intelligent Controller (RIC) enables centralized optimization, current AI approaches lack reasoning capabilities and explainability. We propose eXplainable RIC (X-RIC), a novel framework integrating agentic AI into O-RAN architectures. X-RIC combines reactive Reinforcement Learning (RL) with strategic agentic reasoning through: (i) automated Behavioral Cloning (BC) using domain heuristics for sample-efficient training, (ii) a Telecom Language Model (TLM), a transformer-based reasoning module providing contextual abstraction and interpretability, and (iii) closed-loop co-adaptation within the Near-RT RIC control loop enabling continuous policy refinement. To ensure deployment readiness, we introduce BARX (Benchmarking Agentic Reasoning for RAN), a domain-specific evaluation framework assessing agentic control across latency, compliance, and determinism metrics. We validate X-RIC on SLA-aware network slicing in simulation and O-RAN-compliant testbed deployments. X-RIC achieves 89% operational cost reduction while maintaining SLA compliance, converging 75% faster with 50% fewer training steps and 46% lower variance.</summary>
   </entry>
   <entry>
     <title>Beyond Downstream QA: Rethinking How We Evaluate Agent Memory</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.22209.html" />
-    <link rel="related" href="https://arxiv.org/abs/2610.22209v1" />
+    <link rel="related" href="https://arxiv.org/abs/2610.22209" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.22209.html</id>
-    <published>2026-10-15T16:58:12Z</published>
-    <updated>2026-10-15T16:58:12Z</updated>
-    <author><name>Sebastian-Antonio Toma</name></author><author><name>Jean de Kernier</name></author><author><name>Mike Ply</name></author><author><name>Oliviu Matei</name></author>
+    <published>2026-10-16T04:00:00Z</published>
+    <updated>2026-10-16T04:00:00Z</updated>
+    <author><name>Sebastian-Antonio Toma, Jean de Kernier, Mike Ply, Oliviu Matei</name></author>
     <category term="General" />
     <summary>Agent memory benchmarks evaluate whether an agent&#x27;s responses reflect correct knowledge, measuring downstream question-answering accuracy as a proxy for memory quality. We show this evaluation paradigm is incomplete: it conflates memory correctness with retrieval and generation quality, producing both false positives where correct responses mask broken memory and false negatives where incorrect responses blame correct memory for retrieval failures. We introduce FEB-30, a benchmark of 30 fact-evolution trajectories spanning 6 diagnostic categories and 3 difficulty levels, constructed via paradigm inversion: documents are generated from known fact trajectories, yielding deterministic ground truth without human annotation. Each trajectory defines how a fact should evolve across multi-author artifacts (documents, emails, conversations), enabling direct inspection of the memory store after each ingestion step. Applying FEB-30 to a representative memory system, we demonstrate that intrinsic and extrinsic evaluation diverge by an average of 16 percentage points, with 44% of trajectories exceeding meaningful divergence thresholds. Diagnostic decomposition reveals that the system correctly classifies memory operations (create, update, reinforce, supersede) only 20% of the time, a failure entirely invisible to extrinsic evaluation, and that failure modes differ systematically by category and difficulty. We release the benchmark, document generation pipeline, and scoring framework to support reproducible evaluation of agent memory systems.</summary>
   </entry>
   <entry>
     <title>WEAVE: Weaving Real-World Code Evolution into Dependency-Structured Tasks for Benchmarking and Training Code Agents</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.22039.html" />
-    <link rel="related" href="https://arxiv.org/abs/2610.22039v1" />
+    <link rel="related" href="https://arxiv.org/abs/2610.22039" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.22039.html</id>
-    <published>2026-10-15T15:12:56Z</published>
-    <updated>2026-10-15T15:12:56Z</updated>
-    <author><name>Weihao Li</name></author><author><name>Zihang Xu</name></author><author><name>Zhongqiu Wang</name></author><author><name>Songwei Yu</name></author><author><name>Wenqiang Zhu</name></author><author><name>Yuechen Luo</name></author><author><name>Jingxuan Xu</name></author><author><name>Yanan Wu</name></author><author><name>Haoyang Huang</name></author><author><name>Ken Deng</name></author>
+    <published>2026-10-16T04:00:00Z</published>
+    <updated>2026-10-16T04:00:00Z</updated>
+    <author><name>Weihao Li, Zihang Xu, Zhongqiu Wang, Songwei Yu, Wenqiang Zhu, Yuechen Luo, Jingxuan Xu, Yanan Wu, Haoyang Huang, Ken Deng</name></author>
     <category term="Coding / SWE" />
     <summary>Real-world software engineering rarely consists of isolated changes. Features, migrations, and systematic fixes often unfold across multiple pull requests (PRs), requiring coordinated modifications across a repository. Yet most executable repository-level benchmarks retain a single issue or PR as the task unit, while existing multi-PR settings rely on coarse aggregation and structure-agnostic evaluation. This mismatch obscures dependencies among changes and limits progress measurement and learning signals for long-horizon code agents. We introduce WEAVE, a framework that transforms verified PR histories into executable, dependency-structured tasks. WEAVE leverages repository-calibrated typed change loci to organize related PRs into bounded DAGs and instantiate each as a unified executable task. We further introduce Graph Credit, a deterministic, test-grounded metric that measures dependency-consistent partial progress and supports dense, verifiable rewards for reinforcement learning. Experiments on task construction, agent evaluation, supervised fine-tuning, and reinforcement learning show that WEAVE yields coherent executable tasks, enables more faithful progress measurement than flat scoring, and provides effective supervision and verifiable rewards for training code agents.</summary>
   </entry>
   <entry>
     <title>OntoAct: Hypothesis-Based Neuro-Symbolic Agents through Ontological Abstraction</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.21983.html" />
-    <link rel="related" href="https://arxiv.org/abs/2610.21983v1" />
+    <link rel="related" href="https://arxiv.org/abs/2610.21983" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.21983.html</id>
-    <published>2026-10-15T14:34:15Z</published>
-    <updated>2026-10-15T14:34:15Z</updated>
-    <author><name>Donghyeok Lee</name></author><author><name>Bong Gyun Kang</name></author><author><name>Junyong Ahn</name></author><author><name>Sungroh Yoon</name></author>
+    <published>2026-10-16T04:00:00Z</published>
+    <updated>2026-10-16T04:00:00Z</updated>
+    <author><name>Donghyeok Lee, Bong Gyun Kang, Junyong Ahn, Sungroh Yoon</name></author>
     <category term="General" />
     <summary>Learning from experience requires recovering reusable knowledge and determining when it applies to a new situation. We introduce OntoAct, a hypothesis-based neuro-symbolic framework built on ontological abstraction. OntoAct turns individual experiences into axioms over entity types, relations, and conditions, making their underlying patterns reusable across situations. A large language model (LLM) uses this world knowledge to propose hypotheses and actions, while a symbolic verifier assesses their supporting conditions against current observations. Verification identifies missing evidence, and new observations and intervention outcomes update hypothesis assessments and guide subsequent actions. We also introduce Tacit-FLE, a benchmark built on the Factorio Learning Environment (FLE) for diagnosing and repairing hidden faults in existing factories using inherited operational records. Its synthetic maintenance corpus distributes evidence across records, and an executed repair may leave the fault unresolved, requiring agents to reassess their diagnoses through interaction. Across Tacit-FLE, Mars, and ALFWorld, OntoAct achieves leading task performance with efficient interaction and inference.</summary>
   </entry>
   <entry>
     <title>From Research Goals to Scientific Closure: Evaluating Agents Through Evidence-Supported Physics Research</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.21767.html" />
-    <link rel="related" href="https://arxiv.org/abs/2610.21767v1" />
+    <link rel="related" href="https://arxiv.org/abs/2610.21767" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.21767.html</id>
-    <published>2026-10-15T12:23:22Z</published>
-    <updated>2026-10-15T12:23:22Z</updated>
-    <author><name>Yijia Mao</name></author><author><name>Song Dai</name></author><author><name>Tao Chen</name></author><author><name>Xiangyu Lu</name></author><author><name>Linqian Zeng</name></author><author><name>Chenxi Hu</name></author><author><name>Sitong Zhou</name></author><author><name>Dongyang He</name></author><author><name>Xiaodan Mao</name></author><author><name>Linxuan Zhang</name></author>
+    <published>2026-10-16T04:00:00Z</published>
+    <updated>2026-10-16T04:00:00Z</updated>
+    <author><name>Yijia Mao, Song Dai, Tao Chen, Xiangyu Lu, Linqian Zeng, Chenxi Hu, Sitong Zhou, Dongyang He, Xiaodan Mao, Linxuan Zhang, Tong Zhu, Yafu Li, Fangchen Yu, Peng Ye, Feng He, Yu Cheng, Yun Luo</name></author>
     <category term="Science &amp; research" />
     <summary>Can AI agents organize scientific investigations that lead to well-supported conclusions? To evaluate this capability, we introduce PhysClosureBench, a benchmark of 50 expert-verified, goal-specified research tasks spanning strong-field, attosecond, and neighboring physics areas. Each task specifies the research objective and essential scientific constraints, while leaving the agent to organize the investigation and determine how to generate and validate the evidence needed to answer the question. A 20-criterion Atomic Score measures local scientific accomplishment, while Research Closure (RC0--RC4) assesses how fully the investigation resolves the specified research question based on whether its indispensable evidence requirements and applicable scope conditions are satisfied. We evaluate seven frontier LLMs, where Claude-Opus-5 achieves the highest mean Atomic Score (6.29/10) but reaches RC4 in only 32.7% of attempts. Across the benchmark, 36.2% of attempts scoring at least 8/10 still fall short of RC4, while all seven models reach RC4 on substantially fewer tasks in all three runs than in at least one. Case-level analysis further illustrates how misinterpretation of generated results and unresolved physical applicability limits can lead to incomplete closure. Together, these results reveal a persistent gap between AI agents&#x27; local scientific accomplishments and their ability to achieve complete research closure.</summary>
   </entry>
   <entry>
     <title>Auditing Escalation Reliability in Healthcare LLM Agents: A Perturbation-Controlled Benchmark of Workflow-State Failures</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.21270.html" />
-    <link rel="related" href="https://arxiv.org/abs/2610.21270v1" />
+    <link rel="related" href="https://arxiv.org/abs/2610.21270" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.21270.html</id>
-    <published>2026-10-15T05:04:10Z</published>
-    <updated>2026-10-15T05:04:10Z</updated>
-    <author><name>Zihao Zheng</name></author><author><name>Junyi Yao</name></author><author><name>Baichuan Li</name></author><author><name>Jiayu Long</name></author>
+    <published>2026-10-16T04:00:00Z</published>
+    <updated>2026-10-16T04:00:00Z</updated>
+    <author><name>Zihao Zheng (Washington University in St. Louis), Junyi Yao (Washington University in St. Louis), Baichuan Li (Southern Methodist University), Jiayu Long (Washington University in St. Louis)</name></author>
     <category term="General" />
     <summary>Trustworthy biomedical AI requires reliable action selection when evidence is missing, stale, conflicting, or late, not only accurate answers on static inputs. We instantiate an episode-level evaluation protocol as 400 synthetic healthcare workflow episodes: 40 hand-authored semantic seeds across four task classes, two surface parameterizations, and five controlled variants, scored on ANSWER/ASK CLARIFICATION/ABSTAIN/ESCALATE under a pre-declared 5:1 missed-versus-unnecessary escalation cost. Reference actions are single-author study-policy labels, not clinician-adjudicated ground truth. Across five open-weight configurations (1.7B--9.7B), clean decision accuracy reaches 0.97, yet uncertainty-prompted models miss 32--97% of required escalations. The stronger 9.7B configuration narrows but does not remove the gap, falling from 0.97 clean accuracy to 0.78 under conflict. Verbalized confidence is inconsistent (ECE 0.10--0.54; failure AUROC 0.48--0.77), and a development-tuned confidence-only policy yields no utility gain. A transparent workflow-aware controller improves 5:1 utility for every model and reduces missed escalations to 0.12--0.24, at specificity 0.83--0.93. However, a 30-concept lexical stress test reduces each rule detector&#x27;s recall from 1.00 on trigger phrases to 0.00 on unseen paraphrases, limiting the controller claim to this benchmark. Seed-clustered statistics, ablations, cross-task transfer, raw outputs, and manifests are packaged for audit. The results motivate explicit workflow-state evaluation while showing that apparently effective routing controls need their own generalization tests.</summary>
   </entry>
   <entry>
     <title>Kolab: Benchmarking Human-Agent Collaboration in Long-Horizon Workflows</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.21109.html" />
-    <link rel="related" href="https://arxiv.org/abs/2610.21109v1" />
+    <link rel="related" href="https://arxiv.org/abs/2610.21109" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.21109.html</id>
-    <published>2026-10-15T02:13:36Z</published>
-    <updated>2026-10-15T02:13:36Z</updated>
-    <author><name>Shirley Anugrah Hayati</name></author><author><name>Patricia Anugrah Setiani</name></author><author><name>Ruizi Wang</name></author><author><name>Zhouyi Li</name></author><author><name>Khanh Chi Le</name></author><author><name>Young-Jun Lee</name></author><author><name>Dongyeop Kang</name></author>
+    <published>2026-10-16T04:00:00Z</published>
+    <updated>2026-10-16T04:00:00Z</updated>
+    <author><name>Shirley Anugrah Hayati, Patricia Anugrah Setiani, Ruizi Wang, Zhouyi Li, Khanh Chi Le, Young-Jun Lee, Dongyeop Kang</name></author>
     <category term="Work / office" />
     <summary>When humans collaborate with AI agents on long-horizon tasks, what happens to the agents&#x27; contributions? For solving long-horizon tasks, humans place greater importance on ongoing interaction with AI agents (e.g., revising plans) than on an agent&#x27;s ability to complete the task in a single attempt. However, most agentic benchmarks have focused more on automation. Strong performance on such benchmarks does not imply effective real-world collaboration. Professional workflows offer a useful setting, as they often involve interdependent steps. To address this gap, we introduce Kolab, a new dataset of 115+ hours of screen recordings of 50 professionals from 40 occupations collaborating with agents on realistic, long-horizon problems. Kolab also contains participants&#x27; collaboration and output quality judgments. Our analysis reveals diverse collaboration patterns, highlighting the importance of when and how professionals coordinate with agents. A collaborative agent must do two things that automation benchmarks never test: anticipate whether experts will adopt, modify, or reject its contribution once it leaves the chat window to guide its next steps, and assess collaboration quality from the unfolding workflow without constant expert feedback. Our benchmark operationalizes both: (1) forecasting how professionals use agent contributions at diverse workflows, and (2) verifying their judgments of collaboration satisfaction and output quality. Findings show that frontier models, both agentic and non-agentic, overestimate collaboration with experts and struggle to distinguish between high- and low-quality collaboration. Longer workflow context does not consistently improve these predictions. As frontier agents cannot yet understand long-horizon collaboration with experts, we position Kolab as a valuable dataset for studying human-agent collaboration grounded in real professional workflows.</summary>
   </entry>
   <entry>
     <title>ToolBottleneckBench: Measuring Tool-Agent Performance under Controlled Pressures and Fixed Harness Budgets</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.21098.html" />
-    <link rel="related" href="https://arxiv.org/abs/2610.21098v1" />
+    <link rel="related" href="https://arxiv.org/abs/2610.21098" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.21098.html</id>
-    <published>2026-10-15T01:59:58Z</published>
-    <updated>2026-10-15T01:59:58Z</updated>
-    <author><name>Zichuan Xu</name></author><author><name>Yuyang Dong</name></author><author><name>Makoto Onizuka</name></author><author><name>Chuan Xiao</name></author>
+    <published>2026-10-16T04:00:00Z</published>
+    <updated>2026-10-16T04:00:00Z</updated>
+    <author><name>Zichuan Xu, Yuyang Dong, Makoto Onizuka, Chuan Xiao</name></author>
     <category term="Tool use" />
     <summary>The success score of a tool agent reflects both its model and the budgets of the harness that runs it. We present ToolBottleneckBench, a benchmark that measures tool-agent performance under controlled pressures and fixed harness budgets. Synthetic enterprise tasks stay fixed while one pressure varies: the registered tool catalog, the visible tool menu, the certified workflow, or the encoding of returned records. An exact grader records the first unmet obligation of each failed episode and the harness limit, if any, that ended it. Across 21 model and harness configurations, the visible menu is the only one of the three pressures that act on the model with a large penalty, and this penalty tracks truncation at the completion cap. Raising the cap sixteenfold removes most of the penalty in the truncation-heavy configurations. Most failures end at a harness limit, and the failure record identifies the assigned pressure no more reliably than a count of tool calls. The repairs that help change which tools reach the model or who issues the calls, and only two repairs, neither improving model behavior, beat every configuration switch. We recommend reporting pressure effects with the harness budgets under which they were measured. We release the benchmark at https://github.com/zichuanxu/tool-bottleneck-bench.</summary>
   </entry>
   <entry>
-    <title>Sci$Π$vot: Benchmarking Principal-Investigator Judgment at Pivotal Moments of Scientific AutoResearch Agents</title>
+    <title>Sci$\Pi$vot: Benchmarking Principal-Investigator Judgment at Pivotal Moments of Scientific AutoResearch Agents</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.21082.html" />
-    <link rel="related" href="https://arxiv.org/abs/2610.21082v1" />
+    <link rel="related" href="https://arxiv.org/abs/2610.21082" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.21082.html</id>
-    <published>2026-10-15T01:34:44Z</published>
-    <updated>2026-10-15T01:34:44Z</updated>
-    <author><name>Youran Sun</name></author><author><name>Xingyu Ren</name></author><author><name>Chugang Yi</name></author><author><name>Kejia Zhang</name></author><author><name>Di Wu</name></author><author><name>Yingkang Cao</name></author><author><name>Allen Zhou</name></author><author><name>Jianping Ye</name></author><author><name>Suying Liu</name></author><author><name>Jiaxuan Guo</name></author>
+    <published>2026-10-16T04:00:00Z</published>
+    <updated>2026-10-16T04:00:00Z</updated>
+    <author><name>Youran Sun, Xingyu Ren, Chugang Yi, Kejia Zhang, Di Wu, Yingkang Cao, Allen Zhou, Jianping Ye, Suying Liu, Jiaxuan Guo, Jianda Du, Weicheng Ye, Kecheng Liu, Hefan Zhang, Haixin Wang, Jie Xiao, Eric Yang, Haizhao Yang</name></author>
     <category term="Science &amp; research" />
-    <summary>Large language model (LLM) agents can keep scientific experiments running for months with little human supervision, but reliable autonomous research also requires scientific judgment. Evaluating scientific judgment is difficult because research decisions are open-ended and depend on project context. We construct Sci$Π$vot, a 248-case benchmark of scientific judgment based on human corrections. The benchmark draws on records from six months of research in which senior researchers ran LLM agents on 26 projects across six scientific fields and repeatedly intervened to correct the agents&#x27; research judgments. In each case, an agent chooses between the original LLM plan and the human-corrected alternative, using only the project record available before the correction as context. We compare LLM and human performance and examine the effects of reasoning effort, access to the project record, and reconsideration. At medium reasoning effort with the project record, models systematically prefer the original LLM plan over the human-corrected alternative. Four of five frontier models perform below chance on the selected cases. The highest accuracy in the project condition across the tested models and reasoning effort settings is 63.5%, compared with 73.4% for fresh researchers. At medium effort, every model achieves lower accuracy with the project record than without it, and reconsideration does not consistently improve overall accuracy. Even with a human-corrected alternative available, frontier models struggle with the selected research decisions, while Sci$Π$vot supports systematic evaluation of scientific judgment for LLM agents.</summary>
+    <summary>Large language model (LLM) agents can keep scientific experiments running for months with little human supervision, but reliable autonomous research also requires scientific judgment. Evaluating scientific judgment is difficult because research decisions are open-ended and depend on project context. We construct Sci$\Pi$vot, a 248-case benchmark of scientific judgment based on human corrections. The benchmark draws on records from six months of research in which senior researchers ran LLM agents on 26 projects across six scientific fields and repeatedly intervened to correct the agents&#x27; research judgments. In each case, an agent chooses between the original LLM plan and the human-corrected alternative, using only the project record available before the correction as context. We compare LLM and human performance and examine the effects of reasoning effort, access to the project record, and reconsideration. At medium reasoning effort with the project record, models systematically prefer the original LLM plan over the human-corrected alternative. Four of five frontier models perform below chance on the selected cases. The highest accuracy in the project condition across the tested models and reasoning effort settings is 63.5%, compared with 73.4% for fresh researchers. At medium effort, every model achieves lower accuracy with the project record than without it, and reconsideration does not consistently improve overall accuracy. Even with a human-corrected alternative available, frontier models struggle with the selected research decisions, while Sci$\Pi$vot supports systematic evaluation of scientific judgment for LLM agents.</summary>
   </entry>
   <entry>
     <title>OmicsBench: a long-horizon multi-turn benchmark of AI agents on research-study-scale bioinformatics</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.21074.html" />
-    <link rel="related" href="https://arxiv.org/abs/2610.21074v1" />
+    <link rel="related" href="https://arxiv.org/abs/2610.21074" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.21074.html</id>
-    <published>2026-10-15T01:23:57Z</published>
-    <updated>2026-10-15T01:23:57Z</updated>
-    <author><name>Gideon Shaked</name></author><author><name>Siddharth Nagisetty</name></author>
+    <published>2026-10-16T04:00:00Z</published>
+    <updated>2026-10-16T04:00:00Z</updated>
+    <author><name>Gideon Shaked, Siddharth Nagisetty</name></author>
     <category term="Science &amp; research" />
     <summary>Computational biologists increasingly delegate substantial analyses to AI agents in long-horizon, multi-turn sessions, yet most benchmarks of agents&#x27; bioinformatics capabilities pose a single short task with a single-shot prompt. We present OmicsBench, a long-horizon, multi-turn bioinformatics benchmark for AI agents. Each of its 97 tasks links dependent subtasks into a directed acyclic graph, for 662 underlying subtasks in all. Each subtask is posed as one user turn and graded deterministically against an answer key, with optional in-context feedback on incorrect answers. Across 12 models on three harnesses, the slowest agent averages 3.6 hours per task, and no combination comes near saturating the benchmark, with mean scores of 0.43 to 0.57 out of a possible 1 without in-context feedback and 0.54 to 0.67 with it. Multi-turn evaluation also uncovers behavior that single-shot prompts cannot, as agents score lower on subtasks that depend on earlier subtasks, and in-context feedback helps agents recover some of that loss. Because deterministic scoring gives no qualitative account of how an agent failed, we also introduce an unsupervised failure mode discovery pipeline that describes, embeds, and clusters agents&#x27; failed attempts to surface emergent failure modes. Applied to OmicsBench, this pipeline exposes qualitative shortcomings in how agents carry out bioinformatics analyses, ranging from agents applying their own statistical filters in place of the specified ones to agents writing whole answers from memory.</summary>
   </entry>
   <entry>
+    <title>SCARCE: Emergent Institutions in Long-Horizon Multi-Agent Coding Systems</title>
+    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.21029.html" />
+    <link rel="related" href="https://arxiv.org/abs/2610.21029" />
+    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.21029.html</id>
+    <published>2026-10-16T04:00:00Z</published>
+    <updated>2026-10-16T04:00:00Z</updated>
+    <author><name>Abhinav Kumar, Rediet Abebe, Eugene Bagdasarian, Sahar Abdelnabi</name></author>
+    <category term="Multi-agent" />
+    <summary>As autonomous agents become widely deployed, coordinating access to shared computing resources and services will become increasingly important. Recent incidents have already revealed unplanned coordination between agents, highlighting the safety implications of these interactions. Yet prior studies of agent negotiation often use stylized games and simulated bargaining, leaving open how these behaviors develop during sustained, long-horizon tasks. We propose SCARCE (Shared Compute ARena for Coding agEnts), a framework in which agents solve sequences of coding tasks under individual deadlines while negotiating access to a shared execution resource. This negotiation determines when and for how long they can inspect programs, compile code, and run tests. We find that agents spontaneously develop informal institutions: persistent rules and commitments grounded in reputation, reciprocity, and precedent. These arrangements, which we call institutional behaviors, carry across tasks and influence resource allocation, with agents sometimes foregoing immediate advantages to honor earlier agreements. We develop a 21-category taxonomy of negotiation strategies and emergent norms and use it to analyze eight models and audit more than 1,500 trajectories across different environmental settings. Among the models tested, newer frontier models exhibit more institutional behaviors than older or lightweight models. Alongside cooperation, we observe exclusionary coalitions and rare divide-and-conquer strategies. SCARCE provides a controlled setting for proactively and systematically auditing how these relationships emerge, shape access to resources, and affect the safety and coordination of multi-agent systems.</summary>
+  </entry>
+  <entry>
     <title>INFUSE: A Unified Surface Benchmark for Indirect Prompt Injection in Agentic Systems</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.20776.html" />
-    <link rel="related" href="https://arxiv.org/abs/2610.20776v1" />
+    <link rel="related" href="https://arxiv.org/abs/2610.20776" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.20776.html</id>
-    <published>2026-10-14T18:26:15Z</published>
-    <updated>2026-10-14T18:26:15Z</updated>
-    <author><name>Thuy Dung Nguyen</name></author><author><name>Jingyi Guo</name></author><author><name>Rana Seda Dubauskas</name></author><author><name>Sreepriya Damuluru</name></author><author><name>Taylor T. Johnson</name></author><author><name>Kevin Leach</name></author>
+    <published>2026-10-16T04:00:00Z</published>
+    <updated>2026-10-16T04:00:00Z</updated>
+    <author><name>Thuy Dung Nguyen, Jingyi Guo, Rana Seda Dubauskas, Sreepriya Damuluru, Taylor T. Johnson, Kevin Leach</name></author>
     <category term="Tool use" />
     <summary>LLM-based agents increasingly execute long-horizon, end-to-end workflows involving shell commands, code modification, dependency installation, and interaction with remote services. This growing autonomy expands their exposure to indirect prompt injection (IPI), where adversarial instructions embedded in external content are interpreted as legitimate task directives. Existing evaluations, however, often focus on isolated malicious strings, single-step tool calls, or narrowly scoped agent configurations. We introduce INFUSE, an end-to-end benchmark for evaluating IPI throughout the lifecycle of long-horizon agent workflows. INFUSE comprises 40 realistic tasks and a structured taxonomy of 56 attack scenarios spanning five threat categories. Attacks are injected through realistic interaction surfaces encountered during task execution, extending evaluation beyond attacks placed only in initial prompts or isolated tool interactions. We evaluate 19 LLMs from the GPT, Claude, Gemini, Llama, Gemma, and Qwen families, producing 41,824 adversarial trajectories (26,220 without defenses) and 720 benign reference runs. Across the benchmark, mean attack success reaches 19.6% under LLM-based evaluation and 15.4% under heuristic verification, with per-model ASR-L ranging from 3.2% to 41.9%. Existing guard models provide limited protection, while prompt-level instructional hardening reduces mean attack success from 58.2% to 14.3%, revealing substantial but model-dependent security-utility trade-offs. Our code is available at https://github.com/judydnguyen/infuse.</summary>
   </entry>
   <entry>
     <title>HPCAgent-Bench: A Framework for Sound Benchmarking of Code-Optimizing Agents, Harnesses, and Skills</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.20673.html" />
-    <link rel="related" href="https://arxiv.org/abs/2610.20673v1" />
+    <link rel="related" href="https://arxiv.org/abs/2610.20673" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.20673.html</id>
-    <published>2026-10-14T13:22:48Z</published>
-    <updated>2026-10-14T13:22:48Z</updated>
-    <author><name>Yakup Koray Budanaz</name></author><author><name>Lorenzo Paleari</name></author><author><name>Marcin Copik</name></author><author><name>Alexandru Calotoiu</name></author><author><name>Timo Schneider</name></author><author><name>Benjamin Chen Ming Choong</name></author><author><name>Shriram Chandran</name></author><author><name>Lars Hulsbergen</name></author><author><name>Levi Widmer</name></author><author><name>Torsten Hoefler</name></author>
+    <published>2026-10-16T04:00:00Z</published>
+    <updated>2026-10-16T04:00:00Z</updated>
+    <author><name>Yakup Koray Budanaz, Lorenzo Paleari, Marcin Copik, Alexandru Calotoiu, Timo Schneider, Benjamin Chen Ming Choong, Shriram Chandran, Lars Hulsbergen, Levi Widmer, Torsten Hoefler</name></author>
     <category term="Coding / SWE" />
     <summary>Coding agents are increasingly used to optimize code, but existing benchmarks fix one accelerator, programming model or harness, so they cannot isolate what each component contributes or show whether added skills and tools repay their cost. We present HPCAgent-Bench with 689 kernels in three tracks: loop-level optimization challenges, kernels extracted from HPC codes, and machine-learning models. The framework specifies each kernel once in NumPy, derives C and Fortran references, accepts submissions through a common C ABI or Python interface, and runs them on CPUs or GPUs, on one or multiple nodes. An external judge checks correctness on hidden fuzzed inputs and times each submission, closing paths agents use to exploit the testing system. We introduce two metrics for reporting results: \textit{intervention efficacy} measures an intervention, such as adding a tool, through paired runs on speedup, success rate and cost, and \textit{weighted token cost} reports input, cached-input and output tokens under explicit weights. Agents reach up to $4.2\times$ speedup over automatic parallelizers, and their optimizations transfer to another machine: $93$--$99\%$ of answers without device-specific code remain correct, and per-kernel speedups keep a rank correlation of $r_s\ge0.84$. Across 40 matched setups, interventions significantly change speedup only twice but token cost by up to $3.0\times$. Because token weighting decides whether a saving is significant, we state the weights and release every token count as a standard for cost reporting. We provide the first comprehensive, broad and hardened benchmark for the sound evaluation of agentic optimization, with transparent cost metrics.</summary>
   </entry>
@@ -544,16 +555,5 @@
     <author><name>David Nukrai</name></author><author><name>Bar Alon</name></author><author><name>Nativ Levy</name></author><author><name>Ido Andrew Atad</name></author><author><name>Ido Cohen</name></author><author><name>Itamar Zimerman</name></author><author><name>Lior Wolf</name></author><author><name>Eli David</name></author><author><name>Ilan Naiman</name></author>
     <category term="Coding / SWE" />
     <summary>Web application development often proceeds through successive requests that extend an existing implementation. Yet web-generation benchmarks primarily evaluate development toward fixed specifications. We introduce EvoWeb, a novel benchmark comprising 320 cumulative requests over 32 web applications, grounded in real-world product features and structured by functional dependency graphs. Agents iteratively modify a persistent codebase, while a multimodal web agent tests each intermediate application in a live browser, assessing newly requested functionality, cross-request integration, and previously requested functionality. To characterize reliability throughout development, we integrate trajectory performance across user-tolerance thresholds rather than impose a fixed stopping criterion. Experiments across open- and closed-source frontier models show that EvoWeb reveals clear performance differences between models, with cross-request integration emerging as a key challenge. Further analysis shows that later requests with deeper or more numerous dependencies are solved less accurately, while runtime errors become more frequent over successive requests. EvoWeb provides a testbed for evaluating and improving coding agents in long-horizon, multi-request development.</summary>
-  </entry>
-  <entry>
-    <title>TRAP: Tool-result Replay Attack for Probing Misbinding in LLM Agents</title>
-    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.16333.html" />
-    <link rel="related" href="https://arxiv.org/abs/2610.16333v1" />
-    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.16333.html</id>
-    <published>2026-10-12T07:51:02Z</published>
-    <updated>2026-10-12T07:51:02Z</updated>
-    <author><name>Yutong Zhi</name></author><author><name>Jie Zhang</name></author><author><name>Xiuqi Lu</name></author><author><name>Jiayuan Xu</name></author><author><name>Jing Shao</name></author>
-    <category term="Tool use" />
-    <summary>As AI agents increasingly act through external tools, tool results are no longer simple outputs but execution artifacts that must remain correctly associated with the context that produced them. Yet as results persist across caches, recovery mechanisms, and shared runtime state, this association can break, causing a real and unmodified result to be consumed in an incompatible execution context and lead the agent to an unsafe action. We characterize this failure as tool-result misbinding. To systematically study this failure, we introduce ReplayBench, a benchmark that uses controlled tool-result replay to evaluate misbinding across 19 representative agent scenarios, 4 failure properties, and 3 replay mechanisms. Across eight LLMs, three agent frameworks, and diverse stateful workflows, we find widespread replay-induced failures, with a mean Final-State Error Rate of 0.649 under cross-task replay. Stage-wise analysis localizes these failures to model-side action generation. Further analyses show that replay susceptibility varies with task similarity, shows little dependence on object similarity, and remains high under result staleness and implicit environment changes. These findings motivate runtime validity mechanisms that eliminate final-state errors in our evaluated settings while preserving legitimate recovery. The results call for explicit contextual binding in tool-using agent runtimes. Our work is public at https://github.com/Phitooo/Replaybench.</summary>
   </entry>
 </feed>
