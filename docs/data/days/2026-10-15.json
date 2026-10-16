@@ -1,0 +1,447 @@
+{
+  "date": "2026-10-15",
+  "count": 10,
+  "report": {
+    "date": "2026-10-15",
+    "count": 10,
+    "themes": [
+      {
+        "id": "science",
+        "count": 3,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      }
+    ],
+    "en": {
+      "headline": "10 new agent benchmarks",
+      "summary": "On October 15, 2026, arXiv listed 10 new agent benchmarks. Work clustered around Science lab (3), Planning / reasoning (2), Memory (2), and Coding agents (1).",
+      "highlights": [
+        {
+          "id": "2610.21074",
+          "title": "OmicsBench: a long-horizon multi-turn benchmark of AI agents on research-study-scale bioinformatics",
+          "blurb": "Computational biologists increasingly delegate substantial analyses to AI agents in long-horizon, multi-turn sessions, yet most benchmarks of agents' bioinformatics capabilities pose a single short task with a single-sho…"
+        },
+        {
+          "id": "2610.22269",
+          "title": "X-RIC: An Agentic RAN-Intelligent Controller Benchmark for Enhancing Reinforcement Learning",
+          "blurb": "The O-RAN ALLIANCE introduces architectural flexibility through disaggregation and AI-driven control."
+        },
+        {
+          "id": "2610.21270",
+          "title": "Auditing Escalation Reliability in Healthcare LLM Agents: A Perturbation-Controlled Benchmark of Workflow-State Failures",
+          "blurb": "Trustworthy biomedical AI requires reliable action selection when evidence is missing, stale, conflicting, or late, not only accurate answers on static inputs."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 10 篇 Agent Benchmark",
+      "summary": "2026年10月15日，arXiv 新增 10 篇 Agent Benchmark。当日主题集中在科学实验（3）、规划 / 推理（2）、记忆（2）、代码智能体（1）。",
+      "highlights": [
+        {
+          "id": "2610.21074",
+          "title": "OmicsBench: a long-horizon multi-turn benchmark of AI agents on research-study-scale bioinformatics",
+          "blurb": "Computational biologists increasingly delegate substantial analyses to AI agents in long-horizon, multi-turn sessions, yet most benchmarks of agents' bioinformatics capabilities pose a single short task with a single-sho…"
+        },
+        {
+          "id": "2610.22269",
+          "title": "X-RIC: An Agentic RAN-Intelligent Controller Benchmark for Enhancing Reinforcement Learning",
+          "blurb": "The O-RAN ALLIANCE introduces architectural flexibility through disaggregation and AI-driven control."
+        },
+        {
+          "id": "2610.21270",
+          "title": "Auditing Escalation Reliability in Healthcare LLM Agents: A Perturbation-Controlled Benchmark of Workflow-State Failures",
+          "blurb": "Trustworthy biomedical AI requires reliable action selection when evidence is missing, stale, conflicting, or late, not only accurate answers on static inputs."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2610.22269",
+      "title": "X-RIC: An Agentic RAN-Intelligent Controller Benchmark for Enhancing Reinforcement Learning",
+      "abstract": "The O-RAN ALLIANCE introduces architectural flexibility through disaggregation and AI-driven control. While the RAN Intelligent Controller (RIC) enables centralized optimization, current AI approaches lack reasoning capabilities and explainability. We propose eXplainable RIC (X-RIC), a novel framework integrating agentic AI into O-RAN architectures. X-RIC combines reactive Reinforcement Learning (RL) with strategic agentic reasoning through: (i) automated Behavioral Cloning (BC) using domain heuristics for sample-efficient training, (ii) a Telecom Language Model (TLM), a transformer-based reasoning module providing contextual abstraction and interpretability, and (iii) closed-loop co-adaptation within the Near-RT RIC control loop enabling continuous policy refinement. To ensure deployment readiness, we introduce BARX (Benchmarking Agentic Reasoning for RAN), a domain-specific evaluation framework assessing agentic control across latency, compliance, and determinism metrics. We validate X-RIC on SLA-aware network slicing in simulation and O-RAN-compliant testbed deployments. X-RIC achieves 89% operational cost reduction while maintaining SLA compliance, converging 75% faster with 50% fewer training steps and 46% lower variance.",
+      "authors": [
+        "Adhwaa Al-Chaab",
+        "Ayman Younis",
+        "Dario Pompili"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.AR"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-15T17:34:17Z",
+      "updated": "2026-10-15T17:34:17Z",
+      "announced_date": "2026-10-15",
+      "first_seen": "2026-10-15",
+      "comment": "9 pages, 10 figures. Accepted for publication in the proceedings of the IEEE International Conference on Mobile Ad-Hoc and Smart Systems (MASS), October 21-23, 2026, Hong Kong SAR, China",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.22269v1",
+        "pdf": "https://arxiv.org/pdf/2610.22269v1",
+        "html": "https://arxiv.org/html/2610.22269"
+      },
+      "score": 14,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.22209",
+      "title": "Beyond Downstream QA: Rethinking How We Evaluate Agent Memory",
+      "abstract": "Agent memory benchmarks evaluate whether an agent's responses reflect correct knowledge, measuring downstream question-answering accuracy as a proxy for memory quality. We show this evaluation paradigm is incomplete: it conflates memory correctness with retrieval and generation quality, producing both false positives where correct responses mask broken memory and false negatives where incorrect responses blame correct memory for retrieval failures. We introduce FEB-30, a benchmark of 30 fact-evolution trajectories spanning 6 diagnostic categories and 3 difficulty levels, constructed via paradigm inversion: documents are generated from known fact trajectories, yielding deterministic ground truth without human annotation. Each trajectory defines how a fact should evolve across multi-author artifacts (documents, emails, conversations), enabling direct inspection of the memory store after each ingestion step. Applying FEB-30 to a representative memory system, we demonstrate that intrinsic and extrinsic evaluation diverge by an average of 16 percentage points, with 44% of trajectories exceeding meaningful divergence thresholds. Diagnostic decomposition reveals that the system correctly classifies memory operations (create, update, reinforce, supersede) only 20% of the time, a failure entirely invisible to extrinsic evaluation, and that failure modes differ systematically by category and difficulty. We release the benchmark, document generation pipeline, and scoring framework to support reproducible evaluation of agent memory systems.",
+      "authors": [
+        "Sebastian-Antonio Toma",
+        "Jean de Kernier",
+        "Mike Ply",
+        "Oliviu Matei"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-10-15T16:58:12Z",
+      "updated": "2026-10-15T16:58:12Z",
+      "announced_date": "2026-10-15",
+      "first_seen": "2026-10-15",
+      "comment": "14 pages, 1 figure, code and data: https://github.com/amazon-science/feb-30-benchmark",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.22209v1",
+        "pdf": "https://arxiv.org/pdf/2610.22209v1",
+        "html": "https://arxiv.org/html/2610.22209"
+      },
+      "score": 6,
+      "tags": [
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.22039",
+      "title": "WEAVE: Weaving Real-World Code Evolution into Dependency-Structured Tasks for Benchmarking and Training Code Agents",
+      "abstract": "Real-world software engineering rarely consists of isolated changes. Features, migrations, and systematic fixes often unfold across multiple pull requests (PRs), requiring coordinated modifications across a repository. Yet most executable repository-level benchmarks retain a single issue or PR as the task unit, while existing multi-PR settings rely on coarse aggregation and structure-agnostic evaluation. This mismatch obscures dependencies among changes and limits progress measurement and learning signals for long-horizon code agents. We introduce WEAVE, a framework that transforms verified PR histories into executable, dependency-structured tasks. WEAVE leverages repository-calibrated typed change loci to organize related PRs into bounded DAGs and instantiate each as a unified executable task. We further introduce Graph Credit, a deterministic, test-grounded metric that measures dependency-consistent partial progress and supports dense, verifiable rewards for reinforcement learning. Experiments on task construction, agent evaluation, supervised fine-tuning, and reinforcement learning show that WEAVE yields coherent executable tasks, enables more faithful progress measurement than flat scoring, and provides effective supervision and verifiable rewards for training code agents.",
+      "authors": [
+        "Weihao Li",
+        "Zihang Xu",
+        "Zhongqiu Wang",
+        "Songwei Yu",
+        "Wenqiang Zhu",
+        "Yuechen Luo",
+        "Jingxuan Xu",
+        "Yanan Wu",
+        "Haoyang Huang",
+        "Ken Deng"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-15T15:12:56Z",
+      "updated": "2026-10-15T15:12:56Z",
+      "announced_date": "2026-10-15",
+      "first_seen": "2026-10-15",
+      "comment": "22 pages, including appendix",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.22039v1",
+        "pdf": "https://arxiv.org/pdf/2610.22039v1",
+        "html": "https://arxiv.org/html/2610.22039"
+      },
+      "score": 8,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.21983",
+      "title": "OntoAct: Hypothesis-Based Neuro-Symbolic Agents through Ontological Abstraction",
+      "abstract": "Learning from experience requires recovering reusable knowledge and determining when it applies to a new situation. We introduce OntoAct, a hypothesis-based neuro-symbolic framework built on ontological abstraction. OntoAct turns individual experiences into axioms over entity types, relations, and conditions, making their underlying patterns reusable across situations. A large language model (LLM) uses this world knowledge to propose hypotheses and actions, while a symbolic verifier assesses their supporting conditions against current observations. Verification identifies missing evidence, and new observations and intervention outcomes update hypothesis assessments and guide subsequent actions. We also introduce Tacit-FLE, a benchmark built on the Factorio Learning Environment (FLE) for diagnosing and repairing hidden faults in existing factories using inherited operational records. Its synthetic maintenance corpus distributes evidence across records, and an executed repair may leave the fault unresolved, requiring agents to reassess their diagnoses through interaction. Across Tacit-FLE, Mars, and ALFWorld, OntoAct achieves leading task performance with efficient interaction and inference.",
+      "authors": [
+        "Donghyeok Lee",
+        "Bong Gyun Kang",
+        "Junyong Ahn",
+        "Sungroh Yoon"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-15T14:34:15Z",
+      "updated": "2026-10-15T14:34:15Z",
+      "announced_date": "2026-10-15",
+      "first_seen": "2026-10-15",
+      "comment": "49 pages, 13 figures, 33 tables. Preprint, under review",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.21983v1",
+        "pdf": "https://arxiv.org/pdf/2610.21983v1",
+        "html": "https://arxiv.org/html/2610.21983"
+      },
+      "score": 5,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.21767",
+      "title": "From Research Goals to Scientific Closure: Evaluating Agents Through Evidence-Supported Physics Research",
+      "abstract": "Can AI agents organize scientific investigations that lead to well-supported conclusions? To evaluate this capability, we introduce PhysClosureBench, a benchmark of 50 expert-verified, goal-specified research tasks spanning strong-field, attosecond, and neighboring physics areas. Each task specifies the research objective and essential scientific constraints, while leaving the agent to organize the investigation and determine how to generate and validate the evidence needed to answer the question. A 20-criterion Atomic Score measures local scientific accomplishment, while Research Closure (RC0--RC4) assesses how fully the investigation resolves the specified research question based on whether its indispensable evidence requirements and applicable scope conditions are satisfied. We evaluate seven frontier LLMs, where Claude-Opus-5 achieves the highest mean Atomic Score (6.29/10) but reaches RC4 in only 32.7% of attempts. Across the benchmark, 36.2% of attempts scoring at least 8/10 still fall short of RC4, while all seven models reach RC4 on substantially fewer tasks in all three runs than in at least one. Case-level analysis further illustrates how misinterpretation of generated results and unresolved physical applicability limits can lead to incomplete closure. Together, these results reveal a persistent gap between AI agents' local scientific accomplishments and their ability to achieve complete research closure.",
+      "authors": [
+        "Yijia Mao",
+        "Song Dai",
+        "Tao Chen",
+        "Xiangyu Lu",
+        "Linqian Zeng",
+        "Chenxi Hu",
+        "Sitong Zhou",
+        "Dongyang He",
+        "Xiaodan Mao",
+        "Linxuan Zhang",
+        "Tong Zhu",
+        "Yafu Li",
+        "Fangchen Yu",
+        "Peng Ye",
+        "Feng He",
+        "Yu Cheng",
+        "Yun Luo"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-15T12:23:22Z",
+      "updated": "2026-10-15T12:23:22Z",
+      "announced_date": "2026-10-15",
+      "first_seen": "2026-10-15",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.21767v1",
+        "pdf": "https://arxiv.org/pdf/2610.21767v1",
+        "html": "https://arxiv.org/html/2610.21767"
+      },
+      "score": 7,
+      "tags": [
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2610.21270",
+      "title": "Auditing Escalation Reliability in Healthcare LLM Agents: A Perturbation-Controlled Benchmark of Workflow-State Failures",
+      "abstract": "Trustworthy biomedical AI requires reliable action selection when evidence is missing, stale, conflicting, or late, not only accurate answers on static inputs. We instantiate an episode-level evaluation protocol as 400 synthetic healthcare workflow episodes: 40 hand-authored semantic seeds across four task classes, two surface parameterizations, and five controlled variants, scored on ANSWER/ASK CLARIFICATION/ABSTAIN/ESCALATE under a pre-declared 5:1 missed-versus-unnecessary escalation cost. Reference actions are single-author study-policy labels, not clinician-adjudicated ground truth. Across five open-weight configurations (1.7B--9.7B), clean decision accuracy reaches 0.97, yet uncertainty-prompted models miss 32--97% of required escalations. The stronger 9.7B configuration narrows but does not remove the gap, falling from 0.97 clean accuracy to 0.78 under conflict. Verbalized confidence is inconsistent (ECE 0.10--0.54; failure AUROC 0.48--0.77), and a development-tuned confidence-only policy yields no utility gain. A transparent workflow-aware controller improves 5:1 utility for every model and reduces missed escalations to 0.12--0.24, at specificity 0.83--0.93. However, a 30-concept lexical stress test reduces each rule detector's recall from 1.00 on trigger phrases to 0.00 on unseen paraphrases, limiting the controller claim to this benchmark. Seed-clustered statistics, ablations, cross-task transfer, raw outputs, and manifests are packaged for audit. The results motivate explicit workflow-state evaluation while showing that apparently effective routing controls need their own generalization tests.",
+      "authors": [
+        "Zihao Zheng",
+        "Junyi Yao",
+        "Baichuan Li",
+        "Jiayu Long"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-15T05:04:10Z",
+      "updated": "2026-10-15T05:04:10Z",
+      "announced_date": "2026-10-15",
+      "first_seen": "2026-10-15",
+      "comment": "7 pages, 5 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.21270v1",
+        "pdf": "https://arxiv.org/pdf/2610.21270v1",
+        "html": "https://arxiv.org/html/2610.21270"
+      },
+      "score": 13,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.21109",
+      "title": "Kolab: Benchmarking Human-Agent Collaboration in Long-Horizon Workflows",
+      "abstract": "When humans collaborate with AI agents on long-horizon tasks, what happens to the agents' contributions? For solving long-horizon tasks, humans place greater importance on ongoing interaction with AI agents (e.g., revising plans) than on an agent's ability to complete the task in a single attempt. However, most agentic benchmarks have focused more on automation. Strong performance on such benchmarks does not imply effective real-world collaboration. Professional workflows offer a useful setting, as they often involve interdependent steps. To address this gap, we introduce Kolab, a new dataset of 115+ hours of screen recordings of 50 professionals from 40 occupations collaborating with agents on realistic, long-horizon problems. Kolab also contains participants' collaboration and output quality judgments. Our analysis reveals diverse collaboration patterns, highlighting the importance of when and how professionals coordinate with agents. A collaborative agent must do two things that automation benchmarks never test: anticipate whether experts will adopt, modify, or reject its contribution once it leaves the chat window to guide its next steps, and assess collaboration quality from the unfolding workflow without constant expert feedback. Our benchmark operationalizes both: (1) forecasting how professionals use agent contributions at diverse workflows, and (2) verifying their judgments of collaboration satisfaction and output quality. Findings show that frontier models, both agentic and non-agentic, overestimate collaboration with experts and struggle to distinguish between high- and low-quality collaboration. Longer workflow context does not consistently improve these predictions. As frontier agents cannot yet understand long-horizon collaboration with experts, we position Kolab as a valuable dataset for studying human-agent collaboration grounded in real professional workflows.",
+      "authors": [
+        "Shirley Anugrah Hayati",
+        "Patricia Anugrah Setiani",
+        "Ruizi Wang",
+        "Zhouyi Li",
+        "Khanh Chi Le",
+        "Young-Jun Lee",
+        "Dongyeop Kang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.HC",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-15T02:13:36Z",
+      "updated": "2026-10-15T02:13:36Z",
+      "announced_date": "2026-10-15",
+      "first_seen": "2026-10-15",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.21109v1",
+        "pdf": "https://arxiv.org/pdf/2610.21109v1",
+        "html": "https://arxiv.org/html/2610.21109"
+      },
+      "score": 12,
+      "tags": [],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2610.21098",
+      "title": "ToolBottleneckBench: Measuring Tool-Agent Performance under Controlled Pressures and Fixed Harness Budgets",
+      "abstract": "The success score of a tool agent reflects both its model and the budgets of the harness that runs it. We present ToolBottleneckBench, a benchmark that measures tool-agent performance under controlled pressures and fixed harness budgets. Synthetic enterprise tasks stay fixed while one pressure varies: the registered tool catalog, the visible tool menu, the certified workflow, or the encoding of returned records. An exact grader records the first unmet obligation of each failed episode and the harness limit, if any, that ended it. Across 21 model and harness configurations, the visible menu is the only one of the three pressures that act on the model with a large penalty, and this penalty tracks truncation at the completion cap. Raising the cap sixteenfold removes most of the penalty in the truncation-heavy configurations. Most failures end at a harness limit, and the failure record identifies the assigned pressure no more reliably than a count of tool calls. The repairs that help change which tools reach the model or who issues the calls, and only two repairs, neither improving model behavior, beat every configuration switch. We recommend reporting pressure effects with the harness budgets under which they were measured. We release the benchmark at https://github.com/zichuanxu/tool-bottleneck-bench.",
+      "authors": [
+        "Zichuan Xu",
+        "Yuyang Dong",
+        "Makoto Onizuka",
+        "Chuan Xiao"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-10-15T01:59:58Z",
+      "updated": "2026-10-15T01:59:58Z",
+      "announced_date": "2026-10-15",
+      "first_seen": "2026-10-15",
+      "comment": "26 pages, 12 figures, 15 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.21098v1",
+        "pdf": "https://arxiv.org/pdf/2610.21098v1",
+        "html": "https://arxiv.org/html/2610.21098"
+      },
+      "score": 9,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.21082",
+      "title": "Sci$Π$vot: Benchmarking Principal-Investigator Judgment at Pivotal Moments of Scientific AutoResearch Agents",
+      "abstract": "Large language model (LLM) agents can keep scientific experiments running for months with little human supervision, but reliable autonomous research also requires scientific judgment. Evaluating scientific judgment is difficult because research decisions are open-ended and depend on project context. We construct Sci$Π$vot, a 248-case benchmark of scientific judgment based on human corrections. The benchmark draws on records from six months of research in which senior researchers ran LLM agents on 26 projects across six scientific fields and repeatedly intervened to correct the agents' research judgments. In each case, an agent chooses between the original LLM plan and the human-corrected alternative, using only the project record available before the correction as context. We compare LLM and human performance and examine the effects of reasoning effort, access to the project record, and reconsideration. At medium reasoning effort with the project record, models systematically prefer the original LLM plan over the human-corrected alternative. Four of five frontier models perform below chance on the selected cases. The highest accuracy in the project condition across the tested models and reasoning effort settings is 63.5%, compared with 73.4% for fresh researchers. At medium effort, every model achieves lower accuracy with the project record than without it, and reconsideration does not consistently improve overall accuracy. Even with a human-corrected alternative available, frontier models struggle with the selected research decisions, while Sci$Π$vot supports systematic evaluation of scientific judgment for LLM agents.",
+      "authors": [
+        "Youran Sun",
+        "Xingyu Ren",
+        "Chugang Yi",
+        "Kejia Zhang",
+        "Di Wu",
+        "Yingkang Cao",
+        "Allen Zhou",
+        "Jianping Ye",
+        "Suying Liu",
+        "Jiaxuan Guo",
+        "Jianda Du",
+        "Weicheng Ye",
+        "Kecheng Liu",
+        "Hefan Zhang",
+        "Haixin Wang",
+        "Jie Xiao",
+        "Eric Yang",
+        "Haizhao Yang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-15T01:34:44Z",
+      "updated": "2026-10-15T01:34:44Z",
+      "announced_date": "2026-10-15",
+      "first_seen": "2026-10-15",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.21082v1",
+        "pdf": "https://arxiv.org/pdf/2610.21082v1",
+        "html": "https://arxiv.org/html/2610.21082"
+      },
+      "score": 10,
+      "tags": [
+        "planning",
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2610.21074",
+      "title": "OmicsBench: a long-horizon multi-turn benchmark of AI agents on research-study-scale bioinformatics",
+      "abstract": "Computational biologists increasingly delegate substantial analyses to AI agents in long-horizon, multi-turn sessions, yet most benchmarks of agents' bioinformatics capabilities pose a single short task with a single-shot prompt. We present OmicsBench, a long-horizon, multi-turn bioinformatics benchmark for AI agents. Each of its 97 tasks links dependent subtasks into a directed acyclic graph, for 662 underlying subtasks in all. Each subtask is posed as one user turn and graded deterministically against an answer key, with optional in-context feedback on incorrect answers. Across 12 models on three harnesses, the slowest agent averages 3.6 hours per task, and no combination comes near saturating the benchmark, with mean scores of 0.43 to 0.57 out of a possible 1 without in-context feedback and 0.54 to 0.67 with it. Multi-turn evaluation also uncovers behavior that single-shot prompts cannot, as agents score lower on subtasks that depend on earlier subtasks, and in-context feedback helps agents recover some of that loss. Because deterministic scoring gives no qualitative account of how an agent failed, we also introduce an unsupervised failure mode discovery pipeline that describes, embeds, and clusters agents' failed attempts to surface emergent failure modes. Applied to OmicsBench, this pipeline exposes qualitative shortcomings in how agents carry out bioinformatics analyses, ranging from agents applying their own statistical filters in place of the specified ones to agents writing whole answers from memory.",
+      "authors": [
+        "Gideon Shaked",
+        "Siddharth Nagisetty"
+      ],
+      "categories": [
+        "cs.AI",
+        "q-bio.GN",
+        "q-bio.QM"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-15T01:23:57Z",
+      "updated": "2026-10-15T01:23:57Z",
+      "announced_date": "2026-10-15",
+      "first_seen": "2026-10-15",
+      "comment": "32 pages, 12 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.21074v1",
+        "pdf": "https://arxiv.org/pdf/2610.21074v1",
+        "html": "https://arxiv.org/html/2610.21074"
+      },
+      "score": 19,
+      "tags": [
+        "memory",
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    }
+  ]
+}

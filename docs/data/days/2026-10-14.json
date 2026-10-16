@@ -1,27 +1,27 @@
 {
   "date": "2026-10-14",
-  "count": 11,
+  "count": 13,
   "report": {
     "date": "2026-10-14",
-    "count": 11,
+    "count": 13,
     "themes": [
       {
         "id": "tool-use",
-        "count": 4,
+        "count": 6,
         "en": "Tool use",
         "zh": "工具使用"
+      },
+      {
+        "id": "coding",
+        "count": 3,
+        "en": "Coding agents",
+        "zh": "代码智能体"
       },
       {
         "id": "safety",
         "count": 3,
         "en": "Safety",
         "zh": "安全"
-      },
-      {
-        "id": "coding",
-        "count": 2,
-        "en": "Coding agents",
-        "zh": "代码智能体"
       },
       {
         "id": "multimodal",
@@ -55,8 +55,8 @@
       }
     ],
     "en": {
-      "headline": "11 new agent benchmarks",
-      "summary": "On October 14, 2026, arXiv listed 11 new agent benchmarks. Work clustered around Tool use (4), Safety (3), Coding agents (2), and Multimodal (2).",
+      "headline": "13 new agent benchmarks",
+      "summary": "On October 14, 2026, arXiv listed 13 new agent benchmarks. Work clustered around Tool use (6), Coding agents (3), Safety (3), and Multimodal (2).",
       "highlights": [
         {
           "id": "2610.19560",
@@ -64,20 +64,20 @@
           "blurb": "In long-horizon tool-calling tasks, LLM agents can fail not only because of tool-use errors, but also because of ineffective interaction with users."
         },
         {
+          "id": "2610.20673",
+          "title": "HPCAgent-Bench: A Framework for Sound Benchmarking of Code-Optimizing Agents, Harnesses, and Skills",
+          "blurb": "Coding agents are increasingly used to optimize code, but existing benchmarks fix one accelerator, programming model or harness, so they cannot isolate what each component contributes or show whether added skills and too…"
+        },
+        {
           "id": "2610.20121",
           "title": "HM3D-M3: A Benchmark for Multi-Agent, Multi-Modal, Multi-Object Goal Navigation",
           "blurb": "Rapid progress in AI agents and robotics makes it a matter of the near future that humans are served by a team of robots."
-        },
-        {
-          "id": "2610.19384",
-          "title": "MMA-SafetyBench: A Benchmark for Multimodal Agent Safety Evaluation",
-          "blurb": "Multimodal agents increasingly rely on visual interfaces to perceive state and select actions, creating an attack surface not captured by text-only safety evaluations."
         }
       ]
     },
     "zh": {
-      "headline": "新增 11 篇 Agent Benchmark",
-      "summary": "2026年10月14日，arXiv 新增 11 篇 Agent Benchmark。当日主题集中在工具使用（4）、安全（3）、代码智能体（2）、多模态（2）。",
+      "headline": "新增 13 篇 Agent Benchmark",
+      "summary": "2026年10月14日，arXiv 新增 13 篇 Agent Benchmark。当日主题集中在工具使用（6）、代码智能体（3）、安全（3）、多模态（2）。",
       "highlights": [
         {
           "id": "2610.19560",
@@ -85,19 +85,54 @@
           "blurb": "In long-horizon tool-calling tasks, LLM agents can fail not only because of tool-use errors, but also because of ineffective interaction with users."
         },
         {
+          "id": "2610.20673",
+          "title": "HPCAgent-Bench: A Framework for Sound Benchmarking of Code-Optimizing Agents, Harnesses, and Skills",
+          "blurb": "Coding agents are increasingly used to optimize code, but existing benchmarks fix one accelerator, programming model or harness, so they cannot isolate what each component contributes or show whether added skills and too…"
+        },
+        {
           "id": "2610.20121",
           "title": "HM3D-M3: A Benchmark for Multi-Agent, Multi-Modal, Multi-Object Goal Navigation",
           "blurb": "Rapid progress in AI agents and robotics makes it a matter of the near future that humans are served by a team of robots."
-        },
-        {
-          "id": "2610.19384",
-          "title": "MMA-SafetyBench: A Benchmark for Multimodal Agent Safety Evaluation",
-          "blurb": "Multimodal agents increasingly rely on visual interfaces to perceive state and select actions, creating an attack surface not captured by text-only safety evaluations."
         }
       ]
     }
   },
   "papers": [
+    {
+      "id": "2610.20776",
+      "title": "INFUSE: A Unified Surface Benchmark for Indirect Prompt Injection in Agentic Systems",
+      "abstract": "LLM-based agents increasingly execute long-horizon, end-to-end workflows involving shell commands, code modification, dependency installation, and interaction with remote services. This growing autonomy expands their exposure to indirect prompt injection (IPI), where adversarial instructions embedded in external content are interpreted as legitimate task directives. Existing evaluations, however, often focus on isolated malicious strings, single-step tool calls, or narrowly scoped agent configurations. We introduce INFUSE, an end-to-end benchmark for evaluating IPI throughout the lifecycle of long-horizon agent workflows. INFUSE comprises 40 realistic tasks and a structured taxonomy of 56 attack scenarios spanning five threat categories. Attacks are injected through realistic interaction surfaces encountered during task execution, extending evaluation beyond attacks placed only in initial prompts or isolated tool interactions. We evaluate 19 LLMs from the GPT, Claude, Gemini, Llama, Gemma, and Qwen families, producing 41,824 adversarial trajectories (26,220 without defenses) and 720 benign reference runs. Across the benchmark, mean attack success reaches 19.6% under LLM-based evaluation and 15.4% under heuristic verification, with per-model ASR-L ranging from 3.2% to 41.9%. Existing guard models provide limited protection, while prompt-level instructional hardening reduces mean attack success from 58.2% to 14.3%, revealing substantial but model-dependent security-utility trade-offs. Our code is available at https://github.com/judydnguyen/infuse.",
+      "authors": [
+        "Thuy Dung Nguyen",
+        "Jingyi Guo",
+        "Rana Seda Dubauskas",
+        "Sreepriya Damuluru",
+        "Taylor T. Johnson",
+        "Kevin Leach"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-10-14T18:26:15Z",
+      "updated": "2026-10-14T18:26:15Z",
+      "announced_date": "2026-10-14",
+      "first_seen": "2026-10-14",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.20776v1",
+        "pdf": "https://arxiv.org/pdf/2610.20776v1",
+        "html": "https://arxiv.org/html/2610.20776"
+      },
+      "score": 15,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
     {
       "id": "2610.20344",
       "title": "Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents",
@@ -173,6 +208,45 @@
       "score": 6,
       "tags": [],
       "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.20673",
+      "title": "HPCAgent-Bench: A Framework for Sound Benchmarking of Code-Optimizing Agents, Harnesses, and Skills",
+      "abstract": "Coding agents are increasingly used to optimize code, but existing benchmarks fix one accelerator, programming model or harness, so they cannot isolate what each component contributes or show whether added skills and tools repay their cost. We present HPCAgent-Bench with 689 kernels in three tracks: loop-level optimization challenges, kernels extracted from HPC codes, and machine-learning models. The framework specifies each kernel once in NumPy, derives C and Fortran references, accepts submissions through a common C ABI or Python interface, and runs them on CPUs or GPUs, on one or multiple nodes. An external judge checks correctness on hidden fuzzed inputs and times each submission, closing paths agents use to exploit the testing system. We introduce two metrics for reporting results: \\textit{intervention efficacy} measures an intervention, such as adding a tool, through paired runs on speedup, success rate and cost, and \\textit{weighted token cost} reports input, cached-input and output tokens under explicit weights. Agents reach up to $4.2\\times$ speedup over automatic parallelizers, and their optimizations transfer to another machine: $93$--$99\\%$ of answers without device-specific code remain correct, and per-kernel speedups keep a rank correlation of $r_s\\ge0.84$. Across 40 matched setups, interventions significantly change speedup only twice but token cost by up to $3.0\\times$. Because token weighting decides whether a saving is significant, we state the weights and release every token count as a standard for cost reporting. We provide the first comprehensive, broad and hardened benchmark for the sound evaluation of agentic optimization, with transparent cost metrics.",
+      "authors": [
+        "Yakup Koray Budanaz",
+        "Lorenzo Paleari",
+        "Marcin Copik",
+        "Alexandru Calotoiu",
+        "Timo Schneider",
+        "Benjamin Chen Ming Choong",
+        "Shriram Chandran",
+        "Lars Hulsbergen",
+        "Levi Widmer",
+        "Torsten Hoefler"
+      ],
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-14T13:22:48Z",
+      "updated": "2026-10-14T13:22:48Z",
+      "announced_date": "2026-10-14",
+      "first_seen": "2026-10-14",
+      "comment": "20 pages, 9 figures, 17 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.20673v1",
+        "pdf": "https://arxiv.org/pdf/2610.20673v1",
+        "html": "https://arxiv.org/html/2610.20673"
+      },
+      "score": 20,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
       "citations": 0
     },
     {
