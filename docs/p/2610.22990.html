@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PersonaCUABench: Benchmarking Computer-Use Agents Serving Diverse Personas | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Computer-use agents (CUAs) are commonly evaluated against fixed task specifications, but users may omit requirements, add…" />
+    <meta name="keywords" content="GUI / computer use, Web agents, Computer use, Dialogue / customer, agent benchmark, LLM agent, arXiv, 2610.22990" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.22990.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="PersonaCUABench: Benchmarking Computer-Use Agents Serving Diverse Personas" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Computer-use agents (CUAs) are commonly evaluated against fixed task specifications, but users may omit requirements, add…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.22990.html" />
+    <meta property="article:published_time" content="2026-10-16T06:14:55Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PersonaCUABench: Benchmarking Computer-Use Agents Serving Diverse Personas" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Computer-use agents (CUAs) are commonly evaluated against fixed task specifications, but users may omit requirements, add…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "PersonaCUABench: Benchmarking Computer-Use Agents Serving Diverse Personas",
+  "name": "PersonaCUABench: Benchmarking Computer-Use Agents Serving Diverse Personas",
+  "abstract": "Computer-use agents (CUAs) are commonly evaluated against fixed task specifications, but users may omit requirements, add constraints, or require approval before consequential actions. Completing the benchmark instruction does not guarantee serving the person who asked. We introduce PersonaCUABench, which holds 74 tasks across 11 domains fixed and varies only who asks. A persona agent, playing one of 44 personas in four groups, rewrites each instruction in that user's own words and answers the CUA's questions, while the CUA sees only the dialogue, never the profile or the original instruction. Across nine backbones (3,330 runs), mean task completion falls by 36% relative to the original requests. The losses have two sources: in 59.9% of cells that lose points, the agent engages with what the user asked for and still gets it wrong, and 11.2% are stops the user requested that the checker scores as failures. Even when a persona request is fully completed, the user gives the top satisfaction rating in only 62.7% of cells, against 84.1% for the original requests. CUAs should therefore be evaluated not only on task completion but also on whether they meet the requirements and constraints users express. Code: https://github.com/MatrAIx-ai/PersonaCUABench. Project page: https://matraix.ai/research/persona-cua.html",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Haoming Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Defu Cao"
+    },
+    {
+      "@type": "Person",
+      "name": "Xu Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yingtao Luo"
+    },
+    {
+      "@type": "Person",
+      "name": "Yiyang Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xianghe Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiashu He"
+    },
+    {
+      "@type": "Person",
+      "name": "Wanting Jiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yifan Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yunhan Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Siyang Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Chen Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Haixin Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zheyuan Deng"
+    },
+    {
+      "@type": "Person",
+      "name": "Taoran Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Jingwen Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhejian Peng"
+    },
+    {
+      "@type": "Person",
+      "name": "Shushu Liang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yue Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Bingzhe Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Feng Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Yifan Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jintao Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yijun Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuexing Hao"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaomin Li"
+    }
+  ],
+  "datePublished": "2026-10-16T06:14:55Z",
+  "dateModified": "2026-10-16T06:14:55Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.22990.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.22990.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.22990v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.22990"
+  },
+  "keywords": [
+    "GUI / computer use",
+    "Web agents",
+    "Computer use",
+    "Dialogue / customer",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "GUI / computer use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.22990v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.22990"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>PersonaCUABench: Benchmarking Computer-Use Agents Serving Diverse Personas</h1>
+        <div class="meta">
+          Haoming Li, Defu Cao, Xu Hu, Yingtao Luo, Yiyang Wang, Xianghe Xu, Jiashu He, Wanting Jiang, Yifan Zhang, Yunhan Zhao, Siyang Wu, Chen Yang, Haixin Wang, Zheyuan Deng, Taoran Li, Jingwen Zhang, Zhejian Peng, Shushu Liang, Yue Zhao, Bingzhe Li, Feng Chen, Yifan Wang, Jintao Huang, Yijun Wang, Yuexing Hao, Xiaomin Li
+          · 2610.22990
+          · <time datetime="2026-10-16">2026-10-16</time>
+          · GUI / computer use
+        </div>
+        <div class="themes"><span class="chip">Web agents</span><span class="chip">Computer use</span><span class="chip">Dialogue / customer</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Computer-use agents (CUAs) are commonly evaluated against fixed task specifications, but users may omit requirements, add constraints, or require approval before consequential actions. Completing the benchmark instruction does not guarantee serving the person who asked. We introduce PersonaCUABench, which holds 74 tasks across 11 domains fixed and varies only who asks. A persona agent, playing one of 44 personas in four groups, rewrites each instruction in that user&#x27;s own words and answers the CUA&#x27;s questions, while the CUA sees only the dialogue, never the profile or the original instruction. Across nine backbones (3,330 runs), mean task completion falls by 36% relative to the original requests. The losses have two sources: in 59.9% of cells that lose points, the agent engages with what the user asked for and still gets it wrong, and 11.2% are stops the user requested that the checker scores as failures. Even when a persona request is fully completed, the user gives the top satisfaction rating in only 62.7% of cells, against 84.1% for the original requests. CUAs should therefore be evaluated not only on task completion but also on whether they meet the requirements and constraints users express. Code: https://github.com/MatrAIx-ai/PersonaCUABench. Project page: https://matraix.ai/research/persona-cua.html</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.22990v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.22990v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.22990" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More GUI / computer use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.19900.html"><strong>How GUI Agents Fail: GraceBench for Execution Stability Diagnosis</strong></a> <span>2026-10-14</span></li>
+          <li><a href="2610.19128.html"><strong>CLASHarness: Benchmarking Multi-Agent Conflict in Computer Use via a Controllable and Verifiable Generation Pipeline</strong></a> <span>2026-10-13</span></li>
+          <li><a href="2610.16720.html"><strong>Learn from Move: the Next Step for GUI Agents</strong></a> <span>2026-10-12</span></li>
+          <li><a href="2610.15765.html"><strong>A Decade in a Day: Synthesizing Agent-Native Interfaces from Human-Oriented Software Evolution</strong></a> <span>2026-10-11</span></li>
+          <li><a href="2610.11050.html"><strong>AgentHorizon: Evaluating Agentic Judges for Long-Horizon Computer-Use Tasks</strong></a> <span>2026-10-08</span></li>
+          <li><a href="2610.09944.html"><strong>AgentTime: Can Agents Estimate and Control Their Own Runtime?</strong></a> <span>2026-10-07</span></li>
+          <li><a href="2610.04800.html"><strong>MedImageOSWorld: Benchmarking GUI Agents for Medical Image Consoles</strong></a> <span>2026-10-03</span></li>
+          <li><a href="2609.40284.html"><strong>cua-speedrun: Standardized Benchmarking of the Speed of Computer-Use Agents</strong></a> <span>2026-09-30</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

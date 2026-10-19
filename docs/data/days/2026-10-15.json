@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-15",
+  "count": 2,
+  "report": {
+    "date": "2026-10-15",
+    "count": 2,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On October 15, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Tool use (1), and Coding agents (1).",
+      "highlights": [
+        {
+          "id": "2610.22511",
+          "title": "AuditKIT: A Unified Evaluation Spine for Benchmarking, Judging, and Comparing Large Language Models and Agentic Systems",
+          "blurb": "Evaluating language models and agents requires combining benchmark accuracy, judge-based assessment, runtime performance, tool-use behavior, and retrieval quality."
+        },
+        {
+          "id": "2610.22039",
+          "title": "WEAVE: Weaving Real-World Code Evolution into Dependency-Structured Tasks for Benchmarking and Training Code Agents",
+          "blurb": "Real-world software engineering rarely consists of isolated changes."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年10月15日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在工具使用（1）、代码智能体（1）。",
+      "highlights": [
+        {
+          "id": "2610.22511",
+          "title": "AuditKIT: A Unified Evaluation Spine for Benchmarking, Judging, and Comparing Large Language Models and Agentic Systems",
+          "blurb": "Evaluating language models and agents requires combining benchmark accuracy, judge-based assessment, runtime performance, tool-use behavior, and retrieval quality."
+        },
+        {
+          "id": "2610.22039",
+          "title": "WEAVE: Weaving Real-World Code Evolution into Dependency-Structured Tasks for Benchmarking and Training Code Agents",
+          "blurb": "Real-world software engineering rarely consists of isolated changes."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2610.22511",
+      "title": "AuditKIT: A Unified Evaluation Spine for Benchmarking, Judging, and Comparing Large Language Models and Agentic Systems",
+      "abstract": "Evaluating language models and agents requires combining benchmark accuracy, judge-based assessment, runtime performance, tool-use behavior, and retrieval quality. Differences in interfaces, metric semantics, and trace formats complicate these comparisons and can hide failures in agentic workflows. We present AuditKIT, a source-available evaluation library that records these measurements in one result representation, with direction-aware metric contracts, configuration fingerprints, and extensible metrics and backends. For agents, it provides turn-aware tool-call matching, separates parallel from sequential execution, and distinguishes verified task outcomes from trajectory-level diagnostics. Missing or unobservable evidence is marked unscored rather than counted as failure. For retrieval-augmented generation, it combines ranked retrieval metrics, judged grounding, and deterministic evidence checks. Seven case studies spanning model comparison, serving runtimes, retrieval, tool calling, and interoperability show how answer extraction, runtime behavior, and metric selection change evaluation outcomes.",
+      "authors": [
+        "Shreeyans Arora",
+        "Utsav Avaiya",
+        "Zera Lyngkhoi",
+        "Hem Gosalia",
+        "Ram Mohan Rao Kadiyala",
+        "Vinay Kumar Sankarapu",
+        "Pratinav Seth"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-10-15T18:05:10Z",
+      "updated": "2026-10-15T18:05:10Z",
+      "announced_date": "2026-10-15",
+      "first_seen": "2026-10-15",
+      "comment": "25 pages, 2 figures, 13 tables. Code: https://github.com/Lexsi-Labs/AuditKIT. Shreeyans Arora and Utsav Avaiya contributed equally; work done while at Lexsi Labs",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.22511v1",
+        "pdf": "https://arxiv.org/pdf/2610.22511v1",
+        "html": "https://arxiv.org/html/2610.22511"
+      },
+      "score": 17,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.22039",
+      "title": "WEAVE: Weaving Real-World Code Evolution into Dependency-Structured Tasks for Benchmarking and Training Code Agents",
+      "abstract": "Real-world software engineering rarely consists of isolated changes. Features, migrations, and systematic fixes often unfold across multiple pull requests (PRs), requiring coordinated modifications across a repository. Yet most executable repository-level benchmarks retain a single issue or PR as the task unit, while existing multi-PR settings rely on coarse aggregation and structure-agnostic evaluation. This mismatch obscures dependencies among changes and limits progress measurement and learning signals for long-horizon code agents. We introduce WEAVE, a framework that transforms verified PR histories into executable, dependency-structured tasks. WEAVE leverages repository-calibrated typed change loci to organize related PRs into bounded DAGs and instantiate each as a unified executable task. We further introduce Graph Credit, a deterministic, test-grounded metric that measures dependency-consistent partial progress and supports dense, verifiable rewards for reinforcement learning. Experiments on task construction, agent evaluation, supervised fine-tuning, and reinforcement learning show that WEAVE yields coherent executable tasks, enables more faithful progress measurement than flat scoring, and provides effective supervision and verifiable rewards for training code agents.",
+      "authors": [
+        "Weihao Li",
+        "Zihang Xu",
+        "Zhongqiu Wang",
+        "Songwei Yu",
+        "Wenqiang Zhu",
+        "Yuechen Luo",
+        "Jingxuan Xu",
+        "Yanan Wu",
+        "Haoyang Huang",
+        "Aerial Deng"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-15T15:12:56Z",
+      "updated": "2026-10-16T06:44:17Z",
+      "announced_date": "2026-10-15",
+      "first_seen": "2026-10-15",
+      "comment": "22 pages, including appendix",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.22039v2",
+        "pdf": "https://arxiv.org/pdf/2610.22039v2",
+        "html": "https://arxiv.org/html/2610.22039"
+      },
+      "score": 8,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    }
+  ]
+}
