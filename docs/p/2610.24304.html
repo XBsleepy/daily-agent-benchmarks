@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CME-SpectrumBench: Can LLMs Analyze Condensed Matter Spectral Data? | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large Language Models (LLMs) are presently well assessed by expert-level mathematics and physics benchmarks which focus on…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Tool use, Planning / reasoning, Science lab, agent benchmark, LLM agent, arXiv, 2610.24304" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.24304.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="CME-SpectrumBench: Can LLMs Analyze Condensed Matter Spectral Data?" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large Language Models (LLMs) are presently well assessed by expert-level mathematics and physics benchmarks which focus on…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.24304.html" />
+    <meta property="article:published_time" content="2026-10-20T04:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="CME-SpectrumBench: Can LLMs Analyze Condensed Matter Spectral Data?" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large Language Models (LLMs) are presently well assessed by expert-level mathematics and physics benchmarks which focus on…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "CME-SpectrumBench: Can LLMs Analyze Condensed Matter Spectral Data?",
+  "name": "CME-SpectrumBench: Can LLMs Analyze Condensed Matter Spectral Data?",
+  "abstract": "Large Language Models (LLMs) are presently well assessed by expert-level mathematics and physics benchmarks which focus on theoretical, symbolic reasoning. However, we lack experimental benchmarks that evaluate data analysis in frontier research problems, a capability that future domain-specific foundation models must have. To this end, we present CME-SpectrumBench, an expert-designed benchmark consisting of 190 questions that measures how reliably frontier LLMs analyze research-level spectral scientific data in condensed matter experiments (CME). Using simulated CME spectral data, we prompt models to identify structures from 2D intensity arrays in the face of noise and limited instrumental resolution, a test of dense context reasoning. Models are scored by how accurately their numerical answers approach the ground truth. Under direct query, scores generally pale in comparison to handwritten code due to clear failure modes: models can find simple features but struggle to trace patterns or compute derived quantities, and performance typically degrades with increased data resolution and noise/convolution levels. LLM performance becomes comparable to handwritten code by allowing tool use (access to a Python interpreter) with/without ReAct prompting, in effect mapping questions onto agentic code generation problems. Our findings show that frontier models can serve as research assistants by interfacing with data through code, but still face difficulties processing information directly from large datasets - a key barrier future foundation models must overcome. The code and data are publicly available at https://huggingface.co/datasets/jingene/CMESpectrumBench.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jin Gene Wong, Anjney Midha, Joseph Mathew Tennyson, Wei-Lin Chiang, Ion Stoica, Zhi-Xun Shen"
+    }
+  ],
+  "datePublished": "2026-10-20T04:00:00Z",
+  "dateModified": "2026-10-20T04:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.24304.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.24304.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.24304"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.24304"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Tool use",
+    "Planning / reasoning",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.24304"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.24304"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>CME-SpectrumBench: Can LLMs Analyze Condensed Matter Spectral Data?</h1>
+        <div class="meta">
+          Jin Gene Wong, Anjney Midha, Joseph Mathew Tennyson, Wei-Lin Chiang, Ion Stoica, Zhi-Xun Shen
+          · 2610.24304
+          · <time datetime="2026-10-20">2026-10-20</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span><span class="chip">Planning / reasoning</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large Language Models (LLMs) are presently well assessed by expert-level mathematics and physics benchmarks which focus on theoretical, symbolic reasoning. However, we lack experimental benchmarks that evaluate data analysis in frontier research problems, a capability that future domain-specific foundation models must have. To this end, we present CME-SpectrumBench, an expert-designed benchmark consisting of 190 questions that measures how reliably frontier LLMs analyze research-level spectral scientific data in condensed matter experiments (CME). Using simulated CME spectral data, we prompt models to identify structures from 2D intensity arrays in the face of noise and limited instrumental resolution, a test of dense context reasoning. Models are scored by how accurately their numerical answers approach the ground truth. Under direct query, scores generally pale in comparison to handwritten code due to clear failure modes: models can find simple features but struggle to trace patterns or compute derived quantities, and performance typically degrades with increased data resolution and noise/convolution levels. LLM performance becomes comparable to handwritten code by allowing tool use (access to a Python interpreter) with/without ReAct prompting, in effect mapping questions onto agentic code generation problems. Our findings show that frontier models can serve as research assistants by interfacing with data through code, but still face difficulties processing information directly from large datasets - a key barrier future foundation models must overcome. The code and data are publicly available at https://huggingface.co/datasets/jingene/CMESpectrumBench.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.24304" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.24304" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.24304" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.26394.html"><strong>When Coding Agents Outpace Review: Evaluating PRD-Driven Development in Mature Enterprise Repositories</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.25899.html"><strong>SWE-Residual: Evaluating Starting-State Robustness of Coding Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.26098.html"><strong>From Code to Playable Systems: CEGame-Bench for Long-Horizon Game Creation Agents</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.24611.html"><strong>HSPR: Recovering Software-Agent Benchmark Scores via Hierarchical Posterior Inference</strong></a> <span>2026-10-17</span></li>
+          <li><a href="2610.24206.html"><strong>SWE-Bench Pro V2: A Cleaner, Harder-to-Game Coding Benchmark</strong></a> <span>2026-10-16</span></li>
+          <li><a href="2610.23506.html"><strong>MLOps-Bench: Benchmarking AI Agents on Production ML Engineering in Real Repositories</strong></a> <span>2026-10-16</span></li>
+          <li><a href="2610.20673.html"><strong>HPCAgent-Bench: A Framework for Sound Benchmarking of Code-Optimizing Agents, Harnesses, and Skills</strong></a> <span>2026-10-16</span></li>
+          <li><a href="2610.22039.html"><strong>WEAVE: Weaving Real-World Code Evolution into Dependency-Structured Tasks for Benchmarking and Training Code Agents</strong></a> <span>2026-10-15</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

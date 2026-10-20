@@ -1,13 +1,13 @@
 {
   "date": "2026-10-18",
-  "count": 5,
+  "count": 4,
   "report": {
     "date": "2026-10-18",
-    "count": 5,
+    "count": 4,
     "themes": [
       {
         "id": "memory",
-        "count": 3,
+        "count": 2,
         "en": "Memory",
         "zh": "记忆"
       },
@@ -22,23 +22,11 @@
         "count": 1,
         "en": "Multi-agent",
         "zh": "多智能体"
-      },
-      {
-        "id": "tool-use",
-        "count": 1,
-        "en": "Tool use",
-        "zh": "工具使用"
-      },
-      {
-        "id": "planning",
-        "count": 1,
-        "en": "Planning / reasoning",
-        "zh": "规划 / 推理"
       }
     ],
     "en": {
-      "headline": "5 new agent benchmarks",
-      "summary": "On October 18, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Memory (3), Safety (2), Multi-agent (1), and Tool use (1).",
+      "headline": "4 new agent benchmarks",
+      "summary": "On October 18, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Memory (2), Safety (2), and Multi-agent (1).",
       "highlights": [
         {
           "id": "2610.25208",
@@ -51,15 +39,15 @@
           "blurb": "Autonomous agents are increasingly capable of developing machine learning (ML) models end to end."
         },
         {
-          "id": "2610.25111",
-          "title": "Explore or Confirm? LLM Agents Misallocate Measurements Under Noise",
-          "blurb": "As model reasoning gets cheaper, the physical experiment becomes the slow and costly step in discovery."
+          "id": "2610.25127",
+          "title": "MemBubble: Benchmarking How Agent Memory Shapes LLM Response Diversity",
+          "blurb": "Memory serves as the core component of LLM-based agents, enabling personalized responses via extracting and using user preferences from past interactions."
         }
       ]
     },
     "zh": {
-      "headline": "新增 5 篇 Agent Benchmark",
-      "summary": "2026年10月18日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在记忆（3）、安全（2）、多智能体（1）、工具使用（1）。",
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年10月18日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在记忆（2）、安全（2）、多智能体（1）。",
       "highlights": [
         {
           "id": "2610.25208",
@@ -72,9 +60,9 @@
           "blurb": "Autonomous agents are increasingly capable of developing machine learning (ML) models end to end."
         },
         {
-          "id": "2610.25111",
-          "title": "Explore or Confirm? LLM Agents Misallocate Measurements Under Noise",
-          "blurb": "As model reasoning gets cheaper, the physical experiment becomes the slow and costly step in discovery."
+          "id": "2610.25127",
+          "title": "MemBubble: Benchmarking How Agent Memory Shapes LLM Response Diversity",
+          "blurb": "Memory serves as the core component of LLM-based agents, enabling personalized responses via extracting and using user preferences from past interactions."
         }
       ]
     }
@@ -191,39 +179,6 @@
         "memory"
       ],
       "field": "other",
-      "citations": 0
-    },
-    {
-      "id": "2610.25111",
-      "title": "Explore or Confirm? LLM Agents Misallocate Measurements Under Noise",
-      "abstract": "As model reasoning gets cheaper, the physical experiment becomes the slow and costly step in discovery. Each experiment returns a noisy reading: a high value can mean a good candidate or a lucky draw. With a fixed budget, an AI agent must keep choosing between exploring a new candidate and confirming a promising one by re-testing it. We measure that choice in Wellocate, a simulated assay campaign with known true values. It is built on a generated landscape and on two real protein datasets, GB1 and PhoQ, scrambled so no model can answer from memory. We test five language models as minimal agents, with no tools and no memory beyond the history in each prompt. They misallocate in both directions. Three over-confirm, spending most of the budget re-testing. On the generated landscape one under-confirms, trusting single readings, and there every model ends with a worse final pick than a basic scripted strategy. Each failure has its own cause. The over-confirmers run short of new candidates worth trying: a list of untried candidates cuts their re-testing and, on real protein data, makes two of them pick much better. A running summary of their readings or a description of the landscape changes it by at most five percentage points. For the under-confirmer, re-testing its top candidates in a final round, replayed on its own campaigns, recovers only about a quarter of what it loses by picking the wrong candidate. This suggests confirmation has to run through the whole campaign. We release Wellocate as a benchmark and reinforcement-learning environment with frozen splits and scripted baselines. With it, anyone can measure how an agent splits its budget before trusting it with real experiments, and train agents to split it better. Code, data and the environment are available at https://github.com/Xstendyl/wellocate.",
-      "authors": [
-        "Abdul Karim",
-        "Matt Keon"
-      ],
-      "categories": [
-        "cs.AI",
-        "cs.MA"
-      ],
-      "primary_category": "cs.AI",
-      "published": "2026-10-18T08:44:06Z",
-      "updated": "2026-10-18T08:44:06Z",
-      "announced_date": "2026-10-18",
-      "first_seen": "2026-10-18",
-      "comment": "38 pages, 12 figures. Code, data and environment: https://github.com/Xstendyl/wellocate",
-      "doi": "",
-      "links": {
-        "abs": "https://arxiv.org/abs/2610.25111v1",
-        "pdf": "https://arxiv.org/pdf/2610.25111v1",
-        "html": "https://arxiv.org/html/2610.25111"
-      },
-      "score": 13,
-      "tags": [
-        "tool-use",
-        "memory",
-        "planning"
-      ],
-      "field": "tool-use",
       "citations": 0
     },
     {

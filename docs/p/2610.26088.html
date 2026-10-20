@@ -12,7 +12,7 @@
     <meta property="og:title" content="LeakBench: Auditing Reward Hacking through Prediction-Time Leakage in Clinical Modeling Agents" />
     <meta property="og:description" content="Daily Agent Benchmarks: Autonomous clinical-modeling agents can optimize predictive performance while violating conditions that make a model usable. We…" />
     <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.26088.html" />
-    <meta property="article:published_time" content="2026-10-19T09:50:57Z" />
+    <meta property="article:published_time" content="2026-10-20T04:00:00Z" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="LeakBench: Auditing Reward Hacking through Prediction-Time Leakage in Clinical Modeling Agents" />
     <meta name="twitter:description" content="Daily Agent Benchmarks: Autonomous clinical-modeling agents can optimize predictive performance while violating conditions that make a model usable. We…" />
@@ -35,39 +35,15 @@
   "author": [
     {
       "@type": "Person",
-      "name": "Xiaoyuan Bao"
-    },
-    {
-      "@type": "Person",
-      "name": "Jingsi Jiang"
-    },
-    {
-      "@type": "Person",
-      "name": "Jiao Shan"
-    },
-    {
-      "@type": "Person",
-      "name": "Yulong Cao"
-    },
-    {
-      "@type": "Person",
-      "name": "Haoyu Wang"
-    },
-    {
-      "@type": "Person",
-      "name": "Zida Liu"
-    },
-    {
-      "@type": "Person",
-      "name": "Jun Gao"
+      "name": "Xiaoyuan Bao, Jingsi Jiang, Jiao Shan, Yulong Cao, Haoyu Wang, Zida Liu, Jun Gao"
     }
   ],
-  "datePublished": "2026-10-19T09:50:57Z",
-  "dateModified": "2026-10-19T09:50:57Z",
+  "datePublished": "2026-10-20T04:00:00Z",
+  "dateModified": "2026-10-20T04:00:00Z",
   "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.26088.html",
   "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.26088.html",
   "sameAs": [
-    "https://arxiv.org/abs/2610.26088v1"
+    "https://arxiv.org/abs/2610.26088"
   ],
   "identifier": {
     "@type": "PropertyValue",
@@ -90,7 +66,7 @@
   "encoding": {
     "@type": "MediaObject",
     "encodingFormat": "application/pdf",
-    "contentUrl": "https://arxiv.org/pdf/2610.26088v1"
+    "contentUrl": "https://arxiv.org/pdf/2610.26088"
   }
 }
     </script>
@@ -114,7 +90,7 @@
         <div class="meta">
           Xiaoyuan Bao, Jingsi Jiang, Jiao Shan, Yulong Cao, Haoyu Wang, Zida Liu, Jun Gao
           · 2610.26088
-          · <time datetime="2026-10-19">2026-10-19</time>
+          · <time datetime="2026-10-20">2026-10-20</time>
           · General
         </div>
         
@@ -122,8 +98,8 @@
           <p>Autonomous clinical-modeling agents can optimize predictive performance while violating conditions that make a model usable. We introduce LeakBench, an executable, guideline-derived audit suite that tests agent decisions for prediction-time leakage, calibration, site-level evaluation, support awareness, and decision-curve net benefit. LeakBench combines a synthetic task with known failure structure and two real-data settings: MIMIC-IV (430k admissions) and governed multi-hospital inpatient record front-page (MHFP) data. Our primary analysis uses reward hacking descriptively, without attributing intent: an agent selects prediction-time-invalid inputs because they improve its validation reward. A deterministic optimizer and every evaluated unconstrained local-model configuration select a fatal leaking feature. In fully logged September 2026 A/B runs, DeepSeek Flash and GPT-6-astra each leak in 10/10 unconstrained runs and 0/10 runs with an explicit admission-time constraint. This contrast is version-sensitive: a blinded Claude/Fable-5.1 chat run does not leak in either condition, while explicit-constraint violations appear only in a historical August 2026 slice lacking raw trajectories. Replacing AUROC with AUPRC does not remove leakage selection. Renaming or disguising the leaking inputs changes neither selection nor provenance-based detection; a name-based filter fails. A deterministic provenance verifier-in-loop removes the leak, making the LLM repair loop defense-in-depth. Specific verifier feedback clears fatal leakage in a hosted agent, and a three-seed ablation finds principle-only feedback clears decision-level defects, though these mitigation results are limited. LeakBench treats trustworthy clinical prediction as a property of an agent&#x27;s modeling process, not merely its score; it is an audit testbed with known-failure controls, not yet an expert-validated benchmark.</p>
         </div>
         <div class="links">
-          <a href="https://arxiv.org/abs/2610.26088v1" target="_blank" rel="noopener">Abstract page</a>
-          <a href="https://arxiv.org/pdf/2610.26088v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2610.26088" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.26088" target="_blank" rel="noopener">PDF</a>
           <a href="https://arxiv.org/html/2610.26088" target="_blank" rel="noopener">HTML</a>
         </div>
       </article>
@@ -131,9 +107,9 @@
     <nav class="paper-page related" aria-label="Related benchmarks">
       <h2>More General benchmarks</h2>
       <ol class="highlights">
-          <li><a href="2610.26679.html"><strong>StebBench: Diagnosing Real-World Procedural Understanding in AI Agents</strong></a> <span>2026-10-19</span></li>
-          <li><a href="2610.26438.html"><strong>Fake News, Real Crashes: Information Injection Attacks on LLM Financial Trading Agents</strong></a> <span>2026-10-19</span></li>
-          <li><a href="2610.26101.html"><strong>Reliable Before Profitable: QuantHarness for Governing Financial Strategy Development with LLM Agents</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.26679.html"><strong>StebBench: Diagnosing Real-World Procedural Understanding in AI Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.26438.html"><strong>Fake News, Real Crashes: Information Injection Attacks on LLM Financial Trading Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.26101.html"><strong>Reliable Before Profitable: QuantHarness for Governing Financial Strategy Development with LLM Agents</strong></a> <span>2026-10-20</span></li>
           <li><a href="2610.25950.html"><strong>AdaExploreBench: Benchmarking LLM Agents for Proactive Exploration and Test-time Adaptation in Evolving Environments</strong></a> <span>2026-10-19</span></li>
           <li><a href="2610.25896.html"><strong>When Should AI Chime In? Benchmarking Timely Contribution of Proactive Agents in Multi-Party Chat</strong></a> <span>2026-10-19</span></li>
           <li><a href="2610.25373.html"><strong>MemDerive: A Diagnostic Benchmark for Agent Memory over Evolving Data</strong></a> <span>2026-10-18</span></li>
