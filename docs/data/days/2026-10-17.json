@@ -1,0 +1,177 @@
+{
+  "date": "2026-10-17",
+  "count": 3,
+  "report": {
+    "date": "2026-10-17",
+    "count": 3,
+    "themes": [
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      }
+    ],
+    "en": {
+      "headline": "3 new agent benchmarks",
+      "summary": "On October 17, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Memory (2), Coding agents (1), and Dialogue / customer (1).",
+      "highlights": [
+        {
+          "id": "2610.24520",
+          "title": "HABIT-Bench: Evaluating Habit Induction from Longitudinal Weak Evidence in Agent Memory",
+          "blurb": "In long-term interactions with large language model (LLM) agents, users reveal habits through their choices and actions."
+        },
+        {
+          "id": "2610.24611",
+          "title": "HSPR: Recovering Software-Agent Benchmark Scores via Hierarchical Posterior Inference",
+          "blurb": "Evaluating software agents on a full benchmark is expensive."
+        },
+        {
+          "id": "2610.24359",
+          "title": "Can Agents Keep Secrets They Were Never Told? Benchmarking Latent Privacy Risks Across Sessions with MemJoin",
+          "blurb": "To support sustained interactions and personalized assistance, agents use long-term memory to retain and combine user information across sessions."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年10月17日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在记忆（2）、代码智能体（1）、对话 / 客服（1）。",
+      "highlights": [
+        {
+          "id": "2610.24520",
+          "title": "HABIT-Bench: Evaluating Habit Induction from Longitudinal Weak Evidence in Agent Memory",
+          "blurb": "In long-term interactions with large language model (LLM) agents, users reveal habits through their choices and actions."
+        },
+        {
+          "id": "2610.24611",
+          "title": "HSPR: Recovering Software-Agent Benchmark Scores via Hierarchical Posterior Inference",
+          "blurb": "Evaluating software agents on a full benchmark is expensive."
+        },
+        {
+          "id": "2610.24359",
+          "title": "Can Agents Keep Secrets They Were Never Told? Benchmarking Latent Privacy Risks Across Sessions with MemJoin",
+          "blurb": "To support sustained interactions and personalized assistance, agents use long-term memory to retain and combine user information across sessions."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2610.24611",
+      "title": "HSPR: Recovering Software-Agent Benchmark Scores via Hierarchical Posterior Inference",
+      "abstract": "Evaluating software agents on a full benchmark is expensive. A small task subset can preserve agent rankings while yielding inaccurate scores. Historical responses provide useful structure, but tasks with identical source responses can have different outcomes for a new target agent. We introduce Hierarchical Score Posterior Recovery (HSPR), which combines source-fitted response factors with uncertain group success rates. Observed target outcomes update the posteriors over the target latent state and group rates; posterior-guided acquisition selects subsequent tasks. Its score-based criterion equals the expected one-step reduction in full-score posterior variance. Observed successes and posterior-predictive counts for unqueried tasks yield a full-score posterior. The final estimate uses its median with source-selected calibration. At a 10% task budget on four task banks from the SWE-bench family, HSPR achieves the lowest mean absolute error (MAE) on three banks and the lowest maximum absolute error (MaxErr) on all four among the methods compared. Removing group uncertainty or replacing adaptive queries increases macro MAE in the respective controls. Macro MAE decreases across 5-20% budgets.",
+      "authors": [
+        "Wanyi Chen",
+        "Wanqin Shen",
+        "Yuanchen Shi",
+        "Zhensu Sun",
+        "Fang Kong"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-17T10:32:47Z",
+      "updated": "2026-10-17T10:32:47Z",
+      "announced_date": "2026-10-17",
+      "first_seen": "2026-10-17",
+      "comment": "15 pages, 4 figures, 8 tables, including appendices",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.24611v1",
+        "pdf": "https://arxiv.org/pdf/2610.24611v1",
+        "html": "https://arxiv.org/html/2610.24611"
+      },
+      "score": 9,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.24520",
+      "title": "HABIT-Bench: Evaluating Habit Induction from Longitudinal Weak Evidence in Agent Memory",
+      "abstract": "In long-term interactions with large language model (LLM) agents, users reveal habits through their choices and actions. These habits capture implicit user information that agents must infer across conversations. However, individual observations may provide only partial evidence about a habit or when it applies. Retaining past interactions alone does not ensure that agents can infer habits and apply them appropriately. We introduce HABIT-Bench to evaluate how well agent memory systems infer habits from weak evidence and apply them to later requests. We construct synthetic user histories from task-oriented dialogue data and controlled habit graphs. The histories span hundreds of sessions across food, finance, software, and travel. Four-choice tasks assess agents' ability to infer user habits and apply them appropriately. They include temporary exceptions, changes in habits, and suggestions that users have not accepted. Sampled tasks undergo independent human review. We evaluate eight memory methods with Qwen3-235B-A22B and GLM-5.3-Flash. The best-performing memory method achieves 33.61\\% macro accuracy across the four domains. Performance remains limited even when annotated evidence is supplied directly. These results expose a persistent gap between access to past interactions and the ability to infer and appropriately use user habits.",
+      "authors": [
+        "Junming Zhang",
+        "Rubin Wei",
+        "Xu Cheng",
+        "Hao Sun",
+        "Ruoxi Cheng",
+        "Xiquan Wang",
+        "Peisong Wu",
+        "Mingsong Chen",
+        "Zhouhan Lin"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-17T07:30:09Z",
+      "updated": "2026-10-17T07:30:09Z",
+      "announced_date": "2026-10-17",
+      "first_seen": "2026-10-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.24520v1",
+        "pdf": "https://arxiv.org/pdf/2610.24520v1",
+        "html": "https://arxiv.org/html/2610.24520"
+      },
+      "score": 9,
+      "tags": [
+        "memory",
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 0
+    },
+    {
+      "id": "2610.24359",
+      "title": "Can Agents Keep Secrets They Were Never Told? Benchmarking Latent Privacy Risks Across Sessions with MemJoin",
+      "abstract": "To support sustained interactions and personalized assistance, agents use long-term memory to retain and combine user information across sessions. Reusing such memories can lead an agent to state a sensitive relation while completing an ordinary task that does not require it. The relation to protect and the combination of clues that reveal it may remain hidden at memory write time, when later records and tasks are still unknown. In this paper, we introduce MemJoin, a privacy benchmark of 288 synthetic analysis cases in which the complete history entails a sensitive relation, but every individual session is insufficient. We evaluate six memory systems with the same answer-generating model, alongside full-history and no-history controls. Each system writes and updates memories in session order and later retrieves context for an ordinary task, while target annotations remain with the evaluator. We separately check which target attribute values appear in stored records and retrieved context, and whether the final answer states the complete, person-linked relation. In a separate paired test on a prespecified subset, removing shared identifiers and other connecting clues can change complete-relation output while all checked target attribute values remain visible. These findings show why checking attribute visibility alone is insufficient to evaluate what records from different sessions reveal together.",
+      "authors": [
+        "Qishun Yang",
+        "Shu Yang",
+        "Difei Xu",
+        "Di Wang",
+        "Meng Ding"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-10-17T01:20:36Z",
+      "updated": "2026-10-17T01:20:36Z",
+      "announced_date": "2026-10-17",
+      "first_seen": "2026-10-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.24359v1",
+        "pdf": "https://arxiv.org/pdf/2610.24359v1",
+        "html": "https://arxiv.org/html/2610.24359"
+      },
+      "score": 7,
+      "tags": [
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

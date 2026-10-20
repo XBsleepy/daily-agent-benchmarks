@@ -1,21 +1,27 @@
 {
   "date": "2026-10-16",
-  "count": 24,
+  "count": 27,
   "report": {
     "date": "2026-10-16",
-    "count": 24,
+    "count": 27,
     "themes": [
+      {
+        "id": "planning",
+        "count": 7,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "safety",
+        "count": 6,
+        "en": "Safety",
+        "zh": "安全"
+      },
       {
         "id": "tool-use",
         "count": 6,
         "en": "Tool use",
         "zh": "工具使用"
-      },
-      {
-        "id": "safety",
-        "count": 5,
-        "en": "Safety",
-        "zh": "安全"
       },
       {
         "id": "science",
@@ -24,10 +30,10 @@
         "zh": "科学实验"
       },
       {
-        "id": "planning",
-        "count": 5,
-        "en": "Planning / reasoning",
-        "zh": "规划 / 推理"
+        "id": "coding",
+        "count": 4,
+        "en": "Coding agents",
+        "zh": "代码智能体"
       },
       {
         "id": "memory",
@@ -36,28 +42,27 @@
         "zh": "记忆"
       },
       {
-        "id": "coding",
-        "count": 3,
-        "en": "Coding agents",
-        "zh": "代码智能体"
-      },
-      {
-        "id": "mobile",
-        "count": 2,
-        "en": "Mobile agents",
-        "zh": "移动智能体"
-      },
-      {
         "id": "multi-agent",
-        "count": 2,
+        "count": 3,
         "en": "Multi-agent",
         "zh": "多智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
       }
     ],
     "en": {
-      "headline": "24 new agent benchmarks",
-      "summary": "On October 16, 2026, arXiv listed 24 new agent benchmarks. Work clustered around Tool use (6), Safety (5), Science lab (5), and Planning / reasoning (5).",
+      "headline": "27 new agent benchmarks",
+      "summary": "On October 16, 2026, arXiv listed 27 new agent benchmarks. Work clustered around Planning / reasoning (7), Safety (6), Tool use (6), and Science lab (5).",
       "highlights": [
+        {
+          "id": "2610.24264",
+          "title": "AM-Bench: A Unified Taxonomy and Evaluation Suite for Agentic Misalignment",
+          "blurb": "As LLM-based agents are deployed with increasing autonomy in real-world environments, a critical failure mode emerges: agentic misalignment, where agents choose harmful actions over failure."
+        },
         {
           "id": "2610.23506",
           "title": "MLOps-Bench: Benchmarking AI Agents on Production ML Engineering in Real Repositories",
@@ -67,18 +72,18 @@
           "id": "2610.23656",
           "title": "ABF-Bench: A Verifiable Benchmark for Agentic Blockchain Forensics",
           "blurb": "Blockchain forensics is adversarial and open-ended: money launderers split, swap, and bridge funds, cut their trail at mixers or custodial services, and change tactics from one incident to the next."
-        },
-        {
-          "id": "2610.23303",
-          "title": "MobileJailBench: Red Queen Jailbreak Benchmarking for Mobile Agents",
-          "blurb": "MLLM-based mobile agents are rapidly gaining autonomy in perception, planning, and closed-loop execution in dynamic mobile environments."
         }
       ]
     },
     "zh": {
-      "headline": "新增 24 篇 Agent Benchmark",
-      "summary": "2026年10月16日，arXiv 新增 24 篇 Agent Benchmark。当日主题集中在工具使用（6）、安全（5）、科学实验（5）、规划 / 推理（5）。",
+      "headline": "新增 27 篇 Agent Benchmark",
+      "summary": "2026年10月16日，arXiv 新增 27 篇 Agent Benchmark。当日主题集中在规划 / 推理（7）、安全（6）、工具使用（6）、科学实验（5）。",
       "highlights": [
+        {
+          "id": "2610.24264",
+          "title": "AM-Bench: A Unified Taxonomy and Evaluation Suite for Agentic Misalignment",
+          "blurb": "As LLM-based agents are deployed with increasing autonomy in real-world environments, a critical failure mode emerges: agentic misalignment, where agents choose harmful actions over failure."
+        },
         {
           "id": "2610.23506",
           "title": "MLOps-Bench: Benchmarking AI Agents on Production ML Engineering in Real Repositories",
@@ -88,16 +93,128 @@
           "id": "2610.23656",
           "title": "ABF-Bench: A Verifiable Benchmark for Agentic Blockchain Forensics",
           "blurb": "Blockchain forensics is adversarial and open-ended: money launderers split, swap, and bridge funds, cut their trail at mixers or custodial services, and change tactics from one incident to the next."
-        },
-        {
-          "id": "2610.23303",
-          "title": "MobileJailBench: Red Queen Jailbreak Benchmarking for Mobile Agents",
-          "blurb": "MLLM-based mobile agents are rapidly gaining autonomy in perception, planning, and closed-loop execution in dynamic mobile environments."
         }
       ]
     }
   },
   "papers": [
+    {
+      "id": "2610.24282",
+      "title": "ROAR: Benchmarking LMM Agents under Real-Time Constraints in Multiplayer Action-Shooter Games",
+      "abstract": "Large multimodal models (LMMs) are increasingly deployed as agents that perceive, reason, and act in interactive multi-agent environments. Yet most existing benchmarks for LMM-based agents in multi-agent settings remain turn-based: the environment and other agents pause while an agent performs inference. Such protocols obscure a fundamental challenge of real-time constraints, where the world continues to evolve and delayed decisions may become outdated before execution. Motivated by this limitation, we introduce ROAR, a multiplayer action-shooter game environment for evaluating LMM-based agents in multi-agent settings under real-time constraints. ROAR covers cooperative, competitive, mixed cooperative-competitive, and basic single-agent scenarios. We further propose a Multi-Agent Asynchronous Gym interface that decouples environment evolution from agent reasoning by running the environment and each agent in separate threads, enabling the environment to advance at fixed time intervals without waiting for LMM inference and allowing agents to reason independently without blocking one another. ROAR also features convenient deployment, multimodal observations, and customizable levels. ROAR offers a practical testbed for advancing LMM-based agents beyond static, turn-based evaluation toward real-time multi-agent decision-making.",
+      "authors": [
+        "Dawei Wang",
+        "Di Zhao",
+        "Jianran Yu",
+        "Chengming Zhou",
+        "Marci Chi Ma",
+        "Xiaoyang Liu",
+        "Beining Zhang",
+        "Shuliang Chu",
+        "Yun Sing Koh",
+        "Gary Ushaw",
+        "Richard Davison"
+      ],
+      "categories": [
+        "cs.MA"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-10-16T22:26:43Z",
+      "updated": "2026-10-16T22:26:43Z",
+      "announced_date": "2026-10-16",
+      "first_seen": "2026-10-16",
+      "comment": "NeurIPS 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.24282v1",
+        "pdf": "https://arxiv.org/pdf/2610.24282v1",
+        "html": "https://arxiv.org/html/2610.24282"
+      },
+      "score": 12,
+      "tags": [
+        "multi-agent",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2610.24264",
+      "title": "AM-Bench: A Unified Taxonomy and Evaluation Suite for Agentic Misalignment",
+      "abstract": "As LLM-based agents are deployed with increasing autonomy in real-world environments, a critical failure mode emerges: agentic misalignment, where agents choose harmful actions over failure. However, existing safety benchmarks primarily evaluate whether agents comply with explicitly harmful instructions, leaving the conditions that cause agents to choose harmful actions poorly understood. To address this limitation, we propose AM-Bench, a unified taxonomy and 35 scenario evaluation benchmark spanning seven industries for agentic misalignment grounded in the fraud triangle, a well-established criminological framework explaining goal-directed misconduct. We adapt this framework to agentic environments and construct our evaluation suite and detection systems along three dimensions: perceived threat, perceived opportunity, and reasoning. We operationalize each dimension into structured subcategories rooted in prior theory: five threat categories derived from the instrumental convergence thesis, seven opportunity categories drawn from the Emergent Strategic Reasoning Risks (ESRR) taxonomy, and a novel four-question binary reasoning framework synthesized from prior literature. Our evaluation of 10 frontier models reveals a 62-percentage-point gap in misalignment across scenarios, with Gemini 3 Flash and Gemini 3.1 Pro exhibiting the highest levels of agentic misalignment while Claude Sonnet 4.6 displays near-zero rates across all conditions. Our reasoning framework further reveals that models may exhibit harmful behaviours without explicit situational awareness or explanation, complicating both mitigation and detection. AM-Bench scenarios and code are available at https://github.com/AI4Collaboration/Agentic-Misalignment-Bench",
+      "authors": [
+        "Eric Zhang",
+        "Terry Jingchen Zhang",
+        "Chijioke Ugwuanyi",
+        "Jerick Shi",
+        "Bernhard Schölkopf",
+        "Zhijing Jin"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-16T21:46:19Z",
+      "updated": "2026-10-16T21:46:19Z",
+      "announced_date": "2026-10-16",
+      "first_seen": "2026-10-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.24264v1",
+        "pdf": "https://arxiv.org/pdf/2610.24264v1",
+        "html": "https://arxiv.org/html/2610.24264"
+      },
+      "score": 23,
+      "tags": [
+        "safety",
+        "planning",
+        "research"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2610.24206",
+      "title": "SWE-Bench Pro V2: A Cleaner, Harder-to-Game Coding Benchmark",
+      "abstract": "SWE-Bench Pro is a widely used benchmark of long-horizon software engineering tasks for coding agents. As agents improve, they reach task issues earlier agents never touched and interact with the evaluation environment in ways the original harness did not anticipate. We present SWE-Bench Pro V2, a revised public split built to keep the benchmark accurate as capabilities advance. Agentic audits, expert adjudication and blind re-implementation repaired or retired 480 of the 731 tasks: 23 contracted engineers spent 404 hours, each working in a language they write professionally, and every revised instruction was verified by a second engineer solving the task from the text alone. A hardened protocol restricts network access to the model endpoint and re-grades every patch in a clean container, so agents cannot retrieve upstream fixes or get credit for changes outside their patch. On the 642 V2 tasks frontier agents resolve up to 99.4% while other systems stay clearly separated, and a 51-task Hard split spreads systems from 52.9% to 98.0%. We release the benchmark and distill lessons for maintaining agent benchmarks over time.",
+      "authors": [
+        "Soham Dan",
+        "Jeff Da",
+        "Sanyam Bhutani",
+        "Miguel Romero Calvo",
+        "Ivan Guevara",
+        "Fernando Carabedo",
+        "Jose Bernal",
+        "Julio Reyna",
+        "Luis Leandro Monsalve Mendez",
+        "Ying Liu",
+        "Daniel Yue Zhang"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-16T20:26:37Z",
+      "updated": "2026-10-16T20:26:37Z",
+      "announced_date": "2026-10-16",
+      "first_seen": "2026-10-16",
+      "comment": "Dataset: https://huggingface.co/datasets/ScaleAI/SWE-bench_Pro/viewer",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.24206v1",
+        "pdf": "https://arxiv.org/pdf/2610.24206v1",
+        "html": "https://arxiv.org/html/2610.24206"
+      },
+      "score": 20,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
     {
       "id": "2610.23845",
       "title": "AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery",

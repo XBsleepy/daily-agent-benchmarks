@@ -1,0 +1,264 @@
+{
+  "date": "2026-10-18",
+  "count": 5,
+  "report": {
+    "date": "2026-10-18",
+    "count": 5,
+    "themes": [
+      {
+        "id": "memory",
+        "count": 3,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      }
+    ],
+    "en": {
+      "headline": "5 new agent benchmarks",
+      "summary": "On October 18, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Memory (3), Safety (2), Multi-agent (1), and Tool use (1).",
+      "highlights": [
+        {
+          "id": "2610.25208",
+          "title": "BrandEval: A Two-Track Multi-Agent Benchmark for Risk-Sensitive LLM Crisis Communication",
+          "blurb": "Evaluating LLMs for crisis communication requires more than judging isolated responses, because public feedback and competitor actions can reshape trust over time."
+        },
+        {
+          "id": "2610.25069",
+          "title": "Auto-MD-bench: Evaluating Autoresearch Agents for Real-World Medical Tasks",
+          "blurb": "Autonomous agents are increasingly capable of developing machine learning (ML) models end to end."
+        },
+        {
+          "id": "2610.25111",
+          "title": "Explore or Confirm? LLM Agents Misallocate Measurements Under Noise",
+          "blurb": "As model reasoning gets cheaper, the physical experiment becomes the slow and costly step in discovery."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 5 篇 Agent Benchmark",
+      "summary": "2026年10月18日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在记忆（3）、安全（2）、多智能体（1）、工具使用（1）。",
+      "highlights": [
+        {
+          "id": "2610.25208",
+          "title": "BrandEval: A Two-Track Multi-Agent Benchmark for Risk-Sensitive LLM Crisis Communication",
+          "blurb": "Evaluating LLMs for crisis communication requires more than judging isolated responses, because public feedback and competitor actions can reshape trust over time."
+        },
+        {
+          "id": "2610.25069",
+          "title": "Auto-MD-bench: Evaluating Autoresearch Agents for Real-World Medical Tasks",
+          "blurb": "Autonomous agents are increasingly capable of developing machine learning (ML) models end to end."
+        },
+        {
+          "id": "2610.25111",
+          "title": "Explore or Confirm? LLM Agents Misallocate Measurements Under Noise",
+          "blurb": "As model reasoning gets cheaper, the physical experiment becomes the slow and costly step in discovery."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2610.25373",
+      "title": "MemDerive: A Diagnostic Benchmark for Agent Memory over Evolving Data",
+      "abstract": "Long-running agents rely on memory of their past interactions for task state, such as what has been completed and which conditions still hold. Such state is usually a derived state. No record states it, and it must be computed by rules from multiple records of an evolving history. Existing memory benchmarks score only the final answer, with no reference for the intermediate states behind it. A wrong answer therefore cannot be traced to the state that was missed, and a state that silently became outdated goes undetected. We present MemDerive, a diagnostic benchmark for agent memory over evolving data. It specifies each scenario symbolically, derives exact gold answers with Datalog, records the gold derivation DAG and the supporting events of every query, and renders the history in natural language with fictional entities and distractors. Its 10 scenarios contain 4,692 events and 1,503 queries whose difficulty varies along access, evolution, and composition. On this ground truth, MemDerive evaluates answer reliability, diagnoses failures by probing the nodes of the gold derivation DAG, and tracks whether answers stay correct as events arrive. Our evaluation of four memory systems reveals failures that final-answer benchmarks hide. On derived state, every memory system falls behind simple BM25 retrieval, although the same answer model reaches 96.01% when given the supporting events. Most failures are ungathered, as a system holds the missing intermediate state but does not retrieve it for the question that needs it. Memory systems also rarely propagate implicit changes, which no new record states. These results suggest three principles for memory design. Gather inputs along the derivation, store rules with their versions, and maintain derived states through recorded dependencies.",
+      "authors": [
+        "Sen Gao",
+        "Yongan Li",
+        "Han Chen",
+        "Bingsheng He",
+        "Ming Wu",
+        "Jason Zeng",
+        "Michael Heinrich",
+        "Shixuan Sun"
+      ],
+      "categories": [
+        "cs.DB",
+        "cs.AI",
+        "cs.CL",
+        "cs.IR"
+      ],
+      "primary_category": "cs.DB",
+      "published": "2026-10-18T16:24:33Z",
+      "updated": "2026-10-18T16:24:33Z",
+      "announced_date": "2026-10-18",
+      "first_seen": "2026-10-18",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.25373v1",
+        "pdf": "https://arxiv.org/pdf/2610.25373v1",
+        "html": "https://arxiv.org/html/2610.25373"
+      },
+      "score": 10,
+      "tags": [
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.25208",
+      "title": "BrandEval: A Two-Track Multi-Agent Benchmark for Risk-Sensitive LLM Crisis Communication",
+      "abstract": "Evaluating LLMs for crisis communication requires more than judging isolated responses, because public feedback and competitor actions can reshape trust over time. Existing benchmarks remain largely static and single-turn, offering limited evidence about long-horizon risk-sensitive communication. We introduce \\textbf{BrandEval}, a two-track benchmark for product-crisis communication, focusing on public brand responses to product-related safety, quality, service, and trust incidents. BrandEval-Static evaluates stakeholder-aware strategic analysis, while BrandEval-Dynamic stress-tests response policies in \\textbf{BrandPolis}, a controlled multi-agent sandbox with consumer feedback, competitor responses, and trust-risk trajectories. We also construct \\textbf{BrandSRD}, a Chinese crisis-response dataset, and instantiate a reference Strategic Agent using \\textbf{Strategic Rationale (SR)}. Across proprietary and open-source models, we find that static strategic quality is informative but incomplete: it aligns with some end-state outcomes but does not reliably predict volatility and delayed recovery; dynamic stress tests further expose tail-risk failures under manipulative or weakly grounded policies. The code and dataset will be available at https://github.com/htgan-ai/BrandEval.",
+      "authors": [
+        "Haotian Gan",
+        "Weidong Tang",
+        "Hanbin Sun",
+        "Yi Luo",
+        "Xintian Li",
+        "Jiayong Wang",
+        "WanYue Li",
+        "Yudong Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-18T12:05:40Z",
+      "updated": "2026-10-18T12:05:40Z",
+      "announced_date": "2026-10-18",
+      "first_seen": "2026-10-18",
+      "comment": "Accepted to EMNLP2026 Findings",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.25208v1",
+        "pdf": "https://arxiv.org/pdf/2610.25208v1",
+        "html": "https://arxiv.org/html/2610.25208"
+      },
+      "score": 17,
+      "tags": [
+        "multi-agent",
+        "safety"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2610.25127",
+      "title": "MemBubble: Benchmarking How Agent Memory Shapes LLM Response Diversity",
+      "abstract": "Memory serves as the core component of LLM-based agents, enabling personalized responses via extracting and using user preferences from past interactions. However, its use may reduce response diversity, thereby narrowing the range of information available to users. Existing evaluations rely largely on synthetic interactions and cover few memory systems, leaving the effects of memory on response diversity insufficiently evaluated in real-world scenarios. We introduce MemBubble, a benchmark of 1000 instances built on preferences extracted from real user-assistant conversations. To measure the extent to which memory concentrates response distributions, we construct test queries in scenarios distinct from user preferences while preserving topical relevance through shared preference categories. Across multiple LLMs and memory mechanisms, entropy decreases by 34.7% on average compared with directly providing the full interaction history, highlighting the important role of memory processing in diversity loss. We also explore simple user-side interventions and changes in information availability but find that these do not effectively close the diversity gap. Our findings highlight the need to consider preserving diversity and user access to information alongside improvements in personalization when designing and using agent memory systems.",
+      "authors": [
+        "Jiajun Tan",
+        "Fei Sun",
+        "Xinyu Ma",
+        "Shixuan Zhang",
+        "Du Su",
+        "Qi Cao",
+        "Daiting Shi",
+        "Huawei Shen",
+        "Xueqi Cheng"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-10-18T09:17:44Z",
+      "updated": "2026-10-18T09:17:44Z",
+      "announced_date": "2026-10-18",
+      "first_seen": "2026-10-18",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.25127v1",
+        "pdf": "https://arxiv.org/pdf/2610.25127v1",
+        "html": "https://arxiv.org/html/2610.25127"
+      },
+      "score": 10,
+      "tags": [
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.25111",
+      "title": "Explore or Confirm? LLM Agents Misallocate Measurements Under Noise",
+      "abstract": "As model reasoning gets cheaper, the physical experiment becomes the slow and costly step in discovery. Each experiment returns a noisy reading: a high value can mean a good candidate or a lucky draw. With a fixed budget, an AI agent must keep choosing between exploring a new candidate and confirming a promising one by re-testing it. We measure that choice in Wellocate, a simulated assay campaign with known true values. It is built on a generated landscape and on two real protein datasets, GB1 and PhoQ, scrambled so no model can answer from memory. We test five language models as minimal agents, with no tools and no memory beyond the history in each prompt. They misallocate in both directions. Three over-confirm, spending most of the budget re-testing. On the generated landscape one under-confirms, trusting single readings, and there every model ends with a worse final pick than a basic scripted strategy. Each failure has its own cause. The over-confirmers run short of new candidates worth trying: a list of untried candidates cuts their re-testing and, on real protein data, makes two of them pick much better. A running summary of their readings or a description of the landscape changes it by at most five percentage points. For the under-confirmer, re-testing its top candidates in a final round, replayed on its own campaigns, recovers only about a quarter of what it loses by picking the wrong candidate. This suggests confirmation has to run through the whole campaign. We release Wellocate as a benchmark and reinforcement-learning environment with frozen splits and scripted baselines. With it, anyone can measure how an agent splits its budget before trusting it with real experiments, and train agents to split it better. Code, data and the environment are available at https://github.com/Xstendyl/wellocate.",
+      "authors": [
+        "Abdul Karim",
+        "Matt Keon"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-18T08:44:06Z",
+      "updated": "2026-10-18T08:44:06Z",
+      "announced_date": "2026-10-18",
+      "first_seen": "2026-10-18",
+      "comment": "38 pages, 12 figures. Code, data and environment: https://github.com/Xstendyl/wellocate",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.25111v1",
+        "pdf": "https://arxiv.org/pdf/2610.25111v1",
+        "html": "https://arxiv.org/html/2610.25111"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use",
+        "memory",
+        "planning"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.25069",
+      "title": "Auto-MD-bench: Evaluating Autoresearch Agents for Real-World Medical Tasks",
+      "abstract": "Autonomous agents are increasingly capable of developing machine learning (ML) models end to end. In medical practice, however, strong performance on the target metric does not fully characterize how good the models are in real-world use cases. For example, medical ML models should also provide well-calibrated risk estimates and remain robust across patient populations. Yet autonomous model development is typically guided by task objectives that emphasize simple predictive discrimination (e.g. AUROC). This raises a key question: are these objectives sufficient to guide agents toward models that meet the broader requirements of real-world medical use? In this study, we introduce Auto-MD-bench, a benchmark of 15 real-world medical tasks from 10 clinical datasets, spanning survival analysis, classification and sequential prediction, with external validation across cohorts, hospitals and time periods. We evaluate four agents: AIDE, AI Scientist v2, Codex, and Autoresearch. The strongest agents achieve competitive primary scores, yet their predicted risks are less calibrated than those of the simple baseline models, which could lead to severe medical accidents. Moreover, models with nearly identical primary scores can exhibit markedly different calibration, while performance varies substantially across population shifts. These findings show that primary task performance alone is insufficient to assess autonomous clinical modeling and multiple different metrics widely used in healthcare practice need to be taken into consideration.",
+      "authors": [
+        "Shenqi Zhou",
+        "Qiran Zou",
+        "Wenhao Zhao",
+        "Zhenyu Liao",
+        "Dianbo Liu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-10-18T07:19:05Z",
+      "updated": "2026-10-18T07:19:05Z",
+      "announced_date": "2026-10-18",
+      "first_seen": "2026-10-18",
+      "comment": "24 pages, 5 figures, 22 tables. Code: https://github.com/Edwin0080/Auto-MD-bench ; data: https://huggingface.co/datasets/Edwin0080/Auto-MD-bench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.25069v1",
+        "pdf": "https://arxiv.org/pdf/2610.25069v1",
+        "html": "https://arxiv.org/html/2610.25069"
+      },
+      "score": 16,
+      "tags": [
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    }
+  ]
+}

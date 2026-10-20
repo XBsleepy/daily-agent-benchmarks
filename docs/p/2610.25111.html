@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Explore or Confirm? LLM Agents Misallocate Measurements Under Noise | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: As model reasoning gets cheaper, the physical experiment becomes the slow and costly step in discovery. Each experiment returns a…" />
+    <meta name="keywords" content="Tool use, Memory, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2610.25111" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.25111.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Explore or Confirm? LLM Agents Misallocate Measurements Under Noise" />
+    <meta property="og:description" content="Daily Agent Benchmarks: As model reasoning gets cheaper, the physical experiment becomes the slow and costly step in discovery. Each experiment returns a…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.25111.html" />
+    <meta property="article:published_time" content="2026-10-18T08:44:06Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Explore or Confirm? LLM Agents Misallocate Measurements Under Noise" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: As model reasoning gets cheaper, the physical experiment becomes the slow and costly step in discovery. Each experiment returns a…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Explore or Confirm? LLM Agents Misallocate Measurements Under Noise",
+  "name": "Explore or Confirm? LLM Agents Misallocate Measurements Under Noise",
+  "abstract": "As model reasoning gets cheaper, the physical experiment becomes the slow and costly step in discovery. Each experiment returns a noisy reading: a high value can mean a good candidate or a lucky draw. With a fixed budget, an AI agent must keep choosing between exploring a new candidate and confirming a promising one by re-testing it. We measure that choice in Wellocate, a simulated assay campaign with known true values. It is built on a generated landscape and on two real protein datasets, GB1 and PhoQ, scrambled so no model can answer from memory. We test five language models as minimal agents, with no tools and no memory beyond the history in each prompt. They misallocate in both directions. Three over-confirm, spending most of the budget re-testing. On the generated landscape one under-confirms, trusting single readings, and there every model ends with a worse final pick than a basic scripted strategy. Each failure has its own cause. The over-confirmers run short of new candidates worth trying: a list of untried candidates cuts their re-testing and, on real protein data, makes two of them pick much better. A running summary of their readings or a description of the landscape changes it by at most five percentage points. For the under-confirmer, re-testing its top candidates in a final round, replayed on its own campaigns, recovers only about a quarter of what it loses by picking the wrong candidate. This suggests confirmation has to run through the whole campaign. We release Wellocate as a benchmark and reinforcement-learning environment with frozen splits and scripted baselines. With it, anyone can measure how an agent splits its budget before trusting it with real experiments, and train agents to split it better. Code, data and the environment are available at https://github.com/Xstendyl/wellocate.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Abdul Karim"
+    },
+    {
+      "@type": "Person",
+      "name": "Matt Keon"
+    }
+  ],
+  "datePublished": "2026-10-18T08:44:06Z",
+  "dateModified": "2026-10-18T08:44:06Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.25111.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.25111.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.25111v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.25111"
+  },
+  "keywords": [
+    "Tool use",
+    "Memory",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.25111v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.25111"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Explore or Confirm? LLM Agents Misallocate Measurements Under Noise</h1>
+        <div class="meta">
+          Abdul Karim, Matt Keon
+          · 2610.25111
+          · <time datetime="2026-10-18">2026-10-18</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Memory</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>As model reasoning gets cheaper, the physical experiment becomes the slow and costly step in discovery. Each experiment returns a noisy reading: a high value can mean a good candidate or a lucky draw. With a fixed budget, an AI agent must keep choosing between exploring a new candidate and confirming a promising one by re-testing it. We measure that choice in Wellocate, a simulated assay campaign with known true values. It is built on a generated landscape and on two real protein datasets, GB1 and PhoQ, scrambled so no model can answer from memory. We test five language models as minimal agents, with no tools and no memory beyond the history in each prompt. They misallocate in both directions. Three over-confirm, spending most of the budget re-testing. On the generated landscape one under-confirms, trusting single readings, and there every model ends with a worse final pick than a basic scripted strategy. Each failure has its own cause. The over-confirmers run short of new candidates worth trying: a list of untried candidates cuts their re-testing and, on real protein data, makes two of them pick much better. A running summary of their readings or a description of the landscape changes it by at most five percentage points. For the under-confirmer, re-testing its top candidates in a final round, replayed on its own campaigns, recovers only about a quarter of what it loses by picking the wrong candidate. This suggests confirmation has to run through the whole campaign. We release Wellocate as a benchmark and reinforcement-learning environment with frozen splits and scripted baselines. With it, anyone can measure how an agent splits its budget before trusting it with real experiments, and train agents to split it better. Code, data and the environment are available at https://github.com/Xstendyl/wellocate.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.25111v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.25111v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.25111" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.26036.html"><strong>FinHopper: A Progressive Multi-Hop Benchmark for Complex Financial Agents with Step-wise Evaluation</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.25954.html"><strong>CXBench: A Benchmark for Process-Compliant LLM Agents in Regulated Customer-Experience Workflows</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.23569.html"><strong>GCAM-Gym: A Benchmark for Agent-Based Climate Policy Search</strong></a> <span>2026-10-16</span></li>
+          <li><a href="2610.23449.html"><strong>GatewayBench: Unified Capability and Security Evaluation Platform for MCP Gateways</strong></a> <span>2026-10-16</span></li>
+          <li><a href="2610.22869.html"><strong>MS-Eval: Benchmarking Sub-Agent Delegation and Orchestration in MCP-Intensive Working Scenarios</strong></a> <span>2026-10-16</span></li>
+          <li><a href="2610.21098.html"><strong>ToolBottleneckBench: Measuring Tool-Agent Performance under Controlled Pressures and Fixed Harness Budgets</strong></a> <span>2026-10-16</span></li>
+          <li><a href="2610.20776.html"><strong>INFUSE: A Unified Surface Benchmark for Indirect Prompt Injection in Agentic Systems</strong></a> <span>2026-10-16</span></li>
+          <li><a href="2610.22511.html"><strong>AuditKIT: A Unified Evaluation Spine for Benchmarking, Judging, and Comparing Large Language Models and Agentic Systems</strong></a> <span>2026-10-15</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StebBench: Diagnosing Real-World Procedural Understanding in AI Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Evaluating an agent&#x27;s planning ability remains challenging for open-domain tasks, where verifying procedures through execution is…" />
+    <meta name="keywords" content="General, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2610.26679" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.26679.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="StebBench: Diagnosing Real-World Procedural Understanding in AI Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Evaluating an agent&#x27;s planning ability remains challenging for open-domain tasks, where verifying procedures through execution is…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.26679.html" />
+    <meta property="article:published_time" content="2026-10-19T16:27:14Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="StebBench: Diagnosing Real-World Procedural Understanding in AI Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Evaluating an agent&#x27;s planning ability remains challenging for open-domain tasks, where verifying procedures through execution is…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "StebBench: Diagnosing Real-World Procedural Understanding in AI Agents",
+  "name": "StebBench: Diagnosing Real-World Procedural Understanding in AI Agents",
+  "abstract": "Evaluating an agent's planning ability remains challenging for open-domain tasks, where verifying procedures through execution is often impractical. Existing evaluations typically assess only the final plan and do not distinguish procedural errors such as missing, incorrect, or misordered actions. We introduce STEPBENCH, a benchmark of 6,885 verified procedures crawled from wikiHow across 81 open-domain categories. From each procedure, we derive 5 diagnostic tasks: four with deterministic answers involving withheld, incorrect, or shuffled steps, and one requiring next-step generation. We additionally evaluate full-plan generation to examine how diagnostic performance correlates with end-to-end plan validity. Using the same procedures across tasks lets us directly compare different planning capabilities. For generation, STEPEVAL identifies critical failures that prevent goal completion. Across 14 configurations of 12 models, we find substantial differences across planning capabilities, with step ordering proving the most difficult: the strongest model correctly orders only 63.0% of procedures, dropping to 33.1% for those with nine or more steps. Incorrect-step detection also predicts judged plan validity across models, suggesting a lower-cost alternative for evaluating generation quality. On STEPBENCH-Val, comprising 214 procedures published in 2026, comprehension scores and rankings remain stable, suggesting limited influence from memorisation.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Hossein A. Rahmani"
+    },
+    {
+      "@type": "Person",
+      "name": "Bin Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Chaeeun Lee"
+    },
+    {
+      "@type": "Person",
+      "name": "Fanghua Ye"
+    },
+    {
+      "@type": "Person",
+      "name": "Sahan Bulathwela"
+    },
+    {
+      "@type": "Person",
+      "name": "Sujay Kumar Jauhar"
+    },
+    {
+      "@type": "Person",
+      "name": "Marzieh Fadaee"
+    },
+    {
+      "@type": "Person",
+      "name": "Nick Craswell"
+    },
+    {
+      "@type": "Person",
+      "name": "Emine Yilmaz"
+    }
+  ],
+  "datePublished": "2026-10-19T16:27:14Z",
+  "dateModified": "2026-10-19T16:27:14Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.26679.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.26679.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.26679v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.26679"
+  },
+  "keywords": [
+    "General",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.26679v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.26679"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>StebBench: Diagnosing Real-World Procedural Understanding in AI Agents</h1>
+        <div class="meta">
+          Hossein A. Rahmani, Bin Wu, Chaeeun Lee, Fanghua Ye, Sahan Bulathwela, Sujay Kumar Jauhar, Marzieh Fadaee, Nick Craswell, Emine Yilmaz
+          · 2610.26679
+          · <time datetime="2026-10-19">2026-10-19</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Evaluating an agent&#x27;s planning ability remains challenging for open-domain tasks, where verifying procedures through execution is often impractical. Existing evaluations typically assess only the final plan and do not distinguish procedural errors such as missing, incorrect, or misordered actions. We introduce STEPBENCH, a benchmark of 6,885 verified procedures crawled from wikiHow across 81 open-domain categories. From each procedure, we derive 5 diagnostic tasks: four with deterministic answers involving withheld, incorrect, or shuffled steps, and one requiring next-step generation. We additionally evaluate full-plan generation to examine how diagnostic performance correlates with end-to-end plan validity. Using the same procedures across tasks lets us directly compare different planning capabilities. For generation, STEPEVAL identifies critical failures that prevent goal completion. Across 14 configurations of 12 models, we find substantial differences across planning capabilities, with step ordering proving the most difficult: the strongest model correctly orders only 63.0% of procedures, dropping to 33.1% for those with nine or more steps. Incorrect-step detection also predicts judged plan validity across models, suggesting a lower-cost alternative for evaluating generation quality. On STEPBENCH-Val, comprising 214 procedures published in 2026, comprehension scores and rankings remain stable, suggesting limited influence from memorisation.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.26679v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.26679v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.26679" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.26438.html"><strong>Fake News, Real Crashes: Information Injection Attacks on LLM Financial Trading Agents</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.26101.html"><strong>Reliable Before Profitable: QuantHarness for Governing Financial Strategy Development with LLM Agents</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.26088.html"><strong>LeakBench: Auditing Reward Hacking through Prediction-Time Leakage in Clinical Modeling Agents</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.25950.html"><strong>AdaExploreBench: Benchmarking LLM Agents for Proactive Exploration and Test-time Adaptation in Evolving Environments</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.25896.html"><strong>When Should AI Chime In? Benchmarking Timely Contribution of Proactive Agents in Multi-Party Chat</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.25373.html"><strong>MemDerive: A Diagnostic Benchmark for Agent Memory over Evolving Data</strong></a> <span>2026-10-18</span></li>
+          <li><a href="2610.25127.html"><strong>MemBubble: Benchmarking How Agent Memory Shapes LLM Response Diversity</strong></a> <span>2026-10-18</span></li>
+          <li><a href="2610.24359.html"><strong>Can Agents Keep Secrets They Were Never Told? Benchmarking Latent Privacy Risks Across Sessions with MemJoin</strong></a> <span>2026-10-17</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>
