@@ -1,10 +1,16 @@
 {
   "date": "2026-10-18",
-  "count": 4,
+  "count": 5,
   "report": {
     "date": "2026-10-18",
-    "count": 4,
+    "count": 5,
     "themes": [
+      {
+        "id": "safety",
+        "count": 3,
+        "en": "Safety",
+        "zh": "安全"
+      },
       {
         "id": "memory",
         "count": 2,
@@ -12,22 +18,39 @@
         "zh": "记忆"
       },
       {
-        "id": "safety",
-        "count": 2,
-        "en": "Safety",
-        "zh": "安全"
-      },
-      {
         "id": "multi-agent",
-        "count": 1,
+        "count": 2,
         "en": "Multi-agent",
         "zh": "多智能体"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
       }
     ],
     "en": {
-      "headline": "4 new agent benchmarks",
-      "summary": "On October 18, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Memory (2), Safety (2), and Multi-agent (1).",
+      "headline": "5 new agent benchmarks",
+      "summary": "On October 18, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Safety (3), Memory (2), Multi-agent (2), and Planning / reasoning (1).",
       "highlights": [
+        {
+          "id": "2610.26943",
+          "title": "MAMath-Bench: Process-Aware and Robust Evaluation of Multimodal Multi-Agent Mathematical Reasoning",
+          "blurb": "Mathematical reasoning is a fundamental capability for educational applications of Large Language Models (LLMs), where reliable problem solving requires not only correct answers but also coherent and verifiable reasoning…"
+        },
         {
           "id": "2610.25208",
           "title": "BrandEval: A Two-Track Multi-Agent Benchmark for Risk-Sensitive LLM Crisis Communication",
@@ -37,18 +60,18 @@
           "id": "2610.25069",
           "title": "Auto-MD-bench: Evaluating Autoresearch Agents for Real-World Medical Tasks",
           "blurb": "Autonomous agents are increasingly capable of developing machine learning (ML) models end to end."
-        },
-        {
-          "id": "2610.25127",
-          "title": "MemBubble: Benchmarking How Agent Memory Shapes LLM Response Diversity",
-          "blurb": "Memory serves as the core component of LLM-based agents, enabling personalized responses via extracting and using user preferences from past interactions."
         }
       ]
     },
     "zh": {
-      "headline": "新增 4 篇 Agent Benchmark",
-      "summary": "2026年10月18日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在记忆（2）、安全（2）、多智能体（1）。",
+      "headline": "新增 5 篇 Agent Benchmark",
+      "summary": "2026年10月18日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在安全（3）、记忆（2）、多智能体（2）、规划 / 推理（1）。",
       "highlights": [
+        {
+          "id": "2610.26943",
+          "title": "MAMath-Bench: Process-Aware and Robust Evaluation of Multimodal Multi-Agent Mathematical Reasoning",
+          "blurb": "Mathematical reasoning is a fundamental capability for educational applications of Large Language Models (LLMs), where reliable problem solving requires not only correct answers but also coherent and verifiable reasoning…"
+        },
         {
           "id": "2610.25208",
           "title": "BrandEval: A Two-Track Multi-Agent Benchmark for Risk-Sensitive LLM Crisis Communication",
@@ -58,11 +81,6 @@
           "id": "2610.25069",
           "title": "Auto-MD-bench: Evaluating Autoresearch Agents for Real-World Medical Tasks",
           "blurb": "Autonomous agents are increasingly capable of developing machine learning (ML) models end to end."
-        },
-        {
-          "id": "2610.25127",
-          "title": "MemBubble: Benchmarking How Agent Memory Shapes LLM Response Diversity",
-          "blurb": "Memory serves as the core component of LLM-based agents, enabling personalized responses via extracting and using user preferences from past interactions."
         }
       ]
     }
@@ -213,6 +231,47 @@
         "safety"
       ],
       "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2610.26943",
+      "title": "MAMath-Bench: Process-Aware and Robust Evaluation of Multimodal Multi-Agent Mathematical Reasoning",
+      "abstract": "Mathematical reasoning is a fundamental capability for educational applications of Large Language Models (LLMs), where reliable problem solving requires not only correct answers but also coherent and verifiable reasoning processes. Multi-agent systems (MASs) have shown growing potential in this domain by leveraging collaboration and verification among multiple LLM agents. However, existing evaluations primarily focus on the correctness of final answers in text-only settings, offering limited insight into multimodal reasoning capabilities, the reliability of intermediate reasoning steps, and robustness against reasoning errors. To address these limitations, we introduce MAMath-Bench, a process-aware benchmark designed to evaluate the multimodal mathematical reasoning capabilities of MASs. MAMath-Bench comprises 1,003 problems spanning 11 mathematical categories, multiple difficulty levels, and several modalities, including text, images, and audio. It features fine-grained milestone annotations to evaluate systems across three dimensions: problem-solving correctness, reasoning-process reliability, and robustness to adversarial reasoning-chain perturbations. Our evaluation yields three key findings. First, multi-agent collaboration does not consistently improve final-answer accuracy over strong single LLMs. Second, collaboration can substantially enhance the coverage of intermediate reasoning, but such gains may come at the cost of increased reasoning redundancy. Third, current systems remain vulnerable to adversarial reasoning errors, particularly those involving subtle structural perturbations. The dataset is available at https://github.com/mira-ai-lab/AgentMath.",
+      "authors": [
+        "Xinping Wang",
+        "Jie Ma",
+        "Rui Xing",
+        "Wensong Guo",
+        "Xiayi Zhang",
+        "Jianhao Deng",
+        "Zihao Zhou",
+        "Boqian Yang",
+        "Feijuan He"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-18T04:32:06Z",
+      "updated": "2026-10-18T04:32:06Z",
+      "announced_date": "2026-10-18",
+      "first_seen": "2026-10-18",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.26943v1",
+        "pdf": "https://arxiv.org/pdf/2610.26943v1",
+        "html": "https://arxiv.org/html/2610.26943"
+      },
+      "score": 20,
+      "tags": [
+        "multi-agent",
+        "safety",
+        "planning",
+        "multimodal",
+        "science"
+      ],
+      "field": "multi-agent",
       "citations": 0
     }
   ]

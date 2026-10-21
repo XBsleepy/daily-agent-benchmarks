@@ -1,27 +1,39 @@
 {
   "date": "2026-10-19",
-  "count": 7,
+  "count": 13,
   "report": {
     "date": "2026-10-19",
-    "count": 7,
+    "count": 13,
     "themes": [
       {
         "id": "tool-use",
-        "count": 4,
+        "count": 8,
         "en": "Tool use",
         "zh": "工具使用"
       },
       {
         "id": "planning",
-        "count": 3,
+        "count": 8,
         "en": "Planning / reasoning",
         "zh": "规划 / 推理"
       },
       {
         "id": "coding",
-        "count": 2,
+        "count": 4,
         "en": "Coding agents",
         "zh": "代码智能体"
+      },
+      {
+        "id": "safety",
+        "count": 3,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "web",
+        "count": 2,
+        "en": "Web agents",
+        "zh": "网页智能体"
       },
       {
         "id": "multimodal",
@@ -30,27 +42,21 @@
         "zh": "多模态"
       },
       {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
         "id": "research",
         "count": 1,
         "en": "Research agents",
         "zh": "科研智能体"
-      },
-      {
-        "id": "rsi",
-        "count": 1,
-        "en": "RSI / AI4AI",
-        "zh": "RSI / AI4AI"
-      },
-      {
-        "id": "web",
-        "count": 1,
-        "en": "Web agents",
-        "zh": "网页智能体"
       }
     ],
     "en": {
-      "headline": "7 new agent benchmarks",
-      "summary": "On October 19, 2026, arXiv listed 7 new agent benchmarks. Work clustered around Tool use (4), Planning / reasoning (3), Coding agents (2), and Multimodal (1).",
+      "headline": "13 new agent benchmarks",
+      "summary": "On October 19, 2026, arXiv listed 13 new agent benchmarks. Work clustered around Tool use (8), Planning / reasoning (8), Coding agents (4), and Safety (3).",
       "highlights": [
         {
           "id": "2610.25954",
@@ -58,20 +64,20 @@
           "blurb": "Tool-using language agents increasingly perform regulated customer-service workflows, where a correct final state is insufficient: agents must also provide disclosures, obtain consent, and follow required procedures."
         },
         {
-          "id": "2610.25950",
-          "title": "AdaExploreBench: Benchmarking LLM Agents for Proactive Exploration and Test-time Adaptation in Evolving Environments",
-          "blurb": "Large Language Model (LLM) agents are increasingly deployed in unfamiliar and evolving environments, requiring them to proactively explore, understand, and adapt to environmental dynamics."
+          "id": "2610.27295",
+          "title": "RealControlBench: A Benchmark for Interpretability-Informed Fine-Grained Control of LLMs and Agents",
+          "blurb": "Existing steering benchmarks are built around simplified, isolated generation tasks and evaluate a single behavioral attribute under controlled settings that do not reflect the diversity and complexity of practical deplo…"
         },
         {
-          "id": "2610.26826",
-          "title": "RefCraft: Benchmarking Visual-Reference-Conditioned Agentic Generation through Web Development",
-          "blurb": "Beyond basic tool use and coding skills, effectively incorporating visual references into agentic generation is equally essential for applying AI agents to real-world productivity tasks."
+          "id": "2610.27234",
+          "title": "EGI-BENCH: An Enterprise General Intelligence Benchmark Suite",
+          "blurb": "Enterprise adoption of LLMs in agentic workflows is gated by evaluations that span a wide arc of abilities: CRM operations, heterogeneous-document retrieval, personal data understanding, multi-turn planning, tool use, fu…"
         }
       ]
     },
     "zh": {
-      "headline": "新增 7 篇 Agent Benchmark",
-      "summary": "2026年10月19日，arXiv 新增 7 篇 Agent Benchmark。当日主题集中在工具使用（4）、规划 / 推理（3）、代码智能体（2）、多模态（1）。",
+      "headline": "新增 13 篇 Agent Benchmark",
+      "summary": "2026年10月19日，arXiv 新增 13 篇 Agent Benchmark。当日主题集中在工具使用（8）、规划 / 推理（8）、代码智能体（4）、安全（3）。",
       "highlights": [
         {
           "id": "2610.25954",
@@ -79,19 +85,184 @@
           "blurb": "Tool-using language agents increasingly perform regulated customer-service workflows, where a correct final state is insufficient: agents must also provide disclosures, obtain consent, and follow required procedures."
         },
         {
-          "id": "2610.25950",
-          "title": "AdaExploreBench: Benchmarking LLM Agents for Proactive Exploration and Test-time Adaptation in Evolving Environments",
-          "blurb": "Large Language Model (LLM) agents are increasingly deployed in unfamiliar and evolving environments, requiring them to proactively explore, understand, and adapt to environmental dynamics."
+          "id": "2610.27295",
+          "title": "RealControlBench: A Benchmark for Interpretability-Informed Fine-Grained Control of LLMs and Agents",
+          "blurb": "Existing steering benchmarks are built around simplified, isolated generation tasks and evaluate a single behavioral attribute under controlled settings that do not reflect the diversity and complexity of practical deplo…"
         },
         {
-          "id": "2610.26826",
-          "title": "RefCraft: Benchmarking Visual-Reference-Conditioned Agentic Generation through Web Development",
-          "blurb": "Beyond basic tool use and coding skills, effectively incorporating visual references into agentic generation is equally essential for applying AI agents to real-world productivity tasks."
+          "id": "2610.27234",
+          "title": "EGI-BENCH: An Enterprise General Intelligence Benchmark Suite",
+          "blurb": "Enterprise adoption of LLMs in agentic workflows is gated by evaluations that span a wide arc of abilities: CRM operations, heterogeneous-document retrieval, personal data understanding, multi-turn planning, tool use, fu…"
         }
       ]
     }
   },
   "papers": [
+    {
+      "id": "2610.27307",
+      "title": "Evolving Self-tuning Benchmarks for Long-Horizon Tool Use",
+      "abstract": "For AI assistants to move beyond simple chat interfaces and reliably assist users with applications like Gmail, Venmo, and Slack, we need to improve their tool-use capabilities. However, existing tool use benchmarks are still limited and difficult to scale because they rely on human supervision or are too domain-specific. To make data generation scalable, we propose, TURTLE (**T**ool **U**se **R**elated **T**asks with **L**ong-Horizon **E**volution), an Unsupervised Environment Design (UED) approach to evolve existing tasks using a proposer, a solver, and a feedback generator large language model agents. The proposer is rewarded for difficult yet solvable tasks based on the solver's empirical performance, and the feedback generator summarizes the solver's execution traces for the proposer to exploit. TURTLE produces evolving, self-tuning test suites adaptable to different environment requirements, from supporting user simulators and dense document retrieval to interacting across multiple apps. Empirical results on AppWorld, $τ$-Bench, and AutomationBench using Gemma 4 31B-it show that the evolved tasks target the desired difficulty range (e.g., a 165\\% increase in the percentage of hard tasks on AppWorld), increase task diversity (in terms of reasoning and simultaneous tool interactions), and elicit a broader range of failure modes than the original tasks.",
+      "authors": [
+        "Hyunji Alex Nam",
+        "Michael Dennis",
+        "Natasha Jaques",
+        "Minsuk Chang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-19T21:22:08Z",
+      "updated": "2026-10-19T21:22:08Z",
+      "announced_date": "2026-10-19",
+      "first_seen": "2026-10-19",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.27307v1",
+        "pdf": "https://arxiv.org/pdf/2610.27307v1",
+        "html": "https://arxiv.org/html/2610.27307"
+      },
+      "score": 14,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.27295",
+      "title": "RealControlBench: A Benchmark for Interpretability-Informed Fine-Grained Control of LLMs and Agents",
+      "abstract": "Existing steering benchmarks are built around simplified, isolated generation tasks and evaluate a single behavioral attribute under controlled settings that do not reflect the diversity and complexity of practical deployment. As a result, performance on these benchmarks provides only a limited picture of how steering methods perform in the real world. We therefore introduce RealControlBench, a comprehensive benchmark for evaluating fine-grained steering of LLMs and LLM agents across diverse behavioral targets and interaction settings. RealControlBench extends steering evaluation beyond isolated generations to complex, execution-grounded, multi-turn agent interactions, covering five complementary dimensions: instruction-following control, agentic tool-use decision control, reasoning-performance steering, reasoning-length control, and trajectory-conditioned safety awareness. Rather than measuring steering success alone, the benchmark jointly evaluates target controllability and capability preservation, including instruction following, reasoning performance, and downstream agent utility and safety. It further examines whether steering effects remain specific and robust across prompt variations, domains, and model architectures. Our evaluation shows that existing steering methods remain unreliable across realistic control objectives: they often fail to consistently induce the intended behavior and can substantially degrade the model's underlying task performance. These results suggest that strong steering effects in controlled settings do not necessarily translate into reliable control in more realistic evaluations. By providing a unified, model-agnostic steering evaluation framework, RealControlBench aims to support the development of steering methods that are not only effective but also precise, robust, and useful in realistic AI deployments.",
+      "authors": [
+        "Xinying Cai",
+        "Bin Hu",
+        "Mingyu Jin",
+        "Qiming Zhang",
+        "Yang Ouyang",
+        "Bangwei Guo",
+        "Minghao Guo",
+        "Yutong Yin",
+        "Lang Gao",
+        "Feijiang Han",
+        "Sheldon Yu",
+        "Kaiqu Liang",
+        "Qingcheng Zeng",
+        "Jingcheng Niu",
+        "Fan Yang",
+        "Wei Cheng",
+        "Zhen Xiang",
+        "Julian McAuley",
+        "Zhaoran Wang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-10-19T21:10:03Z",
+      "updated": "2026-10-19T21:10:03Z",
+      "announced_date": "2026-10-19",
+      "first_seen": "2026-10-19",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.27295v1",
+        "pdf": "https://arxiv.org/pdf/2610.27295v1",
+        "html": "https://arxiv.org/html/2610.27295"
+      },
+      "score": 24,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2610.27234",
+      "title": "EGI-BENCH: An Enterprise General Intelligence Benchmark Suite",
+      "abstract": "Enterprise adoption of LLMs in agentic workflows is gated by evaluations that span a wide arc of abilities: CRM operations, heterogeneous-document retrieval, personal data understanding, multi-turn planning, tool use, function calling, long-horizon research, and long-context software engineering. These evaluations live today in separate repositories with divergent runners, dependencies, and scoring conventions, which makes cross-benchmark comparison difficult and obscures what a single aggregate number actually represents. We release EGI-BENCH, a unified LLM agent benchmark suite that consolidates eight enterprise facing agent benchmarks (CRMARENA, HERB, PERSONABENCH, USERBENCH, MCP-UNIVERSE, MCPEVAL, BENCHFORCE, LOCOBENCH) behind a single command-line interface with two runtime-budgeted execution modes. On top of the suite we define the Enterprise General Intelligence (EGI) Score, a six-dimensional framework (M1-M6) whose buckets are populated by fine-grained sub-metrics routed from each benchmark rather than by benchmark-level averages. We describe the suite, the sub-metric routing, and the quick/deep budgets, and report results for fourteen frontier and cost-efficient LLMs spanning the GPT, Claude, and Gemini families under quick mode. Top-line EGI ranges from 39.6 (GPT-4o mini) to 65.6 (gpt-5.5), and no single model dominates every capability axis: gpt-5.5 leads task outcome, planning, and retrieval grounding; Claude Sonnet 4.5 leads tool actioning and safety/abstention; and Claude Haiku 4.5 leads engineering quality. Code is available at https://github.com/SalesforceAIResearch/egi-bench.",
+      "authors": [
+        "Zhiwei Liu",
+        "Zhujun Lan",
+        "Jielin Qiu",
+        "Zixiang Chen",
+        "Liangwei Yang",
+        "Ming Zhu",
+        "Akshara Prabhakar",
+        "Wenting Zhao",
+        "John Emmons",
+        "Jason Wu",
+        "Shafiq Rayhan Joty",
+        "Junnan Li",
+        "Shelby Heinecke",
+        "Silvio Savarese",
+        "Huan Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-19T20:02:07Z",
+      "updated": "2026-10-19T20:02:07Z",
+      "announced_date": "2026-10-19",
+      "first_seen": "2026-10-19",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.27234v1",
+        "pdf": "https://arxiv.org/pdf/2610.27234v1",
+        "html": "https://arxiv.org/html/2610.27234"
+      },
+      "score": 20,
+      "tags": [
+        "coding",
+        "tool-use",
+        "safety",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.27205",
+      "title": "LoWAgent: A Low-Resource Multilingual Benchmark for Web Agents",
+      "abstract": "Web agents are typically evaluated on English-language interfaces, leaving their ability to operate across the world's multilingual websites largely unexplored. This gap is especially significant for low-resource languages, where standardized resources for evaluating web agents remain limited. To address this gap, we introduce Low-Resource Web Agent Benchmark (LoWAgent), a benchmark for evaluating web agents across different low-resource languages (LRLs) in comparison to the default, English. LoWAgent evaluates web agents across English and four LRLs: Hindi, Bengali, Urdu, and Amharic. The benchmark comprises of six fully localized websites, instantiated across five languages to yield 3,000 task instances. We evaluate three closed-source and five open-source models across all five languages on all six websites. Our findings show that both closed-source and open-source models experience performance degradation for LRLs compared to English, with substantially greater performance drops observed among the open-source model agents. We further evaluate the robustness of the models on realistic interface disruptions, such as cookie notices and advertisement pop-ups, and find that these further degrade agentic performance. Finally, we show that post-training on a small subset of LoWAgent traces can significantly improve low-resource language agentic task performance, demonstrating the usefulness of our benchmark.",
+      "authors": [
+        "Ocean Monjur",
+        "Daud Ahmad Nisar",
+        "Shahriar Kabir Nahin",
+        "Tadesse Destaw Belay",
+        "Sushruti Mishra",
+        "Israel Abebe Azime",
+        "Anshuman Chhabra"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-10-19T19:40:15Z",
+      "updated": "2026-10-19T19:40:15Z",
+      "announced_date": "2026-10-19",
+      "first_seen": "2026-10-19",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.27205v1",
+        "pdf": "https://arxiv.org/pdf/2610.27205v1",
+        "html": "https://arxiv.org/html/2610.27205"
+      },
+      "score": 20,
+      "tags": [
+        "web",
+        "safety"
+      ],
+      "field": "web",
+      "citations": 0
+    },
     {
       "id": "2610.26826",
       "title": "RefCraft: Benchmarking Visual-Reference-Conditioned Agentic Generation through Web Development",
@@ -134,9 +305,103 @@
       "citations": 0
     },
     {
+      "id": "2610.27046",
+      "title": "ReuF2F: Benchmarking Coding Agents on Formalized Undergraduate Research Problems",
+      "abstract": "As AI systems begin to resolve open research problems, reliable verification becomes increasingly important. Formal mathematics provides a trusted framework for mathematical reasoning, enabling agents to produce machine-checkable proofs while conducting mathematical exploration. Existing formal mathematics benchmarks often focus on known results or a small set of prominent open problems, which can become difficult to evaluate reliably once solutions are discovered and widely disseminated. Existing evaluation protocols are also not always aligned with how modern coding agents operate. We therefore introduce ReuF2F, a Lean 4 benchmark of 244 formalized open problems drawn from Research Experiences for Undergraduates (REU), spanning entry-level open research problems across a broad range of mathematical subfields. We expect these less prominent open problems, which tend to attract less attention and may remain unsolved for longer, to be better suited for held-out evaluation of end-to-end open problem resolution in Lean. We adopt a standard coding-agent evaluation setting, placing each problem and its logical negation into a Lean project in a Docker container. We also build Leanimum-agent on mini-SWE-agent to provide a unified harness for fair comparisons across models. Our evaluation finds that even the best-performing model resolves only ~40% of the problems, leaving substantial room for improvement on formalized open research problems.",
+      "authors": [
+        "Zeyu Zheng",
+        "Yiyang Liu",
+        "Yuyang Zhao",
+        "Congmin Zheng",
+        "Jiachen Zhu",
+        "Jianian Chen",
+        "Kangning Zhang",
+        "Kayue Daniel Wong",
+        "Lingyu Yang",
+        "Rong Shan",
+        "Shihao Chen",
+        "Thomas Zhu",
+        "Wentao Zhang",
+        "Xiaopeng Li",
+        "Yan Hu",
+        "Yongxi Lin",
+        "Yuxiang Chen",
+        "Zhuoying Ou",
+        "Jianghao Lin",
+        "Jeremy Avigad",
+        "Prasad Tetali",
+        "Jingbang Chen",
+        "Sean Welleck"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-19T17:52:28Z",
+      "updated": "2026-10-19T17:52:28Z",
+      "announced_date": "2026-10-19",
+      "first_seen": "2026-10-19",
+      "comment": "Benchmark available at https://github.com/cmu-l3/reuF2F",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.27046v1",
+        "pdf": "https://arxiv.org/pdf/2610.27046v1",
+        "html": "https://arxiv.org/html/2610.27046"
+      },
+      "score": 13,
+      "tags": [
+        "coding",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.27039",
+      "title": "Embodied Playground: A Long-Horizon Agentic Robotics Benchmark for Physical, Strategic, and Spatial Reasoning",
+      "abstract": "Foundation models offer a promising basis for robotic agents, but long-horizon tasks require them to sustain coherent reasoning and reliable physical execution across interdependent stages. We introduce Embodied Playground, a benchmark for evaluating how foundation-model agents coordinate physical, strategic, and spatial reasoning throughout such tasks. Agents must track task progress, satisfy intermediate constraints, and revise their plans using execution feedback as earlier actions shape subsequent decisions. The playground comprises 410 task environments spanning basic manipulation, sequential puzzles, and multi-stage household activities, with variations in planning depth, geometric constraints, and physical execution demands. We curate EP-100, a representative selection of 100 tasks across five suites and 16 task types, together with the EP-Easy and EP-Hard difficulty splits and the compact EP-20 selection. A shared protocol specifies observation and tool access, resource budgets, repeated trials, and independent checks of goal completion, task-rule compliance, and physical validity. Embodied Playground provides a unified framework for studying whether foundation-model agents can sustain effective reasoning and action over extended task horizons. https://winniechen2002.github.io/Agent-bench-website/",
+      "authors": [
+        "Feng Chen",
+        "Pei Zhou",
+        "Lixuan He",
+        "Yunchao Yao",
+        "Li Sun",
+        "Shenghua Gao",
+        "Mingyu Ding",
+        "Kaifeng Zhang",
+        "Kaichen Zhou",
+        "Yi Ma"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-19T17:30:35Z",
+      "updated": "2026-10-19T17:30:35Z",
+      "announced_date": "2026-10-19",
+      "first_seen": "2026-10-19",
+      "comment": "38 pages, 2 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.27039v1",
+        "pdf": "https://arxiv.org/pdf/2610.27039v1",
+        "html": "https://arxiv.org/html/2610.27039"
+      },
+      "score": 18,
+      "tags": [
+        "tool-use",
+        "embodied",
+        "planning"
+      ],
+      "field": "embodied",
+      "citations": 0
+    },
+    {
       "id": "2610.26342",
       "title": "VibeTraining-Bench: Data-Trainer-Harness Co-Design for Iterative System Improvement",
-      "abstract": "Recursive self-improvement (RSI) requires agents to diagnose system bottlenecks and coordinate improvements across training and inference. We refer to the agents' capability to jointly optimize training data, the trainer, and the inference harness as cross-component co-design. We introduce VibeTraining-Bench, a benchmark for evaluating this capability across tasks spanning terminal operation, software engineering, multi-turn tool use, and mathematical reasoning. Within each task, research agents start from an identical initial agent system under a fixed resource budget. Guided by validation feedback, they iteratively refine data, trainers, and inference harnesses, then select and submit a final agent system for evaluation on the test set. To prevent reward hacking, we enforce three safeguards: test data isolation, separate research and grading containers, and network restrictions for research agents. Our evaluation results show that frontier research agents substantially improve target agent systems. For example, on SWE-bench Verified, GPT-6-Astra raises the target agent system's performance from 32.9% to 53.7%, comparable to the human-developed instruct model's 55.4%. However, there is still room to improve their ability to co-design and iteratively refine data, trainer, and harness to achieve cumulative performance gains. We hope that VibeTraining-Bench will serve as a unified platform for advancing RSI, deepening our understanding of cross-component optimization for agent systems. Code and data are available at https://github.com/D2I-ai/VibeTrainingBench.",
+      "abstract": "Recursive self-improvement (RSI) requires agents to diagnose system bottlenecks and coordinate improvements across training and inference. We refer to the agents' capability to jointly optimize training data, the trainer, and the inference harness as cross-component co-design. We introduce VibeTraining-Bench, a benchmark for evaluating this capability across tasks spanning terminal operation, software engineering, multi-turn tool use, and mathematical reasoning. Within each task, research agents start from an identical initial agent system under a fixed resource budget. Guided by validation feedback, they iteratively refine data, trainers, and inference harnesses, then select and submit a final agent system for evaluation on the test set. To prevent reward hacking, we enforce three safeguards: test data isolation, separate research and grading containers, and network restrictions for research agents. Our evaluation results show that frontier research agents substantially improve target agent systems. For example, on SWE-bench Verified, GPT-6-Astra raises the target agent system's performance from 32.9% to 53.7%, comparable to the human-developed instruct model's 55.4%. However, there is still room to improve their ability to co-design and iteratively refine data, trainer, and harness to achieve cumulative performance gains. We hope that VibeTraining-Bench will serve as a unified platform for advancing RSI, deepening our understanding of cross-component optimization for agent systems. Code and data are available at https://github.com/D2I-ai/VibeTraining-Bench.",
       "authors": [
         "Ruotian Peng",
         "Yuanyi Ren",
@@ -155,14 +420,14 @@
       ],
       "primary_category": "cs.AI",
       "published": "2026-10-19T13:10:54Z",
-      "updated": "2026-10-19T13:10:54Z",
+      "updated": "2026-10-20T13:03:07Z",
       "announced_date": "2026-10-19",
       "first_seen": "2026-10-19",
       "comment": "(Technical report (27 pages, 21 figures)",
       "doi": "",
       "links": {
-        "abs": "https://arxiv.org/abs/2610.26342v1",
-        "pdf": "https://arxiv.org/pdf/2610.26342v1",
+        "abs": "https://arxiv.org/abs/2610.26342v2",
+        "pdf": "https://arxiv.org/pdf/2610.26342v2",
         "html": "https://arxiv.org/html/2610.26342"
       },
       "score": 18,

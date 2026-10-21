@@ -1,103 +1,294 @@
 {
   "date": "2026-10-20",
-  "count": 12,
+  "count": 20,
   "report": {
     "date": "2026-10-20",
-    "count": 12,
+    "count": 20,
     "themes": [
       {
         "id": "planning",
-        "count": 4,
+        "count": 7,
         "en": "Planning / reasoning",
         "zh": "规划 / 推理"
       },
       {
+        "id": "memory",
+        "count": 4,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "safety",
+        "count": 4,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
         "id": "coding",
-        "count": 3,
+        "count": 4,
         "en": "Coding agents",
         "zh": "代码智能体"
       },
       {
         "id": "embodied",
-        "count": 2,
+        "count": 3,
         "en": "Embodied / robotics",
         "zh": "具身 / 机器人"
       },
       {
         "id": "multimodal",
-        "count": 2,
+        "count": 3,
         "en": "Multimodal",
         "zh": "多模态"
       },
       {
         "id": "tool-use",
-        "count": 2,
+        "count": 3,
         "en": "Tool use",
         "zh": "工具使用"
       },
       {
         "id": "science",
-        "count": 2,
+        "count": 3,
         "en": "Science lab",
         "zh": "科学实验"
-      },
-      {
-        "id": "multi-agent",
-        "count": 1,
-        "en": "Multi-agent",
-        "zh": "多智能体"
-      },
-      {
-        "id": "safety",
-        "count": 1,
-        "en": "Safety",
-        "zh": "安全"
       }
     ],
     "en": {
-      "headline": "12 new agent benchmarks",
-      "summary": "On October 20, 2026, arXiv listed 12 new agent benchmarks. Work clustered around Planning / reasoning (4), Coding agents (3), Embodied / robotics (2), and Multimodal (2).",
+      "headline": "20 new agent benchmarks",
+      "summary": "On October 20, 2026, arXiv listed 20 new agent benchmarks. Work clustered around Planning / reasoning (7), Memory (4), Safety (4), and Coding agents (4).",
       "highlights": [
         {
-          "id": "2610.26679",
-          "title": "StebBench: Diagnosing Real-World Procedural Understanding in AI Agents",
-          "blurb": "Evaluating an agent's planning ability remains challenging for open-domain tasks, where verifying procedures through execution is often impractical."
+          "id": "2610.28381",
+          "title": "CAPSafe: A Benchmark for Contextual Action and Plan Safety Reasoning in Embodied Agents",
+          "blurb": "Reasoning about safety is essential for embodied agents powered by large language models (LLMs)."
         },
         {
-          "id": "2610.26359",
-          "title": "Discovery-Probability Graph Planning for Embodied Agents in Tasks with Hidden Cooperation Requirements",
-          "blurb": "Embodied agents are increasingly capable of perceiving, planning, and acting autonomously in dynamic environments, demonstrating strong performance on complex cooperative tasks."
+          "id": "2610.27548",
+          "title": "Act on Your Behalf, Beyond Your Authorization: Benchmarking LLM Agent Authorization Alignment",
+          "blurb": "When an LLM agent acts on behalf of a user, it is expected to act within the authorization scope the user grants."
         },
         {
-          "id": "2610.25111",
-          "title": "Explore or Confirm? LLM Agents Misallocate Measurements Under Noise",
-          "blurb": "As model reasoning gets cheaper, the physical experiment becomes the slow and costly step in discovery."
+          "id": "2610.27524",
+          "title": "MemDev-Bench: Does Memory Help Code Agents?Benchmarking Memory Systems over Real Repository Histories",
+          "blurb": "Code agents increasingly work on evolving real repositories, and memory systems aim to help them reuse earlier experience."
         }
       ]
     },
     "zh": {
-      "headline": "新增 12 篇 Agent Benchmark",
-      "summary": "2026年10月20日，arXiv 新增 12 篇 Agent Benchmark。当日主题集中在规划 / 推理（4）、代码智能体（3）、具身 / 机器人（2）、多模态（2）。",
+      "headline": "新增 20 篇 Agent Benchmark",
+      "summary": "2026年10月20日，arXiv 新增 20 篇 Agent Benchmark。当日主题集中在规划 / 推理（7）、记忆（4）、安全（4）、代码智能体（4）。",
       "highlights": [
         {
-          "id": "2610.26679",
-          "title": "StebBench: Diagnosing Real-World Procedural Understanding in AI Agents",
-          "blurb": "Evaluating an agent's planning ability remains challenging for open-domain tasks, where verifying procedures through execution is often impractical."
+          "id": "2610.28381",
+          "title": "CAPSafe: A Benchmark for Contextual Action and Plan Safety Reasoning in Embodied Agents",
+          "blurb": "Reasoning about safety is essential for embodied agents powered by large language models (LLMs)."
         },
         {
-          "id": "2610.26359",
-          "title": "Discovery-Probability Graph Planning for Embodied Agents in Tasks with Hidden Cooperation Requirements",
-          "blurb": "Embodied agents are increasingly capable of perceiving, planning, and acting autonomously in dynamic environments, demonstrating strong performance on complex cooperative tasks."
+          "id": "2610.27548",
+          "title": "Act on Your Behalf, Beyond Your Authorization: Benchmarking LLM Agent Authorization Alignment",
+          "blurb": "When an LLM agent acts on behalf of a user, it is expected to act within the authorization scope the user grants."
         },
         {
-          "id": "2610.25111",
-          "title": "Explore or Confirm? LLM Agents Misallocate Measurements Under Noise",
-          "blurb": "As model reasoning gets cheaper, the physical experiment becomes the slow and costly step in discovery."
+          "id": "2610.27524",
+          "title": "MemDev-Bench: Does Memory Help Code Agents?Benchmarking Memory Systems over Real Repository Histories",
+          "blurb": "Code agents increasingly work on evolving real repositories, and memory systems aim to help them reuse earlier experience."
         }
       ]
     }
   },
   "papers": [
+    {
+      "id": "2610.28425",
+      "title": "After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents",
+      "abstract": "Modern LLM agents persist state across sessions via two channels: long-lived memory files silently prepended to the system prompt, and scheduled tasks waking the agent without user input. A one-time indirect prompt injection committed to either channel can re-fire across sessions long after the attacker leaves, threats we term carryover attacks. Existing prompt-injection benchmarks evaluate attacks only in the session where malicious content is first observed, leaving the gate governing when and how often a planted payload later re-fires unmeasured. We present CarryoverBench: 12 personal-assistant scenarios and 101 attack tasks across three trigger channels: Instant, same-turn IPI; Autonomous, heartbeat-scheduled; and Latent, memory-resurfaced. A rule-based verifier scores planting and triggering as independent stages. Across five frontier models, planted payloads re-fire without measurable decay over five rounds; conditional on successful planting, the trigger stage often provides little additional protection. Porting the Latent channel to a second runtime, Hermes, attenuates but does not eliminate the effect, suggesting that carryover defense requires runtime-layer controls in addition to prompt-level interventions.",
+      "authors": [
+        "Zhiyue Xu",
+        "Xukai Wang",
+        "Zhiyuan Huang",
+        "Mingjie Zhan",
+        "Jian Zhao",
+        "Xu-Yao Zhang"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-10-20T15:55:05Z",
+      "updated": "2026-10-20T15:55:05Z",
+      "announced_date": "2026-10-20",
+      "first_seen": "2026-10-20",
+      "comment": "Accepted by EMNLP 2026 Main Conference",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.28425v1",
+        "pdf": "https://arxiv.org/pdf/2610.28425v1",
+        "html": "https://arxiv.org/html/2610.28425"
+      },
+      "score": 12,
+      "tags": [
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.28381",
+      "title": "CAPSafe: A Benchmark for Contextual Action and Plan Safety Reasoning in Embodied Agents",
+      "abstract": "Reasoning about safety is essential for embodied agents powered by large language models (LLMs). We introduce the Contextual Action and Plan Safety benchmark (CAPSafe), designed to evaluate safety reasoning at two levels: (1) an action-level dataset that tests whether a single action is safe given its environmental context, and (2) a plan-level dataset that evaluates whether agents can generate safe long-horizon plans for complex hazardous household tasks. CAPSafe models safety conditions where hazards are situational (inferred from object properties), multiple hazards can co-occur within the same environment, and each is annotated with a relative severity level for fine-grained analysis. Evaluating nine closed and open-source LLMs reveals a substantial gap between hazard recognition and safe long-horizon planning. Several models achieve high accuracy in recognizing unsafe actions (exceeding 90% in the best cases), yet safe long-horizon planning remains substantially harder. Gemini-3-pro achieves the highest safe success rate (78.19%), while other models remain below 65%. These results highlight that robust safety reasoning over long action sequences remains an open challenge.",
+      "authors": [
+        "Youmna Farag",
+        "Svetlana Stoyanchev",
+        "Simon Keizer",
+        "Mohan Li",
+        "Rama Doddipatla"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.CL"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-20T15:33:20Z",
+      "updated": "2026-10-20T15:33:20Z",
+      "announced_date": "2026-10-20",
+      "first_seen": "2026-10-20",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.28381v1",
+        "pdf": "https://arxiv.org/pdf/2610.28381v1",
+        "html": "https://arxiv.org/html/2610.28381"
+      },
+      "score": 17,
+      "tags": [
+        "embodied",
+        "safety",
+        "planning"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2610.27911",
+      "title": "MMEnterprise-Bench: Evaluating Enterprise Agents over Evolving Multimodal Records",
+      "abstract": "Enterprise agents answer questions over workplace records that evolve through team collaboration. As information is shared, corrected, and revised across documents, chats, and figures, multiple versions of the same information accumulate in the workspace. Reliable question answering therefore requires agents to reason over sufficient evidence, resolve cross-source and temporal conflicts, and recognize when the available evidence is insufficient to establish an answer. To systematically evaluate these capabilities, we introduce MMEnterprise-Bench, a benchmark comprising 1,613 questions grounded in evolving multimodal records from simulated collaboration projects, covering three categories: Evidence Reasoning, Conflict Resolution, and Unanswerability. We evaluate 10 proprietary and open-source multimodal LLMs and find that even the strongest models struggle when evidence contains cross-source or temporal conflicts or spans multiple images. Moreover, increasing the retrieval budget or employing a larger retriever improves evidence recall but does not consistently translate into higher answer accuracy. These findings highlight the persistent challenges of reasoning over evolving workplace records and establish MMEnterprise-Bench as a testbed for developing more reliable enterprise agents. Code and data are available at https://mlvlab.github.io/MMEnterprise-Bench/.",
+      "authors": [
+        "Seohyun Lee",
+        "Jongha Kim",
+        "Dohwan Ko",
+        "Ji Soo Lee",
+        "Seoung Choi",
+        "Jayun Ku",
+        "Hyunwoo J. Kim"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-20T09:25:35Z",
+      "updated": "2026-10-20T09:25:35Z",
+      "announced_date": "2026-10-20",
+      "first_seen": "2026-10-20",
+      "comment": "35 pages, 16 figures, including appendices. Under review",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.27911v1",
+        "pdf": "https://arxiv.org/pdf/2610.27911v1",
+        "html": "https://arxiv.org/html/2610.27911"
+      },
+      "score": 15,
+      "tags": [
+        "planning",
+        "multimodal",
+        "workplace"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2610.27777",
+      "title": "RITE: Evaluating End-to-End Resilience to Silent Tool Errors in E-Commerce Agentic Systems",
+      "abstract": "Tool-using LLM agents increasingly answer e-commerce queries through multi-step tool interactions. The expected output of a tool call can shift between agent development and execution, allowing a plausible but incorrect value to be returned without an explicit failure signal. These silent errors may propagate through subsequent decisions into final answers. To study agents' resilience across this end-to-end process, we formulate Silent-error Resilience Task, an interactive task that evaluates whether they complete the original query after a silent error corrupts an intermediate state. We introduce RITE, a benchmark built from human-authored industrial workflows and production-log-derived inputs. To enable controlled and reproducible evaluation, we use a semantic error taxonomy to inject errors into fixed workflow prefixes, freeze recorded tool behavior, and let agents continue freely. It contains 167 matched units across nine e-commerce workflows, yielding 501 silent-error, correct-value, and explicit-failure instances. Across 10 recent LLMs, silent errors roughly halve task success and are consistently harder than explicit failures. Recognition, use of an available verification path, and integration of the resulting evidence form successive bottlenecks. We also propose a light State Checker as an intervention to test whether resilience can be improved.",
+      "authors": [
+        "Wenshuo Zhang",
+        "Yuquan Lin",
+        "Yushi Sun",
+        "Yishi Lin",
+        "Rui Sheng",
+        "Peng He",
+        "Han Gao",
+        "Wang Jikai",
+        "Yifeng Rong"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-20T07:42:11Z",
+      "updated": "2026-10-20T07:42:11Z",
+      "announced_date": "2026-10-20",
+      "first_seen": "2026-10-20",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.27777v1",
+        "pdf": "https://arxiv.org/pdf/2610.27777v1",
+        "html": "https://arxiv.org/html/2610.27777"
+      },
+      "score": 15,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.27645",
+      "title": "CUA-Recovery: Benchmarking Error Recovery in Long-Horizon Computer-Use Agents",
+      "abstract": "As computer-use agents (CUAs) move to long-horizon workflows spanning multiple applications, undetected errors can silently corrupt persistent state and cause cascading failures in subsequent actions. Reliable error detection and recovery have become critical bottlenecks for building robust CUAs. However, existing benchmarks focus primarily on end-to-end task performance, providing limited insight into whether agents can detect and recover from errors during execution. The few benchmarks that evaluate recovery rely largely on manually injected errors, which may not reflect the types or horizons of failures induced by real agent policies. We introduce CUA-Recovery, a benchmark comprising test and training suites across multiple desktop applications. We construct it using ReRail, a framework for synthesizing long-horizon tasks and trajectories in a persistent desktop environment. ReRail composes MyPCBench tasks into new long-horizon workflows with executable ground truth, collects verifier-confirmed failures from multiple policies, and turns them into verified recovery trajectories. CUA-Recovery comprises a human-verified test suite of 2,250 erroneous states over 100 tasks and a training suite of 8.6K trajectories over 377 tasks. Evaluation on the test suite shows that agents struggle both to recognize inherited errors and to complete the task. Across six agents and six takeover depths, Error Awareness Rate (EAR) reaches at most 44.0% and Pass@3 at most 25.5%. After fine-tuning Qwen3.5-35B-A3B on the training suite, its average EAR rises from 19.9% to 35.2% on held-out recovery states, and its Rubric Score goes from 5.0% to 16.1%. It also gains 15.3 points on MyPCBench and 10.8 points on Odysseys for Pass@3, showing that the training trajectories help both with recovery and with completing tasks from a clean start. Our code is available at https://github.com/xu-hu-2002/CUA-Recovery.",
+      "authors": [
+        "Xu Hu",
+        "Haoming Li",
+        "Yuxiang Wang",
+        "Jinxin Yang",
+        "Kangshuo Li",
+        "Licheng Wang",
+        "Dingyi Kang",
+        "Jiayu Song",
+        "Tianhao Wang",
+        "Zhanhua Hu",
+        "Xu Yang",
+        "Qiannan Li",
+        "Bingzhe Li",
+        "Feng Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-20T05:06:00Z",
+      "updated": "2026-10-20T05:06:00Z",
+      "announced_date": "2026-10-20",
+      "first_seen": "2026-10-20",
+      "comment": "33 pages, 13 figures, 18 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.27645v1",
+        "pdf": "https://arxiv.org/pdf/2610.27645v1",
+        "html": "https://arxiv.org/html/2610.27645"
+      },
+      "score": 15,
+      "tags": [
+        "gui",
+        "computer-use",
+        "safety"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
     {
       "id": "2610.26711",
       "title": "PVBench: Quantifying Physical Plausibility in Video Generation with Object-Level Physical Measurements",
@@ -456,6 +647,121 @@
         "science"
       ],
       "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2610.27581",
+      "title": "DuplexLedger: Benchmarking Transactional Memory in Full-Duplex Speech Agents",
+      "abstract": "Full-duplex speech agents must update persistent memory while listening and speaking, yet it remains unclear which events should be stored, revised, or excluded. Existing benchmarks isolate interaction timing from memory outcomes, obscuring the state transitions behind a correct answer. We introduce DuplexLedger, a bilingual benchmark of 1,094 persistent sessions aligning four full-duplex scenarios with event-level Write/Update/Ignore/Retain supervision, explicit pre/post memory states, and 6,564 same-session questions and checks. Evaluating five full-duplex models reveals an interaction-memory gap: no system combines strong boundary control with coherent final-state memory, and the best final-state fact coverage is 2.01%. We propose ACT-Mem, an 8.92M-parameter sidecar comprising an event controller, a versioned transactional ledger, and a typed retriever coupled with a frozen MiniCPM-o 4.5 backbone. On 219 held-out sessions, ACT-Mem increases latest-value accuracy from 4.11% to 8.68% while reducing stale assertions and distractor adoption. It improves interaction boundaries but slows interruption stopping. These results motivate selective, auditable full-duplex memory rather than indiscriminate transcript retention. Code is available at https://github.com/lyx-researcher/DuplexLedger.",
+      "authors": [
+        "Yuxuan Li",
+        "Xiangchen Guan",
+        "Kunrong Li",
+        "Jin Wang",
+        "Kaiwen Luo",
+        "Yang Xiao",
+        "Yufei Guo",
+        "Zhisheng Chen",
+        "Liang Lin",
+        "Kun Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-20T03:47:06Z",
+      "updated": "2026-10-20T03:47:06Z",
+      "announced_date": "2026-10-20",
+      "first_seen": "2026-10-20",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.27581v1",
+        "pdf": "https://arxiv.org/pdf/2610.27581v1",
+        "html": "https://arxiv.org/html/2610.27581"
+      },
+      "score": 7,
+      "tags": [
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.27548",
+      "title": "Act on Your Behalf, Beyond Your Authorization: Benchmarking LLM Agent Authorization Alignment",
+      "abstract": "When an LLM agent acts on behalf of a user, it is expected to act within the authorization scope the user grants. Existing agent evaluations largely measure task completion or harmful consequences and can therefore overlook actions that violate this delegation without producing conventional safety or privacy harms. We introduce AuthorizationBench, a benchmark of authorization alignment grounded in documented real-world cases. A scalable construction pipeline produces 286 executable tasks spanning situational triggers, the presence or absence of direct harmful consequences, and ten application domains. We execute every task with four models at two reasoning-effort settings across three agent harnesses in an authorization-aware sandbox that keeps authorized and out-of-authorization paths executable and observable, yielding 6,864 trajectories. Agents act out of authorization in 19.2% of trajectories, with rates ranging from 10.5% to 26.6% across the 24 configurations. Task completion does not imply authorization. Increasing reasoning effort leaves the aggregate rate nearly unchanged, with effects varying across models. On controlled pairs, agents act out of authorization at similar rates with (17.9%) and without (20.8%) direct harmful consequences, and more often under benign pressures than malicious injections (23.5% versus 17.6%, p=0.002). Our results show that task capability, additional reasoning, and consequence-oriented safety evaluation do not by themselves ensure authorization alignment. Moreover, agents that consult the principal before completing a task exhibit lower rates of out-of-authorization behavior (14.0% versus 21.6%, p<0.001), pointing to a tension between agent autonomy and preserving users' decision authority that calls for further human-centered study. Dataset and code are available at https://github.com/PEACH-Research-Lab/AuthorizationBench .",
+      "authors": [
+        "Zhiping Zhang",
+        "Franklin Mingzhe Li",
+        "Zihao Huang",
+        "Tianshi Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR",
+        "cs.HC"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-20T03:01:39Z",
+      "updated": "2026-10-20T03:01:39Z",
+      "announced_date": "2026-10-20",
+      "first_seen": "2026-10-20",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.27548v1",
+        "pdf": "https://arxiv.org/pdf/2610.27548v1",
+        "html": "https://arxiv.org/html/2610.27548"
+      },
+      "score": 16,
+      "tags": [
+        "safety",
+        "planning",
+        "science"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2610.27524",
+      "title": "MemDev-Bench: Does Memory Help Code Agents?Benchmarking Memory Systems over Real Repository Histories",
+      "abstract": "Code agents increasingly work on evolving real repositories, and memory systems aim to help them reuse earlier experience. However, such experience is diverse and evolving, so it remains unclear how memory systems organize it and thereby affect code agents. Existing benchmarks cannot answer this reliably because they lack either temporally valid histories or control over prior-task relevance. In this paper, we present MemDev-Bench to evaluate how memory systems affect code agents over diverse repository histories. It pairs each task with relevance-annotated earlier tasks from the same repository to build histories with controlled relevance. We also build an automated pipeline that reliably makes these earlier tasks executable and verifiable, producing 4,869 historical tasks for 555 base tasks. Based on MemDev-Bench, our systematic evaluation of memory systems across diverse development scenarios yields three main findings. (1) Memory mainly improves fine-grained localization and editing, increasing functional correctness. (2) Memory also causes failures on otherwise solvable tasks even with related history, and unrelated history tends to increase such failures. These failures mainly stem from agents reusing memory without reassessing its applicability. (3) Compared with using memory systems, directly providing agents with raw historical trajectories substantially reduces their steps. Further analysis suggests that agents save these steps by reusing process information that compressed memories tend to omit. These results suggest that future memory systems should preserve process information and reassess memory applicability against current task context.",
+      "authors": [
+        "Guorui Chen",
+        "Tao Liu",
+        "Zhenzhen Huang",
+        "Yidan Zhang",
+        "Liyu Jiang",
+        "Shuoyuan Wang",
+        "Hanchen Sun",
+        "Xu He",
+        "Dong Li",
+        "Yihan Hu",
+        "Jianye Hao",
+        "Lei Feng"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-20T02:39:26Z",
+      "updated": "2026-10-20T02:39:26Z",
+      "announced_date": "2026-10-20",
+      "first_seen": "2026-10-20",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.27524v1",
+        "pdf": "https://arxiv.org/pdf/2610.27524v1",
+        "html": "https://arxiv.org/html/2610.27524"
+      },
+      "score": 16,
+      "tags": [
+        "coding",
+        "memory"
+      ],
+      "field": "coding",
       "citations": 0
     }
   ]

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RealControlBench: A Benchmark for Interpretability-Informed Fine-Grained Control of LLMs and Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Existing steering benchmarks are built around simplified, isolated generation tasks and evaluate a single behavioral attribute under…" />
+    <meta name="keywords" content="Safety, Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2610.27295" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.27295.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="RealControlBench: A Benchmark for Interpretability-Informed Fine-Grained Control of LLMs and Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Existing steering benchmarks are built around simplified, isolated generation tasks and evaluate a single behavioral attribute under…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.27295.html" />
+    <meta property="article:published_time" content="2026-10-19T21:10:03Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="RealControlBench: A Benchmark for Interpretability-Informed Fine-Grained Control of LLMs and Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Existing steering benchmarks are built around simplified, isolated generation tasks and evaluate a single behavioral attribute under…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "RealControlBench: A Benchmark for Interpretability-Informed Fine-Grained Control of LLMs and Agents",
+  "name": "RealControlBench: A Benchmark for Interpretability-Informed Fine-Grained Control of LLMs and Agents",
+  "abstract": "Existing steering benchmarks are built around simplified, isolated generation tasks and evaluate a single behavioral attribute under controlled settings that do not reflect the diversity and complexity of practical deployment. As a result, performance on these benchmarks provides only a limited picture of how steering methods perform in the real world. We therefore introduce RealControlBench, a comprehensive benchmark for evaluating fine-grained steering of LLMs and LLM agents across diverse behavioral targets and interaction settings. RealControlBench extends steering evaluation beyond isolated generations to complex, execution-grounded, multi-turn agent interactions, covering five complementary dimensions: instruction-following control, agentic tool-use decision control, reasoning-performance steering, reasoning-length control, and trajectory-conditioned safety awareness. Rather than measuring steering success alone, the benchmark jointly evaluates target controllability and capability preservation, including instruction following, reasoning performance, and downstream agent utility and safety. It further examines whether steering effects remain specific and robust across prompt variations, domains, and model architectures. Our evaluation shows that existing steering methods remain unreliable across realistic control objectives: they often fail to consistently induce the intended behavior and can substantially degrade the model's underlying task performance. These results suggest that strong steering effects in controlled settings do not necessarily translate into reliable control in more realistic evaluations. By providing a unified, model-agnostic steering evaluation framework, RealControlBench aims to support the development of steering methods that are not only effective but also precise, robust, and useful in realistic AI deployments.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Xinying Cai"
+    },
+    {
+      "@type": "Person",
+      "name": "Bin Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Mingyu Jin"
+    },
+    {
+      "@type": "Person",
+      "name": "Qiming Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yang Ouyang"
+    },
+    {
+      "@type": "Person",
+      "name": "Bangwei Guo"
+    },
+    {
+      "@type": "Person",
+      "name": "Minghao Guo"
+    },
+    {
+      "@type": "Person",
+      "name": "Yutong Yin"
+    },
+    {
+      "@type": "Person",
+      "name": "Lang Gao"
+    },
+    {
+      "@type": "Person",
+      "name": "Feijiang Han"
+    },
+    {
+      "@type": "Person",
+      "name": "Sheldon Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Kaiqu Liang"
+    },
+    {
+      "@type": "Person",
+      "name": "Qingcheng Zeng"
+    },
+    {
+      "@type": "Person",
+      "name": "Jingcheng Niu"
+    },
+    {
+      "@type": "Person",
+      "name": "Fan Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Wei Cheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhen Xiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Julian McAuley"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhaoran Wang"
+    }
+  ],
+  "datePublished": "2026-10-19T21:10:03Z",
+  "dateModified": "2026-10-19T21:10:03Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.27295.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.27295.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.27295v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.27295"
+  },
+  "keywords": [
+    "Safety",
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Safety"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.27295v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.27295"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>RealControlBench: A Benchmark for Interpretability-Informed Fine-Grained Control of LLMs and Agents</h1>
+        <div class="meta">
+          Xinying Cai, Bin Hu, Mingyu Jin, Qiming Zhang, Yang Ouyang, Bangwei Guo, Minghao Guo, Yutong Yin, Lang Gao, Feijiang Han, Sheldon Yu, Kaiqu Liang, Qingcheng Zeng, Jingcheng Niu, Fan Yang, Wei Cheng, Zhen Xiang, Julian McAuley, Zhaoran Wang
+          · 2610.27295
+          · <time datetime="2026-10-19">2026-10-19</time>
+          · Safety
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Existing steering benchmarks are built around simplified, isolated generation tasks and evaluate a single behavioral attribute under controlled settings that do not reflect the diversity and complexity of practical deployment. As a result, performance on these benchmarks provides only a limited picture of how steering methods perform in the real world. We therefore introduce RealControlBench, a comprehensive benchmark for evaluating fine-grained steering of LLMs and LLM agents across diverse behavioral targets and interaction settings. RealControlBench extends steering evaluation beyond isolated generations to complex, execution-grounded, multi-turn agent interactions, covering five complementary dimensions: instruction-following control, agentic tool-use decision control, reasoning-performance steering, reasoning-length control, and trajectory-conditioned safety awareness. Rather than measuring steering success alone, the benchmark jointly evaluates target controllability and capability preservation, including instruction following, reasoning performance, and downstream agent utility and safety. It further examines whether steering effects remain specific and robust across prompt variations, domains, and model architectures. Our evaluation shows that existing steering methods remain unreliable across realistic control objectives: they often fail to consistently induce the intended behavior and can substantially degrade the model&#x27;s underlying task performance. These results suggest that strong steering effects in controlled settings do not necessarily translate into reliable control in more realistic evaluations. By providing a unified, model-agnostic steering evaluation framework, RealControlBench aims to support the development of steering methods that are not only effective but also precise, robust, and useful in realistic AI deployments.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.27295v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.27295v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.27295" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Safety benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.28381.html"><strong>CAPSafe: A Benchmark for Contextual Action and Plan Safety Reasoning in Embodied Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.27548.html"><strong>Act on Your Behalf, Beyond Your Authorization: Benchmarking LLM Agent Authorization Alignment</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.25069.html"><strong>Auto-MD-bench: Evaluating Autoresearch Agents for Real-World Medical Tasks</strong></a> <span>2026-10-18</span></li>
+          <li><a href="2610.24264.html"><strong>AM-Bench: A Unified Taxonomy and Evaluation Suite for Agentic Misalignment</strong></a> <span>2026-10-16</span></li>
+          <li><a href="2610.19910.html"><strong>When Non-Adversarial Noise Hurts Learning: Benchmarking Skill Self-Evolution in Agents</strong></a> <span>2026-10-14</span></li>
+          <li><a href="2610.19589.html"><strong>JockeyBench: Evaluating LLM Agents on Horse-Racing Decision-Making</strong></a> <span>2026-10-14</span></li>
+          <li><a href="2610.19384.html"><strong>MMA-SafetyBench: A Benchmark for Multimodal Agent Safety Evaluation</strong></a> <span>2026-10-14</span></li>
+          <li><a href="2610.13889.html"><strong>RATED: Reliability-Aware AI Agent Tool Retrieval via Execution Dynamics</strong></a> <span>2026-10-09</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

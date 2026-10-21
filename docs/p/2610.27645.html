@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CUA-Recovery: Benchmarking Error Recovery in Long-Horizon Computer-Use Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: As computer-use agents (CUAs) move to long-horizon workflows spanning multiple applications, undetected errors can silently corrupt…" />
+    <meta name="keywords" content="GUI / computer use, GUI agents, Computer use, Safety, agent benchmark, LLM agent, arXiv, 2610.27645" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.27645.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="CUA-Recovery: Benchmarking Error Recovery in Long-Horizon Computer-Use Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: As computer-use agents (CUAs) move to long-horizon workflows spanning multiple applications, undetected errors can silently corrupt…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.27645.html" />
+    <meta property="article:published_time" content="2026-10-20T05:06:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="CUA-Recovery: Benchmarking Error Recovery in Long-Horizon Computer-Use Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: As computer-use agents (CUAs) move to long-horizon workflows spanning multiple applications, undetected errors can silently corrupt…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "CUA-Recovery: Benchmarking Error Recovery in Long-Horizon Computer-Use Agents",
+  "name": "CUA-Recovery: Benchmarking Error Recovery in Long-Horizon Computer-Use Agents",
+  "abstract": "As computer-use agents (CUAs) move to long-horizon workflows spanning multiple applications, undetected errors can silently corrupt persistent state and cause cascading failures in subsequent actions. Reliable error detection and recovery have become critical bottlenecks for building robust CUAs. However, existing benchmarks focus primarily on end-to-end task performance, providing limited insight into whether agents can detect and recover from errors during execution. The few benchmarks that evaluate recovery rely largely on manually injected errors, which may not reflect the types or horizons of failures induced by real agent policies. We introduce CUA-Recovery, a benchmark comprising test and training suites across multiple desktop applications. We construct it using ReRail, a framework for synthesizing long-horizon tasks and trajectories in a persistent desktop environment. ReRail composes MyPCBench tasks into new long-horizon workflows with executable ground truth, collects verifier-confirmed failures from multiple policies, and turns them into verified recovery trajectories. CUA-Recovery comprises a human-verified test suite of 2,250 erroneous states over 100 tasks and a training suite of 8.6K trajectories over 377 tasks. Evaluation on the test suite shows that agents struggle both to recognize inherited errors and to complete the task. Across six agents and six takeover depths, Error Awareness Rate (EAR) reaches at most 44.0% and Pass@3 at most 25.5%. After fine-tuning Qwen3.5-35B-A3B on the training suite, its average EAR rises from 19.9% to 35.2% on held-out recovery states, and its Rubric Score goes from 5.0% to 16.1%. It also gains 15.3 points on MyPCBench and 10.8 points on Odysseys for Pass@3, showing that the training trajectories help both with recovery and with completing tasks from a clean start. Our code is available at https://github.com/xu-hu-2002/CUA-Recovery.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Xu Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Haoming Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuxiang Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jinxin Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Kangshuo Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Licheng Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Dingyi Kang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiayu Song"
+    },
+    {
+      "@type": "Person",
+      "name": "Tianhao Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhanhua Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xu Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Qiannan Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Bingzhe Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Feng Chen"
+    }
+  ],
+  "datePublished": "2026-10-20T05:06:00Z",
+  "dateModified": "2026-10-20T05:06:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.27645.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.27645.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.27645v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.27645"
+  },
+  "keywords": [
+    "GUI / computer use",
+    "GUI agents",
+    "Computer use",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "GUI / computer use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.27645v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.27645"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>CUA-Recovery: Benchmarking Error Recovery in Long-Horizon Computer-Use Agents</h1>
+        <div class="meta">
+          Xu Hu, Haoming Li, Yuxiang Wang, Jinxin Yang, Kangshuo Li, Licheng Wang, Dingyi Kang, Jiayu Song, Tianhao Wang, Zhanhua Hu, Xu Yang, Qiannan Li, Bingzhe Li, Feng Chen
+          · 2610.27645
+          · <time datetime="2026-10-20">2026-10-20</time>
+          · GUI / computer use
+        </div>
+        <div class="themes"><span class="chip">GUI agents</span><span class="chip">Computer use</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>As computer-use agents (CUAs) move to long-horizon workflows spanning multiple applications, undetected errors can silently corrupt persistent state and cause cascading failures in subsequent actions. Reliable error detection and recovery have become critical bottlenecks for building robust CUAs. However, existing benchmarks focus primarily on end-to-end task performance, providing limited insight into whether agents can detect and recover from errors during execution. The few benchmarks that evaluate recovery rely largely on manually injected errors, which may not reflect the types or horizons of failures induced by real agent policies. We introduce CUA-Recovery, a benchmark comprising test and training suites across multiple desktop applications. We construct it using ReRail, a framework for synthesizing long-horizon tasks and trajectories in a persistent desktop environment. ReRail composes MyPCBench tasks into new long-horizon workflows with executable ground truth, collects verifier-confirmed failures from multiple policies, and turns them into verified recovery trajectories. CUA-Recovery comprises a human-verified test suite of 2,250 erroneous states over 100 tasks and a training suite of 8.6K trajectories over 377 tasks. Evaluation on the test suite shows that agents struggle both to recognize inherited errors and to complete the task. Across six agents and six takeover depths, Error Awareness Rate (EAR) reaches at most 44.0% and Pass@3 at most 25.5%. After fine-tuning Qwen3.5-35B-A3B on the training suite, its average EAR rises from 19.9% to 35.2% on held-out recovery states, and its Rubric Score goes from 5.0% to 16.1%. It also gains 15.3 points on MyPCBench and 10.8 points on Odysseys for Pass@3, showing that the training trajectories help both with recovery and with completing tasks from a clean start. Our code is available at https://github.com/xu-hu-2002/CUA-Recovery.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.27645v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.27645v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.27645" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More GUI / computer use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.22990.html"><strong>PersonaCUABench: Benchmarking Computer-Use Agents Serving Diverse Personas</strong></a> <span>2026-10-16</span></li>
+          <li><a href="2610.19900.html"><strong>How GUI Agents Fail: GraceBench for Execution Stability Diagnosis</strong></a> <span>2026-10-14</span></li>
+          <li><a href="2610.19128.html"><strong>CLASHarness: Benchmarking Multi-Agent Conflict in Computer Use via a Controllable and Verifiable Generation Pipeline</strong></a> <span>2026-10-13</span></li>
+          <li><a href="2610.16720.html"><strong>Learn from Move: the Next Step for GUI Agents</strong></a> <span>2026-10-12</span></li>
+          <li><a href="2610.15765.html"><strong>A Decade in a Day: Synthesizing Agent-Native Interfaces from Human-Oriented Software Evolution</strong></a> <span>2026-10-11</span></li>
+          <li><a href="2610.11050.html"><strong>AgentHorizon: Evaluating Agentic Judges for Long-Horizon Computer-Use Tasks</strong></a> <span>2026-10-08</span></li>
+          <li><a href="2610.09944.html"><strong>AgentTime: Can Agents Estimate and Control Their Own Runtime?</strong></a> <span>2026-10-07</span></li>
+          <li><a href="2610.04800.html"><strong>MedImageOSWorld: Benchmarking GUI Agents for Medical Image Consoles</strong></a> <span>2026-10-03</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

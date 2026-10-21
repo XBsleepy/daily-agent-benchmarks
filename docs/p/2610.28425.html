@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Modern LLM agents persist state across sessions via two channels: long-lived memory files silently prepended to the system prompt…" />
+    <meta name="keywords" content="General, Memory, agent benchmark, LLM agent, arXiv, 2610.28425" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.28425.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Modern LLM agents persist state across sessions via two channels: long-lived memory files silently prepended to the system prompt…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.28425.html" />
+    <meta property="article:published_time" content="2026-10-20T15:55:05Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Modern LLM agents persist state across sessions via two channels: long-lived memory files silently prepended to the system prompt…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents",
+  "name": "After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents",
+  "abstract": "Modern LLM agents persist state across sessions via two channels: long-lived memory files silently prepended to the system prompt, and scheduled tasks waking the agent without user input. A one-time indirect prompt injection committed to either channel can re-fire across sessions long after the attacker leaves, threats we term carryover attacks. Existing prompt-injection benchmarks evaluate attacks only in the session where malicious content is first observed, leaving the gate governing when and how often a planted payload later re-fires unmeasured. We present CarryoverBench: 12 personal-assistant scenarios and 101 attack tasks across three trigger channels: Instant, same-turn IPI; Autonomous, heartbeat-scheduled; and Latent, memory-resurfaced. A rule-based verifier scores planting and triggering as independent stages. Across five frontier models, planted payloads re-fire without measurable decay over five rounds; conditional on successful planting, the trigger stage often provides little additional protection. Porting the Latent channel to a second runtime, Hermes, attenuates but does not eliminate the effect, suggesting that carryover defense requires runtime-layer controls in addition to prompt-level interventions.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Zhiyue Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xukai Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhiyuan Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Mingjie Zhan"
+    },
+    {
+      "@type": "Person",
+      "name": "Jian Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Xu-Yao Zhang"
+    }
+  ],
+  "datePublished": "2026-10-20T15:55:05Z",
+  "dateModified": "2026-10-20T15:55:05Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.28425.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.28425.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.28425v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.28425"
+  },
+  "keywords": [
+    "General",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.28425v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.28425"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents</h1>
+        <div class="meta">
+          Zhiyue Xu, Xukai Wang, Zhiyuan Huang, Mingjie Zhan, Jian Zhao, Xu-Yao Zhang
+          · 2610.28425
+          · <time datetime="2026-10-20">2026-10-20</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Modern LLM agents persist state across sessions via two channels: long-lived memory files silently prepended to the system prompt, and scheduled tasks waking the agent without user input. A one-time indirect prompt injection committed to either channel can re-fire across sessions long after the attacker leaves, threats we term carryover attacks. Existing prompt-injection benchmarks evaluate attacks only in the session where malicious content is first observed, leaving the gate governing when and how often a planted payload later re-fires unmeasured. We present CarryoverBench: 12 personal-assistant scenarios and 101 attack tasks across three trigger channels: Instant, same-turn IPI; Autonomous, heartbeat-scheduled; and Latent, memory-resurfaced. A rule-based verifier scores planting and triggering as independent stages. Across five frontier models, planted payloads re-fire without measurable decay over five rounds; conditional on successful planting, the trigger stage often provides little additional protection. Porting the Latent channel to a second runtime, Hermes, attenuates but does not eliminate the effect, suggesting that carryover defense requires runtime-layer controls in addition to prompt-level interventions.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.28425v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.28425v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.28425" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.27581.html"><strong>DuplexLedger: Benchmarking Transactional Memory in Full-Duplex Speech Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.26679.html"><strong>StebBench: Diagnosing Real-World Procedural Understanding in AI Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.26438.html"><strong>Fake News, Real Crashes: Information Injection Attacks on LLM Financial Trading Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.26101.html"><strong>Reliable Before Profitable: QuantHarness for Governing Financial Strategy Development with LLM Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.26088.html"><strong>LeakBench: Auditing Reward Hacking through Prediction-Time Leakage in Clinical Modeling Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.25950.html"><strong>AdaExploreBench: Benchmarking LLM Agents for Proactive Exploration and Test-time Adaptation in Evolving Environments</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.25896.html"><strong>When Should AI Chime In? Benchmarking Timely Contribution of Proactive Agents in Multi-Party Chat</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.25373.html"><strong>MemDerive: A Diagnostic Benchmark for Agent Memory over Evolving Data</strong></a> <span>2026-10-18</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

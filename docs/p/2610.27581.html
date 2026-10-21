@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DuplexLedger: Benchmarking Transactional Memory in Full-Duplex Speech Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Full-duplex speech agents must update persistent memory while listening and speaking, yet it remains unclear which events should be…" />
+    <meta name="keywords" content="General, Memory, agent benchmark, LLM agent, arXiv, 2610.27581" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.27581.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="DuplexLedger: Benchmarking Transactional Memory in Full-Duplex Speech Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Full-duplex speech agents must update persistent memory while listening and speaking, yet it remains unclear which events should be…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.27581.html" />
+    <meta property="article:published_time" content="2026-10-20T03:47:06Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="DuplexLedger: Benchmarking Transactional Memory in Full-Duplex Speech Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Full-duplex speech agents must update persistent memory while listening and speaking, yet it remains unclear which events should be…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "DuplexLedger: Benchmarking Transactional Memory in Full-Duplex Speech Agents",
+  "name": "DuplexLedger: Benchmarking Transactional Memory in Full-Duplex Speech Agents",
+  "abstract": "Full-duplex speech agents must update persistent memory while listening and speaking, yet it remains unclear which events should be stored, revised, or excluded. Existing benchmarks isolate interaction timing from memory outcomes, obscuring the state transitions behind a correct answer. We introduce DuplexLedger, a bilingual benchmark of 1,094 persistent sessions aligning four full-duplex scenarios with event-level Write/Update/Ignore/Retain supervision, explicit pre/post memory states, and 6,564 same-session questions and checks. Evaluating five full-duplex models reveals an interaction-memory gap: no system combines strong boundary control with coherent final-state memory, and the best final-state fact coverage is 2.01%. We propose ACT-Mem, an 8.92M-parameter sidecar comprising an event controller, a versioned transactional ledger, and a typed retriever coupled with a frozen MiniCPM-o 4.5 backbone. On 219 held-out sessions, ACT-Mem increases latest-value accuracy from 4.11% to 8.68% while reducing stale assertions and distractor adoption. It improves interaction boundaries but slows interruption stopping. These results motivate selective, auditable full-duplex memory rather than indiscriminate transcript retention. Code is available at https://github.com/lyx-researcher/DuplexLedger.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yuxuan Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiangchen Guan"
+    },
+    {
+      "@type": "Person",
+      "name": "Kunrong Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Jin Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Kaiwen Luo"
+    },
+    {
+      "@type": "Person",
+      "name": "Yang Xiao"
+    },
+    {
+      "@type": "Person",
+      "name": "Yufei Guo"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhisheng Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Liang Lin"
+    },
+    {
+      "@type": "Person",
+      "name": "Kun Wang"
+    }
+  ],
+  "datePublished": "2026-10-20T03:47:06Z",
+  "dateModified": "2026-10-20T03:47:06Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.27581.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.27581.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.27581v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.27581"
+  },
+  "keywords": [
+    "General",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.27581v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.27581"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>DuplexLedger: Benchmarking Transactional Memory in Full-Duplex Speech Agents</h1>
+        <div class="meta">
+          Yuxuan Li, Xiangchen Guan, Kunrong Li, Jin Wang, Kaiwen Luo, Yang Xiao, Yufei Guo, Zhisheng Chen, Liang Lin, Kun Wang
+          · 2610.27581
+          · <time datetime="2026-10-20">2026-10-20</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Full-duplex speech agents must update persistent memory while listening and speaking, yet it remains unclear which events should be stored, revised, or excluded. Existing benchmarks isolate interaction timing from memory outcomes, obscuring the state transitions behind a correct answer. We introduce DuplexLedger, a bilingual benchmark of 1,094 persistent sessions aligning four full-duplex scenarios with event-level Write/Update/Ignore/Retain supervision, explicit pre/post memory states, and 6,564 same-session questions and checks. Evaluating five full-duplex models reveals an interaction-memory gap: no system combines strong boundary control with coherent final-state memory, and the best final-state fact coverage is 2.01%. We propose ACT-Mem, an 8.92M-parameter sidecar comprising an event controller, a versioned transactional ledger, and a typed retriever coupled with a frozen MiniCPM-o 4.5 backbone. On 219 held-out sessions, ACT-Mem increases latest-value accuracy from 4.11% to 8.68% while reducing stale assertions and distractor adoption. It improves interaction boundaries but slows interruption stopping. These results motivate selective, auditable full-duplex memory rather than indiscriminate transcript retention. Code is available at https://github.com/lyx-researcher/DuplexLedger.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.27581v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.27581v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.27581" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.28425.html"><strong>After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.26679.html"><strong>StebBench: Diagnosing Real-World Procedural Understanding in AI Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.26438.html"><strong>Fake News, Real Crashes: Information Injection Attacks on LLM Financial Trading Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.26101.html"><strong>Reliable Before Profitable: QuantHarness for Governing Financial Strategy Development with LLM Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.26088.html"><strong>LeakBench: Auditing Reward Hacking through Prediction-Time Leakage in Clinical Modeling Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.25950.html"><strong>AdaExploreBench: Benchmarking LLM Agents for Proactive Exploration and Test-time Adaptation in Evolving Environments</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.25896.html"><strong>When Should AI Chime In? Benchmarking Timely Contribution of Proactive Agents in Multi-Party Chat</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.25373.html"><strong>MemDerive: A Diagnostic Benchmark for Agent Memory over Evolving Data</strong></a> <span>2026-10-18</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>
