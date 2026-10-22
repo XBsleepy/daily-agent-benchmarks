@@ -1,0 +1,212 @@
+{
+  "date": "2026-10-21",
+  "count": 3,
+  "report": {
+    "date": "2026-10-21",
+    "count": 3,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      }
+    ],
+    "en": {
+      "headline": "3 new agent benchmarks",
+      "summary": "On October 21, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Safety (2), Planning / reasoning (2), Research agents (1), and Memory (1).",
+      "highlights": [
+        {
+          "id": "2610.29014",
+          "title": "GenXR-Bench: Benchmarking Coding Agents for Interactive XR Development",
+          "blurb": "Coding agents are rapidly advancing from single-file generation to long-horizon repository-scale engineering, yet the evaluation of their capabilities to author interactive extended reality (XR) applications remains an o…"
+        },
+        {
+          "id": "2610.29346",
+          "title": "Benchmarking and Error Analysis of Deep Search and Deep Research LLM Agents",
+          "blurb": "As Large Language Models (LLMs) evolve into autonomous Deep Search and Deep Research Agents capable of executing long-horizon, multi-step tasks, evaluating their reliability becomes increasingly critical."
+        },
+        {
+          "id": "2610.29249",
+          "title": "MOSAIC: An Omni-Modal Benchmark for Long-Term Memory and Cross-Modal Reasoning in Conversational Agents",
+          "blurb": "Omni-modal assistants must remember not only what users say, but also what they show and convey."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年10月21日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在安全（2）、规划 / 推理（2）、科研智能体（1）、记忆（1）。",
+      "highlights": [
+        {
+          "id": "2610.29014",
+          "title": "GenXR-Bench: Benchmarking Coding Agents for Interactive XR Development",
+          "blurb": "Coding agents are rapidly advancing from single-file generation to long-horizon repository-scale engineering, yet the evaluation of their capabilities to author interactive extended reality (XR) applications remains an o…"
+        },
+        {
+          "id": "2610.29346",
+          "title": "Benchmarking and Error Analysis of Deep Search and Deep Research LLM Agents",
+          "blurb": "As Large Language Models (LLMs) evolve into autonomous Deep Search and Deep Research Agents capable of executing long-horizon, multi-step tasks, evaluating their reliability becomes increasingly critical."
+        },
+        {
+          "id": "2610.29249",
+          "title": "MOSAIC: An Omni-Modal Benchmark for Long-Term Memory and Cross-Modal Reasoning in Conversational Agents",
+          "blurb": "Omni-modal assistants must remember not only what users say, but also what they show and convey."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2610.29346",
+      "title": "Benchmarking and Error Analysis of Deep Search and Deep Research LLM Agents",
+      "abstract": "As Large Language Models (LLMs) evolve into autonomous Deep Search and Deep Research Agents capable of executing long-horizon, multi-step tasks, evaluating their reliability becomes increasingly critical. However, existing evaluation paradigms predominantly focus on final task outcomes, leaving a significant gap in understanding the intermediate execution traces, where agents are highly susceptible to various errors. To address this critical gap, we introduce a comprehensive methodology and analytical framework designed specifically to diagnose errors in intermediate workflows. Building upon this framework, we establish a structured taxonomy that categorizes these vulnerabilities into two primary dimensions: System-Level Errors and Task-Level Errors. Through a systematic examination of step-by-step execution traces and agent-environment interactions, we reveal how these underlying errors affect overall performance. Finally, through empirical experiments and systematic analysis of the identified error types, we provide actionable design guidelines, aiming to enhance the robustness, reasoning capabilities, and reliability of Deep Search and Deep Research agents.",
+      "authors": [
+        "Zixuan Yu",
+        "Zhenheng Tang",
+        "Xiaowen Chu",
+        "Bo Han"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-10-21T07:38:29Z",
+      "updated": "2026-10-21T07:38:29Z",
+      "announced_date": "2026-10-21",
+      "first_seen": "2026-10-21",
+      "comment": "Proceedings of the 1st ICML Workshop on Failure Modes in Agentic AI (FAGEN), Seoul, South Korea, 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.29346v1",
+        "pdf": "https://arxiv.org/pdf/2610.29346v1",
+        "html": "https://arxiv.org/html/2610.29346"
+      },
+      "score": 13,
+      "tags": [
+        "safety",
+        "planning",
+        "research"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2610.29249",
+      "title": "MOSAIC: An Omni-Modal Benchmark for Long-Term Memory and Cross-Modal Reasoning in Conversational Agents",
+      "abstract": "Omni-modal assistants must remember not only what users say, but also what they show and convey. Existing long-term memory benchmarks are mostly text-and-image or report a single end-to-end score, so they cannot locate whether evidence is lost when it is represented, retrieved, delivered, or read. We introduce MOSAIC, a benchmark of 923 questions over persona-grounded histories of 11-24 sessions spanning text, image, video, and audio. MOSAIC constructs targeted spatial, temporal, and prosodic signals rather than decorative media, with the strongest causal validation for spatial information and selector-level validation for annotated prosody, and pairs them with a matched diagnostic protocol that freezes the question, reader, prompt, and budget while intervening on representation, retrieval, and delivery. Matched decomposition shows that representation loss is modality-dependent, residual reading dominates even under gold evidence, and abstention remains weak on these controls: strong answerable scores coexist with failures to refuse. MOSAIC thus turns omni-modal memory evaluation from a leaderboard into a diagnosis of write, retrieve, deliver, and read failures.",
+      "authors": [
+        "Hong Ting Tsang",
+        "Boyi Zhang",
+        "Haoyu Huang",
+        "Jiaxin Bai",
+        "Yufei Li",
+        "Yisen Gao",
+        "Zhongwei Xie",
+        "Hongyu Luo",
+        "Jeff Z. Pan",
+        "Yangqiu Song"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-10-21T05:55:20Z",
+      "updated": "2026-10-21T05:55:20Z",
+      "announced_date": "2026-10-21",
+      "first_seen": "2026-10-21",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.29249v1",
+        "pdf": "https://arxiv.org/pdf/2610.29249v1",
+        "html": "https://arxiv.org/html/2610.29249"
+      },
+      "score": 12,
+      "tags": [
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.29014",
+      "title": "GenXR-Bench: Benchmarking Coding Agents for Interactive XR Development",
+      "abstract": "Coding agents are rapidly advancing from single-file generation to long-horizon repository-scale engineering, yet the evaluation of their capabilities to author interactive extended reality (XR) applications remains an open challenge. Unlike traditional software, XR applications operate within dynamic 3D physical environments where runtime robustness depends jointly on continuous user motion, spatial input, and environmental sensing. We introduce GenXR-Bench, the first benchmark for the end-to-end evaluation of coding agents in XR software development. GenXR-Bench contains 112 expert-authored tasks spanning 24 feature implementations, 21 bug repairs, and 67 application generation tasks. Held-out tests combine scripted and adaptive interactions with programmatic and visual assertions to evaluate core functionality and runtime behavior. GenXR-Bench's testing suite achieves 96.5% accuracy against blinded expert judgments of 124 candidate applications executed on consumer XR hardware. Evaluating 10 models on GenXR-Bench, we find that the strongest configuration achieves only 50.9% overall Pass@1. Failure analysis identifies recurring misunderstandings in asynchronous sensor lifecycles, physical grounding, and embodied interaction semantics. GenXR-Bench establishes a reproducible testbed for evaluating coding agents in the interactive and physically situated conditions of spatial computing.",
+      "authors": [
+        "William Huang",
+        "David Li",
+        "Xiang 'Anthony' Chen",
+        "Xun Qian",
+        "Nels Numan",
+        "Zhongyi Zhou",
+        "Hyunsung Cho",
+        "Salman Muin Kayser Chishti",
+        "Ding Xia",
+        "Xincheng Huang",
+        "Jiahao Ren",
+        "Faraz Faruqi",
+        "Tianyu Xu",
+        "Yang Zhang",
+        "David Kim",
+        "Ruofei Du"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.GR",
+        "cs.HC"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-21T00:28:16Z",
+      "updated": "2026-10-21T00:28:16Z",
+      "announced_date": "2026-10-21",
+      "first_seen": "2026-10-21",
+      "comment": "37 pages, 10 figures. Code available at https://github.com/whuang37/genxr-bench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.29014v1",
+        "pdf": "https://arxiv.org/pdf/2610.29014v1",
+        "html": "https://arxiv.org/html/2610.29014"
+      },
+      "score": 25,
+      "tags": [
+        "coding",
+        "embodied",
+        "safety"
+      ],
+      "field": "coding",
+      "citations": 0
+    }
+  ]
+}

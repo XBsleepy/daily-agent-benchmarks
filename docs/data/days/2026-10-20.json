@@ -1,9 +1,9 @@
 {
   "date": "2026-10-20",
-  "count": 20,
+  "count": 23,
   "report": {
     "date": "2026-10-20",
-    "count": 20,
+    "count": 23,
     "themes": [
       {
         "id": "planning",
@@ -12,22 +12,34 @@
         "zh": "规划 / 推理"
       },
       {
-        "id": "memory",
-        "count": 4,
-        "en": "Memory",
-        "zh": "记忆"
+        "id": "coding",
+        "count": 6,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 5,
+        "en": "Tool use",
+        "zh": "工具使用"
       },
       {
         "id": "safety",
-        "count": 4,
+        "count": 5,
         "en": "Safety",
         "zh": "安全"
       },
       {
-        "id": "coding",
+        "id": "science",
         "count": 4,
-        "en": "Coding agents",
-        "zh": "代码智能体"
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "memory",
+        "count": 4,
+        "en": "Memory",
+        "zh": "记忆"
       },
       {
         "id": "embodied",
@@ -40,23 +52,11 @@
         "count": 3,
         "en": "Multimodal",
         "zh": "多模态"
-      },
-      {
-        "id": "tool-use",
-        "count": 3,
-        "en": "Tool use",
-        "zh": "工具使用"
-      },
-      {
-        "id": "science",
-        "count": 3,
-        "en": "Science lab",
-        "zh": "科学实验"
       }
     ],
     "en": {
-      "headline": "20 new agent benchmarks",
-      "summary": "On October 20, 2026, arXiv listed 20 new agent benchmarks. Work clustered around Planning / reasoning (7), Memory (4), Safety (4), and Coding agents (4).",
+      "headline": "23 new agent benchmarks",
+      "summary": "On October 20, 2026, arXiv listed 23 new agent benchmarks. Work clustered around Planning / reasoning (7), Coding agents (6), Tool use (5), and Safety (5).",
       "highlights": [
         {
           "id": "2610.28381",
@@ -76,8 +76,8 @@
       ]
     },
     "zh": {
-      "headline": "新增 20 篇 Agent Benchmark",
-      "summary": "2026年10月20日，arXiv 新增 20 篇 Agent Benchmark。当日主题集中在规划 / 推理（7）、记忆（4）、安全（4）、代码智能体（4）。",
+      "headline": "新增 23 篇 Agent Benchmark",
+      "summary": "2026年10月20日，arXiv 新增 23 篇 Agent Benchmark。当日主题集中在规划 / 推理（7）、代码智能体（6）、工具使用（5）、安全（5）。",
       "highlights": [
         {
           "id": "2610.28381",
@@ -98,6 +98,112 @@
     }
   },
   "papers": [
+    {
+      "id": "2610.28982",
+      "title": "Behavior Beyond Text: Evaluating Refusal Transfer Failure in LLM Agents",
+      "abstract": "While large language models are increasingly deployed as tool-calling agents, their safety evaluations still focus primarily on their ability to refuse harmful requests in text. We investigate whether the refusal behavior in text transfers to tool use. We construct a benchmark of 2,304 prompts across four domains, consisting of matched triplets that present the same harmful or benign request in text-only, standard tool-enabled, and adversarially framed tool-enabled settings. We then assess tool-call safety using 20 predefined forbidden actions. Testing five models of varying sizes and families, we find that requests refused in text frequently result in unsafe tool calls. Under standard tool-enabled prompting, this divergence occurs for 10-52 percent of harmful requests refused in chat. To mechanistically investigate this gap, we identify a refusal-associated direction in the residual stream of each of the five models. We find that in tool-enabled contexts, the activations along this direction decrease in four of five models. Furthermore, lower activation predicts unsafe tool calls across all five models (AUC 0.76-0.86). However, restoring the signal to the respective text-only value through activation patching only prevents a subset of unsafe calls, primarily by suppressing tool use rather than by producing safer calls. Steering along the refusal direction nearly eliminates unsafe calls only at strengths that also suppress benign tool use or degrade the output quality. Our findings indicate that the identified refusal direction contributes to whether a model acts, but only partially explains the refusal divergence. Therefore, evaluating the safety of tool-calling agents requires directly examining their actions along with their textual responses.",
+      "authors": [
+        "Ekagra Gupta",
+        "Raj Saha",
+        "Aniekan-Abasi Inyang",
+        "Adam Al Gharib"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-20T23:14:30Z",
+      "updated": "2026-10-20T23:14:30Z",
+      "announced_date": "2026-10-20",
+      "first_seen": "2026-10-20",
+      "comment": "Raj Saha and Ekagra Gupta contributed equally and share first authorship",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.28982v1",
+        "pdf": "https://arxiv.org/pdf/2610.28982v1",
+        "html": "https://arxiv.org/html/2610.28982"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2610.28934",
+      "title": "Back Up Before You Regret: Measuring Backup Awareness and Automating Backup in Coding Agents",
+      "abstract": "Coding agents now complete tasks autonomously, modifying real-world state such as artifacts, software environments, and configurations along the way. Yet they show limited backup awareness: recognizing that an action will modify state that may later be needed, and preserving it beforehand. To evaluate backup awareness, we introduce RegretBench, a benchmark of 205 executable tasks grounded in regret moments reported on platforms such as X.com, GitHub, and Stack Overflow, where users explicitly regretted not preserving state they later needed. Across six frontier models, agents complete 86.1% of tasks on average yet back up before these moments in only 15.2%, showing that task completion ability does not imply backup awareness. Because it is hard to predict which changes will be regretted, we propose BackUpper, a harness plug-in backup layer that checks every tool call and preserves affected state before modification. It combines rule-based strategies for common operations with a lightweight subagent for complex cases, and its rule table can expand with subagent decisions over time. On RegretBench, BackUpper covers every regret moment action and restores states with 92.2% average similarity to the original. Achieving this costs only $0.014 per task, with 7x fewer tokens than the main-agent self-backup baseline. When users have preferences on what to back up, BackUpper can also narrow its scope accordingly, matching human annotations on whether an action is worth preserving with an 84.5% F1 score. These results suggest that agents can keep actions reversible at low cost while respecting users' preferences.",
+      "authors": [
+        "Xu Li",
+        "Simon Yu",
+        "Minzhou Pan",
+        "Yiyou Sun",
+        "Zhaorun Chen",
+        "Bo Li",
+        "Weiyan Shi"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-20T21:13:31Z",
+      "updated": "2026-10-20T21:13:31Z",
+      "announced_date": "2026-10-20",
+      "first_seen": "2026-10-20",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.28934v1",
+        "pdf": "https://arxiv.org/pdf/2610.28934v1",
+        "html": "https://arxiv.org/html/2610.28934"
+      },
+      "score": 10,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.28763",
+      "title": "Automating ML for Science: Can Frontier Agents Climb Scientific Hills in the Wild?",
+      "abstract": "Frontier coding agents are increasingly framed as end-to-end automated researchers, and ML for science offers a demanding test of that promise: improving a scientific model often requires domain insight beyond routine ML engineering. We introduce Agent4Sci, a long-horizon testbed for measuring how far today's agents can improve the published best models on scientific ML benchmarks, spanning 20 benchmarks across 11 domains. Rather than ranking agents on a leaderboard, Agent4Sci asks what kinds of progress agents can make on these tasks under in-the-wild conditions, and where they fall short. Empirically, today's frontier agents advance the published best on every benchmark, with Claude Opus reaching 10.4% mean relative improvement and no run flagged for academic misconduct. These gains, however, come almost entirely from a bag of ML-engineering tricks rather than research-level insight. Trajectory analysis surfaces three recurring limitations in this setting: novelty miscalibration, resource under-utilization, and rapid collapse into local engineering sweeps. Lightweight plug-in skills for research ideation, experiment management, and scheduled checklists raise Claude Opus from 10.4% to 20.1% and Codex from 4.4% to 8.1%, while yielding more diverse, domain-relevant interventions. Agent4Sci gives the community a way to track and push frontier agents from ML engineering toward domain insight on real-world ML-for-science problems. Code and data are available on GitHub (https://github.com/maszhongming/agent4sci) and Hugging Face (https://huggingface.co/datasets/MingZhong/agent4sci).",
+      "authors": [
+        "Ming Zhong",
+        "Stacy Li",
+        "Nicholas Carlini",
+        "Matthew Jagielski"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-20T18:03:48Z",
+      "updated": "2026-10-20T18:03:48Z",
+      "announced_date": "2026-10-20",
+      "first_seen": "2026-10-20",
+      "comment": "NeurIPS 2026 E&D Track",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.28763v1",
+        "pdf": "https://arxiv.org/pdf/2610.28763v1",
+        "html": "https://arxiv.org/html/2610.28763"
+      },
+      "score": 12,
+      "tags": [
+        "coding",
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    },
     {
       "id": "2610.28425",
       "title": "After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents",
@@ -704,14 +810,14 @@
       ],
       "primary_category": "cs.AI",
       "published": "2026-10-20T03:01:39Z",
-      "updated": "2026-10-20T03:01:39Z",
+      "updated": "2026-10-21T06:31:44Z",
       "announced_date": "2026-10-20",
       "first_seen": "2026-10-20",
       "comment": "",
       "doi": "",
       "links": {
-        "abs": "https://arxiv.org/abs/2610.27548v1",
-        "pdf": "https://arxiv.org/pdf/2610.27548v1",
+        "abs": "https://arxiv.org/abs/2610.27548v2",
+        "pdf": "https://arxiv.org/pdf/2610.27548v2",
         "html": "https://arxiv.org/html/2610.27548"
       },
       "score": 16,

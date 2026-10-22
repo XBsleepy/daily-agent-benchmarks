@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Behavior Beyond Text: Evaluating Refusal Transfer Failure in LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: While large language models are increasingly deployed as tool-calling agents, their safety evaluations still focus primarily on their…" />
+    <meta name="keywords" content="Safety, Tool use, agent benchmark, LLM agent, arXiv, 2610.28982" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.28982.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Behavior Beyond Text: Evaluating Refusal Transfer Failure in LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: While large language models are increasingly deployed as tool-calling agents, their safety evaluations still focus primarily on their…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.28982.html" />
+    <meta property="article:published_time" content="2026-10-20T23:14:30Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Behavior Beyond Text: Evaluating Refusal Transfer Failure in LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: While large language models are increasingly deployed as tool-calling agents, their safety evaluations still focus primarily on their…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Behavior Beyond Text: Evaluating Refusal Transfer Failure in LLM Agents",
+  "name": "Behavior Beyond Text: Evaluating Refusal Transfer Failure in LLM Agents",
+  "abstract": "While large language models are increasingly deployed as tool-calling agents, their safety evaluations still focus primarily on their ability to refuse harmful requests in text. We investigate whether the refusal behavior in text transfers to tool use. We construct a benchmark of 2,304 prompts across four domains, consisting of matched triplets that present the same harmful or benign request in text-only, standard tool-enabled, and adversarially framed tool-enabled settings. We then assess tool-call safety using 20 predefined forbidden actions. Testing five models of varying sizes and families, we find that requests refused in text frequently result in unsafe tool calls. Under standard tool-enabled prompting, this divergence occurs for 10-52 percent of harmful requests refused in chat. To mechanistically investigate this gap, we identify a refusal-associated direction in the residual stream of each of the five models. We find that in tool-enabled contexts, the activations along this direction decrease in four of five models. Furthermore, lower activation predicts unsafe tool calls across all five models (AUC 0.76-0.86). However, restoring the signal to the respective text-only value through activation patching only prevents a subset of unsafe calls, primarily by suppressing tool use rather than by producing safer calls. Steering along the refusal direction nearly eliminates unsafe calls only at strengths that also suppress benign tool use or degrade the output quality. Our findings indicate that the identified refusal direction contributes to whether a model acts, but only partially explains the refusal divergence. Therefore, evaluating the safety of tool-calling agents requires directly examining their actions along with their textual responses.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Ekagra Gupta"
+    },
+    {
+      "@type": "Person",
+      "name": "Raj Saha"
+    },
+    {
+      "@type": "Person",
+      "name": "Aniekan-Abasi Inyang"
+    },
+    {
+      "@type": "Person",
+      "name": "Adam Al Gharib"
+    }
+  ],
+  "datePublished": "2026-10-20T23:14:30Z",
+  "dateModified": "2026-10-20T23:14:30Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.28982.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.28982.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.28982v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.28982"
+  },
+  "keywords": [
+    "Safety",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Safety"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.28982v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.28982"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Behavior Beyond Text: Evaluating Refusal Transfer Failure in LLM Agents</h1>
+        <div class="meta">
+          Ekagra Gupta, Raj Saha, Aniekan-Abasi Inyang, Adam Al Gharib
+          · 2610.28982
+          · <time datetime="2026-10-20">2026-10-20</time>
+          · Safety
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>While large language models are increasingly deployed as tool-calling agents, their safety evaluations still focus primarily on their ability to refuse harmful requests in text. We investigate whether the refusal behavior in text transfers to tool use. We construct a benchmark of 2,304 prompts across four domains, consisting of matched triplets that present the same harmful or benign request in text-only, standard tool-enabled, and adversarially framed tool-enabled settings. We then assess tool-call safety using 20 predefined forbidden actions. Testing five models of varying sizes and families, we find that requests refused in text frequently result in unsafe tool calls. Under standard tool-enabled prompting, this divergence occurs for 10-52 percent of harmful requests refused in chat. To mechanistically investigate this gap, we identify a refusal-associated direction in the residual stream of each of the five models. We find that in tool-enabled contexts, the activations along this direction decrease in four of five models. Furthermore, lower activation predicts unsafe tool calls across all five models (AUC 0.76-0.86). However, restoring the signal to the respective text-only value through activation patching only prevents a subset of unsafe calls, primarily by suppressing tool use rather than by producing safer calls. Steering along the refusal direction nearly eliminates unsafe calls only at strengths that also suppress benign tool use or degrade the output quality. Our findings indicate that the identified refusal direction contributes to whether a model acts, but only partially explains the refusal divergence. Therefore, evaluating the safety of tool-calling agents requires directly examining their actions along with their textual responses.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.28982v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.28982v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.28982" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Safety benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.29346.html"><strong>Benchmarking and Error Analysis of Deep Search and Deep Research LLM Agents</strong></a> <span>2026-10-21</span></li>
+          <li><a href="2610.28381.html"><strong>CAPSafe: A Benchmark for Contextual Action and Plan Safety Reasoning in Embodied Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.27548.html"><strong>Act on Your Behalf, Beyond Your Authorization: Benchmarking LLM Agent Authorization Alignment</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.27295.html"><strong>RealControlBench: A Benchmark for Interpretability-Informed Fine-Grained Control of LLMs and Agents</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.25069.html"><strong>Auto-MD-bench: Evaluating Autoresearch Agents for Real-World Medical Tasks</strong></a> <span>2026-10-18</span></li>
+          <li><a href="2610.24264.html"><strong>AM-Bench: A Unified Taxonomy and Evaluation Suite for Agentic Misalignment</strong></a> <span>2026-10-16</span></li>
+          <li><a href="2610.19910.html"><strong>When Non-Adversarial Noise Hurts Learning: Benchmarking Skill Self-Evolution in Agents</strong></a> <span>2026-10-14</span></li>
+          <li><a href="2610.19589.html"><strong>JockeyBench: Evaluating LLM Agents on Horse-Racing Decision-Making</strong></a> <span>2026-10-14</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>
