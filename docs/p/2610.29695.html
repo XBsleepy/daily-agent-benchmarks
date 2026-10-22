@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Benchmarking Coding Agents for System-Level Performance Optimization | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Coding agents are becoming an increasingly important paradigm for automating software engineering tasks. However, existing coding…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2610.29695" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.29695.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Benchmarking Coding Agents for System-Level Performance Optimization" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Coding agents are becoming an increasingly important paradigm for automating software engineering tasks. However, existing coding…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.29695.html" />
+    <meta property="article:published_time" content="2026-10-21T13:08:46Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Benchmarking Coding Agents for System-Level Performance Optimization" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Coding agents are becoming an increasingly important paradigm for automating software engineering tasks. However, existing coding…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Benchmarking Coding Agents for System-Level Performance Optimization",
+  "name": "Benchmarking Coding Agents for System-Level Performance Optimization",
+  "abstract": "Coding agents are becoming an increasingly important paradigm for automating software engineering tasks. However, existing coding benchmarks primarily evaluate agents at the function or repository level, leaving their capabilities in more complex distributed software systems largely unexplored. In practice, many modern applications adopt microservice architectures, where end-to-end performance emerges from interactions among multiple independently running services, requiring agents to reason beyond local code changes. To study this capability, we introduce MicroPerf-Bench, a benchmark for evaluating coding agents on end-to-end performance optimization in microservice systems. Constructing such a benchmark is challenging because reproducible system-level performance fixes are sparse and difficult to attribute. We address this challenge by injecting empirically grounded performance anti-patterns into real-world open-source systems while preserving functionality and ensuring measurable performance degradation. The resulting benchmark contains 65 optimization instances across seven systems and nine anti-patterns, each with an executable environment, functional tests, and mixed-workload evaluation. Across 1,755 runs covering nine agent-model configurations, the best configuration recovers only 42.0% of the injected performance degradation. The dominant failure is not invalid code, but functionally correct and constraint-compliant changes that fail to improve end-to-end performance, highlighting system-level bottleneck localization as a key challenge for current coding agents. The source code and data are available at https://github.com/zyzcjnb/microperf.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yanze Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Maggie Yongqi Guan"
+    },
+    {
+      "@type": "Person",
+      "name": "Shudong Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Qi Hao"
+    },
+    {
+      "@type": "Person",
+      "name": "Kanye Ye Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Meng Qu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaobo Zhou"
+    }
+  ],
+  "datePublished": "2026-10-21T13:08:46Z",
+  "dateModified": "2026-10-21T13:08:46Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.29695.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.29695.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.29695v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.29695"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.29695v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.29695"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Benchmarking Coding Agents for System-Level Performance Optimization</h1>
+        <div class="meta">
+          Yanze Zhang, Maggie Yongqi Guan, Shudong Liu, Qi Hao, Kanye Ye Wang, Meng Qu, Xiaobo Zhou
+          · 2610.29695
+          · <time datetime="2026-10-21">2026-10-21</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Coding agents are becoming an increasingly important paradigm for automating software engineering tasks. However, existing coding benchmarks primarily evaluate agents at the function or repository level, leaving their capabilities in more complex distributed software systems largely unexplored. In practice, many modern applications adopt microservice architectures, where end-to-end performance emerges from interactions among multiple independently running services, requiring agents to reason beyond local code changes. To study this capability, we introduce MicroPerf-Bench, a benchmark for evaluating coding agents on end-to-end performance optimization in microservice systems. Constructing such a benchmark is challenging because reproducible system-level performance fixes are sparse and difficult to attribute. We address this challenge by injecting empirically grounded performance anti-patterns into real-world open-source systems while preserving functionality and ensuring measurable performance degradation. The resulting benchmark contains 65 optimization instances across seven systems and nine anti-patterns, each with an executable environment, functional tests, and mixed-workload evaluation. Across 1,755 runs covering nine agent-model configurations, the best configuration recovers only 42.0% of the injected performance degradation. The dominant failure is not invalid code, but functionally correct and constraint-compliant changes that fail to improve end-to-end performance, highlighting system-level bottleneck localization as a key challenge for current coding agents. The source code and data are available at https://github.com/zyzcjnb/microperf.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.29695v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.29695v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.29695" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.29014.html"><strong>GenXR-Bench: Benchmarking Coding Agents for Interactive XR Development</strong></a> <span>2026-10-21</span></li>
+          <li><a href="2610.28934.html"><strong>Back Up Before You Regret: Measuring Backup Awareness and Automating Backup in Coding Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.27524.html"><strong>MemDev-Bench: Does Memory Help Code Agents?Benchmarking Memory Systems over Real Repository Histories</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.26394.html"><strong>When Coding Agents Outpace Review: Evaluating PRD-Driven Development in Mature Enterprise Repositories</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.25899.html"><strong>SWE-Residual: Evaluating Starting-State Robustness of Coding Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.24304.html"><strong>CME-SpectrumBench: Can LLMs Analyze Condensed Matter Spectral Data?</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.27234.html"><strong>EGI-BENCH: An Enterprise General Intelligence Benchmark Suite</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.27046.html"><strong>ReuF2F: Benchmarking Coding Agents on Formalized Undergraduate Research Problems</strong></a> <span>2026-10-19</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

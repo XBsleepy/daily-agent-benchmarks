@@ -1,10 +1,16 @@
 {
   "date": "2026-10-21",
-  "count": 3,
+  "count": 6,
   "report": {
     "date": "2026-10-21",
-    "count": 3,
+    "count": 6,
     "themes": [
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
       {
         "id": "safety",
         "count": 2,
@@ -16,6 +22,12 @@
         "count": 2,
         "en": "Planning / reasoning",
         "zh": "规划 / 推理"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
       },
       {
         "id": "research",
@@ -30,12 +42,6 @@
         "zh": "记忆"
       },
       {
-        "id": "coding",
-        "count": 1,
-        "en": "Coding agents",
-        "zh": "代码智能体"
-      },
-      {
         "id": "embodied",
         "count": 1,
         "en": "Embodied / robotics",
@@ -43,8 +49,8 @@
       }
     ],
     "en": {
-      "headline": "3 new agent benchmarks",
-      "summary": "On October 21, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Safety (2), Planning / reasoning (2), Research agents (1), and Memory (1).",
+      "headline": "6 new agent benchmarks",
+      "summary": "On October 21, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Coding agents (2), Safety (2), Planning / reasoning (2), and Multi-agent (1).",
       "highlights": [
         {
           "id": "2610.29014",
@@ -52,20 +58,20 @@
           "blurb": "Coding agents are rapidly advancing from single-file generation to long-horizon repository-scale engineering, yet the evaluation of their capabilities to author interactive extended reality (XR) applications remains an o…"
         },
         {
-          "id": "2610.29346",
-          "title": "Benchmarking and Error Analysis of Deep Search and Deep Research LLM Agents",
-          "blurb": "As Large Language Models (LLMs) evolve into autonomous Deep Search and Deep Research Agents capable of executing long-horizon, multi-step tasks, evaluating their reliability becomes increasingly critical."
+          "id": "2610.30113",
+          "title": "Quant-Arena: Benchmarking LLM Agents for Quantitative Trading Research",
+          "blurb": "Quantitative research is an iterative loop: a researcher proposes a market hypothesis, implements it as an executable signal, tests it on historical data, and decides what to keep."
         },
         {
-          "id": "2610.29249",
-          "title": "MOSAIC: An Omni-Modal Benchmark for Long-Term Memory and Cross-Modal Reasoning in Conversational Agents",
-          "blurb": "Omni-modal assistants must remember not only what users say, but also what they show and convey."
+          "id": "2610.29695",
+          "title": "Benchmarking Coding Agents for System-Level Performance Optimization",
+          "blurb": "Coding agents are becoming an increasingly important paradigm for automating software engineering tasks."
         }
       ]
     },
     "zh": {
-      "headline": "新增 3 篇 Agent Benchmark",
-      "summary": "2026年10月21日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在安全（2）、规划 / 推理（2）、科研智能体（1）、记忆（1）。",
+      "headline": "新增 6 篇 Agent Benchmark",
+      "summary": "2026年10月21日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在代码智能体（2）、安全（2）、规划 / 推理（2）、多智能体（1）。",
       "highlights": [
         {
           "id": "2610.29014",
@@ -73,19 +79,127 @@
           "blurb": "Coding agents are rapidly advancing from single-file generation to long-horizon repository-scale engineering, yet the evaluation of their capabilities to author interactive extended reality (XR) applications remains an o…"
         },
         {
-          "id": "2610.29346",
-          "title": "Benchmarking and Error Analysis of Deep Search and Deep Research LLM Agents",
-          "blurb": "As Large Language Models (LLMs) evolve into autonomous Deep Search and Deep Research Agents capable of executing long-horizon, multi-step tasks, evaluating their reliability becomes increasingly critical."
+          "id": "2610.30113",
+          "title": "Quant-Arena: Benchmarking LLM Agents for Quantitative Trading Research",
+          "blurb": "Quantitative research is an iterative loop: a researcher proposes a market hypothesis, implements it as an executable signal, tests it on historical data, and decides what to keep."
         },
         {
-          "id": "2610.29249",
-          "title": "MOSAIC: An Omni-Modal Benchmark for Long-Term Memory and Cross-Modal Reasoning in Conversational Agents",
-          "blurb": "Omni-modal assistants must remember not only what users say, but also what they show and convey."
+          "id": "2610.29695",
+          "title": "Benchmarking Coding Agents for System-Level Performance Optimization",
+          "blurb": "Coding agents are becoming an increasingly important paradigm for automating software engineering tasks."
         }
       ]
     }
   },
   "papers": [
+    {
+      "id": "2610.30113",
+      "title": "Quant-Arena: Benchmarking LLM Agents for Quantitative Trading Research",
+      "abstract": "Quantitative research is an iterative loop: a researcher proposes a market hypothesis, implements it as an executable signal, tests it on historical data, and decides what to keep. Existing benchmarks score formulas, code, or individual trading decisions, leaving open whether large language models (LLMs) can complete this loop and produce strategies that work beyond the research period. We introduce Quant-Arena, a benchmark and public leaderboard for end-to-end quantitative research on real A-share market data. A model constructs features and stock-scoring code, receives feedback only on 2022--2023, and freezes one strategy for assessment on the sealed year 2024. A cash-account evaluator applies trading constraints and costs, including market impact estimated from a simulated order book. Scores are dominated by realized excess return and complemented by signal quality and the diversity of features used by the strategy. We evaluate nine frontier models, among which GPT-6 Astra scores highest; yet no model beats the equal-weight market in 2024. Quant-Arena is open to submissions from any model or agent harness.",
+      "authors": [
+        "Houde Qian",
+        "Zheng Jiang",
+        "Wenyi Li",
+        "Chenxi Xu",
+        "Xinjie Lin",
+        "Yuzhao Peng",
+        "Ruoyu Han",
+        "Youjie Zheng",
+        "Kaisen Yang",
+        "Qinhuai Na",
+        "You Fu",
+        "Calvin Xiao"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CE"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-10-21T17:54:01Z",
+      "updated": "2026-10-21T17:54:01Z",
+      "announced_date": "2026-10-21",
+      "first_seen": "2026-10-21",
+      "comment": "Project page: https://lab.einsia.ai/quant-arena",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.30113v1",
+        "pdf": "https://arxiv.org/pdf/2610.30113v1",
+        "html": "https://arxiv.org/html/2610.30113"
+      },
+      "score": 22,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.30103",
+      "title": "Did the Problem Actually Get Harder? Testing LLMs on Paired P and NP-Complete Problems Hardened by Adversarial Multi-Agent Rewriting",
+      "abstract": "Many NP-complete (NPC) problems have a polynomial-time (P) twin that differs in a single structural detail, such as 3- versus 2-colouring a graph. A model that reasons rather than recalls should notice which side of this boundary a problem falls on, yet existing benchmarks either fix the wording of each task or ignore its complexity class, so they cannot separate the two. We introduce P2NPCBench, a benchmark of 12 problem families in which every NPC problem is paired with a P twin posed over the same surface. To remove the textbook cues that enable recall, we build it with AgentGAN, an adversarial multi-agent framework in which a generator rewrites each statement until a panel of frozen code models fails, while an executable validity gate keeps every rewrite answer- and class-preserving. The result is 2,114 hardened statements with hand-verified reference human solvers. Evaluating 12 proprietary and open-source models, we find that every model scores lower on NPC statements than on their P twins (35.4% vs. 63.8% pass@1), and that 95.1% of model-family pairs fail more often on the NPC side. A tenfold time limit raises NPC accuracy only from 28.5% to 31.9%, so failures stem from wrong or crashing programs rather than slow ones. Hardening also narrows the class gap from 24.8 to 14.6 points, showing that part of the apparent gap reflects familiarity with textbook phrasing rather than complexity class.",
+      "authors": [
+        "Nurul Labib Sayeedi",
+        "Md. Faiyaz Abdullah Sayeedi",
+        "Zabir Al Nazi",
+        "Mahbub E Sobhani",
+        "Shubhashis Roy Dipta"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-10-21T17:50:19Z",
+      "updated": "2026-10-21T17:50:19Z",
+      "announced_date": "2026-10-21",
+      "first_seen": "2026-10-21",
+      "comment": "https://github.com/Labib1610/complexity-benchmark",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.30103v1",
+        "pdf": "https://arxiv.org/pdf/2610.30103v1",
+        "html": "https://arxiv.org/html/2610.30103"
+      },
+      "score": 10,
+      "tags": [
+        "multi-agent"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2610.29695",
+      "title": "Benchmarking Coding Agents for System-Level Performance Optimization",
+      "abstract": "Coding agents are becoming an increasingly important paradigm for automating software engineering tasks. However, existing coding benchmarks primarily evaluate agents at the function or repository level, leaving their capabilities in more complex distributed software systems largely unexplored. In practice, many modern applications adopt microservice architectures, where end-to-end performance emerges from interactions among multiple independently running services, requiring agents to reason beyond local code changes. To study this capability, we introduce MicroPerf-Bench, a benchmark for evaluating coding agents on end-to-end performance optimization in microservice systems. Constructing such a benchmark is challenging because reproducible system-level performance fixes are sparse and difficult to attribute. We address this challenge by injecting empirically grounded performance anti-patterns into real-world open-source systems while preserving functionality and ensuring measurable performance degradation. The resulting benchmark contains 65 optimization instances across seven systems and nine anti-patterns, each with an executable environment, functional tests, and mixed-workload evaluation. Across 1,755 runs covering nine agent-model configurations, the best configuration recovers only 42.0% of the injected performance degradation. The dominant failure is not invalid code, but functionally correct and constraint-compliant changes that fail to improve end-to-end performance, highlighting system-level bottleneck localization as a key challenge for current coding agents. The source code and data are available at https://github.com/zyzcjnb/microperf.",
+      "authors": [
+        "Yanze Zhang",
+        "Maggie Yongqi Guan",
+        "Shudong Liu",
+        "Qi Hao",
+        "Kanye Ye Wang",
+        "Meng Qu",
+        "Xiaobo Zhou"
+      ],
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-21T13:08:46Z",
+      "updated": "2026-10-21T13:08:46Z",
+      "announced_date": "2026-10-21",
+      "first_seen": "2026-10-21",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.29695v1",
+        "pdf": "https://arxiv.org/pdf/2610.29695v1",
+        "html": "https://arxiv.org/html/2610.29695"
+      },
+      "score": 19,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
     {
       "id": "2610.29346",
       "title": "Benchmarking and Error Analysis of Deep Search and Deep Research LLM Agents",

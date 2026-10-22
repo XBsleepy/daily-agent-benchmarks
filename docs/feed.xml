@@ -5,7 +5,40 @@
   <link href="https://xbsleepy.github.io/daily-agent-benchmarks/" />
   <link rel="self" href="https://xbsleepy.github.io/daily-agent-benchmarks/feed.xml" />
   <id>https://xbsleepy.github.io/daily-agent-benchmarks/</id>
-  <updated>2026-10-22T01:08:14Z</updated>
+  <updated>2026-10-22T05:19:34Z</updated>
+  <entry>
+    <title>Quant-Arena: Benchmarking LLM Agents for Quantitative Trading Research</title>
+    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.30113.html" />
+    <link rel="related" href="https://arxiv.org/abs/2610.30113v1" />
+    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.30113.html</id>
+    <published>2026-10-21T17:54:01Z</published>
+    <updated>2026-10-21T17:54:01Z</updated>
+    <author><name>Houde Qian</name></author><author><name>Zheng Jiang</name></author><author><name>Wenyi Li</name></author><author><name>Chenxi Xu</name></author><author><name>Xinjie Lin</name></author><author><name>Yuzhao Peng</name></author><author><name>Ruoyu Han</name></author><author><name>Youjie Zheng</name></author><author><name>Kaisen Yang</name></author><author><name>Qinhuai Na</name></author>
+    <category term="General" />
+    <summary>Quantitative research is an iterative loop: a researcher proposes a market hypothesis, implements it as an executable signal, tests it on historical data, and decides what to keep. Existing benchmarks score formulas, code, or individual trading decisions, leaving open whether large language models (LLMs) can complete this loop and produce strategies that work beyond the research period. We introduce Quant-Arena, a benchmark and public leaderboard for end-to-end quantitative research on real A-share market data. A model constructs features and stock-scoring code, receives feedback only on 2022--2023, and freezes one strategy for assessment on the sealed year 2024. A cash-account evaluator applies trading constraints and costs, including market impact estimated from a simulated order book. Scores are dominated by realized excess return and complemented by signal quality and the diversity of features used by the strategy. We evaluate nine frontier models, among which GPT-6 Astra scores highest; yet no model beats the equal-weight market in 2024. Quant-Arena is open to submissions from any model or agent harness.</summary>
+  </entry>
+  <entry>
+    <title>Did the Problem Actually Get Harder? Testing LLMs on Paired P and NP-Complete Problems Hardened by Adversarial Multi-Agent Rewriting</title>
+    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.30103.html" />
+    <link rel="related" href="https://arxiv.org/abs/2610.30103v1" />
+    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.30103.html</id>
+    <published>2026-10-21T17:50:19Z</published>
+    <updated>2026-10-21T17:50:19Z</updated>
+    <author><name>Nurul Labib Sayeedi</name></author><author><name>Md. Faiyaz Abdullah Sayeedi</name></author><author><name>Zabir Al Nazi</name></author><author><name>Mahbub E Sobhani</name></author><author><name>Shubhashis Roy Dipta</name></author>
+    <category term="Multi-agent" />
+    <summary>Many NP-complete (NPC) problems have a polynomial-time (P) twin that differs in a single structural detail, such as 3- versus 2-colouring a graph. A model that reasons rather than recalls should notice which side of this boundary a problem falls on, yet existing benchmarks either fix the wording of each task or ignore its complexity class, so they cannot separate the two. We introduce P2NPCBench, a benchmark of 12 problem families in which every NPC problem is paired with a P twin posed over the same surface. To remove the textbook cues that enable recall, we build it with AgentGAN, an adversarial multi-agent framework in which a generator rewrites each statement until a panel of frozen code models fails, while an executable validity gate keeps every rewrite answer- and class-preserving. The result is 2,114 hardened statements with hand-verified reference human solvers. Evaluating 12 proprietary and open-source models, we find that every model scores lower on NPC statements than on their P twins (35.4% vs. 63.8% pass@1), and that 95.1% of model-family pairs fail more often on the NPC side. A tenfold time limit raises NPC accuracy only from 28.5% to 31.9%, so failures stem from wrong or crashing programs rather than slow ones. Hardening also narrows the class gap from 24.8 to 14.6 points, showing that part of the apparent gap reflects familiarity with textbook phrasing rather than complexity class.</summary>
+  </entry>
+  <entry>
+    <title>Benchmarking Coding Agents for System-Level Performance Optimization</title>
+    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.29695.html" />
+    <link rel="related" href="https://arxiv.org/abs/2610.29695v1" />
+    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.29695.html</id>
+    <published>2026-10-21T13:08:46Z</published>
+    <updated>2026-10-21T13:08:46Z</updated>
+    <author><name>Yanze Zhang</name></author><author><name>Maggie Yongqi Guan</name></author><author><name>Shudong Liu</name></author><author><name>Qi Hao</name></author><author><name>Kanye Ye Wang</name></author><author><name>Meng Qu</name></author><author><name>Xiaobo Zhou</name></author>
+    <category term="Coding / SWE" />
+    <summary>Coding agents are becoming an increasingly important paradigm for automating software engineering tasks. However, existing coding benchmarks primarily evaluate agents at the function or repository level, leaving their capabilities in more complex distributed software systems largely unexplored. In practice, many modern applications adopt microservice architectures, where end-to-end performance emerges from interactions among multiple independently running services, requiring agents to reason beyond local code changes. To study this capability, we introduce MicroPerf-Bench, a benchmark for evaluating coding agents on end-to-end performance optimization in microservice systems. Constructing such a benchmark is challenging because reproducible system-level performance fixes are sparse and difficult to attribute. We address this challenge by injecting empirically grounded performance anti-patterns into real-world open-source systems while preserving functionality and ensuring measurable performance degradation. The resulting benchmark contains 65 optimization instances across seven systems and nine anti-patterns, each with an executable environment, functional tests, and mixed-workload evaluation. Across 1,755 runs covering nine agent-model configurations, the best configuration recovers only 42.0% of the injected performance degradation. The dominant failure is not invalid code, but functionally correct and constraint-compliant changes that fail to improve end-to-end performance, highlighting system-level bottleneck localization as a key challenge for current coding agents. The source code and data are available at https://github.com/zyzcjnb/microperf.</summary>
+  </entry>
   <entry>
     <title>Benchmarking and Error Analysis of Deep Search and Deep Research LLM Agents</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.29346.html" />
@@ -522,38 +555,5 @@
     <author><name>Junming Zhang</name></author><author><name>Rubin Wei</name></author><author><name>Xu Cheng</name></author><author><name>Hao Sun</name></author><author><name>Jiarui Wang</name></author><author><name>Ruoxi Cheng</name></author><author><name>Xiquan Wang</name></author><author><name>Peisong Wu</name></author><author><name>Mingsong Chen</name></author><author><name>Zhouhan Lin</name></author>
     <category term="Dialogue" />
     <summary>In long-term interactions with large language model (LLM) agents, users reveal habits through their choices and actions. These habits capture implicit user information that agents must infer across conversations. However, individual observations may provide only partial evidence about a habit or when it applies. Retaining past interactions alone does not ensure that agents can infer habits and apply them appropriately. We introduce HABIT-Bench to evaluate how well agent memory systems infer habits from weak evidence and apply them to later requests. We construct synthetic user histories from task-oriented dialogue data and controlled habit graphs. The histories span hundreds of sessions across food, finance, software, and travel. Four-choice tasks assess agents&#x27; ability to infer user habits and apply them appropriately. They include temporary exceptions, changes in habits, and suggestions that users have not accepted. Sampled tasks undergo independent human review. We evaluate eight memory methods with Qwen3-235B-A22B and GLM-5.3-Flash. The best-performing memory method achieves 33.61\% macro accuracy across the four domains. Performance remains limited even when annotated evidence is supplied directly. These results expose a persistent gap between access to past interactions and the ability to infer and appropriately use user habits.</summary>
-  </entry>
-  <entry>
-    <title>Can Agents Keep Secrets They Were Never Told? Benchmarking Latent Privacy Risks Across Sessions with MemJoin</title>
-    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.24359.html" />
-    <link rel="related" href="https://arxiv.org/abs/2610.24359v1" />
-    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.24359.html</id>
-    <published>2026-10-17T01:20:36Z</published>
-    <updated>2026-10-17T01:20:36Z</updated>
-    <author><name>Qishun Yang</name></author><author><name>Shu Yang</name></author><author><name>Difei Xu</name></author><author><name>Di Wang</name></author><author><name>Meng Ding</name></author>
-    <category term="General" />
-    <summary>To support sustained interactions and personalized assistance, agents use long-term memory to retain and combine user information across sessions. Reusing such memories can lead an agent to state a sensitive relation while completing an ordinary task that does not require it. The relation to protect and the combination of clues that reveal it may remain hidden at memory write time, when later records and tasks are still unknown. In this paper, we introduce MemJoin, a privacy benchmark of 288 synthetic analysis cases in which the complete history entails a sensitive relation, but every individual session is insufficient. We evaluate six memory systems with the same answer-generating model, alongside full-history and no-history controls. Each system writes and updates memories in session order and later retrieves context for an ordinary task, while target annotations remain with the evaluator. We separately check which target attribute values appear in stored records and retrieved context, and whether the final answer states the complete, person-linked relation. In a separate paired test on a prespecified subset, removing shared identifiers and other connecting clues can change complete-relation output while all checked target attribute values remain visible. These findings show why checking attribute visibility alone is insufficient to evaluate what records from different sessions reveal together.</summary>
-  </entry>
-  <entry>
-    <title>ROAR: Benchmarking LMM Agents under Real-Time Constraints in Multiplayer Action-Shooter Games</title>
-    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.24282.html" />
-    <link rel="related" href="https://arxiv.org/abs/2610.24282v1" />
-    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.24282.html</id>
-    <published>2026-10-16T22:26:43Z</published>
-    <updated>2026-10-16T22:26:43Z</updated>
-    <author><name>Dawei Wang</name></author><author><name>Di Zhao</name></author><author><name>Jianran Yu</name></author><author><name>Chengming Zhou</name></author><author><name>Marci Chi Ma</name></author><author><name>Xiaoyang Liu</name></author><author><name>Beining Zhang</name></author><author><name>Shuliang Chu</name></author><author><name>Yun Sing Koh</name></author><author><name>Gary Ushaw</name></author>
-    <category term="Multi-agent" />
-    <summary>Large multimodal models (LMMs) are increasingly deployed as agents that perceive, reason, and act in interactive multi-agent environments. Yet most existing benchmarks for LMM-based agents in multi-agent settings remain turn-based: the environment and other agents pause while an agent performs inference. Such protocols obscure a fundamental challenge of real-time constraints, where the world continues to evolve and delayed decisions may become outdated before execution. Motivated by this limitation, we introduce ROAR, a multiplayer action-shooter game environment for evaluating LMM-based agents in multi-agent settings under real-time constraints. ROAR covers cooperative, competitive, mixed cooperative-competitive, and basic single-agent scenarios. We further propose a Multi-Agent Asynchronous Gym interface that decouples environment evolution from agent reasoning by running the environment and each agent in separate threads, enabling the environment to advance at fixed time intervals without waiting for LMM inference and allowing agents to reason independently without blocking one another. ROAR also features convenient deployment, multimodal observations, and customizable levels. ROAR offers a practical testbed for advancing LMM-based agents beyond static, turn-based evaluation toward real-time multi-agent decision-making.</summary>
-  </entry>
-  <entry>
-    <title>AM-Bench: A Unified Taxonomy and Evaluation Suite for Agentic Misalignment</title>
-    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.24264.html" />
-    <link rel="related" href="https://arxiv.org/abs/2610.24264v1" />
-    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.24264.html</id>
-    <published>2026-10-16T21:46:19Z</published>
-    <updated>2026-10-16T21:46:19Z</updated>
-    <author><name>Eric Zhang</name></author><author><name>Terry Jingchen Zhang</name></author><author><name>Chijioke Ugwuanyi</name></author><author><name>Jerick Shi</name></author><author><name>Bernhard Schölkopf</name></author><author><name>Zhijing Jin</name></author>
-    <category term="Safety" />
-    <summary>As LLM-based agents are deployed with increasing autonomy in real-world environments, a critical failure mode emerges: agentic misalignment, where agents choose harmful actions over failure. However, existing safety benchmarks primarily evaluate whether agents comply with explicitly harmful instructions, leaving the conditions that cause agents to choose harmful actions poorly understood. To address this limitation, we propose AM-Bench, a unified taxonomy and 35 scenario evaluation benchmark spanning seven industries for agentic misalignment grounded in the fraud triangle, a well-established criminological framework explaining goal-directed misconduct. We adapt this framework to agentic environments and construct our evaluation suite and detection systems along three dimensions: perceived threat, perceived opportunity, and reasoning. We operationalize each dimension into structured subcategories rooted in prior theory: five threat categories derived from the instrumental convergence thesis, seven opportunity categories drawn from the Emergent Strategic Reasoning Risks (ESRR) taxonomy, and a novel four-question binary reasoning framework synthesized from prior literature. Our evaluation of 10 frontier models reveals a 62-percentage-point gap in misalignment across scenarios, with Gemini 3 Flash and Gemini 3.1 Pro exhibiting the highest levels of agentic misalignment while Claude Sonnet 4.6 displays near-zero rates across all conditions. Our reasoning framework further reveals that models may exhibit harmful behaviours without explicit situational awareness or explanation, complicating both mitigation and detection. AM-Bench scenarios and code are available at https://github.com/AI4Collaboration/Agentic-Misalignment-Bench</summary>
   </entry>
 </feed>
