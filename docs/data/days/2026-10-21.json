@@ -1,10 +1,16 @@
 {
   "date": "2026-10-21",
-  "count": 6,
+  "count": 8,
   "report": {
     "date": "2026-10-21",
-    "count": 6,
+    "count": 8,
     "themes": [
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
       {
         "id": "coding",
         "count": 2,
@@ -24,6 +30,12 @@
         "zh": "规划 / 推理"
       },
       {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
         "id": "multi-agent",
         "count": 1,
         "en": "Multi-agent",
@@ -36,12 +48,6 @@
         "zh": "科研智能体"
       },
       {
-        "id": "memory",
-        "count": 1,
-        "en": "Memory",
-        "zh": "记忆"
-      },
-      {
         "id": "embodied",
         "count": 1,
         "en": "Embodied / robotics",
@@ -49,8 +55,8 @@
       }
     ],
     "en": {
-      "headline": "6 new agent benchmarks",
-      "summary": "On October 21, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Coding agents (2), Safety (2), Planning / reasoning (2), and Multi-agent (1).",
+      "headline": "8 new agent benchmarks",
+      "summary": "On October 21, 2026, arXiv listed 8 new agent benchmarks. Work clustered around Memory (2), Coding agents (2), Safety (2), and Planning / reasoning (2).",
       "highlights": [
         {
           "id": "2610.29014",
@@ -70,8 +76,8 @@
       ]
     },
     "zh": {
-      "headline": "新增 6 篇 Agent Benchmark",
-      "summary": "2026年10月21日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在代码智能体（2）、安全（2）、规划 / 推理（2）、多智能体（1）。",
+      "headline": "新增 8 篇 Agent Benchmark",
+      "summary": "2026年10月21日，arXiv 新增 8 篇 Agent Benchmark。当日主题集中在记忆（2）、代码智能体（2）、安全（2）、规划 / 推理（2）。",
       "highlights": [
         {
           "id": "2610.29014",
@@ -92,6 +98,70 @@
     }
   },
   "papers": [
+    {
+      "id": "2610.30533",
+      "title": "IFC-MCQ: Automatically Generating Multiple-Choice Benchmarks for Evaluating LLM Agents on IFC Data Retrieval",
+      "abstract": "Industry Foundation Classes (IFC), the standard for building information exchange in architecture, engineering, and construction (AEC), is increasingly queried through large language models (LLMs) using natural language. Evaluating these systems at scale is difficult because free-text answers require costly human or LLM-based review. We propose IFC-MCQ, a method that automatically generates multiple-choice benchmarks from IFC files for exact option-set grading. The taxonomy covers 15 categories and 36 subtypes across four groups, with answer keys derived from the file and distractors constructed from file-derived values or predefined rules. We applied IFC-MCQ to IFC models of varying sizes and modelling characteristics to assess generation coverage and evaluated two agentic configurations on selected models using tool- and code-based retrieval. The evaluation exposed category-specific failure modes and showed that performance can vary with the source IFC model and retrieval interface. IFC-MCQ enables scalable benchmarking of LLM-based IFC retrieval in AEC workflows.",
+      "authors": [
+        "Rabindra Lamsal",
+        "Sisi Zlatanova",
+        "Xuesong Shen"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-10-21T23:38:01Z",
+      "updated": "2026-10-21T23:38:01Z",
+      "announced_date": "2026-10-21",
+      "first_seen": "2026-10-21",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.30533v1",
+        "pdf": "https://arxiv.org/pdf/2610.30533v1",
+        "html": "https://arxiv.org/html/2610.30533"
+      },
+      "score": 15,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.30485",
+      "title": "Why Bother Me Again? Benchmarking Personal Agent Memory for Interaction Preferences",
+      "abstract": "Personal intelligence systems are taking on increasingly complex everyday tasks, yet repeated questions, unnecessary confirmations, and unwanted outreach can turn capable assistance into interaction burden. Reducing this burden requires agents to remember how users want to be assisted. However, existing memory benchmarks focus on factual recall and personalized answers and rarely test how agents learn and act on interaction preferences. We introduce MemPABench, an interactive environment for on-policy evaluation of memory in personal agents. MemPABench poses long-horizon tasks requiring agents to decide when to clarify, confirm, or act autonomously. Four grounded simulated users hold 14 preferences across work and personal contexts. Their feedback spans 99 sessions over four months, with five event-driven changes per user testing memory updates. We evaluate preference selection, delivered behavior, and sensitivity to context and preference change. Evaluating four memory systems across four LLM backbones, we find that current memory brings limited gains in preference selection. Retrieval-based systems (i.e. Mem0, MemOS, simple RAG) do not outperform No Memory, while File-based memory improves accuracy but applies preferences beyond relevant contexts. Our analysis shows that current memory struggles to retrieve interaction preferences and adapt to preference changes. Even with the correct preference available, overriding the agent's default interaction habits remains challenging. The environment and dataset are available at https://mempabench.com.",
+      "authors": [
+        "Jialin Li",
+        "Zhenhao Chen",
+        "Hanjun Luo",
+        "Hanan Salam"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-21T22:08:49Z",
+      "updated": "2026-10-21T22:08:49Z",
+      "announced_date": "2026-10-21",
+      "first_seen": "2026-10-21",
+      "comment": "97 pages. Project page: https://mempabench.com",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.30485v1",
+        "pdf": "https://arxiv.org/pdf/2610.30485v1",
+        "html": "https://arxiv.org/html/2610.30485"
+      },
+      "score": 9,
+      "tags": [
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    },
     {
       "id": "2610.30113",
       "title": "Quant-Arena: Benchmarking LLM Agents for Quantitative Trading Research",

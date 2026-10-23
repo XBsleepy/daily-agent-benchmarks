@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DuoCook: An Overcooked-Inspired Benchmark for Visual Planning and Coordination | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Coordinating two players in a cooking task requires a vision-language agent to track changing scene states, sequence recipe steps…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Memory, Planning / reasoning, Multimodal, agent benchmark, LLM agent, arXiv, 2610.31511" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.31511.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="DuoCook: An Overcooked-Inspired Benchmark for Visual Planning and Coordination" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Coordinating two players in a cooking task requires a vision-language agent to track changing scene states, sequence recipe steps…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.31511.html" />
+    <meta property="article:published_time" content="2026-10-22T16:26:38Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="DuoCook: An Overcooked-Inspired Benchmark for Visual Planning and Coordination" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Coordinating two players in a cooking task requires a vision-language agent to track changing scene states, sequence recipe steps…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "DuoCook: An Overcooked-Inspired Benchmark for Visual Planning and Coordination",
+  "name": "DuoCook: An Overcooked-Inspired Benchmark for Visual Planning and Coordination",
+  "abstract": "Coordinating two players in a cooking task requires a vision-language agent to track changing scene states, sequence recipe steps, and allocate shared resources under a time budget. We introduce an Overcooked-inspired benchmark for evaluating these capabilities in Unreal Engine environments constructed using coding agents. A single vision-language model controls both players from top-down visual observations, selecting high-level actions while the engine executes navigation. The benchmark contains 20 maps in five categories. These categories support evaluation of centralized coordination under equipment contention, changing terrain, and handoff dependencies. A prop legend and pot ingredient-count indicators provide explicit visual cues, while grid-based destinations support spatial grounding. The evaluation compares four VLMs on all 20 maps, measuring task score, order completion, delivery precision, action acceptance rate, and model API expenditure. A memory ablation on the same 20 maps examines the effect of a shared, self-authored notebook while retaining six-response action history in both conditions. The strongest evaluated model, \\texttt{gpt-6-astra}, achieves 26.2\\% mean order completion. Notebook memory has mixed score effects across models, with positive mean differences for Claude and Qwen and negative differences for GPT and Gemini.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Ziyi Jiao"
+    },
+    {
+      "@type": "Person",
+      "name": "Heng Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Drishti Regmi"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaokang Ye"
+    },
+    {
+      "@type": "Person",
+      "name": "Lianhui Qin"
+    },
+    {
+      "@type": "Person",
+      "name": "Peter Yichen Chen"
+    }
+  ],
+  "datePublished": "2026-10-22T16:26:38Z",
+  "dateModified": "2026-10-22T16:26:38Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.31511.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.31511.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.31511v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.31511"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Memory",
+    "Planning / reasoning",
+    "Multimodal",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.31511v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.31511"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>DuoCook: An Overcooked-Inspired Benchmark for Visual Planning and Coordination</h1>
+        <div class="meta">
+          Ziyi Jiao, Heng Zhang, Drishti Regmi, Xiaokang Ye, Lianhui Qin, Peter Yichen Chen
+          · 2610.31511
+          · <time datetime="2026-10-22">2026-10-22</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Memory</span><span class="chip">Planning / reasoning</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Coordinating two players in a cooking task requires a vision-language agent to track changing scene states, sequence recipe steps, and allocate shared resources under a time budget. We introduce an Overcooked-inspired benchmark for evaluating these capabilities in Unreal Engine environments constructed using coding agents. A single vision-language model controls both players from top-down visual observations, selecting high-level actions while the engine executes navigation. The benchmark contains 20 maps in five categories. These categories support evaluation of centralized coordination under equipment contention, changing terrain, and handoff dependencies. A prop legend and pot ingredient-count indicators provide explicit visual cues, while grid-based destinations support spatial grounding. The evaluation compares four VLMs on all 20 maps, measuring task score, order completion, delivery precision, action acceptance rate, and model API expenditure. A memory ablation on the same 20 maps examines the effect of a shared, self-authored notebook while retaining six-response action history in both conditions. The strongest evaluated model, \texttt{gpt-6-astra}, achieves 26.2\% mean order completion. Notebook memory has mixed score effects across models, with positive mean differences for Claude and Qwen and negative differences for GPT and Gemini.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.31511v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.31511v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.31511" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.29695.html"><strong>Benchmarking Coding Agents for System-Level Performance Optimization</strong></a> <span>2026-10-21</span></li>
+          <li><a href="2610.29014.html"><strong>GenXR-Bench: Benchmarking Coding Agents for Interactive XR Development</strong></a> <span>2026-10-21</span></li>
+          <li><a href="2610.28934.html"><strong>Back Up Before You Regret: Measuring Backup Awareness and Automating Backup in Coding Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.27524.html"><strong>MemDev-Bench: Does Memory Help Code Agents?Benchmarking Memory Systems over Real Repository Histories</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.26394.html"><strong>When Coding Agents Outpace Review: Evaluating PRD-Driven Development in Mature Enterprise Repositories</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.25899.html"><strong>SWE-Residual: Evaluating Starting-State Robustness of Coding Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.24304.html"><strong>CME-SpectrumBench: Can LLMs Analyze Condensed Matter Spectral Data?</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.27234.html"><strong>EGI-BENCH: An Enterprise General Intelligence Benchmark Suite</strong></a> <span>2026-10-19</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

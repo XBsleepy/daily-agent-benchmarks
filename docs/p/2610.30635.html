@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>What the Specification Did Not Say: Specification-Oracle Gaps in Test-Graded Coding-Agent Benchmarks | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Coding-agent benchmarks often describe a task in natural language but grade it with tests taken from the upstream project. Passing…" />
+    <meta name="keywords" content="Safety, agent benchmark, LLM agent, arXiv, 2610.30635" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.30635.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="What the Specification Did Not Say: Specification-Oracle Gaps in Test-Graded Coding-Agent Benchmarks" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Coding-agent benchmarks often describe a task in natural language but grade it with tests taken from the upstream project. Passing…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.30635.html" />
+    <meta property="article:published_time" content="2026-10-22T02:56:44Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="What the Specification Did Not Say: Specification-Oracle Gaps in Test-Graded Coding-Agent Benchmarks" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Coding-agent benchmarks often describe a task in natural language but grade it with tests taken from the upstream project. Passing…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "What the Specification Did Not Say: Specification-Oracle Gaps in Test-Graded Coding-Agent Benchmarks",
+  "name": "What the Specification Did Not Say: Specification-Oracle Gaps in Test-Graded Coding-Agent Benchmarks",
+  "abstract": "Coding-agent benchmarks often describe a task in natural language but grade it with tests taken from the upstream project. Passing those tests can require information the description never states: a constant's name, a module path, an exact message. We call this a specification-oracle gap: where it exists, a benchmark also measures whether an agent reproduces upstream implementation details. We formalise the gap, including the inconsistencies that chains of dependent tasks add, and build a static audit for five languages that classifies every name-, path- and literal-level dependency of every scored test (held-out precision 89.2%, recall 92.9%). On SWE-Milestone (98 graded milestones, 35 published runs), 25 milestones contain a test that depends on an unstated, non-inferable name or path. Build units with such a dependency fail in 80.6% of runs, against 48.4% for comparable units without one, and withholding a single hidden name from the reference stops its unit's tests from compiling in 126 of 128 cases. The leaderboard's ranking is robust to removing the affected tests, but they shift scores within repositories and favour agents that reproduce upstream names. Across four further benchmarks, prevalence appears to follow construction: a third or more of the tasks are affected where specifications are release notes or LLM summaries, almost none where tasks are screened or written for their tests; how much a gap costs depends on how the harness grades. We release the audit, corrected filter lists and specification addenda.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Fei Ding"
+    }
+  ],
+  "datePublished": "2026-10-22T02:56:44Z",
+  "dateModified": "2026-10-22T02:56:44Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.30635.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.30635.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.30635v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.30635"
+  },
+  "keywords": [
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Safety"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.30635v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.30635"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>What the Specification Did Not Say: Specification-Oracle Gaps in Test-Graded Coding-Agent Benchmarks</h1>
+        <div class="meta">
+          Fei Ding
+          · 2610.30635
+          · <time datetime="2026-10-22">2026-10-22</time>
+          · Safety
+        </div>
+        <div class="themes"><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Coding-agent benchmarks often describe a task in natural language but grade it with tests taken from the upstream project. Passing those tests can require information the description never states: a constant&#x27;s name, a module path, an exact message. We call this a specification-oracle gap: where it exists, a benchmark also measures whether an agent reproduces upstream implementation details. We formalise the gap, including the inconsistencies that chains of dependent tasks add, and build a static audit for five languages that classifies every name-, path- and literal-level dependency of every scored test (held-out precision 89.2%, recall 92.9%). On SWE-Milestone (98 graded milestones, 35 published runs), 25 milestones contain a test that depends on an unstated, non-inferable name or path. Build units with such a dependency fail in 80.6% of runs, against 48.4% for comparable units without one, and withholding a single hidden name from the reference stops its unit&#x27;s tests from compiling in 126 of 128 cases. The leaderboard&#x27;s ranking is robust to removing the affected tests, but they shift scores within repositories and favour agents that reproduce upstream names. Across four further benchmarks, prevalence appears to follow construction: a third or more of the tasks are affected where specifications are release notes or LLM summaries, almost none where tasks are screened or written for their tests; how much a gap costs depends on how the harness grades. We release the audit, corrected filter lists and specification addenda.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.30635v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.30635v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.30635" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Safety benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.31650.html"><strong>EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence</strong></a> <span>2026-10-22</span></li>
+          <li><a href="2610.29346.html"><strong>Benchmarking and Error Analysis of Deep Search and Deep Research LLM Agents</strong></a> <span>2026-10-21</span></li>
+          <li><a href="2610.28982.html"><strong>Behavior Beyond Text: Evaluating Refusal Transfer Failure in LLM Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.28381.html"><strong>CAPSafe: A Benchmark for Contextual Action and Plan Safety Reasoning in Embodied Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.27548.html"><strong>Act on Your Behalf, Beyond Your Authorization: Benchmarking LLM Agent Authorization Alignment</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.27295.html"><strong>RealControlBench: A Benchmark for Interpretability-Informed Fine-Grained Control of LLMs and Agents</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.25069.html"><strong>Auto-MD-bench: Evaluating Autoresearch Agents for Real-World Medical Tasks</strong></a> <span>2026-10-18</span></li>
+          <li><a href="2610.24264.html"><strong>AM-Bench: A Unified Taxonomy and Evaluation Suite for Agentic Misalignment</strong></a> <span>2026-10-16</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

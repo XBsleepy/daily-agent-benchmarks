@@ -1,0 +1,421 @@
+{
+  "date": "2026-10-22",
+  "count": 9,
+  "report": {
+    "date": "2026-10-22",
+    "count": 9,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 3,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multimodal",
+        "count": 3,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "research",
+        "count": 2,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      }
+    ],
+    "en": {
+      "headline": "9 new agent benchmarks",
+      "summary": "On October 22, 2026, arXiv listed 9 new agent benchmarks. Work clustered around Safety (3), Multimodal (3), Memory (2), and Planning / reasoning (2).",
+      "highlights": [
+        {
+          "id": "2610.31494",
+          "title": "AgentVQA: A Unified Benchmark for Agentic Visual Understanding",
+          "blurb": "Vision-language models (VLMs) can perform a broad range of tasks across diverse settings, yet their performance in agentic contexts remains poorly understood."
+        },
+        {
+          "id": "2610.31650",
+          "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
+          "blurb": "Tool-using language model agents rely on environmental facts to decide whether an action is permitted."
+        },
+        {
+          "id": "2610.31404",
+          "title": "AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack",
+          "blurb": "Computer-use agents increasingly handle private information and act on users' behalf across desktop and web applications, including email."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 9 篇 Agent Benchmark",
+      "summary": "2026年10月22日，arXiv 新增 9 篇 Agent Benchmark。当日主题集中在安全（3）、多模态（3）、记忆（2）、规划 / 推理（2）。",
+      "highlights": [
+        {
+          "id": "2610.31494",
+          "title": "AgentVQA: A Unified Benchmark for Agentic Visual Understanding",
+          "blurb": "Vision-language models (VLMs) can perform a broad range of tasks across diverse settings, yet their performance in agentic contexts remains poorly understood."
+        },
+        {
+          "id": "2610.31650",
+          "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
+          "blurb": "Tool-using language model agents rely on environmental facts to decide whether an action is permitted."
+        },
+        {
+          "id": "2610.31404",
+          "title": "AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack",
+          "blurb": "Computer-use agents increasingly handle private information and act on users' behalf across desktop and web applications, including email."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2610.31650",
+      "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
+      "abstract": "Tool-using language model agents rely on environmental facts to decide whether an action is permitted. When a tool response omits a safety-relevant fact, an agent may carry out a prohibited action even though the user request is benign and every returned statement is true. We introduce \\bench{}, an executable benchmark for evaluating unsafe execution, safety boundaries, and evidence recovery in LLM agents under missing evidence. It contains 300 matched unsafe/safe task pairs across six domains. By systematically suppressing critical facts, the benchmark measures unsafe execution under critical evidence omission and determines the minimum observed failure cardinality, including failures with full evidence and cases with no observed failure after exhaustive testing. An independent audit tool tests whether agents seek missing facts and then withhold prohibited actions while completing permissible tasks. The benchmark reveals substantial variation across the ten models in omission robustness, evidence acquisition, and appropriate action. Resistance to missing evidence does not necessarily translate into useful recovery. Recovery access reduces unsafe execution for all ten models, but agents differ in whether they actively obtain the missing facts and use them to act appropriately in both worlds.",
+      "authors": [
+        "Qijin Zhang",
+        "Hanzhen Wang",
+        "Yuehan Zhao",
+        "Haoyu Dai",
+        "Yao Shu",
+        "Zhongxiang Dai",
+        "Shuang Qiu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-22T17:57:04Z",
+      "updated": "2026-10-22T17:57:04Z",
+      "announced_date": "2026-10-22",
+      "first_seen": "2026-10-22",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.31650v1",
+        "pdf": "https://arxiv.org/pdf/2610.31650v1",
+        "html": "https://arxiv.org/html/2610.31650"
+      },
+      "score": 18,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2610.31511",
+      "title": "DuoCook: An Overcooked-Inspired Benchmark for Visual Planning and Coordination",
+      "abstract": "Coordinating two players in a cooking task requires a vision-language agent to track changing scene states, sequence recipe steps, and allocate shared resources under a time budget. We introduce an Overcooked-inspired benchmark for evaluating these capabilities in Unreal Engine environments constructed using coding agents. A single vision-language model controls both players from top-down visual observations, selecting high-level actions while the engine executes navigation. The benchmark contains 20 maps in five categories. These categories support evaluation of centralized coordination under equipment contention, changing terrain, and handoff dependencies. A prop legend and pot ingredient-count indicators provide explicit visual cues, while grid-based destinations support spatial grounding. The evaluation compares four VLMs on all 20 maps, measuring task score, order completion, delivery precision, action acceptance rate, and model API expenditure. A memory ablation on the same 20 maps examines the effect of a shared, self-authored notebook while retaining six-response action history in both conditions. The strongest evaluated model, \\texttt{gpt-6-astra}, achieves 26.2\\% mean order completion. Notebook memory has mixed score effects across models, with positive mean differences for Claude and Qwen and negative differences for GPT and Gemini.",
+      "authors": [
+        "Ziyi Jiao",
+        "Heng Zhang",
+        "Drishti Regmi",
+        "Xiaokang Ye",
+        "Lianhui Qin",
+        "Peter Yichen Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-22T16:26:38Z",
+      "updated": "2026-10-22T16:26:38Z",
+      "announced_date": "2026-10-22",
+      "first_seen": "2026-10-22",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.31511v1",
+        "pdf": "https://arxiv.org/pdf/2610.31511v1",
+        "html": "https://arxiv.org/html/2610.31511"
+      },
+      "score": 12,
+      "tags": [
+        "coding",
+        "memory",
+        "planning",
+        "multimodal"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.31494",
+      "title": "AgentVQA: A Unified Benchmark for Agentic Visual Understanding",
+      "abstract": "Vision-language models (VLMs) can perform a broad range of tasks across diverse settings, yet their performance in agentic contexts remains poorly understood. Although online evaluations in simulators and real-world environments are essential for measuring interactive agent performance, they are costly and challenging to scale. Complementary offline VQA benchmarks can enable faster and more reliable comparisons across agentic domains, yet existing benchmarks remain limited and fragmented. To address this gap, we introduce AgentVQA, an offline benchmark for evaluating VLMs on realistic agentic scenarios across five agent domains: Web Agents, Robotics, Egocentric Videos, Games, and Spatial Planning. We build AgentVQA by manually selecting 1000 challenging, real-world agent examples from 23 source datasets and adapting them for reliable offline evaluation. The resulting benchmark preserves realistic scenarios from interactive environments across diverse domains, and its model rankings track those from corresponding online evaluations. Across the 22 evaluated models, the best achieves only 58.5% accuracy. Our cross-domain analysis shows that errors are driven primarily by failures to ground and maintain accurate representations of the current and evolving visual state, including localizing relevant UI elements, interpreting motion, tracking state changes over time, and inferring 3D spatial relationships, rather than by task misinterpretation or downstream logical reasoning.",
+      "authors": [
+        "Advait Gupta",
+        "Sachin Konan",
+        "Tom Yin",
+        "Gabriel Sarch",
+        "Zhuang Liu"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-10-22T16:13:35Z",
+      "updated": "2026-10-22T16:13:35Z",
+      "announced_date": "2026-10-22",
+      "first_seen": "2026-10-22",
+      "comment": "Project page: https://zlab-princeton.github.io/AgentVQA",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.31494v1",
+        "pdf": "https://arxiv.org/pdf/2610.31494v1",
+        "html": "https://arxiv.org/html/2610.31494"
+      },
+      "score": 20,
+      "tags": [
+        "web",
+        "planning",
+        "multimodal"
+      ],
+      "field": "web",
+      "citations": 0
+    },
+    {
+      "id": "2610.31404",
+      "title": "AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack",
+      "abstract": "Computer-use agents increasingly handle private information and act on users' behalf across desktop and web applications, including email. Phishing therefore poses privacy and security risks that depend not only on whether agents recognize malicious messages, but also on how they respond. Existing phishing datasets were developed primarily for conventional detection, leaving agent susceptibility to persuasive malicious requests insufficiently characterized. To expose vulnerabilities that pre-existing datasets may miss, we introduce AgentPhishing, a benchmark for evaluating whether persuasive phishing attacks can evade detection and induce LLM email agents to comply with malicious requests. We develop PhishOpt, which optimizes reusable email-generation skills against individual agents under fixed benchmark constraints and a realism constraint. We analyze the generated emails using Cialdini's persuasion principles to identify strategies associated with agent failures and use these findings to construct a universal generation skill. Our evaluation shows that agents can handle pre-existing phishing emails safely yet remain susceptible to attacks adapted to agent behavior, while in an AgentPhishing evaluation of nine agents, four exhibit phishing-detection rates below $10\\%$ and malicious-request compliance rates above $45\\%$. These results highlight the limits of inferring agent safety from conventional phishing evaluations and the need to assess how agents respond to persuasive malicious requests.",
+      "authors": [
+        "Justin Tan",
+        "Miao Li",
+        "Ding Zhao"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-10-22T15:07:49Z",
+      "updated": "2026-10-22T15:07:49Z",
+      "announced_date": "2026-10-22",
+      "first_seen": "2026-10-22",
+      "comment": "28 pages, 6 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.31404v1",
+        "pdf": "https://arxiv.org/pdf/2610.31404v1",
+        "html": "https://arxiv.org/html/2610.31404"
+      },
+      "score": 17,
+      "tags": [
+        "gui",
+        "computer-use",
+        "safety"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.31372",
+      "title": "RIDAR: Safeguarding Research Integrity in Autonomous Research Agents via Automated Detection and Runtime Intervention",
+      "abstract": "Autonomous research agents are increasingly used to automate large portions of scientific research, yet they are prone to research integrity violations (RIVs): behaviors that compromise the validity, reproducibility, or faithfulness of the research process. We present RIDAR, a framework for automated RIV detection and runtime intervention. First, we introduce RIVT, a comprehensive taxonomy of 14 RIV types spanning the full research lifecycle. Building on RIVT, we present RIDAR-post-hoc, a framework to detect RIVs within agent trajectories. RIDAR-post-hoc achieves 85.2% F1 performance on RIV-Gold, a benchmark for RIV detection with 60 expert-annotated trajectories. Applying RIDAR-post-hoc to RIV-Wild, a dataset of 300 agent trajectories across 50 distinct research tasks, we detect 3,964 RIV instances in 99.7% of trajectories, revealing the prevalence of RIVs in current agents. Finally, we present RIDAR-runtime, a framework for dynamically detecting and correcting RIVs during agent runtime. RIDAR-runtime effectively reduces agent RIVs remaining at task completion by 36.8%. We will release our code and data to facilitate future research.",
+      "authors": [
+        "Jiening Siow",
+        "Amy Xin",
+        "Junjie Wang",
+        "Ziyu Tang",
+        "Zijun Yao",
+        "Yunjia Qi",
+        "Fanjin Zhang",
+        "Lei Hou",
+        "Jie Tang",
+        "Juanzi Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-22T14:43:36Z",
+      "updated": "2026-10-22T14:43:36Z",
+      "announced_date": "2026-10-22",
+      "first_seen": "2026-10-22",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.31372v1",
+        "pdf": "https://arxiv.org/pdf/2610.31372v1",
+        "html": "https://arxiv.org/html/2610.31372"
+      },
+      "score": 11,
+      "tags": [
+        "research",
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2610.31158",
+      "title": "Beyond Watching and Searching: Benchmarking Agents for Video-centered Deep Research Reports",
+      "abstract": "Deep research agents synthesize open-web evidence into long reports, but current benchmarks do not evaluate research centered on a source video. We introduce Video-Centered Deep Research Report Generation. Given a video and user request, an agent identifies research questions, retrieves external multimodal evidence, and produces an interactive report linked to relevant video moments. This task has direct practical value because it helps users locate relevant moments, verify claims, reproduce demonstrated procedures, and make informed decisions from video content. We present a skill-based workflow and OmniDR-Bench for this task. For evaluation, we propose Omni Atomic Rubric Trees (Omni-ARTs). Each tree contains three dimensions, 23 shared directions, and task-specific atomic binary criteria. The directions test audiovisual grounding, multimodal evidence use, and interactive presentation. Audited Rubric Construction (ARC) builds these trees through independent evidence collection, automated checks, behavioral calibration, and iterative human review. OmniDR-Bench contains 50 Chinese and English tasks across 19 realworld subcategories. It includes 6,414 criteria. Across 18 agent configurations, the best system scores 63.3 out of 100. Current agents still need broader content coverage, stronger causal and logical analysis across modalities, and more accurate citation support. We further analyze models, harnesses, skill configurations, video categories, and research trajectories. The code and data are released at https://github.com/marinero4972/OmniDR-Bench.",
+      "authors": [
+        "Jiahao Meng",
+        "Qize Yang",
+        "Yuxuan Wang",
+        "Yunfei Chu",
+        "Wensi Dai",
+        "Jin Xu",
+        "Yunhai Tong"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-10-22T12:15:30Z",
+      "updated": "2026-10-22T12:15:30Z",
+      "announced_date": "2026-10-22",
+      "first_seen": "2026-10-22",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.31158v1",
+        "pdf": "https://arxiv.org/pdf/2610.31158v1",
+        "html": "https://arxiv.org/html/2610.31158"
+      },
+      "score": 10,
+      "tags": [
+        "research",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2610.30989",
+      "title": "ColaBench: Evaluating Memory-Guided Knowledge Acquisition in Personal Agents",
+      "abstract": "Personal agents need to draw on long-term interaction history to retrieve and apply external knowledge suited to a user's current request. Even an answer grounded in relevant documents can be unsuitable when it overlooks the user's circumstances. This creates two connected challenges: using historical conditions to identify the knowledge needed for a new request, and applying that knowledge to the user's situation. Existing benchmarks advance memory recall, personalized retrieval, and memory-guided action, while the joint evaluation of these two challenges remains underexplored. We introduce ColaBench, a synthetic benchmark in health and daily living, with 349 tasks across 10 Profiles and a knowledge base of 13,033 documents. Its Evidence Graph connects personal conditions to their disclosures across public interaction sessions, records prior document exposure, and links answer requirements to personal and newly acquired document evidence. We also introduce MemKB, which uses state summaries to inform queries and rule application, and memory-document links to retrieve knowledge associated with the user's history. MemKB achieves 86.25% Accuracy with an average of 4.07 interaction rounds per task. Task-level analysis finds larger gains on tasks integrating information across multiple historical Facts; error analysis further identifies unsupported personal assumptions and rule misapplication as obstacles to using retrieved evidence. ColaBench provides traceable tasks and an evaluation framework for studying how memory guides knowledge acquisition and rule application.",
+      "authors": [
+        "Wenjie Zhang",
+        "Zhichao Shi",
+        "Xuhui Jiang",
+        "Xiaojun Wu",
+        "Cehao Yang",
+        "Chengjin Xu",
+        "Xiaoning Song"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-22T09:34:52Z",
+      "updated": "2026-10-22T09:34:52Z",
+      "announced_date": "2026-10-22",
+      "first_seen": "2026-10-22",
+      "comment": "12 pages, 4 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.30989v1",
+        "pdf": "https://arxiv.org/pdf/2610.30989v1",
+        "html": "https://arxiv.org/html/2610.30989"
+      },
+      "score": 8,
+      "tags": [
+        "memory"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.30932",
+      "title": "UserArena: Benchmarking Interactive User Simulation for Long-Horizon Shopping Agents",
+      "abstract": "Agentic recommendation pursues shopper goals through sequences of context-dependent decisions. Developing and evaluating such policies requires faithful recommendation world models that capture both the interactive shopping environment and users' behavioral responses over long interactions. Existing resources rarely provide long-horizon, fine-grained real-user trajectories or support trajectory-level evaluation and offline validation against production A/B results. We introduce UserArena, a real-world e-commerce interactive benchmark containing 64,729 session trajectories from 11,010 users, spanning 566,102 items and 13 action types. UserArena pairs these trajectories with an interactive environment and supports offline validation against outcomes from a controlled production A/B test, enabling five-level evaluation from output validity and local decisions to sequential behavior, personalization, and outcomes. To improve simulator fidelity over these long-horizon interactions, we further propose On-Policy Trajectory Distillation (OPTD), which uses trajectory-level intent to provide dense teacher targets on student-generated rollouts. Experiments show that OPTD achieves the strongest overall fidelity among the evaluated simulators under UserArena's evaluation protocol and most closely reproduces the production policy effect in offline simulation.",
+      "authors": [
+        "Jujia Zhao",
+        "Jiakai Tang",
+        "Jing Yu",
+        "Wen Chen",
+        "Jian Wu",
+        "Han Zhu",
+        "Fei Sun",
+        "Suzan Verberne",
+        "Zhaochun Ren"
+      ],
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "published": "2026-10-22T08:54:16Z",
+      "updated": "2026-10-22T08:54:16Z",
+      "announced_date": "2026-10-22",
+      "first_seen": "2026-10-22",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.30932v1",
+        "pdf": "https://arxiv.org/pdf/2610.30932v1",
+        "html": "https://arxiv.org/html/2610.30932"
+      },
+      "score": 14,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.30635",
+      "title": "What the Specification Did Not Say: Specification-Oracle Gaps in Test-Graded Coding-Agent Benchmarks",
+      "abstract": "Coding-agent benchmarks often describe a task in natural language but grade it with tests taken from the upstream project. Passing those tests can require information the description never states: a constant's name, a module path, an exact message. We call this a specification-oracle gap: where it exists, a benchmark also measures whether an agent reproduces upstream implementation details. We formalise the gap, including the inconsistencies that chains of dependent tasks add, and build a static audit for five languages that classifies every name-, path- and literal-level dependency of every scored test (held-out precision 89.2%, recall 92.9%). On SWE-Milestone (98 graded milestones, 35 published runs), 25 milestones contain a test that depends on an unstated, non-inferable name or path. Build units with such a dependency fail in 80.6% of runs, against 48.4% for comparable units without one, and withholding a single hidden name from the reference stops its unit's tests from compiling in 126 of 128 cases. The leaderboard's ranking is robust to removing the affected tests, but they shift scores within repositories and favour agents that reproduce upstream names. Across four further benchmarks, prevalence appears to follow construction: a third or more of the tasks are affected where specifications are release notes or LLM summaries, almost none where tasks are screened or written for their tests; how much a gap costs depends on how the harness grades. We release the audit, corrected filter lists and specification addenda.",
+      "authors": [
+        "Fei Ding"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-10-22T02:56:44Z",
+      "updated": "2026-10-22T02:56:44Z",
+      "announced_date": "2026-10-22",
+      "first_seen": "2026-10-22",
+      "comment": "13 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.30635v1",
+        "pdf": "https://arxiv.org/pdf/2610.30635v1",
+        "html": "https://arxiv.org/html/2610.30635"
+      },
+      "score": 9,
+      "tags": [
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    }
+  ]
+}

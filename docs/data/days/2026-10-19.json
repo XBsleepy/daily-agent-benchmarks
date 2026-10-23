@@ -1,9 +1,9 @@
 {
   "date": "2026-10-19",
-  "count": 14,
+  "count": 15,
   "report": {
     "date": "2026-10-19",
-    "count": 14,
+    "count": 15,
     "themes": [
       {
         "id": "tool-use",
@@ -37,7 +37,7 @@
       },
       {
         "id": "multimodal",
-        "count": 1,
+        "count": 2,
         "en": "Multimodal",
         "zh": "多模态"
       },
@@ -55,8 +55,8 @@
       }
     ],
     "en": {
-      "headline": "14 new agent benchmarks",
-      "summary": "On October 19, 2026, arXiv listed 14 new agent benchmarks. Work clustered around Tool use (9), Planning / reasoning (8), Coding agents (4), and Safety (3).",
+      "headline": "15 new agent benchmarks",
+      "summary": "On October 19, 2026, arXiv listed 15 new agent benchmarks. Work clustered around Tool use (9), Planning / reasoning (8), Coding agents (4), and Safety (3).",
       "highlights": [
         {
           "id": "2610.25954",
@@ -76,8 +76,8 @@
       ]
     },
     "zh": {
-      "headline": "新增 14 篇 Agent Benchmark",
-      "summary": "2026年10月19日，arXiv 新增 14 篇 Agent Benchmark。当日主题集中在工具使用（9）、规划 / 推理（8）、代码智能体（4）、安全（3）。",
+      "headline": "新增 15 篇 Agent Benchmark",
+      "summary": "2026年10月19日，arXiv 新增 15 篇 Agent Benchmark。当日主题集中在工具使用（9）、规划 / 推理（8）、代码智能体（4）、安全（3）。",
       "highlights": [
         {
           "id": "2610.25954",
@@ -435,6 +435,45 @@
       "citations": 0
     },
     {
+      "id": "2610.26659",
+      "title": "SpatialScout: Can VLM Agents Actively Explore and Map 3D Scenes?",
+      "abstract": "Spatial intelligence requires agents to actively acquire visual evidence and integrate observations into a coherent representation of the three-dimensional world. Yet spatial question answering offers limited evidence of whether models can construct accurate metric maps through autonomous exploration. We introduce SpatialScout, a benchmark for evaluating vision-language model (VLM) agents on active object-level 3D mapping. SpatialScout comprises 80 diverse indoor scenes containing 3,140 target objects. Given an object inventory, RGB observations, camera calibration, and camera poses, agents control a camera to explore each scene and estimate object centers in a shared coordinate frame. The task requires coordinating viewpoint selection, cross-view association, geometric estimation, and map revision under bounded interaction budgets. Evaluation jointly measures localization accuracy and target coverage through object-scale overlap scores that penalize missing predictions. Experiments with frontier VLMs reveal substantial limitations: the strongest evaluated model, Claude Opus 5.5, achieves a mean overlap score of 41.71%, with 47.23% of targets exceeding an intersection-over-union (IoU) threshold of 0.5 and only 3.25% exceeding 0.9. These results reveal a substantial gap between recovering coarse object layouts and constructing complete, precise metric maps. SpatialScout provides a quantitative testbed for developing agents that build reliable 3D spatial representations through active perception. Code is available at https://github.com/JesseZZZZZ/SpatialScout.",
+      "authors": [
+        "Zhaoxi Zhang",
+        "Hao Liang",
+        "Linxuan Wu",
+        "Yiming Xu",
+        "Yifu Yuan",
+        "Kun Liang",
+        "Chenming Tang",
+        "Meiyi Qiang",
+        "Wentao Zhang",
+        "Weikang Li"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-10-19T16:17:48Z",
+      "updated": "2026-10-22T08:51:38Z",
+      "announced_date": "2026-10-19",
+      "first_seen": "2026-10-19",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.26659v3",
+        "pdf": "https://arxiv.org/pdf/2610.26659v3",
+        "html": "https://arxiv.org/html/2610.26659"
+      },
+      "score": 12,
+      "tags": [
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
       "id": "2610.26342",
       "title": "VibeTraining-Bench: Data-Trainer-Harness Co-Design for Iterative System Improvement",
       "abstract": "Recursive self-improvement (RSI) requires agents to diagnose system bottlenecks and coordinate improvements across training and inference. We refer to the agents' capability to jointly optimize training data, the trainer, and the inference harness as cross-component co-design. We introduce VibeTraining-Bench, a benchmark for evaluating this capability across tasks spanning terminal operation, software engineering, multi-turn tool use, and mathematical reasoning. Within each task, research agents start from an identical initial agent system under a fixed resource budget. Guided by validation feedback, they iteratively refine data, trainers, and inference harnesses, then select and submit a final agent system for evaluation on the test set. To prevent reward hacking, we enforce three safeguards: test data isolation, separate research and grading containers, and network restrictions for research agents. Our evaluation results show that frontier research agents substantially improve target agent systems. For example, on SWE-bench Verified, GPT-6-Astra raises the target agent system's performance from 32.9% to 53.7%, comparable to the human-developed instruct model's 55.4%. However, there is still room to improve their ability to co-design and iteratively refine data, trainer, and harness to achieve cumulative performance gains. We hope that VibeTraining-Bench will serve as a unified platform for advancing RSI, deepening our understanding of cross-component optimization for agent systems. Code and data are available at https://github.com/D2I-ai/VibeTraining-Bench.",
@@ -660,14 +699,14 @@
       ],
       "primary_category": "cs.AI",
       "published": "2026-10-19T06:54:04Z",
-      "updated": "2026-10-19T06:54:04Z",
+      "updated": "2026-10-22T04:55:50Z",
       "announced_date": "2026-10-19",
       "first_seen": "2026-10-19",
       "comment": "",
       "doi": "",
       "links": {
-        "abs": "https://arxiv.org/abs/2610.25896v1",
-        "pdf": "https://arxiv.org/pdf/2610.25896v1",
+        "abs": "https://arxiv.org/abs/2610.25896v2",
+        "pdf": "https://arxiv.org/pdf/2610.25896v2",
         "html": "https://arxiv.org/html/2610.25896"
       },
       "score": 9,
