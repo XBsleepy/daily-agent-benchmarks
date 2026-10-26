@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Async-RBench: Benchmarking Asynchronous Task Execution in LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language model (LLM) agents increasingly execute tasks asynchronously: a main agent continues working while its subagents run…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2610.32429" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.32429.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Async-RBench: Benchmarking Asynchronous Task Execution in LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language model (LLM) agents increasingly execute tasks asynchronously: a main agent continues working while its subagents run…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.32429.html" />
+    <meta property="article:published_time" content="2026-10-23T09:53:45Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Async-RBench: Benchmarking Asynchronous Task Execution in LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language model (LLM) agents increasingly execute tasks asynchronously: a main agent continues working while its subagents run…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Async-RBench: Benchmarking Asynchronous Task Execution in LLM Agents",
+  "name": "Async-RBench: Benchmarking Asynchronous Task Execution in LLM Agents",
+  "abstract": "Large language model (LLM) agents increasingly execute tasks asynchronously: a main agent continues working while its subagents run, and the task state may change before their results arrive. The main agent must decide which work to update or preserve and which checks to repeat, while avoiding prohibited changes. Final task success alone does not reveal whether these results were handled correctly, and natural asynchronous arrivals are hard to reproduce. We introduce Async-RBench, a benchmark for asynchronous task execution in LLM agents, with 200 executable tasks covering eight scenarios. A scenario controller regulates result delivery using predefined task-state conditions, while an Event Response Contract (ERC) specifies what each response must change, preserve, avoid, and re-verify. The Dynamic Replanning Score (DRS) weights the response process and outcome equally and is reported separately from task success. We evaluate nine agents and find DRS scores of 19.2 to 45.1, with the lowest scores on duplicate reports and subagent failures. Under our execution protocol, all nine agents obtain lower task success with asynchronous than with batched delivery (26.0% vs. 29.7% on average). For three agents, prompting the main agent to rebuild its plan after every result improves DRS by only 2.6 to 3.5 points. Together, these findings highlight the challenges of reliable asynchronous task execution and the need to evaluate how agents handle incoming results alongside end-to-end task success.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Detao Zeng"
+    },
+    {
+      "@type": "Person",
+      "name": "Guilin Ou"
+    },
+    {
+      "@type": "Person",
+      "name": "Nuo Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Yunhao Feng"
+    },
+    {
+      "@type": "Person",
+      "name": "Hongliang Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Qinli Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Junming Shao"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhong Zhang"
+    }
+  ],
+  "datePublished": "2026-10-23T09:53:45Z",
+  "dateModified": "2026-10-23T09:53:45Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.32429.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.32429.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.32429v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.32429"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.32429v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.32429"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Async-RBench: Benchmarking Asynchronous Task Execution in LLM Agents</h1>
+        <div class="meta">
+          Detao Zeng, Guilin Ou, Nuo Chen, Yunhao Feng, Hongliang Wang, Qinli Yang, Junming Shao, Zhong Zhang
+          · 2610.32429
+          · <time datetime="2026-10-23">2026-10-23</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Large language model (LLM) agents increasingly execute tasks asynchronously: a main agent continues working while its subagents run, and the task state may change before their results arrive. The main agent must decide which work to update or preserve and which checks to repeat, while avoiding prohibited changes. Final task success alone does not reveal whether these results were handled correctly, and natural asynchronous arrivals are hard to reproduce. We introduce Async-RBench, a benchmark for asynchronous task execution in LLM agents, with 200 executable tasks covering eight scenarios. A scenario controller regulates result delivery using predefined task-state conditions, while an Event Response Contract (ERC) specifies what each response must change, preserve, avoid, and re-verify. The Dynamic Replanning Score (DRS) weights the response process and outcome equally and is reported separately from task success. We evaluate nine agents and find DRS scores of 19.2 to 45.1, with the lowest scores on duplicate reports and subagent failures. Under our execution protocol, all nine agents obtain lower task success with asynchronous than with batched delivery (26.0% vs. 29.7% on average). For three agents, prompting the main agent to rebuild its plan after every result improves DRS by only 2.6 to 3.5 points. Together, these findings highlight the challenges of reliable asynchronous task execution and the need to evaluate how agents handle incoming results alongside end-to-end task success.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.32429v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.32429v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.32429" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.32305.html"><strong>DMAIC-Bench: From Self-Reflection to Self-Restraint for Agents in Multi-Stage Analytical Tasks</strong></a> <span>2026-10-23</span></li>
+          <li><a href="2610.30989.html"><strong>ColaBench: Evaluating Memory-Guided Knowledge Acquisition in Personal Agents</strong></a> <span>2026-10-22</span></li>
+          <li><a href="2610.30932.html"><strong>UserArena: Benchmarking Interactive User Simulation for Long-Horizon Shopping Agents</strong></a> <span>2026-10-22</span></li>
+          <li><a href="2610.30485.html"><strong>Why Bother Me Again? Benchmarking Personal Agent Memory for Interaction Preferences</strong></a> <span>2026-10-21</span></li>
+          <li><a href="2610.30113.html"><strong>Quant-Arena: Benchmarking LLM Agents for Quantitative Trading Research</strong></a> <span>2026-10-21</span></li>
+          <li><a href="2610.29249.html"><strong>MOSAIC: An Omni-Modal Benchmark for Long-Term Memory and Cross-Modal Reasoning in Conversational Agents</strong></a> <span>2026-10-21</span></li>
+          <li><a href="2610.28425.html"><strong>After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.27581.html"><strong>DuplexLedger: Benchmarking Transactional Memory in Full-Duplex Speech Agents</strong></a> <span>2026-10-20</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

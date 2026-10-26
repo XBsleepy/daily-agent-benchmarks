@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trial by Trace: Benchmarking AI Agent Harnesses for Reliability and Failure Attribution | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLM agents are increasingly used to solve real-world problems, and their effectiveness depends on both the underlying models and the…" />
+    <meta name="keywords" content="Tool use, agent benchmark, LLM agent, arXiv, 2610.32285" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.32285.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Trial by Trace: Benchmarking AI Agent Harnesses for Reliability and Failure Attribution" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLM agents are increasingly used to solve real-world problems, and their effectiveness depends on both the underlying models and the…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.32285.html" />
+    <meta property="article:published_time" content="2026-10-23T07:43:26Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Trial by Trace: Benchmarking AI Agent Harnesses for Reliability and Failure Attribution" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLM agents are increasingly used to solve real-world problems, and their effectiveness depends on both the underlying models and the…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Trial by Trace: Benchmarking AI Agent Harnesses for Reliability and Failure Attribution",
+  "name": "Trial by Trace: Benchmarking AI Agent Harnesses for Reliability and Failure Attribution",
+  "abstract": "LLM agents are increasingly used to solve real-world problems, and their effectiveness depends on both the underlying models and the harnesses that support their operation. However, most existing benchmarks focus on model capabilities and overall agent performance, with limited attention to the evaluation of agent harnesses. To address this gap, we introduce TraceTrial-Bench, which organizes harness reliability into seven components covering context, execution, governance, lifecycle, observability, tools, and verification. We construct 95 expert-level, mechanism-oriented tasks with executable or state-based ground truth to support semantically equivalent comparisons while preserving the native behavior of each harness. We design a Trajectory Tracing (TT) module to capture agent execution traces and introduce a two-layer evaluation framework that separately assesses agent performance and harness reliability. In addition, we design a Multi-source Evidence Acquisition (MEA) module to provide evidence from the agent context, harness, and execution environment for LLM-based evaluation, and develop a Failure Attribution (FA) module that uses explicit mechanism chains to support attribution at the run level. Across 4 harnesses, 9 models, and 95 tasks, our evaluation of 3,420 runs yields macro-averaged harness scores ranging from 59.8% to 72.0%, while 31.1% of runs achieve task success despite failing at least one harness criterion. TraceTrial-Bench provides an auditable and reproducible foundation for comparing agent harnesses, diagnosing their failures, and studying how harness design interacts with model behavior.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Zhiyong Cao"
+    },
+    {
+      "@type": "Person",
+      "name": "Hengjie Zhu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yongxin Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xuchen Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Jintao Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Shuxia Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Dunqiang Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Bo Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Kairan Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Cong Lin"
+    },
+    {
+      "@type": "Person",
+      "name": "JiangDi Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Siyuan Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Sijia Yao"
+    },
+    {
+      "@type": "Person",
+      "name": "Yi-Liang Wei"
+    },
+    {
+      "@type": "Person",
+      "name": "Lingxu Ma"
+    },
+    {
+      "@type": "Person",
+      "name": "Aijia Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Anxin Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Zixian Wei"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiang Ruan"
+    },
+    {
+      "@type": "Person",
+      "name": "Ruizhi Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Ruqian Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Baihua Xiao"
+    },
+    {
+      "@type": "Person",
+      "name": "Sicheng Zhou"
+    }
+  ],
+  "datePublished": "2026-10-23T07:43:26Z",
+  "dateModified": "2026-10-23T07:43:26Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.32285.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.32285.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.32285v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.32285"
+  },
+  "keywords": [
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.32285v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.32285"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Trial by Trace: Benchmarking AI Agent Harnesses for Reliability and Failure Attribution</h1>
+        <div class="meta">
+          Zhiyong Cao, Hengjie Zhu, Yongxin Wang, Xuchen Li, Jintao Li, Shuxia Liu, Dunqiang Liu, Bo Wang, Kairan Zhang, Cong Lin, JiangDi Yu, Siyuan Liu, Sijia Yao, Yi-Liang Wei, Lingxu Ma, Aijia Wang, Anxin Chen, Zixian Wei, Xiang Ruan, Ruizhi Xu, Ruqian Shi, Baihua Xiao, Sicheng Zhou
+          · 2610.32285
+          · <time datetime="2026-10-23">2026-10-23</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLM agents are increasingly used to solve real-world problems, and their effectiveness depends on both the underlying models and the harnesses that support their operation. However, most existing benchmarks focus on model capabilities and overall agent performance, with limited attention to the evaluation of agent harnesses. To address this gap, we introduce TraceTrial-Bench, which organizes harness reliability into seven components covering context, execution, governance, lifecycle, observability, tools, and verification. We construct 95 expert-level, mechanism-oriented tasks with executable or state-based ground truth to support semantically equivalent comparisons while preserving the native behavior of each harness. We design a Trajectory Tracing (TT) module to capture agent execution traces and introduce a two-layer evaluation framework that separately assesses agent performance and harness reliability. In addition, we design a Multi-source Evidence Acquisition (MEA) module to provide evidence from the agent context, harness, and execution environment for LLM-based evaluation, and develop a Failure Attribution (FA) module that uses explicit mechanism chains to support attribution at the run level. Across 4 harnesses, 9 models, and 95 tasks, our evaluation of 3,420 runs yields macro-averaged harness scores ranging from 59.8% to 72.0%, while 31.1% of runs achieve task success despite failing at least one harness criterion. TraceTrial-Bench provides an auditable and reproducible foundation for comparing agent harnesses, diagnosing their failures, and studying how harness design interacts with model behavior.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.32285v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.32285v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.32285" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.30533.html"><strong>IFC-MCQ: Automatically Generating Multiple-Choice Benchmarks for Evaluating LLM Agents on IFC Data Retrieval</strong></a> <span>2026-10-21</span></li>
+          <li><a href="2610.27777.html"><strong>RITE: Evaluating End-to-End Resilience to Silent Tool Errors in E-Commerce Agentic Systems</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.25111.html"><strong>Explore or Confirm? LLM Agents Misallocate Measurements Under Noise</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.28679.html"><strong>VerifierBench: Benchmarking the Generation of Executable Verifiers for LLM Agents</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.27307.html"><strong>Evolving Self-tuning Benchmarks for Long-Horizon Tool Use</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.26036.html"><strong>FinHopper: A Progressive Multi-Hop Benchmark for Complex Financial Agents with Step-wise Evaluation</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.25954.html"><strong>CXBench: A Benchmark for Process-Compliant LLM Agents in Regulated Customer-Experience Workflows</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.23569.html"><strong>GCAM-Gym: A Benchmark for Agent-Based Climate Policy Search</strong></a> <span>2026-10-16</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Compact-Bench: Measuring What Context Compaction Costs Long-Horizon Coding Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Context compaction lets long-horizon coding agents continue beyond their context windows, but can erase the state needed to finish a…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2610.31710" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.31710.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Compact-Bench: Measuring What Context Compaction Costs Long-Horizon Coding Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Context compaction lets long-horizon coding agents continue beyond their context windows, but can erase the state needed to finish a…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.31710.html" />
+    <meta property="article:published_time" content="2026-10-22T02:17:12Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Compact-Bench: Measuring What Context Compaction Costs Long-Horizon Coding Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Context compaction lets long-horizon coding agents continue beyond their context windows, but can erase the state needed to finish a…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Compact-Bench: Measuring What Context Compaction Costs Long-Horizon Coding Agents",
+  "name": "Compact-Bench: Measuring What Context Compaction Costs Long-Horizon Coding Agents",
+  "abstract": "Context compaction lets long-horizon coding agents continue beyond their context windows, but can erase the state needed to finish a task. Prior evaluations measure efficiency, retained information, or end-to-end success, leaving the effect of a specific history replacement difficult to isolate. Compact-Bench pairs full-history and summary-only continuations from a shared repository state, and evaluates recurring details and successive production compactions. It covers 35 SWE-bench repairs, 146 agentic sessions, and 106 production chains. Across 14 summarizer backbones, stable damage ranges from 5-64% of 22 full-history successes: Claude Opus 4.8 preserves the most repairs, while DeepSeek-Flash damages the most. With Kimi-K3 as summarizer, the Kimi Code prompt preserves the most task continuations (19/22), whereas Claude Code retains the most recurring details (15.0%). LLM summaries retain at most 16.0% of recurring details, compared with 79.1% for mechanical extraction; production summaries retain 15.7% at the first boundary. Failures recur across methods: one repair is damaged by 13/14 backbones, and another by all 5 prompts. These results show that reliable compaction requires preserving the progress needed to complete a task, and that retaining relevant information alone does not ensure successful continuation. Code is available at https://github.com/cai-jianfeng/compact-bench and data is available at https://huggingface.co/datasets/caijanfeng/compact-bench.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Ruopei Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Jianfeng Cai"
+    },
+    {
+      "@type": "Person",
+      "name": "Kangwen Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Wengang Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Houqiang Li"
+    }
+  ],
+  "datePublished": "2026-10-22T02:17:12Z",
+  "dateModified": "2026-10-22T02:17:12Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.31710.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.31710.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.31710v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.31710"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.31710v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.31710"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Compact-Bench: Measuring What Context Compaction Costs Long-Horizon Coding Agents</h1>
+        <div class="meta">
+          Ruopei Sun, Jianfeng Cai, Kangwen Zhao, Wengang Zhou, Houqiang Li
+          · 2610.31710
+          · <time datetime="2026-10-22">2026-10-22</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Context compaction lets long-horizon coding agents continue beyond their context windows, but can erase the state needed to finish a task. Prior evaluations measure efficiency, retained information, or end-to-end success, leaving the effect of a specific history replacement difficult to isolate. Compact-Bench pairs full-history and summary-only continuations from a shared repository state, and evaluates recurring details and successive production compactions. It covers 35 SWE-bench repairs, 146 agentic sessions, and 106 production chains. Across 14 summarizer backbones, stable damage ranges from 5-64% of 22 full-history successes: Claude Opus 4.8 preserves the most repairs, while DeepSeek-Flash damages the most. With Kimi-K3 as summarizer, the Kimi Code prompt preserves the most task continuations (19/22), whereas Claude Code retains the most recurring details (15.0%). LLM summaries retain at most 16.0% of recurring details, compared with 79.1% for mechanical extraction; production summaries retain 15.7% at the first boundary. Failures recur across methods: one repair is damaged by 13/14 backbones, and another by all 5 prompts. These results show that reliable compaction requires preserving the progress needed to complete a task, and that retaining relevant information alone does not ensure successful continuation. Code is available at https://github.com/cai-jianfeng/compact-bench and data is available at https://huggingface.co/datasets/caijanfeng/compact-bench.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.31710v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.31710v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.31710" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.32004.html"><strong>CRM-Agent-Bench: Benchmarking Tool-Using Agents in Stateful Enterprise Environments</strong></a> <span>2026-10-23</span></li>
+          <li><a href="2610.31511.html"><strong>DuoCook: An Overcooked-Inspired Benchmark for Visual Planning and Coordination</strong></a> <span>2026-10-22</span></li>
+          <li><a href="2610.29695.html"><strong>Benchmarking Coding Agents for System-Level Performance Optimization</strong></a> <span>2026-10-21</span></li>
+          <li><a href="2610.29014.html"><strong>GenXR-Bench: Benchmarking Coding Agents for Interactive XR Development</strong></a> <span>2026-10-21</span></li>
+          <li><a href="2610.28934.html"><strong>Back Up Before You Regret: Measuring Backup Awareness and Automating Backup in Coding Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.27524.html"><strong>MemDev-Bench: Does Memory Help Code Agents?Benchmarking Memory Systems over Real Repository Histories</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.26394.html"><strong>When Coding Agents Outpace Review: Evaluating PRD-Driven Development in Mature Enterprise Repositories</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.25899.html"><strong>SWE-Residual: Evaluating Starting-State Robustness of Coding Agents</strong></a> <span>2026-10-20</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>
