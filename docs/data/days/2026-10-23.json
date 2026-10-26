@@ -1,27 +1,33 @@
 {
   "date": "2026-10-23",
-  "count": 8,
+  "count": 11,
   "report": {
     "date": "2026-10-23",
-    "count": 8,
+    "count": 11,
     "themes": [
       {
         "id": "tool-use",
-        "count": 4,
+        "count": 5,
         "en": "Tool use",
         "zh": "工具使用"
+      },
+      {
+        "id": "science",
+        "count": 2,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
       },
       {
         "id": "safety",
         "count": 1,
         "en": "Safety",
         "zh": "安全"
-      },
-      {
-        "id": "science",
-        "count": 1,
-        "en": "Science lab",
-        "zh": "科学实验"
       },
       {
         "id": "multi-agent",
@@ -46,17 +52,11 @@
         "count": 1,
         "en": "Multimodal",
         "zh": "多模态"
-      },
-      {
-        "id": "coding",
-        "count": 1,
-        "en": "Coding agents",
-        "zh": "代码智能体"
       }
     ],
     "en": {
-      "headline": "8 new agent benchmarks",
-      "summary": "On October 23, 2026, arXiv listed 8 new agent benchmarks. Work clustered around Tool use (4), Safety (1), Science lab (1), and Multi-agent (1).",
+      "headline": "11 new agent benchmarks",
+      "summary": "On October 23, 2026, arXiv listed 11 new agent benchmarks. Work clustered around Tool use (5), Science lab (2), Coding agents (2), and Safety (1).",
       "highlights": [
         {
           "id": "2610.32004",
@@ -76,8 +76,8 @@
       ]
     },
     "zh": {
-      "headline": "新增 8 篇 Agent Benchmark",
-      "summary": "2026年10月23日，arXiv 新增 8 篇 Agent Benchmark。当日主题集中在工具使用（4）、安全（1）、科学实验（1）、多智能体（1）。",
+      "headline": "新增 11 篇 Agent Benchmark",
+      "summary": "2026年10月23日，arXiv 新增 11 篇 Agent Benchmark。当日主题集中在工具使用（5）、科学实验（2）、代码智能体（2）、安全（1）。",
       "highlights": [
         {
           "id": "2610.32004",
@@ -375,6 +375,144 @@
         "tool-use"
       ],
       "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.32196",
+      "title": "SWE-Shift: Evaluating Coding Agents in Evolving Workspaces",
+      "abstract": "Repository-level coding benchmarks largely assume that tasks and environments remain unchanged throughout execution. In software development, code, dependencies, runtime state, and requirements can change while an agent is still working. We introduce SWE-Shift, a benchmark for evaluating coding agents under such mid-execution changes. From the same saved history and workspace, a Clean continuation proceeds without intervention, while a matched Shifted continuation receives a task-relevant update. Success requires completing the current task, preserving still-valid work, and satisfying the applicable state and evidence checks. The benchmark contains 120 scenarios across 12 change families, each evaluated at nine scheduled intervention positions. We evaluate 17 coding-agent systems, all of which have lower Shifted than Clean success. GPT-6 Astra drops from 67.35% to 24.79%, with 20.34% paired success. Tool/session changes and stale evidence yield zero paired success across all systems. Late-position paired success is lower for some systems and higher for others. These results show that success on the unchanged task can coexist with failures to preserve work, recover state, or refresh evidence after an update.",
+      "authors": [
+        "Victor Shea-Jay Huang",
+        "Rongqing Li",
+        "Zhangyue Yin",
+        "Kelong Mao",
+        "Yaqi Zhao",
+        "Xinyuan Wang",
+        "Yao Yin",
+        "Lirui Luo",
+        "Renrui Zhang",
+        "Hongsheng Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-23T05:47:59Z",
+      "updated": "2026-10-23T05:47:59Z",
+      "announced_date": "2026-10-23",
+      "first_seen": "2026-10-23",
+      "comment": "47 pages. Code: https://github.com/JeixHuang/SWE-Shift",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.32196v1",
+        "pdf": "https://arxiv.org/pdf/2610.32196v1",
+        "html": "https://arxiv.org/html/2610.32196"
+      },
+      "score": 14,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.32120",
+      "title": "ImageRSI: Verification-Driven Recursive Self-Improvement for Agentic Image Generation",
+      "abstract": "Complex text-to-image requests remain difficult to satisfy reliably. Verifying and repairing an image can fix an individual output, but a successful repair does not necessarily carry over to other requests. We present ImageRSI, a framework that keeps the image generator frozen and combines three components: five-dimensional verification and repair within each task, an experience library shared across tasks, and offline updating of the judge. Candidate experiences enter the library only after paired A/B validation, and the judge is updated with supervised fine-tuning and GRPO on accumulated image-judgment records and evaluated before reuse. We also introduce ImageReq-Bench, a benchmark of 961 requests built around hard cases in real-world image-generation requests, each paired with an evaluation checklist. ImageRSI achieves a Checklist Strict Accuracy (CSA) of 52.6% on MindBench (with Nano Banana Pro as the generator) and 65.66% on ImageReq-Bench, and we compare system outcomes across judge-training configurations.",
+      "authors": [
+        "Shuo Han",
+        "Zhilin Wang",
+        "Peng Ling",
+        "Wenjia Gong",
+        "Yang Liu",
+        "Guanjun Jiang",
+        "Yukun Cao",
+        "Xike Xie"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-10-23T03:42:21Z",
+      "updated": "2026-10-23T03:42:21Z",
+      "announced_date": "2026-10-23",
+      "first_seen": "2026-10-23",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.32120v1",
+        "pdf": "https://arxiv.org/pdf/2610.32120v1",
+        "html": "https://arxiv.org/html/2610.32120"
+      },
+      "score": 10,
+      "tags": [
+        "rsi"
+      ],
+      "field": "rsi",
+      "citations": 0
+    },
+    {
+      "id": "2610.32106",
+      "title": "PersonaScienceBench: Evaluating Scientific Agents with Diverse Simulated Researchers",
+      "abstract": "Scientific agents collaborate with researchers whose expertise and preferences differ, but benchmarks usually hold the collaborator fixed. We introduce PersonaScienceBench: 200 tasks from five benchmarks across four scientific domains. Simulated researchers provide context and feedback according to persona profiles, while task objectives and grading remain fixed. Agents encounter researcher preferences only through conversation. Across eighteen modelconfigurations, task performance, fact recovery, and self-repetition reveal different strengths. Detailed GPT 6 Astra analyses show distinct agent responses across researcher profiles; interaction traces illustrate targeted clar ification and workflow revision. These behaviors can differ even when final scores match. PersonaScienceBench therefore evaluates how agents collaborate with diverse researchers alongside whether they complete the task.",
+      "authors": [
+        "Siyang Wu",
+        "Weizhi Zhang",
+        "Chen Yang",
+        "Esther Xu Fei",
+        "Jorin Overwiening",
+        "Xu Pan",
+        "Jing Tang",
+        "Yixuan He",
+        "Kelvin C. Mo",
+        "Peiwen Li",
+        "Defu Cao",
+        "Xu Hu",
+        "Haixin Wang",
+        "Taoran Li",
+        "Haoming Li",
+        "Zheyuan Deng",
+        "Jingwen Zhang",
+        "Pengsong Zhang",
+        "Haichao Zhang",
+        "Guangze Luo",
+        "Yi Daniel Lu",
+        "Zihuai He",
+        "Chenxi Qiu",
+        "Dianzhuo Wang",
+        "Zhejian Peng",
+        "Shushu Liang",
+        "Wenyi Lu",
+        "Yifan Wang",
+        "Jintao Huang",
+        "Yijun Wang",
+        "Xiaomin Li",
+        "Yuexing Hao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-23T03:11:01Z",
+      "updated": "2026-10-23T03:11:01Z",
+      "announced_date": "2026-10-23",
+      "first_seen": "2026-10-23",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.32106v1",
+        "pdf": "https://arxiv.org/pdf/2610.32106v1",
+        "html": "https://arxiv.org/html/2610.32106"
+      },
+      "score": 7,
+      "tags": [
+        "science"
+      ],
+      "field": "science",
       "citations": 0
     },
     {

@@ -1,32 +1,38 @@
 {
-  "generated_at": "2026-10-26T02:52:00Z",
+  "generated_at": "2026-10-26T05:15:00Z",
   "source": "arxiv",
-  "total": 1529,
+  "total": 1534,
   "days": [
     {
       "date": "2026-10-23",
-      "count": 8,
+      "count": 11,
       "report": {
         "date": "2026-10-23",
-        "count": 8,
+        "count": 11,
         "themes": [
           {
             "id": "tool-use",
-            "count": 4,
+            "count": 5,
             "en": "Tool use",
             "zh": "工具使用"
+          },
+          {
+            "id": "science",
+            "count": 2,
+            "en": "Science lab",
+            "zh": "科学实验"
+          },
+          {
+            "id": "coding",
+            "count": 2,
+            "en": "Coding agents",
+            "zh": "代码智能体"
           },
           {
             "id": "safety",
             "count": 1,
             "en": "Safety",
             "zh": "安全"
-          },
-          {
-            "id": "science",
-            "count": 1,
-            "en": "Science lab",
-            "zh": "科学实验"
           },
           {
             "id": "multi-agent",
@@ -51,17 +57,11 @@
             "count": 1,
             "en": "Multimodal",
             "zh": "多模态"
-          },
-          {
-            "id": "coding",
-            "count": 1,
-            "en": "Coding agents",
-            "zh": "代码智能体"
           }
         ],
         "en": {
-          "headline": "8 new agent benchmarks",
-          "summary": "On October 23, 2026, arXiv listed 8 new agent benchmarks. Work clustered around Tool use (4), Safety (1), Science lab (1), and Multi-agent (1).",
+          "headline": "11 new agent benchmarks",
+          "summary": "On October 23, 2026, arXiv listed 11 new agent benchmarks. Work clustered around Tool use (5), Science lab (2), Coding agents (2), and Safety (1).",
           "highlights": [
             {
               "id": "2610.32004",
@@ -81,8 +81,8 @@
           ]
         },
         "zh": {
-          "headline": "新增 8 篇 Agent Benchmark",
-          "summary": "2026年10月23日，arXiv 新增 8 篇 Agent Benchmark。当日主题集中在工具使用（4）、安全（1）、科学实验（1）、多智能体（1）。",
+          "headline": "新增 11 篇 Agent Benchmark",
+          "summary": "2026年10月23日，arXiv 新增 11 篇 Agent Benchmark。当日主题集中在工具使用（5）、科学实验（2）、代码智能体（2）、安全（1）。",
           "highlights": [
             {
               "id": "2610.32004",
@@ -110,16 +110,25 @@
         "2610.32332",
         "2610.32305",
         "2610.32285",
+        "2610.32196",
+        "2610.32120",
+        "2610.32106",
         "2610.32004"
       ]
     },
     {
       "date": "2026-10-22",
-      "count": 10,
+      "count": 12,
       "report": {
         "date": "2026-10-22",
-        "count": 10,
+        "count": 12,
         "themes": [
+          {
+            "id": "coding",
+            "count": 3,
+            "en": "Coding agents",
+            "zh": "代码智能体"
+          },
           {
             "id": "safety",
             "count": 3,
@@ -131,12 +140,6 @@
             "count": 3,
             "en": "Multimodal",
             "zh": "多模态"
-          },
-          {
-            "id": "coding",
-            "count": 2,
-            "en": "Coding agents",
-            "zh": "代码智能体"
           },
           {
             "id": "memory",
@@ -170,8 +173,8 @@
           }
         ],
         "en": {
-          "headline": "10 new agent benchmarks",
-          "summary": "On October 22, 2026, arXiv listed 10 new agent benchmarks. Work clustered around Safety (3), Multimodal (3), Coding agents (2), and Memory (2).",
+          "headline": "12 new agent benchmarks",
+          "summary": "On October 22, 2026, arXiv listed 12 new agent benchmarks. Work clustered around Coding agents (3), Safety (3), Multimodal (3), and Memory (2).",
           "highlights": [
             {
               "id": "2610.31494",
@@ -191,8 +194,8 @@
           ]
         },
         "zh": {
-          "headline": "新增 10 篇 Agent Benchmark",
-          "summary": "2026年10月22日，arXiv 新增 10 篇 Agent Benchmark。当日主题集中在安全（3）、多模态（3）、代码智能体（2）、记忆（2）。",
+          "headline": "新增 12 篇 Agent Benchmark",
+          "summary": "2026年10月22日，arXiv 新增 12 篇 Agent Benchmark。当日主题集中在代码智能体（3）、安全（3）、多模态（3）、记忆（2）。",
           "highlights": [
             {
               "id": "2610.31494",
@@ -213,6 +216,7 @@
         }
       },
       "paper_ids": [
+        "2610.31854",
         "2610.31650",
         "2610.31511",
         "2610.31494",
@@ -222,6 +226,7 @@
         "2610.30989",
         "2610.30932",
         "2610.30635",
+        "2610.31711",
         "2610.31710"
       ]
     },
@@ -25011,6 +25016,144 @@
       "citations": 0
     },
     {
+      "id": "2610.32196",
+      "title": "SWE-Shift: Evaluating Coding Agents in Evolving Workspaces",
+      "abstract": "Repository-level coding benchmarks largely assume that tasks and environments remain unchanged throughout execution. In software development, code, dependencies, runtime state, and requirements can change while an agent is still working. We introduce SWE-Shift, a benchmark for evaluating coding agents under such mid-execution changes. From the same saved history and workspace, a Clean continuation proceeds without intervention, while a matched Shifted continuation receives a task-relevant update. Success requires completing the current task, preserving still-valid work, and satisfying the applicable state and evidence checks. The benchmark contains 120 scenarios across 12 change families, each evaluated at nine scheduled intervention positions. We evaluate 17 coding-agent systems, all of which have lower Shifted than Clean success. GPT-6 Astra drops from 67.35% to 24.79%, with 20.34% paired success. Tool/session changes and stale evidence yield zero paired success across all systems. Late-position paired success is lower for some systems and higher for others. These results show that success on the unchanged task can coexist with failures to preserve work, recover state, or refresh evidence after an update.",
+      "authors": [
+        "Victor Shea-Jay Huang",
+        "Rongqing Li",
+        "Zhangyue Yin",
+        "Kelong Mao",
+        "Yaqi Zhao",
+        "Xinyuan Wang",
+        "Yao Yin",
+        "Lirui Luo",
+        "Renrui Zhang",
+        "Hongsheng Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-23T05:47:59Z",
+      "updated": "2026-10-23T05:47:59Z",
+      "announced_date": "2026-10-23",
+      "first_seen": "2026-10-23",
+      "comment": "47 pages. Code: https://github.com/JeixHuang/SWE-Shift",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.32196v1",
+        "pdf": "https://arxiv.org/pdf/2610.32196v1",
+        "html": "https://arxiv.org/html/2610.32196"
+      },
+      "score": 14,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.32120",
+      "title": "ImageRSI: Verification-Driven Recursive Self-Improvement for Agentic Image Generation",
+      "abstract": "Complex text-to-image requests remain difficult to satisfy reliably. Verifying and repairing an image can fix an individual output, but a successful repair does not necessarily carry over to other requests. We present ImageRSI, a framework that keeps the image generator frozen and combines three components: five-dimensional verification and repair within each task, an experience library shared across tasks, and offline updating of the judge. Candidate experiences enter the library only after paired A/B validation, and the judge is updated with supervised fine-tuning and GRPO on accumulated image-judgment records and evaluated before reuse. We also introduce ImageReq-Bench, a benchmark of 961 requests built around hard cases in real-world image-generation requests, each paired with an evaluation checklist. ImageRSI achieves a Checklist Strict Accuracy (CSA) of 52.6% on MindBench (with Nano Banana Pro as the generator) and 65.66% on ImageReq-Bench, and we compare system outcomes across judge-training configurations.",
+      "authors": [
+        "Shuo Han",
+        "Zhilin Wang",
+        "Peng Ling",
+        "Wenjia Gong",
+        "Yang Liu",
+        "Guanjun Jiang",
+        "Yukun Cao",
+        "Xike Xie"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-10-23T03:42:21Z",
+      "updated": "2026-10-23T03:42:21Z",
+      "announced_date": "2026-10-23",
+      "first_seen": "2026-10-23",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.32120v1",
+        "pdf": "https://arxiv.org/pdf/2610.32120v1",
+        "html": "https://arxiv.org/html/2610.32120"
+      },
+      "score": 10,
+      "tags": [
+        "rsi"
+      ],
+      "field": "rsi",
+      "citations": 0
+    },
+    {
+      "id": "2610.32106",
+      "title": "PersonaScienceBench: Evaluating Scientific Agents with Diverse Simulated Researchers",
+      "abstract": "Scientific agents collaborate with researchers whose expertise and preferences differ, but benchmarks usually hold the collaborator fixed. We introduce PersonaScienceBench: 200 tasks from five benchmarks across four scientific domains. Simulated researchers provide context and feedback according to persona profiles, while task objectives and grading remain fixed. Agents encounter researcher preferences only through conversation. Across eighteen modelconfigurations, task performance, fact recovery, and self-repetition reveal different strengths. Detailed GPT 6 Astra analyses show distinct agent responses across researcher profiles; interaction traces illustrate targeted clar ification and workflow revision. These behaviors can differ even when final scores match. PersonaScienceBench therefore evaluates how agents collaborate with diverse researchers alongside whether they complete the task.",
+      "authors": [
+        "Siyang Wu",
+        "Weizhi Zhang",
+        "Chen Yang",
+        "Esther Xu Fei",
+        "Jorin Overwiening",
+        "Xu Pan",
+        "Jing Tang",
+        "Yixuan He",
+        "Kelvin C. Mo",
+        "Peiwen Li",
+        "Defu Cao",
+        "Xu Hu",
+        "Haixin Wang",
+        "Taoran Li",
+        "Haoming Li",
+        "Zheyuan Deng",
+        "Jingwen Zhang",
+        "Pengsong Zhang",
+        "Haichao Zhang",
+        "Guangze Luo",
+        "Yi Daniel Lu",
+        "Zihuai He",
+        "Chenxi Qiu",
+        "Dianzhuo Wang",
+        "Zhejian Peng",
+        "Shushu Liang",
+        "Wenyi Lu",
+        "Yifan Wang",
+        "Jintao Huang",
+        "Yijun Wang",
+        "Xiaomin Li",
+        "Yuexing Hao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-23T03:11:01Z",
+      "updated": "2026-10-23T03:11:01Z",
+      "announced_date": "2026-10-23",
+      "first_seen": "2026-10-23",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.32106v1",
+        "pdf": "https://arxiv.org/pdf/2610.32106v1",
+        "html": "https://arxiv.org/html/2610.32106"
+      },
+      "score": 7,
+      "tags": [
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
       "id": "2610.32004",
       "title": "CRM-Agent-Bench: Benchmarking Tool-Using Agents in Stateful Enterprise Environments",
       "abstract": "Deploying language agents in real applications demands more than the right answer: an agent must execute a multi-step business process correctly, follow domain-specific rules, and interact with a user across a dialogue, where the gap between saying and doing is the gap between a satisfied customer and a real loss. We argue that a deployable-agent benchmark should jointly assess four facets: the outcome an agent reaches, the trajectory it takes, its operational viability, and its policy compliance. Customer relationship management (CRM), where mutable records meet operational rules and consequential effects, exercises all four. We introduce CRM-Agent-Bench, an execution-grounded benchmark of 555 stateful, multi-turn tasks across nine business domains and 36 capability tags. Each task supplies a task-specific executable contract drawn from checks over actions, arguments, order, response, target state, and protected state; success is the strict conjunction of the checks declared for that task. We evaluate the complete agent system through these contracts and report scored coverage, latency, and cost. Across sixteen systems evaluated on the audited final release, strict success spans 64.32% to 83.60%; the closely grouped leading systems nonetheless diverge sharply in cost and per-domain reliability. CRM-Agent-Bench offers an auditable framework for measuring contract-grounded business-transaction integrity and adherence to task-declared benchmark policies, with a portable structure designed for extension as models improve. Github repository: https://github.com/salesforce-misc/crm-agent-bench",
@@ -25040,6 +25183,50 @@
         "coding",
         "tool-use",
         "conversation"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.31854",
+      "title": "SWE-Clar: Can Coding Agents Clarify Incomplete Client Requirements and Deliver Greenfield Software?",
+      "abstract": "Greenfield software development in freelance settings requires coding agents to turn incomplete client requests into working software. This makes requirement clarification essential, yet clients may be unable to provide continuous feedback over long development cycles, and receiving their answers does not guarantee correct understanding of complex requirements. These challenges motivate two benchmark design choices: clarification precedes code implementation, and its effectiveness is assessed through explicit tests of requirement understanding. Guided by these choices, we introduce SWE-Clar, a benchmark grounded in real, high-value client commissions to evaluate requirement clarification and code implementation in this setting. It comprises 100 tasks based on real software development jobs on Upwork, each with at least US\\$4,000 in total payments. Each task begins with multi-round interaction between a coding agent and a client agent, followed by separate runs for code implementation with acceptance testing and clarification assessment. For the latter, we construct 512 questions paired with reference answers from real client-freelancer interactions, covering both explicitly stated requirements and those inferred from the conversational context. Both runs begin from the same clarification context but remain isolated, preventing assessment questions from guiding code implementation. Experiments with nine frontier models show that even GPT-6 Astra, which has the highest observed implementation score, achieves a task pass rate of only 67%, underscoring the challenge of independent software delivery in this setting. The dataset and evaluation code are available at https://github.com/upwork/SWE-Clar.",
+      "authors": [
+        "Jialei Li",
+        "Dingxian Wang",
+        "Xiaoyan Zhao",
+        "Yimeng Bai",
+        "Xuanyi Zhu",
+        "Yang Zhang",
+        "Chao Yin",
+        "Wentao Shi",
+        "Ganesh Prabhu",
+        "Karthik Gomadam Rajagopal",
+        "Brett Levert",
+        "Darvin Yi",
+        "Andrew Rabinovich",
+        "Zhao Chen"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-22T19:36:48Z",
+      "updated": "2026-10-22T19:36:48Z",
+      "announced_date": "2026-10-22",
+      "first_seen": "2026-10-22",
+      "comment": "29 pages, 9 figures, 11 tables. Code and data: https://github.com/upwork/SWE-Clar",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.31854v1",
+        "pdf": "https://arxiv.org/pdf/2610.31854v1",
+        "html": "https://arxiv.org/html/2610.31854"
+      },
+      "score": 12,
+      "tags": [
+        "coding"
       ],
       "field": "coding",
       "citations": 0
@@ -25361,6 +25548,43 @@
         "safety"
       ],
       "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2610.31711",
+      "title": "MBABench-2.0: Evaluating AI Agents on Constructing Financial Spreadsheets Beyond Simple Verifiability",
+      "abstract": "Spreadsheets are the lingua franca of modern finance, driving valuation, forecast, audit, and many other core workflows of the industry. As LLM agents advance to automate knowledge work, spreadsheet construction is a natural and pertinent testbed. However, most existing spreadsheet benchmarks evaluate agents on fill-in-the-blank style tasks, where an agent performs minor edits in otherwise complete spreadsheets. This protocol fails to capture the most central and time-consuming part of the spreadsheet workflow: the modeling decisions, format design, and sheet layout regular knowledge workers need to toil through to build a workbook from scratch. We introduce MBABench-2.0, a benchmark of 101 original spreadsheet construction tasks, the hardest of which is estimated to take 33 hours for a modeler with 3+ years of experience. Unlike coding or math, where a unit test or a final answer can verify an agent's output, the quality of a financial spreadsheet that concerns readability, maintainability, or auditability, is not so simply verifiable. To holistically evaluate spreadsheet construction, we introduce 129 criteria spanning 12 categories that operationalize quality beyond the accuracy of the spreadsheet. Evaluating over 20 agents across 8 models and 4 harness types, we find that frontier agents rarely construct spreadsheets that are both accurate and meet our quality criteria: the top agent achieves a pass rate of only 16% on the benchmark. The benchmark demonstrates a substantial gap in spreadsheet building capability of current agents.",
+      "authors": [
+        "Julian Poeltl",
+        "Thomson Yen",
+        "Patrick Shea",
+        "Shubham Anil Varma",
+        "Dhruv Rastogi",
+        "Zihao Chen",
+        "Mengshi Zhang",
+        "Hongseok Namkoong"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-22T02:30:05Z",
+      "updated": "2026-10-22T02:30:05Z",
+      "announced_date": "2026-10-22",
+      "first_seen": "2026-10-22",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.31711v1",
+        "pdf": "https://arxiv.org/pdf/2610.31711v1",
+        "html": "https://arxiv.org/html/2610.31711"
+      },
+      "score": 18,
+      "tags": [
+        "workplace"
+      ],
+      "field": "workplace",
       "citations": 0
     },
     {
