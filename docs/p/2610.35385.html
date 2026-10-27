@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EmbodiedLab: Benchmarking Embodied Agents That Act to Know | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Embodied agents are expected to accomplish real-world goals by deciding for themselves how and when to interact with their…" />
+    <meta name="keywords" content="Embodied / robotics, Coding agents, Planning / reasoning, Research agents, Science lab, agent benchmark, LLM agent, arXiv, 2610.35385" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.35385.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="EmbodiedLab: Benchmarking Embodied Agents That Act to Know" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Embodied agents are expected to accomplish real-world goals by deciding for themselves how and when to interact with their…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.35385.html" />
+    <meta property="article:published_time" content="2026-10-26T13:06:33Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="EmbodiedLab: Benchmarking Embodied Agents That Act to Know" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Embodied agents are expected to accomplish real-world goals by deciding for themselves how and when to interact with their…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "EmbodiedLab: Benchmarking Embodied Agents That Act to Know",
+  "name": "EmbodiedLab: Benchmarking Embodied Agents That Act to Know",
+  "abstract": "Embodied agents are expected to accomplish real-world goals by deciding for themselves how and when to interact with their surroundings. For many such goals, changing the physical state of the world is the means rather than the end: the agent changes the state of a system through interaction, observes the feedback, and explores until it either achieves the goal itself (e.g., discovering physical laws) or learns what the goal requires; it acts to know. Manipulation benchmarks stop at acting to change, with the target state given; scientific discovery benchmarks evaluate knowing but replace physical experimentation with symbolic actions or numerical queries. We introduce EmbodiedLab, a benchmark in which a robot must act to know. Quantitative science experiments make this setting controllable: the parameters of the system are resampled for every instance, so the result cannot be known in advance, yet it can be scored exactly. Across 30 experiments in five disciplines on 14 apparatus platforms, the agent receives an objective and the apparatus, chooses its own procedure, and operates a physics-based simulated laboratory, reading the instruments through its cameras. Evaluation checks what the agent came to know, grounded in readings recorded during the episode, as well as the physical state the task requires; every experiment is verified to be solvable. We evaluate six frontier models in their developers' coding agents with native observation and control, with added perception and motion planning, and with manipulation skills distilled from the strongest agents. With native control, even the strongest agent succeeds less than half the time; for every agent, most failures arise in interacting with the apparatus, and manipulation skills help weaker agents more than perception and planning. The benchmark and its evaluation code are available at https://github.com/HexaFuture/EmbodiedLab.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Hongcheng Gao"
+    },
+    {
+      "@type": "Person",
+      "name": "Zelin Zheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Alex Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Jay Zhu"
+    },
+    {
+      "@type": "Person",
+      "name": "Shijia Ge"
+    },
+    {
+      "@type": "Person",
+      "name": "Yazhe Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiping Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Jianshu Zeng"
+    },
+    {
+      "@type": "Person",
+      "name": "Di Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xuan Shangguan"
+    },
+    {
+      "@type": "Person",
+      "name": "Yexing Wan"
+    },
+    {
+      "@type": "Person",
+      "name": "Lingyu He"
+    },
+    {
+      "@type": "Person",
+      "name": "Yongli Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaohan Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhiqi Jia"
+    },
+    {
+      "@type": "Person",
+      "name": "Yue Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Bryan Hooi"
+    },
+    {
+      "@type": "Person",
+      "name": "Yinpeng Dong"
+    },
+    {
+      "@type": "Person",
+      "name": "Wentao Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Sihang Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiao He"
+    }
+  ],
+  "datePublished": "2026-10-26T13:06:33Z",
+  "dateModified": "2026-10-26T13:06:33Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.35385.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.35385.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.35385v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.35385"
+  },
+  "keywords": [
+    "Embodied / robotics",
+    "Coding agents",
+    "Planning / reasoning",
+    "Research agents",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Embodied / robotics"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.35385v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.35385"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>EmbodiedLab: Benchmarking Embodied Agents That Act to Know</h1>
+        <div class="meta">
+          Hongcheng Gao, Zelin Zheng, Alex Zhou, Jay Zhu, Shijia Ge, Yazhe Wang, Xiping Li, Jianshu Zeng, Di Wu, Xuan Shangguan, Yexing Wan, Lingyu He, Yongli Wang, Xiaohan Yu, Zhiqi Jia, Yue Liu, Bryan Hooi, Yinpeng Dong, Wentao Zhang, Sihang Wu, Xiao He
+          · 2610.35385
+          · <time datetime="2026-10-26">2026-10-26</time>
+          · Embodied / robotics
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Embodied / robotics</span><span class="chip">Planning / reasoning</span><span class="chip">Research agents</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Embodied agents are expected to accomplish real-world goals by deciding for themselves how and when to interact with their surroundings. For many such goals, changing the physical state of the world is the means rather than the end: the agent changes the state of a system through interaction, observes the feedback, and explores until it either achieves the goal itself (e.g., discovering physical laws) or learns what the goal requires; it acts to know. Manipulation benchmarks stop at acting to change, with the target state given; scientific discovery benchmarks evaluate knowing but replace physical experimentation with symbolic actions or numerical queries. We introduce EmbodiedLab, a benchmark in which a robot must act to know. Quantitative science experiments make this setting controllable: the parameters of the system are resampled for every instance, so the result cannot be known in advance, yet it can be scored exactly. Across 30 experiments in five disciplines on 14 apparatus platforms, the agent receives an objective and the apparatus, chooses its own procedure, and operates a physics-based simulated laboratory, reading the instruments through its cameras. Evaluation checks what the agent came to know, grounded in readings recorded during the episode, as well as the physical state the task requires; every experiment is verified to be solvable. We evaluate six frontier models in their developers&#x27; coding agents with native observation and control, with added perception and motion planning, and with manipulation skills distilled from the strongest agents. With native control, even the strongest agent succeeds less than half the time; for every agent, most failures arise in interacting with the apparatus, and manipulation skills help weaker agents more than perception and planning. The benchmark and its evaluation code are available at https://github.com/HexaFuture/EmbodiedLab.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.35385v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.35385v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.35385" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Embodied / robotics benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.26359.html"><strong>Discovery-Probability Graph Planning for Embodied Agents in Tasks with Hidden Cooperation Requirements</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.27039.html"><strong>Embodied Playground: A Long-Horizon Agentic Robotics Benchmark for Physical, Strategic, and Spatial Reasoning</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.18307.html"><strong>I2O2I-Nav: A Benchmark with a Modular Agent for Long-Horizon Indoor-to-Outdoor-to-Indoor Navigation</strong></a> <span>2026-10-13</span></li>
+          <li><a href="2610.16238.html"><strong>Embodied Skill Bench: Benchmarking How Well Agents with Embodied Skills Perform on Physical Tasks</strong></a> <span>2026-10-12</span></li>
+          <li><a href="2610.13534.html"><strong>MAGMA-Bench: Evaluating Long-Horizon Embodied Agents under Dynamic Tasks and Execution Failures</strong></a> <span>2026-10-09</span></li>
+          <li><a href="2610.13021.html"><strong>EmbodiedCLBench: Evaluating Continual Learning for Self-Evolving Embodied Agents</strong></a> <span>2026-10-09</span></li>
+          <li><a href="2610.12561.html"><strong>What Should Embodied Agents Remember? Benchmarking and Evaluating Memory Modality for Embodied Agents</strong></a> <span>2026-10-08</span></li>
+          <li><a href="2610.10409.html"><strong>RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments</strong></a> <span>2026-10-07</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

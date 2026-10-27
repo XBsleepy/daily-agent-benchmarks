@@ -1,0 +1,551 @@
+{
+  "date": "2026-10-26",
+  "count": 12,
+  "report": {
+    "date": "2026-10-26",
+    "count": 12,
+    "themes": [
+      {
+        "id": "coding",
+        "count": 4,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "science",
+        "count": 2,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "web",
+        "count": 2,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      }
+    ],
+    "en": {
+      "headline": "12 new agent benchmarks",
+      "summary": "On October 26, 2026, arXiv listed 12 new agent benchmarks. Work clustered around Coding agents (4), Tool use (2), Planning / reasoning (2), and Science lab (2).",
+      "highlights": [
+        {
+          "id": "2610.34714",
+          "title": "SearchHorizonBench: A Benchmark for Search Value in AI Agents",
+          "blurb": "AI agents must decide when another search is worth its cost."
+        },
+        {
+          "id": "2610.35031",
+          "title": "PatentAgentBench: Benchmarking LLM Agents with Professional Patent Task Suites",
+          "blurb": "Patent practice lies at the intersection of technical, legal, and linguistic work, making it challenging yet crucial to technological innovation."
+        },
+        {
+          "id": "2610.35188",
+          "title": "V$^3$AST-Bench: Verifiable, Valid, and Versatile Safety Evaluation for Coding Agents",
+          "blurb": "Large language models increasingly act through code, modifying repositories, executing programs, and interacting with services in agent form."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 12 篇 Agent Benchmark",
+      "summary": "2026年10月26日，arXiv 新增 12 篇 Agent Benchmark。当日主题集中在代码智能体（4）、工具使用（2）、规划 / 推理（2）、科学实验（2）。",
+      "highlights": [
+        {
+          "id": "2610.34714",
+          "title": "SearchHorizonBench: A Benchmark for Search Value in AI Agents",
+          "blurb": "AI agents must decide when another search is worth its cost."
+        },
+        {
+          "id": "2610.35031",
+          "title": "PatentAgentBench: Benchmarking LLM Agents with Professional Patent Task Suites",
+          "blurb": "Patent practice lies at the intersection of technical, legal, and linguistic work, making it challenging yet crucial to technological innovation."
+        },
+        {
+          "id": "2610.35188",
+          "title": "V$^3$AST-Bench: Verifiable, Valid, and Versatile Safety Evaluation for Coding Agents",
+          "blurb": "Large language models increasingly act through code, modifying repositories, executing programs, and interacting with services in agent form."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2610.35488",
+      "title": "FeatureLoop: Benchmarking Coding Agents under Evolving Requirements",
+      "abstract": "Software development with coding agents often begins with a rough request that users refine after trying the implementation. Final correctness alone does not capture the repeated guidance this process requires. We introduce FeatureLoop, a benchmark of 61 human-reviewed tasks from 34 repositories across five primary programming languages and seven software forms. Each task follows one development goal in a persistent workspace through evolution feedback, which adds or clarifies requirements, and completion feedback, which reports failures of stated requirements. Cumulative executable checks track new behavior, repair, and preservation of earlier functionality. We evaluate 12 frontier models and find that the strongest completes 72.1% of tasks with both feedback types. Across models, however, only 15.4% of observed failed stages recover within two corrective revisions. Further analysis reveals incomplete repairs, regressions, and model-specific differences in feedback use and token efficiency, identifying obstacles to reliable, low-intervention development.",
+      "authors": [
+        "Jia Feng",
+        "Alyssa Wu",
+        "Cuiyun Gao",
+        "Yunlong Wang",
+        "Songyuanyi Lu",
+        "Zhichao Hu"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.LG"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-26T14:15:53Z",
+      "updated": "2026-10-26T14:15:53Z",
+      "announced_date": "2026-10-26",
+      "first_seen": "2026-10-26",
+      "comment": "51 pages, including appendices",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.35488v1",
+        "pdf": "https://arxiv.org/pdf/2610.35488v1",
+        "html": "https://arxiv.org/html/2610.35488"
+      },
+      "score": 14,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.35439",
+      "title": "Omni-InteractScope: Benchmarking Proactive and Agentic Interaction in Continuous Omnimodal Streams",
+      "abstract": "Omnimodal large language models (Omni-LLMs) are increasingly expected to assist users while observing continuous audiovisual streams. However, existing evaluations provide limited insight into how reliably these models connect stream evidence and user needs to timely, sustained interventions. We introduce \\textbf{Omni-InteractScope}, a benchmark of 1,479 human-annotated, cross-reviewed interactions with 1,790 temporal targets across eight task groups. It links input modalities, event triggers, intervention types, and user needs, covering event-timed tool invocation and query-free assistance alongside notifications, warnings, state tracking, and continuous responses. Our experimental results on the proposed benchmark reveal three critical limitations of current Omni-LLMs: (1) \\textbf{Timely tool invocation remains unreliable}: all 12 evaluated models produce an on-time first response for at most 40\\% of tool-invocation targets, and joint timing-and-tool accuracy reaches at most 32.0\\%. (2) \\textbf{Query-free reminders remain poorly covered}: all evaluated models achieve lower timely reference-target recall on query-free reminders than on explicit questions, measured on their respective target sets. Reminder recall never exceeds 23.0\\%. (3) \\textbf{End-to-end guidance coverage remains limited}: nine models cover none of the 26 guidance sequences in full, and the remaining three cover only one to three sequences each. Targeted controls further show that tool-invocation scores alone do not establish event grounding and that reminder coverage depends on response history and frequency. These findings motivate developing and evaluating streaming assistants for timely action, initiative under general user needs, and coverage of entire response sequences.",
+      "authors": [
+        "Yinsong Yan",
+        "Ling Wang",
+        "Yuxuan Wang",
+        "Yifan Yang",
+        "Ruiyang Xu",
+        "Junming Lin",
+        "Qi Chen",
+        "Meng Gao",
+        "Minghao Han",
+        "Yunfei Chu",
+        "Qize Yang",
+        "Xize Cheng",
+        "Jin Xu",
+        "Jibin Wu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV",
+        "cs.HC"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-26T13:39:48Z",
+      "updated": "2026-10-26T13:39:48Z",
+      "announced_date": "2026-10-26",
+      "first_seen": "2026-10-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.35439v1",
+        "pdf": "https://arxiv.org/pdf/2610.35439v1",
+        "html": "https://arxiv.org/html/2610.35439"
+      },
+      "score": 14,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.35385",
+      "title": "EmbodiedLab: Benchmarking Embodied Agents That Act to Know",
+      "abstract": "Embodied agents are expected to accomplish real-world goals by deciding for themselves how and when to interact with their surroundings. For many such goals, changing the physical state of the world is the means rather than the end: the agent changes the state of a system through interaction, observes the feedback, and explores until it either achieves the goal itself (e.g., discovering physical laws) or learns what the goal requires; it acts to know. Manipulation benchmarks stop at acting to change, with the target state given; scientific discovery benchmarks evaluate knowing but replace physical experimentation with symbolic actions or numerical queries. We introduce EmbodiedLab, a benchmark in which a robot must act to know. Quantitative science experiments make this setting controllable: the parameters of the system are resampled for every instance, so the result cannot be known in advance, yet it can be scored exactly. Across 30 experiments in five disciplines on 14 apparatus platforms, the agent receives an objective and the apparatus, chooses its own procedure, and operates a physics-based simulated laboratory, reading the instruments through its cameras. Evaluation checks what the agent came to know, grounded in readings recorded during the episode, as well as the physical state the task requires; every experiment is verified to be solvable. We evaluate six frontier models in their developers' coding agents with native observation and control, with added perception and motion planning, and with manipulation skills distilled from the strongest agents. With native control, even the strongest agent succeeds less than half the time; for every agent, most failures arise in interacting with the apparatus, and manipulation skills help weaker agents more than perception and planning. The benchmark and its evaluation code are available at https://github.com/HexaFuture/EmbodiedLab.",
+      "authors": [
+        "Hongcheng Gao",
+        "Zelin Zheng",
+        "Alex Zhou",
+        "Jay Zhu",
+        "Shijia Ge",
+        "Yazhe Wang",
+        "Xiping Li",
+        "Jianshu Zeng",
+        "Di Wu",
+        "Xuan Shangguan",
+        "Yexing Wan",
+        "Lingyu He",
+        "Yongli Wang",
+        "Xiaohan Yu",
+        "Zhiqi Jia",
+        "Yue Liu",
+        "Bryan Hooi",
+        "Yinpeng Dong",
+        "Wentao Zhang",
+        "Sihang Wu",
+        "Xiao He"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-10-26T13:06:33Z",
+      "updated": "2026-10-26T13:06:33Z",
+      "announced_date": "2026-10-26",
+      "first_seen": "2026-10-26",
+      "comment": "Technical report. 19 pages, 10 figures, 9 tables. Project page: https://hexafuture.ai/benchmarks/embodiedlab/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.35385v1",
+        "pdf": "https://arxiv.org/pdf/2610.35385v1",
+        "html": "https://arxiv.org/html/2610.35385"
+      },
+      "score": 17,
+      "tags": [
+        "coding",
+        "embodied",
+        "planning",
+        "research",
+        "science"
+      ],
+      "field": "embodied",
+      "citations": 0
+    },
+    {
+      "id": "2610.35293",
+      "title": "AgenticCity-Bench: Longitudinal Multimodal Observations of Urban Dynamics with Agentic Reasoning",
+      "abstract": "City systems are shaped by interactions among infrastructure, human activity, and environmental conditions. Existing earth observation and urban benchmarks are limited in unified modeling and in capturing their joint dynamics. We introduce AgenticCity-Bench, a longitudinal multimodal benchmark for multi-layer unified state modeling and agentic city task reasoning. The benchmark covers 16 cities in 12 countries across six continents from 2000 to 2025, and includes 18 modalities spanning urban function, activity, and environmental state. It organizes heterogeneous data sources around a common spatial reference and calendar index while preserving spatial and temporal coverage, provenance and tile-level availability. On this foundation, AgenticCity-Bench supports urban cross-modal translation together with diverse agentic city tasks involving forecasting, planning and resource analysis. This study provides a unified benchmark for studying the transition from multimodal urban and earth observation to joint understanding and agentic city decision-making. The dataset is available at https://anonymous.4open.science/r/AgenticCity-Bench.",
+      "authors": [
+        "Xiaofei Yu",
+        "Kailai Sun",
+        "Yanyu Mao",
+        "Baoshen Guo",
+        "Heye Huang",
+        "Yongcai Wang",
+        "Baotong Mi",
+        "Alok Prakash",
+        "Shenhao Wang",
+        "Jinhua Zhao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-26T12:01:17Z",
+      "updated": "2026-10-26T12:01:17Z",
+      "announced_date": "2026-10-26",
+      "first_seen": "2026-10-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.35293v1",
+        "pdf": "https://arxiv.org/pdf/2610.35293v1",
+        "html": "https://arxiv.org/html/2610.35293"
+      },
+      "score": 16,
+      "tags": [
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2610.35215",
+      "title": "SkillLifeBench: Benchmarking Security Across the Lifecycle of Agent Skills",
+      "abstract": "Web agents reuse skills whose stored code, selected version, and loaded implementation can diverge across tasks and updates. SkillLifeBench links these states to task outcomes in 388 paired scenarios spanning implementation, interface, runtime, composition, and version changes. We evaluate 14 models on two paired decision tracks: 89 runtime tasks and 60 autonomous lifecycle tasks spanning 12 templates derived from introduced cases. Lifecycle tasks allow agents to inspect, select, and reconfigure skills while completing verifiable user requests. Joint success requires task completion without the registered attack goal. GPT-5.6-Sol and Sonnet 4.6 both achieve 82.0% on runtime tasks, but reach 96.7% and 56.7% on lifecycle tasks. Across lifecycle evaluations, challenged task success is 77.5%, while joint success is 65.2%; 103 runs complete the task and the attack goal. Adding execution provenance in a matched recovery study raises utility joint success from 49.35% with logs and metadata to 65.58%. A deterministic execution-consistency rule reaches 64.94% with higher benign utility, while full restoration reaches 69.48%. Lifecycle tasks distinguish models with similar runtime scores, and execution evidence improves recovery.",
+      "authors": [
+        "Chenxu Zhang",
+        "Zhou Liu",
+        "Wu Xin",
+        "Wentao Zhang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-10-26T11:07:04Z",
+      "updated": "2026-10-26T11:07:04Z",
+      "announced_date": "2026-10-26",
+      "first_seen": "2026-10-26",
+      "comment": "12 pages, 6 figures. Code and benchmark: https://github.com/Tasselszcx/SkillLifeBench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.35215v1",
+        "pdf": "https://arxiv.org/pdf/2610.35215v1",
+        "html": "https://arxiv.org/html/2610.35215"
+      },
+      "score": 12,
+      "tags": [
+        "web"
+      ],
+      "field": "web",
+      "citations": 0
+    },
+    {
+      "id": "2610.35188",
+      "title": "V$^3$AST-Bench: Verifiable, Valid, and Versatile Safety Evaluation for Coding Agents",
+      "abstract": "Large language models increasingly act through code, modifying repositories, executing programs, and interacting with services in agent form. Their actions introduce risks that cannot be assessed from generated responses alone. Safety evaluation must verify actual consequences, distinguish harm avoidance from task incapability, and cover realistic workflows. We introduce V$^3$AST-Bench, a benchmark for Verifiable results, Valid interpretation, and Versatile risk coverage of Agent Safety. It comprises 212 risk tasks spanning 18 categories. Dedicated runtime environments verify harm and task outcomes through executable checks over states, records, and artifact behavior, while paired capability twin tasks verify workflow competence. Our experiments span 51 combinations of 11 models and five harnesses, spanning 86,496 trials and over 9 billion tokens of model interaction. Results show that V$^3$AST-Bench remains challenging even for frontier coding agents, as Claude Opus 4.8 with Claude Code still causes verified harm on 20.9% of tasks. Across model-harness combinations, agents with comparable competence exhibit markedly different safety outcomes, showing that task capability alone does not guarantee safe execution. More importantly, even explicit recognition of risks does not reliably prevent harmful actions, revealing a critical gap between risk awareness and safe execution. These findings highlight the need to move beyond risk recognition toward enforcing safety throughout execution.",
+      "authors": [
+        "Weitao Feng",
+        "Hengheng Xiong",
+        "Zihao Zeng",
+        "Jun Chen",
+        "Jiyang Guan",
+        "Xiaofeng Wang",
+        "Jialing Tao",
+        "Hui Xue",
+        "Wei Dong"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-26T10:44:18Z",
+      "updated": "2026-10-26T10:44:18Z",
+      "announced_date": "2026-10-26",
+      "first_seen": "2026-10-26",
+      "comment": "Code is available at https://github.com/Alibaba-AAIG/VAST-Bench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.35188v1",
+        "pdf": "https://arxiv.org/pdf/2610.35188v1",
+        "html": "https://arxiv.org/html/2610.35188"
+      },
+      "score": 19,
+      "tags": [
+        "coding",
+        "safety"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.35138",
+      "title": "Co-Design Bench: Multimodal Collaborative Coding Evaluation for Agentic Models",
+      "abstract": "Evaluating human-AI co-design requires testing whether coding agents can translate real users' multimodal requests into working application revisions. We introduce Co-Design Bench, a reference-free benchmark of 273 tasks curated from 37,463 deduplicated queries across 26,314 real user coding sessions. Its two tracks, Multimodal Editing (ME) and Repository Editing (RE), cover localized edits with optional image, audio, video, or document inputs and coordinated repository revisions. Tasks span three capability dimensions: Grounded Understanding, UI Transformation, and Functional Implementation. The tasks pair normalized requests and runnable pre-edit applications with 2,331 hidden expert-authored acceptance criteria. Our judge-then-refute protocol grades criteria using source and browser evidence, challenges positive verdicts with a separate LLM verifier, and audits visual and interaction claims without gold code or target screenshots. Under a shared agentic harness, the strongest of ten model endpoints passes an average of 69.9% of criteria per task but fully satisfies only 26.4% of tasks. All ten endpoints achieve lower criterion completion on repository edits spanning three or four change types than on those spanning one or two. Co-Design Bench provides a testbed for studying the gap between partial requirement satisfaction and complete task success under agentic execution for real-user application revisions.",
+      "authors": [
+        "Xilin Wei",
+        "Shengyuan Ding",
+        "Xinyu Fang",
+        "Tiancheng Gu",
+        "Yuchi Wang",
+        "Zhixun Li",
+        "Ziyu Liu",
+        "Yuhang Zang",
+        "Weixiang Yu",
+        "Cheng Lu",
+        "Chonggao Sun",
+        "Tong Zhou",
+        "Dahua Lin",
+        "Hang Zhang",
+        "Shuai Bai",
+        "Dayiheng Liu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-26T10:10:21Z",
+      "updated": "2026-10-26T10:10:21Z",
+      "announced_date": "2026-10-26",
+      "first_seen": "2026-10-26",
+      "comment": "Project page: https://codesignbench.github.io/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.35138v1",
+        "pdf": "https://arxiv.org/pdf/2610.35138v1",
+        "html": "https://arxiv.org/html/2610.35138"
+      },
+      "score": 17,
+      "tags": [
+        "web",
+        "coding",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2610.35031",
+      "title": "PatentAgentBench: Benchmarking LLM Agents with Professional Patent Task Suites",
+      "abstract": "Patent practice lies at the intersection of technical, legal, and linguistic work, making it challenging yet crucial to technological innovation. Recently, rapid advances in large language models (LLMs) and agentic systems have demonstrated the potential to complete realistic business workflows and even patent works. This raises a question: can current AI systems perform patent work reliably? Existing benchmarks cover a limited range of patent tasks and simplify evidence acquisition by providing reference materials or candidate documents. In this paper, we introduce PatentAgentBench, a benchmark comprising 510 instances across eight task suites: novelty search, freedom-to-operate (FTO) search, design FTO, invalidity search, claim charting, patent drafting, office-action response, and patent translation. Curated from real patent records and professional materials, the benchmark combines task-specific metrics with expert-reviewed annotations and rubrics. Retrieval tasks such novelty search, FTO, etc., require agents to search and compare patent collections without a supplied candidate pool. The drafting and OAR tasks assess the quality of agents' work given technical disclosure and office action notice. We evaluate seven LLMs across four agent harnesses on PatentAgentBench, finding that current systems still struggle to identify novelty, assess risk, and understand practitioner intent throughout patent workflows.",
+      "authors": [
+        "Yijie Hu",
+        "Wei Li",
+        "Junjie Zhou",
+        "Zhiqi Jiang",
+        "Yi Jin",
+        "Licong Xu",
+        "Xinkai Sun",
+        "Kai Duan",
+        "Lisha Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-26T08:44:25Z",
+      "updated": "2026-10-26T08:44:25Z",
+      "announced_date": "2026-10-26",
+      "first_seen": "2026-10-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.35031v1",
+        "pdf": "https://arxiv.org/pdf/2610.35031v1",
+        "html": "https://arxiv.org/html/2610.35031"
+      },
+      "score": 20,
+      "tags": [
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2610.34887",
+      "title": "NumTrace: Auditing the Number Provenance of Financial Analyst Agents",
+      "abstract": "A numerical claim generated by a financial analyst agent can match a number in a company filing but refer to the wrong entity, concept, period, unit or scope. A check based on reference answers can mark such an answer as wrong but does not explain why it fails. In this paper, we present NumTrace, a new benchmark that audits the provenance of each numerical claim made by financial analyst agents: its source and financial semantics. NumTrace currently has 540 questions over 2,163 SEC EDGAR documents. To the best of our knowledge, it is the first numerical benchmark about who holds a company's shares (Form 13F) and what its executives are owed (Item 402(i)). On a frozen snapshot of these documents, we build the reference answers according to accounting rules. NumTrace then gives each claim three separate verdicts: value, binding and support. By retaining separate value and binding verdicts, NumTrace detects right number, wrong account (RNWA) errors: a claim has an RNWA error when it passes the value check but fails the binding check. The RNWA rate quantifies the gap between value-only and joint value-and-binding pass rates. Finally, we audit three agents, Claude Opus 5.5, GPT-6 Astra and DeepSeek-V4.1-Flash. RNWA errors make up 67.5-81.8% of each agent's failing claims. In particular, on 13F co-filing group questions, about 91% of claims pass the value check, but fewer than half pass the binding check.",
+      "authors": [
+        "Tianlei Zhu",
+        "Matt White",
+        "Xue Liu",
+        "Xiao-Yang Liu"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-10-26T05:58:10Z",
+      "updated": "2026-10-26T05:58:10Z",
+      "announced_date": "2026-10-26",
+      "first_seen": "2026-10-26",
+      "comment": "22 pages, 8 figures, 12 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.34887v1",
+        "pdf": "https://arxiv.org/pdf/2610.34887v1",
+        "html": "https://arxiv.org/html/2610.34887"
+      },
+      "score": 5,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.34767",
+      "title": "The Right Fact, the Wrong Decision: SciValidityBench for Scientific Agent Memory",
+      "abstract": "Most agent-memory benchmarks frame long-term memory as retrieval: can an agent recover the relevant record from a long and evolving history? Scientific agents face a stricter problem: a correctly remembered fact may still be invalid to use. The same reported test result can support confirmation when the outcome and stopping rule were fixed in advance, yet only exploration when the outcome was selected from twenty inspected results. We call this scientific use validity: whether remembered evidence is eligible to influence a decision under the state governing its interpretation. We introduce SciValidityBench, an executable benchmark factory with 64 TaskSpecs spanning five validity modules and six scientific domains. TaskSpecs couple generated experimental histories with scientific-state definitions, programmatic decision oracles, controlled interventions, and automatic scoring. The SciStateForge compiler-reader framework turns distributed histories into explicit decision-governing state. Counterfactual pairs and targeted corruption-repair controls then test whether models use those dependencies and localize failures. Across four model families, compiled scientific state improves valid decision-making by 9.2-18.8 percentage points over a generic Event Graph. Retrieval alone does not reproduce this cross-family gain, while content-identical flat and typed views show that the improvement comes from exposing governing state rather than a particular graph serialization. SciValidityBench thus shifts memory evaluation from finding the right fact to deciding whether that fact should control the decision.",
+      "authors": [
+        "Yuexi Pan",
+        "Yongchao Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-26T03:12:57Z",
+      "updated": "2026-10-26T03:12:57Z",
+      "announced_date": "2026-10-26",
+      "first_seen": "2026-10-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.34767v1",
+        "pdf": "https://arxiv.org/pdf/2610.34767v1",
+        "html": "https://arxiv.org/html/2610.34767"
+      },
+      "score": 8,
+      "tags": [
+        "memory",
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2610.34714",
+      "title": "SearchHorizonBench: A Benchmark for Search Value in AI Agents",
+      "abstract": "AI agents must decide when another search is worth its cost. Answer-success probabilities capture question difficulty, while this decision requires estimating the additional benefit of search. We introduce SearchHorizonBench, a benchmark for learning and evaluating search value from execution experience. Paired continuations and repeated executions separate expected search gain from generation noise and connect prediction quality to decision utility. The resource contains 45,632 executions across 3,168 questions. On 1,632 held-out questions, historical calibration reduces Brier error by 16.2%, with the improvement concentrated in success-level information. Search gains have a standard deviation of 21.4 percentage points, and tested historical estimators explain less than 2% of this variance in point estimates. Matched-configuration learning curves probe this distinction across training scales. At the reference token price, free selection observations yield a 2.49-point utility opportunity over the best constant action, driven primarily by gain information. Reusable histories, frozen splits, strong baselines and scoring tools provide a common foundation for developing and evaluating value-aware search agents.",
+      "authors": [
+        "Jingjie Ning",
+        "Xueqi Li",
+        "Yibo Kong"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-26T02:04:38Z",
+      "updated": "2026-10-26T02:04:38Z",
+      "announced_date": "2026-10-26",
+      "first_seen": "2026-10-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.34714v1",
+        "pdf": "https://arxiv.org/pdf/2610.34714v1",
+        "html": "https://arxiv.org/html/2610.34714"
+      },
+      "score": 22,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.34644",
+      "title": "SlowLab: Benchmarking Autonomous AI Agents on a Year of Experiments They Cannot Undo",
+      "abstract": "AI agents are increasingly proposed as autonomous experimenters, yet the benchmarks that test them mostly offer cheap experiments that answer at once. Experiments in physical facilities are different: they take months, occupy scarce equipment and cannot be undone. We present SlowLab, a benchmark in which an agent runs a one-year campaign in four simulated greenhouse compartments on a site whose crop, facility and prices are hidden. The agent decides when to plant which climate policy, whether to stop a crop and which measurements to read while crops grow, and at the end recommends one policy, which a private evaluator scores in weather the agent never saw. In a preregistered study on 48 unseen sites, three low-cost language-model agents ended near a standard grower setting and clearly below a Bayesian-optimisation baseline that starts from that setting. They ran the facility as two synchronous batches, so measurements taken during the season never changed what they planted, and these measurements improved no method's result. Letting other methods re-read the evidence a campaign had collected did not yield significantly better recommendations, which points to where the models start and which experiments they try. Code is released under the MIT license.",
+      "authors": [
+        "Ningpei Ding",
+        "Zai Wen Feng"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-26T00:09:19Z",
+      "updated": "2026-10-26T00:09:19Z",
+      "announced_date": "2026-10-26",
+      "first_seen": "2026-10-26",
+      "comment": "16 pages (9 main text), 7 figures, 5 tables. Code: https://github.com/dingningpei/slowlab-benchmark",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.34644v1",
+        "pdf": "https://arxiv.org/pdf/2610.34644v1",
+        "html": "https://arxiv.org/html/2610.34644"
+      },
+      "score": 14,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

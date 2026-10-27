@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Task Success Is Not Enough: Side-effect-Aware Evaluation of Tool-Using Language Model Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Tool-using language model agents are usually evaluated by whether they finish the user&#x27;s task. That metric misses a common failure…" />
+    <meta name="keywords" content="Safety, Tool use, agent benchmark, LLM agent, arXiv, 2610.34167" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.34167.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Task Success Is Not Enough: Side-effect-Aware Evaluation of Tool-Using Language Model Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Tool-using language model agents are usually evaluated by whether they finish the user&#x27;s task. That metric misses a common failure…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.34167.html" />
+    <meta property="article:published_time" content="2026-10-25T08:54:08Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Task Success Is Not Enough: Side-effect-Aware Evaluation of Tool-Using Language Model Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Tool-using language model agents are usually evaluated by whether they finish the user&#x27;s task. That metric misses a common failure…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Task Success Is Not Enough: Side-effect-Aware Evaluation of Tool-Using Language Model Agents",
+  "name": "Task Success Is Not Enough: Side-effect-Aware Evaluation of Tool-Using Language Model Agents",
+  "abstract": "Tool-using language model agents are usually evaluated by whether they finish the user's task. That metric misses a common failure: an agent can complete the requested work while also taking an unauthorized side-effecting action, such as writing to the wrong object, expanding the scope of the request, or contacting an unintended recipient. We call this failure mode collateral damage (CD). We introduce SABench (Side-effect-Aware Benchmark), a benchmark of 201 email, calendar, and ticket tasks. Each task crosses one of four state structures (independent, dependent, externally reachable, cross-tool) with one of four trap families (ambiguity, mis-targeting, cascade harm, overreach), and each task has a deterministic trace-based oracle for both goal satisfaction and authorization compliance. Across 2,211 model-task pairs from 11 frontier LLMs spanning major commercial and open model families, 15.2% of all runs incur CD, with risk concentrated in ambiguity tasks (38.8% violation rate) while non-ambiguous traps average 8.4% CD. Among goal-satisfied runs, 12.8% still produce unauthorized writes. Cross-tool and dependent states have about twice the CD rate of independent states. CD rates vary by 4.7x across models at comparable goal rates, which suggests that task success alone is a poor proxy for safe tool use. The SABench task corpus is released at https://huggingface.co/datasets/Phaedrus/sabench; the traces, oracle, code, and analysis pipeline are released at https://github.com/hjj194/sabench-artifact.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jiaju Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Shaobin Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinglong Liang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinyu Ma"
+    },
+    {
+      "@type": "Person",
+      "name": "Hao Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Wei Ke"
+    },
+    {
+      "@type": "Person",
+      "name": "Tao Tan"
+    },
+    {
+      "@type": "Person",
+      "name": "Yue Sun"
+    }
+  ],
+  "datePublished": "2026-10-25T08:54:08Z",
+  "dateModified": "2026-10-25T08:54:08Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.34167.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.34167.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.34167v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.34167"
+  },
+  "keywords": [
+    "Safety",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Safety"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.34167v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.34167"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Task Success Is Not Enough: Side-effect-Aware Evaluation of Tool-Using Language Model Agents</h1>
+        <div class="meta">
+          Jiaju Huang, Shaobin Chen, Xinglong Liang, Xinyu Ma, Hao Yang, Wei Ke, Tao Tan, Yue Sun
+          · 2610.34167
+          · <time datetime="2026-10-25">2026-10-25</time>
+          · Safety
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Tool-using language model agents are usually evaluated by whether they finish the user&#x27;s task. That metric misses a common failure: an agent can complete the requested work while also taking an unauthorized side-effecting action, such as writing to the wrong object, expanding the scope of the request, or contacting an unintended recipient. We call this failure mode collateral damage (CD). We introduce SABench (Side-effect-Aware Benchmark), a benchmark of 201 email, calendar, and ticket tasks. Each task crosses one of four state structures (independent, dependent, externally reachable, cross-tool) with one of four trap families (ambiguity, mis-targeting, cascade harm, overreach), and each task has a deterministic trace-based oracle for both goal satisfaction and authorization compliance. Across 2,211 model-task pairs from 11 frontier LLMs spanning major commercial and open model families, 15.2% of all runs incur CD, with risk concentrated in ambiguity tasks (38.8% violation rate) while non-ambiguous traps average 8.4% CD. Among goal-satisfied runs, 12.8% still produce unauthorized writes. Cross-tool and dependent states have about twice the CD rate of independent states. CD rates vary by 4.7x across models at comparable goal rates, which suggests that task success alone is a poor proxy for safe tool use. The SABench task corpus is released at https://huggingface.co/datasets/Phaedrus/sabench; the traces, oracle, code, and analysis pipeline are released at https://github.com/hjj194/sabench-artifact.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.34167v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.34167v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.34167" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Safety benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.35031.html"><strong>PatentAgentBench: Benchmarking LLM Agents with Professional Patent Task Suites</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.34535.html"><strong>SentryBench: A Cost-Sensitive Benchmark for Adversarial Robustness of Tool-Using LLM Agents in Public-Safety Deployments</strong></a> <span>2026-10-25</span></li>
+          <li><a href="2610.32531.html"><strong>On Task, Off Track: Benchmarking LLM and Agent Robustness to Near-Target Prompt Injection</strong></a> <span>2026-10-23</span></li>
+          <li><a href="2610.31650.html"><strong>EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence</strong></a> <span>2026-10-22</span></li>
+          <li><a href="2610.30635.html"><strong>What the Specification Did Not Say: Specification-Oracle Gaps in Test-Graded Coding-Agent Benchmarks</strong></a> <span>2026-10-22</span></li>
+          <li><a href="2610.29346.html"><strong>Benchmarking and Error Analysis of Deep Search and Deep Research LLM Agents</strong></a> <span>2026-10-21</span></li>
+          <li><a href="2610.28982.html"><strong>Behavior Beyond Text: Evaluating Refusal Transfer Failure in LLM Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.28381.html"><strong>CAPSafe: A Benchmark for Contextual Action and Plan Safety Reasoning in Embodied Agents</strong></a> <span>2026-10-20</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

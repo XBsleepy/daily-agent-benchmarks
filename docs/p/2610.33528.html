@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SkillShift-Bench: Benchmarking Skill Learning under Environment Evolution for Web Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Skill learning enables web agents to reuse prior experience for long-horizon interactive tasks. However, learned skills are typically…" />
+    <meta name="keywords" content="Web &amp; browser, Web agents, Safety, agent benchmark, LLM agent, arXiv, 2610.33528" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.33528.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SkillShift-Bench: Benchmarking Skill Learning under Environment Evolution for Web Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Skill learning enables web agents to reuse prior experience for long-horizon interactive tasks. However, learned skills are typically…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.33528.html" />
+    <meta property="article:published_time" content="2026-10-24T08:09:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SkillShift-Bench: Benchmarking Skill Learning under Environment Evolution for Web Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Skill learning enables web agents to reuse prior experience for long-horizon interactive tasks. However, learned skills are typically…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SkillShift-Bench: Benchmarking Skill Learning under Environment Evolution for Web Agents",
+  "name": "SkillShift-Bench: Benchmarking Skill Learning under Environment Evolution for Web Agents",
+  "abstract": "Skill learning enables web agents to reuse prior experience for long-horizon interactive tasks. However, learned skills are typically evaluated in closed environments, overlooking the fact that real-world web deployment involves continuous shifts in invocation context, perceptual grounding, and execution feasibility. To this end, we introduce SkillShift-Bench, the first benchmark for evaluating skill learning with controlled open-environment shifts. SkillShift-Bench simulates Contextual Shift, Perceptual Shift, and Execution Shift across three self-hosted web systems, and evaluates agents with diagnostics covering task success, interaction cost, skill use, and skill failure. Comprehensive experiments reveal systematic robustness degradation under controlled shifts, characterized by lower success rates, higher interaction costs, and more frequent skill failures, with Execution Shift exerting the strongest pressure. We further formulate shifted skill execution as a nonstationary local executability problem and provide both a dynamic-regret analysis and a practical test-time adaptation method, demonstrating the feasibility of improving learned-skill execution without relearning the skill library. Code, tasks, environments, documentation, and the leaderboard are available at https://skillshift-bench.github.io/.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Bo-Yu Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhi Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Yu-Feng Li"
+    }
+  ],
+  "datePublished": "2026-10-24T08:09:00Z",
+  "dateModified": "2026-10-24T08:09:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.33528.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.33528.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.33528v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.33528"
+  },
+  "keywords": [
+    "Web & browser",
+    "Web agents",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Web & browser"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.33528v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.33528"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SkillShift-Bench: Benchmarking Skill Learning under Environment Evolution for Web Agents</h1>
+        <div class="meta">
+          Bo-Yu Chen, Zhi Zhou, Yu-Feng Li
+          · 2610.33528
+          · <time datetime="2026-10-24">2026-10-24</time>
+          · Web &amp; browser
+        </div>
+        <div class="themes"><span class="chip">Web agents</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Skill learning enables web agents to reuse prior experience for long-horizon interactive tasks. However, learned skills are typically evaluated in closed environments, overlooking the fact that real-world web deployment involves continuous shifts in invocation context, perceptual grounding, and execution feasibility. To this end, we introduce SkillShift-Bench, the first benchmark for evaluating skill learning with controlled open-environment shifts. SkillShift-Bench simulates Contextual Shift, Perceptual Shift, and Execution Shift across three self-hosted web systems, and evaluates agents with diagnostics covering task success, interaction cost, skill use, and skill failure. Comprehensive experiments reveal systematic robustness degradation under controlled shifts, characterized by lower success rates, higher interaction costs, and more frequent skill failures, with Execution Shift exerting the strongest pressure. We further formulate shifted skill execution as a nonstationary local executability problem and provide both a dynamic-regret analysis and a practical test-time adaptation method, demonstrating the feasibility of improving learned-skill execution without relearning the skill library. Code, tasks, environments, documentation, and the leaderboard are available at https://skillshift-bench.github.io/.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.33528v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.33528v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.33528" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Web &amp; browser benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.35215.html"><strong>SkillLifeBench: Benchmarking Security Across the Lifecycle of Agent Skills</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.34634.html"><strong>AgentProofBench: Benchmarking Reusable Verifiers for Web Agents</strong></a> <span>2026-10-25</span></li>
+          <li><a href="2610.31494.html"><strong>AgentVQA: A Unified Benchmark for Agentic Visual Understanding</strong></a> <span>2026-10-22</span></li>
+          <li><a href="2610.27205.html"><strong>LoWAgent: A Low-Resource Multilingual Benchmark for Web Agents</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.17378.html"><strong>Get In, Decide, Prove: A Merchant-Side Readiness Benchmark for Agentic Commerce</strong></a> <span>2026-10-12</span></li>
+          <li><a href="2610.12823.html"><strong>When Charts Deceive Web Agents: A Paired Benchmark for Misleading Visualization-Grounded Tasks</strong></a> <span>2026-10-09</span></li>
+          <li><a href="2610.01491.html"><strong>Auditing Web Agent Evaluation on WebArena-Lite: Human Review of Outcomes and Trajectories</strong></a> <span>2026-10-02</span></li>
+          <li><a href="2609.36488.html"><strong>AdaptArena: Evaluating Test-Time Personalization of Web Agents</strong></a> <span>2026-09-29</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

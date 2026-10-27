@@ -1,0 +1,327 @@
+{
+  "date": "2026-10-25",
+  "count": 7,
+  "report": {
+    "date": "2026-10-25",
+    "count": 7,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 4,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      }
+    ],
+    "en": {
+      "headline": "7 new agent benchmarks",
+      "summary": "On October 25, 2026, arXiv listed 7 new agent benchmarks. Work clustered around Tool use (4), Safety (2), and Web agents (1).",
+      "highlights": [
+        {
+          "id": "2610.34535",
+          "title": "SentryBench: A Cost-Sensitive Benchmark for Adversarial Robustness of Tool-Using LLM Agents in Public-Safety Deployments",
+          "blurb": "Large language model (LLM) agents are increasingly wired to consequential tools that send public alerts, dispatch responders, and query citizen records, where one erroneous tool call carries real-world cost."
+        },
+        {
+          "id": "2610.34634",
+          "title": "AgentProofBench: Benchmarking Reusable Verifiers for Web Agents",
+          "blurb": "Reusable Web-agent verification requires a rule to follow changing requirements and support subsequent execution."
+        },
+        {
+          "id": "2610.33956",
+          "title": "Continual Learning Exam: Benchmarking Long-Horizon RSI and Experiential Learning in LLM Agents",
+          "blurb": "Continual learning is the ability of LLM agents to improve over time by acquiring, refining, and applying knowledge from experience while retaining useful prior knowledge."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 7 篇 Agent Benchmark",
+      "summary": "2026年10月25日，arXiv 新增 7 篇 Agent Benchmark。当日主题集中在工具使用（4）、安全（2）、网页智能体（1）。",
+      "highlights": [
+        {
+          "id": "2610.34535",
+          "title": "SentryBench: A Cost-Sensitive Benchmark for Adversarial Robustness of Tool-Using LLM Agents in Public-Safety Deployments",
+          "blurb": "Large language model (LLM) agents are increasingly wired to consequential tools that send public alerts, dispatch responders, and query citizen records, where one erroneous tool call carries real-world cost."
+        },
+        {
+          "id": "2610.34634",
+          "title": "AgentProofBench: Benchmarking Reusable Verifiers for Web Agents",
+          "blurb": "Reusable Web-agent verification requires a rule to follow changing requirements and support subsequent execution."
+        },
+        {
+          "id": "2610.33956",
+          "title": "Continual Learning Exam: Benchmarking Long-Horizon RSI and Experiential Learning in LLM Agents",
+          "blurb": "Continual learning is the ability of LLM agents to improve over time by acquiring, refining, and applying knowledge from experience while retaining useful prior knowledge."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2610.34634",
+      "title": "AgentProofBench: Benchmarking Reusable Verifiers for Web Agents",
+      "abstract": "Reusable Web-agent verification requires a rule to follow changing requirements and support subsequent execution. We introduce AgentProofBench, which connects paired tests of a frozen acceptance rule to execution from identical saved openings. The resource spans 97 tasks, 79 families, and four Web services. Experiments with DeepSeek Flash/Pro establish two linked measurements. Across 48 families, complete-panel and decision-replay tests retain 82/96 Flash and 79/96 Pro source programs; paired reuse-rebuild BA intervals are [-5.47, 1.57] and [-10.16, 0.00] percentage points. Across 22 execution families, deployment-state panel correctness separates program assignments whose two saved openings are both delivered correctly: 32/33 assignments with error-free panels, versus 1/11 with panel errors. All reference-defined program-gate regressions and withheld deliveries occur in the latter group. Neutral continuation attains the highest correct delivery under the tested generic feedback, providing a concrete baseline for measuring the value added by a gate. Released instructions, states, programs, reference rules, and trajectories connect each test failure to its execution consequences. AgentProofBench makes reusable verification assessable at both the requirement and policy levels.",
+      "authors": [
+        "Jingjie Ning",
+        "Xueqi Li",
+        "Yi Lu",
+        "Yibo Kong"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-10-25T23:20:28Z",
+      "updated": "2026-10-25T23:20:28Z",
+      "announced_date": "2026-10-25",
+      "first_seen": "2026-10-25",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.34634v1",
+        "pdf": "https://arxiv.org/pdf/2610.34634v1",
+        "html": "https://arxiv.org/html/2610.34634"
+      },
+      "score": 14,
+      "tags": [
+        "web"
+      ],
+      "field": "web",
+      "citations": 0
+    },
+    {
+      "id": "2610.34535",
+      "title": "SentryBench: A Cost-Sensitive Benchmark for Adversarial Robustness of Tool-Using LLM Agents in Public-Safety Deployments",
+      "abstract": "Large language model (LLM) agents are increasingly wired to consequential tools that send public alerts, dispatch responders, and query citizen records, where one erroneous tool call carries real-world cost. Existing agent-safety benchmarks measure generic harm or prompt-injection success and implicitly treat refusing as the safe default. In public-safety deployments that assumption breaks: an agent too cautious to dispatch help fails as surely as one that triggers a false alert. We present SentryBench, which scores agents on a two-sided, cost-sensitive frontier jointly measuring attack success, over-refusal (missing a real emergency), and over-reaction (unwarranted action) under adversarial tool use, with scenarios grounded in real emergency-call transcripts, disaster messages, and real injection/jailbreak payloads. We formalize deployment harm as an asymmetric cost functional, prove naive caution is harm-dominated whenever it refuses more genuine emergencies than the attack harm it averts, and prove a targeted trust gate adds zero over-refusal on clean input. Across 840 scored episodes over three frontier models and three defenses, refuse-more caution drives over-refusal to 100 percent on two of three models for at most a 3.7-point change in attack success and yields the worst harm everywhere, whereas our trust-gating wrapper dominates the frontier (lowest harm on every model, over-refusal at or below baseline, higher containment). Provider content filters also silently perform part of the defending and must be reported separately.",
+      "authors": [
+        "Md Abu Yusuf",
+        "Oyshi Tabassum Aditi",
+        "Md Faysal Hosain Mazed"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-10-25T19:49:40Z",
+      "updated": "2026-10-25T19:49:40Z",
+      "announced_date": "2026-10-25",
+      "first_seen": "2026-10-25",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.34535v1",
+        "pdf": "https://arxiv.org/pdf/2610.34535v1",
+        "html": "https://arxiv.org/html/2610.34535"
+      },
+      "score": 23,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2610.34238",
+      "title": "$Δτ$-Bench: Pushing Agents Toward a Moving Capability",
+      "abstract": "In this paper, we introduce $Δτ$-Bench, an executable agent benchmark that models the structural evolution of large tool ecosystems. In $Δτ$-Bench, independently evolving services continually reshape how tasks can be accomplished: familiar tools may disappear or be replaced, while more efficient alternatives emerge amid overlapping functionality and noisy documentation. Against this moving capability frontier, we evaluate whether agents can proactively discover efficient tool-use paths and promptly revise their accumulated procedural knowledge, bringing together demands that existing benchmarks fail to examine. $Δτ$-Bench comprises 1,588 validated multi-turn tasks across 42 domains and six successive ecosystem states generated through capability-preserving transformations. Our evaluation shows that even the strongest evaluated model or harness achieves only 42.3% task success, while initial gains from existing skill-learning methods can not consistently translate into better adaptation as the ecosystem evolves. These findings motivate Steward, an ecosystem manager that jointly manages tools and procedural knowledge through incremental skill maintenance and dynamic provisioning during task execution. Experiments show that Steward sustains higher task success across ecosystem changes with lower skill-maintenance overhead, while improving both recovery from disrupted workflows and adoption of more efficient alternatives.",
+      "authors": [
+        "Shuofei Qiao",
+        "Xuanguang Pan",
+        "Yijun Chen",
+        "Wendi Feng",
+        "Bin Wu",
+        "Runnan Fang",
+        "Yuqi Zhu",
+        "Shumin Deng",
+        "Emine Yilmaz"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CV",
+        "cs.IR",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-10-25T12:10:52Z",
+      "updated": "2026-10-25T12:10:52Z",
+      "announced_date": "2026-10-25",
+      "first_seen": "2026-10-25",
+      "comment": "Work in progress",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.34238v1",
+        "pdf": "https://arxiv.org/pdf/2610.34238v1",
+        "html": "https://arxiv.org/html/2610.34238"
+      },
+      "score": 10,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.34185",
+      "title": "R2A-Sales: A Policy-Atom-Matched Benchmark for Rule-to-Action Gaps in Goal-Directed Sales Agents",
+      "abstract": "LLM-based sales agents are often evaluated on static policy questions or task success, but deployment asks a sharper question: when a model can state a rule, will it choose compliant, tool-grounded actions under commercial pressure? We introduce R2A-Sales (Rule-to-Action), a policy-atom-matched benchmark for this question. Each item pairs a static probe with a multi-turn sales scenario sharing the same versioned policy atom, facts, evidence, behavioral constraints, and tool contract, so differences cannot be attributed to policy-content mismatch. In the interactive arm, a code-owned ledger verifies committed tool effects and terminal states; unsupported action claims receive no credit. We report static compliance $K$, grounded action compliance $A=\\Pr(\\text{safe terminal}\\land\\text{no hard violation}\\land\\text{non-echo})$, and the matched gap $G=K-A$. The frozen release spans three controlled Chinese-language sales domains, 24 policy atoms, 42 semantic cores, and 2,016 matched pairs. The confirmatory study audits 21,888 runs over 19 cores, covering eight backbones plus four Qwen3-8B prompt treatments (12 configurations). Static compliance is near ceiling $(K=89.9\\%\\text{--}99.1\\%)$, yet eight-backbone action compliance is only $A=3.0\\%\\text{--}17.3\\%$, giving $G=80.4\\text{--}92.5$ percentage points. Since $A$ also requires safe termination, $G$ upper-bounds rule-to-action degradation rather than isolating pressure alone. No prompt-only treatment dominates all metrics. R2A-Sales shows that sales-agent reliability must be measured at committed action, not rule recital or task completion alone.",
+      "authors": [
+        "Yihua Qin",
+        "Jiajie Jerry Zhao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-25T09:45:03Z",
+      "updated": "2026-10-25T09:45:03Z",
+      "announced_date": "2026-10-25",
+      "first_seen": "2026-10-25",
+      "comment": "25 pages, including 16 pages of supplementary material. Both authors contributed equally",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.34185v1",
+        "pdf": "https://arxiv.org/pdf/2610.34185v1",
+        "html": "https://arxiv.org/html/2610.34185"
+      },
+      "score": 7,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.34167",
+      "title": "Task Success Is Not Enough: Side-effect-Aware Evaluation of Tool-Using Language Model Agents",
+      "abstract": "Tool-using language model agents are usually evaluated by whether they finish the user's task. That metric misses a common failure: an agent can complete the requested work while also taking an unauthorized side-effecting action, such as writing to the wrong object, expanding the scope of the request, or contacting an unintended recipient. We call this failure mode collateral damage (CD). We introduce SABench (Side-effect-Aware Benchmark), a benchmark of 201 email, calendar, and ticket tasks. Each task crosses one of four state structures (independent, dependent, externally reachable, cross-tool) with one of four trap families (ambiguity, mis-targeting, cascade harm, overreach), and each task has a deterministic trace-based oracle for both goal satisfaction and authorization compliance. Across 2,211 model-task pairs from 11 frontier LLMs spanning major commercial and open model families, 15.2% of all runs incur CD, with risk concentrated in ambiguity tasks (38.8% violation rate) while non-ambiguous traps average 8.4% CD. Among goal-satisfied runs, 12.8% still produce unauthorized writes. Cross-tool and dependent states have about twice the CD rate of independent states. CD rates vary by 4.7x across models at comparable goal rates, which suggests that task success alone is a poor proxy for safe tool use. The SABench task corpus is released at https://huggingface.co/datasets/Phaedrus/sabench; the traces, oracle, code, and analysis pipeline are released at https://github.com/hjj194/sabench-artifact.",
+      "authors": [
+        "Jiaju Huang",
+        "Shaobin Chen",
+        "Xinglong Liang",
+        "Xinyu Ma",
+        "Hao Yang",
+        "Wei Ke",
+        "Tao Tan",
+        "Yue Sun"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-25T08:54:08Z",
+      "updated": "2026-10-25T08:54:08Z",
+      "announced_date": "2026-10-25",
+      "first_seen": "2026-10-25",
+      "comment": "Accepted at NeurIPS 2026 (Evaluations and Datasets Track). 19 pages, 5 figures, 10 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.34167v1",
+        "pdf": "https://arxiv.org/pdf/2610.34167v1",
+        "html": "https://arxiv.org/html/2610.34167"
+      },
+      "score": 14,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2610.34107",
+      "title": "Can LLMs Trust Appropriately? Evaluating Calibrated Reliance on Imperfect Partners",
+      "abstract": "Large language models increasingly collaborate with humans and peer AI agents whose contributions may be incomplete, inconsistent, or incorrect. Effective collaboration requires calibrated trust, whereby decisions to rely on, verify, or assist a partner adapt rationally as empirical evidence accumulates. We investigate whether models translate partner evidence into appropriate reliance policies. We introduce a benchmark of 324 scenarios across 23 collaboration categories. Each scenario involves three sequential decisions with explicit transition dynamics, feedback emissions, and cost schedules, permitting exact analytical evaluation of choices against their expected consequences over the remaining interaction. Evaluating seven models alongside 36 controlled-history probes, we dissociate evidence sensitivity from normatively appropriate action. While the strongest frontier model approaches near-optimal decisions, other models exhibit recurring pathologies: procuring excessive safeguards, purchasing verification tests with zero expected value of information, prioritizing immediate savings over cooperative learning, and misallocating assistance to suboptimal channels. Supplying explicit posterior distributions resolves certain errors while introducing new failure modes. Calibrated trust in autonomous agents critically demands coupling empirical evidence with forward-looking decision utility.",
+      "authors": [
+        "Mengdi Chu",
+        "Jintao Huang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.HC"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-25T07:06:31Z",
+      "updated": "2026-10-25T07:06:31Z",
+      "announced_date": "2026-10-25",
+      "first_seen": "2026-10-25",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.34107v1",
+        "pdf": "https://arxiv.org/pdf/2610.34107v1",
+        "html": "https://arxiv.org/html/2610.34107"
+      },
+      "score": 10,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.33956",
+      "title": "Continual Learning Exam: Benchmarking Long-Horizon RSI and Experiential Learning in LLM Agents",
+      "abstract": "Continual learning is the ability of LLM agents to improve over time by acquiring, refining, and applying knowledge from experience while retaining useful prior knowledge. It is essential for agents learning over long time horizons, yet current evaluations largely assess individual task performance rather than improvement through accumulated experience. We introduce Continual Learning Exam (CLE), a large-scale benchmark developed by 50+ domain experts to measure experience-driven improvement in realistic professional workflows. CLE comprises 120 human-authored tasks, each organised as a five-level ladder, yielding 600 levels spanning 89 professional roles across 12 occupational domains. Agents must pass each level to unlock the next, with later levels building on experience accumulated during earlier assignments. An evaluation agent assesses each submission against human-authored rubrics. We compare a single-submission setting with one that provides diagnostic feedback after failure and allows one revision. Across 17 harness-model configurations using frontier LLMs, feedback and revision yield a median completion gain of 5.3 percentage points. Yet the best-performing system clears only 47.7% of levels and completes all five levels in just 23.3% of tasks, highlighting the difficulty of sustained learning from experience for existing frontier LLMs. As such, the dataset can also be used to post-train LLMs to strengthen their continual learning capabilities.",
+      "authors": [
+        "Haoyu Zhao",
+        "Sitian Tu",
+        "Yuxuan Huang",
+        "Huichi Zhou",
+        "Zhangyue Yin",
+        "Jiahao Huang",
+        "Jingyuan Xu",
+        "Tianmiao Shi",
+        "Jin Shi",
+        "Nianxi Zhang",
+        "Yangmiao Zhang",
+        "Zhuolang Chan",
+        "Huiyan Hu",
+        "Chenchao Sheng",
+        "Yaqing Luo",
+        "Yue Chen",
+        "Huaxiu Yao",
+        "Meng Fang",
+        "Jun Wang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-10-25T00:00:25Z",
+      "updated": "2026-10-25T00:00:25Z",
+      "announced_date": "2026-10-25",
+      "first_seen": "2026-10-25",
+      "comment": "Project page: https://haoyu-zhao.github.io/CLE/index.html",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.33956v1",
+        "pdf": "https://arxiv.org/pdf/2610.33956v1",
+        "html": "https://arxiv.org/html/2610.33956"
+      },
+      "score": 14,
+      "tags": [],
+      "field": "rsi",
+      "citations": 0
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Right Fact, the Wrong Decision: SciValidityBench for Scientific Agent Memory | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Most agent-memory benchmarks frame long-term memory as retrieval: can an agent recover the relevant record from a long and evolving…" />
+    <meta name="keywords" content="Science &amp; research, Memory, Science lab, agent benchmark, LLM agent, arXiv, 2610.34767" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.34767.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="The Right Fact, the Wrong Decision: SciValidityBench for Scientific Agent Memory" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Most agent-memory benchmarks frame long-term memory as retrieval: can an agent recover the relevant record from a long and evolving…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.34767.html" />
+    <meta property="article:published_time" content="2026-10-26T03:12:57Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="The Right Fact, the Wrong Decision: SciValidityBench for Scientific Agent Memory" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Most agent-memory benchmarks frame long-term memory as retrieval: can an agent recover the relevant record from a long and evolving…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "The Right Fact, the Wrong Decision: SciValidityBench for Scientific Agent Memory",
+  "name": "The Right Fact, the Wrong Decision: SciValidityBench for Scientific Agent Memory",
+  "abstract": "Most agent-memory benchmarks frame long-term memory as retrieval: can an agent recover the relevant record from a long and evolving history? Scientific agents face a stricter problem: a correctly remembered fact may still be invalid to use. The same reported test result can support confirmation when the outcome and stopping rule were fixed in advance, yet only exploration when the outcome was selected from twenty inspected results. We call this scientific use validity: whether remembered evidence is eligible to influence a decision under the state governing its interpretation. We introduce SciValidityBench, an executable benchmark factory with 64 TaskSpecs spanning five validity modules and six scientific domains. TaskSpecs couple generated experimental histories with scientific-state definitions, programmatic decision oracles, controlled interventions, and automatic scoring. The SciStateForge compiler-reader framework turns distributed histories into explicit decision-governing state. Counterfactual pairs and targeted corruption-repair controls then test whether models use those dependencies and localize failures. Across four model families, compiled scientific state improves valid decision-making by 9.2-18.8 percentage points over a generic Event Graph. Retrieval alone does not reproduce this cross-family gain, while content-identical flat and typed views show that the improvement comes from exposing governing state rather than a particular graph serialization. SciValidityBench thus shifts memory evaluation from finding the right fact to deciding whether that fact should control the decision.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yuexi Pan"
+    },
+    {
+      "@type": "Person",
+      "name": "Yongchao Chen"
+    }
+  ],
+  "datePublished": "2026-10-26T03:12:57Z",
+  "dateModified": "2026-10-26T03:12:57Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.34767.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.34767.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.34767v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.34767"
+  },
+  "keywords": [
+    "Science & research",
+    "Memory",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Science & research"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.34767v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.34767"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>The Right Fact, the Wrong Decision: SciValidityBench for Scientific Agent Memory</h1>
+        <div class="meta">
+          Yuexi Pan, Yongchao Chen
+          · 2610.34767
+          · <time datetime="2026-10-26">2026-10-26</time>
+          · Science &amp; research
+        </div>
+        <div class="themes"><span class="chip">Memory</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Most agent-memory benchmarks frame long-term memory as retrieval: can an agent recover the relevant record from a long and evolving history? Scientific agents face a stricter problem: a correctly remembered fact may still be invalid to use. The same reported test result can support confirmation when the outcome and stopping rule were fixed in advance, yet only exploration when the outcome was selected from twenty inspected results. We call this scientific use validity: whether remembered evidence is eligible to influence a decision under the state governing its interpretation. We introduce SciValidityBench, an executable benchmark factory with 64 TaskSpecs spanning five validity modules and six scientific domains. TaskSpecs couple generated experimental histories with scientific-state definitions, programmatic decision oracles, controlled interventions, and automatic scoring. The SciStateForge compiler-reader framework turns distributed histories into explicit decision-governing state. Counterfactual pairs and targeted corruption-repair controls then test whether models use those dependencies and localize failures. Across four model families, compiled scientific state improves valid decision-making by 9.2-18.8 percentage points over a generic Event Graph. Retrieval alone does not reproduce this cross-family gain, while content-identical flat and typed views show that the improvement comes from exposing governing state rather than a particular graph serialization. SciValidityBench thus shifts memory evaluation from finding the right fact to deciding whether that fact should control the decision.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.34767v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.34767v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.34767" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Science &amp; research benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.32441.html"><strong>SCI-AGENT-EXAM: Benchmarking Agents on Scientific Research Tasks</strong></a> <span>2026-10-23</span></li>
+          <li><a href="2610.32106.html"><strong>PersonaScienceBench: Evaluating Scientific Agents with Diverse Simulated Researchers</strong></a> <span>2026-10-23</span></li>
+          <li><a href="2610.31372.html"><strong>RIDAR: Safeguarding Research Integrity in Autonomous Research Agents via Automated Detection and Runtime Intervention</strong></a> <span>2026-10-22</span></li>
+          <li><a href="2610.28763.html"><strong>Automating ML for Science: Can Frontier Agents Climb Scientific Hills in the Wild?</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.23845.html"><strong>AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery</strong></a> <span>2026-10-16</span></li>
+          <li><a href="2610.21767.html"><strong>From Research Goals to Scientific Closure: Evaluating Agents Through Evidence-Supported Physics Research</strong></a> <span>2026-10-16</span></li>
+          <li><a href="2610.21082.html"><strong>Sci$\Pi$vot: Benchmarking Principal-Investigator Judgment at Pivotal Moments of Scientific AutoResearch Agents</strong></a> <span>2026-10-16</span></li>
+          <li><a href="2610.21074.html"><strong>OmicsBench: a long-horizon multi-turn benchmark of AI agents on research-study-scale bioinformatics</strong></a> <span>2026-10-16</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

@@ -1,27 +1,33 @@
 {
   "date": "2026-10-23",
-  "count": 11,
+  "count": 13,
   "report": {
     "date": "2026-10-23",
-    "count": 11,
+    "count": 13,
     "themes": [
       {
         "id": "tool-use",
-        "count": 5,
+        "count": 6,
         "en": "Tool use",
         "zh": "工具使用"
+      },
+      {
+        "id": "coding",
+        "count": 3,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "memory",
+        "count": 3,
+        "en": "Memory",
+        "zh": "记忆"
       },
       {
         "id": "science",
         "count": 2,
         "en": "Science lab",
         "zh": "科学实验"
-      },
-      {
-        "id": "coding",
-        "count": 2,
-        "en": "Coding agents",
-        "zh": "代码智能体"
       },
       {
         "id": "safety",
@@ -34,12 +40,6 @@
         "count": 1,
         "en": "Multi-agent",
         "zh": "多智能体"
-      },
-      {
-        "id": "memory",
-        "count": 1,
-        "en": "Memory",
-        "zh": "记忆"
       },
       {
         "id": "planning",
@@ -55,8 +55,8 @@
       }
     ],
     "en": {
-      "headline": "11 new agent benchmarks",
-      "summary": "On October 23, 2026, arXiv listed 11 new agent benchmarks. Work clustered around Tool use (5), Science lab (2), Coding agents (2), and Safety (1).",
+      "headline": "13 new agent benchmarks",
+      "summary": "On October 23, 2026, arXiv listed 13 new agent benchmarks. Work clustered around Tool use (6), Coding agents (3), Memory (3), and Science lab (2).",
       "highlights": [
         {
           "id": "2610.32004",
@@ -69,15 +69,15 @@
           "blurb": "Large language model (LLM) agents increasingly execute tasks asynchronously: a main agent continues working while its subagents run, and the task state may change before their results arrive."
         },
         {
-          "id": "2610.32415",
-          "title": "Can LLM Annotators Match Human Consistency? Benchmarking Human Agreement and Optimizing Multi-Agent with Contrastive Knowledge",
-          "blurb": "LLM-based annotation has advanced rapidly, yet existing benchmarks remain misaligned with real-world practice."
+          "id": "2610.33128",
+          "title": "Navigating Epistemic Parity in LLM Agents: A Benchmark for Cross-Source Conflict Resolution Between Memory and Procedural Skills",
+          "blurb": "Production LLM agents increasingly run episodic memory pipelines and procedural skill modules (e.g., SKILL.md files) in tandem."
         }
       ]
     },
     "zh": {
-      "headline": "新增 11 篇 Agent Benchmark",
-      "summary": "2026年10月23日，arXiv 新增 11 篇 Agent Benchmark。当日主题集中在工具使用（5）、科学实验（2）、代码智能体（2）、安全（1）。",
+      "headline": "新增 13 篇 Agent Benchmark",
+      "summary": "2026年10月23日，arXiv 新增 13 篇 Agent Benchmark。当日主题集中在工具使用（6）、代码智能体（3）、记忆（3）、科学实验（2）。",
       "highlights": [
         {
           "id": "2610.32004",
@@ -90,14 +90,78 @@
           "blurb": "Large language model (LLM) agents increasingly execute tasks asynchronously: a main agent continues working while its subagents run, and the task state may change before their results arrive."
         },
         {
-          "id": "2610.32415",
-          "title": "Can LLM Annotators Match Human Consistency? Benchmarking Human Agreement and Optimizing Multi-Agent with Contrastive Knowledge",
-          "blurb": "LLM-based annotation has advanced rapidly, yet existing benchmarks remain misaligned with real-world practice."
+          "id": "2610.33128",
+          "title": "Navigating Epistemic Parity in LLM Agents: A Benchmark for Cross-Source Conflict Resolution Between Memory and Procedural Skills",
+          "blurb": "Production LLM agents increasingly run episodic memory pipelines and procedural skill modules (e.g., SKILL.md files) in tandem."
         }
       ]
     }
   },
   "papers": [
+    {
+      "id": "2610.33178",
+      "title": "AOS-Bench: Can LLM Agents Manage Dynamic Workloads?",
+      "abstract": "Coding agents are moving from handling one request at a time to serving as persistent assistants to which users hand a stream of work: a build, a data-processing job and a bug fix may all be pending on the same machine at once. Such an agent must decide when to take on new tasks, how to delegate and overlap them, and how to stay within the machine's CPU and memory. Existing benchmarks cannot measure this, because they evaluate each task in isolation. We introduce \\benchname{}, which evaluates an agent system as a workload manager: verified tasks arrive over time and must be delivered under shared CPU and memory limits, and the same tasks run one at a time serve as a per-system reference. Across five model--harness pairs, isolated task success does not carry over evenly. On heavy workloads every system loses 13 to 23 points. On medium workloads, systems span 11 points in isolated success but 26 points in stream success, and two systems 0.6 points apart in isolation deliver 54\\% and 68\\% of the same tasks. Execution-policy interventions trace much of this gap to task intake: serial dispatch leaves 73\\% of heavy-workload tasks unclaimed. Yet more elaborate management does not necessarily help. A fixed concurrency of two comes within four points of the best agent-managed policy on both medium and heavy workloads, and under every policy median CPU use stays below 30\\% of the provisioned cores while tasks wait. These results identify workload management as a distinct capability for agents, and \\benchname{} as a way to measure it.",
+      "authors": [
+        "Erle Zhu",
+        "Genrui Zhang",
+        "Keyang Hu",
+        "Mingyu Su",
+        "Hongning Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-23T18:20:48Z",
+      "updated": "2026-10-23T18:20:48Z",
+      "announced_date": "2026-10-23",
+      "first_seen": "2026-10-23",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.33178v1",
+        "pdf": "https://arxiv.org/pdf/2610.33178v1",
+        "html": "https://arxiv.org/html/2610.33178"
+      },
+      "score": 18,
+      "tags": [
+        "coding",
+        "memory"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.33128",
+      "title": "Navigating Epistemic Parity in LLM Agents: A Benchmark for Cross-Source Conflict Resolution Between Memory and Procedural Skills",
+      "abstract": "Production LLM agents increasingly run episodic memory pipelines and procedural skill modules (e.g., SKILL.md files) in tandem. Both are injected into the same context region with no defined precedence, so they can issue contradictory instructions that no instruction hierarchy resolves, a condition we term epistemic parity. We introduce a benchmark for measuring how LLM agents adjudicate such cross-source conflicts. We (i) develop a four-way taxonomy of memory-skill contradictions (factual, format, procedural, permission); (ii) instantiate 52 scenarios under a tripartite test-case anatomy (memory injection, skill injection, ambiguous user task), scored almost entirely by deterministic checkers over tool-call payloads and output structure; and (iii) run each scenario under three context conditions to isolate positional bias, measure the efficacy of an explicit precedence directive, and classify disclosure behavior, quantifying silent adjudication: resolving a conflict without telling the user. Across 1,383 runs on three open-weight models, neither source wins uniformly: resolution depends jointly on conflict type, model, and injection order. Moving the skill block nearer the task raises its win rate in all six factual and procedural cells (sign test, p = 0.031) but reverses for format conflicts, indicating that adjudication tracks token placement rather than source semantics. An explicit \"skill takes absolute precedence\" directive raises skill compliance on the two stronger models yet leaves 3-10% residual non-compliance, and moves the smallest model's factual and procedural resolution in the wrong direction. Most consequentially, in 98.8% of runs where the agent acted through a tool call it emitted no accompanying text at all, and 89% of all runs disclosed nothing about the contradiction: silent adjudication is the default. Code, scenarios, and raw outputs are public.",
+      "authors": [
+        "Prakhar Pandey"
+      ],
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-23T13:00:06Z",
+      "updated": "2026-10-23T13:00:06Z",
+      "announced_date": "2026-10-23",
+      "first_seen": "2026-10-23",
+      "comment": "17 pages, 2 figures, 6 tables. Accepted at the NeurIPS 2026 Verify-Agents Workshop. Code and data: https://github.com/prakhar1605/epistemic-parity-bench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.33128v1",
+        "pdf": "https://arxiv.org/pdf/2610.33128v1",
+        "html": "https://arxiv.org/html/2610.33128"
+      },
+      "score": 20,
+      "tags": [
+        "tool-use",
+        "memory"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
     {
       "id": "2610.32531",
       "title": "On Task, Off Track: Benchmarking LLM and Agent Robustness to Near-Target Prompt Injection",
