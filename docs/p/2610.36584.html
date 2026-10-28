@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Benchmarking LLM Agents for Behaviorally Adequate Test Generation from Software Requirements | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: As large language model agents increasingly compile natural-language requirements into repository-level code, requirement-to-test…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2610.36584" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.36584.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Benchmarking LLM Agents for Behaviorally Adequate Test Generation from Software Requirements" />
+    <meta property="og:description" content="Daily Agent Benchmarks: As large language model agents increasingly compile natural-language requirements into repository-level code, requirement-to-test…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.36584.html" />
+    <meta property="article:published_time" content="2026-10-27T03:41:55Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Benchmarking LLM Agents for Behaviorally Adequate Test Generation from Software Requirements" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: As large language model agents increasingly compile natural-language requirements into repository-level code, requirement-to-test…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Benchmarking LLM Agents for Behaviorally Adequate Test Generation from Software Requirements",
+  "name": "Benchmarking LLM Agents for Behaviorally Adequate Test Generation from Software Requirements",
+  "abstract": "As large language model agents increasingly compile natural-language requirements into repository-level code, requirement-to-test generation grows in importance to provide validation constraints (or harness) to guide code generation. Yet it remains unclear whether current agents can generate tests that validate the required behavior when the implementation of that behavior is withheld. Existing test-generation benchmarks mostly focus on white-box testing, whereas the requirement--test-related study usually requires evaluation on semantic alignment between the given documents and the generated tests. We introduce Req2Test-Bench, a benchmark containing 5,086 execution-validated instances recovered from developer-authored behavior-driven development (BDD) artifacts in 8 open-source projects, spanning 5 programming languages and 4 BDD frameworks. Each instance pairs a natural-language requirement in Gherkin with its developer-written Test Implementation. Given the requirement, target interfaces of the required behavior, an agent must generate a complete, potentially multi-file Test Implementation. Evaluation of 8 agent--model--reasoning configurations reveals a substantial gap between execution success and behavioral adequacy, which is measured strictly as kill-completeness: a kill-complete test kills every mutant that the ground-truth test kills. The best-performing configuration, Codex with DeepSeek-V4.1-Flash, produces passing tests for 82.8% of instances, yet only 33.8% are behaviorally adequate. We find that (1) scaling up agents yields sharply diminishing returns in behavioral adequacy relative to generation cost; (2) under-specified requirements cause the information gap, including ambiguous setup and implicit expected outcomes; and (3) requirement-grounded harnesses that steer agent non-determinism offer a promising direction for improvement.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Binhang Qi"
+    },
+    {
+      "@type": "Person",
+      "name": "Yiming Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yun Lin"
+    },
+    {
+      "@type": "Person",
+      "name": "Yangjie Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Hailong Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Jin Song Dong"
+    }
+  ],
+  "datePublished": "2026-10-27T03:41:55Z",
+  "dateModified": "2026-10-27T03:41:55Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.36584.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.36584.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.36584v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.36584"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.36584v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.36584"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Benchmarking LLM Agents for Behaviorally Adequate Test Generation from Software Requirements</h1>
+        <div class="meta">
+          Binhang Qi, Yiming Liu, Yun Lin, Yangjie Zhou, Hailong Sun, Jin Song Dong
+          · 2610.36584
+          · <time datetime="2026-10-27">2026-10-27</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>As large language model agents increasingly compile natural-language requirements into repository-level code, requirement-to-test generation grows in importance to provide validation constraints (or harness) to guide code generation. Yet it remains unclear whether current agents can generate tests that validate the required behavior when the implementation of that behavior is withheld. Existing test-generation benchmarks mostly focus on white-box testing, whereas the requirement--test-related study usually requires evaluation on semantic alignment between the given documents and the generated tests. We introduce Req2Test-Bench, a benchmark containing 5,086 execution-validated instances recovered from developer-authored behavior-driven development (BDD) artifacts in 8 open-source projects, spanning 5 programming languages and 4 BDD frameworks. Each instance pairs a natural-language requirement in Gherkin with its developer-written Test Implementation. Given the requirement, target interfaces of the required behavior, an agent must generate a complete, potentially multi-file Test Implementation. Evaluation of 8 agent--model--reasoning configurations reveals a substantial gap between execution success and behavioral adequacy, which is measured strictly as kill-completeness: a kill-complete test kills every mutant that the ground-truth test kills. The best-performing configuration, Codex with DeepSeek-V4.1-Flash, produces passing tests for 82.8% of instances, yet only 33.8% are behaviorally adequate. We find that (1) scaling up agents yields sharply diminishing returns in behavioral adequacy relative to generation cost; (2) under-specified requirements cause the information gap, including ambiguous setup and implicit expected outcomes; and (3) requirement-grounded harnesses that steer agent non-determinism offer a promising direction for improvement.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.36584v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.36584v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.36584" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.37459.html"><strong>M4Bench: Evaluating Procedural Specification for Clinical EHR Derivation Agents</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.37434.html"><strong>FeatureArc: Benchmarking Coding Agents on Evolving Features</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.36589.html"><strong>InfraDev: Can Coding Agents Develop AI Infrastructure, and How Can We Tell?</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.36523.html"><strong>Benchmarking Task Takeover Across Agent Handoffs</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.35987.html"><strong>PROBE: Frontier Coding Agents Find Different Bugs Than Maintainers Fix</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.35980.html"><strong>UnityBench-Mini3D: Evaluating LLM Agents for 3D Game Development in Unity</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.35488.html"><strong>FeatureLoop: Benchmarking Coding Agents under Evolving Requirements</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.35188.html"><strong>V$^3$AST-Bench: Verifiable, Valid, and Versatile Safety Evaluation for Coding Agents</strong></a> <span>2026-10-26</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

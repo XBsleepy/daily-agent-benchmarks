@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UnityBench-Mini3D: Evaluating LLM Agents for 3D Game Development in Unity | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Game development stresses coding agents in ways general software engineering does not: correctness depends on how engine APIs…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2610.35980" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.35980.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="UnityBench-Mini3D: Evaluating LLM Agents for 3D Game Development in Unity" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Game development stresses coding agents in ways general software engineering does not: correctness depends on how engine APIs…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.35980.html" />
+    <meta property="article:published_time" content="2026-10-26T10:19:14Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="UnityBench-Mini3D: Evaluating LLM Agents for 3D Game Development in Unity" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Game development stresses coding agents in ways general software engineering does not: correctness depends on how engine APIs…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "UnityBench-Mini3D: Evaluating LLM Agents for 3D Game Development in Unity",
+  "name": "UnityBench-Mini3D: Evaluating LLM Agents for 3D Game Development in Unity",
+  "abstract": "Game development stresses coding agents in ways general software engineering does not: correctness depends on how engine APIs, serialized scene state, and runtime behavior interact, not on source code alone. Existing benchmarks mainly target platforms such as Godot and heavily rely on LLM judges or coarse task-level outcomes. We present UnityBench-Mini3D, a benchmark of 77 project-level Unity tasks organized around seven expert-defined skill categories rather than tutorials or genres, with three difficulty tiers. Each task pairs a complete Unity project with natural-language requirements and is evaluated using 1,178 held-out, human-authored milestone tests covering scene structure, component configuration, and runtime behavior. This in-engine evaluation provides deterministic partial credit, localizes failures, and distinguishes partial implementations from complete solutions without relying on subjective judges. Across 21 models and 9 coding harnesses, the average pass rate reaches 80.9% on easy tasks but falls to 35.2% on hard tasks, with just 57.7% overall. UnityBench-Mini3D provides a reproducible, diagnostic testbed distinguishing systems across difficulty levels.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yijun Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Minghao Shao"
+    },
+    {
+      "@type": "Person",
+      "name": "Ke Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Renkai Yuan"
+    },
+    {
+      "@type": "Person",
+      "name": "Hongbo Yuan"
+    },
+    {
+      "@type": "Person",
+      "name": "Bin Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Bozhao Qian"
+    },
+    {
+      "@type": "Person",
+      "name": "Hongxia Shen"
+    },
+    {
+      "@type": "Person",
+      "name": "Yanhong Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuting Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuntao Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhongxuan Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Shuo Mao"
+    },
+    {
+      "@type": "Person",
+      "name": "Haijia Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhendong Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Tao Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chenggang Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuxuan Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zinan Zheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Calvin Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jia Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Heng Chang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jie Feng"
+    }
+  ],
+  "datePublished": "2026-10-26T10:19:14Z",
+  "dateModified": "2026-10-26T10:19:14Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.35980.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.35980.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.35980v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.35980"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.35980v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.35980"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>UnityBench-Mini3D: Evaluating LLM Agents for 3D Game Development in Unity</h1>
+        <div class="meta">
+          Yijun Zhou, Minghao Shao, Ke Zhang, Renkai Yuan, Hongbo Yuan, Bin Hu, Bozhao Qian, Hongxia Shen, Yanhong Liu, Yuting Chen, Yuntao Shi, Zhongxuan Xu, Shuo Mao, Haijia Zhou, Zhendong Li, Tao Zhang, Chenggang Li, Yuxuan Wang, Zinan Zheng, Calvin Zhang, Jia Li, Heng Chang, Jie Feng
+          · 2610.35980
+          · <time datetime="2026-10-26">2026-10-26</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Game development stresses coding agents in ways general software engineering does not: correctness depends on how engine APIs, serialized scene state, and runtime behavior interact, not on source code alone. Existing benchmarks mainly target platforms such as Godot and heavily rely on LLM judges or coarse task-level outcomes. We present UnityBench-Mini3D, a benchmark of 77 project-level Unity tasks organized around seven expert-defined skill categories rather than tutorials or genres, with three difficulty tiers. Each task pairs a complete Unity project with natural-language requirements and is evaluated using 1,178 held-out, human-authored milestone tests covering scene structure, component configuration, and runtime behavior. This in-engine evaluation provides deterministic partial credit, localizes failures, and distinguishes partial implementations from complete solutions without relying on subjective judges. Across 21 models and 9 coding harnesses, the average pass rate reaches 80.9% on easy tasks but falls to 35.2% on hard tasks, with just 57.7% overall. UnityBench-Mini3D provides a reproducible, diagnostic testbed distinguishing systems across difficulty levels.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.35980v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.35980v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.35980" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.36589.html"><strong>InfraDev: Can Coding Agents Develop AI Infrastructure, and How Can We Tell?</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.36584.html"><strong>Benchmarking LLM Agents for Behaviorally Adequate Test Generation from Software Requirements</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.36523.html"><strong>Benchmarking Task Takeover Across Agent Handoffs</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.35987.html"><strong>PROBE: Frontier Coding Agents Find Different Bugs Than Maintainers Fix</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.35488.html"><strong>FeatureLoop: Benchmarking Coding Agents under Evolving Requirements</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.35188.html"><strong>V$^3$AST-Bench: Verifiable, Valid, and Versatile Safety Evaluation for Coding Agents</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.33178.html"><strong>AOS-Bench: Can LLM Agents Manage Dynamic Workloads?</strong></a> <span>2026-10-23</span></li>
+          <li><a href="2610.32196.html"><strong>SWE-Shift: Evaluating Coding Agents in Evolving Workspaces</strong></a> <span>2026-10-23</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

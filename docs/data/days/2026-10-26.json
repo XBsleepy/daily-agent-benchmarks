@@ -1,13 +1,13 @@
 {
   "date": "2026-10-26",
-  "count": 12,
+  "count": 14,
   "report": {
     "date": "2026-10-26",
-    "count": 12,
+    "count": 14,
     "themes": [
       {
         "id": "coding",
-        "count": 4,
+        "count": 6,
         "en": "Coding agents",
         "zh": "代码智能体"
       },
@@ -55,8 +55,8 @@
       }
     ],
     "en": {
-      "headline": "12 new agent benchmarks",
-      "summary": "On October 26, 2026, arXiv listed 12 new agent benchmarks. Work clustered around Coding agents (4), Tool use (2), Planning / reasoning (2), and Science lab (2).",
+      "headline": "14 new agent benchmarks",
+      "summary": "On October 26, 2026, arXiv listed 14 new agent benchmarks. Work clustered around Coding agents (6), Tool use (2), Planning / reasoning (2), and Science lab (2).",
       "highlights": [
         {
           "id": "2610.34714",
@@ -69,15 +69,15 @@
           "blurb": "Patent practice lies at the intersection of technical, legal, and linguistic work, making it challenging yet crucial to technological innovation."
         },
         {
-          "id": "2610.35188",
-          "title": "V$^3$AST-Bench: Verifiable, Valid, and Versatile Safety Evaluation for Coding Agents",
-          "blurb": "Large language models increasingly act through code, modifying repositories, executing programs, and interacting with services in agent form."
+          "id": "2610.35980",
+          "title": "UnityBench-Mini3D: Evaluating LLM Agents for 3D Game Development in Unity",
+          "blurb": "Game development stresses coding agents in ways general software engineering does not: correctness depends on how engine APIs, serialized scene state, and runtime behavior interact, not on source code alone."
         }
       ]
     },
     "zh": {
-      "headline": "新增 12 篇 Agent Benchmark",
-      "summary": "2026年10月26日，arXiv 新增 12 篇 Agent Benchmark。当日主题集中在代码智能体（4）、工具使用（2）、规划 / 推理（2）、科学实验（2）。",
+      "headline": "新增 14 篇 Agent Benchmark",
+      "summary": "2026年10月26日，arXiv 新增 14 篇 Agent Benchmark。当日主题集中在代码智能体（6）、工具使用（2）、规划 / 推理（2）、科学实验（2）。",
       "highlights": [
         {
           "id": "2610.34714",
@@ -90,9 +90,9 @@
           "blurb": "Patent practice lies at the intersection of technical, legal, and linguistic work, making it challenging yet crucial to technological innovation."
         },
         {
-          "id": "2610.35188",
-          "title": "V$^3$AST-Bench: Verifiable, Valid, and Versatile Safety Evaluation for Coding Agents",
-          "blurb": "Large language models increasingly act through code, modifying repositories, executing programs, and interacting with services in agent form."
+          "id": "2610.35980",
+          "title": "UnityBench-Mini3D: Evaluating LLM Agents for 3D Game Development in Unity",
+          "blurb": "Game development stresses coding agents in ways general software engineering does not: correctness depends on how engine APIs, serialized scene state, and runtime behavior interact, not on source code alone."
         }
       ]
     }
@@ -231,6 +231,40 @@
       "citations": 0
     },
     {
+      "id": "2610.35987",
+      "title": "PROBE: Frontier Coding Agents Find Different Bugs Than Maintainers Fix",
+      "abstract": "Proactive bug discovery is an important software-engineering problem. Even though coding agents are already widely deployed in this domain, their capabilities remain understudied. In particular, the challenging task of finding all bugs that human maintainers would repair across an entire repository has not been studied yet. To close this gap, we introduce PROBE, a benchmark consisting of all 2,457 bugs fixed over the course of 18 months across 20 diverse GitHub repositories, together with a method for matching candidate findings to this partial reference set. We evaluate coding agents across frontier models and find they all achieve a recall of below $21\\%$ and a precision of less than $9\\%$ with respect to the reference set. While stronger models increase recall substantially from $8\\%$ to $17\\%$, they do not improve precision. Surprisingly, despite the low precision, LLM and human evaluators still judge $85\\%$ of findings valid. Crucially, we find that found bug distributions are similar across agents but differ substantially from those of bugs fixed by maintainers. The practical relevance of bug discovery and the low recall of frontier models make this benchmark a valuable resource for both model users and developers.",
+      "authors": [
+        "Marco Paina",
+        "Mark Niklas Müller",
+        "Niels Mündler-Sasahara",
+        "Martin Vechev"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-26T12:04:46Z",
+      "updated": "2026-10-26T12:04:46Z",
+      "announced_date": "2026-10-26",
+      "first_seen": "2026-10-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.35987v1",
+        "pdf": "https://arxiv.org/pdf/2610.35987v1",
+        "html": "https://arxiv.org/html/2610.35987"
+      },
+      "score": 10,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
       "id": "2610.35293",
       "title": "AgenticCity-Bench: Longitudinal Multimodal Observations of Urban Dynamics with Agentic Reasoning",
       "abstract": "City systems are shaped by interactions among infrastructure, human activity, and environmental conditions. Existing earth observation and urban benchmarks are limited in unified modeling and in capturing their joint dynamics. We introduce AgenticCity-Bench, a longitudinal multimodal benchmark for multi-layer unified state modeling and agentic city task reasoning. The benchmark covers 16 cities in 12 countries across six continents from 2000 to 2025, and includes 18 modalities spanning urban function, activity, and environmental state. It organizes heterogeneous data sources around a common spatial reference and calendar index while preserving spatial and temporal coverage, provenance and tile-level availability. On this foundation, AgenticCity-Bench supports urban cross-modal translation together with diverse agentic city tasks involving forecasting, planning and resource analysis. This study provides a unified benchmark for studying the transition from multimodal urban and earth observation to joint understanding and agentic city decision-making. The dataset is available at https://anonymous.4open.science/r/AgenticCity-Bench.",
@@ -337,6 +371,59 @@
       "tags": [
         "coding",
         "safety"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.35980",
+      "title": "UnityBench-Mini3D: Evaluating LLM Agents for 3D Game Development in Unity",
+      "abstract": "Game development stresses coding agents in ways general software engineering does not: correctness depends on how engine APIs, serialized scene state, and runtime behavior interact, not on source code alone. Existing benchmarks mainly target platforms such as Godot and heavily rely on LLM judges or coarse task-level outcomes. We present UnityBench-Mini3D, a benchmark of 77 project-level Unity tasks organized around seven expert-defined skill categories rather than tutorials or genres, with three difficulty tiers. Each task pairs a complete Unity project with natural-language requirements and is evaluated using 1,178 held-out, human-authored milestone tests covering scene structure, component configuration, and runtime behavior. This in-engine evaluation provides deterministic partial credit, localizes failures, and distinguishes partial implementations from complete solutions without relying on subjective judges. Across 21 models and 9 coding harnesses, the average pass rate reaches 80.9% on easy tasks but falls to 35.2% on hard tasks, with just 57.7% overall. UnityBench-Mini3D provides a reproducible, diagnostic testbed distinguishing systems across difficulty levels.",
+      "authors": [
+        "Yijun Zhou",
+        "Minghao Shao",
+        "Ke Zhang",
+        "Renkai Yuan",
+        "Hongbo Yuan",
+        "Bin Hu",
+        "Bozhao Qian",
+        "Hongxia Shen",
+        "Yanhong Liu",
+        "Yuting Chen",
+        "Yuntao Shi",
+        "Zhongxuan Xu",
+        "Shuo Mao",
+        "Haijia Zhou",
+        "Zhendong Li",
+        "Tao Zhang",
+        "Chenggang Li",
+        "Yuxuan Wang",
+        "Zinan Zheng",
+        "Calvin Zhang",
+        "Jia Li",
+        "Heng Chang",
+        "Jie Feng"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-26T10:19:14Z",
+      "updated": "2026-10-26T10:19:14Z",
+      "announced_date": "2026-10-26",
+      "first_seen": "2026-10-26",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.35980v1",
+        "pdf": "https://arxiv.org/pdf/2610.35980v1",
+        "html": "https://arxiv.org/html/2610.35980"
+      },
+      "score": 19,
+      "tags": [
+        "coding"
       ],
       "field": "coding",
       "citations": 0

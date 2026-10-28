@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>M4Bench: Evaluating Procedural Specification for Clinical EHR Derivation Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Clinical research over electronic health records depends on derived variables whose definitions sit outside the schema, in item…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Safety, agent benchmark, LLM agent, arXiv, 2610.37459" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.37459.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="M4Bench: Evaluating Procedural Specification for Clinical EHR Derivation Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Clinical research over electronic health records depends on derived variables whose definitions sit outside the schema, in item…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.37459.html" />
+    <meta property="article:published_time" content="2026-10-27T15:59:13Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="M4Bench: Evaluating Procedural Specification for Clinical EHR Derivation Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Clinical research over electronic health records depends on derived variables whose definitions sit outside the schema, in item…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "M4Bench: Evaluating Procedural Specification for Clinical EHR Derivation Agents",
+  "name": "M4Bench: Evaluating Procedural Specification for Clinical EHR Derivation Agents",
+  "abstract": "Clinical research over electronic health records depends on derived variables whose definitions sit outside the schema, in item codes, time windows, missingness rules, and output-grain choices that change cohorts and downstream conclusions. We introduce M4Bench, 28 clinical derivation tasks across 15 task families on MIMIC-IV and eICU, to test whether AI coding agents can reproduce such derivations and how clinician-reviewed agent skills change their results. Its controls decompose the value of skills into specification completeness, delivery format, and schema familiarity. In a Docker-isolated Codex campaign (GPT 5.4 Mini and GPT 5.5), skills raise reward by 0.136 over the no-skill baseline, with 26 of 28 tasks improving. Specification completeness accounts for most of this gain: on an eight-task control subset, an operational spec alone raises reward by 0.162, and skills add only 0.024 on top, indistinguishable from zero. On a ten-task subset, decoy skills score like no skill and raw reference SQL nearly matches targeted skills, arguing against generic context or the skill format as the explanation. Schema obfuscation and restructuring preserve 86% and 70% of the skill gain (GPT 5.4 Mini, 26 MIMIC-IV tasks), a descriptive robustness check rather than a bound on memorization. A descriptive Claude Code replication on all 28 tasks (Opus 4.7 and Sonnet 4.6, 560 runs) is directionally consistent (+0.120, 21 of 28 tasks improving). These gains are partial agreement with the reference, not completed tasks: only 25 of 280 with-skill and 13 of 280 no-skill Codex runs pass every strict check, and skills barely change which rows agents return (key F1 +0.003). Skills are released as a versioned, clinician-reviewable markdown delivery format, with a family-level reference-validity audit. M4Bench releases tasks, skills, evaluation code, and sanitized per-run evidence as an open-source benchmark.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Hannes Ill"
+    },
+    {
+      "@type": "Person",
+      "name": "Rafi Al Attrach"
+    },
+    {
+      "@type": "Person",
+      "name": "Rajna Fani"
+    },
+    {
+      "@type": "Person",
+      "name": "Ahram Han"
+    },
+    {
+      "@type": "Person",
+      "name": "Ryohei Yamamoto"
+    },
+    {
+      "@type": "Person",
+      "name": "Marlene Louisa Moerig"
+    },
+    {
+      "@type": "Person",
+      "name": "Dukyong Yoon"
+    },
+    {
+      "@type": "Person",
+      "name": "Leo Anthony Celi"
+    }
+  ],
+  "datePublished": "2026-10-27T15:59:13Z",
+  "dateModified": "2026-10-27T15:59:13Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.37459.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.37459.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.37459v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.37459"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.37459v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.37459"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>M4Bench: Evaluating Procedural Specification for Clinical EHR Derivation Agents</h1>
+        <div class="meta">
+          Hannes Ill, Rafi Al Attrach, Rajna Fani, Ahram Han, Ryohei Yamamoto, Marlene Louisa Moerig, Dukyong Yoon, Leo Anthony Celi
+          · 2610.37459
+          · <time datetime="2026-10-27">2026-10-27</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Clinical research over electronic health records depends on derived variables whose definitions sit outside the schema, in item codes, time windows, missingness rules, and output-grain choices that change cohorts and downstream conclusions. We introduce M4Bench, 28 clinical derivation tasks across 15 task families on MIMIC-IV and eICU, to test whether AI coding agents can reproduce such derivations and how clinician-reviewed agent skills change their results. Its controls decompose the value of skills into specification completeness, delivery format, and schema familiarity. In a Docker-isolated Codex campaign (GPT 5.4 Mini and GPT 5.5), skills raise reward by 0.136 over the no-skill baseline, with 26 of 28 tasks improving. Specification completeness accounts for most of this gain: on an eight-task control subset, an operational spec alone raises reward by 0.162, and skills add only 0.024 on top, indistinguishable from zero. On a ten-task subset, decoy skills score like no skill and raw reference SQL nearly matches targeted skills, arguing against generic context or the skill format as the explanation. Schema obfuscation and restructuring preserve 86% and 70% of the skill gain (GPT 5.4 Mini, 26 MIMIC-IV tasks), a descriptive robustness check rather than a bound on memorization. A descriptive Claude Code replication on all 28 tasks (Opus 4.7 and Sonnet 4.6, 560 runs) is directionally consistent (+0.120, 21 of 28 tasks improving). These gains are partial agreement with the reference, not completed tasks: only 25 of 280 with-skill and 13 of 280 no-skill Codex runs pass every strict check, and skills barely change which rows agents return (key F1 +0.003). Skills are released as a versioned, clinician-reviewable markdown delivery format, with a family-level reference-validity audit. M4Bench releases tasks, skills, evaluation code, and sanitized per-run evidence as an open-source benchmark.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.37459v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.37459v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.37459" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.37434.html"><strong>FeatureArc: Benchmarking Coding Agents on Evolving Features</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.36589.html"><strong>InfraDev: Can Coding Agents Develop AI Infrastructure, and How Can We Tell?</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.36584.html"><strong>Benchmarking LLM Agents for Behaviorally Adequate Test Generation from Software Requirements</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.36523.html"><strong>Benchmarking Task Takeover Across Agent Handoffs</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.35987.html"><strong>PROBE: Frontier Coding Agents Find Different Bugs Than Maintainers Fix</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.35980.html"><strong>UnityBench-Mini3D: Evaluating LLM Agents for 3D Game Development in Unity</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.35488.html"><strong>FeatureLoop: Benchmarking Coding Agents under Evolving Requirements</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.35188.html"><strong>V$^3$AST-Bench: Verifiable, Valid, and Versatile Safety Evaluation for Coding Agents</strong></a> <span>2026-10-26</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

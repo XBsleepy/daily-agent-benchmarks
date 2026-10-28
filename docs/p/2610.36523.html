@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Benchmarking Task Takeover Across Agent Handoffs | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: As agents collaborate on longer tasks, responsibility may pass between models before the work is complete. The receiving model must…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Tool use, Memory, agent benchmark, LLM agent, arXiv, 2610.36523" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.36523.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Benchmarking Task Takeover Across Agent Handoffs" />
+    <meta property="og:description" content="Daily Agent Benchmarks: As agents collaborate on longer tasks, responsibility may pass between models before the work is complete. The receiving model must…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.36523.html" />
+    <meta property="article:published_time" content="2026-10-27T02:27:04Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Benchmarking Task Takeover Across Agent Handoffs" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: As agents collaborate on longer tasks, responsibility may pass between models before the work is complete. The receiving model must…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Benchmarking Task Takeover Across Agent Handoffs",
+  "name": "Benchmarking Task Takeover Across Agent Handoffs",
+  "abstract": "As agents collaborate on longer tasks, responsibility may pass between models before the work is complete. The receiving model must build on prior decisions, observations, and actions while addressing the remaining requirements. Evaluating this transition requires connecting the information preserved at handoff to how the receiver continues the work, a relationship that task-success and memory-retention scores alone do not capture. We introduce the Handoff State Continuity Benchmark (HSC-Bench), comprising 1,039 tasks that evaluate two complementary aspects of task takeover: recovering relevant repository evidence and continuing from established conversational, tool, and file-work state. Comparisons across six receiving models show that structured handoff state improves repository evidence recovery for every model and continuation performance for most models. The strongest receivers differ between the two tracks, showing that evidence-recovery rankings alone do not characterize performance when continuing from inherited state. By combining these comparisons with checks of subsequent responses and actions, HSC-Bench evaluates both access to prior evidence and adherence to established commitments and completed work. This provides a basis for selecting receiving models and assessing handoff representations according to the work that must be carried forward.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Wenyuan Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Guang Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Dongyuan Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Keisuke Maeda"
+    },
+    {
+      "@type": "Person",
+      "name": "Takahiro Ogawa"
+    },
+    {
+      "@type": "Person",
+      "name": "Miki Haseyama"
+    }
+  ],
+  "datePublished": "2026-10-27T02:27:04Z",
+  "dateModified": "2026-10-27T02:27:04Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.36523.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.36523.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.36523v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.36523"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Tool use",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.36523v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.36523"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Benchmarking Task Takeover Across Agent Handoffs</h1>
+        <div class="meta">
+          Wenyuan Li, Guang Li, Dongyuan Li, Keisuke Maeda, Takahiro Ogawa, Miki Haseyama
+          · 2610.36523
+          · <time datetime="2026-10-27">2026-10-27</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>As agents collaborate on longer tasks, responsibility may pass between models before the work is complete. The receiving model must build on prior decisions, observations, and actions while addressing the remaining requirements. Evaluating this transition requires connecting the information preserved at handoff to how the receiver continues the work, a relationship that task-success and memory-retention scores alone do not capture. We introduce the Handoff State Continuity Benchmark (HSC-Bench), comprising 1,039 tasks that evaluate two complementary aspects of task takeover: recovering relevant repository evidence and continuing from established conversational, tool, and file-work state. Comparisons across six receiving models show that structured handoff state improves repository evidence recovery for every model and continuation performance for most models. The strongest receivers differ between the two tracks, showing that evidence-recovery rankings alone do not characterize performance when continuing from inherited state. By combining these comparisons with checks of subsequent responses and actions, HSC-Bench evaluates both access to prior evidence and adherence to established commitments and completed work. This provides a basis for selecting receiving models and assessing handoff representations according to the work that must be carried forward.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.36523v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.36523v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.36523" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.37459.html"><strong>M4Bench: Evaluating Procedural Specification for Clinical EHR Derivation Agents</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.37434.html"><strong>FeatureArc: Benchmarking Coding Agents on Evolving Features</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.36589.html"><strong>InfraDev: Can Coding Agents Develop AI Infrastructure, and How Can We Tell?</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.36584.html"><strong>Benchmarking LLM Agents for Behaviorally Adequate Test Generation from Software Requirements</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.35987.html"><strong>PROBE: Frontier Coding Agents Find Different Bugs Than Maintainers Fix</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.35980.html"><strong>UnityBench-Mini3D: Evaluating LLM Agents for 3D Game Development in Unity</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.35488.html"><strong>FeatureLoop: Benchmarking Coding Agents under Evolving Requirements</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.35188.html"><strong>V$^3$AST-Bench: Verifiable, Valid, and Versatile Safety Evaluation for Coding Agents</strong></a> <span>2026-10-26</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

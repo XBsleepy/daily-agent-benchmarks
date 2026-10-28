@@ -1,0 +1,492 @@
+{
+  "date": "2026-10-27",
+  "count": 11,
+  "report": {
+    "date": "2026-10-27",
+    "count": 11,
+    "themes": [
+      {
+        "id": "coding",
+        "count": 5,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "multi-agent",
+        "count": 1,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "11 new agent benchmarks",
+      "summary": "On October 27, 2026, arXiv listed 11 new agent benchmarks. Work clustered around Coding agents (5), Tool use (3), Planning / reasoning (2), and Memory (2).",
+      "highlights": [
+        {
+          "id": "2610.36484",
+          "title": "CogArena: Benchmarking Multimodal Agents on Interactive Behavioral Experiments",
+          "blurb": "Claims about the cognitive capabilities of large language models are typically tested by translating behavioral paradigms into text prompts, bypassing the visual interfaces and time pressure through which human participa…"
+        },
+        {
+          "id": "2610.37081",
+          "title": "OpenGray: a benchmark for evaluating the decisions of radiotherapy planning agents",
+          "blurb": "Background and purpose: Radiotherapy planning agents based on large language models (LLMs) decide when to submit a plan or request review but are evaluated mainly by dose."
+        },
+        {
+          "id": "2610.36584",
+          "title": "Benchmarking LLM Agents for Behaviorally Adequate Test Generation from Software Requirements",
+          "blurb": "As large language model agents increasingly compile natural-language requirements into repository-level code, requirement-to-test generation grows in importance to provide validation constraints (or harness) to guide cod…"
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 11 篇 Agent Benchmark",
+      "summary": "2026年10月27日，arXiv 新增 11 篇 Agent Benchmark。当日主题集中在代码智能体（5）、工具使用（3）、规划 / 推理（2）、记忆（2）。",
+      "highlights": [
+        {
+          "id": "2610.36484",
+          "title": "CogArena: Benchmarking Multimodal Agents on Interactive Behavioral Experiments",
+          "blurb": "Claims about the cognitive capabilities of large language models are typically tested by translating behavioral paradigms into text prompts, bypassing the visual interfaces and time pressure through which human participa…"
+        },
+        {
+          "id": "2610.37081",
+          "title": "OpenGray: a benchmark for evaluating the decisions of radiotherapy planning agents",
+          "blurb": "Background and purpose: Radiotherapy planning agents based on large language models (LLMs) decide when to submit a plan or request review but are evaluated mainly by dose."
+        },
+        {
+          "id": "2610.36584",
+          "title": "Benchmarking LLM Agents for Behaviorally Adequate Test Generation from Software Requirements",
+          "blurb": "As large language model agents increasingly compile natural-language requirements into repository-level code, requirement-to-test generation grows in importance to provide validation constraints (or harness) to guide cod…"
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2610.37459",
+      "title": "M4Bench: Evaluating Procedural Specification for Clinical EHR Derivation Agents",
+      "abstract": "Clinical research over electronic health records depends on derived variables whose definitions sit outside the schema, in item codes, time windows, missingness rules, and output-grain choices that change cohorts and downstream conclusions. We introduce M4Bench, 28 clinical derivation tasks across 15 task families on MIMIC-IV and eICU, to test whether AI coding agents can reproduce such derivations and how clinician-reviewed agent skills change their results. Its controls decompose the value of skills into specification completeness, delivery format, and schema familiarity. In a Docker-isolated Codex campaign (GPT 5.4 Mini and GPT 5.5), skills raise reward by 0.136 over the no-skill baseline, with 26 of 28 tasks improving. Specification completeness accounts for most of this gain: on an eight-task control subset, an operational spec alone raises reward by 0.162, and skills add only 0.024 on top, indistinguishable from zero. On a ten-task subset, decoy skills score like no skill and raw reference SQL nearly matches targeted skills, arguing against generic context or the skill format as the explanation. Schema obfuscation and restructuring preserve 86% and 70% of the skill gain (GPT 5.4 Mini, 26 MIMIC-IV tasks), a descriptive robustness check rather than a bound on memorization. A descriptive Claude Code replication on all 28 tasks (Opus 4.7 and Sonnet 4.6, 560 runs) is directionally consistent (+0.120, 21 of 28 tasks improving). These gains are partial agreement with the reference, not completed tasks: only 25 of 280 with-skill and 13 of 280 no-skill Codex runs pass every strict check, and skills barely change which rows agents return (key F1 +0.003). Skills are released as a versioned, clinician-reviewable markdown delivery format, with a family-level reference-validity audit. M4Bench releases tasks, skills, evaluation code, and sanitized per-run evidence as an open-source benchmark.",
+      "authors": [
+        "Hannes Ill",
+        "Rafi Al Attrach",
+        "Rajna Fani",
+        "Ahram Han",
+        "Ryohei Yamamoto",
+        "Marlene Louisa Moerig",
+        "Dukyong Yoon",
+        "Leo Anthony Celi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-27T15:59:13Z",
+      "updated": "2026-10-27T15:59:13Z",
+      "announced_date": "2026-10-27",
+      "first_seen": "2026-10-27",
+      "comment": "Accepted at NeurIPS 2026 (Evaluations and Datasets Track). 10 pages main text, 33 pages total. Code: https://github.com/hannesill/m4/tree/m4bench-neurips2026-camera-ready/benchmark . Evidence: https://huggingface.co/datasets/hannesill/m4bench-evidence",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.37459v1",
+        "pdf": "https://arxiv.org/pdf/2610.37459v1",
+        "html": "https://arxiv.org/html/2610.37459"
+      },
+      "score": 10,
+      "tags": [
+        "coding",
+        "safety"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.37434",
+      "title": "FeatureArc: Benchmarking Coding Agents on Evolving Features",
+      "abstract": "A software feature usually evolves over time: developers extend its first version as new use cases and requirements arrive, and each extension builds on code written earlier. Most feature benchmarks evaluate a single request on a fixed codebase. Feature evolution requires evaluating successive extensions on an agent's own earlier code and checking whether the feature remains correct. We introduce FeatureArc to evaluate coding agents on evolving features, together with a pipeline that constructs its tasks from repository histories. The benchmark combines dependencies between successive stages of the same feature, explicit requirements and interface contracts, and executable checks across four programming languages. The pipeline validates fail-to-pass (F2P) tests for new behavior and pass-to-pass (P2P) tests for existing behavior on the reference code before and after each stage. We evaluated 10 coding agents on 73 manually reviewed tasks of 2 to 10 stages. Each agent works in one persistent session and workspace without external test feedback or rollback. The evaluation reveals a gap between first-stage and whole-feature success: pooled success falls from 62.7% at the first stage to 28.5% when the whole feature is tested on the final code. Trajectory analysis identifies inherited defects as a common failure mechanism, present in 72.9% of failed later stages. These earlier errors often remain undetected: in stages following a failure, agents leave the earlier error unnoticed about 95% of the time, and their self-tests rarely revisit earlier stages. Evolving a feature autonomously, without human checks between stages, therefore remains a substantial challenge for current coding agents. At Tencent, the pipeline extends internal evaluations to this setting and guides the development of Hunyuan, Tencent's family of large language models.",
+      "authors": [
+        "Yunlong Wang",
+        "Alyssa Wu",
+        "Cuiyun Gao",
+        "Jia Feng",
+        "Songyuanyi Lu",
+        "Zhichao Hu"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-27T15:45:50Z",
+      "updated": "2026-10-27T15:45:50Z",
+      "announced_date": "2026-10-27",
+      "first_seen": "2026-10-27",
+      "comment": "12 pages, 8 figures, 4 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.37434v1",
+        "pdf": "https://arxiv.org/pdf/2610.37434v1",
+        "html": "https://arxiv.org/html/2610.37434"
+      },
+      "score": 13,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.37166",
+      "title": "LiveSearch: Questions as Executable Verifier Code for a Live Benchmark of Professional-Source Financial Search Agents",
+      "abstract": "In finance, the answer that matters is usually the current one: prices, rates, and disclosures hold only as of a given day, so retrieving up-to-date facts is a core capability of a financial agent. Yet most financial benchmarks overlook timeliness. They fix each answer at annotation time, so the gold goes stale as markets move and, once leaked into training data, rewards recall rather than search and analysis. We introduce LiveSearch, a live benchmark that stores each question as executable verifier code: a typed program of calls to a professional financial data service, followed by a declarative extractor. The question is frozen, while its gold answer is determined by executing the program against professional financial data at evaluation time, and a daily job re-executes it with no human or language model in the loop. A memorized answer is thus likely outdated, and a model must reach the current one through tools and analysis. Construction is equally automatic: a language model only verbalizes programs enumerated from real tool responses and never chooses an answer. Under general web search, six contemporary tool-calling models reach 70.9% to 76.7% answer accuracy. Over three consecutive days, 70% of served questions change their gold value, and even under tolerance-aware matching, a literally reused earlier snapshot fails on a majority of questions within a single day. Per-question tracking uncovers dynamic shifts in correctness masked by aggregate accuracy.",
+      "authors": [
+        "Sinuo Wang",
+        "Wentao Zhao",
+        "Jiacheng Lu",
+        "Rui Sun",
+        "Beidi Luan",
+        "Qiming Shi",
+        "Jing Li",
+        "Daxin Jiang",
+        "Zuo Bai"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-27T12:55:52Z",
+      "updated": "2026-10-27T12:55:52Z",
+      "announced_date": "2026-10-27",
+      "first_seen": "2026-10-27",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.37166v1",
+        "pdf": "https://arxiv.org/pdf/2610.37166v1",
+        "html": "https://arxiv.org/html/2610.37166"
+      },
+      "score": 8,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.37081",
+      "title": "OpenGray: a benchmark for evaluating the decisions of radiotherapy planning agents",
+      "abstract": "Background and purpose: Radiotherapy planning agents based on large language models (LLMs) decide when to submit a plan or request review but are evaluated mainly by dose. This study developed OpenGray, a benchmark of planning tasks with known correct decisions. Materials and methods: OpenGray adds tasks with known answers to the OpenKBP-Opt head-and-neck dataset, including two contradictions with dose goals proven incompatible and a feasible control with a stored plan meeting every hard goal. Four systems, from a rule-based planning script to a full LLM agent, were evaluated on 30 patients, the LLM-based ones with a commercial (Terra) and a local (Ministral 3 8B) LLM. Decisions, achieved dose, problem recognition, and technical failures were recorded and also read from logs of 39 stereotactic radiosurgery runs of SAGE, a clinical LLM agent. Results: With Terra, the script preceded by an LLM review and the full agent had decision accuracies of 95.4% and 92.1%, respectively, yet escalated only 50% (95% confidence interval, 25-75%) and 25% (10-40%) of overlap contradictions, which required arithmetic on the anatomy. All four systems submitted every feasible control, but 24% of these plans missed a hard goal that the stored plan had met. In four SAGE runs, one goal failed at every attempt; the agent identified it in every reply but had no action for stopping. Conclusions: Favorable aggregate scores concealed specific decision failures. Planning agents should be evaluated on their decisions as well as their dose and given an explicit action for stopping and requesting review.",
+      "authors": [
+        "Humza Nusrat",
+        "Kundan Thind"
+      ],
+      "categories": [
+        "cs.AI",
+        "physics.med-ph"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-27T11:42:47Z",
+      "updated": "2026-10-27T11:42:47Z",
+      "announced_date": "2026-10-27",
+      "first_seen": "2026-10-27",
+      "comment": "25 pages, 4 figures, 1 table, and the supplementary material (19 tables, 5 figures). Ancillary files: the paper in Markdown, structured results with the sentence each comes from, and an llms.txt index for AI agents",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.37081v1",
+        "pdf": "https://arxiv.org/pdf/2610.37081v1",
+        "html": "https://arxiv.org/html/2610.37081"
+      },
+      "score": 16,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.36989",
+      "title": "A Serious-Game Testbed for Self-Governing Human-Machine Institutions",
+      "abstract": "AI agents no longer act alone: they cooperate, coordinate and compete within and between groups, increasingly alongside humans who are in, on or out of ``the loop''. Whether such mixed groups can govern themselves is an open question about machine behaviour and human-computer interaction that needs a testbed for hybrid institutions. We present Megabike, a multi-agent simulator and serious game with interdependent arenas for common-pool resource management, cooperative survival and constitutional choice. Riders sharing a megabike must agree their arrangements for steering, pedalling and distributing resources, and their political regime, while negotiating with rival bikes and avoiding an existential threat. Every rule is enforced by the simulator, every action is logged, and any seat can be taken by a human or a machine, so governance can be studied under well-defined metrics. We demonstrate Megabike with forty sessions in which language-model riders with cooperative, lazy, subversive or opposing dispositions chose regimes, elected leaders and expelled one another. The results show that different combinations of agent archetypes could produce unexpected and counterproductive outcomes. We conclude with extensions for systematic experiments mixing human and computational agents.",
+      "authors": [
+        "Callum Berger",
+        "Jeremy Pitt",
+        "Stefan Sarkadi"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.HC"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-10-27T10:36:36Z",
+      "updated": "2026-10-27T10:36:36Z",
+      "announced_date": "2026-10-27",
+      "first_seen": "2026-10-27",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.36989v1",
+        "pdf": "https://arxiv.org/pdf/2610.36989v1",
+        "html": "https://arxiv.org/html/2610.36989"
+      },
+      "score": 13,
+      "tags": [
+        "multi-agent"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2610.36980",
+      "title": "AutoVend: Benchmarking LLM Agents on Long-Horizon Autonomous Vending Operations",
+      "abstract": "Large language model (LLM) agents are extending agent-mediated commerce on the Web from shopping for consumers to operating businesses for sellers. In online-to-offline (O2O) commerce, decisions are issued through Web-based platforms but realized through costly physical execution. Evaluating such agents requires going beyond individual transactions to ask whether decisions made online turn into sustained economic returns. We introduce AutoVend, a benchmark in which one LLM agent manages 20 vending machines across five site types through a Web-based operating interface for 180 simulated days. Its data-grounded simulator combines a shared warehouse, procurement lead times, paid replenishment, inventory expiration, and recurring operating costs. We evaluate five LLM agents against a rule-based inventory-control baseline and diagnose their site coordination, execution, and performance over time. Four of five evaluated LLM agents fall short of this baseline, and returns per dollar of inference cost rank models differently from returns alone. Operational analyses show that gains in individual metrics do not consistently yield stronger economic growth, as inventory and execution costs erode these gains. Trajectory analysis further reveals difficulties in grounding feasible actions, managing inventory commitments, and converting feedback into effective policy revisions.",
+      "authors": [
+        "Qiming Shi",
+        "Yikun Li",
+        "Beidi Luan",
+        "Rui Sun",
+        "Yan Ma",
+        "Jing Li",
+        "Daxin Jiang",
+        "Zuo Bai"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-27T10:33:06Z",
+      "updated": "2026-10-27T10:33:06Z",
+      "announced_date": "2026-10-27",
+      "first_seen": "2026-10-27",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.36980v1",
+        "pdf": "https://arxiv.org/pdf/2610.36980v1",
+        "html": "https://arxiv.org/html/2610.36980"
+      },
+      "score": 14,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.36589",
+      "title": "InfraDev: Can Coding Agents Develop AI Infrastructure, and How Can We Tell?",
+      "abstract": "Coding agents are beginning to develop the production-grade AI infrastructure that trains and serves large models, yet existing benchmarks cover only single kernels or single-GPU tasks, and grade with tests and prompts that misjudge both correct and incorrect patches. We introduce InfraDev, a benchmark of 36 tasks built from real-world pull requests to Megatron-LM, vLLM, and verl, covering infrastructure development for training, inference, and reinforcement learning. Each task asks an agent to reimplement a real change that spans many files and must run correctly across many GPUs. To grade such changes, we jointly synthesize hidden probes, which enforce the requirements the original tests leave unchecked, and a prompt that states every interface the probes call without revealing the solution. We also design a shared execution environment that reuses dependencies and artifacts across tasks, cutting storage by 52-57% and build time by 13-14% on Megatron-LM and vLLM. Across six frontier models, the best resolves only 38.9% of the tasks; the probes reject 32% of the submissions that pass every official test, and with the original pull request descriptions as prompts, no model resolves a single task. Failure analysis shows that structural and state errors dominate and that agents' own tests rarely check memory, time, or traffic. Turning these findings into an agent skill raises the resolved rate of a frontier model on the Megatron-LM tasks by 10.5%.",
+      "authors": [
+        "Yangshen Deng",
+        "Jiaqi Ruan",
+        "Yeqi Huang",
+        "Nick Lau",
+        "Guangming Sheng",
+        "Luo Mai"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.DC"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-27T03:47:47Z",
+      "updated": "2026-10-27T03:47:47Z",
+      "announced_date": "2026-10-27",
+      "first_seen": "2026-10-27",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.36589v1",
+        "pdf": "https://arxiv.org/pdf/2610.36589v1",
+        "html": "https://arxiv.org/html/2610.36589"
+      },
+      "score": 10,
+      "tags": [
+        "coding",
+        "memory"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.36584",
+      "title": "Benchmarking LLM Agents for Behaviorally Adequate Test Generation from Software Requirements",
+      "abstract": "As large language model agents increasingly compile natural-language requirements into repository-level code, requirement-to-test generation grows in importance to provide validation constraints (or harness) to guide code generation. Yet it remains unclear whether current agents can generate tests that validate the required behavior when the implementation of that behavior is withheld. Existing test-generation benchmarks mostly focus on white-box testing, whereas the requirement--test-related study usually requires evaluation on semantic alignment between the given documents and the generated tests. We introduce Req2Test-Bench, a benchmark containing 5,086 execution-validated instances recovered from developer-authored behavior-driven development (BDD) artifacts in 8 open-source projects, spanning 5 programming languages and 4 BDD frameworks. Each instance pairs a natural-language requirement in Gherkin with its developer-written Test Implementation. Given the requirement, target interfaces of the required behavior, an agent must generate a complete, potentially multi-file Test Implementation. Evaluation of 8 agent--model--reasoning configurations reveals a substantial gap between execution success and behavioral adequacy, which is measured strictly as kill-completeness: a kill-complete test kills every mutant that the ground-truth test kills. The best-performing configuration, Codex with DeepSeek-V4.1-Flash, produces passing tests for 82.8% of instances, yet only 33.8% are behaviorally adequate. We find that (1) scaling up agents yields sharply diminishing returns in behavioral adequacy relative to generation cost; (2) under-specified requirements cause the information gap, including ambiguous setup and implicit expected outcomes; and (3) requirement-grounded harnesses that steer agent non-determinism offer a promising direction for improvement.",
+      "authors": [
+        "Binhang Qi",
+        "Yiming Liu",
+        "Yun Lin",
+        "Yangjie Zhou",
+        "Hailong Sun",
+        "Jin Song Dong"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-27T03:41:55Z",
+      "updated": "2026-10-27T03:41:55Z",
+      "announced_date": "2026-10-27",
+      "first_seen": "2026-10-27",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.36584v1",
+        "pdf": "https://arxiv.org/pdf/2610.36584v1",
+        "html": "https://arxiv.org/html/2610.36584"
+      },
+      "score": 15,
+      "tags": [
+        "coding",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.36553",
+      "title": "NextEval: An Agent-Based Solver and Benchmark for Derivative-Free Optimization",
+      "abstract": "Derivative-free optimization (DFO) addresses problems where derivatives are unavailable or costly to obtain. This setting often arises in simulation-based and experimental applications, where evaluating the black-box objective can itself be costly. Thus, it remains a central challenge in DFO to effectively exploit accumulated observations to select informative evaluation points under a limited budget. In this light, we introduce the NextEval solver, an agent-based DFO solver, which integrates the capabilities of a large language model (LLM) to guide the sequential selection of evaluation points. Specifically, we establish a system that combines an LLM agent with a numerical environment. The environment provides tools for analyzing past evaluations and executing numerical methods, while maintaining a shared evaluation history and method-specific state to support continuation across method switches. Using observations and tool feedback, the LLM agent selects tools, configures their parameters, and allocates the evaluation budget, while numerical methods compute and evaluate candidate points. Building on this system, we also introduce NextEval Bench, a benchmark protocol for comparing agent configurations on shared DFO tasks using the same numerical tools under matched evaluation budgets and information constraints. Numerical results on low-dimensional DFO problems demonstrate that the NextEval solver outperforms the state-of-the-art DFO baselines in function-evaluation efficiency.",
+      "authors": [
+        "Shuo Chen",
+        "Li Cui",
+        "Cunxin Huang",
+        "Ya-Feng Liu",
+        "Minghang Xie",
+        "Meng Xu",
+        "Zaikun Zhang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "math.OC"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-10-27T03:02:04Z",
+      "updated": "2026-10-27T03:02:04Z",
+      "announced_date": "2026-10-27",
+      "first_seen": "2026-10-27",
+      "comment": "27 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.36553v1",
+        "pdf": "https://arxiv.org/pdf/2610.36553v1",
+        "html": "https://arxiv.org/html/2610.36553"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.36523",
+      "title": "Benchmarking Task Takeover Across Agent Handoffs",
+      "abstract": "As agents collaborate on longer tasks, responsibility may pass between models before the work is complete. The receiving model must build on prior decisions, observations, and actions while addressing the remaining requirements. Evaluating this transition requires connecting the information preserved at handoff to how the receiver continues the work, a relationship that task-success and memory-retention scores alone do not capture. We introduce the Handoff State Continuity Benchmark (HSC-Bench), comprising 1,039 tasks that evaluate two complementary aspects of task takeover: recovering relevant repository evidence and continuing from established conversational, tool, and file-work state. Comparisons across six receiving models show that structured handoff state improves repository evidence recovery for every model and continuation performance for most models. The strongest receivers differ between the two tracks, showing that evidence-recovery rankings alone do not characterize performance when continuing from inherited state. By combining these comparisons with checks of subsequent responses and actions, HSC-Bench evaluates both access to prior evidence and adherence to established commitments and completed work. This provides a basis for selecting receiving models and assessing handoff representations according to the work that must be carried forward.",
+      "authors": [
+        "Wenyuan Li",
+        "Guang Li",
+        "Dongyuan Li",
+        "Keisuke Maeda",
+        "Takahiro Ogawa",
+        "Miki Haseyama"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-10-27T02:27:04Z",
+      "updated": "2026-10-27T02:27:04Z",
+      "announced_date": "2026-10-27",
+      "first_seen": "2026-10-27",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.36523v1",
+        "pdf": "https://arxiv.org/pdf/2610.36523v1",
+        "html": "https://arxiv.org/html/2610.36523"
+      },
+      "score": 7,
+      "tags": [
+        "coding",
+        "tool-use",
+        "memory"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.36484",
+      "title": "CogArena: Benchmarking Multimodal Agents on Interactive Behavioral Experiments",
+      "abstract": "Claims about the cognitive capabilities of large language models are typically tested by translating behavioral paradigms into text prompts, bypassing the visual interfaces and time pressure through which human participants actually engage with experiments. At the same time, AI agents can now complete online behavioral tasks and produce human-like data, which raises concerns that online datasets in the social and behavioral sciences are increasingly open to contamination. We introduce CogArena, a benchmark of ten experimental paradigms from the social and behavioral sciences. Agents complete the experiments through a standard web browser, working with the same visual stimuli and response interfaces that online participants use. A three-level scoring procedure evaluates whether the agent completed the task, how accurately it performed, and whether its data show the behavioral signatures each paradigm reliably produces in people. Across four multimodal models, each run ten times per task, we find that finishing an experiment and reproducing its signatures are different things. Many sessions did not finish, and those that did reproduced some signatures reliably and others not at all. CogArena provides the tasks, scoring code, and a public leaderboard for new submissions.",
+      "authors": [
+        "Kianté Fernandez",
+        "Caitlin Chen",
+        "Jialu Zhou",
+        "Bartek Sadowski",
+        "Anthony C. Miceli",
+        "Ian Krajbich"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CY",
+        "cs.HC",
+        "q-bio.NC"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-27T01:42:35Z",
+      "updated": "2026-10-27T01:42:35Z",
+      "announced_date": "2026-10-27",
+      "first_seen": "2026-10-27",
+      "comment": "28 pages, 4 figures, 11 tables. Accepted at NeurIPS 2026 (Evaluations & Datasets Track). Code: https://github.com/kiante-fernandez/CogArena. Leaderboard: https://cog-arena.vercel.app",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.36484v1",
+        "pdf": "https://arxiv.org/pdf/2610.36484v1",
+        "html": "https://arxiv.org/html/2610.36484"
+      },
+      "score": 18,
+      "tags": [
+        "web",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    }
+  ]
+}

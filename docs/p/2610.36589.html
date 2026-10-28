@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>InfraDev: Can Coding Agents Develop AI Infrastructure, and How Can We Tell? | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Coding agents are beginning to develop the production-grade AI infrastructure that trains and serves large models, yet existing…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Memory, agent benchmark, LLM agent, arXiv, 2610.36589" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.36589.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="InfraDev: Can Coding Agents Develop AI Infrastructure, and How Can We Tell?" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Coding agents are beginning to develop the production-grade AI infrastructure that trains and serves large models, yet existing…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.36589.html" />
+    <meta property="article:published_time" content="2026-10-27T03:47:47Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="InfraDev: Can Coding Agents Develop AI Infrastructure, and How Can We Tell?" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Coding agents are beginning to develop the production-grade AI infrastructure that trains and serves large models, yet existing…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "InfraDev: Can Coding Agents Develop AI Infrastructure, and How Can We Tell?",
+  "name": "InfraDev: Can Coding Agents Develop AI Infrastructure, and How Can We Tell?",
+  "abstract": "Coding agents are beginning to develop the production-grade AI infrastructure that trains and serves large models, yet existing benchmarks cover only single kernels or single-GPU tasks, and grade with tests and prompts that misjudge both correct and incorrect patches. We introduce InfraDev, a benchmark of 36 tasks built from real-world pull requests to Megatron-LM, vLLM, and verl, covering infrastructure development for training, inference, and reinforcement learning. Each task asks an agent to reimplement a real change that spans many files and must run correctly across many GPUs. To grade such changes, we jointly synthesize hidden probes, which enforce the requirements the original tests leave unchecked, and a prompt that states every interface the probes call without revealing the solution. We also design a shared execution environment that reuses dependencies and artifacts across tasks, cutting storage by 52-57% and build time by 13-14% on Megatron-LM and vLLM. Across six frontier models, the best resolves only 38.9% of the tasks; the probes reject 32% of the submissions that pass every official test, and with the original pull request descriptions as prompts, no model resolves a single task. Failure analysis shows that structural and state errors dominate and that agents' own tests rarely check memory, time, or traffic. Turning these findings into an agent skill raises the resolved rate of a frontier model on the Megatron-LM tasks by 10.5%.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yangshen Deng"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiaqi Ruan"
+    },
+    {
+      "@type": "Person",
+      "name": "Yeqi Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Nick Lau"
+    },
+    {
+      "@type": "Person",
+      "name": "Guangming Sheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Luo Mai"
+    }
+  ],
+  "datePublished": "2026-10-27T03:47:47Z",
+  "dateModified": "2026-10-27T03:47:47Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.36589.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.36589.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.36589v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.36589"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.36589v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.36589"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>InfraDev: Can Coding Agents Develop AI Infrastructure, and How Can We Tell?</h1>
+        <div class="meta">
+          Yangshen Deng, Jiaqi Ruan, Yeqi Huang, Nick Lau, Guangming Sheng, Luo Mai
+          · 2610.36589
+          · <time datetime="2026-10-27">2026-10-27</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Coding agents are beginning to develop the production-grade AI infrastructure that trains and serves large models, yet existing benchmarks cover only single kernels or single-GPU tasks, and grade with tests and prompts that misjudge both correct and incorrect patches. We introduce InfraDev, a benchmark of 36 tasks built from real-world pull requests to Megatron-LM, vLLM, and verl, covering infrastructure development for training, inference, and reinforcement learning. Each task asks an agent to reimplement a real change that spans many files and must run correctly across many GPUs. To grade such changes, we jointly synthesize hidden probes, which enforce the requirements the original tests leave unchecked, and a prompt that states every interface the probes call without revealing the solution. We also design a shared execution environment that reuses dependencies and artifacts across tasks, cutting storage by 52-57% and build time by 13-14% on Megatron-LM and vLLM. Across six frontier models, the best resolves only 38.9% of the tasks; the probes reject 32% of the submissions that pass every official test, and with the original pull request descriptions as prompts, no model resolves a single task. Failure analysis shows that structural and state errors dominate and that agents&#x27; own tests rarely check memory, time, or traffic. Turning these findings into an agent skill raises the resolved rate of a frontier model on the Megatron-LM tasks by 10.5%.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.36589v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.36589v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.36589" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.37459.html"><strong>M4Bench: Evaluating Procedural Specification for Clinical EHR Derivation Agents</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.37434.html"><strong>FeatureArc: Benchmarking Coding Agents on Evolving Features</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.36584.html"><strong>Benchmarking LLM Agents for Behaviorally Adequate Test Generation from Software Requirements</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.36523.html"><strong>Benchmarking Task Takeover Across Agent Handoffs</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.35987.html"><strong>PROBE: Frontier Coding Agents Find Different Bugs Than Maintainers Fix</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.35980.html"><strong>UnityBench-Mini3D: Evaluating LLM Agents for 3D Game Development in Unity</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.35488.html"><strong>FeatureLoop: Benchmarking Coding Agents under Evolving Requirements</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.35188.html"><strong>V$^3$AST-Bench: Verifiable, Valid, and Versatile Safety Evaluation for Coding Agents</strong></a> <span>2026-10-26</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>
