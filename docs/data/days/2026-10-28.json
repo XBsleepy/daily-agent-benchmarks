@@ -1,0 +1,316 @@
+{
+  "date": "2026-10-28",
+  "count": 7,
+  "report": {
+    "date": "2026-10-28",
+    "count": 7,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "coding",
+        "count": 3,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      }
+    ],
+    "en": {
+      "headline": "7 new agent benchmarks",
+      "summary": "On October 28, 2026, arXiv listed 7 new agent benchmarks. Work clustered around Tool use (3), Coding agents (3), and Safety (1).",
+      "highlights": [
+        {
+          "id": "2610.38293",
+          "title": "EPSBench: Benchmarking LLM Agents for Earnings Forecasting",
+          "blurb": "Quarterly earnings forecasting requires an agent to connect financial evidence to the income-statement line items that produce a company's reported earnings."
+        },
+        {
+          "id": "2610.38175",
+          "title": "DecompGym: Benchmarking LLM Agents on Designing Decomposition Algorithms",
+          "blurb": "Benders decomposition and column generation solve large optimization problems by passing cuts, columns, and dual values between a master problem and subproblems, and are hard to implement correctly."
+        },
+        {
+          "id": "2610.38342",
+          "title": "Investor's Last Exam: Can AI Agents Do Equity Investment Without Seeing the Future?",
+          "blurb": "Financial agents must form forecasts and investment judgments from decision-time evidence, with predictions evaluated against subsequent outcomes."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 7 篇 Agent Benchmark",
+      "summary": "2026年10月28日，arXiv 新增 7 篇 Agent Benchmark。当日主题集中在工具使用（3）、代码智能体（3）、安全（1）。",
+      "highlights": [
+        {
+          "id": "2610.38293",
+          "title": "EPSBench: Benchmarking LLM Agents for Earnings Forecasting",
+          "blurb": "Quarterly earnings forecasting requires an agent to connect financial evidence to the income-statement line items that produce a company's reported earnings."
+        },
+        {
+          "id": "2610.38175",
+          "title": "DecompGym: Benchmarking LLM Agents on Designing Decomposition Algorithms",
+          "blurb": "Benders decomposition and column generation solve large optimization problems by passing cuts, columns, and dual values between a master problem and subproblems, and are hard to implement correctly."
+        },
+        {
+          "id": "2610.38342",
+          "title": "Investor's Last Exam: Can AI Agents Do Equity Investment Without Seeing the Future?",
+          "blurb": "Financial agents must form forecasts and investment judgments from decision-time evidence, with predictions evaluated against subsequent outcomes."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2610.38924",
+      "title": "TreasuryQA Bench: Can AI Agents Work an Archive of Scanned Financial Records?",
+      "abstract": "Organisations keep decades of financial records as scanned PDFs on shared drives, and AI agents can now reach those drives through Model Context Protocol (MCP) servers. Existing benchmarks do not mirror this production setting because they simplify the task. In some, the relevant documents are handed to the agent, so it never has to search. In others, the agent searches through documents with pre-extracted text, so it never has to read scanned images. We introduce TreasuryQA Bench, which requires both: 70 questions over 1,435 scanned U.S. Treasury publications, held in Veris's high-fidelity Dropbox twin. In each task the agent searches for the relevant file through Dropbox's MCP server, reads the pages it needs with Reducto's hosted OCR server or its own tools, and replies with one exact figure. A Python grader checks each answer against an accepted range around the correct value. In this paper we present results from ten agents. The best, Claude Opus 5.5 in Claude Code, solves 64.8% of attempts and the worst, GPT-5.6 Terra in Codex, solves 16.7%, so the benchmark is far from saturated. We also test how scan quality affects performance: every agent solves fewer tasks on the blurriest scans. Most failed attempts reply with a wrong number rather than no number, and the most common cause is a digit misread from the scan. Three worked examples are included with their answer keys.",
+      "authors": [
+        "Ritiz Tambi",
+        "Sahar Shayegan",
+        "Joshua Meyer",
+        "Sun Kim",
+        "Ali Khan",
+        "Victor Shih",
+        "Mehdi Jamei",
+        "Andi Partovi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-28T21:17:16Z",
+      "updated": "2026-10-28T21:17:16Z",
+      "announced_date": "2026-10-28",
+      "first_seen": "2026-10-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.38924v1",
+        "pdf": "https://arxiv.org/pdf/2610.38924v1",
+        "html": "https://arxiv.org/html/2610.38924"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.38617",
+      "title": "How Deterministic SAST and AI Security Agents Divide the Work: Coverage, Harness Policy and Cost in Snyk VulnBench 2.0",
+      "abstract": "We ask what AI coding agents and AI security harnesses find that deterministic static application security testing (SAST) does not, and what they miss that SAST catches. VulnBench 2.0 is a benchmark of 108 hand-curated, attacker-reachable vulnerabilities in 20 open-source web applications in Go, JavaScript/TypeScript, Python and Java; 62 flow across more than one file. A finding is credited only if it locates the vulnerability's attacker-controlled source and its dangerous sink, each within two lines. We evaluate nine productized configurations under one blind protocol: the Snyk Code static analyzer, Claude Code's /security-review with three model and effort settings (one with the Snyk MCP server), Codex Security with GPT-5.6 Luna, Terra and Sol, and the DeepSec scanner with two model backends. Snyk Code reached 82.4% macro recall (89 of 108) and Claude Code with Opus 5 at xhigh effort 79.3% (85 of 108); they disagree on 28 vulnerabilities, split 16 to 12, too few to tell them apart. Neither engine was sufficient alone: together they reached 101 of 108, the ceiling of all seven comparable configurations combined, and the AI configurations also reported at least seven real vulnerabilities that the reference set did not contain and Snyk Code did not report. What an AI engine misses depends on its harness as much as on its model: without Claude Code's built-in review policy, the same model matched 16 instead of 9 of the 20 vulnerabilities in the classes that policy excludes or restricts (supplementary run on 19 of 20 applications); Codex Security with GPT-5.6 Sol located 80 vulnerabilities at file level but 34 at line level; DeepSec's model-free file selection kept a file from only 56 of the 108 flows. Coverage and cost were only loosely related. The harness, fixtures, reference sets and all run data are public.",
+      "authors": [
+        "Liran Tal",
+        "Chris Liu",
+        "Charlotte Fereday",
+        "Sebastian Roth",
+        "Brian Clark"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-10-28T10:38:43Z",
+      "updated": "2026-10-28T10:38:43Z",
+      "announced_date": "2026-10-28",
+      "first_seen": "2026-10-28",
+      "comment": "44 pages, 21 figures, 7 tables. Benchmark harness, reference sets and all run data: https://github.com/snyk-labs/snyk-vulnbench ; companion site: https://vulnbench.com",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.38617v1",
+        "pdf": "https://arxiv.org/pdf/2610.38617v1",
+        "html": "https://arxiv.org/html/2610.38617"
+      },
+      "score": 9,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.38544",
+      "title": "An Alignment Benchmark for Enterprise Agents on Era by Eon",
+      "abstract": "AI agents are widely used in enterprises to access business systems and act on them in pursuit of a goal. However, fulfilling a user's request can cause harm. Era by Eon is a product that creates a digital twin of a company by simulating its business systems and data. Its simulators implement the programming interfaces of real products. Our benchmark uses ten of these systems, including Salesforce, Zendesk, Jira and Slack. We tested whether agents would carry out harmful business requests or trust misleading information in company records. We ran 19 models on 41 tasks three times, for 2,337 runs. Of the 2,304 runs that produced an answer, 918 (40%) contained a violation. The most common were false claims about actions or records (290 runs), following planted instructions (266) and disclosing sensitive data to the wrong audience (249). Every attempted change was recorded and blocked before it took effect. Misleading Slack messages caused 16 models to report an incorrect ticket status in 47 of 57 runs. No model was free of violations. The four best models violated in 22 to 24% of their runs. Yet one of them, Nova Pro, did the task correctly in only 30 runs.",
+      "authors": [
+        "Hai Sadon",
+        "Benjamin Gruenbaum",
+        "Doron Porat",
+        "Assaf Natanzon",
+        "Roy Zavida",
+        "Chen Dinachi",
+        "Or Itzahary"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-28T09:45:17Z",
+      "updated": "2026-10-28T09:45:17Z",
+      "announced_date": "2026-10-28",
+      "first_seen": "2026-10-28",
+      "comment": "11 pages, 1 figure, 4 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.38544v1",
+        "pdf": "https://arxiv.org/pdf/2610.38544v1",
+        "html": "https://arxiv.org/html/2610.38544"
+      },
+      "score": 9,
+      "tags": [],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2610.38342",
+      "title": "Investor's Last Exam: Can AI Agents Do Equity Investment Without Seeing the Future?",
+      "abstract": "Financial agents must form forecasts and investment judgments from decision-time evidence, with predictions evaluated against subsequent outcomes. Existing benchmarks assess financial knowledge, research workflows, or forecasting, but evaluating the full research process requires a strictly frozen information set and professional evaluation criteria. We introduce Investor's Last Exam (ILE), an equity-research benchmark led by experienced buy-side investors and fund managers. Its three components are a versioned financial database spanning 3.43 million document versions and nine source categories, supplemented by structured market data, with validated timestamps governing retrieval and computation; a task taxonomy organized around professional analyst deliverables; and an expert-led framework linking scoring criteria to sources, calculations, and assumptions through financial dependency graphs. Evaluation spans 86 assignments and jointly assesses research quality, forecast accuracy, and simulated investment performance. GPT-6 Astra and Claude Opus 5.5 lead overall at 68.1 and 66.9 out of 100, yet even Astra scores only 52.5 on Forecast & Model. Our results show that even state-of-the-art models fail to translate overall research capability into predictive performance. ILE shifts the evaluation unit from isolated capabilities to the evidence--assumption--judgment chain, allowing researchers to locate where analytical advantages fail to translate into forecasts and investment judgments, and providing a traceable, diagnostic foundation for training and evaluating financial agents.",
+      "authors": [
+        "Huangfei Jiang",
+        "Anning Hu",
+        "Kai Sheng",
+        "Yuchen Cai",
+        "Rui Ge",
+        "Xiangyu Kong",
+        "Jianghao Lin",
+        "Shuzi Chen",
+        "Jiyi Weng",
+        "Junchi Yan"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-28T06:39:24Z",
+      "updated": "2026-10-28T06:39:24Z",
+      "announced_date": "2026-10-28",
+      "first_seen": "2026-10-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.38342v1",
+        "pdf": "https://arxiv.org/pdf/2610.38342v1",
+        "html": "https://arxiv.org/html/2610.38342"
+      },
+      "score": 13,
+      "tags": [],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2610.38293",
+      "title": "EPSBench: Benchmarking LLM Agents for Earnings Forecasting",
+      "abstract": "Quarterly earnings forecasting requires an agent to connect financial evidence to the income-statement line items that produce a company's reported earnings. We introduce EPSBench, a benchmark for studying this ability across 149 firm-quarters from 86 US companies. Agents read a fixed collection of filings, earnings-call transcripts, and news, then estimate company-specific income-statement drivers with cited evidence. A shared accounting calculator converts these estimates into GAAP diluted earnings per share (EPS), providing a common basis for comparing forecast assumptions. We evaluate six models under a common harness, assessing point forecast error relative to date-matched analyst consensus and checking whether their prediction intervals achieve the stated coverage. Three models show no detectable paired difference in point forecast error from consensus, and three have higher error. Across all six models, nominal 80% intervals contain reported EPS in only 37--70% of runs that return an interval, and most misses fall above the upper bound because the forecasts run low. The driver records trace most of the error gap between models to operating-income estimates.",
+      "authors": [
+        "Yanbin Yin",
+        "Chuyu Xu",
+        "Liqin Ye",
+        "Jing Peng",
+        "Chao Zhang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-10-28T05:24:11Z",
+      "updated": "2026-10-28T05:24:11Z",
+      "announced_date": "2026-10-28",
+      "first_seen": "2026-10-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.38293v1",
+        "pdf": "https://arxiv.org/pdf/2610.38293v1",
+        "html": "https://arxiv.org/html/2610.38293"
+      },
+      "score": 20,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.38175",
+      "title": "DecompGym: Benchmarking LLM Agents on Designing Decomposition Algorithms",
+      "abstract": "Benders decomposition and column generation solve large optimization problems by passing cuts, columns, and dual values between a master problem and subproblems, and are hard to implement correctly. Large language models now automate parts of algorithm design, which points toward agents that build decomposition solvers for new problems. As a first step toward such agents, we study how well current coding agents design and implement these two algorithms, and how they fail. We introduce DecompGym, 81 instances from nine problem families (five Benders, four column generation), in which an agent writes a solver for a prescribed method. Each solver must meet three criteria: execution within a 60-second time limit; numerical feasibility together with a method audit, in which an LLM judge reads the solver's code; and an objective within 1% of the stored optimal objective. We evaluate 12 GPT, Claude, and Gemini models running in coding-agent tools. Over up to ten attempts, we compare independent regeneration with reflection, which first diagnoses the failure. On the first attempt, two models solve every instance and seven solve more than 90%. Most Benders failures (48 of 62) are missing or suboptimal solutions. The most common column-generation failure is a method-audit rejection. Output checks alone would accept 93 of the 108 attempts that fail the method audit. The most common rejection, an optimalif, occurs 96 times, 92 of them in one model.Reflection turns 66% of retries into successes, compared with 39% for regeneration, and it repairs method-audit failures, for which the judge names the defecective gaps. Agents for decomposition therefore need checks on how a solver reaches its answer and feedback that locates the error. The benchmark is available at https://github.com/SIKAI-C/DecompGym.",
+      "authors": [
+        "Sikai Cheng",
+        "Tinghan Ye",
+        "Arnaud Deza",
+        "Xiaonan Qi",
+        "Miao Li",
+        "Litong Liu",
+        "Changkun Guan"
+      ],
+      "categories": [
+        "cs.AI",
+        "math.OC"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-28T02:23:34Z",
+      "updated": "2026-10-28T02:23:34Z",
+      "announced_date": "2026-10-28",
+      "first_seen": "2026-10-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.38175v1",
+        "pdf": "https://arxiv.org/pdf/2610.38175v1",
+        "html": "https://arxiv.org/html/2610.38175"
+      },
+      "score": 14,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.38147",
+      "title": "SkillCT: A Multidimensional Benchmark and Execution-Free Baseline for Agent Skill Assessment",
+      "abstract": "Agent skills package instructions, scripts, and resources for specialized tasks and are increasingly distributed through public Web repositories. However, existing skill benchmarks primarily focus on downstream task execution, insufficiently assessing specification quality, behavioral robustness, semantic alignment, and responsibility boundaries. Their reliance on task-specific tools, environments, and repeated executions limits scalability and pre-deployment assessment. To address these challenges, we introduce SkillCT, a benchmark that broadens skill assessment from downstream utility to a multidimensional characterization of skill quality. SkillCT evaluates skills across nine complementary dimensions spanning three aspects: Static Assessment, which captures intrinsic properties of the skill specification; Dynamic Assessment, which measures whether the induced behavior remains stable across backbone models and request variations; and Human-Assisted Assessment, which examines behavior-chain consistency and task granularity. These dimensions provide a broader view of skill quality than execution success. Applying SkillCT to a public skill corpus establishes a reference benchmark for analyzing quality weaknesses and relationships across dimensions. Building on this benchmark, we propose an execution-free quality evaluation baseline that predicts the multidimensional quality profiles of unseen skills by retrieving and leveraging similar reference skills, without executing the skills under evaluation. This reduces token consumption and evaluation time, while preserving consistency with the full assessment. Furthermore, SkillCT-guided optimization improves downstream task success and execution efficiency, demonstrating its value for skill refinement. These findings highlight the effectiveness of SkillCT in supporting scalable skill assessment, optimization, and repository maintenance.",
+      "authors": [
+        "Mengyu Sun",
+        "Zunlong Zhou",
+        "Ziyuan Yang",
+        "Yi Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-28T01:30:12Z",
+      "updated": "2026-10-28T01:30:12Z",
+      "announced_date": "2026-10-28",
+      "first_seen": "2026-10-28",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.38147v1",
+        "pdf": "https://arxiv.org/pdf/2610.38147v1",
+        "html": "https://arxiv.org/html/2610.38147"
+      },
+      "score": 6,
+      "tags": [
+        "coding",
+        "tool-use",
+        "safety"
+      ],
+      "field": "coding",
+      "citations": 0
+    }
+  ]
+}

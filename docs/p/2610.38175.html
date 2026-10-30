@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DecompGym: Benchmarking LLM Agents on Designing Decomposition Algorithms | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Benders decomposition and column generation solve large optimization problems by passing cuts, columns, and dual values between a…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Tool use, agent benchmark, LLM agent, arXiv, 2610.38175" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.38175.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="DecompGym: Benchmarking LLM Agents on Designing Decomposition Algorithms" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Benders decomposition and column generation solve large optimization problems by passing cuts, columns, and dual values between a…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.38175.html" />
+    <meta property="article:published_time" content="2026-10-28T02:23:34Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="DecompGym: Benchmarking LLM Agents on Designing Decomposition Algorithms" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Benders decomposition and column generation solve large optimization problems by passing cuts, columns, and dual values between a…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "DecompGym: Benchmarking LLM Agents on Designing Decomposition Algorithms",
+  "name": "DecompGym: Benchmarking LLM Agents on Designing Decomposition Algorithms",
+  "abstract": "Benders decomposition and column generation solve large optimization problems by passing cuts, columns, and dual values between a master problem and subproblems, and are hard to implement correctly. Large language models now automate parts of algorithm design, which points toward agents that build decomposition solvers for new problems. As a first step toward such agents, we study how well current coding agents design and implement these two algorithms, and how they fail. We introduce DecompGym, 81 instances from nine problem families (five Benders, four column generation), in which an agent writes a solver for a prescribed method. Each solver must meet three criteria: execution within a 60-second time limit; numerical feasibility together with a method audit, in which an LLM judge reads the solver's code; and an objective within 1% of the stored optimal objective. We evaluate 12 GPT, Claude, and Gemini models running in coding-agent tools. Over up to ten attempts, we compare independent regeneration with reflection, which first diagnoses the failure. On the first attempt, two models solve every instance and seven solve more than 90%. Most Benders failures (48 of 62) are missing or suboptimal solutions. The most common column-generation failure is a method-audit rejection. Output checks alone would accept 93 of the 108 attempts that fail the method audit. The most common rejection, an optimalif, occurs 96 times, 92 of them in one model.Reflection turns 66% of retries into successes, compared with 39% for regeneration, and it repairs method-audit failures, for which the judge names the defecective gaps. Agents for decomposition therefore need checks on how a solver reaches its answer and feedback that locates the error. The benchmark is available at https://github.com/SIKAI-C/DecompGym.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Sikai Cheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Tinghan Ye"
+    },
+    {
+      "@type": "Person",
+      "name": "Arnaud Deza"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaonan Qi"
+    },
+    {
+      "@type": "Person",
+      "name": "Miao Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Litong Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Changkun Guan"
+    }
+  ],
+  "datePublished": "2026-10-28T02:23:34Z",
+  "dateModified": "2026-10-28T02:23:34Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.38175.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.38175.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.38175v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.38175"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.38175v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.38175"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>DecompGym: Benchmarking LLM Agents on Designing Decomposition Algorithms</h1>
+        <div class="meta">
+          Sikai Cheng, Tinghan Ye, Arnaud Deza, Xiaonan Qi, Miao Li, Litong Liu, Changkun Guan
+          · 2610.38175
+          · <time datetime="2026-10-28">2026-10-28</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Benders decomposition and column generation solve large optimization problems by passing cuts, columns, and dual values between a master problem and subproblems, and are hard to implement correctly. Large language models now automate parts of algorithm design, which points toward agents that build decomposition solvers for new problems. As a first step toward such agents, we study how well current coding agents design and implement these two algorithms, and how they fail. We introduce DecompGym, 81 instances from nine problem families (five Benders, four column generation), in which an agent writes a solver for a prescribed method. Each solver must meet three criteria: execution within a 60-second time limit; numerical feasibility together with a method audit, in which an LLM judge reads the solver&#x27;s code; and an objective within 1% of the stored optimal objective. We evaluate 12 GPT, Claude, and Gemini models running in coding-agent tools. Over up to ten attempts, we compare independent regeneration with reflection, which first diagnoses the failure. On the first attempt, two models solve every instance and seven solve more than 90%. Most Benders failures (48 of 62) are missing or suboptimal solutions. The most common column-generation failure is a method-audit rejection. Output checks alone would accept 93 of the 108 attempts that fail the method audit. The most common rejection, an optimalif, occurs 96 times, 92 of them in one model.Reflection turns 66% of retries into successes, compared with 39% for regeneration, and it repairs method-audit failures, for which the judge names the defecective gaps. Agents for decomposition therefore need checks on how a solver reaches its answer and feedback that locates the error. The benchmark is available at https://github.com/SIKAI-C/DecompGym.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.38175v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.38175v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.38175" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.39417.html"><strong>Well-Specified and Well-Tested? Assessing SWE-bench-Style Datasets with a Self-Evolving Agent</strong></a> <span>2026-10-29</span></li>
+          <li><a href="2610.38617.html"><strong>How Deterministic SAST and AI Security Agents Divide the Work: Coverage, Harness Policy and Cost in Snyk VulnBench 2.0</strong></a> <span>2026-10-28</span></li>
+          <li><a href="2610.38147.html"><strong>SkillCT: A Multidimensional Benchmark and Execution-Free Baseline for Agent Skill Assessment</strong></a> <span>2026-10-28</span></li>
+          <li><a href="2610.37459.html"><strong>M4Bench: Evaluating Procedural Specification for Clinical EHR Derivation Agents</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.37434.html"><strong>FeatureArc: Benchmarking Coding Agents on Evolving Features</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.36589.html"><strong>InfraDev: Can Coding Agents Develop AI Infrastructure, and How Can We Tell?</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.36584.html"><strong>Benchmarking LLM Agents for Behaviorally Adequate Test Generation from Software Requirements</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.36523.html"><strong>Benchmarking Task Takeover Across Agent Handoffs</strong></a> <span>2026-10-27</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

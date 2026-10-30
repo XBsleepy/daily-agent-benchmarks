@@ -1,0 +1,409 @@
+{
+  "date": "2026-10-29",
+  "count": 9,
+  "report": {
+    "date": "2026-10-29",
+    "count": 9,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 4,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multi-agent",
+        "count": 2,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "memory",
+        "count": 2,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "web",
+        "count": 2,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "computer-use",
+        "count": 1,
+        "en": "Computer use",
+        "zh": "计算机使用"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      }
+    ],
+    "en": {
+      "headline": "9 new agent benchmarks",
+      "summary": "On October 29, 2026, arXiv listed 9 new agent benchmarks. Work clustered around Tool use (4), Multi-agent (2), Memory (2), and Web agents (2).",
+      "highlights": [
+        {
+          "id": "2610.39438",
+          "title": "ATLAS-Bench: An Agentic Tool-Use Benchmark for Local Area Search",
+          "blurb": "Reliable local search is essential for LLM agents to support everyday decisions and longer plans by finding places that meet users' needs at given times and locations."
+        },
+        {
+          "id": "2610.39417",
+          "title": "Well-Specified and Well-Tested? Assessing SWE-bench-Style Datasets with a Self-Evolving Agent",
+          "blurb": "Large language models (LLMs) have shown strong performance on software engineering (SE) tasks, driving the need for high-quality datasets for reliable training and evaluation."
+        },
+        {
+          "id": "2610.39377",
+          "title": "AgentDecept: Benchmarking Deceptive Behavior in Tool-Using LLM Agents under Pressure",
+          "blurb": "LLM agents increasingly carry out multi-turn tasks across everyday applications, yet users often see only the agent's report rather than the observations, API calls, and state changes behind it."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 9 篇 Agent Benchmark",
+      "summary": "2026年10月29日，arXiv 新增 9 篇 Agent Benchmark。当日主题集中在工具使用（4）、多智能体（2）、记忆（2）、网页智能体（2）。",
+      "highlights": [
+        {
+          "id": "2610.39438",
+          "title": "ATLAS-Bench: An Agentic Tool-Use Benchmark for Local Area Search",
+          "blurb": "Reliable local search is essential for LLM agents to support everyday decisions and longer plans by finding places that meet users' needs at given times and locations."
+        },
+        {
+          "id": "2610.39417",
+          "title": "Well-Specified and Well-Tested? Assessing SWE-bench-Style Datasets with a Self-Evolving Agent",
+          "blurb": "Large language models (LLMs) have shown strong performance on software engineering (SE) tasks, driving the need for high-quality datasets for reliable training and evaluation."
+        },
+        {
+          "id": "2610.39377",
+          "title": "AgentDecept: Benchmarking Deceptive Behavior in Tool-Using LLM Agents under Pressure",
+          "blurb": "LLM agents increasingly carry out multi-turn tasks across everyday applications, yet users often see only the agent's report rather than the observations, API calls, and state changes behind it."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2610.40293",
+      "title": "MAServeBench: Benchmarking Multi-Agent LLM Serving Systems with Hierarchical Collaboration Workloads",
+      "abstract": "Large language model (LLM)-based multi-agent systems (MAS) coordinate specialized agents to solve complex tasks, turning each user request into interdependent model and tool operations. Unlike independent requests, these operations become ready at different times and consume evolving context as agents coordinate and exchange results. This creates changing patterns of concurrency, computation, and memory demand that can expose different bottlenecks in LLM serving hardware. Yet benchmarking these effects requires capturing the collaboration rules that generate serving workloads, beyond the requests observed during execution. We present MAServeBench, a benchmark that treats multi-agent collaboration as a configurable dimension of serving workloads for LLM serving and hardware evaluation. Its composable stages capture how agents coordinate and exchange context in documented MAS workflows, enabling native executions to generate different workloads even when task inputs and tools remain unchanged. Hierarchical Semantic Traces preserve realized operations and dependencies for reproducible comparisons of legal release constraints at fixed work. Task-linked measurements connect these workloads to serving execution and GPU/NPU hardware behavior, revealing why serving efficiency does not always translate into timely task completion. The benchmark code is available at https://github.com/ShengxuanQiu/MAServeBench.",
+      "authors": [
+        "Shengxuan Qiu",
+        "Haochen Huang",
+        "Shuzhang Zhong",
+        "Zizhuo Fu",
+        "Zebin Yang",
+        "Jianming Tong",
+        "Meng Li"
+      ],
+      "categories": [
+        "cs.MA"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-10-29T15:42:15Z",
+      "updated": "2026-10-29T15:42:15Z",
+      "announced_date": "2026-10-29",
+      "first_seen": "2026-10-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.40293v1",
+        "pdf": "https://arxiv.org/pdf/2610.40293v1",
+        "html": "https://arxiv.org/html/2610.40293"
+      },
+      "score": 19,
+      "tags": [
+        "tool-use",
+        "multi-agent",
+        "memory"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2610.40133",
+      "title": "DynaRev: Benchmarking Web Agents under Dynamic Goal Revision",
+      "abstract": "Web agents are typically evaluated with goals fully specified before execution and fixed thereafter, whereas real users often revise their requirements during interaction. To study such interactions, we introduce DynaRev, a benchmark of 181 tasks to evaluate web agents under dynamic goal revision. DynaRev uses semantic milestones to deliver revisions at task-defined stages, covers additive revisions, unconditional overrides, and runtime-conditioned overrides, and evaluates correctness, responsiveness, and efficiency through trajectory-grounded evaluation. Five-model evaluations show that agents often satisfy only part of the task requirements, with performance varying across task sources, revision types, and models. Further analyses reveal varied milestone timing, mixed effects of dynamic delivery, and contrasting revision-handling outcomes, with gains from instruction rewriting while preserving browser state and losses from browser resets. DynaRev provides a testbed for studying how web agents adapt to evolving user goals. The code and data are available at https://github.com/zsq259/DynaRev.",
+      "authors": [
+        "Shiqi Zhang",
+        "Guochen Zhou",
+        "Zesheng Wei",
+        "Hai Zhao",
+        "Zhisong Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-29T14:25:54Z",
+      "updated": "2026-10-29T14:25:54Z",
+      "announced_date": "2026-10-29",
+      "first_seen": "2026-10-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.40133v1",
+        "pdf": "https://arxiv.org/pdf/2610.40133v1",
+        "html": "https://arxiv.org/html/2610.40133"
+      },
+      "score": 19,
+      "tags": [
+        "web"
+      ],
+      "field": "web",
+      "citations": 0
+    },
+    {
+      "id": "2610.39733",
+      "title": "Bank-World: A Benchmark for Evaluating Agents on Banking Workflows",
+      "abstract": "Bank-World is a benchmark of 50 banking tasks across two simulated institutions. Completing banking work requires more than producing the right calculation: agents must reconcile records, obtain permission, execute transactions, and keep instructions and status reports consistent as circumstances change. Bank-World tests these requirements through single-turn assignments and multi-turn interactions with simulated employees who supply information, approve actions, and revise instructions. Grading combines executable checks of recorded actions and state with model judgments of task requirements, including whether valid alternative solutions satisfy them. Across 1,600 attempts by four models, we find that correct decisions often fail to become completed work. Agents charge fees twice, distribute the correct total in incorrect amounts among the recipients, and execute payments while approval is pending. Their strengths also differ: Sol leads single-turn completion, Opus has the highest observed multi-turn completion rate, and Grok succeeds across more multi-turn tasks but less consistently. Bank-World makes these differences inspectable through task-level results and worked examples connecting source evidence, agent decisions, and simulated consequences. We retain the task environments, executable graders, and full trajectories privately to reduce contamination and preserve the benchmark for future evaluations.",
+      "authors": [
+        "Daniel Rupawalla"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-29T09:59:39Z",
+      "updated": "2026-10-29T09:59:39Z",
+      "announced_date": "2026-10-29",
+      "first_seen": "2026-10-29",
+      "comment": "43 pages, 3 figures, including appendices. Ancillary files contain the task ID mapping, reward specifications, and single-turn check-authority mapping",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.39733v1",
+        "pdf": "https://arxiv.org/pdf/2610.39733v1",
+        "html": "https://arxiv.org/html/2610.39733"
+      },
+      "score": 14,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.39532",
+      "title": "Judging Before Propagation: Task-Graph Contextual Integrity for Multi-Agent Privacy",
+      "abstract": "Multi-agent LLM systems increasingly rely on persistent memory and inter-agent communication. These capabilities create privacy risks that extend beyond individual interactions: a release appropriate in isolation may become inappropriate when combined with information previously disclosed to a recipient or propagated to downstream agents along the planned workflow. Existing Contextual Integrity (CI) mechanisms for agentic systems typically rely on local judgments that assess each disclosure in isolation, with or without regard to the recipient's history, but do not account for how information propagates downstream. However, compliance at the current boundary does not guarantee appropriateness across the workflow. We introduce Task-Graph Contextual Integrity (TG-CI), to our knowledge the first task-graph-native formalization of Contextual Integrity for multi-agent systems. TG-CI represents a workflow as a Multi-Agent Task Graph (MATG) and extends CI from atomic transfers to stateful, graph-level information flows by jointly considering an item's intended propagation scope and recipients' evolving disclosure states. We operationalize TG-CI through propagation-scoped authorization under two complementary policies: Full-Scope, which requires admissibility across the complete downstream scope, and Auto-Region, which confines each item to its maximal admissible region using lightweight frontier gates. We further introduce MAPLE-Bench, a benchmark of 144 cases across four scenarios that jointly vary MATG topology, disclosure history, compromised-agent placement, and item-level privacy policies. In our primary experimental configuration, TG-CI reduces the mean unauthorized disclosure count by 85.8-94.1% relative to the Local-History CI baseline, while retaining 93.6-96.1% of the baseline's task accuracy, with the two enforcement policies providing complementary privacy--cost--utility trade-offs.",
+      "authors": [
+        "Hengyu Wu",
+        "Blaise Delattre",
+        "Yang Cao"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-10-29T07:31:50Z",
+      "updated": "2026-10-29T07:31:50Z",
+      "announced_date": "2026-10-29",
+      "first_seen": "2026-10-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.39532v1",
+        "pdf": "https://arxiv.org/pdf/2610.39532v1",
+        "html": "https://arxiv.org/html/2610.39532"
+      },
+      "score": 12,
+      "tags": [
+        "multi-agent",
+        "memory"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2610.39438",
+      "title": "ATLAS-Bench: An Agentic Tool-Use Benchmark for Local Area Search",
+      "abstract": "Reliable local search is essential for LLM agents to support everyday decisions and longer plans by finding places that meet users' needs at given times and locations. Yet existing benchmarks provide limited coverage of whether search results satisfy mandatory requirements, account for preferences, and ground factual and experiential judgments in place attributes and reviews. We introduce ATLAS-Bench, a benchmark of 1,200 queries across three regions, expanded from real search events using place attributes, reviews, and existing user profiles from the platform. Each query distinguishes mandatory requirements from preferences and factual conditions from subjective judgments, with supporting evidence and criteria for checking each requirement. Queries are validated through iterative assertion checks and cross-model review. We also introduce ATLASBox, a standardized evaluation environment with search tools and a fixed point-of-interest (POI) knowledge base. Given a query, timestamp, and location, an agent searches place attributes and reviews to recommend evidence-supported options or report that no place meets all mandatory requirements. We evaluate answer quality, trajectory quality, and execution cost. Across 14 configurations of 11 models, GPT-6-Luna achieves the highest constraint satisfaction rate among returned recommendations (71.5%) and factual accuracy (95.6%). However, it returns at least one acceptable recommendation for fewer satisfiable queries than GLM-5.3 (67.3% versus 85.3%). These results highlight the challenge of satisfying individual requirements while providing usable recommendations across queries.",
+      "authors": [
+        "Keyun Zhang",
+        "Dapeng Yin",
+        "Fanfu Wang",
+        "Shuang Lang",
+        "Zhenyu Zhu",
+        "Yulin Huang",
+        "Chong Yang",
+        "Pengjie Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-29T06:14:52Z",
+      "updated": "2026-10-29T06:14:52Z",
+      "announced_date": "2026-10-29",
+      "first_seen": "2026-10-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.39438v1",
+        "pdf": "https://arxiv.org/pdf/2610.39438v1",
+        "html": "https://arxiv.org/html/2610.39438"
+      },
+      "score": 30,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.39417",
+      "title": "Well-Specified and Well-Tested? Assessing SWE-bench-Style Datasets with a Self-Evolving Agent",
+      "abstract": "Large language models (LLMs) have shown strong performance on software engineering (SE) tasks, driving the need for high-quality datasets for reliable training and evaluation. SWE-bench-style datasets (SWE datasets) are widely used to evaluate LLM-based coding agents on real-world software issues, where task clarity and test coverage directly affect whether instances are solvable and verifiable. However, quality issues persist in existing SWE datasets, and manual annotation is costly and labor-intensive, motivating LLM-based annotation. Existing approaches typically rely on static, overly general rubrics, limiting their ability to handle diverse and nuanced scenarios and often yielding high false positive rates. In contrast, human annotators draw on accumulated experience to make context-aware judgments. Inspired by this, we propose ExLabel, an LLM-based, self-evolving, experience-guided assistant for task clarity and test coverage assessment in SWE datasets. ExLabel maintains an evolving experience bank that distills cross-instance knowledge into stable yet adaptive judgment criteria and reuses relevant experience to guide the assessment of new instances. For systematic evaluation, we construct SWE-TQ, a new benchmark spanning eight programming languages, by cleaning human annotations from SWE-bench and Multi-SWE-bench. Experiments with three backbone LLMs show that ExLabel achieves the best F1 across all settings, with relative improvements of 44.2%/49.9% and 24.0%/18.4% over the best baseline for task clarity and test coverage assessment on the Python/Multilingual subsets, respectively. Moreover, a coding model fine-tuned on SWE-rebench data filtered by ExLabel resolves 66.2% of issues on SWE-bench Verified, outperforming the model trained on data filtered by the best baseline by 14.5%.",
+      "authors": [
+        "Zhonghao Jiang",
+        "Xuyang Zheng",
+        "Yanfu Yan",
+        "Zhongxin Liu",
+        "Lingfeng Bao",
+        "Shuiguang Deng"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-10-29T05:59:36Z",
+      "updated": "2026-10-29T05:59:36Z",
+      "announced_date": "2026-10-29",
+      "first_seen": "2026-10-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.39417v1",
+        "pdf": "https://arxiv.org/pdf/2610.39417v1",
+        "html": "https://arxiv.org/html/2610.39417"
+      },
+      "score": 21,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2610.39377",
+      "title": "AgentDecept: Benchmarking Deceptive Behavior in Tool-Using LLM Agents under Pressure",
+      "abstract": "LLM agents increasingly carry out multi-turn tasks across everyday applications, yet users often see only the agent's report rather than the observations, API calls, and state changes behind it. Existing deception benchmarks have studied long-horizon interactions and tool-use settings, but whether agents faithfully report their actions across realistic, stateful application workflows remains underexplored. To address this gap, we introduce AgentDecept, an executable benchmark for evaluating behavioral deception under pressure. AgentDecept contains 477 pressure variants derived from 257 source tasks across six pressure sources, each paired with a pressure-free counterpart. Interventions enter through event messages, task context, application state, tool responses, and service quotas, spanning explicit events and implicit task or environment changes. Our evidence-grounded protocol evaluates full trajectories by relating user-facing claims to time-ordered observations and executed outcomes, distinguishing falsification, concealment, and equivocation from honest failure and disclosed limitations. The resulting behavioral labels also provide a setting for testing existing activation-based probes. AgentDecept enables controlled analysis of when multi-turn agents' reports diverge from execution in realistic application interactions.",
+      "authors": [
+        "Yehan Zhang",
+        "Qianqi Yan",
+        "Hang Yin",
+        "Ching-Chen Kuo",
+        "Shan Jiang",
+        "Ming Ouyang",
+        "Yijie Liu",
+        "Xin Eric Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-29T05:08:22Z",
+      "updated": "2026-10-29T05:08:22Z",
+      "announced_date": "2026-10-29",
+      "first_seen": "2026-10-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.39377v1",
+        "pdf": "https://arxiv.org/pdf/2610.39377v1",
+        "html": "https://arxiv.org/html/2610.39377"
+      },
+      "score": 19,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.39330",
+      "title": "Can Image Agents Complete Visual Commissions? A Benchmark and Modular Framework",
+      "abstract": "Visual commissions require image agents to integrate heterogeneous source materials, preserve requirements across dependent stages, and produce coordinated deliverables. Existing evaluations examine specific capabilities and execution settings, leaving end-to-end commission completion less understood. We introduce Visual Commission Bench (VCB), comprising 600 tasks across 12 categories and three complementary tiers, from capability-focused tasks to complete commissions. VCB uses 5,039 requirement checks and separate visual quality ratings to assess content correctness, visual realization, constraint preservation, and delivery completeness without prescribing an internal workflow. We present V-Protocol, a reference agent that dynamically composes reusable task, cognitive, and expression modules at inference time. Task modules organize delivery, cognitive modules derive content, and expression modules guide visual realization. The modules exchange structured intermediate artifacts, while a shared execution harness tracks artifact revisions and dependencies, manages tool execution, and checks completion. With the same controller and image generator as the agent baselines, V-Protocol achieves 69.0\\% strict task success on VCB, compared with 42.0\\% for SCOPE. On Mind-Bench, strict accuracy increases from 39.2\\% to 45.4\\%.",
+      "authors": [
+        "Tong Li",
+        "Lishuai Gao",
+        "Qi Zeng",
+        "Yifan Li",
+        "Cong Wei",
+        "Zhuoliang Kang",
+        "Xiaoming Wei"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-10-29T04:26:22Z",
+      "updated": "2026-10-29T04:26:22Z",
+      "announced_date": "2026-10-29",
+      "first_seen": "2026-10-29",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.39330v1",
+        "pdf": "https://arxiv.org/pdf/2610.39330v1",
+        "html": "https://arxiv.org/html/2610.39330"
+      },
+      "score": 8,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2610.39282",
+      "title": "What Does \"Now\" Mean to Your Computer-Use Agent? Stale Screenshots, Page Loads, and Which Check to Run Before a Click",
+      "abstract": "Computer-use agents plan on a screenshot for several seconds and then click at a position on the screen; if the page has changed in the meantime, the click lands on an unintended element. Prior work treats the planning interval as the source of this risk. Measuring planned clicks on 31 public web pages, we find that the risk lies in page loading: 0.4% of clicks planned on fully loaded pages became stale within 30 seconds, against 17% of clicks planned in the first second after a page opened. On these pages, waiting about one second for network activity to stop removes most of this risk, yet the wait rules of eight of ten widely used open-source agents leave more than 1% of clicks stale. Commercial pages keep loading for longer: in the HTTP Archive's public crawl, 15% of 65 desktop booking and buying home pages went 500 ms without network requests within 3 seconds of their HTML being parsed, against 63% of 3,028 .gov pages, and 52% shifted their layout within 6.5 seconds of a network-idle wait capped at 3 seconds, against 8% (61% against 26% among pages recorded in full). Where a check before the click is needed, as before irreversible actions and on pages that are still loading, a pixel comparison verifies the target's position as accurately as a frontier vision-language model at one eighth of the latency, and a 4B model matches the frontier model in verifying whether the previous action succeeded. We release a benchmark generator, a break-even formula for when a check pays, and three rules for agent developers: https://github.com/multimodal-ai-engineering/preflight-bench",
+      "authors": [
+        "Vasundra Srinivasan"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-29T03:33:26Z",
+      "updated": "2026-10-29T03:33:26Z",
+      "announced_date": "2026-10-29",
+      "first_seen": "2026-10-29",
+      "comment": "8 pages, 4 figures, 3 tables. Code, benchmark generator and preregistrations: https://github.com/multimodal-ai-engineering/preflight-bench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.39282v1",
+        "pdf": "https://arxiv.org/pdf/2610.39282v1",
+        "html": "https://arxiv.org/html/2610.39282"
+      },
+      "score": 10,
+      "tags": [
+        "web",
+        "gui",
+        "computer-use",
+        "safety",
+        "planning",
+        "multimodal"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    }
+  ]
+}

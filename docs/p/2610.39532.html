@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Judging Before Propagation: Task-Graph Contextual Integrity for Multi-Agent Privacy | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Multi-agent LLM systems increasingly rely on persistent memory and inter-agent communication. These capabilities create privacy risks…" />
+    <meta name="keywords" content="Multi-agent, Memory, agent benchmark, LLM agent, arXiv, 2610.39532" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.39532.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Judging Before Propagation: Task-Graph Contextual Integrity for Multi-Agent Privacy" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Multi-agent LLM systems increasingly rely on persistent memory and inter-agent communication. These capabilities create privacy risks…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.39532.html" />
+    <meta property="article:published_time" content="2026-10-29T07:31:50Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Judging Before Propagation: Task-Graph Contextual Integrity for Multi-Agent Privacy" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Multi-agent LLM systems increasingly rely on persistent memory and inter-agent communication. These capabilities create privacy risks…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Judging Before Propagation: Task-Graph Contextual Integrity for Multi-Agent Privacy",
+  "name": "Judging Before Propagation: Task-Graph Contextual Integrity for Multi-Agent Privacy",
+  "abstract": "Multi-agent LLM systems increasingly rely on persistent memory and inter-agent communication. These capabilities create privacy risks that extend beyond individual interactions: a release appropriate in isolation may become inappropriate when combined with information previously disclosed to a recipient or propagated to downstream agents along the planned workflow. Existing Contextual Integrity (CI) mechanisms for agentic systems typically rely on local judgments that assess each disclosure in isolation, with or without regard to the recipient's history, but do not account for how information propagates downstream. However, compliance at the current boundary does not guarantee appropriateness across the workflow. We introduce Task-Graph Contextual Integrity (TG-CI), to our knowledge the first task-graph-native formalization of Contextual Integrity for multi-agent systems. TG-CI represents a workflow as a Multi-Agent Task Graph (MATG) and extends CI from atomic transfers to stateful, graph-level information flows by jointly considering an item's intended propagation scope and recipients' evolving disclosure states. We operationalize TG-CI through propagation-scoped authorization under two complementary policies: Full-Scope, which requires admissibility across the complete downstream scope, and Auto-Region, which confines each item to its maximal admissible region using lightweight frontier gates. We further introduce MAPLE-Bench, a benchmark of 144 cases across four scenarios that jointly vary MATG topology, disclosure history, compromised-agent placement, and item-level privacy policies. In our primary experimental configuration, TG-CI reduces the mean unauthorized disclosure count by 85.8-94.1% relative to the Local-History CI baseline, while retaining 93.6-96.1% of the baseline's task accuracy, with the two enforcement policies providing complementary privacy--cost--utility trade-offs.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Hengyu Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Blaise Delattre"
+    },
+    {
+      "@type": "Person",
+      "name": "Yang Cao"
+    }
+  ],
+  "datePublished": "2026-10-29T07:31:50Z",
+  "dateModified": "2026-10-29T07:31:50Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.39532.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.39532.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.39532v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.39532"
+  },
+  "keywords": [
+    "Multi-agent",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multi-agent"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.39532v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.39532"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Judging Before Propagation: Task-Graph Contextual Integrity for Multi-Agent Privacy</h1>
+        <div class="meta">
+          Hengyu Wu, Blaise Delattre, Yang Cao
+          · 2610.39532
+          · <time datetime="2026-10-29">2026-10-29</time>
+          · Multi-agent
+        </div>
+        <div class="themes"><span class="chip">Multi-agent</span><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Multi-agent LLM systems increasingly rely on persistent memory and inter-agent communication. These capabilities create privacy risks that extend beyond individual interactions: a release appropriate in isolation may become inappropriate when combined with information previously disclosed to a recipient or propagated to downstream agents along the planned workflow. Existing Contextual Integrity (CI) mechanisms for agentic systems typically rely on local judgments that assess each disclosure in isolation, with or without regard to the recipient&#x27;s history, but do not account for how information propagates downstream. However, compliance at the current boundary does not guarantee appropriateness across the workflow. We introduce Task-Graph Contextual Integrity (TG-CI), to our knowledge the first task-graph-native formalization of Contextual Integrity for multi-agent systems. TG-CI represents a workflow as a Multi-Agent Task Graph (MATG) and extends CI from atomic transfers to stateful, graph-level information flows by jointly considering an item&#x27;s intended propagation scope and recipients&#x27; evolving disclosure states. We operationalize TG-CI through propagation-scoped authorization under two complementary policies: Full-Scope, which requires admissibility across the complete downstream scope, and Auto-Region, which confines each item to its maximal admissible region using lightweight frontier gates. We further introduce MAPLE-Bench, a benchmark of 144 cases across four scenarios that jointly vary MATG topology, disclosure history, compromised-agent placement, and item-level privacy policies. In our primary experimental configuration, TG-CI reduces the mean unauthorized disclosure count by 85.8-94.1% relative to the Local-History CI baseline, while retaining 93.6-96.1% of the baseline&#x27;s task accuracy, with the two enforcement policies providing complementary privacy--cost--utility trade-offs.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.39532v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.39532v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.39532" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multi-agent benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.40293.html"><strong>MAServeBench: Benchmarking Multi-Agent LLM Serving Systems with Hierarchical Collaboration Workloads</strong></a> <span>2026-10-29</span></li>
+          <li><a href="2610.36989.html"><strong>A Simulation Testbed for Self-Governing Human-Machine Institutions</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.32415.html"><strong>Can LLM Annotators Match Human Consistency? Benchmarking Human Agreement and Optimizing Multi-Agent with Contrastive Knowledge</strong></a> <span>2026-10-23</span></li>
+          <li><a href="2610.30103.html"><strong>Did the Problem Actually Get Harder? Testing LLMs on Paired P and NP-Complete Problems Hardened by Adversarial Multi-Agent Rewriting</strong></a> <span>2026-10-21</span></li>
+          <li><a href="2610.26711.html"><strong>PVBench: Quantifying Physical Plausibility in Video Generation with Object-Level Physical Measurements</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.26943.html"><strong>MAMath-Bench: Process-Aware and Robust Evaluation of Multimodal Multi-Agent Mathematical Reasoning</strong></a> <span>2026-10-18</span></li>
+          <li><a href="2610.25208.html"><strong>BrandEval: A Two-Track Multi-Agent Benchmark for Risk-Sensitive LLM Crisis Communication</strong></a> <span>2026-10-18</span></li>
+          <li><a href="2610.24282.html"><strong>ROAR: Benchmarking LMM Agents under Real-Time Constraints in Multiplayer Action-Shooter Games</strong></a> <span>2026-10-16</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

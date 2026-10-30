@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ATLAS-Bench: An Agentic Tool-Use Benchmark for Local Area Search | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Reliable local search is essential for LLM agents to support everyday decisions and longer plans by finding places that meet users&#x27;…" />
+    <meta name="keywords" content="Tool use, agent benchmark, LLM agent, arXiv, 2610.39438" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.39438.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ATLAS-Bench: An Agentic Tool-Use Benchmark for Local Area Search" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Reliable local search is essential for LLM agents to support everyday decisions and longer plans by finding places that meet users&#x27;…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.39438.html" />
+    <meta property="article:published_time" content="2026-10-29T06:14:52Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ATLAS-Bench: An Agentic Tool-Use Benchmark for Local Area Search" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Reliable local search is essential for LLM agents to support everyday decisions and longer plans by finding places that meet users&#x27;…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ATLAS-Bench: An Agentic Tool-Use Benchmark for Local Area Search",
+  "name": "ATLAS-Bench: An Agentic Tool-Use Benchmark for Local Area Search",
+  "abstract": "Reliable local search is essential for LLM agents to support everyday decisions and longer plans by finding places that meet users' needs at given times and locations. Yet existing benchmarks provide limited coverage of whether search results satisfy mandatory requirements, account for preferences, and ground factual and experiential judgments in place attributes and reviews. We introduce ATLAS-Bench, a benchmark of 1,200 queries across three regions, expanded from real search events using place attributes, reviews, and existing user profiles from the platform. Each query distinguishes mandatory requirements from preferences and factual conditions from subjective judgments, with supporting evidence and criteria for checking each requirement. Queries are validated through iterative assertion checks and cross-model review. We also introduce ATLASBox, a standardized evaluation environment with search tools and a fixed point-of-interest (POI) knowledge base. Given a query, timestamp, and location, an agent searches place attributes and reviews to recommend evidence-supported options or report that no place meets all mandatory requirements. We evaluate answer quality, trajectory quality, and execution cost. Across 14 configurations of 11 models, GPT-6-Luna achieves the highest constraint satisfaction rate among returned recommendations (71.5%) and factual accuracy (95.6%). However, it returns at least one acceptable recommendation for fewer satisfiable queries than GLM-5.3 (67.3% versus 85.3%). These results highlight the challenge of satisfying individual requirements while providing usable recommendations across queries.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Keyun Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Dapeng Yin"
+    },
+    {
+      "@type": "Person",
+      "name": "Fanfu Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Shuang Lang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhenyu Zhu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yulin Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chong Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Pengjie Wang"
+    }
+  ],
+  "datePublished": "2026-10-29T06:14:52Z",
+  "dateModified": "2026-10-29T06:14:52Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.39438.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.39438.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.39438v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.39438"
+  },
+  "keywords": [
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.39438v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.39438"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ATLAS-Bench: An Agentic Tool-Use Benchmark for Local Area Search</h1>
+        <div class="meta">
+          Keyun Zhang, Dapeng Yin, Fanfu Wang, Shuang Lang, Zhenyu Zhu, Yulin Huang, Chong Yang, Pengjie Wang
+          · 2610.39438
+          · <time datetime="2026-10-29">2026-10-29</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Reliable local search is essential for LLM agents to support everyday decisions and longer plans by finding places that meet users&#x27; needs at given times and locations. Yet existing benchmarks provide limited coverage of whether search results satisfy mandatory requirements, account for preferences, and ground factual and experiential judgments in place attributes and reviews. We introduce ATLAS-Bench, a benchmark of 1,200 queries across three regions, expanded from real search events using place attributes, reviews, and existing user profiles from the platform. Each query distinguishes mandatory requirements from preferences and factual conditions from subjective judgments, with supporting evidence and criteria for checking each requirement. Queries are validated through iterative assertion checks and cross-model review. We also introduce ATLASBox, a standardized evaluation environment with search tools and a fixed point-of-interest (POI) knowledge base. Given a query, timestamp, and location, an agent searches place attributes and reviews to recommend evidence-supported options or report that no place meets all mandatory requirements. We evaluate answer quality, trajectory quality, and execution cost. Across 14 configurations of 11 models, GPT-6-Luna achieves the highest constraint satisfaction rate among returned recommendations (71.5%) and factual accuracy (95.6%). However, it returns at least one acceptable recommendation for fewer satisfiable queries than GLM-5.3 (67.3% versus 85.3%). These results highlight the challenge of satisfying individual requirements while providing usable recommendations across queries.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.39438v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.39438v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.39438" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.39377.html"><strong>AgentDecept: Benchmarking Deceptive Behavior in Tool-Using LLM Agents under Pressure</strong></a> <span>2026-10-29</span></li>
+          <li><a href="2610.39330.html"><strong>Can Image Agents Complete Visual Commissions? A Benchmark and Modular Framework</strong></a> <span>2026-10-29</span></li>
+          <li><a href="2610.38924.html"><strong>TreasuryQA Bench: Can AI Agents Work an Archive of Scanned Financial Records?</strong></a> <span>2026-10-28</span></li>
+          <li><a href="2610.37166.html"><strong>LiveSearch: Questions as Executable Verifier Code for a Live Benchmark of Professional-Source Financial Search Agents</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.36553.html"><strong>NextEval: An Agent-Based Solver and Benchmark for Derivative-Free Optimization</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.35439.html"><strong>Omni-InteractScope: Benchmarking Proactive and Agentic Interaction in Continuous Omnimodal Streams</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.34714.html"><strong>SearchHorizonBench: A Benchmark for Search Value in AI Agents</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.34238.html"><strong>$Δτ$-Bench: Pushing Agents Toward a Moving Capability</strong></a> <span>2026-10-25</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>
