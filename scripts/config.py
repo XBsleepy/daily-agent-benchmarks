@@ -11,6 +11,8 @@ ARXIV_RSS = (
 # Public GitHub Pages root (trailing slash). Used for canonical URLs and the sitemap.
 SITE_URL = "https://xbsleepy.github.io/daily-agent-benchmarks/"
 REPO_URL = "https://github.com/XBsleepy/daily-agent-benchmarks"
+# Sister project: daily AI agent research & industry news.
+NEWS_URL = "https://xbsleepy.github.io/daily-agent-news/"
 
 USER_AGENT = (
     "daily-agent-benchmarks/1.0 "

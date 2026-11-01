@@ -206,6 +206,18 @@ a {
   color: var(--ink);
 }
 
+/* Link to the sister site, Daily Agent News. */
+.sister {
+  color: var(--accent);
+  border-color: var(--accent);
+  white-space: nowrap;
+}
+
+.sister:hover {
+  color: var(--bg);
+  background: var(--accent);
+}
+
 .shell {
   display: grid;
   grid-template-columns: var(--rail) minmax(0, 1fr);
@@ -805,6 +817,11 @@ a {
 
   .search {
     grid-column: 1 / -1;
+  }
+
+  .masthead__tools {
+    flex-wrap: wrap;
+    gap: 6px;
   }
 
   .shell {

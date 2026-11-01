@@ -4,6 +4,8 @@
 
 A daily, searchable list of new **AI / LLM agent benchmarks** on arXiv — web agents, GUI & computer-use agents, coding / SWE agents, tool use, multi-agent, embodied, and agent safety evaluations. Each paper gets a page with authors, abstract, field, citation count, and arXiv PDF / HTML links. Updated automatically every day via GitHub Actions.
 
+> 姊妹项目 / Sister project: **[Daily Agent News](https://xbsleepy.github.io/daily-agent-news/)** ([GitHub](https://github.com/XBsleepy/daily-agent-news))：每日 Agent 研究与产业动态精选。Benchmarks 看「怎么评」，News 看「发生了什么」。
+
 每日从 [arXiv](https://arxiv.org) 收集 **Agent Benchmark** 论文，整理成可部署到 GitHub Pages 的静态站点。
 
 站点按投稿日期倒序展示：名称、作者、摘要、分类、PDF / HTML 链接；每一天有一份中英双语简报；浏览器内用 **BM25** 做排序搜索。

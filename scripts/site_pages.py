@@ -9,7 +9,7 @@ from html import escape
 from pathlib import Path
 from typing import Any
 
-from config import FIELD_LABELS, REPO_URL, SITE_URL, THEME_LABELS
+from config import FIELD_LABELS, NEWS_URL, REPO_URL, SITE_URL, THEME_LABELS
 
 SITE_NAME = "Daily Agent Benchmarks"
 SITE_TAGLINE = "New LLM agent benchmarks on arXiv, updated daily"
@@ -151,6 +151,9 @@ PAPER_PAGE = """<!DOCTYPE html>
           </span>
         </a>
       </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="{news}" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
     </header>
     <main id="main" class="paper-page">
       <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
@@ -184,6 +187,7 @@ PAPER_PAGE = """<!DOCTYPE html>
           <span data-i18n="visitorsSite">visitors</span>
         </span>
         <a href="../archive.html">Archive</a>
+        <a href="{news}" target="_blank" rel="noopener">Daily Agent News ↗</a>
         <a href="{repo}" target="_blank" rel="noopener">GitHub</a>
       </p>
     </footer>
@@ -272,6 +276,7 @@ def render_paper_page(paper: dict[str, Any], related: list[dict[str, Any]]) -> s
         html=escape(html_url(paper)),
         related=related_block(paper, related),
         repo=REPO_URL,
+        news=NEWS_URL,
     )
 
 
@@ -458,6 +463,9 @@ ARCHIVE_PAGE = """<!DOCTYPE html>
           </span>
         </a>
       </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="{news}" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
     </header>
     <main id="main" class="paper-page">
       <p class="crumb"><a href="./">All benchmarks</a></p>
@@ -469,6 +477,7 @@ ARCHIVE_PAGE = """<!DOCTYPE html>
       <p class="colophon__meta">
         <a href="./">Home</a>
         <a href="./feed.xml">Atom feed</a>
+        <a href="{news}" target="_blank" rel="noopener">Daily Agent News ↗</a>
         <a href="{repo}" target="_blank" rel="noopener">GitHub</a>
         <a href="https://arxiv.org" target="_blank" rel="noopener">arXiv.org</a>
       </p>
@@ -515,6 +524,7 @@ def write_archive(payload: dict[str, Any], out: Path) -> None:
             fonts=FONTS,
             months="\n".join(blocks),
             repo=REPO_URL,
+            news=NEWS_URL,
         ),
     )
 
@@ -591,6 +601,11 @@ def write_llms_txt(payload: dict[str, Any], out: Path) -> None:
         f"- [Atom feed]({SITE_URL}feed.xml): latest {FEED_LIMIT} papers",
         f"- [JSON index]({SITE_URL}data/index.json): full machine-readable data",
         f"- [Source code]({REPO_URL})",
+        "",
+        "## Related",
+        "",
+        f"- [Daily Agent News]({NEWS_URL}): sister site with a daily digest of AI agent research and "
+        "industry news (memory, skills, training data, self-improvement, evaluation)",
         "",
         "## Papers",
         "",
