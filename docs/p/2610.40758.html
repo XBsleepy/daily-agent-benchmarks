@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>More Rules, Longer Lists? Benchmarking Self-Evolving Agents on a Hidden-Rule Curriculum | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Self-evolving agents rewrite a persistent state from feedback, but it is largely untested whether this lets them learn a rule nobody…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2610.40758" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.40758.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="More Rules, Longer Lists? Benchmarking Self-Evolving Agents on a Hidden-Rule Curriculum" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Self-evolving agents rewrite a persistent state from feedback, but it is largely untested whether this lets them learn a rule nobody…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.40758.html" />
+    <meta property="article:published_time" content="2026-10-29T17:00:10Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="More Rules, Longer Lists? Benchmarking Self-Evolving Agents on a Hidden-Rule Curriculum" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Self-evolving agents rewrite a persistent state from feedback, but it is largely untested whether this lets them learn a rule nobody…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "More Rules, Longer Lists? Benchmarking Self-Evolving Agents on a Hidden-Rule Curriculum",
+  "name": "More Rules, Longer Lists? Benchmarking Self-Evolving Agents on a Hidden-Rule Curriculum",
+  "abstract": "Self-evolving agents rewrite a persistent state from feedback, but it is largely untested whether this lets them learn a rule nobody told them. An agent can also pass by writing down each correction as an exception, and its list then grows with every new rule. We introduce CLR-Bench, a Curriculum of Latent Rules benchmark. Each chain adds one hidden rule per level on top of the earlier ones. A rule acts on an opaque label that stands for a named grouping published on the Web, such as the founding members of an airline alliance. The task gives one example value, practice feedback reveals one more member and one non-member, and the test checks unseen members and similar non-members. Probes certify that the base model knows the members of each grouping and does not guess it without feedback, and that the evidence identifies the grouping once labels are read as named groupings. An automated pipeline builds chains from a new data domain, and we release 20 chains over 10 domains. We evaluate six recent self-evolution methods. With the certifying model they barely learn. The best gain at most 5 points over a frozen agent and exclude only 6-12% of the unseen members from the count, fewer than the 20% reached by simply keeping the raw practice history. A fixed lesson that states the named-grouping convention lifts the same methods by 14.5 to 16.5 points. Their states hold the revealed member in 75-98% of cases and almost never the class name, and when practice exposes a member the list misses, they add that member to the list. With the stronger GPT-6-Sol, ACE and Dynamic Cheatsheet learn from feedback alone. They reach 78% accuracy and solve 59-60% of the single cells, against 53% and 8% with the certifying model, and they surpass the raw history. CLR-Bench therefore measures how well an agent learns, and this ability differs across models.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Chenjie Qiu"
+    },
+    {
+      "@type": "Person",
+      "name": "Boyan Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Shaobin Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Bingfeng Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Ruichu Cai"
+    },
+    {
+      "@type": "Person",
+      "name": "Dongsheng Luo"
+    }
+  ],
+  "datePublished": "2026-10-29T17:00:10Z",
+  "dateModified": "2026-10-29T17:00:10Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.40758.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.40758.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.40758v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.40758"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.40758v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.40758"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>More Rules, Longer Lists? Benchmarking Self-Evolving Agents on a Hidden-Rule Curriculum</h1>
+        <div class="meta">
+          Chenjie Qiu, Boyan Xu, Shaobin Shi, Bingfeng Chen, Ruichu Cai, Dongsheng Luo
+          · 2610.40758
+          · <time datetime="2026-10-29">2026-10-29</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Self-evolving agents rewrite a persistent state from feedback, but it is largely untested whether this lets them learn a rule nobody told them. An agent can also pass by writing down each correction as an exception, and its list then grows with every new rule. We introduce CLR-Bench, a Curriculum of Latent Rules benchmark. Each chain adds one hidden rule per level on top of the earlier ones. A rule acts on an opaque label that stands for a named grouping published on the Web, such as the founding members of an airline alliance. The task gives one example value, practice feedback reveals one more member and one non-member, and the test checks unseen members and similar non-members. Probes certify that the base model knows the members of each grouping and does not guess it without feedback, and that the evidence identifies the grouping once labels are read as named groupings. An automated pipeline builds chains from a new data domain, and we release 20 chains over 10 domains. We evaluate six recent self-evolution methods. With the certifying model they barely learn. The best gain at most 5 points over a frozen agent and exclude only 6-12% of the unseen members from the count, fewer than the 20% reached by simply keeping the raw practice history. A fixed lesson that states the named-grouping convention lifts the same methods by 14.5 to 16.5 points. Their states hold the revealed member in 75-98% of cases and almost never the class name, and when practice exposes a member the list misses, they add that member to the list. With the stronger GPT-6-Sol, ACE and Dynamic Cheatsheet learn from feedback alone. They reach 78% accuracy and solve 59-60% of the single cells, against 53% and 8% with the certifying model, and they surpass the raw history. CLR-Bench therefore measures how well an agent learns, and this ability differs across models.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.40758v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.40758v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.40758" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.41435.html"><strong>BlindToChange: AI Agents Can Find Changes When Asked But Do They Look When Needed?</strong></a> <span>2026-10-30</span></li>
+          <li><a href="2610.41076.html"><strong>BABA-Bench: Evaluating Long-Horizon Patient-Advocacy Agents</strong></a> <span>2026-10-29</span></li>
+          <li><a href="2610.39733.html"><strong>Bank-World: A Benchmark for Evaluating Agents on Banking Workflows</strong></a> <span>2026-10-29</span></li>
+          <li><a href="2610.38293.html"><strong>EPSBench: Benchmarking LLM Agents for Earnings Forecasting</strong></a> <span>2026-10-28</span></li>
+          <li><a href="2610.37081.html"><strong>OpenGray: a benchmark for evaluating the decisions of radiotherapy planning agents</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.36980.html"><strong>AutoVend: Benchmarking LLM Agents on Long-Horizon Autonomous Vending Operations</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.34887.html"><strong>NumTrace: Auditing the Number Provenance of Financial Analyst Agents</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.34644.html"><strong>SlowLab: Benchmarking Autonomous AI Agents on a Year of Experiments They Cannot Undo</strong></a> <span>2026-10-26</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

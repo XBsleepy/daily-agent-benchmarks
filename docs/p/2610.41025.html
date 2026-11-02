@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ReplayRCA: Measuring Post-hoc Diagnosis and Live Oversight of Agent Failures by Counterfactual Replay | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: When a language-model agent fails a multi-step task, can another model find the decisive mistake and fix it with a single action? We…" />
+    <meta name="keywords" content="Multimodal, agent benchmark, LLM agent, arXiv, 2610.41025" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.41025.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ReplayRCA: Measuring Post-hoc Diagnosis and Live Oversight of Agent Failures by Counterfactual Replay" />
+    <meta property="og:description" content="Daily Agent Benchmarks: When a language-model agent fails a multi-step task, can another model find the decisive mistake and fix it with a single action? We…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.41025.html" />
+    <meta property="article:published_time" content="2026-10-29T22:11:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ReplayRCA: Measuring Post-hoc Diagnosis and Live Oversight of Agent Failures by Counterfactual Replay" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: When a language-model agent fails a multi-step task, can another model find the decisive mistake and fix it with a single action? We…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "ReplayRCA: Measuring Post-hoc Diagnosis and Live Oversight of Agent Failures by Counterfactual Replay",
+  "name": "ReplayRCA: Measuring Post-hoc Diagnosis and Live Oversight of Agent Failures by Counterfactual Replay",
+  "abstract": "When a language-model agent fails a multi-step task, can another model find the decisive mistake and fix it with a single action? We introduce ReplayRCA, a benchmark that scores such diagnoses by intervention rather than by agreement with annotations: the environment is restored to the state preceding the chosen step, the proposed action replaces the agent's own, and the same agent continues. The score, causal repair, is the continuation success rate minus that of a paired placebo that replays the agent's original action through the same mechanism. Two tracks share this protocol: a post-hoc autopsy, where the diagnoser sees the whole failed run and is told that it failed, and live oversight, where a supervisor watches the run unfold and may intervene once, before an irreversible action, without knowing whether the run will fail. Tasks come from OpsWorld, a deterministic, procedurally generated back-office environment with six difficulty levels, the last of which is multimodal (QR codes, handwriting). On 62 calibrated systematic failures, the best of 13 frontier models (Grok 4.7) reaches a causal repair of +51.3 points; the top eight models are statistically indistinguishable, the flagship models of the two largest vendors rank 8th and 12th, and 5 items are repaired by no model. Forcing a strong model to intervene at the last step costs it 17.1 points, so the last-step shortcut of annotation-based attribution benchmarks does not transfer. On 87 runs, the two best live supervisors are statistically tied and one of them is a small open-weight model (DeepSeek V4.1 Flash); the supervisor that is among the best post-hoc diagnosers (GPT-6.1 Sol) is the weakest live one (-14.5 points on the same runs, p = 0.002), so post-hoc diagnostic performance can be a poor proxy for live oversight. The environment and the evaluation code are released at https://github.com/jeremy1392/RCAreplay.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jeremy Canale"
+    },
+    {
+      "@type": "Person",
+      "name": "Fabien Soulis"
+    }
+  ],
+  "datePublished": "2026-10-29T22:11:00Z",
+  "dateModified": "2026-10-29T22:11:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.41025.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2610.41025.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.41025v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2610.41025"
+  },
+  "keywords": [
+    "Multimodal",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multimodal"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2610.41025v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2610.41025"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>ReplayRCA: Measuring Post-hoc Diagnosis and Live Oversight of Agent Failures by Counterfactual Replay</h1>
+        <div class="meta">
+          Jeremy Canale, Fabien Soulis
+          · 2610.41025
+          · <time datetime="2026-10-29">2026-10-29</time>
+          · Multimodal
+        </div>
+        <div class="themes"><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>When a language-model agent fails a multi-step task, can another model find the decisive mistake and fix it with a single action? We introduce ReplayRCA, a benchmark that scores such diagnoses by intervention rather than by agreement with annotations: the environment is restored to the state preceding the chosen step, the proposed action replaces the agent&#x27;s own, and the same agent continues. The score, causal repair, is the continuation success rate minus that of a paired placebo that replays the agent&#x27;s original action through the same mechanism. Two tracks share this protocol: a post-hoc autopsy, where the diagnoser sees the whole failed run and is told that it failed, and live oversight, where a supervisor watches the run unfold and may intervene once, before an irreversible action, without knowing whether the run will fail. Tasks come from OpsWorld, a deterministic, procedurally generated back-office environment with six difficulty levels, the last of which is multimodal (QR codes, handwriting). On 62 calibrated systematic failures, the best of 13 frontier models (Grok 4.7) reaches a causal repair of +51.3 points; the top eight models are statistically indistinguishable, the flagship models of the two largest vendors rank 8th and 12th, and 5 items are repaired by no model. Forcing a strong model to intervene at the last step costs it 17.1 points, so the last-step shortcut of annotation-based attribution benchmarks does not transfer. On 87 runs, the two best live supervisors are statistically tied and one of them is a small open-weight model (DeepSeek V4.1 Flash); the supervisor that is among the best post-hoc diagnosers (GPT-6.1 Sol) is the weakest live one (-14.5 points on the same runs, p = 0.002), so post-hoc diagnostic performance can be a poor proxy for live oversight. The environment and the evaluation code are released at https://github.com/jeremy1392/RCAreplay.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2610.41025v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2610.41025v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2610.41025" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multimodal benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.36484.html"><strong>CogArena: Benchmarking Multimodal Agents on Interactive Behavioral Experiments</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.35293.html"><strong>AgenticCity-Bench: Longitudinal Multimodal Observations of Urban Dynamics with Agentic Reasoning</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.35138.html"><strong>Co-Design Bench: Multimodal Collaborative Coding Evaluation for Agentic Models</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.32332.html"><strong>4DMemory: Benchmarking Long-Horizon Spatiotemporal Memory with Harness-Augmented Agents</strong></a> <span>2026-10-23</span></li>
+          <li><a href="2610.31158.html"><strong>Beyond Watching and Searching: Benchmarking Agents for Video-centered Deep Research Reports</strong></a> <span>2026-10-22</span></li>
+          <li><a href="2610.23986.html"><strong>BlenderWorld: Benchmarking Visual Agents for 3D Creation from Real-World References</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.26826.html"><strong>RefCraft: Benchmarking Visual-Reference-Conditioned Agentic Generation through Web Development</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.26659.html"><strong>SpatialScout: Can VLM Agents Actively Explore and Map 3D Scenes?</strong></a> <span>2026-10-19</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

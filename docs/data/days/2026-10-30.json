@@ -1,0 +1,184 @@
+{
+  "date": "2026-10-30",
+  "count": 3,
+  "report": {
+    "date": "2026-10-30",
+    "count": 3,
+    "themes": [
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "3 new agent benchmarks",
+      "summary": "On October 30, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Memory (1), Dialogue / customer (1), Planning / reasoning (1), and Web agents (1).",
+      "highlights": [
+        {
+          "id": "2610.42004",
+          "title": "TradeWar: A Benchmark for Execution-Grounded Trade Negotiation with Adaptive LLM Agents",
+          "blurb": "Multi-turn negotiation remains a challenging problem for large language model (LLM) agents."
+        },
+        {
+          "id": "2610.41272",
+          "title": "ANGLER: Verifier-Grounded Benchmarking with an Adaptive Attacker for Web Agents",
+          "blurb": "Web agents are increasingly deployed to complete tasks autonomously on real websites, where adversarially injected content can induce them to perform unauthorized actions."
+        },
+        {
+          "id": "2610.41435",
+          "title": "BlindToChange: AI Agents Can Find Changes When Asked But Do They Look When Needed?",
+          "blurb": "Given that AI agents can search the web broadly and deeply in real time, it is tempting to conclude that their outputs account for recent world events."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年10月30日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在记忆（1）、对话 / 客服（1）、规划 / 推理（1）、网页智能体（1）。",
+      "highlights": [
+        {
+          "id": "2610.42004",
+          "title": "TradeWar: A Benchmark for Execution-Grounded Trade Negotiation with Adaptive LLM Agents",
+          "blurb": "Multi-turn negotiation remains a challenging problem for large language model (LLM) agents."
+        },
+        {
+          "id": "2610.41272",
+          "title": "ANGLER: Verifier-Grounded Benchmarking with an Adaptive Attacker for Web Agents",
+          "blurb": "Web agents are increasingly deployed to complete tasks autonomously on real websites, where adversarially injected content can induce them to perform unauthorized actions."
+        },
+        {
+          "id": "2610.41435",
+          "title": "BlindToChange: AI Agents Can Find Changes When Asked But Do They Look When Needed?",
+          "blurb": "Given that AI agents can search the web broadly and deeply in real time, it is tempting to conclude that their outputs account for recent world events."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2610.42004",
+      "title": "TradeWar: A Benchmark for Execution-Grounded Trade Negotiation with Adaptive LLM Agents",
+      "abstract": "Multi-turn negotiation remains a challenging problem for large language model (LLM) agents. While LLMs can conduct natural-language dialogue, existing benchmarks predominantly assess only agreement rates, overlooking whether negotiated commitments actually create value once executed. To address this gap, we introduce TradeWar, a multi-country simulation benchmark that translates negotiation dialogues into concrete tariff and trade-share policies, enforces capacity and network constraints during settlement, and evaluates outcomes via an Economic Health Index (EHI). To solve this execution-grounded task, we propose TACTIC (Trade-aware Adaptive Consolidation and Theory-of-mind for International Commerce), an agent that iteratively refines its negotiation strategy across episodes-without updating base LLM weights-by leveraging prior experience, opponent behavior, and past settlement outcomes. Despite using zero-shot chain-of-thought (CoT) prompting, PromptLLM attains a 75% agreement rate but only 57.1 final EHI (*100), whereas TACTIC reaches 68.8. Across 20 sequential episodes and three seeds, TACTIC's final EHI improves from 58.2 to 73.2, compared with 65.2 for an ablation without cross-episode updates. Under technology-controls and energy-crisis shocks, TACTIC also exhibits smaller performance degradation than PromptLLM and MemoryLLM. These results indicate that CoT deliberation and interaction memory alone do not fully address delayed execution feedback, whereas settlement-grounded adaptation improves long-horizon negotiation in TradeWar.",
+      "authors": [
+        "Xiangyu Kong",
+        "Ruirui Yang",
+        "Xia Hou"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-30T16:45:29Z",
+      "updated": "2026-10-30T16:45:29Z",
+      "announced_date": "2026-10-30",
+      "first_seen": "2026-10-30",
+      "comment": "Accepted to DAI'26",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.42004v1",
+        "pdf": "https://arxiv.org/pdf/2610.42004v1",
+        "html": "https://arxiv.org/html/2610.42004"
+      },
+      "score": 16,
+      "tags": [
+        "memory",
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 0
+    },
+    {
+      "id": "2610.41435",
+      "title": "BlindToChange: AI Agents Can Find Changes When Asked But Do They Look When Needed?",
+      "abstract": "Given that AI agents can search the web broadly and deeply in real time, it is tempting to conclude that their outputs account for recent world events. We show that this conclusion does not hold in practice. While agents can search and easily find recent changes, the correctness of their responses depends on whether they search and what they search for. Popular agentic search benchmarks like BrowseComp cannot expose failures wherein agents do not recognize their own assumptions that should be verified, since these benchmarks explicitly state what needs to be found. In contrast, many user requests state only the final information need (e.g., an itinerary for a trip), leaving the agent to discover relevant changes (e.g., the temporary closure of a museum) and account for their consequences. To highlight such gaps, we introduce BlindToChange, a benchmark that measures whether agents proactively discover recent events that affect their responses. Our benchmark comprises requests for recommendations where an obvious candidate is no longer applicable due to a recent real-world event. These events are drawn automatically from Wikidata, allowing BlindToChange to be periodically refreshed. Strikingly, we find a big gap -- as high as 27.5 points, even at high reasoning effort -- in systems' performance, when the recent event is not explicitly mentioned compared to when we ask about it directly. Analyzing search trajectories, we learn that more than half of the failures can be attributed to the fact that agents do not directly search to verify whether a relevant fact has changed. Our benchmark highlights, and tracks, a new axis of progress, wherein systems account for recent information that is not explicitly mentioned in the user request.",
+      "authors": [
+        "Anirudh Phukan",
+        "Tanya Goyal",
+        "Danish Pruthi"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-10-30T08:39:22Z",
+      "updated": "2026-10-30T08:39:22Z",
+      "announced_date": "2026-10-30",
+      "first_seen": "2026-10-30",
+      "comment": "Preprint",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.41435v1",
+        "pdf": "https://arxiv.org/pdf/2610.41435v1",
+        "html": "https://arxiv.org/html/2610.41435"
+      },
+      "score": 12,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2610.41272",
+      "title": "ANGLER: Verifier-Grounded Benchmarking with an Adaptive Attacker for Web Agents",
+      "abstract": "Web agents are increasingly deployed to complete tasks autonomously on real websites, where adversarially injected content can induce them to perform unauthorized actions. Existing evaluations primarily use fixed attacks or focus on a single attack type, and evaluate attacks at the text level rather than through real state changes, thus underestimating how vulnerable agents are to diverse attacks. To address the gap, we introduce REEF, a benchmark of red-teaming executable environments with faithful verification for measuring the security vulnerabilities of web agents. REEF covers 9 verifier-grounded websites spanning travel, commerce, productivity, media, and communication, and pairs every authentic benign task with a malicious objective delivered through 5 attack types at both the user and the environment level. REEF's state-based verifiers provide the execution feedback that drives ANGLER, an adaptive near-miss-guided lure evolution framework for red-teaming. Rather than evaluating a fixed attack set, ANGLER uses outcomes from prior rollouts to guide LLM-based attack mutation and candidate selection, prioritizing near-miss seeds during refinement. Across 8 VLM-based web agents, ANGLER achieves an end-to-end attack success rate (ASR) of 20.36%, compared with 15.24% for the non-adaptive setting. Compared with attack-free execution on the same benign tasks, attacks generated by ANGLER reduce benign task success rate (BSR) from 61.9% to 44.4%.",
+      "authors": [
+        "Yini Huang",
+        "Aiwen LU",
+        "Zhen Sun",
+        "Yi Han",
+        "Yuzhi Zhao",
+        "Jiaheng Wei"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-10-30T05:25:48Z",
+      "updated": "2026-10-30T05:25:48Z",
+      "announced_date": "2026-10-30",
+      "first_seen": "2026-10-30",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2610.41272v1",
+        "pdf": "https://arxiv.org/pdf/2610.41272v1",
+        "html": "https://arxiv.org/html/2610.41272"
+      },
+      "score": 15,
+      "tags": [
+        "web",
+        "multimodal"
+      ],
+      "field": "web",
+      "citations": 0
+    }
+  ]
+}
