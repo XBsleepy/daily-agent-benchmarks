@@ -1,15 +1,45 @@
 {
   "date": "2026-10-30",
-  "count": 3,
+  "count": 7,
   "report": {
     "date": "2026-10-30",
-    "count": 3,
+    "count": 7,
     "themes": [
       {
+        "id": "multi-agent",
+        "count": 2,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
         "id": "memory",
-        "count": 1,
+        "count": 2,
         "en": "Memory",
         "zh": "记忆"
+      },
+      {
+        "id": "coding",
+        "count": 1,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
       },
       {
         "id": "conversation",
@@ -22,24 +52,17 @@
         "count": 1,
         "en": "Planning / reasoning",
         "zh": "规划 / 推理"
-      },
-      {
-        "id": "web",
-        "count": 1,
-        "en": "Web agents",
-        "zh": "网页智能体"
-      },
-      {
-        "id": "multimodal",
-        "count": 1,
-        "en": "Multimodal",
-        "zh": "多模态"
       }
     ],
     "en": {
-      "headline": "3 new agent benchmarks",
-      "summary": "On October 30, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Memory (1), Dialogue / customer (1), Planning / reasoning (1), and Web agents (1).",
+      "headline": "7 new agent benchmarks",
+      "summary": "On October 30, 2026, arXiv listed 7 new agent benchmarks. Work clustered around Multi-agent (2), Memory (2), Coding agents (1), and Safety (1).",
       "highlights": [
+        {
+          "id": "2611.00191",
+          "title": "MemU-Bench: Benchmarking GUI Agents on Long-Horizon User Interactions",
+          "blurb": "Existing Graphical User Interface (GUI) benchmarks predominantly rely on precise and stateless user instructions."
+        },
         {
           "id": "2610.42004",
           "title": "TradeWar: A Benchmark for Execution-Grounded Trade Negotiation with Adaptive LLM Agents",
@@ -49,18 +72,18 @@
           "id": "2610.41272",
           "title": "ANGLER: Verifier-Grounded Benchmarking with an Adaptive Attacker for Web Agents",
           "blurb": "Web agents are increasingly deployed to complete tasks autonomously on real websites, where adversarially injected content can induce them to perform unauthorized actions."
-        },
-        {
-          "id": "2610.41435",
-          "title": "BlindToChange: AI Agents Can Find Changes When Asked But Do They Look When Needed?",
-          "blurb": "Given that AI agents can search the web broadly and deeply in real time, it is tempting to conclude that their outputs account for recent world events."
         }
       ]
     },
     "zh": {
-      "headline": "新增 3 篇 Agent Benchmark",
-      "summary": "2026年10月30日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在记忆（1）、对话 / 客服（1）、规划 / 推理（1）、网页智能体（1）。",
+      "headline": "新增 7 篇 Agent Benchmark",
+      "summary": "2026年10月30日，arXiv 新增 7 篇 Agent Benchmark。当日主题集中在多智能体（2）、记忆（2）、代码智能体（1）、安全（1）。",
       "highlights": [
+        {
+          "id": "2611.00191",
+          "title": "MemU-Bench: Benchmarking GUI Agents on Long-Horizon User Interactions",
+          "blurb": "Existing Graphical User Interface (GUI) benchmarks predominantly rely on precise and stateless user instructions."
+        },
         {
           "id": "2610.42004",
           "title": "TradeWar: A Benchmark for Execution-Grounded Trade Negotiation with Adaptive LLM Agents",
@@ -70,16 +93,170 @@
           "id": "2610.41272",
           "title": "ANGLER: Verifier-Grounded Benchmarking with an Adaptive Attacker for Web Agents",
           "blurb": "Web agents are increasingly deployed to complete tasks autonomously on real websites, where adversarially injected content can induce them to perform unauthorized actions."
-        },
-        {
-          "id": "2610.41435",
-          "title": "BlindToChange: AI Agents Can Find Changes When Asked But Do They Look When Needed?",
-          "blurb": "Given that AI agents can search the web broadly and deeply in real time, it is tempting to conclude that their outputs account for recent world events."
         }
       ]
     }
   },
   "papers": [
+    {
+      "id": "2611.00449",
+      "title": "SpBench: An Agent-Native Framework for Cross-Engine Lakehouse Benchmarking",
+      "abstract": "SpBench is an agent-native framework for cross-engine lakehouse benchmarking, in production use for benchmarking Snowpark, Snowpark Connect for Apache Spark, and other execution environments across standardized suites -- such as TPCx-BB and TPC-DI -- and custom benchmarks distilled from production workload patterns. It runs continuously across a broad portfolio of workloads, guiding the performance roadmap and detecting regressions for production-scale data engines. Benchmarking has historically been an expensive investment requiring continuous cross-functional collaboration and domain expertise, making it difficult to obtain actionable performance insights. SpBench provides (i) a typed, code-generated benchmark substrate that compiles platform-agnostic benchmark definitions into fair, comparable platform-specific implementations; (ii) a structured-telemetry contract recording every run as queryable fact and dimension data, letting LLM agents query results deterministically; and (iii) an agent-native harness of three composable skills to expedite building benchmarks and analyzing results. This agent-native architecture enabled the rapid development of more than 400 benchmark queries that run on a regular cadence to detect performance regressions; catching these has directly led to improvements in production.",
+      "authors": [
+        "Lyndon Shi",
+        "Nic Crouch",
+        "Yi Hu",
+        "Zihao Ye",
+        "Choden Konigsmark",
+        "Eric Vandenberg",
+        "Dionysios Logothetis",
+        "Kuba Niemiec",
+        "Krzysztof Gadomski",
+        "Yuxiong He"
+      ],
+      "categories": [
+        "cs.DB",
+        "cs.LG",
+        "cs.PF"
+      ],
+      "primary_category": "cs.DB",
+      "published": "2026-10-30T23:05:21Z",
+      "updated": "2026-10-30T23:05:21Z",
+      "announced_date": "2026-10-30",
+      "first_seen": "2026-10-30",
+      "comment": "4 pages, 4 figures. To appear at IEEE BigData 2026. Lyndon Shi, Nic Crouch, Yi Hu, and Zihao Ye contributed equally",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.00449v1",
+        "pdf": "https://arxiv.org/pdf/2611.00449v1",
+        "html": "https://arxiv.org/html/2611.00449"
+      },
+      "score": 13,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2611.00314",
+      "title": "Decentralized Multi-Agent Coordination and Communication in Shared Codebases",
+      "abstract": "Coding agents working in shared repositories may receive separate, independently-motivated requests from human developers, creating a setting that is multi-agent by necessity. When this scenario happens, their individual implementations may work separately but conflict when combined. To study this setting, we introduce ParallACT, a benchmark of orchestrator-free multi-agent coding tasks. ParallACT contains both complementary and contradictory tasks. In complementary tasks, each agent's task is separately useful and implementations must share an interface to be productively combined. In contradictory pairs, both agents' tasks require editing the same code in incompatible ways, and naively combining independent solutions fails to produce a useful implementation. We compare a single-agent oracle given the combined set of tasks against multi-agent settings that vary execution order, visibility, awareness of other agents, and access to a communication channel. We find that the oracle solves most tasks while parallel agents perform substantially worse. Their performance drop is notable for complementary tasks, and particularly sharp for contradictory tasks (e.g., from 62% to 16% for Claude Code with Claude Opus 4.8) where merged code typically satisfies only one specification, and the same gap appears in all six further configurations pairing two agent harnesses with three open-weight models. Simply telling an agent that a peer exists does not help significantly, and giving agents access to a communication channel recovers only a small part of the performance, at an additional token cost. ParallACT thus identifies and isolates a core challenge that will become more common as multi-agent coding by independent principals becomes standard, and provides a controlled test of which coordination strategies help, and at what cost.",
+      "authors": [
+        "Rishabh Mediratta",
+        "Lingyun Xiao",
+        "Peter Stone",
+        "Joydeep Biswas",
+        "Elias Stengel-Eskin"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-30T19:36:54Z",
+      "updated": "2026-10-30T19:36:54Z",
+      "announced_date": "2026-10-30",
+      "first_seen": "2026-10-30",
+      "comment": "First two authors contributed equally. Project Page: https://lingyunxiao18.github.io/ParallACT/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.00314v1",
+        "pdf": "https://arxiv.org/pdf/2611.00314v1",
+        "html": "https://arxiv.org/html/2611.00314"
+      },
+      "score": 12,
+      "tags": [
+        "coding",
+        "multi-agent"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2611.00243",
+      "title": "OmniPiano: Diverse Dexterous Piano-Playing Challenges for Standard, Robust, Safe, and Multi-Agent RL",
+      "abstract": "Dexterous robotic manipulation remains a major challenge in robotics, exemplified by piano playing, which requires coordinated control of fingers and provides a demanding testbed for reinforcement learning (RL). Although previous work established a benchmark for robotic piano playing, it is restricted to two hands and does not support unified evaluation. To address this gap, we introduce OmniPiano, a benchmark that provides one to up to five Shadow Hands and supports standard, robust, safe, and multi-agent RL within a shared piano-playing task family. OmniPiano is developed for scalable and diverse piano-playing tasks with configurable perturbations, explicit safety constraints, and decentralized cooperation settings. Particularly, to facilitate usability and extendability, OmniPiano adopts a highly modular design and provides comprehensive tasks to support RL study of task performance, robustness, safety, and cooperation in dexterous control. With at least 912 task settings and 36 baseline algorithms, OmniPiano further incorporates LLM-based agents to broaden the evaluation scope and reveal new insights. Extensive evaluations show that state-of-the-art RL algorithms and frontier LLM-based agents still struggle on challenging piano-playing tasks, even under standard RL settings, highlighting substantial room for improvement in dexterous control. The code, dataset, tutorial, and demo are available at https://sail-research-lab.github.io/omnipiano/.",
+      "authors": [
+        "Fan Xu",
+        "Fan Yang",
+        "Yifan Xu",
+        "Ruiyuan Zhang",
+        "Yimou Wu",
+        "Nuo Yi",
+        "Muning Wen",
+        "Guang Chen",
+        "Costas Spanos",
+        "Shangding Gu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-30T18:24:38Z",
+      "updated": "2026-10-30T18:24:38Z",
+      "announced_date": "2026-10-30",
+      "first_seen": "2026-10-30",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.00243v1",
+        "pdf": "https://arxiv.org/pdf/2611.00243v1",
+        "html": "https://arxiv.org/html/2611.00243"
+      },
+      "score": 14,
+      "tags": [
+        "multi-agent",
+        "safety",
+        "science"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2611.00191",
+      "title": "MemU-Bench: Benchmarking GUI Agents on Long-Horizon User Interactions",
+      "abstract": "Existing Graphical User Interface (GUI) benchmarks predominantly rely on precise and stateless user instructions. In everyday usage, however, instructions are often \\emph{vague and history-dependent}: users omit the exact details of their past operations because they no longer remember them, leaving the agent to recover the missing context from long and noisy interaction histories. To bridge this evaluation gap, we introduce \\textbf{MemU-Bench}, a mobile benchmark of \\textbf{118 vague tasks} grounded in 29 long-horizon user trajectories, where agents must distill raw interaction streams into memory and retrieve the missing context on demand, with task outcomes verified against serialized application databases. Alongside Success Rate, we incorporate Interaction Efficiency (IE) and Success weighted by Path Length (SPL) to expose agents that succeed by exhaustively searching across different applications rather than by \\emph{genuinely recalling} the history. Evaluations show that without user history, state-of-the-art systems struggle under such ambiguity: the best-performing Gemini-3.1-Pro achieves an SPL of only 16.4\\%, and end-to-end GUI agents fall below 5\\%. To address this, we further propose \\textbf{AppMem}, a training-free framework that distills user history into a \\emph{structured, app-centric} memory bank, tracks interrupted intents across application switches, and selectively retrieves relevant memories via target-app inference. AppMem raises the SPL of GPT-5.5 from 15.7\\% to 66.9\\% (\\textbf{+51.2\\%}), outperforms a naive summary baseline by 9.3\\%, and delivers consistent gains across evaluated backbones.",
+      "authors": [
+        "Yizhou Liu",
+        "Zhengxi Lu",
+        "Fei Tang",
+        "Yiwen Qiu",
+        "Yong Du",
+        "Tongbo Chen",
+        "Bofan Chen",
+        "Tao Jiang",
+        "Wenhao Xu",
+        "Yunfeng Shu",
+        "Wenqi Zhang",
+        "Weiming Lu",
+        "Jun Xiao",
+        "Yueting Zhuang",
+        "Yongliang Shen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-30T17:41:46Z",
+      "updated": "2026-10-30T17:41:46Z",
+      "announced_date": "2026-10-30",
+      "first_seen": "2026-10-30",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.00191v1",
+        "pdf": "https://arxiv.org/pdf/2611.00191v1",
+        "html": "https://arxiv.org/html/2611.00191"
+      },
+      "score": 21,
+      "tags": [
+        "gui",
+        "memory"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
     {
       "id": "2610.42004",
       "title": "TradeWar: A Benchmark for Execution-Grounded Trade Negotiation with Adaptive LLM Agents",

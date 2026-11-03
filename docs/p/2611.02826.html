@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RxnMiner: A Multimodal Agent for Structured Reaction Data Extraction from Chemistry Figures | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Reaction data underpin machine learning for reaction prediction, condition recommendation, and retrosynthetic planning, yet…" />
+    <meta name="keywords" content="Multimodal, Planning / reasoning, Research agents, Science lab, agent benchmark, LLM agent, arXiv, 2611.02826" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.02826.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="RxnMiner: A Multimodal Agent for Structured Reaction Data Extraction from Chemistry Figures" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Reaction data underpin machine learning for reaction prediction, condition recommendation, and retrosynthetic planning, yet…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.02826.html" />
+    <meta property="article:published_time" content="2026-11-02T09:24:55Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="RxnMiner: A Multimodal Agent for Structured Reaction Data Extraction from Chemistry Figures" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Reaction data underpin machine learning for reaction prediction, condition recommendation, and retrosynthetic planning, yet…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "RxnMiner: A Multimodal Agent for Structured Reaction Data Extraction from Chemistry Figures",
+  "name": "RxnMiner: A Multimodal Agent for Structured Reaction Data Extraction from Chemistry Figures",
+  "abstract": "Reaction data underpin machine learning for reaction prediction, condition recommendation, and retrosynthetic planning, yet extracting these data from literature figures still requires substantial manual effort. Many figures encode multiple experiments through shared templates, substituent tables, and product grids. Recovering concrete reaction records therefore requires molecular recognition, association of evidence with individual experimental entries, and reconstruction of indirectly specified participants. We present RxnMiner, a multimodal agent system that combines an expert-informed extraction procedure with a chemistry toolbox to coordinate these operations. The agent reads molecular structures, resolves shared and entry-specific evidence, and instantiates participants from templates to assemble source-linked reaction records. We also introduce ChemRxn-Bench, a benchmark of 603 reaction figures with 8,547 manually annotated and reviewed reaction records, evaluated under a common protocol for exact molecular identity and reactant-product pairing. On this benchmark, with Qwen3.8-Flash-Next as the backbone, RxnMiner raises stereochemistry-aware reaction macro-F1 from 21.0% under direct prediction to 71.0%, compared with 25.0% for the strongest existing extraction system. Across five backbones, it also outperforms the same base agent without the extraction procedure and chemistry toolbox by 9.4 to 25.5 points. Applied without human intervention to 10,107 literature figures, RxnMiner produces a silver corpus of 88,202 source-linked reaction records.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jinbo Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Songren Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chuanxun Fu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jinrui Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhen Hao Wong"
+    },
+    {
+      "@type": "Person",
+      "name": "Dongxu Cui"
+    },
+    {
+      "@type": "Person",
+      "name": "Haoran Fan"
+    },
+    {
+      "@type": "Person",
+      "name": "Muhao Ge"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhen Jian"
+    },
+    {
+      "@type": "Person",
+      "name": "Jian Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Chengxiang Luo"
+    },
+    {
+      "@type": "Person",
+      "name": "Han Lyu"
+    },
+    {
+      "@type": "Person",
+      "name": "Haoyi Tao"
+    },
+    {
+      "@type": "Person",
+      "name": "Chaozheng Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Hanzheng Li"
+    },
+    {
+      "@type": "Person",
+      "name": "ZiChen Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Hengtian Ma"
+    },
+    {
+      "@type": "Person",
+      "name": "Jinyang Dai"
+    },
+    {
+      "@type": "Person",
+      "name": "Nan Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yanhui Hong"
+    },
+    {
+      "@type": "Person",
+      "name": "Xi Fang"
+    },
+    {
+      "@type": "Person",
+      "name": "Guolin Ke"
+    }
+  ],
+  "datePublished": "2026-11-02T09:24:55Z",
+  "dateModified": "2026-11-02T09:24:55Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.02826.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.02826.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.02826v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.02826"
+  },
+  "keywords": [
+    "Multimodal",
+    "Planning / reasoning",
+    "Research agents",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multimodal"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.02826v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.02826"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>RxnMiner: A Multimodal Agent for Structured Reaction Data Extraction from Chemistry Figures</h1>
+        <div class="meta">
+          Jinbo Hu, Songren Zhang, Chuanxun Fu, Jinrui Huang, Zhen Hao Wong, Dongxu Cui, Haoran Fan, Muhao Ge, Zhen Jian, Jian Zhou, Chengxiang Luo, Han Lyu, Haoyi Tao, Chaozheng Huang, Hanzheng Li, ZiChen Wang, Hengtian Ma, Jinyang Dai, Nan Wang, Yanhui Hong, Xi Fang, Guolin Ke
+          · 2611.02826
+          · <time datetime="2026-11-02">2026-11-02</time>
+          · Multimodal
+        </div>
+        <div class="themes"><span class="chip">Planning / reasoning</span><span class="chip">Research agents</span><span class="chip">Multimodal</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Reaction data underpin machine learning for reaction prediction, condition recommendation, and retrosynthetic planning, yet extracting these data from literature figures still requires substantial manual effort. Many figures encode multiple experiments through shared templates, substituent tables, and product grids. Recovering concrete reaction records therefore requires molecular recognition, association of evidence with individual experimental entries, and reconstruction of indirectly specified participants. We present RxnMiner, a multimodal agent system that combines an expert-informed extraction procedure with a chemistry toolbox to coordinate these operations. The agent reads molecular structures, resolves shared and entry-specific evidence, and instantiates participants from templates to assemble source-linked reaction records. We also introduce ChemRxn-Bench, a benchmark of 603 reaction figures with 8,547 manually annotated and reviewed reaction records, evaluated under a common protocol for exact molecular identity and reactant-product pairing. On this benchmark, with Qwen3.8-Flash-Next as the backbone, RxnMiner raises stereochemistry-aware reaction macro-F1 from 21.0% under direct prediction to 71.0%, compared with 25.0% for the strongest existing extraction system. Across five backbones, it also outperforms the same base agent without the extraction procedure and chemistry toolbox by 9.4 to 25.5 points. Applied without human intervention to 10,107 literature figures, RxnMiner produces a silver corpus of 88,202 source-linked reaction records.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.02826v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.02826v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.02826" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multimodal benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.02698.html"><strong>GeoGuesser Bench: Benchmarking Vision-Language Agents on Interactive Geolocation</strong></a> <span>2026-11-02</span></li>
+          <li><a href="2611.02472.html"><strong>MAGAR: Multimodal Agents for GUI-Based 3D Mechanical Assembly and Minimal Rework</strong></a> <span>2026-11-02</span></li>
+          <li><a href="2610.41025.html"><strong>ReplayRCA: Measuring Post-hoc Diagnosis and Live Oversight of Agent Failures by Counterfactual Replay</strong></a> <span>2026-10-29</span></li>
+          <li><a href="2610.36484.html"><strong>CogArena: Benchmarking Multimodal Agents on Interactive Behavioral Experiments</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.35293.html"><strong>AgenticCity-Bench: Longitudinal Multimodal Observations of Urban Dynamics with Agentic Reasoning</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.35138.html"><strong>Co-Design Bench: Multimodal Collaborative Coding Evaluation for Agentic Models</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.32332.html"><strong>4DMemory: Benchmarking Long-Horizon Spatiotemporal Memory with Harness-Augmented Agents</strong></a> <span>2026-10-23</span></li>
+          <li><a href="2610.31158.html"><strong>Beyond Watching and Searching: Benchmarking Agents for Video-centered Deep Research Reports</strong></a> <span>2026-10-22</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,613 @@
+{
+  "date": "2026-11-02",
+  "count": 13,
+  "report": {
+    "date": "2026-11-02",
+    "count": 13,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 6,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 4,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "coding",
+        "count": 3,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "multimodal",
+        "count": 3,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "research",
+        "count": 1,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "rsi",
+        "count": 1,
+        "en": "RSI / AI4AI",
+        "zh": "RSI / AI4AI"
+      }
+    ],
+    "en": {
+      "headline": "13 new agent benchmarks",
+      "summary": "On November 2, 2026, arXiv listed 13 new agent benchmarks. Work clustered around Tool use (6), Planning / reasoning (4), Coding agents (3), and Multimodal (3).",
+      "highlights": [
+        {
+          "id": "2611.03523",
+          "title": "DistDebug-Bench: Can LLM Agents Diagnose Bugs in Distributed Systems?",
+          "blurb": "LLM agents show strong potential in software engineering tasks such as competitive programming and code synthesis."
+        },
+        {
+          "id": "2611.03412",
+          "title": "DeliverBench: Benchmarking AI Agents on Delivering Realistic Multi-Stage Professional Projects",
+          "blurb": "LLM agents are judged by what they deliver, and in professional work what gets delivered is a project, not a task."
+        },
+        {
+          "id": "2611.03575",
+          "title": "VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably",
+          "blurb": "Large language model (LLM) coding agents increasingly operate with shell access, allowing them to write scripts, move files, alter permissions, and modify system configurations."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 13 篇 Agent Benchmark",
+      "summary": "2026年11月2日，arXiv 新增 13 篇 Agent Benchmark。当日主题集中在工具使用（6）、规划 / 推理（4）、代码智能体（3）、多模态（3）。",
+      "highlights": [
+        {
+          "id": "2611.03523",
+          "title": "DistDebug-Bench: Can LLM Agents Diagnose Bugs in Distributed Systems?",
+          "blurb": "LLM agents show strong potential in software engineering tasks such as competitive programming and code synthesis."
+        },
+        {
+          "id": "2611.03412",
+          "title": "DeliverBench: Benchmarking AI Agents on Delivering Realistic Multi-Stage Professional Projects",
+          "blurb": "LLM agents are judged by what they deliver, and in professional work what gets delivered is a project, not a task."
+        },
+        {
+          "id": "2611.03575",
+          "title": "VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably",
+          "blurb": "Large language model (LLM) coding agents increasingly operate with shell access, allowing them to write scripts, move files, alter permissions, and modify system configurations."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2611.03575",
+      "title": "VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably",
+      "abstract": "Large language model (LLM) coding agents increasingly operate with shell access, allowing them to write scripts, move files, alter permissions, and modify system configurations. However, an agent may achieve a user's goal while causing unintended harm, such as deleting unrelated files, weakening access controls, or corrupting data, in response to benign inputs without explicit jailbreaking. This failure mode is particularly important because apparent task success may reassure users that an agent behaved correctly, causing harmful side effects to go unnoticed. We call this harmful success: the agent successfully completes the intended benign task while simultaneously causing unintended harm. Despite its importance, harmful success is difficult to measure because conventional task-success metrics overlook harmful behaviors, while existing safety evaluations are often designed solely to assess harmful outcomes. We introduce VeriHarm, an automatic framework for constructing programmatically verifiable benchmarks that directly measure harmful success. VeriHarm minimally perturbs coding tasks to elicit unintended harmful behavior while maintaining the benignity of the task and preserving the original task objective. It then synthesizes executable harm tests that, together with the original task-correctness tests, evaluate both task accuracy and harmful outcomes. Frontier agents, including GPT-5.6-Sol and Claude-Opus-5, achieve an average task accuracy of 95% on our curated VeriHarm-Bench, yet still struggle to complete tasks safely: their safe success rate, the fraction of tasks completed successfully without triggering the designated harm, averages only 37%. These results suggest that successful task completion can frequently coexist with unintended harm, and that task-success metrics alone may substantially understate the potential safety risks of coding agents.",
+      "authors": [
+        "Wei-Lin Chen",
+        "Zhepei Wei",
+        "Xinyu Zhu",
+        "Yu-Min Tseng",
+        "Tzu-Han Lin",
+        "Yu Meng"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-11-02T18:27:55Z",
+      "updated": "2026-11-02T18:27:55Z",
+      "announced_date": "2026-11-02",
+      "first_seen": "2026-11-02",
+      "comment": "Preprint",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.03575v1",
+        "pdf": "https://arxiv.org/pdf/2611.03575v1",
+        "html": "https://arxiv.org/html/2611.03575"
+      },
+      "score": 17,
+      "tags": [
+        "coding",
+        "safety"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2611.03523",
+      "title": "DistDebug-Bench: Can LLM Agents Diagnose Bugs in Distributed Systems?",
+      "abstract": "LLM agents show strong potential in software engineering tasks such as competitive programming and code synthesis. Existing benchmarks, however, largely focus on small-scale settings such as self-contained Python modules, leaving distributed systems, an essential class of production software, under-examined. We introduce DistDebug-Bench, a benchmark for evaluating agents' ability to diagnose complex-system failures at the code level. It curates 120 high-quality real-world bugs from 11 widely used distributed systems, spanning 5 programming languages and 10 failure patterns. Through an extensive evaluation of state-of-the-art LLMs and agents, we identify substantial gaps between current agents and real-world debugging tasks. A recurring gap is tunnel vision due to a lack of explicit reasoning structure and nondeterminism from inconsistent tool-use scope. The benchmark and evaluator are available at https://github.com/OrderLab/distdebug-bench, with agent traces and a leaderboard at https://distdebug.com.",
+      "authors": [
+        "Yuxuan Jiang",
+        "Chenglin Liu",
+        "John Rose",
+        "Mason Miller",
+        "Ruthesh Thavamani",
+        "Juntao Wu",
+        "Yinwei Huang",
+        "Jiahao Xu",
+        "Peng Huang"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.DC",
+        "cs.LG"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-11-02T17:56:28Z",
+      "updated": "2026-11-02T17:56:28Z",
+      "announced_date": "2026-11-02",
+      "first_seen": "2026-11-02",
+      "comment": "NeurIPS 2026, Track on Evaluations and Datasets. 41 pages, 10 figures, 24 tables. Benchmark: https://github.com/OrderLab/distdebug-bench. Website: https://distdebug.com",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.03523v1",
+        "pdf": "https://arxiv.org/pdf/2611.03523v1",
+        "html": "https://arxiv.org/html/2611.03523"
+      },
+      "score": 27,
+      "tags": [
+        "coding",
+        "tool-use",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2611.03412",
+      "title": "DeliverBench: Benchmarking AI Agents on Delivering Realistic Multi-Stage Professional Projects",
+      "abstract": "LLM agents are judged by what they deliver, and in professional work what gets delivered is a project, not a task. A project pays off only if the whole package holds, and one weak part can limit the value of the rest. Yet existing benchmarks mostly test agents on one task at a time, leaving a gap between the capability we measure and the outcome that makes agents useful. To address this gap, we introduce DeliverBench, which tests whether agents can carry a project from brief to final delivery. Its 11 projects, spanning financial due diligence, legal contract drafting, and drug safety reporting, are reconstructed with 13 domain experts from real materials and chain 150 subtasks through 2-15 rounds of new materials and client feedback. Because no reference outputs are injected, agents inherit their own errors from one task to the next. Expert rubrics then score every checkpoint as well as the final package. Across seven model-harness systems, even the best system scores only 65.0 out of 100 on final delivery and passes 50.0% of subtasks at a 90-point threshold. The failures are often failures of carrying work forward: in one audit project, all seven systems addressed the review findings, but only one preserved traceability. Together, these results suggest that task-level capability does not simply compose into delivery, which also depends on keeping the work coherent as it evolves.",
+      "authors": [
+        "Yumou Liu",
+        "Mingju Chen",
+        "Zhoufutu Wen",
+        "Qianyu Yang",
+        "Zijie Wang",
+        "Yeqian Liu",
+        "Chenghao Yang",
+        "Tiliang Duan",
+        "Qiyu Cai",
+        "Yanglihong Xiao",
+        "Jiayun Dong",
+        "Jianlan Ma",
+        "Shenhao Miao",
+        "Yuhan Cao",
+        "Lu Xu",
+        "Que Shen",
+        "Tian Gao",
+        "Ge Zhang",
+        "Jianpeng Jiao",
+        "Xuanhe Zhou",
+        "Fan Wu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-02T16:37:40Z",
+      "updated": "2026-11-02T16:37:40Z",
+      "announced_date": "2026-11-02",
+      "first_seen": "2026-11-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.03412v1",
+        "pdf": "https://arxiv.org/pdf/2611.03412v1",
+        "html": "https://arxiv.org/html/2611.03412"
+      },
+      "score": 18,
+      "tags": [
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2611.03223",
+      "title": "Do Agents Still Follow the Rules? Benchmarking Rule Compliance under Agent Context Compaction",
+      "abstract": "LLM agents compact long histories to fit their context windows, but the compacted context must still carry the operating rules that govern later actions. Prior work shows that violations rise after compaction, but measures compliance outside a complete agent harness and does not identify where each violation comes from. We introduce ARCBench(Agent Rule Compliance Benchmark), a configurable benchmark built on the open-source pi agent harness. Its tool-calling agent loop lets us measure rule compliance from actions taken during execution, bringing the evaluation closer to deployed agent workflows. Using ARCBench, we examine where violations after compaction come from, and how different compaction configurations and adversarial settings change their sources. We find that compaction rarely deletes the rule: most violations after compaction occur while the rule is still in the compacted history, with the agent treating a later request as permission, ignoring the rule, and proceeding anyway. Where violations come from depends on the configuration: how the rule is delivered decides whether the agent would break it even without compaction, while the compaction strategy and budget decide whether the rule survives. The strongest compactor-targeted attack more than doubles violations by corrupting the rule in the summary and changing how the agents behave, whereas the strongest defense restores the rule in most summary but still violates. Finally, retaining a rule does not guarantee compliance: compacted runs that retain the rule violate more than twice as often as runs with the full history.",
+      "authors": [
+        "Yiwei Zha",
+        "Qingyu Meng",
+        "Herbert Bos",
+        "Min Chen"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-11-02T14:45:36Z",
+      "updated": "2026-11-02T14:45:36Z",
+      "announced_date": "2026-11-02",
+      "first_seen": "2026-11-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.03223v1",
+        "pdf": "https://arxiv.org/pdf/2611.03223v1",
+        "html": "https://arxiv.org/html/2611.03223"
+      },
+      "score": 10,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2611.02849",
+      "title": "TLAPS-Bench: Formally Proving Correctness of Real-World System Specifications with TLA+ Proof System",
+      "abstract": "TLAPS-Bench is a benchmark and execution harness for constructing machine-checked proofs for real-world system specifications in TLA+ with agentic AI. Proving correctness of complex system specifications requires discovering inductive invariants, reasoning about intricate state transitions, and decomposing proofs into tractable obligations. TLAPS-Bench provides a proof harness that supports iterative proof development atop the TLA+ Proof System (TLAPS), where agents are equipped with proof tools and libraries, with safeguards against reward hacking. Using the harness, we have employed AI agents to prove desired properties for important system specifications that were not proved before, spanning cache coherence, Byzantine consensus, and write-ahead logs. TLAPS-Bench contains 265 proof targets (each encodes a property to prove) from 95 TLA+ specifications of real-world systems. We evaluated frontier AI agents, represented by Codex with GPT models, on a subset of 70 proof targets across 12 specifications. The highest-scoring model, GPT-6.1 Sol (max), proved 31 (44.3%) proof targets. The results show challenges and opportunities in end-to-end proof development.",
+      "authors": [
+        "Qian Cheng",
+        "Ruize Tang",
+        "Saad Mohammad Rafid Pial",
+        "Zhizhen Cathy Cai",
+        "Yiming Su",
+        "Jackson Clark",
+        "Munim Thahmid",
+        "Mahdiya Rahman Sukanya",
+        "Chris Newcombe",
+        "Igor Konnov",
+        "Stephan Merz",
+        "Xudong Sun",
+        "Murat Demirbas",
+        "Yu Huang",
+        "Markus Alexander Kuppe",
+        "Tianyin Xu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.DC",
+        "cs.LO",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-02T09:51:18Z",
+      "updated": "2026-11-02T09:51:18Z",
+      "announced_date": "2026-11-02",
+      "first_seen": "2026-11-02",
+      "comment": "35 pages (10-page main text, references, and appendix), 7 figures, 20 tables. Benchmark and harness: https://github.com/specula-org/TLAPS-Bench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.02849v1",
+        "pdf": "https://arxiv.org/pdf/2611.02849v1",
+        "html": "https://arxiv.org/html/2611.02849"
+      },
+      "score": 15,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2611.02826",
+      "title": "RxnMiner: A Multimodal Agent for Structured Reaction Data Extraction from Chemistry Figures",
+      "abstract": "Reaction data underpin machine learning for reaction prediction, condition recommendation, and retrosynthetic planning, yet extracting these data from literature figures still requires substantial manual effort. Many figures encode multiple experiments through shared templates, substituent tables, and product grids. Recovering concrete reaction records therefore requires molecular recognition, association of evidence with individual experimental entries, and reconstruction of indirectly specified participants. We present RxnMiner, a multimodal agent system that combines an expert-informed extraction procedure with a chemistry toolbox to coordinate these operations. The agent reads molecular structures, resolves shared and entry-specific evidence, and instantiates participants from templates to assemble source-linked reaction records. We also introduce ChemRxn-Bench, a benchmark of 603 reaction figures with 8,547 manually annotated and reviewed reaction records, evaluated under a common protocol for exact molecular identity and reactant-product pairing. On this benchmark, with Qwen3.8-Flash-Next as the backbone, RxnMiner raises stereochemistry-aware reaction macro-F1 from 21.0% under direct prediction to 71.0%, compared with 25.0% for the strongest existing extraction system. Across five backbones, it also outperforms the same base agent without the extraction procedure and chemistry toolbox by 9.4 to 25.5 points. Applied without human intervention to 10,107 literature figures, RxnMiner produces a silver corpus of 88,202 source-linked reaction records.",
+      "authors": [
+        "Jinbo Hu",
+        "Songren Zhang",
+        "Chuanxun Fu",
+        "Jinrui Huang",
+        "Zhen Hao Wong",
+        "Dongxu Cui",
+        "Haoran Fan",
+        "Muhao Ge",
+        "Zhen Jian",
+        "Jian Zhou",
+        "Chengxiang Luo",
+        "Han Lyu",
+        "Haoyi Tao",
+        "Chaozheng Huang",
+        "Hanzheng Li",
+        "ZiChen Wang",
+        "Hengtian Ma",
+        "Jinyang Dai",
+        "Nan Wang",
+        "Yanhui Hong",
+        "Xi Fang",
+        "Guolin Ke"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-02T09:24:55Z",
+      "updated": "2026-11-02T09:24:55Z",
+      "announced_date": "2026-11-02",
+      "first_seen": "2026-11-02",
+      "comment": "54 pages, 4 figures in the main text. Homepage: https://rxnminer.github.io/RxnMiner/ ; Code: https://github.com/rxnminer/RxnMiner ; Benchmark: https://huggingface.co/datasets/UniParser/RxnMiner-Benchmark ; Dataset: https://huggingface.co/datasets/UniParser/RxnMiner-Dataset",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.02826v1",
+        "pdf": "https://arxiv.org/pdf/2611.02826v1",
+        "html": "https://arxiv.org/html/2611.02826"
+      },
+      "score": 5,
+      "tags": [
+        "planning",
+        "research",
+        "multimodal",
+        "science"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2611.02797",
+      "title": "SelfImprove-Bench: Evaluating Generalization in Self-Improving Agents",
+      "abstract": "Recursively self-improving (RSI) systems are increasingly viewed as a promising means of accelerating progress toward artificial general intelligence. They aim to autonomously improve their capabilities by refining their working pipelines and recursively improving the strategies that guide subsequent refinements, with gains generalizing to unseen scenarios.However, existing evaluations lack reliable metrics to distinguish capability gains from scenario fitting, sustainable and extensible protocols for unseen tasks and difficulties, and fine-grained attribution of improvement to evolution traces. To this end, we propose SelfImprove-Bench,an RSI evaluation framework that organizes tasks into three primary capabilities (i.e., Exploring, Planning, Reasoning) as scenarios for guiding model evolution. We instantiated the tasks on games for controllability and reproducibility, and pairs them with scalable generation and orchestration driven by task templates and difficulty coefficients. Beyond task-level scores, SelfImprove-Bench organizes evaluation into generalization ladder levels G0 to G4 that measure how far gains transfer from training conditions. Experiments reveal that the evolutionary gains of existing RSI methods are inconsistent across generalization levels.",
+      "authors": [
+        "Bangrui Xu",
+        "Jie Yang",
+        "Sidi Chen",
+        "Xuanhe Zhou",
+        "Jiantao Qiu",
+        "Qianyu Yang",
+        "Zijie Wang",
+        "Fan Wu",
+        "Zhoufutu Wen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-02T09:08:12Z",
+      "updated": "2026-11-02T09:08:12Z",
+      "announced_date": "2026-11-02",
+      "first_seen": "2026-11-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.02797v1",
+        "pdf": "https://arxiv.org/pdf/2611.02797v1",
+        "html": "https://arxiv.org/html/2611.02797"
+      },
+      "score": 10,
+      "tags": [
+        "planning",
+        "rsi"
+      ],
+      "field": "rsi",
+      "citations": 0
+    },
+    {
+      "id": "2611.02698",
+      "title": "GeoGuesser Bench: Benchmarking Vision-Language Agents on Interactive Geolocation",
+      "abstract": "Vision-language model (VLM) agents that act in the open world need two abilities: world knowledge to interpret what they see, and exploration to find what they cannot yet see. We study how agents combine the two through interactive visual geolocation. GeoGuesser Bench contains 282 tasks in an offline Street View environment where agents rotate, zoom, and move between real panoramas. Its three task types shift the balance from knowledge to exploration: agents (1) report the coordinates of their starting location, (2) name the enclosing street, city, state, or country, or (3) find, read, and count nearby objects. The coordinate tasks in (1) also include 42 real GeoGuessr World Championship rounds, whose expert guesses provide a human reference. We evaluate 23 VLMs: the best accuracy is 62.5% on place naming and 35.0% on object finding, and the best agent averages 4352.4 GeoGuessr points on the championship rounds, against 4770.3 for the better expert in each round. Beyond these headline numbers, world knowledge and exploration are only weakly correlated across models: agents that localize well do not necessarily explore well. To understand where agents fail, we categorize their errors into vision, navigation, and tool-use failures. Further ablations show that the strongest agents, such as Claude Opus 4.8, still perform well with limited views, while weaker agents degrade; customizing the environment thus adjusts task difficulty. The environment's verifiable rewards and restorable state also support training, and our Planner-Worker-Compressor harness cuts planner tokens by 57-61% by compacting the interaction history. We hope GeoGuesser Bench and its environment serve as a high-quality foundation for simulating real-world exploration at scale.",
+      "authors": [
+        "Huanzhi Mao",
+        "Yichuan Wang",
+        "Michael Koo",
+        "Wenyuan Huang",
+        "Huy Doan",
+        "Jinghan Xia",
+        "Ziyao Wang",
+        "Joseph E. Gonzalez"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-02T07:50:57Z",
+      "updated": "2026-11-02T07:50:57Z",
+      "announced_date": "2026-11-02",
+      "first_seen": "2026-11-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.02698v1",
+        "pdf": "https://arxiv.org/pdf/2611.02698v1",
+        "html": "https://arxiv.org/html/2611.02698"
+      },
+      "score": 16,
+      "tags": [
+        "tool-use",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2611.02659",
+      "title": "Parametric CAD Bench v3: Evaluating Agentic Parametric CAD Authoring from Text and Engineering Drawings",
+      "abstract": "Producing an executable CAD script is not sufficient to establish that an agent has satisfied an engineering design request. Evaluation must also consider the resulting geometry, specified dimensions, and native CAD modeling history. We present Parametric CAD Bench v3, a 100-task benchmark comprising 30 text-to-CAD creation tasks, 30 text-to-CAD create-and-edit tasks, and 40 tasks that reconstruct mechanical parts from engineering drawings. Agents operate in a pinned FreeCAD environment and submit native CAD artifacts to a separate programmatic verifier. The primary metric is mean continuous task reward, combining geometry similarity and specification consistency rather than binary task success. A September 24, 2026 snapshot covers 13 model-agent systems; Claude Code with Claude Opus 5.5 achieves the highest overall point estimate, 61.03%, and an image-to-CAD mean reward of 84.66%. These measurements describe complete systems, not isolated model capabilities. We release versioned tasks, evaluation configurations, and inspectable result artifacts.",
+      "authors": [
+        "Mei Chen",
+        "Yu Xia",
+        "Haipeng Mao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV",
+        "cs.GR",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-02T07:19:55Z",
+      "updated": "2026-11-02T07:19:55Z",
+      "announced_date": "2026-11-02",
+      "first_seen": "2026-11-02",
+      "comment": "31 pages, 12 figures, 11 tables. Benchmark: https://cadbench.ai/ ; tasks and leaderboard: https://hub.harborframework.com/datasets/gnucleus-ai/cad-bench/v3 ; scoring code: https://github.com/gNucleus-AI/freecad-validator",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.02659v1",
+        "pdf": "https://arxiv.org/pdf/2611.02659v1",
+        "html": "https://arxiv.org/html/2611.02659"
+      },
+      "score": 13,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2611.02566",
+      "title": "CR-Bench-v2: Evaluating the Real-World Utility of AI Code Review Agents",
+      "abstract": "The rapid growth of automated code generation has created a pressing need for automated code review. Yet code review resists full automation: it depends on context beyond the \\textit{diff}, on the author's intent, and on judgments about design and maintainability on which even expert reviewers disagree. Existing code review benchmarks lack standardization and rely largely on noisy human review comments scored with text-similarity metrics, which reward surface overlap and fail to measure precision. We introduce \\texttt{CR-Bench}, a defect-centric evaluation framework that recasts SWE-Bench issues as pull-request review tasks with full repository context. After filtering for review-detectable defects and grounding each to a single originating pull request, \\texttt{CR-Bench} contains 584 instances, with a 174-instance \\texttt{CR-Bench-Verified} subset derived from SWE-Bench Verified. Each instance pairs a pull request with a known defect, its ground-truth fix, and a taxonomy label for bug category, impact, and severity. We propose two complementary metrics: \\emph{Known-Defect Detection Rate} (KDDR), which measures whether an agent identifies the labeled defect, and \\emph{Usefulness Rate}, which measures the fraction of review comments that are actionable. We evaluate eight code review agents over four backbones, plus commercially available Gemini Code Assist, using three independent LLM judges. Even the strongest systems detect only about one-third of known defects (KDDR $\\approx$ 33\\%), and Gemini Code Assist detects 8.1\\%.",
+      "authors": [
+        "Kristen Pereira",
+        "Neelabh Sinha",
+        "Rajat Ghosh",
+        "Debojyoti Dutta"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.LG"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-11-02T05:50:13Z",
+      "updated": "2026-11-02T05:50:13Z",
+      "announced_date": "2026-11-02",
+      "first_seen": "2026-11-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.02566v1",
+        "pdf": "https://arxiv.org/pdf/2611.02566v1",
+        "html": "https://arxiv.org/html/2611.02566"
+      },
+      "score": 12,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2611.02530",
+      "title": "AMLBench: A Real-Incident Benchmark for Agentic Blockchain Anti-Money Laundering",
+      "abstract": "Tracing illicit funds on public blockchains remains largely manual. As funds move across accounts and undergo asset conversions, they become mixed with other inflows, requiring repeated queries and expert judgment to trace. Large language model (LLM) agents offer a way to automate this process, but their ability to reconstruct case-related transfer networks from limited clues remains unclear. To bridge this gap, we present AMLBench, an anti-money laundering (AML) benchmark built from 24 real-world cases and 5.05 million Ethereum transfer records. For each case, agents start from limited clues and explore these transfer records through composable transaction-query and fund-flow analysis tools, deciding which accounts and branches to pursue. The final tracing results are evaluated against case annotations, while tool interaction logs reveal how agents discover and select relevant transfers and at what resource cost. We also develop AMLAgent, which integrates fund-tracing guidance and query feedback to dynamically guide investigative decisions. With GPT-6 Astra, AMLAgent achieves macro averages of 80.82% transfer-level precision and 84.73% query coverage across 24 real-world cases. Further analysis of the large-scale Bybit case reveals substantial differences in transfer retention and token usage across models, even with similar submission precision. AMLBench establishes a reproducible benchmark for evaluating both tracing outcomes and investigative processes, laying the groundwork for more reliable and efficient autonomous AML investigations.",
+      "authors": [
+        "Qishuang Fu",
+        "Hang Zheng",
+        "Yuchen Lei",
+        "Yuexin Xiang",
+        "Qin Wang",
+        "Yuanzhe Zhang",
+        "Shiping Chen",
+        "Andreas Deppeler",
+        "Joseph Liu",
+        "Ziyao Liu",
+        "Tsz Hon Yuen"
+      ],
+      "categories": [
+        "cs.CE"
+      ],
+      "primary_category": "cs.CE",
+      "published": "2026-11-02T05:03:38Z",
+      "updated": "2026-11-02T05:03:38Z",
+      "announced_date": "2026-11-02",
+      "first_seen": "2026-11-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.02530v1",
+        "pdf": "https://arxiv.org/pdf/2611.02530v1",
+        "html": "https://arxiv.org/html/2611.02530"
+      },
+      "score": 16,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2611.02484",
+      "title": "Benchmark of THReD: Evaluating an LLM Agent and Its Preprocessing Tools for Turning Electronic Health Records into AI-Ready Datasets",
+      "abstract": "LLM agents are increasingly built into data-analysis software, yet little evidence shows how reliably they preprocess clinical data or whether the tools they invoke give correct, reproducible output. We report a benchmark of THReD, a web-based system that turns electronic health record (EHR) extracts into AI-ready datasets through a chat agent whose proposed steps run only after user confirmation. The agent benchmark has 141 tasks (100 templates) in seven categories, including goal-level requests, failure recovery, requests calling for no action, schema variation and prompt injection through the data, on synthetic tables calibrated to a regional health information exchange; success is judged by checks on the produced data. Over 2,550 episodes with Claude Haiku 5.5 in four context configurations, the deployed agent completed 92.7% (95% CI 88.1-96.4) of tasks on its first answer, abstained on every advice request, recovered from every injected fault, and never proposed an action requested by planted text. Without the data profile, completion fell to 58.0%; goal-level requests were hardest (80.6%). Six experiments on real records of two chronic-disease cohorts and on synthetic data at scale validate the tools: 91-92% of inferred patient classes and 99.7-99.8% of inferred vital-sign labels were correct in masked reconstruction; a dictionary builder combining curated dictionaries with LLM suggestions mapped 99.0% of 2,208 raw variants correctly; all 2,176 replays of 128 saved pipelines gave byte-identical files under pinned dependencies; subgroup differences in inference accuracy vanished within facility and lookup key; and the same-day consolidation rule changed 90-day emergency revisit rates by up to 3.2 points without shifting cohort composition by more than one point. Processing time grew roughly linearly to 5.5 million records while the prompt stayed at about 13 thousand tokens.",
+      "authors": [
+        "Javad Mohammad Alizadeh",
+        "Huanmei Wu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-02T03:58:54Z",
+      "updated": "2026-11-02T03:58:54Z",
+      "announced_date": "2026-11-02",
+      "first_seen": "2026-11-02",
+      "comment": "35 pages, 3 figures, and 22 tables. Code, task definitions, and per-episode results are available on Zenodo via the DOI provided in the DOI field",
+      "doi": "10.5281/zenodo.23820292",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.02484v1",
+        "pdf": "https://arxiv.org/pdf/2611.02484v1",
+        "html": "https://arxiv.org/html/2611.02484"
+      },
+      "score": 13,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2611.02472",
+      "title": "MAGAR: Multimodal Agents for GUI-Based 3D Mechanical Assembly and Minimal Rework",
+      "abstract": "A GUI command can be correct at the interface level yet still produce an incorrect assembly. An agent must identify the relevant components, respect their structural relationships, and determine which parts should move during recovery. We introduce MAGAR-Bench, a benchmark of 4,000 multimodal samples from 26 assembly families that separates Assembly Decision, Atomic Action, and Minimal Rework. For rework, the objective counts distinct moved parts within the validated recovery candidate set for each state, rather than the number of actions. We also introduce MAGAR, a selective correction framework built on a frozen policy obtained by supervised fine-tuning. Its key design matches correction granularity to output dependencies. Structured candidates revise assembly fields and rework scope, while complete action candidates keep native GUI primitives coupled with their parameters. A learned selector retains the original prediction unless a candidate passes a task-specific intervention threshold. On recorded states from held-out assembly families, MAGAR improves Overall, the task-balanced aggregate, from 37.50 to 41.39, with gains on all three tasks. Across 209 interventions, 70 correct an error and 22 introduce one. These results support task-specific correction while highlighting the remaining tradeoff between fixing errors and preserving reliable predictions.",
+      "authors": [
+        "Jingxuan Wei",
+        "Jiahao Fu",
+        "Fuqiang Wang",
+        "Xiaoming Wu",
+        "Yuwen Liu",
+        "Kaiwen Wei",
+        "Ming Yang",
+        "Junnan Zhu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-02T03:40:49Z",
+      "updated": "2026-11-02T03:40:49Z",
+      "announced_date": "2026-11-02",
+      "first_seen": "2026-11-02",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.02472v1",
+        "pdf": "https://arxiv.org/pdf/2611.02472v1",
+        "html": "https://arxiv.org/html/2611.02472"
+      },
+      "score": 5,
+      "tags": [
+        "gui",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    }
+  ]
+}

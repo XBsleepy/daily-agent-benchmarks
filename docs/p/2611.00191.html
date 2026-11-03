@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MemU-Bench: Benchmarking GUI Agents on Long-Horizon User Interactions | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Existing Graphical User Interface (GUI) benchmarks predominantly rely on precise and stateless user instructions. In everyday usage…" />
+    <meta name="keywords" content="GUI / computer use, GUI agents, Memory, agent benchmark, LLM agent, arXiv, 2611.00191" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.00191.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MemU-Bench: Benchmarking GUI Agents on Long-Horizon User Interactions" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Existing Graphical User Interface (GUI) benchmarks predominantly rely on precise and stateless user instructions. In everyday usage…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.00191.html" />
+    <meta property="article:published_time" content="2026-10-30T17:41:46Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MemU-Bench: Benchmarking GUI Agents on Long-Horizon User Interactions" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Existing Graphical User Interface (GUI) benchmarks predominantly rely on precise and stateless user instructions. In everyday usage…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MemU-Bench: Benchmarking GUI Agents on Long-Horizon User Interactions",
+  "name": "MemU-Bench: Benchmarking GUI Agents on Long-Horizon User Interactions",
+  "abstract": "Existing Graphical User Interface (GUI) benchmarks predominantly rely on precise and stateless user instructions. In everyday usage, however, instructions are often \\emph{vague and history-dependent}: users omit the exact details of their past operations because they no longer remember them, leaving the agent to recover the missing context from long and noisy interaction histories. To bridge this evaluation gap, we introduce \\textbf{MemU-Bench}, a mobile benchmark of \\textbf{118 vague tasks} grounded in 29 long-horizon user trajectories, where agents must distill raw interaction streams into memory and retrieve the missing context on demand, with task outcomes verified against serialized application databases. Alongside Success Rate, we incorporate Interaction Efficiency (IE) and Success weighted by Path Length (SPL) to expose agents that succeed by exhaustively searching across different applications rather than by \\emph{genuinely recalling} the history. Evaluations show that without user history, state-of-the-art systems struggle under such ambiguity: the best-performing Gemini-3.1-Pro achieves an SPL of only 16.4\\%, and end-to-end GUI agents fall below 5\\%. To address this, we further propose \\textbf{AppMem}, a training-free framework that distills user history into a \\emph{structured, app-centric} memory bank, tracks interrupted intents across application switches, and selectively retrieves relevant memories via target-app inference. AppMem raises the SPL of GPT-5.5 from 15.7\\% to 66.9\\% (\\textbf{+51.2\\%}), outperforms a naive summary baseline by 9.3\\%, and delivers consistent gains across evaluated backbones.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yizhou Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhengxi Lu"
+    },
+    {
+      "@type": "Person",
+      "name": "Fei Tang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yiwen Qiu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yong Du"
+    },
+    {
+      "@type": "Person",
+      "name": "Tongbo Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Bofan Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Tao Jiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenhao Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yunfeng Shu"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenqi Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Weiming Lu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jun Xiao"
+    },
+    {
+      "@type": "Person",
+      "name": "Yueting Zhuang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yongliang Shen"
+    }
+  ],
+  "datePublished": "2026-10-30T17:41:46Z",
+  "dateModified": "2026-10-30T17:41:46Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.00191.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.00191.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.00191v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.00191"
+  },
+  "keywords": [
+    "GUI / computer use",
+    "GUI agents",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "GUI / computer use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.00191v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.00191"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MemU-Bench: Benchmarking GUI Agents on Long-Horizon User Interactions</h1>
+        <div class="meta">
+          Yizhou Liu, Zhengxi Lu, Fei Tang, Yiwen Qiu, Yong Du, Tongbo Chen, Bofan Chen, Tao Jiang, Wenhao Xu, Yunfeng Shu, Wenqi Zhang, Weiming Lu, Jun Xiao, Yueting Zhuang, Yongliang Shen
+          · 2611.00191
+          · <time datetime="2026-10-30">2026-10-30</time>
+          · GUI / computer use
+        </div>
+        <div class="themes"><span class="chip">GUI agents</span><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Existing Graphical User Interface (GUI) benchmarks predominantly rely on precise and stateless user instructions. In everyday usage, however, instructions are often \emph{vague and history-dependent}: users omit the exact details of their past operations because they no longer remember them, leaving the agent to recover the missing context from long and noisy interaction histories. To bridge this evaluation gap, we introduce \textbf{MemU-Bench}, a mobile benchmark of \textbf{118 vague tasks} grounded in 29 long-horizon user trajectories, where agents must distill raw interaction streams into memory and retrieve the missing context on demand, with task outcomes verified against serialized application databases. Alongside Success Rate, we incorporate Interaction Efficiency (IE) and Success weighted by Path Length (SPL) to expose agents that succeed by exhaustively searching across different applications rather than by \emph{genuinely recalling} the history. Evaluations show that without user history, state-of-the-art systems struggle under such ambiguity: the best-performing Gemini-3.1-Pro achieves an SPL of only 16.4\%, and end-to-end GUI agents fall below 5\%. To address this, we further propose \textbf{AppMem}, a training-free framework that distills user history into a \emph{structured, app-centric} memory bank, tracks interrupted intents across application switches, and selectively retrieves relevant memories via target-app inference. AppMem raises the SPL of GPT-5.5 from 15.7\% to 66.9\% (\textbf{+51.2\%}), outperforms a naive summary baseline by 9.3\%, and delivers consistent gains across evaluated backbones.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.00191v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.00191v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.00191" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More GUI / computer use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2610.39282.html"><strong>What Does &quot;Now&quot; Mean to Your Computer-Use Agent? Stale Screenshots, Page Loads, and Which Check to Run Before a Click</strong></a> <span>2026-10-29</span></li>
+          <li><a href="2610.31404.html"><strong>AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack</strong></a> <span>2026-10-22</span></li>
+          <li><a href="2610.27645.html"><strong>CUA-Recovery: Benchmarking Error Recovery in Long-Horizon Computer-Use Agents</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.22990.html"><strong>PersonaCUABench: Benchmarking Computer-Use Agents Serving Diverse Personas</strong></a> <span>2026-10-16</span></li>
+          <li><a href="2610.19900.html"><strong>How GUI Agents Fail: GraceBench for Execution Stability Diagnosis</strong></a> <span>2026-10-14</span></li>
+          <li><a href="2610.19128.html"><strong>CLASHarness: Benchmarking Multi-Agent Conflict in Computer Use via a Controllable and Verifiable Generation Pipeline</strong></a> <span>2026-10-13</span></li>
+          <li><a href="2610.16720.html"><strong>Learn from Move: the Next Step for GUI Agents</strong></a> <span>2026-10-12</span></li>
+          <li><a href="2610.15765.html"><strong>A Decade in a Day: Synthesizing Agent-Native Interfaces from Human-Oriented Software Evolution</strong></a> <span>2026-10-11</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

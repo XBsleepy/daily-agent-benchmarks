@@ -1,0 +1,181 @@
+{
+  "date": "2026-10-31",
+  "count": 3,
+  "report": {
+    "date": "2026-10-31",
+    "count": 3,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "safety",
+        "count": 1,
+        "en": "Safety",
+        "zh": "安全"
+      }
+    ],
+    "en": {
+      "headline": "3 new agent benchmarks",
+      "summary": "On October 31, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Tool use (1), Memory (1), Science lab (1), and Safety (1).",
+      "highlights": [
+        {
+          "id": "2611.01145",
+          "title": "CivicBench: A Benchmark and Memory Framework for Web-Based Civic Data Analytics",
+          "blurb": "Municipalities publish service requests, geographic boundaries, weather observations, demographic estimates, and operational guidance through independently maintained Web portals."
+        },
+        {
+          "id": "2611.00515",
+          "title": "AStockArena: Beyond Returns, Can We Entrust Real Capital to the Decisions of Financial Agents?",
+          "blurb": "Large language models (LLMs) are increasingly used in dynamic financial trading, yet real-time trading benchmarks mainly evaluate agents by cumulative returns and risk-adjusted performance."
+        },
+        {
+          "id": "2611.00774",
+          "title": "Decision-Centric Research: A Calibrated Decision Model and Benchmark for Scientific Agents",
+          "blurb": "Scientific agents make consequential choices about evidence, next actions and research strategy, but choices embedded in generated text are difficult to evaluate independently."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 3 篇 Agent Benchmark",
+      "summary": "2026年10月31日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在工具使用（1）、记忆（1）、科学实验（1）、安全（1）。",
+      "highlights": [
+        {
+          "id": "2611.01145",
+          "title": "CivicBench: A Benchmark and Memory Framework for Web-Based Civic Data Analytics",
+          "blurb": "Municipalities publish service requests, geographic boundaries, weather observations, demographic estimates, and operational guidance through independently maintained Web portals."
+        },
+        {
+          "id": "2611.00515",
+          "title": "AStockArena: Beyond Returns, Can We Entrust Real Capital to the Decisions of Financial Agents?",
+          "blurb": "Large language models (LLMs) are increasingly used in dynamic financial trading, yet real-time trading benchmarks mainly evaluate agents by cumulative returns and risk-adjusted performance."
+        },
+        {
+          "id": "2611.00774",
+          "title": "Decision-Centric Research: A Calibrated Decision Model and Benchmark for Scientific Agents",
+          "blurb": "Scientific agents make consequential choices about evidence, next actions and research strategy, but choices embedded in generated text are difficult to evaluate independently."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2611.01145",
+      "title": "CivicBench: A Benchmark and Memory Framework for Web-Based Civic Data Analytics",
+      "abstract": "Municipalities publish service requests, geographic boundaries, weather observations, demographic estimates, and operational guidance through independently maintained Web portals. Civic analysis must combine these sources while preserving their schemas, source links, spatial and temporal scopes, and interpretive limits. Tool-using language agents can perform this integration, but existing task benchmarks rarely test whether a computed claim remains supported by the records used. We present CivicBench, a 400-task benchmark over four cities and two years that materializes civic Web data into frozen bundles for reproducible evaluation. Executable contracts score computation, source linkage, coverage, scope, qualified answers, and refusal when the requested conclusion is not supported. We also introduce Task-State Memory (TSM), which compiles tool observations into typed assertions, reconciles records only within compatible scopes, and retrieves a bounded state organized around unresolved constraints. Across nine completed model pairs, eight yield positive mean-score differences with 95\\% semantic-contract-cluster bootstrap intervals excluding zero; the ninth interval crosses zero. The benchmark and memory framework make the records behind a claim inspectable at the point of decision.",
+      "authors": [
+        "Yangyu Wu",
+        "Siru Zhong",
+        "Haoyuan Liang",
+        "Yuxuan Liang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-31T17:32:54Z",
+      "updated": "2026-10-31T17:32:54Z",
+      "announced_date": "2026-10-31",
+      "first_seen": "2026-10-31",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.01145v1",
+        "pdf": "https://arxiv.org/pdf/2611.01145v1",
+        "html": "https://arxiv.org/html/2611.01145"
+      },
+      "score": 16,
+      "tags": [
+        "tool-use",
+        "memory"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2611.00774",
+      "title": "Decision-Centric Research: A Calibrated Decision Model and Benchmark for Scientific Agents",
+      "abstract": "Scientific agents make consequential choices about evidence, next actions and research strategy, but choices embedded in generated text are difficult to evaluate independently. Decision-Centric Research (DCR) is introduced to make individual choices the common unit of supervision, prediction and evaluation through typed predictions over an explicit Research State. DCR defines 24 decision types, ten of which are instantiated in the Research Decision Benchmark (RD-Bench) of 2,000 rule-generated cases. The Decision-Centric Research Model (DCRM) shares a candidate-token readout across types to produce answers and option probabilities in one forward pass. Under a held-out research-domain split, a 0.6B DCRM (state-aware) achieves 89.4% Top-1 accuracy, compared with 27.8% for DCRM (question-only) trained with the same recipe and 36.4% for DeepSeek-V4.1-Flash. All 30 type-seed comparisons against DCRM (question-only) are significant after Holm correction. After held-out calibration, the resulting prediction sets contain a mean of 1.515 candidates at 97.1% empirical label coverage, reducing mean set size by 57.4% relative to DCRM (question-only) at similar coverage. These results establish a compact state-aware decision layer with accurate typed prediction and an inspectable uncertainty interface.",
+      "authors": [
+        "Shaoning Zeng",
+        "Wen Huang",
+        "Xinzhong Zhu",
+        "Yi Duan",
+        "Jianhang Zhou",
+        "Jianping Gou"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-10-31T09:34:15Z",
+      "updated": "2026-10-31T09:34:15Z",
+      "announced_date": "2026-10-31",
+      "first_seen": "2026-10-31",
+      "comment": "11 pages, 3 figures, 9 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.00774v1",
+        "pdf": "https://arxiv.org/pdf/2611.00774v1",
+        "html": "https://arxiv.org/html/2611.00774"
+      },
+      "score": 8,
+      "tags": [
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2611.00515",
+      "title": "AStockArena: Beyond Returns, Can We Entrust Real Capital to the Decisions of Financial Agents?",
+      "abstract": "Large language models (LLMs) are increasingly used in dynamic financial trading, yet real-time trading benchmarks mainly evaluate agents by cumulative returns and risk-adjusted performance. Such outcome metrics cannot show whether trades are faithfully reported, supported by available evidence, and consistent with account states. We introduce AStockArena, a real-time decision-auditing benchmark for continuous trading in China's A-share market. Under shared market conditions and execution constraints, we evaluate 13 open- and closed-source models over 3,198 sequential decisions. AStockArena reconstructsthe actions actually posted to accounts by aligning reports, trade requests, execution responses, and account states, and audits them with eight checks spanning execution traceability (O), evidence sufficiency (RK), and financial meta-awareness (B), combining record verification with consensus expert annotation. Of 1,070 trading points, 72.99% exhibit at least one audit gap; model-level rates range from52.2% to 91.2%, with evidence gaps most prevalent. Historical trade-filtering replay further shows thatportfolio outcomes are sensitive to these flagged trades. Decision-process auditing thus offers a verifiable complement to return-based evaluation of financial agents.",
+      "authors": [
+        "Zeyu Liu",
+        "Sing Kwong Lai",
+        "Xuanzhi Feng",
+        "HaoYang Shang",
+        "Yang Li",
+        "Zihao Fang",
+        "Xuan Liu"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-10-31T01:08:02Z",
+      "updated": "2026-10-31T01:08:02Z",
+      "announced_date": "2026-10-31",
+      "first_seen": "2026-10-31",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.00515v1",
+        "pdf": "https://arxiv.org/pdf/2611.00515v1",
+        "html": "https://arxiv.org/html/2611.00515"
+      },
+      "score": 8,
+      "tags": [
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    }
+  ]
+}

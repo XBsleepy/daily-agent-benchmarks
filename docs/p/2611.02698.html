@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GeoGuesser Bench: Benchmarking Vision-Language Agents on Interactive Geolocation | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Vision-language model (VLM) agents that act in the open world need two abilities: world knowledge to interpret what they see, and…" />
+    <meta name="keywords" content="Multimodal, Tool use, agent benchmark, LLM agent, arXiv, 2611.02698" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.02698.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="GeoGuesser Bench: Benchmarking Vision-Language Agents on Interactive Geolocation" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Vision-language model (VLM) agents that act in the open world need two abilities: world knowledge to interpret what they see, and…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.02698.html" />
+    <meta property="article:published_time" content="2026-11-02T07:50:57Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="GeoGuesser Bench: Benchmarking Vision-Language Agents on Interactive Geolocation" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Vision-language model (VLM) agents that act in the open world need two abilities: world knowledge to interpret what they see, and…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "GeoGuesser Bench: Benchmarking Vision-Language Agents on Interactive Geolocation",
+  "name": "GeoGuesser Bench: Benchmarking Vision-Language Agents on Interactive Geolocation",
+  "abstract": "Vision-language model (VLM) agents that act in the open world need two abilities: world knowledge to interpret what they see, and exploration to find what they cannot yet see. We study how agents combine the two through interactive visual geolocation. GeoGuesser Bench contains 282 tasks in an offline Street View environment where agents rotate, zoom, and move between real panoramas. Its three task types shift the balance from knowledge to exploration: agents (1) report the coordinates of their starting location, (2) name the enclosing street, city, state, or country, or (3) find, read, and count nearby objects. The coordinate tasks in (1) also include 42 real GeoGuessr World Championship rounds, whose expert guesses provide a human reference. We evaluate 23 VLMs: the best accuracy is 62.5% on place naming and 35.0% on object finding, and the best agent averages 4352.4 GeoGuessr points on the championship rounds, against 4770.3 for the better expert in each round. Beyond these headline numbers, world knowledge and exploration are only weakly correlated across models: agents that localize well do not necessarily explore well. To understand where agents fail, we categorize their errors into vision, navigation, and tool-use failures. Further ablations show that the strongest agents, such as Claude Opus 4.8, still perform well with limited views, while weaker agents degrade; customizing the environment thus adjusts task difficulty. The environment's verifiable rewards and restorable state also support training, and our Planner-Worker-Compressor harness cuts planner tokens by 57-61% by compacting the interaction history. We hope GeoGuesser Bench and its environment serve as a high-quality foundation for simulating real-world exploration at scale.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Huanzhi Mao"
+    },
+    {
+      "@type": "Person",
+      "name": "Yichuan Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Michael Koo"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenyuan Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Huy Doan"
+    },
+    {
+      "@type": "Person",
+      "name": "Jinghan Xia"
+    },
+    {
+      "@type": "Person",
+      "name": "Ziyao Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Joseph E. Gonzalez"
+    }
+  ],
+  "datePublished": "2026-11-02T07:50:57Z",
+  "dateModified": "2026-11-02T07:50:57Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.02698.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.02698.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.02698v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.02698"
+  },
+  "keywords": [
+    "Multimodal",
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multimodal"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.02698v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.02698"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>GeoGuesser Bench: Benchmarking Vision-Language Agents on Interactive Geolocation</h1>
+        <div class="meta">
+          Huanzhi Mao, Yichuan Wang, Michael Koo, Wenyuan Huang, Huy Doan, Jinghan Xia, Ziyao Wang, Joseph E. Gonzalez
+          · 2611.02698
+          · <time datetime="2026-11-02">2026-11-02</time>
+          · Multimodal
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Vision-language model (VLM) agents that act in the open world need two abilities: world knowledge to interpret what they see, and exploration to find what they cannot yet see. We study how agents combine the two through interactive visual geolocation. GeoGuesser Bench contains 282 tasks in an offline Street View environment where agents rotate, zoom, and move between real panoramas. Its three task types shift the balance from knowledge to exploration: agents (1) report the coordinates of their starting location, (2) name the enclosing street, city, state, or country, or (3) find, read, and count nearby objects. The coordinate tasks in (1) also include 42 real GeoGuessr World Championship rounds, whose expert guesses provide a human reference. We evaluate 23 VLMs: the best accuracy is 62.5% on place naming and 35.0% on object finding, and the best agent averages 4352.4 GeoGuessr points on the championship rounds, against 4770.3 for the better expert in each round. Beyond these headline numbers, world knowledge and exploration are only weakly correlated across models: agents that localize well do not necessarily explore well. To understand where agents fail, we categorize their errors into vision, navigation, and tool-use failures. Further ablations show that the strongest agents, such as Claude Opus 4.8, still perform well with limited views, while weaker agents degrade; customizing the environment thus adjusts task difficulty. The environment&#x27;s verifiable rewards and restorable state also support training, and our Planner-Worker-Compressor harness cuts planner tokens by 57-61% by compacting the interaction history. We hope GeoGuesser Bench and its environment serve as a high-quality foundation for simulating real-world exploration at scale.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.02698v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.02698v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.02698" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multimodal benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.02826.html"><strong>RxnMiner: A Multimodal Agent for Structured Reaction Data Extraction from Chemistry Figures</strong></a> <span>2026-11-02</span></li>
+          <li><a href="2611.02472.html"><strong>MAGAR: Multimodal Agents for GUI-Based 3D Mechanical Assembly and Minimal Rework</strong></a> <span>2026-11-02</span></li>
+          <li><a href="2610.41025.html"><strong>ReplayRCA: Measuring Post-hoc Diagnosis and Live Oversight of Agent Failures by Counterfactual Replay</strong></a> <span>2026-10-29</span></li>
+          <li><a href="2610.36484.html"><strong>CogArena: Benchmarking Multimodal Agents on Interactive Behavioral Experiments</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.35293.html"><strong>AgenticCity-Bench: Longitudinal Multimodal Observations of Urban Dynamics with Agentic Reasoning</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.35138.html"><strong>Co-Design Bench: Multimodal Collaborative Coding Evaluation for Agentic Models</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.32332.html"><strong>4DMemory: Benchmarking Long-Horizon Spatiotemporal Memory with Harness-Augmented Agents</strong></a> <span>2026-10-23</span></li>
+          <li><a href="2610.31158.html"><strong>Beyond Watching and Searching: Benchmarking Agents for Video-centered Deep Research Reports</strong></a> <span>2026-10-22</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

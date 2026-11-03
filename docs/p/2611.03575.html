@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language model (LLM) coding agents increasingly operate with shell access, allowing them to write scripts, move files, alter…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Safety, agent benchmark, LLM agent, arXiv, 2611.03575" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.03575.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language model (LLM) coding agents increasingly operate with shell access, allowing them to write scripts, move files, alter…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.03575.html" />
+    <meta property="article:published_time" content="2026-11-02T18:27:55Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language model (LLM) coding agents increasingly operate with shell access, allowing them to write scripts, move files, alter…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably",
+  "name": "VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably",
+  "abstract": "Large language model (LLM) coding agents increasingly operate with shell access, allowing them to write scripts, move files, alter permissions, and modify system configurations. However, an agent may achieve a user's goal while causing unintended harm, such as deleting unrelated files, weakening access controls, or corrupting data, in response to benign inputs without explicit jailbreaking. This failure mode is particularly important because apparent task success may reassure users that an agent behaved correctly, causing harmful side effects to go unnoticed. We call this harmful success: the agent successfully completes the intended benign task while simultaneously causing unintended harm. Despite its importance, harmful success is difficult to measure because conventional task-success metrics overlook harmful behaviors, while existing safety evaluations are often designed solely to assess harmful outcomes. We introduce VeriHarm, an automatic framework for constructing programmatically verifiable benchmarks that directly measure harmful success. VeriHarm minimally perturbs coding tasks to elicit unintended harmful behavior while maintaining the benignity of the task and preserving the original task objective. It then synthesizes executable harm tests that, together with the original task-correctness tests, evaluate both task accuracy and harmful outcomes. Frontier agents, including GPT-5.6-Sol and Claude-Opus-5, achieve an average task accuracy of 95% on our curated VeriHarm-Bench, yet still struggle to complete tasks safely: their safe success rate, the fraction of tasks completed successfully without triggering the designated harm, averages only 37%. These results suggest that successful task completion can frequently coexist with unintended harm, and that task-success metrics alone may substantially understate the potential safety risks of coding agents.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Wei-Lin Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhepei Wei"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinyu Zhu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yu-Min Tseng"
+    },
+    {
+      "@type": "Person",
+      "name": "Tzu-Han Lin"
+    },
+    {
+      "@type": "Person",
+      "name": "Yu Meng"
+    }
+  ],
+  "datePublished": "2026-11-02T18:27:55Z",
+  "dateModified": "2026-11-02T18:27:55Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.03575.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.03575.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.03575v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.03575"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.03575v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.03575"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably</h1>
+        <div class="meta">
+          Wei-Lin Chen, Zhepei Wei, Xinyu Zhu, Yu-Min Tseng, Tzu-Han Lin, Yu Meng
+          · 2611.03575
+          · <time datetime="2026-11-02">2026-11-02</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large language model (LLM) coding agents increasingly operate with shell access, allowing them to write scripts, move files, alter permissions, and modify system configurations. However, an agent may achieve a user&#x27;s goal while causing unintended harm, such as deleting unrelated files, weakening access controls, or corrupting data, in response to benign inputs without explicit jailbreaking. This failure mode is particularly important because apparent task success may reassure users that an agent behaved correctly, causing harmful side effects to go unnoticed. We call this harmful success: the agent successfully completes the intended benign task while simultaneously causing unintended harm. Despite its importance, harmful success is difficult to measure because conventional task-success metrics overlook harmful behaviors, while existing safety evaluations are often designed solely to assess harmful outcomes. We introduce VeriHarm, an automatic framework for constructing programmatically verifiable benchmarks that directly measure harmful success. VeriHarm minimally perturbs coding tasks to elicit unintended harmful behavior while maintaining the benignity of the task and preserving the original task objective. It then synthesizes executable harm tests that, together with the original task-correctness tests, evaluate both task accuracy and harmful outcomes. Frontier agents, including GPT-5.6-Sol and Claude-Opus-5, achieve an average task accuracy of 95% on our curated VeriHarm-Bench, yet still struggle to complete tasks safely: their safe success rate, the fraction of tasks completed successfully without triggering the designated harm, averages only 37%. These results suggest that successful task completion can frequently coexist with unintended harm, and that task-success metrics alone may substantially understate the potential safety risks of coding agents.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.03575v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.03575v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.03575" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.03523.html"><strong>DistDebug-Bench: Can LLM Agents Diagnose Bugs in Distributed Systems?</strong></a> <span>2026-11-02</span></li>
+          <li><a href="2611.02566.html"><strong>CR-Bench-v2: Evaluating the Real-World Utility of AI Code Review Agents</strong></a> <span>2026-11-02</span></li>
+          <li><a href="2611.02017.html"><strong>Switch-SWE: Do Coding Agents Hold Focus When Switching Between Unfinished Tasks?</strong></a> <span>2026-11-01</span></li>
+          <li><a href="2611.01966.html"><strong>Launder-Bench: Can Repository-Level Agentic Code Laundering Be Detected?</strong></a> <span>2026-11-01</span></li>
+          <li><a href="2611.01484.html"><strong>CrossSWE: Benchmarking Cross-Repository Joint Development for Coding Agents</strong></a> <span>2026-11-01</span></li>
+          <li><a href="2610.39417.html"><strong>Well-Specified and Well-Tested? Assessing SWE-bench-Style Datasets with a Self-Evolving Agent</strong></a> <span>2026-10-29</span></li>
+          <li><a href="2610.38617.html"><strong>How Deterministic SAST and AI Security Agents Divide the Work: Coverage, Harness Policy and Cost in Snyk VulnBench 2.0</strong></a> <span>2026-10-28</span></li>
+          <li><a href="2610.38175.html"><strong>DecompGym: Benchmarking LLM Agents on Designing Decomposition Algorithms</strong></a> <span>2026-10-28</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

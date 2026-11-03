@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MAGAR: Multimodal Agents for GUI-Based 3D Mechanical Assembly and Minimal Rework | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: A GUI command can be correct at the interface level yet still produce an incorrect assembly. An agent must identify the relevant…" />
+    <meta name="keywords" content="Multimodal, GUI agents, agent benchmark, LLM agent, arXiv, 2611.02472" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.02472.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MAGAR: Multimodal Agents for GUI-Based 3D Mechanical Assembly and Minimal Rework" />
+    <meta property="og:description" content="Daily Agent Benchmarks: A GUI command can be correct at the interface level yet still produce an incorrect assembly. An agent must identify the relevant…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.02472.html" />
+    <meta property="article:published_time" content="2026-11-02T03:40:49Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MAGAR: Multimodal Agents for GUI-Based 3D Mechanical Assembly and Minimal Rework" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: A GUI command can be correct at the interface level yet still produce an incorrect assembly. An agent must identify the relevant…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MAGAR: Multimodal Agents for GUI-Based 3D Mechanical Assembly and Minimal Rework",
+  "name": "MAGAR: Multimodal Agents for GUI-Based 3D Mechanical Assembly and Minimal Rework",
+  "abstract": "A GUI command can be correct at the interface level yet still produce an incorrect assembly. An agent must identify the relevant components, respect their structural relationships, and determine which parts should move during recovery. We introduce MAGAR-Bench, a benchmark of 4,000 multimodal samples from 26 assembly families that separates Assembly Decision, Atomic Action, and Minimal Rework. For rework, the objective counts distinct moved parts within the validated recovery candidate set for each state, rather than the number of actions. We also introduce MAGAR, a selective correction framework built on a frozen policy obtained by supervised fine-tuning. Its key design matches correction granularity to output dependencies. Structured candidates revise assembly fields and rework scope, while complete action candidates keep native GUI primitives coupled with their parameters. A learned selector retains the original prediction unless a candidate passes a task-specific intervention threshold. On recorded states from held-out assembly families, MAGAR improves Overall, the task-balanced aggregate, from 37.50 to 41.39, with gains on all three tasks. Across 209 interventions, 70 correct an error and 22 introduce one. These results support task-specific correction while highlighting the remaining tradeoff between fixing errors and preserving reliable predictions.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jingxuan Wei"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiahao Fu"
+    },
+    {
+      "@type": "Person",
+      "name": "Fuqiang Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaoming Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuwen Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Kaiwen Wei"
+    },
+    {
+      "@type": "Person",
+      "name": "Ming Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Junnan Zhu"
+    }
+  ],
+  "datePublished": "2026-11-02T03:40:49Z",
+  "dateModified": "2026-11-02T03:40:49Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.02472.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.02472.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.02472v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.02472"
+  },
+  "keywords": [
+    "Multimodal",
+    "GUI agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multimodal"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.02472v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.02472"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MAGAR: Multimodal Agents for GUI-Based 3D Mechanical Assembly and Minimal Rework</h1>
+        <div class="meta">
+          Jingxuan Wei, Jiahao Fu, Fuqiang Wang, Xiaoming Wu, Yuwen Liu, Kaiwen Wei, Ming Yang, Junnan Zhu
+          · 2611.02472
+          · <time datetime="2026-11-02">2026-11-02</time>
+          · Multimodal
+        </div>
+        <div class="themes"><span class="chip">GUI agents</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>A GUI command can be correct at the interface level yet still produce an incorrect assembly. An agent must identify the relevant components, respect their structural relationships, and determine which parts should move during recovery. We introduce MAGAR-Bench, a benchmark of 4,000 multimodal samples from 26 assembly families that separates Assembly Decision, Atomic Action, and Minimal Rework. For rework, the objective counts distinct moved parts within the validated recovery candidate set for each state, rather than the number of actions. We also introduce MAGAR, a selective correction framework built on a frozen policy obtained by supervised fine-tuning. Its key design matches correction granularity to output dependencies. Structured candidates revise assembly fields and rework scope, while complete action candidates keep native GUI primitives coupled with their parameters. A learned selector retains the original prediction unless a candidate passes a task-specific intervention threshold. On recorded states from held-out assembly families, MAGAR improves Overall, the task-balanced aggregate, from 37.50 to 41.39, with gains on all three tasks. Across 209 interventions, 70 correct an error and 22 introduce one. These results support task-specific correction while highlighting the remaining tradeoff between fixing errors and preserving reliable predictions.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.02472v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.02472v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.02472" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multimodal benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.02826.html"><strong>RxnMiner: A Multimodal Agent for Structured Reaction Data Extraction from Chemistry Figures</strong></a> <span>2026-11-02</span></li>
+          <li><a href="2611.02698.html"><strong>GeoGuesser Bench: Benchmarking Vision-Language Agents on Interactive Geolocation</strong></a> <span>2026-11-02</span></li>
+          <li><a href="2610.41025.html"><strong>ReplayRCA: Measuring Post-hoc Diagnosis and Live Oversight of Agent Failures by Counterfactual Replay</strong></a> <span>2026-10-29</span></li>
+          <li><a href="2610.36484.html"><strong>CogArena: Benchmarking Multimodal Agents on Interactive Behavioral Experiments</strong></a> <span>2026-10-27</span></li>
+          <li><a href="2610.35293.html"><strong>AgenticCity-Bench: Longitudinal Multimodal Observations of Urban Dynamics with Agentic Reasoning</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.35138.html"><strong>Co-Design Bench: Multimodal Collaborative Coding Evaluation for Agentic Models</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.32332.html"><strong>4DMemory: Benchmarking Long-Horizon Spatiotemporal Memory with Harness-Augmented Agents</strong></a> <span>2026-10-23</span></li>
+          <li><a href="2610.31158.html"><strong>Beyond Watching and Searching: Benchmarking Agents for Video-centered Deep Research Reports</strong></a> <span>2026-10-22</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>
