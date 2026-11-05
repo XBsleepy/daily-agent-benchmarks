@@ -1,15 +1,33 @@
 {
   "date": "2026-11-03",
-  "count": 6,
+  "count": 11,
   "report": {
     "date": "2026-11-03",
-    "count": 6,
+    "count": 11,
     "themes": [
       {
         "id": "tool-use",
-        "count": 2,
+        "count": 3,
         "en": "Tool use",
         "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
       },
       {
         "id": "multimodal",
@@ -18,68 +36,268 @@
         "zh": "多模态"
       },
       {
-        "id": "planning",
-        "count": 2,
-        "en": "Planning / reasoning",
-        "zh": "规划 / 推理"
+        "id": "web",
+        "count": 1,
+        "en": "Web agents",
+        "zh": "网页智能体"
       },
       {
-        "id": "embodied",
+        "id": "conversation",
         "count": 1,
-        "en": "Embodied / robotics",
-        "zh": "具身 / 机器人"
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
       },
       {
-        "id": "safety",
+        "id": "workplace",
         "count": 1,
-        "en": "Safety",
-        "zh": "安全"
+        "en": "Work / office",
+        "zh": "职场 / 办公"
       }
     ],
     "en": {
-      "headline": "6 new agent benchmarks",
-      "summary": "On November 3, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Tool use (2), Multimodal (2), Planning / reasoning (2), and Embodied / robotics (1).",
+      "headline": "11 new agent benchmarks",
+      "summary": "On November 3, 2026, arXiv listed 11 new agent benchmarks. Work clustered around Tool use (3), Planning / reasoning (3), Coding agents (2), and Safety (2).",
       "highlights": [
+        {
+          "id": "2611.05512",
+          "title": "SlackBench: Benchmarking Agents on Collaborative Projects Grounded in Real Code Repositories",
+          "blurb": "AI Agents are becoming digital coworkers that can browse the web, write code, run experiments, and assist humans over extended horizons."
+        },
+        {
+          "id": "2611.05620",
+          "title": "ViBench 2.0: A Benchmark for Long-Horizon Software Building",
+          "blurb": "On Replit, our agentic engineering platform, users now build entire products without writing code, through successive feature requests to an agent."
+        },
         {
           "id": "2611.04640",
           "title": "TuneBench: Benchmarking AI Agents for Power System Dynamic Model Calibration",
           "blurb": "Large Language Model (LLM)-based agents can automate complex engineering workflows by interacting with tools, interpreting feedback, and making iterative decisions."
-        },
-        {
-          "id": "2611.04459",
-          "title": "$τ$-Rec-Books: A Disclosure-Controlled Benchmark for Requirement Elicitation in Agentic Recommender Systems",
-          "blurb": "While conversational recommendation systems provide a more natural user interface, they face the challenge of progressively discovering a user's needs before they can recommend an item that satisfies them."
-        },
-        {
-          "id": "2611.04813",
-          "title": "AgenticFinBench: Benchmarking Financial Agents on Diverse Tasks from Real-World Requests",
-          "blurb": "Financial agents are becoming an important class of real-world AI systems."
         }
       ]
     },
     "zh": {
-      "headline": "新增 6 篇 Agent Benchmark",
-      "summary": "2026年11月3日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在工具使用（2）、多模态（2）、规划 / 推理（2）、具身 / 机器人（1）。",
+      "headline": "新增 11 篇 Agent Benchmark",
+      "summary": "2026年11月3日，arXiv 新增 11 篇 Agent Benchmark。当日主题集中在工具使用（3）、规划 / 推理（3）、代码智能体（2）、安全（2）。",
       "highlights": [
+        {
+          "id": "2611.05512",
+          "title": "SlackBench: Benchmarking Agents on Collaborative Projects Grounded in Real Code Repositories",
+          "blurb": "AI Agents are becoming digital coworkers that can browse the web, write code, run experiments, and assist humans over extended horizons."
+        },
+        {
+          "id": "2611.05620",
+          "title": "ViBench 2.0: A Benchmark for Long-Horizon Software Building",
+          "blurb": "On Replit, our agentic engineering platform, users now build entire products without writing code, through successive feature requests to an agent."
+        },
         {
           "id": "2611.04640",
           "title": "TuneBench: Benchmarking AI Agents for Power System Dynamic Model Calibration",
           "blurb": "Large Language Model (LLM)-based agents can automate complex engineering workflows by interacting with tools, interpreting feedback, and making iterative decisions."
-        },
-        {
-          "id": "2611.04459",
-          "title": "$τ$-Rec-Books: A Disclosure-Controlled Benchmark for Requirement Elicitation in Agentic Recommender Systems",
-          "blurb": "While conversational recommendation systems provide a more natural user interface, they face the challenge of progressively discovering a user's needs before they can recommend an item that satisfies them."
-        },
-        {
-          "id": "2611.04813",
-          "title": "AgenticFinBench: Benchmarking Financial Agents on Diverse Tasks from Real-World Requests",
-          "blurb": "Financial agents are becoming an important class of real-world AI systems."
         }
       ]
     }
   },
   "papers": [
+    {
+      "id": "2611.05739",
+      "title": "PersonaCodeBench: Evaluating Coding Agents in Persona-driven Human-Interactive Sessions",
+      "abstract": "Coding agents must deliver correct software while respecting users' expertise, preferences, and working conditions. Existing benchmarks increasingly incorporate interaction, yet personalized requirement fulfillment remains underexplored. We introduce PersonaCodeBench, which turns user characteristics into verifiable obligations in persona-driven multi-turn coding sessions. Our persona pool spans roles, technical abilities, interaction preferences, and practical constraints, yielding task-grounded evolved requirements for implementation, permissions, testing, explanation, and delivery. At runtime, a controller governs user simulator responses and requirement disclosure, using online requirement evaluation to provide feedback and advance the interaction. Requirements emerge progressively, with their content, disclosure conditions, and acceptance criteria fixed before evaluation. A completion verifier and a personalization verifier separately assess native correctness and persona fulfillment. Joint pass requires both adherence to the declared budget and compliance with validity conditions. We evaluate all major frontier agents, establish a comprehensive leaderboard, and conduct detailed experimental analyses to validate effectiveness. PersonaCodeBench supports reproducible evaluation of coding agents' ability to meet explicit, personalized user expectations alongside coding objectives.",
+      "authors": [
+        "Haixin Wang",
+        "Jianheng Hou",
+        "Hongyu Shen",
+        "Wenzhe Fan",
+        "Wei-Chieh Huang",
+        "Qianyu Zhu",
+        "Weichen Li",
+        "Taoran Li",
+        "Yuhang Yao",
+        "Ruohan Wang",
+        "Zhejian Peng",
+        "Wanting Jiang",
+        "Yifan Chen",
+        "Shushu Liang",
+        "Haoming Li",
+        "Defu Cao",
+        "Xu Hu",
+        "Siyang Wu",
+        "Chen Yang",
+        "Haodi Hu",
+        "Haichao Zhang",
+        "Cong Wang",
+        "Zhiyuan Yu",
+        "Weizhi Zhang",
+        "Yifan Wang",
+        "Jintao Huang",
+        "Yizhou Sun",
+        "Yijun Wang",
+        "Yuexing Hao",
+        "Xiaomin Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-03T23:27:20Z",
+      "updated": "2026-11-03T23:27:20Z",
+      "announced_date": "2026-11-03",
+      "first_seen": "2026-11-03",
+      "comment": "40 pages, 9 figures",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.05739v1",
+        "pdf": "https://arxiv.org/pdf/2611.05739v1",
+        "html": "https://arxiv.org/html/2611.05739"
+      },
+      "score": 15,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2611.05665",
+      "title": "Construct Validity of Coding Benchmarks for LLM-based Agentic Coding Tools",
+      "abstract": "Software developers increasingly adopt LLM-based agentic coding tools to assist them with development tasks. To provide developers with up-to-date information on these tools' effectiveness, prior work introduced benchmarks that enable comparisons across tools. Despite the widespread adoption of such benchmarks, however, recent work has shown that they suffer from issues threatening their validity. Aims. In this work, we aim to complement prior work by analyzing the construct validity of agentic coding benchmarks. Methodology. We analyze nine benchmarks commonly used to evaluate the effectiveness of agentic coding tools. We identify the constructs that the benchmarks claim to measure, the metrics used to operationalize them, and potential confounders that interfere with the measurement. Results. Our findings show that benchmarks commonly operationalize broad concepts such as coding capability with only a small set of metrics. The reported attributes that might confound the measurements vary between benchmarks, indicating a lack of standardization. Conclusions. We conclude with recommendations to strengthen construct validity in agentic coding benchmarks and encourage further empirical work to better understand the effectiveness of agentic coding tools.",
+      "authors": [
+        "Alexander Berndt",
+        "Paul Ralph",
+        "Thomas Bach",
+        "Sebastian Baltes"
+      ],
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-11-03T21:50:46Z",
+      "updated": "2026-11-03T21:50:46Z",
+      "announced_date": "2026-11-03",
+      "first_seen": "2026-11-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.05665v1",
+        "pdf": "https://arxiv.org/pdf/2611.05665v1",
+        "html": "https://arxiv.org/html/2611.05665"
+      },
+      "score": 11,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2611.05620",
+      "title": "ViBench 2.0: A Benchmark for Long-Horizon Software Building",
+      "abstract": "On Replit, our agentic engineering platform, users now build entire products without writing code, through successive feature requests to an agent. Yet existing coding benchmarks evaluate single, fully specified tasks, and many are near saturation. We introduce ViBench 2.0, a benchmark for long-horizon software building that we use to select our platform's models. Its 17 full-stack web products, modeled on widely used software, grow over 241 feature requests and are judged only when finished, as a user would judge them: a browser agent runs 544 test plans, and a build passes only if every plan does, under a grading protocol validated to keep this strict score reliable. Evaluating nine models, we find a reliability gap: the three strongest pass up to 98% of test plans yet deliver a fully working product in at most 65% of builds, and no open-weight model delivers one. The gap is closing fast: across three releases of one model family, pass@1 on the public products rises from 3% to 53% while the cost per build falls by more than half. We release eight products with the harness and grader, hold out nine, and report lessons from production use.",
+      "authors": [
+        "Daniel Furman",
+        "Preeya Kirani",
+        "Ibrahim Sheikh",
+        "Zhen Li",
+        "Peter Zhong",
+        "Michele Catasta"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-03T21:04:39Z",
+      "updated": "2026-11-03T21:04:39Z",
+      "announced_date": "2026-11-03",
+      "first_seen": "2026-11-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.05620v1",
+        "pdf": "https://arxiv.org/pdf/2611.05620v1",
+        "html": "https://arxiv.org/html/2611.05620"
+      },
+      "score": 21,
+      "tags": [
+        "web"
+      ],
+      "field": "web",
+      "citations": 0
+    },
+    {
+      "id": "2611.05512",
+      "title": "SlackBench: Benchmarking Agents on Collaborative Projects Grounded in Real Code Repositories",
+      "abstract": "AI Agents are becoming digital coworkers that can browse the web, write code, run experiments, and assist humans over extended horizons. Yet existing benchmarks fall short of real knowledge work: many rely on synthetic data or isolated tasks, missing the complex, multi-party dynamics of collaborative projects, where critical information is scattered across conversations, code, and evolving decisions. Even simple workplace questions may require locating relevant channels and direct messages, recovering context from long discussions, inspecting repository state, reconciling stale or conflicting evidence, and synthesizing across sources. We introduce SlackBench, a benchmark for evaluating agents on realistic research and engineering workflows that require joint reasoning over workplace communication and evolving repository state. Grounded in privacy-preserving reenactments of real academic research projects, SlackBench provides reproducible environments with realistic multi-party dialogue, evolving decisions, and corresponding code changes grounded in GitHub repositories and Google Docs. It contains 140 queries spanning heterogeneous-source agentic search, abstention on unanswerable or false-premise questions, goal-directed summarization, and circumstance inference over long conversations. These tasks are not reducible to static corpus question answering: agents must determine which conversations matter, traverse threads, inspect repository state, and synthesize evidence across communication and code artifacts. Across 33 frontier models and agent harnesses, the best system scores around 80% and most agents score below 66%, highlighting substantial headroom for improvement. SlackBench thus provides an extensible framework for evaluating agents in collaborative work environments. The SlackBench dataset is available at https://huggingface.co/datasets/HuanzhiMao/SlackBench .",
+      "authors": [
+        "Mingxuan Li",
+        "Huanzhi Mao",
+        "Ruitao Zheng",
+        "Jarod Stanbury James",
+        "Yunze Li",
+        "Natanya Anderson",
+        "Joseph E. Gonzalez",
+        "Alex Dimakis"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-03T19:10:50Z",
+      "updated": "2026-11-03T19:10:50Z",
+      "announced_date": "2026-11-03",
+      "first_seen": "2026-11-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.05512v1",
+        "pdf": "https://arxiv.org/pdf/2611.05512v1",
+        "html": "https://arxiv.org/html/2611.05512"
+      },
+      "score": 22,
+      "tags": [
+        "coding",
+        "planning",
+        "conversation",
+        "workplace"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2611.05450",
+      "title": "Towards Robust Long-Lived Agents: Benchmarking Experience Lifecycles in Evolving Environments",
+      "abstract": "As agents become more capable, they are moving beyond one-off tasks toward sustained assistance across successive user goals. Such assistance requires agents to discover how unfamiliar environments work, reuse what they learn across tasks, and keep that experience current as environments evolve. Existing benchmarks increasingly study experience reuse and adaptation, but provide limited insight into which parts of accumulated experience agents revise, retain, or lose. To address this gap, we introduce ReScopeBench, a benchmark for the experience lifecycle across 18 interactive environments. It distinguishes structural experience about how an environment is organized and accessed from rule experience about reusable principles and constraints that guide decisions across tasks. To study how experience is acquired, reused, and revised, we propose an experience-first construction approach. It builds task streams around shared experience and introduces silent environmental changes. We evaluate task performance and track changes in saved experience throughout each stream. Across 20 models, we find that retained experience improves task performance, but agents struggle to keep it current as environments change. Even when the required experience is correctly recorded, agents do not always complete tasks successfully. These findings identify selective maintenance and effective use as complementary challenges for long-lived agents.",
+      "authors": [
+        "Shijue Huang",
+        "Hangyu Guo",
+        "Hengheng Zhang",
+        "Guo An",
+        "Zhitao He",
+        "Qi Tian",
+        "Yiren Feng"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-03T17:57:20Z",
+      "updated": "2026-11-03T17:57:20Z",
+      "announced_date": "2026-11-03",
+      "first_seen": "2026-11-03",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.05450v1",
+        "pdf": "https://arxiv.org/pdf/2611.05450v1",
+        "html": "https://arxiv.org/html/2611.05450"
+      },
+      "score": 9,
+      "tags": [
+        "safety"
+      ],
+      "field": "safety",
+      "citations": 0
+    },
     {
       "id": "2611.04894",
       "title": "VisSearch-Bench: Evaluating Long Horizon Visual Search in Multimodal Agents",
@@ -126,7 +344,7 @@
     {
       "id": "2611.04813",
       "title": "AgenticFinBench: Benchmarking Financial Agents on Diverse Tasks from Real-World Requests",
-      "abstract": "Financial agents are becoming an important class of real-world AI systems. Financial tasks vary widely in type and difficulty, and many are open-ended with no ground-truth answers. However, existing benchmarks neither capture this breadth and open-endedness nor separate grounding from correctness. To bridge this gap, we introduce $\\textbf{AgenticFinBench}$, a benchmark of 230 real-world financial tasks spanning 8 categories, 2 languages, and 4 complexity levels. We also propose a reference-free evaluation framework that combines question-specific rubrics with a two-stage claim audit that detects hallucinations, defined as claims absent from the agent's trace and refuted by external evidence. This framework better matches how financial work is assessed in practice. Experiments across 18 agent configurations reveal three key findings: (1) Ignoring hallucinations can overstate agent performance: hallucination auditing lowers the baseline leader's score by 7.58 points and moves it to fourth place. (2) Harness differences explain more variation in evidence grounding than model differences (28.6% vs 8.8%). (3) Quality scores fall from 89.44 on direct retrieval to 79.18 on the most complex tasks. Case studies show that agents struggle to explain how events affect company profits or stock prices, compare financial data on a consistent basis, and justify their conclusions. By releasing AgenticFinBench, we aim to advance financial reasoning, factual verification, and agent design for more reliable responses to diverse real-world financial requests. Our project page is at $\\textbf{https://nashnovaresearch.github.io/AgenticFinBench/}$.",
+      "abstract": "Financial agents are becoming an important class of real-world AI systems. Financial tasks vary widely in type and difficulty, and many are open-ended with no ground-truth answers. However, existing benchmarks neither capture this breadth and open-endedness nor separate grounding from correctness. To bridge this gap, we introduce $\\textbf{AgenticFinBench}$, a benchmark of 230 real-world financial tasks spanning 8 categories, 2 languages, and 4 complexity levels. We also propose a reference-free evaluation framework that combines question-specific rubrics with a two-stage claim audit that detects hallucinations, defined as claims absent from the agent's trace and refuted by external evidence. This framework better matches how financial work is assessed in practice. Experiments across 18 agent configurations reveal three key findings: (1) Ignoring hallucinations can overstate agent performance: hallucination auditing lowers the baseline leader's score by 7.58 points and moves it to fourth place. (2) Harness differences explain more variation in evidence grounding than model differences (28.6% vs 8.8%). (3) Quality scores fall from 89.44 on direct retrieval to 79.18 on the most complex tasks. Case studies show that agents struggle to explain how events affect company profits or stock prices, compare financial data on a consistent basis, and justify their conclusions. By releasing AgenticFinBench, we aim to advance financial reasoning, factual verification, and agent design for more reliable responses to diverse real-world financial requests.",
       "authors": [
         "Shu Zhou",
         "Ziyang He",
@@ -142,14 +360,14 @@
       ],
       "primary_category": "cs.AI",
       "published": "2026-11-03T12:43:10Z",
-      "updated": "2026-11-03T12:43:10Z",
+      "updated": "2026-11-04T03:29:04Z",
       "announced_date": "2026-11-03",
       "first_seen": "2026-11-03",
       "comment": "",
       "doi": "",
       "links": {
-        "abs": "https://arxiv.org/abs/2611.04813v1",
-        "pdf": "https://arxiv.org/pdf/2611.04813v1",
+        "abs": "https://arxiv.org/abs/2611.04813v2",
+        "pdf": "https://arxiv.org/pdf/2611.04813v2",
         "html": "https://arxiv.org/html/2611.04813"
       },
       "score": 14,

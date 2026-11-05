@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PersonaCodeBench: Evaluating Coding Agents in Persona-driven Human-Interactive Sessions | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Coding agents must deliver correct software while respecting users&#x27; expertise, preferences, and working conditions. Existing…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2611.05739" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.05739.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="PersonaCodeBench: Evaluating Coding Agents in Persona-driven Human-Interactive Sessions" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Coding agents must deliver correct software while respecting users&#x27; expertise, preferences, and working conditions. Existing…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.05739.html" />
+    <meta property="article:published_time" content="2026-11-03T23:27:20Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PersonaCodeBench: Evaluating Coding Agents in Persona-driven Human-Interactive Sessions" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Coding agents must deliver correct software while respecting users&#x27; expertise, preferences, and working conditions. Existing…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "PersonaCodeBench: Evaluating Coding Agents in Persona-driven Human-Interactive Sessions",
+  "name": "PersonaCodeBench: Evaluating Coding Agents in Persona-driven Human-Interactive Sessions",
+  "abstract": "Coding agents must deliver correct software while respecting users' expertise, preferences, and working conditions. Existing benchmarks increasingly incorporate interaction, yet personalized requirement fulfillment remains underexplored. We introduce PersonaCodeBench, which turns user characteristics into verifiable obligations in persona-driven multi-turn coding sessions. Our persona pool spans roles, technical abilities, interaction preferences, and practical constraints, yielding task-grounded evolved requirements for implementation, permissions, testing, explanation, and delivery. At runtime, a controller governs user simulator responses and requirement disclosure, using online requirement evaluation to provide feedback and advance the interaction. Requirements emerge progressively, with their content, disclosure conditions, and acceptance criteria fixed before evaluation. A completion verifier and a personalization verifier separately assess native correctness and persona fulfillment. Joint pass requires both adherence to the declared budget and compliance with validity conditions. We evaluate all major frontier agents, establish a comprehensive leaderboard, and conduct detailed experimental analyses to validate effectiveness. PersonaCodeBench supports reproducible evaluation of coding agents' ability to meet explicit, personalized user expectations alongside coding objectives.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Haixin Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jianheng Hou"
+    },
+    {
+      "@type": "Person",
+      "name": "Hongyu Shen"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenzhe Fan"
+    },
+    {
+      "@type": "Person",
+      "name": "Wei-Chieh Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Qianyu Zhu"
+    },
+    {
+      "@type": "Person",
+      "name": "Weichen Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Taoran Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuhang Yao"
+    },
+    {
+      "@type": "Person",
+      "name": "Ruohan Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhejian Peng"
+    },
+    {
+      "@type": "Person",
+      "name": "Wanting Jiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yifan Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Shushu Liang"
+    },
+    {
+      "@type": "Person",
+      "name": "Haoming Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Defu Cao"
+    },
+    {
+      "@type": "Person",
+      "name": "Xu Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Siyang Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Chen Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Haodi Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Haichao Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Cong Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhiyuan Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Weizhi Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yifan Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jintao Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yizhou Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Yijun Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuexing Hao"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaomin Li"
+    }
+  ],
+  "datePublished": "2026-11-03T23:27:20Z",
+  "dateModified": "2026-11-03T23:27:20Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.05739.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.05739.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.05739v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.05739"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.05739v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.05739"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>PersonaCodeBench: Evaluating Coding Agents in Persona-driven Human-Interactive Sessions</h1>
+        <div class="meta">
+          Haixin Wang, Jianheng Hou, Hongyu Shen, Wenzhe Fan, Wei-Chieh Huang, Qianyu Zhu, Weichen Li, Taoran Li, Yuhang Yao, Ruohan Wang, Zhejian Peng, Wanting Jiang, Yifan Chen, Shushu Liang, Haoming Li, Defu Cao, Xu Hu, Siyang Wu, Chen Yang, Haodi Hu, Haichao Zhang, Cong Wang, Zhiyuan Yu, Weizhi Zhang, Yifan Wang, Jintao Huang, Yizhou Sun, Yijun Wang, Yuexing Hao, Xiaomin Li
+          · 2611.05739
+          · <time datetime="2026-11-03">2026-11-03</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Coding agents must deliver correct software while respecting users&#x27; expertise, preferences, and working conditions. Existing benchmarks increasingly incorporate interaction, yet personalized requirement fulfillment remains underexplored. We introduce PersonaCodeBench, which turns user characteristics into verifiable obligations in persona-driven multi-turn coding sessions. Our persona pool spans roles, technical abilities, interaction preferences, and practical constraints, yielding task-grounded evolved requirements for implementation, permissions, testing, explanation, and delivery. At runtime, a controller governs user simulator responses and requirement disclosure, using online requirement evaluation to provide feedback and advance the interaction. Requirements emerge progressively, with their content, disclosure conditions, and acceptance criteria fixed before evaluation. A completion verifier and a personalization verifier separately assess native correctness and persona fulfillment. Joint pass requires both adherence to the declared budget and compliance with validity conditions. We evaluate all major frontier agents, establish a comprehensive leaderboard, and conduct detailed experimental analyses to validate effectiveness. PersonaCodeBench supports reproducible evaluation of coding agents&#x27; ability to meet explicit, personalized user expectations alongside coding objectives.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.05739v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.05739v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.05739" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.06881.html"><strong>VABAR: A Variational Automation Benchmark for Agentic Robotics</strong></a> <span>2026-11-04</span></li>
+          <li><a href="2611.06841.html"><strong>ServerBench: How can your coding agents design specialized LLM serving systems?</strong></a> <span>2026-11-04</span></li>
+          <li><a href="2611.06099.html"><strong>SWEOps-Bench: Evaluating Agents for End-to-End Resolution of Software-Induced Cloud Incidents</strong></a> <span>2026-11-04</span></li>
+          <li><a href="2611.03575.html"><strong>VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably</strong></a> <span>2026-11-02</span></li>
+          <li><a href="2611.03523.html"><strong>DistDebug-Bench: Can LLM Agents Diagnose Bugs in Distributed Systems?</strong></a> <span>2026-11-02</span></li>
+          <li><a href="2611.02566.html"><strong>CR-Bench-v2: Evaluating the Real-World Utility of AI Code Review Agents</strong></a> <span>2026-11-02</span></li>
+          <li><a href="2611.02017.html"><strong>Switch-SWE: Do Coding Agents Hold Focus When Switching Between Unfinished Tasks?</strong></a> <span>2026-11-01</span></li>
+          <li><a href="2611.01966.html"><strong>Launder-Bench: Can Repository-Level Agentic Code Laundering Be Detected?</strong></a> <span>2026-11-01</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>
