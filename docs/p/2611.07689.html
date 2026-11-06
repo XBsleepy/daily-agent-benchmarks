@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MCPHallu: Benchmarking Reasoning, Execution, and Memory Hallucinations in MCP Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language model agents are increasingly deployed through the Model Context Protocol (MCP), which allows them to discover and…" />
+    <meta name="keywords" content="Tool use, Safety, Memory, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2611.07689" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.07689.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MCPHallu: Benchmarking Reasoning, Execution, and Memory Hallucinations in MCP Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language model agents are increasingly deployed through the Model Context Protocol (MCP), which allows them to discover and…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.07689.html" />
+    <meta property="article:published_time" content="2026-11-05T09:14:26Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MCPHallu: Benchmarking Reasoning, Execution, and Memory Hallucinations in MCP Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language model agents are increasingly deployed through the Model Context Protocol (MCP), which allows them to discover and…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MCPHallu: Benchmarking Reasoning, Execution, and Memory Hallucinations in MCP Agents",
+  "name": "MCPHallu: Benchmarking Reasoning, Execution, and Memory Hallucinations in MCP Agents",
+  "abstract": "Large language model agents are increasingly deployed through the Model Context Protocol (MCP), which allows them to discover and invoke tools across multiple servers at runtime. Existing MCP benchmarks primarily measure task completion; where they diagnose failures, they do so after execution rather than building specific reasoning, execution, and memory failure risks into task construction. We introduce MCPHallu, a benchmark for diagnosing hallucination-prone agent failures in MCP environments along three axes: reasoning, execution, and memory. MCPHallu contains 358 tasks across five capability domains and runs on 36 production MCP servers in isolated containers. Each task is designed with a structural trigger that makes one of four subtypes the dominant failure risk: Branch Collapse, Unreachable Goal, Tool Misuse, or Context Forgetting. This design enables subtype-level analysis rather than aggregate task success alone. We evaluate fourteen frontier LLM agents from eight vendors on 5{,}012 trajectories. Current MCP agents remain vulnerable to hallucination-inducing tool environments, achieving an average score of 0.642 on a $[0,1]$ scale (higher is better). Failures concentrate on Unreachable Goal tasks, where the average score drops to 0.458 and 23.2\\% of runs pass, indicating that agents often continue issuing tool calls or claim successful completion rather than recognizing infeasible goals. Subtype rankings diverge sharply: a model's rank shifts by 6.9 of 13 positions on average across subtypes, and Branch Collapse is uncorrelated with Unreachable Goal across models ($r = -0.12$). MCPHallu is released at https://github.com/J1zz/mcp_hallu.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yizhen Jiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Haowei Guo"
+    },
+    {
+      "@type": "Person",
+      "name": "Tianyi Bai"
+    },
+    {
+      "@type": "Person",
+      "name": "Zengjie Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Lu Ma"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhengyang Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Haoze Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Peng Pei"
+    },
+    {
+      "@type": "Person",
+      "name": "Wentao Zhang"
+    }
+  ],
+  "datePublished": "2026-11-05T09:14:26Z",
+  "dateModified": "2026-11-05T09:14:26Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.07689.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.07689.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.07689v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.07689"
+  },
+  "keywords": [
+    "Tool use",
+    "Safety",
+    "Memory",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.07689v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.07689"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MCPHallu: Benchmarking Reasoning, Execution, and Memory Hallucinations in MCP Agents</h1>
+        <div class="meta">
+          Yizhen Jiang, Haowei Guo, Tianyi Bai, Zengjie Hu, Lu Ma, Zhengyang Zhao, Haoze Sun, Peng Pei, Wentao Zhang
+          · 2611.07689
+          · <time datetime="2026-11-05">2026-11-05</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Safety</span><span class="chip">Memory</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large language model agents are increasingly deployed through the Model Context Protocol (MCP), which allows them to discover and invoke tools across multiple servers at runtime. Existing MCP benchmarks primarily measure task completion; where they diagnose failures, they do so after execution rather than building specific reasoning, execution, and memory failure risks into task construction. We introduce MCPHallu, a benchmark for diagnosing hallucination-prone agent failures in MCP environments along three axes: reasoning, execution, and memory. MCPHallu contains 358 tasks across five capability domains and runs on 36 production MCP servers in isolated containers. Each task is designed with a structural trigger that makes one of four subtypes the dominant failure risk: Branch Collapse, Unreachable Goal, Tool Misuse, or Context Forgetting. This design enables subtype-level analysis rather than aggregate task success alone. We evaluate fourteen frontier LLM agents from eight vendors on 5{,}012 trajectories. Current MCP agents remain vulnerable to hallucination-inducing tool environments, achieving an average score of 0.642 on a $[0,1]$ scale (higher is better). Failures concentrate on Unreachable Goal tasks, where the average score drops to 0.458 and 23.2\% of runs pass, indicating that agents often continue issuing tool calls or claim successful completion rather than recognizing infeasible goals. Subtype rankings diverge sharply: a model&#x27;s rank shifts by 6.9 of 13 positions on average across subtypes, and Branch Collapse is uncorrelated with Unreachable Goal across models ($r = -0.12$). MCPHallu is released at https://github.com/J1zz/mcp_hallu.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.07689v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.07689v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.07689" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.07640.html"><strong>Beyond Instruction Override: Benchmarking Indirect Prompt Injection with Task-Tampering Attacks</strong></a> <span>2026-11-05</span></li>
+          <li><a href="2611.07203.html"><strong>τ-bench-LILT: Evaluating Conversational Agents on Realistic Multilingual Tool-Use Tasks</strong></a> <span>2026-11-04</span></li>
+          <li><a href="2611.05665.html"><strong>Construct Validity of Coding Benchmarks for LLM-based Agentic Coding Tools</strong></a> <span>2026-11-03</span></li>
+          <li><a href="2611.04640.html"><strong>TuneBench: Benchmarking AI Agents for Power System Dynamic Model Calibration</strong></a> <span>2026-11-03</span></li>
+          <li><a href="2611.03982.html"><strong>SLATE: A Large-Scale Benchmark for Long-Horizon API Selection in E-commerce Tool Use</strong></a> <span>2026-11-02</span></li>
+          <li><a href="2611.03223.html"><strong>Do Agents Still Follow the Rules? Benchmarking Rule Compliance under Agent Context Compaction</strong></a> <span>2026-11-02</span></li>
+          <li><a href="2611.02849.html"><strong>TLAPS-Bench: Formally Proving Correctness of Real-World System Specifications with TLA+ Proof System</strong></a> <span>2026-11-02</span></li>
+          <li><a href="2611.02530.html"><strong>AMLBench: A Real-Incident Benchmark for Agentic Blockchain Anti-Money Laundering</strong></a> <span>2026-11-02</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>
