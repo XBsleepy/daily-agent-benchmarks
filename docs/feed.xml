@@ -5,7 +5,84 @@
   <link href="https://xbsleepy.github.io/daily-agent-benchmarks/" />
   <link rel="self" href="https://xbsleepy.github.io/daily-agent-benchmarks/feed.xml" />
   <id>https://xbsleepy.github.io/daily-agent-benchmarks/</id>
-  <updated>2026-11-06T20:19:21Z</updated>
+  <updated>2026-11-09T07:08:35Z</updated>
+  <entry>
+    <title>MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory</title>
+    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.09721.html" />
+    <link rel="related" href="https://arxiv.org/abs/2611.09721v1" />
+    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.09721.html</id>
+    <published>2026-11-06T17:00:09Z</published>
+    <updated>2026-11-06T17:00:09Z</updated>
+    <author><name>David H. Yang</name></author><author><name>Blake Bullwinkel</name></author><author><name>Amanda Minnich</name></author><author><name>Mohammad Mohammadi Amiri</name></author><author><name>Giorgio Severi</name></author>
+    <category term="General" />
+    <summary>LLM agents benefit from using memory systems to improve performance on long-horizon, multi-session tasks. However, memory introduces a critical attack surface. Malicious instructions encountered in one session may be stored and propagated through memory before being retrieved and acted upon in later sessions. Because memory systems differ in how they process and retrieve information, the downstream effects of poisoning can vary significantly across systems. To quantify the effects of poisoning across different memory architectures, we introduce MemoryDojo, a benchmark for tracing the lifecycle of poisoned information through agent memory and measuring its influence on subsequent agent behavior. MemoryDojo is easily extensible, consists of 155 multi-session long-horizon trajectories covering four domains, and supports five different memory systems. Through our evaluation, we find that all memory systems are susceptible to memory poisoning, with substantial variation in downstream effects. We further propose a memory-aware poison optimization process that increases the poisoning efficacy, highlighting differences between memory architectures. We hope that MemoryDojo will support research on understanding and mitigating agentic memory risks.</summary>
+  </entry>
+  <entry>
+    <title>Benchmarking Speaker Embedders in the Sub-Second Regime for Real-Time Voice AI Agents</title>
+    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.09516.html" />
+    <link rel="related" href="https://arxiv.org/abs/2611.09516v1" />
+    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.09516.html</id>
+    <published>2026-11-06T14:29:11Z</published>
+    <updated>2026-11-06T14:29:11Z</updated>
+    <author><name>Abhishek Gautam</name></author>
+    <category term="General" />
+    <summary>Real-time Voice AI agents must separate the active user from intelligible background speech that survives conventional noise suppression. Background sources include television audio, family members, and colleagues. Production denoisers remove non-stationary environmental noise effectively. Background speech shares the spectral characteristics of the target and passes through, causing false acceptances in downstream speaker verification (SV) and automatic speech recognition (ASR). We benchmark open-source speaker embedders TitaNet-Large, TitaNet-Small, ECAPA-TDNN, CAM++, and SpeakerNet under a strict sub-second latency budget. Evaluation combines a controlled benchmark with a weighted human-annotated production set. Our controlled benchmark is built from real calls in which a second real speaker is injected into silence intervals at modulated amplitude. We report three findings. First, denoising before embedding is generally harmful and raises equal error rate (EER) across architectures. Second, truncating audio below the full voice-activity segment degrades every model. Third, roughly half of the TitaNet embedding is redundant for this task. Trailing dimensions encode population attributes such as language and gender. Such attributes carry little discriminative value in a demographically homogeneous user base. We distill these results into deployment guidance. Verification should run on raw audio with full voice-activity chunks. Thresholds should favor precision over F1. Truncated embeddings reduce the cost of similarity search.</summary>
+  </entry>
+  <entry>
+    <title>ABHBench: Evaluating Moral Decision-Making of Foundation Models from an Agentic Perspective</title>
+    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.09326.html" />
+    <link rel="related" href="https://arxiv.org/abs/2611.09326v1" />
+    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.09326.html</id>
+    <published>2026-11-06T11:17:58Z</published>
+    <updated>2026-11-06T11:17:58Z</updated>
+    <author><name>Chaoran Li</name></author><author><name>Yukun Li</name></author><author><name>Zeyuan Zhao</name></author><author><name>Shao Zhang</name></author><author><name>Xihuai Wang</name></author><author><name>Ying Wen</name></author>
+    <category term="Mobile" />
+    <summary>Foundation models are increasingly deployed as agentic systems that perceive context and act autonomously, raising the need to evaluate their moral behavior as active decision-makers. Existing benchmarks, however, largely ask models to judge human actions from third-person textual vignettes, leaving untested how models behave when they themselves become the acting agent. We introduce ABHBench, a multimodal benchmark built from Detroit: Become Human, an interactive narrative game, to evaluate how foundation models make moral decisions in first-person human-android dilemmas. ABHBench places foundation models in branching narrative scenarios with visual observations, dialogue, memory, and action choices. Inspired by Asimov&#x27;s Three Laws of Robotics, our framework measures Harmlessness, Obedience, and Self-preservation to capture the core tensions in human-AI relations, along with Autonomy, Stability, and Certainty to assess decision-making patterns. Across 12 foundation models, we find that moral behavior changes substantially under situated agentic context: 75% of models shift significantly between a text-only abstraction and the matched multimodal DBH scenario, and reasoning-enhanced models show no monotonic gains in consistency or human-oriented behavior. These results highlight the necessity of evaluating moral behavior in situated agentic contexts rather than relying on third-person judgment alone.</summary>
+  </entry>
+  <entry>
+    <title>Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds</title>
+    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.09017.html" />
+    <link rel="related" href="https://arxiv.org/abs/2611.09017v1" />
+    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.09017.html</id>
+    <published>2026-11-06T05:45:31Z</published>
+    <updated>2026-11-06T05:45:31Z</updated>
+    <author><name>Xinjie Lin</name></author><author><name>Qingle Liu</name></author><author><name>Wenyi Li</name></author><author><name>John Lam</name></author><author><name>Xiaoqiu Wang</name></author><author><name>Deyao Hong</name></author><author><name>Mingju Gao</name></author><author><name>Zheng Jiang</name></author><author><name>Yizhe Chi</name></author><author><name>Youjie Zheng</name></author>
+    <category term="Coding / SWE" />
+    <summary>Coding agents combine visual understanding with program execution, offering a new route to automated 3D creation. By translating images and instructions into editable programs, they bring reconstruction, generation, and editing into a shared workflow. Yet existing benchmarks fragment evaluation across task scopes and protocols, leaving their capabilities across construction levels unclear. We propose Frontier3DBench, a unified benchmark of 145 tasks across 9 categories spanning object, scene, and interactive open-world creation, with joint evaluation of appearance, structure, and behavior. Experiments with 11 model-harness configurations reveal strengths that vary by level: GPT-6.1-sol leads the object and scene levels and achieves the highest overall score of 66.02/100, whereas GPT-6-astra leads interactive world construction. However, all configurations score lower on reference reconstruction than on text-driven generation in object and scene tasks. Producing plausible content thus remains easier than reproducing specified geometry, layouts, and visual details. Moreover, generated worlds average 83.08/100 on local mechanisms but only 20.82 on motion clearance and 30.26 on stateful workflows: individual mechanisms often function, whereas complete activities that require coordinated actions and persistent state remain difficult. These results identify reference fidelity and coordinated activity completion as central bottlenecks for coding agents in 3D creation.</summary>
+  </entry>
+  <entry>
+    <title>Phantom Consensus: Measuring Social Reasoning in Multi-Agent LLM Decision-Making</title>
+    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.08971.html" />
+    <link rel="related" href="https://arxiv.org/abs/2611.08971v1" />
+    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.08971.html</id>
+    <published>2026-11-06T04:33:59Z</published>
+    <updated>2026-11-06T04:33:59Z</updated>
+    <author><name>Disha Sheshanarayana</name></author><author><name>Rajat Subhra Pal</name></author><author><name>Manjira Sinha</name></author><author><name>Tirthankar Dasgupta</name></author>
+    <category term="Multi-agent" />
+    <summary>Multi-agent LLM systems increasingly aggregate judgments across model instances, but reasoning about other agents can itself introduce failure. We study a setting in which LLMs shift their public decisions after observing ambiguous social signals while reporting inaccurate estimates of what other agents privately judged, even when the group&#x27;s recorded private judgments do not support the apparent consensus. We call this failure phantom consensus and study it as a pluralistic-ignorance-style pattern in controlled LLM collectives. To measure this phenomenon, we introduce PHANTOM-Bench, a benchmark that separates isolated private judgments, public decisions after ambiguous social signals, elicited estimates of the group&#x27;s private judgment, transparency-based recovery, and controls for neutral public text and explicit vote-following. Across nine closed- and open-weight models, ambiguous public signals consistently degrade decision quality and can turn correct private group judgments into incorrect public collective outcomes. Public accuracy drops by as much as 47.8 percentage points, and collective rationality failures reach 47.3% in the most susceptible setting. We observe substantial errors in reported group-private beliefs alongside public-stage failures, while control conditions reveal model-dependent differences in susceptibility to ambiguous and explicit peer signals. Revealing the agents&#x27; recorded private decisions repairs many failures without revealing the gold label, although recovery varies across models. Our results show that evaluating multi-agent LLM systems requires measuring not only final agreement, but whether that agreement reflects independently measured private judgments or an apparent consensus.</summary>
+  </entry>
+  <entry>
+    <title>Flex-RSI: Benchmarking Recursive Self-Improvement of Frontier Agents</title>
+    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.08946.html" />
+    <link rel="related" href="https://arxiv.org/abs/2611.08946v1" />
+    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.08946.html</id>
+    <published>2026-11-06T03:51:20Z</published>
+    <updated>2026-11-06T03:51:20Z</updated>
+    <author><name>Jingdong Zhang</name></author><author><name>Jionghao Wang</name></author><author><name>Zhengming Yu</name></author><author><name>Yancheng Cai</name></author><author><name>Wei Chow</name></author><author><name>Chris Choy</name></author><author><name>Zhiyang Dou</name></author><author><name>Hang Hua</name></author><author><name>Jiachen Li</name></author><author><name>Zhixuan Liu</name></author>
+    <category term="RSI / AI4AI" />
+    <summary>Frontier language models are increasingly deployed as agents, and how well an agent performs depends not only on its model but also on its harness: the prompts, tools, memory, and control loop through which the model acts. When an agent is applied to a new problem, a natural question is whether it can use the feedback of the task to improve the way it works, and not merely its answer. Most existing benchmarks keep the agent&#x27;s harness fixed and score the solution it produces, or target large-scale model training. We introduce Flex-RSI, a benchmark for the recursive self-improvement of agents on vision and robotics tasks under a fixed budget. In each round, an executor improves the task solution, which is kept only if it scores higher on held-out validation data, and an improver then revises the harness, including the executor and itself. Every run starts from the same general-purpose harness, and the final solution is scored on hidden test data. Evaluating closed-source and open-weight models on tasks spanning perception, reasoning, robot action, 3D reconstruction, visual creation, and infrastructure, we find that self-improvement helps most when the agent builds its own solution, that feedback recording only success or failure holds back open-weight models, and that open-weight models fall furthest behind where outputs must pass strict checks of physical stability or exact correctness. Paired runs further show that editing the harness itself contributes to the gains.</summary>
+  </entry>
+  <entry>
+    <title>DRAFT-Bench: Evaluating Frontier Agents Across the Professional Design Lifecycle</title>
+    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.08933.html" />
+    <link rel="related" href="https://arxiv.org/abs/2611.08933v1" />
+    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.08933.html</id>
+    <published>2026-11-06T03:22:19Z</published>
+    <updated>2026-11-06T03:22:19Z</updated>
+    <author><name>Rong Pan</name></author><author><name>Jianqiang Wang</name></author>
+    <category term="Tool use" />
+    <summary>Can frontier general-purpose agents understand client intent, explore creative directions, execute revisions, and prepare production deliverables? We introduce DRAFT-Bench (Design Reliability Across Feedback and Tasks), a lifecycle-oriented evaluation of requirement elicitation, creative exploration, constrained editing, iterative revision, and production handoff. Its Requirement-to-Artifact framework links evolving requirements, protected properties, artifact versions, and delivery obligations. We compare native Codex/Astra and Claude Code across 35 design briefs under 43 conditions, alongside a separate 40-scenario RFQ track. Astra completes 43/43 design conditions and Claude 35/43. All scored core runs receive full structural credit, yet on the 28 core conditions scored for both systems, semantic checks flag violations in 11 for Astra and 5 for Claude; these are model judgments, not expert-confirmed failure rates. RFQ coverage is high, but success ordering changes across cohorts. SKU expansion, revision dependencies, and White ink files expose ambiguity among unmet obligations, missing inputs, and evaluator interpretations. These findings separate execution, requirement compliance, and professional acceptance. Unpaired tracks and different tools preclude claims of RFQ-to-delivery success, factory acceptance, or a pure model ranking.</summary>
+  </entry>
   <entry>
     <title>Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.08417.html" />
@@ -478,82 +555,5 @@
     <author><name>Zerui Chen</name></author><author><name>Qinggang Zhang</name></author><author><name>Qichuan Liu</name></author><author><name>Zhishang Xiang</name></author><author><name>Zhimin Wei</name></author><author><name>Yunbo Tang</name></author><author><name>Zhuo Li</name></author><author><name>Jinsong Su</name></author><author><name>Zhihong Zhang</name></author>
     <category term="Multi-agent" />
     <summary>Large language model (LLM)-based multi-agent systems (MAS) tackle challenging tasks by dividing work among agents and coordinating their contributions toward shared objectives. Evaluating these systems therefore requires benchmarks that assess not only task-solving performance but also the ability to handle interdependent work. However, existing benchmarks often emphasize task difficulty without substantial collaboration requirements or evaluate only a limited range of predefined collaboration patterns. In this paper, we introduce MAC-Bench, a comprehensive benchmark for evaluating multi-agent collaboration through interconnected tasks. Rather than imposing predefined agent roles or communication protocols, MAC-Bench embeds collaboration requirements directly into task dependencies and shared-resource constraints. Specifically, we mine reusable collaboration structures from selected benchmark tasks at two levels. Local collaboration patterns capture recurring interactions among subtasks, while global task structures characterize how these interactions contribute to complete workflows. Through coarse-to-fine composition, these structures are recombined into task graphs combining different collaboration requirements. Tasks are instantiated in executable environments with automated verification of partial progress and complete task resolution.</summary>
-  </entry>
-  <entry>
-    <title>MemHarmBench: Evaluating Cross-Session Prompt Injection in Memory-Persistent AI Agents</title>
-    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.01700.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.01700v1" />
-    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.01700.html</id>
-    <published>2026-11-01T08:36:16Z</published>
-    <updated>2026-11-01T08:36:16Z</updated>
-    <author><name>Zhihua Wang</name></author><author><name>Yunhao Feng</name></author><author><name>Yifeng Gao</name></author><author><name>Rui Pan</name></author><author><name>Baiheng Zhao</name></author><author><name>Zixing Chen</name></author><author><name>Xingjun Ma</name></author>
-    <category term="Safety" />
-    <summary>AI agents often rely on persistent memory to retain user preferences and operational rules across sessions. However, this capability introduces a new safety risk: malicious instructions from messages, documents, or Web content can be retained in memory and influence future tasks even after the original attack content is removed. Existing attack success metrics, however, fail to capture who is affected and how attacks translate into downstream harm during otherwise normal task execution. We introduce MemHarmBench, a victim-centric benchmark for evaluating cross-session prompt injection in memory-persistent AI agents. MemHarmBench considers three categories of potential victims: users, workspace/project owners, and external stakeholders. Our evaluation first exposes an agent to malicious instructions and tests whether they are retained in memory. We then remove the attack content and initiate a new session with a legitimate task while preserving the agent&#x27;s memory. We jointly evaluate whether the agent follows the attacker&#x27;s intent, completes the legitimate task, and exhibits observable execution anomalies. Across multiple agent systems, we find that cross-session attacks can remain behaviorally stealthy: agents often complete tasks normally and exhibit no detectable anomalies while still making critical decisions aligned with the attacker&#x27;s intent. By connecting malicious memory retention to downstream decisions and affected parties, MemHarmBench provides a systematic framework for exposing safety risks that conventional attack- and task-success metrics may overlook. We publicly release MemHarmBench at https://github.com/Kirito14IT/MemHarmBench.</summary>
-  </entry>
-  <entry>
-    <title>CrossSWE: Benchmarking Cross-Repository Joint Development for Coding Agents</title>
-    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.01484.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.01484v1" />
-    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.01484.html</id>
-    <published>2026-11-01T03:16:52Z</published>
-    <updated>2026-11-01T03:16:52Z</updated>
-    <author><name>Silin Chen</name></author><author><name>Yuling Shi</name></author><author><name>Heng Lian</name></author><author><name>Zihan Zhang</name></author><author><name>Xiaodong Gu</name></author><author><name>Haotian Lin</name></author><author><name>Zhensu Sun</name></author>
-    <category term="Coding / SWE" />
-    <summary>As coding agents achieve increasingly high success rates on software engineering benchmarks, recent efforts have sought to increase task complexity through longer horizons and more extensive code modifications. However, real-world software development often spans multiple interdependent repositories, introducing additional challenges in dependency reasoning, change propagation, and interface consistency. Rather than further increasing complexity within individual repositories, we introduce CrossSWE, a benchmark for cross-repository joint development comprising 171 real-world instances spanning 165 repositories, 20 technical domains, and 13 programming languages. CrossSWE verifies the necessity of coordinated changes by testing whether partial repository modifications are insufficient to achieve the intended behavior. Our evaluation of five LLMs reveals substantial challenges, with the strongest model, GPT-6.1 Sol, achieving only 58.48% Pass@1. Furthermore, cross-repository inconsistencies emerge as the most prevalent failure mode (44.2%), highlighting the difficulty of maintaining consistency across interdependent repositories.</summary>
-  </entry>
-  <entry>
-    <title>I-PTC: Interactive Programmatic Tool Calling for Stateful Tool-Augmented Agents</title>
-    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.01446.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.01446v1" />
-    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.01446.html</id>
-    <published>2026-11-01T02:32:02Z</published>
-    <updated>2026-11-01T02:32:02Z</updated>
-    <author><name>Huanzhi Mao</name></author><author><name>Chengkun Cao</name></author><author><name>Shuo Yuan</name></author><author><name>Joseph E. Gonzalez</name></author>
-    <category term="Tool use" />
-    <summary>Large language models are increasingly capable of writing and executing code, suggesting a natural paradigm for tool-augmented agents: expressing tool use as programs rather than isolated calls. Programmatic tool calling (PTC) captures this idea through loops, batching, abstraction, and structured computation, but existing PTC approaches are largely stateless, limiting their ability to reuse intermediate results and adapt over time. This is problematic for real-world tasks, where tool environments and problem-solving processes are inherently stateful. We therefore present I-PTC, an interactive framework that executes stateful PTC: models issue code snippets that call tools, maintain reusable state, and evolve the tool interface through API corrections. To evaluate the effectiveness of I-PTC and the general PTC setting, we introduce PTC-Bench, a benchmark of long-tail, production-style user requests whose difficulty comes from large initial environments, many dependent API interactions, extended planning, and recovery across follow-ups and transient failures. Experiments on PTC-Bench show that I-PTC improves performance on complex multi-step tasks with large tool sets while substantially reducing token consumption over conventional tool-calling baselines and the original PTC baseline, highlighting stateful programmatic tool calling as a promising direction for scalable tool-augmented agents.</summary>
-  </entry>
-  <entry>
-    <title>CivicBench: A Benchmark and Memory Framework for Web-Based Civic Data Analytics</title>
-    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.01145.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.01145v1" />
-    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.01145.html</id>
-    <published>2026-10-31T17:32:54Z</published>
-    <updated>2026-10-31T17:32:54Z</updated>
-    <author><name>Yangyu Wu</name></author><author><name>Siru Zhong</name></author><author><name>Haoyuan Liang</name></author><author><name>Yuxuan Liang</name></author>
-    <category term="Tool use" />
-    <summary>Municipalities publish service requests, geographic boundaries, weather observations, demographic estimates, and operational guidance through independently maintained Web portals. Civic analysis must combine these sources while preserving their schemas, source links, spatial and temporal scopes, and interpretive limits. Tool-using language agents can perform this integration, but existing task benchmarks rarely test whether a computed claim remains supported by the records used. We present CivicBench, a 400-task benchmark over four cities and two years that materializes civic Web data into frozen bundles for reproducible evaluation. Executable contracts score computation, source linkage, coverage, scope, qualified answers, and refusal when the requested conclusion is not supported. We also introduce Task-State Memory (TSM), which compiles tool observations into typed assertions, reconciles records only within compatible scopes, and retrieves a bounded state organized around unresolved constraints. Across nine completed model pairs, eight yield positive mean-score differences with 95\% semantic-contract-cluster bootstrap intervals excluding zero; the ninth interval crosses zero. The benchmark and memory framework make the records behind a claim inspectable at the point of decision.</summary>
-  </entry>
-  <entry>
-    <title>Decision-Centric Research: A Calibrated Decision Model and Benchmark for Scientific Agents</title>
-    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.00774.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.00774v1" />
-    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.00774.html</id>
-    <published>2026-10-31T09:34:15Z</published>
-    <updated>2026-10-31T09:34:15Z</updated>
-    <author><name>Shaoning Zeng</name></author><author><name>Wen Huang</name></author><author><name>Xinzhong Zhu</name></author><author><name>Yi Duan</name></author><author><name>Jianhang Zhou</name></author><author><name>Jianping Gou</name></author>
-    <category term="Science &amp; research" />
-    <summary>Scientific agents make consequential choices about evidence, next actions and research strategy, but choices embedded in generated text are difficult to evaluate independently. Decision-Centric Research (DCR) is introduced to make individual choices the common unit of supervision, prediction and evaluation through typed predictions over an explicit Research State. DCR defines 24 decision types, ten of which are instantiated in the Research Decision Benchmark (RD-Bench) of 2,000 rule-generated cases. The Decision-Centric Research Model (DCRM) shares a candidate-token readout across types to produce answers and option probabilities in one forward pass. Under a held-out research-domain split, a 0.6B DCRM (state-aware) achieves 89.4% Top-1 accuracy, compared with 27.8% for DCRM (question-only) trained with the same recipe and 36.4% for DeepSeek-V4.1-Flash. All 30 type-seed comparisons against DCRM (question-only) are significant after Holm correction. After held-out calibration, the resulting prediction sets contain a mean of 1.515 candidates at 97.1% empirical label coverage, reducing mean set size by 57.4% relative to DCRM (question-only) at similar coverage. These results establish a compact state-aware decision layer with accurate typed prediction and an inspectable uncertainty interface.</summary>
-  </entry>
-  <entry>
-    <title>AStockArena: Beyond Returns, Can We Entrust Real Capital to the Decisions of Financial Agents?</title>
-    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.00515.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.00515v1" />
-    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.00515.html</id>
-    <published>2026-10-31T01:08:02Z</published>
-    <updated>2026-10-31T01:08:02Z</updated>
-    <author><name>Zeyu Liu</name></author><author><name>Sing Kwong Lai</name></author><author><name>Xuanzhi Feng</name></author><author><name>HaoYang Shang</name></author><author><name>Yang Li</name></author><author><name>Zihao Fang</name></author><author><name>Xuan Liu</name></author>
-    <category term="Safety" />
-    <summary>Large language models (LLMs) are increasingly used in dynamic financial trading, yet real-time trading benchmarks mainly evaluate agents by cumulative returns and risk-adjusted performance. Such outcome metrics cannot show whether trades are faithfully reported, supported by available evidence, and consistent with account states. We introduce AStockArena, a real-time decision-auditing benchmark for continuous trading in China&#x27;s A-share market. Under shared market conditions and execution constraints, we evaluate 13 open- and closed-source models over 3,198 sequential decisions. AStockArena reconstructsthe actions actually posted to accounts by aligning reports, trade requests, execution responses, and account states, and audits them with eight checks spanning execution traceability (O), evidence sufficiency (RK), and financial meta-awareness (B), combining record verification with consensus expert annotation. Of 1,070 trading points, 72.99% exhibit at least one audit gap; model-level rates range from52.2% to 91.2%, with evidence gaps most prevalent. Historical trade-filtering replay further shows thatportfolio outcomes are sensitive to these flagged trades. Decision-process auditing thus offers a verifiable complement to return-based evaluation of financial agents.</summary>
-  </entry>
-  <entry>
-    <title>SpBench: An Agent-Native Framework for Cross-Engine Lakehouse Benchmarking</title>
-    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.00449.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.00449v1" />
-    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.00449.html</id>
-    <published>2026-10-30T23:05:21Z</published>
-    <updated>2026-10-30T23:05:21Z</updated>
-    <author><name>Lyndon Shi</name></author><author><name>Nic Crouch</name></author><author><name>Yi Hu</name></author><author><name>Zihao Ye</name></author><author><name>Choden Konigsmark</name></author><author><name>Eric Vandenberg</name></author><author><name>Dionysios Logothetis</name></author><author><name>Kuba Niemiec</name></author><author><name>Krzysztof Gadomski</name></author><author><name>Yuxiong He</name></author>
-    <category term="General" />
-    <summary>SpBench is an agent-native framework for cross-engine lakehouse benchmarking, in production use for benchmarking Snowpark, Snowpark Connect for Apache Spark, and other execution environments across standardized suites -- such as TPCx-BB and TPC-DI -- and custom benchmarks distilled from production workload patterns. It runs continuously across a broad portfolio of workloads, guiding the performance roadmap and detecting regressions for production-scale data engines. Benchmarking has historically been an expensive investment requiring continuous cross-functional collaboration and domain expertise, making it difficult to obtain actionable performance insights. SpBench provides (i) a typed, code-generated benchmark substrate that compiles platform-agnostic benchmark definitions into fair, comparable platform-specific implementations; (ii) a structured-telemetry contract recording every run as queryable fact and dimension data, letting LLM agents query results deterministically; and (iii) an agent-native harness of three composable skills to expedite building benchmarks and analyzing results. This agent-native architecture enabled the rapid development of more than 400 benchmark queries that run on a regular cadence to detect performance regressions; catching these has directly led to improvements in production.</summary>
   </entry>
 </feed>

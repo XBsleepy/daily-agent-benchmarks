@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: LLM agents benefit from using memory systems to improve performance on long-horizon, multi-session tasks. However, memory introduces…" />
+    <meta name="keywords" content="General, Memory, agent benchmark, LLM agent, arXiv, 2611.09721" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.09721.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory" />
+    <meta property="og:description" content="Daily Agent Benchmarks: LLM agents benefit from using memory systems to improve performance on long-horizon, multi-session tasks. However, memory introduces…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.09721.html" />
+    <meta property="article:published_time" content="2026-11-06T17:00:09Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: LLM agents benefit from using memory systems to improve performance on long-horizon, multi-session tasks. However, memory introduces…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory",
+  "name": "MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory",
+  "abstract": "LLM agents benefit from using memory systems to improve performance on long-horizon, multi-session tasks. However, memory introduces a critical attack surface. Malicious instructions encountered in one session may be stored and propagated through memory before being retrieved and acted upon in later sessions. Because memory systems differ in how they process and retrieve information, the downstream effects of poisoning can vary significantly across systems. To quantify the effects of poisoning across different memory architectures, we introduce MemoryDojo, a benchmark for tracing the lifecycle of poisoned information through agent memory and measuring its influence on subsequent agent behavior. MemoryDojo is easily extensible, consists of 155 multi-session long-horizon trajectories covering four domains, and supports five different memory systems. Through our evaluation, we find that all memory systems are susceptible to memory poisoning, with substantial variation in downstream effects. We further propose a memory-aware poison optimization process that increases the poisoning efficacy, highlighting differences between memory architectures. We hope that MemoryDojo will support research on understanding and mitigating agentic memory risks.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David H. Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Blake Bullwinkel"
+    },
+    {
+      "@type": "Person",
+      "name": "Amanda Minnich"
+    },
+    {
+      "@type": "Person",
+      "name": "Mohammad Mohammadi Amiri"
+    },
+    {
+      "@type": "Person",
+      "name": "Giorgio Severi"
+    }
+  ],
+  "datePublished": "2026-11-06T17:00:09Z",
+  "dateModified": "2026-11-06T17:00:09Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.09721.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.09721.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.09721v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.09721"
+  },
+  "keywords": [
+    "General",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.09721v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.09721"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory</h1>
+        <div class="meta">
+          David H. Yang, Blake Bullwinkel, Amanda Minnich, Mohammad Mohammadi Amiri, Giorgio Severi
+          · 2611.09721
+          · <time datetime="2026-11-06">2026-11-06</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>LLM agents benefit from using memory systems to improve performance on long-horizon, multi-session tasks. However, memory introduces a critical attack surface. Malicious instructions encountered in one session may be stored and propagated through memory before being retrieved and acted upon in later sessions. Because memory systems differ in how they process and retrieve information, the downstream effects of poisoning can vary significantly across systems. To quantify the effects of poisoning across different memory architectures, we introduce MemoryDojo, a benchmark for tracing the lifecycle of poisoned information through agent memory and measuring its influence on subsequent agent behavior. MemoryDojo is easily extensible, consists of 155 multi-session long-horizon trajectories covering four domains, and supports five different memory systems. Through our evaluation, we find that all memory systems are susceptible to memory poisoning, with substantial variation in downstream effects. We further propose a memory-aware poison optimization process that increases the poisoning efficacy, highlighting differences between memory architectures. We hope that MemoryDojo will support research on understanding and mitigating agentic memory risks.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.09721v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.09721v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.09721" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.09516.html"><strong>Benchmarking Speaker Embedders in the Sub-Second Regime for Real-Time Voice AI Agents</strong></a> <span>2026-11-06</span></li>
+          <li><a href="2611.06687.html"><strong>LifeVal: Evaluating AI Model Performance on Personalized Agentic Consumer Tasks</strong></a> <span>2026-11-04</span></li>
+          <li><a href="2611.04813.html"><strong>AgenticFinBench: Benchmarking Financial Agents on Diverse Tasks from Real-World Requests</strong></a> <span>2026-11-03</span></li>
+          <li><a href="2611.04459.html"><strong>$τ$-Rec-Books: A Disclosure-Controlled Benchmark for Requirement Elicitation in Agentic Recommender Systems</strong></a> <span>2026-11-03</span></li>
+          <li><a href="2611.04399.html"><strong>Silent Instrument Errors Reorder Agent Leaderboards</strong></a> <span>2026-11-03</span></li>
+          <li><a href="2611.02659.html"><strong>Parametric CAD Bench v3: Evaluating Agentic Parametric CAD Authoring from Text and Engineering Drawings</strong></a> <span>2026-11-02</span></li>
+          <li><a href="2611.00449.html"><strong>SpBench: An Agent-Native Framework for Cross-Engine Lakehouse Benchmarking</strong></a> <span>2026-10-30</span></li>
+          <li><a href="2610.41435.html"><strong>BlindToChange: AI Agents Can Find Changes When Asked But Do They Look When Needed?</strong></a> <span>2026-10-30</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>
