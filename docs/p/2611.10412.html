@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TurnFlow: Benchmarking User-State Reasoning in Multi-Turn LLM Agents via Scene-Guided User Simulation | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large Language Models (LLMs) are increasingly deployed through conversational interfaces, yet strong single-turn performance does not…" />
+    <meta name="keywords" content="General, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2611.10412" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.10412.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="TurnFlow: Benchmarking User-State Reasoning in Multi-Turn LLM Agents via Scene-Guided User Simulation" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large Language Models (LLMs) are increasingly deployed through conversational interfaces, yet strong single-turn performance does not…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.10412.html" />
+    <meta property="article:published_time" content="2026-11-07T02:45:54Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="TurnFlow: Benchmarking User-State Reasoning in Multi-Turn LLM Agents via Scene-Guided User Simulation" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large Language Models (LLMs) are increasingly deployed through conversational interfaces, yet strong single-turn performance does not…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "TurnFlow: Benchmarking User-State Reasoning in Multi-Turn LLM Agents via Scene-Guided User Simulation",
+  "name": "TurnFlow: Benchmarking User-State Reasoning in Multi-Turn LLM Agents via Scene-Guided User Simulation",
+  "abstract": "Large Language Models (LLMs) are increasingly deployed through conversational interfaces, yet strong single-turn performance does not imply reliability in multi-turn settings. Multi-turn assistance requires a model to maintain an evolving representation of user requirements and to reason over it before complying with later requests. Failures can therefore be subtle: models may fail to recognize a changed constraint or hidden conflict, or recognize it without enforcing it in the final response. Existing benchmarks primarily test fully specified prompts, long-context recall, or controlled domain environments, leaving open-domain requirement reconciliation undermeasured. We introduce TurnFlow, an interactive benchmark for evaluating whether models preserve, revise, and act on user requirements across turns. TurnFlow combines adaptive user simulation with verifiable judging, allowing conversations to unfold naturally while keeping hidden requirements and pass/fail criteria controlled. In our evaluation, nine LLMs achieve overall pass rates from 42.86% to 59.59% on 490 scenarios. Performance varies substantially across challenge types: models perform well on Stateful Multi-Constraint Following but remain considerably less reliable on Scope Creep and Goal Shift. These results reveal persistent limitations in reasoning over evolving user requirements across turns.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Zhixun Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Ming Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Anjie Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaoyuan Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Quanyu Dai"
+    },
+    {
+      "@type": "Person",
+      "name": "Huangxun Chen"
+    }
+  ],
+  "datePublished": "2026-11-07T02:45:54Z",
+  "dateModified": "2026-11-07T02:45:54Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.10412.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.10412.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.10412v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.10412"
+  },
+  "keywords": [
+    "General",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.10412v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.10412"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>TurnFlow: Benchmarking User-State Reasoning in Multi-Turn LLM Agents via Scene-Guided User Simulation</h1>
+        <div class="meta">
+          Zhixun Chen, Ming Li, Anjie Liu, Xiaoyuan Zhang, Quanyu Dai, Huangxun Chen
+          · 2611.10412
+          · <time datetime="2026-11-07">2026-11-07</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large Language Models (LLMs) are increasingly deployed through conversational interfaces, yet strong single-turn performance does not imply reliability in multi-turn settings. Multi-turn assistance requires a model to maintain an evolving representation of user requirements and to reason over it before complying with later requests. Failures can therefore be subtle: models may fail to recognize a changed constraint or hidden conflict, or recognize it without enforcing it in the final response. Existing benchmarks primarily test fully specified prompts, long-context recall, or controlled domain environments, leaving open-domain requirement reconciliation undermeasured. We introduce TurnFlow, an interactive benchmark for evaluating whether models preserve, revise, and act on user requirements across turns. TurnFlow combines adaptive user simulation with verifiable judging, allowing conversations to unfold naturally while keeping hidden requirements and pass/fail criteria controlled. In our evaluation, nine LLMs achieve overall pass rates from 42.86% to 59.59% on 490 scenarios. Performance varies substantially across challenge types: models perform well on Stateful Multi-Constraint Following but remain considerably less reliable on Scope Creep and Goal Shift. These results reveal persistent limitations in reasoning over evolving user requirements across turns.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.10412v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.10412v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.10412" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.11306.html"><strong>ScrapeBench: Evaluating Legal Compliance of AI Agents in Website Scraping</strong></a> <span>2026-11-08</span></li>
+          <li><a href="2611.10723.html"><strong>CyberBinGym: Can AI Agents Turn Binary Patches into Real Exploits?</strong></a> <span>2026-11-07</span></li>
+          <li><a href="2611.10629.html"><strong>DFT-Agent Bench: Scaffold Effects and Execution Provenance in Autonomous DFT</strong></a> <span>2026-11-07</span></li>
+          <li><a href="2611.10600.html"><strong>InfoOrgBench: Can Agents Turn Scattered Information into Coherent Hierarchies?</strong></a> <span>2026-11-07</span></li>
+          <li><a href="2611.09721.html"><strong>MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory</strong></a> <span>2026-11-06</span></li>
+          <li><a href="2611.09516.html"><strong>Benchmarking Speaker Embedders in the Sub-Second Regime for Real-Time Voice AI Agents</strong></a> <span>2026-11-06</span></li>
+          <li><a href="2611.06687.html"><strong>LifeVal: Evaluating AI Model Performance on Personalized Agentic Consumer Tasks</strong></a> <span>2026-11-04</span></li>
+          <li><a href="2611.04813.html"><strong>AgenticFinBench: Benchmarking Financial Agents on Diverse Tasks from Real-World Requests</strong></a> <span>2026-11-03</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DFT-Agent Bench: Scaffold Effects and Execution Provenance in Autonomous DFT | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Large language models are increasingly deployed as autonomous agents for first-principles materials simulation. We report empirical…" />
+    <meta name="keywords" content="General, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2611.10629" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.10629.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="DFT-Agent Bench: Scaffold Effects and Execution Provenance in Autonomous DFT" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Large language models are increasingly deployed as autonomous agents for first-principles materials simulation. We report empirical…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.10629.html" />
+    <meta property="article:published_time" content="2026-11-07T10:10:15Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="DFT-Agent Bench: Scaffold Effects and Execution Provenance in Autonomous DFT" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Large language models are increasingly deployed as autonomous agents for first-principles materials simulation. We report empirical…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "DFT-Agent Bench: Scaffold Effects and Execution Provenance in Autonomous DFT",
+  "name": "DFT-Agent Bench: Scaffold Effects and Execution Provenance in Autonomous DFT",
+  "abstract": "Large language models are increasingly deployed as autonomous agents for first-principles materials simulation. We report empirical findings from DFT-Agent Bench, a benchmark of 200+ Quantum ESPRESSO tasks spanning relaxation, electronic structure, equation-of-state, and elastic-tensor pipelines over multiple material tiers. Each task carries a QE-derived ground truth with public-reference cross-checks where available, and a provenance audit checks whether the required QE execution contract was met. Under one execution harness, we compare a near-bare ReAct baseline with a bundled v5.1 scaffold on two models. The complete scaffold improves bands+DOS by +0.08/+0.11 and d-electron vc-relax by +0.17 on both models, while high-scoring relaxation and equation-of-state cells leave little room for improvement. The elastic result is model-dependent (0.18 to 0.40 for deepseek-v4-pro and 0.62 to 0.59 for claude-opus-4-8). A fixed 100-task analysis with retrieval disabled supports the aggregate pattern: the fully frozen DeepSeek comparison gains +0.17, while the Opus comparison gains +0.10 against a historical pool baseline (p < 0.001). The provenance gate catches incomplete or unmarked executions that can receive high rubric scores; it is an execution-contract check, not a test for intentional fraud. These results characterize the evaluated DFT workflows. The anonymous review artifact contains the frozen diagnostic slice, prompts, scorer, and solver revisions: https://anonymous.4open.science/r/231e31re91287h/README.md.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Shijie Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jin Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Weilin Wan"
+    },
+    {
+      "@type": "Person",
+      "name": "Jingtao Han"
+    },
+    {
+      "@type": "Person",
+      "name": "Jia LI"
+    },
+    {
+      "@type": "Person",
+      "name": "Tianqi Deng"
+    }
+  ],
+  "datePublished": "2026-11-07T10:10:15Z",
+  "dateModified": "2026-11-07T10:10:15Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.10629.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.10629.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.10629v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.10629"
+  },
+  "keywords": [
+    "General",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.10629v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.10629"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>DFT-Agent Bench: Scaffold Effects and Execution Provenance in Autonomous DFT</h1>
+        <div class="meta">
+          Shijie Liu, Jin Yang, Weilin Wan, Jingtao Han, Jia LI, Tianqi Deng
+          · 2611.10629
+          · <time datetime="2026-11-07">2026-11-07</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Large language models are increasingly deployed as autonomous agents for first-principles materials simulation. We report empirical findings from DFT-Agent Bench, a benchmark of 200+ Quantum ESPRESSO tasks spanning relaxation, electronic structure, equation-of-state, and elastic-tensor pipelines over multiple material tiers. Each task carries a QE-derived ground truth with public-reference cross-checks where available, and a provenance audit checks whether the required QE execution contract was met. Under one execution harness, we compare a near-bare ReAct baseline with a bundled v5.1 scaffold on two models. The complete scaffold improves bands+DOS by +0.08/+0.11 and d-electron vc-relax by +0.17 on both models, while high-scoring relaxation and equation-of-state cells leave little room for improvement. The elastic result is model-dependent (0.18 to 0.40 for deepseek-v4-pro and 0.62 to 0.59 for claude-opus-4-8). A fixed 100-task analysis with retrieval disabled supports the aggregate pattern: the fully frozen DeepSeek comparison gains +0.17, while the Opus comparison gains +0.10 against a historical pool baseline (p &lt; 0.001). The provenance gate catches incomplete or unmarked executions that can receive high rubric scores; it is an execution-contract check, not a test for intentional fraud. These results characterize the evaluated DFT workflows. The anonymous review artifact contains the frozen diagnostic slice, prompts, scorer, and solver revisions: https://anonymous.4open.science/r/231e31re91287h/README.md.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.10629v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.10629v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.10629" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.11995.html"><strong>Infrathon: Benchmarking Language Agents for Real-World, Long-Horizon AI Infra Optimization</strong></a> <span>2026-11-09</span></li>
+          <li><a href="2611.11690.html"><strong>A Physical Testbed for Self-Driving Laboratories: Comparing Bayesian and Agentic Optimization in a Minimal Closed-Loop Color Formulation Task</strong></a> <span>2026-11-08</span></li>
+          <li><a href="2611.11306.html"><strong>ScrapeBench: Evaluating Legal Compliance of AI Agents in Website Scraping</strong></a> <span>2026-11-08</span></li>
+          <li><a href="2611.10723.html"><strong>CyberBinGym: Can AI Agents Turn Binary Patches into Real Exploits?</strong></a> <span>2026-11-07</span></li>
+          <li><a href="2611.10600.html"><strong>InfoOrgBench: Can Agents Turn Scattered Information into Coherent Hierarchies?</strong></a> <span>2026-11-07</span></li>
+          <li><a href="2611.10412.html"><strong>TurnFlow: Benchmarking User-State Reasoning in Multi-Turn LLM Agents via Scene-Guided User Simulation</strong></a> <span>2026-11-07</span></li>
+          <li><a href="2611.09721.html"><strong>MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory</strong></a> <span>2026-11-06</span></li>
+          <li><a href="2611.09516.html"><strong>Benchmarking Speaker Embedders in the Sub-Second Regime for Real-Time Voice AI Agents</strong></a> <span>2026-11-06</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

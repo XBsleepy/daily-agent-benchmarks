@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Done Is Not Correct: Measuring Silent Failures and Self-Verification Calibration When LLM Agents Take CAD Actions | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: When a large language model (LLM) agent writes parametric CAD code from a natural-language specification, syntactic success decouples…" />
+    <meta name="keywords" content="Tool use, agent benchmark, LLM agent, arXiv, 2611.10063" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.10063.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Done Is Not Correct: Measuring Silent Failures and Self-Verification Calibration When LLM Agents Take CAD Actions" />
+    <meta property="og:description" content="Daily Agent Benchmarks: When a large language model (LLM) agent writes parametric CAD code from a natural-language specification, syntactic success decouples…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.10063.html" />
+    <meta property="article:published_time" content="2026-11-06T09:05:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Done Is Not Correct: Measuring Silent Failures and Self-Verification Calibration When LLM Agents Take CAD Actions" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: When a large language model (LLM) agent writes parametric CAD code from a natural-language specification, syntactic success decouples…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Done Is Not Correct: Measuring Silent Failures and Self-Verification Calibration When LLM Agents Take CAD Acti",
+  "name": "Done Is Not Correct: Measuring Silent Failures and Self-Verification Calibration When LLM Agents Take CAD Actions",
+  "abstract": "When a large language model (LLM) agent writes parametric CAD code from a natural-language specification, syntactic success decouples from semantic correctness. We release a benchmark and harness that measure this gap directly: 13 specification tasks whose every requirement maps to machine-checkable properties of the produced B-rep, measured by the kernel against published tolerance bands, with reference solutions and the full graded attempt corpus. The exact, self-audited oracle isolates two quantities no prior CAD benchmark reports: the silent-failure rate (a valid, renderable solid, an explicit completion claim, and at least one failed semantic check) and completion-claim calibration. Across four models from four vendors (156 attempts per architecture), single-shot agents claimed completion on 98% of attempts and were silently wrong on 14.1%; a tool-use loop that enforces measure-then-claim cut silent failures to 3.2% and raised claim precision from 64% to 96%, and a four-model ablation attributes the change to the claim contract rather than the feedback. A planner-coder-checker pipeline matched that precision at lower coverage with no success gain. Stated confidence was miscalibrated single-shot (ECE 0.32) and became informative under verification for three of four models. Hardening our own oracle flipped 18 of 519 regraded verdicts from pass to fail and none in reverse; a blind expert audit overturned 3 of the 18 silent failures outside the one ambiguously specified task; and fourfold scaling of every tolerance band leaves the contrast intact.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Carson Rodrigues"
+    },
+    {
+      "@type": "Person",
+      "name": "Clive Rodrigues"
+    },
+    {
+      "@type": "Person",
+      "name": "Aravind Reddy G"
+    }
+  ],
+  "datePublished": "2026-11-06T09:05:00Z",
+  "dateModified": "2026-11-06T09:05:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.10063.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.10063.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.10063v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.10063"
+  },
+  "keywords": [
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.10063v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.10063"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Done Is Not Correct: Measuring Silent Failures and Self-Verification Calibration When LLM Agents Take CAD Actions</h1>
+        <div class="meta">
+          Carson Rodrigues, Clive Rodrigues, Aravind Reddy G
+          · 2611.10063
+          · <time datetime="2026-11-06">2026-11-06</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>When a large language model (LLM) agent writes parametric CAD code from a natural-language specification, syntactic success decouples from semantic correctness. We release a benchmark and harness that measure this gap directly: 13 specification tasks whose every requirement maps to machine-checkable properties of the produced B-rep, measured by the kernel against published tolerance bands, with reference solutions and the full graded attempt corpus. The exact, self-audited oracle isolates two quantities no prior CAD benchmark reports: the silent-failure rate (a valid, renderable solid, an explicit completion claim, and at least one failed semantic check) and completion-claim calibration. Across four models from four vendors (156 attempts per architecture), single-shot agents claimed completion on 98% of attempts and were silently wrong on 14.1%; a tool-use loop that enforces measure-then-claim cut silent failures to 3.2% and raised claim precision from 64% to 96%, and a four-model ablation attributes the change to the claim contract rather than the feedback. A planner-coder-checker pipeline matched that precision at lower coverage with no success gain. Stated confidence was miscalibrated single-shot (ECE 0.32) and became informative under verification for three of four models. Hardening our own oracle flipped 18 of 519 regraded verdicts from pass to fail and none in reverse; a blind expert audit overturned 3 of the 18 silent failures outside the one ambiguously specified task; and fourfold scaling of every tolerance band leaves the contrast intact.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.10063v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.10063v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.10063" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.12118.html"><strong>Joi-Bench-Task: Benchmarking Task Coordination in Full-duplex Voice Agents through Interactive Simulation</strong></a> <span>2026-11-09</span></li>
+          <li><a href="2611.11896.html"><strong>LEGION: Benchmarking Language Agents on Sparse-Signal Investigation Under Adversarial Noise</strong></a> <span>2026-11-09</span></li>
+          <li><a href="2611.10602.html"><strong>Agentic discrete-event simulation for manufacturing system design: an open 3D simulator, a benchmark and an industrial case</strong></a> <span>2026-11-07</span></li>
+          <li><a href="2611.08933.html"><strong>DRAFT-Bench: Evaluating Frontier Agents Across the Professional Design Lifecycle</strong></a> <span>2026-11-06</span></li>
+          <li><a href="2611.07689.html"><strong>MCPHallu: Benchmarking Reasoning, Execution, and Memory Hallucinations in MCP Agents</strong></a> <span>2026-11-05</span></li>
+          <li><a href="2611.07640.html"><strong>Beyond Instruction Override: Benchmarking Indirect Prompt Injection with Task-Tampering Attacks</strong></a> <span>2026-11-05</span></li>
+          <li><a href="2611.07203.html"><strong>τ-bench-LILT: Evaluating Conversational Agents on Realistic Multilingual Tool-Use Tasks</strong></a> <span>2026-11-04</span></li>
+          <li><a href="2611.05665.html"><strong>Construct Validity of Coding Benchmarks for LLM-based Agentic Coding Tools</strong></a> <span>2026-11-03</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

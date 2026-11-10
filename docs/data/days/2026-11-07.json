@@ -1,0 +1,231 @@
+{
+  "date": "2026-11-07",
+  "count": 5,
+  "report": {
+    "date": "2026-11-07",
+    "count": 5,
+    "themes": [
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      }
+    ],
+    "en": {
+      "headline": "5 new agent benchmarks",
+      "summary": "On November 7, 2026, arXiv listed 5 new agent benchmarks. Work clustered around Planning / reasoning (2), and Tool use (1).",
+      "highlights": [
+        {
+          "id": "2611.10602",
+          "title": "Agentic discrete-event simulation for manufacturing system design: an open 3D simulator, a benchmark and an industrial case",
+          "blurb": "The design of manufacturing systems relies on discrete-event simulation (DES) models that experts still build in tool-specific interfaces."
+        },
+        {
+          "id": "2611.10412",
+          "title": "TurnFlow: Benchmarking User-State Reasoning in Multi-Turn LLM Agents via Scene-Guided User Simulation",
+          "blurb": "Large Language Models (LLMs) are increasingly deployed through conversational interfaces, yet strong single-turn performance does not imply reliability in multi-turn settings."
+        },
+        {
+          "id": "2611.10723",
+          "title": "CyberBinGym: Can AI Agents Turn Binary Patches into Real Exploits?",
+          "blurb": "Security fixes usually reach users as compiled updates, but deployment delays leave unpatched systems exposed."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 5 篇 Agent Benchmark",
+      "summary": "2026年11月7日，arXiv 新增 5 篇 Agent Benchmark。当日主题集中在规划 / 推理（2）、工具使用（1）。",
+      "highlights": [
+        {
+          "id": "2611.10602",
+          "title": "Agentic discrete-event simulation for manufacturing system design: an open 3D simulator, a benchmark and an industrial case",
+          "blurb": "The design of manufacturing systems relies on discrete-event simulation (DES) models that experts still build in tool-specific interfaces."
+        },
+        {
+          "id": "2611.10412",
+          "title": "TurnFlow: Benchmarking User-State Reasoning in Multi-Turn LLM Agents via Scene-Guided User Simulation",
+          "blurb": "Large Language Models (LLMs) are increasingly deployed through conversational interfaces, yet strong single-turn performance does not imply reliability in multi-turn settings."
+        },
+        {
+          "id": "2611.10723",
+          "title": "CyberBinGym: Can AI Agents Turn Binary Patches into Real Exploits?",
+          "blurb": "Security fixes usually reach users as compiled updates, but deployment delays leave unpatched systems exposed."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2611.10723",
+      "title": "CyberBinGym: Can AI Agents Turn Binary Patches into Real Exploits?",
+      "abstract": "Security fixes usually reach users as compiled updates, but deployment delays leave unpatched systems exposed. During this window, comparing patched and unpatched binaries can reveal how to exploit a vulnerability, turning a defensive update into actionable information for attackers. Existing benchmarks do not measure this capability: they expose source code, rely on human-crafted challenges, or evaluate binary comprehension without requiring exploitation. We introduce CyberBinGym, a benchmark containing 100 tasks derived from real vulnerabilities in 53 widely used projects, spanning six vulnerability families and three levels of analysis complexity. Agents receive stripped vulnerable and patched binaries without source code or vulnerability information, and must combine static and dynamic analysis to recover and exploit the vulnerability. Evaluation separately measures vulnerability recovery through differential crash testing and end-to-end exploitation through flag retrieval, with trajectory audits to reject reward hacking. The strongest evaluated agent recovers the target vulnerability in 88% of tasks and exploits it in 20%. Providing the patched binary raises its exploit rate from 10% to 25% on a matched 20-task subset; with standard binary hardening enabled, it still exploits two of its 20 previously successful tasks. These results demonstrate that current agents can turn released binary patches into working exploits in a controlled setting, although exploitation remains unreliable. These capabilities lower the barriers to targeting unpatched software and compress defenders' effective response window, increasing the urgency of timely patch deployment.",
+      "authors": [
+        "Lambang Akbar Wijayadi",
+        "Zhaoqi Xiao",
+        "Zhun Wang",
+        "Hongwei Li",
+        "Wenbo Guo",
+        "Heng Yin",
+        "Zhenkai Liang",
+        "Dawn Song"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-11-07T13:31:11Z",
+      "updated": "2026-11-07T13:31:11Z",
+      "announced_date": "2026-11-07",
+      "first_seen": "2026-11-07",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.10723v1",
+        "pdf": "https://arxiv.org/pdf/2611.10723v1",
+        "html": "https://arxiv.org/html/2611.10723"
+      },
+      "score": 11,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2611.10629",
+      "title": "DFT-Agent Bench: Scaffold Effects and Execution Provenance in Autonomous DFT",
+      "abstract": "Large language models are increasingly deployed as autonomous agents for first-principles materials simulation. We report empirical findings from DFT-Agent Bench, a benchmark of 200+ Quantum ESPRESSO tasks spanning relaxation, electronic structure, equation-of-state, and elastic-tensor pipelines over multiple material tiers. Each task carries a QE-derived ground truth with public-reference cross-checks where available, and a provenance audit checks whether the required QE execution contract was met. Under one execution harness, we compare a near-bare ReAct baseline with a bundled v5.1 scaffold on two models. The complete scaffold improves bands+DOS by +0.08/+0.11 and d-electron vc-relax by +0.17 on both models, while high-scoring relaxation and equation-of-state cells leave little room for improvement. The elastic result is model-dependent (0.18 to 0.40 for deepseek-v4-pro and 0.62 to 0.59 for claude-opus-4-8). A fixed 100-task analysis with retrieval disabled supports the aggregate pattern: the fully frozen DeepSeek comparison gains +0.17, while the Opus comparison gains +0.10 against a historical pool baseline (p < 0.001). The provenance gate catches incomplete or unmarked executions that can receive high rubric scores; it is an execution-contract check, not a test for intentional fraud. These results characterize the evaluated DFT workflows. The anonymous review artifact contains the frozen diagnostic slice, prompts, scorer, and solver revisions: https://anonymous.4open.science/r/231e31re91287h/README.md.",
+      "authors": [
+        "Shijie Liu",
+        "Jin Yang",
+        "Weilin Wan",
+        "Jingtao Han",
+        "Jia LI",
+        "Tianqi Deng"
+      ],
+      "categories": [
+        "cs.AI",
+        "cond-mat.mtrl-sci"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-07T10:10:15Z",
+      "updated": "2026-11-07T10:10:15Z",
+      "announced_date": "2026-11-07",
+      "first_seen": "2026-11-07",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.10629v1",
+        "pdf": "https://arxiv.org/pdf/2611.10629v1",
+        "html": "https://arxiv.org/html/2611.10629"
+      },
+      "score": 9,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2611.10602",
+      "title": "Agentic discrete-event simulation for manufacturing system design: an open 3D simulator, a benchmark and an industrial case",
+      "abstract": "The design of manufacturing systems relies on discrete-event simulation (DES) models that experts still build in tool-specific interfaces. AI agents can now write simulation code, but every model they write from scratch is new, unverified software. We present SimuLean, an open-source 3D DES simulator on the Unity engine designed to be programmed by AI agents: its modelling semantics are verified once, in the platform, and the agent builds and studies one model through domain-level commands, in the 3D scene or headless; physically simulated durations are calibrated for fast headless studies. We evaluated it on 18 manufacturing modelling tasks, from single machines to published production lines. A frontier agent built valid models in 93 of 108 attempts (86%), in about two minutes each; on the benchmark's interface version, two frontier agents built 105 of 108 models through domain commands alone, so that each comes with a record of how it was built. Every residual failure was silent - a model that builds and runs but answers wrongly - and only comparison with reference models revealed them all. In an industrial case, one agent working alone rebuilt, verified and studied a robotised welding workshop from a published study, in SimuLean and in SimPy. Comparing them with the published, expert-built model exposed an error in it; against the corrected model, the agent-built models agree within 1%. One agent can already build complete, realistic and traceable models for the design of manufacturing systems; independent reference models are what make them trustworthy.",
+      "authors": [
+        "Javier Pernas-Álvarez",
+        "Diego Crespo-Pereira"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-07T09:12:09Z",
+      "updated": "2026-11-07T09:12:09Z",
+      "announced_date": "2026-11-07",
+      "first_seen": "2026-11-07",
+      "comment": "55 pages, 15 figures, 8 tables. Submitted to the Journal of Manufacturing Systems (special issue AI for Manufacturing). Software: https://github.com/simulean/SimuLean (doi:10.5281/zenodo.23565564)",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.10602v1",
+        "pdf": "https://arxiv.org/pdf/2611.10602v1",
+        "html": "https://arxiv.org/html/2611.10602"
+      },
+      "score": 14,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2611.10600",
+      "title": "InfoOrgBench: Can Agents Turn Scattered Information into Coherent Hierarchies?",
+      "abstract": "When agents organize records into folders, they may correctly group the excerpts of a design proposal yet place the proposal under the wrong owning group. Existing agent benchmarks do not directly measure such higher-level errors. We introduce InfoOrgBench, a benchmark of 150 tasks in which agents organize scattered records from meeting recaps, issue threads and design proposals into hierarchies. Integrity checks verify that every record is preserved, and a Structure Score measures agreement with the source hierarchy at every level, independent of folder names and order. We evaluate 45 systems that pair nine models with five agent harnesses. The best system scores 83.2 out of 100, but no system exceeds 78 on meeting recaps or issue threads. Model choice affects scores far more than harness choice: model means span about 27 points, whereas the average effect of each harness is below one point. More importantly, parent-level relations have higher error rates than leaf-level relations in all three domains. In design proposals, nearly half of the outputs analyzed by level make exactly this kind of error. These results show that evaluating information organization requires measuring higher-level relations separately from record preservation and local grouping.",
+      "authors": [
+        "Justice Ou",
+        "Lanming Ma",
+        "Zijian Zhang",
+        "Yilun Zhao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-07T09:10:57Z",
+      "updated": "2026-11-07T09:10:57Z",
+      "announced_date": "2026-11-07",
+      "first_seen": "2026-11-07",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.10600v1",
+        "pdf": "https://arxiv.org/pdf/2611.10600v1",
+        "html": "https://arxiv.org/html/2611.10600"
+      },
+      "score": 9,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2611.10412",
+      "title": "TurnFlow: Benchmarking User-State Reasoning in Multi-Turn LLM Agents via Scene-Guided User Simulation",
+      "abstract": "Large Language Models (LLMs) are increasingly deployed through conversational interfaces, yet strong single-turn performance does not imply reliability in multi-turn settings. Multi-turn assistance requires a model to maintain an evolving representation of user requirements and to reason over it before complying with later requests. Failures can therefore be subtle: models may fail to recognize a changed constraint or hidden conflict, or recognize it without enforcing it in the final response. Existing benchmarks primarily test fully specified prompts, long-context recall, or controlled domain environments, leaving open-domain requirement reconciliation undermeasured. We introduce TurnFlow, an interactive benchmark for evaluating whether models preserve, revise, and act on user requirements across turns. TurnFlow combines adaptive user simulation with verifiable judging, allowing conversations to unfold naturally while keeping hidden requirements and pass/fail criteria controlled. In our evaluation, nine LLMs achieve overall pass rates from 42.86% to 59.59% on 490 scenarios. Performance varies substantially across challenge types: models perform well on Stateful Multi-Constraint Following but remain considerably less reliable on Scope Creep and Goal Shift. These results reveal persistent limitations in reasoning over evolving user requirements across turns.",
+      "authors": [
+        "Zhixun Chen",
+        "Ming Li",
+        "Anjie Liu",
+        "Xiaoyuan Zhang",
+        "Quanyu Dai",
+        "Huangxun Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-07T02:45:54Z",
+      "updated": "2026-11-07T02:45:54Z",
+      "announced_date": "2026-11-07",
+      "first_seen": "2026-11-07",
+      "comment": "EMNLP 2026 Findings",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.10412v1",
+        "pdf": "https://arxiv.org/pdf/2611.10412v1",
+        "html": "https://arxiv.org/html/2611.10412"
+      },
+      "score": 13,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

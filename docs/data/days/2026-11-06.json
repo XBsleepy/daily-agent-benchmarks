@@ -1,9 +1,9 @@
 {
   "date": "2026-11-06",
-  "count": 7,
+  "count": 8,
   "report": {
     "date": "2026-11-06",
-    "count": 7,
+    "count": 8,
     "themes": [
       {
         "id": "memory",
@@ -19,7 +19,7 @@
       },
       {
         "id": "tool-use",
-        "count": 2,
+        "count": 3,
         "en": "Tool use",
         "zh": "工具使用"
       },
@@ -55,8 +55,8 @@
       }
     ],
     "en": {
-      "headline": "7 new agent benchmarks",
-      "summary": "On November 6, 2026, arXiv listed 7 new agent benchmarks. Work clustered around Memory (3), Planning / reasoning (3), Tool use (2), and Dialogue / customer (1).",
+      "headline": "8 new agent benchmarks",
+      "summary": "On November 6, 2026, arXiv listed 8 new agent benchmarks. Work clustered around Memory (3), Planning / reasoning (3), Tool use (3), and Dialogue / customer (1).",
       "highlights": [
         {
           "id": "2611.09721",
@@ -76,8 +76,8 @@
       ]
     },
     "zh": {
-      "headline": "新增 7 篇 Agent Benchmark",
-      "summary": "2026年11月6日，arXiv 新增 7 篇 Agent Benchmark。当日主题集中在记忆（3）、规划 / 推理（3）、工具使用（2）、对话 / 客服（1）。",
+      "headline": "新增 8 篇 Agent Benchmark",
+      "summary": "2026年11月6日，arXiv 新增 8 篇 Agent Benchmark。当日主题集中在记忆（3）、规划 / 推理（3）、工具使用（3）、对话 / 客服（1）。",
       "highlights": [
         {
           "id": "2611.09721",
@@ -198,6 +198,38 @@
         "mobile"
       ],
       "field": "mobile",
+      "citations": 0
+    },
+    {
+      "id": "2611.10063",
+      "title": "Done Is Not Correct: Measuring Silent Failures and Self-Verification Calibration When LLM Agents Take CAD Actions",
+      "abstract": "When a large language model (LLM) agent writes parametric CAD code from a natural-language specification, syntactic success decouples from semantic correctness. We release a benchmark and harness that measure this gap directly: 13 specification tasks whose every requirement maps to machine-checkable properties of the produced B-rep, measured by the kernel against published tolerance bands, with reference solutions and the full graded attempt corpus. The exact, self-audited oracle isolates two quantities no prior CAD benchmark reports: the silent-failure rate (a valid, renderable solid, an explicit completion claim, and at least one failed semantic check) and completion-claim calibration. Across four models from four vendors (156 attempts per architecture), single-shot agents claimed completion on 98% of attempts and were silently wrong on 14.1%; a tool-use loop that enforces measure-then-claim cut silent failures to 3.2% and raised claim precision from 64% to 96%, and a four-model ablation attributes the change to the claim contract rather than the feedback. A planner-coder-checker pipeline matched that precision at lower coverage with no success gain. Stated confidence was miscalibrated single-shot (ECE 0.32) and became informative under verification for three of four models. Hardening our own oracle flipped 18 of 519 regraded verdicts from pass to fail and none in reverse; a blind expert audit overturned 3 of the 18 silent failures outside the one ambiguously specified task; and fourfold scaling of every tolerance band leaves the contrast intact.",
+      "authors": [
+        "Carson Rodrigues",
+        "Clive Rodrigues",
+        "Aravind Reddy G"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.LG"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-11-06T09:05:00Z",
+      "updated": "2026-11-06T09:05:00Z",
+      "announced_date": "2026-11-06",
+      "first_seen": "2026-11-06",
+      "comment": "18 pages, 3 figures, 2 tables. Benchmark, harness, per-attempt records and a 3D viewer: https://github.com/rodriguescarson/cad-silent-failure-bench (archived at https://doi.org/10.5281/zenodo.22312792)",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.10063v1",
+        "pdf": "https://arxiv.org/pdf/2611.10063v1",
+        "html": "https://arxiv.org/html/2611.10063"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
       "citations": 0
     },
     {

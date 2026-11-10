@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CyberBinGym: Can AI Agents Turn Binary Patches into Real Exploits? | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Security fixes usually reach users as compiled updates, but deployment delays leave unpatched systems exposed. During this window…" />
+    <meta name="keywords" content="General, agent benchmark, LLM agent, arXiv, 2611.10723" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.10723.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="CyberBinGym: Can AI Agents Turn Binary Patches into Real Exploits?" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Security fixes usually reach users as compiled updates, but deployment delays leave unpatched systems exposed. During this window…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.10723.html" />
+    <meta property="article:published_time" content="2026-11-07T13:31:11Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="CyberBinGym: Can AI Agents Turn Binary Patches into Real Exploits?" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Security fixes usually reach users as compiled updates, but deployment delays leave unpatched systems exposed. During this window…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "CyberBinGym: Can AI Agents Turn Binary Patches into Real Exploits?",
+  "name": "CyberBinGym: Can AI Agents Turn Binary Patches into Real Exploits?",
+  "abstract": "Security fixes usually reach users as compiled updates, but deployment delays leave unpatched systems exposed. During this window, comparing patched and unpatched binaries can reveal how to exploit a vulnerability, turning a defensive update into actionable information for attackers. Existing benchmarks do not measure this capability: they expose source code, rely on human-crafted challenges, or evaluate binary comprehension without requiring exploitation. We introduce CyberBinGym, a benchmark containing 100 tasks derived from real vulnerabilities in 53 widely used projects, spanning six vulnerability families and three levels of analysis complexity. Agents receive stripped vulnerable and patched binaries without source code or vulnerability information, and must combine static and dynamic analysis to recover and exploit the vulnerability. Evaluation separately measures vulnerability recovery through differential crash testing and end-to-end exploitation through flag retrieval, with trajectory audits to reject reward hacking. The strongest evaluated agent recovers the target vulnerability in 88% of tasks and exploits it in 20%. Providing the patched binary raises its exploit rate from 10% to 25% on a matched 20-task subset; with standard binary hardening enabled, it still exploits two of its 20 previously successful tasks. These results demonstrate that current agents can turn released binary patches into working exploits in a controlled setting, although exploitation remains unreliable. These capabilities lower the barriers to targeting unpatched software and compress defenders' effective response window, increasing the urgency of timely patch deployment.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Lambang Akbar Wijayadi"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhaoqi Xiao"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhun Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Hongwei Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenbo Guo"
+    },
+    {
+      "@type": "Person",
+      "name": "Heng Yin"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhenkai Liang"
+    },
+    {
+      "@type": "Person",
+      "name": "Dawn Song"
+    }
+  ],
+  "datePublished": "2026-11-07T13:31:11Z",
+  "dateModified": "2026-11-07T13:31:11Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.10723.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.10723.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.10723v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.10723"
+  },
+  "keywords": [
+    "General",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.10723v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.10723"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>CyberBinGym: Can AI Agents Turn Binary Patches into Real Exploits?</h1>
+        <div class="meta">
+          Lambang Akbar Wijayadi, Zhaoqi Xiao, Zhun Wang, Hongwei Li, Wenbo Guo, Heng Yin, Zhenkai Liang, Dawn Song
+          · 2611.10723
+          · <time datetime="2026-11-07">2026-11-07</time>
+          · General
+        </div>
+        
+        <div class="abstract" data-collapsed="false">
+          <p>Security fixes usually reach users as compiled updates, but deployment delays leave unpatched systems exposed. During this window, comparing patched and unpatched binaries can reveal how to exploit a vulnerability, turning a defensive update into actionable information for attackers. Existing benchmarks do not measure this capability: they expose source code, rely on human-crafted challenges, or evaluate binary comprehension without requiring exploitation. We introduce CyberBinGym, a benchmark containing 100 tasks derived from real vulnerabilities in 53 widely used projects, spanning six vulnerability families and three levels of analysis complexity. Agents receive stripped vulnerable and patched binaries without source code or vulnerability information, and must combine static and dynamic analysis to recover and exploit the vulnerability. Evaluation separately measures vulnerability recovery through differential crash testing and end-to-end exploitation through flag retrieval, with trajectory audits to reject reward hacking. The strongest evaluated agent recovers the target vulnerability in 88% of tasks and exploits it in 20%. Providing the patched binary raises its exploit rate from 10% to 25% on a matched 20-task subset; with standard binary hardening enabled, it still exploits two of its 20 previously successful tasks. These results demonstrate that current agents can turn released binary patches into working exploits in a controlled setting, although exploitation remains unreliable. These capabilities lower the barriers to targeting unpatched software and compress defenders&#x27; effective response window, increasing the urgency of timely patch deployment.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.10723v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.10723v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.10723" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.11995.html"><strong>Infrathon: Benchmarking Language Agents for Real-World, Long-Horizon AI Infra Optimization</strong></a> <span>2026-11-09</span></li>
+          <li><a href="2611.11690.html"><strong>A Physical Testbed for Self-Driving Laboratories: Comparing Bayesian and Agentic Optimization in a Minimal Closed-Loop Color Formulation Task</strong></a> <span>2026-11-08</span></li>
+          <li><a href="2611.11306.html"><strong>ScrapeBench: Evaluating Legal Compliance of AI Agents in Website Scraping</strong></a> <span>2026-11-08</span></li>
+          <li><a href="2611.10629.html"><strong>DFT-Agent Bench: Scaffold Effects and Execution Provenance in Autonomous DFT</strong></a> <span>2026-11-07</span></li>
+          <li><a href="2611.10600.html"><strong>InfoOrgBench: Can Agents Turn Scattered Information into Coherent Hierarchies?</strong></a> <span>2026-11-07</span></li>
+          <li><a href="2611.10412.html"><strong>TurnFlow: Benchmarking User-State Reasoning in Multi-Turn LLM Agents via Scene-Guided User Simulation</strong></a> <span>2026-11-07</span></li>
+          <li><a href="2611.09721.html"><strong>MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory</strong></a> <span>2026-11-06</span></li>
+          <li><a href="2611.09516.html"><strong>Benchmarking Speaker Embedders in the Sub-Second Regime for Real-Time Voice AI Agents</strong></a> <span>2026-11-06</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>
