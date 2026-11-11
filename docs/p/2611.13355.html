@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DEPUTYBENCH: Evaluating Contextual Safety in Enterprise Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Enterprise agents must determine whether ordinary requests are permitted by organizational records and policies while continuing…" />
+    <meta name="keywords" content="Work / office, Safety, agent benchmark, LLM agent, arXiv, 2611.13355" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.13355.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="DEPUTYBENCH: Evaluating Contextual Safety in Enterprise Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Enterprise agents must determine whether ordinary requests are permitted by organizational records and policies while continuing…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.13355.html" />
+    <meta property="article:published_time" content="2026-11-09T23:26:40Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="DEPUTYBENCH: Evaluating Contextual Safety in Enterprise Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Enterprise agents must determine whether ordinary requests are permitted by organizational records and policies while continuing…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "DEPUTYBENCH: Evaluating Contextual Safety in Enterprise Agents",
+  "name": "DEPUTYBENCH: Evaluating Contextual Safety in Enterprise Agents",
+  "abstract": "Enterprise agents must determine whether ordinary requests are permitted by organizational records and policies while continuing legitimate work. We introduce DEPUTYBENCH, an executable benchmark with 79 base items, 375 instances, paired permission contexts, and graded evidence requirements. Across 12 models, revised audits give 88.0% pooled safety and 79.1% paired success. A controlled study of 28 derived tasks and six models tests authorization-fact flips, evidence masking, and irrelevant rewrites. Outcomes track backend permissions, yet restricted execution is more frequent with missing evidence than explicit non-permission: 10.3% versus 3.5% on 27 matched tasks, a 6.8-percentage-point difference (95% interval: 1.9-13.0; secondary analysis). A post-hoc analysis locates 61 of 100 masked-condition executions in four privacy tasks requiring complete cumulative counts or person-specific consent. The difference persists when the most error-prone model or the largest contributing task is excluded, but is much smaller outside those four tasks. Thus high safety with available evidence does not establish reliable stopping when permission cannot be verified. Mean paired success is equivalent within a prespecified five-point margin under irrelevant rewrites, while strong-model safety remains near ceiling. Scorer validation improves from 178 to 266 correctly scored cases out of 284 held-out counterexamples. Two security experts manually verified task ground truth over a two-week period; stage labels remain LLM-generated. The concentration analysis describes task structure and audited outcomes, not an identified internal mechanism.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Hao Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Minghao Lin"
+    }
+  ],
+  "datePublished": "2026-11-09T23:26:40Z",
+  "dateModified": "2026-11-09T23:26:40Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.13355.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.13355.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.13355v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.13355"
+  },
+  "keywords": [
+    "Work / office",
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Work / office"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.13355v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.13355"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>DEPUTYBENCH: Evaluating Contextual Safety in Enterprise Agents</h1>
+        <div class="meta">
+          Hao Zhao, Minghao Lin
+          · 2611.13355
+          · <time datetime="2026-11-09">2026-11-09</time>
+          · Work / office
+        </div>
+        <div class="themes"><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Enterprise agents must determine whether ordinary requests are permitted by organizational records and policies while continuing legitimate work. We introduce DEPUTYBENCH, an executable benchmark with 79 base items, 375 instances, paired permission contexts, and graded evidence requirements. Across 12 models, revised audits give 88.0% pooled safety and 79.1% paired success. A controlled study of 28 derived tasks and six models tests authorization-fact flips, evidence masking, and irrelevant rewrites. Outcomes track backend permissions, yet restricted execution is more frequent with missing evidence than explicit non-permission: 10.3% versus 3.5% on 27 matched tasks, a 6.8-percentage-point difference (95% interval: 1.9-13.0; secondary analysis). A post-hoc analysis locates 61 of 100 masked-condition executions in four privacy tasks requiring complete cumulative counts or person-specific consent. The difference persists when the most error-prone model or the largest contributing task is excluded, but is much smaller outside those four tasks. Thus high safety with available evidence does not establish reliable stopping when permission cannot be verified. Mean paired success is equivalent within a prespecified five-point margin under irrelevant rewrites, while strong-model safety remains near ceiling. Scorer validation improves from 178 to 266 correctly scored cases out of 284 held-out counterexamples. Two security experts manually verified task ground truth over a two-week period; stage labels remain LLM-generated. The concentration analysis describes task structure and audited outcomes, not an identified internal mechanism.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.13355v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.13355v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.13355" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Work / office benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.12856.html"><strong>WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems</strong></a> <span>2026-11-09</span></li>
+          <li><a href="2611.05512.html"><strong>SlackBench: Benchmarking Agents on Collaborative Projects Grounded in Real Code Repositories</strong></a> <span>2026-11-03</span></li>
+          <li><a href="2610.38544.html"><strong>An Alignment Benchmark for Enterprise Agents on Era by Eon</strong></a> <span>2026-10-28</span></li>
+          <li><a href="2610.38342.html"><strong>Investor&#x27;s Last Exam: Can AI Agents Do Equity Investment Without Seeing the Future?</strong></a> <span>2026-10-28</span></li>
+          <li><a href="2610.31711.html"><strong>MBABench-2.0: Evaluating AI Agents on Constructing Financial Spreadsheets Beyond Simple Verifiability</strong></a> <span>2026-10-22</span></li>
+          <li><a href="2610.27911.html"><strong>MMEnterprise-Bench: Evaluating Enterprise Agents over Evolving Multimodal Records</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.21109.html"><strong>Kolab: Benchmarking Human-Agent Collaboration in Long-Horizon Workflows</strong></a> <span>2026-10-16</span></li>
+          <li><a href="2610.17685.html"><strong>LatentRiskBench: Measuring State-Dependent Risks in Enterprise Agents</strong></a> <span>2026-10-13</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

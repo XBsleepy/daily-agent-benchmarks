@@ -1,15 +1,33 @@
 {
   "date": "2026-11-09",
-  "count": 6,
+  "count": 10,
   "report": {
     "date": "2026-11-09",
-    "count": 6,
+    "count": 10,
     "themes": [
       {
         "id": "tool-use",
-        "count": 3,
+        "count": 4,
         "en": "Tool use",
         "zh": "工具使用"
+      },
+      {
+        "id": "coding",
+        "count": 3,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
       },
       {
         "id": "multi-agent",
@@ -18,22 +36,10 @@
         "zh": "多智能体"
       },
       {
-        "id": "planning",
-        "count": 2,
-        "en": "Planning / reasoning",
-        "zh": "规划 / 推理"
-      },
-      {
         "id": "science",
         "count": 2,
         "en": "Science lab",
         "zh": "科学实验"
-      },
-      {
-        "id": "coding",
-        "count": 1,
-        "en": "Coding agents",
-        "zh": "代码智能体"
       },
       {
         "id": "research",
@@ -46,17 +52,11 @@
         "count": 1,
         "en": "Multimodal",
         "zh": "多模态"
-      },
-      {
-        "id": "safety",
-        "count": 1,
-        "en": "Safety",
-        "zh": "安全"
       }
     ],
     "en": {
-      "headline": "6 new agent benchmarks",
-      "summary": "On November 9, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Tool use (3), Multi-agent (2), Planning / reasoning (2), and Science lab (2).",
+      "headline": "10 new agent benchmarks",
+      "summary": "On November 9, 2026, arXiv listed 10 new agent benchmarks. Work clustered around Tool use (4), Coding agents (3), Planning / reasoning (3), and Safety (2).",
       "highlights": [
         {
           "id": "2611.12856",
@@ -76,8 +76,8 @@
       ]
     },
     "zh": {
-      "headline": "新增 6 篇 Agent Benchmark",
-      "summary": "2026年11月9日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在工具使用（3）、多智能体（2）、规划 / 推理（2）、科学实验（2）。",
+      "headline": "新增 10 篇 Agent Benchmark",
+      "summary": "2026年11月9日，arXiv 新增 10 篇 Agent Benchmark。当日主题集中在工具使用（4）、代码智能体（3）、规划 / 推理（3）、安全（2）。",
       "highlights": [
         {
           "id": "2611.12856",
@@ -98,6 +98,111 @@
     }
   },
   "papers": [
+    {
+      "id": "2611.13355",
+      "title": "DEPUTYBENCH: Evaluating Contextual Safety in Enterprise Agents",
+      "abstract": "Enterprise agents must determine whether ordinary requests are permitted by organizational records and policies while continuing legitimate work. We introduce DEPUTYBENCH, an executable benchmark with 79 base items, 375 instances, paired permission contexts, and graded evidence requirements. Across 12 models, revised audits give 88.0% pooled safety and 79.1% paired success. A controlled study of 28 derived tasks and six models tests authorization-fact flips, evidence masking, and irrelevant rewrites. Outcomes track backend permissions, yet restricted execution is more frequent with missing evidence than explicit non-permission: 10.3% versus 3.5% on 27 matched tasks, a 6.8-percentage-point difference (95% interval: 1.9-13.0; secondary analysis). A post-hoc analysis locates 61 of 100 masked-condition executions in four privacy tasks requiring complete cumulative counts or person-specific consent. The difference persists when the most error-prone model or the largest contributing task is excluded, but is much smaller outside those four tasks. Thus high safety with available evidence does not establish reliable stopping when permission cannot be verified. Mean paired success is equivalent within a prespecified five-point margin under irrelevant rewrites, while strong-model safety remains near ceiling. Scorer validation improves from 178 to 266 correctly scored cases out of 284 held-out counterexamples. Two security experts manually verified task ground truth over a two-week period; stage labels remain LLM-generated. The concentration analysis describes task structure and audited outcomes, not an identified internal mechanism.",
+      "authors": [
+        "Hao Zhao",
+        "Minghao Lin"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.LG"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-11-09T23:26:40Z",
+      "updated": "2026-11-09T23:26:40Z",
+      "announced_date": "2026-11-09",
+      "first_seen": "2026-11-09",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.13355v1",
+        "pdf": "https://arxiv.org/pdf/2611.13355v1",
+        "html": "https://arxiv.org/html/2611.13355"
+      },
+      "score": 7,
+      "tags": [
+        "safety"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2611.13246",
+      "title": "ExpertCrowd-SWE: Measuring Frontier Coding Agents on Expert-Authored Engineering Tasks in Unfamiliar Codebases",
+      "abstract": "ExpertCrowd-SWE (EC-SWE) is a benchmark of 100 expert-authored, multi-file software engineering tasks for evaluating autonomous coding agents in large, unfamiliar codebases. Each task is a change request written by a practising engineer against a pinned commit of a real repository, paired with a sealed reference solution and a task-specific grader whose weighted, mostly executable criteria award partial credit; must-pass blockers and pass/fail gates encode what a maintainer would refuse to merge. The tasks span 87 open-source projects and 11 languages. The median ticket is 148 words, while the median reference solution changes 471 lines. Every task image is calibrated before release so that the reference solution scores 1.0 and both the untouched repository and an inert change score 0; nearly half of the tasks also ship alternative, lazy and adversarial control patches that the grader must classify correctly. The final 100 tasks were selected for difficulty against current frontier models. We evaluate seven frontier models, five runs each (3,495 scored runs), in a single platform harness that gives each model its provider-native tool interface. Claude Opus 5.5 (67.3%) and GPT-6 Astra (63.7%) lead without a statistically significant gap, followed by Claude Fable 5.1 (46.5%), Gemini 3.8 Flash (40.0%), and a statistically indistinguishable group of Qwen 3.8 Max, DeepSeek V4.1 Flash and Grok 4.6 (32-34%). No task is fully solved by every model, and on 80 tasks no model earns full credit on all five runs. Scores span 35 points. Depending on the model, agents take a median of 33 to 166 steps per run, with little relation to score. We release 24 tasks with their environments, graders and results, and hold out 76 to limit contamination.",
+      "authors": [
+        "Josip Vrdoljak",
+        "Akash Singh",
+        "Bas Steunebrink",
+        "Alex Yarotsky",
+        "John Lorenzo",
+        "Achille Nicoletti",
+        "Sam Pigott"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-09T21:20:57Z",
+      "updated": "2026-11-09T21:20:57Z",
+      "announced_date": "2026-11-09",
+      "first_seen": "2026-11-09",
+      "comment": "17 pages, 5 figures, 6 tables. Dataset: https://huggingface.co/datasets/ExpertCrowd/ec-swe ; leaderboard: https://www.toptal.com/expertcrowd/benchmarks/expertcrowd-swe-benchmark",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.13246v1",
+        "pdf": "https://arxiv.org/pdf/2611.13246v1",
+        "html": "https://arxiv.org/html/2611.13246"
+      },
+      "score": 10,
+      "tags": [
+        "coding",
+        "tool-use"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2611.13183",
+      "title": "AgentScript-Eval: Benchmarking LLMs and Agents for Code Generation in an Enterprise DSL",
+      "abstract": "Domain-specific languages (DSLs) are widely used in enterprise software, giving a compact interface to complex tasks, from data access to infrastructure automation. Platforms increasingly extend them to agents, where a developer declares the topics, permitted actions, and guardrails of an agent rather than writing general-purpose code. Large language models (LLMs) write general-purpose code well, but that ability has been measured almost entirely on languages abundant in public pretraining data, and enterprise DSLs are neither abundant nor public. We introduce AgentScript-Eval, an execution-graded benchmark of 100 real tasks for AgentScript, the declarative DSL that Salesforce uses in Agentforce to build conversational agents. Tasks span authoring an agent from a specification, debugging a broken definition, and optimizing a working one. Evaluating five models zero-shot, we find that the regime is hard: the best model reaches only 25.0% pass@3, and every model scores 0% on authoring from scratch. We further find that model scale and price are weak predictors of success -- a 31B open-weight model attains the highest compilation rate of any model tested (48.0%) and matches the strongest frontier model on partial-credit accuracy at the lowest token cost. Adding an agentic compile-and-edit loop is the single largest lever, roughly doubling partial-credit accuracy. Beyond that gain, the wording of domain guidance matters more than its packaging. The same skill pack scores 28% as plain documentation but only 14% as a live plugin. Rewriting one skill inside that plugin then raises it to 37%, our best result, with catalog and tooling untouched. Larger models did not reliably outperform smaller ones; what mattered was the harness surrounding the model and the guidance supplied to it.",
+      "authors": [
+        "Dipin Khati",
+        "Shubham Mehrotra",
+        "Bin Bi",
+        "Zhou Yu",
+        "Denys Poshyvanyk",
+        "James Zhu",
+        "Sitaram Asur",
+        "Phil L. Mui"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-11-09T20:04:32Z",
+      "updated": "2026-11-09T20:04:32Z",
+      "announced_date": "2026-11-09",
+      "first_seen": "2026-11-09",
+      "comment": "Accepted to 40th Conference on Neural Information Processing Systems (NeurIPS 2026). Workshop: 2nd Workshop on Agentic AI Benchmarks and Applications for Enterprise Tasks (AABA4ET), NeurIPS 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.13183v1",
+        "pdf": "https://arxiv.org/pdf/2611.13183v1",
+        "html": "https://arxiv.org/html/2611.13183"
+      },
+      "score": 10,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
     {
       "id": "2611.12856",
       "title": "WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems",
@@ -301,6 +406,45 @@
         "planning"
       ],
       "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2611.13015",
+      "title": "From Questions to Decisions: Benchmarking How LLM Agents Acquire Decision-Relevant Information from Human Beings",
+      "abstract": "LLM agents are increasingly asked to make plans for people, such as scheduling drivers or assigning nurses. However, people's requests are often incomplete, and the supporting information for decision-making may be outdated, requiring agents to ask for clarification. Existing benchmarks typically provide fully specified problems or rely on uncalibrated LLM-simulated users, leaving this ability insufficiently tested. We introduce Ask2Decide, a benchmark of 43 planning tasks that evaluates whether agents ask for missing information that matters for their decisions. An operator holds facts absent from the agent's request and records, and optimization solvers determine which facts change the optimal plan. We also include similarly worded facts that leave the optimal plan unchanged to test whether agents distinguish useful information from irrelevant details. We collect 79 interaction sessions from 19 participants and find that, after an incorrect plan, human replies omit the correcting fact far more often than replies from an uncalibrated simulated user (43% versus 7%). Using these interactions, we calibrate a simulated operator that more closely matches human reply patterns. Evaluating four frontier LLMs, we find that their initial plans are infeasible on 58-98% of tasks when information is missing, compared with 5-28% when all facts are provided upfront. Agents uncover facts that change the optimal plan only slightly more often than facts that leave it unchanged (39-52% versus 32-41%). These results show that obtaining decision-relevant information through interaction remains a major bottleneck for LLM planning. This is ongoing work and will be updated. The date of this version is shown on the first page.",
+      "authors": [
+        "Yuhan Tang",
+        "Ke Fan",
+        "Xinkai Zou",
+        "Baichuan Mo",
+        "Kangxin Cui",
+        "Ao Qu",
+        "Ou Zheng",
+        "Jiangbo Yu",
+        "Haris N. Koutsopoulos",
+        "Jinhua Zhao",
+        "Yuan Zhou"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-09T04:22:15Z",
+      "updated": "2026-11-09T04:22:15Z",
+      "announced_date": "2026-11-09",
+      "first_seen": "2026-11-09",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.13015v1",
+        "pdf": "https://arxiv.org/pdf/2611.13015v1",
+        "html": "https://arxiv.org/html/2611.13015"
+      },
+      "score": 14,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
       "citations": 0
     },
     {

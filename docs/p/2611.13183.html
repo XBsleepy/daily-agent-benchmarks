@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AgentScript-Eval: Benchmarking LLMs and Agents for Code Generation in an Enterprise DSL | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Domain-specific languages (DSLs) are widely used in enterprise software, giving a compact interface to complex tasks, from data…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2611.13183" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.13183.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AgentScript-Eval: Benchmarking LLMs and Agents for Code Generation in an Enterprise DSL" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Domain-specific languages (DSLs) are widely used in enterprise software, giving a compact interface to complex tasks, from data…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.13183.html" />
+    <meta property="article:published_time" content="2026-11-09T20:04:32Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AgentScript-Eval: Benchmarking LLMs and Agents for Code Generation in an Enterprise DSL" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Domain-specific languages (DSLs) are widely used in enterprise software, giving a compact interface to complex tasks, from data…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AgentScript-Eval: Benchmarking LLMs and Agents for Code Generation in an Enterprise DSL",
+  "name": "AgentScript-Eval: Benchmarking LLMs and Agents for Code Generation in an Enterprise DSL",
+  "abstract": "Domain-specific languages (DSLs) are widely used in enterprise software, giving a compact interface to complex tasks, from data access to infrastructure automation. Platforms increasingly extend them to agents, where a developer declares the topics, permitted actions, and guardrails of an agent rather than writing general-purpose code. Large language models (LLMs) write general-purpose code well, but that ability has been measured almost entirely on languages abundant in public pretraining data, and enterprise DSLs are neither abundant nor public. We introduce AgentScript-Eval, an execution-graded benchmark of 100 real tasks for AgentScript, the declarative DSL that Salesforce uses in Agentforce to build conversational agents. Tasks span authoring an agent from a specification, debugging a broken definition, and optimizing a working one. Evaluating five models zero-shot, we find that the regime is hard: the best model reaches only 25.0% pass@3, and every model scores 0% on authoring from scratch. We further find that model scale and price are weak predictors of success -- a 31B open-weight model attains the highest compilation rate of any model tested (48.0%) and matches the strongest frontier model on partial-credit accuracy at the lowest token cost. Adding an agentic compile-and-edit loop is the single largest lever, roughly doubling partial-credit accuracy. Beyond that gain, the wording of domain guidance matters more than its packaging. The same skill pack scores 28% as plain documentation but only 14% as a live plugin. Rewriting one skill inside that plugin then raises it to 37%, our best result, with catalog and tooling untouched. Larger models did not reliably outperform smaller ones; what mattered was the harness surrounding the model and the guidance supplied to it.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Dipin Khati"
+    },
+    {
+      "@type": "Person",
+      "name": "Shubham Mehrotra"
+    },
+    {
+      "@type": "Person",
+      "name": "Bin Bi"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhou Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Denys Poshyvanyk"
+    },
+    {
+      "@type": "Person",
+      "name": "James Zhu"
+    },
+    {
+      "@type": "Person",
+      "name": "Sitaram Asur"
+    },
+    {
+      "@type": "Person",
+      "name": "Phil L. Mui"
+    }
+  ],
+  "datePublished": "2026-11-09T20:04:32Z",
+  "dateModified": "2026-11-09T20:04:32Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.13183.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.13183.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.13183v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.13183"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.13183v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.13183"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AgentScript-Eval: Benchmarking LLMs and Agents for Code Generation in an Enterprise DSL</h1>
+        <div class="meta">
+          Dipin Khati, Shubham Mehrotra, Bin Bi, Zhou Yu, Denys Poshyvanyk, James Zhu, Sitaram Asur, Phil L. Mui
+          · 2611.13183
+          · <time datetime="2026-11-09">2026-11-09</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Domain-specific languages (DSLs) are widely used in enterprise software, giving a compact interface to complex tasks, from data access to infrastructure automation. Platforms increasingly extend them to agents, where a developer declares the topics, permitted actions, and guardrails of an agent rather than writing general-purpose code. Large language models (LLMs) write general-purpose code well, but that ability has been measured almost entirely on languages abundant in public pretraining data, and enterprise DSLs are neither abundant nor public. We introduce AgentScript-Eval, an execution-graded benchmark of 100 real tasks for AgentScript, the declarative DSL that Salesforce uses in Agentforce to build conversational agents. Tasks span authoring an agent from a specification, debugging a broken definition, and optimizing a working one. Evaluating five models zero-shot, we find that the regime is hard: the best model reaches only 25.0% pass@3, and every model scores 0% on authoring from scratch. We further find that model scale and price are weak predictors of success -- a 31B open-weight model attains the highest compilation rate of any model tested (48.0%) and matches the strongest frontier model on partial-credit accuracy at the lowest token cost. Adding an agentic compile-and-edit loop is the single largest lever, roughly doubling partial-credit accuracy. Beyond that gain, the wording of domain guidance matters more than its packaging. The same skill pack scores 28% as plain documentation but only 14% as a live plugin. Rewriting one skill inside that plugin then raises it to 37%, our best result, with catalog and tooling untouched. Larger models did not reliably outperform smaller ones; what mattered was the harness surrounding the model and the guidance supplied to it.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.13183v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.13183v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.13183" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.13994.html"><strong>BioXArena-Pro: a research-grade benchmark for autonomous biomedical machine learning agents</strong></a> <span>2026-11-10</span></li>
+          <li><a href="2611.13541.html"><strong>Agent Benchmarks Stop Ranking Before They Run Out of Tasks</strong></a> <span>2026-11-10</span></li>
+          <li><a href="2611.13246.html"><strong>ExpertCrowd-SWE: Measuring Frontier Coding Agents on Expert-Authored Engineering Tasks in Unfamiliar Codebases</strong></a> <span>2026-11-09</span></li>
+          <li><a href="2611.09017.html"><strong>Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds</strong></a> <span>2026-11-06</span></li>
+          <li><a href="2611.08417.html"><strong>Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks</strong></a> <span>2026-11-05</span></li>
+          <li><a href="2611.06881.html"><strong>VABAR: A Variational Automation Benchmark for Agentic Robotics</strong></a> <span>2026-11-04</span></li>
+          <li><a href="2611.06841.html"><strong>ServerBench: How can your coding agents design specialized LLM serving systems?</strong></a> <span>2026-11-04</span></li>
+          <li><a href="2611.06099.html"><strong>SWEOps-Bench: Evaluating Agents for End-to-End Resolution of Software-Induced Cloud Incidents</strong></a> <span>2026-11-04</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>
