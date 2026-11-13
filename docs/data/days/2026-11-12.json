@@ -1,0 +1,406 @@
+{
+  "date": "2026-11-12",
+  "count": 8,
+  "report": {
+    "date": "2026-11-12",
+    "count": 8,
+    "themes": [
+      {
+        "id": "safety",
+        "count": 4,
+        "en": "Safety",
+        "zh": "安全"
+      },
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "planning",
+        "count": 3,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "mobile",
+        "count": 1,
+        "en": "Mobile agents",
+        "zh": "移动智能体"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      }
+    ],
+    "en": {
+      "headline": "8 new agent benchmarks",
+      "summary": "On November 12, 2026, arXiv listed 8 new agent benchmarks. Work clustered around Safety (4), Tool use (3), Planning / reasoning (3), and Coding agents (2).",
+      "highlights": [
+        {
+          "id": "2611.16867",
+          "title": "ControlHarbor: A Benchmark for Control Design by Coding Agents",
+          "blurb": "LLM agents, i.e., language models run by a harness, can now write, run and debug software autonomously."
+        },
+        {
+          "id": "2611.16590",
+          "title": "AstroMemBench: A Benchmark for Memory Systems in Embodied Spacecraft Agents",
+          "blurb": "Long-term spacecraft autonomy requires embodied agents to use operational history under communication delays, time-critical operations, environmental uncertainty, complex physical interactions, power and computational co…"
+        },
+        {
+          "id": "2611.16493",
+          "title": "ReA-Bench: Benchmarking Responsible Agent Auditing",
+          "blurb": "As agents perform tasks autonomously in local and cloud environments, auditing their execution trajectories can help service providers identify risks and improve agent harnesses and foundation models."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 8 篇 Agent Benchmark",
+      "summary": "2026年11月12日，arXiv 新增 8 篇 Agent Benchmark。当日主题集中在安全（4）、工具使用（3）、规划 / 推理（3）、代码智能体（2）。",
+      "highlights": [
+        {
+          "id": "2611.16867",
+          "title": "ControlHarbor: A Benchmark for Control Design by Coding Agents",
+          "blurb": "LLM agents, i.e., language models run by a harness, can now write, run and debug software autonomously."
+        },
+        {
+          "id": "2611.16590",
+          "title": "AstroMemBench: A Benchmark for Memory Systems in Embodied Spacecraft Agents",
+          "blurb": "Long-term spacecraft autonomy requires embodied agents to use operational history under communication delays, time-critical operations, environmental uncertainty, complex physical interactions, power and computational co…"
+        },
+        {
+          "id": "2611.16493",
+          "title": "ReA-Bench: Benchmarking Responsible Agent Auditing",
+          "blurb": "As agents perform tasks autonomously in local and cloud environments, auditing their execution trajectories can help service providers identify risks and improve agent harnesses and foundation models."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2611.17267",
+      "title": "LiveGeo: Benchmarking Geographic Agents in Continuously Evolving Worlds",
+      "abstract": "We introduce GeoWorld, a controllable and continuously evolving geographic environment platform for LLM agents, and LiveGeo, a benchmark for evaluating reliable decision-making in real-world geographic environments using GeoWorld. Unlike existing evaluations that largely reason and plan over fixed geographic states, GeoWorld is grounded in real-world geographic structure and allows external world states to evolve along their own temporal processes while preserving verifiable state histories. LiveGeo places geographic tasks within this evolving environment, requiring agents to actively acquire task-relevant information, verify whether the evidence supporting prior decisions remains valid, and revise their plans when necessary. Our results reveal that even frontier LLMs struggle with static tasks, with no model consistently excelling across tasks, while strong static performance does not ensure dynamic reliability. Further analysis identifies a key bottleneck: agents struggle to acquire and translate relevant evidence into valid decisions and maintain their correctness as the world evolves. By releasing LiveGeo together with its GeoWorld platform, we aim to provide the community with a flexible and extensible infrastructure for studying the next generation of agents capable of reliable action in evolving geographic worlds.",
+      "authors": [
+        "Pengcheng Zhou",
+        "Xuanyu Liu",
+        "Yanchen Yin",
+        "Tianjie Ju",
+        "Bobo Li",
+        "Shengqiong Wu",
+        "Hao Fei",
+        "Mong-Li Lee",
+        "Wynne Hsu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-12T18:45:58Z",
+      "updated": "2026-11-12T18:45:58Z",
+      "announced_date": "2026-11-12",
+      "first_seen": "2026-11-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.17267v1",
+        "pdf": "https://arxiv.org/pdf/2611.17267v1",
+        "html": "https://arxiv.org/html/2611.17267"
+      },
+      "score": 12,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2611.16991",
+      "title": "AnalogLayoutWorld: An Open Benchmark for Agentic Analog Layout Design",
+      "abstract": "Coding agents have demonstrated strong capabilities in software development, yet their ability to tackle long-horizon engineering tasks governed by physical constraints remains less understood. We study this question through analog circuit layout, which demands domain knowledge, geometric reasoning, and iterative interaction with design and verification tools. We introduce \\textbf{AnalogLayoutWorld}, an open-source agent benchmark with 40 expert-reviewed tasks for end-to-end layout generation from fixed transistor-level netlists. It combines an integrated design environment with independent physical and post-layout electrical verification, as well as objective layout quality metrics co-designed with analog layout experts. Across 13 model--harness configurations, 91.1\\% of attempts produce GDS layouts, but only 23.0\\% satisfy the benchmark's acceptance criteria. We also evaluate Novara, an internally developed agent system, which achieves the highest reported aggregate score. Our analysis links performance differences to test-time scaling under fixed budgets, suggesting that reasoning efficiency and effective use of verification feedback help sustain design quality as task complexity grows.",
+      "authors": [
+        "NovaSilicon Team"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-12T15:56:13Z",
+      "updated": "2026-11-12T15:56:13Z",
+      "announced_date": "2026-11-12",
+      "first_seen": "2026-11-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.16991v1",
+        "pdf": "https://arxiv.org/pdf/2611.16991v1",
+        "html": "https://arxiv.org/html/2611.16991"
+      },
+      "score": 15,
+      "tags": [
+        "coding",
+        "tool-use",
+        "planning"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2611.16867",
+      "title": "ControlHarbor: A Benchmark for Control Design by Coding Agents",
+      "abstract": "LLM agents, i.e., language models run by a harness, can now write, run and debug software autonomously. This raises the question of whether they can also carry out control system design. In this paper, we consider control system design as a task for LLM agents and grade the designed controller as control engineers do: the controller is given in a single Python file mapping measurements to actions, evaluated on held-out seeds against an ordered set of requirements, under specified physical perturbations and structural certificates, without using neural networks. We formulate the task as a chance-constrained feasibility problem and instantiate it in ControlHarbor, a benchmark of 44 tasks over 13 plants, which includes network consensus, vehicle platooning, the MuJoCo hopper, walker and humanoid. The tasks are packaged in the Harbor format, so that any agent harness can be run against them, and the same environments also serve learning algorithms other than LLMs, such as reinforcement learning (RL), under the same evaluation. With ControlHarbor, we observe that the controllers designed by three frontier coding agents, Claude Opus 5.5, Fable 5.1 and Sonnet 5.5, reach the RL return on every parity task, but only in a minority of sessions. We also observe that the controllers certified for return alone usually fail under perturbations. When robustness is part of the specification, a structured design meets it at the RL return on the humanoid task, where domain-randomised RL does not; under large pushes, domain-randomised RL succeeds and no designed controller does. The benchmark, the controllers, and their grades are released.",
+      "authors": [
+        "Jieqiang Wei",
+        "Fahad Ali",
+        "Jonny Reichwald",
+        "Silun Zhang"
+      ],
+      "categories": [
+        "math.DS"
+      ],
+      "primary_category": "math.DS",
+      "published": "2026-11-12T14:37:35Z",
+      "updated": "2026-11-12T14:37:35Z",
+      "announced_date": "2026-11-12",
+      "first_seen": "2026-11-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.16867v1",
+        "pdf": "https://arxiv.org/pdf/2611.16867v1",
+        "html": "https://arxiv.org/html/2611.16867"
+      },
+      "score": 19,
+      "tags": [
+        "coding",
+        "safety"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2611.16861",
+      "title": "Visual Cipher Bench: Benchmarking LLM Agents on Long-Horizon Visual Reasoning",
+      "abstract": "While language-model agents excel at long-horizon coding and terminal tasks, this success relies on two conditions: explicit text specifications and immediate execution feedback. However, neither condition holds in real-world problems where critical information exists only in images, leaving it unclear whether long-horizon capability transfers from text to visual reasoning. In such visual settings, because rules and clues resist text transcription and lack test-case feedback, agents must repeatedly inspect images, simulate spatial transformations, and autonomously cross-check clues. Despite this challenge, existing evaluations fail to capture such capability: visual reasoning benchmarks largely reduce tasks to single-turn, short-chain question answering, whereas agent benchmarks focus on text-based environments or interactive states that permit trial-and-error. To bridge this gap, we introduce Visual Cipher Bench, a collection of 40 original visual puzzles across four categories: spatial manipulation and simulation, logical constraints and planning, rule induction, and knowledge-based decoding. Each puzzle provides only one to three black-and-white line drawings and a minimal submission instruction, requiring agents to discover the underlying solving mechanism entirely from the images. Across 29 reasoning-effort configurations of eight frontier models, even the strongest model, GPT-6 Astra (max), achieves only 26.7% accuracy, while five of the eight models score below 1%. Yet on a ten-task subset, providing a single non-spoiler mechanism hint boosts accuracy from 7.8% to 55.6%. This sharp contrast shows that the primary bottleneck of current agents lies not in executing multi-step plans, but in autonomously discovering rules from visual evidence. Visual Cipher Bench thus provides a rigorous benchmark for measuring long-horizon visual reasoning in agents.",
+      "authors": [
+        "Deyao Hong",
+        "Jiayi Jiang",
+        "Yuchun Chen",
+        "Yixuan Shi",
+        "Wenyi Li",
+        "Zheng Jiang",
+        "Chengxing Xie",
+        "Mingyu Su",
+        "Qingle Liu",
+        "Mingju Gao",
+        "Yizhe Chi",
+        "Youjie Zheng",
+        "Calvin Xiao",
+        "Kaisen Yang",
+        "Huan-ang Gao"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-12T14:33:46Z",
+      "updated": "2026-11-12T14:33:46Z",
+      "announced_date": "2026-11-12",
+      "first_seen": "2026-11-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.16861v1",
+        "pdf": "https://arxiv.org/pdf/2611.16861v1",
+        "html": "https://arxiv.org/html/2611.16861"
+      },
+      "score": 17,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2611.16693",
+      "title": "MobileProbe: Adaptive Security Evaluation of Mobile Agents via Trajectory-Aware Injection",
+      "abstract": "Mobile GUI agents read the screen of a phone and operate apps on a user's behalf to complete multi-step tasks such as online shopping or messaging. Because the agent acts on whatever the screen shows, an attacker can embed malicious instructions into ordinary UI content and redirect its actions. We refer to this threat as environmental injection attack (EIA). Existing benchmarks measure this risk by pinning hand-crafted payloads to a fixed step of a fixed task. This approach faces two limitations. First, each payload is bound to one task in one app and does not transfer without manual redesign. Second, agents given the same task may follow different routes, so an agent that never reaches the injected page is recorded as safe without being tested. This insufficient test coverage can cause fixed-point benchmarks to underestimate the security risk of deployed mobile agents. In this work, we propose MobileProbe, a trajectory-aware red-teaming framework that evaluates mobile agents adaptively. MobileProbe discovers attacker-controllable content surfaces through automated pentesting, localizes vulnerable decision points along the agent's trajectory, and iteratively refines context-aware payloads through a surrogate-filtered evolutionary loop. We construct a benchmark of 83 long-horizon attack instances spanning 12 mobile applications. Each is annotated with a Confidentiality, Integrity, or Availability (CIA) attack goal to cover the principal categories of security threats facing mobile agents. On three representative agent architectures, MobileProbe attains higher attack success rates than human-written, zero-shot LLM, and prior automated red-teaming baselines adapted to the mobile domain. MobileProbe can serve as a pre-deployment auditing tool to systematically uncover vulnerabilities and inform security hardening of mobile agents.",
+      "authors": [
+        "Yingbin Jin",
+        "Ji'an Wang",
+        "HaoYang Chai",
+        "Hanjun Luo",
+        "Li Hu",
+        "Xinfeng Li",
+        "Huadi Zheng",
+        "PeiZhao Hu",
+        "Qingqing Ye",
+        "Haibo Hu"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-11-12T12:08:43Z",
+      "updated": "2026-11-12T12:08:43Z",
+      "announced_date": "2026-11-12",
+      "first_seen": "2026-11-12",
+      "comment": "Accepted at NDSS 2027",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.16693v1",
+        "pdf": "https://arxiv.org/pdf/2611.16693v1",
+        "html": "https://arxiv.org/html/2611.16693"
+      },
+      "score": 13,
+      "tags": [
+        "gui",
+        "tool-use",
+        "safety",
+        "mobile"
+      ],
+      "field": "mobile",
+      "citations": 0
+    },
+    {
+      "id": "2611.16591",
+      "title": "Singularity-Bench: Can Agents Build Agents?",
+      "abstract": "Frontier AI agents increasingly succeed on realistic, long-horizon tasks and are beginning to improve the systems through which they operate. Yet existing benchmarks often restrict agents to narrow action spaces, use simplified environments, or rely on verification methods that are unreliable for evaluating arbitrary agent-generated systems. We introduce Singularity-Bench, an open-ended benchmark for autonomous AI development with six end-to-end tasks spanning pre-training, mid-training, post-training, inference, the agent harness, and cluster orchestration. Each task requires agents to implement core systems from a minimal starting point and evaluates them against mature human-engineered baselines on identical hardware. Additionally, through extensive red-teaming covering 9 of the 10 categories in the OWASP Top 10 for Agentic Applications, we expose reward-hacking vulnerabilities in the conventional Harbor framework and develop Breakwater, an extension of Harbor that blocks all attacks tested in our study. Across 11 agents built from 7 frontier models and 2 harnesses, Opus 5.5 with Claude Code matches or outperforms the human baseline on all six tasks with a Singularity-Index of 1.25, suggesting it may have the skills needed to reach the singularity. The remaining agents average only 0.58. Our vision is for Singularity-Bench to track how much of AI development agents can already automate and when they may transition from assisting to taking end-to-end responsibility for building stronger successors.",
+      "authors": [
+        "Yang Zhou",
+        "Krish Agarwal",
+        "Zhuoming Chen",
+        "Zerui Wang",
+        "Zhenyu Zhang",
+        "Wenshuang Li",
+        "Xinpeng Wei",
+        "Zhichen Zeng",
+        "Jingyu Liu",
+        "Jue Wang",
+        "Sen Wu",
+        "Ziheng Jiang",
+        "Zhen Dong",
+        "Han Cai",
+        "Binhang Yuan",
+        "Ying Sheng",
+        "Ce Zhang",
+        "Bo Li",
+        "Beidi Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-12T10:24:51Z",
+      "updated": "2026-11-12T10:24:51Z",
+      "announced_date": "2026-11-12",
+      "first_seen": "2026-11-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.16591v1",
+        "pdf": "https://arxiv.org/pdf/2611.16591v1",
+        "html": "https://arxiv.org/html/2611.16591"
+      },
+      "score": 15,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2611.16590",
+      "title": "AstroMemBench: A Benchmark for Memory Systems in Embodied Spacecraft Agents",
+      "abstract": "Long-term spacecraft autonomy requires embodied agents to use operational history under communication delays, time-critical operations, environmental uncertainty, complex physical interactions, power and computational constraints, and safety and reliability requirements. We introduce AstroMemBench and a Scenario-Challenge-Capability design method that maps these requirements to executable memory tests. The benchmark covers 16 memory subchallenges through 140 templates and 2240 instances across nine tasks in planetary surface operations, on-orbit servicing, and deep-space exploration. A deterministic environment scores actions for task completion, state changes, safety, and resource use. Ablations under nine conditions show that the benchmark is sensitive to how accurately agents recover and use historical information and to differences in memory-system design. Main experiments compare six configurations. Mem0, Chain-of-Memory, LightMem, and retrieval-augmented generation (RAG) improve same-session mean scores over native Pi Agent, with no clear advantage of the three memory systems over RAG. After a session restart, Mem0 outperforms RAG by 12.25 points. Benefits favor instruction retention and result reuse over ongoing state tracking and energy reservation. AstroMemBench supports the design, development, and selection of memory systems for embodied spacecraft agents. AstroMemBench 1.0 and its evaluation code are publicly available: https://github.com/flyingView/AstroMemBench-v1.",
+      "authors": [
+        "You Wu",
+        "Guhong Zhang",
+        "Hongwei Li",
+        "Xinyue Hong",
+        "Yuan Jia"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-12T10:23:15Z",
+      "updated": "2026-11-12T10:23:15Z",
+      "announced_date": "2026-11-12",
+      "first_seen": "2026-11-12",
+      "comment": "31 pages, 4 figures, 19 tables. Includes Appendices A-E",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.16590v1",
+        "pdf": "https://arxiv.org/pdf/2611.16590v1",
+        "html": "https://arxiv.org/html/2611.16590"
+      },
+      "score": 18,
+      "tags": [
+        "embodied",
+        "safety",
+        "memory"
+      ],
+      "field": "embodied",
+      "citations": 0
+    },
+    {
+      "id": "2611.16493",
+      "title": "ReA-Bench: Benchmarking Responsible Agent Auditing",
+      "abstract": "As agents perform tasks autonomously in local and cloud environments, auditing their execution trajectories can help service providers identify risks and improve agent harnesses and foundation models. Our analysis of production and red-team trajectories shows that some risks are repeatedly missed across auditing configurations. Overall recall obscures which risks are missed and whether higher recall comes with more false positives on legitimate behavior. Existing benchmarks offer limited insight into these failures. Generated trajectories can contain inconsistent tool calls and responses, conspicuous risky actions, or repetitive attack patterns. Grouping results by risk type also makes it difficult to tell whether auditors overlooked evidence, accepted an unsupported conclusion, or lacked information needed to make a judgment. We introduce ReA-Bench, a diagnostic benchmark for auditing responsible agent behavior. It organizes auditing challenges into six tiers: internal safety knowledge, contradictions within trajectories, evidence retrieval in long contexts, verification of sources and reasoning, indirect steering, and missing information. It includes challenging benign cases in which actions resemble risky ones but are consistent with the task and its authorization. It also provides paired trajectory versions to test whether auditors detect the same risks more reliably when the trajectory is shortened or missing information is supplied. Most samples are drawn from real production trajectories, with scenarios manually selected and adapted to preserve realistic tasks and risks that could plausibly arise during execution.",
+      "authors": [
+        "Zipeng Ye",
+        "Shenyu Dai",
+        "Yong Xie",
+        "Kun Wang",
+        "Jiyang Guan",
+        "Zhikai Chen",
+        "Jiaqi Weng",
+        "Jialing Tao",
+        "Hui Xue"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-12T09:01:24Z",
+      "updated": "2026-11-12T09:01:24Z",
+      "announced_date": "2026-11-12",
+      "first_seen": "2026-11-12",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.16493v1",
+        "pdf": "https://arxiv.org/pdf/2611.16493v1",
+        "html": "https://arxiv.org/html/2611.16493"
+      },
+      "score": 17,
+      "tags": [
+        "tool-use",
+        "safety",
+        "planning"
+      ],
+      "field": "safety",
+      "citations": 0
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VibePrevisBench: Evaluating Agentic Coding for 4D Scene Generation in Blender | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Controllable real-world video generation models can condition on a rendered graybox proxy video, which fixes layout, motion and…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Multimodal, agent benchmark, LLM agent, arXiv, 2611.15789" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.15789.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="VibePrevisBench: Evaluating Agentic Coding for 4D Scene Generation in Blender" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Controllable real-world video generation models can condition on a rendered graybox proxy video, which fixes layout, motion and…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.15789.html" />
+    <meta property="article:published_time" content="2026-11-11T18:02:07Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="VibePrevisBench: Evaluating Agentic Coding for 4D Scene Generation in Blender" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Controllable real-world video generation models can condition on a rendered graybox proxy video, which fixes layout, motion and…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "VibePrevisBench: Evaluating Agentic Coding for 4D Scene Generation in Blender",
+  "name": "VibePrevisBench: Evaluating Agentic Coding for 4D Scene Generation in Blender",
+  "abstract": "Controllable real-world video generation models can condition on a rendered graybox proxy video, which fixes layout, motion and camera. Coding agents can build such videos by reconstructing a 4D scene in Blender, yet no benchmark checks both these videos and the long, multi-shot scenes behind them. We introduce VibePrevisBench, a benchmark for 4D scene reconstruction: an agent turns a brief into an executable 4D scene and renders its proxy video. Its 242 tasks span four input kinds, including scripts, photos, continuations, and reference videos. Each delivery is scored along two evaluation dimensions. Rule-based Scene Check re-runs the code and compares the exported 4D scene with hidden ground truth facts in nine dimensions. VLM-based Screen Check asks a VLM judge whether the facts that pass can be recognized in the proxy video. We analyze the evaluation results and trajectories of 11 frontier coding agents and identify three key observations. First, multimodal understanding separates the agents, especially in understanding space and camera motion. Second, all agents seem to already master basic camera work and staging, and fail at challenging requests. Third, agents inspect their own renders but fail to correct their errors. Agents thus need better visual understanding of space and camera, explicit checks for challenging requests, and item-by-item verification of renders against the brief.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yuzhe Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Muxi Diao"
+    },
+    {
+      "@type": "Person",
+      "name": "Lele Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenbin Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xuyang Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Qile Su"
+    },
+    {
+      "@type": "Person",
+      "name": "Changyi Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiankang Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Kaiyu Jiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Haoyu Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Hongyi Fu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jianxiong Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Tianke Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Haonan Fan"
+    },
+    {
+      "@type": "Person",
+      "name": "Yingxin Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Bingyi Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Xu Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xuanyu Zheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Bin Wen"
+    },
+    {
+      "@type": "Person",
+      "name": "Tingting Gao"
+    },
+    {
+      "@type": "Person",
+      "name": "Wentao Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiale Cao"
+    }
+  ],
+  "datePublished": "2026-11-11T18:02:07Z",
+  "dateModified": "2026-11-11T18:02:07Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.15789.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.15789.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.15789v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.15789"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Multimodal",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.15789v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.15789"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>VibePrevisBench: Evaluating Agentic Coding for 4D Scene Generation in Blender</h1>
+        <div class="meta">
+          Yuzhe Chen, Muxi Diao, Lele Yang, Wenbin Xu, Xuyang Liu, Qile Su, Changyi Liu, Jiankang Chen, Kaiyu Jiang, Haoyu Zhang, Hongyi Fu, Jianxiong Wang, Tianke Zhang, Haonan Fan, Yingxin Li, Bingyi Li, Xu Wang, Xuanyu Zheng, Bin Wen, Tingting Gao, Wentao Zhang, Jiale Cao
+          · 2611.15789
+          · <time datetime="2026-11-11">2026-11-11</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Controllable real-world video generation models can condition on a rendered graybox proxy video, which fixes layout, motion and camera. Coding agents can build such videos by reconstructing a 4D scene in Blender, yet no benchmark checks both these videos and the long, multi-shot scenes behind them. We introduce VibePrevisBench, a benchmark for 4D scene reconstruction: an agent turns a brief into an executable 4D scene and renders its proxy video. Its 242 tasks span four input kinds, including scripts, photos, continuations, and reference videos. Each delivery is scored along two evaluation dimensions. Rule-based Scene Check re-runs the code and compares the exported 4D scene with hidden ground truth facts in nine dimensions. VLM-based Screen Check asks a VLM judge whether the facts that pass can be recognized in the proxy video. We analyze the evaluation results and trajectories of 11 frontier coding agents and identify three key observations. First, multimodal understanding separates the agents, especially in understanding space and camera motion. Second, all agents seem to already master basic camera work and staging, and fail at challenging requests. Third, agents inspect their own renders but fail to correct their errors. Agents thus need better visual understanding of space and camera, explicit checks for challenging requests, and item-by-item verification of renders against the brief.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.15789v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.15789v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.15789" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.16991.html"><strong>AnalogLayoutWorld: An Open Benchmark for Agentic Analog Layout Design</strong></a> <span>2026-11-12</span></li>
+          <li><a href="2611.16867.html"><strong>ControlHarbor: A Benchmark for Control Design by Coding Agents</strong></a> <span>2026-11-12</span></li>
+          <li><a href="2611.13994.html"><strong>BioXArena-Pro: a research-grade benchmark for autonomous biomedical machine learning agents</strong></a> <span>2026-11-10</span></li>
+          <li><a href="2611.13541.html"><strong>Agent Benchmarks Stop Ranking Before They Run Out of Tasks</strong></a> <span>2026-11-10</span></li>
+          <li><a href="2611.13246.html"><strong>ExpertCrowd-SWE: Measuring Frontier Coding Agents on Expert-Authored Engineering Tasks in Unfamiliar Codebases</strong></a> <span>2026-11-09</span></li>
+          <li><a href="2611.13183.html"><strong>AgentScript-Eval: Benchmarking LLMs and Agents for Code Generation in an Enterprise DSL</strong></a> <span>2026-11-09</span></li>
+          <li><a href="2611.09017.html"><strong>Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds</strong></a> <span>2026-11-06</span></li>
+          <li><a href="2611.08417.html"><strong>Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks</strong></a> <span>2026-11-05</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

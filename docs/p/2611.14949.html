@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RSI-PDEbench: A Benchmark for Self-Improving Agents in PDE Solving | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Identifying and solving partial differential equations (PDEs) from sampled solution data often requires substantial expert effort in…" />
+    <meta name="keywords" content="RSI / AI4AI, Safety, Memory, Science lab, agent benchmark, LLM agent, arXiv, 2611.14949" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.14949.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="RSI-PDEbench: A Benchmark for Self-Improving Agents in PDE Solving" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Identifying and solving partial differential equations (PDEs) from sampled solution data often requires substantial expert effort in…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.14949.html" />
+    <meta property="article:published_time" content="2026-11-11T02:55:14Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="RSI-PDEbench: A Benchmark for Self-Improving Agents in PDE Solving" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Identifying and solving partial differential equations (PDEs) from sampled solution data often requires substantial expert effort in…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "RSI-PDEbench: A Benchmark for Self-Improving Agents in PDE Solving",
+  "name": "RSI-PDEbench: A Benchmark for Self-Improving Agents in PDE Solving",
+  "abstract": "Identifying and solving partial differential equations (PDEs) from sampled solution data often requires substantial expert effort in equation discovery, coefficient estimation, and numerical solver configuration, especially under noise and distribution shifts. Can large language model (LLM) agents automate this workflow accurately and efficiently? To investigate this question, we introduce \\bench{}, a benchmark of 1,001 cases spanning 42 equation templates, including both classical and fractional PDEs. It provides three evaluation settings: Full evaluates performance on noise-free solution data; Noisy tests robustness to Gaussian noise with an RMS equal to 50\\% of the clean-signal RMS; and Hard-OOD tests challenging out-of-distribution generalization to unseen equation templates and shifted coefficient ranges. We further introduce RSI-PDE, a recursively self-improving agent harness that shortlists candidate equations by residual loss, uses relative $L^2$ feedback to refine coefficients and numerical solvers, and applies a validation gate to policy and memory updates. We compare RSI-PDE with single-run baselines and native agent harnesses (Claude Code or Codex) across four frontier models. Across the three settings, RSI-PDE improves the pass rate averaged across the four models by 106.5--181.9\\% relative to single-run baselines and by 3.0--19.6\\% relative to native harnesses, while reducing total recorded model calls by 46.9\\% across the 12 model--setting pairs. These results highlight the potential of validated recursive self-improvement in LLM agents to advance scientific computing.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Binghang Lu"
+    },
+    {
+      "@type": "Person",
+      "name": "Lang Cao"
+    },
+    {
+      "@type": "Person",
+      "name": "Changhong Mou"
+    },
+    {
+      "@type": "Person",
+      "name": "Yige Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Cindy Xiangrui Kong"
+    },
+    {
+      "@type": "Person",
+      "name": "Zheyuan Deng"
+    },
+    {
+      "@type": "Person",
+      "name": "Tian Yuan"
+    },
+    {
+      "@type": "Person",
+      "name": "Bing Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Runyu Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Na Lu"
+    },
+    {
+      "@type": "Person",
+      "name": "Guang Lin"
+    }
+  ],
+  "datePublished": "2026-11-11T02:55:14Z",
+  "dateModified": "2026-11-11T02:55:14Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.14949.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.14949.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.14949v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.14949"
+  },
+  "keywords": [
+    "RSI / AI4AI",
+    "Safety",
+    "Memory",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "RSI / AI4AI"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.14949v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.14949"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>RSI-PDEbench: A Benchmark for Self-Improving Agents in PDE Solving</h1>
+        <div class="meta">
+          Binghang Lu, Lang Cao, Changhong Mou, Yige Sun, Cindy Xiangrui Kong, Zheyuan Deng, Tian Yuan, Bing Hu, Runyu Zhang, Na Lu, Guang Lin
+          · 2611.14949
+          · <time datetime="2026-11-11">2026-11-11</time>
+          · RSI / AI4AI
+        </div>
+        <div class="themes"><span class="chip">Safety</span><span class="chip">Memory</span><span class="chip">Science lab</span><span class="chip">RSI / AI4AI</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Identifying and solving partial differential equations (PDEs) from sampled solution data often requires substantial expert effort in equation discovery, coefficient estimation, and numerical solver configuration, especially under noise and distribution shifts. Can large language model (LLM) agents automate this workflow accurately and efficiently? To investigate this question, we introduce \bench{}, a benchmark of 1,001 cases spanning 42 equation templates, including both classical and fractional PDEs. It provides three evaluation settings: Full evaluates performance on noise-free solution data; Noisy tests robustness to Gaussian noise with an RMS equal to 50\% of the clean-signal RMS; and Hard-OOD tests challenging out-of-distribution generalization to unseen equation templates and shifted coefficient ranges. We further introduce RSI-PDE, a recursively self-improving agent harness that shortlists candidate equations by residual loss, uses relative $L^2$ feedback to refine coefficients and numerical solvers, and applies a validation gate to policy and memory updates. We compare RSI-PDE with single-run baselines and native agent harnesses (Claude Code or Codex) across four frontier models. Across the three settings, RSI-PDE improves the pass rate averaged across the four models by 106.5--181.9\% relative to single-run baselines and by 3.0--19.6\% relative to native harnesses, while reducing total recorded model calls by 46.9\% across the 12 model--setting pairs. These results highlight the potential of validated recursive self-improvement in LLM agents to advance scientific computing.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.14949v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.14949v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.14949" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More RSI / AI4AI benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.13713.html"><strong>Toward Autonomous RTL and Synthesis Optimization: Benchmarking and Self-Improving Agents</strong></a> <span>2026-11-10</span></li>
+          <li><a href="2611.08946.html"><strong>Flex-RSI: Benchmarking Recursive Self-Improvement of Frontier Agents</strong></a> <span>2026-11-06</span></li>
+          <li><a href="2611.02797.html"><strong>SelfImprove-Bench: Evaluating Generalization in Self-Improving Agents</strong></a> <span>2026-11-02</span></li>
+          <li><a href="2610.40901.html"><strong>TSFLab: A Self-Improving Agent-Agnostic Workbench for Time Series Forecasting Research</strong></a> <span>2026-10-29</span></li>
+          <li><a href="2610.33956.html"><strong>Continual Learning Exam: Benchmarking Long-Horizon RSI and Experiential Learning in LLM Agents</strong></a> <span>2026-10-25</span></li>
+          <li><a href="2610.32120.html"><strong>ImageRSI: Verification-Driven Recursive Self-Improvement for Agentic Image Generation</strong></a> <span>2026-10-23</span></li>
+          <li><a href="2610.26342.html"><strong>VibeTraining-Bench: Data-Trainer-Harness Co-Design for Iterative System Improvement</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.13829.html"><strong>MC-EvoBench: Auditing Experience-Driven Self-Improvement in Minecraft Agents</strong></a> <span>2026-10-09</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

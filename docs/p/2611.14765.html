@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SynthCorp: A Platform for Creating Benchmarks for Data Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Current benchmarks for LLM-driven data agents saturate quickly and cannot target specific capabilities. We present SynthCorp, a…" />
+    <meta name="keywords" content="General, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2611.14765" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.14765.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SynthCorp: A Platform for Creating Benchmarks for Data Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Current benchmarks for LLM-driven data agents saturate quickly and cannot target specific capabilities. We present SynthCorp, a…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.14765.html" />
+    <meta property="article:published_time" content="2026-11-10T21:43:12Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SynthCorp: A Platform for Creating Benchmarks for Data Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Current benchmarks for LLM-driven data agents saturate quickly and cannot target specific capabilities. We present SynthCorp, a…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SynthCorp: A Platform for Creating Benchmarks for Data Agents",
+  "name": "SynthCorp: A Platform for Creating Benchmarks for Data Agents",
+  "abstract": "Current benchmarks for LLM-driven data agents saturate quickly and cannot target specific capabilities. We present SynthCorp, a platform that creates customizable data estates and benchmarks by simulating how business events produce and modify corporate data over time. Each data estate combines relational databases, a document store, and a data catalog, paired with evaluation tasks and executable gold programs. First, given a scenario and target complexity dimensions, SynthCorp synthesizes reusable event types and compiles each into a program over predefined simulation primitives. Second, SynthCorp schedules event instances on a virtual calendar, interleaving routine and disruption events so that tables, documents, and catalog entries remain consistent. Third, SynthCorp executes the calendar to materialize the data estate and records every operation in a simulation log. Fourth, SynthCorp generates analytical tasks and derives verified gold programs from the log. We use SynthCorp to generate initial evaluation benchmarks comprising seven data estates (up to 1K operational tables) and 256 tasks across five domains. The data estates pass deterministic pipeline checks (such as foreign-key violations, undeclared writes, recurrence violations, and database execution failures) with a near-zero error rate, introduce cross-asset complexities, and cover all requested dimensions. Evaluating three models across four data-context settings shows that the benchmarks separate data contexts and model tiers. Auditing candidate queries against causal provenance in the simulation log verifies gold programs without manual annotation, including on multi-event composite tasks that expose reasoning failures in state-of-the-art agents. We hope the community uses SynthCorp to generate more challenging and useful data estates and benchmarks that foster the development of enterprise data agents.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jiani Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Manav Garg"
+    },
+    {
+      "@type": "Person",
+      "name": "Eugenie Lai"
+    },
+    {
+      "@type": "Person",
+      "name": "Cheng Zhen"
+    },
+    {
+      "@type": "Person",
+      "name": "Eva Sharma"
+    },
+    {
+      "@type": "Person",
+      "name": "Yang Pan"
+    },
+    {
+      "@type": "Person",
+      "name": "Yaming Lin"
+    },
+    {
+      "@type": "Person",
+      "name": "Alon Halevy"
+    }
+  ],
+  "datePublished": "2026-11-10T21:43:12Z",
+  "dateModified": "2026-11-10T21:43:12Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.14765.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.14765.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.14765v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.14765"
+  },
+  "keywords": [
+    "General",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.14765v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.14765"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SynthCorp: A Platform for Creating Benchmarks for Data Agents</h1>
+        <div class="meta">
+          Jiani Zhang, Manav Garg, Eugenie Lai, Cheng Zhen, Eva Sharma, Yang Pan, Yaming Lin, Alon Halevy
+          · 2611.14765
+          · <time datetime="2026-11-10">2026-11-10</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Current benchmarks for LLM-driven data agents saturate quickly and cannot target specific capabilities. We present SynthCorp, a platform that creates customizable data estates and benchmarks by simulating how business events produce and modify corporate data over time. Each data estate combines relational databases, a document store, and a data catalog, paired with evaluation tasks and executable gold programs. First, given a scenario and target complexity dimensions, SynthCorp synthesizes reusable event types and compiles each into a program over predefined simulation primitives. Second, SynthCorp schedules event instances on a virtual calendar, interleaving routine and disruption events so that tables, documents, and catalog entries remain consistent. Third, SynthCorp executes the calendar to materialize the data estate and records every operation in a simulation log. Fourth, SynthCorp generates analytical tasks and derives verified gold programs from the log. We use SynthCorp to generate initial evaluation benchmarks comprising seven data estates (up to 1K operational tables) and 256 tasks across five domains. The data estates pass deterministic pipeline checks (such as foreign-key violations, undeclared writes, recurrence violations, and database execution failures) with a near-zero error rate, introduce cross-asset complexities, and cover all requested dimensions. Evaluating three models across four data-context settings shows that the benchmarks separate data contexts and model tiers. Auditing candidate queries against causal provenance in the simulation log verifies gold programs without manual annotation, including on multi-event composite tasks that expose reasoning failures in state-of-the-art agents. We hope the community uses SynthCorp to generate more challenging and useful data estates and benchmarks that foster the development of enterprise data agents.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.14765v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.14765v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.14765" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.17267.html"><strong>LiveGeo: Benchmarking Geographic Agents in Continuously Evolving Worlds</strong></a> <span>2026-11-12</span></li>
+          <li><a href="2611.16861.html"><strong>Visual Cipher Bench: Benchmarking LLM Agents on Long-Horizon Visual Reasoning</strong></a> <span>2026-11-12</span></li>
+          <li><a href="2611.16591.html"><strong>Singularity-Bench: Can Agents Build Agents?</strong></a> <span>2026-11-12</span></li>
+          <li><a href="2611.15189.html"><strong>WordInferBench: Can Agents Infer How to Edit from Word Document Context?</strong></a> <span>2026-11-11</span></li>
+          <li><a href="2611.13684.html"><strong>BypassGym: A Benchmark for Evaluating AI Agents&#x27; Endpoint Defense Evasion Capabilities</strong></a> <span>2026-11-10</span></li>
+          <li><a href="2611.13015.html"><strong>From Questions to Decisions: Benchmarking How LLM Agents Acquire Decision-Relevant Information from Human Beings</strong></a> <span>2026-11-09</span></li>
+          <li><a href="2611.11995.html"><strong>Infrathon: Benchmarking Language Agents for Real-World, Long-Horizon AI Infra Optimization</strong></a> <span>2026-11-09</span></li>
+          <li><a href="2611.11690.html"><strong>A Physical Testbed for Self-Driving Laboratories: Comparing Bayesian and Agentic Optimization in a Minimal Closed-Loop Color Formulation Task</strong></a> <span>2026-11-08</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

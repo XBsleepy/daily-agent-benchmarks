@@ -1,10 +1,16 @@
 {
   "date": "2026-11-10",
-  "count": 8,
+  "count": 10,
   "report": {
     "date": "2026-11-10",
-    "count": 8,
+    "count": 10,
     "themes": [
+      {
+        "id": "tool-use",
+        "count": 3,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
       {
         "id": "coding",
         "count": 3,
@@ -12,10 +18,10 @@
         "zh": "代码智能体"
       },
       {
-        "id": "tool-use",
+        "id": "planning",
         "count": 2,
-        "en": "Tool use",
-        "zh": "工具使用"
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
       },
       {
         "id": "science",
@@ -28,12 +34,6 @@
         "count": 2,
         "en": "Multi-agent",
         "zh": "多智能体"
-      },
-      {
-        "id": "planning",
-        "count": 1,
-        "en": "Planning / reasoning",
-        "zh": "规划 / 推理"
       },
       {
         "id": "research",
@@ -55,8 +55,8 @@
       }
     ],
     "en": {
-      "headline": "8 new agent benchmarks",
-      "summary": "On November 10, 2026, arXiv listed 8 new agent benchmarks. Work clustered around Coding agents (3), Tool use (2), Science lab (2), and Multi-agent (2).",
+      "headline": "10 new agent benchmarks",
+      "summary": "On November 10, 2026, arXiv listed 10 new agent benchmarks. Work clustered around Tool use (3), Coding agents (3), Planning / reasoning (2), and Science lab (2).",
       "highlights": [
         {
           "id": "2611.13925",
@@ -69,15 +69,15 @@
           "blurb": "Artificial intelligence agents increasingly automate cybersecurity tasks, including offensive operations."
         },
         {
-          "id": "2611.14364",
-          "title": "ARE-bench: Benchmarking Agents' Research Ability in Real-World Researcher Sessions and Workspaces",
-          "blurb": "Research agents achieve increasingly strong benchmark scores, yet these scores do not necessarily translate into reliable delivery in ongoing research projects."
+          "id": "2611.14581",
+          "title": "When Evaluators of AI Agents Disagree: An Empirical Study of Native Scoring, LLM Judges, and Commit-Boundary Checks on tau2-bench",
+          "blurb": "Agentic workflows, in which a large language model (LLM) calls tools to read and write data, are evaluated in two ways."
         }
       ]
     },
     "zh": {
-      "headline": "新增 8 篇 Agent Benchmark",
-      "summary": "2026年11月10日，arXiv 新增 8 篇 Agent Benchmark。当日主题集中在代码智能体（3）、工具使用（2）、科学实验（2）、多智能体（2）。",
+      "headline": "新增 10 篇 Agent Benchmark",
+      "summary": "2026年11月10日，arXiv 新增 10 篇 Agent Benchmark。当日主题集中在工具使用（3）、代码智能体（3）、规划 / 推理（2）、科学实验（2）。",
       "highlights": [
         {
           "id": "2611.13925",
@@ -90,14 +90,51 @@
           "blurb": "Artificial intelligence agents increasingly automate cybersecurity tasks, including offensive operations."
         },
         {
-          "id": "2611.14364",
-          "title": "ARE-bench: Benchmarking Agents' Research Ability in Real-World Researcher Sessions and Workspaces",
-          "blurb": "Research agents achieve increasingly strong benchmark scores, yet these scores do not necessarily translate into reliable delivery in ongoing research projects."
+          "id": "2611.14581",
+          "title": "When Evaluators of AI Agents Disagree: An Empirical Study of Native Scoring, LLM Judges, and Commit-Boundary Checks on tau2-bench",
+          "blurb": "Agentic workflows, in which a large language model (LLM) calls tools to read and write data, are evaluated in two ways."
         }
       ]
     }
   },
   "papers": [
+    {
+      "id": "2611.14765",
+      "title": "SynthCorp: A Platform for Creating Benchmarks for Data Agents",
+      "abstract": "Current benchmarks for LLM-driven data agents saturate quickly and cannot target specific capabilities. We present SynthCorp, a platform that creates customizable data estates and benchmarks by simulating how business events produce and modify corporate data over time. Each data estate combines relational databases, a document store, and a data catalog, paired with evaluation tasks and executable gold programs. First, given a scenario and target complexity dimensions, SynthCorp synthesizes reusable event types and compiles each into a program over predefined simulation primitives. Second, SynthCorp schedules event instances on a virtual calendar, interleaving routine and disruption events so that tables, documents, and catalog entries remain consistent. Third, SynthCorp executes the calendar to materialize the data estate and records every operation in a simulation log. Fourth, SynthCorp generates analytical tasks and derives verified gold programs from the log. We use SynthCorp to generate initial evaluation benchmarks comprising seven data estates (up to 1K operational tables) and 256 tasks across five domains. The data estates pass deterministic pipeline checks (such as foreign-key violations, undeclared writes, recurrence violations, and database execution failures) with a near-zero error rate, introduce cross-asset complexities, and cover all requested dimensions. Evaluating three models across four data-context settings shows that the benchmarks separate data contexts and model tiers. Auditing candidate queries against causal provenance in the simulation log verifies gold programs without manual annotation, including on multi-event composite tasks that expose reasoning failures in state-of-the-art agents. We hope the community uses SynthCorp to generate more challenging and useful data estates and benchmarks that foster the development of enterprise data agents.",
+      "authors": [
+        "Jiani Zhang",
+        "Manav Garg",
+        "Eugenie Lai",
+        "Cheng Zhen",
+        "Eva Sharma",
+        "Yang Pan",
+        "Yaming Lin",
+        "Alon Halevy"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.DB"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-10T21:43:12Z",
+      "updated": "2026-11-10T21:43:12Z",
+      "announced_date": "2026-11-10",
+      "first_seen": "2026-11-10",
+      "comment": "SynthCorp v1.0. We will release the benchmarks soon",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.14765v1",
+        "pdf": "https://arxiv.org/pdf/2611.14765v1",
+        "html": "https://arxiv.org/html/2611.14765"
+      },
+      "score": 8,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
     {
       "id": "2611.14511",
       "title": "Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents",
@@ -326,6 +363,37 @@
       "score": 19,
       "tags": [],
       "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2611.14581",
+      "title": "When Evaluators of AI Agents Disagree: An Empirical Study of Native Scoring, LLM Judges, and Commit-Boundary Checks on tau2-bench",
+      "abstract": "Agentic workflows, in which a large language model (LLM) calls tools to read and write data, are evaluated in two ways. Benchmarks compare the final state against a gold answer. Deployed services have none; an LLM judge reads the transcript and decides. Practice treats the two as interchangeable. This paper measures whether they are. We ran 2,160 episodes in tau2-bench's airline and retail domains and recorded every database write. We scored each episode four ways: native scoring against gold state, an LLM judge, that judge given the policy document, and the boundary evaluator, a minimal rule-based check of whether a write was expected against whether one occurred in the trace. Two annotators independently labeled 120 episodes for task correctness, policy compliance, and commitment correctness. The judge repeated its verdict 98.2% of the time but agreed with native scoring on 56.2%. In 11 episodes the agent executed a forbidden write. The judge passed 10 to 11, with or without the policy or transcript. A stronger judge still passed 6. The boundary evaluator, with no model call, caught all 11; no judge significantly exceeded it on human labels. Forbidden writes occurred in 11.1% of episodes without gates. Verification, correction, and safe-termination gates did not reduce them significantly. The traces show a candidate cause: the gates' evidence digest dropped the order status and customer authentication, so valid requests were rejected. The choice of evaluator decides the conclusion; the minimal check exposes failures the judges miss. Traces, code, prompts, and labels are released.",
+      "authors": [
+        "Sungbin Im"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-11-10T05:34:47Z",
+      "updated": "2026-11-10T05:34:47Z",
+      "announced_date": "2026-11-10",
+      "first_seen": "2026-11-10",
+      "comment": "38 pages, 3 figures, 11 tables. Submitted to Empirical Software Engineering. Replication package: https://doi.org/10.5281/zenodo.23683806. Supplementary material (Online Resource 1) is included as an ancillary file",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.14581v1",
+        "pdf": "https://arxiv.org/pdf/2611.14581v1",
+        "html": "https://arxiv.org/html/2611.14581"
+      },
+      "score": 18,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
       "citations": 0
     },
     {

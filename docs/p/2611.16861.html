@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Visual Cipher Bench: Benchmarking LLM Agents on Long-Horizon Visual Reasoning | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: While language-model agents excel at long-horizon coding and terminal tasks, this success relies on two conditions: explicit text…" />
+    <meta name="keywords" content="General, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2611.16861" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.16861.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Visual Cipher Bench: Benchmarking LLM Agents on Long-Horizon Visual Reasoning" />
+    <meta property="og:description" content="Daily Agent Benchmarks: While language-model agents excel at long-horizon coding and terminal tasks, this success relies on two conditions: explicit text…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.16861.html" />
+    <meta property="article:published_time" content="2026-11-12T14:33:46Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Visual Cipher Bench: Benchmarking LLM Agents on Long-Horizon Visual Reasoning" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: While language-model agents excel at long-horizon coding and terminal tasks, this success relies on two conditions: explicit text…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Visual Cipher Bench: Benchmarking LLM Agents on Long-Horizon Visual Reasoning",
+  "name": "Visual Cipher Bench: Benchmarking LLM Agents on Long-Horizon Visual Reasoning",
+  "abstract": "While language-model agents excel at long-horizon coding and terminal tasks, this success relies on two conditions: explicit text specifications and immediate execution feedback. However, neither condition holds in real-world problems where critical information exists only in images, leaving it unclear whether long-horizon capability transfers from text to visual reasoning. In such visual settings, because rules and clues resist text transcription and lack test-case feedback, agents must repeatedly inspect images, simulate spatial transformations, and autonomously cross-check clues. Despite this challenge, existing evaluations fail to capture such capability: visual reasoning benchmarks largely reduce tasks to single-turn, short-chain question answering, whereas agent benchmarks focus on text-based environments or interactive states that permit trial-and-error. To bridge this gap, we introduce Visual Cipher Bench, a collection of 40 original visual puzzles across four categories: spatial manipulation and simulation, logical constraints and planning, rule induction, and knowledge-based decoding. Each puzzle provides only one to three black-and-white line drawings and a minimal submission instruction, requiring agents to discover the underlying solving mechanism entirely from the images. Across 29 reasoning-effort configurations of eight frontier models, even the strongest model, GPT-6 Astra (max), achieves only 26.7% accuracy, while five of the eight models score below 1%. Yet on a ten-task subset, providing a single non-spoiler mechanism hint boosts accuracy from 7.8% to 55.6%. This sharp contrast shows that the primary bottleneck of current agents lies not in executing multi-step plans, but in autonomously discovering rules from visual evidence. Visual Cipher Bench thus provides a rigorous benchmark for measuring long-horizon visual reasoning in agents.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Deyao Hong"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiayi Jiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuchun Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Yixuan Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenyi Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Zheng Jiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chengxing Xie"
+    },
+    {
+      "@type": "Person",
+      "name": "Mingyu Su"
+    },
+    {
+      "@type": "Person",
+      "name": "Qingle Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Mingju Gao"
+    },
+    {
+      "@type": "Person",
+      "name": "Yizhe Chi"
+    },
+    {
+      "@type": "Person",
+      "name": "Youjie Zheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Calvin Xiao"
+    },
+    {
+      "@type": "Person",
+      "name": "Kaisen Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Huan-ang Gao"
+    }
+  ],
+  "datePublished": "2026-11-12T14:33:46Z",
+  "dateModified": "2026-11-12T14:33:46Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.16861.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.16861.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.16861v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.16861"
+  },
+  "keywords": [
+    "General",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.16861v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.16861"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Visual Cipher Bench: Benchmarking LLM Agents on Long-Horizon Visual Reasoning</h1>
+        <div class="meta">
+          Deyao Hong, Jiayi Jiang, Yuchun Chen, Yixuan Shi, Wenyi Li, Zheng Jiang, Chengxing Xie, Mingyu Su, Qingle Liu, Mingju Gao, Yizhe Chi, Youjie Zheng, Calvin Xiao, Kaisen Yang, Huan-ang Gao
+          · 2611.16861
+          · <time datetime="2026-11-12">2026-11-12</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>While language-model agents excel at long-horizon coding and terminal tasks, this success relies on two conditions: explicit text specifications and immediate execution feedback. However, neither condition holds in real-world problems where critical information exists only in images, leaving it unclear whether long-horizon capability transfers from text to visual reasoning. In such visual settings, because rules and clues resist text transcription and lack test-case feedback, agents must repeatedly inspect images, simulate spatial transformations, and autonomously cross-check clues. Despite this challenge, existing evaluations fail to capture such capability: visual reasoning benchmarks largely reduce tasks to single-turn, short-chain question answering, whereas agent benchmarks focus on text-based environments or interactive states that permit trial-and-error. To bridge this gap, we introduce Visual Cipher Bench, a collection of 40 original visual puzzles across four categories: spatial manipulation and simulation, logical constraints and planning, rule induction, and knowledge-based decoding. Each puzzle provides only one to three black-and-white line drawings and a minimal submission instruction, requiring agents to discover the underlying solving mechanism entirely from the images. Across 29 reasoning-effort configurations of eight frontier models, even the strongest model, GPT-6 Astra (max), achieves only 26.7% accuracy, while five of the eight models score below 1%. Yet on a ten-task subset, providing a single non-spoiler mechanism hint boosts accuracy from 7.8% to 55.6%. This sharp contrast shows that the primary bottleneck of current agents lies not in executing multi-step plans, but in autonomously discovering rules from visual evidence. Visual Cipher Bench thus provides a rigorous benchmark for measuring long-horizon visual reasoning in agents.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.16861v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.16861v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.16861" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.17267.html"><strong>LiveGeo: Benchmarking Geographic Agents in Continuously Evolving Worlds</strong></a> <span>2026-11-12</span></li>
+          <li><a href="2611.16591.html"><strong>Singularity-Bench: Can Agents Build Agents?</strong></a> <span>2026-11-12</span></li>
+          <li><a href="2611.15189.html"><strong>WordInferBench: Can Agents Infer How to Edit from Word Document Context?</strong></a> <span>2026-11-11</span></li>
+          <li><a href="2611.14765.html"><strong>SynthCorp: A Platform for Creating Benchmarks for Data Agents</strong></a> <span>2026-11-10</span></li>
+          <li><a href="2611.13684.html"><strong>BypassGym: A Benchmark for Evaluating AI Agents&#x27; Endpoint Defense Evasion Capabilities</strong></a> <span>2026-11-10</span></li>
+          <li><a href="2611.13015.html"><strong>From Questions to Decisions: Benchmarking How LLM Agents Acquire Decision-Relevant Information from Human Beings</strong></a> <span>2026-11-09</span></li>
+          <li><a href="2611.11995.html"><strong>Infrathon: Benchmarking Language Agents for Real-World, Long-Horizon AI Infra Optimization</strong></a> <span>2026-11-09</span></li>
+          <li><a href="2611.11690.html"><strong>A Physical Testbed for Self-Driving Laboratories: Comparing Bayesian and Agentic Optimization in a Minimal Closed-Loop Color Formulation Task</strong></a> <span>2026-11-08</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

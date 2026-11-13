@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AstroMemBench: A Benchmark for Memory Systems in Embodied Spacecraft Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Long-term spacecraft autonomy requires embodied agents to use operational history under communication delays, time-critical…" />
+    <meta name="keywords" content="Embodied / robotics, Safety, Memory, agent benchmark, LLM agent, arXiv, 2611.16590" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.16590.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AstroMemBench: A Benchmark for Memory Systems in Embodied Spacecraft Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Long-term spacecraft autonomy requires embodied agents to use operational history under communication delays, time-critical…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.16590.html" />
+    <meta property="article:published_time" content="2026-11-12T10:23:15Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AstroMemBench: A Benchmark for Memory Systems in Embodied Spacecraft Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Long-term spacecraft autonomy requires embodied agents to use operational history under communication delays, time-critical…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AstroMemBench: A Benchmark for Memory Systems in Embodied Spacecraft Agents",
+  "name": "AstroMemBench: A Benchmark for Memory Systems in Embodied Spacecraft Agents",
+  "abstract": "Long-term spacecraft autonomy requires embodied agents to use operational history under communication delays, time-critical operations, environmental uncertainty, complex physical interactions, power and computational constraints, and safety and reliability requirements. We introduce AstroMemBench and a Scenario-Challenge-Capability design method that maps these requirements to executable memory tests. The benchmark covers 16 memory subchallenges through 140 templates and 2240 instances across nine tasks in planetary surface operations, on-orbit servicing, and deep-space exploration. A deterministic environment scores actions for task completion, state changes, safety, and resource use. Ablations under nine conditions show that the benchmark is sensitive to how accurately agents recover and use historical information and to differences in memory-system design. Main experiments compare six configurations. Mem0, Chain-of-Memory, LightMem, and retrieval-augmented generation (RAG) improve same-session mean scores over native Pi Agent, with no clear advantage of the three memory systems over RAG. After a session restart, Mem0 outperforms RAG by 12.25 points. Benefits favor instruction retention and result reuse over ongoing state tracking and energy reservation. AstroMemBench supports the design, development, and selection of memory systems for embodied spacecraft agents. AstroMemBench 1.0 and its evaluation code are publicly available: https://github.com/flyingView/AstroMemBench-v1.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "You Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Guhong Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Hongwei Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinyue Hong"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuan Jia"
+    }
+  ],
+  "datePublished": "2026-11-12T10:23:15Z",
+  "dateModified": "2026-11-12T10:23:15Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.16590.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.16590.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.16590v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.16590"
+  },
+  "keywords": [
+    "Embodied / robotics",
+    "Safety",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Embodied / robotics"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.16590v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.16590"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AstroMemBench: A Benchmark for Memory Systems in Embodied Spacecraft Agents</h1>
+        <div class="meta">
+          You Wu, Guhong Zhang, Hongwei Li, Xinyue Hong, Yuan Jia
+          · 2611.16590
+          · <time datetime="2026-11-12">2026-11-12</time>
+          · Embodied / robotics
+        </div>
+        <div class="themes"><span class="chip">Embodied / robotics</span><span class="chip">Safety</span><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Long-term spacecraft autonomy requires embodied agents to use operational history under communication delays, time-critical operations, environmental uncertainty, complex physical interactions, power and computational constraints, and safety and reliability requirements. We introduce AstroMemBench and a Scenario-Challenge-Capability design method that maps these requirements to executable memory tests. The benchmark covers 16 memory subchallenges through 140 templates and 2240 instances across nine tasks in planetary surface operations, on-orbit servicing, and deep-space exploration. A deterministic environment scores actions for task completion, state changes, safety, and resource use. Ablations under nine conditions show that the benchmark is sensitive to how accurately agents recover and use historical information and to differences in memory-system design. Main experiments compare six configurations. Mem0, Chain-of-Memory, LightMem, and retrieval-augmented generation (RAG) improve same-session mean scores over native Pi Agent, with no clear advantage of the three memory systems over RAG. After a session restart, Mem0 outperforms RAG by 12.25 points. Benefits favor instruction retention and result reuse over ongoing state tracking and energy reservation. AstroMemBench supports the design, development, and selection of memory systems for embodied spacecraft agents. AstroMemBench 1.0 and its evaluation code are publicly available: https://github.com/flyingView/AstroMemBench-v1.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.16590v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.16590v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.16590" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Embodied / robotics benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.08209.html"><strong>RoboARCade: Benchmarking Agentic Robot Control</strong></a> <span>2026-11-05</span></li>
+          <li><a href="2611.04228.html"><strong>DualWorldBench: Can Agents Plan Deliveries across Symbolic and Grounded Worlds?</strong></a> <span>2026-11-03</span></li>
+          <li><a href="2611.03765.html"><strong>VagueBench: Benchmarking the Robustness of Embodied Agents on Ambient Context Illusions</strong></a> <span>2026-11-02</span></li>
+          <li><a href="2611.01934.html"><strong>TriPhysBench: Evaluating Physical Intelligence for Embodied Agents</strong></a> <span>2026-11-01</span></li>
+          <li><a href="2610.35385.html"><strong>EmbodiedLab: Benchmarking Embodied Agents That Act to Know</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.26359.html"><strong>Discovery-Probability Graph Planning for Embodied Agents in Tasks with Hidden Cooperation Requirements</strong></a> <span>2026-10-20</span></li>
+          <li><a href="2610.27039.html"><strong>Embodied Playground: A Long-Horizon Agentic Robotics Benchmark for Physical, Strategic, and Spatial Reasoning</strong></a> <span>2026-10-19</span></li>
+          <li><a href="2610.18307.html"><strong>I2O2I-Nav: A Benchmark with a Modular Agent for Long-Horizon Indoor-to-Outdoor-to-Indoor Navigation</strong></a> <span>2026-10-13</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>
