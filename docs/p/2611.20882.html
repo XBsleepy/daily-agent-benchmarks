@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Accelerate Bench: Evaluating Agents for Application-Level Program Optimization | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Application optimization requires coding agents to discover useful changes and coordinate them across a complete program while…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Science lab, agent benchmark, LLM agent, arXiv, 2611.20882" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.20882.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Accelerate Bench: Evaluating Agents for Application-Level Program Optimization" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Application optimization requires coding agents to discover useful changes and coordinate them across a complete program while…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.20882.html" />
+    <meta property="article:published_time" content="2026-11-16T10:52:59Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Accelerate Bench: Evaluating Agents for Application-Level Program Optimization" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Application optimization requires coding agents to discover useful changes and coordinate them across a complete program while…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Accelerate Bench: Evaluating Agents for Application-Level Program Optimization",
+  "name": "Accelerate Bench: Evaluating Agents for Application-Level Program Optimization",
+  "abstract": "Application optimization requires coding agents to discover useful changes and coordinate them across a complete program while preserving the required computation. We introduce Accelerate Bench, a benchmark of 32 CPU optimization tasks adapted from scientific applications and supercomputing competitions. Each task provides a working program and specifies the workload, correctness requirements, timing boundaries, and permitted edits, leaving agents to choose where and how to optimize. Public testing supports iterative development, and a separate verifier scores the final submission. On benchmark version 1.1, we evaluate 16 coding agents, each pairing a model with a harness. Their Score@1 ranges from 25.5% to 67.4%. Most of their programs are correct, and the size of the speedup separates them: the two leading agents are at least 2x faster on 22 or more of the 32 tasks, while the other fourteen reach 2x on 8 to 17 and leave 125 of their 412 correct outcomes below 1.25x. Controlled replays show why coordination across an application matters: identical source code runs between 0.29x and 2.12x depending only on build and runtime settings, and one code change is worth 1.01x or 6.4x depending on another. Accelerate Bench pairs executable workloads with agents' programs and trajectories to evaluate both their gains and the process behind them.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Bowen Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuhan Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Nuo Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Weile Luo"
+    },
+    {
+      "@type": "Person",
+      "name": "Miao Peng"
+    },
+    {
+      "@type": "Person",
+      "name": "Qintong Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Qifan Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jia Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Ziqi Gao"
+    },
+    {
+      "@type": "Person",
+      "name": "Lydell Huang"
+    }
+  ],
+  "datePublished": "2026-11-16T10:52:59Z",
+  "dateModified": "2026-11-16T10:52:59Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.20882.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.20882.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.20882v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.20882"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.20882v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.20882"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Accelerate Bench: Evaluating Agents for Application-Level Program Optimization</h1>
+        <div class="meta">
+          Bowen Liu, Yuhan Li, Nuo Chen, Weile Luo, Miao Peng, Qintong Zhang, Qifan Zhang, Jia Li, Ziqi Gao, Lydell Huang
+          · 2611.20882
+          · <time datetime="2026-11-16">2026-11-16</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Application optimization requires coding agents to discover useful changes and coordinate them across a complete program while preserving the required computation. We introduce Accelerate Bench, a benchmark of 32 CPU optimization tasks adapted from scientific applications and supercomputing competitions. Each task provides a working program and specifies the workload, correctness requirements, timing boundaries, and permitted edits, leaving agents to choose where and how to optimize. Public testing supports iterative development, and a separate verifier scores the final submission. On benchmark version 1.1, we evaluate 16 coding agents, each pairing a model with a harness. Their Score@1 ranges from 25.5% to 67.4%. Most of their programs are correct, and the size of the speedup separates them: the two leading agents are at least 2x faster on 22 or more of the 32 tasks, while the other fourteen reach 2x on 8 to 17 and leave 125 of their 412 correct outcomes below 1.25x. Controlled replays show why coordination across an application matters: identical source code runs between 0.29x and 2.12x depending only on build and runtime settings, and one code change is worth 1.01x or 6.4x depending on another. Accelerate Bench pairs executable workloads with agents&#x27; programs and trajectories to evaluate both their gains and the process behind them.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.20882v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.20882v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.20882" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.21515.html"><strong>Beyond Leaderboard Ranks: Selecting Software Engineering Agents Under Budget Constraints</strong></a> <span>2026-11-16</span></li>
+          <li><a href="2611.18130.html"><strong>JFinBench: A Continuously Refreshable Japanese Financial Benchmark from the Latest Certification Exams</strong></a> <span>2026-11-13</span></li>
+          <li><a href="2611.16991.html"><strong>AnalogLayoutWorld: An Open Benchmark for Agentic Analog Layout Design</strong></a> <span>2026-11-12</span></li>
+          <li><a href="2611.16867.html"><strong>ControlHarbor: A Benchmark for Control Design by Coding Agents</strong></a> <span>2026-11-12</span></li>
+          <li><a href="2611.15789.html"><strong>VibePrevisBench: Evaluating Agentic Coding for 4D Scene Generation in Blender</strong></a> <span>2026-11-11</span></li>
+          <li><a href="2611.13994.html"><strong>BioXArena-Pro: a research-grade benchmark for autonomous biomedical machine learning agents</strong></a> <span>2026-11-10</span></li>
+          <li><a href="2611.13541.html"><strong>Agent Benchmarks Stop Ranking Before They Run Out of Tasks</strong></a> <span>2026-11-10</span></li>
+          <li><a href="2611.13246.html"><strong>ExpertCrowd-SWE: Measuring Frontier Coding Agents on Expert-Authored Engineering Tasks in Unfamiliar Codebases</strong></a> <span>2026-11-09</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

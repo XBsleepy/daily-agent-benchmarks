@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HospitalBench: Diagnosing Where and Why Embodied Agents Fail on Long Hospital Task Chains | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Long-horizon embodied tasks fail in ways that end-task success cannot see. HospitalBench is a diagnostic benchmark of ten hospital…" />
+    <meta name="keywords" content="Embodied / robotics, Tool use, Multimodal, agent benchmark, LLM agent, arXiv, 2611.19274" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.19274.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="HospitalBench: Diagnosing Where and Why Embodied Agents Fail on Long Hospital Task Chains" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Long-horizon embodied tasks fail in ways that end-task success cannot see. HospitalBench is a diagnostic benchmark of ten hospital…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.19274.html" />
+    <meta property="article:published_time" content="2026-11-14T09:08:39Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="HospitalBench: Diagnosing Where and Why Embodied Agents Fail on Long Hospital Task Chains" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Long-horizon embodied tasks fail in ways that end-task success cannot see. HospitalBench is a diagnostic benchmark of ten hospital…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "HospitalBench: Diagnosing Where and Why Embodied Agents Fail on Long Hospital Task Chains",
+  "name": "HospitalBench: Diagnosing Where and Why Embodied Agents Fail on Long Hospital Task Chains",
+  "abstract": "Long-horizon embodied tasks fail in ways that end-task success cannot see. HospitalBench is a diagnostic benchmark of ten hospital chores in NVIDIA Isaac Sim, each two unscored warm-up steps followed by a causal chain of five scored sub-tasks in one continuous simulation: the state one step leaves (an object pose, a choice, a fact seen once) determines what the next step must do, unlike benchmarks that place sub-tasks side by side. Vision-language agents act through skill-level tools from camera images. A scripted robot that makes only the calls a model gets is the solvability check of a chore. From each trajectory the benchmark reads where a chain breaks, what the agent did after a failed call, and how far its own position estimate drifts from the true one. This version reports first results only: 15 of 60 planned runs (three models at high effort, one run each on chores T1 and T10 from both start states and T3 from one), with scripted-robot proofs on three of the ten chores. Of the 15 runs, 2 passed all five sub-tasks. Runs still going after sub-tasks 1 to 5 were 15, 8, 4, 2, 2. Of 189 failed calls, 168 were followed by a different call and 111 by a call that did not fail. These are first results and not a full benchmark. We will release the scenes, task chains, scripted robot, evaluation harness and trajectories.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Gaytri Jena"
+    },
+    {
+      "@type": "Person",
+      "name": "Kapil Wanaskar"
+    },
+    {
+      "@type": "Person",
+      "name": "Aman Chadha"
+    },
+    {
+      "@type": "Person",
+      "name": "Vasu Sharma"
+    },
+    {
+      "@type": "Person",
+      "name": "Vinija Jain"
+    },
+    {
+      "@type": "Person",
+      "name": "Amitava Das"
+    }
+  ],
+  "datePublished": "2026-11-14T09:08:39Z",
+  "dateModified": "2026-11-14T09:08:39Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.19274.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.19274.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.19274v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.19274"
+  },
+  "keywords": [
+    "Embodied / robotics",
+    "Tool use",
+    "Multimodal",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Embodied / robotics"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.19274v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.19274"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>HospitalBench: Diagnosing Where and Why Embodied Agents Fail on Long Hospital Task Chains</h1>
+        <div class="meta">
+          Gaytri Jena, Kapil Wanaskar, Aman Chadha, Vasu Sharma, Vinija Jain, Amitava Das
+          · 2611.19274
+          · <time datetime="2026-11-14">2026-11-14</time>
+          · Embodied / robotics
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Embodied / robotics</span><span class="chip">Multimodal</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Long-horizon embodied tasks fail in ways that end-task success cannot see. HospitalBench is a diagnostic benchmark of ten hospital chores in NVIDIA Isaac Sim, each two unscored warm-up steps followed by a causal chain of five scored sub-tasks in one continuous simulation: the state one step leaves (an object pose, a choice, a fact seen once) determines what the next step must do, unlike benchmarks that place sub-tasks side by side. Vision-language agents act through skill-level tools from camera images. A scripted robot that makes only the calls a model gets is the solvability check of a chore. From each trajectory the benchmark reads where a chain breaks, what the agent did after a failed call, and how far its own position estimate drifts from the true one. This version reports first results only: 15 of 60 planned runs (three models at high effort, one run each on chores T1 and T10 from both start states and T3 from one), with scripted-robot proofs on three of the ten chores. Of the 15 runs, 2 passed all five sub-tasks. Runs still going after sub-tasks 1 to 5 were 15, 8, 4, 2, 2. Of 189 failed calls, 168 were followed by a different call and 111 by a call that did not fail. These are first results and not a full benchmark. We will release the scenes, task chains, scripted robot, evaluation harness and trajectories.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.19274v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.19274v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.19274" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Embodied / robotics benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.21485.html"><strong>Lost in the Hallway: Benchmarking Persistent Spatial Memory Across Revisits</strong></a> <span>2026-11-16</span></li>
+          <li><a href="2611.16590.html"><strong>AstroMemBench: A Benchmark for Memory Systems in Embodied Spacecraft Agents</strong></a> <span>2026-11-12</span></li>
+          <li><a href="2611.08209.html"><strong>RoboARCade: Benchmarking Agentic Robot Control</strong></a> <span>2026-11-05</span></li>
+          <li><a href="2611.04228.html"><strong>DualWorldBench: Can Agents Plan Deliveries across Symbolic and Grounded Worlds?</strong></a> <span>2026-11-03</span></li>
+          <li><a href="2611.03765.html"><strong>VagueBench: Benchmarking the Robustness of Embodied Agents on Ambient Context Illusions</strong></a> <span>2026-11-02</span></li>
+          <li><a href="2611.01934.html"><strong>TriPhysBench: Evaluating Physical Intelligence for Embodied Agents</strong></a> <span>2026-11-01</span></li>
+          <li><a href="2610.35385.html"><strong>EmbodiedLab: Benchmarking Embodied Agents That Act to Know</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.26359.html"><strong>Discovery-Probability Graph Planning for Embodied Agents in Tasks with Hidden Cooperation Requirements</strong></a> <span>2026-10-20</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SWE-CoWork: Benchmarking Coding Agents as Digital Employees in Organizations | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: A coding agent working within a software organization must establish what to build, collaborate with colleagues, and verify what it…" />
+    <meta name="keywords" content="Work / office, Coding agents, agent benchmark, LLM agent, arXiv, 2611.20218" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.20218.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SWE-CoWork: Benchmarking Coding Agents as Digital Employees in Organizations" />
+    <meta property="og:description" content="Daily Agent Benchmarks: A coding agent working within a software organization must establish what to build, collaborate with colleagues, and verify what it…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.20218.html" />
+    <meta property="article:published_time" content="2026-11-15T19:39:01Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SWE-CoWork: Benchmarking Coding Agents as Digital Employees in Organizations" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: A coding agent working within a software organization must establish what to build, collaborate with colleagues, and verify what it…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SWE-CoWork: Benchmarking Coding Agents as Digital Employees in Organizations",
+  "name": "SWE-CoWork: Benchmarking Coding Agents as Digital Employees in Organizations",
+  "abstract": "A coding agent working within a software organization must establish what to build, collaborate with colleagues, and verify what it delivers. We introduce SWE-CoWork, a benchmark comprising 101 development assignments across 101 real repositories, 11 programming languages, and 12 application domains. Each assignment places an agent in a simulated engineering organization with 26 colleagues who have distinct responsibilities, bounded knowledge, and controlled collaboration behavior. Starting from a brief handoff, agents must recover requirements distributed across colleagues and workplace records, reconcile conflicting evidence, and implement changes evaluated by private executable tests. We evaluate eleven models and find a substantial gap between partial implementation and complete task delivery. The two leading models satisfy approximately 63% of fail-to-pass (F2P) tests but complete fewer than 8% of assignments. Providing complete requirements upfront improves F2P by approximately 16 percentage points for Seed Evolving and GPT-6 Astra, yet leaves complete task success unchanged. Requirement-level trajectory analysis reveals failures throughout the delivery process: Claude-Opus-5.5 directs a mean of 93% of first questions about queried cards to their accountable owners across runs but obtains only 64% of colleague-held requirements. Deferred questions go unfollowed, implementations remain incomplete even after requirements are acquired, and 31% of requirements reported as completed fail their tests. These findings highlight sustained requirement tracking, from clarification through implementation, verification, and handoff, as a key challenge for reliable autonomous software engineering.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Xinping Lei"
+    },
+    {
+      "@type": "Person",
+      "name": "Minghao Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Ruijie Zhu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaohui Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xingqiao Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Ao Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenhao Chai"
+    },
+    {
+      "@type": "Person",
+      "name": "Han Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Tao Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jingyuan Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Enduo Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Yunfeng Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Yiming Liang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zetao Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Xingjian Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yifan Yao"
+    },
+    {
+      "@type": "Person",
+      "name": "Xinkai Ma"
+    },
+    {
+      "@type": "Person",
+      "name": "Yingru Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Tianhan Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Huan Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Weiran Shi"
+    },
+    {
+      "@type": "Person",
+      "name": "Shen Yan"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiaheng Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Stephen Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Eli Cheung"
+    },
+    {
+      "@type": "Person",
+      "name": "Weihao Xuan"
+    }
+  ],
+  "datePublished": "2026-11-15T19:39:01Z",
+  "dateModified": "2026-11-15T19:39:01Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.20218.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.20218.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.20218v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.20218"
+  },
+  "keywords": [
+    "Work / office",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Work / office"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.20218v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.20218"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SWE-CoWork: Benchmarking Coding Agents as Digital Employees in Organizations</h1>
+        <div class="meta">
+          Xinping Lei, Minghao Liu, Ruijie Zhu, Xiaohui Hu, Xingqiao Li, Ao Zhang, Wenhao Chai, Han Li, Tao Wang, Jingyuan Zhang, Enduo Zhao, Yunfeng Shi, Yiming Liang, Zetao Yang, Xingjian Wang, Yifan Yao, Xinkai Ma, Yingru Li, Tianhan Yang, Huan Zhou, Weiran Shi, Shen Yan, Jiaheng Liu, Stephen Huang, Eli Cheung, Weihao Xuan
+          · 2611.20218
+          · <time datetime="2026-11-15">2026-11-15</time>
+          · Work / office
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Work / office</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>A coding agent working within a software organization must establish what to build, collaborate with colleagues, and verify what it delivers. We introduce SWE-CoWork, a benchmark comprising 101 development assignments across 101 real repositories, 11 programming languages, and 12 application domains. Each assignment places an agent in a simulated engineering organization with 26 colleagues who have distinct responsibilities, bounded knowledge, and controlled collaboration behavior. Starting from a brief handoff, agents must recover requirements distributed across colleagues and workplace records, reconcile conflicting evidence, and implement changes evaluated by private executable tests. We evaluate eleven models and find a substantial gap between partial implementation and complete task delivery. The two leading models satisfy approximately 63% of fail-to-pass (F2P) tests but complete fewer than 8% of assignments. Providing complete requirements upfront improves F2P by approximately 16 percentage points for Seed Evolving and GPT-6 Astra, yet leaves complete task success unchanged. Requirement-level trajectory analysis reveals failures throughout the delivery process: Claude-Opus-5.5 directs a mean of 93% of first questions about queried cards to their accountable owners across runs but obtains only 64% of colleague-held requirements. Deferred questions go unfollowed, implementations remain incomplete even after requirements are acquired, and 31% of requirements reported as completed fail their tests. These findings highlight sustained requirement tracking, from clarification through implementation, verification, and handoff, as a key challenge for reliable autonomous software engineering.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.20218v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.20218v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.20218" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Work / office benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.20997.html"><strong>OpenMAS-GApp: A Comprehensive Benchmark for Domain-Adaptive Multi-Agent Application Construction</strong></a> <span>2026-11-16</span></li>
+          <li><a href="2611.13355.html"><strong>DEPUTYBENCH: Evaluating Contextual Safety in Enterprise Agents</strong></a> <span>2026-11-09</span></li>
+          <li><a href="2611.12856.html"><strong>WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems</strong></a> <span>2026-11-09</span></li>
+          <li><a href="2611.05512.html"><strong>SlackBench: Benchmarking Agents on Collaborative Projects Grounded in Real Code Repositories</strong></a> <span>2026-11-03</span></li>
+          <li><a href="2610.38544.html"><strong>An Alignment Benchmark for Enterprise Agents on Era by Eon</strong></a> <span>2026-10-28</span></li>
+          <li><a href="2610.38342.html"><strong>Investor&#x27;s Last Exam: Can AI Agents Do Equity Investment Without Seeing the Future?</strong></a> <span>2026-10-28</span></li>
+          <li><a href="2610.31711.html"><strong>MBABench-2.0: Evaluating AI Agents on Constructing Financial Spreadsheets Beyond Simple Verifiability</strong></a> <span>2026-10-22</span></li>
+          <li><a href="2610.27911.html"><strong>MMEnterprise-Bench: Evaluating Enterprise Agents over Evolving Multimodal Records</strong></a> <span>2026-10-20</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

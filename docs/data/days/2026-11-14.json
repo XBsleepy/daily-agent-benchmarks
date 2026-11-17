@@ -1,0 +1,150 @@
+{
+  "date": "2026-11-14",
+  "count": 2,
+  "report": {
+    "date": "2026-11-14",
+    "count": 2,
+    "themes": [
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multimodal",
+        "count": 2,
+        "en": "Multimodal",
+        "zh": "多模态"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "planning",
+        "count": 1,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On November 14, 2026, arXiv listed 2 new agent benchmarks. Work clustered around Tool use (2), Multimodal (2), Embodied / robotics (1), and Memory (1).",
+      "highlights": [
+        {
+          "id": "2611.19202",
+          "title": "Omni-Workspace: Benchmarking Omni-Modal AI Assistants on Multimodal Workspace Tasks",
+          "blurb": "Omni-modal agents are expected to move beyond multimodal understanding toward completing complex tasks in realistic multimodal environments."
+        },
+        {
+          "id": "2611.19274",
+          "title": "HospitalBench: Diagnosing Where and Why Embodied Agents Fail on Long Hospital Task Chains",
+          "blurb": "Long-horizon embodied tasks fail in ways that end-task success cannot see."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年11月14日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在工具使用（2）、多模态（2）、具身 / 机器人（1）、记忆（1）。",
+      "highlights": [
+        {
+          "id": "2611.19202",
+          "title": "Omni-Workspace: Benchmarking Omni-Modal AI Assistants on Multimodal Workspace Tasks",
+          "blurb": "Omni-modal agents are expected to move beyond multimodal understanding toward completing complex tasks in realistic multimodal environments."
+        },
+        {
+          "id": "2611.19274",
+          "title": "HospitalBench: Diagnosing Where and Why Embodied Agents Fail on Long Hospital Task Chains",
+          "blurb": "Long-horizon embodied tasks fail in ways that end-task success cannot see."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2611.19274",
+      "title": "HospitalBench: Diagnosing Where and Why Embodied Agents Fail on Long Hospital Task Chains",
+      "abstract": "Long-horizon embodied tasks fail in ways that end-task success cannot see. HospitalBench is a diagnostic benchmark of ten hospital chores in NVIDIA Isaac Sim, each two unscored warm-up steps followed by a causal chain of five scored sub-tasks in one continuous simulation: the state one step leaves (an object pose, a choice, a fact seen once) determines what the next step must do, unlike benchmarks that place sub-tasks side by side. Vision-language agents act through skill-level tools from camera images. A scripted robot that makes only the calls a model gets is the solvability check of a chore. From each trajectory the benchmark reads where a chain breaks, what the agent did after a failed call, and how far its own position estimate drifts from the true one. This version reports first results only: 15 of 60 planned runs (three models at high effort, one run each on chores T1 and T10 from both start states and T3 from one), with scripted-robot proofs on three of the ten chores. Of the 15 runs, 2 passed all five sub-tasks. Runs still going after sub-tasks 1 to 5 were 15, 8, 4, 2, 2. Of 189 failed calls, 168 were followed by a different call and 111 by a call that did not fail. These are first results and not a full benchmark. We will release the scenes, task chains, scripted robot, evaluation harness and trajectories.",
+      "authors": [
+        "Gaytri Jena",
+        "Kapil Wanaskar",
+        "Aman Chadha",
+        "Vasu Sharma",
+        "Vinija Jain",
+        "Amitava Das"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-14T09:08:39Z",
+      "updated": "2026-11-14T09:08:39Z",
+      "announced_date": "2026-11-14",
+      "first_seen": "2026-11-14",
+      "comment": "22 pages, 4 figures, 23 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.19274v1",
+        "pdf": "https://arxiv.org/pdf/2611.19274v1",
+        "html": "https://arxiv.org/html/2611.19274"
+      },
+      "score": 15,
+      "tags": [
+        "tool-use",
+        "embodied",
+        "multimodal"
+      ],
+      "field": "embodied",
+      "citations": 0
+    },
+    {
+      "id": "2611.19202",
+      "title": "Omni-Workspace: Benchmarking Omni-Modal AI Assistants on Multimodal Workspace Tasks",
+      "abstract": "Omni-modal agents are expected to move beyond multimodal understanding toward completing complex tasks in realistic multimodal environments. In these settings, information is distributed across heterogeneous files and modalities, with cross-file and cross-modal dependencies requiring agents to continually coordinate perception, reasoning, and tool use as newly gathered evidence informs subsequent actions. However, existing omni-modal benchmarks primarily focus on multimodal perception and understanding, leaving complex task completion through sustained interaction with multimodal workspaces underexplored. We introduce Omni-Workspace, a benchmark comprising 380 deep-research-style tasks across four multimodal workspace types and two difficulty levels. These tasks require agents to inspect and process workspace files, retrieve external information when needed, integrate evidence across files and modalities, and produce artifacts satisfying explicit requirements. Evaluating 18 representative models reveals limitations in long-horizon multimodal workspace execution, with the best model scoring only 65.93 on average. Further analysis identifies multimodal context inflation and task-state drift as recurring challenges. Motivated by these findings, we further propose OmniFocus, a lightweight approach combining multimodal working-memory management with explicit task-state tracking to improve performance and efficiency. Omni-Workspace advances the evaluation and development of omni-modal agents toward autonomous completion of complex tasks in multimodal workspaces.",
+      "authors": [
+        "Yuhao Wang",
+        "Yucheng Zhao",
+        "Yiran Zhong",
+        "Feida Zhu",
+        "Hongcheng Liu",
+        "Qichao Wang",
+        "Ming Ma",
+        "Yu Wang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-11-14T06:49:09Z",
+      "updated": "2026-11-14T06:49:09Z",
+      "announced_date": "2026-11-14",
+      "first_seen": "2026-11-14",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.19202v1",
+        "pdf": "https://arxiv.org/pdf/2611.19202v1",
+        "html": "https://arxiv.org/html/2611.19202"
+      },
+      "score": 17,
+      "tags": [
+        "tool-use",
+        "memory",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    }
+  ]
+}

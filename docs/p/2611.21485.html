@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lost in the Hallway: Benchmarking Persistent Spatial Memory Across Revisits | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Persistent spatial understanding is essential for embodied agents to operate reliably in environments they repeatedly encounter. It…" />
+    <meta name="keywords" content="Embodied / robotics, Memory, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2611.21485" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.21485.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Lost in the Hallway: Benchmarking Persistent Spatial Memory Across Revisits" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Persistent spatial understanding is essential for embodied agents to operate reliably in environments they repeatedly encounter. It…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.21485.html" />
+    <meta property="article:published_time" content="2026-11-16T17:54:39Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Lost in the Hallway: Benchmarking Persistent Spatial Memory Across Revisits" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Persistent spatial understanding is essential for embodied agents to operate reliably in environments they repeatedly encounter. It…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Lost in the Hallway: Benchmarking Persistent Spatial Memory Across Revisits",
+  "name": "Lost in the Hallway: Benchmarking Persistent Spatial Memory Across Revisits",
+  "abstract": "Persistent spatial understanding is essential for embodied agents to operate reliably in environments they repeatedly encounter. It requires recognizing revisited places despite viewpoint changes, distinguishing them from similar-looking rooms, and updating memories as environments change. Yet existing evaluations often leave physical place identity across separated visits implicit. We introduce ReSpaceBench, a benchmark comprising 3,244 questions across 590 synthetic and real-home scenes, organized into 9 tasks spanning room association, persistent state tracking, and downstream reasoning. Controlled walkthroughs define visits by physical room entry and deliberately include same-type room distractors and cross-session object changes. Our evaluation of 32 models and 3 agentic video-understanding frameworks reveals substantial limitations: the strongest evaluated zero-shot model achieves 50.5% overall accuracy and 52.2% on a 450-question subset, compared with 90.1% for human annotators. The evaluated agentic frameworks offer no overall improvement over direct inference with the same base model. Analysis of agent execution traces reveals evidence omissions and incorrect cross-visit room associations as major failure modes, suggesting that iterative evidence seeking alone does not ensure consistent spatial memory. Further analyses expose a gap between recognizing familiar rooms and identifying the correct visited room, while annotation-guided sampling highlights the importance of preserving intervening visits and transitions. We also provide RS-30K, a separate training dataset from synthetic sources with no template, scene, route, or video overlap with the benchmark. Fine-tuning Qwen3-VL-8B raises overall accuracy from 35.5% to 60.4%, with the largest gains in association and improvements extending to real-life scenes.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Henry Zheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Weibo Gong"
+    },
+    {
+      "@type": "Person",
+      "name": "Yang Yue"
+    },
+    {
+      "@type": "Person",
+      "name": "Rui Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yang Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Gao Huang"
+    }
+  ],
+  "datePublished": "2026-11-16T17:54:39Z",
+  "dateModified": "2026-11-16T17:54:39Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.21485.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.21485.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.21485v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.21485"
+  },
+  "keywords": [
+    "Embodied / robotics",
+    "Memory",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Embodied / robotics"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.21485v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.21485"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Lost in the Hallway: Benchmarking Persistent Spatial Memory Across Revisits</h1>
+        <div class="meta">
+          Henry Zheng, Weibo Gong, Yang Yue, Rui Huang, Yang Zhang, Gao Huang
+          · 2611.21485
+          · <time datetime="2026-11-16">2026-11-16</time>
+          · Embodied / robotics
+        </div>
+        <div class="themes"><span class="chip">Embodied / robotics</span><span class="chip">Memory</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Persistent spatial understanding is essential for embodied agents to operate reliably in environments they repeatedly encounter. It requires recognizing revisited places despite viewpoint changes, distinguishing them from similar-looking rooms, and updating memories as environments change. Yet existing evaluations often leave physical place identity across separated visits implicit. We introduce ReSpaceBench, a benchmark comprising 3,244 questions across 590 synthetic and real-home scenes, organized into 9 tasks spanning room association, persistent state tracking, and downstream reasoning. Controlled walkthroughs define visits by physical room entry and deliberately include same-type room distractors and cross-session object changes. Our evaluation of 32 models and 3 agentic video-understanding frameworks reveals substantial limitations: the strongest evaluated zero-shot model achieves 50.5% overall accuracy and 52.2% on a 450-question subset, compared with 90.1% for human annotators. The evaluated agentic frameworks offer no overall improvement over direct inference with the same base model. Analysis of agent execution traces reveals evidence omissions and incorrect cross-visit room associations as major failure modes, suggesting that iterative evidence seeking alone does not ensure consistent spatial memory. Further analyses expose a gap between recognizing familiar rooms and identifying the correct visited room, while annotation-guided sampling highlights the importance of preserving intervening visits and transitions. We also provide RS-30K, a separate training dataset from synthetic sources with no template, scene, route, or video overlap with the benchmark. Fine-tuning Qwen3-VL-8B raises overall accuracy from 35.5% to 60.4%, with the largest gains in association and improvements extending to real-life scenes.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.21485v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.21485v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.21485" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Embodied / robotics benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.19274.html"><strong>HospitalBench: Diagnosing Where and Why Embodied Agents Fail on Long Hospital Task Chains</strong></a> <span>2026-11-14</span></li>
+          <li><a href="2611.16590.html"><strong>AstroMemBench: A Benchmark for Memory Systems in Embodied Spacecraft Agents</strong></a> <span>2026-11-12</span></li>
+          <li><a href="2611.08209.html"><strong>RoboARCade: Benchmarking Agentic Robot Control</strong></a> <span>2026-11-05</span></li>
+          <li><a href="2611.04228.html"><strong>DualWorldBench: Can Agents Plan Deliveries across Symbolic and Grounded Worlds?</strong></a> <span>2026-11-03</span></li>
+          <li><a href="2611.03765.html"><strong>VagueBench: Benchmarking the Robustness of Embodied Agents on Ambient Context Illusions</strong></a> <span>2026-11-02</span></li>
+          <li><a href="2611.01934.html"><strong>TriPhysBench: Evaluating Physical Intelligence for Embodied Agents</strong></a> <span>2026-11-01</span></li>
+          <li><a href="2610.35385.html"><strong>EmbodiedLab: Benchmarking Embodied Agents That Act to Know</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.26359.html"><strong>Discovery-Probability Graph Planning for Embodied Agents in Tasks with Hidden Cooperation Requirements</strong></a> <span>2026-10-20</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

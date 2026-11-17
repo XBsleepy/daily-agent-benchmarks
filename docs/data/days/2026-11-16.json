@@ -1,0 +1,425 @@
+{
+  "date": "2026-11-16",
+  "count": 9,
+  "report": {
+    "date": "2026-11-16",
+    "count": 9,
+    "themes": [
+      {
+        "id": "coding",
+        "count": 2,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "planning",
+        "count": 2,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multi-agent",
+        "count": 2,
+        "en": "Multi-agent",
+        "zh": "多智能体"
+      },
+      {
+        "id": "embodied",
+        "count": 1,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
+      {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "science",
+        "count": 1,
+        "en": "Science lab",
+        "zh": "科学实验"
+      },
+      {
+        "id": "conversation",
+        "count": 1,
+        "en": "Dialogue / customer",
+        "zh": "对话 / 客服"
+      }
+    ],
+    "en": {
+      "headline": "9 new agent benchmarks",
+      "summary": "On November 16, 2026, arXiv listed 9 new agent benchmarks. Work clustered around Coding agents (2), Planning / reasoning (2), Tool use (2), and Multi-agent (2).",
+      "highlights": [
+        {
+          "id": "2611.21273",
+          "title": "CAE-Bench: Benchmarking AI Agents for Reusable CAE Solver Development",
+          "blurb": "We developed CAE-Bench, a benchmark to evaluate AI agents on Computer-Aided Engineering (CAE) solver development."
+        },
+        {
+          "id": "2611.20535",
+          "title": "VAHBench: A Harness Benchmark for Agentic Long-Video Generation",
+          "blurb": "AI agents are commonly used for everyday information retrieval and coding."
+        },
+        {
+          "id": "2611.21485",
+          "title": "Lost in the Hallway: Benchmarking Persistent Spatial Memory Across Revisits",
+          "blurb": "Persistent spatial understanding is essential for embodied agents to operate reliably in environments they repeatedly encounter."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 9 篇 Agent Benchmark",
+      "summary": "2026年11月16日，arXiv 新增 9 篇 Agent Benchmark。当日主题集中在代码智能体（2）、规划 / 推理（2）、工具使用（2）、多智能体（2）。",
+      "highlights": [
+        {
+          "id": "2611.21273",
+          "title": "CAE-Bench: Benchmarking AI Agents for Reusable CAE Solver Development",
+          "blurb": "We developed CAE-Bench, a benchmark to evaluate AI agents on Computer-Aided Engineering (CAE) solver development."
+        },
+        {
+          "id": "2611.20535",
+          "title": "VAHBench: A Harness Benchmark for Agentic Long-Video Generation",
+          "blurb": "AI agents are commonly used for everyday information retrieval and coding."
+        },
+        {
+          "id": "2611.21485",
+          "title": "Lost in the Hallway: Benchmarking Persistent Spatial Memory Across Revisits",
+          "blurb": "Persistent spatial understanding is essential for embodied agents to operate reliably in environments they repeatedly encounter."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2611.21515",
+      "title": "Beyond Leaderboard Ranks: Selecting Software Engineering Agents Under Budget Constraints",
+      "abstract": "Teams that adopt LLM agents for issue resolution must decide which agent to pay for, and how much to spend finding out. Leaderboard ranks give weak evidence for this decision. Accuracy differences may be statistically unresolved, reported costs may be inconsistent, and evaluating candidate agents can itself be expensive. We investigate budget-constrained agent selection using 58,197 run--task records extracted from the Holistic Agent Leaderboard (HAL), focusing on SWE-bench and six additional benchmarks. Across seven benchmarks, 27 of 35 steps along the accuracy--cost Pareto frontiers are statistically unresolved. On SWE-bench, a run costing $34.16 trails the $170.78 leader by 14.6 percentage points, but the available tasks cannot statistically distinguish their accuracy. Reported costs also differ from standardized token-based estimates by up to 11.7x, while selective task evaluation can bias estimates of full-benchmark execution cost. We therefore compare evaluation strategies under explicit evaluation budgets and deployment-cost caps. Under advance knowledge of task costs, successive halving reaches our uncertainty-aware selection target on SWE-bench using 6.6% of exhaustive evaluation spend, achieving the lowest cost on six of seven benchmarks and tying on the seventh. Its advantage narrows when task costs are unknown before execution or exact-best selection is required. Our findings motivate decision-oriented agent evaluation that accounts for accuracy uncertainty, validates execution costs, and compares complex selection methods against simple adaptive allocation.",
+      "authors": [
+        "Srinath Srinivasan",
+        "Tim Menzies"
+      ],
+      "categories": [
+        "cs.SE"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-11-16T18:10:37Z",
+      "updated": "2026-11-16T18:10:37Z",
+      "announced_date": "2026-11-16",
+      "first_seen": "2026-11-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.21515v1",
+        "pdf": "https://arxiv.org/pdf/2611.21515v1",
+        "html": "https://arxiv.org/html/2611.21515"
+      },
+      "score": 12,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2611.21485",
+      "title": "Lost in the Hallway: Benchmarking Persistent Spatial Memory Across Revisits",
+      "abstract": "Persistent spatial understanding is essential for embodied agents to operate reliably in environments they repeatedly encounter. It requires recognizing revisited places despite viewpoint changes, distinguishing them from similar-looking rooms, and updating memories as environments change. Yet existing evaluations often leave physical place identity across separated visits implicit. We introduce ReSpaceBench, a benchmark comprising 3,244 questions across 590 synthetic and real-home scenes, organized into 9 tasks spanning room association, persistent state tracking, and downstream reasoning. Controlled walkthroughs define visits by physical room entry and deliberately include same-type room distractors and cross-session object changes. Our evaluation of 32 models and 3 agentic video-understanding frameworks reveals substantial limitations: the strongest evaluated zero-shot model achieves 50.5% overall accuracy and 52.2% on a 450-question subset, compared with 90.1% for human annotators. The evaluated agentic frameworks offer no overall improvement over direct inference with the same base model. Analysis of agent execution traces reveals evidence omissions and incorrect cross-visit room associations as major failure modes, suggesting that iterative evidence seeking alone does not ensure consistent spatial memory. Further analyses expose a gap between recognizing familiar rooms and identifying the correct visited room, while annotation-guided sampling highlights the importance of preserving intervening visits and transitions. We also provide RS-30K, a separate training dataset from synthetic sources with no template, scene, route, or video overlap with the benchmark. Fine-tuning Qwen3-VL-8B raises overall accuracy from 35.5% to 60.4%, with the largest gains in association and improvements extending to real-life scenes.",
+      "authors": [
+        "Henry Zheng",
+        "Weibo Gong",
+        "Yang Yue",
+        "Rui Huang",
+        "Yang Zhang",
+        "Gao Huang"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-16T17:54:39Z",
+      "updated": "2026-11-16T17:54:39Z",
+      "announced_date": "2026-11-16",
+      "first_seen": "2026-11-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.21485v1",
+        "pdf": "https://arxiv.org/pdf/2611.21485v1",
+        "html": "https://arxiv.org/html/2611.21485"
+      },
+      "score": 15,
+      "tags": [
+        "embodied",
+        "memory",
+        "planning"
+      ],
+      "field": "embodied",
+      "citations": 0
+    },
+    {
+      "id": "2611.21273",
+      "title": "CAE-Bench: Benchmarking AI Agents for Reusable CAE Solver Development",
+      "abstract": "We developed CAE-Bench, a benchmark to evaluate AI agents on Computer-Aided Engineering (CAE) solver development. A CAE solver is more than a PDE solver; it must be able to generalize across various inputs, such as different boundary conditions, geometries, and material properties. CAE-Bench evaluates the generalizability of AI-developed CAE solvers by providing the same task, such as a heat transfer problem, multiple cases, with each case specifying an input. The AI agent develops a solver for a fixed task using only a few public cases, and the resulting solver is then tested on held-out cases, i.e., cases it has never seen before. We evaluate 12 models across a range of reasoning settings on 80 computational tasks. Our experiments show that even if a solver developed by an AI agent performs well on the public cases, it may even get 0 score on held-out cases. For tasks such as fluid dynamics problems, even the solver developed by GPT-6 Astra performs poorly on held-out cases. A data format and an SDK for task registration are provided, so the researcher can use the benchmark on their own infrastructure. We hope that CAE-Bench will help the community to develop AI agents that can develop reusable CAE solvers that generalize to various inputs.",
+      "authors": [
+        "Zhiyu Zhou",
+        "Tianyou Liu",
+        "Xinping Yang",
+        "Yiyao Liu",
+        "Jiayi Dong",
+        "Yihan Lin",
+        "Haokai Ye",
+        "Yifan Lu",
+        "Zeyu Dong",
+        "Yansong Li",
+        "Shengqi Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-16T15:40:43Z",
+      "updated": "2026-11-16T15:40:43Z",
+      "announced_date": "2026-11-16",
+      "first_seen": "2026-11-16",
+      "comment": "18 pages, 6 figures, 8 tables. Zhiyu Zhou and Tianyou Liu contributed equally",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.21273v1",
+        "pdf": "https://arxiv.org/pdf/2611.21273v1",
+        "html": "https://arxiv.org/html/2611.21273"
+      },
+      "score": 22,
+      "tags": [
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2611.20997",
+      "title": "OpenMAS-GApp: A Comprehensive Benchmark for Domain-Adaptive Multi-Agent Application Construction",
+      "abstract": "Constructing multi-agent system (MAS) applications across domains requires translating diverse requirements into executable systems, involving task decomposition, agent and tool selection, and execution organization. Existing studies have explored individual aspects of MAS construction, including agent generation, architecture design, workflow generation, and component selection. However, these methods are often developed and evaluated independently, using different task specifications, component resources, and execution settings. This makes it difficult to compare their construction capabilities or determine how they can be applied to different domains. To address this problem, we propose OpenMAS-GApp, a One-for-All benchmark for MAS application construction across diverse domains. It standardizes task inputs, component resources, construction interfaces, and execution environments to support MAS construction under consistent conditions. Within OpenMAS-GApp, we provide Graph Harness as a reference construction method that derives task dependencies, selects compatible agents and tools, and organizes their interactions into executable graphs. We evaluate construction methods across 19 benchmark datasets under 20 evaluation settings spanning four application types and four professional domains.",
+      "authors": [
+        "Xunkai Li",
+        "Kairui Yang",
+        "Jiaxi Li",
+        "Yuecong Mao",
+        "Zekai Chen",
+        "Xinle Zhang",
+        "Rong-Hua Li",
+        "Guoren Wang"
+      ],
+      "categories": [
+        "cs.MA"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-11-16T12:25:56Z",
+      "updated": "2026-11-16T12:25:56Z",
+      "announced_date": "2026-11-16",
+      "first_seen": "2026-11-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.20997v1",
+        "pdf": "https://arxiv.org/pdf/2611.20997v1",
+        "html": "https://arxiv.org/html/2611.20997"
+      },
+      "score": 14,
+      "tags": [
+        "tool-use",
+        "multi-agent"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2611.20882",
+      "title": "Accelerate Bench: Evaluating Agents for Application-Level Program Optimization",
+      "abstract": "Application optimization requires coding agents to discover useful changes and coordinate them across a complete program while preserving the required computation. We introduce Accelerate Bench, a benchmark of 32 CPU optimization tasks adapted from scientific applications and supercomputing competitions. Each task provides a working program and specifies the workload, correctness requirements, timing boundaries, and permitted edits, leaving agents to choose where and how to optimize. Public testing supports iterative development, and a separate verifier scores the final submission. On benchmark version 1.1, we evaluate 16 coding agents, each pairing a model with a harness. Their Score@1 ranges from 25.5% to 67.4%. Most of their programs are correct, and the size of the speedup separates them: the two leading agents are at least 2x faster on 22 or more of the 32 tasks, while the other fourteen reach 2x on 8 to 17 and leave 125 of their 412 correct outcomes below 1.25x. Controlled replays show why coordination across an application matters: identical source code runs between 0.29x and 2.12x depending only on build and runtime settings, and one code change is worth 1.01x or 6.4x depending on another. Accelerate Bench pairs executable workloads with agents' programs and trajectories to evaluate both their gains and the process behind them.",
+      "authors": [
+        "Bowen Liu",
+        "Yuhan Li",
+        "Nuo Chen",
+        "Weile Luo",
+        "Miao Peng",
+        "Qintong Zhang",
+        "Qifan Zhang",
+        "Jia Li",
+        "Ziqi Gao",
+        "Lydell Huang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-16T10:52:59Z",
+      "updated": "2026-11-16T10:52:59Z",
+      "announced_date": "2026-11-16",
+      "first_seen": "2026-11-16",
+      "comment": "49 pages, 8 figures. Work by Bowen Liu was done during an internship at Tencent Hy Team. Yuhan Li is Project Lead; Nuo Chen is corresponding author (chennuo26@gmail.com). Project page: https://acceleratebench.com/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.20882v1",
+        "pdf": "https://arxiv.org/pdf/2611.20882v1",
+        "html": "https://arxiv.org/html/2611.20882"
+      },
+      "score": 11,
+      "tags": [
+        "coding",
+        "science"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2611.20844",
+      "title": "DetourBench: Trajectory-Level Evaluation of Interactive Agents with Exact Minimum-Action Bounds",
+      "abstract": "Benchmarks judge language-model agents mainly by whether they reach the correct final state, not by how they got there. Endpoint scoring cannot separate an agent that retrieved exactly the evidence a decision required from one that read most of the environment, nor an agent that never located the evidence from one that stopped a single action short. Settling this needs a reference cost, and authored solutions establish only that a task is solvable, not that no shorter route exists. We present DetourBench, which constrains the environment until that minimum is computable. Each task is a finite, partially observable transition system with unit-cost accesses whose resources become globally addressable after discovery. Exhaustive search yields the full-information minimum action count $L_0$ with a replayable witness; from graph-recoverable terminal states it also yields exact residual work $R_T$, which separates an episode that stopped one access short from one that wandered, while an irreversible wrong commitment is recorded as having no finite residual distance rather than assigned one. Success, attainment, residual progress, and normalized detour are reported separately. Across 375 scored episodes --- five model endpoints, 25 integrated tasks, three repeats --- success ranges from 58.7% to 96.0% while conditional attainment ranges from 0.803 to 0.890 and orders the models differently. Among recoverable failures, residual work separates near-complete trajectories from costly incompletion and from irreversible commitment. We open-source the instances, oracle witnesses, and evaluation harness at https://github.com/DatagridsAI/DetourBench.",
+      "authors": [
+        "Hanlin Tian",
+        "Sihan Zhu",
+        "Zhao Yang",
+        "Yuxiang Wang",
+        "Zhiquan Hu",
+        "Yu Mi",
+        "Hongquan Zhu",
+        "Qiufei Hu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-16T10:22:21Z",
+      "updated": "2026-11-16T10:22:21Z",
+      "announced_date": "2026-11-16",
+      "first_seen": "2026-11-16",
+      "comment": "Accepted at NeurIPS 2026 Workshop: Evaluation of Interactive Agents",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.20844v1",
+        "pdf": "https://arxiv.org/pdf/2611.20844v1",
+        "html": "https://arxiv.org/html/2611.20844"
+      },
+      "score": 13,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2611.20671",
+      "title": "MASTA: A Feedback-Scheduled Multi-Agent System for End-to-End Tamarin Modeling and Analysis",
+      "abstract": "Tamarin-based formal verification of security protocols requires expert-authored multiset rewriting rules and temporal-logic lemmas. Translating a natural-language protocol description into a complete formal model with an LLM is hard because syntactic, reachability, and property-level errors compound across the multi-step modeling process, and a single agent that both authors and self-evaluates cannot reliably localize them. We present MASTA, a multi-agent system that addresses these difficulties through three innovations. First, an operational--evaluative role decomposition assigns rule modeling to an Architect, property modeling to an Auditor, and pure dispatch to a dedicated Arbiter that holds no authoring duties. Second, the Arbiter implements a Tamarin-anchored scheduler that dispatches the next agent based on the latest verifier verdict and routes problem-tagged fixes through a modification list, with a six-class problem taxonomy and an LLM deduplication check preventing routing deadlock. Third, we construct a benchmark of 10 protocols paired with 139 mutation variants and five fine-grained metrics that jointly assess model correctness ($M_1$--$M_3$) and completeness ($M_4$--$M_5$). On this benchmark, MASTA on Qwen 3.5-plus improves over OpenCode on the same backbone by up to $+0.27$ on individual metrics and ranks first on both the correctness and completeness averages, surpassing Codex (GPT-5.5) and Claude Code (Opus 4.7) despite using a weaker LLM. Ablations on five protocols confirm that removing the Arbiter collapses property and verification scores to zero.",
+      "authors": [
+        "Yongkang Xiao",
+        "Qiyi Deng",
+        "Jing Chen",
+        "Min Shi",
+        "Ju Ma",
+        "Ruiying Du"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-11-16T07:33:22Z",
+      "updated": "2026-11-16T07:33:22Z",
+      "announced_date": "2026-11-16",
+      "first_seen": "2026-11-16",
+      "comment": "Accepted at NeurIPS 2026 (Main Track, poster). 19 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.20671v1",
+        "pdf": "https://arxiv.org/pdf/2611.20671v1",
+        "html": "https://arxiv.org/html/2611.20671"
+      },
+      "score": 10,
+      "tags": [
+        "multi-agent"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2611.20535",
+      "title": "VAHBench: A Harness Benchmark for Agentic Long-Video Generation",
+      "abstract": "AI agents are commonly used for everyday information retrieval and coding. We ask whether they can also interpret human requests and turn them into complete videos. We introduce VAHBench, a benchmark that tests this ability through five short-drama briefs specifying story, characters, dialogue and duration. Agents plan and carry out production using shared generation tools. Evaluation combines video completeness and basic quality with checks of production reliability and reporting accuracy. Across 240 runs covering 48 configurations of general-purpose and video-specific agents, higher quality scores do not necessarily mean more complete delivery. Missing episodes, repeated footage and static filler reveal gaps between producing a video file and fulfilling the brief. Added composition tools help some agents but do not consistently improve performance. VAHBench measures how well agents translate user intent into finished video content and helps identify where that process breaks down.",
+      "authors": [
+        "Hongbo Zhang",
+        "Liuyang Song",
+        "Hang Zhou",
+        "Xinchen Liu",
+        "Wei He",
+        "Kai Han",
+        "Yunhe Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-16T05:11:08Z",
+      "updated": "2026-11-16T05:11:08Z",
+      "announced_date": "2026-11-16",
+      "first_seen": "2026-11-16",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.20535v1",
+        "pdf": "https://arxiv.org/pdf/2611.20535v1",
+        "html": "https://arxiv.org/html/2611.20535"
+      },
+      "score": 21,
+      "tags": [
+        "tool-use",
+        "conversation"
+      ],
+      "field": "conversation",
+      "citations": 0
+    },
+    {
+      "id": "2611.20488",
+      "title": "EVIDENT: Evaluating Evidence Grounding in GUI Agents",
+      "abstract": "GUI agents are increasingly evaluated by whether they complete web tasks, but surface success can hide a critical failure: the final answer may not be supported by evidence observed during navigation. We introduce EVIDENT, an evidence-driven benchmark for evaluating whether GUI agents ground their decisions in observable web evidence. EVIDENT contains 220 real-world English and Korean tasks spanning semantic grounding, contextual inference, and visual grounding, each paired with human-curated evidence metadata specifying what must be verified. We further separate surface task completion from evidence-grounded success using three metrics: TSR, ESR, and GSR, which respectively measure outcome success, required evidence observation, and claim-level evidence support. Experiments on commercial and open-source GUI agents reveal substantial gaps between surface success and evidence-grounded success, especially in contextual and visual tasks. These results show that current evaluations can overestimate agent reliability and highlight the need to assess not only whether agents answer, but whether they verify.",
+      "authors": [
+        "Yerin Nam",
+        "Minkyung Cho",
+        "MinKyu Kim",
+        "SeungWoo Song",
+        "Hangyeol Yoo",
+        "Jihyo Kim",
+        "KyungTae Lim"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.HC"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-16T03:56:02Z",
+      "updated": "2026-11-16T03:56:02Z",
+      "announced_date": "2026-11-16",
+      "first_seen": "2026-11-16",
+      "comment": "Accepted to EACL 2027 Findings. 36 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.20488v1",
+        "pdf": "https://arxiv.org/pdf/2611.20488v1",
+        "html": "https://arxiv.org/html/2611.20488"
+      },
+      "score": 11,
+      "tags": [
+        "gui"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    }
+  ]
+}
