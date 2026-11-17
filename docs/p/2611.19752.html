@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StaleBench: Isolating Stale Retrieval in Agent Memory, and Pricing the Fix | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: An agent that stores facts over time eventually stores several versions of the same fact. Asked a value-agnostic question - &quot;which…" />
+    <meta name="keywords" content="General, Memory, agent benchmark, LLM agent, arXiv, 2611.19752" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.19752.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="StaleBench: Isolating Stale Retrieval in Agent Memory, and Pricing the Fix" />
+    <meta property="og:description" content="Daily Agent Benchmarks: An agent that stores facts over time eventually stores several versions of the same fact. Asked a value-agnostic question - &quot;which…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.19752.html" />
+    <meta property="article:published_time" content="2026-11-17T05:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="StaleBench: Isolating Stale Retrieval in Agent Memory, and Pricing the Fix" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: An agent that stores facts over time eventually stores several versions of the same fact. Asked a value-agnostic question - &quot;which…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "StaleBench: Isolating Stale Retrieval in Agent Memory, and Pricing the Fix",
+  "name": "StaleBench: Isolating Stale Retrieval in Agent Memory, and Pricing the Fix",
+  "abstract": "An agent that stores facts over time eventually stores several versions of the same fact. Asked a value-agnostic question - \"which team does X play for now?\" - a similarity retriever cannot prefer the current version, because every version matches the entity the query names. StaleBench isolates this stale-retrieval failure on 892 real updating facts, with currency labels from the source (Wikidata validity years via TempLAMA), never from a retrieval score. Our central result is that retrieval metrics can rank memory policies backwards: a retention policy and its retain-everything control return the identical statement at rank 1 for every test query, yet differ by 29.5 and 65.6 points in reader accuracy on two readers when no date is shown. Contamination@5, the metric we add, ranks them correctly where current@1 and current@5 do not. Withdrawing the lexical anchor that statements carry costs deployed keying mechanisms tens of points of freshness; entity resolution on both the write path and the query recovers most of the loss. Three deployed systems (Mem0, Graphiti, LangMem) and a reimplemented ERASE each handle supersession differently, and no single scoring convention describes all four. We release the data, a frozen evaluator, and reference baselines.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "S M Mahbub Murshed"
+    }
+  ],
+  "datePublished": "2026-11-17T05:00:00Z",
+  "dateModified": "2026-11-17T05:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.19752.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.19752.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.19752"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.19752"
+  },
+  "keywords": [
+    "General",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "General"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.19752"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.19752"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>StaleBench: Isolating Stale Retrieval in Agent Memory, and Pricing the Fix</h1>
+        <div class="meta">
+          S M Mahbub Murshed
+          · 2611.19752
+          · <time datetime="2026-11-17">2026-11-17</time>
+          · General
+        </div>
+        <div class="themes"><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>An agent that stores facts over time eventually stores several versions of the same fact. Asked a value-agnostic question - &quot;which team does X play for now?&quot; - a similarity retriever cannot prefer the current version, because every version matches the entity the query names. StaleBench isolates this stale-retrieval failure on 892 real updating facts, with currency labels from the source (Wikidata validity years via TempLAMA), never from a retrieval score. Our central result is that retrieval metrics can rank memory policies backwards: a retention policy and its retain-everything control return the identical statement at rank 1 for every test query, yet differ by 29.5 and 65.6 points in reader accuracy on two readers when no date is shown. Contamination@5, the metric we add, ranks them correctly where current@1 and current@5 do not. Withdrawing the lexical anchor that statements carry costs deployed keying mechanisms tens of points of freshness; entity resolution on both the write path and the query recovers most of the loss. Three deployed systems (Mem0, Graphiti, LangMem) and a reimplemented ERASE each handle supersession differently, and no single scoring convention describes all four. We release the data, a frozen evaluator, and reference baselines.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.19752" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.19752" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.19752" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More General benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.21273.html"><strong>CAE-Bench: Benchmarking AI Agents for Reusable CAE Solver Development</strong></a> <span>2026-11-17</span></li>
+          <li><a href="2611.20844.html"><strong>DetourBench: Trajectory-Level Evaluation of Interactive Agents with Exact Minimum-Action Bounds</strong></a> <span>2026-11-17</span></li>
+          <li><a href="2611.18926.html"><strong>DataTrace: Benchmarking Data Agents for Evidence-Grounded Root-Cause Localization</strong></a> <span>2026-11-13</span></li>
+          <li><a href="2611.17933.html"><strong>OutfitterBench: Evaluating LLM Agents on Long-Horizon Resource Allocation and Commitment Coordination</strong></a> <span>2026-11-13</span></li>
+          <li><a href="2611.17267.html"><strong>LiveGeo: Benchmarking Geographic Agents in Continuously Evolving Worlds</strong></a> <span>2026-11-12</span></li>
+          <li><a href="2611.16861.html"><strong>Visual Cipher Bench: Benchmarking LLM Agents on Long-Horizon Visual Reasoning</strong></a> <span>2026-11-12</span></li>
+          <li><a href="2611.16591.html"><strong>Singularity-Bench: Can Agents Build Agents?</strong></a> <span>2026-11-12</span></li>
+          <li><a href="2611.15189.html"><strong>WordInferBench: Can Agents Infer How to Edit from Word Document Context?</strong></a> <span>2026-11-11</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>
