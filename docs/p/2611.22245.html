@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Multi-Agent Memory Inconsistency: Where Factual Conflicts Disappear in LLM Agents | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Multi-agent delegation lets LLM systems distribute evidence collection across workers with separate contexts. This creates a…" />
+    <meta name="keywords" content="Multi-agent, Memory, Science lab, agent benchmark, LLM agent, arXiv, 2611.22245" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.22245.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Multi-Agent Memory Inconsistency: Where Factual Conflicts Disappear in LLM Agents" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Multi-agent delegation lets LLM systems distribute evidence collection across workers with separate contexts. This creates a…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.22245.html" />
+    <meta property="article:published_time" content="2026-11-17T05:47:01Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Multi-Agent Memory Inconsistency: Where Factual Conflicts Disappear in LLM Agents" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Multi-agent delegation lets LLM systems distribute evidence collection across workers with separate contexts. This creates a…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Multi-Agent Memory Inconsistency: Where Factual Conflicts Disappear in LLM Agents",
+  "name": "Multi-Agent Memory Inconsistency: Where Factual Conflicts Disappear in LLM Agents",
+  "abstract": "Multi-agent delegation lets LLM systems distribute evidence collection across workers with separate contexts. This creates a consistency challenge: facts retrieved by workers may be missing from the evidence available to the lead for a joint conclusion. We introduce a benchmark and evidence-flow profiler for studying multi-agent memory inconsistency through controlled factual conflicts in Harvey LAB document-review tasks. Pooled across three models with comparable generation spending, requiring delegation increases retrieval of both conflicting claims from 50.2% to 68.7% relative to single-agent execution, yet conflict detection falls from 16.2% to 13.2%. Within this setting, workers report both claims for only 35.2% of retrieved pairs, and pooled matched comparisons show higher detection than single-agent execution when one worker reads both claims but lower detection when the claims are split across workers. Worker-to-lead handoffs are a central target for improving conflict detection in multi-agent LLMs.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Hejia Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhongming Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yimin Ding"
+    },
+    {
+      "@type": "Person",
+      "name": "Wei-Ting Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Hengjia Yu"
+    },
+    {
+      "@type": "Person",
+      "name": "Wentao Ni"
+    },
+    {
+      "@type": "Person",
+      "name": "Yijun Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Cong Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xin Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Matrix Yao"
+    },
+    {
+      "@type": "Person",
+      "name": "Fan Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Jishen Zhao"
+    }
+  ],
+  "datePublished": "2026-11-17T05:47:01Z",
+  "dateModified": "2026-11-17T05:47:01Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.22245.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.22245.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.22245v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.22245"
+  },
+  "keywords": [
+    "Multi-agent",
+    "Memory",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multi-agent"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.22245v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.22245"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Multi-Agent Memory Inconsistency: Where Factual Conflicts Disappear in LLM Agents</h1>
+        <div class="meta">
+          Hejia Zhang, Zhongming Yu, Yimin Ding, Wei-Ting Chen, Hengjia Yu, Wentao Ni, Yijun Liu, Cong Xu, Xin Chen, Matrix Yao, Fan Zhao, Jishen Zhao
+          · 2611.22245
+          · <time datetime="2026-11-17">2026-11-17</time>
+          · Multi-agent
+        </div>
+        <div class="themes"><span class="chip">Multi-agent</span><span class="chip">Memory</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Multi-agent delegation lets LLM systems distribute evidence collection across workers with separate contexts. This creates a consistency challenge: facts retrieved by workers may be missing from the evidence available to the lead for a joint conclusion. We introduce a benchmark and evidence-flow profiler for studying multi-agent memory inconsistency through controlled factual conflicts in Harvey LAB document-review tasks. Pooled across three models with comparable generation spending, requiring delegation increases retrieval of both conflicting claims from 50.2% to 68.7% relative to single-agent execution, yet conflict detection falls from 16.2% to 13.2%. Within this setting, workers report both claims for only 35.2% of retrieved pairs, and pooled matched comparisons show higher detection than single-agent execution when one worker reads both claims but lower detection when the claims are split across workers. Worker-to-lead handoffs are a central target for improving conflict detection in multi-agent LLMs.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.22245v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.22245v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.22245" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multi-agent benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.22138.html"><strong>RoboTeam: Benchmarking Vision-Based Multi-Agent Control of Many Robot Arms in Real Time</strong></a> <span>2026-11-17</span></li>
+          <li><a href="2611.20671.html"><strong>MASTA: A Feedback-Scheduled Multi-Agent System for End-to-End Tamarin Modeling and Analysis</strong></a> <span>2026-11-17</span></li>
+          <li><a href="2611.18517.html"><strong>OpenLayout: An Open and Agentic-Driven Platform for Holistic VLSI Physical Design and Benchmarking</strong></a> <span>2026-11-13</span></li>
+          <li><a href="2611.15521.html"><strong>DecArena: Evaluating Large-Scale Decentralized Multi-Agent Collaboration</strong></a> <span>2026-11-11</span></li>
+          <li><a href="2611.13925.html"><strong>OpenRE-Bench: A Benchmark Harness for Multi-Agent Requirements Engineering with Mined GitHub Issues</strong></a> <span>2026-11-10</span></li>
+          <li><a href="2611.11266.html"><strong>ErosionBench: Probing Alignment Decay in Enterprise Multi-Agent Systems</strong></a> <span>2026-11-08</span></li>
+          <li><a href="2611.08971.html"><strong>Phantom Consensus: Measuring Social Reasoning in Multi-Agent LLM Decision-Making</strong></a> <span>2026-11-06</span></li>
+          <li><a href="2611.05827.html"><strong>TandemBench: Benchmarking Decision Models for Multi-Agent Collaboration</strong></a> <span>2026-11-04</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

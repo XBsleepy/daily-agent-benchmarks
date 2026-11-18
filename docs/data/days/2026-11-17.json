@@ -1,62 +1,62 @@
 {
   "date": "2026-11-17",
-  "count": 14,
+  "count": 23,
   "report": {
     "date": "2026-11-17",
-    "count": 14,
+    "count": 23,
     "themes": [
       {
         "id": "memory",
-        "count": 4,
+        "count": 7,
         "en": "Memory",
         "zh": "记忆"
       },
       {
         "id": "tool-use",
-        "count": 4,
+        "count": 6,
         "en": "Tool use",
         "zh": "工具使用"
       },
       {
-        "id": "coding",
-        "count": 3,
-        "en": "Coding agents",
-        "zh": "代码智能体"
-      },
-      {
         "id": "planning",
-        "count": 3,
+        "count": 5,
         "en": "Planning / reasoning",
         "zh": "规划 / 推理"
       },
       {
-        "id": "embodied",
-        "count": 2,
-        "en": "Embodied / robotics",
-        "zh": "具身 / 机器人"
+        "id": "coding",
+        "count": 5,
+        "en": "Coding agents",
+        "zh": "代码智能体"
       },
       {
         "id": "multi-agent",
-        "count": 2,
+        "count": 4,
         "en": "Multi-agent",
         "zh": "多智能体"
       },
       {
-        "id": "multimodal",
-        "count": 2,
-        "en": "Multimodal",
-        "zh": "多模态"
+        "id": "workplace",
+        "count": 3,
+        "en": "Work / office",
+        "zh": "职场 / 办公"
       },
       {
         "id": "science",
-        "count": 1,
+        "count": 3,
         "en": "Science lab",
         "zh": "科学实验"
+      },
+      {
+        "id": "embodied",
+        "count": 3,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
       }
     ],
     "en": {
-      "headline": "14 new agent benchmarks",
-      "summary": "On November 17, 2026, arXiv listed 14 new agent benchmarks. Work clustered around Memory (4), Tool use (4), Coding agents (3), and Planning / reasoning (3).",
+      "headline": "23 new agent benchmarks",
+      "summary": "On November 17, 2026, arXiv listed 23 new agent benchmarks. Work clustered around Memory (7), Tool use (6), Planning / reasoning (5), and Coding agents (5).",
       "highlights": [
         {
           "id": "2611.21273",
@@ -76,8 +76,8 @@
       ]
     },
     "zh": {
-      "headline": "新增 14 篇 Agent Benchmark",
-      "summary": "2026年11月17日，arXiv 新增 14 篇 Agent Benchmark。当日主题集中在记忆（4）、工具使用（4）、代码智能体（3）、规划 / 推理（3）。",
+      "headline": "新增 23 篇 Agent Benchmark",
+      "summary": "2026年11月17日，arXiv 新增 23 篇 Agent Benchmark。当日主题集中在记忆（7）、工具使用（6）、规划 / 推理（5）、代码智能体（5）。",
       "highlights": [
         {
           "id": "2611.21273",
@@ -98,6 +98,224 @@
     }
   },
   "papers": [
+    {
+      "id": "2611.23045",
+      "title": "ForecastGym: A Live, Controlled, and Replayable Benchmark for Forecasting Agents",
+      "abstract": "Agents built on large language models (LLMs) increasingly forecast real-world events by searching the Web and reasoning over what they find. How well such an agent forecasts depends on both the retrieved evidence and the model, making control over that evidence essential for evaluation. Live evaluations can mix retrieval with reasoning when each system searches on its own, while retrospective search can leak later information through date filters or today's ranking of historical pages. Comparing models, search sources, and memory strategies requires both fixed evidence and a record of how it evolved before resolution. We introduce ForecastGym, which records what four commercial web search APIs return for open prediction-market questions every two days and replays this frozen evidence offline once outcomes are known, comparing models, memory, and captured search sources under a fixed evidence-acquisition policy. Its first release covers 150 questions, 614 evidence states, one per question and collection time, and 131k search results. Rerunning the same queries after settlement returns results that all but state the outcome for up to 92% of the questions, despite the tested date filters. On the frozen evidence, all tested LLMs trail the market in forecasting accuracy. Our diagnostic analysis suggests that missed public information contributes more to the gap in high-gap states than misreading does. Switching the search API changes a model's Brier score by up to 0.043, more than the spread across models, while persistent notes score similarly to rereading all evidence at half the input tokens. The evidence a forecaster sees can matter as much as the model that reads it.",
+      "authors": [
+        "Yicheng Tao",
+        "Yuante Li",
+        "Zipei Fan"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-17T16:44:38Z",
+      "updated": "2026-11-17T16:44:38Z",
+      "announced_date": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.23045v1",
+        "pdf": "https://arxiv.org/pdf/2611.23045v1",
+        "html": "https://arxiv.org/html/2611.23045"
+      },
+      "score": 8,
+      "tags": [
+        "memory",
+        "planning"
+      ],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2611.22971",
+      "title": "SEAM: Computer-Use Agents Know the Harm Between Screens, and Commit It Anyway",
+      "abstract": "Safety benchmarks for computer-use agents (CUAs) place the harm either in the intent of the task or on a single screen: a malicious instruction, an injected command, a phishing page. An agent that checks the task and each screen in isolation can pass them, so they do not test whether it combines facts seen on different screens. Yet in delegated work, harm often arises exactly this way: a fact about a person on one screen, a fact about an item on another, and a legitimate task that binds them. We introduce SEAM (Safety Execution Across Multiple screens), a benchmark of such cross-screen compositional harm: 600 multi-step, cross-application OSWorld tasks in which the instruction and every single observation are benign and only their combination is harmful. Minimal-pair variants that differ in one place, scored from the server log rather than by an LLM judge, locate where an agent fails. General-purpose open-weight and flagship agents carry out the harm in up to 92% of runs, yet decline when the user states it in one sentence. Agents open the decisive pages, so exposure is not the primary bottleneck. Asked about those pages, they flag the harm, and with thinking they often write the conflict into their reasoning and confirm anyway. Safety recognition thus does not reliably translate into safe execution, and the translation depends on the information channel: the same warning stops agents far more often in the user's instruction than on screen. Proprietary models are markedly more cautious. We release SEAM with its generator and quality gates at https://yuxuan2003.github.io/SEAM/ .",
+      "authors": [
+        "Yuxuan Zhou",
+        "Chen Xiong",
+        "Haitong Liu",
+        "Kuofeng Gao",
+        "Yang Bai",
+        "Zhiyuan He",
+        "Tao Dai",
+        "Shu-Tao Xia"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-11-17T15:53:58Z",
+      "updated": "2026-11-17T15:53:58Z",
+      "announced_date": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "comment": "30 pages, 14 figures, 29 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.22971v1",
+        "pdf": "https://arxiv.org/pdf/2611.22971v1",
+        "html": "https://arxiv.org/html/2611.22971"
+      },
+      "score": 10,
+      "tags": [
+        "gui",
+        "computer-use",
+        "safety",
+        "planning"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2611.22967",
+      "title": "CodeReel: Accelerating Code-to-Video Agents with Exact Frame Reuse and Blocking-Aware Scheduling",
+      "abstract": "Coding agents make videos by writing and refining programs in a build--inspect--edit loop. A finished film costs a median of $2.85 in model calls and 11 minutes, over a third of that time in builds that block the agent. We find that much of this time is avoidable, for two reasons. First, 37.5% of the frames of a session's later films were drawn before, many shifted in time or inside an edited scene. Second, half of the builds stop at a check, where the agent needs only the verdict, but which builds stop is unknown until the checks finish. We present CodeReel, a training-free execution layer behind agents' existing commands. Exact frame reuse keys each frame by its drawing commands, regardless of its position in time, and reuses each frame whose key recurs. Blocking-aware scheduling runs the checks first and starts the render alongside them, at idle priority, unless the session's recent builds make a pass unlikely. Scheduling spends CPU to answer sooner and reuse returns it; exact keys let later versions use frames rendered for a failed one as the agent thinks. We introduce EditLoop, a benchmark of replayable agent sessions whose films are checked against renders from scratch. On it, CodeReel cuts the agent's wait by 36.3% against Rebuild, a warm pipeline with parallel rendering, and by 57.9% against Sequential, today's step-by-step pipeline. On time-shifting edits its reuse renders 43.9%, close to the 43.0% whose pixels are new, while Manim-style caching renders 99.8%. With real agents, the median wait per build is 0.62x Rebuild's in Claude Code, on topics never used in development, and 0.67x in Codex CLI. The gain holds for five models and two frameworks.",
+      "authors": [
+        "Junyi Shen",
+        "Yao Lu"
+      ],
+      "categories": [
+        "cs.MM",
+        "cs.AI",
+        "cs.CV",
+        "cs.DC"
+      ],
+      "primary_category": "cs.MM",
+      "published": "2026-11-17T15:52:15Z",
+      "updated": "2026-11-17T15:52:15Z",
+      "announced_date": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "comment": "19 pages, 8 figures, 14 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.22967v1",
+        "pdf": "https://arxiv.org/pdf/2611.22967v1",
+        "html": "https://arxiv.org/html/2611.22967"
+      },
+      "score": 7,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2611.22262",
+      "title": "OfficePrism: Benchmarking Agents on Single-Domain Operations Across Enterprise Business Functions",
+      "abstract": "Broad workplace scores can mix competence within one business function with the extra cost of coordinating across functions and systems, making failures hard to localize. OfficePrism evaluates this prerequisite through 420 single-domain enterprise tasks spanning seven business functions under shared, benchmark-defined L1--L3 task-structure levels. Each task runs in a fresh environment combining a shared synthetic organization with one function-specific domain and yped state access. Our pipeline uses grounded records, business rules, and tool schemas to jointly construct a Chinese-language ticket, a hidden executable reference witness, and an expected response, followed by automated filtering and human curation. The same task set is evaluated through full-schema and search-and-dispatch packages. Across 124 model--harness--package configurations, the per-case joint natural-language-and-database pass rate ranges from 22.6% to 76.4%, with a median of 67.9%. L1 is highest in all 124 configurations, and L2 exceeds L3 in 122. Among 50 configurations sharing the same harness and model labels across both packages, search scores higher in 30, ties in one, and scores lower in 19.",
+      "authors": [
+        "Hanfeng Liu",
+        "Zhenyu Luo",
+        "Dongchao Zhang",
+        "Zexi Liu",
+        "Zulong Chen",
+        "Jinxin Hu",
+        "Jia Xu",
+        "Zeyi Wen"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-11-17T06:10:32Z",
+      "updated": "2026-11-17T06:10:32Z",
+      "announced_date": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.22262v1",
+        "pdf": "https://arxiv.org/pdf/2611.22262v1",
+        "html": "https://arxiv.org/html/2611.22262"
+      },
+      "score": 7,
+      "tags": [
+        "tool-use",
+        "workplace"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2611.22245",
+      "title": "Multi-Agent Memory Inconsistency: Where Factual Conflicts Disappear in LLM Agents",
+      "abstract": "Multi-agent delegation lets LLM systems distribute evidence collection across workers with separate contexts. This creates a consistency challenge: facts retrieved by workers may be missing from the evidence available to the lead for a joint conclusion. We introduce a benchmark and evidence-flow profiler for studying multi-agent memory inconsistency through controlled factual conflicts in Harvey LAB document-review tasks. Pooled across three models with comparable generation spending, requiring delegation increases retrieval of both conflicting claims from 50.2% to 68.7% relative to single-agent execution, yet conflict detection falls from 16.2% to 13.2%. Within this setting, workers report both claims for only 35.2% of retrieved pairs, and pooled matched comparisons show higher detection than single-agent execution when one worker reads both claims but lower detection when the claims are split across workers. Worker-to-lead handoffs are a central target for improving conflict detection in multi-agent LLMs.",
+      "authors": [
+        "Hejia Zhang",
+        "Zhongming Yu",
+        "Yimin Ding",
+        "Wei-Ting Chen",
+        "Hengjia Yu",
+        "Wentao Ni",
+        "Yijun Liu",
+        "Cong Xu",
+        "Xin Chen",
+        "Matrix Yao",
+        "Fan Zhao",
+        "Jishen Zhao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-17T05:47:01Z",
+      "updated": "2026-11-17T05:47:01Z",
+      "announced_date": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.22245v1",
+        "pdf": "https://arxiv.org/pdf/2611.22245v1",
+        "html": "https://arxiv.org/html/2611.22245"
+      },
+      "score": 15,
+      "tags": [
+        "multi-agent",
+        "memory",
+        "science"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2611.22241",
+      "title": "Where Does Hindsight Enter Clinical Agent Benchmarks? An Audit of Simulators and Case Construction",
+      "abstract": "Benchmarks for LLM diagnostic agents are built from retrospective records: the case an agent reads is rewritten from discharge summaries, and unrecorded test results are generated by a simulator that often sees the final diagnosis. HindAudit separates three hindsight channels (the diagnosis given to the simulator, the retrospective context it conditions on, and the agent-facing case text) and measures each with judges trained only on real data. On 27,489 emergency admissions from MIMIC-IV, five registered tests found no leakage into simulated laboratory results: providing the diagnosis to five simulators had a negligible effect, and prompted gatekeepers diluted the diagnostic signal, although exploratory results suggest they can raise agent scores. The largest effect lay in the case text. Against a presentation-time reconstruction from triage records, benchmark-style summaries raised the zero-shot accuracy of four LLMs from 25.4% to 39.7% and discharge histories to 45.3%, and raised six interactive agents' scores while barely changing their ranking. The exploratory gap was reproduced in a registered replication on held-out patients. Masking diagnosis names left it unchanged. Because MIMIC lacks a contemporaneous bedside history, the gap is an upper bound on hindsight. We report all registered outcomes and recommend construction practices.",
+      "authors": [
+        "Meilu Zhu",
+        "Xiaohan Li",
+        "Axiu Mao"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-11-17T05:43:37Z",
+      "updated": "2026-11-17T05:43:37Z",
+      "announced_date": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "comment": "8 pages main text, 20 pages in total, 6 figures, 11 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.22241v1",
+        "pdf": "https://arxiv.org/pdf/2611.22241v1",
+        "html": "https://arxiv.org/html/2611.22241"
+      },
+      "score": 9,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
     {
       "id": "2611.21515",
       "title": "Beyond Leaderboard Ranks: Selecting Software Engineering Agents Under Budget Constraints",
@@ -520,6 +738,134 @@
         "memory"
       ],
       "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2611.22138",
+      "title": "RoboTeam: Benchmarking Vision-Based Multi-Agent Control of Many Robot Arms in Real Time",
+      "abstract": "Multimodal agents can now control robot arms by calling tools and writing code. Existing benchmarks fall short in three ways: most test one or two arms on short tasks, many pause the world while the agent thinks, and many give it ground-truth object positions. We present RoboTeam, a simulated benchmark where agents control 4 to 16 robot arms in real time from camera images alone. Its 36 tasks are long jobs that the arms must do together, such as passing timbers or building a picture from hundreds of cubes. We start from the most flexible agent system, the adaptive system, where one agent decides when to fork delegates. With it, gpt-6.1-sol and opus-5.5 complete 28 and 27 tasks, and four other models at most 3. But at a high price: a typical task takes gpt-6.1-sol 3.5 hours and 218 million input tokens, and a third of its steps fail at least once and must be retried. We then compare it with three fixed systems: single-agent, hierarchical, and decentralized. All four complete a similar number of tasks but differ in time and tokens. The hierarchical and decentralized systems are faster but use up to 1.9 times the tokens, and the single agent uses fewer tokens but takes 1.6 times as long, so the adaptive system lies between them. Even so, no model or system is yet fast, cheap, and reliable at once. RoboTeam measures these limits where earlier benchmarks cannot: long multi-arm jobs, camera images only, and a world that never pauses.",
+      "authors": [
+        "Changxuan Fan",
+        "Zhongwei Xie",
+        "Boyi Zhang",
+        "Shaoli Hu",
+        "Chang Xu",
+        "Xiyu Ren",
+        "Yufei Li",
+        "Qiao Xiao",
+        "Huihao Jing",
+        "Kawai Chung",
+        "Wenbin Hu",
+        "Hongyu Luo",
+        "Lingyun Xie",
+        "Yisen Gao",
+        "Chunyang Li",
+        "Haoyu Huang",
+        "Wuganjing Song",
+        "Yuxuan Liu",
+        "Chiu Yeung Tang",
+        "Fangneng Zhan",
+        "Xi Yang"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "primary_category": "cs.RO",
+      "published": "2026-11-17T03:24:06Z",
+      "updated": "2026-11-17T03:24:06Z",
+      "announced_date": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "comment": "17 pages, 15 figures, 10 tables, including appendix",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.22138v1",
+        "pdf": "https://arxiv.org/pdf/2611.22138v1",
+        "html": "https://arxiv.org/html/2611.22138"
+      },
+      "score": 12,
+      "tags": [
+        "tool-use",
+        "multi-agent",
+        "embodied",
+        "multimodal"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
+    {
+      "id": "2611.22085",
+      "title": "ATLAS-Finance: Benchmarking AI Agents in Realistic Banking Environments",
+      "abstract": "Professional work involves under-specified assignments, where relevant information is spread across workplace applications and may conflict or change over time. To evaluate how well frontier agents can perform economically valuable work in such settings, we introduce ATLAS-Finance, a benchmark of 100 end-to-end investment-banking tasks across 13 simulated firms. As in real banking workflows, agents must search email, chat, calendars, notes, and files to identify requirements, gather information, reconcile conflicts/updates, and then build complex financial models. Tasks were developed by experienced bankers based on their real deal work and take them 15-30 hours to complete. Agent deliverables are evaluated with expert-authored rubrics (median: 124.5 criteria) covering financial rationale and results, spreadsheet construction, completeness, and formatting. Despite completing substantial portions of the requested work, current agents rarely produce correct deliverables. Across today's frontier models, the best ones (Claude Opus and Fable) pass fewer than 11% of tasks.",
+      "authors": [
+        "Elaine Lau",
+        "Antoine Pangas",
+        "Alexandre Finot",
+        "Collin Schweiker",
+        "Amir Bouzidi",
+        "Hui Wen Goh",
+        "Andrew Peter Martin",
+        "Jonas Mueller"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-17T02:12:40Z",
+      "updated": "2026-11-17T02:12:40Z",
+      "announced_date": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.22085v1",
+        "pdf": "https://arxiv.org/pdf/2611.22085v1",
+        "html": "https://arxiv.org/html/2611.22085"
+      },
+      "score": 14,
+      "tags": [
+        "workplace"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2611.22017",
+      "title": "SkillBuffBench: Measuring What Agent Skills Contribute across Harnesses, Models, Skill Access Modes and Memory",
+      "abstract": "Agent Skills, file-based packages of procedural knowledge that a coding agent can discover and load on demand, are now shipped by every major agent harness, yet the evidence for how much they help comes almost entirely from settings in which the right Skill is hand-picked for the task and the agent starts from a blank slate. Neither holds in deployment, where an agent chooses from whatever library happens to be installed and frequently carries memory from earlier work. We present SkillBuffBench, a benchmark and paired evaluation protocol that treats Skill access as a three-level factor (no Skill, a curated Skill, and automatic invocation from an installed library), crosses it with memory (off and on), with four agent harnesses and with multiple models (the state-of-the-art proprietary models from Anthropic, Google and OpenAI, and the state-of-the-art open-weight models from Chinese providers), every model being run under every harness, and evaluates the result on research tasks contributed by domain experts together with the Skills they use, currently in materials science and biology, with the suite extended on a rolling basis. Every run is marked by a deterministic verifier; uncertainty is reported with a paired, task-level bootstrap; and cost, agent rounds and wall-clock time are reported alongside the score rather than folded into it. This version of the paper describes the design of the benchmark, its evaluation protocol and its current tasks and Skills. The evaluation is in progress: results will be added once the runs are complete, and the task suite, results and analysis will continue to be updated on a rolling basis.",
+      "authors": [
+        "Gengyue Dong",
+        "Ye Wei",
+        "Zheng Zhu",
+        "Yidong Han",
+        "Jiale Miao",
+        "Xiaojun Jia",
+        "Guanghui Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-17T00:12:40Z",
+      "updated": "2026-11-17T00:12:40Z",
+      "announced_date": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "comment": "18 pages, 2 figures, 6 tables. Work in progress: benchmark design and protocol; results to be added in a later version",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.22017v1",
+        "pdf": "https://arxiv.org/pdf/2611.22017v1",
+        "html": "https://arxiv.org/html/2611.22017"
+      },
+      "score": 12,
+      "tags": [
+        "coding",
+        "memory",
+        "science"
+      ],
+      "field": "coding",
       "citations": 0
     }
   ]
