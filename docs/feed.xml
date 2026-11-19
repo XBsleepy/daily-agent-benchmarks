@@ -5,17 +5,39 @@
   <link href="https://xbsleepy.github.io/daily-agent-benchmarks/" />
   <link rel="self" href="https://xbsleepy.github.io/daily-agent-benchmarks/feed.xml" />
   <id>https://xbsleepy.github.io/daily-agent-benchmarks/</id>
-  <updated>2026-11-19T07:53:48Z</updated>
+  <updated>2026-11-19T12:00:32Z</updated>
   <entry>
     <title>RSIBench-Infra: Can Agents Optimize Their Own Training and Inference Infrastructure at Production Scale?</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.24395.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.24395v1" />
+    <link rel="related" href="https://arxiv.org/abs/2611.24395" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.24395.html</id>
-    <published>2026-11-18T13:29:44Z</published>
-    <updated>2026-11-18T13:29:44Z</updated>
-    <author><name>Hanlin Wu</name></author><author><name>Yifei Wang</name></author><author><name>Zhicheng Cai</name></author><author><name>Huan-ang Gao</name></author><author><name>Wei-Ying Ma</name></author><author><name>Ya-Qin Zhang</name></author><author><name>Jingjing Liu</name></author><author><name>Hao Zhou</name></author>
+    <published>2026-11-19T05:00:00Z</published>
+    <updated>2026-11-19T05:00:00Z</updated>
+    <author><name>Hanlin Wu, Yifei Wang, Zhicheng Cai, Huan-ang Gao, Wei-Ying Ma, Ya-Qin Zhang, Jingjing Liu, Hao Zhou</name></author>
     <category term="RSI / AI4AI" />
     <summary>Improving the efficiency of training and inference infrastructure is a practical component of recursive self-improvement. Existing benchmarks for agent-driven optimization largely focus on individual software layers such as kernel, leaving unclear whether agents can deliver end-to-end performance gains under production workloads. We introduce RSIBench-Infra, a benchmark of 20 training and inference tasks spanning diverse model families and modalities, with deployments of up to 32 accelerators on NVIDIA GPUs and Ascend NPUs. Agents start from runnable baselines derived from official recipes and can modify the software stack across engine, kernel, and instruction levels. An OCI image-layer submission protocol captures these changes for reproducible deployment, while independent evaluation measures end-to-end performance under task-specific quality constraints. Across all task results, 66.2% exceed $1.10\times$ validated speedup. These results demonstrate that current agents can improve production-scale training and inference performance, but identifying effective optimization strategies and consistently translating local improvements into end-to-end gains remain challenging.</summary>
+  </entry>
+  <entry>
+    <title>RoboBuilder: Agentic Robot Co-Design with Real-world Video Feedback in the Loop</title>
+    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.23855.html" />
+    <link rel="related" href="https://arxiv.org/abs/2611.23855" />
+    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.23855.html</id>
+    <published>2026-11-19T05:00:00Z</published>
+    <updated>2026-11-19T05:00:00Z</updated>
+    <author><name>Ghadi Nehme, Dahyun Nam, Akshay Govind Srinivasan, Faez Ahmed</name></author>
+    <category term="Embodied / robotics" />
+    <summary>Can AI agents design robots that work in the real world? We introduce RoboBuilder, a benchmark in which coding agents co-design a robot&#x27;s hardware and program from standard parts, motors and a custom 3D-printed part, and every design that passes in simulation is built and tested on a physical course. Simulation alone is not enough: under public part data, none of 15 initial passing designs crossed the real course, so an agent learns the simulator from measurements it requests and videos of real runs. Across four frontier coding agents, ten obstacles at three difficulty levels, 16,427 simulations of 12,774 distinct robots and 135 physical robots built in an estimated 240 hours, agents solve nearly all easy obstacles and invent mechanisms our search baselines do not reach, but falter at harder levels, when one robot must cross every obstacle, and in the real world, where 66% of simulated passes hold across all levels. Closing the loop helps: shown a video of its real failure, an agent redesigns the robot, sometimes correcting its simulator, and removes 72% of level-1 and level-2 failures. RoboBuilder measures progress toward agents that engineer real machines. Project Page: https://ghadinehme.com/robobuilder.github.io/</summary>
+  </entry>
+  <entry>
+    <title>EnvAgent: Multi-Agent Approach to Building Science Environments in the Clouds</title>
+    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.23258.html" />
+    <link rel="related" href="https://arxiv.org/abs/2611.23258" />
+    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.23258.html</id>
+    <published>2026-11-19T05:00:00Z</published>
+    <updated>2026-11-19T05:00:00Z</updated>
+    <author><name>Yiming Cheng, Chris Low, Binrui Huang, Mengshi Zhang, Zihao Chen, Kate Keahey, Paul Marshall, Kexin Pei</name></author>
+    <category term="Multi-agent" />
+    <summary>AI agents are transforming scientific computing and software workflows, but generating and executing code requires a correctly configured execution environment. Automating environment construction remains difficult because repositories encode heterogeneous, often incomplete requirements for operating systems, toolchains, dependencies, and build procedures. Existing workflows thus rely on developer-maintained Dockerfiles and setup scripts, making preparation labor-intensive, hard to scale, and potentially biasing evaluations. We present ENVAGENT, an agentic framework that synthesizes, builds, and verifies repository-level Docker environments. ENVAGENT combines deterministic utilities for Docker execution and state management with coordinated agents for repository analysis, planning, Dockerfile synthesis, and iterative failure diagnosis and repair. We also introduce ENVBENCH, a benchmark of 54 scientific artifacts and open-source repositories spanning seven languages from Chameleon Trovi and Multi-SWE-bench. For each repository, we curate a declarative rubric of required structure, configuration, and functionality, and a shared evaluator applies 2,108 weighted checks across generated environments. Across four matched language-model settings, ENVAGENT constructs 43.5 executable environments out of 54 on average, versus 23.5 for Codex and Claude Code, and scores 62.02 versus 24.19 on a composite of executability and rubric satisfaction. These results show that environment-specific agent orchestration substantially improves automated environment construction.</summary>
   </entry>
   <entry>
     <title>VideoACE: Benchmarking Agentic Video Understanding through High-Frame-Rate Actions</title>
@@ -38,17 +60,6 @@
     <author><name>Bizhe Bai</name></author><author><name>Jiliang Jian</name></author><author><name>Yuqing Yan</name></author><author><name>Tao Chen</name></author><author><name>Ying Wen</name></author>
     <category term="Coding / SWE" />
     <summary>Coding agents now resolve repository issues and generate compact playable games, but whether they can build a large 3D game from scratch remains open. Such games tightly couple mechanics, scenes, assets, and interaction logic, and their quality rests on player enjoyment, which existing benchmarks rarely assess. Thus, we introduce 3D GameDev Arena, a first extreme long-horizon benchmark of 108 from-scratch game-development tasks across 14 genres. Given only a text specification and UI/UX reference images, a fully automated plan--implement--test--repair pipeline builds each task into a self-contained browser game. Runs average $\sim$1,000 LLM calls ; the longest uses 14,407 calls, 2.13B tokens, and 608 assets. Evaluation spans (1) objective code-level functional acceptance against the game specification, (2) agent-based QA and playtesting of 3D presentation and playability, and (3) blind pairwise Bradley-Terry human preference in a public arena. The preliminary findings indicate that long-horizon 3D game development remains far from solved, and code-level correctness alone does not dictate player preference. The public arena is hosted online.</summary>
-  </entry>
-  <entry>
-    <title>RoboBuilder: Agentic Robot Co-Design with Real-world Video Feedback in the Loop</title>
-    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.23855.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.23855v1" />
-    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.23855.html</id>
-    <published>2026-11-18T05:02:07Z</published>
-    <updated>2026-11-18T05:02:07Z</updated>
-    <author><name>Ghadi Nehme</name></author><author><name>Dahyun Nam</name></author><author><name>Akshay Govind Srinivasan</name></author><author><name>Faez Ahmed</name></author>
-    <category term="Embodied / robotics" />
-    <summary>Can AI agents design robots that work in the real world? We introduce RoboBuilder, a benchmark in which coding agents co-design a robot&#x27;s hardware and program from standard parts, motors and a custom 3D-printed part, and every design that passes in simulation is built and tested on a physical course. Simulation alone is not enough: under public part data, none of 15 initial passing designs crossed the real course, so an agent learns the simulator from measurements it requests and videos of real runs. Across four frontier coding agents, ten obstacles at three difficulty levels, 16,427 simulations of 12,774 distinct robots and 135 physical robots built in an estimated 240 hours, agents solve nearly all easy obstacles and invent mechanisms our search baselines do not reach, but falter at harder levels, when one robot must cross every obstacle, and in the real world, where 66% of simulated passes hold across all levels. Closing the loop helps: shown a video of its real failure, an agent redesigns the robot, sometimes correcting its simulator, and removes 72% of level-1 and level-2 failures. RoboBuilder measures progress toward agents that engineer real machines. Project Page: https://ghadinehme.com/robobuilder.github.io/</summary>
   </entry>
   <entry>
     <title>Agent Verifiers in Counterfactual Analysis: A Pilot Study Benchmarking Agentic Heterogeneous Treatment Effects</title>
@@ -544,16 +555,5 @@
     <author><name>Jiali Cheng</name></author><author><name>Oleg Rokhlenko</name></author><author><name>Joo-Kyung Kim</name></author><author><name>Hadi Amiri</name></author><author><name>Xingzhi Guo</name></author>
     <category term="Multi-agent" />
     <summary>Emerging personal AI agents raise fundamental scalability and privacy concerns for centralized multi-agent systems (MASs), which rely on a global orchestrator with broad access to agents, resources, and communication. In decentralized environments, global visibility is unavailable. Agents need to proactively discover non-local resources (e.g. tools, skills), and collaborate with other agents to solve tasks. We study decentralized multi-agent collaboration under graph-constrained communication, a natural reflection of human structures. Each agent observes only its local state and can interact only with neighboring agents. We introduce a benchmark with synthetic scalable distributed tool calling with 100K+ tools. Our experiments reveal that recent LLM agents struggle to discover non-local relevant resources and collaborate in decentralized setting. Moreover, standard reinforcement learning fails to reliably overcome this limitation, suggesting that decentralized MAS needs more explicit harness mechanisms for effective collaboration, even using SOTA LLMs. We then present a strong baseline \textbf{GraphHarness}, combining topology-aware warmup with self-improving LLM-based routing. Results show that GraphHarness substantially improves task success (+48.5) and produces higher quality collaboration (+30.6), while using fewer costs (+34.0) than baselines.</summary>
-  </entry>
-  <entry>
-    <title>CastWorld: Benchmarking Context-Aware Agentic Time Series Forecasting Beyond Predictive Accuracy</title>
-    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.15262.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.15262v1" />
-    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.15262.html</id>
-    <published>2026-11-11T09:53:20Z</published>
-    <updated>2026-11-11T09:53:20Z</updated>
-    <author><name>Bokai Pan</name></author><author><name>Ruijie Yang</name></author><author><name>Mingyue Cheng</name></author><author><name>Jiahao Wang</name></author><author><name>Xiaoyu Tao</name></author>
-    <category term="Tool use" />
-    <summary>Agentic time series forecasting extends conventional approaches beyond one-shot numerical prediction toward autonomous, context-aware interaction. However, existing benchmarks offer limited integrated support for diverse contextual information, forecasting-specific adaptive interactions, and systematic evaluation of forecasting agents. In this paper, we introduce CastWorld, an agentic benchmark for context-aware time series forecasting. First, its context-rich dataset suite spans 8 domains and 25 real-world datasets, covering external variables, events, and historical cases under a unified context specification. Second, a lightweight, modular forecasting-native harness provides 49 core tools and a state-adaptive loop that tracks forecast versions and enables iterative evidence gathering and forecast revision. Intermediate forecasts can expose information gaps, while newly acquired evidence guides subsequent revisions and final version selection. Third, model-level evaluation assesses forecast quality, process execution, behavioral trustworthiness, and resource efficiency through decision trajectories and forecast-version histories. Also, systems-level evaluation compares predictive accuracy across forecasting systems. Experiments reveal distinct decision behaviors among agents with comparable accuracy. Additional interactions do not necessarily improve forecasts, and agents may fail to select their best previously generated predictions. Allowing evidence acquisition during forecast refinement improves task-aware forecast scores across all three evaluated models. CastWorld provides a reusable foundation for evaluating agentic time series forecasting under controlled conditions.</summary>
   </entry>
 </feed>
