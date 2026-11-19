@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MANGO Arena: Same Seeds, Different Chains Evaluating LLM Agents in a Disrupted Supply Chain | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: We introduce MANGO Arena, an open-source testbed in which four LLM agents each run one company in a serial supply chain adapted from…" />
+    <meta name="keywords" content="Multi-agent, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2611.23613" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.23613.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MANGO Arena: Same Seeds, Different Chains Evaluating LLM Agents in a Disrupted Supply Chain" />
+    <meta property="og:description" content="Daily Agent Benchmarks: We introduce MANGO Arena, an open-source testbed in which four LLM agents each run one company in a serial supply chain adapted from…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.23613.html" />
+    <meta property="article:published_time" content="2026-11-17T23:05:05Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MANGO Arena: Same Seeds, Different Chains Evaluating LLM Agents in a Disrupted Supply Chain" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: We introduce MANGO Arena, an open-source testbed in which four LLM agents each run one company in a serial supply chain adapted from…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "MANGO Arena: Same Seeds, Different Chains Evaluating LLM Agents in a Disrupted Supply Chain",
+  "name": "MANGO Arena: Same Seeds, Different Chains Evaluating LLM Agents in a Disrupted Supply Chain",
+  "abstract": "We introduce MANGO Arena, an open-source testbed in which four LLM agents each run one company in a serial supply chain adapted from MANGO, a classroom factory-management game. The environment enforces hard rules (a truck limit, a no-credit cash constraint and production capacity), logs every blocked attempt to break them, and gives agents a public message board on which side payments are explicitly forbidden. This lets one environment measure three things at once: an economic outcome (the bullwhip effect), rule adherence under pressure, and proposals to collude. In a pilot with three small reasoning models, two scripted reference policies, two conditions (with and without a supplier fire) and three demand seeds, all LLM agents amplified demand variability as it moved upstream, by 7 to 25 times at the Retailer and 13 to 179 times at the Supplier, often more than a textbook order-up-to policy. They did so largely by ordering in batches (zero orders in up to 60% of decisions). Real rule violations were rare (at most 7 of 288 decisions per model) and no agent proposed a money side deal. The pilot's main lesson concerns evaluation method. API failures (rate limits and runaway hidden reasoning) entered the metrics silently as \"no order\" decisions. And when we reran games with the same seeds and no failed calls, upstream bullwhip changed by up to 17 times between runs. With three seeds, conclusions about how a disruption affects a given model did not survive a rerun. We report these failures in full and propose reporting practices for multi-agent evaluations of this kind. Code, prompts and every logged decision are public.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Sara Amar"
+    }
+  ],
+  "datePublished": "2026-11-17T23:05:05Z",
+  "dateModified": "2026-11-17T23:05:05Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.23613.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.23613.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.23613v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.23613"
+  },
+  "keywords": [
+    "Multi-agent",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multi-agent"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.23613v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.23613"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>MANGO Arena: Same Seeds, Different Chains Evaluating LLM Agents in a Disrupted Supply Chain</h1>
+        <div class="meta">
+          Sara Amar
+          · 2611.23613
+          · <time datetime="2026-11-17">2026-11-17</time>
+          · Multi-agent
+        </div>
+        <div class="themes"><span class="chip">Multi-agent</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>We introduce MANGO Arena, an open-source testbed in which four LLM agents each run one company in a serial supply chain adapted from MANGO, a classroom factory-management game. The environment enforces hard rules (a truck limit, a no-credit cash constraint and production capacity), logs every blocked attempt to break them, and gives agents a public message board on which side payments are explicitly forbidden. This lets one environment measure three things at once: an economic outcome (the bullwhip effect), rule adherence under pressure, and proposals to collude. In a pilot with three small reasoning models, two scripted reference policies, two conditions (with and without a supplier fire) and three demand seeds, all LLM agents amplified demand variability as it moved upstream, by 7 to 25 times at the Retailer and 13 to 179 times at the Supplier, often more than a textbook order-up-to policy. They did so largely by ordering in batches (zero orders in up to 60% of decisions). Real rule violations were rare (at most 7 of 288 decisions per model) and no agent proposed a money side deal. The pilot&#x27;s main lesson concerns evaluation method. API failures (rate limits and runaway hidden reasoning) entered the metrics silently as &quot;no order&quot; decisions. And when we reran games with the same seeds and no failed calls, upstream bullwhip changed by up to 17 times between runs. With three seeds, conclusions about how a disruption affects a given model did not survive a rerun. We report these failures in full and propose reporting practices for multi-agent evaluations of this kind. Code, prompts and every logged decision are public.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.23613v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.23613v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.23613" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multi-agent benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.22245.html"><strong>Multi-Agent Memory Inconsistency: Where Factual Conflicts Disappear in LLM Agents</strong></a> <span>2026-11-17</span></li>
+          <li><a href="2611.22138.html"><strong>RoboTeam: Benchmarking Vision-Based Multi-Agent Control of Many Robot Arms in Real Time</strong></a> <span>2026-11-17</span></li>
+          <li><a href="2611.20671.html"><strong>MASTA: A Feedback-Scheduled Multi-Agent System for End-to-End Tamarin Modeling and Analysis</strong></a> <span>2026-11-17</span></li>
+          <li><a href="2611.18517.html"><strong>OpenLayout: An Open and Agentic-Driven Platform for Holistic VLSI Physical Design and Benchmarking</strong></a> <span>2026-11-13</span></li>
+          <li><a href="2611.15521.html"><strong>DecArena: Evaluating Large-Scale Decentralized Multi-Agent Collaboration</strong></a> <span>2026-11-11</span></li>
+          <li><a href="2611.13925.html"><strong>OpenRE-Bench: A Benchmark Harness for Multi-Agent Requirements Engineering with Mined GitHub Issues</strong></a> <span>2026-11-10</span></li>
+          <li><a href="2611.11266.html"><strong>ErosionBench: Probing Alignment Decay in Enterprise Multi-Agent Systems</strong></a> <span>2026-11-08</span></li>
+          <li><a href="2611.08971.html"><strong>Phantom Consensus: Measuring Social Reasoning in Multi-Agent LLM Decision-Making</strong></a> <span>2026-11-06</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

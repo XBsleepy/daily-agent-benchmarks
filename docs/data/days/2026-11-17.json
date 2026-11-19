@@ -1,9 +1,9 @@
 {
   "date": "2026-11-17",
-  "count": 23,
+  "count": 25,
   "report": {
     "date": "2026-11-17",
-    "count": 23,
+    "count": 25,
     "themes": [
       {
         "id": "memory",
@@ -12,28 +12,28 @@
         "zh": "记忆"
       },
       {
+        "id": "planning",
+        "count": 6,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
+      },
+      {
         "id": "tool-use",
         "count": 6,
         "en": "Tool use",
         "zh": "工具使用"
       },
       {
-        "id": "planning",
+        "id": "multi-agent",
         "count": 5,
-        "en": "Planning / reasoning",
-        "zh": "规划 / 推理"
+        "en": "Multi-agent",
+        "zh": "多智能体"
       },
       {
         "id": "coding",
         "count": 5,
         "en": "Coding agents",
         "zh": "代码智能体"
-      },
-      {
-        "id": "multi-agent",
-        "count": 4,
-        "en": "Multi-agent",
-        "zh": "多智能体"
       },
       {
         "id": "workplace",
@@ -55,8 +55,8 @@
       }
     ],
     "en": {
-      "headline": "23 new agent benchmarks",
-      "summary": "On November 17, 2026, arXiv listed 23 new agent benchmarks. Work clustered around Memory (7), Tool use (6), Planning / reasoning (5), and Coding agents (5).",
+      "headline": "25 new agent benchmarks",
+      "summary": "On November 17, 2026, arXiv listed 25 new agent benchmarks. Work clustered around Memory (7), Planning / reasoning (6), Tool use (6), and Multi-agent (5).",
       "highlights": [
         {
           "id": "2611.21273",
@@ -76,8 +76,8 @@
       ]
     },
     "zh": {
-      "headline": "新增 23 篇 Agent Benchmark",
-      "summary": "2026年11月17日，arXiv 新增 23 篇 Agent Benchmark。当日主题集中在记忆（7）、工具使用（6）、规划 / 推理（5）、代码智能体（5）。",
+      "headline": "新增 25 篇 Agent Benchmark",
+      "summary": "2026年11月17日，arXiv 新增 25 篇 Agent Benchmark。当日主题集中在记忆（7）、规划 / 推理（6）、工具使用（6）、多智能体（5）。",
       "highlights": [
         {
           "id": "2611.21273",
@@ -98,6 +98,67 @@
     }
   },
   "papers": [
+    {
+      "id": "2611.23621",
+      "title": "Agent Verifiers in Counterfactual Analysis: A Pilot Study Benchmarking Agentic Heterogeneous Treatment Effects",
+      "abstract": "Agents can expand the covariate space of randomized experiments by retrieving fast-moving local context missed by slow-changing survey baseline covariates, helping characterize who benefits most from an intervention. Verifying such covariates is difficult: individual treatment effects are unobserved, retrieval leakage can pull post-treatment information into nominally pretreatment summaries, and encoder leakage can inject post-treatment pretraining knowledge into representations even after temporal filtering of inputs. Guided by a two-channel information bound separating summary provenance from encoder weights, we propose a three-layer benchmark protocol: (i) retrieval admissibility via pre-treatment date filtering; (ii) heterogeneity validation scored rank-weighted average treatment effects (RATEs); and (iii) encoder admissibility checked with chronologically vintaged encoders, future-fact probes, and weight perturbations. Across 11 datasets anchored by Uganda's Youth Opportunities Program, we compare session-isolated retrieval (sandboxed, bounded-budget agent runs per study) against a persistent workspace teammate (xAI's GrokBot) that builds one date-verified corpus per study while blinded to outcomes. The workspace teammate yields higher mean RATE ratios in 6/11 datasets for text alone and 7 for combined features, though paired tests show neither workflow universally dominates. Even on fixed retrieved text, encoder choice significantly shifts heterogeneity signal. Chronologically vintaged probes show no clear evidence of weight leakage, but single-record adapter perturbation analyses show that memorized future facts, once present, persist until injected noise degrades model output. Temporal filtering of retrieval is necessary but insufficient: verifying agent-generated covariates requires jointly examining source provenance, out-of-sample treatment-effect signal, and encoder weights.",
+      "authors": [
+        "Satiyabooshan Murugaboopathy",
+        "Entejar Alam",
+        "Adel Daoud",
+        "Connor T. Jerzak"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "primary_category": "cs.LG",
+      "published": "2026-11-17T23:33:53Z",
+      "updated": "2026-11-17T23:33:53Z",
+      "announced_date": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "comment": "NeurIPS 2026 Workshop: Who Verifies the Agents? Toward Reliable Agent Development",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.23621v1",
+        "pdf": "https://arxiv.org/pdf/2611.23621v1",
+        "html": "https://arxiv.org/html/2611.23621"
+      },
+      "score": 13,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2611.23613",
+      "title": "MANGO Arena: Same Seeds, Different Chains Evaluating LLM Agents in a Disrupted Supply Chain",
+      "abstract": "We introduce MANGO Arena, an open-source testbed in which four LLM agents each run one company in a serial supply chain adapted from MANGO, a classroom factory-management game. The environment enforces hard rules (a truck limit, a no-credit cash constraint and production capacity), logs every blocked attempt to break them, and gives agents a public message board on which side payments are explicitly forbidden. This lets one environment measure three things at once: an economic outcome (the bullwhip effect), rule adherence under pressure, and proposals to collude. In a pilot with three small reasoning models, two scripted reference policies, two conditions (with and without a supplier fire) and three demand seeds, all LLM agents amplified demand variability as it moved upstream, by 7 to 25 times at the Retailer and 13 to 179 times at the Supplier, often more than a textbook order-up-to policy. They did so largely by ordering in batches (zero orders in up to 60% of decisions). Real rule violations were rare (at most 7 of 288 decisions per model) and no agent proposed a money side deal. The pilot's main lesson concerns evaluation method. API failures (rate limits and runaway hidden reasoning) entered the metrics silently as \"no order\" decisions. And when we reran games with the same seeds and no failed calls, upstream bullwhip changed by up to 17 times between runs. With three seeds, conclusions about how a disruption affects a given model did not survive a rerun. We report these failures in full and propose reporting practices for multi-agent evaluations of this kind. Code, prompts and every logged decision are public.",
+      "authors": [
+        "Sara Amar"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "primary_category": "cs.MA",
+      "published": "2026-11-17T23:05:05Z",
+      "updated": "2026-11-17T23:05:05Z",
+      "announced_date": "2026-11-17",
+      "first_seen": "2026-11-17",
+      "comment": "8 pages, 2 figures,",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.23613v1",
+        "pdf": "https://arxiv.org/pdf/2611.23613v1",
+        "html": "https://arxiv.org/html/2611.23613"
+      },
+      "score": 15,
+      "tags": [
+        "multi-agent",
+        "planning"
+      ],
+      "field": "multi-agent",
+      "citations": 0
+    },
     {
       "id": "2611.23045",
       "title": "ForecastGym: A Live, Controlled, and Replayable Benchmark for Forecasting Agents",
@@ -268,14 +329,14 @@
       ],
       "primary_category": "cs.AI",
       "published": "2026-11-17T05:47:01Z",
-      "updated": "2026-11-17T05:47:01Z",
+      "updated": "2026-11-18T06:42:29Z",
       "announced_date": "2026-11-17",
       "first_seen": "2026-11-17",
       "comment": "",
       "doi": "",
       "links": {
-        "abs": "https://arxiv.org/abs/2611.22245v1",
-        "pdf": "https://arxiv.org/pdf/2611.22245v1",
+        "abs": "https://arxiv.org/abs/2611.22245v2",
+        "pdf": "https://arxiv.org/pdf/2611.22245v2",
         "html": "https://arxiv.org/html/2611.22245"
       },
       "score": 15,

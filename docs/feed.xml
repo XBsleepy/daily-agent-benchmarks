@@ -5,7 +5,73 @@
   <link href="https://xbsleepy.github.io/daily-agent-benchmarks/" />
   <link rel="self" href="https://xbsleepy.github.io/daily-agent-benchmarks/feed.xml" />
   <id>https://xbsleepy.github.io/daily-agent-benchmarks/</id>
-  <updated>2026-11-18T21:45:44Z</updated>
+  <updated>2026-11-19T07:53:48Z</updated>
+  <entry>
+    <title>RSIBench-Infra: Can Agents Optimize Their Own Training and Inference Infrastructure at Production Scale?</title>
+    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.24395.html" />
+    <link rel="related" href="https://arxiv.org/abs/2611.24395v1" />
+    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.24395.html</id>
+    <published>2026-11-18T13:29:44Z</published>
+    <updated>2026-11-18T13:29:44Z</updated>
+    <author><name>Hanlin Wu</name></author><author><name>Yifei Wang</name></author><author><name>Zhicheng Cai</name></author><author><name>Huan-ang Gao</name></author><author><name>Wei-Ying Ma</name></author><author><name>Ya-Qin Zhang</name></author><author><name>Jingjing Liu</name></author><author><name>Hao Zhou</name></author>
+    <category term="RSI / AI4AI" />
+    <summary>Improving the efficiency of training and inference infrastructure is a practical component of recursive self-improvement. Existing benchmarks for agent-driven optimization largely focus on individual software layers such as kernel, leaving unclear whether agents can deliver end-to-end performance gains under production workloads. We introduce RSIBench-Infra, a benchmark of 20 training and inference tasks spanning diverse model families and modalities, with deployments of up to 32 accelerators on NVIDIA GPUs and Ascend NPUs. Agents start from runnable baselines derived from official recipes and can modify the software stack across engine, kernel, and instruction levels. An OCI image-layer submission protocol captures these changes for reproducible deployment, while independent evaluation measures end-to-end performance under task-specific quality constraints. Across all task results, 66.2% exceed $1.10\times$ validated speedup. These results demonstrate that current agents can improve production-scale training and inference performance, but identifying effective optimization strategies and consistently translating local improvements into end-to-end gains remain challenging.</summary>
+  </entry>
+  <entry>
+    <title>VideoACE: Benchmarking Agentic Video Understanding through High-Frame-Rate Actions</title>
+    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.24184.html" />
+    <link rel="related" href="https://arxiv.org/abs/2611.24184v1" />
+    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.24184.html</id>
+    <published>2026-11-18T10:26:07Z</published>
+    <updated>2026-11-18T10:26:07Z</updated>
+    <author><name>Luoyuan Zhang</name></author><author><name>Xuanyu Zheng</name></author><author><name>Yancheng Long</name></author><author><name>Haoyang Xu</name></author><author><name>Bin Wen</name></author><author><name>Tingting Gao</name></author>
+    <category term="Tool use" />
+    <summary>Agentic video understanding requires models to actively interact with video environments to gather evidence and form judgments. Evaluating this capability therefore requires assessing whether models can translate opportunities for interaction into better understanding. We introduce VideoACE, a benchmark for assessing video understanding under conditions that support sustained interaction. We focus on high-frame-rate action videos, where rapid, subtle changes make targeted observation especially valuable. The benchmark comprises 1,000 multiple-choice questions spanning six categories of fine-grained action understanding, accompanied by temporal evidence annotations and user hints screened for answer leakage. Its evaluation environment combines video inspection tools with a user simulator, allowing models to adjust temporal coverage, sampling density, and spatial detail, and to revisit evidence and revise their judgments under simulated user feedback. We evaluate single-pass observation, autonomous tool use, and tool use combined with user feedback to examine how effectively models exploit these opportunities. Evaluation of five models reveals distinct patterns in how they acquire evidence and respond to opportunities for further interaction. These findings establish VideoACE as a testbed for examining agentic video understanding beyond performance under a fixed observation setting.</summary>
+  </entry>
+  <entry>
+    <title>3D GameDev Arena: Benchmarking Coding Agents That Plan, Build, and Playtest extreme Long-Horizon Browser Games</title>
+    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.24073.html" />
+    <link rel="related" href="https://arxiv.org/abs/2611.24073v1" />
+    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.24073.html</id>
+    <published>2026-11-18T09:03:53Z</published>
+    <updated>2026-11-18T09:03:53Z</updated>
+    <author><name>Bizhe Bai</name></author><author><name>Jiliang Jian</name></author><author><name>Yuqing Yan</name></author><author><name>Tao Chen</name></author><author><name>Ying Wen</name></author>
+    <category term="Coding / SWE" />
+    <summary>Coding agents now resolve repository issues and generate compact playable games, but whether they can build a large 3D game from scratch remains open. Such games tightly couple mechanics, scenes, assets, and interaction logic, and their quality rests on player enjoyment, which existing benchmarks rarely assess. Thus, we introduce 3D GameDev Arena, a first extreme long-horizon benchmark of 108 from-scratch game-development tasks across 14 genres. Given only a text specification and UI/UX reference images, a fully automated plan--implement--test--repair pipeline builds each task into a self-contained browser game. Runs average $\sim$1,000 LLM calls ; the longest uses 14,407 calls, 2.13B tokens, and 608 assets. Evaluation spans (1) objective code-level functional acceptance against the game specification, (2) agent-based QA and playtesting of 3D presentation and playability, and (3) blind pairwise Bradley-Terry human preference in a public arena. The preliminary findings indicate that long-horizon 3D game development remains far from solved, and code-level correctness alone does not dictate player preference. The public arena is hosted online.</summary>
+  </entry>
+  <entry>
+    <title>RoboBuilder: Agentic Robot Co-Design with Real-world Video Feedback in the Loop</title>
+    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.23855.html" />
+    <link rel="related" href="https://arxiv.org/abs/2611.23855v1" />
+    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.23855.html</id>
+    <published>2026-11-18T05:02:07Z</published>
+    <updated>2026-11-18T05:02:07Z</updated>
+    <author><name>Ghadi Nehme</name></author><author><name>Dahyun Nam</name></author><author><name>Akshay Govind Srinivasan</name></author><author><name>Faez Ahmed</name></author>
+    <category term="Embodied / robotics" />
+    <summary>Can AI agents design robots that work in the real world? We introduce RoboBuilder, a benchmark in which coding agents co-design a robot&#x27;s hardware and program from standard parts, motors and a custom 3D-printed part, and every design that passes in simulation is built and tested on a physical course. Simulation alone is not enough: under public part data, none of 15 initial passing designs crossed the real course, so an agent learns the simulator from measurements it requests and videos of real runs. Across four frontier coding agents, ten obstacles at three difficulty levels, 16,427 simulations of 12,774 distinct robots and 135 physical robots built in an estimated 240 hours, agents solve nearly all easy obstacles and invent mechanisms our search baselines do not reach, but falter at harder levels, when one robot must cross every obstacle, and in the real world, where 66% of simulated passes hold across all levels. Closing the loop helps: shown a video of its real failure, an agent redesigns the robot, sometimes correcting its simulator, and removes 72% of level-1 and level-2 failures. RoboBuilder measures progress toward agents that engineer real machines. Project Page: https://ghadinehme.com/robobuilder.github.io/</summary>
+  </entry>
+  <entry>
+    <title>Agent Verifiers in Counterfactual Analysis: A Pilot Study Benchmarking Agentic Heterogeneous Treatment Effects</title>
+    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.23621.html" />
+    <link rel="related" href="https://arxiv.org/abs/2611.23621v1" />
+    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.23621.html</id>
+    <published>2026-11-17T23:33:53Z</published>
+    <updated>2026-11-17T23:33:53Z</updated>
+    <author><name>Satiyabooshan Murugaboopathy</name></author><author><name>Entejar Alam</name></author><author><name>Adel Daoud</name></author><author><name>Connor T. Jerzak</name></author>
+    <category term="General" />
+    <summary>Agents can expand the covariate space of randomized experiments by retrieving fast-moving local context missed by slow-changing survey baseline covariates, helping characterize who benefits most from an intervention. Verifying such covariates is difficult: individual treatment effects are unobserved, retrieval leakage can pull post-treatment information into nominally pretreatment summaries, and encoder leakage can inject post-treatment pretraining knowledge into representations even after temporal filtering of inputs. Guided by a two-channel information bound separating summary provenance from encoder weights, we propose a three-layer benchmark protocol: (i) retrieval admissibility via pre-treatment date filtering; (ii) heterogeneity validation scored rank-weighted average treatment effects (RATEs); and (iii) encoder admissibility checked with chronologically vintaged encoders, future-fact probes, and weight perturbations. Across 11 datasets anchored by Uganda&#x27;s Youth Opportunities Program, we compare session-isolated retrieval (sandboxed, bounded-budget agent runs per study) against a persistent workspace teammate (xAI&#x27;s GrokBot) that builds one date-verified corpus per study while blinded to outcomes. The workspace teammate yields higher mean RATE ratios in 6/11 datasets for text alone and 7 for combined features, though paired tests show neither workflow universally dominates. Even on fixed retrieved text, encoder choice significantly shifts heterogeneity signal. Chronologically vintaged probes show no clear evidence of weight leakage, but single-record adapter perturbation analyses show that memorized future facts, once present, persist until injected noise degrades model output. Temporal filtering of retrieval is necessary but insufficient: verifying agent-generated covariates requires jointly examining source provenance, out-of-sample treatment-effect signal, and encoder weights.</summary>
+  </entry>
+  <entry>
+    <title>MANGO Arena: Same Seeds, Different Chains Evaluating LLM Agents in a Disrupted Supply Chain</title>
+    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.23613.html" />
+    <link rel="related" href="https://arxiv.org/abs/2611.23613v1" />
+    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.23613.html</id>
+    <published>2026-11-17T23:05:05Z</published>
+    <updated>2026-11-17T23:05:05Z</updated>
+    <author><name>Sara Amar</name></author>
+    <category term="Multi-agent" />
+    <summary>We introduce MANGO Arena, an open-source testbed in which four LLM agents each run one company in a serial supply chain adapted from MANGO, a classroom factory-management game. The environment enforces hard rules (a truck limit, a no-credit cash constraint and production capacity), logs every blocked attempt to break them, and gives agents a public message board on which side payments are explicitly forbidden. This lets one environment measure three things at once: an economic outcome (the bullwhip effect), rule adherence under pressure, and proposals to collude. In a pilot with three small reasoning models, two scripted reference policies, two conditions (with and without a supplier fire) and three demand seeds, all LLM agents amplified demand variability as it moved upstream, by 7 to 25 times at the Retailer and 13 to 179 times at the Supplier, often more than a textbook order-up-to policy. They did so largely by ordering in batches (zero orders in up to 60% of decisions). Real rule violations were rare (at most 7 of 288 decisions per model) and no agent proposed a money side deal. The pilot&#x27;s main lesson concerns evaluation method. API failures (rate limits and runaway hidden reasoning) entered the metrics silently as &quot;no order&quot; decisions. And when we reran games with the same seeds and no failed calls, upstream bullwhip changed by up to 17 times between runs. With three seeds, conclusions about how a disruption affects a given model did not survive a rerun. We report these failures in full and propose reporting practices for multi-agent evaluations of this kind. Code, prompts and every logged decision are public.</summary>
+  </entry>
   <entry>
     <title>ForecastGym: A Live, Controlled, and Replayable Benchmark for Forecasting Agents</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.23045.html" />
@@ -53,10 +119,10 @@
   <entry>
     <title>Multi-Agent Memory Inconsistency: Where Factual Conflicts Disappear in LLM Agents</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.22245.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.22245v1" />
+    <link rel="related" href="https://arxiv.org/abs/2611.22245v2" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.22245.html</id>
     <published>2026-11-17T05:47:01Z</published>
-    <updated>2026-11-17T05:47:01Z</updated>
+    <updated>2026-11-18T06:42:29Z</updated>
     <author><name>Hejia Zhang</name></author><author><name>Zhongming Yu</name></author><author><name>Yimin Ding</name></author><author><name>Wei-Ting Chen</name></author><author><name>Hengjia Yu</name></author><author><name>Wentao Ni</name></author><author><name>Yijun Liu</name></author><author><name>Cong Xu</name></author><author><name>Xin Chen</name></author><author><name>Matrix Yao</name></author>
     <category term="Multi-agent" />
     <summary>Multi-agent delegation lets LLM systems distribute evidence collection across workers with separate contexts. This creates a consistency challenge: facts retrieved by workers may be missing from the evidence available to the lead for a joint conclusion. We introduce a benchmark and evidence-flow profiler for studying multi-agent memory inconsistency through controlled factual conflicts in Harvey LAB document-review tasks. Pooled across three models with comparable generation spending, requiring delegation increases retrieval of both conflicting claims from 50.2% to 68.7% relative to single-agent execution, yet conflict detection falls from 16.2% to 13.2%. Within this setting, workers report both claims for only 35.2% of retrieved pairs, and pooled matched comparisons show higher detection than single-agent execution when one worker reads both claims but lower detection when the claims are split across workers. Worker-to-lead handoffs are a central target for improving conflict detection in multi-agent LLMs.</summary>
@@ -489,71 +555,5 @@
     <author><name>Bokai Pan</name></author><author><name>Ruijie Yang</name></author><author><name>Mingyue Cheng</name></author><author><name>Jiahao Wang</name></author><author><name>Xiaoyu Tao</name></author>
     <category term="Tool use" />
     <summary>Agentic time series forecasting extends conventional approaches beyond one-shot numerical prediction toward autonomous, context-aware interaction. However, existing benchmarks offer limited integrated support for diverse contextual information, forecasting-specific adaptive interactions, and systematic evaluation of forecasting agents. In this paper, we introduce CastWorld, an agentic benchmark for context-aware time series forecasting. First, its context-rich dataset suite spans 8 domains and 25 real-world datasets, covering external variables, events, and historical cases under a unified context specification. Second, a lightweight, modular forecasting-native harness provides 49 core tools and a state-adaptive loop that tracks forecast versions and enables iterative evidence gathering and forecast revision. Intermediate forecasts can expose information gaps, while newly acquired evidence guides subsequent revisions and final version selection. Third, model-level evaluation assesses forecast quality, process execution, behavioral trustworthiness, and resource efficiency through decision trajectories and forecast-version histories. Also, systems-level evaluation compares predictive accuracy across forecasting systems. Experiments reveal distinct decision behaviors among agents with comparable accuracy. Additional interactions do not necessarily improve forecasts, and agents may fail to select their best previously generated predictions. Allowing evidence acquisition during forecast refinement improves task-aware forecast scores across all three evaluated models. CastWorld provides a reusable foundation for evaluating agentic time series forecasting under controlled conditions.</summary>
-  </entry>
-  <entry>
-    <title>WordInferBench: Can Agents Infer How to Edit from Word Document Context?</title>
-    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.15189.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.15189v1" />
-    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.15189.html</id>
-    <published>2026-11-11T08:36:16Z</published>
-    <updated>2026-11-11T08:36:16Z</updated>
-    <author><name>Jiayu Ding</name></author><author><name>Yupan Huang</name></author><author><name>Jinyoung Park</name></author><author><name>Yilin Jia</name></author><author><name>Wenshan Wu</name></author><author><name>Tengchao Lv</name></author><author><name>Shaohan Huang</name></author><author><name>Yuzhong Zhao</name></author><author><name>Xiangyang Zhou</name></author><author><name>Tao Ge</name></author>
-    <category term="General" />
-    <summary>Document editing is among the most common knowledge-work tasks, yet existing benchmarks for evaluating autonomous agents on Word document editing provide fully specified attribute-modification instructions. They do not evaluate agents&#x27; ability to infer the appropriate attributes from document context, a capability essential in real-world editing where users expect consistency without spelling out every attribute. We introduce WordInferBench, a benchmark comprising 280 base document-editing instances, each paired with three instruction conditions: descriptive (the instruction explicitly lists every attribute change), referential (the instruction points to another object as an exemplar), and inferential (the agent must examine document context to infer what attributes to apply). To evaluate contextual attribute inference, each base instance is constructed so that the target formatting is recoverable from an in-document exemplar. The instances are derived from real Word documents collected from Common Crawl and cover 13 object types and 81 attributes. We evaluate six recent coding-agent systems and find that the best-performing evaluated system, Claude Code with Opus 4.6, achieves a 62.9% task-level pass rate on descriptive variants but only 40.7% on inferential variants, indicating that current systems complete tasks less reliably when the required formatting changes must be determined from document context.</summary>
-  </entry>
-  <entry>
-    <title>RSI-PDEbench: A Benchmark for Self-Improving Agents in PDE Solving</title>
-    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.14949.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.14949v1" />
-    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.14949.html</id>
-    <published>2026-11-11T02:55:14Z</published>
-    <updated>2026-11-11T02:55:14Z</updated>
-    <author><name>Binghang Lu</name></author><author><name>Lang Cao</name></author><author><name>Changhong Mou</name></author><author><name>Yige Sun</name></author><author><name>Cindy Xiangrui Kong</name></author><author><name>Zheyuan Deng</name></author><author><name>Tian Yuan</name></author><author><name>Bing Hu</name></author><author><name>Runyu Zhang</name></author><author><name>Na Lu</name></author>
-    <category term="RSI / AI4AI" />
-    <summary>Identifying and solving partial differential equations (PDEs) from sampled solution data often requires substantial expert effort in equation discovery, coefficient estimation, and numerical solver configuration, especially under noise and distribution shifts. Can large language model (LLM) agents automate this workflow accurately and efficiently? To investigate this question, we introduce \bench{}, a benchmark of 1,001 cases spanning 42 equation templates, including both classical and fractional PDEs. It provides three evaluation settings: Full evaluates performance on noise-free solution data; Noisy tests robustness to Gaussian noise with an RMS equal to 50\% of the clean-signal RMS; and Hard-OOD tests challenging out-of-distribution generalization to unseen equation templates and shifted coefficient ranges. We further introduce RSI-PDE, a recursively self-improving agent harness that shortlists candidate equations by residual loss, uses relative $L^2$ feedback to refine coefficients and numerical solvers, and applies a validation gate to policy and memory updates. We compare RSI-PDE with single-run baselines and native agent harnesses (Claude Code or Codex) across four frontier models. Across the three settings, RSI-PDE improves the pass rate averaged across the four models by 106.5--181.9\% relative to single-run baselines and by 3.0--19.6\% relative to native harnesses, while reducing total recorded model calls by 46.9\% across the 12 model--setting pairs. These results highlight the potential of validated recursive self-improvement in LLM agents to advance scientific computing.</summary>
-  </entry>
-  <entry>
-    <title>ToolTurns: Benchmarking LLM Agents in Multi-Turn Dialogue</title>
-    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.14925.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.14925v1" />
-    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.14925.html</id>
-    <published>2026-11-11T02:27:30Z</published>
-    <updated>2026-11-11T02:27:30Z</updated>
-    <author><name>Milad Gholami</name></author><author><name>Brendan King</name></author><author><name>Jeffrey Flanigan</name></author>
-    <category term="Dialogue" />
-    <summary>Tool-using language models are increasingly deployed in conversational settings, yet most large-scale tool-use benchmarks focus on isolated requests. We introduce ToolTurns, a benchmark of 2,620 problems spanning 1,827 tools and 11,004 API endpoints across 47 categories. Each dialogue begins with an intentionally underspecified request and continues through two context-dependent follow-ups, testing clarification, tool use, and retention of conversational context. We also introduce an open-source user simulator that reveals withheld context through dialogue and generates follow-up requests, with a checker--fixer pipeline for improving its turns. Across nine language models, the best agent resolves 69.6% of individual requests but completes only 39.8% of full dialogues. Under this evaluation protocol, every evaluated model receives lower success scores on follow-up requests than on the initial request, and dialogue-quality rubric scores and task success can rank models very differently. Paired turn-level evaluation shows that the checker--fixer reduces detected dialogue defects, and blind human evaluation favors the revised turns. ToolTurns provides a testbed for evaluating whether agents sustain task success across multi-turn dialogue with tools.</summary>
-  </entry>
-  <entry>
-    <title>SynthCorp: A Platform for Creating Benchmarks for Data Agents</title>
-    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.14765.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.14765v1" />
-    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.14765.html</id>
-    <published>2026-11-10T21:43:12Z</published>
-    <updated>2026-11-10T21:43:12Z</updated>
-    <author><name>Jiani Zhang</name></author><author><name>Manav Garg</name></author><author><name>Eugenie Lai</name></author><author><name>Cheng Zhen</name></author><author><name>Eva Sharma</name></author><author><name>Yang Pan</name></author><author><name>Yaming Lin</name></author><author><name>Alon Halevy</name></author>
-    <category term="General" />
-    <summary>Current benchmarks for LLM-driven data agents saturate quickly and cannot target specific capabilities. We present SynthCorp, a platform that creates customizable data estates and benchmarks by simulating how business events produce and modify corporate data over time. Each data estate combines relational databases, a document store, and a data catalog, paired with evaluation tasks and executable gold programs. First, given a scenario and target complexity dimensions, SynthCorp synthesizes reusable event types and compiles each into a program over predefined simulation primitives. Second, SynthCorp schedules event instances on a virtual calendar, interleaving routine and disruption events so that tables, documents, and catalog entries remain consistent. Third, SynthCorp executes the calendar to materialize the data estate and records every operation in a simulation log. Fourth, SynthCorp generates analytical tasks and derives verified gold programs from the log. We use SynthCorp to generate initial evaluation benchmarks comprising seven data estates (up to 1K operational tables) and 256 tasks across five domains. The data estates pass deterministic pipeline checks (such as foreign-key violations, undeclared writes, recurrence violations, and database execution failures) with a near-zero error rate, introduce cross-asset complexities, and cover all requested dimensions. Evaluating three models across four data-context settings shows that the benchmarks separate data contexts and model tiers. Auditing candidate queries against causal provenance in the simulation log verifies gold programs without manual annotation, including on multi-event composite tasks that expose reasoning failures in state-of-the-art agents. We hope the community uses SynthCorp to generate more challenging and useful data estates and benchmarks that foster the development of enterprise data agents.</summary>
-  </entry>
-  <entry>
-    <title>When Evaluators of AI Agents Disagree: An Empirical Study of Native Scoring, LLM Judges, and Commit-Boundary Checks on tau2-bench</title>
-    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.14581.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.14581v1" />
-    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.14581.html</id>
-    <published>2026-11-10T05:34:47Z</published>
-    <updated>2026-11-10T05:34:47Z</updated>
-    <author><name>Sungbin Im</name></author>
-    <category term="Tool use" />
-    <summary>Agentic workflows, in which a large language model (LLM) calls tools to read and write data, are evaluated in two ways. Benchmarks compare the final state against a gold answer. Deployed services have none; an LLM judge reads the transcript and decides. Practice treats the two as interchangeable. This paper measures whether they are. We ran 2,160 episodes in tau2-bench&#x27;s airline and retail domains and recorded every database write. We scored each episode four ways: native scoring against gold state, an LLM judge, that judge given the policy document, and the boundary evaluator, a minimal rule-based check of whether a write was expected against whether one occurred in the trace. Two annotators independently labeled 120 episodes for task correctness, policy compliance, and commitment correctness. The judge repeated its verdict 98.2% of the time but agreed with native scoring on 56.2%. In 11 episodes the agent executed a forbidden write. The judge passed 10 to 11, with or without the policy or transcript. A stronger judge still passed 6. The boundary evaluator, with no model call, caught all 11; no judge significantly exceeded it on human labels. Forbidden writes occurred in 11.1% of episodes without gates. Verification, correction, and safe-termination gates did not reduce them significantly. The traces show a candidate cause: the gates&#x27; evidence digest dropped the order status and customer authentication, so valid requests were rejected. The choice of evaluator decides the conclusion; the minimal check exposes failures the judges miss. Traces, code, prompts, and labels are released.</summary>
-  </entry>
-  <entry>
-    <title>Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents</title>
-    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.14511.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.14511v1" />
-    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.14511.html</id>
-    <published>2026-11-10T18:56:32Z</published>
-    <updated>2026-11-10T18:56:32Z</updated>
-    <author><name>Megha Srivastava</name></author><author><name>Michael H. Lim</name></author><author><name>Allison M. Keys</name></author><author><name>Pranav Murugan</name></author><author><name>Nate Gruver</name></author>
-    <category term="Tool use" />
-    <summary>Predicting how a ligand binds to its target is central to small-molecule drug discovery. Modern cofolding models can generate diverse candidate poses, but reliably ranking these candidates remains challenging. We introduce Pyrite, a pairwise pose-ranking benchmark comprising 1,500 pose pairs across diverse protein-ligand complexes. Expert chemists equipped with 3D visualization tools and physics-based scores perform near chance, highlighting the difficulty of interpreting available chemical signals. To investigate automated ranking, we introduce PyriteRep, a structured representation of molecular geometry, protein-ligand interactions, and physicochemical scores, and develop two LLM-based agents: PyriteReasoner, which directly compares poses through text-based reasoning, and PyriteFeaturizer, which generates executable code to construct features for logistic regression, optionally incorporating features derived from LLM subcalls. These agents achieve up to 67% and 74% accuracy, respectively, exceeding observed expert performance. LLM-guided feature discovery generally outperforms direct reasoning, while Group Relative Policy Optimization (GRPO) improves open-weight models, enabling them to match or surpass closed-source frontier models in our evaluations. These results establish Pyrite as a challenging test of pose-ranking ability and highlight LLM-guided feature discovery as a promising approach to interpret and combine the outputs of computational chemistry tools.</summary>
   </entry>
 </feed>
