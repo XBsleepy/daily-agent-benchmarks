@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Report2Alpha-Bench: Evaluating LLM Agents on End-to-End Quantitative Research | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: We evaluate whether LLM agents can independently carry out a several-hour quantitative research project: read a brokerage research…" />
+    <meta name="keywords" content="Science &amp; research, Planning / reasoning, Research agents, agent benchmark, LLM agent, arXiv, 2611.27635" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.27635.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Report2Alpha-Bench: Evaluating LLM Agents on End-to-End Quantitative Research" />
+    <meta property="og:description" content="Daily Agent Benchmarks: We evaluate whether LLM agents can independently carry out a several-hour quantitative research project: read a brokerage research…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.27635.html" />
+    <meta property="article:published_time" content="2026-11-20T14:00:32Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Report2Alpha-Bench: Evaluating LLM Agents on End-to-End Quantitative Research" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: We evaluate whether LLM agents can independently carry out a several-hour quantitative research project: read a brokerage research…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Report2Alpha-Bench: Evaluating LLM Agents on End-to-End Quantitative Research",
+  "name": "Report2Alpha-Bench: Evaluating LLM Agents on End-to-End Quantitative Research",
+  "abstract": "We evaluate whether LLM agents can independently carry out a several-hour quantitative research project: read a brokerage research report, make a plan, and over 7 rounds of iteration propose hypotheses, write factor code and improve it from backtest feedback, seeing only 2022-2023 market data. Like Terminal-Bench-Science, the task evaluates overall research ability; unlike it, there is no directly checkable unique answer: the model must repeatedly propose hypotheses on very noisy data, revise its understanding from experiments, disentangle multiple factors and design ablations without overfitting in-sample, much like complex real-world decisions with many interacting factors. After the research, a fixed rule using only 2022-2023 results selects a low-correlated factor pool from all candidates the model produced, and scores it on unseen 2024-2025 data after removing common style returns such as size and momentum; the same rule on round-0 candidates alone gives a report baseline that \"implements the report without iterating\". We run gpt-6.1-sol (reasoning effort xhigh), gpt-6.1-terra (xhigh), muse-spark-1.3 (xhigh) and deepseek-v4.1-flash (max) once on each of 7 reports. Of the 28 runs, 19 factor pools pass the usability threshold; the average score is 48.4 (0-100 scale), against 25.4 for the report baseline and 35.9 for the models' own picks. From similar report baselines (17.0-31.0), the models separate after iteration to 74.7 (gpt-6.1-sol), 56.6 (gpt-6.1-terra), 35.8 (deepseek-v4.1-flash) and 26.2 (muse-spark-1.3); their candidates look equally good in training and diverge only in testing, with the leaders proposing more diverse ideas per round and ending with more effective factors in the pool. Evaluating research agents thus requires scoring on frozen future data after removing styles, and measuring \"what the research produced\" separately from \"what was finally picked\".",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yun Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Hui Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Wei Meng"
+    }
+  ],
+  "datePublished": "2026-11-20T14:00:32Z",
+  "dateModified": "2026-11-20T14:00:32Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.27635.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.27635.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.27635v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.27635"
+  },
+  "keywords": [
+    "Science & research",
+    "Planning / reasoning",
+    "Research agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Science & research"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.27635v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.27635"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Report2Alpha-Bench: Evaluating LLM Agents on End-to-End Quantitative Research</h1>
+        <div class="meta">
+          Yun Zhang, Hui Yang, Wei Meng
+          · 2611.27635
+          · <time datetime="2026-11-20">2026-11-20</time>
+          · Science &amp; research
+        </div>
+        <div class="themes"><span class="chip">Planning / reasoning</span><span class="chip">Research agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>We evaluate whether LLM agents can independently carry out a several-hour quantitative research project: read a brokerage research report, make a plan, and over 7 rounds of iteration propose hypotheses, write factor code and improve it from backtest feedback, seeing only 2022-2023 market data. Like Terminal-Bench-Science, the task evaluates overall research ability; unlike it, there is no directly checkable unique answer: the model must repeatedly propose hypotheses on very noisy data, revise its understanding from experiments, disentangle multiple factors and design ablations without overfitting in-sample, much like complex real-world decisions with many interacting factors. After the research, a fixed rule using only 2022-2023 results selects a low-correlated factor pool from all candidates the model produced, and scores it on unseen 2024-2025 data after removing common style returns such as size and momentum; the same rule on round-0 candidates alone gives a report baseline that &quot;implements the report without iterating&quot;. We run gpt-6.1-sol (reasoning effort xhigh), gpt-6.1-terra (xhigh), muse-spark-1.3 (xhigh) and deepseek-v4.1-flash (max) once on each of 7 reports. Of the 28 runs, 19 factor pools pass the usability threshold; the average score is 48.4 (0-100 scale), against 25.4 for the report baseline and 35.9 for the models&#x27; own picks. From similar report baselines (17.0-31.0), the models separate after iteration to 74.7 (gpt-6.1-sol), 56.6 (gpt-6.1-terra), 35.8 (deepseek-v4.1-flash) and 26.2 (muse-spark-1.3); their candidates look equally good in training and diverge only in testing, with the leaders proposing more diverse ideas per round and ending with more effective factors in the pool. Evaluating research agents thus requires scoring on frozen future data after removing styles, and measuring &quot;what the research produced&quot; separately from &quot;what was finally picked&quot;.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.27635v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.27635v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.27635" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Science &amp; research benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.25360.html"><strong>AppSci-Bench: Can LLMs Build AI Agents and Make Them Better?</strong></a> <span>2026-11-20</span></li>
+          <li><a href="2611.17931.html"><strong>MineralExp: Benchmarking LLM Agents for Experimental Design in Real-World Mineral Exploration</strong></a> <span>2026-11-13</span></li>
+          <li><a href="2611.15831.html"><strong>NIBench: benchmarking autonomous AI agents for execution, skill evolution and scientific judgment in neuroimaging</strong></a> <span>2026-11-11</span></li>
+          <li><a href="2611.14364.html"><strong>ARE-bench: Benchmarking Agents&#x27; Research Ability in Real-World Researcher Sessions and Workspaces</strong></a> <span>2026-11-10</span></li>
+          <li><a href="2611.12014.html"><strong>Benchmarking language models and agents for scientific reasoning in evolving materials laboratories</strong></a> <span>2026-11-09</span></li>
+          <li><a href="2611.00774.html"><strong>Decision-Centric Research: A Calibrated Decision Model and Benchmark for Scientific Agents</strong></a> <span>2026-10-31</span></li>
+          <li><a href="2610.34767.html"><strong>The Right Fact, the Wrong Decision: SciValidityBench for Scientific Agent Memory</strong></a> <span>2026-10-26</span></li>
+          <li><a href="2610.32441.html"><strong>SCI-AGENT-EXAM: Benchmarking Agents on Scientific Research Tasks</strong></a> <span>2026-10-23</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

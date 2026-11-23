@@ -1,10 +1,16 @@
 {
   "date": "2026-11-19",
-  "count": 3,
+  "count": 4,
   "report": {
     "date": "2026-11-19",
-    "count": 3,
+    "count": 4,
     "themes": [
+      {
+        "id": "embodied",
+        "count": 2,
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
+      },
       {
         "id": "coding",
         "count": 2,
@@ -12,16 +18,16 @@
         "zh": "代码智能体"
       },
       {
+        "id": "memory",
+        "count": 1,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
         "id": "rsi",
         "count": 1,
         "en": "RSI / AI4AI",
         "zh": "RSI / AI4AI"
-      },
-      {
-        "id": "embodied",
-        "count": 1,
-        "en": "Embodied / robotics",
-        "zh": "具身 / 机器人"
       },
       {
         "id": "multi-agent",
@@ -43,8 +49,8 @@
       }
     ],
     "en": {
-      "headline": "3 new agent benchmarks",
-      "summary": "On November 19, 2026, arXiv listed 3 new agent benchmarks. Work clustered around Coding agents (2), RSI / AI4AI (1), Embodied / robotics (1), and Multi-agent (1).",
+      "headline": "4 new agent benchmarks",
+      "summary": "On November 19, 2026, arXiv listed 4 new agent benchmarks. Work clustered around Embodied / robotics (2), Coding agents (2), Memory (1), and RSI / AI4AI (1).",
       "highlights": [
         {
           "id": "2611.23258",
@@ -64,8 +70,8 @@
       ]
     },
     "zh": {
-      "headline": "新增 3 篇 Agent Benchmark",
-      "summary": "2026年11月19日，arXiv 新增 3 篇 Agent Benchmark。当日主题集中在代码智能体（2）、RSI / AI4AI（1）、具身 / 机器人（1）、多智能体（1）。",
+      "headline": "新增 4 篇 Agent Benchmark",
+      "summary": "2026年11月19日，arXiv 新增 4 篇 Agent Benchmark。当日主题集中在具身 / 机器人（2）、代码智能体（2）、记忆（1）、RSI / AI4AI（1）。",
       "highlights": [
         {
           "id": "2611.23258",
@@ -86,6 +92,38 @@
     }
   },
   "papers": [
+    {
+      "id": "2611.26910",
+      "title": "AstronautBench: Measuring Agent Self-Improvement Across Episodes Through Knowledge, Evidence, and Progress",
+      "abstract": "LLM agents are expected to improve themselves from their own experience across episodes, with fixed weights. Self-improvement in an embodied world cannot be read from one measure. Existing benchmarks measure task progress, world-knowledge question answering (QA), and episodic memory, but a correct answer does not show that the agent ever observed the evidence for it, and progress does not show what the agent learned. We introduce AstronautBench, which measures one agent's self-improvement through three views on the same run: what it knows, whether its own evidence supports that knowledge, and how far it gets in the world. It is built on the game Outer Wilds, where each episode is a 22-minute loop after which the world resets, only the agent's knowledge carries over, and progress is gated by knowledge. After every episode, we measure the places reached and ship-log rumor facts revealed, the correctness of answers to 164 questions about the world, and whether each answer is supported by the frames and position the agent cites from its own recorded play. Two LLM judges from different model families check every answer. In eight-episode baselines with GPT-6.1 Sol and Gemini 4 Argon planners, which act through a learned controller or their own gamepad inputs, the three views do not move together, so any one of them alone gives an incomplete picture of whether the agent is improving. The GPT-6.1 Sol agent's correct answers grow from 14.6% to 26.8% of all questions, but at episode 8 only 59 to 68% of them are supported by its cited evidence. It reveals no new rumor facts after episode 3, while the places it reaches and its memory keep growing. More than half of the answers that become correct after episode 3 cite only evidence from earlier episodes.",
+      "authors": [
+        "Congyuan Yu",
+        "Runping Tian"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-19T23:48:39Z",
+      "updated": "2026-11-19T23:48:39Z",
+      "announced_date": "2026-11-19",
+      "first_seen": "2026-11-19",
+      "comment": "11 pages, 3 figures, 6 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.26910v1",
+        "pdf": "https://arxiv.org/pdf/2611.26910v1",
+        "html": "https://arxiv.org/html/2611.26910"
+      },
+      "score": 9,
+      "tags": [
+        "embodied",
+        "memory"
+      ],
+      "field": "rsi",
+      "citations": 0
+    },
     {
       "id": "2611.24395",
       "title": "RSIBench-Infra: Can Agents Optimize Their Own Training and Inference Infrastructure at Production Scale?",

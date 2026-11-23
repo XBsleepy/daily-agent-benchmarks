@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Who Grades the Agent? Privilege Separation for Coding-Agent Benchmarks | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Benchmarks for AI-based coding agents are a staple of the current AI landscape, because they are the leading way to measure the…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Research agents, Science lab, agent benchmark, LLM agent, arXiv, 2611.27860" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.27860.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Who Grades the Agent? Privilege Separation for Coding-Agent Benchmarks" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Benchmarks for AI-based coding agents are a staple of the current AI landscape, because they are the leading way to measure the…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.27860.html" />
+    <meta property="article:published_time" content="2026-11-20T17:09:10Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Who Grades the Agent? Privilege Separation for Coding-Agent Benchmarks" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Benchmarks for AI-based coding agents are a staple of the current AI landscape, because they are the leading way to measure the…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Who Grades the Agent? Privilege Separation for Coding-Agent Benchmarks",
+  "name": "Who Grades the Agent? Privilege Separation for Coding-Agent Benchmarks",
+  "abstract": "Benchmarks for AI-based coding agents are a staple of the current AI landscape, because they are the leading way to measure the performance of LLMs. Their scores guide business and research decisions. Evaluating coding agents is challenging, since they are able to manipulate their evaluation infrastructure to artificially achieve better scores. Grading an agent's solution often requires running its code, which can then manipulate the evaluation process. BenchJack, an automated benchmark auditor, recently reached near-perfect scores on nine of ten popular agent benchmarks without actually solving their tasks. Agents already do this unprompted, as OpenAI's July 2026 Hugging Face incident showed. Building on secure systems design, we introduce SplitBench, a privilege separation framework for evaluating coding agents and the first in the scientific literature to separate running a task's tests from judging their results. Even an agent whose code takes over the entire test environment cannot forge a pass, because a trusted grader holds the expected answers. We show that real-world benchmarks (e.g., Terminal-Bench, DeepSWE) can be ported to the SplitBench framework with minimal effort and high fidelity: 180 of 202 tasks convert, and SplitBench agrees with the native graders on 98.7% of agent attempts. We attack the converted tasks in the worst case, where adversarial agents can read all the grading code but not the expected answers. SplitBench blocked 75% of their attempts; the rest mostly reveal weaknesses in the original tasks' tests rather than flaws in SplitBench.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Nathan Nour Houlamy"
+    },
+    {
+      "@type": "Person",
+      "name": "Mattia Favretto"
+    },
+    {
+      "@type": "Person",
+      "name": "Earlence Fernandes"
+    },
+    {
+      "@type": "Person",
+      "name": "Mauro Conti"
+    }
+  ],
+  "datePublished": "2026-11-20T17:09:10Z",
+  "dateModified": "2026-11-20T17:09:10Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.27860.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.27860.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.27860v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.27860"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Research agents",
+    "Science lab",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.27860v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.27860"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>Who Grades the Agent? Privilege Separation for Coding-Agent Benchmarks</h1>
+        <div class="meta">
+          Nathan Nour Houlamy, Mattia Favretto, Earlence Fernandes, Mauro Conti
+          · 2611.27860
+          · <time datetime="2026-11-20">2026-11-20</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Research agents</span><span class="chip">Science lab</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Benchmarks for AI-based coding agents are a staple of the current AI landscape, because they are the leading way to measure the performance of LLMs. Their scores guide business and research decisions. Evaluating coding agents is challenging, since they are able to manipulate their evaluation infrastructure to artificially achieve better scores. Grading an agent&#x27;s solution often requires running its code, which can then manipulate the evaluation process. BenchJack, an automated benchmark auditor, recently reached near-perfect scores on nine of ten popular agent benchmarks without actually solving their tasks. Agents already do this unprompted, as OpenAI&#x27;s July 2026 Hugging Face incident showed. Building on secure systems design, we introduce SplitBench, a privilege separation framework for evaluating coding agents and the first in the scientific literature to separate running a task&#x27;s tests from judging their results. Even an agent whose code takes over the entire test environment cannot forge a pass, because a trusted grader holds the expected answers. We show that real-world benchmarks (e.g., Terminal-Bench, DeepSWE) can be ported to the SplitBench framework with minimal effort and high fidelity: 180 of 202 tasks convert, and SplitBench agrees with the native graders on 98.7% of agent attempts. We attack the converted tasks in the worst case, where adversarial agents can read all the grading code but not the expected answers. SplitBench blocked 75% of their attempts; the rest mostly reveal weaknesses in the original tasks&#x27; tests rather than flaws in SplitBench.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.27860v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.27860v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.27860" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.27895.html"><strong>TEA-Bench-BR: Can Coding Agents Turn a Branching Clinical Specification into Correct Code?</strong></a> <span>2026-11-20</span></li>
+          <li><a href="2611.27734.html"><strong>AutoOntologyBench: A Task-Grounded Benchmark for Agentic Knowledge Engineering</strong></a> <span>2026-11-20</span></li>
+          <li><a href="2611.26311.html"><strong>SWE-Recreation: Benchmarking Coding Agents for Software Recreation</strong></a> <span>2026-11-20</span></li>
+          <li><a href="2611.25673.html"><strong>CompAct-Bench: A Benchmark for Working-Context Compaction in Long-Horizon Agent Tasks</strong></a> <span>2026-11-20</span></li>
+          <li><a href="2611.24073.html"><strong>3D GameDev Arena: Benchmarking Coding Agents That Plan, Build, and Playtest extreme Long-Horizon Browser Games</strong></a> <span>2026-11-18</span></li>
+          <li><a href="2611.22967.html"><strong>CodeReel: Accelerating Code-to-Video Agents with Exact Frame Reuse and Blocking-Aware Scheduling</strong></a> <span>2026-11-17</span></li>
+          <li><a href="2611.22017.html"><strong>SkillBuffBench: Measuring What Agent Skills Contribute across Harnesses, Models, Skill Access Modes and Memory</strong></a> <span>2026-11-17</span></li>
+          <li><a href="2611.21515.html"><strong>Beyond Leaderboard Ranks: Selecting Software Engineering Agents Under Budget Constraints</strong></a> <span>2026-11-17</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

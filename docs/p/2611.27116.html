@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CoEvoBench: Can LLMs Drive Recursive Co-Evolution of Agentic Systems? | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: The performance of an LLM agent depends on both its model and its harness, the code that mediates its interaction with tools and…" />
+    <meta name="keywords" content="Tool use, agent benchmark, LLM agent, arXiv, 2611.27116" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.27116.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="CoEvoBench: Can LLMs Drive Recursive Co-Evolution of Agentic Systems?" />
+    <meta property="og:description" content="Daily Agent Benchmarks: The performance of an LLM agent depends on both its model and its harness, the code that mediates its interaction with tools and…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.27116.html" />
+    <meta property="article:published_time" content="2026-11-20T04:40:59Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="CoEvoBench: Can LLMs Drive Recursive Co-Evolution of Agentic Systems?" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: The performance of an LLM agent depends on both its model and its harness, the code that mediates its interaction with tools and…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "CoEvoBench: Can LLMs Drive Recursive Co-Evolution of Agentic Systems?",
+  "name": "CoEvoBench: Can LLMs Drive Recursive Co-Evolution of Agentic Systems?",
+  "abstract": "The performance of an LLM agent depends on both its model and its harness, the code that mediates its interaction with tools and environments. Can LLM researchers drive this co-evolution as a recursive improvement process, deciding round after round which component to change when each change alters the value of the other? Existing benchmarks evaluate post-training or data research with the harness out of scope, or harness optimization with the model fixed, leaving this joint decision unmeasured. We introduce CoEvoBench, a benchmark that evaluates LLMs as researchers co-evolving the model and harness of a target agent across five agentic domains. Researchers start from a common base model and initial harness, train and revise within a 24-hour budget, and submit a model-harness pair that is scored on separate test tasks. Across five frontier researchers, the strongest closes more than four fifths of the gap to an instruction-tuned reference system, and co-evolution succeeds on interaction tasks but rarely on long-horizon coding. These results suggest that current LLMs can make a strong first improvement, but cannot yet turn feedback from an improved system into the next one. CoEvoBench provides a controlled testbed for measuring the research capabilities that recursive co-evolution requires.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Chuan Xiao"
+    },
+    {
+      "@type": "Person",
+      "name": "Baojie Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Haizhao Fan"
+    },
+    {
+      "@type": "Person",
+      "name": "Hongzhe Du"
+    },
+    {
+      "@type": "Person",
+      "name": "Xander Xu"
+    }
+  ],
+  "datePublished": "2026-11-20T04:40:59Z",
+  "dateModified": "2026-11-20T04:40:59Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.27116.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.27116.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.27116v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.27116"
+  },
+  "keywords": [
+    "Tool use",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Tool use"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.27116v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.27116"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>CoEvoBench: Can LLMs Drive Recursive Co-Evolution of Agentic Systems?</h1>
+        <div class="meta">
+          Chuan Xiao, Baojie Wang, Haizhao Fan, Hongzhe Du, Xander Xu
+          · 2611.27116
+          · <time datetime="2026-11-20">2026-11-20</time>
+          · Tool use
+        </div>
+        <div class="themes"><span class="chip">Tool use</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>The performance of an LLM agent depends on both its model and its harness, the code that mediates its interaction with tools and environments. Can LLM researchers drive this co-evolution as a recursive improvement process, deciding round after round which component to change when each change alters the value of the other? Existing benchmarks evaluate post-training or data research with the harness out of scope, or harness optimization with the model fixed, leaving this joint decision unmeasured. We introduce CoEvoBench, a benchmark that evaluates LLMs as researchers co-evolving the model and harness of a target agent across five agentic domains. Researchers start from a common base model and initial harness, train and revise within a 24-hour budget, and submit a model-harness pair that is scored on separate test tasks. Across five frontier researchers, the strongest closes more than four fifths of the gap to an instruction-tuned reference system, and co-evolution succeeds on interaction tasks but rarely on long-horizon coding. These results suggest that current LLMs can make a strong first improvement, but cannot yet turn feedback from an improved system into the next one. CoEvoBench provides a controlled testbed for measuring the research capabilities that recursive co-evolution requires.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.27116v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.27116v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.27116" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Tool use benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.24184.html"><strong>VideoACE: Benchmarking Agentic Video Understanding through High-Frame-Rate Actions</strong></a> <span>2026-11-18</span></li>
+          <li><a href="2611.17632.html"><strong>Generated Evaluation Suites as Diversity-Driven Search for Real Agent Regressions</strong></a> <span>2026-11-13</span></li>
+          <li><a href="2611.15262.html"><strong>CastWorld: Benchmarking Context-Aware Agentic Time Series Forecasting Beyond Predictive Accuracy</strong></a> <span>2026-11-11</span></li>
+          <li><a href="2611.14581.html"><strong>When Evaluators of AI Agents Disagree: An Empirical Study of Native Scoring, LLM Judges, and Commit-Boundary Checks on tau2-bench</strong></a> <span>2026-11-10</span></li>
+          <li><a href="2611.14511.html"><strong>Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents</strong></a> <span>2026-11-10</span></li>
+          <li><a href="2611.12118.html"><strong>Joi-Bench-Task: Benchmarking Task Coordination in Full-duplex Voice Agents through Interactive Simulation</strong></a> <span>2026-11-09</span></li>
+          <li><a href="2611.11896.html"><strong>LEGION: Benchmarking Language Agents on Sparse-Signal Investigation Under Adversarial Noise</strong></a> <span>2026-11-09</span></li>
+          <li><a href="2611.12982.html"><strong>ICLayout-Bench: Benchmarking LLM Agents for Custom Circuit Layout Design</strong></a> <span>2026-11-08</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>
