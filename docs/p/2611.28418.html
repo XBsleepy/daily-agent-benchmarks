@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WingBench: Benchmarking How AI Agents Search for Better Designs | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Design search often uses cheap learned predictions to choose which candidates deserve expensive tests, but these tests can fail…" />
+    <meta name="keywords" content="Science &amp; research, Planning / reasoning, Research agents, agent benchmark, LLM agent, arXiv, 2611.28418" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.28418.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="WingBench: Benchmarking How AI Agents Search for Better Designs" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Design search often uses cheap learned predictions to choose which candidates deserve expensive tests, but these tests can fail…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.28418.html" />
+    <meta property="article:published_time" content="2026-11-20T23:42:38Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="WingBench: Benchmarking How AI Agents Search for Better Designs" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Design search often uses cheap learned predictions to choose which candidates deserve expensive tests, but these tests can fail…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "WingBench: Benchmarking How AI Agents Search for Better Designs",
+  "name": "WingBench: Benchmarking How AI Agents Search for Better Designs",
+  "abstract": "Design search often uses cheap learned predictions to choose which candidates deserve expensive tests, but these tests can fail, especially on the unusual designs that optimization favors. We introduce WingBench, a multifidelity benchmark in which optimizers and AI agents design transonic wings with computational fluid dynamics (CFD) inside the search. They can query a learned aerodynamic surrogate and spend a fixed budget of sequential CFD evaluations, each returning a score or a failure type. WingBench grades the design each method recommends, reporting separately whether it receives a valid score and how good that score is. Using WingBench, we contribute a study of five baseline optimizers and a comparison of three AI agent methods, which produced 6,629 CFD evaluation records. Feedback helps baseline optimizers deliver valid designs when it changes their later proposals, but the differential-evolution variant does so with lower aerodynamic quality. An open-ended research agent finds designs of similar quality to the strongest baselines over 32 CFD queries, with different prior information and unmatched total computation. In early search, our reflection and planning implementations do not consistently improve on it. We release the data, code, agent prompts, and analysis scripts for reproducibility.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Yiming Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "David Xia"
+    },
+    {
+      "@type": "Person",
+      "name": "Jisen Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuqing Jian"
+    },
+    {
+      "@type": "Person",
+      "name": "Yunjia Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Koray Aydin"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhaoran Wang"
+    }
+  ],
+  "datePublished": "2026-11-20T23:42:38Z",
+  "dateModified": "2026-11-20T23:42:38Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.28418.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.28418.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.28418v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.28418"
+  },
+  "keywords": [
+    "Science & research",
+    "Planning / reasoning",
+    "Research agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Science & research"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.28418v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.28418"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>WingBench: Benchmarking How AI Agents Search for Better Designs</h1>
+        <div class="meta">
+          Yiming Yang, David Xia, Jisen Li, Yuqing Jian, Yunjia Yang, Koray Aydin, Zhaoran Wang
+          · 2611.28418
+          · <time datetime="2026-11-20">2026-11-20</time>
+          · Science &amp; research
+        </div>
+        <div class="themes"><span class="chip">Planning / reasoning</span><span class="chip">Research agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Design search often uses cheap learned predictions to choose which candidates deserve expensive tests, but these tests can fail, especially on the unusual designs that optimization favors. We introduce WingBench, a multifidelity benchmark in which optimizers and AI agents design transonic wings with computational fluid dynamics (CFD) inside the search. They can query a learned aerodynamic surrogate and spend a fixed budget of sequential CFD evaluations, each returning a score or a failure type. WingBench grades the design each method recommends, reporting separately whether it receives a valid score and how good that score is. Using WingBench, we contribute a study of five baseline optimizers and a comparison of three AI agent methods, which produced 6,629 CFD evaluation records. Feedback helps baseline optimizers deliver valid designs when it changes their later proposals, but the differential-evolution variant does so with lower aerodynamic quality. An open-ended research agent finds designs of similar quality to the strongest baselines over 32 CFD queries, with different prior information and unmatched total computation. In early search, our reflection and planning implementations do not consistently improve on it. We release the data, code, agent prompts, and analysis scripts for reproducibility.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.28418v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.28418v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.28418" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Science &amp; research benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.30916.html"><strong>TrialAgentBench: Evaluating AI Agents for Clinical-Trial Analysis and Long-Horizon Drug-Development Decisions</strong></a> <span>2026-11-23</span></li>
+          <li><a href="2611.29467.html"><strong>Beyond Accuracy: A Diagnostic Benchmark for Hypothesis-Driven Experiment Planning in LLM Agents</strong></a> <span>2026-11-22</span></li>
+          <li><a href="2611.27635.html"><strong>Report2Alpha-Bench: Evaluating LLM Agents on End-to-End Quantitative Research</strong></a> <span>2026-11-20</span></li>
+          <li><a href="2611.25360.html"><strong>AppSci-Bench: Can LLMs Build AI Agents and Make Them Better?</strong></a> <span>2026-11-20</span></li>
+          <li><a href="2611.17931.html"><strong>MineralExp: Benchmarking LLM Agents for Experimental Design in Real-World Mineral Exploration</strong></a> <span>2026-11-13</span></li>
+          <li><a href="2611.15831.html"><strong>NIBench: benchmarking autonomous AI agents for execution, skill evolution and scientific judgment in neuroimaging</strong></a> <span>2026-11-11</span></li>
+          <li><a href="2611.14364.html"><strong>ARE-bench: Benchmarking Agents&#x27; Research Ability in Real-World Researcher Sessions and Workspaces</strong></a> <span>2026-11-10</span></li>
+          <li><a href="2611.12014.html"><strong>Benchmarking language models and agents for scientific reasoning in evolving materials laboratories</strong></a> <span>2026-11-09</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

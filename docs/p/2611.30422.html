@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HWRE-Bench: Can LLM Agents Understand Hardware They Did Not Design? | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Hardware benchmarks for LLM agents all run the design flow forward, from a specification to RTL, a layout or a bug fix. We ask the…" />
+    <meta name="keywords" content="Safety, agent benchmark, LLM agent, arXiv, 2611.30422" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30422.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="HWRE-Bench: Can LLM Agents Understand Hardware They Did Not Design?" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Hardware benchmarks for LLM agents all run the design flow forward, from a specification to RTL, a layout or a bug fix. We ask the…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30422.html" />
+    <meta property="article:published_time" content="2026-11-23T10:18:07Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="HWRE-Bench: Can LLM Agents Understand Hardware They Did Not Design?" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Hardware benchmarks for LLM agents all run the design flow forward, from a specification to RTL, a layout or a bug fix. We ask the…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "HWRE-Bench: Can LLM Agents Understand Hardware They Did Not Design?",
+  "name": "HWRE-Bench: Can LLM Agents Understand Hardware They Did Not Design?",
+  "abstract": "Hardware benchmarks for LLM agents all run the design flow forward, from a specification to RTL, a layout or a bug fix. We ask the reverse question: given an implemented artifact, such as a layout, a gate-level netlist or a protected simulation model, can an agent work out what it does well enough to act on that knowledge? We introduce HWRE-Bench, a benchmark for agentic hardware reverse engineering built on one observation. Each step of the forward flow discards information (names, hierarchy, word-level structure, generator parameters, the programming model), and a reverse-engineering task asks the agent to recover what was lost and to prove it with an executable deliverable that the artifact alone cannot supply. Since layout extraction is now mechanical and a correct netlist is already a cycle-exact model, every task carries a mandatory copy-the-netlist control that must score zero. HWRE-Bench spans five tracks (Extract, Abstract, Audit, Interoperate, Modify), four information-loss levels and white- versus black-box access, all on original designs. We report a pilot of 148 rollouts from two agents on four seed tasks under 16 conditions, with stage-annotated trajectories. Agents built their own layout extractors and audited a sanitized layout as reliably as a netlist, at about 27% more turns. Keyless, equivalence-preserving obfuscation changed neither pass rates nor defect-repair scores. Whether agents read the structure at all depended on task framing rather than on necessity, so pass rate alone does not show understanding. Provider safety filters stopped 16% of one agent's runs on the audit tasks. These results argue for deliverables beyond equivalence and for reporting run validity explicitly.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Peilong Zhou"
+    },
+    {
+      "@type": "Person",
+      "name": "Cangyuan Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Kaiyan Chang"
+    },
+    {
+      "@type": "Person",
+      "name": "Ying Wang"
+    }
+  ],
+  "datePublished": "2026-11-23T10:18:07Z",
+  "dateModified": "2026-11-23T10:18:07Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30422.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30422.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.30422v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.30422"
+  },
+  "keywords": [
+    "Safety",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Safety"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.30422v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.30422"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>HWRE-Bench: Can LLM Agents Understand Hardware They Did Not Design?</h1>
+        <div class="meta">
+          Peilong Zhou, Cangyuan Li, Kaiyan Chang, Ying Wang
+          · 2611.30422
+          · <time datetime="2026-11-23">2026-11-23</time>
+          · Safety
+        </div>
+        <div class="themes"><span class="chip">Safety</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Hardware benchmarks for LLM agents all run the design flow forward, from a specification to RTL, a layout or a bug fix. We ask the reverse question: given an implemented artifact, such as a layout, a gate-level netlist or a protected simulation model, can an agent work out what it does well enough to act on that knowledge? We introduce HWRE-Bench, a benchmark for agentic hardware reverse engineering built on one observation. Each step of the forward flow discards information (names, hierarchy, word-level structure, generator parameters, the programming model), and a reverse-engineering task asks the agent to recover what was lost and to prove it with an executable deliverable that the artifact alone cannot supply. Since layout extraction is now mechanical and a correct netlist is already a cycle-exact model, every task carries a mandatory copy-the-netlist control that must score zero. HWRE-Bench spans five tracks (Extract, Abstract, Audit, Interoperate, Modify), four information-loss levels and white- versus black-box access, all on original designs. We report a pilot of 148 rollouts from two agents on four seed tasks under 16 conditions, with stage-annotated trajectories. Agents built their own layout extractors and audited a sanitized layout as reliably as a netlist, at about 27% more turns. Keyless, equivalence-preserving obfuscation changed neither pass rates nor defect-repair scores. Whether agents read the structure at all depended on task framing rather than on necessity, so pass rate alone does not show understanding. Provider safety filters stopped 16% of one agent&#x27;s runs on the audit tasks. These results argue for deliverables beyond equivalence and for reporting run validity explicitly.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.30422v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.30422v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.30422" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Safety benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.28194.html"><strong>HEP-Ex-Bench: Evaluating Agentic Performance in High Energy Physics Experiment Data Analyses with Sealed Worlds</strong></a> <span>2026-11-20</span></li>
+          <li><a href="2611.18612.html"><strong>When Helpful Agents Cause Financial Harm: Evaluating LLM Agent Safety in Executable Economic Worlds</strong></a> <span>2026-11-17</span></li>
+          <li><a href="2611.17460.html"><strong>Unfinished-Bench: Measuring Rule Violations by Persistent Agents in Realistic Work Environments</strong></a> <span>2026-11-12</span></li>
+          <li><a href="2611.16493.html"><strong>ReA-Bench: Benchmarking Responsible Agent Auditing</strong></a> <span>2026-11-12</span></li>
+          <li><a href="2611.11796.html"><strong>Publications as benchmarks: auditing AI agents on spatial transcriptomics alignment</strong></a> <span>2026-11-09</span></li>
+          <li><a href="2611.05450.html"><strong>Towards Robust Long-Lived Agents: Benchmarking Experience Lifecycles in Evolving Environments</strong></a> <span>2026-11-03</span></li>
+          <li><a href="2611.03412.html"><strong>DeliverBench: Benchmarking AI Agents on Delivering Realistic Multi-Stage Professional Projects</strong></a> <span>2026-11-02</span></li>
+          <li><a href="2611.01700.html"><strong>MemHarmBench: Evaluating Cross-Session Prompt Injection in Memory-Persistent AI Agents</strong></a> <span>2026-11-01</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>
