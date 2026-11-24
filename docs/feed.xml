@@ -5,235 +5,279 @@
   <link href="https://xbsleepy.github.io/daily-agent-benchmarks/" />
   <link rel="self" href="https://xbsleepy.github.io/daily-agent-benchmarks/feed.xml" />
   <id>https://xbsleepy.github.io/daily-agent-benchmarks/</id>
-  <updated>2026-11-24T10:23:51Z</updated>
+  <updated>2026-11-24T14:08:10Z</updated>
+  <entry>
+    <title>ChiProgramBench: Can LLM Agents Rebuild Efficient Circuits from Pin-Level Experiments?</title>
+    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.31082.html" />
+    <link rel="related" href="https://arxiv.org/abs/2611.31082" />
+    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.31082.html</id>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Tianrun Gou, Qingyao Yang, Wendong Xu, Liang Chen, Kuan Li, Ngai Wong</name></author>
+    <category term="General" />
+    <summary>Understanding a system that can be run but not inspected is a core engineering skill: one designs experiments, forms hypotheses about hidden state and timing, discards those that observations refute, and finally builds a replacement that works and is efficient. To evaluate this capability of LLM agents in the hardware domain, we present ChiProgramBench, 18 tasks derived from open-source processors, accelerators, codecs, transforms, interconnects, and control circuits. Agents can only drive and read the pins of a hidden, stateful simulated reference, then submit a gate-level netlist made of public library cells. Agents work in two settings: black-box discovery gives only anonymized functional pins and the interfaces of fixed memories, while function-guided reconstruction adds the circuit&#x27;s purpose and each pin&#x27;s role. Hidden test cases compare outputs with the reference cycle by cycle; power, delay, and area earn credit relative to the reference only when every case passes. Across 432 trials of 6 LLM agent configurations, successful agents recover algorithms and numerical conventions, yet only 12.0% of black-box and 14.8% of function-guided trials pass every case. Function-guided reconstruction raises the mean functional score, the cycle-weighted share of passed cases, from 24.6% to 30.9%. Of the 58 fully passing designs, only three improve on the reference&#x27;s combined power, area, and delay, so behavioral recovery and efficient implementation remain distinct challenges.</summary>
+  </entry>
   <entry>
     <title>From Local Errors to System Failures: Modeling and Benchmarking Error Propagation in Multi-Agent LLM Systems</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.31063.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.31063v1" />
+    <link rel="related" href="https://arxiv.org/abs/2611.31063" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.31063.html</id>
-    <published>2026-11-23T17:20:43Z</published>
-    <updated>2026-11-23T17:20:43Z</updated>
-    <author><name>Wenlong Yu</name></author><author><name>Bingxu Lu</name></author><author><name>Qilong Wang</name></author><author><name>Qinghua Hu</name></author><author><name>Qianru Sun</name></author>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Wenlong Yu, Bingxu Lu, Qilong Wang, Qinghua Hu, Qianru Sun</name></author>
     <category term="Multi-agent" />
     <summary>In multi-agent systems (MAS) built on large language models (LLMs), errors can propagate through intermediate messages and compromise final answers. However, outcome-based evaluation obscures how agents amplify, attenuate, or correct these errors. We propose Response-Aware Error Propagation among Agents (REPA), a structural model that connects measured local responses to system-level error propagation. REPA separately estimates input assembly and agent processing across multiple error channels, while theoretical analysis relates local modeling errors to endpoint prediction error. Experiments span three Qwen base models, six MAS workflows, and ten knowledge and reasoning settings in ErrPropBench-10. REPA achieves a mean condition-level Spearman correlation of 0.84 across base models, compared with 0.47 for direct regression. Controlled experiments also demonstrate its utility for targeted recovery. REPA-guided retrieval-augmented generation (RAG) improves accuracy over no retrieval by an average of 19 percentage points with 16% additional tokens. By linking local agent behavior to system susceptibility, REPA provides an interpretable foundation for studying error propagation and developing targeted optimization in MAS.</summary>
   </entry>
   <entry>
     <title>OmniV-Bench: Can MLLMs Comprehend Immersive Spatio-temporal Scenes?</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.31022.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.31022v1" />
+    <link rel="related" href="https://arxiv.org/abs/2611.31022" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.31022.html</id>
-    <published>2026-11-23T17:03:16Z</published>
-    <updated>2026-11-23T17:03:16Z</updated>
-    <author><name>Liu Yang</name></author><author><name>Huiyu Duan</name></author><author><name>Yixuan Gao</name></author><author><name>Sirui Liu</name></author><author><name>Lu Liu</name></author><author><name>Zhaolin Cai</name></author><author><name>Ke Gu</name></author><author><name>Xiongkuo Min</name></author><author><name>Xiaoping Zhang</name></author><author><name>Guangtao Zhai</name></author>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Liu Yang, Huiyu Duan, Yixuan Gao, Sirui Liu, Lu Liu, Zhaolin Cai, Ke Gu, Xiongkuo Min, Xiaoping Zhang, Guangtao Zhai</name></author>
     <category term="Embodied / robotics" />
     <summary>Omnidirectional videos (ODVs) capture dynamic environments with a full $360^\circ$ field of view, providing rich spatial context and temporal dynamics for applications such as virtual reality (VR), augmented reality (AR), and embodied intelligence. Recent multimodal large language models (MLLMs) have made great progress in spatial and temporal understanding, yet their ability to comprehend the immersive 360 spatio-temporal information conveyed by ODVs remains largely unexplored. To bridge this gap, we first introduce OmniV-Bench, a Benchmark designed to comprehensively evaluate the capabilities of MLLMs on spatio-temporal Omnidirectional Video understanding. OmniV-Bench contains 4,123 high-quality ODVs collected from diverse scenes, along with 8,923 human-annotated question-answer pairs spanning 11 fine-grained tasks across three categories, i.e., general, spatial, and spatio-temporal understanding. Extensive benchmark experiments reveal that the spatio-temporal complexity of ODVs poses significant challenges for current MLLMs. To address these limitations, we further propose OmniV-Harness, an agentic harness that enhances ODV understanding through viewpoint-guided evidence initialization and task-relevant evidence acquisition with adaptive tool use. Comprehensive experiments demonstrate that OmniV-Harness consistently improves immersive spatio-temporal reasoning ability of MLLMs. Both OmniV-Bench and OmniV-Harness will be released upon publication.</summary>
   </entry>
   <entry>
     <title>TrialAgentBench: Evaluating AI Agents for Clinical-Trial Analysis and Long-Horizon Drug-Development Decisions</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30916.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.30916v1" />
+    <link rel="related" href="https://arxiv.org/abs/2611.30916" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30916.html</id>
-    <published>2026-11-23T16:08:36Z</published>
-    <updated>2026-11-23T16:08:36Z</updated>
-    <author><name>Bradley Segal</name></author><author><name>William Bolton</name></author><author><name>Philip Torr</name></author><author><name>David Clifton</name></author><author><name>Lei Clifton</name></author>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Bradley Segal, William Bolton, Philip Torr, David Clifton, Lei Clifton</name></author>
     <category term="Science &amp; research" />
     <summary>Clinical drug development is a long-horizon, high-stakes process requiring sequential decisions based on information that costs money and time to acquire. AI agents have demonstrated capabilities for scientific analysis, but there is no established way to evaluate them on these decisions, as real trials are expensive, involve people, and never reveal the counterfactual. We introduce TrialAgentBench, a benchmark for evaluating AI agents on clinical trial analysis and drug development decision-making using simulated trials where the truth is known, embedded within the data records of a fictional drug sponsor. We publicly release nearly 3,500 tasks, varying from analysing a single trial to managing multi-phase programmes with budget and time constraints. We score each analysis by rerunning its code on new trials, and each programme by the value its decisions achieve. Across 24 closed- and open-weight models, the strongest agents can analyse raw, messy trial records to within 6% of a process-aware analysis, even when an assumption is violated, with 95% confidence intervals containing the true effect 94--95% of the time. Over the prior year, the best model improved from 19% above this analysis, with serious misses on 15% of tasks, to 3.5% and 1%. What limits them is decision-making from evidence under uncertainty: when to correct, what evidence to buy, when to stop. The strongest agents are overly careful, correcting on 83% of tasks with equal recording errors, where it is unnecessary. On drug programmes, the best agent has substantial headroom, reaching 48% of the value an oracle achieves against 58% for a rule-based developer, with others falling 24 to 66% short. Model generations show ongoing improvements in handling data and evidence, with substantial variation. The strongest models can act as competent analysts, but do not yet make reliable long-horizon decisions.</summary>
   </entry>
   <entry>
     <title>GameDojo: Benchmarking Real-Time Interactive Agents in Video Games</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30771.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.30771v1" />
+    <link rel="related" href="https://arxiv.org/abs/2611.30771" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30771.html</id>
-    <published>2026-11-23T14:41:27Z</published>
-    <updated>2026-11-23T14:41:27Z</updated>
-    <author><name>Kuan Zhang</name></author><author><name>Zhihao Yang</name></author><author><name>Yukun Chen</name></author><author><name>Xingyilang Yin</name></author><author><name>Mingyu Ouyang</name></author><author><name>Yue Su</name></author><author><name>Xiangnan Wu</name></author><author><name>Jiaming Li</name></author><author><name>Longze Chen</name></author><author><name>Run Luo</name></author>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Kuan Zhang, Zhihao Yang, Yukun Chen, Xingyilang Yin, Mingyu Ouyang, Yue Su, Xiangnan Wu, Jiaming Li, Longze Chen, Run Luo, Zirong Chen, Lu Wang, Yiming Li</name></author>
     <category term="Coding / SWE" />
     <summary>Interactive intelligence requires agents to act on observations and adapt to the consequences of actions. Studying these abilities calls for diverse, challenging tasks under controlled conditions. We introduce GameDojo, a controllable interactive gameplay benchmark of 120 boss encounters across 20 games for evaluating model capabilities, learning algorithms, and agent harnesses. Coding agents reconstruct the environments and write gameplay scripts, producing GameDojo-Data with 600 hours of gameplay trajectories. Experiments reveal substantial challenges for frontier models, especially in real-time interaction. Training on GameDojo-Data brings GameDojo-4B to frontier performance, with the strongest real-time performance. We also find joint training improves individual tasks, and learned policies transfer across bosses. Together, these findings establish GameDojo as a challenging and valuable interactive gameplay benchmark for the community. Our project page is at https://gamedojo-benchmark.github.io/ , and our code is at https://github.com/THUSI-Lab/GameDojo .</summary>
   </entry>
   <entry>
     <title>CocoonBench: Can Multilingual Search Agents Escape Language Information Cocoons?</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30727.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.30727v1" />
+    <link rel="related" href="https://arxiv.org/abs/2611.30727" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30727.html</id>
-    <published>2026-11-23T14:07:46Z</published>
-    <updated>2026-11-23T14:07:46Z</updated>
-    <author><name>Hongchuan Zeng</name></author><author><name>Bowen Liu</name></author><author><name>Changjiang Gao</name></author><author><name>Senyu Han</name></author><author><name>Zhipei Xu</name></author><author><name>Peisong Wang</name></author><author><name>Xinbing Liang</name></author><author><name>Yuhan Li</name></author><author><name>Nuo Chen</name></author><author><name>Blaze Chen</name></author>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Hongchuan Zeng, Bowen Liu, Changjiang Gao, Senyu Han, Zhipei Xu, Peisong Wang, Xinbing Liang, Yuhan Li, Nuo Chen, Blaze Chen</name></author>
     <category term="General" />
     <summary>Multilingual search agents can access the global Web, yet may remain trapped in a language environment with insufficient evidence; we refer to this failure as a language information cocoon. However, existing search benchmarks largely operate within a single language, especially English, overlooking entity connections across multiple languages. We introduce CocoonBench, a benchmark that evaluates whether multilingual search agents can escape such language information cocoons. CocoonBench mines answer-centered relational paths from a frozen Wikidata-derived graph and selects clue sets that are individually necessary and jointly identify a unique answer. Using language-specific entity names, it records each task&#x27;s minimum language cover, removes direct identifiers, and renders each task as matched prompts in three languages together with its construction certificate and provenance. Across 10 state-of-the-art models, mean accuracy on CocoonBench ranges from 33.8% (DeepSeek-V4-Flash) to 69.7% (Claude-Opus-4.8), leaving even the strongest system below 70%. The same construction certificates support path-aligned trajectory analysis, enabling diagnosis of model failures in language routing, evidence-path recovery, and answer use. The result shows that escaping a language cocoon requires more than switching languages: successful cross-lingual search depends on both covering the correct languages and connecting the evidence found across them.</summary>
   </entry>
   <entry>
     <title>sudo L7: Can Coding Agents Act Like Staff Engineers?</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30517.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.30517v1" />
+    <link rel="related" href="https://arxiv.org/abs/2611.30517" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30517.html</id>
-    <published>2026-11-23T11:32:37Z</published>
-    <updated>2026-11-23T11:32:37Z</updated>
-    <author><name>Nick Heiner</name></author><author><name>Ian Niebres</name></author><author><name>Suhaas Garre</name></author><author><name>Sushant Mehta</name></author><author><name>Edwin Chen</name></author>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Nick Heiner, Ian Niebres, Suhaas Garre, Sushant Mehta, Edwin Chen</name></author>
     <category term="Coding / SWE" />
     <summary>Coding agents can now turn a well-specified ticket into a patch that passes its tests. Experienced engineers also notice risks the request never mentioned, question flawed premises, reuse what already exists and say plainly what they did and did not check. We present sudo L7, a benchmark of 60 software-engineering tasks written by staff-level engineers, mostly in private production codebases and each built around a place where a frontier model failed. A task pairs a realistic, underspecified request with a hidden, expert-authored rubric of atomic criteria (1,287 in all), tagged with eight behavioral dimensions from functional correctness to truthful reporting. An agentic grader reads the agent&#x27;s transcript, inspects and runs its code, and treats test output as evidence. An attempt passes only if it meets every criterion of the two highest severities, and more than half of these gating criteria test something other than functional correctness. On the public leaderboard as of November 2026 (19 models, each in its developer&#x27;s harness or in OpenCode, three attempts per task), Claude Fable 5.2 passes 52.2% of attempts, Claude Sonnet 5.5 50.6% and Claude Opus 5.5 46.1%. GPT-6.1 Sol, Claude Fable 5.1 and GPT-6 Astra pass 31-34%, and the other 13 models at most 18.9%. In a human-label study, three candidate model graders each agreed with a software engineer on 85-86% of criterion verdicts, about as often as two engineers agreed with each other. Cases from the benchmark show how one unsupported claim can fail an otherwise strong attempt and illustrate two sides of engineering judgment: flagging hidden hazards and avoiding needless work.</summary>
   </entry>
   <entry>
     <title>HWRE-Bench: Can LLM Agents Understand Hardware They Did Not Design?</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30422.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.30422v1" />
+    <link rel="related" href="https://arxiv.org/abs/2611.30422" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30422.html</id>
-    <published>2026-11-23T10:18:07Z</published>
-    <updated>2026-11-23T10:18:07Z</updated>
-    <author><name>Peilong Zhou</name></author><author><name>Cangyuan Li</name></author><author><name>Kaiyan Chang</name></author><author><name>Ying Wang</name></author>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Peilong Zhou, Cangyuan Li, Kaiyan Chang, Ying Wang</name></author>
     <category term="Safety" />
     <summary>Hardware benchmarks for LLM agents all run the design flow forward, from a specification to RTL, a layout or a bug fix. We ask the reverse question: given an implemented artifact, such as a layout, a gate-level netlist or a protected simulation model, can an agent work out what it does well enough to act on that knowledge? We introduce HWRE-Bench, a benchmark for agentic hardware reverse engineering built on one observation. Each step of the forward flow discards information (names, hierarchy, word-level structure, generator parameters, the programming model), and a reverse-engineering task asks the agent to recover what was lost and to prove it with an executable deliverable that the artifact alone cannot supply. Since layout extraction is now mechanical and a correct netlist is already a cycle-exact model, every task carries a mandatory copy-the-netlist control that must score zero. HWRE-Bench spans five tracks (Extract, Abstract, Audit, Interoperate, Modify), four information-loss levels and white- versus black-box access, all on original designs. We report a pilot of 148 rollouts from two agents on four seed tasks under 16 conditions, with stage-annotated trajectories. Agents built their own layout extractors and audited a sanitized layout as reliably as a netlist, at about 27% more turns. Keyless, equivalence-preserving obfuscation changed neither pass rates nor defect-repair scores. Whether agents read the structure at all depended on task framing rather than on necessity, so pass rate alone does not show understanding. Provider safety filters stopped 16% of one agent&#x27;s runs on the audit tasks. These results argue for deliverables beyond equivalence and for reporting run validity explicitly.</summary>
   </entry>
   <entry>
     <title>RepoClean: Evaluating Coding Agents on Repository-Level Obsolete Code Cleanup</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30350.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.30350v1" />
+    <link rel="related" href="https://arxiv.org/abs/2611.30350" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30350.html</id>
-    <published>2026-11-23T09:22:53Z</published>
-    <updated>2026-11-23T09:22:53Z</updated>
-    <author><name>Hongyixuan Yuan</name></author><author><name>Qixing Zhou</name></author><author><name>Pengcheng Huang</name></author><author><name>Qingshuo Ni</name></author><author><name>Runsong Zhao</name></author><author><name>Shaokai He</name></author><author><name>Xiangpeng Li</name></author><author><name>Deqiang Ouyang</name></author>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Hongyixuan Yuan, Qixing Zhou, Pengcheng Huang, Qingshuo Ni, Runsong Zhao, Shaokai He, Xiangpeng Li, Deqiang Ouyang</name></author>
     <category term="Coding / SWE" />
     <summary>Large language model (LLM) agents have demonstrated strong repository-level programming capabilities. However, as software evolves, repository code may become redundant or obsolete, increasing maintenance costs and potentially introducing functional issues. Agents must therefore identify and remove unnecessary code safely, yet autonomous repository-level code cleanup remains insufficiently evaluated in isolation. To evaluate this capability, we introduce RepoClean, a benchmark of 200 cleanup tasks from 34 popular open-source Python repositories. RepoClean is constructed by automatically reintroducing deleted code from real repository histories into newer versions, preserving current implementations and retaining instances where previously passing tests consequently fail. To restore existing functionality without new feature development, agents must use repository interfaces and cross-file dependencies to determine which historical code to remove and which implementations to preserve. Evaluation of seven models shows that even the best-performing model, GPT-6 Astra, resolves only 23% of tasks. Further analysis reveals that agents remove substantially less obsolete code when cleanup is not explicitly requested. RepoClean provides a foundation for systematically studying these cleanup challenges and advancing coding agents toward autonomous software maintenance.</summary>
   </entry>
   <entry>
+    <title>VeriWorld: A Verifiable Visual SWE-Bench for Spatial Reasoning in 3D Environments</title>
+    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30226.html" />
+    <link rel="related" href="https://arxiv.org/abs/2611.30226" />
+    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30226.html</id>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Yan Zheng, ShengYun Peng, Xuyao Liang, Xiaoyan Cong, Nuo Chen, Bangya Liu, Zihan Wang, Wenyan Cong, Zhiwen Fan, Zhangyang Wang</name></author>
+    <category term="Coding / SWE" />
+    <summary>Vision-language models (VLMs) are increasingly used for spatial tasks such as navigation and manipulation, where they must infer geometry and object relationships from visual input in order to act correctly. Existing benchmarks usually test perception and reasoning in isolation, making it hard to tell whether failures come from visual understanding, downstream reasoning, or the bridge between them. We introduce VeriWorld, a benchmark for spatial reasoning in interactive 3D environments with executable actions and deterministic verification. For task families where all three channels are well-defined, we evaluate matched visual, structured, and combined input conditions on the same instance, environment, and verifier; families without a clean visual/structured/combined split are reported separately. This design supports controlled comparisons of perception, reasoning, and their interaction. Using this setup, we uncover two diagnostic findings. First, models often perform much better when task-relevant information, such as object identity, current state, or target location, is given explicitly than when it must be read from the rendered scene, revealing a recurring visual-to-structure gap. Second, action-space and harness design can change outcomes even under the same task and information condition, showing that interaction protocol is itself a confounding variable. VeriWorld is open-sourced to support reproducible and fine-grained evaluation of spatial reasoning in VLMs.</summary>
+  </entry>
+  <entry>
     <title>AxE: Benchmarking Agent-Environment Generalization of Video World Models via Grounded Events</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30120.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.30120v1" />
+    <link rel="related" href="https://arxiv.org/abs/2611.30120" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30120.html</id>
-    <published>2026-11-23T06:23:09Z</published>
-    <updated>2026-11-23T06:23:09Z</updated>
-    <author><name>Haiyu Xu</name></author><author><name>Yiyang Chen</name></author><author><name>Jiayi Zhou</name></author><author><name>Jiaming Ji</name></author><author><name>Juntao Dai</name></author><author><name>Yaodong Yang</name></author><author><name>Boyuan Chen</name></author>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Haiyu Xu, Yiyang Chen, Jiayi Zhou, Jiaming Ji, Juntao Dai, Yaodong Yang, Boyuan Chen</name></author>
     <category term="Embodied / robotics" />
     <summary>Edge cases are not the long tail; they are the norm. An embodied system deployed across changing environments, bodies, objects, and tasks will routinely encounter combinations that were absent from its training data. General-purpose physical intelligence therefore requires world models that reuse prior knowledge, predict consequences, and adapt with little or no additional training. Yet current evaluations of conditional video generation emphasize visual quality, prompt alignment, or isolated physical plausibility, leaving systematic generalization difficult to measure. We introduce AxE Bench, a benchmark that organizes condition changes along eight factors of the acting agent and of its environment, and pairs every original condition with controlled variants that change one side or both. WBench-plus applies the same structure to an existing multi-turn benchmark, pairing each WBench scenario with variants on the environment side, through its world setting or camera behavior, or on the agent side, through its interaction instructions. Additionally, to score generated futures, we develop an evaluation harness that combines vision-language reasoning with targeted computer-vision evidence, converting each video into temporally localized events and comparing generated events with reference events in both time and semantics. We summarize each model with the AxE Score, event Fidelity weighted by its Stability across original-variant pairs. Across twenty models, generated events match reference events far more often in timing than in content: no model exceeds a Fidelity of 13.01, the highest Stability is 0.55, and the highest AxE Score is 7.10. Together, these components turn world-model generalization from an informal aspiration into a falsifiable evaluation program for real and simulated interactions. Our project website can be found at: AxEBench.github.io</summary>
   </entry>
   <entry>
+    <title>Domain advantage in two-dimensional quantum-device design with multi-modal agentic harness</title>
+    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30043.html" />
+    <link rel="related" href="https://arxiv.org/abs/2611.30043" />
+    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30043.html</id>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Shenhao Miao, Yizhou Li, Liqiao Xia, Ruihao Liu, Dingke Wang, Pablo Jarillo-Herrero, Eli Zeldov, Jiaqi Cai</name></author>
+    <category term="Multimodal" />
+    <summary>High-quality two-dimensional quantum devices are commonly fabricated from mechanically exfoliated crystals, whose irregular shapes and placement require a lithographic layout tailored to each specimen. Drawing these layouts remains largely manual. We introduce qlaybench, a benchmark that tests whether language-model agents can turn microscope images and experimental requirements into device layouts that fit the specimen. Agents with conventional tools often construct devices when material outlines are supplied, but struggle to identify those outlines from images. Modelled on the human workflow, qlaybot, a multimodal agentic harness, connects image interpretation to the tools used to align images, draw device features and inspect the resulting layout. We evaluate each layout with checks drawn from practical design experience, asking whether it fits the specimen and connects its intended components. With greater computational effort, an agent using qlaybot passes 81.5% of the benchmark tasks, compared with 24.1% when it uses conventional tools. This domain advantage highlights the importance of connecting scientific interpretation of a specimen to geometric design and provides a route towards reducing manual effort in two-dimensional quantum-device fabrication.</summary>
+  </entry>
+  <entry>
     <title>Beyond Accuracy: A Diagnostic Benchmark for Hypothesis-Driven Experiment Planning in LLM Agents</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.29467.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.29467v1" />
+    <link rel="related" href="https://arxiv.org/abs/2611.29467" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.29467.html</id>
-    <published>2026-11-22T13:13:12Z</published>
-    <updated>2026-11-22T13:13:12Z</updated>
-    <author><name>Ryo Kuroki</name></author><author><name>Amin Mansouri</name></author><author><name>Philippe Schwaller</name></author>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Ryo Kuroki, Amin Mansouri, Philippe Schwaller</name></author>
     <category term="Science &amp; research" />
     <summary>Evaluating large language model (LLM) agents on scientific tasks typically reduces to final-task accuracy, which obscures where reasoning succeeds or breaks down. We introduce a benchmark and diagnostic evaluation framework for hypothesis-driven adaptive experimental planning in closed-world system identification, instantiated in kinetic mechanism identification. The framework goes beyond final accuracy in two ways. First, we evaluate exploration behavior by quantifying the extent to which agents exhibit space-filling or corner-seeking patterns in the experimental design space. Second, we decompose the reasoning process into four interpretable steps: belief update, hypothesis discrimination, discriminative experiment design, and predictive reasoning under interventions, each scored separately on reasoning traces. Across ten LLM agents, we find that stronger agents outperform both adaptive (Bayesian optimization) and non-adaptive (Latin hypercube) baselines and exhibit exploration patterns inconsistent with naive heuristics. Decomposing reasoning reveals that the stronger agents score consistently well across all four steps, whereas weaker agents often succeed at belief update and hypothesis discrimination but are less reliable at translating them into actionable designs and sharp contrastive predictions. Independent expert annotations support predictive reasoning under our stated validation criteria, while evidence for discriminative experiment design is positive but less consistent. The results suggest a gap between recognizing plausible hypotheses and translating them into contrastive predictions, with more tentative evidence for a corresponding experiment-design bottleneck. The benchmark website is available at https://schwallergroup.github.io/beyond-accuracy/.</summary>
   </entry>
   <entry>
     <title>Benchmarking Web Agent Defenses Against Adaptive Visual Prompt Injection</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.29268.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.29268v1" />
+    <link rel="related" href="https://arxiv.org/abs/2611.29268" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.29268.html</id>
-    <published>2026-11-22T06:20:09Z</published>
-    <updated>2026-11-22T06:20:09Z</updated>
-    <author><name>Haichuan Zhang</name></author><author><name>Zhiyuan Zhong</name></author><author><name>Shih-Chieh Dai</name></author><author><name>Xinyu Sun</name></author><author><name>Guanhong Tao</name></author>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Haichuan Zhang, Zhiyuan Zhong, Shih-Chieh Dai, Xinyu Sun, Guanhong Tao</name></author>
     <category term="Web &amp; browser" />
     <summary>Multimodal web agents automate website interactions but remain vulnerable to visual prompt injection (VPI), where malicious webpage content manipulates their visual processing and induces unintended actions. Although several defenses focus on detecting injected instructions in screenshots, malicious destinations such as phishing URLs embedded in HTML can remain hidden yet accessible through agent interactions. Existing evaluations have also not sufficiently examined adaptive attackers who know the defense mechanisms. To address these limitations, we introduce AdaptiveVPI, the first benchmark for systematically evaluating adaptive VPI threats in web agents. Specifically, we present a dataset of 360 webpage instances spanning 6 distinct hijack strategies across 10 real-world websites, with malicious destinations not visible in screenshots. We design an adaptive attack framework that iteratively refines malicious instructions based on feedback from the defense mechanism being evaluated. We also introduce three metrics to measure the extent of agent hijacking at three different levels. Across 10 defense configurations for computer-use agents and 11 defense configurations for browser-use agents, our adaptive attacks achieve average success rates of 91.87% and 91.99%, respectively. These results reveal a gap between current VPI defenses and realistic threats and highlight the need for defenses designed with adaptive attackers in mind.</summary>
   </entry>
   <entry>
     <title>Seeing Is Not Acting: WARD Diagnoses the Evidence-to-State-to-Action Gap in Longitudinal Clinical Agents</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.29243.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.29243v1" />
+    <link rel="related" href="https://arxiv.org/abs/2611.29243" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.29243.html</id>
-    <published>2026-11-22T05:30:24Z</published>
-    <updated>2026-11-22T05:30:24Z</updated>
-    <author><name>Chao Ding</name></author><author><name>Yidong Jiang</name></author><author><name>Junzhi Ning</name></author><author><name>Juncheng Wu</name></author><author><name>Yuhan Wang</name></author><author><name>Renjie Lu</name></author><author><name>Minjia Yuan</name></author><author><name>Gaopeng Wang</name></author><author><name>Liyang Wang</name></author><author><name>Pengcheng Chen</name></author>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Chao Ding, Yidong Jiang, Junzhi Ning, Juncheng Wu, Yuhan Wang, Renjie Lu, Minjia Yuan, Gaopeng Wang, Liyang Wang, Pengcheng Chen, Dong Yin, Meiping Wang, Jinru Ding, Yuyin Zhou</name></author>
     <category term="Tool use" />
     <summary>Large language models for longitudinal clinical care must revise their assessments and actions as patient information accumulates. However, benchmarks centered on isolated responses or final task outcomes provide limited insight into intermediate failures in evidence use, state updating, and action selection. We introduce WARD, a benchmark for evaluating how clinical agents translate accumulating evidence into patient-state judgments and timely, safe actions. WARD comprises 4,560 clinical tasks across seven clinical output domains, organized into 240 checkpoints from 40 longitudinal clinical trajectories spanning 95 hospitalizations. Its Longitudinal Track evaluates these tasks under controlled cumulative evidence. Its Interactive Track evaluates end-to-end, tool-mediated clinical management across 271 verifiable evidence items and 141 reference transitions. Across 12 models with scorable checkpoint outputs, evidence recognition consistently outpaces downstream state and action decisions, with linked-evidence nonresponse reaching 74.47--90.90\%. Models also struggle to retain and update information over time, while in the Interactive Track only 11.46\% of executed actions advance a reference transition. These results reveal a persistent evidence-to-state-to-action gap and highlight the need for process-level evaluation of longitudinal clinical agents.Code and data: https://github.com/Dingsuper-creator/WARD.</summary>
   </entry>
   <entry>
+    <title>GameAnything: From Any Inspirations to Playable Game Worlds</title>
+    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.29238.html" />
+    <link rel="related" href="https://arxiv.org/abs/2611.29238" />
+    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.29238.html</id>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Wenyi Wu, Siqi Liu, Yuru Feng, Zixuan Song, Aayush Salvi, Sibo Zhu, Kun Zhou, Biwei Huang</name></author>
+    <category term="Coding / SWE" />
+    <summary>AI-driven game development holds the potential to transform diverse human inspirations into interactive experiences. However, existing systems and benchmarks primarily focus on explicit development specifications, with limited support for adapting multimodal references and evaluating actual gameplay experiences. We introduce GameAnything, an open-source agentic platform that transforms multimodal inspirations into playable extensions of existing games through iterative development. GameAnything integrates coding agents with an independent playtesting critic, persistent development state, and reusable experience memory to support continuous refinement. We further present GameAnything-Bench, a benchmark spanning diverse reference modalities, game creation objectives, and gaming environments, with exploratory gameplay testing to assess both functional correctness and gameplay quality. Evaluations of nine coding agent configurations reveal that current agents can adapt reference content but still struggle with playable interactions and precise modifications. Moreover, multimodal references improve content fidelity, while iterative refinement yields substantial but varying improvements across agents. These findings highlight both the potential and remaining challenges of inspiration-driven game development.</summary>
+  </entry>
+  <entry>
     <title>Can an Agent Trust Its Own Zoom? Cross-Magnification Provenance Verification for Whole-Slide Images</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.29150.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.29150v1" />
+    <link rel="related" href="https://arxiv.org/abs/2611.29150" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.29150.html</id>
-    <published>2026-11-22T02:10:25Z</published>
-    <updated>2026-11-22T02:10:25Z</updated>
-    <author><name>Yan Wang</name></author><author><name>Yiran Song</name></author><author><name>Zizhuo Gong</name></author><author><name>Jianxiang Qi</name></author><author><name>Zhongxing Xu</name></author><author><name>Lingfei Qian</name></author><author><name>Minquan Lin</name></author>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Yan Wang, Yiran Song, Zizhuo Gong, Jianxiang Qi, Zhongxing Xu, Lingfei Qian, Minquan Lin</name></author>
     <category term="Multimodal" />
     <summary>Visual agents navigate whole-slide images through magnified observations associated with claimed locations. However, a visually plausible observation does not necessarily originate from its claimed location, particularly across magnifications and in regions with similar tissue structures. We formulate cross-magnification provenance verification (CMPV) to evaluate whether visual evidence supports a claimed spatial association, recover the source when possible, and abstain when evidence is insufficient. We introduce PyraFault, a benchmark of 3.06 million coordinate-supervised examples from 2,200 cases across five TCGA cohorts, covering within-context substitutions, absent-source faults, and geometric perturbations. We further propose ZoomTrace, a claim-independent verifier that estimates the observation&#x27;s source before evaluating its agreement with the claimed location. It combines physical-scale alignment, visual retrieval, geometric refinement, and reliability estimation using spatially disjoint competing matches. On 503,320 test examples, ZoomTrace achieves 0.969 AUPRC and 0.987 AUROC, compared with 0.789 and 0.903 for Efficient LoFTR. Further evaluations reveal trade-offs in reliability estimation and limitations in vision-language models, cross-dataset retrieval, and calibration. Integrating ZoomTrace into visual agent tool paths reduces exposure to corrupted observations and silent failures, while downstream accuracy improvements depend on the agent and verification threshold.</summary>
   </entry>
   <entry>
     <title>StudioBench: Benchmarking Agentic Multimodal Large Language Models for Productive Audiovisual Creation</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.28902.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.28902v1" />
+    <link rel="related" href="https://arxiv.org/abs/2611.28902" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.28902.html</id>
-    <published>2026-11-21T16:28:08Z</published>
-    <updated>2026-11-21T16:28:08Z</updated>
-    <author><name>Xinglong Xu</name></author><author><name>Yuxia Zhu</name></author><author><name>Siyuan Li</name></author><author><name>Lixu Tian</name></author><author><name>Xiaofei Zhao</name></author><author><name>Yuxin Liu</name></author><author><name>Caijun Jia</name></author><author><name>Jintao Chen</name></author><author><name>Bihui Yu</name></author><author><name>Alden Cai</name></author>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Xinglong Xu, Yuxia Zhu, Siyuan Li, Lixu Tian, Xiaofei Zhao, Yuxin Liu, Caijun Jia, Jintao Chen, Bihui Yu, Alden Cai, Asher Qin, Jingxuan Wei, Cheng Tan</name></author>
     <category term="Multimodal" />
     <summary>Video generators can now render convincing short clips, yet complete audiovisual works require coordinating visuals, sound, and editing across multiple stages. Existing benchmarks focus on individual generators or video agents under narrower production settings, leaving end-to-end creation by general multimodal large language models (MLLMs) underexplored. We introduce StudioBench, a benchmark comprising 160 tasks across eight video genres and five task types, spanning diverse audiovisual production requirements. Models produce minutes of finished audiovisual content using 33 atomic generation, editing, and inspection tools, without shell access or workflow templates. We evaluate the delivered films, while analyzing reconstructed workflow graphs to characterize production behavior and diagnose failures. Across seven MLLMs, explicit requirements are nearly saturated, yet production quality varies substantially in picture clarity and composition, object structure, motion, and lip sync. All models spontaneously organize multi-stage production workflows without predefined templates. However, higher-quality models exhibit more selective production workflows, whereas additional tool calls alone show little association with quality. These findings identify the missing quality loop of effective inspection, selection, and revision as a key bottleneck in productive audiovisual creation.</summary>
   </entry>
   <entry>
     <title>DiscernBench: Evaluating Cooperative Discernment of LLM Agents in Institutional Settings</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.28787.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.28787v1" />
+    <link rel="related" href="https://arxiv.org/abs/2611.28787" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.28787.html</id>
-    <published>2026-11-21T13:01:14Z</published>
-    <updated>2026-11-21T13:01:14Z</updated>
-    <author><name>Disha Sheshanarayana</name></author><author><name>Tanishka Magar</name></author>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Disha Sheshanarayana, Tanishka Magar</name></author>
     <category term="Multi-agent" />
     <summary>The deployment of large language models in operational settings demands evaluation of judgment under institutional constraint. We introduce DiscernBench, a benchmark for evaluating cooperative discernment: the ability of an agent to determine whether to comply with, refuse, or escalate a request in an institutional setting. DiscernBench comprises scenarios derived from real-world incident reports across domains such as aviation, law enforcement, and emergency management. We evaluate eight LLMs across three decision-making configurations and analyze both final decisions and the intermediate judgments produced during multi-agent deliberation. Under disagreement, Final Responders exhibit model- and role-dependent aggregation patterns in which a lone specialist recommendation can disproportionately influence the collective decision, a phenomenon we term Minority-Signal Override. Role-specialized multi-agent deliberation raises average over-escalation from 3.79% under direct single-agent judgment to 28.27%, with the direction and magnitude of minority-signal influence varying substantially across models and specialist roles. These results reveal distinct collective decision behaviors that are not captured by final-answer accuracy alone. Trustworthy multi-agent systems therefore require evaluating not only individual specialist reasoning, but also how conflicting judgments are transformed into collective decisions. Code and data are available at https://github.com/Disha1001/DiscernBench.</summary>
   </entry>
   <entry>
     <title>The Evaluation Substrate Matters: Benchmarking Multi-Agent Serving Substrates</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.28671.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.28671v1" />
+    <link rel="related" href="https://arxiv.org/abs/2611.28671" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.28671.html</id>
-    <published>2026-11-21T08:50:10Z</published>
-    <updated>2026-11-21T08:50:10Z</updated>
-    <author><name>Haoyuan Zheng</name></author><author><name>Dongting Li</name></author><author><name>Hancheng Ye</name></author><author><name>Qinsi Wang</name></author><author><name>Mingyuan Ma</name></author><author><name>Yuncheng Yao</name></author><author><name>Yifei Wang</name></author><author><name>Baijun Zhou</name></author><author><name>Zishan Shao</name></author><author><name>Tingjun Chen</name></author>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Haoyuan Zheng, Dongting Li, Hancheng Ye, Qinsi Wang, Mingyuan Ma, Yuncheng Yao, Yifei Wang, Baijun Zhou, Zishan Shao, Tingjun Chen, Hai Helen Li, Danyang Zhuo, Yiran Chen</name></author>
     <category term="Multi-agent" />
     <summary>Multi-agent systems (MAS) usually coordinate heterogeneous models and tools to solve complex tasks, creating a growing need for reliable evaluation. However, a multi-agent workflow that is fastest in one serving environment can lose its advantage in another, even when its models, prompts, and task remain fixed. This makes a benchmark result conditional on how the workflow is executed. We introduce MASSys, a benchmark for measuring this dependence in multi-agent large language model (LLM) systems. MASSys executes the same candidate-task pairs across serving substrates and load regimes, using five workload families spanning software repair, research synthesis, financial analysis, interactive control, and diagram generation. It records task quality alongside delivery, latency, cost, resource pressure, and failure evidence. In a controlled motivation diagnostic, the Star workflow falls from first to fourth in mean-latency rank under KV-cache pressure, while Chain rises from fourth to first. The substrate sweeps further show that increasing load creates long runtime tails and timeout pressure. In several task families, quality among evaluated outputs changes less than effective quality over submitted jobs: the system delivers fewer usable results even when the surviving outputs remain competitive. Tool and runtime traces reveal that these outcomes involve both model serving and non-model execution. Together, the results motivate evaluating MAS designs over explicit operating conditions and reporting which tasks are delivered, how well they are solved, and where execution breaks down.</summary>
   </entry>
   <entry>
     <title>ESM-Bench: A Benchmark for Evaluating Whether AI Agents Understand Earth System Model Physics and Code</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.28477.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.28477v1" />
+    <link rel="related" href="https://arxiv.org/abs/2611.28477" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.28477.html</id>
-    <published>2026-11-21T01:51:31Z</published>
-    <updated>2026-11-21T01:51:31Z</updated>
-    <author><name>Koutian Wu</name></author><author><name>Yuxuan Cao</name></author><author><name>Gengchen Mai</name></author><author><name>Zeping Liu</name></author>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Koutian Wu, Yuxuan Cao, Gengchen Mai, Zeping Liu</name></author>
     <category term="Coding / SWE" />
     <summary>AI coding agents that modify Earth System Model (ESM) code must preserve both software interfaces and the physical assumptions encoded in them. We introduce ESM-Bench, a benchmark of 60 developer-commit tasks from 6 repositories: Noah-MP, CLM5, SUMMA, ParFlow, MOM6, and VIC. The v5 corpus contains 17 physics-based bug fixes, 16 process-representation modifications, 13 parameterization-scheme selections, and 14 parameter-optimization tasks. Each task includes a scientific objective, parent-commit source files, a reference diff, and three stored prompt variants. An artifact audit confirms that all 60 reference diffs apply to their supplied starting files. We define an eight-item patch-review rubric and audit five archived patch fixtures against the implemented local checkers. None of the five fixture diffs applies to its supplied starting files, yet three text-pattern checkers return a pass. A ParFlow expression replay disagrees with the reference slopes, and a MOM6 pattern check detects an omitted update. Inspection also identifies a retained VIC reference assignment that overwrites the intended vegetation-specific albedo. These findings expose limits of reference patches and local proxies as correctness evidence. The release provides a reproducible corpus and diagnostic tools; complete expert validation, comparative agent performance, and full-model execution remain unmeasured on v5.</summary>
   </entry>
   <entry>
     <title>WingBench: Benchmarking How AI Agents Search for Better Designs</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.28418.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.28418v1" />
+    <link rel="related" href="https://arxiv.org/abs/2611.28418" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.28418.html</id>
-    <published>2026-11-20T23:42:38Z</published>
-    <updated>2026-11-20T23:42:38Z</updated>
-    <author><name>Yiming Yang</name></author><author><name>David Xia</name></author><author><name>Jisen Li</name></author><author><name>Yuqing Jian</name></author><author><name>Yunjia Yang</name></author><author><name>Koray Aydin</name></author><author><name>Zhaoran Wang</name></author>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Yiming Yang, David Xia, Jisen Li, Yuqing Jian, Yunjia Yang, Koray Aydin, Zhaoran Wang</name></author>
     <category term="Science &amp; research" />
     <summary>Design search often uses cheap learned predictions to choose which candidates deserve expensive tests, but these tests can fail, especially on the unusual designs that optimization favors. We introduce WingBench, a multifidelity benchmark in which optimizers and AI agents design transonic wings with computational fluid dynamics (CFD) inside the search. They can query a learned aerodynamic surrogate and spend a fixed budget of sequential CFD evaluations, each returning a score or a failure type. WingBench grades the design each method recommends, reporting separately whether it receives a valid score and how good that score is. Using WingBench, we contribute a study of five baseline optimizers and a comparison of three AI agent methods, which produced 6,629 CFD evaluation records. Feedback helps baseline optimizers deliver valid designs when it changes their later proposals, but the differential-evolution variant does so with lower aerodynamic quality. An open-ended research agent finds designs of similar quality to the strongest baselines over 32 CFD queries, with different prior information and unmatched total computation. In early search, our reflection and planning implementations do not consistently improve on it. We release the data, code, agent prompts, and analysis scripts for reproducibility.</summary>
   </entry>
   <entry>
     <title>Evaluating Memanto on DolphinBench for AI Agents</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.28231.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.28231v1" />
+    <link rel="related" href="https://arxiv.org/abs/2611.28231" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.28231.html</id>
-    <published>2026-11-20T19:06:26Z</published>
-    <updated>2026-11-20T19:06:26Z</updated>
-    <author><name>Suleman Khan</name></author><author><name>Rasa Rahnema</name></author><author><name>Tara Khani</name></author><author><name>Majid Fekri</name></author><author><name>Fattane Zarrinkalam</name></author>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Suleman Khan, Rasa Rahnema, Tara Khani, Majid Fekri, Fattane Zarrinkalam</name></author>
     <category term="Work / office" />
     <summary>Memory benchmarks built on question answering tell an agent which fact to recall. Workplace requests often leave that need implicit: to post an update in the team&#x27;s channel, an agent must work out which channel from earlier interactions and use it in a tool call. We evaluate Memanto, a memory agent that ranks memories with an information-theoretic relevance score, on DolphinBench, which tests memory through 600 simulated workplace tasks, each validated as requiring memory. Running in the Hermes agent harness with GPT-6-Luna and at most 6 iterations per conversation, Memanto completes 503 tasks (83.83%). The strongest configuration reported by the benchmark&#x27;s authors, Mem0 with GPT-5.6-Luna and up to 60 iterations, completes 424 (70.67%). Memanto&#x27;s run also has the lowest total cost ($10.86, against $61.48 for the cheapest reported run) and the shortest median task latency (15.32s). Grading uses the benchmark&#x27;s own judge, but the agent model differs, so these results compare complete systems. The memory system affects both whether an agent completes such tasks and what completion costs.</summary>
   </entry>
   <entry>
     <title>From Point Clouds to Engineering Models: Benchmarking Agentic 3D Reconstruction in the Built Environment</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.28197.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.28197v1" />
+    <link rel="related" href="https://arxiv.org/abs/2611.28197" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.28197.html</id>
-    <published>2026-11-20T16:26:09Z</published>
-    <updated>2026-11-20T16:26:09Z</updated>
-    <author><name>Changyu Du</name></author><author><name>Stavros Nousias</name></author><author><name>Syed Salman Ahmed</name></author><author><name>Kai Dietmair</name></author><author><name>Mohammad Alrabab&#x27;h</name></author><author><name>André Borrmann</name></author>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Changyu Du, Stavros Nousias, Syed Salman Ahmed, Kai Dietmair, Mohammad Alrabab&#x27;h, Andr\&#x27;e Borrmann</name></author>
     <category term="Coding / SWE" />
     <summary>Coding agents can translate 3D measurements into CAD geometry, but reconstructing engineering models for the built environment demands semantic interpretation and consistent construction constraints beyond surface fitting. We formulate scene-level Scan-to-BIM (Building Information Modeling) as an agentic 3D coding task and introduce S2Bench, comprising public and proprietary scans of 128 real-world scenes across five domains, paired with expert-curated reference models spanning diverse spatial scales. A shared framework lets agents measure scans in Python, build class-labeled components in a live CAD/BIM kernel, and iteratively refine their code. We also propose parallel asynchronous collaboration, where a lead delegates versioned tasks, continues modeling while workers execute, and integrates revision-bound proposals. Evaluating five agents and a collaborative team across 1,028 reconstructions shows that scan-to-model residuals directly guide geometric repair, whereas inferring semantic classes and construction relations requires joint geometric, visual, and engineering reasoning that agents struggle to ground and verify. Consequently, the leading agent fits scan geometry closely ($96\%$ coverage within $5\,\text{cm}$) yet reaches only $63\%$ mIoU, and no agent passes all engineering checks on more than $38\%$ of scenes. Coverage and engineering conformance drop with scene scale, whereas running a smaller model as a team improves all three axes with greater coverage gains on larger scenes. The project page is available at https://tumcms.github.io/S2Bench.github.io/</summary>
   </entry>
   <entry>
     <title>HEP-Ex-Bench: Evaluating Agentic Performance in High Energy Physics Experiment Data Analyses with Sealed Worlds</title>
     <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.28194.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.28194v1" />
+    <link rel="related" href="https://arxiv.org/abs/2611.28194" />
     <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.28194.html</id>
-    <published>2026-11-20T15:11:36Z</published>
-    <updated>2026-11-20T15:11:36Z</updated>
-    <author><name>Andrzej Novák</name></author><author><name>Yiyang Zhao</name></author><author><name>Dolores Garcia</name></author><author><name>Eric A. Moreno</name></author><author><name>Jeffrey Krupa</name></author><author><name>Víctor Bresó-Pla</name></author><author><name>Samuel Bright-Thonney</name></author><author><name>Lukas Heinrich</name></author><author><name>Michael Kagan</name></author><author><name>Philip Harris</name></author>
+    <published>2026-11-24T05:00:00Z</published>
+    <updated>2026-11-24T05:00:00Z</updated>
+    <author><name>Andrzej Nov\&#x27;ak, Yiyang Zhao, Dolores Garcia, Eric A. Moreno, Jeffrey Krupa, V\&#x27;ictor Bres\&#x27;o-Pla, Samuel Bright-Thonney, Lukas Heinrich, Michael Kagan, Philip Harris</name></author>
     <category term="Safety" />
     <summary>Agentic systems are increasingly being explored for automating experimental high-energy physics measurements, but the correctness of their results can today be reliably evaluated only via extensive expert review. To address this, we propose a method to perform detailed quantitative evaluations of agent-driven analyses through the use of blind analysis and injection tests, which are critical in a typical expert review. Agents develop a data analysis pipeline on a public dataset, while the evaluation is performed on programmatically generated sealed private datasets where signals are injected and simulation settings varied within realistic detector uncertainties. By requiring agents to provide a single workflow that is evaluated across these &quot;sealed worlds&quot;, we are able to test the accuracy and robustness of the workflows. We demonstrate the approach on four tasks built from CMS open data and present it as a way to reliably benchmark scientific work in experimental high-energy physics. At the time of writing, the best-performing model, Gemini 4 Argon, reaches 60% of the score of the expert reference analyses on average, ahead of GPT 6 Astra at 38% and Claude Opus 5.5 at 31%. In individual sessions on one of the tasks, Gemini 4 Argon exceeds the reference. The benchmark is hosted at https://hep-ex-bench.github.io</summary>
   </entry>
@@ -511,49 +555,5 @@
     <author><name>Junyi Shen</name></author><author><name>Yao Lu</name></author>
     <category term="Coding / SWE" />
     <summary>Coding agents make videos by writing and refining programs in a build--inspect--edit loop. A finished film costs a median of $2.85 in model calls and 11 minutes, over a third of that time in builds that block the agent. We find that much of this time is avoidable, for two reasons. First, 37.5% of the frames of a session&#x27;s later films were drawn before, many shifted in time or inside an edited scene. Second, half of the builds stop at a check, where the agent needs only the verdict, but which builds stop is unknown until the checks finish. We present CodeReel, a training-free execution layer behind agents&#x27; existing commands. Exact frame reuse keys each frame by its drawing commands, regardless of its position in time, and reuses each frame whose key recurs. Blocking-aware scheduling runs the checks first and starts the render alongside them, at idle priority, unless the session&#x27;s recent builds make a pass unlikely. Scheduling spends CPU to answer sooner and reuse returns it; exact keys let later versions use frames rendered for a failed one as the agent thinks. We introduce EditLoop, a benchmark of replayable agent sessions whose films are checked against renders from scratch. On it, CodeReel cuts the agent&#x27;s wait by 36.3% against Rebuild, a warm pipeline with parallel rendering, and by 57.9% against Sequential, today&#x27;s step-by-step pipeline. On time-shifting edits its reuse renders 43.9%, close to the 43.0% whose pixels are new, while Manim-style caching renders 99.8%. With real agents, the median wait per build is 0.62x Rebuild&#x27;s in Claude Code, on topics never used in development, and 0.67x in Codex CLI. The gain holds for five models and two frameworks.</summary>
-  </entry>
-  <entry>
-    <title>OfficePrism: Benchmarking Agents on Single-Domain Operations Across Enterprise Business Functions</title>
-    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.22262.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.22262v1" />
-    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.22262.html</id>
-    <published>2026-11-17T06:10:32Z</published>
-    <updated>2026-11-17T06:10:32Z</updated>
-    <author><name>Hanfeng Liu</name></author><author><name>Zhenyu Luo</name></author><author><name>Dongchao Zhang</name></author><author><name>Zexi Liu</name></author><author><name>Zulong Chen</name></author><author><name>Jinxin Hu</name></author><author><name>Jia Xu</name></author><author><name>Zeyi Wen</name></author>
-    <category term="Work / office" />
-    <summary>Broad workplace scores can mix competence within one business function with the extra cost of coordinating across functions and systems, making failures hard to localize. OfficePrism evaluates this prerequisite through 420 single-domain enterprise tasks spanning seven business functions under shared, benchmark-defined L1--L3 task-structure levels. Each task runs in a fresh environment combining a shared synthetic organization with one function-specific domain and yped state access. Our pipeline uses grounded records, business rules, and tool schemas to jointly construct a Chinese-language ticket, a hidden executable reference witness, and an expected response, followed by automated filtering and human curation. The same task set is evaluated through full-schema and search-and-dispatch packages. Across 124 model--harness--package configurations, the per-case joint natural-language-and-database pass rate ranges from 22.6% to 76.4%, with a median of 67.9%. L1 is highest in all 124 configurations, and L2 exceeds L3 in 122. Among 50 configurations sharing the same harness and model labels across both packages, search scores higher in 30, ties in one, and scores lower in 19.</summary>
-  </entry>
-  <entry>
-    <title>Multi-Agent Memory Inconsistency: Where Factual Conflicts Disappear in LLM Agents</title>
-    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.22245.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.22245v2" />
-    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.22245.html</id>
-    <published>2026-11-17T05:47:01Z</published>
-    <updated>2026-11-18T06:42:29Z</updated>
-    <author><name>Hejia Zhang</name></author><author><name>Zhongming Yu</name></author><author><name>Yimin Ding</name></author><author><name>Wei-Ting Chen</name></author><author><name>Hengjia Yu</name></author><author><name>Wentao Ni</name></author><author><name>Yijun Liu</name></author><author><name>Cong Xu</name></author><author><name>Xin Chen</name></author><author><name>Matrix Yao</name></author>
-    <category term="Multi-agent" />
-    <summary>Multi-agent delegation lets LLM systems distribute evidence collection across workers with separate contexts. This creates a consistency challenge: facts retrieved by workers may be missing from the evidence available to the lead for a joint conclusion. We introduce a benchmark and evidence-flow profiler for studying multi-agent memory inconsistency through controlled factual conflicts in Harvey LAB document-review tasks. Pooled across three models with comparable generation spending, requiring delegation increases retrieval of both conflicting claims from 50.2% to 68.7% relative to single-agent execution, yet conflict detection falls from 16.2% to 13.2%. Within this setting, workers report both claims for only 35.2% of retrieved pairs, and pooled matched comparisons show higher detection than single-agent execution when one worker reads both claims but lower detection when the claims are split across workers. Worker-to-lead handoffs are a central target for improving conflict detection in multi-agent LLMs.</summary>
-  </entry>
-  <entry>
-    <title>Where Does Hindsight Enter Clinical Agent Benchmarks? An Audit of Simulators and Case Construction</title>
-    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.22241.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.22241v1" />
-    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.22241.html</id>
-    <published>2026-11-17T05:43:37Z</published>
-    <updated>2026-11-17T05:43:37Z</updated>
-    <author><name>Meilu Zhu</name></author><author><name>Xiaohan Li</name></author><author><name>Axiu Mao</name></author>
-    <category term="General" />
-    <summary>Benchmarks for LLM diagnostic agents are built from retrospective records: the case an agent reads is rewritten from discharge summaries, and unrecorded test results are generated by a simulator that often sees the final diagnosis. HindAudit separates three hindsight channels (the diagnosis given to the simulator, the retrospective context it conditions on, and the agent-facing case text) and measures each with judges trained only on real data. On 27,489 emergency admissions from MIMIC-IV, five registered tests found no leakage into simulated laboratory results: providing the diagnosis to five simulators had a negligible effect, and prompted gatekeepers diluted the diagnostic signal, although exploratory results suggest they can raise agent scores. The largest effect lay in the case text. Against a presentation-time reconstruction from triage records, benchmark-style summaries raised the zero-shot accuracy of four LLMs from 25.4% to 39.7% and discharge histories to 45.3%, and raised six interactive agents&#x27; scores while barely changing their ranking. The exploratory gap was reproduced in a registered replication on held-out patients. Masking diagnosis names left it unchanged. Because MIMIC lacks a contemporaneous bedside history, the gap is an upper bound on hindsight. We report all registered outcomes and recommend construction practices.</summary>
-  </entry>
-  <entry>
-    <title>RoboTeam: Benchmarking Vision-Based Multi-Agent Control of Many Robot Arms in Real Time</title>
-    <link href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.22138.html" />
-    <link rel="related" href="https://arxiv.org/abs/2611.22138v1" />
-    <id>https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.22138.html</id>
-    <published>2026-11-17T03:24:06Z</published>
-    <updated>2026-11-17T03:24:06Z</updated>
-    <author><name>Changxuan Fan</name></author><author><name>Zhongwei Xie</name></author><author><name>Boyi Zhang</name></author><author><name>Shaoli Hu</name></author><author><name>Chang Xu</name></author><author><name>Xiyu Ren</name></author><author><name>Yufei Li</name></author><author><name>Qiao Xiao</name></author><author><name>Huihao Jing</name></author><author><name>Kawai Chung</name></author>
-    <category term="Multi-agent" />
-    <summary>Multimodal agents can now control robot arms by calling tools and writing code. Existing benchmarks fall short in three ways: most test one or two arms on short tasks, many pause the world while the agent thinks, and many give it ground-truth object positions. We present RoboTeam, a simulated benchmark where agents control 4 to 16 robot arms in real time from camera images alone. Its 36 tasks are long jobs that the arms must do together, such as passing timbers or building a picture from hundreds of cubes. We start from the most flexible agent system, the adaptive system, where one agent decides when to fork delegates. With it, gpt-6.1-sol and opus-5.5 complete 28 and 27 tasks, and four other models at most 3. But at a high price: a typical task takes gpt-6.1-sol 3.5 hours and 218 million input tokens, and a third of its steps fail at least once and must be retried. We then compare it with three fixed systems: single-agent, hierarchical, and decentralized. All four complete a similar number of tasks but differ in time and tokens. The hierarchical and decentralized systems are faster but use up to 1.9 times the tokens, and the single agent uses fewer tokens but takes 1.6 times as long, so the adaptive system lies between them. Even so, no model or system is yet fast, cheap, and reliable at once. RoboTeam measures these limits where earlier benchmarks cannot: long multi-arm jobs, camera images only, and a world that never pauses.</summary>
   </entry>
 </feed>

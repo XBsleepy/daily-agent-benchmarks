@@ -12,7 +12,7 @@
     <meta property="og:title" content="HWRE-Bench: Can LLM Agents Understand Hardware They Did Not Design?" />
     <meta property="og:description" content="Daily Agent Benchmarks: Hardware benchmarks for LLM agents all run the design flow forward, from a specification to RTL, a layout or a bug fix. We ask the…" />
     <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30422.html" />
-    <meta property="article:published_time" content="2026-11-23T10:18:07Z" />
+    <meta property="article:published_time" content="2026-11-24T05:00:00Z" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="HWRE-Bench: Can LLM Agents Understand Hardware They Did Not Design?" />
     <meta name="twitter:description" content="Daily Agent Benchmarks: Hardware benchmarks for LLM agents all run the design flow forward, from a specification to RTL, a layout or a bug fix. We ask the…" />
@@ -35,27 +35,15 @@
   "author": [
     {
       "@type": "Person",
-      "name": "Peilong Zhou"
-    },
-    {
-      "@type": "Person",
-      "name": "Cangyuan Li"
-    },
-    {
-      "@type": "Person",
-      "name": "Kaiyan Chang"
-    },
-    {
-      "@type": "Person",
-      "name": "Ying Wang"
+      "name": "Peilong Zhou, Cangyuan Li, Kaiyan Chang, Ying Wang"
     }
   ],
-  "datePublished": "2026-11-23T10:18:07Z",
-  "dateModified": "2026-11-23T10:18:07Z",
+  "datePublished": "2026-11-24T05:00:00Z",
+  "dateModified": "2026-11-24T05:00:00Z",
   "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30422.html",
   "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.30422.html",
   "sameAs": [
-    "https://arxiv.org/abs/2611.30422v1"
+    "https://arxiv.org/abs/2611.30422"
   ],
   "identifier": {
     "@type": "PropertyValue",
@@ -78,7 +66,7 @@
   "encoding": {
     "@type": "MediaObject",
     "encodingFormat": "application/pdf",
-    "contentUrl": "https://arxiv.org/pdf/2611.30422v1"
+    "contentUrl": "https://arxiv.org/pdf/2611.30422"
   }
 }
     </script>
@@ -105,7 +93,7 @@
         <div class="meta">
           Peilong Zhou, Cangyuan Li, Kaiyan Chang, Ying Wang
           · 2611.30422
-          · <time datetime="2026-11-23">2026-11-23</time>
+          · <time datetime="2026-11-24">2026-11-24</time>
           · Safety
         </div>
         <div class="themes"><span class="chip">Safety</span></div>
@@ -113,8 +101,8 @@
           <p>Hardware benchmarks for LLM agents all run the design flow forward, from a specification to RTL, a layout or a bug fix. We ask the reverse question: given an implemented artifact, such as a layout, a gate-level netlist or a protected simulation model, can an agent work out what it does well enough to act on that knowledge? We introduce HWRE-Bench, a benchmark for agentic hardware reverse engineering built on one observation. Each step of the forward flow discards information (names, hierarchy, word-level structure, generator parameters, the programming model), and a reverse-engineering task asks the agent to recover what was lost and to prove it with an executable deliverable that the artifact alone cannot supply. Since layout extraction is now mechanical and a correct netlist is already a cycle-exact model, every task carries a mandatory copy-the-netlist control that must score zero. HWRE-Bench spans five tracks (Extract, Abstract, Audit, Interoperate, Modify), four information-loss levels and white- versus black-box access, all on original designs. We report a pilot of 148 rollouts from two agents on four seed tasks under 16 conditions, with stage-annotated trajectories. Agents built their own layout extractors and audited a sanitized layout as reliably as a netlist, at about 27% more turns. Keyless, equivalence-preserving obfuscation changed neither pass rates nor defect-repair scores. Whether agents read the structure at all depended on task framing rather than on necessity, so pass rate alone does not show understanding. Provider safety filters stopped 16% of one agent&#x27;s runs on the audit tasks. These results argue for deliverables beyond equivalence and for reporting run validity explicitly.</p>
         </div>
         <div class="links">
-          <a href="https://arxiv.org/abs/2611.30422v1" target="_blank" rel="noopener">Abstract page</a>
-          <a href="https://arxiv.org/pdf/2611.30422v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2611.30422" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.30422" target="_blank" rel="noopener">PDF</a>
           <a href="https://arxiv.org/html/2611.30422" target="_blank" rel="noopener">HTML</a>
         </div>
       </article>
@@ -122,7 +110,7 @@
     <nav class="paper-page related" aria-label="Related benchmarks">
       <h2>More Safety benchmarks</h2>
       <ol class="highlights">
-          <li><a href="2611.28194.html"><strong>HEP-Ex-Bench: Evaluating Agentic Performance in High Energy Physics Experiment Data Analyses with Sealed Worlds</strong></a> <span>2026-11-20</span></li>
+          <li><a href="2611.28194.html"><strong>HEP-Ex-Bench: Evaluating Agentic Performance in High Energy Physics Experiment Data Analyses with Sealed Worlds</strong></a> <span>2026-11-24</span></li>
           <li><a href="2611.18612.html"><strong>When Helpful Agents Cause Financial Harm: Evaluating LLM Agent Safety in Executable Economic Worlds</strong></a> <span>2026-11-17</span></li>
           <li><a href="2611.17460.html"><strong>Unfinished-Bench: Measuring Rule Violations by Persistent Agents in Realistic Work Environments</strong></a> <span>2026-11-12</span></li>
           <li><a href="2611.16493.html"><strong>ReA-Bench: Benchmarking Responsible Agent Auditing</strong></a> <span>2026-11-12</span></li>
