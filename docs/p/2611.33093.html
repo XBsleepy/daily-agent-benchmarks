@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: A language-model decoder carries state between decoding steps, and in hardware a wrong state update can leave the current token…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, Memory, agent benchmark, LLM agent, arXiv, 2611.33093" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.33093.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design" />
+    <meta property="og:description" content="Daily Agent Benchmarks: A language-model decoder carries state between decoding steps, and in hardware a wrong state update can leave the current token…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.33093.html" />
+    <meta property="article:published_time" content="2026-11-24T18:28:41Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: A language-model decoder carries state between decoding steps, and in hardware a wrong state update can leave the current token…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design",
+  "name": "AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design",
+  "abstract": "A language-model decoder carries state between decoding steps, and in hardware a wrong state update can leave the current token correct and corrupt the output several tokens later, so a design can pass output tests and still be wrong. AIChipBench asks what LLM coding agents need to build such hardware correctly. Agents implement quantized Qwen3.5, Gemma 3, Gemma 4, and Llama 3.2 decoders in synthesizable register-transfer-level (RTL) code against an executable integer reference that specifies the outputs and the stored state at every decoding step. They debug against public tests under fixed budgets; their frozen designs are graded on held-out token sequences, resets, memory stalls, and synthesis, and a second track asks them to speed up a correct design at nearly fixed area. Across 9,136 attempts by four coding agents, the difficulty lies in stored state. Feedback that points to the first state mismatch raises acceptance over output-only feedback in all 12 agent--task cells of a matched study, by 25.0 to 46.9 percentage points, and halves the agent-hours per accepted design. Regraded on new sequences and conditions, 45 of 69 accepted designs fail within the 32 steps their tests required. More than a third of attempts to speed up a correct design end without one. An overall score ranks Sol 5.6 and Fable 5.1 above Astra 6 and Opus 5.5, and both halves of the instances give this order in all 200 random splits. Hardware agents therefore need debugging feedback that exposes stored state, and their benchmarks need final tests well beyond the development cases.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Guangyuan Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chengran Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Minchen Luo"
+    },
+    {
+      "@type": "Person",
+      "name": "Jichen Feng"
+    },
+    {
+      "@type": "Person",
+      "name": "Mengdi Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Yifan Zhang"
+    }
+  ],
+  "datePublished": "2026-11-24T18:28:41Z",
+  "dateModified": "2026-11-24T18:28:41Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.33093.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.33093.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.33093v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.33093"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "Memory",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.33093v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.33093"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design</h1>
+        <div class="meta">
+          Guangyuan Wang, Chengran Li, Minchen Luo, Jichen Feng, Mengdi Wang, Yifan Zhang
+          · 2611.33093
+          · <time datetime="2026-11-24">2026-11-24</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span><span class="chip">Memory</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>A language-model decoder carries state between decoding steps, and in hardware a wrong state update can leave the current token correct and corrupt the output several tokens later, so a design can pass output tests and still be wrong. AIChipBench asks what LLM coding agents need to build such hardware correctly. Agents implement quantized Qwen3.5, Gemma 3, Gemma 4, and Llama 3.2 decoders in synthesizable register-transfer-level (RTL) code against an executable integer reference that specifies the outputs and the stored state at every decoding step. They debug against public tests under fixed budgets; their frozen designs are graded on held-out token sequences, resets, memory stalls, and synthesis, and a second track asks them to speed up a correct design at nearly fixed area. Across 9,136 attempts by four coding agents, the difficulty lies in stored state. Feedback that points to the first state mismatch raises acceptance over output-only feedback in all 12 agent--task cells of a matched study, by 25.0 to 46.9 percentage points, and halves the agent-hours per accepted design. Regraded on new sequences and conditions, 45 of 69 accepted designs fail within the 32 steps their tests required. More than a third of attempts to speed up a correct design end without one. An overall score ranks Sol 5.6 and Fable 5.1 above Astra 6 and Opus 5.5, and both halves of the instances give this order in all 200 random splits. Hardware agents therefore need debugging feedback that exposes stored state, and their benchmarks need final tests well beyond the development cases.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.33093v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.33093v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.33093" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.31974.html"><strong>Coding4Games: Can Modern Coding Agents Play Modern Video Games?</strong></a> <span>2026-11-24</span></li>
+          <li><a href="2611.31839.html"><strong>Spec-Test Coverage Gap: Detecting Overspecified Tests in SWE-Bench-Style Benchmarks</strong></a> <span>2026-11-24</span></li>
+          <li><a href="2611.30771.html"><strong>GameDojo: Benchmarking Real-Time Interactive Agents in Video Games</strong></a> <span>2026-11-24</span></li>
+          <li><a href="2611.30517.html"><strong>sudo L7: Can Coding Agents Act Like Staff Engineers?</strong></a> <span>2026-11-24</span></li>
+          <li><a href="2611.30350.html"><strong>RepoClean: Evaluating Coding Agents on Repository-Level Obsolete Code Cleanup</strong></a> <span>2026-11-24</span></li>
+          <li><a href="2611.30226.html"><strong>VeriWorld: A Verifiable Visual SWE-Bench for Spatial Reasoning in 3D Environments</strong></a> <span>2026-11-24</span></li>
+          <li><a href="2611.29238.html"><strong>GameAnything: From Any Inspirations to Playable Game Worlds</strong></a> <span>2026-11-24</span></li>
+          <li><a href="2611.28477.html"><strong>ESM-Bench: A Benchmark for Evaluating Whether AI Agents Understand Earth System Model Physics and Code</strong></a> <span>2026-11-24</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

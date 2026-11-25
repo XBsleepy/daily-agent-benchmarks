@@ -1,0 +1,136 @@
+{
+  "date": "2026-11-23",
+  "count": 2,
+  "report": {
+    "date": "2026-11-23",
+    "count": 2,
+    "themes": [
+      {
+        "id": "gui",
+        "count": 1,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 1,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "multimodal",
+        "count": 1,
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "en": {
+      "headline": "2 new agent benchmarks",
+      "summary": "On November 23, 2026, arXiv listed 2 new agent benchmarks. Work clustered around GUI agents (1), Tool use (1), and Multimodal (1).",
+      "highlights": [
+        {
+          "id": "2611.31586",
+          "title": "SecondChance: Benchmarking Reliable Error Recovery in AI Agents",
+          "blurb": "AI agents make errors while they act, and their reliability depends on what they do afterwards."
+        },
+        {
+          "id": "2611.31590",
+          "title": "GoldiBench: Right Tools, Wrong Amount -- Benchmarking Agents on Effect Judgement in Professional Editing",
+          "blurb": "Real editing requests describe a look, not the steps to reach it, so an agent that serves them must judge how much of each tool the look takes."
+        }
+      ]
+    },
+    "zh": {
+      "headline": "新增 2 篇 Agent Benchmark",
+      "summary": "2026年11月23日，arXiv 新增 2 篇 Agent Benchmark。当日主题集中在GUI 智能体（1）、工具使用（1）、多模态（1）。",
+      "highlights": [
+        {
+          "id": "2611.31586",
+          "title": "SecondChance: Benchmarking Reliable Error Recovery in AI Agents",
+          "blurb": "AI agents make errors while they act, and their reliability depends on what they do afterwards."
+        },
+        {
+          "id": "2611.31590",
+          "title": "GoldiBench: Right Tools, Wrong Amount -- Benchmarking Agents on Effect Judgement in Professional Editing",
+          "blurb": "Real editing requests describe a look, not the steps to reach it, so an agent that serves them must judge how much of each tool the look takes."
+        }
+      ]
+    }
+  },
+  "papers": [
+    {
+      "id": "2611.31590",
+      "title": "GoldiBench: Right Tools, Wrong Amount -- Benchmarking Agents on Effect Judgement in Professional Editing",
+      "abstract": "Real editing requests describe a look, not the steps to reach it, so an agent that serves them must judge how much of each tool the look takes. Existing benchmarks do not measure this: their tasks either state the tools and values, or leave the amount open and are scored by VLM judges that pass more than half of half- and triple-strength results. We introduce GoldiBench, a benchmark of 500 editing tasks in five professional applications (darktable, RawTherapee, GIMP, Inkscape, Blender), solvable by writing a program or by operating the GUI. Each task pairs a START image with a TARGET rendered from a hidden program, so the amount is fixed by a known target; the agent's edit is re-rendered and compared with TARGET, and the same task is posed with the tools and values, the tools only, or the goal only, separating operation from effect judgement. Across 25 open, GUI and closed models, agents operate well (99-100% with programs from 4B up when told the values) but fall off a cliff when they must judge the amount: given only the tools, the best model passes 19% of the tasks with programs and 33% through the GUI, and scale does not close the gap. Manuals barely help; the measured TARGET-START difference more than doubles the pass rate, but the same difference shown as an image does not for open models. Allowed four renders, agents almost always stop after the first; forced to compare, the strong models double their pass rate. Agents know the tools, but neither read nor check the amount.",
+      "authors": [
+        "Wang Yang",
+        "Xinpeng Li",
+        "Yanyan Zhang",
+        "Chaoda Song",
+        "Shouren Wang",
+        "Debargha Ganguly",
+        "Vikash Singh",
+        "Chuang Ma",
+        "Xiaoran Cai",
+        "Kai Ye",
+        "Xiaotian Han",
+        "Vipin Chaudhary"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL",
+        "cs.SE"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-23T21:37:22Z",
+      "updated": "2026-11-23T21:37:22Z",
+      "announced_date": "2026-11-23",
+      "first_seen": "2026-11-23",
+      "comment": "20 pages. Project page: https://uservan.github.io/GoldiBench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.31590v1",
+        "pdf": "https://arxiv.org/pdf/2611.31590v1",
+        "html": "https://arxiv.org/html/2611.31590"
+      },
+      "score": 13,
+      "tags": [
+        "gui",
+        "tool-use",
+        "multimodal"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2611.31586",
+      "title": "SecondChance: Benchmarking Reliable Error Recovery in AI Agents",
+      "abstract": "AI agents make errors while they act, and their reliability depends on what they do afterwards. Existing recovery benchmarks mostly inject faults, involve no user and score whether the task is eventually completed, so they cannot show whether an agent undid its own silent error, told the user, or faced an error that could not be fixed. We introduce SecondChance, an error checkpoint dataset and evaluation harness that profiles and measures error-recovery behaviour of AI agents. The errors are natural: they come from agents' own task attempts in $τ^2$-bench, BFCL and AppWorld. Different agents then resume from the same checkpoints under one of four conditions: no assistance, an error notice, the error location, or repair guidance. We measure error correction, task success, policy compliance, preservation of environment state, repair durability and cost. We evaluate 12 models under all four conditions in 5,760 continuations. Recovery is rare: across its environments, the best model completes only 16% of recoveries unaided and 27% with repair guidance. Correcting is not recovering: with repair guidance, Llama-3.3-70B corrects 26% of $τ^2$ errors but completes none, and 40 of 84 successful AppWorld continuations leave the error in place. SecondChance exposes these differences that task success alone cannot capture.",
+      "authors": [
+        "Atahan Dokme",
+        "Adar Avsian",
+        "Larry Heck"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-11-23T21:31:29Z",
+      "updated": "2026-11-23T21:31:29Z",
+      "announced_date": "2026-11-23",
+      "first_seen": "2026-11-23",
+      "comment": "18 pages, 2 figures, 19 tables. Code: https://github.com/atahandokme/secondchance . Dataset: https://huggingface.co/datasets/atahandokme/secondchance",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.31586v1",
+        "pdf": "https://arxiv.org/pdf/2611.31586v1",
+        "html": "https://arxiv.org/html/2611.31586"
+      },
+      "score": 14,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    }
+  ]
+}

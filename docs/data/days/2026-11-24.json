@@ -1,33 +1,33 @@
 {
   "date": "2026-11-24",
-  "count": 25,
+  "count": 34,
   "report": {
     "date": "2026-11-24",
-    "count": 25,
+    "count": 34,
     "themes": [
       {
-        "id": "planning",
-        "count": 8,
-        "en": "Planning / reasoning",
-        "zh": "规划 / 推理"
+        "id": "coding",
+        "count": 10,
+        "en": "Coding agents",
+        "zh": "代码智能体"
       },
       {
         "id": "tool-use",
-        "count": 8,
+        "count": 10,
         "en": "Tool use",
         "zh": "工具使用"
       },
       {
         "id": "multimodal",
-        "count": 8,
+        "count": 9,
         "en": "Multimodal",
         "zh": "多模态"
       },
       {
-        "id": "coding",
-        "count": 7,
-        "en": "Coding agents",
-        "zh": "代码智能体"
+        "id": "planning",
+        "count": 8,
+        "en": "Planning / reasoning",
+        "zh": "规划 / 推理"
       },
       {
         "id": "science",
@@ -36,27 +36,27 @@
         "zh": "科学实验"
       },
       {
-        "id": "multi-agent",
-        "count": 3,
-        "en": "Multi-agent",
-        "zh": "多智能体"
-      },
-      {
-        "id": "embodied",
-        "count": 2,
-        "en": "Embodied / robotics",
-        "zh": "具身 / 机器人"
-      },
-      {
         "id": "safety",
-        "count": 2,
+        "count": 4,
         "en": "Safety",
         "zh": "安全"
+      },
+      {
+        "id": "memory",
+        "count": 3,
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "id": "computer-use",
+        "count": 3,
+        "en": "Computer use",
+        "zh": "计算机使用"
       }
     ],
     "en": {
-      "headline": "25 new agent benchmarks",
-      "summary": "On November 24, 2026, arXiv listed 25 new agent benchmarks. Work clustered around Planning / reasoning (8), Tool use (8), Multimodal (8), and Coding agents (7).",
+      "headline": "34 new agent benchmarks",
+      "summary": "On November 24, 2026, arXiv listed 34 new agent benchmarks. Work clustered around Coding agents (10), Tool use (10), Multimodal (9), and Planning / reasoning (8).",
       "highlights": [
         {
           "id": "2611.28477",
@@ -64,20 +64,20 @@
           "blurb": "AI coding agents that modify Earth System Model (ESM) code must preserve both software interfaces and the physical assumptions encoded in them."
         },
         {
+          "id": "2611.32321",
+          "title": "FigmaEval: A Benchmark for Evaluating AI Agents in Professional UI Design",
+          "blurb": "Recent advances in AI agents have enabled autonomous UI design using professional tools such as Figma, yet evaluating their design capabilities remains challenging due to the open-ended nature of design tasks and the abs…"
+        },
+        {
           "id": "2611.30422",
           "title": "HWRE-Bench: Can LLM Agents Understand Hardware They Did Not Design?",
           "blurb": "Hardware benchmarks for LLM agents all run the design flow forward, from a specification to RTL, a layout or a bug fix."
-        },
-        {
-          "id": "2611.28787",
-          "title": "DiscernBench: Evaluating Cooperative Discernment of LLM Agents in Institutional Settings",
-          "blurb": "The deployment of large language models in operational settings demands evaluation of judgment under institutional constraint."
         }
       ]
     },
     "zh": {
-      "headline": "新增 25 篇 Agent Benchmark",
-      "summary": "2026年11月24日，arXiv 新增 25 篇 Agent Benchmark。当日主题集中在规划 / 推理（8）、工具使用（8）、多模态（8）、代码智能体（7）。",
+      "headline": "新增 34 篇 Agent Benchmark",
+      "summary": "2026年11月24日，arXiv 新增 34 篇 Agent Benchmark。当日主题集中在代码智能体（10）、工具使用（10）、多模态（9）、规划 / 推理（8）。",
       "highlights": [
         {
           "id": "2611.28477",
@@ -85,19 +85,276 @@
           "blurb": "AI coding agents that modify Earth System Model (ESM) code must preserve both software interfaces and the physical assumptions encoded in them."
         },
         {
+          "id": "2611.32321",
+          "title": "FigmaEval: A Benchmark for Evaluating AI Agents in Professional UI Design",
+          "blurb": "Recent advances in AI agents have enabled autonomous UI design using professional tools such as Figma, yet evaluating their design capabilities remains challenging due to the open-ended nature of design tasks and the abs…"
+        },
+        {
           "id": "2611.30422",
           "title": "HWRE-Bench: Can LLM Agents Understand Hardware They Did Not Design?",
           "blurb": "Hardware benchmarks for LLM agents all run the design flow forward, from a specification to RTL, a layout or a bug fix."
-        },
-        {
-          "id": "2611.28787",
-          "title": "DiscernBench: Evaluating Cooperative Discernment of LLM Agents in Institutional Settings",
-          "blurb": "The deployment of large language models in operational settings demands evaluation of judgment under institutional constraint."
         }
       ]
     }
   },
   "papers": [
+    {
+      "id": "2611.33093",
+      "title": "AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design",
+      "abstract": "A language-model decoder carries state between decoding steps, and in hardware a wrong state update can leave the current token correct and corrupt the output several tokens later, so a design can pass output tests and still be wrong. AIChipBench asks what LLM coding agents need to build such hardware correctly. Agents implement quantized Qwen3.5, Gemma 3, Gemma 4, and Llama 3.2 decoders in synthesizable register-transfer-level (RTL) code against an executable integer reference that specifies the outputs and the stored state at every decoding step. They debug against public tests under fixed budgets; their frozen designs are graded on held-out token sequences, resets, memory stalls, and synthesis, and a second track asks them to speed up a correct design at nearly fixed area. Across 9,136 attempts by four coding agents, the difficulty lies in stored state. Feedback that points to the first state mismatch raises acceptance over output-only feedback in all 12 agent--task cells of a matched study, by 25.0 to 46.9 percentage points, and halves the agent-hours per accepted design. Regraded on new sequences and conditions, 45 of 69 accepted designs fail within the 32 steps their tests required. More than a third of attempts to speed up a correct design end without one. An overall score ranks Sol 5.6 and Fable 5.1 above Astra 6 and Opus 5.5, and both halves of the instances give this order in all 200 random splits. Hardware agents therefore need debugging feedback that exposes stored state, and their benchmarks need final tests well beyond the development cases.",
+      "authors": [
+        "Guangyuan Wang",
+        "Chengran Li",
+        "Minchen Luo",
+        "Jichen Feng",
+        "Mengdi Wang",
+        "Yifan Zhang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-11-24T18:28:41Z",
+      "updated": "2026-11-24T18:28:41Z",
+      "announced_date": "2026-11-24",
+      "first_seen": "2026-11-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.33093v1",
+        "pdf": "https://arxiv.org/pdf/2611.33093v1",
+        "html": "https://arxiv.org/html/2611.33093"
+      },
+      "score": 18,
+      "tags": [
+        "coding",
+        "memory"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2611.32884",
+      "title": "Lazy Agents Answer Against Their Own Beliefs: Reinforcement Learning with Verifiable Beliefs Teaches Them to Act on What They Believe",
+      "abstract": "AI agents working on long tasks often commit to an answer before they have enough evidence, a behavior called laziness. In our evaluations, they frequently commit even while their stated belief still names several possible answers. An outcome reward at the end of the episode scores only the final answer, so it cannot teach the agent when to commit, because a lucky guess receives the same reward as an answer backed by evidence. During training, however, the simulator can compute the exact posterior over the answer at every step and tell whether the evidence is already enough. We propose Reinforcement Learning with Verifiable Beliefs (RLVB), which rewards the agent for taking further steps while this posterior still allows several answers and for committing once the evidence is sufficient. The reward needs no judge, critic or reward model, and it never reads the belief line the agent writes before each action. We also introduce Pro Worlds, a benchmark of visual puzzles where the agent views a large world through a small window. We evaluate three vision-language models on three benchmarks, two of which are never seen in training. RLVB improves the base model in all nine settings, by 17.1% on average. Under the outcome reward, GRPO and PPO fall below the base model on average. RLVB also outperforms PPO with a process reward from an LLM judge by 9.3% on average while using 1.6 times fewer GPU-hours. The trained agent answers with sufficient evidence in 51%, 12% and 74% of the episodes on the three benchmarks, against 8%, 0.4% and 36% for the base model. Its accuracy gain therefore comes from answering more often at high levels of evidence. The belief line shows how the agent reaches this evidence: it acts on its own belief. It commits at only 0.1 to 2.2% of the turns at which the evidence is insufficient and its line still names several answers, against 3 to 68% for the base model.",
+      "authors": [
+        "Richmond Sin Jing Xuan",
+        "Peilin Feng",
+        "Wenbin Wang",
+        "Soujanya Poria"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-24T16:17:51Z",
+      "updated": "2026-11-24T16:17:51Z",
+      "announced_date": "2026-11-24",
+      "first_seen": "2026-11-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.32884v1",
+        "pdf": "https://arxiv.org/pdf/2611.32884v1",
+        "html": "https://arxiv.org/html/2611.32884"
+      },
+      "score": 8,
+      "tags": [
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2611.32649",
+      "title": "ICLWorld: Benchmarking In-Context Learning of Agents from Digital to Physical Worlds",
+      "abstract": "In-context learning (ICL) lets agents acquire new rules from context and adapt to user-specific requirements at inference time. The same frontier agents now operate both computers and robots, yet their ICL remains insufficiently assessed: existing benchmarks are largely offline, rely on text or static images, and risk training-data contamination, while robot evaluations are limited to method-level ablations. We present ICLWorld, an online benchmark that evaluates the ICL of agents from digital to physical worlds, covering computer use and robot use, together with UIverse, a unified harness that turns every environment into a user interface. We build 30 environments, record 630 demonstration videos (10+ hours), and design 160 tasks with customized, often counter-intuitive rules that cannot be satisfied without learning from the context. Each task comes with three rule versions, given as text or video, and we test generalization at three levels, from replaying the demonstration to new instances and unseen environments. Across six frontier models, the strongest agents, Claude Opus 5.5 and GPT-6 Astra, succeed on 82% and 76% of computer-use runs but only 27% and 26% of robot-use runs, and a no-rule control reduces success to at most 8%. GPT-6 Astra succeeds under all three rule versions on only 38% of computer-use tasks, half its rate under a single rule, and answers 98% of robot rule questions correctly yet completes only 20% of these tasks. Frontier agents learn rules comparably well from video and from text and transfer them across environments, whereas weaker agents rely on text and lose most of their video-based success once the demonstrated situation is resampled. These findings reveal substantial gaps between the digital and the physical world and between identifying a rule and acting on it.",
+      "authors": [
+        "Qingle Liu",
+        "Jieming Li",
+        "Pei-lin Li",
+        "Shenghan Zheng",
+        "Ruize Yang",
+        "Sunqi Fan",
+        "Deyao Hong",
+        "Huan-ang Gao",
+        "Meng-Hao Guo",
+        "Shuojin Yang"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.RO"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-24T14:07:17Z",
+      "updated": "2026-11-24T14:07:17Z",
+      "announced_date": "2026-11-24",
+      "first_seen": "2026-11-24",
+      "comment": "Project page: https://iclworld.github.io Code: https://github.com/ICLWorld/ICLWorld Dataset: https://huggingface.co/datasets/Aoraku/ICLWorld",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.32649v1",
+        "pdf": "https://arxiv.org/pdf/2611.32649v1",
+        "html": "https://arxiv.org/html/2611.32649"
+      },
+      "score": 10,
+      "tags": [
+        "computer-use",
+        "embodied",
+        "safety"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2611.32321",
+      "title": "FigmaEval: A Benchmark for Evaluating AI Agents in Professional UI Design",
+      "abstract": "Recent advances in AI agents have enabled autonomous UI design using professional tools such as Figma, yet evaluating their design capabilities remains challenging due to the open-ended nature of design tasks and the absence of unique ground truths. We introduce FigmaEval, a benchmark for evaluating AI agents on professional UI design tasks, comprising 84 tasks and 783 screens derived from real-world Figma design files. FigmaEval adopts a constrained-specification, open-solution paradigm, standardizing task requirements and design resources while allowing agents to independently determine layouts, visual hierarchies, component composition, and visual presentation. To assess design quality beyond reference similarity, we develop 22 expert-grounded evaluation rubrics across six dimensions and introduce a human evaluation arena where professional designers compare agent-generated designs through blinded pairwise judgments. Evaluating eleven models under a unified Figma agent setup, we find substantial agreement between rubric-based assessments and human preferences, alongside distinct differences in design practices and quality--efficiency trade-offs. FigmaEval provides a framework for systematically assessing professional UI design capabilities and understanding the strengths and limitations of current AI agents.",
+      "authors": [
+        "Xinyue Huang",
+        "Yongyong Gao",
+        "Zhengyuan Pan",
+        "Zheng Wei",
+        "Xinya Liu",
+        "Duanyi Yan",
+        "Zhiyu Hang",
+        "Zheng Ma",
+        "Lewei Lu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-24T10:14:21Z",
+      "updated": "2026-11-24T10:14:21Z",
+      "announced_date": "2026-11-24",
+      "first_seen": "2026-11-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.32321v1",
+        "pdf": "https://arxiv.org/pdf/2611.32321v1",
+        "html": "https://arxiv.org/html/2611.32321"
+      },
+      "score": 27,
+      "tags": [
+        "tool-use"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2611.32012",
+      "title": "Marketing-Bench: Evaluating Frontier Models and Agents on Real-World Marketing Capabilities",
+      "abstract": "As frontier AI models and agents are deployed more broadly in the real world, marketing is emerging as one of their largest applications. Marketing teams use AI models to produce brand assets like website copy and social media posts, while consumers' agents autonomously discover products, research purchases, and navigate websites. However, evaluating marketing capability is difficult because unlike areas like software development, customer support, or legal review where ground truth is more objectively defined, marketing is subjective, and output quality is judged based on taste and brand. We introduce Marketing-Bench, the first open-source marketing benchmark, which pairs discriminative tasks (detecting brand anomalies) with generative tasks (remediation), while keeping answers verifiable. Marketing-Bench tests five key pillars: factuality, consistency, coherence, structure, and brand voice, all crucial elements for good brand content on the web. We find that frontier models are far from solving the benchmark: the average model corrects only about half of the introduced issues (53.1%), whereas a marketing expert corrects nearly all of them. Even the strongest, GPT-6 Astra, reaches only 74.8%, with Claude Opus and Fable, Gemini Argon, and GPT-6 Sol falling well short. These findings suggest that marketing capabilities are less mature than adoption implies, and that principled evaluation should precede further scaling of usage. Marketing-Bench is a first step toward \"frontier marketing models\" with superhuman marketing performance.",
+      "authors": [
+        "Sumanth Balaji",
+        "Siddharth Gupta",
+        "Ameet Deshpande",
+        "Vishvak Murahari",
+        "Karthik Narasimhan"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-24T05:57:13Z",
+      "updated": "2026-11-24T05:57:13Z",
+      "announced_date": "2026-11-24",
+      "first_seen": "2026-11-24",
+      "comment": "16 pages",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.32012v1",
+        "pdf": "https://arxiv.org/pdf/2611.32012v1",
+        "html": "https://arxiv.org/html/2611.32012"
+      },
+      "score": 12,
+      "tags": [],
+      "field": "other",
+      "citations": 0
+    },
+    {
+      "id": "2611.31974",
+      "title": "Coding4Games: Can Modern Coding Agents Play Modern Video Games?",
+      "abstract": "Games, especially modern AAA games, challenge language models to perceive complex scenes, control actions, and make decisions over long horizons. Existing game benchmarks primarily test language models as computer-use agents that query a language model throughout play, incurring repeated inference cost and, in real-time games, acting while the environment continues to evolve. We ask whether coding agents can learn from game interaction to develop standalone game-playing programs that run without language model inference. We thus introduce Coding4Games, a benchmark for evaluating whether coding agents can develop standalone programs that play modern games through visual observations and standard game inputs. Coding4Games has three defining features: 1) Diverse Modern Games, covering 15 games with diverse visual, strategic, and control demands; 2) Development-Test Separation, in which a coding agent uses a sandbox and the standard player interface to iteratively develop a program, after which the selected program is frozen and independently tested without language-model inference; and 3) Outcome and Process Evaluation, which measures not only game performance and reliability but also how agents use feedback, revise programs, and resolve problems during development. Across 15 games, the best program per game outscores the strongest GUI baseline on 13 and ties it on one. The human player outscores all agents on 10 games. We additionally examine the effects of development budgets. Coding4Games evaluates whether coding agents can turn their understanding of complex interactive environments into programs that work reliably on their own.",
+      "authors": [
+        "Shifang Zhao",
+        "Haoyu Wang",
+        "Yuyang Yin",
+        "Dong Chen",
+        "Xingyilang Yin",
+        "Yunkang Tao",
+        "Honghao Chen",
+        "Guangzhi Wang",
+        "Yiran Wang",
+        "Junfu Pu",
+        "Cheng Cheng",
+        "Xiaodong Cun",
+        "Ying Shan"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-24T05:24:32Z",
+      "updated": "2026-11-24T05:24:32Z",
+      "announced_date": "2026-11-24",
+      "first_seen": "2026-11-24",
+      "comment": "Project Page: https://coding4game.github.io/",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.31974v1",
+        "pdf": "https://arxiv.org/pdf/2611.31974v1",
+        "html": "https://arxiv.org/html/2611.31974"
+      },
+      "score": 17,
+      "tags": [
+        "gui",
+        "coding",
+        "computer-use"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2611.31962",
+      "title": "Are Web Agents Still Detectable? Stress-Testing Bot Defenses with Coordinated Evasion",
+      "abstract": "AI web agents can autonomously navigate websites and complete various tasks. As their capabilities and adoption expand, evaluating bot defenses requires adversarial stress tests. Although prior work demonstrates that existing agents can remain detectable, it remains unclear how effective bot defenses are against adversaries that coordinate evasion across browser fingerprints, automation controls, and interaction behavior. To investigate this threat, we introduce DarkAgent, an autonomous web agent that combines a forked Chromium browser that conceals automation artifacts and generative models that produce human-like mouse and keyboard traces. To address the limitations of existing keyboard mimickers, our keyboard model jointly generates realistic key events and their timings while reliably reproducing the target text. Released agent detectors accept our generated behavior as human, and trained classifiers find it substantially harder to distinguish from human traces than existing mimickers. DarkAgent achieves an 89% page-access bypass rate across a third-party stealth benchmark, exceeding the strongest published baseline by 12 percentage points. To further enhance the measurement of agents, we introduce a benchmark that measures browser fingerprints, interaction behavior, and network activity to assess each channel's contribution to detecting adversarial agents such as DarkAgent. On this benchmark, browser and behavioral modifications are complementary: either alone remains detectable, and only their combination evades all tested checks. Together, our findings expose the gap between passing existing bot defenses and reproducing human behavior, and point to timing between actions as a remaining signal for defenders.",
+      "authors": [
+        "Parsa Nilforushan",
+        "Gemmin Sugiura",
+        "Kourosh Hashemi",
+        "Peiman Zhiani",
+        "Mohammad A. Tayebi"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CR",
+      "published": "2026-11-24T05:11:39Z",
+      "updated": "2026-11-24T05:11:39Z",
+      "announced_date": "2026-11-24",
+      "first_seen": "2026-11-24",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.31962v1",
+        "pdf": "https://arxiv.org/pdf/2611.31962v1",
+        "html": "https://arxiv.org/html/2611.31962"
+      },
+      "score": 10,
+      "tags": [
+        "web"
+      ],
+      "field": "web",
+      "citations": 0
+    },
     {
       "id": "2611.31082",
       "title": "ChiProgramBench: Can LLM Agents Rebuild Efficient Circuits from Pin-Level Experiments?",
@@ -873,6 +1130,73 @@
         "science"
       ],
       "field": "safety",
+      "citations": 0
+    },
+    {
+      "id": "2611.31839",
+      "title": "Spec-Test Coverage Gap: Detecting Overspecified Tests in SWE-Bench-Style Benchmarks",
+      "abstract": "SWE-bench-style benchmarks, such as SWE-bench Verified (Verified) and SWE-bench Pro (Pro), evaluate coding agents with tests taken from the change that originally fixed each issue. However, these tests can enforce details the task never states, causing correct alternative fixes to fail. Such overspecified tests have so far been found mainly through expensive expert review. To address this, we define the Spec-Test Coverage Gap (STCG), a 1-4 scale measuring overspecification, and score it with two LLM judges, Claude Opus 5.5 and GPT-6.1 Sol, which are given the specification and the test patch. A task is flagged as overspecified when both judges score it 3 or higher. Our study has three parts. First, we validate the judges on 206 tasks that earlier human audits and agent results label as overspecified or fine. Second, we apply STCG to all 500 Verified and 731 public Pro tasks and compare the flags with the results of the top 30 Verified submissions. Third, we verify the flags by asking Claude Opus 5.5 to loosen the overspecified requirements of flagged tasks, and regrade 2,186 failed patches from those submissions. Our main findings are: (1) Overspecified tests are detectable: on the validation tasks, the judges correctly flag 89% of the tasks that human audits identify as overspecified and wrongly flag only 4% of the tasks known to be fine. (2) Overspecified tests are common: applied to whole benchmarks, the judges flag 23% of Verified and 35% of Pro tasks. (3) Flagged tasks are much harder for agents: the top 30 Verified submissions resolve only 31% of the flagged tasks on average, against 88% of the other tasks. (4) Overspecified tests change the leaderboard: relaxing the tests lets 61% of the 2,186 failed patches on flagged tasks pass. Counting these patches as resolved would add 33 to 60 tasks to each top-30 submission, raising resolve rates by up to 12 percentage points.",
+      "authors": [
+        "Avi Aggarwal",
+        "Yiran Hu"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.SE",
+      "published": "2026-11-24T02:33:36Z",
+      "updated": "2026-11-24T02:33:36Z",
+      "announced_date": "2026-11-24",
+      "first_seen": "2026-11-24",
+      "comment": "16 pages, 1 figure, 14 tables. Code and data: https://github.com/ObviAvi/Spec-Test-Coverage-Gap",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.31839v1",
+        "pdf": "https://arxiv.org/pdf/2611.31839v1",
+        "html": "https://arxiv.org/html/2611.31839"
+      },
+      "score": 19,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
+      "citations": 0
+    },
+    {
+      "id": "2611.31756",
+      "title": "TACT-Bench: Testing Adaptive Conversational Threats against Tool-Use Agents",
+      "abstract": "The growing autonomy of AI agents in using external tools and making decisions has created an urgent need for comprehensive safety benchmarks. Existing benchmarks test compromised tool channels or adaptive multi-turn attacks, though they may not capture the unique capabilities of policy-governed tool-use agents, which must resist unauthorized requests without abandoning the legitimate work embedded in the same interaction. To fill this gap, we introduce TACT-Bench, a stateful benchmark built around scenario-specific stories, personas, manipulation tactics, and response-adaptive escalation. Each adversarial task targets an action explicitly prohibited by the policy provided to the assistant, while the policy remains hidden from the attacking user. TACT pairs each adversarial task with at least one benign counterpart, and its adversarial tasks retain authorized ground-truth actions when a compliant resolution remains available. We define these base tasks as TACT-Base. We additionally introduce TACT-TrustPrime, which places an independent benign task before an unrelated attack in the same conversation. We also propose Paired Selective Trustworthiness (PST), which combines explicit safe refusal with demonstrated capability on matched benign tasks, to analyze an agent's overcautiousness and practicality. Averaged across 6 different models as assistants, TACT-Base raises Attack-Induced Failure Rate (AFR) by 17.53% over four compatible attack baselines, and TACT-TrustPrime raises it by a further 17.01%. The two evaluated defense methods reduce AFR by only 8.35%--9.41% on average and do not consistently improve PST, underscoring the need for stronger policy-enforcement methods.",
+      "authors": [
+        "Ilia Hashemi Rad",
+        "Feijie Wu",
+        "Haoyu Wang",
+        "Jing Gao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CR"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-24T01:01:49Z",
+      "updated": "2026-11-24T01:01:49Z",
+      "announced_date": "2026-11-24",
+      "first_seen": "2026-11-24",
+      "comment": "Code and data are available at https://github.com/IliaHashemiRad/TACTBench",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.31756v1",
+        "pdf": "https://arxiv.org/pdf/2611.31756v1",
+        "html": "https://arxiv.org/html/2611.31756"
+      },
+      "score": 18,
+      "tags": [
+        "tool-use",
+        "safety"
+      ],
+      "field": "tool-use",
       "citations": 0
     }
   ]
