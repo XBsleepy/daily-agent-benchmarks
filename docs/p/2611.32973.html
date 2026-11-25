@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SpecEngineeringBench: Evaluating Coding Agents as Autonomous Specification Engineers | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Autonomous specification engineering requires coding agents to translate functional requirements into executable tests and use the…" />
+    <meta name="keywords" content="Coding / SWE, Coding agents, agent benchmark, LLM agent, arXiv, 2611.32973" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.32973.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SpecEngineeringBench: Evaluating Coding Agents as Autonomous Specification Engineers" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Autonomous specification engineering requires coding agents to translate functional requirements into executable tests and use the…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.32973.html" />
+    <meta property="article:published_time" content="2026-11-25T05:00:00Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SpecEngineeringBench: Evaluating Coding Agents as Autonomous Specification Engineers" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Autonomous specification engineering requires coding agents to translate functional requirements into executable tests and use the…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "SpecEngineeringBench: Evaluating Coding Agents as Autonomous Specification Engineers",
+  "name": "SpecEngineeringBench: Evaluating Coding Agents as Autonomous Specification Engineers",
+  "abstract": "Autonomous specification engineering requires coding agents to translate functional requirements into executable tests and use the results to discover and validate defects. However, existing benchmarks evaluate coding agents on explicitly specified test generation tasks, commonly providing an issue description, a designated test entry point, or files to inspect, leaving the ability to determine what to test and where to investigate insufficiently evaluated. Relying on such clues bypasses the challenge of mapping requirements to implementations and proactively uncovering unknown defects. We propose SpecEngineeringBench, comprising 100 instances from 78 open-source Python repositories across 16 application categories, with multiple recorded defects in each instance. Two independent tasks evaluate complementary capabilities: generating test suites and discovering defects through execution analysis. The evaluation combines test validity, defect detection, and coverage with localization precision and recall. Across seven frontier coding agents, results reveal that test validity and coverage decouple from defect exposure: agents achieve a 91.47% Head Pass Rate and 80.48% Change-focused Coverage alongside a 26.36% Fail-to-Pass Rate, while localization recall drops from 78.11% at the file level to 51.29% at the function level. Autonomous test generation improves file, function, and hunk localization recall by 4.99, 2.77, and 2.69 percentage points over relying solely on existing repository test suites.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Xingjian Wang, Shijian Wang, Minghao Liu, Ji Zou, Zetao Yang, Xinping Lei, Yiming Liang, Shen Yan, Enduo Zhao, Xiaoyang Shen, Weihao Xuan, Jiaheng Liu, Ge Zhang"
+    }
+  ],
+  "datePublished": "2026-11-25T05:00:00Z",
+  "dateModified": "2026-11-25T05:00:00Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.32973.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.32973.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.32973"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.32973"
+  },
+  "keywords": [
+    "Coding / SWE",
+    "Coding agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Coding / SWE"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.32973"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.32973"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>SpecEngineeringBench: Evaluating Coding Agents as Autonomous Specification Engineers</h1>
+        <div class="meta">
+          Xingjian Wang, Shijian Wang, Minghao Liu, Ji Zou, Zetao Yang, Xinping Lei, Yiming Liang, Shen Yan, Enduo Zhao, Xiaoyang Shen, Weihao Xuan, Jiaheng Liu, Ge Zhang
+          · 2611.32973
+          · <time datetime="2026-11-25">2026-11-25</time>
+          · Coding / SWE
+        </div>
+        <div class="themes"><span class="chip">Coding agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Autonomous specification engineering requires coding agents to translate functional requirements into executable tests and use the results to discover and validate defects. However, existing benchmarks evaluate coding agents on explicitly specified test generation tasks, commonly providing an issue description, a designated test entry point, or files to inspect, leaving the ability to determine what to test and where to investigate insufficiently evaluated. Relying on such clues bypasses the challenge of mapping requirements to implementations and proactively uncovering unknown defects. We propose SpecEngineeringBench, comprising 100 instances from 78 open-source Python repositories across 16 application categories, with multiple recorded defects in each instance. Two independent tasks evaluate complementary capabilities: generating test suites and discovering defects through execution analysis. The evaluation combines test validity, defect detection, and coverage with localization precision and recall. Across seven frontier coding agents, results reveal that test validity and coverage decouple from defect exposure: agents achieve a 91.47% Head Pass Rate and 80.48% Change-focused Coverage alongside a 26.36% Fail-to-Pass Rate, while localization recall drops from 78.11% at the file level to 51.29% at the function level. Autonomous test generation improves file, function, and hunk localization recall by 4.99, 2.77, and 2.69 percentage points over relying solely on existing repository test suites.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.32973" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.32973" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.32973" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Coding / SWE benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.31974.html"><strong>Coding4Games: Can Modern Coding Agents Play Modern Video Games?</strong></a> <span>2026-11-25</span></li>
+          <li><a href="2611.33093.html"><strong>AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design</strong></a> <span>2026-11-24</span></li>
+          <li><a href="2611.31839.html"><strong>Spec-Test Coverage Gap: Detecting Overspecified Tests in SWE-Bench-Style Benchmarks</strong></a> <span>2026-11-24</span></li>
+          <li><a href="2611.30771.html"><strong>GameDojo: Benchmarking Real-Time Interactive Agents in Video Games</strong></a> <span>2026-11-24</span></li>
+          <li><a href="2611.30517.html"><strong>sudo L7: Can Coding Agents Act Like Staff Engineers?</strong></a> <span>2026-11-24</span></li>
+          <li><a href="2611.30350.html"><strong>RepoClean: Evaluating Coding Agents on Repository-Level Obsolete Code Cleanup</strong></a> <span>2026-11-24</span></li>
+          <li><a href="2611.30226.html"><strong>VeriWorld: A Verifiable Visual SWE-Bench for Spatial Reasoning in 3D Environments</strong></a> <span>2026-11-24</span></li>
+          <li><a href="2611.29238.html"><strong>GameAnything: From Any Inspirations to Playable Game Worlds</strong></a> <span>2026-11-24</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

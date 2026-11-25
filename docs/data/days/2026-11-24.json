@@ -1,16 +1,10 @@
 {
   "date": "2026-11-24",
-  "count": 34,
+  "count": 31,
   "report": {
     "date": "2026-11-24",
-    "count": 34,
+    "count": 31,
     "themes": [
-      {
-        "id": "coding",
-        "count": 10,
-        "en": "Coding agents",
-        "zh": "代码智能体"
-      },
       {
         "id": "tool-use",
         "count": 10,
@@ -18,16 +12,22 @@
         "zh": "工具使用"
       },
       {
-        "id": "multimodal",
+        "id": "coding",
         "count": 9,
-        "en": "Multimodal",
-        "zh": "多模态"
+        "en": "Coding agents",
+        "zh": "代码智能体"
       },
       {
         "id": "planning",
         "count": 8,
         "en": "Planning / reasoning",
         "zh": "规划 / 推理"
+      },
+      {
+        "id": "multimodal",
+        "count": 8,
+        "en": "Multimodal",
+        "zh": "多模态"
       },
       {
         "id": "science",
@@ -48,15 +48,15 @@
         "zh": "记忆"
       },
       {
-        "id": "computer-use",
+        "id": "embodied",
         "count": 3,
-        "en": "Computer use",
-        "zh": "计算机使用"
+        "en": "Embodied / robotics",
+        "zh": "具身 / 机器人"
       }
     ],
     "en": {
-      "headline": "34 new agent benchmarks",
-      "summary": "On November 24, 2026, arXiv listed 34 new agent benchmarks. Work clustered around Coding agents (10), Tool use (10), Multimodal (9), and Planning / reasoning (8).",
+      "headline": "31 new agent benchmarks",
+      "summary": "On November 24, 2026, arXiv listed 31 new agent benchmarks. Work clustered around Tool use (10), Coding agents (9), Planning / reasoning (8), and Multimodal (8).",
       "highlights": [
         {
           "id": "2611.28477",
@@ -76,8 +76,8 @@
       ]
     },
     "zh": {
-      "headline": "新增 34 篇 Agent Benchmark",
-      "summary": "2026年11月24日，arXiv 新增 34 篇 Agent Benchmark。当日主题集中在代码智能体（10）、工具使用（10）、多模态（9）、规划 / 推理（8）。",
+      "headline": "新增 31 篇 Agent Benchmark",
+      "summary": "2026年11月24日，arXiv 新增 31 篇 Agent Benchmark。当日主题集中在工具使用（10）、代码智能体（9）、规划 / 推理（8）、多模态（8）。",
       "highlights": [
         {
           "id": "2611.28477",
@@ -132,38 +132,6 @@
         "memory"
       ],
       "field": "coding",
-      "citations": 0
-    },
-    {
-      "id": "2611.32884",
-      "title": "Lazy Agents Answer Against Their Own Beliefs: Reinforcement Learning with Verifiable Beliefs Teaches Them to Act on What They Believe",
-      "abstract": "AI agents working on long tasks often commit to an answer before they have enough evidence, a behavior called laziness. In our evaluations, they frequently commit even while their stated belief still names several possible answers. An outcome reward at the end of the episode scores only the final answer, so it cannot teach the agent when to commit, because a lucky guess receives the same reward as an answer backed by evidence. During training, however, the simulator can compute the exact posterior over the answer at every step and tell whether the evidence is already enough. We propose Reinforcement Learning with Verifiable Beliefs (RLVB), which rewards the agent for taking further steps while this posterior still allows several answers and for committing once the evidence is sufficient. The reward needs no judge, critic or reward model, and it never reads the belief line the agent writes before each action. We also introduce Pro Worlds, a benchmark of visual puzzles where the agent views a large world through a small window. We evaluate three vision-language models on three benchmarks, two of which are never seen in training. RLVB improves the base model in all nine settings, by 17.1% on average. Under the outcome reward, GRPO and PPO fall below the base model on average. RLVB also outperforms PPO with a process reward from an LLM judge by 9.3% on average while using 1.6 times fewer GPU-hours. The trained agent answers with sufficient evidence in 51%, 12% and 74% of the episodes on the three benchmarks, against 8%, 0.4% and 36% for the base model. Its accuracy gain therefore comes from answering more often at high levels of evidence. The belief line shows how the agent reaches this evidence: it acts on its own belief. It commits at only 0.1 to 2.2% of the turns at which the evidence is insufficient and its line still names several answers, against 3 to 68% for the base model.",
-      "authors": [
-        "Richmond Sin Jing Xuan",
-        "Peilin Feng",
-        "Wenbin Wang",
-        "Soujanya Poria"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "primary_category": "cs.AI",
-      "published": "2026-11-24T16:17:51Z",
-      "updated": "2026-11-24T16:17:51Z",
-      "announced_date": "2026-11-24",
-      "first_seen": "2026-11-24",
-      "comment": "",
-      "doi": "",
-      "links": {
-        "abs": "https://arxiv.org/abs/2611.32884v1",
-        "pdf": "https://arxiv.org/pdf/2611.32884v1",
-        "html": "https://arxiv.org/html/2611.32884"
-      },
-      "score": 8,
-      "tags": [
-        "multimodal"
-      ],
-      "field": "multimodal",
       "citations": 0
     },
     {
@@ -275,84 +243,6 @@
       "score": 12,
       "tags": [],
       "field": "other",
-      "citations": 0
-    },
-    {
-      "id": "2611.31974",
-      "title": "Coding4Games: Can Modern Coding Agents Play Modern Video Games?",
-      "abstract": "Games, especially modern AAA games, challenge language models to perceive complex scenes, control actions, and make decisions over long horizons. Existing game benchmarks primarily test language models as computer-use agents that query a language model throughout play, incurring repeated inference cost and, in real-time games, acting while the environment continues to evolve. We ask whether coding agents can learn from game interaction to develop standalone game-playing programs that run without language model inference. We thus introduce Coding4Games, a benchmark for evaluating whether coding agents can develop standalone programs that play modern games through visual observations and standard game inputs. Coding4Games has three defining features: 1) Diverse Modern Games, covering 15 games with diverse visual, strategic, and control demands; 2) Development-Test Separation, in which a coding agent uses a sandbox and the standard player interface to iteratively develop a program, after which the selected program is frozen and independently tested without language-model inference; and 3) Outcome and Process Evaluation, which measures not only game performance and reliability but also how agents use feedback, revise programs, and resolve problems during development. Across 15 games, the best program per game outscores the strongest GUI baseline on 13 and ties it on one. The human player outscores all agents on 10 games. We additionally examine the effects of development budgets. Coding4Games evaluates whether coding agents can turn their understanding of complex interactive environments into programs that work reliably on their own.",
-      "authors": [
-        "Shifang Zhao",
-        "Haoyu Wang",
-        "Yuyang Yin",
-        "Dong Chen",
-        "Xingyilang Yin",
-        "Yunkang Tao",
-        "Honghao Chen",
-        "Guangzhi Wang",
-        "Yiran Wang",
-        "Junfu Pu",
-        "Cheng Cheng",
-        "Xiaodong Cun",
-        "Ying Shan"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "primary_category": "cs.AI",
-      "published": "2026-11-24T05:24:32Z",
-      "updated": "2026-11-24T05:24:32Z",
-      "announced_date": "2026-11-24",
-      "first_seen": "2026-11-24",
-      "comment": "Project Page: https://coding4game.github.io/",
-      "doi": "",
-      "links": {
-        "abs": "https://arxiv.org/abs/2611.31974v1",
-        "pdf": "https://arxiv.org/pdf/2611.31974v1",
-        "html": "https://arxiv.org/html/2611.31974"
-      },
-      "score": 17,
-      "tags": [
-        "gui",
-        "coding",
-        "computer-use"
-      ],
-      "field": "coding",
-      "citations": 0
-    },
-    {
-      "id": "2611.31962",
-      "title": "Are Web Agents Still Detectable? Stress-Testing Bot Defenses with Coordinated Evasion",
-      "abstract": "AI web agents can autonomously navigate websites and complete various tasks. As their capabilities and adoption expand, evaluating bot defenses requires adversarial stress tests. Although prior work demonstrates that existing agents can remain detectable, it remains unclear how effective bot defenses are against adversaries that coordinate evasion across browser fingerprints, automation controls, and interaction behavior. To investigate this threat, we introduce DarkAgent, an autonomous web agent that combines a forked Chromium browser that conceals automation artifacts and generative models that produce human-like mouse and keyboard traces. To address the limitations of existing keyboard mimickers, our keyboard model jointly generates realistic key events and their timings while reliably reproducing the target text. Released agent detectors accept our generated behavior as human, and trained classifiers find it substantially harder to distinguish from human traces than existing mimickers. DarkAgent achieves an 89% page-access bypass rate across a third-party stealth benchmark, exceeding the strongest published baseline by 12 percentage points. To further enhance the measurement of agents, we introduce a benchmark that measures browser fingerprints, interaction behavior, and network activity to assess each channel's contribution to detecting adversarial agents such as DarkAgent. On this benchmark, browser and behavioral modifications are complementary: either alone remains detectable, and only their combination evades all tested checks. Together, our findings expose the gap between passing existing bot defenses and reproducing human behavior, and point to timing between actions as a remaining signal for defenders.",
-      "authors": [
-        "Parsa Nilforushan",
-        "Gemmin Sugiura",
-        "Kourosh Hashemi",
-        "Peiman Zhiani",
-        "Mohammad A. Tayebi"
-      ],
-      "categories": [
-        "cs.CR",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "primary_category": "cs.CR",
-      "published": "2026-11-24T05:11:39Z",
-      "updated": "2026-11-24T05:11:39Z",
-      "announced_date": "2026-11-24",
-      "first_seen": "2026-11-24",
-      "comment": "",
-      "doi": "",
-      "links": {
-        "abs": "https://arxiv.org/abs/2611.31962v1",
-        "pdf": "https://arxiv.org/pdf/2611.31962v1",
-        "html": "https://arxiv.org/html/2611.31962"
-      },
-      "score": 10,
-      "tags": [
-        "web"
-      ],
-      "field": "web",
       "citations": 0
     },
     {
