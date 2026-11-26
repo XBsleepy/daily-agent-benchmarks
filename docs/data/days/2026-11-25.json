@@ -1,97 +1,521 @@
 {
   "date": "2026-11-25",
-  "count": 6,
+  "count": 16,
   "report": {
     "date": "2026-11-25",
-    "count": 6,
+    "count": 16,
     "themes": [
       {
-        "id": "coding",
-        "count": 2,
-        "en": "Coding agents",
-        "zh": "代码智能体"
-      },
-      {
-        "id": "safety",
-        "count": 1,
-        "en": "Safety",
-        "zh": "安全"
-      },
-      {
         "id": "planning",
-        "count": 1,
+        "count": 5,
         "en": "Planning / reasoning",
         "zh": "规划 / 推理"
       },
       {
         "id": "multimodal",
-        "count": 1,
+        "count": 3,
         "en": "Multimodal",
         "zh": "多模态"
       },
       {
-        "id": "gui",
-        "count": 1,
-        "en": "GUI agents",
-        "zh": "GUI 智能体"
-      },
-      {
         "id": "computer-use",
-        "count": 1,
+        "count": 3,
         "en": "Computer use",
         "zh": "计算机使用"
       },
       {
-        "id": "web",
-        "count": 1,
-        "en": "Web agents",
-        "zh": "网页智能体"
+        "id": "coding",
+        "count": 3,
+        "en": "Coding agents",
+        "zh": "代码智能体"
+      },
+      {
+        "id": "tool-use",
+        "count": 2,
+        "en": "Tool use",
+        "zh": "工具使用"
+      },
+      {
+        "id": "research",
+        "count": 2,
+        "en": "Research agents",
+        "zh": "科研智能体"
+      },
+      {
+        "id": "gui",
+        "count": 2,
+        "en": "GUI agents",
+        "zh": "GUI 智能体"
+      },
+      {
+        "id": "safety",
+        "count": 2,
+        "en": "Safety",
+        "zh": "安全"
       }
     ],
     "en": {
-      "headline": "6 new agent benchmarks",
-      "summary": "On November 25, 2026, arXiv listed 6 new agent benchmarks. Work clustered around Coding agents (2), Safety (1), Planning / reasoning (1), and Multimodal (1).",
+      "headline": "16 new agent benchmarks",
+      "summary": "On November 25, 2026, arXiv listed 16 new agent benchmarks. Work clustered around Planning / reasoning (5), Multimodal (3), Computer use (3), and Coding agents (3).",
       "highlights": [
         {
-          "id": "2611.31974",
-          "title": "Coding4Games: Can Modern Coding Agents Play Modern Video Games?",
-          "blurb": "Games, especially modern AAA games, challenge language models to perceive complex scenes, control actions, and make decisions over long horizons."
+          "id": "2611.34400",
+          "title": "EvoLink-Bench: A Benchmark for Evaluating Self-Evolving Agents in Long-Horizon Interdependent Task Streams",
+          "blurb": "Large language model (LLM) agents are evolving from passive chatbots into autonomous systems that operate continuously in dynamic environments."
         },
         {
-          "id": "2611.32973",
-          "title": "SpecEngineeringBench: Evaluating Coding Agents as Autonomous Specification Engineers",
-          "blurb": "Autonomous specification engineering requires coding agents to translate functional requirements into executable tests and use the results to discover and validate defects."
+          "id": "2611.34852",
+          "title": "DRBench Pro: A Knowledge-Centric Benchmark for Professional Deep Research Agents",
+          "blurb": "Deep research agents gather information from multiple sources and synthesize it into reports on complex, open-ended questions."
         },
         {
-          "id": "2611.31962",
-          "title": "Are Web Agents Still Detectable? Stress-Testing Bot Defenses with Coordinated Evasion",
-          "blurb": "AI web agents can autonomously navigate websites and complete various tasks."
+          "id": "2611.33728",
+          "title": "Asset4D-Bench: Benchmarking Coding Agents for Editable 3D and 4D Reconstruction",
+          "blurb": "A cart can follow its reference trajectory while its cargo floats above the deck."
         }
       ]
     },
     "zh": {
-      "headline": "新增 6 篇 Agent Benchmark",
-      "summary": "2026年11月25日，arXiv 新增 6 篇 Agent Benchmark。当日主题集中在代码智能体（2）、安全（1）、规划 / 推理（1）、多模态（1）。",
+      "headline": "新增 16 篇 Agent Benchmark",
+      "summary": "2026年11月25日，arXiv 新增 16 篇 Agent Benchmark。当日主题集中在规划 / 推理（5）、多模态（3）、计算机使用（3）、代码智能体（3）。",
       "highlights": [
         {
-          "id": "2611.31974",
-          "title": "Coding4Games: Can Modern Coding Agents Play Modern Video Games?",
-          "blurb": "Games, especially modern AAA games, challenge language models to perceive complex scenes, control actions, and make decisions over long horizons."
+          "id": "2611.34400",
+          "title": "EvoLink-Bench: A Benchmark for Evaluating Self-Evolving Agents in Long-Horizon Interdependent Task Streams",
+          "blurb": "Large language model (LLM) agents are evolving from passive chatbots into autonomous systems that operate continuously in dynamic environments."
         },
         {
-          "id": "2611.32973",
-          "title": "SpecEngineeringBench: Evaluating Coding Agents as Autonomous Specification Engineers",
-          "blurb": "Autonomous specification engineering requires coding agents to translate functional requirements into executable tests and use the results to discover and validate defects."
+          "id": "2611.34852",
+          "title": "DRBench Pro: A Knowledge-Centric Benchmark for Professional Deep Research Agents",
+          "blurb": "Deep research agents gather information from multiple sources and synthesize it into reports on complex, open-ended questions."
         },
         {
-          "id": "2611.31962",
-          "title": "Are Web Agents Still Detectable? Stress-Testing Bot Defenses with Coordinated Evasion",
-          "blurb": "AI web agents can autonomously navigate websites and complete various tasks."
+          "id": "2611.33728",
+          "title": "Asset4D-Bench: Benchmarking Coding Agents for Editable 3D and 4D Reconstruction",
+          "blurb": "A cart can follow its reference trajectory while its cargo floats above the deck."
         }
       ]
     }
   },
   "papers": [
+    {
+      "id": "2611.34920",
+      "title": "$μ$-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents",
+      "abstract": "Voice agents in shared spaces must satisfy interdependent multi-user requests while upholding per-user authority, privacy, and task constraints. Existing evaluations offer limited coverage when participants react throughout a session. We introduce $μ$-Bench, a benchmark for joint task completion in closed-loop, full-duplex multi-user voice interaction. Simulated participants act from isolated profiles of goals, knowledge, and permissions, adapting to the agent's speech and tool outcomes. Across 20 domains, 100 scenarios vary group size, acoustics, and follow-up demands to form 800 cases (408 tool-augmented, 392 tool-free). Joint Task Success (JTS) requires all user goals, privacy boundaries, and terminal states to hold jointly, while Pure JTS further disallows unauthorized tool calls; Attribution, Threading, and Coordination (ATC) diagnostics localize failures. Across 13 voice agents, proprietary systems peak at 62.24\\% tool-free and 65.44\\% tool-augmented success, while open-weight models remain below 20\\%. ATC diagnostics show that open-weight models lag primarily in multi-turn attribution and threading, and controlled contrasts reveal that larger groups consistently degrade joint task success across capable systems. By coupling reactive multi-user simulation with verifiable session-level outcomes, $μ$-Bench provides a rigorous testbed for shared voice agents.",
+      "authors": [
+        "Qihao Lin",
+        "Guanxu Chen",
+        "Shuhang Zheng",
+        "Xiaoya Lu",
+        "Jingyi Yang",
+        "Terumi Chiba",
+        "Wenyi Yu",
+        "Chao Zhang",
+        "Zhuan Shi",
+        "Jing Shao"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-11-25T18:58:42Z",
+      "updated": "2026-11-25T18:58:42Z",
+      "announced_date": "2026-11-25",
+      "first_seen": "2026-11-25",
+      "comment": "28 pages, 5 figures, 6 tables",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.34920v1",
+        "pdf": "https://arxiv.org/pdf/2611.34920v1",
+        "html": "https://arxiv.org/html/2611.34920"
+      },
+      "score": 16,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2611.34852",
+      "title": "DRBench Pro: A Knowledge-Centric Benchmark for Professional Deep Research Agents",
+      "abstract": "Deep research agents gather information from multiple sources and synthesize it into reports on complex, open-ended questions. Existing benchmarks assess report quality along several dimensions, but lack a dedicated knowledge-centric evaluation of which research directions a report covers and how deeply it explores them. We introduce DRBench Pro, a benchmark that makes structured knowledge coverage the primary evaluation target. Our automated pipeline builds local knowledge trees from Wikipedia and uses sampled subgraphs to generate research queries and evidence-grounded rubrics. Each rubric corresponds to a relation in the tree, preserving the structure of the knowledge being evaluated. Agents receive only the research query. This structure allows us to measure breadth across major research directions and depth along related knowledge chains, with their geometric mean giving overall coverage. The benchmark includes 144 cases across 24 domains and 44,102 rubrics. Evaluating 16 deep research agents reveals different strengths in breadth and depth, with the best-performing agent reaching 57.04% overall coverage. Rubric judgments agree closely with human annotations, and agent rankings remain stable across the tested metric configurations.",
+      "authors": [
+        "Han Huang",
+        "Yuchen Yan",
+        "Xingyu Wu",
+        "Yijun Li",
+        "Chao Deng",
+        "Jie Liu",
+        "Jin Ma",
+        "Yongliang Shen"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-11-25T18:25:30Z",
+      "updated": "2026-11-25T18:25:30Z",
+      "announced_date": "2026-11-25",
+      "first_seen": "2026-11-25",
+      "comment": "Project Page: https://zjureal.com/DRBenchPro/ Code: https://github.com/ZJU-REAL/DRBenchPro",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.34852v1",
+        "pdf": "https://arxiv.org/pdf/2611.34852v1",
+        "html": "https://arxiv.org/html/2611.34852"
+      },
+      "score": 19,
+      "tags": [
+        "research"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2611.34690",
+      "title": "PoVi: Agentic Poetry-to-Video Generation with Knowledge Grounding and Figurative Understanding",
+      "abstract": "Poetry-to-video generation requires more than translating text into visual scenes. Poetic language is highly compressed, often depends on historical and cultural knowledge, and frequently conveys meaning through metaphor, imagery, and other non-literal expressions. We introduce PoVi, a benchmark and agentic framework for grounded poetry-to-video generation, evaluating semantic grounding, discourse coherence, and audiovisual realization. PoVi reconstructs poem semantics into an evidence-bounded representation and progressively transforms them into narration, interpretation, character assets, and shot-level visual plans, followed by narration-aligned video generation. Across three planning backbones and four video generators, PoVi consistently improves over single-call generation, with the largest gains on implicit background knowledge and metaphorical relations. PoVi provides a testbed for studying knowledge-grounded, long-horizon multimodal generation beyond direct text-to-video synthesis.",
+      "authors": [
+        "Yuxia Zhu",
+        "Shiying Zhang",
+        "Lingzhuang Sun",
+        "Song Yang",
+        "Siheng Wu",
+        "Xinglong Xu",
+        "Sizhe Qiu",
+        "Hao Liang",
+        "Cheng Tan",
+        "Asher Qin",
+        "Wentao Zhang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-11-25T16:50:03Z",
+      "updated": "2026-11-25T16:50:03Z",
+      "announced_date": "2026-11-25",
+      "first_seen": "2026-11-25",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.34690v1",
+        "pdf": "https://arxiv.org/pdf/2611.34690v1",
+        "html": "https://arxiv.org/html/2611.34690"
+      },
+      "score": 11,
+      "tags": [
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2611.34646",
+      "title": "REE: A Scientific Research Entrance Exam for AI Agents",
+      "abstract": "Autonomous research agents are emerging as a promising approach to scientific problem-solving across disciplines, owing to their growing ability to improve a solution through repeated experiments. Evaluating this ability requires benchmarks that pose open-ended research problems and measure improvements over established scientific methods. We introduce REE (Research Entrance Exam), a benchmark that tests AI agents on scientific research. It consists of 100 open-ended research problems spanning five broad scientific areas and 23 domains. To ensure high quality, every problem is drawn from active research in its field and individually reviewed by domain experts. Each problem is posed as a task of iterative improvement: an agent has up to 12 hours to improve a working starter solution, and REE scores the result on a common scale against an established expert solution evaluated under comparable conditions. By this measure, two of the four frontier agents we evaluate, Claude Opus 5.5 and GPT-6.1 Sol, outperform the expert solutions on 86% and 81% of problems, across all five scientific areas. Their runs also show how they do so: both agents surpass the expert solutions within the first two hours on average, and their best solutions mostly tailor or combine established methods of the field. REE thus provides a unified framework for evaluating autonomous scientific research, capturing both improvements over established methods and the research processes behind them.",
+      "authors": [
+        "Zeqi Zhou",
+        "Minghao Liu",
+        "Jiarui Liu",
+        "Qingcheng Zeng",
+        "Rui Yang",
+        "Tianyu Liu",
+        "Zetao Yang",
+        "Wenqiang Zu",
+        "Enduo Zhao",
+        "Heng-Jui Chang",
+        "Lun-Hsin Kuo",
+        "Meng-Fu Chen",
+        "Haokai Zhao",
+        "Weijia Zhang",
+        "Jen-Tse Huang",
+        "Stephen Huang",
+        "Eli Cheung",
+        "Zhijing Jin",
+        "Mona Diab",
+        "Weihao Xuan"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-25T16:25:19Z",
+      "updated": "2026-11-25T16:25:19Z",
+      "announced_date": "2026-11-25",
+      "first_seen": "2026-11-25",
+      "comment": "22 pages, 8 figures, 7 tables. Data: https://huggingface.co/datasets/Tokenwave-AI/REE",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.34646v1",
+        "pdf": "https://arxiv.org/pdf/2611.34646v1",
+        "html": "https://arxiv.org/html/2611.34646"
+      },
+      "score": 12,
+      "tags": [
+        "research",
+        "science"
+      ],
+      "field": "science",
+      "citations": 0
+    },
+    {
+      "id": "2611.34603",
+      "title": "VisualMontage: Manipulating the Beliefs of Vision-Language Agents with Authentic Image Sequences",
+      "abstract": "As agents based on vision-language models (VLMs) increasingly interpret social-media content, errors in their analysis may lend credibility to rumors and amplify their spread. In this paper, we study the problem of visual cognitive collusion, in which coordinated posts combine authentic images and locally faithful captions to induce VLM agents to infer and accept attacker-chosen target claims through their own reasoning. To enable systematic evaluation of this cognitive threat, we introduce a new benchmark comprising 544 target cases and 33.2K candidate images across eight application domains. We further propose VisualMontage, a multi-agent framework for simulating such attacks through narrative planning, image selection and ordering, and caption assignment under iterative review. We evaluate this threat through extensive experiments across 12 vision-language models, examining modality effects, production-team components, and downstream defenses. Using identical attack feeds across models without victim-specific optimization, we demonstrate cross-model transferability, achieving mean attack success rates of 61.93% for proprietary models and 68.71% for open-weight models. Moreover, 92.65% of generated feeds pass independent model-based validity auditing. Even after downstream review, residual attack success rates range from 35.3% to 76.7% across the evaluated configurations. Our additional controlled comparisons further reveal that captions can improve model-rated posting naturalness while reducing attack success. Together, these findings reveal a novel cognitive threat in social-media interpretation and motivate safeguards that assess how authentic posts jointly shape agents' reasoning and conclusions.",
+      "authors": [
+        "Jinwei Hu",
+        "Lai Wei",
+        "Zhuoyun Li",
+        "Youcheng Sun",
+        "Yi Dong",
+        "Xiaowei Huang"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.MA",
+        "cs.SI"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-25T15:57:55Z",
+      "updated": "2026-11-25T15:57:55Z",
+      "announced_date": "2026-11-25",
+      "first_seen": "2026-11-25",
+      "comment": "Under Review",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.34603v1",
+        "pdf": "https://arxiv.org/pdf/2611.34603v1",
+        "html": "https://arxiv.org/html/2611.34603"
+      },
+      "score": 13,
+      "tags": [
+        "multi-agent",
+        "planning",
+        "multimodal"
+      ],
+      "field": "multimodal",
+      "citations": 0
+    },
+    {
+      "id": "2611.34466",
+      "title": "EgoUseBench: Benchmarking Computer-Use Agents under Evolving First-Person Contexts",
+      "abstract": "AI wearables, such as smart glasses, extend the context available to agents beyond digital environments to users' physical surroundings. With these devices, computer tasks can originate from users' ongoing activities rather than solely from explicit instructions. Through first-person observations, agents can identify objects and activities relevant to user requests and ground digital tasks in the surrounding context. We call this interaction paradigm Ego Use. However, first-person observations are limited by the wearer's viewpoint and may provide incomplete or ambiguous evidence of ongoing activities. As new observations arrive, agents may need to revise their understanding of the physical context and user intent, and reassess whether prior digital actions remain valid. Whether current agents can reliably handle these changes remains insufficiently evaluated. We introduce EgoUseBench, a benchmark for evaluating Ego Use across three interaction settings with different levels of first-person context. Computer-Use relies on explicit instructions, Offline Ego Use provides prerecorded first-person context before execution, and Online Ego Use provides continuous observations as user intent evolves. Based on over 74 hours of real-world first-person recordings, we construct 693 tasks across the three interaction settings. To capture task evolution, we track first-person observations, user requirements, and website state separately. We further group tasks by how information changes during execution, resulting in three types: Graft (revised user requirements), Refresh (new first-person observations), and Clarify (agent-initiated information seeking). We evaluate advanced models and find that average success rates in Online Ego Use are 26.3% lower than in Computer-Use. This result reveals the difficulty of keeping task execution aligned with evolving first-person context and user intent.",
+      "authors": [
+        "Yurun Chen",
+        "Biao Yi",
+        "Qihang Yu",
+        "Keting Yin",
+        "Shengyu Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-25T14:36:38Z",
+      "updated": "2026-11-25T14:36:38Z",
+      "announced_date": "2026-11-25",
+      "first_seen": "2026-11-25",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.34466v1",
+        "pdf": "https://arxiv.org/pdf/2611.34466v1",
+        "html": "https://arxiv.org/html/2611.34466"
+      },
+      "score": 18,
+      "tags": [
+        "computer-use"
+      ],
+      "field": "computer-use",
+      "citations": 0
+    },
+    {
+      "id": "2611.34400",
+      "title": "EvoLink-Bench: A Benchmark for Evaluating Self-Evolving Agents in Long-Horizon Interdependent Task Streams",
+      "abstract": "Large language model (LLM) agents are evolving from passive chatbots into autonomous systems that operate continuously in dynamic environments. Such agents need not only solve current tasks but also learn from past interactions to improve future performance. However, existing streaming benchmarks often rely on short task sequences or largely independent tasks, providing limited evidence of whether agents can effectively reuse experience when later tasks depend on earlier outcomes. To address this gap, we introduce \\textbf{EvoLink-Bench}, a benchmark for evaluating self-evolving agents in long-horizon, interdependent task streams. It covers daily office work, multi-turn dialogue, and AutoResearch-style workflows, with persistent workspaces and dependencies across tasks. The benchmark includes two complementary levels: \\textbf{L1}, which evaluates the acquisition and revision of language-expressible knowledge, and \\textbf{L2}, which assesses the development of task-level capabilities through execution and feedback. Its evaluation further distinguishes within-task recovery, persistent-state updates, and experience reuse in later tasks. We evaluate five agent frameworks across three backbone configurations under three persistence conditions, covering 19,635 scored task slots from selected evaluation cohorts. Results show that no framework consistently performs best across both levels, retries recover only a limited proportion of failed tasks, and persistent-state updates do not necessarily improve subsequent performance. Furthermore, the effects of evolution differ between knowledge- and capability-level tasks, suggesting that these two forms of evolution require different learning mechanisms. Performance gains also vary across domains and task streams, with improvements on some tasks not necessarily extending to others.",
+      "authors": [
+        "Wei Chen",
+        "Xiaodong Lu",
+        "Weihao Shen",
+        "Gongxun Li",
+        "Xingyu Guo",
+        "Qihang Sun",
+        "Fuwei Zhang",
+        "Zhao Zhang",
+        "Yikun Ban",
+        "Shuang Li",
+        "Deqing Wang",
+        "Fuzhen Zhuang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-25T14:00:22Z",
+      "updated": "2026-11-25T14:00:22Z",
+      "announced_date": "2026-11-25",
+      "first_seen": "2026-11-25",
+      "comment": "",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.34400v1",
+        "pdf": "https://arxiv.org/pdf/2611.34400v1",
+        "html": "https://arxiv.org/html/2611.34400"
+      },
+      "score": 26,
+      "tags": [
+        "conversation"
+      ],
+      "field": "workplace",
+      "citations": 0
+    },
+    {
+      "id": "2611.34303",
+      "title": "IRTIQA: Evolving in English, Evaluated in Urdu -- Does Agent Self-Evolution Transfer from English to Urdu and Code-Switched Input?",
+      "abstract": "As LLM agents increasingly learn from their own experience, the tasks they learn from and are evaluated on are almost always in English. We ask whether self-evolution transfers from English to Urdu, and release IRTIQA, a benchmark of aligned English, Urdu-translated, and Urdu code-switched variants of DROP, SNIPS, AppWorld, and SkillsBench, built with a matrix-language code-switching pipeline and human verification. Using IRTIQA, we evaluate three self-evolving frameworks, Tool-R0 (self-play RL), AgentEvolver (experience-guided RL), and Autogenesis (protocol-level evolution), against their unevolved backbones. Self-evolution often raises capability: AgentEvolver lifts AppWorld goal completion from near zero to 20-36% across all conditions, and Autogenesis improves SkillsBench pass rate from 16.48% to 22.22%. But it rarely closes the language gap. Evolved systems remain stronger in English, by up to 0.26 DROP F1, the gap is largest on multi-step tasks, and code-switching behaves as a distinct condition rather than degraded translation. On a shared Gemma-4 31B backbone, the gap exists before evolution, and RL-based evolution can hurt Urdu reasoning more than English. Language parity must therefore be an explicit design target, as it does not emerge from self-improvement alone.",
+      "authors": [
+        "Abdullah Hashmat",
+        "Danish Javed",
+        "Usman Naseem",
+        "Agha Ali Raza"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "published": "2026-11-25T12:56:41Z",
+      "updated": "2026-11-25T12:56:41Z",
+      "announced_date": "2026-11-25",
+      "first_seen": "2026-11-25",
+      "comment": "Findings of EACL 2027",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.34303v1",
+        "pdf": "https://arxiv.org/pdf/2611.34303v1",
+        "html": "https://arxiv.org/html/2611.34303"
+      },
+      "score": 7,
+      "tags": [
+        "tool-use",
+        "planning"
+      ],
+      "field": "tool-use",
+      "citations": 0
+    },
+    {
+      "id": "2611.34232",
+      "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
+      "abstract": "Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing benchmarks typically isolate web, mobile, or desktop environments, leaving it unclear whether a single generalist agent can execute long-horizon workflows that span multiple operating systems and persistent application states. We introduce OS-Omni, a live cross-platform benchmark and execution environment for evaluating computer-using agents across Windows, Ubuntu, macOS, iOS, Android, and Web environments. OS-Omni is released in versioned waves of 300 tasks each; this paper focuses on the first release, v1, which contains 48 tasks per platform and 12 cross-platform workflows that pair a desktop with an Android phone. OS-Omni provides reproducible initialization, platform-specific adapters, trajectory logging, and executable final-state evaluators, and includes controlled service-backed applications for workflows involving account, cart, budget, calendar, message, and other persistent state. Human studies show that OS-Omni tasks require 67.54 interaction steps, substantially exceeding OSWorld references of 15.0 steps. On v1, the strongest evaluated agent, Claude Opus 5.5, reaches 68.5% average success, trailing the 77.3% human reference by 8.8 points; the gap is uneven across platforms, with frontier models exceeding humans on Linux but trailing them by more than 25 points on iOS and macOS. These results indicate that current agents remain far from platform-robust, long-horizon computer use, especially when success requires sustained state tracking and durable final-state changes.",
+      "authors": [
+        "Hui Shen",
+        "Yunta Hsieh",
+        "Jianing Ma",
+        "Zhuoran Yin",
+        "Zhuhan Bao",
+        "Ziyuan Liu",
+        "Qi Han",
+        "Xiuqi Xu",
+        "Xianbang Wang",
+        "Wenhao Chai",
+        "Sihan Xu",
+        "Chenyang Zhao",
+        "Yanheng Shang",
+        "Dongfu Jiang",
+        "Rui Sun",
+        "Xingzhi Li",
+        "Chenqi Yin",
+        "Zesen Zhao",
+        "Boyuan Zheng",
+        "Jisen Li",
+        "Xiaoxia Wu",
+        "Ruoyan Zhang",
+        "Ruiyao Liu",
+        "Jing Xiong",
+        "He Xiao",
+        "Nan Zheng",
+        "Hangxiang Chen",
+        "Shengyang Tao",
+        "Deyang Luorong",
+        "Yifeng Liu",
+        "Jingxuan Zhang",
+        "Chaofan Tao",
+        "Yuren Wang",
+        "Jiaqi Mo",
+        "Rui Hu",
+        "Xing Wei",
+        "Xiaofeng Liu",
+        "Xin Xu",
+        "Han Wu",
+        "Mengyao Wen",
+        "Guobin Zhang",
+        "Shatong Zhu",
+        "Hei Ting Una Chan",
+        "Sicheng Chen",
+        "Kai Zhang",
+        "Mengkang Hu",
+        "Zhongwei Wan",
+        "Xin Wang",
+        "Chuanyang Zheng",
+        "Ziheng Zhang",
+        "Hengyuan Zhang",
+        "Zunhai Su",
+        "Kanzhi Cheng",
+        "Dehan Kong",
+        "Yian Wang",
+        "Hanrong Zhang",
+        "Jiawei Lu",
+        "Yifan Zhang",
+        "Junnan Li",
+        "Changyi Yang",
+        "Jintao Qu",
+        "Wenyao Gao",
+        "Jiaxuan Luo",
+        "Jiaxin Deng",
+        "Yuhao Chen",
+        "Xuesong Ye",
+        "Jingwen Gu",
+        "Yichi Zhang",
+        "Qun Lou",
+        "Shen Yan",
+        "Ben Athiwaratkun",
+        "Qiushi Sun",
+        "Mi Zhang",
+        "Ping Luo",
+        "Wenhu Chen",
+        "Ngai Wong"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "published": "2026-11-25T11:55:12Z",
+      "updated": "2026-11-25T11:55:12Z",
+      "announced_date": "2026-11-25",
+      "first_seen": "2026-11-25",
+      "comment": "NeurIPS 2026",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.34232v1",
+        "pdf": "https://arxiv.org/pdf/2611.34232v1",
+        "html": "https://arxiv.org/html/2611.34232"
+      },
+      "score": 9,
+      "tags": [
+        "gui",
+        "computer-use",
+        "safety",
+        "mobile"
+      ],
+      "field": "mobile",
+      "citations": 0
+    },
     {
       "id": "2611.32973",
       "title": "SpecEngineeringBench: Evaluating Coding Agents as Autonomous Specification Engineers",
@@ -269,6 +693,39 @@
         "web"
       ],
       "field": "web",
+      "citations": 0
+    },
+    {
+      "id": "2611.33728",
+      "title": "Asset4D-Bench: Benchmarking Coding Agents for Editable 3D and 4D Reconstruction",
+      "abstract": "A cart can follow its reference trajectory while its cargo floats above the deck. Asset4D-Bench tests whether coding agents recover objects, motion and interactions from visual references as editable Blender scenes. Its 114 conditions span image editing, video reconstruction with matched full or partial starter assets, and independently selected from-scratch tasks. We independently reopen projects and measure them against native reference states. The 228 archived scores include original delivery outcomes and versioned measures of scene quality. On 24 from-scratch tasks, each model earns full dynamics credit on 14. Of these, three GPT-6.1-Sol and eight GPT-6-Astra reconstructions earn zero relation points. Under the fixed scoring weights, relations contribute 5.15 points to the 6.50-point Sol-minus-Astra difference in mean recovered fidelity. Differences in execution and recovery policy across archived runs preclude a causal estimate of starter-asset effects.",
+      "authors": [
+        "Chengyi Sun",
+        "Deyuan Liu",
+        "Lei Zhao",
+        "Jungang Li",
+        "Qi Jia"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "published": "2026-11-25T03:47:00Z",
+      "updated": "2026-11-25T03:47:00Z",
+      "announced_date": "2026-11-25",
+      "first_seen": "2026-11-25",
+      "comment": "The first three authors contributed equally",
+      "doi": "",
+      "links": {
+        "abs": "https://arxiv.org/abs/2611.33728v1",
+        "pdf": "https://arxiv.org/pdf/2611.33728v1",
+        "html": "https://arxiv.org/html/2611.33728"
+      },
+      "score": 18,
+      "tags": [
+        "coding"
+      ],
+      "field": "coding",
       "citations": 0
     }
   ]

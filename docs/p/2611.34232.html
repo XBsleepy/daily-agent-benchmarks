@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing…" />
+    <meta name="keywords" content="Mobile, GUI agents, Computer use, Safety, Mobile agents, agent benchmark, LLM agent, arXiv, 2611.34232" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.34232.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.34232.html" />
+    <meta property="article:published_time" content="2026-11-25T11:55:12Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
+  "name": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
+  "abstract": "Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing benchmarks typically isolate web, mobile, or desktop environments, leaving it unclear whether a single generalist agent can execute long-horizon workflows that span multiple operating systems and persistent application states. We introduce OS-Omni, a live cross-platform benchmark and execution environment for evaluating computer-using agents across Windows, Ubuntu, macOS, iOS, Android, and Web environments. OS-Omni is released in versioned waves of 300 tasks each; this paper focuses on the first release, v1, which contains 48 tasks per platform and 12 cross-platform workflows that pair a desktop with an Android phone. OS-Omni provides reproducible initialization, platform-specific adapters, trajectory logging, and executable final-state evaluators, and includes controlled service-backed applications for workflows involving account, cart, budget, calendar, message, and other persistent state. Human studies show that OS-Omni tasks require 67.54 interaction steps, substantially exceeding OSWorld references of 15.0 steps. On v1, the strongest evaluated agent, Claude Opus 5.5, reaches 68.5% average success, trailing the 77.3% human reference by 8.8 points; the gap is uneven across platforms, with frontier models exceeding humans on Linux but trailing them by more than 25 points on iOS and macOS. These results indicate that current agents remain far from platform-robust, long-horizon computer use, especially when success requires sustained state tracking and durable final-state changes.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Hui Shen"
+    },
+    {
+      "@type": "Person",
+      "name": "Yunta Hsieh"
+    },
+    {
+      "@type": "Person",
+      "name": "Jianing Ma"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhuoran Yin"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhuhan Bao"
+    },
+    {
+      "@type": "Person",
+      "name": "Ziyuan Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Qi Han"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiuqi Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xianbang Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenhao Chai"
+    },
+    {
+      "@type": "Person",
+      "name": "Sihan Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Chenyang Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Yanheng Shang"
+    },
+    {
+      "@type": "Person",
+      "name": "Dongfu Jiang"
+    },
+    {
+      "@type": "Person",
+      "name": "Rui Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Xingzhi Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Chenqi Yin"
+    },
+    {
+      "@type": "Person",
+      "name": "Zesen Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Boyuan Zheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Jisen Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaoxia Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Ruoyan Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Ruiyao Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jing Xiong"
+    },
+    {
+      "@type": "Person",
+      "name": "He Xiao"
+    },
+    {
+      "@type": "Person",
+      "name": "Nan Zheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Hangxiang Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Shengyang Tao"
+    },
+    {
+      "@type": "Person",
+      "name": "Deyang Luorong"
+    },
+    {
+      "@type": "Person",
+      "name": "Yifeng Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Jingxuan Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chaofan Tao"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuren Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiaqi Mo"
+    },
+    {
+      "@type": "Person",
+      "name": "Rui Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xing Wei"
+    },
+    {
+      "@type": "Person",
+      "name": "Xiaofeng Liu"
+    },
+    {
+      "@type": "Person",
+      "name": "Xin Xu"
+    },
+    {
+      "@type": "Person",
+      "name": "Han Wu"
+    },
+    {
+      "@type": "Person",
+      "name": "Mengyao Wen"
+    },
+    {
+      "@type": "Person",
+      "name": "Guobin Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Shatong Zhu"
+    },
+    {
+      "@type": "Person",
+      "name": "Hei Ting Una Chan"
+    },
+    {
+      "@type": "Person",
+      "name": "Sicheng Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Kai Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Mengkang Hu"
+    },
+    {
+      "@type": "Person",
+      "name": "Zhongwei Wan"
+    },
+    {
+      "@type": "Person",
+      "name": "Xin Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Chuanyang Zheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Ziheng Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Hengyuan Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Zunhai Su"
+    },
+    {
+      "@type": "Person",
+      "name": "Kanzhi Cheng"
+    },
+    {
+      "@type": "Person",
+      "name": "Dehan Kong"
+    },
+    {
+      "@type": "Person",
+      "name": "Yian Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Hanrong Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiawei Lu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yifan Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Junnan Li"
+    },
+    {
+      "@type": "Person",
+      "name": "Changyi Yang"
+    },
+    {
+      "@type": "Person",
+      "name": "Jintao Qu"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenyao Gao"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiaxuan Luo"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiaxin Deng"
+    },
+    {
+      "@type": "Person",
+      "name": "Yuhao Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Xuesong Ye"
+    },
+    {
+      "@type": "Person",
+      "name": "Jingwen Gu"
+    },
+    {
+      "@type": "Person",
+      "name": "Yichi Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Qun Lou"
+    },
+    {
+      "@type": "Person",
+      "name": "Shen Yan"
+    },
+    {
+      "@type": "Person",
+      "name": "Ben Athiwaratkun"
+    },
+    {
+      "@type": "Person",
+      "name": "Qiushi Sun"
+    },
+    {
+      "@type": "Person",
+      "name": "Mi Zhang"
+    },
+    {
+      "@type": "Person",
+      "name": "Ping Luo"
+    },
+    {
+      "@type": "Person",
+      "name": "Wenhu Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Ngai Wong"
+    }
+  ],
+  "datePublished": "2026-11-25T11:55:12Z",
+  "dateModified": "2026-11-25T11:55:12Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.34232.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.34232.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.34232v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.34232"
+  },
+  "keywords": [
+    "Mobile",
+    "GUI agents",
+    "Computer use",
+    "Safety",
+    "Mobile agents",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Mobile"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.34232v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.34232"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms</h1>
+        <div class="meta">
+          Hui Shen, Yunta Hsieh, Jianing Ma, Zhuoran Yin, Zhuhan Bao, Ziyuan Liu, Qi Han, Xiuqi Xu, Xianbang Wang, Wenhao Chai, Sihan Xu, Chenyang Zhao, Yanheng Shang, Dongfu Jiang, Rui Sun, Xingzhi Li, Chenqi Yin, Zesen Zhao, Boyuan Zheng, Jisen Li, Xiaoxia Wu, Ruoyan Zhang, Ruiyao Liu, Jing Xiong, He Xiao, Nan Zheng, Hangxiang Chen, Shengyang Tao, Deyang Luorong, Yifeng Liu, Jingxuan Zhang, Chaofan Tao, Yuren Wang, Jiaqi Mo, Rui Hu, Xing Wei, Xiaofeng Liu, Xin Xu, Han Wu, Mengyao Wen, Guobin Zhang, Shatong Zhu, Hei Ting Una Chan, Sicheng Chen, Kai Zhang, Mengkang Hu, Zhongwei Wan, Xin Wang, Chuanyang Zheng, Ziheng Zhang, Hengyuan Zhang, Zunhai Su, Kanzhi Cheng, Dehan Kong, Yian Wang, Hanrong Zhang, Jiawei Lu, Yifan Zhang, Junnan Li, Changyi Yang, Jintao Qu, Wenyao Gao, Jiaxuan Luo, Jiaxin Deng, Yuhao Chen, Xuesong Ye, Jingwen Gu, Yichi Zhang, Qun Lou, Shen Yan, Ben Athiwaratkun, Qiushi Sun, Mi Zhang, Ping Luo, Wenhu Chen, Ngai Wong
+          · 2611.34232
+          · <time datetime="2026-11-25">2026-11-25</time>
+          · Mobile
+        </div>
+        <div class="themes"><span class="chip">GUI agents</span><span class="chip">Computer use</span><span class="chip">Safety</span><span class="chip">Mobile agents</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing benchmarks typically isolate web, mobile, or desktop environments, leaving it unclear whether a single generalist agent can execute long-horizon workflows that span multiple operating systems and persistent application states. We introduce OS-Omni, a live cross-platform benchmark and execution environment for evaluating computer-using agents across Windows, Ubuntu, macOS, iOS, Android, and Web environments. OS-Omni is released in versioned waves of 300 tasks each; this paper focuses on the first release, v1, which contains 48 tasks per platform and 12 cross-platform workflows that pair a desktop with an Android phone. OS-Omni provides reproducible initialization, platform-specific adapters, trajectory logging, and executable final-state evaluators, and includes controlled service-backed applications for workflows involving account, cart, budget, calendar, message, and other persistent state. Human studies show that OS-Omni tasks require 67.54 interaction steps, substantially exceeding OSWorld references of 15.0 steps. On v1, the strongest evaluated agent, Claude Opus 5.5, reaches 68.5% average success, trailing the 77.3% human reference by 8.8 points; the gap is uneven across platforms, with frontier models exceeding humans on Linux but trailing them by more than 25 points on iOS and macOS. These results indicate that current agents remain far from platform-robust, long-horizon computer use, especially when success requires sustained state tracking and durable final-state changes.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.34232v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.34232v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.34232" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Mobile benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.16693.html"><strong>MobileProbe: Adaptive Security Evaluation of Mobile Agents via Trajectory-Aware Injection</strong></a> <span>2026-11-12</span></li>
+          <li><a href="2611.09326.html"><strong>ABHBench: Evaluating Moral Decision-Making of Foundation Models from an Agentic Perspective</strong></a> <span>2026-11-06</span></li>
+          <li><a href="2610.23307.html"><strong>MobileInject: Evaluating Reasoning-to-Action Security of MLLM-Based Mobile Agents under Cross-Modal Consistency Injection</strong></a> <span>2026-10-16</span></li>
+          <li><a href="2610.23303.html"><strong>MobileJailBench: Red Queen Jailbreak Benchmarking for Mobile Agents</strong></a> <span>2026-10-16</span></li>
+          <li><a href="2609.09476.html"><strong>From Fixed Keys to Readable Schemas: Small Language Models for Vehicle Agent Function Calls</strong></a> <span>2026-09-08</span></li>
+          <li><a href="2609.04850.html"><strong>ElderBench: Benchmarking Autonomous Mobile Agents for Older Adults</strong></a> <span>2026-09-04</span></li>
+          <li><a href="2608.23035.html"><strong>MobilePA-Bench: Benchmarking Mobile Planner Agents on Complex Real-World Tasks</strong></a> <span>2026-08-24</span></li>
+          <li><a href="2608.21470.html"><strong>Structural Inference in Undocumented Mobile Databases: A Reproducible Benchmark for Evaluating Agentic Reasoning in Digital Forensics</strong></a> <span>2026-08-21</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CypherMAS: Benchmarking Routing Reliability in LLM-Based Multi-Agent Systems | Daily Agent Benchmarks</title>
+    <meta name="description" content="Daily Agent Benchmarks: Multi-agent systems (MAS) built on large language models (LLMs) distribute reasoning across specialized agents that must exchange…" />
+    <meta name="keywords" content="Multi-agent, Tool use, Planning / reasoning, agent benchmark, LLM agent, arXiv, 2611.33242" />
+    <link rel="canonical" href="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.33242.html" />
+    <meta property="og:site_name" content="Daily Agent Benchmarks" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="CypherMAS: Benchmarking Routing Reliability in LLM-Based Multi-Agent Systems" />
+    <meta property="og:description" content="Daily Agent Benchmarks: Multi-agent systems (MAS) built on large language models (LLMs) distribute reasoning across specialized agents that must exchange…" />
+    <meta property="og:url" content="https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.33242.html" />
+    <meta property="article:published_time" content="2026-11-24T14:39:07Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="CypherMAS: Benchmarking Routing Reliability in LLM-Based Multi-Agent Systems" />
+    <meta name="twitter:description" content="Daily Agent Benchmarks: Multi-agent systems (MAS) built on large language models (LLMs) distribute reasoning across specialized agents that must exchange…" />
+    <link rel="alternate" type="application/atom+xml" title="Daily Agent Benchmarks" href="../feed.xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "CypherMAS: Benchmarking Routing Reliability in LLM-Based Multi-Agent Systems",
+  "name": "CypherMAS: Benchmarking Routing Reliability in LLM-Based Multi-Agent Systems",
+  "abstract": "Multi-agent systems (MAS) built on large language models (LLMs) distribute reasoning across specialized agents that must exchange messages and invoke tools reliably. Existing evaluations typically couple communication with open domain tasks, making it difficult to determine whether a failure arises from reasoning, malformed tool use, lost messages, or forgotten requests. Prior benchmarks do not isolate communication execution or measure routing redundancy against a known optimal path. We introduce CypherMAS, a synthetic benchmark that isolates communication and routing in fixed multi-agent graphs. Agents in chain, star, bipartite, or ring graphs route cyphered messages to remote peers holding the matching decoders; since the optimal route is known, redundant LLM calls can be measured and routing failures may be easily tracked. Across eleven open-weight models from 4B to 753B, small models fail at routing and tool use, dense models above 27B degrade with diameter, and successful runs exceed minimum LLM calls. These findings identify communication reliability as a distinct scaling bottleneck for multi-agent systems and provide a controlled diagnostic for complex multi-agent systems. The source code is freely available: https://github.com/Andoree/CypherMAS.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Danil Kostromin"
+    },
+    {
+      "@type": "Person",
+      "name": "Andrey Sakhovskiy"
+    },
+    {
+      "@type": "Person",
+      "name": "Semen Budennyy"
+    }
+  ],
+  "datePublished": "2026-11-24T14:39:07Z",
+  "dateModified": "2026-11-24T14:39:07Z",
+  "url": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.33242.html",
+  "mainEntityOfPage": "https://xbsleepy.github.io/daily-agent-benchmarks/p/2611.33242.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2611.33242v1"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "arXiv",
+    "value": "2611.33242"
+  },
+  "keywords": [
+    "Multi-agent",
+    "Tool use",
+    "Planning / reasoning",
+    "agent benchmark"
+  ],
+  "about": [
+    "AI agent benchmark",
+    "Multi-agent"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Daily Agent Benchmarks",
+    "url": "https://xbsleepy.github.io/daily-agent-benchmarks/"
+  },
+  "encoding": {
+    "@type": "MediaObject",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://arxiv.org/pdf/2611.33242v1"
+  }
+}
+    </script>
+    <script>window.PAPER_ID = "2611.33242"; window.PAPER_BASE = "../";</script>
+  </head>
+  <body>
+    <header class="masthead masthead--simple">
+      <div class="masthead__brand">
+        <a class="wordmark" href="../">
+          <span>
+            <span class="wordmark__kicker">arXiv daily</span>
+            <span class="wordmark__title">Agent Benchmarks</span>
+          </span>
+        </a>
+      </div>
+      <div class="masthead__tools">
+        <a class="github sister" href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Agent News ↗</a>
+      </div>
+    </header>
+    <main id="main" class="paper-page">
+      <p class="crumb"><a href="../">All benchmarks</a> · <a href="../archive.html">Archive</a></p>
+      <article class="paper paper--full">
+        <h1>CypherMAS: Benchmarking Routing Reliability in LLM-Based Multi-Agent Systems</h1>
+        <div class="meta">
+          Danil Kostromin, Andrey Sakhovskiy, Semen Budennyy
+          · 2611.33242
+          · <time datetime="2026-11-24">2026-11-24</time>
+          · Multi-agent
+        </div>
+        <div class="themes"><span class="chip">Tool use</span><span class="chip">Multi-agent</span><span class="chip">Planning / reasoning</span></div>
+        <div class="abstract" data-collapsed="false">
+          <p>Multi-agent systems (MAS) built on large language models (LLMs) distribute reasoning across specialized agents that must exchange messages and invoke tools reliably. Existing evaluations typically couple communication with open domain tasks, making it difficult to determine whether a failure arises from reasoning, malformed tool use, lost messages, or forgotten requests. Prior benchmarks do not isolate communication execution or measure routing redundancy against a known optimal path. We introduce CypherMAS, a synthetic benchmark that isolates communication and routing in fixed multi-agent graphs. Agents in chain, star, bipartite, or ring graphs route cyphered messages to remote peers holding the matching decoders; since the optimal route is known, redundant LLM calls can be measured and routing failures may be easily tracked. Across eleven open-weight models from 4B to 753B, small models fail at routing and tool use, dense models above 27B degrade with diameter, and successful runs exceed minimum LLM calls. These findings identify communication reliability as a distinct scaling bottleneck for multi-agent systems and provide a controlled diagnostic for complex multi-agent systems. The source code is freely available: https://github.com/Andoree/CypherMAS.</p>
+        </div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2611.33242v1" target="_blank" rel="noopener">Abstract page</a>
+          <a href="https://arxiv.org/pdf/2611.33242v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/html/2611.33242" target="_blank" rel="noopener">HTML</a>
+        </div>
+      </article>
+    </main>
+    <nav class="paper-page related" aria-label="Related benchmarks">
+      <h2>More Multi-agent benchmarks</h2>
+      <ol class="highlights">
+          <li><a href="2611.31063.html"><strong>From Local Errors to System Failures: Modeling and Benchmarking Error Propagation in Multi-Agent LLM Systems</strong></a> <span>2026-11-24</span></li>
+          <li><a href="2611.28787.html"><strong>DiscernBench: Evaluating Cooperative Discernment of LLM Agents in Institutional Settings</strong></a> <span>2026-11-24</span></li>
+          <li><a href="2611.28671.html"><strong>The Evaluation Substrate Matters: Benchmarking Multi-Agent Serving Substrates</strong></a> <span>2026-11-24</span></li>
+          <li><a href="2611.27468.html"><strong>Communication-constrained multiagent risk estimation: a simulation benchmark for adult sore throat</strong></a> <span>2026-11-20</span></li>
+          <li><a href="2611.23258.html"><strong>EnvAgent: Multi-Agent Approach to Building Science Environments in the Clouds</strong></a> <span>2026-11-19</span></li>
+          <li><a href="2611.23613.html"><strong>MANGO Arena: Same Seeds, Different Chains Evaluating LLM Agents in a Disrupted Supply Chain</strong></a> <span>2026-11-17</span></li>
+          <li><a href="2611.22245.html"><strong>Multi-Agent Memory Inconsistency: Where Factual Conflicts Disappear in LLM Agents</strong></a> <span>2026-11-17</span></li>
+          <li><a href="2611.22138.html"><strong>RoboTeam: Benchmarking Vision-Based Multi-Agent Control of Many Robot Arms in Real Time</strong></a> <span>2026-11-17</span></li>
+      </ol>
+    </nav>
+    <footer class="colophon">
+      <p class="colophon__meta">
+        <span>
+          <span data-i18n="visitorsPage">Page views</span>
+          <strong id="vercount_value_page_pv">-</strong>
+          ·
+          <strong id="vercount_value_site_uv">-</strong>
+          <span data-i18n="visitorsSite">visitors</span>
+        </span>
+        <a href="../archive.html">Archive</a>
+        <a href="https://xbsleepy.github.io/daily-agent-news/" target="_blank" rel="noopener">Daily Agent News ↗</a>
+        <a href="https://github.com/XBsleepy/daily-agent-benchmarks" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+    <script defer src="https://events.vercount.one/js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/bm25.js"></script>
+    <script src="../js/paper.js"></script>
+  </body>
+</html>
